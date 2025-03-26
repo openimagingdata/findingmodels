@@ -1,2 +1,2 @@
-# finding_models
-Finding models are updatable data models giving semantic tags for imaging findings and their properties.
+# Finding Models
+Finding models are updatable data models defining open, standard semantic tags for imaging findings and their properties. Relationships with other ontologies can also be included.
