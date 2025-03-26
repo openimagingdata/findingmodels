@@ -1,0 +1,20 @@
+{
+  "name": "Breast malignancy risk",
+  "oifm_id": "OIFM_MSFT_156954"
+  "description": "Assessment of the risk of developing breast cancer based on various factors, including breast density and other findings.",
+  "synonyms": [
+    "Risk of breast cancer",
+    "Breast cancer risk assessment"
+  ],
+  "attributes": [
+    {
+      "name": "Probability of malignancy",
+      "oifma_id": "OIFMA_MSFT_825588"
+      "description": "Quantiative estimate of probability of malignancy",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1,
+      "required": true,
+    }
+  ],
+}
