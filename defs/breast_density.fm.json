@@ -10,10 +10,10 @@
     {
       "name": "density score",
       "oifma_id": "OIFMA_MSFT_806368"
-      "description": "Numeric score representing the breast density on a scale from 0 to 1.",
+      "description": "Numeric score representing the breast density on a scale from 1.0 to 4.99.",
       "type": "numeric",
-      "minimum": 0,
-      "maximum": 1,
+      "minimum": 1.0,
+      "maximum": 4.99,
     },
     {
       "name": "density category",
