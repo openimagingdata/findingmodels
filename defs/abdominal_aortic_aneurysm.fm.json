@@ -1,0 +1,64 @@
+{
+  "oifm_id": "OIFM_MGBR_134126",
+  "name": "abdominal aortic aneurysm",
+  "description": "An abdominal aortic aneurysm (AAA) is a localized dilation of the abdominal aorta, typically defined as a diameter greater than 3 cm, which can lead to rupture and significant morbidity or mortality.",
+  "synonyms": [
+    "AAA"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGBR_898601",
+      "name": "presence",
+      "description": "Presence or absence of abdominal aortic aneurysm",
+      "type": "choice",
+      "values": [
+        {
+          "name": "absent",
+          "description": "Abdominal aortic aneurysm is absent"
+        },
+        {
+          "name": "present",
+          "description": "Abdominal aortic aneurysm is present"
+        },
+        {
+          "name": "indeterminate",
+          "description": "Presence of abdominal aortic aneurysm cannot be determined"
+        },
+        {
+          "name": "unknown",
+          "description": "Presence of abdominal aortic aneurysm is unknown"
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGBR_783072",
+      "name": "change from prior",
+      "description": "Whether and how a abdominal aortic aneurysm has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "name": "unchanged",
+          "description": "Abdominal aortic aneurysm is unchanged"
+        },
+        {
+          "name": "stable",
+          "description": "Abdominal aortic aneurysm is stable"
+        },
+        {
+          "name": "increased",
+          "description": "Abdominal aortic aneurysm has increased"
+        },
+        {
+          "name": "decreased",
+          "description": "Abdominal aortic aneurysm has decreased"
+        },
+        {
+          "name": "new",
+          "description": "Abdominal aortic aneurysm is new"
+        }
+      ],
+      "required": false
+    }
+  ]
+}
