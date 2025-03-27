@@ -1,0 +1,64 @@
+{
+  "oifm_id": "OIFM_MSFT_932618",
+  "name": "pulmonary embolism",
+  "description": "Pulmonary embolism is the occlusion of a pulmonary artery or one of its branches, typically caused by thrombi that originate from the deep veins of the legs or other parts of the body, leading to impaired gas exchange and potential hemodynamic instability.",
+  "synonyms": [
+    "PE"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_463871",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary embolism",
+      "type": "choice",
+      "values": [
+        {
+          "name": "absent",
+          "description": "Pulmonary embolism is absent"
+        },
+        {
+          "name": "present",
+          "description": "Pulmonary embolism is present"
+        },
+        {
+          "name": "indeterminate",
+          "description": "Presence of pulmonary embolism cannot be determined"
+        },
+        {
+          "name": "unknown",
+          "description": "Presence of pulmonary embolism is unknown"
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_592864",
+      "name": "change from prior",
+      "description": "Whether and how a pulmonary embolism has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "name": "unchanged",
+          "description": "Pulmonary embolism is unchanged"
+        },
+        {
+          "name": "stable",
+          "description": "Pulmonary embolism is stable"
+        },
+        {
+          "name": "increased",
+          "description": "Pulmonary embolism has increased"
+        },
+        {
+          "name": "decreased",
+          "description": "Pulmonary embolism has decreased"
+        },
+        {
+          "name": "new",
+          "description": "Pulmonary embolism is new"
+        }
+      ],
+      "required": false
+    }
+  ]
+}
