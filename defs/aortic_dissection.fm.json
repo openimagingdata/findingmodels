@@ -1,0 +1,65 @@
+{
+  "oifm_id": "OIFM_MSFT_573630",
+  "name": "aortic dissection",
+  "description": "Aortic dissection is a critical condition characterized by the separation of the aortic wall layers due to an intimal tear, resulting in an intramural hematoma and potential rupture; it often presents with severe, acute chest or back pain and may lead to life-threatening complications.",
+  "synonyms": [
+    "aortic rupture",
+    "dissecting aneurysm"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_196263",
+      "name": "presence",
+      "description": "Presence or absence of aortic dissection",
+      "type": "choice",
+      "values": [
+        {
+          "name": "absent",
+          "description": "Aortic dissection is absent"
+        },
+        {
+          "name": "present",
+          "description": "Aortic dissection is present"
+        },
+        {
+          "name": "indeterminate",
+          "description": "Presence of aortic dissection cannot be determined"
+        },
+        {
+          "name": "unknown",
+          "description": "Presence of aortic dissection is unknown"
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_548382",
+      "name": "change from prior",
+      "description": "Whether and how a aortic dissection has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "name": "unchanged",
+          "description": "Aortic dissection is unchanged"
+        },
+        {
+          "name": "stable",
+          "description": "Aortic dissection is stable"
+        },
+        {
+          "name": "increased",
+          "description": "Aortic dissection has increased"
+        },
+        {
+          "name": "decreased",
+          "description": "Aortic dissection has decreased"
+        },
+        {
+          "name": "new",
+          "description": "Aortic dissection is new"
+        }
+      ],
+      "required": false
+    }
+  ]
+}
