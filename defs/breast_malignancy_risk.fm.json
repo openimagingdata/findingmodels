@@ -1,19 +1,20 @@
 {
-  "name": "Breast malignancy risk",
+  "name": "Malignancy Assessment Score",
   "oifm_id": "OIFM_MSFT_156954"
-  "description": "Assessment of the risk of developing breast cancer based on various factors, including breast density and other findings.",
+  "description": "Probability score from 0 to 100% estimating the likelihood of malignancy based on mammography features.",
   "synonyms": [
     "Risk of breast cancer",
+    "Case Score",
     "Breast cancer risk assessment"
   ],
   "attributes": [
     {
-      "name": "Probability of malignancy",
+      "name": "Case Score",
       "oifma_id": "OIFMA_MSFT_825588"
-      "description": "Quantiative estimate of probability of malignancy",
-      "type": "numeric",
+      "description": "Case Score is an overall assessment of the entire mammography exam, ranging from 0 to 100.",
+      "type": "percent",
       "minimum": 0,
-      "maximum": 1,
+      "maximum": 100,
       "required": true,
     }
   ],
