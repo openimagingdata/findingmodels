@@ -1,23 +1,20 @@
 {
   "name": "Breast density",
-  "oifm_id": "OIFM_MSFT_356221"
+  "oifm_id": "OIFM_MSFT_356221",
   "description": "Breast density refers to the proportion of fatty tissue to fibroglandular tissue in the breast as seen on a mammogram.",
-  "synonyms": [
-    "Mammographic density",
-    "Breast tissue density"
-  ],
+  "synonyms": ["Mammographic density", "Breast tissue density"],
   "attributes": [
     {
       "name": "density score",
-      "oifma_id": "OIFMA_MSFT_806368"
+      "oifma_id": "OIFMA_MSFT_806368",
       "description": "Numeric score representing the breast density on a scale from 1.0 to 4.99.",
       "type": "numeric",
       "minimum": 1.0,
-      "maximum": 4.99,
+      "maximum": 4.99
     },
     {
       "name": "density category",
-      "oifma_id": "OIFMA_MSFT_765716"
+      "oifma_id": "OIFMA_MSFT_765716",
       "description": "Categorical classification of breast density based on mammographic appearance.",
       "type": "choice",
       "values": [
@@ -38,7 +35,7 @@
           "name": "d: The breasts are extremely dense, which lowers the sensitivity of mammography."
         }
       ],
-      "max_selected": 1,
+      "max_selected": 1
     }
-  ],
+  ]
 }

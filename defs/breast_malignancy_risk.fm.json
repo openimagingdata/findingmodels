@@ -1,6 +1,6 @@
 {
   "name": "Mammographic malignancy assessment",
-  "oifm_id": "OIFM_MSFT_156954"
+  "oifm_id": "OIFM_MSFT_156954",
   "description": "Estimates of the likelihood of malignancy based on mammography features.",
   "synonyms": [
     "Risk of breast cancer",
@@ -10,12 +10,13 @@
   "attributes": [
     {
       "name": "Case Score",
-      "oifma_id": "OIFMA_MSFT_825588"
+      "oifma_id": "OIFMA_MSFT_825588",
       "description": "Case Score is an overall assessment of the entire mammography exam, ranging from 0 to 100.",
-      "type": "percent",
+      "type": "numeric",
+      "unit": "percent",
       "minimum": 0,
       "maximum": 100,
-      "required": true,
+      "required": true
     }
-  ],
+  ]
 }
