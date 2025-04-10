@@ -1,0 +1,279 @@
+{
+  "$defs": {
+    "ChoiceAttributeIded": {
+      "description": "An attribute of a radiology finding where the radiologist would choose from a list of options. For example,\nthe severity of a finding (mild, moderate, or severe), or the shape of a finding (round, oval, or\nirregular). For attributes which can have multiple values from a series of choices, max_selected can be set to\"\na value greater than 1 or \"all\".",
+      "properties": {
+        "oifma_id": {
+          "description": "The ID of the attribute in the Open Imaging Data Model Finding Model registry",
+          "pattern": "^OIFMA_[A-Z]{3,4}_[0-9]{6}$",
+          "title": "Oifma Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "Short, descriptive name of the attribute as an case-sensitive English phrase (preserving capitalization of acronyms).",
+          "maxLength": 100,
+          "minLength": 3,
+          "title": "Name",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 5,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "A one-to-two sentence description of the attribute that might be included in a medical textbook",
+          "title": "Description"
+        },
+        "type": {
+          "const": "choice",
+          "default": "choice",
+          "title": "Type",
+          "type": "string"
+        },
+        "values": {
+          "items": {
+            "$ref": "#/$defs/ChoiceValueIded"
+          },
+          "minItems": 2,
+          "title": "Values",
+          "type": "array"
+        },
+        "required": {
+          "default": false,
+          "description": "Whether the attribute is used every time a radiologist describes the finding",
+          "title": "Required",
+          "type": "boolean"
+        },
+        "max_selected": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The maximum number of values that can be selected for a choice attribute (defaults to 1).",
+          "title": "Max Selected"
+        }
+      },
+      "required": ["oifma_id", "name", "values"],
+      "title": "ChoiceAttributeIded",
+      "type": "object"
+    },
+    "ChoiceValueIded": {
+      "description": "A value that a radiologist might choose for a choice attribute. For example, the severity of a finding might be\nsevere, or the shape of a finding might be oval.",
+      "properties": {
+        "value_code": {
+          "description": "The code for the value in the Open Imaging Data Model Finding Model registry",
+          "pattern": "^OIFMA_[A-Z]{3,4}_[0-9]{6}\\.\\d+$",
+          "title": "Value Code",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        }
+      },
+      "required": ["value_code", "name"],
+      "title": "ChoiceValueIded",
+      "type": "object"
+    },
+    "NumericAttributeIded": {
+      "description": "An attribute of a radiology finding where the radiologist would choose a number from a range. For example, the\nsize of a finding might be up to 10 cm or the number of findings might be between 1 and 10.",
+      "properties": {
+        "oifma_id": {
+          "description": "The ID of the attribute in the Open Imaging Data Model Finding Model registry",
+          "pattern": "^OIFMA_[A-Z]{3,4}_[0-9]{6}$",
+          "title": "Oifma Id",
+          "type": "string"
+        },
+        "name": {
+          "description": "Short, descriptive name of the attribute as an case-sensitive English phrase (preserving capitalization of acronyms).",
+          "maxLength": 100,
+          "minLength": 3,
+          "title": "Name",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 5,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "A one-to-two sentence description of the attribute that might be included in a medical textbook",
+          "title": "Description"
+        },
+        "type": {
+          "const": "numeric",
+          "default": "numeric",
+          "title": "Type",
+          "type": "string"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The minimum value for the attribute.",
+          "title": "Minimum"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The maximum value for the attribute.",
+          "title": "Maximum"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The unit of measure for the attribute",
+          "title": "Unit"
+        },
+        "required": {
+          "default": false,
+          "description": "Whether the attribute is used every time a radiologist describes the finding",
+          "title": "Required",
+          "type": "boolean"
+        }
+      },
+      "required": ["oifma_id", "name"],
+      "title": "NumericAttributeIded",
+      "type": "object"
+    }
+  },
+  "description": "The definition of a radiology finding what the finding is such as might be included in a textbook\nalong with definitions of the relevant attributes that a radiologist might use to characterize the finding in a\nradiology report.",
+  "properties": {
+    "oifm_id": {
+      "description": "The ID of the finding model in the Open Imaging Data Model Finding Model registry",
+      "pattern": "^OIFM_[A-Z]{3,4}_[0-9]{6}$",
+      "title": "Oifm Id",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the finding model. This should be a short, descriptive name that is easy to remember",
+      "minLength": 5,
+      "title": "Name",
+      "type": "string"
+    },
+    "description": {
+      "description": "A one-to-two sentence description of the finding that might be included in a textbook",
+      "minLength": 5,
+      "title": "Description",
+      "type": "string"
+    },
+    "synonyms": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Other terms that might be used to describe the finding in a radiology report",
+      "title": "Synonyms"
+    },
+    "tags": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Tags that might be used to categorize the finding among other findings",
+      "title": "Tags"
+    },
+    "attributes": {
+      "description": "The attributes a radiologist would use to characterize a particular finding in a radiology report",
+      "items": {
+        "description": "An attribute that a radiologist would use to characterize a particular finding in a radiology report",
+        "discriminator": {
+          "mapping": {
+            "choice": "#/$defs/ChoiceAttributeIded",
+            "numeric": "#/$defs/NumericAttributeIded"
+          },
+          "propertyName": "type"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/$defs/ChoiceAttributeIded"
+          },
+          {
+            "$ref": "#/$defs/NumericAttributeIded"
+          }
+        ]
+      },
+      "minItems": 1,
+      "title": "Attributes",
+      "type": "array"
+    }
+  },
+  "required": ["oifm_id", "name", "description", "attributes"],
+  "title": "FindingModelFull",
+  "type": "object"
+}
