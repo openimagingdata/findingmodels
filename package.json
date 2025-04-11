@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "jsonlint-cli": "^1.0.1",
+    "prettier": "^3.5.3"
+  },
+  "scripts": {
+    "postinstall": "npx husky install && npm pkg set scripts.prepare=\"husky install\" && npm run prepare",
+    "validate": "jsonlint-cli \"defs/**/*.json\" || exit 1",
+    "format": "prettier --write \"defs/**/*.json\" && git add .",
+    "prepare": "husky install"
+  }
+}
