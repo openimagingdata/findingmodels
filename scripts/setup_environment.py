@@ -11,6 +11,18 @@ def create_virtual_environment():
         print(f"Error creating virtual environment: {e}")
         raise
 
+# Function to activate virtual environment
+def activate_virtual_environment():
+    try:
+        activate_script = 'env\\Scripts\\activate.bat' if platform.system() == 'Windows' else 'env/bin/activate'
+        if not os.path.exists(activate_script):
+            raise FileNotFoundError("Virtual environment activation script not found. Please create the virtual environment first.")
+        subprocess.call(activate_script, shell=True)
+        print("Virtual environment activated successfully.")
+    except Exception as e:
+        print(f"Error activating virtual environment: {e}")
+        raise
+
 # Function to install dependencies
 def install_dependencies():
     try:
@@ -41,5 +53,6 @@ def setup_pre_commit_hooks():
 
 if __name__ == "__main__":
     create_virtual_environment()
+    activate_virtual_environment()
     install_dependencies()
     setup_pre_commit_hooks()
