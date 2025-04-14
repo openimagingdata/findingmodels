@@ -61,6 +61,7 @@ def main():
             return
 
     print("All files processed successfully.")
+    return False
 
 if __name__ == "__main__":
     main()
