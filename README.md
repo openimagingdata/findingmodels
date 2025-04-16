@@ -1,13 +1,11 @@
 # Finding Models
 Finding models are updatable data models defining open, standard semantic tags for imaging findings and their properties. Relationships with other ontologies can also be included.
 
-
-
-
 ## Pre-commit Script
-Added git pre-commit hooks to validate JSON files.
+Updated git pre-commit hooks to pre-check models validattion and enforce coding standards.
 
-### Steps to Set Up
-1. Run the following command to install dependencies and configure Husky:
+### Steps to Set Up and Run Initial Script
+1. Run the `setup_env.py` script to set up the environment:
    ```bash
-   npm install
+   python .\scripts\setup_env.py
+   ```
