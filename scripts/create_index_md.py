@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 # Function to create an index.md file and Markdown files for finding model definitions
 def create_index_md():
@@ -14,8 +15,12 @@ def create_index_md():
             for model in finding_models:
                 file.write(
                     f"- [{os.path.basename(model).capitalize()}](./{model})\n")
-
         print("index.md with model definition files created successfully.")
+        try:
+            subprocess.run(["git", "add", "index.md"], check=True)
+            print("index.md file added to Git successfully.")
+        except subprocess.CalledProcessError as git_error:
+            print(f"Error adding index.md to Git: {git_error}")
         return 0
     except Exception as e:
         print(f"Error creating files: {e}")

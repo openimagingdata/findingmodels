@@ -1,5 +1,6 @@
 import os
 import json
+import subprocess
 
 # Function to find all finding model definitions
 def find_model_definitions():
@@ -30,6 +31,11 @@ def create_index_json():
         with open('index.json', 'w') as file:
             json.dump({"model_definitions": model_definitions}, file, indent=4)
         print("index.json file created successfully.")
+        try:
+            subprocess.run(['git', 'add', 'index.json'], check=True)
+            print("index.json file added to Git successfully.")
+        except Exception as git_error:
+            print(f"Error adding index.json to Git: {git_error}")
         return 0
     except Exception as e:
         print(f"Error creating index.json file: {e}")
