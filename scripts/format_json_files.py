@@ -10,7 +10,7 @@ def format_json(file_path):
             data = json.load(file)
         with open(file_path, 'w') as file:
             # Use json.tool for consistent formatting
-            json.dump(data, file, indent=2)
+            json.dump(data, file, indent=2, separators=(',', ': '), ensure_ascii=False)
         print(f"Formatted {file_path}")
 
         # Add the formatted file to git staging
