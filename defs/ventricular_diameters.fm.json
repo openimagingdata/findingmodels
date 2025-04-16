@@ -1,44 +1,44 @@
 {
-    "name": "Ventricular diameters",
-    "oifm_id": "OIFM_MSFT_367670",
-    "description": "Measurements of the maximum diameters of the right and left ventricles of the heart.",
-    "tags": [
-        "cardiac"
-    ],
-    "synonyms": [
-        "Ventricular size measurements",
-        "Left ventricular diameter (LVD)",
-        "Right ventricular diameter (RVD)"
-    ],
-    "attributes": [
-        {
-            "name": "right ventricle diameter",
-            "oifma_id": "OIFMA_MSFT_660128",
-            "description": "Maximum right ventricular diameter measured in millimeters.",
-            "type": "numeric",
-            "minimum": 0,
-            "maximum": 999.9,
-            "unit": "mm",
-            "required": true
-        },
-        {
-            "name": "left ventricle diameter",
-            "oifma_id": "OIFMA_MSFT_254180",
-            "description": "Maximum left ventricular diameter measured in millimeters.",
-            "type": "numeric",
-            "minimum": 0,
-            "maximum": 999.9,
-            "unit": "mm",
-            "required": true
-        },
-        {
-            "name": "rv/lv ratio",
-            "oifma_id": "OIFMA_MSFT_299081",
-            "description": "Ratio of right ventricle diameter to left ventricle diameter.",
-            "type": "numeric",
-            "minimum": 0,
-            "maximum": 99.9,
-            "required": true
-        }
-    ]
+  "name": "Ventricular diameters",
+  "oifm_id": "OIFM_MSFT_367670",
+  "description": "Measurements of the maximum diameters of the right and left ventricles of the heart.",
+  "tags": [
+    "cardiac"
+  ],
+  "synonyms": [
+    "Ventricular size measurements",
+    "Left ventricular diameter (LVD)",
+    "Right ventricular diameter (RVD)"
+  ],
+  "attributes": [
+    {
+      "name": "right ventricle diameter",
+      "oifma_id": "OIFMA_MSFT_660128",
+      "description": "Maximum right ventricular diameter measured in millimeters.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 999.9,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "name": "left ventricle diameter",
+      "oifma_id": "OIFMA_MSFT_254180",
+      "description": "Maximum left ventricular diameter measured in millimeters.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 999.9,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "name": "rv/lv ratio",
+      "oifma_id": "OIFMA_MSFT_299081",
+      "description": "Ratio of right ventricle diameter to left ventricle diameter.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 99.9,
+      "required": true
+    }
+  ]
 }

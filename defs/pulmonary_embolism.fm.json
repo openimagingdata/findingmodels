@@ -1,73 +1,73 @@
 {
-    "oifm_id": "OIFM_MSFT_932618",
-    "name": "pulmonary embolism",
-    "description": "Pulmonary embolism is the occlusion of a pulmonary artery or one of its branches, typically caused by thrombi that originate from the deep veins of the legs or other parts of the body, leading to impaired gas exchange and potential hemodynamic instability.",
-    "synonyms": [
-        "PE"
-    ],
-    "attributes": [
+  "oifm_id": "OIFM_MSFT_932618",
+  "name": "pulmonary embolism",
+  "description": "Pulmonary embolism is the occlusion of a pulmonary artery or one of its branches, typically caused by thrombi that originate from the deep veins of the legs or other parts of the body, leading to impaired gas exchange and potential hemodynamic instability.",
+  "synonyms": [
+    "PE"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_463871",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary embolism",
+      "type": "choice",
+      "values": [
         {
-            "oifma_id": "OIFMA_MSFT_463871",
-            "name": "presence",
-            "description": "Presence or absence of pulmonary embolism",
-            "type": "choice",
-            "values": [
-                {
-                    "value_code": "OIFMA_MSFT_463871.0",
-                    "name": "absent",
-                    "description": "Pulmonary embolism is absent"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_463871.1",
-                    "name": "present",
-                    "description": "Pulmonary embolism is present"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_463871.2",
-                    "name": "indeterminate",
-                    "description": "Presence of pulmonary embolism cannot be determined"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_463871.3",
-                    "name": "unknown",
-                    "description": "Presence of pulmonary embolism is unknown"
-                }
-            ],
-            "required": false
+          "value_code": "OIFMA_MSFT_463871.0",
+          "name": "absent",
+          "description": "Pulmonary embolism is absent"
         },
         {
-            "oifma_id": "OIFMA_MSFT_592864",
-            "name": "change from prior",
-            "description": "Whether and how a pulmonary embolism has changed over time",
-            "type": "choice",
-            "values": [
-                {
-                    "value_code": "OIFMA_MSFT_592864.0",
-                    "name": "unchanged",
-                    "description": "Pulmonary embolism is unchanged"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_592864.1",
-                    "name": "stable",
-                    "description": "Pulmonary embolism is stable"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_592864.2",
-                    "name": "increased",
-                    "description": "Pulmonary embolism has increased"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_592864.3",
-                    "name": "decreased",
-                    "description": "Pulmonary embolism has decreased"
-                },
-                {
-                    "value_code": "OIFMA_MSFT_592864.4",
-                    "name": "new",
-                    "description": "Pulmonary embolism is new"
-                }
-            ],
-            "required": false
+          "value_code": "OIFMA_MSFT_463871.1",
+          "name": "present",
+          "description": "Pulmonary embolism is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_463871.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary embolism cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MSFT_463871.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary embolism is unknown"
         }
-    ]
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_592864",
+      "name": "change from prior",
+      "description": "Whether and how a pulmonary embolism has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_592864.0",
+          "name": "unchanged",
+          "description": "Pulmonary embolism is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MSFT_592864.1",
+          "name": "stable",
+          "description": "Pulmonary embolism is stable"
+        },
+        {
+          "value_code": "OIFMA_MSFT_592864.2",
+          "name": "increased",
+          "description": "Pulmonary embolism has increased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_592864.3",
+          "name": "decreased",
+          "description": "Pulmonary embolism has decreased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_592864.4",
+          "name": "new",
+          "description": "Pulmonary embolism is new"
+        }
+      ],
+      "required": false
+    }
+  ]
 }
