@@ -9,15 +9,9 @@ def format_json(file_path):
         with open(file_path, 'r') as file:
             data = json.load(file)
 
-        def custom_serializer(obj):
-            if isinstance(obj, list) and all(isinstance(i, str) for i in obj):
-                return '[' + ', '.join(json.dumps(i) for i in obj) + ']'
-            return json.JSONEncoder().default(obj)
-
         with open(file_path, 'w') as file:
             # Use custom serialization for inline arrays
-            json.dump(data, file, indent=2, separators=(',', ': '),
-                      ensure_ascii=False, default=custom_serializer)
+            json.dump(data, file, indent=2)
         print(f"Formatted {file_path}")
 
         # Add the formatted file to git staging
