@@ -1,9 +1,37 @@
 repos:
   - repo: local
-    hooks:     
-      - id: format-validate
-        name: Format Validate
-        entry: python scripts/format_validate.py || exit 1
+    hooks:
+      - id: create-index-json
+        name: Create Index JSON
+        entry: python scripts/create_index_json.py || exit 1
+        language: system
+        always_run: true
+        pass_filenames: false
+
+      - id: create-index-md
+        name: Create Index MD
+        entry: python scripts/create_index_md.py || exit 1
+        language: system
+        always_run: true
+        pass_filenames: false
+
+      # - id: validate_schema
+      #   name: Validate Schema
+      #   entry: python scripts/validate_schema.py || exit 1
+      #   language: system
+      #   always_run: true
+      #   pass_filenames: false
+      
+      - id: validate-oifm-oifma-ids
+        name: Validate OIFM OIFMA IDs
+        entry: python scripts/validate_oifm_oifma_ids.py || exit 1
+        language: system
+        always_run: true
+        pass_filenames: false
+
+      - id: format-json-files
+        name: Format JSON Files
+        entry: python scripts/format_json_files.py || exit 1
         language: system
         always_run: true
         pass_filenames: false

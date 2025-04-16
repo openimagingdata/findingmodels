@@ -8,7 +8,19 @@ def find_model_definitions():
         if 'defs' in root:  # Check if 'defs' is in the folder path
             for file in files:
                 if file.endswith('.json'):
-                    model_definitions.append(os.path.join(root, file))
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, 'r') as f:
+                            data = json.load(f)
+                            oifm_id = data.get('oifm_id')
+                            name = data.get('name')
+                            model_definitions.append({
+                                'oifm_id': oifm_id,
+                                'name': name,
+                                'file_path': file_path
+                            })
+                    except Exception as e:
+                        print(f"Error reading file {file_path}: {e}")
     return model_definitions
 
 # Function to create an index.json file
@@ -18,9 +30,10 @@ def create_index_json():
         with open('index.json', 'w') as file:
             json.dump({"model_definitions": model_definitions}, file, indent=4)
         print("index.json file created successfully.")
+        return 0
     except Exception as e:
         print(f"Error creating index.json file: {e}")
-        raise
+        return 1
 
 if __name__ == "__main__":
-    create_index_json()
+    exit(create_index_json())

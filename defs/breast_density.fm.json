@@ -1,41 +1,44 @@
 {
-  "name": "Breast density",
-  "oifm_id": "OIFM_MSFT_356221",
-  "description": "Breast density refers to the proportion of fatty tissue to fibroglandular tissue in the breast as seen on a mammogram.",
-  "synonyms": ["Mammographic density", "Breast tissue density"],
-  "attributes": [
-    {
-      "name": "density score",
-      "oifma_id": "OIFMA_MSFT_806368",
-      "description": "Numeric score representing the breast density on a scale from 1.0 to 4.99.",
-      "type": "numeric",
-      "minimum": 1.0,
-      "maximum": 4.99
-    },
-    {
-      "name": "density category",
-      "oifma_id": "OIFMA_MSFT_765716",
-      "description": "Categorical classification of breast density based on mammographic appearance.",
-      "type": "choice",
-      "values": [
+    "name": "Breast density",
+    "oifm_id": "OIFM_MSFT_356221",
+    "description": "Breast density refers to the proportion of fatty tissue to fibroglandular tissue in the breast as seen on a mammogram.",
+    "synonyms": [
+        "Mammographic density",
+        "Breast tissue density"
+    ],
+    "attributes": [
         {
-          "value_code": "OIFMA_MSFT_765716.0",
-          "name": "a: The breasts are almost entirely fatty."
+            "name": "density score",
+            "oifma_id": "OIFMA_MSFT_806368",
+            "description": "Numeric score representing the breast density on a scale from 1.0 to 4.99.",
+            "type": "numeric",
+            "minimum": 1.0,
+            "maximum": 4.99
         },
         {
-          "value_code": "OIFMA_MSFT_765716.1",
-          "name": "b: There are scattered areas of fibroglandular density."
-        },
-        {
-          "value_code": "OIFMA_MSFT_765716.2",
-          "name": "c: The breasts are heterogeneously dense, which may obscure small masses."
-        },
-        {
-          "value_code": "OIFMA_MSFT_765716.3",
-          "name": "d: The breasts are extremely dense, which lowers the sensitivity of mammography."
+            "name": "density category",
+            "oifma_id": "OIFMA_MSFT_765716",
+            "description": "Categorical classification of breast density based on mammographic appearance.",
+            "type": "choice",
+            "values": [
+                {
+                    "value_code": "OIFMA_MSFT_765716.0",
+                    "name": "a: The breasts are almost entirely fatty."
+                },
+                {
+                    "value_code": "OIFMA_MSFT_765716.1",
+                    "name": "b: There are scattered areas of fibroglandular density."
+                },
+                {
+                    "value_code": "OIFMA_MSFT_765716.2",
+                    "name": "c: The breasts are heterogeneously dense, which may obscure small masses."
+                },
+                {
+                    "value_code": "OIFMA_MSFT_765716.3",
+                    "name": "d: The breasts are extremely dense, which lowers the sensitivity of mammography."
+                }
+            ],
+            "max_selected": 1
         }
-      ],
-      "max_selected": 1
-    }
-  ]
+    ]
 }
