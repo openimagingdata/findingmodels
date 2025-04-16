@@ -10,8 +10,8 @@ def format_json(file_path):
             data = json.load(file)
 
         def custom_serializer(obj):
-            if isinstance(obj, list):
-                return json.dumps(obj, separators=(',', ': '))
+            if isinstance(obj, list) and all(isinstance(i, str) for i in obj):
+                return '[' + ', '.join(json.dumps(i) for i in obj) + ']'
             return json.JSONEncoder().default(obj)
 
         with open(file_path, 'w') as file:
