@@ -1,0 +1,59 @@
+{
+  "oifm_id": "OIFM_MSFT_255181",
+  "name": "breast soft tissue lesion",
+  "description": "A breast soft tissue lesion refers to any abnormal growth or mass within the soft tissue of the breast, which may include various entities such as cysts, fibromas, or malignant tumors, typically identified through imaging modalities like mammography or ultrasound.",
+  "synonyms": [
+    "Breast Mass",
+    "Mammary Soft Tissue Lesion"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_113477",
+      "name": "presence",
+      "description": "Presence or absence of breast soft tissue lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_113477.0",
+          "name": "absent",
+          "description": "Breast soft tissue lesion is absent"
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.1",
+          "name": "present",
+          "description": "Breast soft tissue lesion is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.2",
+          "name": "indeterminate",
+          "description": "Presence of breast soft tissue lesion cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.3",
+          "name": "unknown",
+          "description": "Presence of breast soft tissue lesion is unknown"
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_742224",
+      "name": "location",
+      "description": "Specifies the location of the breast soft tissue lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_742224.0",
+          "name": "right breast",
+          "description": "Lesion located in the right breast."
+        },
+        {
+          "value_code": "OIFMA_MSFT_742224.1",
+          "name": "left breast",
+          "description": "Lesion located in the left breast."
+        }
+      ],
+      "required": true
+    }
+  ]
+}
