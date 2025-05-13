@@ -1,0 +1,119 @@
+{
+  "oifm_id": "OIFM_MSFT_430810",
+  "name": "Coronary Artery Calcifications",
+  "description": "Atherosclerotic calcifications of the coronary arteries",
+  "synonyms": [
+    "Coronary Calcification",
+    "CAC",
+    "Coronary Atherosclerosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_286425",
+      "name": "presence",
+      "description": "Indicates whether calcification is present in the coronary arteries.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_286425.0",
+          "name": "absent",
+          "description": "No coronary artery calcification detected."
+        },
+        {
+          "value_code": "OIFMA_MSFT_286425.1",
+          "name": "present",
+          "description": "Coronary artery calcification is present."
+        },
+        {
+          "value_code": "OIFMA_MSFT_286425.2",
+          "name": "indeterminate",
+          "description": "Presence of coronary artery calcification cannot be determined."
+        },
+        {
+          "value_code": "OIFMA_MSFT_286425.3",
+          "name": "unknown",
+          "description": "Presence of coronary artery calcification is unknown."
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_976443",
+      "name": "cac severity category",
+      "description": "Categorizes coronary artery calcification based on the total Agatston score.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_976443.0",
+          "name": "none",
+          "description": "No coronary calcification (Agatston score = 0)."
+        },
+        {
+          "value_code": "OIFMA_MSFT_976443.1",
+          "name": "mild",
+          "description": "Mild coronary calcification (Agatston score 1–99)."
+        },
+        {
+          "value_code": "OIFMA_MSFT_976443.2",
+          "name": "moderate",
+          "description": "Moderate coronary calcification (Agatston score 100–399)."
+        },
+        {
+          "value_code": "OIFMA_MSFT_976443.3",
+          "name": "severe",
+          "description": "Severe coronary calcification (Agatston score ≥ 400)."
+        }
+      ],
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_472379",
+      "name": "location",
+      "description": "Identifies which coronary arteries are involved in the calcification.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_472379.0",
+          "name": "left main coronary artery",
+          "description": "Calcification present in the left main coronary artery."
+        },
+        {
+          "value_code": "OIFMA_MSFT_472379.1",
+          "name": "left circumflex artery",
+          "description": "Calcification present in the left circumflex artery."
+        },
+        {
+          "value_code": "OIFMA_MSFT_472379.2",
+          "name": "left anterior descending artery",
+          "description": "Calcification present in the left anterior descending artery."
+        },
+        {
+          "value_code": "OIFMA_MSFT_472379.3",
+          "name": "right coronary artery",
+          "description": "Calcification present in the right coronary artery."
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_161908",
+      "name": "agatston score",
+      "description": "Agatston score for coronary artery calcification, used to quantify severity.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10000,
+      "unit": "score",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_429306",
+      "name": "arterial age",
+      "description": "Numeric value calculated from the Agatston score, providing an estimation of arterial age.",
+      "type": "number",
+      "minimum": 39,
+      "unit": "years",
+      "required": false
+    }
+  ]
+}
