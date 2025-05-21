@@ -1,0 +1,69 @@
+{	
+  "oifm_id": "OIFM_MSFT_914493",	
+  "name": "breast calcification cluster",	
+  "description": "Breast calcification clusters are typically a sign of benign changes in breast tissue but can sometimes indicate malignancy.",	
+  "synonyms": [	
+    "breast calcifications"	
+  ],	
+  "tags": [	
+    "breast",	
+    "calcification"	
+  ],	
+  "attributes": [	
+    {	
+      "oifma_id": "OIFMA_MSFT_661936",	
+      "name": "calcification cluster presence",	
+      "description": "Indicates whether breast calcification cluster is present, absent, indeterminate, or unknown.",	
+      "type": "choice",	
+      "values": [	
+        {	
+          "value_code": "OIFMA_MSFT_661936.0",	
+          "name": "absent",	
+          "description": "No calcification cluster detected."	
+        },	
+        {
+          "value_code": "OIFMA_MSFT_661936.1",	
+          "name": "present",	
+          "description": "Calcification cluster is present."	
+        },	
+        {	
+          "value_code": "OIFMA_MSFT_661936.2",	
+          "name": "indeterminant",	
+          "description": "Uncertain presence of calcification cluster."	
+        },	
+        {	
+          "value_code": "OIFMA_MSFT_661936.3",	
+          "name": "unknown",	
+          "description": "Presence of calcification cluster is unknown."	
+        }	
+      ],	
+      "required": true	
+    },	
+    {	
+      "oifma_id": "OIFMA_MSFT_742222",	
+      "name": "location",	
+      "description": "Specifies the location of the breast calcification cluster.",	
+      "type": "choice",	
+      "values": [	
+        {	
+          "value_code": "OIFMA_MSFT_742222.0",	
+          "name": "right breast",	
+          "description": "Calcification cluster located in the right breast."	
+        },	
+        {	
+          "value_code": "OIFMA_MSFT_742222.1",	
+          "name": "left breast",	
+          "description": "Calcification cluster located in the left breast."	
+        }	
+      ],	
+      "required": true	
+    },	
+    {	
+      "oifma_id": "OIFMA_MSFT_661937",	
+      "name": "number of calcifications",	
+      "description": "Number of breast calcifications in cluster identified.",	
+      "type": "number",	
+      "required": false	
+    }	
+  ]	
+}	
