@@ -2,10 +2,15 @@
   "oifm_id": "OIFM_MSFT_430810",
   "name": "coronary artery calcifications",
   "description": "Atherosclerotic calcifications of the coronary arteries",
-  "synonyms": [
-    "Coronary Calcification",
-    "CAC",
-    "Coronary Atherosclerosis"
+  "synonyms": ["Coronary Calcification", "CAC", "Coronary Atherosclerosis"],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
   ],
   "attributes": [
     {
@@ -100,7 +105,7 @@
       "oifma_id": "OIFMA_MSFT_161908",
       "name": "agatston score",
       "description": "Agatston score for coronary artery calcification, used to quantify severity.",
-      "type": "number",
+      "type": "numeric",
       "minimum": 0,
       "maximum": 10000,
       "unit": "score",
@@ -110,7 +115,7 @@
       "oifma_id": "OIFMA_MSFT_429306",
       "name": "arterial age",
       "description": "Numeric value calculated from the Agatston score, providing an estimation of arterial age.",
-      "type": "number",
+      "type": "numeric",
       "minimum": 39,
       "unit": "years",
       "required": false
