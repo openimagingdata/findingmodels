@@ -1,12 +1,14 @@
 {
-  "name": "Ventricular diameters",
   "oifm_id": "OIFM_MSFT_367670",
+  "name": "Ventricular diameters",
   "description": "Measurements of the maximum diameters of the right and left ventricles of the heart.",
-  "tags": ["cardiac"],
   "synonyms": [
     "Ventricular size measurements",
     "Left ventricular diameter (LVD)",
     "Right ventricular diameter (RVD)"
+  ],
+  "tags": [
+    "cardiac"
   ],
   "contributors": [
     {
@@ -19,8 +21,8 @@
   ],
   "attributes": [
     {
-      "name": "right ventricle diameter",
       "oifma_id": "OIFMA_MSFT_660128",
+      "name": "right ventricle diameter",
       "description": "Maximum right ventricular diameter measured in millimeters.",
       "type": "numeric",
       "minimum": 0,
@@ -29,8 +31,8 @@
       "required": true
     },
     {
-      "name": "left ventricle diameter",
       "oifma_id": "OIFMA_MSFT_254180",
+      "name": "left ventricle diameter",
       "description": "Maximum left ventricular diameter measured in millimeters.",
       "type": "numeric",
       "minimum": 0,
@@ -39,8 +41,8 @@
       "required": true
     },
     {
-      "name": "rv/lv ratio",
       "oifma_id": "OIFMA_MSFT_299081",
+      "name": "rv/lv ratio",
       "description": "Ratio of right ventricle diameter to left ventricle diameter.",
       "type": "numeric",
       "minimum": 0,
