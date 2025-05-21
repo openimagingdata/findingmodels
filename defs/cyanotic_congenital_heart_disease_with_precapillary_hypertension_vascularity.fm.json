@@ -1,0 +1,258 @@
+{
+  "oifm_id": "OIFM_GMTS_013510",
+  "name": "cyanotic congenital heart disease with precapillary hypertension vascularity",
+  "description": "Cyanotic heart disease with signs of pulmonary arterial hypertension.",
+  "synonyms": [
+    "cyanotic CHD with precapillary pulmonary hypertension"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "CT",
+    "MR",
+    "congenital anomaly",
+    "heart",
+    "lung vasculature",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_378356",
+      "name": "presence",
+      "description": "Presence or absence of cyanotic congenital heart disease with precapillary hypertension vascularity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_378356.0",
+          "name": "absent",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_378356.1",
+          "name": "present",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_378356.2",
+          "name": "indeterminate",
+          "description": "Presence of cyanotic congenital heart disease with precapillary hypertension vascularity cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_378356.3",
+          "name": "unknown",
+          "description": "Presence of cyanotic congenital heart disease with precapillary hypertension vascularity is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_730408",
+      "name": "change from prior",
+      "description": "Whether and how a cyanotic congenital heart disease with precapillary hypertension vascularity has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_730408.0",
+          "name": "unchanged",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.1",
+          "name": "stable",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.2",
+          "name": "new",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.3",
+          "name": "resolved",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.4",
+          "name": "increased",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.5",
+          "name": "decreased",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.6",
+          "name": "larger",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_730408.7",
+          "name": "smaller",
+          "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "13510",
+      "display": "cyanotic congenital heart disease with precapillary hypertension vascularity"
+    }
+  ]
+}
