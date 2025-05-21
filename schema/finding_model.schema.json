@@ -52,21 +52,36 @@
           "type": "boolean"
         },
         "max_selected": {
+          "default": 1,
+          "description": "The maximum number of values that can be selected for a choice attribute (defaults to 1).",
+          "minimum": 1,
+          "title": "Max Selected",
+          "type": "integer"
+        },
+        "index_codes": {
           "anyOf": [
             {
-              "minimum": 1,
-              "type": "integer"
+              "default": null,
+              "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
+              "items": {
+                "$ref": "#/$defs/IndexCode"
+              },
+              "minItems": 1,
+              "type": "array"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "description": "The maximum number of values that can be selected for a choice attribute (defaults to 1).",
-          "title": "Max Selected"
+          "title": "Index Codes"
         }
       },
-      "required": ["oifma_id", "name", "values"],
+      "required": [
+        "oifma_id",
+        "name",
+        "values"
+      ],
       "title": "ChoiceAttributeIded",
       "type": "object"
     },
@@ -94,10 +109,68 @@
           ],
           "default": null,
           "title": "Description"
+        },
+        "index_codes": {
+          "anyOf": [
+            {
+              "default": null,
+              "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
+              "items": {
+                "$ref": "#/$defs/IndexCode"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Index Codes"
         }
       },
-      "required": ["value_code", "name"],
+      "required": [
+        "value_code",
+        "name"
+      ],
       "title": "ChoiceValueIded",
+      "type": "object"
+    },
+    "IndexCode": {
+      "description": "Code representing an entry in a standard ontology, e.g., SNOMED or RadLex, which can be applied\nto a finding or attribute. This is used to standardize the representation of findings and attributes\nacross different systems and to facilitate interoperability between different systems.",
+      "properties": {
+        "system": {
+          "description": "The system that the code is from, e.g., SNOMED or RadLex.",
+          "minLength": 3,
+          "title": "System",
+          "type": "string"
+        },
+        "code": {
+          "description": "The code representing the entry in the standard ontology.",
+          "minLength": 3,
+          "title": "Code",
+          "type": "string"
+        },
+        "display": {
+          "anyOf": [
+            {
+              "minLength": 3,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The display name of the code in the standard ontology.",
+          "title": "Display"
+        }
+      },
+      "required": [
+        "system",
+        "code"
+      ],
+      "title": "IndexCode",
       "type": "object"
     },
     "NumericAttributeIded": {
@@ -187,10 +260,121 @@
           "description": "Whether the attribute is used every time a radiologist describes the finding",
           "title": "Required",
           "type": "boolean"
+        },
+        "index_codes": {
+          "anyOf": [
+            {
+              "default": null,
+              "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
+              "items": {
+                "$ref": "#/$defs/IndexCode"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Index Codes"
         }
       },
-      "required": ["oifma_id", "name"],
+      "required": [
+        "oifma_id",
+        "name"
+      ],
       "title": "NumericAttributeIded",
+      "type": "object"
+    },
+    "Organization": {
+      "properties": {
+        "name": {
+          "description": "Full name of the organization",
+          "minLength": 5,
+          "title": "Name",
+          "type": "string"
+        },
+        "code": {
+          "description": "Short (3-4 letter) code for the organization",
+          "pattern": "^[A-Z]{3,4}$",
+          "title": "Code",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "URL for more information about the organization",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "name",
+        "code"
+      ],
+      "title": "Organization",
+      "type": "object"
+    },
+    "Person": {
+      "properties": {
+        "github_username": {
+          "description": "GitHub username of the person",
+          "minLength": 3,
+          "title": "Github Username",
+          "type": "string"
+        },
+        "email": {
+          "description": "Email address of the person",
+          "format": "email",
+          "title": "Email",
+          "type": "string"
+        },
+        "name": {
+          "description": "Full name of the person",
+          "minLength": 3,
+          "title": "Name",
+          "type": "string"
+        },
+        "organization_code": {
+          "description": "Short (3-4 letter) code for the organization",
+          "pattern": "^[A-Z]{3,4}$",
+          "title": "Organization Code",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "format": "uri",
+              "maxLength": 2083,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "URL for more information about the person",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "github_username",
+        "email",
+        "name",
+        "organization_code"
+      ],
+      "title": "Person",
       "type": "object"
     }
   },
@@ -248,6 +432,29 @@
       "description": "Tags that might be used to categorize the finding among other findings",
       "title": "Tags"
     },
+    "contributors": {
+      "anyOf": [
+        {
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Person"
+              },
+              {
+                "$ref": "#/$defs/Organization"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The contributing users and organizations to the finding model",
+      "title": "Contributors"
+    },
     "attributes": {
       "description": "The attributes a radiologist would use to characterize a particular finding in a radiology report",
       "items": {
@@ -271,9 +478,32 @@
       "minItems": 1,
       "title": "Attributes",
       "type": "array"
+    },
+    "index_codes": {
+      "anyOf": [
+        {
+          "default": null,
+          "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
+          "items": {
+            "$ref": "#/$defs/IndexCode"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Index Codes"
     }
   },
-  "required": ["oifm_id", "name", "description", "attributes"],
+  "required": [
+    "oifm_id",
+    "name",
+    "description",
+    "attributes"
+  ],
   "title": "FindingModelFull",
   "type": "object"
 }
