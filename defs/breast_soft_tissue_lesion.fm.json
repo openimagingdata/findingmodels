@@ -12,15 +12,6 @@
       "url": "https://www.linkedin.com/in/heatherwalkerchase/"
     }
   ],
-  "contributors": [
-    {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT",
-      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
-    }
-  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_MSFT_113477",
@@ -31,81 +22,25 @@
         {
           "value_code": "OIFMA_MSFT_113477.0",
           "name": "absent",
-          "description": "Breast soft tissue lesion is absent",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28473",
-              "display": "absent"
-            },
-            {
-              "system": "SNOMED",
-              "code": "2667000",
-              "display": "Absent (qualifier value)"
-            }
-          ]
+          "description": "Breast soft tissue lesion is absent"
         },
         {
           "value_code": "OIFMA_MSFT_113477.1",
           "name": "present",
-          "description": "Breast soft tissue lesion is present",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28472",
-              "display": "present"
-            },
-            {
-              "system": "SNOMED",
-              "code": "52101004",
-              "display": "Present (qualifier value)"
-            }
-          ]
+          "description": "Breast soft tissue lesion is present"
         },
         {
           "value_code": "OIFMA_MSFT_113477.2",
           "name": "indeterminate",
-          "description": "Presence of breast soft tissue lesion cannot be determined",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID39110",
-              "display": "indeterminate"
-            },
-            {
-              "system": "SNOMED",
-              "code": "82334004",
-              "display": "Indeterminate (qualifier value)"
-            }
-          ]
+          "description": "Presence of breast soft tissue lesion cannot be determined"
         },
         {
           "value_code": "OIFMA_MSFT_113477.3",
           "name": "unknown",
-          "description": "Presence of breast soft tissue lesion is unknown",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5655",
-              "display": "unknown"
-            },
-            {
-              "system": "SNOMED",
-              "code": "261665006",
-              "display": "Unknown (qualifier value)"
-            }
-          ]
+          "description": "Presence of breast soft tissue lesion is unknown"
         }
       ],
-      "required": false,
-      "max_selected": 1,
-      "index_codes": [
-        {
-          "system": "SNOMED",
-          "code": "705057003",
-          "display": "Presence (property) (qualifier value)"
-        }
-      ]
+      "required": false
     },
     {
       "oifma_id": "OIFMA_MSFT_742224",
@@ -124,20 +59,7 @@
           "description": "Lesion located in the left breast."
         }
       ],
-      "required": true,
-      "max_selected": 1,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID39038",
-          "display": "location"
-        },
-        {
-          "system": "SNOMED",
-          "code": "758637006",
-          "display": "Anatomic location (property) (qualifier value)"
-        }
-      ]
+      "required": true
     }
   ]
 }

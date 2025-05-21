@@ -12,15 +12,6 @@
       "url": "https://www.linkedin.com/in/heatherwalkerchase/"
     }
   ],
-  "contributors": [
-    {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT",
-      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
-    }
-  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_MSFT_286425",
@@ -31,81 +22,25 @@
         {
           "value_code": "OIFMA_MSFT_286425.0",
           "name": "absent",
-          "description": "No coronary artery calcification detected.",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28473",
-              "display": "absent"
-            },
-            {
-              "system": "SNOMED",
-              "code": "2667000",
-              "display": "Absent (qualifier value)"
-            }
-          ]
+          "description": "No coronary artery calcification detected."
         },
         {
           "value_code": "OIFMA_MSFT_286425.1",
           "name": "present",
-          "description": "Coronary artery calcification is present.",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28472",
-              "display": "present"
-            },
-            {
-              "system": "SNOMED",
-              "code": "52101004",
-              "display": "Present (qualifier value)"
-            }
-          ]
+          "description": "Coronary artery calcification is present."
         },
         {
           "value_code": "OIFMA_MSFT_286425.2",
           "name": "indeterminate",
-          "description": "Presence of coronary artery calcification cannot be determined.",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID39110",
-              "display": "indeterminate"
-            },
-            {
-              "system": "SNOMED",
-              "code": "82334004",
-              "display": "Indeterminate (qualifier value)"
-            }
-          ]
+          "description": "Presence of coronary artery calcification cannot be determined."
         },
         {
           "value_code": "OIFMA_MSFT_286425.3",
           "name": "unknown",
-          "description": "Presence of coronary artery calcification is unknown.",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5655",
-              "display": "unknown"
-            },
-            {
-              "system": "SNOMED",
-              "code": "261665006",
-              "display": "Unknown (qualifier value)"
-            }
-          ]
+          "description": "Presence of coronary artery calcification is unknown."
         }
       ],
-      "required": false,
-      "max_selected": 1,
-      "index_codes": [
-        {
-          "system": "SNOMED",
-          "code": "705057003",
-          "display": "Presence (property) (qualifier value)"
-        }
-      ]
+      "required": false
     },
     {
       "oifma_id": "OIFMA_MSFT_976443",
@@ -121,57 +56,20 @@
         {
           "value_code": "OIFMA_MSFT_976443.1",
           "name": "mild",
-          "description": "Mild coronary calcification (Agatston score 1–99).",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5671",
-              "display": "mild"
-            },
-            {
-              "system": "SNOMED",
-              "code": "255604002",
-              "display": "Mild (qualifier value)"
-            }
-          ]
+          "description": "Mild coronary calcification (Agatston score 1–99)."
         },
         {
           "value_code": "OIFMA_MSFT_976443.2",
           "name": "moderate",
-          "description": "Moderate coronary calcification (Agatston score 100–399).",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5672",
-              "display": "moderate"
-            },
-            {
-              "system": "SNOMED",
-              "code": "1255665007",
-              "display": "Moderate (qualifier value)"
-            }
-          ]
+          "description": "Moderate coronary calcification (Agatston score 100–399)."
         },
         {
           "value_code": "OIFMA_MSFT_976443.3",
           "name": "severe",
-          "description": "Severe coronary calcification (Agatston score ≥ 400).",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5673",
-              "display": "severe"
-            },
-            {
-              "system": "SNOMED",
-              "code": "24484000",
-              "display": "Severe (severity modifier) (qualifier value)"
-            }
-          ]
+          "description": "Severe coronary calcification (Agatston score ≥ 400)."
         }
       ],
-      "required": false,
-      "max_selected": 1
+      "required": false
     },
     {
       "oifma_id": "OIFMA_MSFT_472379",
@@ -201,19 +99,7 @@
         }
       ],
       "required": false,
-      "max_selected": 4,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID39038",
-          "display": "location"
-        },
-        {
-          "system": "SNOMED",
-          "code": "758637006",
-          "display": "Anatomic location (property) (qualifier value)"
-        }
-      ]
+      "max_selected": 4
     },
     {
       "oifma_id": "OIFMA_MSFT_161908",
