@@ -2,10 +2,7 @@
   "oifm_id": "OIFM_GMTS_016041",
   "name": "multiple pleural masses",
   "description": "More than one mass lesion arising from or involving the pleura.",
-  "synonyms": [
-    "pleural tumors",
-    "pleural nodules"
-  ],
+  "synonyms": ["pleural tumors", "pleural nodules"],
   "tags": [
     "chest",
     "CT",
@@ -17,13 +14,13 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_665453",
+      "oifma_id": "OIFMA_GMTS_665454",
       "name": "presence",
       "description": "Presence or absence of multiple pleural masses",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_665453.0",
+          "value_code": "OIFMA_GMTS_665454.0",
           "name": "absent",
           "description": "Multiple pleural masses is absent",
           "index_codes": [
@@ -40,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.1",
+          "value_code": "OIFMA_GMTS_665454.1",
           "name": "present",
           "description": "Multiple pleural masses is present",
           "index_codes": [
@@ -57,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.2",
+          "value_code": "OIFMA_GMTS_665454.2",
           "name": "indeterminate",
           "description": "Presence of multiple pleural masses cannot be determined",
           "index_codes": [
@@ -74,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.3",
+          "value_code": "OIFMA_GMTS_665454.3",
           "name": "unknown",
           "description": "Presence of multiple pleural masses is unknown",
           "index_codes": [
