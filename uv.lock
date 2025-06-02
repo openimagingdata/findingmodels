@@ -265,6 +265,7 @@ dependencies = [
     { name = "findingmodel" },
     { name = "jsonschema" },
     { name = "pre-commit" },
+    { name = "prettier" },
 ]
 
 [package.metadata]
@@ -272,6 +273,7 @@ requires-dist = [
     { name = "findingmodel" },
     { name = "jsonschema" },
     { name = "pre-commit" },
+    { name = "prettier", specifier = ">=0.0.7" },
 ]
 
 [[package]]
@@ -655,6 +657,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/08/39/679ca9b26c7bb2999ff122d50faa301e49af82ca9c066ec061cfbc0c6784/pre_commit-4.2.0.tar.gz", hash = "sha256:601283b9757afd87d40c4c4a9b2b5de9637a8ea02eaff7adc2d0fb4e04841146", size = 193424 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/88/74/a88bf1b1efeae488a0c0b7bdf71429c313722d1fc0f377537fbe554e6180/pre_commit-4.2.0-py2.py3-none-any.whl", hash = "sha256:a009ca7205f1eb497d10b845e52c838a98b6cdd2102a6c8e4540e94ee75c58bd", size = 220707 },
+]
+
+[[package]]
+name = "prettier"
+version = "0.0.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/0e/a3375ca8f83f03662f22cbfee801badc4e4da19e4c06ade5ccfab4297678/prettier-0.0.7.tar.gz", hash = "sha256:6c34b8cd09fd9c8956c05d6395ea3f575e0122dce494ba57685c07065abed427", size = 16124 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/cf/c401d2af75c2c271375bbe3654e408af2c296650f88b8b3d3942e3c8b63e/prettier-0.0.7-py3-none-any.whl", hash = "sha256:20e76791de41cafe481328dd49552303f29ca192151cee1b120c26f66cae9bfc", size = 16260 },
 ]
 
 [[package]]
