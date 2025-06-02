@@ -1,6 +1,6 @@
 # Randomly distributed small lung nodules—`OIFM_GMTS_014588`
 
-**Synonyms:** miliary nodules, random lung nodules
+**Synonyms:** random lung nodules
 
 **Tags:** chest, CT, XR, lung, neoplastic process, inflammatory process, finding
 

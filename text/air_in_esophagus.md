@@ -6,7 +6,7 @@
 
 Presence of gas within the esophageal lumen, which may be normal or pathologic.
 
-**Codes:** GAMUTS 56 air in esophagus
+**Codes:** GAMUTS 056 air in esophagus
 
 ## Attributes
 

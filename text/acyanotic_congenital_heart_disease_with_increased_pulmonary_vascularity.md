@@ -1,7 +1,5 @@
 # Acyanotic congenital heart disease with increased pulmonary vascularity—`OIFM_GMTS_013501`
 
-**Synonyms:** left-to-right shunt heart disease, ASD, VSD, PDA
-
 **Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, vascular, diagnosis
 
 Congenital cardiac malformations that do not cause cyanosis and result in increased blood flow to the lungs.

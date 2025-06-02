@@ -1,6 +1,6 @@
 # Nodular pleural thickening—`OIFM_GMTS_016013`
 
-**Synonyms:** pleural nodularity, pleural thickening
+**Synonyms:** pleural nodularity
 
 **Tags:** chest, XR, CT, MR, pleura, neoplastic process, finding
 

@@ -1,6 +1,6 @@
 # Wide superior mediastinum in an infant or child—`OIFM_GMTS_015446`
 
-**Synonyms:** enlarged upper mediastinum child, thymic enlargement
+**Synonyms:** enlarged upper mediastinum child
 
 **Tags:** chest, XR, CT, mediastinum, pediatrics, finding
 

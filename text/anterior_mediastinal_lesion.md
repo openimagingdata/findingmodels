@@ -1,7 +1,5 @@
 # Anterior mediastinal lesion—`OIFM_GMTS_015459`
 
-**Synonyms:** anterior mediastinal mass
-
 **Tags:** chest, CT, MR, XR, mediastinum, neoplastic process, finding
 
 Any mass or abnormality located in the anterior mediastinum.

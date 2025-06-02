@@ -1,6 +1,6 @@
 # Acute diffuse mediastinal widening—`OIFM_GMTS_015701`
 
-**Synonyms:** acute mediastinal enlargement, mediastinal widening
+**Synonyms:** acute mediastinal enlargement
 
 **Tags:** chest, XR, CT, mediastinum, finding
 

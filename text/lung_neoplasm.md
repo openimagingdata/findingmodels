@@ -1,6 +1,6 @@
 # Lung neoplasm—`OIFM_GMTS_014592`
 
-**Synonyms:** lung tumor, lung mass, pulmonary neoplasm, pulmonary mass
+**Synonyms:** lung tumor, pulmonary neoplasm
 
 **Tags:** chest, XR, CT, MR, lung, neoplastic process, diagnosis
 

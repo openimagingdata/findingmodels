@@ -1,6 +1,6 @@
 # Phrenic nerve paralysis or dysfunction—`OIFM_GMTS_016157`
 
-**Synonyms:** diaphragmatic paralysis, phrenic neuropathy
+**Synonyms:** phrenic neuropathy
 
 **Tags:** chest, XR, CT, MR, diaphragm, neuromuscular, diagnosis
 
