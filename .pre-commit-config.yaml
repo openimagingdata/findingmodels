@@ -57,3 +57,11 @@ repos:
         pass_filenames: false
         always_run: true
         require_serial: true
+      - id: format-json
+        name: "Format JSON files with uv"
+        entry: uv run python scripts/format_json.py
+        language: python
+        additional_dependencies: ["uv>=0.7.9"]
+        pass_filenames: false
+        always_run: true
+        require_serial: true
