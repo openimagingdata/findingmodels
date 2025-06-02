@@ -1,7 +1,5 @@
 # Acute mediastinitis—`OIFM_GMTS_032919`
 
-**Synonyms:** mediastinal infection
-
 **Tags:** chest, CT, XR, mediastinum, inflammatory process, diagnosis
 
 Acute infection and inflammation of mediastinal tissues.

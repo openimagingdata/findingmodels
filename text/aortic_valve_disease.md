@@ -1,6 +1,6 @@
 # Aortic valve disease—`OIFM_GMTS_022509`
 
-**Synonyms:** aortic valve disorder, aortic stenosis, aortic insufficiency
+**Synonyms:** aortic valve disorder, aortic stenosis
 
 **Tags:** chest, CT, MR, US (echocardiography, primarily), valvular, cardiac, mediastinum, diagnosis
 

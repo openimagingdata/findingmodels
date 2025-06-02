@@ -1,6 +1,6 @@
 # Water-attenuation mediastinal lesion—`OIFM_GMTS_015530`
 
-**Synonyms:** hypodense mediastinal lesion, cystic mediastinal mass
+**Synonyms:** hypodense mediastinal lesion
 
 **Tags:** chest, CT, mediastinum, finding
 

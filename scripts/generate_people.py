@@ -1,3 +1,4 @@
+import subprocess
 from findingmodel.contributor import Person
 from pathlib import Path
 
@@ -32,6 +33,9 @@ def main():
             url=person_data.get("url"),
         )
         person.save_jsonl(output_file)
+
+    # Add the generated file to git
+    subprocess.run(["git", "add", output_file], check=True)
 
 
 if __name__ == "__main__":

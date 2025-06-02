@@ -1,7 +1,5 @@
 # Localized elevation of hemidiaphragm—`OIFM_GMTS_016164`
 
-**Synonyms:** hemidiaphragm elevation, unilateral diaphragmatic elevation
-
 **Tags:** chest, XR, CT, diaphragm, finding
 
 Abnormal elevation of one side of the diaphragm often indicating underlying pathology.

@@ -6,7 +6,7 @@
 
 Esophageal motility disorder resulting in failure of the lower esophageal sphincter to relax.
 
-**Codes:** GAMUTS 57 achalasia
+**Codes:** GAMUTS 057 achalasia
 
 ## Attributes
 

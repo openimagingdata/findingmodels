@@ -10,7 +10,7 @@ More than one mass lesion arising from or involving the pleura.
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_665453`
+### Presence—`OIFMA_GMTS_665454`
 
 Presence or absence of multiple pleural masses  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  

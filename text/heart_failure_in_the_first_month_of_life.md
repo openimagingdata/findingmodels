@@ -1,6 +1,6 @@
 # Heart failure in the first month of life—`OIFM_GMTS_013347`
 
-**Synonyms:** neonatal heart failure, early infant heart failure
+**Synonyms:** early infant heart failure
 
 **Tags:** chest, XR, CT, MR, US, heart, vascular, diagnosis
 
