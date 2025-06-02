@@ -1,16 +1,16 @@
 # Multiple pleural masses—`OIFM_GMTS_016041`
 
-**Synonyms:** pleural masses
+**Synonyms:** pleural tumors, pleural nodules
 
-**Tags:** ultrasound, CT, XR, MR, pleura, neoplastic, finding
+**Tags:** chest, CT, XR, MR, pleura, neoplastic process, finding
 
-Several abnormal growths within or surrounding the pleura.
+More than one mass lesion arising from or involving the pleura.
 
 **Codes:** GAMUTS 16041 multiple pleural masses
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_161905`
+### Presence—`OIFMA_GMTS_665454`
 
 Presence or absence of multiple pleural masses  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of multiple pleural masses is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_637064`
+### Change from prior—`OIFMA_GMTS_080584`
 
 Whether and how a multiple pleural masses has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

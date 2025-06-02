@@ -1,14 +1,16 @@
 # Wide superior mediastinum in an infant or child—`OIFM_GMTS_015446`
 
-**Tags:** pediatric, XR, CT, MR, mediastinum, pediatric, finding
+**Synonyms:** enlarged upper mediastinum child
 
-An abnormally broadening of the mediastinum in an infant or child, often indicative of underlying pathology.
+**Tags:** chest, XR, CT, mediastinum, pediatrics, finding
+
+Enlargement of the superior mediastinum in a pediatric patient that may indicate pathology or normal thymus.
 
 **Codes:** GAMUTS 15446 wide superior mediastinum in an infant or child
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_179551`
+### Presence—`OIFMA_GMTS_540183`
 
 Presence or absence of wide superior mediastinum in an infant or child  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -23,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of wide superior mediastinum in an infant or child is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_362640`
+### Change from prior—`OIFMA_GMTS_376377`
 
 Whether and how a wide superior mediastinum in an infant or child has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

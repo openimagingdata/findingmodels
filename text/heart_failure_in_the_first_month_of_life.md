@@ -1,14 +1,16 @@
 # Heart failure in the first month of life—`OIFM_GMTS_013347`
 
-**Tags:** ultrasound, XR, CT, MR, cardiac, neonatal, diagnosis
+**Synonyms:** early infant heart failure
 
-Heart failure in neonates, indicating early cardiovascular issues.
+**Tags:** chest, XR, CT, MR, US, heart, vascular, diagnosis
+
+Cardiac failure occurring in infants less than one month old.
 
 **Codes:** GAMUTS 13347 heart failure in the first month of life
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_140534`
+### Presence—`OIFMA_GMTS_961395`
 
 Presence or absence of heart failure in the first month of life  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -23,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of heart failure in the first month of life is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_314026`
+### Change from prior—`OIFMA_GMTS_146353`
 
 Whether and how a heart failure in the first month of life has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

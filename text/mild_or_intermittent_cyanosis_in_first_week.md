@@ -1,16 +1,14 @@
 # Mild or intermittent cyanosis in first week—`OIFM_GMTS_013429`
 
-**Synonyms:** newborn cyanosis
+**Tags:** chest, systemic, neonatal, finding
 
-**Tags:** ultrasound, US, vascular, neonatal, finding
-
-Bluish discoloration of skin and mucous membranes in newborns due to deoxygenated hemoglobin.
+Bluish discoloration due to low oxygen levels in a neonate's first week, possible clinical sign of cardiopulmonary disease.
 
 **Codes:** GAMUTS 13429 mild or intermittent cyanosis in first week
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_177612`
+### Presence—`OIFMA_GMTS_347211`
 
 Presence or absence of mild or intermittent cyanosis in first week  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of mild or intermittent cyanosis in first week is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_663191`
+### Change from prior—`OIFMA_GMTS_426396`
 
 Whether and how a mild or intermittent cyanosis in first week has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
