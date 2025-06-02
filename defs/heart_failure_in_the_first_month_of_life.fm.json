@@ -1,32 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013347",
   "name": "heart failure in the first month of life",
-  "description": "Heart failure in neonates, indicating early cardiovascular issues.",
+  "description": "Cardiac failure occurring in infants less than one month old.",
+  "synonyms": [
+    "early infant heart failure"
+  ],
   "tags": [
-    "ultrasound",
+    "chest",
     "XR",
     "CT",
     "MR",
-    "cardiac",
-    "neonatal",
+    "US",
+    "heart",
+    "vascular",
     "diagnosis"
-  ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_140534",
+      "oifma_id": "OIFMA_GMTS_961395",
       "name": "presence",
       "description": "Presence or absence of heart failure in the first month of life",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_140534.0",
+          "value_code": "OIFMA_GMTS_961395.0",
           "name": "absent",
           "description": "Heart failure in the first month of life is absent",
           "index_codes": [
@@ -43,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_140534.1",
+          "value_code": "OIFMA_GMTS_961395.1",
           "name": "present",
           "description": "Heart failure in the first month of life is present",
           "index_codes": [
@@ -60,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_140534.2",
+          "value_code": "OIFMA_GMTS_961395.2",
           "name": "indeterminate",
           "description": "Presence of heart failure in the first month of life cannot be determined",
           "index_codes": [
@@ -77,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_140534.3",
+          "value_code": "OIFMA_GMTS_961395.3",
           "name": "unknown",
           "description": "Presence of heart failure in the first month of life is unknown",
           "index_codes": [
@@ -105,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_314026",
+      "oifma_id": "OIFMA_GMTS_146353",
       "name": "change from prior",
       "description": "Whether and how a heart failure in the first month of life has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_314026.0",
+          "value_code": "OIFMA_GMTS_146353.0",
           "name": "unchanged",
           "description": "Heart failure in the first month of life is unchanged",
           "index_codes": [
@@ -128,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.1",
+          "value_code": "OIFMA_GMTS_146353.1",
           "name": "stable",
           "description": "Heart failure in the first month of life is stable",
           "index_codes": [
@@ -145,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.2",
+          "value_code": "OIFMA_GMTS_146353.2",
           "name": "new",
           "description": "Heart failure in the first month of life is new",
           "index_codes": [
@@ -162,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.3",
+          "value_code": "OIFMA_GMTS_146353.3",
           "name": "resolved",
           "description": "Heart failure in the first month of life seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_314026.4",
+          "value_code": "OIFMA_GMTS_146353.4",
           "name": "increased",
           "description": "Heart failure in the first month of life has increased",
           "index_codes": [
@@ -184,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.5",
+          "value_code": "OIFMA_GMTS_146353.5",
           "name": "decreased",
           "description": "Heart failure in the first month of life has decreased",
           "index_codes": [
@@ -201,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.6",
+          "value_code": "OIFMA_GMTS_146353.6",
           "name": "larger",
           "description": "Heart failure in the first month of life is larger",
           "index_codes": [
@@ -218,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_314026.7",
+          "value_code": "OIFMA_GMTS_146353.7",
           "name": "smaller",
           "description": "Heart failure in the first month of life is smaller",
           "index_codes": [

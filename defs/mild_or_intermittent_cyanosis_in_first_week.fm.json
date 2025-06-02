@@ -1,33 +1,22 @@
 {
   "oifm_id": "OIFM_GMTS_013429",
   "name": "mild or intermittent cyanosis in first week",
-  "description": "Bluish discoloration of skin and mucous membranes in newborns due to deoxygenated hemoglobin.",
-  "synonyms": [
-    "newborn cyanosis"
-  ],
+  "description": "Bluish discoloration due to low oxygen levels in a neonate's first week, possible clinical sign of cardiopulmonary disease.",
   "tags": [
-    "ultrasound",
-    "US",
-    "vascular",
+    "chest",
+    "systemic",
     "neonatal",
     "finding"
   ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_177612",
+      "oifma_id": "OIFMA_GMTS_347211",
       "name": "presence",
       "description": "Presence or absence of mild or intermittent cyanosis in first week",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_177612.0",
+          "value_code": "OIFMA_GMTS_347211.0",
           "name": "absent",
           "description": "Mild or intermittent cyanosis in first week is absent",
           "index_codes": [
@@ -44,7 +33,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_177612.1",
+          "value_code": "OIFMA_GMTS_347211.1",
           "name": "present",
           "description": "Mild or intermittent cyanosis in first week is present",
           "index_codes": [
@@ -61,7 +50,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_177612.2",
+          "value_code": "OIFMA_GMTS_347211.2",
           "name": "indeterminate",
           "description": "Presence of mild or intermittent cyanosis in first week cannot be determined",
           "index_codes": [
@@ -78,7 +67,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_177612.3",
+          "value_code": "OIFMA_GMTS_347211.3",
           "name": "unknown",
           "description": "Presence of mild or intermittent cyanosis in first week is unknown",
           "index_codes": [
@@ -106,13 +95,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_663191",
+      "oifma_id": "OIFMA_GMTS_426396",
       "name": "change from prior",
       "description": "Whether and how a mild or intermittent cyanosis in first week has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_663191.0",
+          "value_code": "OIFMA_GMTS_426396.0",
           "name": "unchanged",
           "description": "Mild or intermittent cyanosis in first week is unchanged",
           "index_codes": [
@@ -129,7 +118,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.1",
+          "value_code": "OIFMA_GMTS_426396.1",
           "name": "stable",
           "description": "Mild or intermittent cyanosis in first week is stable",
           "index_codes": [
@@ -146,7 +135,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.2",
+          "value_code": "OIFMA_GMTS_426396.2",
           "name": "new",
           "description": "Mild or intermittent cyanosis in first week is new",
           "index_codes": [
@@ -163,12 +152,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.3",
+          "value_code": "OIFMA_GMTS_426396.3",
           "name": "resolved",
           "description": "Mild or intermittent cyanosis in first week seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_663191.4",
+          "value_code": "OIFMA_GMTS_426396.4",
           "name": "increased",
           "description": "Mild or intermittent cyanosis in first week has increased",
           "index_codes": [
@@ -185,7 +174,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.5",
+          "value_code": "OIFMA_GMTS_426396.5",
           "name": "decreased",
           "description": "Mild or intermittent cyanosis in first week has decreased",
           "index_codes": [
@@ -202,7 +191,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.6",
+          "value_code": "OIFMA_GMTS_426396.6",
           "name": "larger",
           "description": "Mild or intermittent cyanosis in first week is larger",
           "index_codes": [
@@ -219,7 +208,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663191.7",
+          "value_code": "OIFMA_GMTS_426396.7",
           "name": "smaller",
           "description": "Mild or intermittent cyanosis in first week is smaller",
           "index_codes": [

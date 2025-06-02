@@ -1,34 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_000056",
   "name": "air in esophagus",
-  "description": "Presence of air within the esophagus",
+  "description": "Presence of gas within the esophageal lumen, which may be normal or pathologic.",
   "synonyms": [
-    "esophageal air"
+    "esophageal gas",
+    "intraluminal air"
   ],
   "tags": [
-    "abdomen",
-    "CT",
+    "chest",
     "XR",
-    "gastrointestinal",
-    "anatomical",
+    "CT",
+    "fluoroscopy",
+    "esophagus",
     "finding"
-  ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_495428",
+      "oifma_id": "OIFMA_GMTS_244396",
       "name": "presence",
       "description": "Presence or absence of air in esophagus",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495428.0",
+          "value_code": "OIFMA_GMTS_244396.0",
           "name": "absent",
           "description": "Air in esophagus is absent",
           "index_codes": [
@@ -45,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495428.1",
+          "value_code": "OIFMA_GMTS_244396.1",
           "name": "present",
           "description": "Air in esophagus is present",
           "index_codes": [
@@ -62,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495428.2",
+          "value_code": "OIFMA_GMTS_244396.2",
           "name": "indeterminate",
           "description": "Presence of air in esophagus cannot be determined",
           "index_codes": [
@@ -79,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495428.3",
+          "value_code": "OIFMA_GMTS_244396.3",
           "name": "unknown",
           "description": "Presence of air in esophagus is unknown",
           "index_codes": [
@@ -107,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_474337",
+      "oifma_id": "OIFMA_GMTS_327356",
       "name": "change from prior",
       "description": "Whether and how a air in esophagus has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_474337.0",
+          "value_code": "OIFMA_GMTS_327356.0",
           "name": "unchanged",
           "description": "Air in esophagus is unchanged",
           "index_codes": [
@@ -130,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.1",
+          "value_code": "OIFMA_GMTS_327356.1",
           "name": "stable",
           "description": "Air in esophagus is stable",
           "index_codes": [
@@ -147,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.2",
+          "value_code": "OIFMA_GMTS_327356.2",
           "name": "new",
           "description": "Air in esophagus is new",
           "index_codes": [
@@ -164,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.3",
+          "value_code": "OIFMA_GMTS_327356.3",
           "name": "resolved",
           "description": "Air in esophagus seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_474337.4",
+          "value_code": "OIFMA_GMTS_327356.4",
           "name": "increased",
           "description": "Air in esophagus has increased",
           "index_codes": [
@@ -186,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.5",
+          "value_code": "OIFMA_GMTS_327356.5",
           "name": "decreased",
           "description": "Air in esophagus has decreased",
           "index_codes": [
@@ -203,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.6",
+          "value_code": "OIFMA_GMTS_327356.6",
           "name": "larger",
           "description": "Air in esophagus is larger",
           "index_codes": [
@@ -220,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_474337.7",
+          "value_code": "OIFMA_GMTS_327356.7",
           "name": "smaller",
           "description": "Air in esophagus is smaller",
           "index_codes": [

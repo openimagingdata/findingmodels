@@ -1,3 +1,4 @@
+import json
 import os
 import subprocess
 
@@ -5,9 +6,19 @@ import subprocess
 def format_json(file_path):
     try:
         # Format using Prettier
-        print(f"Formatting {file_path} with Prettier...")
-        subprocess.run(["prettier", "--write", file_path], check=True)
-        print(f"Formatted {file_path} with Prettier")
+        # print(f"Formatting {file_path} with Prettier...")
+        # subprocess.run(["prettier", "--write", file_path], check=True)
+        # print(f"Formatted {file_path} with Prettier")
+
+        with open(file_path, "r") as file:
+            data = json.load(file)
+
+        with open(file_path, "w") as file:
+            # Use custom serialization for inline arrays
+            json.dump(data, file, indent=2)
+            
+        print(f"Formatted {file_path}")
+
         # Add the formatted file to git staging
         subprocess.run(["git", "add", file_path], check=True)
     except Exception as e:
