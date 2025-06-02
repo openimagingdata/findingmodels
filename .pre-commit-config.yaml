@@ -1,0 +1,11 @@
+repos:
+  - repo: local
+    hooks:
+      - id: generate-index-jsonl
+        name: "Generate & stage file with uv"
+        entry: uv run python scripts/generate_index_jsonl.py
+        language: python # pre-commit will build a venv for us
+        additional_dependencies: ["uv>=0.7.9"] # uv available inside that venv
+        pass_filenames: false # our script is self-contained
+        always_run: true            # run even if no .md was staged
+        require_serial: true # safety: don’t run in parallel
