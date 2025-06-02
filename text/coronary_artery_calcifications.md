@@ -27,11 +27,11 @@ Categorizes coronary artery calcification based on the total Agatston score.
 *(Select one)*
 
 - **none**: No coronary calcification (Agatston score = 0).  
-- **mild**: Mild coronary calcification (Agatston score 1â€“99).  
+- **mild**: Mild coronary calcification (Agatston score 1-99).  
 _RADLEX RID5671 mild; SNOMED 255604002 Mild (qualifier value)_
-- **moderate**: Moderate coronary calcification (Agatston score 100â€“399).  
+- **moderate**: Moderate coronary calcification (Agatston score 100-399).  
 _RADLEX RID5672 moderate; SNOMED 1255665007 Moderate (qualifier value)_
-- **severe**: Severe coronary calcification (Agatston score â‰¥ 400).  
+- **severe**: Severe coronary calcification (Agatston score ≥ 400).  
 _RADLEX RID5673 severe; SNOMED 24484000 Severe (severity modifier) (qualifier value)_
 
 ### Location—`OIFMA_MSFT_472379`
