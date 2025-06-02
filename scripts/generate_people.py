@@ -6,25 +6,31 @@ from pathlib import Path
 def main():
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    output_file = project_root / "people.jsonl"
+    output_file = project_root / "peoples.jsonl"
 
-    persons = [
+    default_persons = [
         {
-            "github_username": "johndoe",
-            "email": "john.doe@example.com",
-            "name": "John Doe",
-            "organization_code": "OIDM",
+            "github_username": "talkasab",
+            "email": "tarik@alkasab.org",
+            "name": "Tarik Alkasab, MD, PhD",
+            "organization_code": "MGB",
         },
         {
-            "github_username": "janedoe",
-            "email": "jane.doe@example.com",
-            "name": "Jane Doe",
-            "organization_code": "ACR",
-            "url": "https://janedoe.example.com",
+            "github_username": "HeatherChase",
+            "email": "heatherchase@microsoft.com",
+            "name": "Heather Chase",
+            "organization_code": "MSFT",
+            "url": "https://www.linkedin.com/in/heatherwalkerchase/",
+        },
+        {
+            "github_username": "hoodcm",
+            "email": "chood@mgh.harvard.edu",
+            "name": "C. Michael Hood, MD",
+            "organization_code": "MGB",
         },
     ]
 
-    for person_data in persons:
+    for person_data in default_persons:
         person = Person(
             github_username=person_data["github_username"],
             email=person_data["email"],
