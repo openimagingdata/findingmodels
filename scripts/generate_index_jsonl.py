@@ -1,6 +1,6 @@
+import subprocess
 from findingmodel.index import Index
 from pathlib import Path
-import subprocess
 
 
 def main():
