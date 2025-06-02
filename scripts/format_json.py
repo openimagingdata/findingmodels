@@ -21,7 +21,6 @@ def find_json_files():
             for file in files:
                 if file.endswith(".json"):
                     json_files.append(os.path.join(root, file))
-                    break
     return json_files
 
 
