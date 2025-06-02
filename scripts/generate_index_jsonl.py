@@ -6,7 +6,7 @@ from pathlib import Path
 def main():
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    output_file = project_root / "index1.jsonl"
+    output_file = project_root / "index.jsonl"
     index = Index(base_directory=project_root)
     index.populate_from_directory(project_root)
     index.export_to_jsonl(output_file)
