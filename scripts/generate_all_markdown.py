@@ -11,6 +11,7 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for json_path in sorted(defs_dir.glob("*.fm.json")):
+        print(f"Processing {json_path}...")
         fm = FindingModelFull.model_validate_json(json_path.read_text(encoding="utf-8"))
         markdown = fm.as_markdown()
         name = json_path.name[: -len(".fm.json")]
