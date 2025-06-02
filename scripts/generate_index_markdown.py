@@ -1,3 +1,4 @@
+import subprocess
 from findingmodel.index import Index
 from pathlib import Path
 
@@ -5,10 +6,13 @@ from pathlib import Path
 def main():
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    output_file = project_root / "index1.md"
+    output_file = project_root / "index.md"
     index = Index(base_directory=project_root)
     markdown = to_markdown(index)
     output_file.write_text(markdown)
+
+    # Add the generated file to git
+    subprocess.run(["git", "add", output_file], check=True)
 
 
 def to_markdown(self) -> str:
