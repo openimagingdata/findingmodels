@@ -1,30 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013557",
   "name": "anomalous thoracic arterial communication",
-  "description": "Abnormal vascular connection between thoracic arteries.",
+  "description": "Abnormal blood vessel connections in the thoracic region",
   "synonyms": [
-    "arterial fistula",
-    "vascular anomaly"
+    "arterial anomaly"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "angiography",
+    "US",
     "vascular",
-    "congenital anomaly",
-    "mediastinum",
-    "finding"
+    "congenital",
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_990755",
+      "oifma_id": "OIFMA_GMTS_594398",
       "name": "presence",
       "description": "Presence or absence of anomalous thoracic arterial communication",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_990755.0",
+          "value_code": "OIFMA_GMTS_594398.0",
           "name": "absent",
           "description": "Anomalous thoracic arterial communication is absent",
           "index_codes": [
@@ -41,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_990755.1",
+          "value_code": "OIFMA_GMTS_594398.1",
           "name": "present",
           "description": "Anomalous thoracic arterial communication is present",
           "index_codes": [
@@ -58,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_990755.2",
+          "value_code": "OIFMA_GMTS_594398.2",
           "name": "indeterminate",
           "description": "Presence of anomalous thoracic arterial communication cannot be determined",
           "index_codes": [
@@ -75,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_990755.3",
+          "value_code": "OIFMA_GMTS_594398.3",
           "name": "unknown",
           "description": "Presence of anomalous thoracic arterial communication is unknown",
           "index_codes": [
@@ -103,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_534860",
+      "oifma_id": "OIFMA_GMTS_572837",
       "name": "change from prior",
       "description": "Whether and how a anomalous thoracic arterial communication has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_534860.0",
+          "value_code": "OIFMA_GMTS_572837.0",
           "name": "unchanged",
           "description": "Anomalous thoracic arterial communication is unchanged",
           "index_codes": [
@@ -126,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.1",
+          "value_code": "OIFMA_GMTS_572837.1",
           "name": "stable",
           "description": "Anomalous thoracic arterial communication is stable",
           "index_codes": [
@@ -143,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.2",
+          "value_code": "OIFMA_GMTS_572837.2",
           "name": "new",
           "description": "Anomalous thoracic arterial communication is new",
           "index_codes": [
@@ -160,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.3",
+          "value_code": "OIFMA_GMTS_572837.3",
           "name": "resolved",
           "description": "Anomalous thoracic arterial communication seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_534860.4",
+          "value_code": "OIFMA_GMTS_572837.4",
           "name": "increased",
           "description": "Anomalous thoracic arterial communication has increased",
           "index_codes": [
@@ -182,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.5",
+          "value_code": "OIFMA_GMTS_572837.5",
           "name": "decreased",
           "description": "Anomalous thoracic arterial communication has decreased",
           "index_codes": [
@@ -199,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.6",
+          "value_code": "OIFMA_GMTS_572837.6",
           "name": "larger",
           "description": "Anomalous thoracic arterial communication is larger",
           "index_codes": [
@@ -216,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_534860.7",
+          "value_code": "OIFMA_GMTS_572837.7",
           "name": "smaller",
           "description": "Anomalous thoracic arterial communication is smaller",
           "index_codes": [

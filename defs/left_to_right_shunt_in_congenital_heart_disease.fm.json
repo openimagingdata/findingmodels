@@ -1,30 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013396",
   "name": "left-to-right shunt in congenital heart disease",
-  "description": "Abnormal blood flow from the left to the right side of the heart due to a congenital defect.",
+  "description": "Abnormal blood flow from the left side to the right side of the heart due to congenital defect.",
   "synonyms": [
-    "left-to-right cardiac shunt",
-    "congenital cardiac shunt"
+    "cardiac shunt"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
     "cardiac",
-    "vascular",
+    "pediatric",
+    "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_160555",
+      "oifma_id": "OIFMA_GMTS_079960",
       "name": "presence",
       "description": "Presence or absence of left-to-right shunt in congenital heart disease",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_160555.0",
+          "value_code": "OIFMA_GMTS_079960.0",
           "name": "absent",
           "description": "Left-to-right shunt in congenital heart disease is absent",
           "index_codes": [
@@ -41,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_160555.1",
+          "value_code": "OIFMA_GMTS_079960.1",
           "name": "present",
           "description": "Left-to-right shunt in congenital heart disease is present",
           "index_codes": [
@@ -58,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_160555.2",
+          "value_code": "OIFMA_GMTS_079960.2",
           "name": "indeterminate",
           "description": "Presence of left-to-right shunt in congenital heart disease cannot be determined",
           "index_codes": [
@@ -75,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_160555.3",
+          "value_code": "OIFMA_GMTS_079960.3",
           "name": "unknown",
           "description": "Presence of left-to-right shunt in congenital heart disease is unknown",
           "index_codes": [
@@ -103,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_618319",
+      "oifma_id": "OIFMA_GMTS_229288",
       "name": "change from prior",
       "description": "Whether and how a left-to-right shunt in congenital heart disease has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_618319.0",
+          "value_code": "OIFMA_GMTS_229288.0",
           "name": "unchanged",
           "description": "Left-to-right shunt in congenital heart disease is unchanged",
           "index_codes": [
@@ -126,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.1",
+          "value_code": "OIFMA_GMTS_229288.1",
           "name": "stable",
           "description": "Left-to-right shunt in congenital heart disease is stable",
           "index_codes": [
@@ -143,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.2",
+          "value_code": "OIFMA_GMTS_229288.2",
           "name": "new",
           "description": "Left-to-right shunt in congenital heart disease is new",
           "index_codes": [
@@ -160,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.3",
+          "value_code": "OIFMA_GMTS_229288.3",
           "name": "resolved",
           "description": "Left-to-right shunt in congenital heart disease seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_618319.4",
+          "value_code": "OIFMA_GMTS_229288.4",
           "name": "increased",
           "description": "Left-to-right shunt in congenital heart disease has increased",
           "index_codes": [
@@ -182,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.5",
+          "value_code": "OIFMA_GMTS_229288.5",
           "name": "decreased",
           "description": "Left-to-right shunt in congenital heart disease has decreased",
           "index_codes": [
@@ -199,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.6",
+          "value_code": "OIFMA_GMTS_229288.6",
           "name": "larger",
           "description": "Left-to-right shunt in congenital heart disease is larger",
           "index_codes": [
@@ -216,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_618319.7",
+          "value_code": "OIFMA_GMTS_229288.7",
           "name": "smaller",
           "description": "Left-to-right shunt in congenital heart disease is smaller",
           "index_codes": [

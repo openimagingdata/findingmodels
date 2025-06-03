@@ -1,0 +1,256 @@
+{
+  "oifm_id": "OIFM_GMTS_022575",
+  "name": "ambiguous genitalia",
+  "description": "External genitalia that does not have typical male or female characteristics, often due to development disorders.",
+  "synonyms": [
+    "Intersex",
+    "Disorder of sexual development (DSD)"
+  ],
+  "tags": [
+    "abdomen",
+    "US",
+    "MR",
+    "genital",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_128936",
+      "name": "presence",
+      "description": "Presence or absence of ambiguous genitalia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_128936.0",
+          "name": "absent",
+          "description": "Ambiguous genitalia is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_128936.1",
+          "name": "present",
+          "description": "Ambiguous genitalia is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_128936.2",
+          "name": "indeterminate",
+          "description": "Presence of ambiguous genitalia cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_128936.3",
+          "name": "unknown",
+          "description": "Presence of ambiguous genitalia is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_698949",
+      "name": "change from prior",
+      "description": "Whether and how a ambiguous genitalia has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_698949.0",
+          "name": "unchanged",
+          "description": "Ambiguous genitalia is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.1",
+          "name": "stable",
+          "description": "Ambiguous genitalia is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.2",
+          "name": "new",
+          "description": "Ambiguous genitalia is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.3",
+          "name": "resolved",
+          "description": "Ambiguous genitalia seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.4",
+          "name": "increased",
+          "description": "Ambiguous genitalia has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.5",
+          "name": "decreased",
+          "description": "Ambiguous genitalia has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.6",
+          "name": "larger",
+          "description": "Ambiguous genitalia is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_698949.7",
+          "name": "smaller",
+          "description": "Ambiguous genitalia is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "22575",
+      "display": "ambiguous genitalia"
+    }
+  ]
+}

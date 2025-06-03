@@ -1,31 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_015945",
   "name": "exudative pleural effusion",
-  "description": "Pleural fluid collection with high protein content, often due to infection or malignancy.",
+  "description": "Fluid accumulation in the pleural space of an inflammatory or infectious nature",
   "synonyms": [
-    "exudate",
-    "infectious pleural effusion",
-    "malignant pleural effusion"
+    "pleuritis"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "US",
     "pleura",
-    "inflammatory process",
-    "neoplastic process",
-    "finding"
+    "inflammatory",
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_776843",
+      "oifma_id": "OIFMA_GMTS_229470",
       "name": "presence",
       "description": "Presence or absence of exudative pleural effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_776843.0",
+          "value_code": "OIFMA_GMTS_229470.0",
           "name": "absent",
           "description": "Exudative pleural effusion is absent",
           "index_codes": [
@@ -42,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776843.1",
+          "value_code": "OIFMA_GMTS_229470.1",
           "name": "present",
           "description": "Exudative pleural effusion is present",
           "index_codes": [
@@ -59,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776843.2",
+          "value_code": "OIFMA_GMTS_229470.2",
           "name": "indeterminate",
           "description": "Presence of exudative pleural effusion cannot be determined",
           "index_codes": [
@@ -76,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776843.3",
+          "value_code": "OIFMA_GMTS_229470.3",
           "name": "unknown",
           "description": "Presence of exudative pleural effusion is unknown",
           "index_codes": [
@@ -104,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_673019",
+      "oifma_id": "OIFMA_GMTS_147218",
       "name": "change from prior",
       "description": "Whether and how a exudative pleural effusion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_673019.0",
+          "value_code": "OIFMA_GMTS_147218.0",
           "name": "unchanged",
           "description": "Exudative pleural effusion is unchanged",
           "index_codes": [
@@ -127,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.1",
+          "value_code": "OIFMA_GMTS_147218.1",
           "name": "stable",
           "description": "Exudative pleural effusion is stable",
           "index_codes": [
@@ -144,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.2",
+          "value_code": "OIFMA_GMTS_147218.2",
           "name": "new",
           "description": "Exudative pleural effusion is new",
           "index_codes": [
@@ -161,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.3",
+          "value_code": "OIFMA_GMTS_147218.3",
           "name": "resolved",
           "description": "Exudative pleural effusion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_673019.4",
+          "value_code": "OIFMA_GMTS_147218.4",
           "name": "increased",
           "description": "Exudative pleural effusion has increased",
           "index_codes": [
@@ -183,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.5",
+          "value_code": "OIFMA_GMTS_147218.5",
           "name": "decreased",
           "description": "Exudative pleural effusion has decreased",
           "index_codes": [
@@ -200,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.6",
+          "value_code": "OIFMA_GMTS_147218.6",
           "name": "larger",
           "description": "Exudative pleural effusion is larger",
           "index_codes": [
@@ -217,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_673019.7",
+          "value_code": "OIFMA_GMTS_147218.7",
           "name": "smaller",
           "description": "Exudative pleural effusion is smaller",
           "index_codes": [

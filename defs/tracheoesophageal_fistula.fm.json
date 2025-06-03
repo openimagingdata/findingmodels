@@ -1,29 +1,25 @@
 {
   "oifm_id": "OIFM_GMTS_027873",
   "name": "tracheoesophageal fistula",
-  "description": "An abnormal connection between the trachea and esophagus.",
-  "synonyms": [
-    "TEF"
-  ],
+  "description": "An abnormal connection between the trachea and the esophagus.",
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
     "CT",
-    "contrast esophagram",
+    "XR",
+    "MR",
     "congenital anomaly",
-    "airway",
-    "esophagus",
+    "mediastinum",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_109233",
+      "oifma_id": "OIFMA_GMTS_239086",
       "name": "presence",
       "description": "Presence or absence of tracheoesophageal fistula",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_109233.0",
+          "value_code": "OIFMA_GMTS_239086.0",
           "name": "absent",
           "description": "Tracheoesophageal fistula is absent",
           "index_codes": [
@@ -40,7 +36,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_109233.1",
+          "value_code": "OIFMA_GMTS_239086.1",
           "name": "present",
           "description": "Tracheoesophageal fistula is present",
           "index_codes": [
@@ -57,7 +53,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_109233.2",
+          "value_code": "OIFMA_GMTS_239086.2",
           "name": "indeterminate",
           "description": "Presence of tracheoesophageal fistula cannot be determined",
           "index_codes": [
@@ -74,7 +70,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_109233.3",
+          "value_code": "OIFMA_GMTS_239086.3",
           "name": "unknown",
           "description": "Presence of tracheoesophageal fistula is unknown",
           "index_codes": [
@@ -102,13 +98,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_823012",
+      "oifma_id": "OIFMA_GMTS_523691",
       "name": "change from prior",
       "description": "Whether and how a tracheoesophageal fistula has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_823012.0",
+          "value_code": "OIFMA_GMTS_523691.0",
           "name": "unchanged",
           "description": "Tracheoesophageal fistula is unchanged",
           "index_codes": [
@@ -125,7 +121,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.1",
+          "value_code": "OIFMA_GMTS_523691.1",
           "name": "stable",
           "description": "Tracheoesophageal fistula is stable",
           "index_codes": [
@@ -142,7 +138,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.2",
+          "value_code": "OIFMA_GMTS_523691.2",
           "name": "new",
           "description": "Tracheoesophageal fistula is new",
           "index_codes": [
@@ -159,12 +155,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.3",
+          "value_code": "OIFMA_GMTS_523691.3",
           "name": "resolved",
           "description": "Tracheoesophageal fistula seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_823012.4",
+          "value_code": "OIFMA_GMTS_523691.4",
           "name": "increased",
           "description": "Tracheoesophageal fistula has increased",
           "index_codes": [
@@ -181,7 +177,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.5",
+          "value_code": "OIFMA_GMTS_523691.5",
           "name": "decreased",
           "description": "Tracheoesophageal fistula has decreased",
           "index_codes": [
@@ -198,7 +194,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.6",
+          "value_code": "OIFMA_GMTS_523691.6",
           "name": "larger",
           "description": "Tracheoesophageal fistula is larger",
           "index_codes": [
@@ -215,7 +211,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_823012.7",
+          "value_code": "OIFMA_GMTS_523691.7",
           "name": "smaller",
           "description": "Tracheoesophageal fistula is smaller",
           "index_codes": [

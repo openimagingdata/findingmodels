@@ -1,27 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_014908",
   "name": "bilateral pulmonary underaeration",
-  "description": "Both lungs show decreased aeration, often appearing denser on imaging.",
+  "description": "Reduced air volume in both lungs.",
   "synonyms": [
-    "underaerated lungs",
-    "poorly aerated lungs"
+    "bilateral lung hypoaeration"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
     "CT",
+    "XR",
     "lung",
+    "respiratory",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_463078",
+      "oifma_id": "OIFMA_GMTS_493433",
       "name": "presence",
       "description": "Presence or absence of bilateral pulmonary underaeration",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_463078.0",
+          "value_code": "OIFMA_GMTS_493433.0",
           "name": "absent",
           "description": "Bilateral pulmonary underaeration is absent",
           "index_codes": [
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_463078.1",
+          "value_code": "OIFMA_GMTS_493433.1",
           "name": "present",
           "description": "Bilateral pulmonary underaeration is present",
           "index_codes": [
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_463078.2",
+          "value_code": "OIFMA_GMTS_493433.2",
           "name": "indeterminate",
           "description": "Presence of bilateral pulmonary underaeration cannot be determined",
           "index_codes": [
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_463078.3",
+          "value_code": "OIFMA_GMTS_493433.3",
           "name": "unknown",
           "description": "Presence of bilateral pulmonary underaeration is unknown",
           "index_codes": [
@@ -100,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_567646",
+      "oifma_id": "OIFMA_GMTS_870226",
       "name": "change from prior",
       "description": "Whether and how a bilateral pulmonary underaeration has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_567646.0",
+          "value_code": "OIFMA_GMTS_870226.0",
           "name": "unchanged",
           "description": "Bilateral pulmonary underaeration is unchanged",
           "index_codes": [
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.1",
+          "value_code": "OIFMA_GMTS_870226.1",
           "name": "stable",
           "description": "Bilateral pulmonary underaeration is stable",
           "index_codes": [
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.2",
+          "value_code": "OIFMA_GMTS_870226.2",
           "name": "new",
           "description": "Bilateral pulmonary underaeration is new",
           "index_codes": [
@@ -157,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.3",
+          "value_code": "OIFMA_GMTS_870226.3",
           "name": "resolved",
           "description": "Bilateral pulmonary underaeration seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_567646.4",
+          "value_code": "OIFMA_GMTS_870226.4",
           "name": "increased",
           "description": "Bilateral pulmonary underaeration has increased",
           "index_codes": [
@@ -179,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.5",
+          "value_code": "OIFMA_GMTS_870226.5",
           "name": "decreased",
           "description": "Bilateral pulmonary underaeration has decreased",
           "index_codes": [
@@ -196,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.6",
+          "value_code": "OIFMA_GMTS_870226.6",
           "name": "larger",
           "description": "Bilateral pulmonary underaeration is larger",
           "index_codes": [
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_567646.7",
+          "value_code": "OIFMA_GMTS_870226.7",
           "name": "smaller",
           "description": "Bilateral pulmonary underaeration is smaller",
           "index_codes": [

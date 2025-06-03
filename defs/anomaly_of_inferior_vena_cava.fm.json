@@ -1,29 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_014153",
   "name": "anomaly of inferior vena cava",
-  "description": "Congenital or acquired abnormality involving the inferior vena cava.",
+  "description": "An unusual developmental formation or structural variant of the inferior vena cava.",
   "synonyms": [
-    "IVC anomaly",
-    "inferior vena cava variant"
+    "IVC anomaly"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "vascular",
+    "US",
     "congenital anomaly",
     "mediastinum",
-    "finding"
+    "vascular",
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_188042",
+      "oifma_id": "OIFMA_GMTS_205599",
       "name": "presence",
       "description": "Presence or absence of anomaly of inferior vena cava",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_188042.0",
+          "value_code": "OIFMA_GMTS_205599.0",
           "name": "absent",
           "description": "Anomaly of inferior vena cava is absent",
           "index_codes": [
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188042.1",
+          "value_code": "OIFMA_GMTS_205599.1",
           "name": "present",
           "description": "Anomaly of inferior vena cava is present",
           "index_codes": [
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188042.2",
+          "value_code": "OIFMA_GMTS_205599.2",
           "name": "indeterminate",
           "description": "Presence of anomaly of inferior vena cava cannot be determined",
           "index_codes": [
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188042.3",
+          "value_code": "OIFMA_GMTS_205599.3",
           "name": "unknown",
           "description": "Presence of anomaly of inferior vena cava is unknown",
           "index_codes": [
@@ -102,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_368846",
+      "oifma_id": "OIFMA_GMTS_165546",
       "name": "change from prior",
       "description": "Whether and how a anomaly of inferior vena cava has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_368846.0",
+          "value_code": "OIFMA_GMTS_165546.0",
           "name": "unchanged",
           "description": "Anomaly of inferior vena cava is unchanged",
           "index_codes": [
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.1",
+          "value_code": "OIFMA_GMTS_165546.1",
           "name": "stable",
           "description": "Anomaly of inferior vena cava is stable",
           "index_codes": [
@@ -142,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.2",
+          "value_code": "OIFMA_GMTS_165546.2",
           "name": "new",
           "description": "Anomaly of inferior vena cava is new",
           "index_codes": [
@@ -159,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.3",
+          "value_code": "OIFMA_GMTS_165546.3",
           "name": "resolved",
           "description": "Anomaly of inferior vena cava seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_368846.4",
+          "value_code": "OIFMA_GMTS_165546.4",
           "name": "increased",
           "description": "Anomaly of inferior vena cava has increased",
           "index_codes": [
@@ -181,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.5",
+          "value_code": "OIFMA_GMTS_165546.5",
           "name": "decreased",
           "description": "Anomaly of inferior vena cava has decreased",
           "index_codes": [
@@ -198,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.6",
+          "value_code": "OIFMA_GMTS_165546.6",
           "name": "larger",
           "description": "Anomaly of inferior vena cava is larger",
           "index_codes": [
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368846.7",
+          "value_code": "OIFMA_GMTS_165546.7",
           "name": "smaller",
           "description": "Anomaly of inferior vena cava is smaller",
           "index_codes": [

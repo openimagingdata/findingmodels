@@ -1,28 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_013892",
   "name": "generalized pulmonary arterial hypervascularity",
-  "description": "Increased prominence and number of pulmonary arteries throughout the lungs.",
-  "synonyms": [
-    "pulmonary vascular engorgement",
-    "pulmonary arterial engorgement"
-  ],
+  "description": "Increased visibility of pulmonary arteries; may suggest hypertension.",
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
-    "XR",
-    "vascular",
+    "MR",
     "lung",
+    "vascular",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_350756",
+      "oifma_id": "OIFMA_GMTS_970975",
       "name": "presence",
       "description": "Presence or absence of generalized pulmonary arterial hypervascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_350756.0",
+          "value_code": "OIFMA_GMTS_970975.0",
           "name": "absent",
           "description": "Generalized pulmonary arterial hypervascularity is absent",
           "index_codes": [
@@ -39,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_350756.1",
+          "value_code": "OIFMA_GMTS_970975.1",
           "name": "present",
           "description": "Generalized pulmonary arterial hypervascularity is present",
           "index_codes": [
@@ -56,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_350756.2",
+          "value_code": "OIFMA_GMTS_970975.2",
           "name": "indeterminate",
           "description": "Presence of generalized pulmonary arterial hypervascularity cannot be determined",
           "index_codes": [
@@ -73,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_350756.3",
+          "value_code": "OIFMA_GMTS_970975.3",
           "name": "unknown",
           "description": "Presence of generalized pulmonary arterial hypervascularity is unknown",
           "index_codes": [
@@ -101,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_950028",
+      "oifma_id": "OIFMA_GMTS_936876",
       "name": "change from prior",
       "description": "Whether and how a generalized pulmonary arterial hypervascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_950028.0",
+          "value_code": "OIFMA_GMTS_936876.0",
           "name": "unchanged",
           "description": "Generalized pulmonary arterial hypervascularity is unchanged",
           "index_codes": [
@@ -124,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.1",
+          "value_code": "OIFMA_GMTS_936876.1",
           "name": "stable",
           "description": "Generalized pulmonary arterial hypervascularity is stable",
           "index_codes": [
@@ -141,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.2",
+          "value_code": "OIFMA_GMTS_936876.2",
           "name": "new",
           "description": "Generalized pulmonary arterial hypervascularity is new",
           "index_codes": [
@@ -158,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.3",
+          "value_code": "OIFMA_GMTS_936876.3",
           "name": "resolved",
           "description": "Generalized pulmonary arterial hypervascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_950028.4",
+          "value_code": "OIFMA_GMTS_936876.4",
           "name": "increased",
           "description": "Generalized pulmonary arterial hypervascularity has increased",
           "index_codes": [
@@ -180,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.5",
+          "value_code": "OIFMA_GMTS_936876.5",
           "name": "decreased",
           "description": "Generalized pulmonary arterial hypervascularity has decreased",
           "index_codes": [
@@ -197,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.6",
+          "value_code": "OIFMA_GMTS_936876.6",
           "name": "larger",
           "description": "Generalized pulmonary arterial hypervascularity is larger",
           "index_codes": [
@@ -214,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_950028.7",
+          "value_code": "OIFMA_GMTS_936876.7",
           "name": "smaller",
           "description": "Generalized pulmonary arterial hypervascularity is smaller",
           "index_codes": [

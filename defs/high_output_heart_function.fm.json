@@ -1,29 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_013743",
   "name": "high-output heart function",
-  "description": "State of increased cardiac output secondary to a variety of causes.",
-  "synonyms": [
-    "high-output cardiac failure",
-    "high-output state"
-  ],
+  "description": "Cardiac function characterized by increased blood pump volume.",
   "tags": [
-    "chest",
-    "MR",
+    "ultrasound",
     "US",
-    "CT",
-    "heart",
-    "vascular",
+    "MR",
+    "cardiac",
+    "physiological",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_417332",
+      "oifma_id": "OIFMA_GMTS_664670",
       "name": "presence",
       "description": "Presence or absence of high-output heart function",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_417332.0",
+          "value_code": "OIFMA_GMTS_664670.0",
           "name": "absent",
           "description": "High-output heart function is absent",
           "index_codes": [
@@ -40,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_417332.1",
+          "value_code": "OIFMA_GMTS_664670.1",
           "name": "present",
           "description": "High-output heart function is present",
           "index_codes": [
@@ -57,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_417332.2",
+          "value_code": "OIFMA_GMTS_664670.2",
           "name": "indeterminate",
           "description": "Presence of high-output heart function cannot be determined",
           "index_codes": [
@@ -74,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_417332.3",
+          "value_code": "OIFMA_GMTS_664670.3",
           "name": "unknown",
           "description": "Presence of high-output heart function is unknown",
           "index_codes": [
@@ -102,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_910270",
+      "oifma_id": "OIFMA_GMTS_172666",
       "name": "change from prior",
       "description": "Whether and how a high-output heart function has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_910270.0",
+          "value_code": "OIFMA_GMTS_172666.0",
           "name": "unchanged",
           "description": "High-output heart function is unchanged",
           "index_codes": [
@@ -125,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.1",
+          "value_code": "OIFMA_GMTS_172666.1",
           "name": "stable",
           "description": "High-output heart function is stable",
           "index_codes": [
@@ -142,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.2",
+          "value_code": "OIFMA_GMTS_172666.2",
           "name": "new",
           "description": "High-output heart function is new",
           "index_codes": [
@@ -159,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.3",
+          "value_code": "OIFMA_GMTS_172666.3",
           "name": "resolved",
           "description": "High-output heart function seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_910270.4",
+          "value_code": "OIFMA_GMTS_172666.4",
           "name": "increased",
           "description": "High-output heart function has increased",
           "index_codes": [
@@ -181,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.5",
+          "value_code": "OIFMA_GMTS_172666.5",
           "name": "decreased",
           "description": "High-output heart function has decreased",
           "index_codes": [
@@ -198,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.6",
+          "value_code": "OIFMA_GMTS_172666.6",
           "name": "larger",
           "description": "High-output heart function is larger",
           "index_codes": [
@@ -215,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_910270.7",
+          "value_code": "OIFMA_GMTS_172666.7",
           "name": "smaller",
           "description": "High-output heart function is smaller",
           "index_codes": [

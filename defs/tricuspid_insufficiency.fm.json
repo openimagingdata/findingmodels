@@ -1,28 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_013527",
   "name": "tricuspid insufficiency",
-  "description": "Incompetent tricuspid valve causing regurgitation of blood from right ventricle to right atrium.",
+  "description": "A condition where the tricuspid valve does not close properly causing backflow of blood into the right atrium.",
   "synonyms": [
     "tricuspid regurgitation"
   ],
   "tags": [
-    "chest",
-    "CT",
-    "MR",
+    "ultrasound",
     "US",
-    "heart",
-    "valvular",
+    "MR",
+    "cardiac",
+    "valvular heart disease",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_596266",
+      "oifma_id": "OIFMA_GMTS_794997",
       "name": "presence",
       "description": "Presence or absence of tricuspid insufficiency",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_596266.0",
+          "value_code": "OIFMA_GMTS_794997.0",
           "name": "absent",
           "description": "Tricuspid insufficiency is absent",
           "index_codes": [
@@ -39,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_596266.1",
+          "value_code": "OIFMA_GMTS_794997.1",
           "name": "present",
           "description": "Tricuspid insufficiency is present",
           "index_codes": [
@@ -56,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_596266.2",
+          "value_code": "OIFMA_GMTS_794997.2",
           "name": "indeterminate",
           "description": "Presence of tricuspid insufficiency cannot be determined",
           "index_codes": [
@@ -73,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_596266.3",
+          "value_code": "OIFMA_GMTS_794997.3",
           "name": "unknown",
           "description": "Presence of tricuspid insufficiency is unknown",
           "index_codes": [
@@ -101,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_129549",
+      "oifma_id": "OIFMA_GMTS_917620",
       "name": "change from prior",
       "description": "Whether and how a tricuspid insufficiency has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_129549.0",
+          "value_code": "OIFMA_GMTS_917620.0",
           "name": "unchanged",
           "description": "Tricuspid insufficiency is unchanged",
           "index_codes": [
@@ -124,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.1",
+          "value_code": "OIFMA_GMTS_917620.1",
           "name": "stable",
           "description": "Tricuspid insufficiency is stable",
           "index_codes": [
@@ -141,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.2",
+          "value_code": "OIFMA_GMTS_917620.2",
           "name": "new",
           "description": "Tricuspid insufficiency is new",
           "index_codes": [
@@ -158,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.3",
+          "value_code": "OIFMA_GMTS_917620.3",
           "name": "resolved",
           "description": "Tricuspid insufficiency seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_129549.4",
+          "value_code": "OIFMA_GMTS_917620.4",
           "name": "increased",
           "description": "Tricuspid insufficiency has increased",
           "index_codes": [
@@ -180,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.5",
+          "value_code": "OIFMA_GMTS_917620.5",
           "name": "decreased",
           "description": "Tricuspid insufficiency has decreased",
           "index_codes": [
@@ -197,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.6",
+          "value_code": "OIFMA_GMTS_917620.6",
           "name": "larger",
           "description": "Tricuspid insufficiency is larger",
           "index_codes": [
@@ -214,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_129549.7",
+          "value_code": "OIFMA_GMTS_917620.7",
           "name": "smaller",
           "description": "Tricuspid insufficiency is smaller",
           "index_codes": [

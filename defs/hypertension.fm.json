@@ -1,23 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013723",
   "name": "hypertension",
-  "description": "Elevated systemic arterial blood pressure; not directly diagnosable by chest imaging.",
+  "description": "Elevated blood pressure condition, often related findings on imaging",
   "synonyms": [
-    "high blood pressure"
+    "HTN"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
+    "US",
+    "MR",
+    "CT",
+    "cardiology",
+    "vascular",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_429898",
+      "oifma_id": "OIFMA_GMTS_997381",
       "name": "presence",
       "description": "Presence or absence of hypertension",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_429898.0",
+          "value_code": "OIFMA_GMTS_997381.0",
           "name": "absent",
           "description": "Hypertension is absent",
           "index_codes": [
@@ -34,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_429898.1",
+          "value_code": "OIFMA_GMTS_997381.1",
           "name": "present",
           "description": "Hypertension is present",
           "index_codes": [
@@ -51,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_429898.2",
+          "value_code": "OIFMA_GMTS_997381.2",
           "name": "indeterminate",
           "description": "Presence of hypertension cannot be determined",
           "index_codes": [
@@ -68,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_429898.3",
+          "value_code": "OIFMA_GMTS_997381.3",
           "name": "unknown",
           "description": "Presence of hypertension is unknown",
           "index_codes": [
@@ -96,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_627989",
+      "oifma_id": "OIFMA_GMTS_146855",
       "name": "change from prior",
       "description": "Whether and how a hypertension has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_627989.0",
+          "value_code": "OIFMA_GMTS_146855.0",
           "name": "unchanged",
           "description": "Hypertension is unchanged",
           "index_codes": [
@@ -119,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.1",
+          "value_code": "OIFMA_GMTS_146855.1",
           "name": "stable",
           "description": "Hypertension is stable",
           "index_codes": [
@@ -136,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.2",
+          "value_code": "OIFMA_GMTS_146855.2",
           "name": "new",
           "description": "Hypertension is new",
           "index_codes": [
@@ -153,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.3",
+          "value_code": "OIFMA_GMTS_146855.3",
           "name": "resolved",
           "description": "Hypertension seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_627989.4",
+          "value_code": "OIFMA_GMTS_146855.4",
           "name": "increased",
           "description": "Hypertension has increased",
           "index_codes": [
@@ -175,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.5",
+          "value_code": "OIFMA_GMTS_146855.5",
           "name": "decreased",
           "description": "Hypertension has decreased",
           "index_codes": [
@@ -192,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.6",
+          "value_code": "OIFMA_GMTS_146855.6",
           "name": "larger",
           "description": "Hypertension is larger",
           "index_codes": [
@@ -209,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627989.7",
+          "value_code": "OIFMA_GMTS_146855.7",
           "name": "smaller",
           "description": "Hypertension is smaller",
           "index_codes": [

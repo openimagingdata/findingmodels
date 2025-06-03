@@ -1,0 +1,254 @@
+{
+  "oifm_id": "OIFM_GMTS_009159",
+  "name": "bilaterally enlarged and heterogeneous parotids",
+  "description": "Both parotid glands are enlarged and have inconsistent texture.",
+  "tags": [
+    "head_neck",
+    "CT",
+    "MR",
+    "US",
+    "salivary gland",
+    "inflammatory",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_497163",
+      "name": "presence",
+      "description": "Presence or absence of bilaterally enlarged and heterogeneous parotids",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_497163.0",
+          "name": "absent",
+          "description": "Bilaterally enlarged and heterogeneous parotids is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_497163.1",
+          "name": "present",
+          "description": "Bilaterally enlarged and heterogeneous parotids is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_497163.2",
+          "name": "indeterminate",
+          "description": "Presence of bilaterally enlarged and heterogeneous parotids cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_497163.3",
+          "name": "unknown",
+          "description": "Presence of bilaterally enlarged and heterogeneous parotids is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_569573",
+      "name": "change from prior",
+      "description": "Whether and how a bilaterally enlarged and heterogeneous parotids has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_569573.0",
+          "name": "unchanged",
+          "description": "Bilaterally enlarged and heterogeneous parotids is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.1",
+          "name": "stable",
+          "description": "Bilaterally enlarged and heterogeneous parotids is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.2",
+          "name": "new",
+          "description": "Bilaterally enlarged and heterogeneous parotids is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.3",
+          "name": "resolved",
+          "description": "Bilaterally enlarged and heterogeneous parotids seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.4",
+          "name": "increased",
+          "description": "Bilaterally enlarged and heterogeneous parotids has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.5",
+          "name": "decreased",
+          "description": "Bilaterally enlarged and heterogeneous parotids has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.6",
+          "name": "larger",
+          "description": "Bilaterally enlarged and heterogeneous parotids is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_569573.7",
+          "name": "smaller",
+          "description": "Bilaterally enlarged and heterogeneous parotids is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "9159",
+      "display": "bilaterally enlarged and heterogeneous parotids"
+    }
+  ]
+}

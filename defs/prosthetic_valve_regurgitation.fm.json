@@ -1,31 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_013717",
   "name": "prosthetic valve regurgitation",
-  "description": "Leakage of blood backward through a prosthetic heart valve.",
-  "synonyms": [
-    "prosthetic valve insufficiency",
-    "valve regurgitation"
-  ],
+  "description": "Backward flow of blood due to improper closure of a prosthetic heart valve.",
   "tags": [
-    "chest",
-    "CT",
+    "ultrasound",
+    "US",
     "MR",
-    "XR (indirectly)",
-    "echocardiography",
-    "postop finding",
-    "implant",
+    "CT",
     "cardiac",
+    "valvular",
+    "device",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_391061",
+      "oifma_id": "OIFMA_GMTS_200341",
       "name": "presence",
       "description": "Presence or absence of prosthetic valve regurgitation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_391061.0",
+          "value_code": "OIFMA_GMTS_200341.0",
           "name": "absent",
           "description": "Prosthetic valve regurgitation is absent",
           "index_codes": [
@@ -42,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_391061.1",
+          "value_code": "OIFMA_GMTS_200341.1",
           "name": "present",
           "description": "Prosthetic valve regurgitation is present",
           "index_codes": [
@@ -59,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_391061.2",
+          "value_code": "OIFMA_GMTS_200341.2",
           "name": "indeterminate",
           "description": "Presence of prosthetic valve regurgitation cannot be determined",
           "index_codes": [
@@ -76,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_391061.3",
+          "value_code": "OIFMA_GMTS_200341.3",
           "name": "unknown",
           "description": "Presence of prosthetic valve regurgitation is unknown",
           "index_codes": [
@@ -104,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_954051",
+      "oifma_id": "OIFMA_GMTS_930988",
       "name": "change from prior",
       "description": "Whether and how a prosthetic valve regurgitation has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_954051.0",
+          "value_code": "OIFMA_GMTS_930988.0",
           "name": "unchanged",
           "description": "Prosthetic valve regurgitation is unchanged",
           "index_codes": [
@@ -127,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.1",
+          "value_code": "OIFMA_GMTS_930988.1",
           "name": "stable",
           "description": "Prosthetic valve regurgitation is stable",
           "index_codes": [
@@ -144,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.2",
+          "value_code": "OIFMA_GMTS_930988.2",
           "name": "new",
           "description": "Prosthetic valve regurgitation is new",
           "index_codes": [
@@ -161,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.3",
+          "value_code": "OIFMA_GMTS_930988.3",
           "name": "resolved",
           "description": "Prosthetic valve regurgitation seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_954051.4",
+          "value_code": "OIFMA_GMTS_930988.4",
           "name": "increased",
           "description": "Prosthetic valve regurgitation has increased",
           "index_codes": [
@@ -183,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.5",
+          "value_code": "OIFMA_GMTS_930988.5",
           "name": "decreased",
           "description": "Prosthetic valve regurgitation has decreased",
           "index_codes": [
@@ -200,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.6",
+          "value_code": "OIFMA_GMTS_930988.6",
           "name": "larger",
           "description": "Prosthetic valve regurgitation is larger",
           "index_codes": [
@@ -217,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_954051.7",
+          "value_code": "OIFMA_GMTS_930988.7",
           "name": "smaller",
           "description": "Prosthetic valve regurgitation is smaller",
           "index_codes": [

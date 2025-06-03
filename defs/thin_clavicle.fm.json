@@ -1,27 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_031728",
   "name": "thin clavicle",
-  "description": "Clavicle appears abnormally thin, possibly due to dysplasia or chronic disease.",
-  "synonyms": [
-    "thinned clavicle",
-    "atrophic clavicle"
-  ],
+  "description": "Clavicle that appears decreased in width or density.",
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
-    "chest wall",
-    "congenital anomaly",
+    "CT",
+    "clavicle",
+    "skeletal abnormality",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_246468",
+      "oifma_id": "OIFMA_GMTS_432951",
       "name": "presence",
       "description": "Presence or absence of thin clavicle",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_246468.0",
+          "value_code": "OIFMA_GMTS_432951.0",
           "name": "absent",
           "description": "Thin clavicle is absent",
           "index_codes": [
@@ -38,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_246468.1",
+          "value_code": "OIFMA_GMTS_432951.1",
           "name": "present",
           "description": "Thin clavicle is present",
           "index_codes": [
@@ -55,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_246468.2",
+          "value_code": "OIFMA_GMTS_432951.2",
           "name": "indeterminate",
           "description": "Presence of thin clavicle cannot be determined",
           "index_codes": [
@@ -72,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_246468.3",
+          "value_code": "OIFMA_GMTS_432951.3",
           "name": "unknown",
           "description": "Presence of thin clavicle is unknown",
           "index_codes": [
@@ -100,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_771743",
+      "oifma_id": "OIFMA_GMTS_694516",
       "name": "change from prior",
       "description": "Whether and how a thin clavicle has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_771743.0",
+          "value_code": "OIFMA_GMTS_694516.0",
           "name": "unchanged",
           "description": "Thin clavicle is unchanged",
           "index_codes": [
@@ -123,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.1",
+          "value_code": "OIFMA_GMTS_694516.1",
           "name": "stable",
           "description": "Thin clavicle is stable",
           "index_codes": [
@@ -140,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.2",
+          "value_code": "OIFMA_GMTS_694516.2",
           "name": "new",
           "description": "Thin clavicle is new",
           "index_codes": [
@@ -157,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.3",
+          "value_code": "OIFMA_GMTS_694516.3",
           "name": "resolved",
           "description": "Thin clavicle seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_771743.4",
+          "value_code": "OIFMA_GMTS_694516.4",
           "name": "increased",
           "description": "Thin clavicle has increased",
           "index_codes": [
@@ -179,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.5",
+          "value_code": "OIFMA_GMTS_694516.5",
           "name": "decreased",
           "description": "Thin clavicle has decreased",
           "index_codes": [
@@ -196,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.6",
+          "value_code": "OIFMA_GMTS_694516.6",
           "name": "larger",
           "description": "Thin clavicle is larger",
           "index_codes": [
@@ -213,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771743.7",
+          "value_code": "OIFMA_GMTS_694516.7",
           "name": "smaller",
           "description": "Thin clavicle is smaller",
           "index_codes": [

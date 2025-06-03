@@ -1,26 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_013783",
   "name": "small heart",
-  "description": "A heart that appears reduced in size relative to the thoracic cavity.",
-  "synonyms": [
-    "small cardiac silhouette"
-  ],
+  "description": "A smaller than normal cardiac silhouette.",
+  "synonyms": [],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "cardiac",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_468043",
+      "oifma_id": "OIFMA_GMTS_410582",
       "name": "presence",
       "description": "Presence or absence of small heart",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_468043.0",
+          "value_code": "OIFMA_GMTS_410582.0",
           "name": "absent",
           "description": "Small heart is absent",
           "index_codes": [
@@ -37,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468043.1",
+          "value_code": "OIFMA_GMTS_410582.1",
           "name": "present",
           "description": "Small heart is present",
           "index_codes": [
@@ -54,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468043.2",
+          "value_code": "OIFMA_GMTS_410582.2",
           "name": "indeterminate",
           "description": "Presence of small heart cannot be determined",
           "index_codes": [
@@ -71,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468043.3",
+          "value_code": "OIFMA_GMTS_410582.3",
           "name": "unknown",
           "description": "Presence of small heart is unknown",
           "index_codes": [
@@ -99,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_394093",
+      "oifma_id": "OIFMA_GMTS_098205",
       "name": "change from prior",
       "description": "Whether and how a small heart has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_394093.0",
+          "value_code": "OIFMA_GMTS_098205.0",
           "name": "unchanged",
           "description": "Small heart is unchanged",
           "index_codes": [
@@ -122,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.1",
+          "value_code": "OIFMA_GMTS_098205.1",
           "name": "stable",
           "description": "Small heart is stable",
           "index_codes": [
@@ -139,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.2",
+          "value_code": "OIFMA_GMTS_098205.2",
           "name": "new",
           "description": "Small heart is new",
           "index_codes": [
@@ -156,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.3",
+          "value_code": "OIFMA_GMTS_098205.3",
           "name": "resolved",
           "description": "Small heart seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_394093.4",
+          "value_code": "OIFMA_GMTS_098205.4",
           "name": "increased",
           "description": "Small heart has increased",
           "index_codes": [
@@ -178,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.5",
+          "value_code": "OIFMA_GMTS_098205.5",
           "name": "decreased",
           "description": "Small heart has decreased",
           "index_codes": [
@@ -195,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.6",
+          "value_code": "OIFMA_GMTS_098205.6",
           "name": "larger",
           "description": "Small heart is larger",
           "index_codes": [
@@ -212,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_394093.7",
+          "value_code": "OIFMA_GMTS_098205.7",
           "name": "smaller",
           "description": "Small heart is smaller",
           "index_codes": [

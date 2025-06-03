@@ -1,30 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013496",
   "name": "aortic insufficiency",
-  "description": "A condition where the aortic valve fails to close completely, causing regurgitation of blood into the left ventricle.",
+  "description": "The aortic valve does not close tightly, allowing blood to flow back into the heart.",
   "synonyms": [
-    "aortic regurgitation",
-    "aortic valve incompetence"
+    "aortic regurgitation"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "US (echocardiography, primarily)",
-    "valvular",
-    "cardiac",
-    "mediastinum",
+    "US",
+    "vascular",
+    "valvular heart disease",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_166954",
+      "oifma_id": "OIFMA_GMTS_412323",
       "name": "presence",
       "description": "Presence or absence of aortic insufficiency",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_166954.0",
+          "value_code": "OIFMA_GMTS_412323.0",
           "name": "absent",
           "description": "Aortic insufficiency is absent",
           "index_codes": [
@@ -41,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_166954.1",
+          "value_code": "OIFMA_GMTS_412323.1",
           "name": "present",
           "description": "Aortic insufficiency is present",
           "index_codes": [
@@ -58,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_166954.2",
+          "value_code": "OIFMA_GMTS_412323.2",
           "name": "indeterminate",
           "description": "Presence of aortic insufficiency cannot be determined",
           "index_codes": [
@@ -75,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_166954.3",
+          "value_code": "OIFMA_GMTS_412323.3",
           "name": "unknown",
           "description": "Presence of aortic insufficiency is unknown",
           "index_codes": [
@@ -103,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_507681",
+      "oifma_id": "OIFMA_GMTS_855888",
       "name": "change from prior",
       "description": "Whether and how a aortic insufficiency has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_507681.0",
+          "value_code": "OIFMA_GMTS_855888.0",
           "name": "unchanged",
           "description": "Aortic insufficiency is unchanged",
           "index_codes": [
@@ -126,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.1",
+          "value_code": "OIFMA_GMTS_855888.1",
           "name": "stable",
           "description": "Aortic insufficiency is stable",
           "index_codes": [
@@ -143,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.2",
+          "value_code": "OIFMA_GMTS_855888.2",
           "name": "new",
           "description": "Aortic insufficiency is new",
           "index_codes": [
@@ -160,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.3",
+          "value_code": "OIFMA_GMTS_855888.3",
           "name": "resolved",
           "description": "Aortic insufficiency seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_507681.4",
+          "value_code": "OIFMA_GMTS_855888.4",
           "name": "increased",
           "description": "Aortic insufficiency has increased",
           "index_codes": [
@@ -182,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.5",
+          "value_code": "OIFMA_GMTS_855888.5",
           "name": "decreased",
           "description": "Aortic insufficiency has decreased",
           "index_codes": [
@@ -199,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.6",
+          "value_code": "OIFMA_GMTS_855888.6",
           "name": "larger",
           "description": "Aortic insufficiency is larger",
           "index_codes": [
@@ -216,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_507681.7",
+          "value_code": "OIFMA_GMTS_855888.7",
           "name": "smaller",
           "description": "Aortic insufficiency is smaller",
           "index_codes": [

@@ -1,30 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013478",
   "name": "right-to-left shunt at ductus level",
-  "description": "Abnormal passage of blood from the right to left through a persistent ductus arteriosus.",
+  "description": "A blood flow abnormality through the ductus arteriosus bypassing the pulmonary circulation.",
   "synonyms": [
-    "R-L ductal shunt",
-    "patent ductus arteriosus with right-to-left shunt"
+    "PDA shunt",
+    "ductus shunting"
   ],
   "tags": [
-    "chest",
-    "CT",
+    "ultrasound",
+    "US",
     "MR",
-    "echocardiography",
+    "CT",
     "cardiac",
-    "vascular",
     "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_667208",
+      "oifma_id": "OIFMA_GMTS_021116",
       "name": "presence",
       "description": "Presence or absence of right-to-left shunt at ductus level",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_667208.0",
+          "value_code": "OIFMA_GMTS_021116.0",
           "name": "absent",
           "description": "Right-to-left shunt at ductus level is absent",
           "index_codes": [
@@ -41,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_667208.1",
+          "value_code": "OIFMA_GMTS_021116.1",
           "name": "present",
           "description": "Right-to-left shunt at ductus level is present",
           "index_codes": [
@@ -58,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_667208.2",
+          "value_code": "OIFMA_GMTS_021116.2",
           "name": "indeterminate",
           "description": "Presence of right-to-left shunt at ductus level cannot be determined",
           "index_codes": [
@@ -75,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_667208.3",
+          "value_code": "OIFMA_GMTS_021116.3",
           "name": "unknown",
           "description": "Presence of right-to-left shunt at ductus level is unknown",
           "index_codes": [
@@ -103,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_154980",
+      "oifma_id": "OIFMA_GMTS_726208",
       "name": "change from prior",
       "description": "Whether and how a right-to-left shunt at ductus level has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_154980.0",
+          "value_code": "OIFMA_GMTS_726208.0",
           "name": "unchanged",
           "description": "Right-to-left shunt at ductus level is unchanged",
           "index_codes": [
@@ -126,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.1",
+          "value_code": "OIFMA_GMTS_726208.1",
           "name": "stable",
           "description": "Right-to-left shunt at ductus level is stable",
           "index_codes": [
@@ -143,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.2",
+          "value_code": "OIFMA_GMTS_726208.2",
           "name": "new",
           "description": "Right-to-left shunt at ductus level is new",
           "index_codes": [
@@ -160,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.3",
+          "value_code": "OIFMA_GMTS_726208.3",
           "name": "resolved",
           "description": "Right-to-left shunt at ductus level seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_154980.4",
+          "value_code": "OIFMA_GMTS_726208.4",
           "name": "increased",
           "description": "Right-to-left shunt at ductus level has increased",
           "index_codes": [
@@ -182,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.5",
+          "value_code": "OIFMA_GMTS_726208.5",
           "name": "decreased",
           "description": "Right-to-left shunt at ductus level has decreased",
           "index_codes": [
@@ -199,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.6",
+          "value_code": "OIFMA_GMTS_726208.6",
           "name": "larger",
           "description": "Right-to-left shunt at ductus level is larger",
           "index_codes": [
@@ -216,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_154980.7",
+          "value_code": "OIFMA_GMTS_726208.7",
           "name": "smaller",
           "description": "Right-to-left shunt at ductus level is smaller",
           "index_codes": [

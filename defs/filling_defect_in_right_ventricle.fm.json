@@ -1,29 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_013635",
   "name": "filling defect in right ventricle",
-  "description": "An abnormal area within the right ventricle where contrast does not fill, often due to thrombus or tumor.",
-  "synonyms": [
-    "right ventricular thrombus",
-    "RV mass"
-  ],
+  "description": "Area within the right ventricle that does not fill with contrast.",
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "US",
     "heart",
-    "vascular",
+    "cardiac chamber",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_961177",
+      "oifma_id": "OIFMA_GMTS_365536",
       "name": "presence",
       "description": "Presence or absence of filling defect in right ventricle",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_961177.0",
+          "value_code": "OIFMA_GMTS_365536.0",
           "name": "absent",
           "description": "Filling defect in right ventricle is absent",
           "index_codes": [
@@ -40,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_961177.1",
+          "value_code": "OIFMA_GMTS_365536.1",
           "name": "present",
           "description": "Filling defect in right ventricle is present",
           "index_codes": [
@@ -57,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_961177.2",
+          "value_code": "OIFMA_GMTS_365536.2",
           "name": "indeterminate",
           "description": "Presence of filling defect in right ventricle cannot be determined",
           "index_codes": [
@@ -74,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_961177.3",
+          "value_code": "OIFMA_GMTS_365536.3",
           "name": "unknown",
           "description": "Presence of filling defect in right ventricle is unknown",
           "index_codes": [
@@ -102,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_532233",
+      "oifma_id": "OIFMA_GMTS_914940",
       "name": "change from prior",
       "description": "Whether and how a filling defect in right ventricle has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_532233.0",
+          "value_code": "OIFMA_GMTS_914940.0",
           "name": "unchanged",
           "description": "Filling defect in right ventricle is unchanged",
           "index_codes": [
@@ -125,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.1",
+          "value_code": "OIFMA_GMTS_914940.1",
           "name": "stable",
           "description": "Filling defect in right ventricle is stable",
           "index_codes": [
@@ -142,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.2",
+          "value_code": "OIFMA_GMTS_914940.2",
           "name": "new",
           "description": "Filling defect in right ventricle is new",
           "index_codes": [
@@ -159,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.3",
+          "value_code": "OIFMA_GMTS_914940.3",
           "name": "resolved",
           "description": "Filling defect in right ventricle seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_532233.4",
+          "value_code": "OIFMA_GMTS_914940.4",
           "name": "increased",
           "description": "Filling defect in right ventricle has increased",
           "index_codes": [
@@ -181,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.5",
+          "value_code": "OIFMA_GMTS_914940.5",
           "name": "decreased",
           "description": "Filling defect in right ventricle has decreased",
           "index_codes": [
@@ -198,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.6",
+          "value_code": "OIFMA_GMTS_914940.6",
           "name": "larger",
           "description": "Filling defect in right ventricle is larger",
           "index_codes": [
@@ -215,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_532233.7",
+          "value_code": "OIFMA_GMTS_914940.7",
           "name": "smaller",
           "description": "Filling defect in right ventricle is smaller",
           "index_codes": [

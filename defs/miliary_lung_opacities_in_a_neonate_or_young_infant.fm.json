@@ -1,27 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_014460",
   "name": "miliary lung opacities in a neonate or young infant",
-  "description": "Diffuse, tiny pulmonary opacities in a young infant or neonate.",
+  "description": "Diffuse small nodular opacities throughout the lungs, seen in infants.",
   "synonyms": [
-    "miliary pattern in neonate"
+    "miliary opacities",
+    "disseminated lung opacities"
   ],
   "tags": [
-    "chest",
+    "pediatric",
     "XR",
     "CT",
-    "lung",
+    "pulmonary",
+    "infectious",
     "neonatal",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_856878",
+      "oifma_id": "OIFMA_GMTS_479922",
       "name": "presence",
       "description": "Presence or absence of miliary lung opacities in a neonate or young infant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_856878.0",
+          "value_code": "OIFMA_GMTS_479922.0",
           "name": "absent",
           "description": "Miliary lung opacities in a neonate or young infant is absent",
           "index_codes": [
@@ -38,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_856878.1",
+          "value_code": "OIFMA_GMTS_479922.1",
           "name": "present",
           "description": "Miliary lung opacities in a neonate or young infant is present",
           "index_codes": [
@@ -55,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_856878.2",
+          "value_code": "OIFMA_GMTS_479922.2",
           "name": "indeterminate",
           "description": "Presence of miliary lung opacities in a neonate or young infant cannot be determined",
           "index_codes": [
@@ -72,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_856878.3",
+          "value_code": "OIFMA_GMTS_479922.3",
           "name": "unknown",
           "description": "Presence of miliary lung opacities in a neonate or young infant is unknown",
           "index_codes": [
@@ -100,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_364484",
+      "oifma_id": "OIFMA_GMTS_474265",
       "name": "change from prior",
       "description": "Whether and how a miliary lung opacities in a neonate or young infant has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_364484.0",
+          "value_code": "OIFMA_GMTS_474265.0",
           "name": "unchanged",
           "description": "Miliary lung opacities in a neonate or young infant is unchanged",
           "index_codes": [
@@ -123,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.1",
+          "value_code": "OIFMA_GMTS_474265.1",
           "name": "stable",
           "description": "Miliary lung opacities in a neonate or young infant is stable",
           "index_codes": [
@@ -140,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.2",
+          "value_code": "OIFMA_GMTS_474265.2",
           "name": "new",
           "description": "Miliary lung opacities in a neonate or young infant is new",
           "index_codes": [
@@ -157,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.3",
+          "value_code": "OIFMA_GMTS_474265.3",
           "name": "resolved",
           "description": "Miliary lung opacities in a neonate or young infant seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_364484.4",
+          "value_code": "OIFMA_GMTS_474265.4",
           "name": "increased",
           "description": "Miliary lung opacities in a neonate or young infant has increased",
           "index_codes": [
@@ -179,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.5",
+          "value_code": "OIFMA_GMTS_474265.5",
           "name": "decreased",
           "description": "Miliary lung opacities in a neonate or young infant has decreased",
           "index_codes": [
@@ -196,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.6",
+          "value_code": "OIFMA_GMTS_474265.6",
           "name": "larger",
           "description": "Miliary lung opacities in a neonate or young infant is larger",
           "index_codes": [
@@ -213,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_364484.7",
+          "value_code": "OIFMA_GMTS_474265.7",
           "name": "smaller",
           "description": "Miliary lung opacities in a neonate or young infant is smaller",
           "index_codes": [

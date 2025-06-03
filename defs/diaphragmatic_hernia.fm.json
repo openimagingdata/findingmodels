@@ -1,30 +1,25 @@
 {
   "oifm_id": "OIFM_GMTS_022456",
   "name": "diaphragmatic hernia",
-  "description": "Protrusion of abdominal contents into the thoracic cavity through the diaphragm.",
-  "synonyms": [
-    "congenital diaphragmatic hernia",
-    "CDH",
-    "diaphragm hernia"
-  ],
+  "description": "An abnormal opening in the diaphragm allowing organs to move into the chest cavity.",
   "tags": [
-    "chest",
+    "abdomen",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
     "diaphragm",
+    "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_864839",
+      "oifma_id": "OIFMA_GMTS_419966",
       "name": "presence",
       "description": "Presence or absence of diaphragmatic hernia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_864839.0",
+          "value_code": "OIFMA_GMTS_419966.0",
           "name": "absent",
           "description": "Diaphragmatic hernia is absent",
           "index_codes": [
@@ -41,7 +36,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_864839.1",
+          "value_code": "OIFMA_GMTS_419966.1",
           "name": "present",
           "description": "Diaphragmatic hernia is present",
           "index_codes": [
@@ -58,7 +53,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_864839.2",
+          "value_code": "OIFMA_GMTS_419966.2",
           "name": "indeterminate",
           "description": "Presence of diaphragmatic hernia cannot be determined",
           "index_codes": [
@@ -75,7 +70,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_864839.3",
+          "value_code": "OIFMA_GMTS_419966.3",
           "name": "unknown",
           "description": "Presence of diaphragmatic hernia is unknown",
           "index_codes": [
@@ -103,13 +98,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_152504",
+      "oifma_id": "OIFMA_GMTS_421213",
       "name": "change from prior",
       "description": "Whether and how a diaphragmatic hernia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_152504.0",
+          "value_code": "OIFMA_GMTS_421213.0",
           "name": "unchanged",
           "description": "Diaphragmatic hernia is unchanged",
           "index_codes": [
@@ -126,7 +121,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.1",
+          "value_code": "OIFMA_GMTS_421213.1",
           "name": "stable",
           "description": "Diaphragmatic hernia is stable",
           "index_codes": [
@@ -143,7 +138,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.2",
+          "value_code": "OIFMA_GMTS_421213.2",
           "name": "new",
           "description": "Diaphragmatic hernia is new",
           "index_codes": [
@@ -160,12 +155,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.3",
+          "value_code": "OIFMA_GMTS_421213.3",
           "name": "resolved",
           "description": "Diaphragmatic hernia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_152504.4",
+          "value_code": "OIFMA_GMTS_421213.4",
           "name": "increased",
           "description": "Diaphragmatic hernia has increased",
           "index_codes": [
@@ -182,7 +177,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.5",
+          "value_code": "OIFMA_GMTS_421213.5",
           "name": "decreased",
           "description": "Diaphragmatic hernia has decreased",
           "index_codes": [
@@ -199,7 +194,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.6",
+          "value_code": "OIFMA_GMTS_421213.6",
           "name": "larger",
           "description": "Diaphragmatic hernia is larger",
           "index_codes": [
@@ -216,7 +211,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152504.7",
+          "value_code": "OIFMA_GMTS_421213.7",
           "name": "smaller",
           "description": "Diaphragmatic hernia is smaller",
           "index_codes": [

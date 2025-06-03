@@ -1,26 +1,28 @@
 {
-  "oifm_id": "OIFM_MSFT_932618",
+  "oifm_id": "OIFM_GMTS_022548",
   "name": "pulmonary embolism",
-  "description": "Pulmonary embolism is the occlusion of a pulmonary artery or one of its branches, typically caused by thrombi that originate from the deep veins of the legs or other parts of the body, leading to impaired gas exchange and potential hemodynamic instability.",
-  "synonyms": ["PE"],
-  "contributors": [
-    {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT",
-      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
-    }
+  "description": "Blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream.",
+  "synonyms": [
+    "PE"
+  ],
+  "tags": [
+    "vascular",
+    "CT",
+    "XR",
+    "US",
+    "pulmonary artery",
+    "embolism",
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_463871",
+      "oifma_id": "OIFMA_GMTS_573739",
       "name": "presence",
       "description": "Presence or absence of pulmonary embolism",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_463871.0",
+          "value_code": "OIFMA_GMTS_573739.0",
           "name": "absent",
           "description": "Pulmonary embolism is absent",
           "index_codes": [
@@ -37,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_463871.1",
+          "value_code": "OIFMA_GMTS_573739.1",
           "name": "present",
           "description": "Pulmonary embolism is present",
           "index_codes": [
@@ -54,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_463871.2",
+          "value_code": "OIFMA_GMTS_573739.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary embolism cannot be determined",
           "index_codes": [
@@ -71,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_463871.3",
+          "value_code": "OIFMA_GMTS_573739.3",
           "name": "unknown",
           "description": "Presence of pulmonary embolism is unknown",
           "index_codes": [
@@ -99,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_592864",
+      "oifma_id": "OIFMA_GMTS_793048",
       "name": "change from prior",
       "description": "Whether and how a pulmonary embolism has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_592864.0",
+          "value_code": "OIFMA_GMTS_793048.0",
           "name": "unchanged",
           "description": "Pulmonary embolism is unchanged",
           "index_codes": [
@@ -122,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_592864.1",
+          "value_code": "OIFMA_GMTS_793048.1",
           "name": "stable",
           "description": "Pulmonary embolism is stable",
           "index_codes": [
@@ -139,7 +141,29 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_592864.2",
+          "value_code": "OIFMA_GMTS_793048.2",
+          "name": "new",
+          "description": "Pulmonary embolism is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_793048.3",
+          "name": "resolved",
+          "description": "Pulmonary embolism seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_793048.4",
           "name": "increased",
           "description": "Pulmonary embolism has increased",
           "index_codes": [
@@ -156,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_592864.3",
+          "value_code": "OIFMA_GMTS_793048.5",
           "name": "decreased",
           "description": "Pulmonary embolism has decreased",
           "index_codes": [
@@ -173,19 +197,36 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_592864.4",
-          "name": "new",
-          "description": "Pulmonary embolism is new",
+          "value_code": "OIFMA_GMTS_793048.6",
+          "name": "larger",
+          "description": "Pulmonary embolism is larger",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID5720",
-              "display": "new"
+              "code": "RID5791",
+              "display": "enlarged"
             },
             {
               "system": "SNOMED",
-              "code": "7147002",
-              "display": "New (qualifier value)"
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_793048.7",
+          "name": "smaller",
+          "description": "Pulmonary embolism is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
             }
           ]
         }
@@ -204,6 +245,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "22548",
+      "display": "pulmonary embolism"
     }
   ]
 }

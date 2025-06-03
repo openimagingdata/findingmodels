@@ -1,28 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_014021",
   "name": "systemic-to-pulmonary vascular shunt",
-  "description": "An abnormal vascular connection between the systemic and pulmonary circulations.",
-  "synonyms": [
-    "systemic-pulmonary shunt"
-  ],
+  "description": "Abnormal connection allowing blood flow from systemic to pulmonary circulation",
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "angiography",
+    "US",
+    "cardiac",
     "vascular",
-    "congenital anomaly",
-    "finding"
+    "congenital",
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_043676",
+      "oifma_id": "OIFMA_GMTS_025641",
       "name": "presence",
       "description": "Presence or absence of systemic-to-pulmonary vascular shunt",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_043676.0",
+          "value_code": "OIFMA_GMTS_025641.0",
           "name": "absent",
           "description": "Systemic-to-pulmonary vascular shunt is absent",
           "index_codes": [
@@ -39,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_043676.1",
+          "value_code": "OIFMA_GMTS_025641.1",
           "name": "present",
           "description": "Systemic-to-pulmonary vascular shunt is present",
           "index_codes": [
@@ -56,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_043676.2",
+          "value_code": "OIFMA_GMTS_025641.2",
           "name": "indeterminate",
           "description": "Presence of systemic-to-pulmonary vascular shunt cannot be determined",
           "index_codes": [
@@ -73,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_043676.3",
+          "value_code": "OIFMA_GMTS_025641.3",
           "name": "unknown",
           "description": "Presence of systemic-to-pulmonary vascular shunt is unknown",
           "index_codes": [
@@ -101,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_227357",
+      "oifma_id": "OIFMA_GMTS_459378",
       "name": "change from prior",
       "description": "Whether and how a systemic-to-pulmonary vascular shunt has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_227357.0",
+          "value_code": "OIFMA_GMTS_459378.0",
           "name": "unchanged",
           "description": "Systemic-to-pulmonary vascular shunt is unchanged",
           "index_codes": [
@@ -124,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.1",
+          "value_code": "OIFMA_GMTS_459378.1",
           "name": "stable",
           "description": "Systemic-to-pulmonary vascular shunt is stable",
           "index_codes": [
@@ -141,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.2",
+          "value_code": "OIFMA_GMTS_459378.2",
           "name": "new",
           "description": "Systemic-to-pulmonary vascular shunt is new",
           "index_codes": [
@@ -158,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.3",
+          "value_code": "OIFMA_GMTS_459378.3",
           "name": "resolved",
           "description": "Systemic-to-pulmonary vascular shunt seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_227357.4",
+          "value_code": "OIFMA_GMTS_459378.4",
           "name": "increased",
           "description": "Systemic-to-pulmonary vascular shunt has increased",
           "index_codes": [
@@ -180,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.5",
+          "value_code": "OIFMA_GMTS_459378.5",
           "name": "decreased",
           "description": "Systemic-to-pulmonary vascular shunt has decreased",
           "index_codes": [
@@ -197,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.6",
+          "value_code": "OIFMA_GMTS_459378.6",
           "name": "larger",
           "description": "Systemic-to-pulmonary vascular shunt is larger",
           "index_codes": [
@@ -214,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_227357.7",
+          "value_code": "OIFMA_GMTS_459378.7",
           "name": "smaller",
           "description": "Systemic-to-pulmonary vascular shunt is smaller",
           "index_codes": [

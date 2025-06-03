@@ -1,0 +1,256 @@
+{
+  "oifm_id": "OIFM_GMTS_006599",
+  "name": "erosion of the petrous ridge, pyramid, or apex",
+  "description": "Loss of bone density or structure in the petrous part of the temporal bone",
+  "synonyms": [
+    "petrous apex erosion"
+  ],
+  "tags": [
+    "neuro",
+    "CT",
+    "MR",
+    "skull",
+    "bony erosion",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_612276",
+      "name": "presence",
+      "description": "Presence or absence of erosion of the petrous ridge, pyramid, or apex",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_612276.0",
+          "name": "absent",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_612276.1",
+          "name": "present",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_612276.2",
+          "name": "indeterminate",
+          "description": "Presence of erosion of the petrous ridge, pyramid, or apex cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_612276.3",
+          "name": "unknown",
+          "description": "Presence of erosion of the petrous ridge, pyramid, or apex is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_246122",
+      "name": "change from prior",
+      "description": "Whether and how a erosion of the petrous ridge, pyramid, or apex has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_246122.0",
+          "name": "unchanged",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.1",
+          "name": "stable",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.2",
+          "name": "new",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.3",
+          "name": "resolved",
+          "description": "Erosion of the petrous ridge, pyramid, or apex seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.4",
+          "name": "increased",
+          "description": "Erosion of the petrous ridge, pyramid, or apex has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.5",
+          "name": "decreased",
+          "description": "Erosion of the petrous ridge, pyramid, or apex has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.6",
+          "name": "larger",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_246122.7",
+          "name": "smaller",
+          "description": "Erosion of the petrous ridge, pyramid, or apex is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "6599",
+      "display": "erosion of the petrous ridge, pyramid, or apex"
+    }
+  ]
+}

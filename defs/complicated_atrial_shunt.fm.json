@@ -1,30 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013449",
   "name": "complicated atrial shunt",
-  "description": "Presence of an abnormal communication between atria with complications such as shunt reversal or obstruction.",
+  "description": "Atypical or problematic atrial shunt often associated with other cardiac issues.",
   "synonyms": [
-    "atrial septal defect with complications",
-    "ASD with complication"
+    "atrial shunt"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
+    "cardiovascular",
+    "congenital",
     "heart",
-    "congenital anomaly",
-    "postop finding",
-    "diagnosis"
+    "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_795341",
+      "oifma_id": "OIFMA_GMTS_171119",
       "name": "presence",
       "description": "Presence or absence of complicated atrial shunt",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_795341.0",
+          "value_code": "OIFMA_GMTS_171119.0",
           "name": "absent",
           "description": "Complicated atrial shunt is absent",
           "index_codes": [
@@ -41,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_795341.1",
+          "value_code": "OIFMA_GMTS_171119.1",
           "name": "present",
           "description": "Complicated atrial shunt is present",
           "index_codes": [
@@ -58,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_795341.2",
+          "value_code": "OIFMA_GMTS_171119.2",
           "name": "indeterminate",
           "description": "Presence of complicated atrial shunt cannot be determined",
           "index_codes": [
@@ -75,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_795341.3",
+          "value_code": "OIFMA_GMTS_171119.3",
           "name": "unknown",
           "description": "Presence of complicated atrial shunt is unknown",
           "index_codes": [
@@ -103,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_785648",
+      "oifma_id": "OIFMA_GMTS_391521",
       "name": "change from prior",
       "description": "Whether and how a complicated atrial shunt has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_785648.0",
+          "value_code": "OIFMA_GMTS_391521.0",
           "name": "unchanged",
           "description": "Complicated atrial shunt is unchanged",
           "index_codes": [
@@ -126,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.1",
+          "value_code": "OIFMA_GMTS_391521.1",
           "name": "stable",
           "description": "Complicated atrial shunt is stable",
           "index_codes": [
@@ -143,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.2",
+          "value_code": "OIFMA_GMTS_391521.2",
           "name": "new",
           "description": "Complicated atrial shunt is new",
           "index_codes": [
@@ -160,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.3",
+          "value_code": "OIFMA_GMTS_391521.3",
           "name": "resolved",
           "description": "Complicated atrial shunt seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_785648.4",
+          "value_code": "OIFMA_GMTS_391521.4",
           "name": "increased",
           "description": "Complicated atrial shunt has increased",
           "index_codes": [
@@ -182,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.5",
+          "value_code": "OIFMA_GMTS_391521.5",
           "name": "decreased",
           "description": "Complicated atrial shunt has decreased",
           "index_codes": [
@@ -199,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.6",
+          "value_code": "OIFMA_GMTS_391521.6",
           "name": "larger",
           "description": "Complicated atrial shunt is larger",
           "index_codes": [
@@ -216,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785648.7",
+          "value_code": "OIFMA_GMTS_391521.7",
           "name": "smaller",
           "description": "Complicated atrial shunt is smaller",
           "index_codes": [

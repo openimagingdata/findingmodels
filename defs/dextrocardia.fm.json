@@ -1,29 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013596",
   "name": "dextrocardia",
-  "description": "Heart positioned on the right side of the chest.",
+  "description": "Condition where the heart is located on the right side of the thorax.",
   "synonyms": [
-    "right-sided heart",
-    "mirror-image heart"
+    "right-sided heart"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
+    "US",
     "heart",
+    "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_776496",
+      "oifma_id": "OIFMA_GMTS_639963",
       "name": "presence",
       "description": "Presence or absence of dextrocardia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_776496.0",
+          "value_code": "OIFMA_GMTS_639963.0",
           "name": "absent",
           "description": "Dextrocardia is absent",
           "index_codes": [
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776496.1",
+          "value_code": "OIFMA_GMTS_639963.1",
           "name": "present",
           "description": "Dextrocardia is present",
           "index_codes": [
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776496.2",
+          "value_code": "OIFMA_GMTS_639963.2",
           "name": "indeterminate",
           "description": "Presence of dextrocardia cannot be determined",
           "index_codes": [
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_776496.3",
+          "value_code": "OIFMA_GMTS_639963.3",
           "name": "unknown",
           "description": "Presence of dextrocardia is unknown",
           "index_codes": [
@@ -102,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_689801",
+      "oifma_id": "OIFMA_GMTS_635743",
       "name": "change from prior",
       "description": "Whether and how a dextrocardia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_689801.0",
+          "value_code": "OIFMA_GMTS_635743.0",
           "name": "unchanged",
           "description": "Dextrocardia is unchanged",
           "index_codes": [
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.1",
+          "value_code": "OIFMA_GMTS_635743.1",
           "name": "stable",
           "description": "Dextrocardia is stable",
           "index_codes": [
@@ -142,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.2",
+          "value_code": "OIFMA_GMTS_635743.2",
           "name": "new",
           "description": "Dextrocardia is new",
           "index_codes": [
@@ -159,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.3",
+          "value_code": "OIFMA_GMTS_635743.3",
           "name": "resolved",
           "description": "Dextrocardia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_689801.4",
+          "value_code": "OIFMA_GMTS_635743.4",
           "name": "increased",
           "description": "Dextrocardia has increased",
           "index_codes": [
@@ -181,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.5",
+          "value_code": "OIFMA_GMTS_635743.5",
           "name": "decreased",
           "description": "Dextrocardia has decreased",
           "index_codes": [
@@ -198,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.6",
+          "value_code": "OIFMA_GMTS_635743.6",
           "name": "larger",
           "description": "Dextrocardia is larger",
           "index_codes": [
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_689801.7",
+          "value_code": "OIFMA_GMTS_635743.7",
           "name": "smaller",
           "description": "Dextrocardia is smaller",
           "index_codes": [

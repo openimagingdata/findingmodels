@@ -1,31 +1,30 @@
 {
   "oifm_id": "OIFM_GMTS_013791",
   "name": "cardiac or pericardial neoplasm or cyst",
-  "description": "A tumor or cystic lesion within the heart or pericardial space.",
+  "description": "Mass or cystic lesions arising from cardiac or pericardial tissue.",
   "synonyms": [
     "cardiac tumor",
-    "pericardial tumor",
     "pericardial cyst"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
     "US",
-    "cardiac",
-    "pericardium",
-    "neoplastic process",
+    "heart",
+    "neoplasm",
+    "cyst",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_624036",
+      "oifma_id": "OIFMA_GMTS_378112",
       "name": "presence",
       "description": "Presence or absence of cardiac or pericardial neoplasm or cyst",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_624036.0",
+          "value_code": "OIFMA_GMTS_378112.0",
           "name": "absent",
           "description": "Cardiac or pericardial neoplasm or cyst is absent",
           "index_codes": [
@@ -42,7 +41,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_624036.1",
+          "value_code": "OIFMA_GMTS_378112.1",
           "name": "present",
           "description": "Cardiac or pericardial neoplasm or cyst is present",
           "index_codes": [
@@ -59,7 +58,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_624036.2",
+          "value_code": "OIFMA_GMTS_378112.2",
           "name": "indeterminate",
           "description": "Presence of cardiac or pericardial neoplasm or cyst cannot be determined",
           "index_codes": [
@@ -76,7 +75,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_624036.3",
+          "value_code": "OIFMA_GMTS_378112.3",
           "name": "unknown",
           "description": "Presence of cardiac or pericardial neoplasm or cyst is unknown",
           "index_codes": [
@@ -104,13 +103,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_716456",
+      "oifma_id": "OIFMA_GMTS_946880",
       "name": "change from prior",
       "description": "Whether and how a cardiac or pericardial neoplasm or cyst has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_716456.0",
+          "value_code": "OIFMA_GMTS_946880.0",
           "name": "unchanged",
           "description": "Cardiac or pericardial neoplasm or cyst is unchanged",
           "index_codes": [
@@ -127,7 +126,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.1",
+          "value_code": "OIFMA_GMTS_946880.1",
           "name": "stable",
           "description": "Cardiac or pericardial neoplasm or cyst is stable",
           "index_codes": [
@@ -144,7 +143,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.2",
+          "value_code": "OIFMA_GMTS_946880.2",
           "name": "new",
           "description": "Cardiac or pericardial neoplasm or cyst is new",
           "index_codes": [
@@ -161,12 +160,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.3",
+          "value_code": "OIFMA_GMTS_946880.3",
           "name": "resolved",
           "description": "Cardiac or pericardial neoplasm or cyst seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_716456.4",
+          "value_code": "OIFMA_GMTS_946880.4",
           "name": "increased",
           "description": "Cardiac or pericardial neoplasm or cyst has increased",
           "index_codes": [
@@ -183,7 +182,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.5",
+          "value_code": "OIFMA_GMTS_946880.5",
           "name": "decreased",
           "description": "Cardiac or pericardial neoplasm or cyst has decreased",
           "index_codes": [
@@ -200,7 +199,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.6",
+          "value_code": "OIFMA_GMTS_946880.6",
           "name": "larger",
           "description": "Cardiac or pericardial neoplasm or cyst is larger",
           "index_codes": [
@@ -217,7 +216,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_716456.7",
+          "value_code": "OIFMA_GMTS_946880.7",
           "name": "smaller",
           "description": "Cardiac or pericardial neoplasm or cyst is smaller",
           "index_codes": [

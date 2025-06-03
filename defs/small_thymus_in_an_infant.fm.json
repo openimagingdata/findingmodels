@@ -1,28 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_015629",
   "name": "small thymus in an infant",
-  "description": "Thymus gland is smaller than expected for age in an infant.",
-  "synonyms": [
-    "thymic hypoplasia",
-    "thymic atrophy"
-  ],
+  "description": "Underdeveloped thymus in a young child.",
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
+    "US",
     "CT",
     "mediastinum",
-    "congenital anomaly",
+    "pediatrics",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_447073",
+      "oifma_id": "OIFMA_GMTS_247485",
       "name": "presence",
       "description": "Presence or absence of small thymus in an infant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_447073.0",
+          "value_code": "OIFMA_GMTS_247485.0",
           "name": "absent",
           "description": "Small thymus in an infant is absent",
           "index_codes": [
@@ -39,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_447073.1",
+          "value_code": "OIFMA_GMTS_247485.1",
           "name": "present",
           "description": "Small thymus in an infant is present",
           "index_codes": [
@@ -56,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_447073.2",
+          "value_code": "OIFMA_GMTS_247485.2",
           "name": "indeterminate",
           "description": "Presence of small thymus in an infant cannot be determined",
           "index_codes": [
@@ -73,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_447073.3",
+          "value_code": "OIFMA_GMTS_247485.3",
           "name": "unknown",
           "description": "Presence of small thymus in an infant is unknown",
           "index_codes": [
@@ -101,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_108397",
+      "oifma_id": "OIFMA_GMTS_846311",
       "name": "change from prior",
       "description": "Whether and how a small thymus in an infant has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_108397.0",
+          "value_code": "OIFMA_GMTS_846311.0",
           "name": "unchanged",
           "description": "Small thymus in an infant is unchanged",
           "index_codes": [
@@ -124,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.1",
+          "value_code": "OIFMA_GMTS_846311.1",
           "name": "stable",
           "description": "Small thymus in an infant is stable",
           "index_codes": [
@@ -141,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.2",
+          "value_code": "OIFMA_GMTS_846311.2",
           "name": "new",
           "description": "Small thymus in an infant is new",
           "index_codes": [
@@ -158,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.3",
+          "value_code": "OIFMA_GMTS_846311.3",
           "name": "resolved",
           "description": "Small thymus in an infant seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_108397.4",
+          "value_code": "OIFMA_GMTS_846311.4",
           "name": "increased",
           "description": "Small thymus in an infant has increased",
           "index_codes": [
@@ -180,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.5",
+          "value_code": "OIFMA_GMTS_846311.5",
           "name": "decreased",
           "description": "Small thymus in an infant has decreased",
           "index_codes": [
@@ -197,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.6",
+          "value_code": "OIFMA_GMTS_846311.6",
           "name": "larger",
           "description": "Small thymus in an infant is larger",
           "index_codes": [
@@ -214,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_108397.7",
+          "value_code": "OIFMA_GMTS_846311.7",
           "name": "smaller",
           "description": "Small thymus in an infant is smaller",
           "index_codes": [

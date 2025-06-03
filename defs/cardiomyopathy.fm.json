@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013752",
   "name": "cardiomyopathy",
-  "description": "Diseases of the heart muscle causing impaired function.",
+  "description": "Disease of the heart muscle affecting its size, shape, or strength.",
   "synonyms": [
-    "heart muscle disease",
-    "CMP"
+    "heart muscle disease"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
     "heart",
+    "myopathy",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_332559",
+      "oifma_id": "OIFMA_GMTS_021842",
       "name": "presence",
       "description": "Presence or absence of cardiomyopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_332559.0",
+          "value_code": "OIFMA_GMTS_021842.0",
           "name": "absent",
           "description": "Cardiomyopathy is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_332559.1",
+          "value_code": "OIFMA_GMTS_021842.1",
           "name": "present",
           "description": "Cardiomyopathy is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_332559.2",
+          "value_code": "OIFMA_GMTS_021842.2",
           "name": "indeterminate",
           "description": "Presence of cardiomyopathy cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_332559.3",
+          "value_code": "OIFMA_GMTS_021842.3",
           "name": "unknown",
           "description": "Presence of cardiomyopathy is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_054074",
+      "oifma_id": "OIFMA_GMTS_472755",
       "name": "change from prior",
       "description": "Whether and how a cardiomyopathy has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_054074.0",
+          "value_code": "OIFMA_GMTS_472755.0",
           "name": "unchanged",
           "description": "Cardiomyopathy is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.1",
+          "value_code": "OIFMA_GMTS_472755.1",
           "name": "stable",
           "description": "Cardiomyopathy is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.2",
+          "value_code": "OIFMA_GMTS_472755.2",
           "name": "new",
           "description": "Cardiomyopathy is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.3",
+          "value_code": "OIFMA_GMTS_472755.3",
           "name": "resolved",
           "description": "Cardiomyopathy seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_054074.4",
+          "value_code": "OIFMA_GMTS_472755.4",
           "name": "increased",
           "description": "Cardiomyopathy has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.5",
+          "value_code": "OIFMA_GMTS_472755.5",
           "name": "decreased",
           "description": "Cardiomyopathy has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.6",
+          "value_code": "OIFMA_GMTS_472755.6",
           "name": "larger",
           "description": "Cardiomyopathy is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_054074.7",
+          "value_code": "OIFMA_GMTS_472755.7",
           "name": "smaller",
           "description": "Cardiomyopathy is smaller",
           "index_codes": [

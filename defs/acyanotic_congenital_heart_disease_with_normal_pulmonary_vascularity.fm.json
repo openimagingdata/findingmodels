@@ -1,28 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013493",
   "name": "acyanotic congenital heart disease with normal pulmonary vascularity",
-  "description": "Acyanotic congenital cardiac malformations with normal pulmonary blood flow.",
+  "description": "Congenital heart defect with normal lung blood flow and no cyanosis",
   "synonyms": [
-    "congenital heart defect without shunt"
+    "non-blue congenital heart defect"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
+    "US",
     "MR",
-    "congenital anomaly",
-    "cardiac",
+    "heart",
+    "congenital",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_080771",
+      "oifma_id": "OIFMA_GMTS_253209",
       "name": "presence",
       "description": "Presence or absence of acyanotic congenital heart disease with normal pulmonary vascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_080771.0",
+          "value_code": "OIFMA_GMTS_253209.0",
           "name": "absent",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is absent",
           "index_codes": [
@@ -39,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080771.1",
+          "value_code": "OIFMA_GMTS_253209.1",
           "name": "present",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is present",
           "index_codes": [
@@ -56,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080771.2",
+          "value_code": "OIFMA_GMTS_253209.2",
           "name": "indeterminate",
           "description": "Presence of acyanotic congenital heart disease with normal pulmonary vascularity cannot be determined",
           "index_codes": [
@@ -73,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080771.3",
+          "value_code": "OIFMA_GMTS_253209.3",
           "name": "unknown",
           "description": "Presence of acyanotic congenital heart disease with normal pulmonary vascularity is unknown",
           "index_codes": [
@@ -101,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_805068",
+      "oifma_id": "OIFMA_GMTS_835365",
       "name": "change from prior",
       "description": "Whether and how a acyanotic congenital heart disease with normal pulmonary vascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_805068.0",
+          "value_code": "OIFMA_GMTS_835365.0",
           "name": "unchanged",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is unchanged",
           "index_codes": [
@@ -124,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.1",
+          "value_code": "OIFMA_GMTS_835365.1",
           "name": "stable",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is stable",
           "index_codes": [
@@ -141,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.2",
+          "value_code": "OIFMA_GMTS_835365.2",
           "name": "new",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is new",
           "index_codes": [
@@ -158,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.3",
+          "value_code": "OIFMA_GMTS_835365.3",
           "name": "resolved",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_805068.4",
+          "value_code": "OIFMA_GMTS_835365.4",
           "name": "increased",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity has increased",
           "index_codes": [
@@ -180,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.5",
+          "value_code": "OIFMA_GMTS_835365.5",
           "name": "decreased",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity has decreased",
           "index_codes": [
@@ -197,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.6",
+          "value_code": "OIFMA_GMTS_835365.6",
           "name": "larger",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is larger",
           "index_codes": [
@@ -214,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805068.7",
+          "value_code": "OIFMA_GMTS_835365.7",
           "name": "smaller",
           "description": "Acyanotic congenital heart disease with normal pulmonary vascularity is smaller",
           "index_codes": [

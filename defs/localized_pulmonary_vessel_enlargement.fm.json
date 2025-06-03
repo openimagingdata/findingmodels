@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013972",
   "name": "localized pulmonary vessel enlargement",
-  "description": "A segmentally enlarged artery or vein in the lung, sometimes associated with shunts or malformations.",
+  "description": "Expanded blood vessels within a specific region of the lung.",
   "synonyms": [
-    "focal pulmonary artery enlargement",
-    "focal pulmonary vein enlargement"
+    "pulmonary vascular enlargement"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "XR",
-    "lung",
+    "MR",
+    "pulmonary",
     "vascular",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_006040",
+      "oifma_id": "OIFMA_GMTS_747111",
       "name": "presence",
       "description": "Presence or absence of localized pulmonary vessel enlargement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_006040.0",
+          "value_code": "OIFMA_GMTS_747111.0",
           "name": "absent",
           "description": "Localized pulmonary vessel enlargement is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_006040.1",
+          "value_code": "OIFMA_GMTS_747111.1",
           "name": "present",
           "description": "Localized pulmonary vessel enlargement is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_006040.2",
+          "value_code": "OIFMA_GMTS_747111.2",
           "name": "indeterminate",
           "description": "Presence of localized pulmonary vessel enlargement cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_006040.3",
+          "value_code": "OIFMA_GMTS_747111.3",
           "name": "unknown",
           "description": "Presence of localized pulmonary vessel enlargement is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_665453",
+      "oifma_id": "OIFMA_GMTS_005035",
       "name": "change from prior",
       "description": "Whether and how a localized pulmonary vessel enlargement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_665453.0",
+          "value_code": "OIFMA_GMTS_005035.0",
           "name": "unchanged",
           "description": "Localized pulmonary vessel enlargement is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.1",
+          "value_code": "OIFMA_GMTS_005035.1",
           "name": "stable",
           "description": "Localized pulmonary vessel enlargement is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.2",
+          "value_code": "OIFMA_GMTS_005035.2",
           "name": "new",
           "description": "Localized pulmonary vessel enlargement is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.3",
+          "value_code": "OIFMA_GMTS_005035.3",
           "name": "resolved",
           "description": "Localized pulmonary vessel enlargement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_665453.4",
+          "value_code": "OIFMA_GMTS_005035.4",
           "name": "increased",
           "description": "Localized pulmonary vessel enlargement has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.5",
+          "value_code": "OIFMA_GMTS_005035.5",
           "name": "decreased",
           "description": "Localized pulmonary vessel enlargement has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.6",
+          "value_code": "OIFMA_GMTS_005035.6",
           "name": "larger",
           "description": "Localized pulmonary vessel enlargement is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665453.7",
+          "value_code": "OIFMA_GMTS_005035.7",
           "name": "smaller",
           "description": "Localized pulmonary vessel enlargement is smaller",
           "index_codes": [

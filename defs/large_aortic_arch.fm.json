@@ -1,29 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_030876",
   "name": "large aortic arch",
-  "description": "Enlargement or increased diameter of the aortic arch.",
+  "description": "Enlarged segment of the aortic arch, possibly indicating aortic dilation or aneurysm.",
   "synonyms": [
-    "aortic arch dilatation",
-    "aortic arch enlargement"
+    "aortic arch dilation"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "vascular",
     "CT",
     "MR",
+    "XR",
     "vascular",
-    "mediastinum",
+    "aorta",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_551898",
+      "oifma_id": "OIFMA_GMTS_970721",
       "name": "presence",
       "description": "Presence or absence of large aortic arch",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_551898.0",
+          "value_code": "OIFMA_GMTS_970721.0",
           "name": "absent",
           "description": "Large aortic arch is absent",
           "index_codes": [
@@ -40,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_551898.1",
+          "value_code": "OIFMA_GMTS_970721.1",
           "name": "present",
           "description": "Large aortic arch is present",
           "index_codes": [
@@ -57,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_551898.2",
+          "value_code": "OIFMA_GMTS_970721.2",
           "name": "indeterminate",
           "description": "Presence of large aortic arch cannot be determined",
           "index_codes": [
@@ -74,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_551898.3",
+          "value_code": "OIFMA_GMTS_970721.3",
           "name": "unknown",
           "description": "Presence of large aortic arch is unknown",
           "index_codes": [
@@ -102,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_132296",
+      "oifma_id": "OIFMA_GMTS_486271",
       "name": "change from prior",
       "description": "Whether and how a large aortic arch has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_132296.0",
+          "value_code": "OIFMA_GMTS_486271.0",
           "name": "unchanged",
           "description": "Large aortic arch is unchanged",
           "index_codes": [
@@ -125,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.1",
+          "value_code": "OIFMA_GMTS_486271.1",
           "name": "stable",
           "description": "Large aortic arch is stable",
           "index_codes": [
@@ -142,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.2",
+          "value_code": "OIFMA_GMTS_486271.2",
           "name": "new",
           "description": "Large aortic arch is new",
           "index_codes": [
@@ -159,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.3",
+          "value_code": "OIFMA_GMTS_486271.3",
           "name": "resolved",
           "description": "Large aortic arch seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_132296.4",
+          "value_code": "OIFMA_GMTS_486271.4",
           "name": "increased",
           "description": "Large aortic arch has increased",
           "index_codes": [
@@ -181,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.5",
+          "value_code": "OIFMA_GMTS_486271.5",
           "name": "decreased",
           "description": "Large aortic arch has decreased",
           "index_codes": [
@@ -198,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.6",
+          "value_code": "OIFMA_GMTS_486271.6",
           "name": "larger",
           "description": "Large aortic arch is larger",
           "index_codes": [
@@ -215,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132296.7",
+          "value_code": "OIFMA_GMTS_486271.7",
           "name": "smaller",
           "description": "Large aortic arch is smaller",
           "index_codes": [

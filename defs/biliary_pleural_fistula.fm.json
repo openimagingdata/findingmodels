@@ -1,29 +1,25 @@
 {
   "oifm_id": "OIFM_GMTS_005533",
   "name": "biliary-pleural fistula",
-  "description": "Abnormal communication between the biliary system and pleural space.",
-  "synonyms": [
-    "pleurobiliary fistula"
-  ],
+  "description": "An abnormal connection between the biliary ducts and the pleural cavity.",
   "tags": [
-    "chest",
+    "abdomen",
     "CT",
     "MR",
-    "pleura",
-    "biliary",
-    "inflammatory process",
-    "postop finding: possible",
+    "US",
+    "thoracic",
+    "fistula",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_953645",
+      "oifma_id": "OIFMA_GMTS_788849",
       "name": "presence",
       "description": "Presence or absence of biliary-pleural fistula",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_953645.0",
+          "value_code": "OIFMA_GMTS_788849.0",
           "name": "absent",
           "description": "Biliary-pleural fistula is absent",
           "index_codes": [
@@ -40,7 +36,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_953645.1",
+          "value_code": "OIFMA_GMTS_788849.1",
           "name": "present",
           "description": "Biliary-pleural fistula is present",
           "index_codes": [
@@ -57,7 +53,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_953645.2",
+          "value_code": "OIFMA_GMTS_788849.2",
           "name": "indeterminate",
           "description": "Presence of biliary-pleural fistula cannot be determined",
           "index_codes": [
@@ -74,7 +70,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_953645.3",
+          "value_code": "OIFMA_GMTS_788849.3",
           "name": "unknown",
           "description": "Presence of biliary-pleural fistula is unknown",
           "index_codes": [
@@ -102,13 +98,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_479642",
+      "oifma_id": "OIFMA_GMTS_371517",
       "name": "change from prior",
       "description": "Whether and how a biliary-pleural fistula has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_479642.0",
+          "value_code": "OIFMA_GMTS_371517.0",
           "name": "unchanged",
           "description": "Biliary-pleural fistula is unchanged",
           "index_codes": [
@@ -125,7 +121,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.1",
+          "value_code": "OIFMA_GMTS_371517.1",
           "name": "stable",
           "description": "Biliary-pleural fistula is stable",
           "index_codes": [
@@ -142,7 +138,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.2",
+          "value_code": "OIFMA_GMTS_371517.2",
           "name": "new",
           "description": "Biliary-pleural fistula is new",
           "index_codes": [
@@ -159,12 +155,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.3",
+          "value_code": "OIFMA_GMTS_371517.3",
           "name": "resolved",
           "description": "Biliary-pleural fistula seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_479642.4",
+          "value_code": "OIFMA_GMTS_371517.4",
           "name": "increased",
           "description": "Biliary-pleural fistula has increased",
           "index_codes": [
@@ -181,7 +177,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.5",
+          "value_code": "OIFMA_GMTS_371517.5",
           "name": "decreased",
           "description": "Biliary-pleural fistula has decreased",
           "index_codes": [
@@ -198,7 +194,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.6",
+          "value_code": "OIFMA_GMTS_371517.6",
           "name": "larger",
           "description": "Biliary-pleural fistula is larger",
           "index_codes": [
@@ -215,7 +211,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479642.7",
+          "value_code": "OIFMA_GMTS_371517.7",
           "name": "smaller",
           "description": "Biliary-pleural fistula is smaller",
           "index_codes": [

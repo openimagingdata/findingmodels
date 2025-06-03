@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013463",
   "name": "ventricular septal defect",
-  "description": "A congenital opening between the right and left ventricles of the heart.",
+  "description": "A congenital heart defect characterized by a hole in the ventricular septum.",
   "synonyms": [
     "VSD"
   ],
   "tags": [
-    "chest",
-    "CT",
-    "MR",
+    "ultrasound",
     "US",
+    "MR",
+    "CT",
+    "cardiac",
     "congenital anomaly",
-    "heart",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_749348",
+      "oifma_id": "OIFMA_GMTS_295876",
       "name": "presence",
       "description": "Presence or absence of ventricular septal defect",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_749348.0",
+          "value_code": "OIFMA_GMTS_295876.0",
           "name": "absent",
           "description": "Ventricular septal defect is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749348.1",
+          "value_code": "OIFMA_GMTS_295876.1",
           "name": "present",
           "description": "Ventricular septal defect is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749348.2",
+          "value_code": "OIFMA_GMTS_295876.2",
           "name": "indeterminate",
           "description": "Presence of ventricular septal defect cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749348.3",
+          "value_code": "OIFMA_GMTS_295876.3",
           "name": "unknown",
           "description": "Presence of ventricular septal defect is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_337452",
+      "oifma_id": "OIFMA_GMTS_681127",
       "name": "change from prior",
       "description": "Whether and how a ventricular septal defect has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_337452.0",
+          "value_code": "OIFMA_GMTS_681127.0",
           "name": "unchanged",
           "description": "Ventricular septal defect is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.1",
+          "value_code": "OIFMA_GMTS_681127.1",
           "name": "stable",
           "description": "Ventricular septal defect is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.2",
+          "value_code": "OIFMA_GMTS_681127.2",
           "name": "new",
           "description": "Ventricular septal defect is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.3",
+          "value_code": "OIFMA_GMTS_681127.3",
           "name": "resolved",
           "description": "Ventricular septal defect seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_337452.4",
+          "value_code": "OIFMA_GMTS_681127.4",
           "name": "increased",
           "description": "Ventricular septal defect has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.5",
+          "value_code": "OIFMA_GMTS_681127.5",
           "name": "decreased",
           "description": "Ventricular septal defect has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.6",
+          "value_code": "OIFMA_GMTS_681127.6",
           "name": "larger",
           "description": "Ventricular septal defect is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_337452.7",
+          "value_code": "OIFMA_GMTS_681127.7",
           "name": "smaller",
           "description": "Ventricular septal defect is smaller",
           "index_codes": [

@@ -1,27 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_013911",
   "name": "pulmonary artery aneurysm",
-  "description": "Abnormal focal dilatation of the pulmonary artery.",
-  "synonyms": [
-    "PA aneurysm"
-  ],
+  "description": "Ballooning or dilation of a pulmonary artery segment.",
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
     "vascular",
-    "lung",
+    "aneurysm",
+    "pulmonary",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_479007",
+      "oifma_id": "OIFMA_GMTS_289416",
       "name": "presence",
       "description": "Presence or absence of pulmonary artery aneurysm",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_479007.0",
+          "value_code": "OIFMA_GMTS_289416.0",
           "name": "absent",
           "description": "Pulmonary artery aneurysm is absent",
           "index_codes": [
@@ -38,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479007.1",
+          "value_code": "OIFMA_GMTS_289416.1",
           "name": "present",
           "description": "Pulmonary artery aneurysm is present",
           "index_codes": [
@@ -55,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479007.2",
+          "value_code": "OIFMA_GMTS_289416.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary artery aneurysm cannot be determined",
           "index_codes": [
@@ -72,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_479007.3",
+          "value_code": "OIFMA_GMTS_289416.3",
           "name": "unknown",
           "description": "Presence of pulmonary artery aneurysm is unknown",
           "index_codes": [
@@ -100,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_188948",
+      "oifma_id": "OIFMA_GMTS_474578",
       "name": "change from prior",
       "description": "Whether and how a pulmonary artery aneurysm has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_188948.0",
+          "value_code": "OIFMA_GMTS_474578.0",
           "name": "unchanged",
           "description": "Pulmonary artery aneurysm is unchanged",
           "index_codes": [
@@ -123,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.1",
+          "value_code": "OIFMA_GMTS_474578.1",
           "name": "stable",
           "description": "Pulmonary artery aneurysm is stable",
           "index_codes": [
@@ -140,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.2",
+          "value_code": "OIFMA_GMTS_474578.2",
           "name": "new",
           "description": "Pulmonary artery aneurysm is new",
           "index_codes": [
@@ -157,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.3",
+          "value_code": "OIFMA_GMTS_474578.3",
           "name": "resolved",
           "description": "Pulmonary artery aneurysm seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_188948.4",
+          "value_code": "OIFMA_GMTS_474578.4",
           "name": "increased",
           "description": "Pulmonary artery aneurysm has increased",
           "index_codes": [
@@ -179,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.5",
+          "value_code": "OIFMA_GMTS_474578.5",
           "name": "decreased",
           "description": "Pulmonary artery aneurysm has decreased",
           "index_codes": [
@@ -196,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.6",
+          "value_code": "OIFMA_GMTS_474578.6",
           "name": "larger",
           "description": "Pulmonary artery aneurysm is larger",
           "index_codes": [
@@ -213,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_188948.7",
+          "value_code": "OIFMA_GMTS_474578.7",
           "name": "smaller",
           "description": "Pulmonary artery aneurysm is smaller",
           "index_codes": [

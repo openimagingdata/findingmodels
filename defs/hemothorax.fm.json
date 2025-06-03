@@ -1,29 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_015952",
   "name": "hemothorax",
-  "description": "Accumulation of blood in the pleural space, usually due to trauma or rupture.",
-  "synonyms": [
-    "pleural hemorrhage",
-    "blood in pleural cavity"
-  ],
+  "description": "Presence of blood in the pleural cavity.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "US",
-    "pleura",
-    "traumatic finding",
+    "XR",
+    "thoracic",
+    "hemorrhagic",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_143214",
+      "oifma_id": "OIFMA_GMTS_835230",
       "name": "presence",
       "description": "Presence or absence of hemothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_143214.0",
+          "value_code": "OIFMA_GMTS_835230.0",
           "name": "absent",
           "description": "Hemothorax is absent",
           "index_codes": [
@@ -40,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_143214.1",
+          "value_code": "OIFMA_GMTS_835230.1",
           "name": "present",
           "description": "Hemothorax is present",
           "index_codes": [
@@ -57,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_143214.2",
+          "value_code": "OIFMA_GMTS_835230.2",
           "name": "indeterminate",
           "description": "Presence of hemothorax cannot be determined",
           "index_codes": [
@@ -74,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_143214.3",
+          "value_code": "OIFMA_GMTS_835230.3",
           "name": "unknown",
           "description": "Presence of hemothorax is unknown",
           "index_codes": [
@@ -102,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_822148",
+      "oifma_id": "OIFMA_GMTS_043382",
       "name": "change from prior",
       "description": "Whether and how a hemothorax has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_822148.0",
+          "value_code": "OIFMA_GMTS_043382.0",
           "name": "unchanged",
           "description": "Hemothorax is unchanged",
           "index_codes": [
@@ -125,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.1",
+          "value_code": "OIFMA_GMTS_043382.1",
           "name": "stable",
           "description": "Hemothorax is stable",
           "index_codes": [
@@ -142,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.2",
+          "value_code": "OIFMA_GMTS_043382.2",
           "name": "new",
           "description": "Hemothorax is new",
           "index_codes": [
@@ -159,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.3",
+          "value_code": "OIFMA_GMTS_043382.3",
           "name": "resolved",
           "description": "Hemothorax seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_822148.4",
+          "value_code": "OIFMA_GMTS_043382.4",
           "name": "increased",
           "description": "Hemothorax has increased",
           "index_codes": [
@@ -181,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.5",
+          "value_code": "OIFMA_GMTS_043382.5",
           "name": "decreased",
           "description": "Hemothorax has decreased",
           "index_codes": [
@@ -198,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.6",
+          "value_code": "OIFMA_GMTS_043382.6",
           "name": "larger",
           "description": "Hemothorax is larger",
           "index_codes": [
@@ -215,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_822148.7",
+          "value_code": "OIFMA_GMTS_043382.7",
           "name": "smaller",
           "description": "Hemothorax is smaller",
           "index_codes": [

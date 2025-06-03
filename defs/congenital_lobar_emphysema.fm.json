@@ -1,28 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_014880",
   "name": "congenital lobar emphysema",
-  "description": "Overinflation of one or more lung lobes present from birth.",
-  "synonyms": [
-    "CLE",
-    "infantile lobar emphysema"
-  ],
+  "description": "Overinflation of a pulmonary lobe present at birth, leading to respiration difficulties.",
   "tags": [
-    "chest",
+    "pediatric",
     "XR",
     "CT",
+    "pulmonary",
     "congenital anomaly",
-    "lung",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_636156",
+      "oifma_id": "OIFMA_GMTS_170647",
       "name": "presence",
       "description": "Presence or absence of congenital lobar emphysema",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_636156.0",
+          "value_code": "OIFMA_GMTS_170647.0",
           "name": "absent",
           "description": "Congenital lobar emphysema is absent",
           "index_codes": [
@@ -39,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_636156.1",
+          "value_code": "OIFMA_GMTS_170647.1",
           "name": "present",
           "description": "Congenital lobar emphysema is present",
           "index_codes": [
@@ -56,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_636156.2",
+          "value_code": "OIFMA_GMTS_170647.2",
           "name": "indeterminate",
           "description": "Presence of congenital lobar emphysema cannot be determined",
           "index_codes": [
@@ -73,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_636156.3",
+          "value_code": "OIFMA_GMTS_170647.3",
           "name": "unknown",
           "description": "Presence of congenital lobar emphysema is unknown",
           "index_codes": [
@@ -101,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_501259",
+      "oifma_id": "OIFMA_GMTS_823682",
       "name": "change from prior",
       "description": "Whether and how a congenital lobar emphysema has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_501259.0",
+          "value_code": "OIFMA_GMTS_823682.0",
           "name": "unchanged",
           "description": "Congenital lobar emphysema is unchanged",
           "index_codes": [
@@ -124,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.1",
+          "value_code": "OIFMA_GMTS_823682.1",
           "name": "stable",
           "description": "Congenital lobar emphysema is stable",
           "index_codes": [
@@ -141,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.2",
+          "value_code": "OIFMA_GMTS_823682.2",
           "name": "new",
           "description": "Congenital lobar emphysema is new",
           "index_codes": [
@@ -158,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.3",
+          "value_code": "OIFMA_GMTS_823682.3",
           "name": "resolved",
           "description": "Congenital lobar emphysema seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_501259.4",
+          "value_code": "OIFMA_GMTS_823682.4",
           "name": "increased",
           "description": "Congenital lobar emphysema has increased",
           "index_codes": [
@@ -180,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.5",
+          "value_code": "OIFMA_GMTS_823682.5",
           "name": "decreased",
           "description": "Congenital lobar emphysema has decreased",
           "index_codes": [
@@ -197,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.6",
+          "value_code": "OIFMA_GMTS_823682.6",
           "name": "larger",
           "description": "Congenital lobar emphysema is larger",
           "index_codes": [
@@ -214,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_501259.7",
+          "value_code": "OIFMA_GMTS_823682.7",
           "name": "smaller",
           "description": "Congenital lobar emphysema is smaller",
           "index_codes": [

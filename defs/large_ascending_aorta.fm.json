@@ -1,29 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_030875",
   "name": "large ascending aorta",
-  "description": "Enlargement of the ascending segment of the aorta.",
+  "description": "Enlargement of the ascending part of the aorta, often related to hypertension or aneurysm.",
   "synonyms": [
-    "ascending aorta dilatation",
-    "ascending aorta enlargement"
+    "ascending aorta dilation"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "vascular",
     "CT",
     "MR",
+    "XR",
     "vascular",
-    "mediastinum",
+    "aorta",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_766564",
+      "oifma_id": "OIFMA_GMTS_341739",
       "name": "presence",
       "description": "Presence or absence of large ascending aorta",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_766564.0",
+          "value_code": "OIFMA_GMTS_341739.0",
           "name": "absent",
           "description": "Large ascending aorta is absent",
           "index_codes": [
@@ -40,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766564.1",
+          "value_code": "OIFMA_GMTS_341739.1",
           "name": "present",
           "description": "Large ascending aorta is present",
           "index_codes": [
@@ -57,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766564.2",
+          "value_code": "OIFMA_GMTS_341739.2",
           "name": "indeterminate",
           "description": "Presence of large ascending aorta cannot be determined",
           "index_codes": [
@@ -74,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766564.3",
+          "value_code": "OIFMA_GMTS_341739.3",
           "name": "unknown",
           "description": "Presence of large ascending aorta is unknown",
           "index_codes": [
@@ -102,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_771545",
+      "oifma_id": "OIFMA_GMTS_224456",
       "name": "change from prior",
       "description": "Whether and how a large ascending aorta has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_771545.0",
+          "value_code": "OIFMA_GMTS_224456.0",
           "name": "unchanged",
           "description": "Large ascending aorta is unchanged",
           "index_codes": [
@@ -125,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.1",
+          "value_code": "OIFMA_GMTS_224456.1",
           "name": "stable",
           "description": "Large ascending aorta is stable",
           "index_codes": [
@@ -142,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.2",
+          "value_code": "OIFMA_GMTS_224456.2",
           "name": "new",
           "description": "Large ascending aorta is new",
           "index_codes": [
@@ -159,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.3",
+          "value_code": "OIFMA_GMTS_224456.3",
           "name": "resolved",
           "description": "Large ascending aorta seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_771545.4",
+          "value_code": "OIFMA_GMTS_224456.4",
           "name": "increased",
           "description": "Large ascending aorta has increased",
           "index_codes": [
@@ -181,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.5",
+          "value_code": "OIFMA_GMTS_224456.5",
           "name": "decreased",
           "description": "Large ascending aorta has decreased",
           "index_codes": [
@@ -198,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.6",
+          "value_code": "OIFMA_GMTS_224456.6",
           "name": "larger",
           "description": "Large ascending aorta is larger",
           "index_codes": [
@@ -215,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771545.7",
+          "value_code": "OIFMA_GMTS_224456.7",
           "name": "smaller",
           "description": "Large ascending aorta is smaller",
           "index_codes": [

@@ -1,27 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_022547",
   "name": "pulmonary artery calcification",
-  "description": "Calcification within the wall of the pulmonary artery.",
+  "description": "Calcification of the pulmonary artery walls.",
   "synonyms": [
-    "calcified pulmonary artery"
+    "PA calcification"
   ],
   "tags": [
-    "chest",
+    "vascular",
     "CT",
     "XR",
-    "vascular",
-    "lung",
+    "pulmonary artery",
+    "calcification",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_608182",
+      "oifma_id": "OIFMA_GMTS_181635",
       "name": "presence",
       "description": "Presence or absence of pulmonary artery calcification",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_608182.0",
+          "value_code": "OIFMA_GMTS_181635.0",
           "name": "absent",
           "description": "Pulmonary artery calcification is absent",
           "index_codes": [
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_608182.1",
+          "value_code": "OIFMA_GMTS_181635.1",
           "name": "present",
           "description": "Pulmonary artery calcification is present",
           "index_codes": [
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_608182.2",
+          "value_code": "OIFMA_GMTS_181635.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary artery calcification cannot be determined",
           "index_codes": [
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_608182.3",
+          "value_code": "OIFMA_GMTS_181635.3",
           "name": "unknown",
           "description": "Presence of pulmonary artery calcification is unknown",
           "index_codes": [
@@ -100,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_342765",
+      "oifma_id": "OIFMA_GMTS_415373",
       "name": "change from prior",
       "description": "Whether and how a pulmonary artery calcification has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_342765.0",
+          "value_code": "OIFMA_GMTS_415373.0",
           "name": "unchanged",
           "description": "Pulmonary artery calcification is unchanged",
           "index_codes": [
@@ -123,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.1",
+          "value_code": "OIFMA_GMTS_415373.1",
           "name": "stable",
           "description": "Pulmonary artery calcification is stable",
           "index_codes": [
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.2",
+          "value_code": "OIFMA_GMTS_415373.2",
           "name": "new",
           "description": "Pulmonary artery calcification is new",
           "index_codes": [
@@ -157,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.3",
+          "value_code": "OIFMA_GMTS_415373.3",
           "name": "resolved",
           "description": "Pulmonary artery calcification seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_342765.4",
+          "value_code": "OIFMA_GMTS_415373.4",
           "name": "increased",
           "description": "Pulmonary artery calcification has increased",
           "index_codes": [
@@ -179,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.5",
+          "value_code": "OIFMA_GMTS_415373.5",
           "name": "decreased",
           "description": "Pulmonary artery calcification has decreased",
           "index_codes": [
@@ -196,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.6",
+          "value_code": "OIFMA_GMTS_415373.6",
           "name": "larger",
           "description": "Pulmonary artery calcification is larger",
           "index_codes": [
@@ -213,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_342765.7",
+          "value_code": "OIFMA_GMTS_415373.7",
           "name": "smaller",
           "description": "Pulmonary artery calcification is smaller",
           "index_codes": [

@@ -1,29 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013910",
   "name": "large main pulmonary artery",
-  "description": "Widening or enlargement of the main pulmonary artery.",
+  "description": "Enlargement of the main pulmonary artery visible on imaging.",
   "synonyms": [
-    "pulmonary artery dilatation",
-    "main pulmonary artery enlargement"
+    "pulmonary artery enlargement"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
+    "pulmonary",
     "vascular",
-    "mediastinum",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_190584",
+      "oifma_id": "OIFMA_GMTS_510084",
       "name": "presence",
       "description": "Presence or absence of large main pulmonary artery",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_190584.0",
+          "value_code": "OIFMA_GMTS_510084.0",
           "name": "absent",
           "description": "Large main pulmonary artery is absent",
           "index_codes": [
@@ -40,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190584.1",
+          "value_code": "OIFMA_GMTS_510084.1",
           "name": "present",
           "description": "Large main pulmonary artery is present",
           "index_codes": [
@@ -57,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190584.2",
+          "value_code": "OIFMA_GMTS_510084.2",
           "name": "indeterminate",
           "description": "Presence of large main pulmonary artery cannot be determined",
           "index_codes": [
@@ -74,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190584.3",
+          "value_code": "OIFMA_GMTS_510084.3",
           "name": "unknown",
           "description": "Presence of large main pulmonary artery is unknown",
           "index_codes": [
@@ -102,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_104966",
+      "oifma_id": "OIFMA_GMTS_902595",
       "name": "change from prior",
       "description": "Whether and how a large main pulmonary artery has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_104966.0",
+          "value_code": "OIFMA_GMTS_902595.0",
           "name": "unchanged",
           "description": "Large main pulmonary artery is unchanged",
           "index_codes": [
@@ -125,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.1",
+          "value_code": "OIFMA_GMTS_902595.1",
           "name": "stable",
           "description": "Large main pulmonary artery is stable",
           "index_codes": [
@@ -142,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.2",
+          "value_code": "OIFMA_GMTS_902595.2",
           "name": "new",
           "description": "Large main pulmonary artery is new",
           "index_codes": [
@@ -159,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.3",
+          "value_code": "OIFMA_GMTS_902595.3",
           "name": "resolved",
           "description": "Large main pulmonary artery seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_104966.4",
+          "value_code": "OIFMA_GMTS_902595.4",
           "name": "increased",
           "description": "Large main pulmonary artery has increased",
           "index_codes": [
@@ -181,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.5",
+          "value_code": "OIFMA_GMTS_902595.5",
           "name": "decreased",
           "description": "Large main pulmonary artery has decreased",
           "index_codes": [
@@ -198,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.6",
+          "value_code": "OIFMA_GMTS_902595.6",
           "name": "larger",
           "description": "Large main pulmonary artery is larger",
           "index_codes": [
@@ -215,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_104966.7",
+          "value_code": "OIFMA_GMTS_902595.7",
           "name": "smaller",
           "description": "Large main pulmonary artery is smaller",
           "index_codes": [

@@ -1,30 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013538",
   "name": "aortic arch anomaly",
-  "description": "Congenital abnormality involving the aortic arch shape, course, or branching.",
+  "description": "Any of several abnormalities in the development of the aortic arch.",
   "synonyms": [
-    "aortic arch malformation",
-    "congenital aortic arch defect"
+    "aortic arch malformation"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "XR",
     "congenital anomaly",
     "vascular",
-    "mediastinum",
+    "aorta",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_012319",
+      "oifma_id": "OIFMA_GMTS_601969",
       "name": "presence",
       "description": "Presence or absence of aortic arch anomaly",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_012319.0",
+          "value_code": "OIFMA_GMTS_601969.0",
           "name": "absent",
           "description": "Aortic arch anomaly is absent",
           "index_codes": [
@@ -41,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_012319.1",
+          "value_code": "OIFMA_GMTS_601969.1",
           "name": "present",
           "description": "Aortic arch anomaly is present",
           "index_codes": [
@@ -58,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_012319.2",
+          "value_code": "OIFMA_GMTS_601969.2",
           "name": "indeterminate",
           "description": "Presence of aortic arch anomaly cannot be determined",
           "index_codes": [
@@ -75,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_012319.3",
+          "value_code": "OIFMA_GMTS_601969.3",
           "name": "unknown",
           "description": "Presence of aortic arch anomaly is unknown",
           "index_codes": [
@@ -103,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_737344",
+      "oifma_id": "OIFMA_GMTS_478437",
       "name": "change from prior",
       "description": "Whether and how a aortic arch anomaly has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_737344.0",
+          "value_code": "OIFMA_GMTS_478437.0",
           "name": "unchanged",
           "description": "Aortic arch anomaly is unchanged",
           "index_codes": [
@@ -126,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.1",
+          "value_code": "OIFMA_GMTS_478437.1",
           "name": "stable",
           "description": "Aortic arch anomaly is stable",
           "index_codes": [
@@ -143,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.2",
+          "value_code": "OIFMA_GMTS_478437.2",
           "name": "new",
           "description": "Aortic arch anomaly is new",
           "index_codes": [
@@ -160,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.3",
+          "value_code": "OIFMA_GMTS_478437.3",
           "name": "resolved",
           "description": "Aortic arch anomaly seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_737344.4",
+          "value_code": "OIFMA_GMTS_478437.4",
           "name": "increased",
           "description": "Aortic arch anomaly has increased",
           "index_codes": [
@@ -182,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.5",
+          "value_code": "OIFMA_GMTS_478437.5",
           "name": "decreased",
           "description": "Aortic arch anomaly has decreased",
           "index_codes": [
@@ -199,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.6",
+          "value_code": "OIFMA_GMTS_478437.6",
           "name": "larger",
           "description": "Aortic arch anomaly is larger",
           "index_codes": [
@@ -216,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_737344.7",
+          "value_code": "OIFMA_GMTS_478437.7",
           "name": "smaller",
           "description": "Aortic arch anomaly is smaller",
           "index_codes": [

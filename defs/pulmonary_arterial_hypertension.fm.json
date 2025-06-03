@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013932",
   "name": "pulmonary arterial hypertension",
-  "description": "Elevated pressure within the pulmonary arterial system.",
+  "description": "Increased blood pressure in the pulmonary arteries.",
   "synonyms": [
-    "PAH",
+    "PAH"
   ],
   "tags": [
-    "chest",
-    "CT",
+    "ultrasound",
+    "US",
     "MR",
-    "XR (indirectly)",
+    "CT",
+    "pulmonary",
     "vascular",
-    "lung",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_615772",
+      "oifma_id": "OIFMA_GMTS_716814",
       "name": "presence",
       "description": "Presence or absence of pulmonary arterial hypertension",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_615772.0",
+          "value_code": "OIFMA_GMTS_716814.0",
           "name": "absent",
           "description": "Pulmonary arterial hypertension is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.1",
+          "value_code": "OIFMA_GMTS_716814.1",
           "name": "present",
           "description": "Pulmonary arterial hypertension is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.2",
+          "value_code": "OIFMA_GMTS_716814.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary arterial hypertension cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.3",
+          "value_code": "OIFMA_GMTS_716814.3",
           "name": "unknown",
           "description": "Presence of pulmonary arterial hypertension is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_955007",
+      "oifma_id": "OIFMA_GMTS_165424",
       "name": "change from prior",
       "description": "Whether and how a pulmonary arterial hypertension has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_955007.0",
+          "value_code": "OIFMA_GMTS_165424.0",
           "name": "unchanged",
           "description": "Pulmonary arterial hypertension is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.1",
+          "value_code": "OIFMA_GMTS_165424.1",
           "name": "stable",
           "description": "Pulmonary arterial hypertension is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.2",
+          "value_code": "OIFMA_GMTS_165424.2",
           "name": "new",
           "description": "Pulmonary arterial hypertension is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.3",
+          "value_code": "OIFMA_GMTS_165424.3",
           "name": "resolved",
           "description": "Pulmonary arterial hypertension seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_955007.4",
+          "value_code": "OIFMA_GMTS_165424.4",
           "name": "increased",
           "description": "Pulmonary arterial hypertension has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.5",
+          "value_code": "OIFMA_GMTS_165424.5",
           "name": "decreased",
           "description": "Pulmonary arterial hypertension has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.6",
+          "value_code": "OIFMA_GMTS_165424.6",
           "name": "larger",
           "description": "Pulmonary arterial hypertension is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.7",
+          "value_code": "OIFMA_GMTS_165424.7",
           "name": "smaller",
           "description": "Pulmonary arterial hypertension is smaller",
           "index_codes": [

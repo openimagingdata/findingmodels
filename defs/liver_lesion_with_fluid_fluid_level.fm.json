@@ -1,0 +1,257 @@
+{
+  "oifm_id": "OIFM_GMTS_005562",
+  "name": "liver lesion with fluid-fluid level",
+  "description": "Liver lesion demonstrating distinct fluid separation on imaging.",
+  "synonyms": [
+    "cystic liver lesion"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "CT",
+    "MR",
+    "liver",
+    "cystic",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_739786",
+      "name": "presence",
+      "description": "Presence or absence of liver lesion with fluid-fluid level",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_739786.0",
+          "name": "absent",
+          "description": "Liver lesion with fluid-fluid level is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_739786.1",
+          "name": "present",
+          "description": "Liver lesion with fluid-fluid level is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_739786.2",
+          "name": "indeterminate",
+          "description": "Presence of liver lesion with fluid-fluid level cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_739786.3",
+          "name": "unknown",
+          "description": "Presence of liver lesion with fluid-fluid level is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_327366",
+      "name": "change from prior",
+      "description": "Whether and how a liver lesion with fluid-fluid level has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_327366.0",
+          "name": "unchanged",
+          "description": "Liver lesion with fluid-fluid level is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.1",
+          "name": "stable",
+          "description": "Liver lesion with fluid-fluid level is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.2",
+          "name": "new",
+          "description": "Liver lesion with fluid-fluid level is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.3",
+          "name": "resolved",
+          "description": "Liver lesion with fluid-fluid level seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.4",
+          "name": "increased",
+          "description": "Liver lesion with fluid-fluid level has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.5",
+          "name": "decreased",
+          "description": "Liver lesion with fluid-fluid level has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.6",
+          "name": "larger",
+          "description": "Liver lesion with fluid-fluid level is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_327366.7",
+          "name": "smaller",
+          "description": "Liver lesion with fluid-fluid level is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "5562",
+      "display": "liver lesion with fluid-fluid level"
+    }
+  ]
+}

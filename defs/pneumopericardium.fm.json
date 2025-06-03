@@ -1,26 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_013851",
   "name": "pneumopericardium",
-  "description": "Presence of gas or air within the pericardial sac.",
-  "synonyms": [
-    "air in pericardium"
-  ],
+  "description": "Presence of air or gas in the pericardial cavity",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "pericardium",
+    "XR",
+    "cardiovascular",
+    "gas",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_865590",
+      "oifma_id": "OIFMA_GMTS_357438",
       "name": "presence",
       "description": "Presence or absence of pneumopericardium",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_865590.0",
+          "value_code": "OIFMA_GMTS_357438.0",
           "name": "absent",
           "description": "Pneumopericardium is absent",
           "index_codes": [
@@ -37,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_865590.1",
+          "value_code": "OIFMA_GMTS_357438.1",
           "name": "present",
           "description": "Pneumopericardium is present",
           "index_codes": [
@@ -54,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_865590.2",
+          "value_code": "OIFMA_GMTS_357438.2",
           "name": "indeterminate",
           "description": "Presence of pneumopericardium cannot be determined",
           "index_codes": [
@@ -71,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_865590.3",
+          "value_code": "OIFMA_GMTS_357438.3",
           "name": "unknown",
           "description": "Presence of pneumopericardium is unknown",
           "index_codes": [
@@ -99,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_850068",
+      "oifma_id": "OIFMA_GMTS_722064",
       "name": "change from prior",
       "description": "Whether and how a pneumopericardium has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_850068.0",
+          "value_code": "OIFMA_GMTS_722064.0",
           "name": "unchanged",
           "description": "Pneumopericardium is unchanged",
           "index_codes": [
@@ -122,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.1",
+          "value_code": "OIFMA_GMTS_722064.1",
           "name": "stable",
           "description": "Pneumopericardium is stable",
           "index_codes": [
@@ -139,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.2",
+          "value_code": "OIFMA_GMTS_722064.2",
           "name": "new",
           "description": "Pneumopericardium is new",
           "index_codes": [
@@ -156,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.3",
+          "value_code": "OIFMA_GMTS_722064.3",
           "name": "resolved",
           "description": "Pneumopericardium seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_850068.4",
+          "value_code": "OIFMA_GMTS_722064.4",
           "name": "increased",
           "description": "Pneumopericardium has increased",
           "index_codes": [
@@ -178,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.5",
+          "value_code": "OIFMA_GMTS_722064.5",
           "name": "decreased",
           "description": "Pneumopericardium has decreased",
           "index_codes": [
@@ -195,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.6",
+          "value_code": "OIFMA_GMTS_722064.6",
           "name": "larger",
           "description": "Pneumopericardium is larger",
           "index_codes": [
@@ -212,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_850068.7",
+          "value_code": "OIFMA_GMTS_722064.7",
           "name": "smaller",
           "description": "Pneumopericardium is smaller",
           "index_codes": [

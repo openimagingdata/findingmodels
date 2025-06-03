@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_014902",
   "name": "bubbly lungs in infants and children",
-  "description": "Appearance of multiple small cystic or bubbly lucencies in the lungs of pediatric patients.",
+  "description": "Air-filled cystic changes in the lungs of young patients.",
   "synonyms": [
-    "bubbly lung pattern",
-    "cystic lung disease in children"
+    "cystic lung changes"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
     "CT",
+    "XR",
     "lung",
     "pediatric",
+    "respiratory",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935841",
+      "oifma_id": "OIFMA_GMTS_276504",
       "name": "presence",
       "description": "Presence or absence of bubbly lungs in infants and children",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935841.0",
+          "value_code": "OIFMA_GMTS_276504.0",
           "name": "absent",
           "description": "Bubbly lungs in infants and children is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935841.1",
+          "value_code": "OIFMA_GMTS_276504.1",
           "name": "present",
           "description": "Bubbly lungs in infants and children is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935841.2",
+          "value_code": "OIFMA_GMTS_276504.2",
           "name": "indeterminate",
           "description": "Presence of bubbly lungs in infants and children cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935841.3",
+          "value_code": "OIFMA_GMTS_276504.3",
           "name": "unknown",
           "description": "Presence of bubbly lungs in infants and children is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_169897",
+      "oifma_id": "OIFMA_GMTS_903057",
       "name": "change from prior",
       "description": "Whether and how a bubbly lungs in infants and children has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_169897.0",
+          "value_code": "OIFMA_GMTS_903057.0",
           "name": "unchanged",
           "description": "Bubbly lungs in infants and children is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.1",
+          "value_code": "OIFMA_GMTS_903057.1",
           "name": "stable",
           "description": "Bubbly lungs in infants and children is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.2",
+          "value_code": "OIFMA_GMTS_903057.2",
           "name": "new",
           "description": "Bubbly lungs in infants and children is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.3",
+          "value_code": "OIFMA_GMTS_903057.3",
           "name": "resolved",
           "description": "Bubbly lungs in infants and children seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_169897.4",
+          "value_code": "OIFMA_GMTS_903057.4",
           "name": "increased",
           "description": "Bubbly lungs in infants and children has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.5",
+          "value_code": "OIFMA_GMTS_903057.5",
           "name": "decreased",
           "description": "Bubbly lungs in infants and children has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.6",
+          "value_code": "OIFMA_GMTS_903057.6",
           "name": "larger",
           "description": "Bubbly lungs in infants and children is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_169897.7",
+          "value_code": "OIFMA_GMTS_903057.7",
           "name": "smaller",
           "description": "Bubbly lungs in infants and children is smaller",
           "index_codes": [

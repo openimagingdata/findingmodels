@@ -1,30 +1,29 @@
 {
   "oifm_id": "OIFM_GMTS_013432",
   "name": "late onset of cyanosis in neonatal congenital heart disease",
-  "description": "Development of cyanosis after birth in neonates due to underlying congenital cardiac defects.",
+  "description": "Delayed cyanotic symptoms in newborns with congenital heart conditions.",
   "synonyms": [
-    "delayed cyanosis in congenital heart disease",
-    "neonatal cyanosis with CHD"
+    "neonatal cyanosis",
+    "congenital heart defect"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
     "cardiac",
     "pediatric",
-    "finding"
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_096447",
+      "oifma_id": "OIFMA_GMTS_164305",
       "name": "presence",
       "description": "Presence or absence of late onset of cyanosis in neonatal congenital heart disease",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_096447.0",
+          "value_code": "OIFMA_GMTS_164305.0",
           "name": "absent",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is absent",
           "index_codes": [
@@ -41,7 +40,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_096447.1",
+          "value_code": "OIFMA_GMTS_164305.1",
           "name": "present",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is present",
           "index_codes": [
@@ -58,7 +57,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_096447.2",
+          "value_code": "OIFMA_GMTS_164305.2",
           "name": "indeterminate",
           "description": "Presence of late onset of cyanosis in neonatal congenital heart disease cannot be determined",
           "index_codes": [
@@ -75,7 +74,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_096447.3",
+          "value_code": "OIFMA_GMTS_164305.3",
           "name": "unknown",
           "description": "Presence of late onset of cyanosis in neonatal congenital heart disease is unknown",
           "index_codes": [
@@ -103,13 +102,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_257356",
+      "oifma_id": "OIFMA_GMTS_907570",
       "name": "change from prior",
       "description": "Whether and how a late onset of cyanosis in neonatal congenital heart disease has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_257356.0",
+          "value_code": "OIFMA_GMTS_907570.0",
           "name": "unchanged",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is unchanged",
           "index_codes": [
@@ -126,7 +125,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.1",
+          "value_code": "OIFMA_GMTS_907570.1",
           "name": "stable",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is stable",
           "index_codes": [
@@ -143,7 +142,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.2",
+          "value_code": "OIFMA_GMTS_907570.2",
           "name": "new",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is new",
           "index_codes": [
@@ -160,12 +159,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.3",
+          "value_code": "OIFMA_GMTS_907570.3",
           "name": "resolved",
           "description": "Late onset of cyanosis in neonatal congenital heart disease seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_257356.4",
+          "value_code": "OIFMA_GMTS_907570.4",
           "name": "increased",
           "description": "Late onset of cyanosis in neonatal congenital heart disease has increased",
           "index_codes": [
@@ -182,7 +181,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.5",
+          "value_code": "OIFMA_GMTS_907570.5",
           "name": "decreased",
           "description": "Late onset of cyanosis in neonatal congenital heart disease has decreased",
           "index_codes": [
@@ -199,7 +198,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.6",
+          "value_code": "OIFMA_GMTS_907570.6",
           "name": "larger",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is larger",
           "index_codes": [
@@ -216,7 +215,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257356.7",
+          "value_code": "OIFMA_GMTS_907570.7",
           "name": "smaller",
           "description": "Late onset of cyanosis in neonatal congenital heart disease is smaller",
           "index_codes": [

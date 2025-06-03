@@ -1,30 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_013412",
   "name": "right-to-left shunt or admixture lesion in congenital heart disease",
-  "description": "Presence of cardiac or vascular lesions in congenital heart disease that allow deoxygenated blood to mix with oxygenated blood.",
+  "description": "Blood flow from the right to the left side of the heart without passing through the lungs.",
   "synonyms": [
-    "R-L shunt",
-    "venous admixture",
-    "congenital shunt lesion"
+    "cyanotic heart defect"
   ],
   "tags": [
-    "chest",
-    "CT",
+    "ultrasound",
+    "US",
     "MR",
-    "echocardiography",
+    "CT",
     "cardiac",
     "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_148103",
+      "oifma_id": "OIFMA_GMTS_390548",
       "name": "presence",
       "description": "Presence or absence of right-to-left shunt or admixture lesion in congenital heart disease",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_148103.0",
+          "value_code": "OIFMA_GMTS_390548.0",
           "name": "absent",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is absent",
           "index_codes": [
@@ -41,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_148103.1",
+          "value_code": "OIFMA_GMTS_390548.1",
           "name": "present",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is present",
           "index_codes": [
@@ -58,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_148103.2",
+          "value_code": "OIFMA_GMTS_390548.2",
           "name": "indeterminate",
           "description": "Presence of right-to-left shunt or admixture lesion in congenital heart disease cannot be determined",
           "index_codes": [
@@ -75,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_148103.3",
+          "value_code": "OIFMA_GMTS_390548.3",
           "name": "unknown",
           "description": "Presence of right-to-left shunt or admixture lesion in congenital heart disease is unknown",
           "index_codes": [
@@ -103,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_442477",
+      "oifma_id": "OIFMA_GMTS_897518",
       "name": "change from prior",
       "description": "Whether and how a right-to-left shunt or admixture lesion in congenital heart disease has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_442477.0",
+          "value_code": "OIFMA_GMTS_897518.0",
           "name": "unchanged",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is unchanged",
           "index_codes": [
@@ -126,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.1",
+          "value_code": "OIFMA_GMTS_897518.1",
           "name": "stable",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is stable",
           "index_codes": [
@@ -143,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.2",
+          "value_code": "OIFMA_GMTS_897518.2",
           "name": "new",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is new",
           "index_codes": [
@@ -160,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.3",
+          "value_code": "OIFMA_GMTS_897518.3",
           "name": "resolved",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_442477.4",
+          "value_code": "OIFMA_GMTS_897518.4",
           "name": "increased",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease has increased",
           "index_codes": [
@@ -182,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.5",
+          "value_code": "OIFMA_GMTS_897518.5",
           "name": "decreased",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease has decreased",
           "index_codes": [
@@ -199,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.6",
+          "value_code": "OIFMA_GMTS_897518.6",
           "name": "larger",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is larger",
           "index_codes": [
@@ -216,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_442477.7",
+          "value_code": "OIFMA_GMTS_897518.7",
           "name": "smaller",
           "description": "Right-to-left shunt or admixture lesion in congenital heart disease is smaller",
           "index_codes": [

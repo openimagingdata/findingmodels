@@ -1,27 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_031040",
   "name": "undersegmentation of sternum",
-  "description": "Congenital failure of normal segmentation of the sternum, with fewer than usual parts visible.",
-  "synonyms": [
-    "hyposegmentation of sternum"
-  ],
+  "description": "Incomplete segmentation of sternal bones, possibly congenital",
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
     "CT",
+    "sternum",
     "congenital anomaly",
-    "chest wall",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_254127",
+      "oifma_id": "OIFMA_GMTS_097511",
       "name": "presence",
       "description": "Presence or absence of undersegmentation of sternum",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_254127.0",
+          "value_code": "OIFMA_GMTS_097511.0",
           "name": "absent",
           "description": "Undersegmentation of sternum is absent",
           "index_codes": [
@@ -38,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_254127.1",
+          "value_code": "OIFMA_GMTS_097511.1",
           "name": "present",
           "description": "Undersegmentation of sternum is present",
           "index_codes": [
@@ -55,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_254127.2",
+          "value_code": "OIFMA_GMTS_097511.2",
           "name": "indeterminate",
           "description": "Presence of undersegmentation of sternum cannot be determined",
           "index_codes": [
@@ -72,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_254127.3",
+          "value_code": "OIFMA_GMTS_097511.3",
           "name": "unknown",
           "description": "Presence of undersegmentation of sternum is unknown",
           "index_codes": [
@@ -100,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_711287",
+      "oifma_id": "OIFMA_GMTS_451820",
       "name": "change from prior",
       "description": "Whether and how a undersegmentation of sternum has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_711287.0",
+          "value_code": "OIFMA_GMTS_451820.0",
           "name": "unchanged",
           "description": "Undersegmentation of sternum is unchanged",
           "index_codes": [
@@ -123,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.1",
+          "value_code": "OIFMA_GMTS_451820.1",
           "name": "stable",
           "description": "Undersegmentation of sternum is stable",
           "index_codes": [
@@ -140,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.2",
+          "value_code": "OIFMA_GMTS_451820.2",
           "name": "new",
           "description": "Undersegmentation of sternum is new",
           "index_codes": [
@@ -157,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.3",
+          "value_code": "OIFMA_GMTS_451820.3",
           "name": "resolved",
           "description": "Undersegmentation of sternum seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_711287.4",
+          "value_code": "OIFMA_GMTS_451820.4",
           "name": "increased",
           "description": "Undersegmentation of sternum has increased",
           "index_codes": [
@@ -179,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.5",
+          "value_code": "OIFMA_GMTS_451820.5",
           "name": "decreased",
           "description": "Undersegmentation of sternum has decreased",
           "index_codes": [
@@ -196,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.6",
+          "value_code": "OIFMA_GMTS_451820.6",
           "name": "larger",
           "description": "Undersegmentation of sternum is larger",
           "index_codes": [
@@ -213,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711287.7",
+          "value_code": "OIFMA_GMTS_451820.7",
           "name": "smaller",
           "description": "Undersegmentation of sternum is smaller",
           "index_codes": [

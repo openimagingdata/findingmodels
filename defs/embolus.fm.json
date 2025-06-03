@@ -1,29 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_014088",
   "name": "embolus",
-  "description": "A clot or other material that travels and obstructs a blood vessel, often in the pulmonary arteries.",
+  "description": "Blockage of a vessel by a clot or other foreign material",
   "synonyms": [
-    "thromboembolism",
-    "embolism",
-    "pulmonary embolism (PE)"
+    "embolism"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
-    "XR",
+    "MR",
+    "US",
     "vascular",
-    "lung",
-    "finding"
+    "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_449876",
+      "oifma_id": "OIFMA_GMTS_031288",
       "name": "presence",
       "description": "Presence or absence of embolus",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_449876.0",
+          "value_code": "OIFMA_GMTS_031288.0",
           "name": "absent",
           "description": "Embolus is absent",
           "index_codes": [
@@ -40,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449876.1",
+          "value_code": "OIFMA_GMTS_031288.1",
           "name": "present",
           "description": "Embolus is present",
           "index_codes": [
@@ -57,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449876.2",
+          "value_code": "OIFMA_GMTS_031288.2",
           "name": "indeterminate",
           "description": "Presence of embolus cannot be determined",
           "index_codes": [
@@ -74,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449876.3",
+          "value_code": "OIFMA_GMTS_031288.3",
           "name": "unknown",
           "description": "Presence of embolus is unknown",
           "index_codes": [
@@ -102,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_336264",
+      "oifma_id": "OIFMA_GMTS_052666",
       "name": "change from prior",
       "description": "Whether and how a embolus has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_336264.0",
+          "value_code": "OIFMA_GMTS_052666.0",
           "name": "unchanged",
           "description": "Embolus is unchanged",
           "index_codes": [
@@ -125,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.1",
+          "value_code": "OIFMA_GMTS_052666.1",
           "name": "stable",
           "description": "Embolus is stable",
           "index_codes": [
@@ -142,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.2",
+          "value_code": "OIFMA_GMTS_052666.2",
           "name": "new",
           "description": "Embolus is new",
           "index_codes": [
@@ -159,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.3",
+          "value_code": "OIFMA_GMTS_052666.3",
           "name": "resolved",
           "description": "Embolus seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_336264.4",
+          "value_code": "OIFMA_GMTS_052666.4",
           "name": "increased",
           "description": "Embolus has increased",
           "index_codes": [
@@ -181,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.5",
+          "value_code": "OIFMA_GMTS_052666.5",
           "name": "decreased",
           "description": "Embolus has decreased",
           "index_codes": [
@@ -198,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.6",
+          "value_code": "OIFMA_GMTS_052666.6",
           "name": "larger",
           "description": "Embolus is larger",
           "index_codes": [
@@ -215,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_336264.7",
+          "value_code": "OIFMA_GMTS_052666.7",
           "name": "smaller",
           "description": "Embolus is smaller",
           "index_codes": [

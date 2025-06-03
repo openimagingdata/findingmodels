@@ -1,28 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_023185",
   "name": "pulmonary artery rupture",
-  "description": "Tear or disruption of the pulmonary artery wall, often with bleeding.",
+  "description": "Tear in the wall of the pulmonary artery.",
   "synonyms": [
-    "ruptured pulmonary artery"
+    "PA rupture"
   ],
   "tags": [
-    "chest",
-    "CT",
-    "XR (indirect signs)",
     "vascular",
-    "lung",
-    "postop finding (if iatrogenic)",
+    "CT",
+    "XR",
+    "US",
+    "pulmonary artery",
+    "rupture",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_769865",
+      "oifma_id": "OIFMA_GMTS_780958",
       "name": "presence",
       "description": "Presence or absence of pulmonary artery rupture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_769865.0",
+          "value_code": "OIFMA_GMTS_780958.0",
           "name": "absent",
           "description": "Pulmonary artery rupture is absent",
           "index_codes": [
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_769865.1",
+          "value_code": "OIFMA_GMTS_780958.1",
           "name": "present",
           "description": "Pulmonary artery rupture is present",
           "index_codes": [
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_769865.2",
+          "value_code": "OIFMA_GMTS_780958.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary artery rupture cannot be determined",
           "index_codes": [
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_769865.3",
+          "value_code": "OIFMA_GMTS_780958.3",
           "name": "unknown",
           "description": "Presence of pulmonary artery rupture is unknown",
           "index_codes": [
@@ -101,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_400447",
+      "oifma_id": "OIFMA_GMTS_911552",
       "name": "change from prior",
       "description": "Whether and how a pulmonary artery rupture has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_400447.0",
+          "value_code": "OIFMA_GMTS_911552.0",
           "name": "unchanged",
           "description": "Pulmonary artery rupture is unchanged",
           "index_codes": [
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.1",
+          "value_code": "OIFMA_GMTS_911552.1",
           "name": "stable",
           "description": "Pulmonary artery rupture is stable",
           "index_codes": [
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.2",
+          "value_code": "OIFMA_GMTS_911552.2",
           "name": "new",
           "description": "Pulmonary artery rupture is new",
           "index_codes": [
@@ -158,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.3",
+          "value_code": "OIFMA_GMTS_911552.3",
           "name": "resolved",
           "description": "Pulmonary artery rupture seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_400447.4",
+          "value_code": "OIFMA_GMTS_911552.4",
           "name": "increased",
           "description": "Pulmonary artery rupture has increased",
           "index_codes": [
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.5",
+          "value_code": "OIFMA_GMTS_911552.5",
           "name": "decreased",
           "description": "Pulmonary artery rupture has decreased",
           "index_codes": [
@@ -197,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.6",
+          "value_code": "OIFMA_GMTS_911552.6",
           "name": "larger",
           "description": "Pulmonary artery rupture is larger",
           "index_codes": [
@@ -214,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_400447.7",
+          "value_code": "OIFMA_GMTS_911552.7",
           "name": "smaller",
           "description": "Pulmonary artery rupture is smaller",
           "index_codes": [

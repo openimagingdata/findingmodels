@@ -1,26 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_013669",
   "name": "third mogul sign",
-  "description": "A radiographic sign of enlargement of the left atrial appendage.",
+  "description": "A chest X-ray sign indicating left atrial enlargement, seen as a third mogul on the left heart border.",
   "synonyms": [
-    "enlarged left atrial appendage"
+    "triple mogul sign"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
+    "CT",
     "cardiac",
-    "mediastinum",
+    "radiologic sign",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_060020",
+      "oifma_id": "OIFMA_GMTS_710365",
       "name": "presence",
       "description": "Presence or absence of third mogul sign",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_060020.0",
+          "value_code": "OIFMA_GMTS_710365.0",
           "name": "absent",
           "description": "Third mogul sign is absent",
           "index_codes": [
@@ -37,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_060020.1",
+          "value_code": "OIFMA_GMTS_710365.1",
           "name": "present",
           "description": "Third mogul sign is present",
           "index_codes": [
@@ -54,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_060020.2",
+          "value_code": "OIFMA_GMTS_710365.2",
           "name": "indeterminate",
           "description": "Presence of third mogul sign cannot be determined",
           "index_codes": [
@@ -71,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_060020.3",
+          "value_code": "OIFMA_GMTS_710365.3",
           "name": "unknown",
           "description": "Presence of third mogul sign is unknown",
           "index_codes": [
@@ -99,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_480287",
+      "oifma_id": "OIFMA_GMTS_140256",
       "name": "change from prior",
       "description": "Whether and how a third mogul sign has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_480287.0",
+          "value_code": "OIFMA_GMTS_140256.0",
           "name": "unchanged",
           "description": "Third mogul sign is unchanged",
           "index_codes": [
@@ -122,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.1",
+          "value_code": "OIFMA_GMTS_140256.1",
           "name": "stable",
           "description": "Third mogul sign is stable",
           "index_codes": [
@@ -139,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.2",
+          "value_code": "OIFMA_GMTS_140256.2",
           "name": "new",
           "description": "Third mogul sign is new",
           "index_codes": [
@@ -156,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.3",
+          "value_code": "OIFMA_GMTS_140256.3",
           "name": "resolved",
           "description": "Third mogul sign seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_480287.4",
+          "value_code": "OIFMA_GMTS_140256.4",
           "name": "increased",
           "description": "Third mogul sign has increased",
           "index_codes": [
@@ -178,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.5",
+          "value_code": "OIFMA_GMTS_140256.5",
           "name": "decreased",
           "description": "Third mogul sign has decreased",
           "index_codes": [
@@ -195,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.6",
+          "value_code": "OIFMA_GMTS_140256.6",
           "name": "larger",
           "description": "Third mogul sign is larger",
           "index_codes": [
@@ -212,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_480287.7",
+          "value_code": "OIFMA_GMTS_140256.7",
           "name": "smaller",
           "description": "Third mogul sign is smaller",
           "index_codes": [

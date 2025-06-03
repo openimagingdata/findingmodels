@@ -1,29 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_016074",
   "name": "pediatric chest wall lesion",
-  "description": "Pathologic process affecting the chest wall in a child.",
-  "synonyms": [
-    "childhood chest wall mass",
-    "pediatric chest wall abnormality"
-  ],
+  "description": "Abnormal growth or lesion in the chest wall of a child.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
-    "chest wall",
-    "pediatrics",
+    "chest",
+    "pediatric",
+    "mass",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_805556",
+      "oifma_id": "OIFMA_GMTS_249982",
       "name": "presence",
       "description": "Presence or absence of pediatric chest wall lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_805556.0",
+          "value_code": "OIFMA_GMTS_249982.0",
           "name": "absent",
           "description": "Pediatric chest wall lesion is absent",
           "index_codes": [
@@ -40,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805556.1",
+          "value_code": "OIFMA_GMTS_249982.1",
           "name": "present",
           "description": "Pediatric chest wall lesion is present",
           "index_codes": [
@@ -57,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805556.2",
+          "value_code": "OIFMA_GMTS_249982.2",
           "name": "indeterminate",
           "description": "Presence of pediatric chest wall lesion cannot be determined",
           "index_codes": [
@@ -74,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_805556.3",
+          "value_code": "OIFMA_GMTS_249982.3",
           "name": "unknown",
           "description": "Presence of pediatric chest wall lesion is unknown",
           "index_codes": [
@@ -102,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_075753",
+      "oifma_id": "OIFMA_GMTS_930861",
       "name": "change from prior",
       "description": "Whether and how a pediatric chest wall lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_075753.0",
+          "value_code": "OIFMA_GMTS_930861.0",
           "name": "unchanged",
           "description": "Pediatric chest wall lesion is unchanged",
           "index_codes": [
@@ -125,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.1",
+          "value_code": "OIFMA_GMTS_930861.1",
           "name": "stable",
           "description": "Pediatric chest wall lesion is stable",
           "index_codes": [
@@ -142,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.2",
+          "value_code": "OIFMA_GMTS_930861.2",
           "name": "new",
           "description": "Pediatric chest wall lesion is new",
           "index_codes": [
@@ -159,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.3",
+          "value_code": "OIFMA_GMTS_930861.3",
           "name": "resolved",
           "description": "Pediatric chest wall lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_075753.4",
+          "value_code": "OIFMA_GMTS_930861.4",
           "name": "increased",
           "description": "Pediatric chest wall lesion has increased",
           "index_codes": [
@@ -181,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.5",
+          "value_code": "OIFMA_GMTS_930861.5",
           "name": "decreased",
           "description": "Pediatric chest wall lesion has decreased",
           "index_codes": [
@@ -198,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.6",
+          "value_code": "OIFMA_GMTS_930861.6",
           "name": "larger",
           "description": "Pediatric chest wall lesion is larger",
           "index_codes": [
@@ -215,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_075753.7",
+          "value_code": "OIFMA_GMTS_930861.7",
           "name": "smaller",
           "description": "Pediatric chest wall lesion is smaller",
           "index_codes": [

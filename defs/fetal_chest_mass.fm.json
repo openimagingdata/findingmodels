@@ -1,29 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_019061",
   "name": "fetal chest mass",
-  "description": "A mass detected within the chest of a fetus, which may be congenital or neoplastic.",
-  "synonyms": [
-    "fetal intrathoracic mass",
-    "congenital chest mass"
-  ],
+  "description": "An abnormal growth located in the fetal thoracic region.",
   "tags": [
-    "chest",
+    "ultrasound",
     "US",
     "MR",
-    "congenital anomaly",
-    "lung",
-    "mediastinum",
+    "chest",
+    "mass",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_642180",
+      "oifma_id": "OIFMA_GMTS_706453",
       "name": "presence",
       "description": "Presence or absence of fetal chest mass",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_642180.0",
+          "value_code": "OIFMA_GMTS_706453.0",
           "name": "absent",
           "description": "Fetal chest mass is absent",
           "index_codes": [
@@ -40,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_642180.1",
+          "value_code": "OIFMA_GMTS_706453.1",
           "name": "present",
           "description": "Fetal chest mass is present",
           "index_codes": [
@@ -57,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_642180.2",
+          "value_code": "OIFMA_GMTS_706453.2",
           "name": "indeterminate",
           "description": "Presence of fetal chest mass cannot be determined",
           "index_codes": [
@@ -74,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_642180.3",
+          "value_code": "OIFMA_GMTS_706453.3",
           "name": "unknown",
           "description": "Presence of fetal chest mass is unknown",
           "index_codes": [
@@ -102,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_522620",
+      "oifma_id": "OIFMA_GMTS_322518",
       "name": "change from prior",
       "description": "Whether and how a fetal chest mass has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_522620.0",
+          "value_code": "OIFMA_GMTS_322518.0",
           "name": "unchanged",
           "description": "Fetal chest mass is unchanged",
           "index_codes": [
@@ -125,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.1",
+          "value_code": "OIFMA_GMTS_322518.1",
           "name": "stable",
           "description": "Fetal chest mass is stable",
           "index_codes": [
@@ -142,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.2",
+          "value_code": "OIFMA_GMTS_322518.2",
           "name": "new",
           "description": "Fetal chest mass is new",
           "index_codes": [
@@ -159,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.3",
+          "value_code": "OIFMA_GMTS_322518.3",
           "name": "resolved",
           "description": "Fetal chest mass seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_522620.4",
+          "value_code": "OIFMA_GMTS_322518.4",
           "name": "increased",
           "description": "Fetal chest mass has increased",
           "index_codes": [
@@ -181,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.5",
+          "value_code": "OIFMA_GMTS_322518.5",
           "name": "decreased",
           "description": "Fetal chest mass has decreased",
           "index_codes": [
@@ -198,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.6",
+          "value_code": "OIFMA_GMTS_322518.6",
           "name": "larger",
           "description": "Fetal chest mass is larger",
           "index_codes": [
@@ -215,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_522620.7",
+          "value_code": "OIFMA_GMTS_322518.7",
           "name": "smaller",
           "description": "Fetal chest mass is smaller",
           "index_codes": [

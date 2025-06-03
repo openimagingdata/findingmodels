@@ -1,29 +1,30 @@
 {
   "oifm_id": "OIFM_GMTS_013476",
   "name": "complete atrioventricular canal",
-  "description": "A congenital heart defect with a common atrioventricular valve and septal defects.",
+  "description": "A congenital heart defect involving a large hole in the center of the heart where the walls between the upper and lower chambers meet.",
   "synonyms": [
-    "complete AV canal",
-    "atrioventricular septal defect"
+    "AV canal defect",
+    "CAVC"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
+    "cardiovascular",
+    "congenital",
     "heart",
-    "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_242966",
+      "oifma_id": "OIFMA_GMTS_173141",
       "name": "presence",
       "description": "Presence or absence of complete atrioventricular canal",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_242966.0",
+          "value_code": "OIFMA_GMTS_173141.0",
           "name": "absent",
           "description": "Complete atrioventricular canal is absent",
           "index_codes": [
@@ -40,7 +41,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242966.1",
+          "value_code": "OIFMA_GMTS_173141.1",
           "name": "present",
           "description": "Complete atrioventricular canal is present",
           "index_codes": [
@@ -57,7 +58,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242966.2",
+          "value_code": "OIFMA_GMTS_173141.2",
           "name": "indeterminate",
           "description": "Presence of complete atrioventricular canal cannot be determined",
           "index_codes": [
@@ -74,7 +75,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242966.3",
+          "value_code": "OIFMA_GMTS_173141.3",
           "name": "unknown",
           "description": "Presence of complete atrioventricular canal is unknown",
           "index_codes": [
@@ -102,13 +103,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_898835",
+      "oifma_id": "OIFMA_GMTS_916839",
       "name": "change from prior",
       "description": "Whether and how a complete atrioventricular canal has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_898835.0",
+          "value_code": "OIFMA_GMTS_916839.0",
           "name": "unchanged",
           "description": "Complete atrioventricular canal is unchanged",
           "index_codes": [
@@ -125,7 +126,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.1",
+          "value_code": "OIFMA_GMTS_916839.1",
           "name": "stable",
           "description": "Complete atrioventricular canal is stable",
           "index_codes": [
@@ -142,7 +143,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.2",
+          "value_code": "OIFMA_GMTS_916839.2",
           "name": "new",
           "description": "Complete atrioventricular canal is new",
           "index_codes": [
@@ -159,12 +160,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.3",
+          "value_code": "OIFMA_GMTS_916839.3",
           "name": "resolved",
           "description": "Complete atrioventricular canal seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_898835.4",
+          "value_code": "OIFMA_GMTS_916839.4",
           "name": "increased",
           "description": "Complete atrioventricular canal has increased",
           "index_codes": [
@@ -181,7 +182,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.5",
+          "value_code": "OIFMA_GMTS_916839.5",
           "name": "decreased",
           "description": "Complete atrioventricular canal has decreased",
           "index_codes": [
@@ -198,7 +199,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.6",
+          "value_code": "OIFMA_GMTS_916839.6",
           "name": "larger",
           "description": "Complete atrioventricular canal is larger",
           "index_codes": [
@@ -215,7 +216,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_898835.7",
+          "value_code": "OIFMA_GMTS_916839.7",
           "name": "smaller",
           "description": "Complete atrioventricular canal is smaller",
           "index_codes": [

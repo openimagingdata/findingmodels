@@ -1,29 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_013902",
   "name": "unilateral pulmonary arterial hypervascularity",
-  "description": "Increased blood flow or density of pulmonary arteries on one side.",
+  "description": "Increased vascular markings in one lung, often due to underlying shunts or vascular lesions.",
   "synonyms": [
-    "unilateral pulmonary hyperemia",
-    "increased unilateral pulmonary vascularity"
+    "asymmetric pulmonary vascularity"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
-    "MR",
     "XR",
+    "pulmonary",
     "vascular",
-    "lung",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_132402",
+      "oifma_id": "OIFMA_GMTS_306153",
       "name": "presence",
       "description": "Presence or absence of unilateral pulmonary arterial hypervascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_132402.0",
+          "value_code": "OIFMA_GMTS_306153.0",
           "name": "absent",
           "description": "Unilateral pulmonary arterial hypervascularity is absent",
           "index_codes": [
@@ -40,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132402.1",
+          "value_code": "OIFMA_GMTS_306153.1",
           "name": "present",
           "description": "Unilateral pulmonary arterial hypervascularity is present",
           "index_codes": [
@@ -57,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132402.2",
+          "value_code": "OIFMA_GMTS_306153.2",
           "name": "indeterminate",
           "description": "Presence of unilateral pulmonary arterial hypervascularity cannot be determined",
           "index_codes": [
@@ -74,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_132402.3",
+          "value_code": "OIFMA_GMTS_306153.3",
           "name": "unknown",
           "description": "Presence of unilateral pulmonary arterial hypervascularity is unknown",
           "index_codes": [
@@ -102,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_477098",
+      "oifma_id": "OIFMA_GMTS_319126",
       "name": "change from prior",
       "description": "Whether and how a unilateral pulmonary arterial hypervascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_477098.0",
+          "value_code": "OIFMA_GMTS_319126.0",
           "name": "unchanged",
           "description": "Unilateral pulmonary arterial hypervascularity is unchanged",
           "index_codes": [
@@ -125,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.1",
+          "value_code": "OIFMA_GMTS_319126.1",
           "name": "stable",
           "description": "Unilateral pulmonary arterial hypervascularity is stable",
           "index_codes": [
@@ -142,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.2",
+          "value_code": "OIFMA_GMTS_319126.2",
           "name": "new",
           "description": "Unilateral pulmonary arterial hypervascularity is new",
           "index_codes": [
@@ -159,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.3",
+          "value_code": "OIFMA_GMTS_319126.3",
           "name": "resolved",
           "description": "Unilateral pulmonary arterial hypervascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_477098.4",
+          "value_code": "OIFMA_GMTS_319126.4",
           "name": "increased",
           "description": "Unilateral pulmonary arterial hypervascularity has increased",
           "index_codes": [
@@ -181,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.5",
+          "value_code": "OIFMA_GMTS_319126.5",
           "name": "decreased",
           "description": "Unilateral pulmonary arterial hypervascularity has decreased",
           "index_codes": [
@@ -198,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.6",
+          "value_code": "OIFMA_GMTS_319126.6",
           "name": "larger",
           "description": "Unilateral pulmonary arterial hypervascularity is larger",
           "index_codes": [
@@ -215,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_477098.7",
+          "value_code": "OIFMA_GMTS_319126.7",
           "name": "smaller",
           "description": "Unilateral pulmonary arterial hypervascularity is smaller",
           "index_codes": [

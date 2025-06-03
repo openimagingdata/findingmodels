@@ -1,0 +1,259 @@
+{
+  "oifm_id": "OIFM_GMTS_010848",
+  "name": "tumor-induced osteomalacia",
+  "description": "Bone softening due to phosphaturia caused by tumor-secreted substances.",
+  "synonyms": [
+    "oncogenic osteomalacia",
+    "TIO"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "XR",
+    "MR",
+    "CT",
+    "bone",
+    "neoplastic",
+    "metabolic",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_428055",
+      "name": "presence",
+      "description": "Presence or absence of tumor-induced osteomalacia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_428055.0",
+          "name": "absent",
+          "description": "Tumor-induced osteomalacia is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_428055.1",
+          "name": "present",
+          "description": "Tumor-induced osteomalacia is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_428055.2",
+          "name": "indeterminate",
+          "description": "Presence of tumor-induced osteomalacia cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_428055.3",
+          "name": "unknown",
+          "description": "Presence of tumor-induced osteomalacia is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_853951",
+      "name": "change from prior",
+      "description": "Whether and how a tumor-induced osteomalacia has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_853951.0",
+          "name": "unchanged",
+          "description": "Tumor-induced osteomalacia is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.1",
+          "name": "stable",
+          "description": "Tumor-induced osteomalacia is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.2",
+          "name": "new",
+          "description": "Tumor-induced osteomalacia is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.3",
+          "name": "resolved",
+          "description": "Tumor-induced osteomalacia seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.4",
+          "name": "increased",
+          "description": "Tumor-induced osteomalacia has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.5",
+          "name": "decreased",
+          "description": "Tumor-induced osteomalacia has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.6",
+          "name": "larger",
+          "description": "Tumor-induced osteomalacia is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_853951.7",
+          "name": "smaller",
+          "description": "Tumor-induced osteomalacia is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "10848",
+      "display": "tumor-induced osteomalacia"
+    }
+  ]
+}

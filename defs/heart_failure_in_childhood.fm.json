@@ -1,30 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_030931",
   "name": "heart failure in childhood",
-  "description": "Cardiac dysfunction leading to inadequate perfusion, presenting after infancy.",
+  "description": "Heart failure occurring in pediatric patients.",
   "synonyms": [
-    "pediatric heart failure",
-    "childhood congestive heart failure"
+    "pediatric heart failure"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "US",
-    "heart",
-    "vascular",
+    "cardiac",
+    "pediatric",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_056769",
+      "oifma_id": "OIFMA_GMTS_493213",
       "name": "presence",
       "description": "Presence or absence of heart failure in childhood",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_056769.0",
+          "value_code": "OIFMA_GMTS_493213.0",
           "name": "absent",
           "description": "Heart failure in childhood is absent",
           "index_codes": [
@@ -41,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_056769.1",
+          "value_code": "OIFMA_GMTS_493213.1",
           "name": "present",
           "description": "Heart failure in childhood is present",
           "index_codes": [
@@ -58,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_056769.2",
+          "value_code": "OIFMA_GMTS_493213.2",
           "name": "indeterminate",
           "description": "Presence of heart failure in childhood cannot be determined",
           "index_codes": [
@@ -75,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_056769.3",
+          "value_code": "OIFMA_GMTS_493213.3",
           "name": "unknown",
           "description": "Presence of heart failure in childhood is unknown",
           "index_codes": [
@@ -103,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_499084",
+      "oifma_id": "OIFMA_GMTS_076515",
       "name": "change from prior",
       "description": "Whether and how a heart failure in childhood has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_499084.0",
+          "value_code": "OIFMA_GMTS_076515.0",
           "name": "unchanged",
           "description": "Heart failure in childhood is unchanged",
           "index_codes": [
@@ -126,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.1",
+          "value_code": "OIFMA_GMTS_076515.1",
           "name": "stable",
           "description": "Heart failure in childhood is stable",
           "index_codes": [
@@ -143,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.2",
+          "value_code": "OIFMA_GMTS_076515.2",
           "name": "new",
           "description": "Heart failure in childhood is new",
           "index_codes": [
@@ -160,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.3",
+          "value_code": "OIFMA_GMTS_076515.3",
           "name": "resolved",
           "description": "Heart failure in childhood seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_499084.4",
+          "value_code": "OIFMA_GMTS_076515.4",
           "name": "increased",
           "description": "Heart failure in childhood has increased",
           "index_codes": [
@@ -182,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.5",
+          "value_code": "OIFMA_GMTS_076515.5",
           "name": "decreased",
           "description": "Heart failure in childhood has decreased",
           "index_codes": [
@@ -199,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.6",
+          "value_code": "OIFMA_GMTS_076515.6",
           "name": "larger",
           "description": "Heart failure in childhood is larger",
           "index_codes": [
@@ -216,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_499084.7",
+          "value_code": "OIFMA_GMTS_076515.7",
           "name": "smaller",
           "description": "Heart failure in childhood is smaller",
           "index_codes": [

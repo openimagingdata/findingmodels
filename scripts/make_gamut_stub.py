@@ -78,6 +78,7 @@ def read_gamut_jsonl(
                 gamut_info["name"] = gamut_info["name"] + "*"
             fm = stub_from_gamut(region=region, **gamut_info)
             fm_filename = model_file_name(fm.name)
+            index.write_model_to_file(fm, filename=fm_filename, overwrite=True)
             try:
                 index.add_entry(fm, fm_filename)
             except ValueError as e:
@@ -85,7 +86,10 @@ def read_gamut_jsonl(
                     already_exists.append(f"{label}-{fm.oifm_id}-{fm.name}")
                     continue
                 elif "attribute IDs already exist" in e.args[0]:
-                    attribute_collisions.append(f"{label}-{fm.oifm_id}-{fm.name}")
+                    # attribute_collisions.append(f"{label}-{fm.oifm_id}-{fm.name}")
+                    fm = stub_from_gamut(region=region, **gamut_info)
+                    index.add_entry(fm, fm_filename)
+                    index.write_model_to_file(fm, filename=fm_filename, overwrite=True)
                     continue
                 elif "Model name" in e.args[0]:
                     conflict = index[fm.name]

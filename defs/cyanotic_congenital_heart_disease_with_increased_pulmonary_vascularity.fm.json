@@ -1,29 +1,27 @@
 {
   "oifm_id": "OIFM_GMTS_013503",
   "name": "cyanotic congenital heart disease with increased pulmonary vascularity",
-  "description": "Cyanotic heart defects with increased blood flow to the lungs.",
-  "synonyms": [
-    "cyanotic CHD with increased pulm blood flow"
-  ],
+  "description": "Heart defect present at birth causing cyanosis and increased blood flow to the lungs.",
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
-    "heart",
-    "lung vasculature",
+    "US",
+    "cardiac",
+    "pediatric",
+    "vascular",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_142370",
+      "oifma_id": "OIFMA_GMTS_095905",
       "name": "presence",
       "description": "Presence or absence of cyanotic congenital heart disease with increased pulmonary vascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_142370.0",
+          "value_code": "OIFMA_GMTS_095905.0",
           "name": "absent",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is absent",
           "index_codes": [
@@ -40,7 +38,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_142370.1",
+          "value_code": "OIFMA_GMTS_095905.1",
           "name": "present",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is present",
           "index_codes": [
@@ -57,7 +55,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_142370.2",
+          "value_code": "OIFMA_GMTS_095905.2",
           "name": "indeterminate",
           "description": "Presence of cyanotic congenital heart disease with increased pulmonary vascularity cannot be determined",
           "index_codes": [
@@ -74,7 +72,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_142370.3",
+          "value_code": "OIFMA_GMTS_095905.3",
           "name": "unknown",
           "description": "Presence of cyanotic congenital heart disease with increased pulmonary vascularity is unknown",
           "index_codes": [
@@ -102,13 +100,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_220047",
+      "oifma_id": "OIFMA_GMTS_928545",
       "name": "change from prior",
       "description": "Whether and how a cyanotic congenital heart disease with increased pulmonary vascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_220047.0",
+          "value_code": "OIFMA_GMTS_928545.0",
           "name": "unchanged",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is unchanged",
           "index_codes": [
@@ -125,7 +123,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.1",
+          "value_code": "OIFMA_GMTS_928545.1",
           "name": "stable",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is stable",
           "index_codes": [
@@ -142,7 +140,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.2",
+          "value_code": "OIFMA_GMTS_928545.2",
           "name": "new",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is new",
           "index_codes": [
@@ -159,12 +157,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.3",
+          "value_code": "OIFMA_GMTS_928545.3",
           "name": "resolved",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_220047.4",
+          "value_code": "OIFMA_GMTS_928545.4",
           "name": "increased",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity has increased",
           "index_codes": [
@@ -181,7 +179,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.5",
+          "value_code": "OIFMA_GMTS_928545.5",
           "name": "decreased",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity has decreased",
           "index_codes": [
@@ -198,7 +196,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.6",
+          "value_code": "OIFMA_GMTS_928545.6",
           "name": "larger",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is larger",
           "index_codes": [
@@ -215,7 +213,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_220047.7",
+          "value_code": "OIFMA_GMTS_928545.7",
           "name": "smaller",
           "description": "Cyanotic congenital heart disease with increased pulmonary vascularity is smaller",
           "index_codes": [

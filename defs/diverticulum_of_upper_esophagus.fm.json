@@ -1,28 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_003557",
   "name": "diverticulum of upper esophagus",
-  "description": "A pouch-like outpouching from the upper esophagus.",
-  "synonyms": [
-    "Zenker diverticulum",
-    "pharyngoesophageal diverticulum"
-  ],
+  "description": "A diverticulum located in the upper esophagus.",
   "tags": [
-    "chest",
+    "abdomen",
     "CT",
-    "fluoroscopy",
+    "XR",
+    "MR",
     "esophagus",
-    "mediastinum",
-    "diagnosis"
+    "gastrointestinal",
+    "anatomy",
+    "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_494146",
+      "oifma_id": "OIFMA_GMTS_935966",
       "name": "presence",
       "description": "Presence or absence of diverticulum of upper esophagus",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_494146.0",
+          "value_code": "OIFMA_GMTS_935966.0",
           "name": "absent",
           "description": "Diverticulum of upper esophagus is absent",
           "index_codes": [
@@ -39,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_494146.1",
+          "value_code": "OIFMA_GMTS_935966.1",
           "name": "present",
           "description": "Diverticulum of upper esophagus is present",
           "index_codes": [
@@ -56,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_494146.2",
+          "value_code": "OIFMA_GMTS_935966.2",
           "name": "indeterminate",
           "description": "Presence of diverticulum of upper esophagus cannot be determined",
           "index_codes": [
@@ -73,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_494146.3",
+          "value_code": "OIFMA_GMTS_935966.3",
           "name": "unknown",
           "description": "Presence of diverticulum of upper esophagus is unknown",
           "index_codes": [
@@ -101,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_860057",
+      "oifma_id": "OIFMA_GMTS_545559",
       "name": "change from prior",
       "description": "Whether and how a diverticulum of upper esophagus has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_860057.0",
+          "value_code": "OIFMA_GMTS_545559.0",
           "name": "unchanged",
           "description": "Diverticulum of upper esophagus is unchanged",
           "index_codes": [
@@ -124,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.1",
+          "value_code": "OIFMA_GMTS_545559.1",
           "name": "stable",
           "description": "Diverticulum of upper esophagus is stable",
           "index_codes": [
@@ -141,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.2",
+          "value_code": "OIFMA_GMTS_545559.2",
           "name": "new",
           "description": "Diverticulum of upper esophagus is new",
           "index_codes": [
@@ -158,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.3",
+          "value_code": "OIFMA_GMTS_545559.3",
           "name": "resolved",
           "description": "Diverticulum of upper esophagus seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_860057.4",
+          "value_code": "OIFMA_GMTS_545559.4",
           "name": "increased",
           "description": "Diverticulum of upper esophagus has increased",
           "index_codes": [
@@ -180,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.5",
+          "value_code": "OIFMA_GMTS_545559.5",
           "name": "decreased",
           "description": "Diverticulum of upper esophagus has decreased",
           "index_codes": [
@@ -197,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.6",
+          "value_code": "OIFMA_GMTS_545559.6",
           "name": "larger",
           "description": "Diverticulum of upper esophagus is larger",
           "index_codes": [
@@ -214,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_860057.7",
+          "value_code": "OIFMA_GMTS_545559.7",
           "name": "smaller",
           "description": "Diverticulum of upper esophagus is smaller",
           "index_codes": [

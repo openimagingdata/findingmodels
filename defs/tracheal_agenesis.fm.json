@@ -1,27 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_022612",
   "name": "tracheal agenesis",
-  "description": "Congenital absence of the trachea.",
-  "synonyms": [
-    "congenital absence of trachea"
-  ],
+  "description": "Rare congenital condition where the trachea fails to develop.",
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
+    "US",
     "CT",
-    "congenital anomaly",
     "airway",
+    "congenital anomaly",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_331781",
+      "oifma_id": "OIFMA_GMTS_845349",
       "name": "presence",
       "description": "Presence or absence of tracheal agenesis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_331781.0",
+          "value_code": "OIFMA_GMTS_845349.0",
           "name": "absent",
           "description": "Tracheal agenesis is absent",
           "index_codes": [
@@ -38,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_331781.1",
+          "value_code": "OIFMA_GMTS_845349.1",
           "name": "present",
           "description": "Tracheal agenesis is present",
           "index_codes": [
@@ -55,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_331781.2",
+          "value_code": "OIFMA_GMTS_845349.2",
           "name": "indeterminate",
           "description": "Presence of tracheal agenesis cannot be determined",
           "index_codes": [
@@ -72,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_331781.3",
+          "value_code": "OIFMA_GMTS_845349.3",
           "name": "unknown",
           "description": "Presence of tracheal agenesis is unknown",
           "index_codes": [
@@ -100,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_010465",
+      "oifma_id": "OIFMA_GMTS_988822",
       "name": "change from prior",
       "description": "Whether and how a tracheal agenesis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_010465.0",
+          "value_code": "OIFMA_GMTS_988822.0",
           "name": "unchanged",
           "description": "Tracheal agenesis is unchanged",
           "index_codes": [
@@ -123,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.1",
+          "value_code": "OIFMA_GMTS_988822.1",
           "name": "stable",
           "description": "Tracheal agenesis is stable",
           "index_codes": [
@@ -140,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.2",
+          "value_code": "OIFMA_GMTS_988822.2",
           "name": "new",
           "description": "Tracheal agenesis is new",
           "index_codes": [
@@ -157,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.3",
+          "value_code": "OIFMA_GMTS_988822.3",
           "name": "resolved",
           "description": "Tracheal agenesis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_010465.4",
+          "value_code": "OIFMA_GMTS_988822.4",
           "name": "increased",
           "description": "Tracheal agenesis has increased",
           "index_codes": [
@@ -179,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.5",
+          "value_code": "OIFMA_GMTS_988822.5",
           "name": "decreased",
           "description": "Tracheal agenesis has decreased",
           "index_codes": [
@@ -196,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.6",
+          "value_code": "OIFMA_GMTS_988822.6",
           "name": "larger",
           "description": "Tracheal agenesis is larger",
           "index_codes": [
@@ -213,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_010465.7",
+          "value_code": "OIFMA_GMTS_988822.7",
           "name": "smaller",
           "description": "Tracheal agenesis is smaller",
           "index_codes": [

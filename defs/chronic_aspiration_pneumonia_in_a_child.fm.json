@@ -1,29 +1,28 @@
 {
   "oifm_id": "OIFM_GMTS_014261",
   "name": "chronic aspiration pneumonia in a child",
-  "description": "Recurrent or persistent lung infection in children due to chronic aspiration.",
+  "description": "Recurrent pneumonia due to inhalation of food or liquid into the lungs.",
   "synonyms": [
-    "pediatric aspiration pneumonia",
-    "recurrent aspiration in child"
+    "aspiration pneumonia"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "CT",
-    "lung",
     "pediatric",
-    "inflammatory process",
+    "CT",
+    "XR",
+    "pediatric",
+    "inflammatory",
+    "lung",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_333761",
+      "oifma_id": "OIFMA_GMTS_659167",
       "name": "presence",
       "description": "Presence or absence of chronic aspiration pneumonia in a child",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_333761.0",
+          "value_code": "OIFMA_GMTS_659167.0",
           "name": "absent",
           "description": "Chronic aspiration pneumonia in a child is absent",
           "index_codes": [
@@ -40,7 +39,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_333761.1",
+          "value_code": "OIFMA_GMTS_659167.1",
           "name": "present",
           "description": "Chronic aspiration pneumonia in a child is present",
           "index_codes": [
@@ -57,7 +56,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_333761.2",
+          "value_code": "OIFMA_GMTS_659167.2",
           "name": "indeterminate",
           "description": "Presence of chronic aspiration pneumonia in a child cannot be determined",
           "index_codes": [
@@ -74,7 +73,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_333761.3",
+          "value_code": "OIFMA_GMTS_659167.3",
           "name": "unknown",
           "description": "Presence of chronic aspiration pneumonia in a child is unknown",
           "index_codes": [
@@ -102,13 +101,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_095710",
+      "oifma_id": "OIFMA_GMTS_451092",
       "name": "change from prior",
       "description": "Whether and how a chronic aspiration pneumonia in a child has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_095710.0",
+          "value_code": "OIFMA_GMTS_451092.0",
           "name": "unchanged",
           "description": "Chronic aspiration pneumonia in a child is unchanged",
           "index_codes": [
@@ -125,7 +124,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.1",
+          "value_code": "OIFMA_GMTS_451092.1",
           "name": "stable",
           "description": "Chronic aspiration pneumonia in a child is stable",
           "index_codes": [
@@ -142,7 +141,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.2",
+          "value_code": "OIFMA_GMTS_451092.2",
           "name": "new",
           "description": "Chronic aspiration pneumonia in a child is new",
           "index_codes": [
@@ -159,12 +158,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.3",
+          "value_code": "OIFMA_GMTS_451092.3",
           "name": "resolved",
           "description": "Chronic aspiration pneumonia in a child seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_095710.4",
+          "value_code": "OIFMA_GMTS_451092.4",
           "name": "increased",
           "description": "Chronic aspiration pneumonia in a child has increased",
           "index_codes": [
@@ -181,7 +180,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.5",
+          "value_code": "OIFMA_GMTS_451092.5",
           "name": "decreased",
           "description": "Chronic aspiration pneumonia in a child has decreased",
           "index_codes": [
@@ -198,7 +197,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.6",
+          "value_code": "OIFMA_GMTS_451092.6",
           "name": "larger",
           "description": "Chronic aspiration pneumonia in a child is larger",
           "index_codes": [
@@ -215,7 +214,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_095710.7",
+          "value_code": "OIFMA_GMTS_451092.7",
           "name": "smaller",
           "description": "Chronic aspiration pneumonia in a child is smaller",
           "index_codes": [

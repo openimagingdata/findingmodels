@@ -1,0 +1,256 @@
+{
+  "oifm_id": "OIFM_GMTS_013033",
+  "name": "soft-tissue mass with adjacent bone erosion",
+  "description": "A mass in soft tissue that is causing erosion of the nearby bone, suggesting an aggressive process.",
+  "synonyms": [
+    "soft-tissue tumor with bone involvement"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "CT",
+    "MR",
+    "neoplastic",
+    "soft tissue",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_064684",
+      "name": "presence",
+      "description": "Presence or absence of soft-tissue mass with adjacent bone erosion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_064684.0",
+          "name": "absent",
+          "description": "Soft-tissue mass with adjacent bone erosion is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_064684.1",
+          "name": "present",
+          "description": "Soft-tissue mass with adjacent bone erosion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_064684.2",
+          "name": "indeterminate",
+          "description": "Presence of soft-tissue mass with adjacent bone erosion cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_064684.3",
+          "name": "unknown",
+          "description": "Presence of soft-tissue mass with adjacent bone erosion is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_379247",
+      "name": "change from prior",
+      "description": "Whether and how a soft-tissue mass with adjacent bone erosion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_379247.0",
+          "name": "unchanged",
+          "description": "Soft-tissue mass with adjacent bone erosion is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.1",
+          "name": "stable",
+          "description": "Soft-tissue mass with adjacent bone erosion is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.2",
+          "name": "new",
+          "description": "Soft-tissue mass with adjacent bone erosion is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.3",
+          "name": "resolved",
+          "description": "Soft-tissue mass with adjacent bone erosion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.4",
+          "name": "increased",
+          "description": "Soft-tissue mass with adjacent bone erosion has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.5",
+          "name": "decreased",
+          "description": "Soft-tissue mass with adjacent bone erosion has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.6",
+          "name": "larger",
+          "description": "Soft-tissue mass with adjacent bone erosion is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_379247.7",
+          "name": "smaller",
+          "description": "Soft-tissue mass with adjacent bone erosion is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "13033",
+      "display": "soft-tissue mass with adjacent bone erosion"
+    }
+  ]
+}
