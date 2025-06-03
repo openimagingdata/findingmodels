@@ -2,9 +2,7 @@
   "oifm_id": "OIFM_GMTS_008150",
   "name": "unilateral exophthalmos",
   "description": "Protrusion of one eye only.",
-  "synonyms": [
-    "unilateral proptosis"
-  ],
+  "synonyms": [],
   "tags": [
     "head_neck",
     "CT",
@@ -14,22 +12,15 @@
     "miscellaneous",
     "finding"
   ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_947206",
+      "oifma_id": "OIFMA_GMTS_947205",
       "name": "presence",
       "description": "Presence or absence of unilateral exophthalmos",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_947206.0",
+          "value_code": "OIFMA_GMTS_947205.0",
           "name": "absent",
           "description": "Unilateral exophthalmos is absent",
           "index_codes": [
@@ -46,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_947206.1",
+          "value_code": "OIFMA_GMTS_947205.1",
           "name": "present",
           "description": "Unilateral exophthalmos is present",
           "index_codes": [
@@ -63,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_947206.2",
+          "value_code": "OIFMA_GMTS_947205.2",
           "name": "indeterminate",
           "description": "Presence of unilateral exophthalmos cannot be determined",
           "index_codes": [
@@ -80,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_947206.3",
+          "value_code": "OIFMA_GMTS_947205.3",
           "name": "unknown",
           "description": "Presence of unilateral exophthalmos is unknown",
           "index_codes": [
@@ -108,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_001502",
+      "oifma_id": "OIFMA_GMTS_001501",
       "name": "change from prior",
       "description": "Whether and how a unilateral exophthalmos has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_001502.0",
+          "value_code": "OIFMA_GMTS_001501.0",
           "name": "unchanged",
           "description": "Unilateral exophthalmos is unchanged",
           "index_codes": [
@@ -131,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.1",
+          "value_code": "OIFMA_GMTS_001501.1",
           "name": "stable",
           "description": "Unilateral exophthalmos is stable",
           "index_codes": [
@@ -148,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.2",
+          "value_code": "OIFMA_GMTS_001501.2",
           "name": "new",
           "description": "Unilateral exophthalmos is new",
           "index_codes": [
@@ -165,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.3",
+          "value_code": "OIFMA_GMTS_001501.3",
           "name": "resolved",
           "description": "Unilateral exophthalmos seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_001502.4",
+          "value_code": "OIFMA_GMTS_001501.4",
           "name": "increased",
           "description": "Unilateral exophthalmos has increased",
           "index_codes": [
@@ -187,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.5",
+          "value_code": "OIFMA_GMTS_001501.5",
           "name": "decreased",
           "description": "Unilateral exophthalmos has decreased",
           "index_codes": [
@@ -204,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.6",
+          "value_code": "OIFMA_GMTS_001501.6",
           "name": "larger",
           "description": "Unilateral exophthalmos is larger",
           "index_codes": [
@@ -221,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_001502.7",
+          "value_code": "OIFMA_GMTS_001501.7",
           "name": "smaller",
           "description": "Unilateral exophthalmos is smaller",
           "index_codes": [

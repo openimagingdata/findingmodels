@@ -1,30 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_022509",
   "name": "aortic valve disease",
-  "description": "General term encompassing disorders of the aortic valve including stenosis and regurgitation.",
-  "synonyms": [
-    "aortic valve disorder",
-    "aortic stenosis"
-  ],
+  "description": "A condition involving dysfunction of the aortic valve.",
+  "synonyms": ["aortic valvulopathy"],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "US (echocardiography, primarily)",
-    "valvular",
-    "cardiac",
-    "mediastinum",
+    "US",
+    "vascular",
+    "valvular heart disease",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_766324",
+      "oifma_id": "OIFMA_GMTS_694578",
       "name": "presence",
       "description": "Presence or absence of aortic valve disease",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_766324.0",
+          "value_code": "OIFMA_GMTS_694578.0",
           "name": "absent",
           "description": "Aortic valve disease is absent",
           "index_codes": [
@@ -41,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766324.1",
+          "value_code": "OIFMA_GMTS_694578.1",
           "name": "present",
           "description": "Aortic valve disease is present",
           "index_codes": [
@@ -58,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766324.2",
+          "value_code": "OIFMA_GMTS_694578.2",
           "name": "indeterminate",
           "description": "Presence of aortic valve disease cannot be determined",
           "index_codes": [
@@ -75,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_766324.3",
+          "value_code": "OIFMA_GMTS_694578.3",
           "name": "unknown",
           "description": "Presence of aortic valve disease is unknown",
           "index_codes": [
@@ -103,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_640629",
+      "oifma_id": "OIFMA_GMTS_976553",
       "name": "change from prior",
       "description": "Whether and how a aortic valve disease has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_640629.0",
+          "value_code": "OIFMA_GMTS_976553.0",
           "name": "unchanged",
           "description": "Aortic valve disease is unchanged",
           "index_codes": [
@@ -126,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.1",
+          "value_code": "OIFMA_GMTS_976553.1",
           "name": "stable",
           "description": "Aortic valve disease is stable",
           "index_codes": [
@@ -143,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.2",
+          "value_code": "OIFMA_GMTS_976553.2",
           "name": "new",
           "description": "Aortic valve disease is new",
           "index_codes": [
@@ -160,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.3",
+          "value_code": "OIFMA_GMTS_976553.3",
           "name": "resolved",
           "description": "Aortic valve disease seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_640629.4",
+          "value_code": "OIFMA_GMTS_976553.4",
           "name": "increased",
           "description": "Aortic valve disease has increased",
           "index_codes": [
@@ -182,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.5",
+          "value_code": "OIFMA_GMTS_976553.5",
           "name": "decreased",
           "description": "Aortic valve disease has decreased",
           "index_codes": [
@@ -199,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.6",
+          "value_code": "OIFMA_GMTS_976553.6",
           "name": "larger",
           "description": "Aortic valve disease is larger",
           "index_codes": [
@@ -216,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_640629.7",
+          "value_code": "OIFMA_GMTS_976553.7",
           "name": "smaller",
           "description": "Aortic valve disease is smaller",
           "index_codes": [

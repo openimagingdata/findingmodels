@@ -1,27 +1,25 @@
 {
   "oifm_id": "OIFM_GMTS_015446",
   "name": "wide superior mediastinum in an infant or child",
-  "description": "Enlargement of the superior mediastinum in a pediatric patient that may indicate pathology or normal thymus.",
-  "synonyms": [
-    "enlarged upper mediastinum child"
-  ],
+  "description": "An abnormally broadening of the mediastinum in an infant or child, often indicative of underlying pathology.",
   "tags": [
-    "chest",
+    "pediatric",
     "XR",
     "CT",
+    "MR",
     "mediastinum",
-    "pediatrics",
+    "pediatric",
     "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_540183",
+      "oifma_id": "OIFMA_GMTS_179551",
       "name": "presence",
       "description": "Presence or absence of wide superior mediastinum in an infant or child",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_540183.0",
+          "value_code": "OIFMA_GMTS_179551.0",
           "name": "absent",
           "description": "Wide superior mediastinum in an infant or child is absent",
           "index_codes": [
@@ -38,7 +36,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540183.1",
+          "value_code": "OIFMA_GMTS_179551.1",
           "name": "present",
           "description": "Wide superior mediastinum in an infant or child is present",
           "index_codes": [
@@ -55,7 +53,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540183.2",
+          "value_code": "OIFMA_GMTS_179551.2",
           "name": "indeterminate",
           "description": "Presence of wide superior mediastinum in an infant or child cannot be determined",
           "index_codes": [
@@ -72,7 +70,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540183.3",
+          "value_code": "OIFMA_GMTS_179551.3",
           "name": "unknown",
           "description": "Presence of wide superior mediastinum in an infant or child is unknown",
           "index_codes": [
@@ -100,13 +98,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_376377",
+      "oifma_id": "OIFMA_GMTS_362640",
       "name": "change from prior",
       "description": "Whether and how a wide superior mediastinum in an infant or child has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_376377.0",
+          "value_code": "OIFMA_GMTS_362640.0",
           "name": "unchanged",
           "description": "Wide superior mediastinum in an infant or child is unchanged",
           "index_codes": [
@@ -123,7 +121,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.1",
+          "value_code": "OIFMA_GMTS_362640.1",
           "name": "stable",
           "description": "Wide superior mediastinum in an infant or child is stable",
           "index_codes": [
@@ -140,7 +138,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.2",
+          "value_code": "OIFMA_GMTS_362640.2",
           "name": "new",
           "description": "Wide superior mediastinum in an infant or child is new",
           "index_codes": [
@@ -157,12 +155,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.3",
+          "value_code": "OIFMA_GMTS_362640.3",
           "name": "resolved",
           "description": "Wide superior mediastinum in an infant or child seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_376377.4",
+          "value_code": "OIFMA_GMTS_362640.4",
           "name": "increased",
           "description": "Wide superior mediastinum in an infant or child has increased",
           "index_codes": [
@@ -179,7 +177,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.5",
+          "value_code": "OIFMA_GMTS_362640.5",
           "name": "decreased",
           "description": "Wide superior mediastinum in an infant or child has decreased",
           "index_codes": [
@@ -196,7 +194,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.6",
+          "value_code": "OIFMA_GMTS_362640.6",
           "name": "larger",
           "description": "Wide superior mediastinum in an infant or child is larger",
           "index_codes": [
@@ -213,7 +211,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_376377.7",
+          "value_code": "OIFMA_GMTS_362640.7",
           "name": "smaller",
           "description": "Wide superior mediastinum in an infant or child is smaller",
           "index_codes": [

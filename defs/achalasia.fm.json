@@ -1,29 +1,26 @@
 {
   "oifm_id": "OIFM_GMTS_000057",
   "name": "achalasia",
-  "description": "Esophageal motility disorder resulting in failure of the lower esophageal sphincter to relax.",
-  "synonyms": [
-    "cardiospasm",
-    "esophageal achalasia"
-  ],
+  "description": "A disorder where the esophagus has difficulty moving food toward the stomach",
+  "synonyms": ["esophageal achalasia"],
   "tags": [
-    "chest",
-    "CT",
+    "abdomen",
     "XR",
-    "fluoroscopy",
-    "esophagus",
-    "functional disorder",
+    "MR",
+    "US",
+    "gastrointestinal",
+    "motility disorder",
     "diagnosis"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_575995",
+      "oifma_id": "OIFMA_GMTS_759613",
       "name": "presence",
       "description": "Presence or absence of achalasia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_575995.0",
+          "value_code": "OIFMA_GMTS_759613.0",
           "name": "absent",
           "description": "Achalasia is absent",
           "index_codes": [
@@ -40,7 +37,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_575995.1",
+          "value_code": "OIFMA_GMTS_759613.1",
           "name": "present",
           "description": "Achalasia is present",
           "index_codes": [
@@ -57,7 +54,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_575995.2",
+          "value_code": "OIFMA_GMTS_759613.2",
           "name": "indeterminate",
           "description": "Presence of achalasia cannot be determined",
           "index_codes": [
@@ -74,7 +71,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_575995.3",
+          "value_code": "OIFMA_GMTS_759613.3",
           "name": "unknown",
           "description": "Presence of achalasia is unknown",
           "index_codes": [
@@ -102,13 +99,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_486217",
+      "oifma_id": "OIFMA_GMTS_379941",
       "name": "change from prior",
       "description": "Whether and how a achalasia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_486217.0",
+          "value_code": "OIFMA_GMTS_379941.0",
           "name": "unchanged",
           "description": "Achalasia is unchanged",
           "index_codes": [
@@ -125,7 +122,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.1",
+          "value_code": "OIFMA_GMTS_379941.1",
           "name": "stable",
           "description": "Achalasia is stable",
           "index_codes": [
@@ -142,7 +139,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.2",
+          "value_code": "OIFMA_GMTS_379941.2",
           "name": "new",
           "description": "Achalasia is new",
           "index_codes": [
@@ -159,12 +156,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.3",
+          "value_code": "OIFMA_GMTS_379941.3",
           "name": "resolved",
           "description": "Achalasia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_486217.4",
+          "value_code": "OIFMA_GMTS_379941.4",
           "name": "increased",
           "description": "Achalasia has increased",
           "index_codes": [
@@ -181,7 +178,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.5",
+          "value_code": "OIFMA_GMTS_379941.5",
           "name": "decreased",
           "description": "Achalasia has decreased",
           "index_codes": [
@@ -198,7 +195,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.6",
+          "value_code": "OIFMA_GMTS_379941.6",
           "name": "larger",
           "description": "Achalasia is larger",
           "index_codes": [
@@ -215,7 +212,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_486217.7",
+          "value_code": "OIFMA_GMTS_379941.7",
           "name": "smaller",
           "description": "Achalasia is smaller",
           "index_codes": [

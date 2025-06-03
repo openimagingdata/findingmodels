@@ -2,27 +2,17 @@
   "oifm_id": "OIFM_GMTS_014070",
   "name": "dissecting aneurysm of the ascending aorta or arch",
   "description": "Dissecting aneurysm involving the ascending aorta or aortic arch.",
-  "synonyms": [
-    "ascending aortic dissection"
-  ],
-  "tags": [
-    "chest",
-    "CT",
-    "MR",
-    "vascular",
-    "aneurysm",
-    "mediastinum",
-    "diagnosis"
-  ],
+  "synonyms": ["ascending aortic dissection"],
+  "tags": ["ultrasound", "CT", "MR", "aorta", "vascular", "diagnosis"],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_648192",
+      "oifma_id": "OIFMA_GMTS_765304",
       "name": "presence",
       "description": "Presence or absence of dissecting aneurysm of the ascending aorta or arch",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_648192.0",
+          "value_code": "OIFMA_GMTS_765304.0",
           "name": "absent",
           "description": "Dissecting aneurysm of the ascending aorta or arch is absent",
           "index_codes": [
@@ -39,7 +29,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_648192.1",
+          "value_code": "OIFMA_GMTS_765304.1",
           "name": "present",
           "description": "Dissecting aneurysm of the ascending aorta or arch is present",
           "index_codes": [
@@ -56,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_648192.2",
+          "value_code": "OIFMA_GMTS_765304.2",
           "name": "indeterminate",
           "description": "Presence of dissecting aneurysm of the ascending aorta or arch cannot be determined",
           "index_codes": [
@@ -73,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_648192.3",
+          "value_code": "OIFMA_GMTS_765304.3",
           "name": "unknown",
           "description": "Presence of dissecting aneurysm of the ascending aorta or arch is unknown",
           "index_codes": [
@@ -101,13 +91,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_283527",
+      "oifma_id": "OIFMA_GMTS_430655",
       "name": "change from prior",
       "description": "Whether and how a dissecting aneurysm of the ascending aorta or arch has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_283527.0",
+          "value_code": "OIFMA_GMTS_430655.0",
           "name": "unchanged",
           "description": "Dissecting aneurysm of the ascending aorta or arch is unchanged",
           "index_codes": [
@@ -124,7 +114,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.1",
+          "value_code": "OIFMA_GMTS_430655.1",
           "name": "stable",
           "description": "Dissecting aneurysm of the ascending aorta or arch is stable",
           "index_codes": [
@@ -141,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.2",
+          "value_code": "OIFMA_GMTS_430655.2",
           "name": "new",
           "description": "Dissecting aneurysm of the ascending aorta or arch is new",
           "index_codes": [
@@ -158,12 +148,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.3",
+          "value_code": "OIFMA_GMTS_430655.3",
           "name": "resolved",
           "description": "Dissecting aneurysm of the ascending aorta or arch seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_283527.4",
+          "value_code": "OIFMA_GMTS_430655.4",
           "name": "increased",
           "description": "Dissecting aneurysm of the ascending aorta or arch has increased",
           "index_codes": [
@@ -180,7 +170,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.5",
+          "value_code": "OIFMA_GMTS_430655.5",
           "name": "decreased",
           "description": "Dissecting aneurysm of the ascending aorta or arch has decreased",
           "index_codes": [
@@ -197,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.6",
+          "value_code": "OIFMA_GMTS_430655.6",
           "name": "larger",
           "description": "Dissecting aneurysm of the ascending aorta or arch is larger",
           "index_codes": [
@@ -214,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_283527.7",
+          "value_code": "OIFMA_GMTS_430655.7",
           "name": "smaller",
           "description": "Dissecting aneurysm of the ascending aorta or arch is smaller",
           "index_codes": [

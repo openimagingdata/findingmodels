@@ -1,30 +1,29 @@
 {
-  "oifm_id": "OIFM_GMTS_013932",
-  "name": "pulmonary arterial hypertension",
-  "description": "Elevated pressure within the pulmonary arterial system.",
+  "oifm_id": "OIFM_GMTS_016674",
+  "name": "high-density renal cyst",
+  "description": "Renal cyst with higher than expected attenuation or intensity, possibly due to hemorrhage or debris",
   "synonyms": [
-    "PAH",
+    "hyperattenuating renal cyst"
   ],
   "tags": [
-    "chest",
+    "abdomen",
     "CT",
     "MR",
-    "XR (indirectly)",
-    "vascular",
-    "lung",
-    "diagnosis"
+    "renal",
+    "cyst",
+    "finding"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_615772",
+      "oifma_id": "OIFMA_GMTS_021255",
       "name": "presence",
-      "description": "Presence or absence of pulmonary arterial hypertension",
+      "description": "Presence or absence of high-density renal cyst",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_615772.0",
+          "value_code": "OIFMA_GMTS_021255.0",
           "name": "absent",
-          "description": "Pulmonary arterial hypertension is absent",
+          "description": "High-density renal cyst is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -39,9 +38,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.1",
+          "value_code": "OIFMA_GMTS_021255.1",
           "name": "present",
-          "description": "Pulmonary arterial hypertension is present",
+          "description": "High-density renal cyst is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -56,9 +55,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.2",
+          "value_code": "OIFMA_GMTS_021255.2",
           "name": "indeterminate",
-          "description": "Presence of pulmonary arterial hypertension cannot be determined",
+          "description": "Presence of high-density renal cyst cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -73,9 +72,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_615772.3",
+          "value_code": "OIFMA_GMTS_021255.3",
           "name": "unknown",
-          "description": "Presence of pulmonary arterial hypertension is unknown",
+          "description": "Presence of high-density renal cyst is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -101,15 +100,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_955007",
+      "oifma_id": "OIFMA_GMTS_463597",
       "name": "change from prior",
-      "description": "Whether and how a pulmonary arterial hypertension has changed over time",
+      "description": "Whether and how a high-density renal cyst has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_955007.0",
+          "value_code": "OIFMA_GMTS_463597.0",
           "name": "unchanged",
-          "description": "Pulmonary arterial hypertension is unchanged",
+          "description": "High-density renal cyst is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +123,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.1",
+          "value_code": "OIFMA_GMTS_463597.1",
           "name": "stable",
-          "description": "Pulmonary arterial hypertension is stable",
+          "description": "High-density renal cyst is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +140,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.2",
+          "value_code": "OIFMA_GMTS_463597.2",
           "name": "new",
-          "description": "Pulmonary arterial hypertension is new",
+          "description": "High-density renal cyst is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +157,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.3",
+          "value_code": "OIFMA_GMTS_463597.3",
           "name": "resolved",
-          "description": "Pulmonary arterial hypertension seen on a prior exam has resolved"
+          "description": "High-density renal cyst seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_955007.4",
+          "value_code": "OIFMA_GMTS_463597.4",
           "name": "increased",
-          "description": "Pulmonary arterial hypertension has increased",
+          "description": "High-density renal cyst has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +179,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.5",
+          "value_code": "OIFMA_GMTS_463597.5",
           "name": "decreased",
-          "description": "Pulmonary arterial hypertension has decreased",
+          "description": "High-density renal cyst has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -197,9 +196,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.6",
+          "value_code": "OIFMA_GMTS_463597.6",
           "name": "larger",
-          "description": "Pulmonary arterial hypertension is larger",
+          "description": "High-density renal cyst is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -214,9 +213,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955007.7",
+          "value_code": "OIFMA_GMTS_463597.7",
           "name": "smaller",
-          "description": "Pulmonary arterial hypertension is smaller",
+          "description": "High-density renal cyst is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -250,8 +249,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "13932",
-      "display": "pulmonary arterial hypertension"
+      "code": "16674",
+      "display": "high-density renal cyst"
     }
   ]
 }
