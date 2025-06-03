@@ -1,16 +1,14 @@
 # Hemothorax—`OIFM_GMTS_015952`
 
-**Synonyms:** pleural hemorrhage, blood in pleural cavity
+**Tags:** ultrasound, CT, XR, thoracic, hemorrhagic, diagnosis
 
-**Tags:** chest, XR, CT, US, pleura, traumatic finding, diagnosis
-
-Accumulation of blood in the pleural space, usually due to trauma or rupture.
+Presence of blood in the pleural cavity.
 
 **Codes:** GAMUTS 15952 hemothorax
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_143214`
+### Presence—`OIFMA_GMTS_835230`
 
 Presence or absence of hemothorax  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of hemothorax is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_822148`
+### Change from prior—`OIFMA_GMTS_043382`
 
 Whether and how a hemothorax has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

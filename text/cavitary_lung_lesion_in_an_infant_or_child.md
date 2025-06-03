@@ -1,16 +1,16 @@
 # Cavitary lung lesion in an infant or child—`OIFM_GMTS_014751`
 
-**Synonyms:** pediatric lung cavity, pulmonary cavitation in child
+**Synonyms:** pediatric lung cavity
 
-**Tags:** chest, XR, CT, lung, pediatric, finding
+**Tags:** pediatric, CT, XR, lung, pediatric, cystic, finding
 
-Area within the lung containing an air-filled cavity, identified in pediatric patients.
+Cavity or hollow space within the lung tissue of a young patient.
 
 **Codes:** GAMUTS 14751 cavitary lung lesion in an infant or child
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_368020`
+### Presence—`OIFMA_GMTS_049551`
 
 Presence or absence of cavitary lung lesion in an infant or child  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of cavitary lung lesion in an infant or child is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_656786`
+### Change from prior—`OIFMA_GMTS_923797`
 
 Whether and how a cavitary lung lesion in an infant or child has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

@@ -1,16 +1,16 @@
 # Pulmonary artery stenosis—`OIFM_GMTS_022550`
 
-**Synonyms:** PA stenosis, pulmonary arterial narrowing
+**Synonyms:** PA stenosis
 
-**Tags:** chest, CT, MR, XR (indirect signs), vascular, lung, congenital anomaly (if present from birth), diagnosis
+**Tags:** vascular, CT, US, MR, pulmonary artery, stenosis, congenital anomaly, diagnosis
 
-Narrowing of the pulmonary artery or its branches.
+Narrowing of the pulmonary artery.
 
 **Codes:** GAMUTS 22550 pulmonary artery stenosis
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_252275`
+### Presence—`OIFMA_GMTS_069436`
 
 Presence or absence of pulmonary artery stenosis  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary artery stenosis is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_706257`
+### Change from prior—`OIFMA_GMTS_129160`
 
 Whether and how a pulmonary artery stenosis has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

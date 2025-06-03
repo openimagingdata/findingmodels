@@ -1,16 +1,14 @@
 # Enlarged pulmonary veins—`OIFM_GMTS_014012`
 
-**Synonyms:** pulmonary venous congestion, pulmonary vein dilation
+**Tags:** ultrasound, CT, XR, cardiovascular, lungs, finding
 
-**Tags:** chest, XR, CT, vascular, lung, finding
-
-Dilated pulmonary veins, often seen with left-sided heart failure or increased pulmonary venous pressure.
+Widening of the pulmonary veins that can indicate heart failure
 
 **Codes:** GAMUTS 14012 enlarged pulmonary veins
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_468448`
+### Presence—`OIFMA_GMTS_390159`
 
 Presence or absence of enlarged pulmonary veins  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of enlarged pulmonary veins is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_730454`
+### Change from prior—`OIFMA_GMTS_665473`
 
 Whether and how a enlarged pulmonary veins has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

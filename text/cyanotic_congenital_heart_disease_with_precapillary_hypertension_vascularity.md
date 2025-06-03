@@ -1,16 +1,14 @@
 # Cyanotic congenital heart disease with precapillary hypertension vascularity—`OIFM_GMTS_013510`
 
-**Synonyms:** cyanotic CHD with precapillary pulmonary hypertension
+**Tags:** ultrasound, XR, CT, MR, US, cardiac, pediatric, vascular, diagnosis
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, heart, lung vasculature, diagnosis
-
-Cyanotic heart disease with signs of pulmonary arterial hypertension.
+Congenital heart disease leading to cyanosis and elevated pressures before lung capillaries.
 
 **Codes:** GAMUTS 13510 cyanotic congenital heart disease with precapillary hypertension vascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_378356`
+### Presence—`OIFMA_GMTS_137376`
 
 Presence or absence of cyanotic congenital heart disease with precapillary hypertension vascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of cyanotic congenital heart disease with precapillary hypertension vascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_730408`
+### Change from prior—`OIFMA_GMTS_469880`
 
 Whether and how a cyanotic congenital heart disease with precapillary hypertension vascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

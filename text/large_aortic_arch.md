@@ -1,16 +1,16 @@
 # Large aortic arch—`OIFM_GMTS_030876`
 
-**Synonyms:** aortic arch dilatation, aortic arch enlargement
+**Synonyms:** aortic arch dilation
 
-**Tags:** chest, XR, CT, MR, vascular, mediastinum, finding
+**Tags:** vascular, CT, MR, XR, vascular, aorta, finding
 
-Enlargement or increased diameter of the aortic arch.
+Enlarged segment of the aortic arch, possibly indicating aortic dilation or aneurysm.
 
 **Codes:** GAMUTS 30876 large aortic arch
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_551898`
+### Presence—`OIFMA_GMTS_970721`
 
 Presence or absence of large aortic arch  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of large aortic arch is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_132296`
+### Change from prior—`OIFMA_GMTS_486271`
 
 Whether and how a large aortic arch has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

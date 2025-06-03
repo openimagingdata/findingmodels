@@ -1,16 +1,16 @@
 # Complicated atrial shunt—`OIFM_GMTS_013449`
 
-**Synonyms:** atrial septal defect with complications, ASD with complication
+**Synonyms:** atrial shunt
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, postop finding, diagnosis
+**Tags:** ultrasound, CT, MR, US, cardiovascular, congenital, heart, finding
 
-Presence of an abnormal communication between atria with complications such as shunt reversal or obstruction.
+Atypical or problematic atrial shunt often associated with other cardiac issues.
 
 **Codes:** GAMUTS 13449 complicated atrial shunt
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_795341`
+### Presence—`OIFMA_GMTS_171119`
 
 Presence or absence of complicated atrial shunt  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of complicated atrial shunt is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_785648`
+### Change from prior—`OIFMA_GMTS_391521`
 
 Whether and how a complicated atrial shunt has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

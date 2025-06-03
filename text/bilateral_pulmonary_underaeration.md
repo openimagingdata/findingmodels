@@ -1,16 +1,16 @@
 # Bilateral pulmonary underaeration—`OIFM_GMTS_014908`
 
-**Synonyms:** underaerated lungs, poorly aerated lungs
+**Synonyms:** bilateral lung hypoaeration
 
-**Tags:** chest, XR, CT, lung, finding
+**Tags:** pediatric, CT, XR, lung, respiratory, finding
 
-Both lungs show decreased aeration, often appearing denser on imaging.
+Reduced air volume in both lungs.
 
 **Codes:** GAMUTS 14908 bilateral pulmonary underaeration
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_463078`
+### Presence—`OIFMA_GMTS_493433`
 
 Presence or absence of bilateral pulmonary underaeration  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of bilateral pulmonary underaeration is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_567646`
+### Change from prior—`OIFMA_GMTS_870226`
 
 Whether and how a bilateral pulmonary underaeration has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

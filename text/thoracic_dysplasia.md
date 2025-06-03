@@ -1,16 +1,16 @@
 # Thoracic dysplasia—`OIFM_GMTS_025733`
 
-**Synonyms:** thoracic disproportion, chest dysplasia
+**Synonyms:** Spondylocostal dysostosis
 
-**Tags:** chest, XR, CT, congenital anomaly, chest wall, diagnosis
+**Tags:** pediatric, XR, CT, MR, skeletal, congenital anomaly, diagnosis
 
-Abnormal development or formation of the thoracic structures, typically congenital.
+Disorder of the development of the thoracic cage.
 
 **Codes:** GAMUTS 25733 thoracic dysplasia
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_700277`
+### Presence—`OIFMA_GMTS_002786`
 
 Presence or absence of thoracic dysplasia  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of thoracic dysplasia is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_316121`
+### Change from prior—`OIFMA_GMTS_504354`
 
 Whether and how a thoracic dysplasia has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

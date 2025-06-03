@@ -1,16 +1,16 @@
 # Pediatric chest tumor—`OIFM_GMTS_014606`
 
-**Synonyms:** childhood thoracic tumor
+**Synonyms:** thoracic neoplasm
 
-**Tags:** chest, XR, CT, MR, thorax, neoplastic process, pediatrics, diagnosis
+**Tags:** pediatric, XR, CT, MR, thorax, neoplastic, diagnosis
 
-A neoplastic mass located in the chest of a pediatric patient.
+A mass or growth within the chest cavity of a child
 
 **Codes:** GAMUTS 14606 pediatric chest tumor
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_116650`
+### Presence—`OIFMA_GMTS_538730`
 
 Presence or absence of pediatric chest tumor  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pediatric chest tumor is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_966345`
+### Change from prior—`OIFMA_GMTS_873449`
 
 Whether and how a pediatric chest tumor has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

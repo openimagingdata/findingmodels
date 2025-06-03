@@ -1,16 +1,16 @@
 # Left-to-right shunt in congenital heart disease—`OIFM_GMTS_013396`
 
-**Synonyms:** left-to-right cardiac shunt, congenital cardiac shunt
+**Synonyms:** cardiac shunt
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, vascular, diagnosis
+**Tags:** ultrasound, XR, CT, MR, cardiac, pediatric, congenital anomaly, diagnosis
 
-Abnormal blood flow from the left to the right side of the heart due to a congenital defect.
+Abnormal blood flow from the left side to the right side of the heart due to congenital defect.
 
 **Codes:** GAMUTS 13396 left-to-right shunt in congenital heart disease
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_160555`
+### Presence—`OIFMA_GMTS_079960`
 
 Presence or absence of left-to-right shunt in congenital heart disease  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of left-to-right shunt in congenital heart disease is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_618319`
+### Change from prior—`OIFMA_GMTS_229288`
 
 Whether and how a left-to-right shunt in congenital heart disease has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

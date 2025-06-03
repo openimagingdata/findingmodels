@@ -1,16 +1,16 @@
 # Bubbly lungs in infants and children—`OIFM_GMTS_014902`
 
-**Synonyms:** bubbly lung pattern, cystic lung disease in children
+**Synonyms:** cystic lung changes
 
-**Tags:** chest, XR, CT, lung, pediatric, finding
+**Tags:** pediatric, CT, XR, lung, pediatric, respiratory, finding
 
-Appearance of multiple small cystic or bubbly lucencies in the lungs of pediatric patients.
+Air-filled cystic changes in the lungs of young patients.
 
 **Codes:** GAMUTS 14902 bubbly lungs in infants and children
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_935841`
+### Presence—`OIFMA_GMTS_276504`
 
 Presence or absence of bubbly lungs in infants and children  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of bubbly lungs in infants and children is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_169897`
+### Change from prior—`OIFMA_GMTS_903057`
 
 Whether and how a bubbly lungs in infants and children has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

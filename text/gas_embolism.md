@@ -1,16 +1,16 @@
 # Gas embolism—`OIFM_GMTS_013830`
 
-**Synonyms:** air embolism, venous gas embolus
+**Synonyms:** air embolism
 
-**Tags:** chest, CT, XR, vascular, lung, diagnosis
+**Tags:** ultrasound, CT, vascular, complication, diagnosis
 
-The presence of gas bubbles within the vascular system, potentially causing obstruction.
+Gas bubbles in the vascular system, potentially causing obstruction.
 
 **Codes:** GAMUTS 13830 gas embolism
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_504050`
+### Presence—`OIFMA_GMTS_662949`
 
 Presence or absence of gas embolism  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of gas embolism is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_257871`
+### Change from prior—`OIFMA_GMTS_327146`
 
 Whether and how a gas embolism has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

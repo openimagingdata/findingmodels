@@ -1,16 +1,14 @@
 # Small heart—`OIFM_GMTS_013783`
 
-**Synonyms:** microcardia, small cardiac silhouette
+**Tags:** ultrasound, CT, XR, cardiac, finding
 
-**Tags:** chest, XR, CT, cardiac, finding
-
-A heart that appears reduced in size relative to the thoracic cavity.
+A smaller than normal cardiac silhouette.
 
 **Codes:** GAMUTS 13783 small heart
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_468043`
+### Presence—`OIFMA_GMTS_410582`
 
 Presence or absence of small heart  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of small heart is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_394093`
+### Change from prior—`OIFMA_GMTS_098205`
 
 Whether and how a small heart has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

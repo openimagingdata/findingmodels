@@ -1,16 +1,16 @@
 # Heart failure in the first week of life—`OIFM_GMTS_013338`
 
-**Synonyms:** neonatal heart failure, early-onset heart failure
+**Synonyms:** neonatal heart failure
 
-**Tags:** chest, XR, CT, MR, US, heart, congenital anomaly, diagnosis
+**Tags:** ultrasound, US, XR, neonate, cardiac, congenital anomaly, diagnosis
 
-Cardiac failure presenting within the first week of life, often due to congenital heart disease.
+Inability of a newborn's heart to pump blood effectively.
 
 **Codes:** GAMUTS 13338 heart failure in the first week of life
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_788547`
+### Presence—`OIFMA_GMTS_429615`
 
 Presence or absence of heart failure in the first week of life  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of heart failure in the first week of life is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_392883`
+### Change from prior—`OIFMA_GMTS_239887`
 
 Whether and how a heart failure in the first week of life has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

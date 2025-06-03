@@ -1,16 +1,14 @@
 # Pneumopericardium—`OIFM_GMTS_013851`
 
-**Synonyms:** air in pericardium
+**Tags:** ultrasound, CT, XR, cardiovascular, gas, finding
 
-**Tags:** chest, XR, CT, pericardium, finding
-
-Presence of gas or air within the pericardial sac.
+Presence of air or gas in the pericardial cavity
 
 **Codes:** GAMUTS 13851 pneumopericardium
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_865590`
+### Presence—`OIFMA_GMTS_357438`
 
 Presence or absence of pneumopericardium  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pneumopericardium is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_850068`
+### Change from prior—`OIFMA_GMTS_722064`
 
 Whether and how a pneumopericardium has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

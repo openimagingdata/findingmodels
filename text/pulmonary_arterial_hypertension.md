@@ -1,16 +1,16 @@
 # Pulmonary arterial hypertension—`OIFM_GMTS_013932`
 
-**Synonyms:** PAH, pulmonary hypertension, primary pulmonary hypertension
+**Synonyms:** PAH
 
-**Tags:** chest, CT, MR, XR (indirectly), vascular, lung, diagnosis
+**Tags:** ultrasound, US, MR, CT, pulmonary, vascular, diagnosis
 
-Elevated pressure within the pulmonary arterial system.
+Increased blood pressure in the pulmonary arteries.
 
 **Codes:** GAMUTS 13932 pulmonary arterial hypertension
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_615772`
+### Presence—`OIFMA_GMTS_716814`
 
 Presence or absence of pulmonary arterial hypertension  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary arterial hypertension is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_955007`
+### Change from prior—`OIFMA_GMTS_165424`
 
 Whether and how a pulmonary arterial hypertension has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

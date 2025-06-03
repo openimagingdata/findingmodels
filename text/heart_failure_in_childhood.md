@@ -1,16 +1,16 @@
 # Heart failure in childhood—`OIFM_GMTS_030931`
 
-**Synonyms:** pediatric heart failure, childhood congestive heart failure
+**Synonyms:** pediatric heart failure
 
-**Tags:** chest, XR, CT, MR, US, heart, vascular, diagnosis
+**Tags:** ultrasound, XR, CT, MR, cardiac, pediatric, diagnosis
 
-Cardiac dysfunction leading to inadequate perfusion, presenting after infancy.
+Heart failure occurring in pediatric patients.
 
 **Codes:** GAMUTS 30931 heart failure in childhood
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_056769`
+### Presence—`OIFMA_GMTS_493213`
 
 Presence or absence of heart failure in childhood  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of heart failure in childhood is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_499084`
+### Change from prior—`OIFMA_GMTS_076515`
 
 Whether and how a heart failure in childhood has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

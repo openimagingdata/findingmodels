@@ -1,16 +1,14 @@
 # Pleural mass—`OIFM_GMTS_016030`
 
-**Synonyms:** pleural tumor, pleural neoplasm
+**Tags:** ultrasound, CT, XR, MR, thoracic, mass, finding
 
-**Tags:** chest, XR, CT, MR, pleura, neoplastic process, finding
-
-A discrete mass or tumor arising from the pleura.
+Mass located in the pleural space
 
 **Codes:** GAMUTS 16030 pleural mass
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_399929`
+### Presence—`OIFMA_GMTS_371287`
 
 Presence or absence of pleural mass  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pleural mass is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_152803`
+### Change from prior—`OIFMA_GMTS_608438`
 
 Whether and how a pleural mass has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

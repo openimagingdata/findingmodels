@@ -1,16 +1,16 @@
 # Pericardial effusion—`OIFM_GMTS_003706`
 
-**Synonyms:** pericardial fluid
+**Synonyms:** fluid around the heart
 
-**Tags:** chest, XR, CT, MR, pericardium, fluid collection, finding
+**Tags:** ultrasound, CT, XR, MR, US, cardiovascular, fluid, finding
 
-Abnormal accumulation of fluid in the pericardial sac.
+Accumulation of fluid in the pericardial cavity
 
 **Codes:** GAMUTS 3706 pericardial effusion
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_569301`
+### Presence—`OIFMA_GMTS_840395`
 
 Presence or absence of pericardial effusion  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pericardial effusion is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_541230`
+### Change from prior—`OIFMA_GMTS_955736`
 
 Whether and how a pericardial effusion has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

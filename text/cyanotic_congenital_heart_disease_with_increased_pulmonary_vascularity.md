@@ -1,16 +1,14 @@
 # Cyanotic congenital heart disease with increased pulmonary vascularity—`OIFM_GMTS_013503`
 
-**Synonyms:** cyanotic CHD with increased pulm blood flow
+**Tags:** ultrasound, XR, CT, MR, US, cardiac, pediatric, vascular, diagnosis
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, heart, lung vasculature, diagnosis
-
-Cyanotic heart defects with increased blood flow to the lungs.
+Heart defect present at birth causing cyanosis and increased blood flow to the lungs.
 
 **Codes:** GAMUTS 13503 cyanotic congenital heart disease with increased pulmonary vascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_142370`
+### Presence—`OIFMA_GMTS_095905`
 
 Presence or absence of cyanotic congenital heart disease with increased pulmonary vascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of cyanotic congenital heart disease with increased pulmonary vascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_220047`
+### Change from prior—`OIFMA_GMTS_928545`
 
 Whether and how a cyanotic congenital heart disease with increased pulmonary vascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

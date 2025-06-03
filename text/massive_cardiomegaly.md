@@ -1,16 +1,16 @@
 # Massive cardiomegaly—`OIFM_GMTS_013774`
 
-**Synonyms:** severe cardiomegaly, giant heart, massive heart enlargement
+**Synonyms:** Extreme heart enlargement
 
-**Tags:** chest, XR, CT, MR, cardiac, finding
+**Tags:** ultrasound, XR, CT, cardiac, finding
 
-Severe enlargement of the heart beyond normal limits.
+Severely enlarged heart
 
 **Codes:** GAMUTS 13774 massive cardiomegaly
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_362931`
+### Presence—`OIFMA_GMTS_116514`
 
 Presence or absence of massive cardiomegaly  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of massive cardiomegaly is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_544707`
+### Change from prior—`OIFMA_GMTS_674413`
 
 Whether and how a massive cardiomegaly has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

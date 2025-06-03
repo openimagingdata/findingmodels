@@ -1,16 +1,16 @@
 # Localized narrowing of esophagus—`OIFM_GMTS_003934`
 
-**Synonyms:** esophageal stricture, focal esophageal narrowing
+**Synonyms:** esophageal stricture
 
-**Tags:** chest, CT, XR (esophagram), esophagus, finding
+**Tags:** abdomen, CT, XR, esophagus, finding
 
-Focal constriction of the esophagus, which may be congenital, neoplastic, or due to inflammation.
+Focal constriction of the esophagus, possibly due to stricture or external compression.
 
 **Codes:** GAMUTS 3934 localized narrowing of esophagus
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_358725`
+### Presence—`OIFMA_GMTS_839981`
 
 Presence or absence of localized narrowing of esophagus  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of localized narrowing of esophagus is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_854475`
+### Change from prior—`OIFMA_GMTS_368972`
 
 Whether and how a localized narrowing of esophagus has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

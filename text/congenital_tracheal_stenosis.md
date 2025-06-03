@@ -1,16 +1,16 @@
 # Congenital tracheal stenosis—`OIFM_GMTS_022613`
 
-**Synonyms:** tracheal narrowing, congenital
+**Synonyms:** CTS
 
-**Tags:** chest, CT, MR, congenital anomaly, trachea, airway, diagnosis
+**Tags:** pediatric, CT, MR, trachea, congenital anomaly, diagnosis
 
-Narrowing of the trachea present at birth.
+A narrowing of the trachea present at birth leading to respiratory distress.
 
 **Codes:** GAMUTS 22613 congenital tracheal stenosis
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_031507`
+### Presence—`OIFMA_GMTS_930082`
 
 Presence or absence of congenital tracheal stenosis  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital tracheal stenosis is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_552141`
+### Change from prior—`OIFMA_GMTS_013882`
 
 Whether and how a congenital tracheal stenosis has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

@@ -1,16 +1,16 @@
 # Esophageal rupture—`OIFM_GMTS_022479`
 
-**Synonyms:** Boerhaave syndrome, esophageal perforation
+**Synonyms:** ruptured esophagus, esophageal perforation
 
-**Tags:** chest, CT, XR, esophagus, mediastinum, diagnosis
+**Tags:** abdomen, CT, XR, esophagus, traumatic, diagnosis
 
-A tear or perforation in the esophagus, leading to air or fluid leakage into the mediastinum.
+Tear or rupture of the esophageal wall, possibly causing leakage into the mediastinum.
 
 **Codes:** GAMUTS 22479 esophageal rupture
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_704450`
+### Presence—`OIFMA_GMTS_225903`
 
 Presence or absence of esophageal rupture  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of esophageal rupture is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_603281`
+### Change from prior—`OIFMA_GMTS_155995`
 
 Whether and how a esophageal rupture has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

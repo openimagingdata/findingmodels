@@ -1,16 +1,14 @@
 # Right ventricular enlargement—`OIFM_GMTS_013623`
 
-**Synonyms:** RVE, right ventricle hypertrophy
+**Tags:** ultrasound, CT, MR, US, cardiac, diagnosis
 
-**Tags:** chest, XR, CT, MR, cardiac, right ventricle, finding
-
-Enlargement of the right ventricle, seen in pulmonary or cardiac pathology.
+Enlargement of the right ventricle, often due to pulmonary hypertension or valvular disease.
 
 **Codes:** GAMUTS 13623 right ventricular enlargement
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_658764`
+### Presence—`OIFMA_GMTS_207079`
 
 Presence or absence of right ventricular enlargement  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right ventricular enlargement is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_251287`
+### Change from prior—`OIFMA_GMTS_113729`
 
 Whether and how a right ventricular enlargement has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

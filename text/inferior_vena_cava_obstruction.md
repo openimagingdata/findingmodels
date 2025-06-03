@@ -1,16 +1,14 @@
 # Inferior vena cava obstruction—`OIFM_GMTS_014141`
 
-**Synonyms:** IVC obstruction, IVC syndrome
+**Tags:** ultrasound, CT, MR, US, vascular, abdominal, diagnosis
 
-**Tags:** chest, CT, MR, vascular, mediastinum, diagnosis
-
-Blockage of the inferior vena cava, which can cause venous congestion and collateral circulation.
+Blockage or compression of the inferior vena cava affecting venous return.
 
 **Codes:** GAMUTS 14141 inferior vena cava obstruction
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_408769`
+### Presence—`OIFMA_GMTS_227243`
 
 Presence or absence of inferior vena cava obstruction  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of inferior vena cava obstruction is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_544743`
+### Change from prior—`OIFMA_GMTS_330738`
 
 Whether and how a inferior vena cava obstruction has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

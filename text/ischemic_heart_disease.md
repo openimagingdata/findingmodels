@@ -1,16 +1,16 @@
 # Ischemic heart disease—`OIFM_GMTS_013732`
 
-**Synonyms:** coronary artery disease, IHD
+**Synonyms:** coronary artery disease, CAD
 
-**Tags:** chest, CT, MR, cardiac, vascular, diagnosis
+**Tags:** ultrasound, CT, MR, cardiology, vascular, diagnosis
 
-A group of heart conditions caused by reduced blood flow to the myocardium.
+Disease characterized by reduced blood supply to the heart muscles.
 
 **Codes:** GAMUTS 13732 ischemic heart disease
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_051800`
+### Presence—`OIFMA_GMTS_776238`
 
 Presence or absence of ischemic heart disease  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of ischemic heart disease is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_403113`
+### Change from prior—`OIFMA_GMTS_794547`
 
 Whether and how a ischemic heart disease has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

@@ -1,16 +1,16 @@
 # Mitral insufficiency—`OIFM_GMTS_013499`
 
-**Synonyms:** mitral regurgitation, MR
+**Synonyms:** mitral regurgitation
 
-**Tags:** chest, CT, MR, US, cardiac, valvular, inflammatory process, diagnosis
+**Tags:** ultrasound, US, MR, cardiac, valvular disease, diagnosis
 
-Inadequate closure of the mitral valve, causing regurgitation of blood into the left atrium.
+A condition where the mitral valve does not close tightly, allowing blood to flow backward in the heart.
 
 **Codes:** GAMUTS 13499 mitral insufficiency
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_714399`
+### Presence—`OIFMA_GMTS_195119`
 
 Presence or absence of mitral insufficiency  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of mitral insufficiency is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_609260`
+### Change from prior—`OIFMA_GMTS_505827`
 
 Whether and how a mitral insufficiency has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

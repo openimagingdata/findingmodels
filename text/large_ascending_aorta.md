@@ -1,16 +1,16 @@
 # Large ascending aorta—`OIFM_GMTS_030875`
 
-**Synonyms:** ascending aorta dilatation, ascending aorta enlargement
+**Synonyms:** ascending aorta dilation
 
-**Tags:** chest, XR, CT, MR, vascular, mediastinum, finding
+**Tags:** vascular, CT, MR, XR, vascular, aorta, finding
 
-Enlargement of the ascending segment of the aorta.
+Enlargement of the ascending part of the aorta, often related to hypertension or aneurysm.
 
 **Codes:** GAMUTS 30875 large ascending aorta
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_766564`
+### Presence—`OIFMA_GMTS_341739`
 
 Presence or absence of large ascending aorta  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of large ascending aorta is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_771545`
+### Change from prior—`OIFMA_GMTS_224456`
 
 Whether and how a large ascending aorta has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

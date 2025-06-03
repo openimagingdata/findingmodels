@@ -1,16 +1,14 @@
 # Ribbon-like ribs—`OIFM_GMTS_025461`
 
-**Synonyms:** ribbon ribs
+**Tags:** musculoskeletal, XR, rib, skeletal, finding
 
-**Tags:** chest, XR, CT, skeletal, chest wall, congenital anomaly, finding
-
-Ribs that appear thin and elongated on imaging, usually seen in conditions that affect bone development.
+Ribs that appear flat and wide, resembling a ribbon.
 
 **Codes:** GAMUTS 25461 ribbon-like ribs
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_383521`
+### Presence—`OIFMA_GMTS_845247`
 
 Presence or absence of ribbon-like ribs  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of ribbon-like ribs is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_384443`
+### Change from prior—`OIFMA_GMTS_896237`
 
 Whether and how a ribbon-like ribs has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

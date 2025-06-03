@@ -1,16 +1,14 @@
 # Juxtadiaphragmatic lesions in children—`OIFM_GMTS_016177`
 
-**Synonyms:** subdiaphragmatic masses, diaphragmatic lesions in children
+**Tags:** pediatric, CT, US, XR, thoracic, abdominal, finding
 
-**Tags:** chest, XR, CT, diaphragm, pediatric, finding
-
-Lesions located adjacent to the diaphragm seen in pediatric patients.
+Lesions located near the diaphragm, potentially indicative of various conditions or masses.
 
 **Codes:** GAMUTS 16177 juxtadiaphragmatic lesions in children
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_294698`
+### Presence—`OIFMA_GMTS_153736`
 
 Presence or absence of juxtadiaphragmatic lesions in children  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of juxtadiaphragmatic lesions in children is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_834189`
+### Change from prior—`OIFMA_GMTS_222922`
 
 Whether and how a juxtadiaphragmatic lesions in children has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

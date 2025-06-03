@@ -1,16 +1,16 @@
 # Pulmonary artery calcification—`OIFM_GMTS_022547`
 
-**Synonyms:** calcified pulmonary artery
+**Synonyms:** PA calcification
 
-**Tags:** chest, CT, XR, vascular, lung, finding
+**Tags:** vascular, CT, XR, pulmonary artery, calcification, finding
 
-Calcification within the wall of the pulmonary artery.
+Calcification of the pulmonary artery walls.
 
 **Codes:** GAMUTS 22547 pulmonary artery calcification
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_608182`
+### Presence—`OIFMA_GMTS_181635`
 
 Presence or absence of pulmonary artery calcification  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary artery calcification is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_342765`
+### Change from prior—`OIFMA_GMTS_415373`
 
 Whether and how a pulmonary artery calcification has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

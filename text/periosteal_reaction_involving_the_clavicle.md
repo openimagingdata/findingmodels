@@ -1,16 +1,14 @@
 # Periosteal reaction involving the clavicle—`OIFM_GMTS_031734`
 
-**Synonyms:** clavicular periostitis
+**Tags:** musculoskeletal, XR, CT, musculoskeletal, shoulder, bone, finding
 
-**Tags:** chest, XR, CT, bone, clavicle, finding
-
-New bone formation along the surface of the clavicle, possibly due to infection, trauma or neoplasia.
+New bone formation along the periosteum of the clavicle.
 
 **Codes:** GAMUTS 31734 periosteal reaction involving the clavicle
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_787200`
+### Presence—`OIFMA_GMTS_854633`
 
 Presence or absence of periosteal reaction involving the clavicle  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of periosteal reaction involving the clavicle is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_614963`
+### Change from prior—`OIFMA_GMTS_992228`
 
 Whether and how a periosteal reaction involving the clavicle has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

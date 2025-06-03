@@ -1,16 +1,14 @@
 # Prosthetic valve regurgitation—`OIFM_GMTS_013717`
 
-**Synonyms:** prosthetic valve insufficiency, valve regurgitation
+**Tags:** ultrasound, US, MR, CT, cardiac, valvular, device, diagnosis
 
-**Tags:** chest, CT, MR, XR (indirectly), echocardiography, postop finding, implant, cardiac, diagnosis
-
-Leakage of blood backward through a prosthetic heart valve.
+Backward flow of blood due to improper closure of a prosthetic heart valve.
 
 **Codes:** GAMUTS 13717 prosthetic valve regurgitation
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_391061`
+### Presence—`OIFMA_GMTS_200341`
 
 Presence or absence of prosthetic valve regurgitation  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of prosthetic valve regurgitation is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_954051`
+### Change from prior—`OIFMA_GMTS_930988`
 
 Whether and how a prosthetic valve regurgitation has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

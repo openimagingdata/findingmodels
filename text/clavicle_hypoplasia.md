@@ -1,16 +1,14 @@
 # Clavicle hypoplasia—`OIFM_GMTS_031727`
 
-**Synonyms:** clavicular hypoplasia, short clavicle
+**Tags:** musculoskeletal, XR, CT, clavicle, congenital anomaly, diagnosis
 
-**Tags:** chest, XR, CT, chest wall, congenital anomaly, finding
-
-Underdevelopment or incomplete formation of the clavicle.
+Underdevelopment or incomplete development of the clavicle.
 
 **Codes:** GAMUTS 31727 clavicle hypoplasia
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_308733`
+### Presence—`OIFMA_GMTS_207965`
 
 Presence or absence of clavicle hypoplasia  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of clavicle hypoplasia is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_749836`
+### Change from prior—`OIFMA_GMTS_981960`
 
 Whether and how a clavicle hypoplasia has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

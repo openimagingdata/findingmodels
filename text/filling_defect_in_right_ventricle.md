@@ -1,16 +1,14 @@
 # Filling defect in right ventricle—`OIFM_GMTS_013635`
 
-**Synonyms:** right ventricular thrombus, RV mass
+**Tags:** ultrasound, CT, MR, heart, cardiac chamber, finding
 
-**Tags:** chest, CT, MR, US, heart, vascular, finding
-
-An abnormal area within the right ventricle where contrast does not fill, often due to thrombus or tumor.
+Area within the right ventricle that does not fill with contrast.
 
 **Codes:** GAMUTS 13635 filling defect in right ventricle
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_961177`
+### Presence—`OIFMA_GMTS_365536`
 
 Presence or absence of filling defect in right ventricle  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of filling defect in right ventricle is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_532233`
+### Change from prior—`OIFMA_GMTS_914940`
 
 Whether and how a filling defect in right ventricle has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

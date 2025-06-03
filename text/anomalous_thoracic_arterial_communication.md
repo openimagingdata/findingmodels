@@ -1,16 +1,16 @@
 # Anomalous thoracic arterial communication—`OIFM_GMTS_013557`
 
-**Synonyms:** arterial fistula, vascular anomaly
+**Synonyms:** arterial anomaly
 
-**Tags:** chest, CT, MR, angiography, vascular, congenital anomaly, mediastinum, finding
+**Tags:** ultrasound, CT, MR, US, vascular, congenital, diagnosis
 
-Abnormal vascular connection between thoracic arteries.
+Abnormal blood vessel connections in the thoracic region
 
 **Codes:** GAMUTS 13557 anomalous thoracic arterial communication
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_990755`
+### Presence—`OIFMA_GMTS_594398`
 
 Presence or absence of anomalous thoracic arterial communication  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of anomalous thoracic arterial communication is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_534860`
+### Change from prior—`OIFMA_GMTS_572837`
 
 Whether and how a anomalous thoracic arterial communication has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

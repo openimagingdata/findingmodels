@@ -1,16 +1,14 @@
 # Fetal chest mass—`OIFM_GMTS_019061`
 
-**Synonyms:** fetal intrathoracic mass, congenital chest mass
+**Tags:** ultrasound, US, MR, chest, mass, finding
 
-**Tags:** chest, US, MR, congenital anomaly, lung, mediastinum, finding
-
-A mass detected within the chest of a fetus, which may be congenital or neoplastic.
+An abnormal growth located in the fetal thoracic region.
 
 **Codes:** GAMUTS 19061 fetal chest mass
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_642180`
+### Presence—`OIFMA_GMTS_706453`
 
 Presence or absence of fetal chest mass  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of fetal chest mass is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_522620`
+### Change from prior—`OIFMA_GMTS_322518`
 
 Whether and how a fetal chest mass has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

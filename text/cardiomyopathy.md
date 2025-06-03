@@ -1,16 +1,16 @@
 # Cardiomyopathy—`OIFM_GMTS_013752`
 
-**Synonyms:** heart muscle disease, CMP
+**Synonyms:** heart muscle disease
 
-**Tags:** chest, XR, CT, MR, heart, diagnosis
+**Tags:** ultrasound, CT, MR, US, heart, myopathy, diagnosis
 
-Diseases of the heart muscle causing impaired function.
+Disease of the heart muscle affecting its size, shape, or strength.
 
 **Codes:** GAMUTS 13752 cardiomyopathy
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_332559`
+### Presence—`OIFMA_GMTS_021842`
 
 Presence or absence of cardiomyopathy  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of cardiomyopathy is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_054074`
+### Change from prior—`OIFMA_GMTS_472755`
 
 Whether and how a cardiomyopathy has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

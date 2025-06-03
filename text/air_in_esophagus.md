@@ -1,16 +1,16 @@
 # Air in esophagus—`OIFM_GMTS_000056`
 
-**Synonyms:** esophageal gas, intraluminal air
+**Synonyms:** esophageal air
 
-**Tags:** chest, XR, CT, fluoroscopy, esophagus, finding
+**Tags:** abdomen, CT, XR, gastrointestinal, anatomical, finding
 
-Presence of gas within the esophageal lumen, which may be normal or pathologic.
+Presence of air within the esophagus
 
-**Codes:** GAMUTS 56 air in esophagus
+**Codes:** GAMUTS 056 air in esophagus
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_244396`
+### Presence—`OIFMA_GMTS_495428`
 
 Presence or absence of air in esophagus  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of air in esophagus is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_327356`
+### Change from prior—`OIFMA_GMTS_474337`
 
 Whether and how a air in esophagus has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

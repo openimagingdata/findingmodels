@@ -1,16 +1,14 @@
 # Right atrial enlargement—`OIFM_GMTS_013602`
 
-**Synonyms:** RAE
+**Tags:** ultrasound, CT, MR, US, cardiac, diagnosis
 
-**Tags:** chest, XR, CT, MR, cardiac, right atrium, finding
-
-Increase in the size of the right atrium, often due to cardiac or pulmonary disease.
+Enlargement of the right atrium often due to increased pressure or volume load.
 
 **Codes:** GAMUTS 13602 right atrial enlargement
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_432700`
+### Presence—`OIFMA_GMTS_305466`
 
 Presence or absence of right atrial enlargement  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right atrial enlargement is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_677521`
+### Change from prior—`OIFMA_GMTS_285880`
 
 Whether and how a right atrial enlargement has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

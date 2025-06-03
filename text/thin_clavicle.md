@@ -1,16 +1,14 @@
 # Thin clavicle—`OIFM_GMTS_031728`
 
-**Synonyms:** thinned clavicle, atrophic clavicle
+**Tags:** musculoskeletal, XR, CT, clavicle, skeletal abnormality, finding
 
-**Tags:** chest, XR, chest wall, congenital anomaly, finding
-
-Clavicle appears abnormally thin, possibly due to dysplasia or chronic disease.
+Clavicle that appears decreased in width or density.
 
 **Codes:** GAMUTS 31728 thin clavicle
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_246468`
+### Presence—`OIFMA_GMTS_432951`
 
 Presence or absence of thin clavicle  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of thin clavicle is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_771743`
+### Change from prior—`OIFMA_GMTS_694516`
 
 Whether and how a thin clavicle has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

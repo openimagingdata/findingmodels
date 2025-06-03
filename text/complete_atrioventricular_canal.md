@@ -1,16 +1,16 @@
 # Complete atrioventricular canal—`OIFM_GMTS_013476`
 
-**Synonyms:** complete AV canal, atrioventricular septal defect
+**Synonyms:** AV canal defect, CAVC
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, diagnosis
+**Tags:** ultrasound, CT, MR, US, cardiovascular, congenital, heart, diagnosis
 
-A congenital heart defect with a common atrioventricular valve and septal defects.
+A congenital heart defect involving a large hole in the center of the heart where the walls between the upper and lower chambers meet.
 
 **Codes:** GAMUTS 13476 complete atrioventricular canal
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_242966`
+### Presence—`OIFMA_GMTS_173141`
 
 Presence or absence of complete atrioventricular canal  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of complete atrioventricular canal is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_898835`
+### Change from prior—`OIFMA_GMTS_916839`
 
 Whether and how a complete atrioventricular canal has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

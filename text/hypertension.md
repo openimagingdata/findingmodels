@@ -1,16 +1,16 @@
 # Hypertension—`OIFM_GMTS_013723`
 
-**Synonyms:** high blood pressure
+**Synonyms:** HTN
 
-**Tags:** chest, diagnosis
+**Tags:** ultrasound, US, MR, CT, cardiology, vascular, diagnosis
 
-Elevated systemic arterial blood pressure; not directly diagnosable by chest imaging.
+Elevated blood pressure condition, often related findings on imaging
 
 **Codes:** GAMUTS 13723 hypertension
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_429898`
+### Presence—`OIFMA_GMTS_997381`
 
 Presence or absence of hypertension  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of hypertension is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_627989`
+### Change from prior—`OIFMA_GMTS_146855`
 
 Whether and how a hypertension has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

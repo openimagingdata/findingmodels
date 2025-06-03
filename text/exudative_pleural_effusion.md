@@ -1,16 +1,16 @@
 # Exudative pleural effusion—`OIFM_GMTS_015945`
 
-**Synonyms:** exudate, infectious pleural effusion, malignant pleural effusion
+**Synonyms:** pleuritis
 
-**Tags:** chest, XR, CT, US, pleura, inflammatory process, neoplastic process, finding
+**Tags:** ultrasound, CT, XR, US, pleura, inflammatory, diagnosis
 
-Pleural fluid collection with high protein content, often due to infection or malignancy.
+Fluid accumulation in the pleural space of an inflammatory or infectious nature
 
 **Codes:** GAMUTS 15945 exudative pleural effusion
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_776843`
+### Presence—`OIFMA_GMTS_229470`
 
 Presence or absence of exudative pleural effusion  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of exudative pleural effusion is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_673019`
+### Change from prior—`OIFMA_GMTS_147218`
 
 Whether and how a exudative pleural effusion has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

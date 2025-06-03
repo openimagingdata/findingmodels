@@ -1,16 +1,14 @@
 # High-output heart function—`OIFM_GMTS_013743`
 
-**Synonyms:** high-output cardiac failure, high-output state
+**Tags:** ultrasound, US, MR, cardiac, physiological, finding
 
-**Tags:** chest, MR, US, CT, heart, vascular, finding
-
-State of increased cardiac output secondary to a variety of causes.
+Cardiac function characterized by increased blood pump volume.
 
 **Codes:** GAMUTS 13743 high-output heart function
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_417332`
+### Presence—`OIFMA_GMTS_664670`
 
 Presence or absence of high-output heart function  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of high-output heart function is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_910270`
+### Change from prior—`OIFMA_GMTS_172666`
 
 Whether and how a high-output heart function has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

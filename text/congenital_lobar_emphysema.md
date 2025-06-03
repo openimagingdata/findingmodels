@@ -1,16 +1,14 @@
 # Congenital lobar emphysema—`OIFM_GMTS_014880`
 
-**Synonyms:** CLE, infantile lobar emphysema
+**Tags:** pediatric, XR, CT, pulmonary, congenital anomaly, diagnosis
 
-**Tags:** chest, XR, CT, congenital anomaly, lung, diagnosis
-
-Overinflation of one or more lung lobes present from birth.
+Overinflation of a pulmonary lobe present at birth, leading to respiration difficulties.
 
 **Codes:** GAMUTS 14880 congenital lobar emphysema
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_636156`
+### Presence—`OIFMA_GMTS_170647`
 
 Presence or absence of congenital lobar emphysema  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital lobar emphysema is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_501259`
+### Change from prior—`OIFMA_GMTS_823682`
 
 Whether and how a congenital lobar emphysema has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

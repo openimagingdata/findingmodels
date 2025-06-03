@@ -1,16 +1,14 @@
 # Pulmonary artery catheterization—`OIFM_GMTS_030927`
 
-**Synonyms:** Swan-Ganz catheter, pulmonary artery catheter
+**Tags:** vascular, CT, XR, US, pulmonary artery, procedure, finding
 
-**Tags:** chest, XR, CT, implant, device, vascular, lung, finding
-
-Presence of a catheter (Swan-Ganz) in the pulmonary artery.
+Insertion of a catheter into the pulmonary artery for diagnostic purposes.
 
 **Codes:** GAMUTS 30927 pulmonary artery catheterization
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_680070`
+### Presence—`OIFMA_GMTS_373275`
 
 Presence or absence of pulmonary artery catheterization  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary artery catheterization is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_204780`
+### Change from prior—`OIFMA_GMTS_024617`
 
 Whether and how a pulmonary artery catheterization has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

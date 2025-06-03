@@ -1,16 +1,16 @@
 # Coronary artery aneurysm—`OIFM_GMTS_014078`
 
-**Synonyms:** coronary aneurysm
+**Synonyms:** coronary artery dilatation
 
-**Tags:** chest, CT, MR, vascular, aneurysm, heart, diagnosis
+**Tags:** ultrasound, CT, MR, US, cardiac, vascular, aneurysm, diagnosis
 
-Localized dilatation of a coronary artery segment.
+Dilation of a segment of the coronary artery, which can affect blood flow.
 
 **Codes:** GAMUTS 14078 coronary artery aneurysm
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_922493`
+### Presence—`OIFMA_GMTS_616773`
 
 Presence or absence of coronary artery aneurysm  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of coronary artery aneurysm is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_955805`
+### Change from prior—`OIFMA_GMTS_656183`
 
 Whether and how a coronary artery aneurysm has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

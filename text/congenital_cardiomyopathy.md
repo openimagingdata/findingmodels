@@ -1,16 +1,14 @@
 # Congenital cardiomyopathy—`OIFM_GMTS_013765`
 
-**Synonyms:** pediatric cardiomyopathy, inherited cardiomyopathy
+**Tags:** ultrasound, CT, MR, cardiovascular, muscle, congenital, diagnosis
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, diagnosis
-
-Heart muscle disease present from birth.
+Heart muscle disease present from birth affecting cardiac function.
 
 **Codes:** GAMUTS 13765 congenital cardiomyopathy
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_301356`
+### Presence—`OIFMA_GMTS_710876`
 
 Presence or absence of congenital cardiomyopathy  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital cardiomyopathy is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_116083`
+### Change from prior—`OIFMA_GMTS_772248`
 
 Whether and how a congenital cardiomyopathy has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

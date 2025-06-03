@@ -2,8 +2,6 @@
 
 **Synonyms:** Ventricular size measurements, Left ventricular diameter (LVD), Right ventricular diameter (RVD)
 
-**Tags:** cardiac
-
 Measurements of the maximum diameters of the right and left ventricles of the heart.
 
 ## Attributes

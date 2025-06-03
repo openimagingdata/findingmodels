@@ -1,16 +1,16 @@
 # Acyanotic congenital heart disease with normal pulmonary vascularity—`OIFM_GMTS_013493`
 
-**Synonyms:** congenital heart defect without shunt
+**Synonyms:** non-blue congenital heart defect
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, diagnosis
+**Tags:** ultrasound, CT, XR, US, MR, heart, congenital, diagnosis
 
-Acyanotic congenital cardiac malformations with normal pulmonary blood flow.
+Congenital heart defect with normal lung blood flow and no cyanosis
 
 **Codes:** GAMUTS 13493 acyanotic congenital heart disease with normal pulmonary vascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_080771`
+### Presence—`OIFMA_GMTS_253209`
 
 Presence or absence of acyanotic congenital heart disease with normal pulmonary vascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of acyanotic congenital heart disease with normal pulmonary vascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_805068`
+### Change from prior—`OIFMA_GMTS_835365`
 
 Whether and how a acyanotic congenital heart disease with normal pulmonary vascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

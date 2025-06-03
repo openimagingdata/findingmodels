@@ -2,15 +2,15 @@
 
 **Synonyms:** VSD
 
-**Tags:** chest, CT, MR, US, congenital anomaly, heart, diagnosis
+**Tags:** ultrasound, US, MR, CT, cardiac, congenital anomaly, diagnosis
 
-A congenital opening between the right and left ventricles of the heart.
+A congenital heart defect characterized by a hole in the ventricular septum.
 
 **Codes:** GAMUTS 13463 ventricular septal defect
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_749348`
+### Presence—`OIFMA_GMTS_295876`
 
 Presence or absence of ventricular septal defect  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of ventricular septal defect is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_337452`
+### Change from prior—`OIFMA_GMTS_681127`
 
 Whether and how a ventricular septal defect has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

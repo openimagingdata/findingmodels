@@ -1,16 +1,14 @@
 # Pericardial calcification—`OIFM_GMTS_013823`
 
-**Synonyms:** calcified pericardium
+**Tags:** ultrasound, CT, XR, heart, calcification, finding
 
-**Tags:** chest, XR, CT, pericardium, postop finding, finding
-
-Calcium deposition within the pericardium, frequently seen in chronic inflammation.
+Calcification of the pericardium.
 
 **Codes:** GAMUTS 13823 pericardial calcification
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_527659`
+### Presence—`OIFMA_GMTS_487164`
 
 Presence or absence of pericardial calcification  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pericardial calcification is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_512295`
+### Change from prior—`OIFMA_GMTS_628773`
 
 Whether and how a pericardial calcification has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

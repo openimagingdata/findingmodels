@@ -2,15 +2,15 @@
 
 **Synonyms:** pericardial constriction
 
-**Tags:** chest, XR, CT, MR, inflammatory process, pericardium, heart, diagnosis
+**Tags:** ultrasound, CT, MR, US, cardiac, inflammatory, diagnosis
 
-Chronic inflammation of the pericardium resulting in constriction of the heart.
+A condition where the pericardium becomes thickened and fibrotic, limiting the heart's normal movement.
 
 **Codes:** GAMUTS 2331 constrictive pericarditis
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_843808`
+### Presence—`OIFMA_GMTS_063071`
 
 Presence or absence of constrictive pericarditis  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of constrictive pericarditis is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_896667`
+### Change from prior—`OIFMA_GMTS_487561`
 
 Whether and how a constrictive pericarditis has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

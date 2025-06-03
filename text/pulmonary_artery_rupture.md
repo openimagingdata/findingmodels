@@ -1,16 +1,16 @@
 # Pulmonary artery rupture—`OIFM_GMTS_023185`
 
-**Synonyms:** ruptured pulmonary artery
+**Synonyms:** PA rupture
 
-**Tags:** chest, CT, XR (indirect signs), vascular, lung, postop finding (if iatrogenic), diagnosis
+**Tags:** vascular, CT, XR, US, pulmonary artery, rupture, diagnosis
 
-Tear or disruption of the pulmonary artery wall, often with bleeding.
+Tear in the wall of the pulmonary artery.
 
 **Codes:** GAMUTS 23185 pulmonary artery rupture
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_769865`
+### Presence—`OIFMA_GMTS_780958`
 
 Presence or absence of pulmonary artery rupture  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary artery rupture is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_400447`
+### Change from prior—`OIFMA_GMTS_911552`
 
 Whether and how a pulmonary artery rupture has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

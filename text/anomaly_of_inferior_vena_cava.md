@@ -1,16 +1,16 @@
 # Anomaly of inferior vena cava—`OIFM_GMTS_014153`
 
-**Synonyms:** IVC anomaly, inferior vena cava variant
+**Synonyms:** IVC anomaly
 
-**Tags:** chest, CT, MR, vascular, congenital anomaly, mediastinum, finding
+**Tags:** ultrasound, CT, MR, US, congenital anomaly, mediastinum, vascular, diagnosis
 
-Congenital or acquired abnormality involving the inferior vena cava.
+An unusual developmental formation or structural variant of the inferior vena cava.
 
 **Codes:** GAMUTS 14153 anomaly of inferior vena cava
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_188042`
+### Presence—`OIFMA_GMTS_205599`
 
 Presence or absence of anomaly of inferior vena cava  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of anomaly of inferior vena cava is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_368846`
+### Change from prior—`OIFMA_GMTS_165546`
 
 Whether and how a anomaly of inferior vena cava has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

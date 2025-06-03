@@ -1,16 +1,16 @@
 # Aortic arch anomaly—`OIFM_GMTS_013538`
 
-**Synonyms:** aortic arch malformation, congenital aortic arch defect
+**Synonyms:** aortic arch malformation
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, vascular, mediastinum, diagnosis
+**Tags:** ultrasound, CT, MR, XR, congenital anomaly, vascular, aorta, diagnosis
 
-Congenital abnormality involving the aortic arch shape, course, or branching.
+Any of several abnormalities in the development of the aortic arch.
 
 **Codes:** GAMUTS 13538 aortic arch anomaly
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_012319`
+### Presence—`OIFMA_GMTS_601969`
 
 Presence or absence of aortic arch anomaly  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of aortic arch anomaly is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_737344`
+### Change from prior—`OIFMA_GMTS_478437`
 
 Whether and how a aortic arch anomaly has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  

@@ -1,6 +1,6 @@
 # Small lung nodules—`OIFM_GMTS_014576`
 
-**Synonyms:** micronodules, pulmonary nodules
+**Synonyms:** micronodules
 
 **Tags:** chest, CT, XR, lung, neoplastic process, finding
 

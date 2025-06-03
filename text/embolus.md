@@ -1,16 +1,16 @@
 # Embolus—`OIFM_GMTS_014088`
 
-**Synonyms:** thromboembolism, embolism, pulmonary embolism (PE)
+**Synonyms:** embolism
 
-**Tags:** chest, CT, XR, vascular, lung, finding
+**Tags:** ultrasound, CT, MR, US, vascular, diagnosis
 
-A clot or other material that travels and obstructs a blood vessel, often in the pulmonary arteries.
+Blockage of a vessel by a clot or other foreign material
 
 **Codes:** GAMUTS 14088 embolus
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_449876`
+### Presence—`OIFMA_GMTS_031288`
 
 Presence or absence of embolus  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of embolus is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_336264`
+### Change from prior—`OIFMA_GMTS_052666`
 
 Whether and how a embolus has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
