@@ -1,32 +1,24 @@
 {
   "oifm_id": "OIFM_GMTS_032870",
   "name": "calcification in heart",
-  "description": "Calcium deposits within cardiac tissues, often indicating chronic disease.",
+  "description": "Presence of calcified deposits within cardiac structures.",
   "tags": [
-    "cardiac",
+    "chest",
     "XR",
     "CT",
-    "US",
-    "heart",
     "cardiac",
+    "mediastinum",
     "finding"
-  ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_553364",
+      "oifma_id": "OIFMA_GMTS_561540",
       "name": "presence",
       "description": "Presence or absence of calcification in heart",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_553364.0",
+          "value_code": "OIFMA_GMTS_561540.0",
           "name": "absent",
           "description": "Calcification in heart is absent",
           "index_codes": [
@@ -43,7 +35,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_553364.1",
+          "value_code": "OIFMA_GMTS_561540.1",
           "name": "present",
           "description": "Calcification in heart is present",
           "index_codes": [
@@ -60,7 +52,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_553364.2",
+          "value_code": "OIFMA_GMTS_561540.2",
           "name": "indeterminate",
           "description": "Presence of calcification in heart cannot be determined",
           "index_codes": [
@@ -77,7 +69,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_553364.3",
+          "value_code": "OIFMA_GMTS_561540.3",
           "name": "unknown",
           "description": "Presence of calcification in heart is unknown",
           "index_codes": [
@@ -105,13 +97,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_390613",
+      "oifma_id": "OIFMA_GMTS_935740",
       "name": "change from prior",
       "description": "Whether and how a calcification in heart has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_390613.0",
+          "value_code": "OIFMA_GMTS_935740.0",
           "name": "unchanged",
           "description": "Calcification in heart is unchanged",
           "index_codes": [
@@ -128,7 +120,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.1",
+          "value_code": "OIFMA_GMTS_935740.1",
           "name": "stable",
           "description": "Calcification in heart is stable",
           "index_codes": [
@@ -145,7 +137,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.2",
+          "value_code": "OIFMA_GMTS_935740.2",
           "name": "new",
           "description": "Calcification in heart is new",
           "index_codes": [
@@ -162,12 +154,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.3",
+          "value_code": "OIFMA_GMTS_935740.3",
           "name": "resolved",
           "description": "Calcification in heart seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_390613.4",
+          "value_code": "OIFMA_GMTS_935740.4",
           "name": "increased",
           "description": "Calcification in heart has increased",
           "index_codes": [
@@ -184,7 +176,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.5",
+          "value_code": "OIFMA_GMTS_935740.5",
           "name": "decreased",
           "description": "Calcification in heart has decreased",
           "index_codes": [
@@ -201,7 +193,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.6",
+          "value_code": "OIFMA_GMTS_935740.6",
           "name": "larger",
           "description": "Calcification in heart is larger",
           "index_codes": [
@@ -218,7 +210,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_390613.7",
+          "value_code": "OIFMA_GMTS_935740.7",
           "name": "smaller",
           "description": "Calcification in heart is smaller",
           "index_codes": [

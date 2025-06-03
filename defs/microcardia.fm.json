@@ -1,36 +1,28 @@
 {
-  "oifm_id": "OIFM_GMTS_022540",
-  "name": "microcardia",
-  "description": "Abnormally small heart",
+  "oifm_id": "OIFM_GMTS_013783",
+  "name": "small heart",
+  "description": "A heart that appears reduced in size relative to the thoracic cavity.",
   "synonyms": [
-    "small heart"
+    "small cardiac silhouette"
   ],
   "tags": [
-    "ultrasound",
+    "chest",
     "XR",
     "CT",
     "cardiac",
-    "congenital anomaly",
     "finding"
-  ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_212300",
+      "oifma_id": "OIFMA_GMTS_468043",
       "name": "presence",
-      "description": "Presence or absence of microcardia",
+      "description": "Presence or absence of small heart",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_212300.0",
+          "value_code": "OIFMA_GMTS_468043.0",
           "name": "absent",
-          "description": "Microcardia is absent",
+          "description": "Small heart is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -45,9 +37,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_212300.1",
+          "value_code": "OIFMA_GMTS_468043.1",
           "name": "present",
-          "description": "Microcardia is present",
+          "description": "Small heart is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -62,9 +54,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_212300.2",
+          "value_code": "OIFMA_GMTS_468043.2",
           "name": "indeterminate",
-          "description": "Presence of microcardia cannot be determined",
+          "description": "Presence of small heart cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -79,9 +71,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_212300.3",
+          "value_code": "OIFMA_GMTS_468043.3",
           "name": "unknown",
-          "description": "Presence of microcardia is unknown",
+          "description": "Presence of small heart is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -107,15 +99,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_725504",
+      "oifma_id": "OIFMA_GMTS_394093",
       "name": "change from prior",
-      "description": "Whether and how a microcardia has changed over time",
+      "description": "Whether and how a small heart has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_725504.0",
+          "value_code": "OIFMA_GMTS_394093.0",
           "name": "unchanged",
-          "description": "Microcardia is unchanged",
+          "description": "Small heart is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -130,9 +122,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.1",
+          "value_code": "OIFMA_GMTS_394093.1",
           "name": "stable",
-          "description": "Microcardia is stable",
+          "description": "Small heart is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -147,9 +139,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.2",
+          "value_code": "OIFMA_GMTS_394093.2",
           "name": "new",
-          "description": "Microcardia is new",
+          "description": "Small heart is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -164,14 +156,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.3",
+          "value_code": "OIFMA_GMTS_394093.3",
           "name": "resolved",
-          "description": "Microcardia seen on a prior exam has resolved"
+          "description": "Small heart seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_725504.4",
+          "value_code": "OIFMA_GMTS_394093.4",
           "name": "increased",
-          "description": "Microcardia has increased",
+          "description": "Small heart has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -186,9 +178,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.5",
+          "value_code": "OIFMA_GMTS_394093.5",
           "name": "decreased",
-          "description": "Microcardia has decreased",
+          "description": "Small heart has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -203,9 +195,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.6",
+          "value_code": "OIFMA_GMTS_394093.6",
           "name": "larger",
-          "description": "Microcardia is larger",
+          "description": "Small heart is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -220,9 +212,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_725504.7",
+          "value_code": "OIFMA_GMTS_394093.7",
           "name": "smaller",
-          "description": "Microcardia is smaller",
+          "description": "Small heart is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -256,8 +248,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "22540",
-      "display": "microcardia"
+      "code": "13783",
+      "display": "small heart"
     }
   ]
 }
