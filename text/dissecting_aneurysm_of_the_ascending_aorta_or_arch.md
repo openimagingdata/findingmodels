@@ -1,16 +1,14 @@
 # Dissecting aneurysm of the ascending aorta or arch—`OIFM_GMTS_014070`
 
-**Synonyms:** ascending aortic dissection
+**Tags:** ultrasound, CT, MR, aorta, vascular, diagnosis
 
-**Tags:** chest, CT, MR, vascular, aneurysm, mediastinum, diagnosis
-
-Dissecting aneurysm involving the ascending aorta or aortic arch.
+Tear in the aortic wall allowing blood to split the layers
 
 **Codes:** GAMUTS 14070 dissecting aneurysm of the ascending aorta or arch
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_648192`
+### Presence—`OIFMA_GMTS_765304`
 
 Presence or absence of dissecting aneurysm of the ascending aorta or arch  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of dissecting aneurysm of the ascending aorta or arch is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_283527`
+### Change from prior—`OIFMA_GMTS_430655`
 
 Whether and how a dissecting aneurysm of the ascending aorta or arch has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
