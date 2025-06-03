@@ -6,23 +6,16 @@
     "Abdominal calcification deposition",
     "Stratified calcifications"
   ],
-  "tags": [
-    "abdomen",
-    "CT",
-    "XR",
-    "abdominal",
-    "calcific",
-    "finding"
-  ],
+  "tags": ["abdomen", "CT", "XR", "abdominal", "calcific", "finding"],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_450759",
+      "oifma_id": "OIFMA_GMTS_450757",
       "name": "presence",
       "description": "Presence or absence of layering abdominal calcifications",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_450759.0",
+          "value_code": "OIFMA_GMTS_450757.0",
           "name": "absent",
           "description": "Layering abdominal calcifications is absent",
           "index_codes": [
@@ -39,7 +32,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_450759.1",
+          "value_code": "OIFMA_GMTS_450757.1",
           "name": "present",
           "description": "Layering abdominal calcifications is present",
           "index_codes": [
@@ -56,7 +49,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_450759.2",
+          "value_code": "OIFMA_GMTS_450757.2",
           "name": "indeterminate",
           "description": "Presence of layering abdominal calcifications cannot be determined",
           "index_codes": [
@@ -73,7 +66,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_450759.3",
+          "value_code": "OIFMA_GMTS_450757.3",
           "name": "unknown",
           "description": "Presence of layering abdominal calcifications is unknown",
           "index_codes": [
@@ -101,13 +94,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_241365",
+      "oifma_id": "OIFMA_GMTS_241367",
       "name": "change from prior",
       "description": "Whether and how a layering abdominal calcifications has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_241365.0",
+          "value_code": "OIFMA_GMTS_241367.0",
           "name": "unchanged",
           "description": "Layering abdominal calcifications is unchanged",
           "index_codes": [
@@ -124,7 +117,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.1",
+          "value_code": "OIFMA_GMTS_241367.1",
           "name": "stable",
           "description": "Layering abdominal calcifications is stable",
           "index_codes": [
@@ -141,7 +134,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.2",
+          "value_code": "OIFMA_GMTS_241367.2",
           "name": "new",
           "description": "Layering abdominal calcifications is new",
           "index_codes": [
@@ -158,12 +151,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.3",
+          "value_code": "OIFMA_GMTS_241367.3",
           "name": "resolved",
           "description": "Layering abdominal calcifications seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_241365.4",
+          "value_code": "OIFMA_GMTS_241367.4",
           "name": "increased",
           "description": "Layering abdominal calcifications has increased",
           "index_codes": [
@@ -180,7 +173,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.5",
+          "value_code": "OIFMA_GMTS_241367.5",
           "name": "decreased",
           "description": "Layering abdominal calcifications has decreased",
           "index_codes": [
@@ -197,7 +190,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.6",
+          "value_code": "OIFMA_GMTS_241367.6",
           "name": "larger",
           "description": "Layering abdominal calcifications is larger",
           "index_codes": [
@@ -214,7 +207,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_241365.7",
+          "value_code": "OIFMA_GMTS_241367.7",
           "name": "smaller",
           "description": "Layering abdominal calcifications is smaller",
           "index_codes": [

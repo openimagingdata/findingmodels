@@ -1,40 +1,19 @@
 {
-  "oifm_id": "OIFM_GMTS_017573",
-  "name": "hydroureter",
-  "description": "Widening or ballooning of the ureter",
-  "synonyms": [
-    "ureteral dilation",
-    "dilatation of ureter",
-    "ureterectasis",
-    "dilated ureter"
-  ],
-  "tags": [
-    "ultrasound",
-    "US",
-    "CT",
-    "MR",
-    "ureter",
-    "urological",
-    "finding"
-  ],
-  "contributors": [
-    {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
-    }
-  ],
+  "oifm_id": "OIFM_GMTS_013783",
+  "name": "small heart",
+  "description": "A smaller than normal cardiac silhouette.",
+  "tags": ["ultrasound", "CT", "XR", "cardiac", "finding"],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_731069",
+      "oifma_id": "OIFMA_GMTS_410582",
       "name": "presence",
-      "description": "Presence or absence of hydroureter",
+      "description": "Presence or absence of small heart",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_731069.0",
+          "value_code": "OIFMA_GMTS_410582.0",
           "name": "absent",
-          "description": "Hydroureter is absent",
+          "description": "Small heart is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +28,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_731069.1",
+          "value_code": "OIFMA_GMTS_410582.1",
           "name": "present",
-          "description": "Hydroureter is present",
+          "description": "Small heart is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +45,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_731069.2",
+          "value_code": "OIFMA_GMTS_410582.2",
           "name": "indeterminate",
-          "description": "Presence of hydroureter cannot be determined",
+          "description": "Presence of small heart cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -83,9 +62,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_731069.3",
+          "value_code": "OIFMA_GMTS_410582.3",
           "name": "unknown",
-          "description": "Presence of hydroureter is unknown",
+          "description": "Presence of small heart is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -111,15 +90,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_764161",
+      "oifma_id": "OIFMA_GMTS_098205",
       "name": "change from prior",
-      "description": "Whether and how a hydroureter has changed over time",
+      "description": "Whether and how a small heart has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_764161.0",
+          "value_code": "OIFMA_GMTS_098205.0",
           "name": "unchanged",
-          "description": "Hydroureter is unchanged",
+          "description": "Small heart is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +113,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.1",
+          "value_code": "OIFMA_GMTS_098205.1",
           "name": "stable",
-          "description": "Hydroureter is stable",
+          "description": "Small heart is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,9 +130,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.2",
+          "value_code": "OIFMA_GMTS_098205.2",
           "name": "new",
-          "description": "Hydroureter is new",
+          "description": "Small heart is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -168,14 +147,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.3",
+          "value_code": "OIFMA_GMTS_098205.3",
           "name": "resolved",
-          "description": "Hydroureter seen on a prior exam has resolved"
+          "description": "Small heart seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_764161.4",
+          "value_code": "OIFMA_GMTS_098205.4",
           "name": "increased",
-          "description": "Hydroureter has increased",
+          "description": "Small heart has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +169,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.5",
+          "value_code": "OIFMA_GMTS_098205.5",
           "name": "decreased",
-          "description": "Hydroureter has decreased",
+          "description": "Small heart has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +186,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.6",
+          "value_code": "OIFMA_GMTS_098205.6",
           "name": "larger",
-          "description": "Hydroureter is larger",
+          "description": "Small heart is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -224,9 +203,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_764161.7",
+          "value_code": "OIFMA_GMTS_098205.7",
           "name": "smaller",
-          "description": "Hydroureter is smaller",
+          "description": "Small heart is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,8 +239,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "17167",
-      "display": "hydroureter"
+      "code": "13783",
+      "display": "small heart"
     }
   ]
 }
