@@ -1,7 +1,5 @@
 # Mild or intermittent cyanosis in first week—`OIFM_GMTS_013429`
 
-**Synonyms:** neonatal cyanosis, transient cyanosis
-
 **Tags:** chest, systemic, neonatal, finding
 
 Bluish discoloration due to low oxygen levels in a neonate's first week, possible clinical sign of cardiopulmonary disease.
