@@ -6,7 +6,7 @@ from pathlib import Path
 def main():
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
-    output_file = project_root / "peoples.jsonl"
+    output_file = project_root / "people.jsonl"
 
     default_persons = [
         {
