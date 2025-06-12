@@ -1,37 +1,28 @@
 {
-  "oifm_id": "OIFM_GMTS_007650",
-  "name": "intracerebral hemorrhage",
-  "description": "Bleeding within the cerebral parenchyma.",
+  "oifm_id": "OIFM_MSFT_218756",
+  "name": "Intracerebral Hemorrhage",
+  "description": "Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.",
   "synonyms": [
-    "ICH",
-    "cerebral hemorrhage"
-  ],
-  "tags": [
-    "neuro",
-    "CT",
-    "MR",
-    "bleeding",
-    "neurology",
-    "diagnosis"
+    "ICH"
   ],
   "contributors": [
     {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_449529",
+      "oifma_id": "OIFMA_MSFT_953007",
       "name": "presence",
-      "description": "Presence or absence of intracerebral hemorrhage",
+      "description": "Indicates whether an intracerebral hemorrhage is absent, present, or unclear.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_449529.0",
+          "value_code": "OIFMA_MSFT_953007.0",
           "name": "absent",
-          "description": "Intracerebral hemorrhage is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -46,9 +37,8 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449529.1",
+          "value_code": "OIFMA_MSFT_953007.1",
           "name": "present",
-          "description": "Intracerebral hemorrhage is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -63,26 +53,8 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449529.2",
-          "name": "indeterminate",
-          "description": "Presence of intracerebral hemorrhage cannot be determined",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID39110",
-              "display": "indeterminate"
-            },
-            {
-              "system": "SNOMED",
-              "code": "82334004",
-              "display": "Indeterminate (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_449529.3",
+          "value_code": "OIFMA_MSFT_953007.2",
           "name": "unknown",
-          "description": "Presence of intracerebral hemorrhage is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -95,9 +67,25 @@
               "display": "Unknown (qualifier value)"
             }
           ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_953007.3",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -106,159 +94,6 @@
           "display": "Presence (property) (qualifier value)"
         }
       ]
-    },
-    {
-      "oifma_id": "OIFMA_GMTS_038058",
-      "name": "change from prior",
-      "description": "Whether and how a intracerebral hemorrhage has changed over time",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_GMTS_038058.0",
-          "name": "unchanged",
-          "description": "Intracerebral hemorrhage is unchanged",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID39268",
-              "display": "unchanged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "260388006",
-              "display": "No status change (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.1",
-          "name": "stable",
-          "description": "Intracerebral hemorrhage is stable",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5734",
-              "display": "stable"
-            },
-            {
-              "system": "SNOMED",
-              "code": "58158008",
-              "display": "Stable (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.2",
-          "name": "new",
-          "description": "Intracerebral hemorrhage is new",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5720",
-              "display": "new"
-            },
-            {
-              "system": "SNOMED",
-              "code": "7147002",
-              "display": "New (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.3",
-          "name": "resolved",
-          "description": "Intracerebral hemorrhage seen on a prior exam has resolved"
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.4",
-          "name": "increased",
-          "description": "Intracerebral hemorrhage has increased",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID36043",
-              "display": "increased"
-            },
-            {
-              "system": "SNOMED",
-              "code": "35105006",
-              "display": "Increased (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.5",
-          "name": "decreased",
-          "description": "Intracerebral hemorrhage has decreased",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID36044",
-              "display": "decreased"
-            },
-            {
-              "system": "SNOMED",
-              "code": "1250004",
-              "display": "Decreased (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.6",
-          "name": "larger",
-          "description": "Intracerebral hemorrhage is larger",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_038058.7",
-          "name": "smaller",
-          "description": "Intracerebral hemorrhage is smaller",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
-            }
-          ]
-        }
-      ],
-      "required": false,
-      "max_selected": 1,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID49896",
-          "display": "change"
-        },
-        {
-          "system": "SNOMED",
-          "code": "263703002",
-          "display": "Changed status (qualifier value)"
-        }
-      ]
-    }
-  ],
-  "index_codes": [
-    {
-      "system": "GAMUTS",
-      "code": "7650",
-      "display": "intracerebral hemorrhage"
     }
   ]
 }
