@@ -2,6 +2,9 @@
   "oifm_id": "OIFM_GMTS_022551",
   "name": "pulmonary hypertension",
   "description": "Increased blood pressure in the pulmonary arteries.",
+  "synonyms": [
+    "pulmonary arterial hypertension"
+  ],
   "tags": [
     "vascular",
     "CT",
@@ -12,6 +15,7 @@
     "hypertension",
     "diagnosis"
   ],
+  "contributors": null,
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_661983",
@@ -158,7 +162,8 @@
         {
           "value_code": "OIFMA_GMTS_809168.3",
           "name": "resolved",
-          "description": "Pulmonary hypertension seen on a prior exam has resolved"
+          "description": "Pulmonary hypertension seen on a prior exam has resolved",
+          "index_codes": null
         },
         {
           "value_code": "OIFMA_GMTS_809168.4",

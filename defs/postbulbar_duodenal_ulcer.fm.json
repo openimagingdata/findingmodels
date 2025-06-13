@@ -1,26 +1,20 @@
 {
-  "oifm_id": "OIFM_GMTS_004354",
-  "name": "fatty infiltration of pancreas",
-  "description": "Fat accumulation within pancreatic tissue, potentially affecting function",
-  "tags": [
-    "ultrasound",
-    "CT",
-    "MR",
-    "pancreas",
-    "metabolic",
-    "diagnosis"
-  ],
+  "oifm_id": "OIFM_GMTS_005109",
+  "name": "postbulbar duodenal ulcer",
+  "description": "Ulcer located distal to the bulb of the duodenum.",
+  "synonyms": ["Duodenal ulcer, postbulbar", "Postbulbar duodenal ulcer"],
+  "tags": ["abdomen", "XR", "CT", "duodenum", "diagnosis"],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_469072",
+      "oifma_id": "OIFMA_GMTS_554226",
       "name": "presence",
-      "description": "Presence or absence of fatty infiltration of pancreas",
+      "description": "Presence or absence of postbulbar duodenal ulcer",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_469072.0",
+          "value_code": "OIFMA_GMTS_554226.0",
           "name": "absent",
-          "description": "Fatty infiltration of pancreas is absent",
+          "description": "Postbulbar duodenal ulcer is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -35,9 +29,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_469072.1",
+          "value_code": "OIFMA_GMTS_554226.1",
           "name": "present",
-          "description": "Fatty infiltration of pancreas is present",
+          "description": "Postbulbar duodenal ulcer is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +46,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_469072.2",
+          "value_code": "OIFMA_GMTS_554226.2",
           "name": "indeterminate",
-          "description": "Presence of fatty infiltration of pancreas cannot be determined",
+          "description": "Presence of postbulbar duodenal ulcer cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +63,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_469072.3",
+          "value_code": "OIFMA_GMTS_554226.3",
           "name": "unknown",
-          "description": "Presence of fatty infiltration of pancreas is unknown",
+          "description": "Presence of postbulbar duodenal ulcer is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -97,15 +91,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_981057",
+      "oifma_id": "OIFMA_GMTS_540870",
       "name": "change from prior",
-      "description": "Whether and how a fatty infiltration of pancreas has changed over time",
+      "description": "Whether and how a postbulbar duodenal ulcer has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_981057.0",
+          "value_code": "OIFMA_GMTS_540870.0",
           "name": "unchanged",
-          "description": "Fatty infiltration of pancreas is unchanged",
+          "description": "Postbulbar duodenal ulcer is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -120,9 +114,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.1",
+          "value_code": "OIFMA_GMTS_540870.1",
           "name": "stable",
-          "description": "Fatty infiltration of pancreas is stable",
+          "description": "Postbulbar duodenal ulcer is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +131,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.2",
+          "value_code": "OIFMA_GMTS_540870.2",
           "name": "new",
-          "description": "Fatty infiltration of pancreas is new",
+          "description": "Postbulbar duodenal ulcer is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,14 +148,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.3",
+          "value_code": "OIFMA_GMTS_540870.3",
           "name": "resolved",
-          "description": "Fatty infiltration of pancreas seen on a prior exam has resolved"
+          "description": "Postbulbar duodenal ulcer seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_981057.4",
+          "value_code": "OIFMA_GMTS_540870.4",
           "name": "increased",
-          "description": "Fatty infiltration of pancreas has increased",
+          "description": "Postbulbar duodenal ulcer has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -176,9 +170,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.5",
+          "value_code": "OIFMA_GMTS_540870.5",
           "name": "decreased",
-          "description": "Fatty infiltration of pancreas has decreased",
+          "description": "Postbulbar duodenal ulcer has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +187,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.6",
+          "value_code": "OIFMA_GMTS_540870.6",
           "name": "larger",
-          "description": "Fatty infiltration of pancreas is larger",
+          "description": "Postbulbar duodenal ulcer is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +204,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_981057.7",
+          "value_code": "OIFMA_GMTS_540870.7",
           "name": "smaller",
-          "description": "Fatty infiltration of pancreas is smaller",
+          "description": "Postbulbar duodenal ulcer is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -246,8 +240,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "4354",
-      "display": "fatty infiltration of pancreas"
+      "code": "5109",
+      "display": "postbulbar duodenal ulcer"
     }
   ]
 }

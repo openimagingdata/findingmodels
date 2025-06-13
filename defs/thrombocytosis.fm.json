@@ -1,26 +1,20 @@
 {
-  "oifm_id": "OIFM_GMTS_022508",
-  "name": "thrombocythemia",
+  "oifm_id": "OIFM_GMTS_015684",
+  "name": "thrombocytosis",
   "description": "Abnormally high platelet count",
-  "synonyms": [
-    "thrombocytosis"
-  ],
-  "tags": [
-    "vascular",
-    "hematologic",
-    "diagnosis"
-  ],
+  "synonyms": ["thrombocythemia"],
+  "tags": ["vascular", "hematologic", "diagnosis"],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_144864",
       "name": "presence",
-      "description": "Presence or absence of thrombocythemia",
+      "description": "Presence or absence of thrombocytosis",
       "type": "choice",
       "values": [
         {
           "value_code": "OIFMA_GMTS_144864.0",
           "name": "absent",
-          "description": "Thrombocythemia is absent",
+          "description": "Thrombocytosis is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -37,7 +31,7 @@
         {
           "value_code": "OIFMA_GMTS_144864.1",
           "name": "present",
-          "description": "Thrombocythemia is present",
+          "description": "Thrombocytosis is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -54,7 +48,7 @@
         {
           "value_code": "OIFMA_GMTS_144864.2",
           "name": "indeterminate",
-          "description": "Presence of thrombocythemia cannot be determined",
+          "description": "Presence of thrombocytosis cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -71,7 +65,7 @@
         {
           "value_code": "OIFMA_GMTS_144864.3",
           "name": "unknown",
-          "description": "Presence of thrombocythemia is unknown",
+          "description": "Presence of thrombocytosis is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -99,13 +93,13 @@
     {
       "oifma_id": "OIFMA_GMTS_064146",
       "name": "change from prior",
-      "description": "Whether and how a thrombocythemia has changed over time",
+      "description": "Whether and how a thrombocytosis has changed over time",
       "type": "choice",
       "values": [
         {
           "value_code": "OIFMA_GMTS_064146.0",
           "name": "unchanged",
-          "description": "Thrombocythemia is unchanged",
+          "description": "Thrombocytosis is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -122,7 +116,7 @@
         {
           "value_code": "OIFMA_GMTS_064146.1",
           "name": "stable",
-          "description": "Thrombocythemia is stable",
+          "description": "Thrombocytosis is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -139,7 +133,7 @@
         {
           "value_code": "OIFMA_GMTS_064146.2",
           "name": "new",
-          "description": "Thrombocythemia is new",
+          "description": "Thrombocytosis is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -156,12 +150,12 @@
         {
           "value_code": "OIFMA_GMTS_064146.3",
           "name": "resolved",
-          "description": "Thrombocythemia seen on a prior exam has resolved"
+          "description": "Thrombocytosis seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_064146.4",
           "name": "increased",
-          "description": "Thrombocythemia has increased",
+          "description": "Thrombocytosis has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -178,7 +172,7 @@
         {
           "value_code": "OIFMA_GMTS_064146.5",
           "name": "decreased",
-          "description": "Thrombocythemia has decreased",
+          "description": "Thrombocytosis has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -195,7 +189,7 @@
         {
           "value_code": "OIFMA_GMTS_064146.6",
           "name": "larger",
-          "description": "Thrombocythemia is larger",
+          "description": "Thrombocytosis is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -212,7 +206,7 @@
         {
           "value_code": "OIFMA_GMTS_064146.7",
           "name": "smaller",
-          "description": "Thrombocythemia is smaller",
+          "description": "Thrombocytosis is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -246,8 +240,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "22508",
-      "display": "thrombocythemia"
+      "code": "15684",
+      "display": "thrombocytosis"
     }
   ]
 }

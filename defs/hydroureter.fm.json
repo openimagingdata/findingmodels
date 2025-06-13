@@ -1,28 +1,25 @@
 {
-  "oifm_id": "OIFM_GMTS_000583",
-  "name": "postbulbar duodenal ulceration",
-  "description": "Ulceration located distal to the bulb of the duodenum.",
+  "oifm_id": "OIFM_GMTS_017573",
+  "name": "hydroureter",
+  "description": "Widening or ballooning of the ureter",
   "synonyms": [
-    "Duodenal ulcer, postbulbar"
+    "ureteral dilation",
+    "dilatation of ureter",
+    "ureterectasis",
+    "dilated ureter"
   ],
-  "tags": [
-    "abdomen",
-    "XR",
-    "CT",
-    "duodenum",
-    "diagnosis"
-  ],
+  "tags": ["ultrasound", "US", "CT", "MR", "ureter", "urological", "finding"],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_554226",
+      "oifma_id": "OIFMA_GMTS_731069",
       "name": "presence",
-      "description": "Presence or absence of postbulbar duodenal ulceration",
+      "description": "Presence or absence of hydroureter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_554226.0",
+          "value_code": "OIFMA_GMTS_731069.0",
           "name": "absent",
-          "description": "Postbulbar duodenal ulceration is absent",
+          "description": "Hydroureter is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -37,9 +34,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_554226.1",
+          "value_code": "OIFMA_GMTS_731069.1",
           "name": "present",
-          "description": "Postbulbar duodenal ulceration is present",
+          "description": "Hydroureter is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -54,9 +51,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_554226.2",
+          "value_code": "OIFMA_GMTS_731069.2",
           "name": "indeterminate",
-          "description": "Presence of postbulbar duodenal ulceration cannot be determined",
+          "description": "Presence of hydroureter cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -71,9 +68,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_554226.3",
+          "value_code": "OIFMA_GMTS_731069.3",
           "name": "unknown",
-          "description": "Presence of postbulbar duodenal ulceration is unknown",
+          "description": "Presence of hydroureter is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -99,15 +96,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_540870",
+      "oifma_id": "OIFMA_GMTS_764161",
       "name": "change from prior",
-      "description": "Whether and how a postbulbar duodenal ulceration has changed over time",
+      "description": "Whether and how a hydroureter has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_540870.0",
+          "value_code": "OIFMA_GMTS_764161.0",
           "name": "unchanged",
-          "description": "Postbulbar duodenal ulceration is unchanged",
+          "description": "Hydroureter is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -122,9 +119,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.1",
+          "value_code": "OIFMA_GMTS_764161.1",
           "name": "stable",
-          "description": "Postbulbar duodenal ulceration is stable",
+          "description": "Hydroureter is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -139,9 +136,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.2",
+          "value_code": "OIFMA_GMTS_764161.2",
           "name": "new",
-          "description": "Postbulbar duodenal ulceration is new",
+          "description": "Hydroureter is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -156,14 +153,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.3",
+          "value_code": "OIFMA_GMTS_764161.3",
           "name": "resolved",
-          "description": "Postbulbar duodenal ulceration seen on a prior exam has resolved"
+          "description": "Hydroureter seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_540870.4",
+          "value_code": "OIFMA_GMTS_764161.4",
           "name": "increased",
-          "description": "Postbulbar duodenal ulceration has increased",
+          "description": "Hydroureter has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -178,9 +175,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.5",
+          "value_code": "OIFMA_GMTS_764161.5",
           "name": "decreased",
-          "description": "Postbulbar duodenal ulceration has decreased",
+          "description": "Hydroureter has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -195,9 +192,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.6",
+          "value_code": "OIFMA_GMTS_764161.6",
           "name": "larger",
-          "description": "Postbulbar duodenal ulceration is larger",
+          "description": "Hydroureter is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -212,9 +209,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_540870.7",
+          "value_code": "OIFMA_GMTS_764161.7",
           "name": "smaller",
-          "description": "Postbulbar duodenal ulceration is smaller",
+          "description": "Hydroureter is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -248,8 +245,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "583",
-      "display": "postbulbar duodenal ulceration"
+      "code": "17167",
+      "display": "hydroureter"
     }
   ]
 }
