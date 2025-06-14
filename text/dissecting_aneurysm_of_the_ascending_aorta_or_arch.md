@@ -1,6 +1,6 @@
 # Dissecting aneurysm of the ascending aorta or arch—`OIFM_GMTS_014070`
 
-**Synonyms:** aortic dissection, ascending aortic dissection
+**Synonyms:** ascending aortic dissection
 
 **Tags:** chest, CT, MR, vascular, aneurysm, mediastinum, diagnosis
 

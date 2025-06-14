@@ -1,6 +1,6 @@
 # Marked cyanosis in first week of life—`OIFM_GMTS_013424`
 
-**Synonyms:** neonatal cyanosis, early neonatal cyanosis
+**Synonyms:** severe neonatal cyanosis
 
 **Tags:** chest, XR, CT, systemic, cardiac, congenital anomaly, finding
 

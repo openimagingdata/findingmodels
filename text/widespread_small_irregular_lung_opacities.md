@@ -1,6 +1,6 @@
 # Widespread small irregular lung opacities—`OIFM_GMTS_014464`
 
-**Synonyms:** diffuse micronodular opacities, miliary pattern
+**Synonyms:** diffuse micronodular opacities
 
 **Tags:** chest, XR, CT, lung, finding
 

@@ -1,6 +1,6 @@
 # Vapor-induced lung disease—`OIFM_GMTS_015125`
 
-**Synonyms:** chemical pneumonitis, inhalational lung injury
+**Synonyms:** inhalational lung injury
 
 **Tags:** chest, XR, CT, lung, inflammatory process, diagnosis
 
