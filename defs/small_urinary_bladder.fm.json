@@ -4,7 +4,8 @@
   "description": "A urinary bladder that appears smaller than normal.",
   "synonyms": [
     "microbladder",
-    "small bladder"
+    "small bladder",
+    "contracted bladder"
   ],
   "tags": [
     "ultrasound",
@@ -13,7 +14,13 @@
     "urinary",
     "finding"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_977249",
@@ -160,8 +167,7 @@
         {
           "value_code": "OIFMA_GMTS_160921.3",
           "name": "resolved",
-          "description": "Small urinary bladder seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Small urinary bladder seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_160921.4",

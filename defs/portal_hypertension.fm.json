@@ -14,7 +14,13 @@
     "vascular",
     "diagnosis"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_358407",
@@ -161,8 +167,7 @@
         {
           "value_code": "OIFMA_GMTS_617684.3",
           "name": "resolved",
-          "description": "Portal hypertension seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Portal hypertension seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_617684.4",

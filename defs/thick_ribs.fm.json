@@ -3,7 +3,8 @@
   "name": "thick ribs",
   "description": "Ribs that appear increased in density or width.",
   "synonyms": [
-    "wide ribs"
+    "wide ribs",
+    "thickened ribs"
   ],
   "tags": [
     "musculoskeletal",
@@ -13,7 +14,13 @@
     "skeletal abnormality",
     "finding"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_148403",
@@ -160,8 +167,7 @@
         {
           "value_code": "OIFMA_GMTS_360142.3",
           "name": "resolved",
-          "description": "Thick ribs seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Thick ribs seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_360142.4",

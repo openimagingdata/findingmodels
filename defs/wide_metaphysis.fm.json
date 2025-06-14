@@ -3,8 +3,12 @@
   "name": "wide metaphysis",
   "description": "Broadened single metaphysis, can indicate a growth disorder.",
   "synonyms": [
-    "metaphyseal wide",
-    "wide metaphyses"
+    "broad metaphysis",
+    "wide metaphyses",
+    "flaring of the metaphyses",
+    "flared metaphysis",
+    "splaying of the metaphyses",
+    "metaphyseal wide"
   ],
   "tags": [
     "musculoskeletal",
@@ -13,7 +17,13 @@
     "skeletal dysplasia",
     "finding"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_455322",
@@ -160,8 +170,7 @@
         {
           "value_code": "OIFMA_GMTS_878327.3",
           "name": "resolved",
-          "description": "Wide metaphysis seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Wide metaphysis seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_878327.4",

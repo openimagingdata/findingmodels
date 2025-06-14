@@ -14,7 +14,13 @@
     "congenital anomaly",
     "finding"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_167899",
@@ -161,8 +167,7 @@
         {
           "value_code": "OIFMA_GMTS_466709.3",
           "name": "resolved",
-          "description": "Macroglossia seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Macroglossia seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_466709.4",

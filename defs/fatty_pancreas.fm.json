@@ -4,6 +4,9 @@
   "description": "Excess fat deposition in the pancreas",
   "synonyms": [
     "pancreatic steatosis",
+    "fatty deposition in pancreas",
+    "fat deposition in pancreas",
+    "fatty replacement of pancreas",
     "fatty infiltration of pancreas"
   ],
   "tags": [
@@ -14,7 +17,13 @@
     "metabolic",
     "diagnosis"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_435268",
@@ -161,8 +170,7 @@
         {
           "value_code": "OIFMA_GMTS_455060.3",
           "name": "resolved",
-          "description": "Fatty pancreas seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Fatty pancreas seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_455060.4",

@@ -3,9 +3,13 @@
   "name": "sacrococcygeal appendage",
   "description": "A tail-like structure present at the sacrococcygeal region.",
   "synonyms": [
+    "sacral appendage",
+    "tail",
+    "tail*",
+    "caudal appendage",
     "coccygeal appendage",
     "human tail",
-    "tail*"
+    "sacrococcygeal tail"
   ],
   "tags": [
     "neuro",
@@ -16,7 +20,13 @@
     "congenital",
     "finding"
   ],
-  "contributors": null,
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_GMTS_377906",
@@ -163,8 +173,7 @@
         {
           "value_code": "OIFMA_GMTS_422041.3",
           "name": "resolved",
-          "description": "Sacrococcygeal appendage seen on a prior exam has resolved",
-          "index_codes": null
+          "description": "Sacrococcygeal appendage seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_422041.4",
