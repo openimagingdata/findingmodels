@@ -1,67 +1,11 @@
 repos:
   - repo: local
     hooks:
-      - id: generate-all-markdown
-        name: "Generate & stage markdown files with uv"
-        entry: uv run python scripts/generate_all_markdown.py
+      - id: validate-local
+        name: "Validate defs/*.fm.json, generate text/*.md, index.md, and ids.json"
+        entry: uv run python scripts/validator.py
         language: python
         additional_dependencies: ["uv>=0.7.9"] # uv available inside that venv
         pass_filenames: false # our script is self-contained
         always_run: true # run even if no .md was staged
         require_serial: true # safety: don’t run in parallel
-      - id: generate-index-jsonl
-        name: "Generate & stage index.jsonl file with uv"
-        entry: uv run python scripts/generate_index_jsonl.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: generate-index-markdown
-        name: "Generate & stage index.md file with uv"
-        entry: uv run python scripts/generate_index_markdown.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: generate-organization-jsonl
-        name: "Generate & stage organization.jsonl file with uv"
-        entry: uv run python scripts/generate_organization.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: generate-people-jsonl
-        name: "Generate & stage people.jsonl file with uv"
-        entry: uv run python scripts/generate_people.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: validate-schema
-        name: "Validate JSONL files with uv"
-        entry: uv run python scripts/validate_schema.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: validate-json
-        name: "Validate JSON files with uv"
-        entry: uv run python scripts/validate_json.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
-      - id: format-json
-        name: "Format JSON files with uv"
-        entry: uv run python scripts/format_json.py
-        language: python
-        additional_dependencies: ["uv>=0.7.9"]
-        pass_filenames: false
-        always_run: true
-        require_serial: true
