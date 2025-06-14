@@ -1,6 +1,6 @@
 # Finding Model Index
 
-267 entries
+271 entries
 
 | ID | Name | Synonyms | Tags | Contributors | Attributes |
 |----|------|----------|------|--------------|------------|
@@ -54,6 +54,7 @@
 | OIFM_GMTS_013752 | cardiomyopathy<br/>[Text](text/cardiomyopathy.md) [JSON](defs/cardiomyopathy.fm.json) | heart muscle disease, CMP | chest, XR, CT, MR, heart, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_014751 | cavitary lung lesion in an infant or child<br/>[Text](text/cavitary_lung_lesion_in_an_infant_or_child.md) [JSON](defs/cavitary_lung_lesion_in_an_infant_or_child.fm.json) | pediatric lung cavity, pulmonary cavitation in child | chest, XR, CT, lung, pediatric, finding |  | presence, change from prior |
 | OIFM_GMTS_014589 | centrilobular small lung nodules<br/>[Text](text/centrilobular_small_lung_nodules.md) [JSON](defs/centrilobular_small_lung_nodules.fm.json) | centrilobular nodularity, small centrilobular nodules | chest, CT, lung, finding |  | presence, change from prior |
+| OIFM_MSFT_440456 | Cerebral Aneurysm<br/>[Text](text/cerebral_aneurysm.md) [JSON](defs/cerebral_aneurysm.fm.json) | Intracranial Aneurysm, Brain Aneurysm, Cerebral Aneurysm (CA) |  | Heather Chase | presence |
 | OIFM_GMTS_015155 | chemical-induced lung disease<br/>[Text](text/chemical_induced_lung_disease.md) [JSON](defs/chemical_induced_lung_disease.fm.json) | toxic lung injury, chemical pneumonitis | chest, XR, CT, lung, inflammatory process, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_016091 | chest malformation<br/>[Text](text/chest_malformation.md) [JSON](defs/chest_malformation.fm.json) | thoracic malformation, chest wall anomaly | chest, XR, CT, chest wall, congenital anomaly, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_016049 | chest wall lesion<br/>[Text](text/chest_wall_lesion.md) [JSON](defs/chest_wall_lesion.fm.json) | thoracic wall lesion, parietal chest lesion | chest, XR, CT, MR, chest wall, finding |  | presence, change from prior |
@@ -119,6 +120,7 @@
 | OIFM_GMTS_015245 | infectious lung disease<br/>[Text](text/infectious_lung_disease.md) [JSON](defs/infectious_lung_disease.fm.json) | pulmonary infection, lung infection | chest, XR, CT, inflammatory process, lung, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_014141 | inferior vena cava obstruction<br/>[Text](text/inferior_vena_cava_obstruction.md) [JSON](defs/inferior_vena_cava_obstruction.fm.json) | IVC obstruction, IVC syndrome | chest, CT, MR, vascular, mediastinum, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_014491 | interstitial lung fibrosis<br/>[Text](text/interstitial_lung_fibrosis.md) [JSON](defs/interstitial_lung_fibrosis.fm.json) | pulmonary fibrosis, interstitial fibrosis | chest, XR, CT, lung, finding |  | presence, change from prior |
+| OIFM_MSFT_218756 | Intracerebral Hemorrhage<br/>[Text](text/intracerebral_hemorrhage.md) [JSON](defs/intracerebral_hemorrhage.fm.json) | ICH |  | Heather Chase | presence |
 | OIFM_GMTS_015677 | intrathoracic extramedullary hematopoiesis<br/>[Text](text/intrathoracic_extramedullary_hematopoiesis.md) [JSON](defs/intrathoracic_extramedullary_hematopoiesis.fm.json) | thoracic extramedullary hematopoiesis, paravertebral hematopoiesis | chest, XR, CT, MR, hematopoietic, mediastinum, paraspinal, finding |  | presence, change from prior |
 | OIFM_GMTS_015358 | intratracheal mass<br/>[Text](text/intratracheal_mass.md) [JSON](defs/intratracheal_mass.fm.json) | tracheal tumor, intraluminal tracheal lesion | chest, CT, XR, neoplastic process, trachea, finding |  | presence, change from prior |
 | OIFM_GMTS_013732 | ischemic heart disease<br/>[Text](text/ischemic_heart_disease.md) [JSON](defs/ischemic_heart_disease.fm.json) | coronary artery disease, IHD | chest, CT, MR, cardiac, vascular, diagnosis |  | presence, change from prior |
@@ -127,6 +129,7 @@
 | OIFM_GMTS_030875 | large ascending aorta<br/>[Text](text/large_ascending_aorta.md) [JSON](defs/large_ascending_aorta.fm.json) | ascending aorta dilatation, ascending aorta enlargement | chest, XR, CT, MR, vascular, mediastinum, finding |  | presence, change from prior |
 | OIFM_GMTS_013910 | large main pulmonary artery<br/>[Text](text/large_main_pulmonary_artery.md) [JSON](defs/large_main_pulmonary_artery.fm.json) | pulmonary artery dilatation, main pulmonary artery enlargement | chest, XR, CT, MR, vascular, mediastinum, finding |  | presence, change from prior |
 | OIFM_GMTS_015383 | large trachea<br/>[Text](text/large_trachea.md) [JSON](defs/large_trachea.fm.json) | tracheal dilatation, tracheomegaly | chest, XR, CT, trachea, finding |  | presence, change from prior |
+| OIFM_MSFT_761982 | Large Vessel Occlusion<br/>[Text](text/large_vessel_occlusion.md) [JSON](defs/large_vessel_occlusion.fm.json) | LVO |  | Heather Chase | vessel occlusion status |
 | OIFM_GMTS_022609 | laryngeal anomaly<br/>[Text](text/laryngeal_anomaly.md) [JSON](defs/laryngeal_anomaly.fm.json) | laryngeal malformation, laryngeal abnormality | chest, CT, MR, congenital anomaly, larynx, finding |  | presence, change from prior |
 | OIFM_GMTS_013432 | late onset of cyanosis in neonatal congenital heart disease<br/>[Text](text/late_onset_of_cyanosis_in_neonatal_congenital_heart_disease.md) [JSON](defs/late_onset_of_cyanosis_in_neonatal_congenital_heart_disease.fm.json) | delayed cyanosis in congenital heart disease, neonatal cyanosis with CHD | chest, XR, CT, MR, congenital anomaly, cardiac, pediatric, finding |  | presence, change from prior |
 | OIFM_GMTS_003695 | left atrial enlargement<br/>[Text](text/left_atrial_enlargement.md) [JSON](defs/left_atrial_enlargement.fm.json) | enlarged left atrium, left atrial dilatation | chest, XR, CT, MR, cardiac, finding |  | presence, change from prior |
@@ -235,6 +238,7 @@
 | OIFM_GMTS_014616 | solitary pulmonary nodule<br/>[Text](text/solitary_pulmonary_nodule.md) [JSON](defs/solitary_pulmonary_nodule.fm.json) | lung nodule, pulmonary nodule, SPN | chest, XR, CT, lung, neoplastic process, finding |  | presence, change from prior |
 | OIFM_GMTS_014772 | solitary sharply-outlined cavitary lung lesion<br/>[Text](text/solitary_sharply_outlined_cavitary_lung_lesion.md) [JSON](defs/solitary_sharply_outlined_cavitary_lung_lesion.fm.json) | well-defined cavitary lung lesion | chest, XR, CT, lung, finding |  | presence, change from prior |
 | OIFM_GMTS_016184 | solitary thoracic calcification<br/>[Text](text/solitary_thoracic_calcification.md) [JSON](defs/solitary_thoracic_calcification.fm.json) | thoracic calcified lesion | chest, XR, CT, chest wall, lung, mediastinum, pleura, finding |  | presence, change from prior |
+| OIFM_MSFT_767776 | Subdural Hematoma<br/>[Text](text/subdural_hematoma.md) [JSON](defs/subdural_hematoma.fm.json) | SDH |  | Heather Chase | presence |
 | OIFM_GMTS_015428 | superior mediastinal mass<br/>[Text](text/superior_mediastinal_mass.md) [JSON](defs/superior_mediastinal_mass.fm.json) | superior mediastinum mass | chest, XR, CT, MR, mediastinum, neoplastic process, finding |  | presence, change from prior |
 | OIFM_GMTS_014124 | superior vena cava syndrome<br/>[Text](text/superior_vena_cava_syndrome.md) [JSON](defs/superior_vena_cava_syndrome.fm.json) | SVC syndrome, superior vena cava obstruction | chest, CT, MR, vascular, mediastinum, diagnosis |  | presence, change from prior |
 | OIFM_GMTS_014021 | systemic-to-pulmonary vascular shunt<br/>[Text](text/systemic_to_pulmonary_vascular_shunt.md) [JSON](defs/systemic_to_pulmonary_vascular_shunt.fm.json) | systemic-pulmonary shunt | chest, CT, MR, angiography, vascular, congenital anomaly, finding |  | presence, change from prior |
