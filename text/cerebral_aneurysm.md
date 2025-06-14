@@ -1,14 +1,14 @@
-# Intracerebral hemorrhage—`OIFM_MSFT_218756`
+# Cerebral aneurysm—`OIFM_MSFT_440456`
 
-**Synonyms:** ICH
+**Synonyms:** Intracranial Aneurysm, Brain Aneurysm, Cerebral Aneurysm (CA)
 
-Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.
+An abnormal bulging in a blood vessel in the brain that can lead to serious complications such as rupture or hemorrhage.
 
 ## Attributes
 
-### Presence—`OIFMA_MSFT_953007`
+### Presence—`OIFMA_MSFT_102146`
 
-Indicates whether an intracerebral hemorrhage is absent, present, or unclear.  
+Indicates whether a cerebral aneurysm is present or not.  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
 *(Select one)*
 

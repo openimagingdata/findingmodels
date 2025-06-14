@@ -1,15 +1,14 @@
-# Intracerebral hemorrhage—`OIFM_MSFT_218756`
+# Large vessel occlusion—`OIFM_MSFT_761982`
 
-**Synonyms:** ICH
+**Synonyms:** LVO
 
-Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.
+A condition characterized by the blockage of a large blood vessel, typically affecting cerebral circulation and leading to stroke.
 
 ## Attributes
 
-### Presence—`OIFMA_MSFT_953007`
+### Vessel occlusion status—`OIFMA_MSFT_757594`
 
-Indicates whether an intracerebral hemorrhage is absent, present, or unclear.  
-**Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
+Indicates whether the large vessel occlusion is present or absent.  
 *(Select one)*
 
 - **absent**  

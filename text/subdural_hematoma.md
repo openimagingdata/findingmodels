@@ -1,14 +1,14 @@
-# Intracerebral hemorrhage—`OIFM_MSFT_218756`
+# Subdural hematoma—`OIFM_MSFT_767776`
 
-**Synonyms:** ICH
+**Synonyms:** SDH
 
-Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.
+A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.
 
 ## Attributes
 
-### Presence—`OIFMA_MSFT_953007`
+### Presence—`OIFMA_MSFT_437618`
 
-Indicates whether an intracerebral hemorrhage is absent, present, or unclear.  
+This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
 *(Select one)*
 
