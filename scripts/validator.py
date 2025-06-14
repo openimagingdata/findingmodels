@@ -160,9 +160,26 @@ if __name__ == "__main__":
             print(f" - {error}")
         sys.exit(1)
 
-    # Add changes in the defs and text directories to git
-    try:
-        subprocess.run(["git", "add", str(DEFS_DIR), str(TEXT_DIR), str(INDEX_MARKDOWN_FILE), str(IDS_FILE)], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Error running git add: {e}")
-        sys.exit(1)    
+    # Check if we should add generated files to git
+    # This is useful when running as a pre-commit hook
+    add_to_git = "--with-git-adds" in sys.argv
+    
+    if add_to_git:
+        # Add generated/updated files to git staging area
+        files_to_add = [
+            "defs/",  # All JSON files in defs directory
+            "text/",  # All markdown files in text directory
+            "index.md",  # Main index file
+            "ids.json",  # IDs tracking file
+        ]
+        
+        try:
+            # Add the files to git staging area
+            subprocess.run(["git", "add"] + files_to_add, check=True, cwd=Path(__file__).parent.parent)
+            print(f"Added generated files to git staging area: {', '.join(files_to_add)}")
+        except subprocess.CalledProcessError as e:
+            print(f"Warning: Failed to add files to git staging area: {e}")
+            # Don't fail the pre-commit hook if git add fails
+    
+    print("Validation completed successfully.")
+

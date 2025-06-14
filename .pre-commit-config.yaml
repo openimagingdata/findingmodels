@@ -3,9 +3,9 @@ repos:
     hooks:
       - id: validate-local
         name: "Validate defs/*.fm.json, generate text/*.md, index.md, and ids.json"
-        entry: uv run python scripts/validator.py
+        entry: uv run scripts/validator.py --with-git-adds
         language: python
         additional_dependencies: ["uv>=0.7.9"] # uv available inside that venv
         pass_filenames: false # our script is self-contained
         always_run: true # run even if no .md was staged
-        require_serial: true # safety: don’t run in parallel
+        require_serial: true # safety: don't run in parallel
