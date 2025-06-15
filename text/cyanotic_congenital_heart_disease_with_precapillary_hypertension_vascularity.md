@@ -1,5 +1,7 @@
 # Cyanotic congenital heart disease with precapillary hypertension vascularity—`OIFM_GMTS_013510`
 
+**Synonyms:** Eisenmenger physiology
+
 **Tags:** ultrasound, XR, CT, MR, US, cardiac, pediatric, vascular, diagnosis
 
 Congenital heart disease leading to cyanosis and elevated pressures before lung capillaries.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Cyanotic congenital heart disease with precapillary hypertension vascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

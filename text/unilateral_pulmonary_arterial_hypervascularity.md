@@ -1,6 +1,6 @@
 # Unilateral pulmonary arterial hypervascularity—`OIFM_GMTS_013902`
 
-**Synonyms:** asymmetric pulmonary vascularity
+**Synonyms:** increased pulmonary arterial circulation to one lung, unilaterally increased pulmonary arterial circulation, asymmetric pulmonary vascularity
 
 **Tags:** ultrasound, CT, XR, pulmonary, vascular, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Unilateral pulmonary arterial hypervascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,5 +1,7 @@
 # Fat-containing renal mass—`OIFM_GMTS_016800`
 
+**Synonyms:** renal mass with fat
+
 **Tags:** abdomen, CT, MR, kidney, neoplastic, diagnosis
 
 Renal mass that contains fat, suggestive of angiomyolipoma or other fat-containing tumors.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Fat-containing renal mass is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

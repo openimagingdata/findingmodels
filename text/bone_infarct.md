@@ -1,5 +1,7 @@
 # Bone infarct—`OIFM_GMTS_010943`
 
+**Synonyms:** diametaphyeal ischemia
+
 **Tags:** musculoskeletal, XR, CT, MR, vascular, bone, diagnosis
 
 Death of bone tissue due to lack of blood supply, appearing as sclerosis.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Bone infarct is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

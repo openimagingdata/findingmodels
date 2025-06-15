@@ -1,6 +1,6 @@
 # Slipped capital femoral epiphysis—`OIFM_GMTS_025653`
 
-**Synonyms:** SCFE
+**Synonyms:** slipped femoral head, SCFE
 
 **Tags:** musculoskeletal, XR, MR, musculoskeletal, pediatric, diagnosis
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Slipped capital femoral epiphysis is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

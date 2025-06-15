@@ -1,6 +1,6 @@
 # Double bubble sign—`OIFM_GMTS_005035`
 
-**Synonyms:** double bubble, double bubble on X-ray
+**Synonyms:** double bubble, duodenal obstruction in an infant, double bubble on X-ray
 
 **Tags:** ultrasound, US, XR, gastrointestinal, neonatal, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Double bubble sign is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

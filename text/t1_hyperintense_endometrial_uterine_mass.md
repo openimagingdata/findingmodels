@@ -1,6 +1,6 @@
 # T1-hyperintense endometrial uterine mass—`OIFM_GMTS_018890`
 
-**Synonyms:** high T1 endometrial mass
+**Synonyms:** T1-bright endometrial uterine mass, high T1 endometrial mass
 
 **Tags:** abdomen, MR, endometrium, uterus, mass, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: T1-hyperintense endometrial uterine mass is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,5 +1,7 @@
 # Split cortex—`OIFM_GMTS_011588`
 
+**Synonyms:** double-layer cortex
+
 **Tags:** musculoskeletal, XR, CT, bone, structural abnormality, finding
 
 Appearance of separated or divided cortical bone seen on imaging, often due to disease or injury.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Split cortex is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

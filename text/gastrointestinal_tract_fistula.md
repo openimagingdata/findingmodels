@@ -1,5 +1,7 @@
 # Gastrointestinal tract fistula—`OIFM_GMTS_005481`
 
+**Synonyms:** GI fistula, GI tract fistula
+
 **Tags:** abdomen, CT, MR, Contrast Study, gastrointestinal, fistula, diagnosis
 
 An abnormal connection between two parts of the gastrointestinal tract or with adjacent organs.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Gastrointestinal tract fistula is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

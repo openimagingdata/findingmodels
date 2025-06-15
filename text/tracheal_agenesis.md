@@ -1,5 +1,7 @@
 # Tracheal agenesis—`OIFM_GMTS_022612`
 
+**Synonyms:** agenesis of trachea
+
 **Tags:** pediatric, US, CT, airway, congenital anomaly, diagnosis
 
 Rare congenital condition where the trachea fails to develop.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Tracheal agenesis is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

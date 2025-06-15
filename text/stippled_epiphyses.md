@@ -1,6 +1,6 @@
 # Stippled epiphyses—`OIFM_GMTS_010492`
 
-**Synonyms:** punctate epiphyseal calcifications
+**Synonyms:** epiphyseal stippling, punctate epiphyseal calcifications, punctate epiphyseal calcification, punctate epiphyses
 
 **Tags:** musculoskeletal, XR, skeletal, pediatric, congenital anomaly, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Stippled epiphyses is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,6 +1,6 @@
 # Widening of duodenal c-loop—`OIFM_GMTS_004242`
 
-**Synonyms:** Expanded duodenal C-loop
+**Synonyms:** wide C-loop, wide duodenal C-loop, Expanded duodenal C-loop
 
 **Tags:** abdomen, CT, XR, duodenal, anatomical, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Widening of duodenal c-loop is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

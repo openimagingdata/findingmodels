@@ -1,6 +1,6 @@
 # Wormian bones—`OIFM_GMTS_025593`
 
-**Synonyms:** intrasutural bones, sutural bones
+**Synonyms:** multiple sutural bones, sutural bones, intrasutural bones
 
 **Tags:** musculoskeletal, CT, XR, skull, congenital anomaly, pediatric, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Wormian bones is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

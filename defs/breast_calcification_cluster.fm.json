@@ -2,8 +2,13 @@
   "oifm_id": "OIFM_MSFT_914493",
   "name": "breast calcification cluster",
   "description": "Breast calcification clusters are typically a sign of benign changes in breast tissue but can sometimes indicate malignancy.",
-  "synonyms": ["breast calcifications"],
-  "tags": ["breast", "calcification"],
+  "synonyms": [
+    "breast calcifications"
+  ],
+  "tags": [
+    "breast",
+    "calcification"
+  ],
   "contributors": [
     {
       "github_username": "HeatherChase",
@@ -41,7 +46,8 @@
           "description": "Presence of calcification cluster is unknown."
         }
       ],
-      "required": true
+      "required": true,
+      "max_selected": 1
     },
     {
       "oifma_id": "OIFMA_MSFT_742222",
@@ -60,7 +66,8 @@
           "description": "Calcification cluster located in the left breast."
         }
       ],
-      "required": true
+      "required": true,
+      "max_selected": 1
     },
     {
       "oifma_id": "OIFMA_MSFT_661937",

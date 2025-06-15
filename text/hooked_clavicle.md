@@ -1,5 +1,7 @@
 # Hooked clavicle—`OIFM_GMTS_025718`
 
+**Synonyms:** lateral hook of clavicle
+
 **Tags:** musculoskeletal, XR, CT, clavicle, bony deformity, skeletal, thorax, finding
 
 Abnormal curvature or hook-like appearance of the clavicle.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Hooked clavicle is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

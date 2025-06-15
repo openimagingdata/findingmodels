@@ -1,6 +1,6 @@
 # Trigonocephaly—`OIFM_GMTS_007950`
 
-**Synonyms:** triangular head, craniosynostosis (metopic)
+**Synonyms:** craniosynostosis with premature closure of metopic suture, craniosynostosis (metopic), triangular head
 
 **Tags:** neuro, CT, skull, congenital anomaly, diagnosis
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Trigonocephaly is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

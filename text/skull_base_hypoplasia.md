@@ -1,6 +1,6 @@
 # Skull base hypoplasia—`OIFM_GMTS_006309`
 
-**Synonyms:** hypoplastic skull base
+**Synonyms:** hypoplasia of skull base, hypoplastic skull base
 
 **Tags:** neuro, CT, MR, skull, congenital, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Skull base hypoplasia is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,6 +1,6 @@
 # Mass in scrotum—`OIFM_GMTS_017716`
 
-**Synonyms:** Scrotal mass
+**Synonyms:** scrotal mass, Scrotal mass
 
 **Tags:** ultrasound, US, MR, genital, mass, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Mass in scrotum is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

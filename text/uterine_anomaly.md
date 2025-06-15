@@ -1,6 +1,6 @@
 # Uterine anomaly—`OIFM_GMTS_022605`
 
-**Synonyms:** uterine malformation, congenital uterine anomaly
+**Synonyms:** congenital uterine anomaly, uterine malformation, anomaly of uterus
 
 **Tags:** ultrasound, US, MR, uterus, reproductive system, congenital anomaly, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Uterine anomaly is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

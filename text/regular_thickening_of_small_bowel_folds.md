@@ -1,6 +1,6 @@
 # Regular thickening of small bowel folds—`OIFM_GMTS_004006`
 
-**Synonyms:** Small bowel fold thickening
+**Synonyms:** Small bowel fold thickening, regular small bowel fold thickening
 
 **Tags:** abdomen, CT, intestines, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Regular thickening of small bowel folds is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

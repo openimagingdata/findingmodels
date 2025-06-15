@@ -1,5 +1,7 @@
 # Infundibular narrowing—`OIFM_GMTS_016510`
 
+**Synonyms:** infundibular stenosis
+
 **Tags:** abdomen, CT, MR, XR, anatomical variant, finding
 
 Constriction of the infundibulum, particularly in the gallbladder or heart
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Infundibular narrowing is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

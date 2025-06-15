@@ -1,6 +1,6 @@
 # Gastric fold thickening—`OIFM_GMTS_005101`
 
-**Synonyms:** Gastric wall thickening
+**Synonyms:** thick gastric wall, gastric wall thickening, thickened gastric folds, thick gastric folds, Gastric wall thickening
 
 **Tags:** abdomen, CT, MR, US, stomach, gastrointestinal, inflammatory, neoplastic, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Gastric fold thickening is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

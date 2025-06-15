@@ -1,5 +1,7 @@
 # Clinodactyly of fifth finger—`OIFM_GMTS_011829`
 
+**Synonyms:** incurving of fifth digit with hypoplastic short middle phalanx
+
 **Tags:** musculoskeletal, XR, hand, congenital anomaly, diagnosis
 
 Curvature of the little finger towards the other fingers.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Clinodactyly of fifth finger is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

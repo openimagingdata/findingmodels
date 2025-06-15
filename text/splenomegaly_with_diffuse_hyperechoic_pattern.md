@@ -1,6 +1,6 @@
 # Splenomegaly with diffuse hyperechoic pattern—`OIFM_GMTS_004733`
 
-**Synonyms:** diffuse hyperechoic splenomegaly
+**Synonyms:** large hyperechoic spleen, diffuse hyperechoic splenomegaly
 
 **Tags:** ultrasound, US, spleen, ultrasound, pattern, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Splenomegaly with diffuse hyperechoic pattern is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

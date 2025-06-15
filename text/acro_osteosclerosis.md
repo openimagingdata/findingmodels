@@ -1,5 +1,7 @@
 # Acro-osteosclerosis—`OIFM_GMTS_011880`
 
+**Synonyms:** terminal phalangeal sclerosis
+
 **Tags:** musculoskeletal, XR, hand, foot, bone density increase, finding
 
 Increased bone density in the distal phalanges.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Acro-osteosclerosis is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

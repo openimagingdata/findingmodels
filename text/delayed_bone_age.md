@@ -1,5 +1,7 @@
 # Delayed bone age—`OIFM_GMTS_025738`
 
+**Synonyms:** generalized retarded skeletal maturation
+
 **Tags:** pediatric, XR, MR, bone, developmental, finding
 
 A finding where x-rays show the bones appear younger than the patient’s chronological age.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Delayed bone age is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,5 +1,7 @@
 # Indistinct epiphyses—`OIFM_GMTS_010543`
 
+**Synonyms:** fuzzy epiphyses
+
 **Tags:** musculoskeletal, XR, bones, skeletal, pediatrics, finding
 
 Poorly defined borders of the epiphyseal growth plates, commonly in developmental disorders.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Indistinct epiphyses is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

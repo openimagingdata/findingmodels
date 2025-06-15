@@ -1,5 +1,7 @@
 # Notching of the superior rib margins—`OIFM_GMTS_012619`
 
+**Synonyms:** superior rib notching
+
 **Tags:** musculoskeletal, XR, CT, thorax, rib, finding
 
 Indentations on the upper edges of the ribs
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Notching of the superior rib margins is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

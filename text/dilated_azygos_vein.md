@@ -1,6 +1,6 @@
 # Dilated azygos vein—`OIFM_GMTS_014108`
 
-**Synonyms:** azygos vein dilation
+**Synonyms:** azygos vein dilation, azygos vein dilatation
 
 **Tags:** ultrasound, CT, XR, MR, veins, vascular, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Dilated azygos vein is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

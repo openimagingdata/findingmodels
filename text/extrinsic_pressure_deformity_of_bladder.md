@@ -1,5 +1,7 @@
 # Extrinsic pressure deformity of bladder—`OIFM_GMTS_017248`
 
+**Synonyms:** extrinsic bladder deformity, extrinsic deformity of bladder
+
 **Tags:** ultrasound, CT, US, urological, bladder, finding
 
 Deformity of the bladder due to external compression
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Extrinsic pressure deformity of bladder is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

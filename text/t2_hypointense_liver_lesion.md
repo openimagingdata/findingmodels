@@ -1,6 +1,6 @@
 # T2-hypointense liver lesion—`OIFM_GMTS_018748`
 
-**Synonyms:** Liver lesion with decreased T2 signal
+**Synonyms:** Liver lesion with decreased T2 signal, T2-dark liver lesion
 
 **Tags:** abdomen, MR, liver, lesion, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: T2-hypointense liver lesion is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

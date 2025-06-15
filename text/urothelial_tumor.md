@@ -1,6 +1,6 @@
 # Urothelial tumor—`OIFM_GMTS_016709`
 
-**Synonyms:** urothelial carcinoma, transitional cell carcinoma
+**Synonyms:** tumor of urothelium, tumor of renal collecting system, pelvis, and ureter, transitional cell carcinoma, urothelial carcinoma
 
 **Tags:** ultrasound, CT, MR, US, urological, neoplastic, diagnosis
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Urothelial tumor is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

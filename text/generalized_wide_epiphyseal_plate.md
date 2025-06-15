@@ -1,5 +1,7 @@
 # Generalized wide epiphyseal plate—`OIFM_GMTS_010569`
 
+**Synonyms:** generalized physeal widening
+
 **Tags:** musculoskeletal, XR, skeletal, epiphyseal plate, finding
 
 Increased width of epiphyseal plates in multiple bones, often seen in growth disorders.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Generalized wide epiphyseal plate is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

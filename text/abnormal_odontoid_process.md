@@ -1,6 +1,6 @@
 # Abnormal odontoid process—`OIFM_GMTS_009729`
 
-**Synonyms:** dens anomaly, odontoid abnormality
+**Synonyms:** dens anomaly, odontoid abnormality, abnormal dens
 
 **Tags:** neuro, CT, XR, spinal column, odontoid, cervical spine, morphological, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Abnormal odontoid process is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

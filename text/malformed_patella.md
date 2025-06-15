@@ -1,6 +1,6 @@
 # Malformed patella—`OIFM_GMTS_025679`
 
-**Synonyms:** patellar dysplasia, patellar malformation
+**Synonyms:** abnormal patella, patellar malformation, patellar dysplasia
 
 **Tags:** musculoskeletal, XR, CT, MR, knee, congenital anomaly, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Malformed patella is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

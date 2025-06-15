@@ -1,5 +1,7 @@
 # Oversegmentation of sternum—`OIFM_GMTS_031039`
 
+**Synonyms:** hypersegmentation of sternum
+
 **Tags:** musculoskeletal, CT, XR, thorax, sternum, congenital anomaly, finding
 
 Additional division within the sternum
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Oversegmentation of sternum is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

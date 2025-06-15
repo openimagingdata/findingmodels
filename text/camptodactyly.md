@@ -1,5 +1,7 @@
 # Camptodactyly—`OIFM_GMTS_026083`
 
+**Synonyms:** flexion deformity of one or more digits
+
 **Tags:** musculoskeletal, XR, skeletal, congenital anomaly, limb, finding
 
 Permanent flexion of one or more fingers, often a congenital trait.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Camptodactyly is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

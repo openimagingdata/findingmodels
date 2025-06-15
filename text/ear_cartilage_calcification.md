@@ -1,6 +1,6 @@
 # Ear cartilage calcification—`OIFM_GMTS_008352`
 
-**Synonyms:** Ear calcification, Pinna calcification
+**Synonyms:** ossification of pinnae, Ear calcification, Pinna calcification, calcification in pinna, calcified pinnae
 
 **Tags:** head_neck, XR, CT, ear, calcification, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Ear cartilage calcification is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

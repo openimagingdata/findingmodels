@@ -1,5 +1,7 @@
 # Duplication of great toe—`OIFM_GMTS_011828`
 
+**Synonyms:** hallucal polydactyly, duplication of hallux, duplicated great toe, duplicated hallux
+
 **Tags:** pediatric, XR, musculoskeletal, pediatric, congenital anomaly, diagnosis
 
 Presence of an extra great toe typically due to a congenital anomaly.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Duplication of great toe is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

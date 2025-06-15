@@ -1,5 +1,7 @@
 # Widespread periosteal reaction—`OIFM_GMTS_011470`
 
+**Synonyms:** generalized periosteal reaction
+
 **Tags:** musculoskeletal, XR, CT, MR, skeletal, inflammatory, finding
 
 Diffuse new bone formation on the periosteal surface observed radiographically.
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Widespread periosteal reaction is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,5 +1,7 @@
 # Epididymal lesion—`OIFM_GMTS_017711`
 
+**Synonyms:** lesion of epididymis
+
 **Tags:** ultrasound, US, MR, urological, scrotum, epididymis, finding
 
 Abnormal mass located on the epididymis
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Epididymal lesion is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

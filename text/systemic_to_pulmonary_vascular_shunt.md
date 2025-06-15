@@ -1,5 +1,7 @@
 # Systemic-to-pulmonary vascular shunt—`OIFM_GMTS_014021`
 
+**Synonyms:** left-to-right shunt
+
 **Tags:** ultrasound, CT, MR, US, cardiac, vascular, congenital, diagnosis
 
 Abnormal connection allowing blood flow from systemic to pulmonary circulation
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Systemic-to-pulmonary vascular shunt is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
