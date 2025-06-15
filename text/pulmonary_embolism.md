@@ -35,6 +35,10 @@ Whether and how a pulmonary embolism has changed over time
 _RADLEX RID39268 unchanged; SNOMED 260388006 No status change (qualifier value)_
 - **stable**: Pulmonary embolism is stable  
 _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
+- **increased**: Pulmonary embolism has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Pulmonary embolism has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **new**: Pulmonary embolism is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Pulmonary embolism seen on a prior exam has resolved  
@@ -52,3 +56,4 @@ _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 **Contributors**
 
 - [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
+- Heather Chase (MSFT) — [Email](mailto:heatherchase@microsoft.com) — [Link](https://www.linkedin.com/in/heatherwalkerchase/)
