@@ -1,29 +1,32 @@
 {
   "oifm_id": "OIFM_GMTS_016030",
   "name": "pleural mass",
-  "description": "A discrete mass or tumor arising from the pleura.",
-  "synonyms": [
-    "pleural tumor",
-    "pleural neoplasm"
-  ],
+  "description": "Mass located in the pleural space",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
-    "pleura",
-    "neoplastic process",
+    "thoracic",
+    "mass",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_399929",
+      "oifma_id": "OIFMA_GMTS_371287",
       "name": "presence",
       "description": "Presence or absence of pleural mass",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_399929.0",
+          "value_code": "OIFMA_GMTS_371287.0",
           "name": "absent",
           "description": "Pleural mass is absent",
           "index_codes": [
@@ -40,7 +43,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_399929.1",
+          "value_code": "OIFMA_GMTS_371287.1",
           "name": "present",
           "description": "Pleural mass is present",
           "index_codes": [
@@ -57,7 +60,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_399929.2",
+          "value_code": "OIFMA_GMTS_371287.2",
           "name": "indeterminate",
           "description": "Presence of pleural mass cannot be determined",
           "index_codes": [
@@ -74,7 +77,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_399929.3",
+          "value_code": "OIFMA_GMTS_371287.3",
           "name": "unknown",
           "description": "Presence of pleural mass is unknown",
           "index_codes": [
@@ -102,13 +105,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_152803",
+      "oifma_id": "OIFMA_GMTS_608438",
       "name": "change from prior",
       "description": "Whether and how a pleural mass has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_152803.0",
+          "value_code": "OIFMA_GMTS_608438.0",
           "name": "unchanged",
           "description": "Pleural mass is unchanged",
           "index_codes": [
@@ -125,7 +128,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.1",
+          "value_code": "OIFMA_GMTS_608438.1",
           "name": "stable",
           "description": "Pleural mass is stable",
           "index_codes": [
@@ -142,7 +145,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.2",
+          "value_code": "OIFMA_GMTS_608438.2",
           "name": "new",
           "description": "Pleural mass is new",
           "index_codes": [
@@ -159,12 +162,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.3",
+          "value_code": "OIFMA_GMTS_608438.3",
           "name": "resolved",
           "description": "Pleural mass seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_152803.4",
+          "value_code": "OIFMA_GMTS_608438.4",
           "name": "increased",
           "description": "Pleural mass has increased",
           "index_codes": [
@@ -181,7 +184,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.5",
+          "value_code": "OIFMA_GMTS_608438.5",
           "name": "decreased",
           "description": "Pleural mass has decreased",
           "index_codes": [
@@ -198,7 +201,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.6",
+          "value_code": "OIFMA_GMTS_608438.6",
           "name": "larger",
           "description": "Pleural mass is larger",
           "index_codes": [
@@ -215,7 +218,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_152803.7",
+          "value_code": "OIFMA_GMTS_608438.7",
           "name": "smaller",
           "description": "Pleural mass is smaller",
           "index_codes": [

@@ -1,16 +1,16 @@
 # Oversegmentation of sternum—`OIFM_GMTS_031039`
 
-**Synonyms:** sternal segmentation anomaly
+**Synonyms:** hypersegmentation of sternum
 
-**Tags:** chest, XR, CT, chest wall, congenital anomaly, finding
+**Tags:** musculoskeletal, CT, XR, thorax, sternum, congenital anomaly, finding
 
-Presence of more than normal segments or divisions in the sternum.
+Additional division within the sternum
 
 **Codes:** GAMUTS 31039 oversegmentation of sternum
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_593198`
+### Presence—`OIFMA_GMTS_149918`
 
 Presence or absence of oversegmentation of sternum  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of oversegmentation of sternum is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_184525`
+### Change from prior—`OIFMA_GMTS_388706`
 
 Whether and how a oversegmentation of sternum has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Oversegmentation of sternum is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

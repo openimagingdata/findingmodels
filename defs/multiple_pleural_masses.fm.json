@@ -1,29 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_016041",
   "name": "multiple pleural masses",
-  "description": "More than one mass lesion arising from or involving the pleura.",
+  "description": "Several abnormal growths within or surrounding the pleura.",
   "synonyms": [
-    "pleural tumors",
-    "pleural nodules"
+    "pleural masses"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "XR",
     "MR",
     "pleura",
-    "neoplastic process",
+    "neoplastic",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_665454",
+      "oifma_id": "OIFMA_GMTS_161905",
       "name": "presence",
       "description": "Presence or absence of multiple pleural masses",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_665454.0",
+          "value_code": "OIFMA_GMTS_161905.0",
           "name": "absent",
           "description": "Multiple pleural masses is absent",
           "index_codes": [
@@ -40,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665454.1",
+          "value_code": "OIFMA_GMTS_161905.1",
           "name": "present",
           "description": "Multiple pleural masses is present",
           "index_codes": [
@@ -57,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665454.2",
+          "value_code": "OIFMA_GMTS_161905.2",
           "name": "indeterminate",
           "description": "Presence of multiple pleural masses cannot be determined",
           "index_codes": [
@@ -74,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_665454.3",
+          "value_code": "OIFMA_GMTS_161905.3",
           "name": "unknown",
           "description": "Presence of multiple pleural masses is unknown",
           "index_codes": [
@@ -102,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_080584",
+      "oifma_id": "OIFMA_GMTS_637064",
       "name": "change from prior",
       "description": "Whether and how a multiple pleural masses has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_080584.0",
+          "value_code": "OIFMA_GMTS_637064.0",
           "name": "unchanged",
           "description": "Multiple pleural masses is unchanged",
           "index_codes": [
@@ -125,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.1",
+          "value_code": "OIFMA_GMTS_637064.1",
           "name": "stable",
           "description": "Multiple pleural masses is stable",
           "index_codes": [
@@ -142,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.2",
+          "value_code": "OIFMA_GMTS_637064.2",
           "name": "new",
           "description": "Multiple pleural masses is new",
           "index_codes": [
@@ -159,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.3",
+          "value_code": "OIFMA_GMTS_637064.3",
           "name": "resolved",
           "description": "Multiple pleural masses seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_080584.4",
+          "value_code": "OIFMA_GMTS_637064.4",
           "name": "increased",
           "description": "Multiple pleural masses has increased",
           "index_codes": [
@@ -181,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.5",
+          "value_code": "OIFMA_GMTS_637064.5",
           "name": "decreased",
           "description": "Multiple pleural masses has decreased",
           "index_codes": [
@@ -198,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.6",
+          "value_code": "OIFMA_GMTS_637064.6",
           "name": "larger",
           "description": "Multiple pleural masses is larger",
           "index_codes": [
@@ -215,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_080584.7",
+          "value_code": "OIFMA_GMTS_637064.7",
           "name": "smaller",
           "description": "Multiple pleural masses is smaller",
           "index_codes": [

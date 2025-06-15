@@ -1,16 +1,14 @@
 # Right-to-left atrial shunt—`OIFM_GMTS_013437`
 
-**Synonyms:** R-L atrial shunt, interatrial shunt, ASD with R-L shunt
+**Tags:** ultrasound, US, MR, cardiac, shunt, congenital, diagnosis
 
-**Tags:** chest, CT, MR, echocardiography, cardiac, congenital anomaly, diagnosis
-
-Abnormal passage allowing blood to move from the right atrium to the left atrium.
+Pathological blood flow from the right to the left atrium, bypassing the lungs.
 
 **Codes:** GAMUTS 13437 right-to-left atrial shunt
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_340698`
+### Presence—`OIFMA_GMTS_262127`
 
 Presence or absence of right-to-left atrial shunt  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right-to-left atrial shunt is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_024337`
+### Change from prior—`OIFMA_GMTS_762044`
 
 Whether and how a right-to-left atrial shunt has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Right-to-left atrial shunt is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

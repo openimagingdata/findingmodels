@@ -1,29 +1,37 @@
 {
   "oifm_id": "OIFM_GMTS_013510",
   "name": "cyanotic congenital heart disease with precapillary hypertension vascularity",
-  "description": "Cyanotic heart disease with signs of pulmonary arterial hypertension.",
+  "description": "Congenital heart disease leading to cyanosis and elevated pressures before lung capillaries.",
   "synonyms": [
-    "cyanotic CHD with precapillary pulmonary hypertension"
+    "Eisenmenger physiology"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
     "MR",
-    "congenital anomaly",
-    "heart",
-    "lung vasculature",
+    "US",
+    "cardiac",
+    "pediatric",
+    "vascular",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_378356",
+      "oifma_id": "OIFMA_GMTS_137376",
       "name": "presence",
       "description": "Presence or absence of cyanotic congenital heart disease with precapillary hypertension vascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_378356.0",
+          "value_code": "OIFMA_GMTS_137376.0",
           "name": "absent",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is absent",
           "index_codes": [
@@ -40,7 +48,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_378356.1",
+          "value_code": "OIFMA_GMTS_137376.1",
           "name": "present",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is present",
           "index_codes": [
@@ -57,7 +65,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_378356.2",
+          "value_code": "OIFMA_GMTS_137376.2",
           "name": "indeterminate",
           "description": "Presence of cyanotic congenital heart disease with precapillary hypertension vascularity cannot be determined",
           "index_codes": [
@@ -74,7 +82,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_378356.3",
+          "value_code": "OIFMA_GMTS_137376.3",
           "name": "unknown",
           "description": "Presence of cyanotic congenital heart disease with precapillary hypertension vascularity is unknown",
           "index_codes": [
@@ -102,13 +110,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_730408",
+      "oifma_id": "OIFMA_GMTS_469880",
       "name": "change from prior",
       "description": "Whether and how a cyanotic congenital heart disease with precapillary hypertension vascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_730408.0",
+          "value_code": "OIFMA_GMTS_469880.0",
           "name": "unchanged",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is unchanged",
           "index_codes": [
@@ -125,7 +133,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.1",
+          "value_code": "OIFMA_GMTS_469880.1",
           "name": "stable",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is stable",
           "index_codes": [
@@ -142,7 +150,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.2",
+          "value_code": "OIFMA_GMTS_469880.2",
           "name": "new",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is new",
           "index_codes": [
@@ -159,12 +167,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.3",
+          "value_code": "OIFMA_GMTS_469880.3",
           "name": "resolved",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_730408.4",
+          "value_code": "OIFMA_GMTS_469880.4",
           "name": "increased",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity has increased",
           "index_codes": [
@@ -181,7 +189,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.5",
+          "value_code": "OIFMA_GMTS_469880.5",
           "name": "decreased",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity has decreased",
           "index_codes": [
@@ -198,7 +206,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.6",
+          "value_code": "OIFMA_GMTS_469880.6",
           "name": "larger",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is larger",
           "index_codes": [
@@ -215,7 +223,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730408.7",
+          "value_code": "OIFMA_GMTS_469880.7",
           "name": "smaller",
           "description": "Cyanotic congenital heart disease with precapillary hypertension vascularity is smaller",
           "index_codes": [

@@ -1,16 +1,14 @@
 # Pulmonary artery aneurysm—`OIFM_GMTS_013911`
 
-**Synonyms:** PA aneurysm
+**Tags:** ultrasound, CT, MR, US, vascular, aneurysm, pulmonary, diagnosis
 
-**Tags:** chest, CT, MR, vascular, lung, diagnosis
-
-Abnormal focal dilatation of the pulmonary artery.
+Ballooning or dilation of a pulmonary artery segment.
 
 **Codes:** GAMUTS 13911 pulmonary artery aneurysm
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_479007`
+### Presence—`OIFMA_GMTS_289416`
 
 Presence or absence of pulmonary artery aneurysm  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary artery aneurysm is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_188948`
+### Change from prior—`OIFMA_GMTS_474578`
 
 Whether and how a pulmonary artery aneurysm has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Pulmonary artery aneurysm is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

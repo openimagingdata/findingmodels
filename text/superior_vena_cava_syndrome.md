@@ -1,16 +1,16 @@
 # Superior vena cava syndrome—`OIFM_GMTS_014124`
 
-**Synonyms:** SVC syndrome, superior vena cava obstruction
+**Synonyms:** SVC obstruction, obstruction of superior vena cava, SVC syndrome, superior vena cava obstruction, obstruction of SVC
 
-**Tags:** chest, CT, MR, vascular, mediastinum, diagnosis
+**Tags:** ultrasound, CT, MR, XR, vascular, thoracic, diagnosis
 
-Obstruction of the superior vena cava causing venous congestion and swelling.
+Obstruction of the superior vena cava, causing facial swelling and venous distension
 
 **Codes:** GAMUTS 14124 superior vena cava syndrome
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_167367`
+### Presence—`OIFMA_GMTS_762338`
 
 Presence or absence of superior vena cava syndrome  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of superior vena cava syndrome is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_021940`
+### Change from prior—`OIFMA_GMTS_082569`
 
 Whether and how a superior vena cava syndrome has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Superior vena cava syndrome is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

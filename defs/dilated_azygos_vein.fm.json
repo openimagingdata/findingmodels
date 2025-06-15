@@ -1,27 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_014108",
   "name": "dilated azygos vein",
-  "description": "Enlargement of the azygos vein.",
+  "description": "Increased diameter of the azygos vein potentially indicating collateral circulation",
   "synonyms": [
-    "azygos vein enlargement"
+    "azygos vein dilation",
+    "azygos vein dilatation"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
+    "MR",
+    "veins",
     "vascular",
-    "mediastinum",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_952813",
+      "oifma_id": "OIFMA_GMTS_195765",
       "name": "presence",
       "description": "Presence or absence of dilated azygos vein",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_952813.0",
+          "value_code": "OIFMA_GMTS_195765.0",
           "name": "absent",
           "description": "Dilated azygos vein is absent",
           "index_codes": [
@@ -38,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952813.1",
+          "value_code": "OIFMA_GMTS_195765.1",
           "name": "present",
           "description": "Dilated azygos vein is present",
           "index_codes": [
@@ -55,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952813.2",
+          "value_code": "OIFMA_GMTS_195765.2",
           "name": "indeterminate",
           "description": "Presence of dilated azygos vein cannot be determined",
           "index_codes": [
@@ -72,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952813.3",
+          "value_code": "OIFMA_GMTS_195765.3",
           "name": "unknown",
           "description": "Presence of dilated azygos vein is unknown",
           "index_codes": [
@@ -100,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_753948",
+      "oifma_id": "OIFMA_GMTS_403613",
       "name": "change from prior",
       "description": "Whether and how a dilated azygos vein has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_753948.0",
+          "value_code": "OIFMA_GMTS_403613.0",
           "name": "unchanged",
           "description": "Dilated azygos vein is unchanged",
           "index_codes": [
@@ -123,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.1",
+          "value_code": "OIFMA_GMTS_403613.1",
           "name": "stable",
           "description": "Dilated azygos vein is stable",
           "index_codes": [
@@ -140,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.2",
+          "value_code": "OIFMA_GMTS_403613.2",
           "name": "new",
           "description": "Dilated azygos vein is new",
           "index_codes": [
@@ -157,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.3",
+          "value_code": "OIFMA_GMTS_403613.3",
           "name": "resolved",
           "description": "Dilated azygos vein seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_753948.4",
+          "value_code": "OIFMA_GMTS_403613.4",
           "name": "increased",
           "description": "Dilated azygos vein has increased",
           "index_codes": [
@@ -179,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.5",
+          "value_code": "OIFMA_GMTS_403613.5",
           "name": "decreased",
           "description": "Dilated azygos vein has decreased",
           "index_codes": [
@@ -196,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.6",
+          "value_code": "OIFMA_GMTS_403613.6",
           "name": "larger",
           "description": "Dilated azygos vein is larger",
           "index_codes": [
@@ -213,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_753948.7",
+          "value_code": "OIFMA_GMTS_403613.7",
           "name": "smaller",
           "description": "Dilated azygos vein is smaller",
           "index_codes": [

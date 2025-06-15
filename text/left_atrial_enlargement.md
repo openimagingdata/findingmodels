@@ -1,16 +1,16 @@
 # Left atrial enlargement—`OIFM_GMTS_003695`
 
-**Synonyms:** enlarged left atrium, left atrial dilatation
+**Synonyms:** LA enlargement, LAE, left atrial hypertrophy
 
-**Tags:** chest, XR, CT, MR, cardiac, finding
+**Tags:** ultrasound, CT, XR, MR, US, cardiac, finding
 
-Increased size of the left atrium, often due to cardiac or valvular disease.
+Enlargement of the left atrium of the heart.
 
 **Codes:** GAMUTS 3695 left atrial enlargement
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_944201`
+### Presence—`OIFMA_GMTS_802674`
 
 Presence or absence of left atrial enlargement  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of left atrial enlargement is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_061835`
+### Change from prior—`OIFMA_GMTS_655467`
 
 Whether and how a left atrial enlargement has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Left atrial enlargement is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

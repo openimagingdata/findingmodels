@@ -1,28 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_031727",
   "name": "clavicle hypoplasia",
-  "description": "Underdevelopment or incomplete formation of the clavicle.",
+  "description": "Underdevelopment or incomplete development of the clavicle.",
   "synonyms": [
-    "clavicular hypoplasia",
-    "short clavicle"
+    "hypoplastic clavicle"
   ],
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
     "CT",
-    "chest wall",
+    "clavicle",
     "congenital anomaly",
-    "finding"
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_308733",
+      "oifma_id": "OIFMA_GMTS_207965",
       "name": "presence",
       "description": "Presence or absence of clavicle hypoplasia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_308733.0",
+          "value_code": "OIFMA_GMTS_207965.0",
           "name": "absent",
           "description": "Clavicle hypoplasia is absent",
           "index_codes": [
@@ -39,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_308733.1",
+          "value_code": "OIFMA_GMTS_207965.1",
           "name": "present",
           "description": "Clavicle hypoplasia is present",
           "index_codes": [
@@ -56,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_308733.2",
+          "value_code": "OIFMA_GMTS_207965.2",
           "name": "indeterminate",
           "description": "Presence of clavicle hypoplasia cannot be determined",
           "index_codes": [
@@ -73,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_308733.3",
+          "value_code": "OIFMA_GMTS_207965.3",
           "name": "unknown",
           "description": "Presence of clavicle hypoplasia is unknown",
           "index_codes": [
@@ -101,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_749836",
+      "oifma_id": "OIFMA_GMTS_981960",
       "name": "change from prior",
       "description": "Whether and how a clavicle hypoplasia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_749836.0",
+          "value_code": "OIFMA_GMTS_981960.0",
           "name": "unchanged",
           "description": "Clavicle hypoplasia is unchanged",
           "index_codes": [
@@ -124,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.1",
+          "value_code": "OIFMA_GMTS_981960.1",
           "name": "stable",
           "description": "Clavicle hypoplasia is stable",
           "index_codes": [
@@ -141,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.2",
+          "value_code": "OIFMA_GMTS_981960.2",
           "name": "new",
           "description": "Clavicle hypoplasia is new",
           "index_codes": [
@@ -158,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.3",
+          "value_code": "OIFMA_GMTS_981960.3",
           "name": "resolved",
           "description": "Clavicle hypoplasia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_749836.4",
+          "value_code": "OIFMA_GMTS_981960.4",
           "name": "increased",
           "description": "Clavicle hypoplasia has increased",
           "index_codes": [
@@ -180,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.5",
+          "value_code": "OIFMA_GMTS_981960.5",
           "name": "decreased",
           "description": "Clavicle hypoplasia has decreased",
           "index_codes": [
@@ -197,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.6",
+          "value_code": "OIFMA_GMTS_981960.6",
           "name": "larger",
           "description": "Clavicle hypoplasia is larger",
           "index_codes": [
@@ -214,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_749836.7",
+          "value_code": "OIFMA_GMTS_981960.7",
           "name": "smaller",
           "description": "Clavicle hypoplasia is smaller",
           "index_codes": [

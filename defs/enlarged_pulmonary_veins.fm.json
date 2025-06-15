@@ -1,28 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_014012",
   "name": "enlarged pulmonary veins",
-  "description": "Dilated pulmonary veins, often seen with left-sided heart failure or increased pulmonary venous pressure.",
-  "synonyms": [
-    "pulmonary venous congestion",
-    "pulmonary vein dilation"
-  ],
+  "description": "Widening of the pulmonary veins that can indicate heart failure",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "vascular",
-    "lung",
+    "XR",
+    "cardiovascular",
+    "lungs",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_468448",
+      "oifma_id": "OIFMA_GMTS_390159",
       "name": "presence",
       "description": "Presence or absence of enlarged pulmonary veins",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_468448.0",
+          "value_code": "OIFMA_GMTS_390159.0",
           "name": "absent",
           "description": "Enlarged pulmonary veins is absent",
           "index_codes": [
@@ -39,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468448.1",
+          "value_code": "OIFMA_GMTS_390159.1",
           "name": "present",
           "description": "Enlarged pulmonary veins is present",
           "index_codes": [
@@ -56,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468448.2",
+          "value_code": "OIFMA_GMTS_390159.2",
           "name": "indeterminate",
           "description": "Presence of enlarged pulmonary veins cannot be determined",
           "index_codes": [
@@ -73,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_468448.3",
+          "value_code": "OIFMA_GMTS_390159.3",
           "name": "unknown",
           "description": "Presence of enlarged pulmonary veins is unknown",
           "index_codes": [
@@ -101,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_730454",
+      "oifma_id": "OIFMA_GMTS_665473",
       "name": "change from prior",
       "description": "Whether and how a enlarged pulmonary veins has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_730454.0",
+          "value_code": "OIFMA_GMTS_665473.0",
           "name": "unchanged",
           "description": "Enlarged pulmonary veins is unchanged",
           "index_codes": [
@@ -124,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.1",
+          "value_code": "OIFMA_GMTS_665473.1",
           "name": "stable",
           "description": "Enlarged pulmonary veins is stable",
           "index_codes": [
@@ -141,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.2",
+          "value_code": "OIFMA_GMTS_665473.2",
           "name": "new",
           "description": "Enlarged pulmonary veins is new",
           "index_codes": [
@@ -158,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.3",
+          "value_code": "OIFMA_GMTS_665473.3",
           "name": "resolved",
           "description": "Enlarged pulmonary veins seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_730454.4",
+          "value_code": "OIFMA_GMTS_665473.4",
           "name": "increased",
           "description": "Enlarged pulmonary veins has increased",
           "index_codes": [
@@ -180,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.5",
+          "value_code": "OIFMA_GMTS_665473.5",
           "name": "decreased",
           "description": "Enlarged pulmonary veins has decreased",
           "index_codes": [
@@ -197,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.6",
+          "value_code": "OIFMA_GMTS_665473.6",
           "name": "larger",
           "description": "Enlarged pulmonary veins is larger",
           "index_codes": [
@@ -214,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_730454.7",
+          "value_code": "OIFMA_GMTS_665473.7",
           "name": "smaller",
           "description": "Enlarged pulmonary veins is smaller",
           "index_codes": [

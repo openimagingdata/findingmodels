@@ -1,16 +1,16 @@
 # Dilated azygos vein—`OIFM_GMTS_014108`
 
-**Synonyms:** azygos vein enlargement
+**Synonyms:** azygos vein dilation, azygos vein dilatation
 
-**Tags:** chest, XR, CT, vascular, mediastinum, finding
+**Tags:** ultrasound, CT, XR, MR, veins, vascular, finding
 
-Enlargement of the azygos vein.
+Increased diameter of the azygos vein potentially indicating collateral circulation
 
 **Codes:** GAMUTS 14108 dilated azygos vein
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_952813`
+### Presence—`OIFMA_GMTS_195765`
 
 Presence or absence of dilated azygos vein  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of dilated azygos vein is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_753948`
+### Change from prior—`OIFMA_GMTS_403613`
 
 Whether and how a dilated azygos vein has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Dilated azygos vein is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

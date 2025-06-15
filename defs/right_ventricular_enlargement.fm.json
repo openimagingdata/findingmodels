@@ -1,29 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_013623",
   "name": "right ventricular enlargement",
-  "description": "Enlargement of the right ventricle, seen in pulmonary or cardiac pathology.",
-  "synonyms": [
-    "RVE",
-    "right ventricle hypertrophy"
-  ],
+  "description": "Enlargement of the right ventricle, often due to pulmonary hypertension or valvular disease.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
     "cardiac",
-    "right ventricle",
-    "finding"
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_658764",
+      "oifma_id": "OIFMA_GMTS_207079",
       "name": "presence",
       "description": "Presence or absence of right ventricular enlargement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_658764.0",
+          "value_code": "OIFMA_GMTS_207079.0",
           "name": "absent",
           "description": "Right ventricular enlargement is absent",
           "index_codes": [
@@ -40,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_658764.1",
+          "value_code": "OIFMA_GMTS_207079.1",
           "name": "present",
           "description": "Right ventricular enlargement is present",
           "index_codes": [
@@ -57,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_658764.2",
+          "value_code": "OIFMA_GMTS_207079.2",
           "name": "indeterminate",
           "description": "Presence of right ventricular enlargement cannot be determined",
           "index_codes": [
@@ -74,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_658764.3",
+          "value_code": "OIFMA_GMTS_207079.3",
           "name": "unknown",
           "description": "Presence of right ventricular enlargement is unknown",
           "index_codes": [
@@ -102,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_251287",
+      "oifma_id": "OIFMA_GMTS_113729",
       "name": "change from prior",
       "description": "Whether and how a right ventricular enlargement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_251287.0",
+          "value_code": "OIFMA_GMTS_113729.0",
           "name": "unchanged",
           "description": "Right ventricular enlargement is unchanged",
           "index_codes": [
@@ -125,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.1",
+          "value_code": "OIFMA_GMTS_113729.1",
           "name": "stable",
           "description": "Right ventricular enlargement is stable",
           "index_codes": [
@@ -142,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.2",
+          "value_code": "OIFMA_GMTS_113729.2",
           "name": "new",
           "description": "Right ventricular enlargement is new",
           "index_codes": [
@@ -159,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.3",
+          "value_code": "OIFMA_GMTS_113729.3",
           "name": "resolved",
           "description": "Right ventricular enlargement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_251287.4",
+          "value_code": "OIFMA_GMTS_113729.4",
           "name": "increased",
           "description": "Right ventricular enlargement has increased",
           "index_codes": [
@@ -181,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.5",
+          "value_code": "OIFMA_GMTS_113729.5",
           "name": "decreased",
           "description": "Right ventricular enlargement has decreased",
           "index_codes": [
@@ -198,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.6",
+          "value_code": "OIFMA_GMTS_113729.6",
           "name": "larger",
           "description": "Right ventricular enlargement is larger",
           "index_codes": [
@@ -215,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_251287.7",
+          "value_code": "OIFMA_GMTS_113729.7",
           "name": "smaller",
           "description": "Right ventricular enlargement is smaller",
           "index_codes": [

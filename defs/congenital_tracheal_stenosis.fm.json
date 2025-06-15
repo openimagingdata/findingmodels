@@ -1,28 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_022613",
   "name": "congenital tracheal stenosis",
-  "description": "Narrowing of the trachea present at birth.",
+  "description": "A narrowing of the trachea present at birth leading to respiratory distress.",
   "synonyms": [
-    "tracheal narrowing, congenital"
+    "CTS",
+    "primary tracheal stenosis"
   ],
   "tags": [
-    "chest",
+    "pediatric",
     "CT",
     "MR",
-    "congenital anomaly",
     "trachea",
-    "airway",
+    "congenital anomaly",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_031507",
+      "oifma_id": "OIFMA_GMTS_930082",
       "name": "presence",
       "description": "Presence or absence of congenital tracheal stenosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_031507.0",
+          "value_code": "OIFMA_GMTS_930082.0",
           "name": "absent",
           "description": "Congenital tracheal stenosis is absent",
           "index_codes": [
@@ -39,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_031507.1",
+          "value_code": "OIFMA_GMTS_930082.1",
           "name": "present",
           "description": "Congenital tracheal stenosis is present",
           "index_codes": [
@@ -56,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_031507.2",
+          "value_code": "OIFMA_GMTS_930082.2",
           "name": "indeterminate",
           "description": "Presence of congenital tracheal stenosis cannot be determined",
           "index_codes": [
@@ -73,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_031507.3",
+          "value_code": "OIFMA_GMTS_930082.3",
           "name": "unknown",
           "description": "Presence of congenital tracheal stenosis is unknown",
           "index_codes": [
@@ -101,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_552141",
+      "oifma_id": "OIFMA_GMTS_013882",
       "name": "change from prior",
       "description": "Whether and how a congenital tracheal stenosis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_552141.0",
+          "value_code": "OIFMA_GMTS_013882.0",
           "name": "unchanged",
           "description": "Congenital tracheal stenosis is unchanged",
           "index_codes": [
@@ -124,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.1",
+          "value_code": "OIFMA_GMTS_013882.1",
           "name": "stable",
           "description": "Congenital tracheal stenosis is stable",
           "index_codes": [
@@ -141,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.2",
+          "value_code": "OIFMA_GMTS_013882.2",
           "name": "new",
           "description": "Congenital tracheal stenosis is new",
           "index_codes": [
@@ -158,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.3",
+          "value_code": "OIFMA_GMTS_013882.3",
           "name": "resolved",
           "description": "Congenital tracheal stenosis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_552141.4",
+          "value_code": "OIFMA_GMTS_013882.4",
           "name": "increased",
           "description": "Congenital tracheal stenosis has increased",
           "index_codes": [
@@ -180,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.5",
+          "value_code": "OIFMA_GMTS_013882.5",
           "name": "decreased",
           "description": "Congenital tracheal stenosis has decreased",
           "index_codes": [
@@ -197,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.6",
+          "value_code": "OIFMA_GMTS_013882.6",
           "name": "larger",
           "description": "Congenital tracheal stenosis is larger",
           "index_codes": [
@@ -214,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_552141.7",
+          "value_code": "OIFMA_GMTS_013882.7",
           "name": "smaller",
           "description": "Congenital tracheal stenosis is smaller",
           "index_codes": [

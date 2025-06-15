@@ -1,28 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_031859",
   "name": "clavicle dysplasia",
-  "description": "Abnormal formation or development of the clavicle.",
-  "synonyms": [
-    "clavicular dysplasia",
-    "clavicle anomaly"
-  ],
+  "description": "Abnormal development of the clavicle bones.",
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
-    "CT",
-    "chest wall",
-    "congenital anomaly",
-    "finding"
+    "MR",
+    "clavicle",
+    "skeletal dysplasia",
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_803930",
+      "oifma_id": "OIFMA_GMTS_906435",
       "name": "presence",
       "description": "Presence or absence of clavicle dysplasia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_803930.0",
+          "value_code": "OIFMA_GMTS_906435.0",
           "name": "absent",
           "description": "Clavicle dysplasia is absent",
           "index_codes": [
@@ -39,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_803930.1",
+          "value_code": "OIFMA_GMTS_906435.1",
           "name": "present",
           "description": "Clavicle dysplasia is present",
           "index_codes": [
@@ -56,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_803930.2",
+          "value_code": "OIFMA_GMTS_906435.2",
           "name": "indeterminate",
           "description": "Presence of clavicle dysplasia cannot be determined",
           "index_codes": [
@@ -73,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_803930.3",
+          "value_code": "OIFMA_GMTS_906435.3",
           "name": "unknown",
           "description": "Presence of clavicle dysplasia is unknown",
           "index_codes": [
@@ -101,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_568583",
+      "oifma_id": "OIFMA_GMTS_988676",
       "name": "change from prior",
       "description": "Whether and how a clavicle dysplasia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_568583.0",
+          "value_code": "OIFMA_GMTS_988676.0",
           "name": "unchanged",
           "description": "Clavicle dysplasia is unchanged",
           "index_codes": [
@@ -124,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.1",
+          "value_code": "OIFMA_GMTS_988676.1",
           "name": "stable",
           "description": "Clavicle dysplasia is stable",
           "index_codes": [
@@ -141,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.2",
+          "value_code": "OIFMA_GMTS_988676.2",
           "name": "new",
           "description": "Clavicle dysplasia is new",
           "index_codes": [
@@ -158,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.3",
+          "value_code": "OIFMA_GMTS_988676.3",
           "name": "resolved",
           "description": "Clavicle dysplasia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_568583.4",
+          "value_code": "OIFMA_GMTS_988676.4",
           "name": "increased",
           "description": "Clavicle dysplasia has increased",
           "index_codes": [
@@ -180,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.5",
+          "value_code": "OIFMA_GMTS_988676.5",
           "name": "decreased",
           "description": "Clavicle dysplasia has decreased",
           "index_codes": [
@@ -197,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.6",
+          "value_code": "OIFMA_GMTS_988676.6",
           "name": "larger",
           "description": "Clavicle dysplasia is larger",
           "index_codes": [
@@ -214,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_568583.7",
+          "value_code": "OIFMA_GMTS_988676.7",
           "name": "smaller",
           "description": "Clavicle dysplasia is smaller",
           "index_codes": [

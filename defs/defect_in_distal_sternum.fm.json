@@ -1,29 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_031038",
   "name": "defect in distal sternum",
-  "description": "A structural anomaly or absence in the lower part of the sternum.",
+  "description": "Abnormality or deficit in the lower segment of the sternum.",
   "synonyms": [
-    "sternal defect",
-    "lower sternal defect"
+    "Distal sternal defect"
   ],
   "tags": [
-    "chest",
+    "musculoskeletal",
     "CT",
     "XR",
+    "thoracic",
     "congenital anomaly",
-    "sternum",
-    "chest wall",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_395422",
+      "oifma_id": "OIFMA_GMTS_333475",
       "name": "presence",
       "description": "Presence or absence of defect in distal sternum",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_395422.0",
+          "value_code": "OIFMA_GMTS_333475.0",
           "name": "absent",
           "description": "Defect in distal sternum is absent",
           "index_codes": [
@@ -40,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_395422.1",
+          "value_code": "OIFMA_GMTS_333475.1",
           "name": "present",
           "description": "Defect in distal sternum is present",
           "index_codes": [
@@ -57,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_395422.2",
+          "value_code": "OIFMA_GMTS_333475.2",
           "name": "indeterminate",
           "description": "Presence of defect in distal sternum cannot be determined",
           "index_codes": [
@@ -74,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_395422.3",
+          "value_code": "OIFMA_GMTS_333475.3",
           "name": "unknown",
           "description": "Presence of defect in distal sternum is unknown",
           "index_codes": [
@@ -102,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_712832",
+      "oifma_id": "OIFMA_GMTS_530787",
       "name": "change from prior",
       "description": "Whether and how a defect in distal sternum has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_712832.0",
+          "value_code": "OIFMA_GMTS_530787.0",
           "name": "unchanged",
           "description": "Defect in distal sternum is unchanged",
           "index_codes": [
@@ -125,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.1",
+          "value_code": "OIFMA_GMTS_530787.1",
           "name": "stable",
           "description": "Defect in distal sternum is stable",
           "index_codes": [
@@ -142,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.2",
+          "value_code": "OIFMA_GMTS_530787.2",
           "name": "new",
           "description": "Defect in distal sternum is new",
           "index_codes": [
@@ -159,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.3",
+          "value_code": "OIFMA_GMTS_530787.3",
           "name": "resolved",
           "description": "Defect in distal sternum seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_712832.4",
+          "value_code": "OIFMA_GMTS_530787.4",
           "name": "increased",
           "description": "Defect in distal sternum has increased",
           "index_codes": [
@@ -181,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.5",
+          "value_code": "OIFMA_GMTS_530787.5",
           "name": "decreased",
           "description": "Defect in distal sternum has decreased",
           "index_codes": [
@@ -198,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.6",
+          "value_code": "OIFMA_GMTS_530787.6",
           "name": "larger",
           "description": "Defect in distal sternum is larger",
           "index_codes": [
@@ -215,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_712832.7",
+          "value_code": "OIFMA_GMTS_530787.7",
           "name": "smaller",
           "description": "Defect in distal sternum is smaller",
           "index_codes": [

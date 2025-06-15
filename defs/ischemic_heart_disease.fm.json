@@ -1,28 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_013732",
   "name": "ischemic heart disease",
-  "description": "A group of heart conditions caused by reduced blood flow to the myocardium.",
+  "description": "Disease characterized by reduced blood supply to the heart muscles.",
   "synonyms": [
     "coronary artery disease",
-    "IHD"
+    "CAD"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
-    "cardiac",
+    "cardiology",
     "vascular",
     "diagnosis"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_051800",
+      "oifma_id": "OIFMA_GMTS_776238",
       "name": "presence",
       "description": "Presence or absence of ischemic heart disease",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_051800.0",
+          "value_code": "OIFMA_GMTS_776238.0",
           "name": "absent",
           "description": "Ischemic heart disease is absent",
           "index_codes": [
@@ -39,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_051800.1",
+          "value_code": "OIFMA_GMTS_776238.1",
           "name": "present",
           "description": "Ischemic heart disease is present",
           "index_codes": [
@@ -56,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_051800.2",
+          "value_code": "OIFMA_GMTS_776238.2",
           "name": "indeterminate",
           "description": "Presence of ischemic heart disease cannot be determined",
           "index_codes": [
@@ -73,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_051800.3",
+          "value_code": "OIFMA_GMTS_776238.3",
           "name": "unknown",
           "description": "Presence of ischemic heart disease is unknown",
           "index_codes": [
@@ -101,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_403113",
+      "oifma_id": "OIFMA_GMTS_794547",
       "name": "change from prior",
       "description": "Whether and how a ischemic heart disease has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_403113.0",
+          "value_code": "OIFMA_GMTS_794547.0",
           "name": "unchanged",
           "description": "Ischemic heart disease is unchanged",
           "index_codes": [
@@ -124,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.1",
+          "value_code": "OIFMA_GMTS_794547.1",
           "name": "stable",
           "description": "Ischemic heart disease is stable",
           "index_codes": [
@@ -141,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.2",
+          "value_code": "OIFMA_GMTS_794547.2",
           "name": "new",
           "description": "Ischemic heart disease is new",
           "index_codes": [
@@ -158,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.3",
+          "value_code": "OIFMA_GMTS_794547.3",
           "name": "resolved",
           "description": "Ischemic heart disease seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_403113.4",
+          "value_code": "OIFMA_GMTS_794547.4",
           "name": "increased",
           "description": "Ischemic heart disease has increased",
           "index_codes": [
@@ -180,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.5",
+          "value_code": "OIFMA_GMTS_794547.5",
           "name": "decreased",
           "description": "Ischemic heart disease has decreased",
           "index_codes": [
@@ -197,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.6",
+          "value_code": "OIFMA_GMTS_794547.6",
           "name": "larger",
           "description": "Ischemic heart disease is larger",
           "index_codes": [
@@ -214,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_403113.7",
+          "value_code": "OIFMA_GMTS_794547.7",
           "name": "smaller",
           "description": "Ischemic heart disease is smaller",
           "index_codes": [

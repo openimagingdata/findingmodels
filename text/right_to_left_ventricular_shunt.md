@@ -1,16 +1,16 @@
 # Right-to-left ventricular shunt—`OIFM_GMTS_013458`
 
-**Synonyms:** R-L ventricular shunt, VSD with right-to-left shunt
+**Synonyms:** ventricular septal defect (VSD) with shunting
 
-**Tags:** chest, CT, MR, echocardiography, cardiac, congenital anomaly, diagnosis
+**Tags:** ultrasound, MR, CT, US, cardiac, congenital anomaly, diagnosis
 
-Abnormal communication allowing blood flow from the right to left ventricle.
+An abnormal communication allowing blood flow from the right ventricle to the left ventricle.
 
 **Codes:** GAMUTS 13458 right-to-left ventricular shunt
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_989851`
+### Presence—`OIFMA_GMTS_244245`
 
 Presence or absence of right-to-left ventricular shunt  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right-to-left ventricular shunt is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_242601`
+### Change from prior—`OIFMA_GMTS_151589`
 
 Whether and how a right-to-left ventricular shunt has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Right-to-left ventricular shunt is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

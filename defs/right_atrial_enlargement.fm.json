@@ -1,28 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_013602",
   "name": "right atrial enlargement",
-  "description": "Increase in the size of the right atrium, often due to cardiac or pulmonary disease.",
-  "synonyms": [
-    "RAE"
-  ],
+  "description": "Enlargement of the right atrium often due to increased pressure or volume load.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
     "cardiac",
-    "right atrium",
-    "finding"
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_432700",
+      "oifma_id": "OIFMA_GMTS_305466",
       "name": "presence",
       "description": "Presence or absence of right atrial enlargement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_432700.0",
+          "value_code": "OIFMA_GMTS_305466.0",
           "name": "absent",
           "description": "Right atrial enlargement is absent",
           "index_codes": [
@@ -39,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_432700.1",
+          "value_code": "OIFMA_GMTS_305466.1",
           "name": "present",
           "description": "Right atrial enlargement is present",
           "index_codes": [
@@ -56,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_432700.2",
+          "value_code": "OIFMA_GMTS_305466.2",
           "name": "indeterminate",
           "description": "Presence of right atrial enlargement cannot be determined",
           "index_codes": [
@@ -73,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_432700.3",
+          "value_code": "OIFMA_GMTS_305466.3",
           "name": "unknown",
           "description": "Presence of right atrial enlargement is unknown",
           "index_codes": [
@@ -101,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_677521",
+      "oifma_id": "OIFMA_GMTS_285880",
       "name": "change from prior",
       "description": "Whether and how a right atrial enlargement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_677521.0",
+          "value_code": "OIFMA_GMTS_285880.0",
           "name": "unchanged",
           "description": "Right atrial enlargement is unchanged",
           "index_codes": [
@@ -124,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.1",
+          "value_code": "OIFMA_GMTS_285880.1",
           "name": "stable",
           "description": "Right atrial enlargement is stable",
           "index_codes": [
@@ -141,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.2",
+          "value_code": "OIFMA_GMTS_285880.2",
           "name": "new",
           "description": "Right atrial enlargement is new",
           "index_codes": [
@@ -158,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.3",
+          "value_code": "OIFMA_GMTS_285880.3",
           "name": "resolved",
           "description": "Right atrial enlargement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_677521.4",
+          "value_code": "OIFMA_GMTS_285880.4",
           "name": "increased",
           "description": "Right atrial enlargement has increased",
           "index_codes": [
@@ -180,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.5",
+          "value_code": "OIFMA_GMTS_285880.5",
           "name": "decreased",
           "description": "Right atrial enlargement has decreased",
           "index_codes": [
@@ -197,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.6",
+          "value_code": "OIFMA_GMTS_285880.6",
           "name": "larger",
           "description": "Right atrial enlargement is larger",
           "index_codes": [
@@ -214,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_677521.7",
+          "value_code": "OIFMA_GMTS_285880.7",
           "name": "smaller",
           "description": "Right atrial enlargement is smaller",
           "index_codes": [

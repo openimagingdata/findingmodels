@@ -1,16 +1,16 @@
 # Third mogul sign—`OIFM_GMTS_013669`
 
-**Synonyms:** enlarged left atrial appendage
+**Synonyms:** extra bump along upper left heart silhouette, triple mogul sign
 
-**Tags:** chest, XR, cardiac, mediastinum, finding
+**Tags:** ultrasound, XR, CT, cardiac, radiologic sign, finding
 
-A radiographic sign of enlargement of the left atrial appendage.
+A chest X-ray sign indicating left atrial enlargement, seen as a third mogul on the left heart border.
 
 **Codes:** GAMUTS 13669 third mogul sign
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_060020`
+### Presence—`OIFMA_GMTS_710365`
 
 Presence or absence of third mogul sign  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of third mogul sign is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_480287`
+### Change from prior—`OIFMA_GMTS_140256`
 
 Whether and how a third mogul sign has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Third mogul sign is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

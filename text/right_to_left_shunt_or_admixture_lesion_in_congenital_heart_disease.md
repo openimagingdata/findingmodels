@@ -1,16 +1,16 @@
 # Right-to-left shunt or admixture lesion in congenital heart disease—`OIFM_GMTS_013412`
 
-**Synonyms:** R-L shunt, venous admixture, congenital shunt lesion
+**Synonyms:** cyanotic heart defect
 
-**Tags:** chest, CT, MR, echocardiography, cardiac, congenital anomaly, diagnosis
+**Tags:** ultrasound, US, MR, CT, cardiac, congenital anomaly, diagnosis
 
-Presence of cardiac or vascular lesions in congenital heart disease that allow deoxygenated blood to mix with oxygenated blood.
+Blood flow from the right to the left side of the heart without passing through the lungs.
 
 **Codes:** GAMUTS 13412 right-to-left shunt or admixture lesion in congenital heart disease
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_148103`
+### Presence—`OIFMA_GMTS_390548`
 
 Presence or absence of right-to-left shunt or admixture lesion in congenital heart disease  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right-to-left shunt or admixture lesion in congenital heart disease is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_442477`
+### Change from prior—`OIFMA_GMTS_897518`
 
 Whether and how a right-to-left shunt or admixture lesion in congenital heart disease has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Right-to-left shunt or admixture lesion in congenital heart disease is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
