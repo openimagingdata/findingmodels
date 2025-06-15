@@ -1,6 +1,6 @@
 # Paralyzed hemidiaphragm—`OIFM_GMTS_016148`
 
-**Synonyms:** diaphragmatic paralysis
+**Synonyms:** fixed hemidiaphragm, diaphragmatic paralysis
 
 **Tags:** chest, XR, CT, MR, US, diaphragm, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Paralyzed hemidiaphragm is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

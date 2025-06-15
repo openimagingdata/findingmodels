@@ -1,27 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_014890",
   "name": "neonatal respiratory distress",
-  "description": "Difficulty in breathing and inadequate oxygenation in a newborn.",
+  "description": "Difficulties in breathing experienced by a newborn baby.",
   "synonyms": [
-    "infant respiratory distress",
-    "respiratory distress in neonate"
+    "newborn respiratory distress",
+    "neonatal dyspnea"
   ],
   "tags": [
-    "chest",
+    "pediatric",
     "XR",
-    "lung",
+    "US",
+    "respiratory",
     "neonatal",
     "diagnosis"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_771403",
+      "oifma_id": "OIFMA_GMTS_942933",
       "name": "presence",
       "description": "Presence or absence of neonatal respiratory distress",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_771403.0",
+          "value_code": "OIFMA_GMTS_942933.0",
           "name": "absent",
           "description": "Neonatal respiratory distress is absent",
           "index_codes": [
@@ -38,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771403.1",
+          "value_code": "OIFMA_GMTS_942933.1",
           "name": "present",
           "description": "Neonatal respiratory distress is present",
           "index_codes": [
@@ -55,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771403.2",
+          "value_code": "OIFMA_GMTS_942933.2",
           "name": "indeterminate",
           "description": "Presence of neonatal respiratory distress cannot be determined",
           "index_codes": [
@@ -72,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_771403.3",
+          "value_code": "OIFMA_GMTS_942933.3",
           "name": "unknown",
           "description": "Presence of neonatal respiratory distress is unknown",
           "index_codes": [
@@ -100,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_663241",
+      "oifma_id": "OIFMA_GMTS_598510",
       "name": "change from prior",
       "description": "Whether and how a neonatal respiratory distress has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_663241.0",
+          "value_code": "OIFMA_GMTS_598510.0",
           "name": "unchanged",
           "description": "Neonatal respiratory distress is unchanged",
           "index_codes": [
@@ -123,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.1",
+          "value_code": "OIFMA_GMTS_598510.1",
           "name": "stable",
           "description": "Neonatal respiratory distress is stable",
           "index_codes": [
@@ -140,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.2",
+          "value_code": "OIFMA_GMTS_598510.2",
           "name": "new",
           "description": "Neonatal respiratory distress is new",
           "index_codes": [
@@ -157,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.3",
+          "value_code": "OIFMA_GMTS_598510.3",
           "name": "resolved",
           "description": "Neonatal respiratory distress seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_663241.4",
+          "value_code": "OIFMA_GMTS_598510.4",
           "name": "increased",
           "description": "Neonatal respiratory distress has increased",
           "index_codes": [
@@ -179,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.5",
+          "value_code": "OIFMA_GMTS_598510.5",
           "name": "decreased",
           "description": "Neonatal respiratory distress has decreased",
           "index_codes": [
@@ -196,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.6",
+          "value_code": "OIFMA_GMTS_598510.6",
           "name": "larger",
           "description": "Neonatal respiratory distress is larger",
           "index_codes": [
@@ -213,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_663241.7",
+          "value_code": "OIFMA_GMTS_598510.7",
           "name": "smaller",
           "description": "Neonatal respiratory distress is smaller",
           "index_codes": [

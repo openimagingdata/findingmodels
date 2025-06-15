@@ -1,26 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_015960",
   "name": "chylothorax",
-  "description": "Collection of lymphatic fluid (chyle) in the pleural space.",
+  "description": "Accumulation of chyle in the pleural cavity.",
   "synonyms": [
-    "chylous effusion"
+    "lymphothorax",
+    "pleural chylous effusion"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
+    "US",
     "pleura",
+    "fluid accumulation",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_582356",
+      "oifma_id": "OIFMA_GMTS_673435",
       "name": "presence",
       "description": "Presence or absence of chylothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_582356.0",
+          "value_code": "OIFMA_GMTS_673435.0",
           "name": "absent",
           "description": "Chylothorax is absent",
           "index_codes": [
@@ -37,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_582356.1",
+          "value_code": "OIFMA_GMTS_673435.1",
           "name": "present",
           "description": "Chylothorax is present",
           "index_codes": [
@@ -54,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_582356.2",
+          "value_code": "OIFMA_GMTS_673435.2",
           "name": "indeterminate",
           "description": "Presence of chylothorax cannot be determined",
           "index_codes": [
@@ -71,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_582356.3",
+          "value_code": "OIFMA_GMTS_673435.3",
           "name": "unknown",
           "description": "Presence of chylothorax is unknown",
           "index_codes": [
@@ -99,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_891527",
+      "oifma_id": "OIFMA_GMTS_625809",
       "name": "change from prior",
       "description": "Whether and how a chylothorax has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_891527.0",
+          "value_code": "OIFMA_GMTS_625809.0",
           "name": "unchanged",
           "description": "Chylothorax is unchanged",
           "index_codes": [
@@ -122,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.1",
+          "value_code": "OIFMA_GMTS_625809.1",
           "name": "stable",
           "description": "Chylothorax is stable",
           "index_codes": [
@@ -139,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.2",
+          "value_code": "OIFMA_GMTS_625809.2",
           "name": "new",
           "description": "Chylothorax is new",
           "index_codes": [
@@ -156,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.3",
+          "value_code": "OIFMA_GMTS_625809.3",
           "name": "resolved",
           "description": "Chylothorax seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_891527.4",
+          "value_code": "OIFMA_GMTS_625809.4",
           "name": "increased",
           "description": "Chylothorax has increased",
           "index_codes": [
@@ -178,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.5",
+          "value_code": "OIFMA_GMTS_625809.5",
           "name": "decreased",
           "description": "Chylothorax has decreased",
           "index_codes": [
@@ -195,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.6",
+          "value_code": "OIFMA_GMTS_625809.6",
           "name": "larger",
           "description": "Chylothorax is larger",
           "index_codes": [
@@ -212,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_891527.7",
+          "value_code": "OIFMA_GMTS_625809.7",
           "name": "smaller",
           "description": "Chylothorax is smaller",
           "index_codes": [

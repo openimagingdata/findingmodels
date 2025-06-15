@@ -1,16 +1,16 @@
 # Right-to-left shunt at ductus level—`OIFM_GMTS_013478`
 
-**Synonyms:** R-L ductal shunt, patent ductus arteriosus with right-to-left shunt
+**Synonyms:** PDA shunt, ductus shunting
 
-**Tags:** chest, CT, MR, echocardiography, cardiac, vascular, congenital anomaly, diagnosis
+**Tags:** ultrasound, US, MR, CT, cardiac, congenital anomaly, diagnosis
 
-Abnormal passage of blood from the right to left through a persistent ductus arteriosus.
+A blood flow abnormality through the ductus arteriosus bypassing the pulmonary circulation.
 
 **Codes:** GAMUTS 13478 right-to-left shunt at ductus level
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_667208`
+### Presence—`OIFMA_GMTS_021116`
 
 Presence or absence of right-to-left shunt at ductus level  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right-to-left shunt at ductus level is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_154980`
+### Change from prior—`OIFMA_GMTS_726208`
 
 Whether and how a right-to-left shunt at ductus level has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Right-to-left shunt at ductus level is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

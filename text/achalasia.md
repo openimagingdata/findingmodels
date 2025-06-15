@@ -2,15 +2,15 @@
 
 **Synonyms:** cardiospasm, esophageal achalasia
 
-**Tags:** chest, CT, XR, fluoroscopy, esophagus, functional disorder, diagnosis
+**Tags:** abdomen, XR, MR, US, gastrointestinal, motility disorder, diagnosis
 
-Esophageal motility disorder resulting in failure of the lower esophageal sphincter to relax.
+A disorder where the esophagus has difficulty moving food toward the stomach
 
 **Codes:** GAMUTS 057 achalasia
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_575995`
+### Presence—`OIFMA_GMTS_759613`
 
 Presence or absence of achalasia  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of achalasia is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_486217`
+### Change from prior—`OIFMA_GMTS_379941`
 
 Whether and how a achalasia has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Achalasia is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

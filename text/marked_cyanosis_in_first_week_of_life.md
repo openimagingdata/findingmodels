@@ -1,16 +1,14 @@
 # Marked cyanosis in first week of life—`OIFM_GMTS_013424`
 
-**Synonyms:** severe neonatal cyanosis
+**Tags:** ultrasound, US, XR, neonatal, cardiovascular, finding
 
-**Tags:** chest, XR, CT, systemic, cardiac, congenital anomaly, finding
-
-Severe bluish discoloration of skin in neonates caused by inadequate oxygenation, often due to congenital heart disease.
+Severe bluish discoloration in newborns due to low oxygen
 
 **Codes:** GAMUTS 13424 marked cyanosis in first week of life
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_282592`
+### Presence—`OIFMA_GMTS_201962`
 
 Presence or absence of marked cyanosis in first week of life  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of marked cyanosis in first week of life is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_516779`
+### Change from prior—`OIFMA_GMTS_365579`
 
 Whether and how a marked cyanosis in first week of life has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Marked cyanosis in first week of life is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,16 +1,14 @@
 # Pediatric chest wall lesion—`OIFM_GMTS_016074`
 
-**Synonyms:** childhood chest wall mass, pediatric chest wall abnormality
+**Tags:** ultrasound, CT, XR, MR, chest, pediatric, mass, finding
 
-**Tags:** chest, XR, CT, MR, chest wall, pediatrics, finding
-
-Pathologic process affecting the chest wall in a child.
+Abnormal growth or lesion in the chest wall of a child.
 
 **Codes:** GAMUTS 16074 pediatric chest wall lesion
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_805556`
+### Presence—`OIFMA_GMTS_249982`
 
 Presence or absence of pediatric chest wall lesion  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pediatric chest wall lesion is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_075753`
+### Change from prior—`OIFMA_GMTS_930861`
 
 Whether and how a pediatric chest wall lesion has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Pediatric chest wall lesion is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

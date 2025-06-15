@@ -1,6 +1,6 @@
 # Middle mediastinal lesion—`OIFM_GMTS_015481`
 
-**Synonyms:** middle mediastinal mass, middle mediastinal abnormality
+**Synonyms:** middle mediastinal abnormality, middle mediastinal mass
 
 **Tags:** chest, CT, XR, MR, mediastinum, finding
 
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Middle mediastinal lesion is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

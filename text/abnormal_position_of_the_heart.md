@@ -1,16 +1,16 @@
 # Abnormal position of the heart—`OIFM_GMTS_013577`
 
-**Synonyms:** cardiac malposition, dextrocardia (if right sided), levocardia, mesocardia
+**Synonyms:** cardiac malposition
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, finding
+**Tags:** ultrasound, CT, XR, US, heart, positional, finding
 
-The heart is positioned abnormally within the thoracic cavity.
+Heart located in an unusual position within the thorax
 
 **Codes:** GAMUTS 13577 abnormal position of the heart
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_297166`
+### Presence—`OIFMA_GMTS_655525`
 
 Presence or absence of abnormal position of the heart  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of abnormal position of the heart is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_379791`
+### Change from prior—`OIFMA_GMTS_578765`
 
 Whether and how a abnormal position of the heart has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Abnormal position of the heart is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

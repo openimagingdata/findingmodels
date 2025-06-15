@@ -1,27 +1,33 @@
 {
   "oifm_id": "OIFM_GMTS_003934",
   "name": "localized narrowing of esophagus",
-  "description": "Focal constriction of the esophagus, which may be congenital, neoplastic, or due to inflammation.",
+  "description": "Focal constriction of the esophagus, possibly due to stricture or external compression.",
   "synonyms": [
-    "esophageal stricture",
-    "focal esophageal narrowing"
+    "esophageal stricture"
   ],
   "tags": [
-    "chest",
+    "abdomen",
     "CT",
-    "XR (esophagram)",
+    "XR",
     "esophagus",
     "finding"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_358725",
+      "oifma_id": "OIFMA_GMTS_839981",
       "name": "presence",
       "description": "Presence or absence of localized narrowing of esophagus",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_358725.0",
+          "value_code": "OIFMA_GMTS_839981.0",
           "name": "absent",
           "description": "Localized narrowing of esophagus is absent",
           "index_codes": [
@@ -38,7 +44,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_358725.1",
+          "value_code": "OIFMA_GMTS_839981.1",
           "name": "present",
           "description": "Localized narrowing of esophagus is present",
           "index_codes": [
@@ -55,7 +61,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_358725.2",
+          "value_code": "OIFMA_GMTS_839981.2",
           "name": "indeterminate",
           "description": "Presence of localized narrowing of esophagus cannot be determined",
           "index_codes": [
@@ -72,7 +78,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_358725.3",
+          "value_code": "OIFMA_GMTS_839981.3",
           "name": "unknown",
           "description": "Presence of localized narrowing of esophagus is unknown",
           "index_codes": [
@@ -100,13 +106,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_854475",
+      "oifma_id": "OIFMA_GMTS_368972",
       "name": "change from prior",
       "description": "Whether and how a localized narrowing of esophagus has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_854475.0",
+          "value_code": "OIFMA_GMTS_368972.0",
           "name": "unchanged",
           "description": "Localized narrowing of esophagus is unchanged",
           "index_codes": [
@@ -123,7 +129,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.1",
+          "value_code": "OIFMA_GMTS_368972.1",
           "name": "stable",
           "description": "Localized narrowing of esophagus is stable",
           "index_codes": [
@@ -140,7 +146,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.2",
+          "value_code": "OIFMA_GMTS_368972.2",
           "name": "new",
           "description": "Localized narrowing of esophagus is new",
           "index_codes": [
@@ -157,12 +163,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.3",
+          "value_code": "OIFMA_GMTS_368972.3",
           "name": "resolved",
           "description": "Localized narrowing of esophagus seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_854475.4",
+          "value_code": "OIFMA_GMTS_368972.4",
           "name": "increased",
           "description": "Localized narrowing of esophagus has increased",
           "index_codes": [
@@ -179,7 +185,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.5",
+          "value_code": "OIFMA_GMTS_368972.5",
           "name": "decreased",
           "description": "Localized narrowing of esophagus has decreased",
           "index_codes": [
@@ -196,7 +202,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.6",
+          "value_code": "OIFMA_GMTS_368972.6",
           "name": "larger",
           "description": "Localized narrowing of esophagus is larger",
           "index_codes": [
@@ -213,7 +219,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_854475.7",
+          "value_code": "OIFMA_GMTS_368972.7",
           "name": "smaller",
           "description": "Localized narrowing of esophagus is smaller",
           "index_codes": [

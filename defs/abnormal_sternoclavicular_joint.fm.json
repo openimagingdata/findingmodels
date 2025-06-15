@@ -1,28 +1,32 @@
 {
   "oifm_id": "OIFM_GMTS_031047",
   "name": "abnormal sternoclavicular joint",
-  "description": "Any irregularity in the morphology or alignment of the sternoclavicular joint.",
-  "synonyms": [
-    "sternoclavicular joint abnormality",
-    "SCJ abnormality"
-  ],
+  "description": "Any irregularity or abnormality of the sternoclavicular joint.",
   "tags": [
-    "chest",
-    "XR",
+    "musculoskeletal",
     "CT",
-    "bone",
-    "chest wall",
+    "XR",
+    "MR",
+    "joint",
+    "sternum",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_627135",
+      "oifma_id": "OIFMA_GMTS_686870",
       "name": "presence",
       "description": "Presence or absence of abnormal sternoclavicular joint",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_627135.0",
+          "value_code": "OIFMA_GMTS_686870.0",
           "name": "absent",
           "description": "Abnormal sternoclavicular joint is absent",
           "index_codes": [
@@ -39,7 +43,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627135.1",
+          "value_code": "OIFMA_GMTS_686870.1",
           "name": "present",
           "description": "Abnormal sternoclavicular joint is present",
           "index_codes": [
@@ -56,7 +60,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627135.2",
+          "value_code": "OIFMA_GMTS_686870.2",
           "name": "indeterminate",
           "description": "Presence of abnormal sternoclavicular joint cannot be determined",
           "index_codes": [
@@ -73,7 +77,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_627135.3",
+          "value_code": "OIFMA_GMTS_686870.3",
           "name": "unknown",
           "description": "Presence of abnormal sternoclavicular joint is unknown",
           "index_codes": [
@@ -101,13 +105,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_785079",
+      "oifma_id": "OIFMA_GMTS_344371",
       "name": "change from prior",
       "description": "Whether and how a abnormal sternoclavicular joint has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_785079.0",
+          "value_code": "OIFMA_GMTS_344371.0",
           "name": "unchanged",
           "description": "Abnormal sternoclavicular joint is unchanged",
           "index_codes": [
@@ -124,7 +128,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.1",
+          "value_code": "OIFMA_GMTS_344371.1",
           "name": "stable",
           "description": "Abnormal sternoclavicular joint is stable",
           "index_codes": [
@@ -141,7 +145,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.2",
+          "value_code": "OIFMA_GMTS_344371.2",
           "name": "new",
           "description": "Abnormal sternoclavicular joint is new",
           "index_codes": [
@@ -158,12 +162,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.3",
+          "value_code": "OIFMA_GMTS_344371.3",
           "name": "resolved",
           "description": "Abnormal sternoclavicular joint seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_785079.4",
+          "value_code": "OIFMA_GMTS_344371.4",
           "name": "increased",
           "description": "Abnormal sternoclavicular joint has increased",
           "index_codes": [
@@ -180,7 +184,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.5",
+          "value_code": "OIFMA_GMTS_344371.5",
           "name": "decreased",
           "description": "Abnormal sternoclavicular joint has decreased",
           "index_codes": [
@@ -197,7 +201,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.6",
+          "value_code": "OIFMA_GMTS_344371.6",
           "name": "larger",
           "description": "Abnormal sternoclavicular joint is larger",
           "index_codes": [
@@ -214,7 +218,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_785079.7",
+          "value_code": "OIFMA_GMTS_344371.7",
           "name": "smaller",
           "description": "Abnormal sternoclavicular joint is smaller",
           "index_codes": [

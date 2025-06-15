@@ -1,16 +1,14 @@
 # Congenital heart disease with decreased pulmonary vascularity—`OIFM_GMTS_013519`
 
-**Synonyms:** cyanotic heart disease with reduced pulmonary blood flow
+**Tags:** ultrasound, CT, MR, US, cardiovascular, heart, congenital, pulmonary, diagnosis
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, heart, lung vasculature, diagnosis
-
-Congenital heart defects associated with reduced blood flow to the lungs.
+Congenital heart defect associated with reduced blood flow to the lungs.
 
 **Codes:** GAMUTS 13519 congenital heart disease with decreased pulmonary vascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_126027`
+### Presence—`OIFMA_GMTS_329754`
 
 Presence or absence of congenital heart disease with decreased pulmonary vascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital heart disease with decreased pulmonary vascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_558053`
+### Change from prior—`OIFMA_GMTS_063182`
 
 Whether and how a congenital heart disease with decreased pulmonary vascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Congenital heart disease with decreased pulmonary vascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

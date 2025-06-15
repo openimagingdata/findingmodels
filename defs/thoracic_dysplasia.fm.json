@@ -1,28 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_025733",
   "name": "thoracic dysplasia",
-  "description": "Abnormal development or formation of the thoracic structures, typically congenital.",
+  "description": "Disorder of the development of the thoracic cage.",
   "synonyms": [
-    "thoracic disproportion",
-    "chest dysplasia"
+    "Spondylocostal dysostosis"
   ],
   "tags": [
-    "chest",
+    "pediatric",
     "XR",
     "CT",
+    "MR",
+    "skeletal",
     "congenital anomaly",
-    "chest wall",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_700277",
+      "oifma_id": "OIFMA_GMTS_002786",
       "name": "presence",
       "description": "Presence or absence of thoracic dysplasia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_700277.0",
+          "value_code": "OIFMA_GMTS_002786.0",
           "name": "absent",
           "description": "Thoracic dysplasia is absent",
           "index_codes": [
@@ -39,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_700277.1",
+          "value_code": "OIFMA_GMTS_002786.1",
           "name": "present",
           "description": "Thoracic dysplasia is present",
           "index_codes": [
@@ -56,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_700277.2",
+          "value_code": "OIFMA_GMTS_002786.2",
           "name": "indeterminate",
           "description": "Presence of thoracic dysplasia cannot be determined",
           "index_codes": [
@@ -73,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_700277.3",
+          "value_code": "OIFMA_GMTS_002786.3",
           "name": "unknown",
           "description": "Presence of thoracic dysplasia is unknown",
           "index_codes": [
@@ -101,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_316121",
+      "oifma_id": "OIFMA_GMTS_504354",
       "name": "change from prior",
       "description": "Whether and how a thoracic dysplasia has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_316121.0",
+          "value_code": "OIFMA_GMTS_504354.0",
           "name": "unchanged",
           "description": "Thoracic dysplasia is unchanged",
           "index_codes": [
@@ -124,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.1",
+          "value_code": "OIFMA_GMTS_504354.1",
           "name": "stable",
           "description": "Thoracic dysplasia is stable",
           "index_codes": [
@@ -141,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.2",
+          "value_code": "OIFMA_GMTS_504354.2",
           "name": "new",
           "description": "Thoracic dysplasia is new",
           "index_codes": [
@@ -158,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.3",
+          "value_code": "OIFMA_GMTS_504354.3",
           "name": "resolved",
           "description": "Thoracic dysplasia seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_316121.4",
+          "value_code": "OIFMA_GMTS_504354.4",
           "name": "increased",
           "description": "Thoracic dysplasia has increased",
           "index_codes": [
@@ -180,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.5",
+          "value_code": "OIFMA_GMTS_504354.5",
           "name": "decreased",
           "description": "Thoracic dysplasia has decreased",
           "index_codes": [
@@ -197,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.6",
+          "value_code": "OIFMA_GMTS_504354.6",
           "name": "larger",
           "description": "Thoracic dysplasia is larger",
           "index_codes": [
@@ -214,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_316121.7",
+          "value_code": "OIFMA_GMTS_504354.7",
           "name": "smaller",
           "description": "Thoracic dysplasia is smaller",
           "index_codes": [

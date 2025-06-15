@@ -1,28 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_013998",
   "name": "generalized pulmonary arterial hypovascularity",
-  "description": "Reduced caliber and number of pulmonary arteries visualized throughout the lung fields.",
-  "synonyms": [
-    "decreased pulmonary vascularity",
-    "pulmonary arterial pruning"
-  ],
+  "description": "Decreased visibility of pulmonary arteries, suggesting reduced perfusion.",
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
-    "XR",
-    "vascular",
+    "MR",
     "lung",
+    "vascular",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_295902",
+      "oifma_id": "OIFMA_GMTS_734244",
       "name": "presence",
       "description": "Presence or absence of generalized pulmonary arterial hypovascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_295902.0",
+          "value_code": "OIFMA_GMTS_734244.0",
           "name": "absent",
           "description": "Generalized pulmonary arterial hypovascularity is absent",
           "index_codes": [
@@ -39,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_295902.1",
+          "value_code": "OIFMA_GMTS_734244.1",
           "name": "present",
           "description": "Generalized pulmonary arterial hypovascularity is present",
           "index_codes": [
@@ -56,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_295902.2",
+          "value_code": "OIFMA_GMTS_734244.2",
           "name": "indeterminate",
           "description": "Presence of generalized pulmonary arterial hypovascularity cannot be determined",
           "index_codes": [
@@ -73,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_295902.3",
+          "value_code": "OIFMA_GMTS_734244.3",
           "name": "unknown",
           "description": "Presence of generalized pulmonary arterial hypovascularity is unknown",
           "index_codes": [
@@ -101,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_393862",
+      "oifma_id": "OIFMA_GMTS_882672",
       "name": "change from prior",
       "description": "Whether and how a generalized pulmonary arterial hypovascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_393862.0",
+          "value_code": "OIFMA_GMTS_882672.0",
           "name": "unchanged",
           "description": "Generalized pulmonary arterial hypovascularity is unchanged",
           "index_codes": [
@@ -124,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.1",
+          "value_code": "OIFMA_GMTS_882672.1",
           "name": "stable",
           "description": "Generalized pulmonary arterial hypovascularity is stable",
           "index_codes": [
@@ -141,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.2",
+          "value_code": "OIFMA_GMTS_882672.2",
           "name": "new",
           "description": "Generalized pulmonary arterial hypovascularity is new",
           "index_codes": [
@@ -158,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.3",
+          "value_code": "OIFMA_GMTS_882672.3",
           "name": "resolved",
           "description": "Generalized pulmonary arterial hypovascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_393862.4",
+          "value_code": "OIFMA_GMTS_882672.4",
           "name": "increased",
           "description": "Generalized pulmonary arterial hypovascularity has increased",
           "index_codes": [
@@ -180,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.5",
+          "value_code": "OIFMA_GMTS_882672.5",
           "name": "decreased",
           "description": "Generalized pulmonary arterial hypovascularity has decreased",
           "index_codes": [
@@ -197,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.6",
+          "value_code": "OIFMA_GMTS_882672.6",
           "name": "larger",
           "description": "Generalized pulmonary arterial hypovascularity is larger",
           "index_codes": [
@@ -214,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_393862.7",
+          "value_code": "OIFMA_GMTS_882672.7",
           "name": "smaller",
           "description": "Generalized pulmonary arterial hypovascularity is smaller",
           "index_codes": [

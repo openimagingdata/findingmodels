@@ -1,29 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_030930",
   "name": "cardiomegaly in childhood",
-  "description": "Enlarged heart size seen in pediatric patients.",
+  "description": "Enlargement of the heart in pediatric patients.",
   "synonyms": [
-    "pediatric cardiomegaly",
-    "enlarged cardiac silhouette in child"
+    "pediatric cardiomegaly"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "MR",
+    "XR",
+    "US",
     "heart",
-    "congenital anomaly",
+    "childhood",
+    "enlargement",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_135147",
+      "oifma_id": "OIFMA_GMTS_298743",
       "name": "presence",
       "description": "Presence or absence of cardiomegaly in childhood",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_135147.0",
+          "value_code": "OIFMA_GMTS_298743.0",
           "name": "absent",
           "description": "Cardiomegaly in childhood is absent",
           "index_codes": [
@@ -40,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_135147.1",
+          "value_code": "OIFMA_GMTS_298743.1",
           "name": "present",
           "description": "Cardiomegaly in childhood is present",
           "index_codes": [
@@ -57,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_135147.2",
+          "value_code": "OIFMA_GMTS_298743.2",
           "name": "indeterminate",
           "description": "Presence of cardiomegaly in childhood cannot be determined",
           "index_codes": [
@@ -74,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_135147.3",
+          "value_code": "OIFMA_GMTS_298743.3",
           "name": "unknown",
           "description": "Presence of cardiomegaly in childhood is unknown",
           "index_codes": [
@@ -102,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_048824",
+      "oifma_id": "OIFMA_GMTS_555050",
       "name": "change from prior",
       "description": "Whether and how a cardiomegaly in childhood has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_048824.0",
+          "value_code": "OIFMA_GMTS_555050.0",
           "name": "unchanged",
           "description": "Cardiomegaly in childhood is unchanged",
           "index_codes": [
@@ -125,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.1",
+          "value_code": "OIFMA_GMTS_555050.1",
           "name": "stable",
           "description": "Cardiomegaly in childhood is stable",
           "index_codes": [
@@ -142,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.2",
+          "value_code": "OIFMA_GMTS_555050.2",
           "name": "new",
           "description": "Cardiomegaly in childhood is new",
           "index_codes": [
@@ -159,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.3",
+          "value_code": "OIFMA_GMTS_555050.3",
           "name": "resolved",
           "description": "Cardiomegaly in childhood seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_048824.4",
+          "value_code": "OIFMA_GMTS_555050.4",
           "name": "increased",
           "description": "Cardiomegaly in childhood has increased",
           "index_codes": [
@@ -181,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.5",
+          "value_code": "OIFMA_GMTS_555050.5",
           "name": "decreased",
           "description": "Cardiomegaly in childhood has decreased",
           "index_codes": [
@@ -198,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.6",
+          "value_code": "OIFMA_GMTS_555050.6",
           "name": "larger",
           "description": "Cardiomegaly in childhood is larger",
           "index_codes": [
@@ -215,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_048824.7",
+          "value_code": "OIFMA_GMTS_555050.7",
           "name": "smaller",
           "description": "Cardiomegaly in childhood is smaller",
           "index_codes": [

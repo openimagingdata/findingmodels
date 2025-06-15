@@ -1,29 +1,38 @@
 {
   "oifm_id": "OIFM_GMTS_031729",
   "name": "absent clavicle",
-  "description": "Congenital absence of the clavicle, often associated with syndromes such as cleidocranial dysostosis.",
+  "description": "Non-visualization of the clavicle bone, either due to congenital absence or surgical removal.",
   "synonyms": [
     "clavicular aplasia",
-    "clavicle agenesis"
+    "aplasia of the clavicle",
+    "aplastic clavicle",
+    "Clavicular agenesis",
+    "clavicle aplasia"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "musculoskeletal",
     "CT",
+    "XR",
+    "clavicle",
     "congenital anomaly",
-    "bone",
-    "chest wall",
-    "finding"
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_262112",
+      "oifma_id": "OIFMA_GMTS_127435",
       "name": "presence",
       "description": "Presence or absence of absent clavicle",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_262112.0",
+          "value_code": "OIFMA_GMTS_127435.0",
           "name": "absent",
           "description": "Absent clavicle is absent",
           "index_codes": [
@@ -40,7 +49,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_262112.1",
+          "value_code": "OIFMA_GMTS_127435.1",
           "name": "present",
           "description": "Absent clavicle is present",
           "index_codes": [
@@ -57,7 +66,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_262112.2",
+          "value_code": "OIFMA_GMTS_127435.2",
           "name": "indeterminate",
           "description": "Presence of absent clavicle cannot be determined",
           "index_codes": [
@@ -74,7 +83,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_262112.3",
+          "value_code": "OIFMA_GMTS_127435.3",
           "name": "unknown",
           "description": "Presence of absent clavicle is unknown",
           "index_codes": [
@@ -102,13 +111,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_190512",
+      "oifma_id": "OIFMA_GMTS_708151",
       "name": "change from prior",
       "description": "Whether and how a absent clavicle has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_190512.0",
+          "value_code": "OIFMA_GMTS_708151.0",
           "name": "unchanged",
           "description": "Absent clavicle is unchanged",
           "index_codes": [
@@ -125,7 +134,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.1",
+          "value_code": "OIFMA_GMTS_708151.1",
           "name": "stable",
           "description": "Absent clavicle is stable",
           "index_codes": [
@@ -142,7 +151,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.2",
+          "value_code": "OIFMA_GMTS_708151.2",
           "name": "new",
           "description": "Absent clavicle is new",
           "index_codes": [
@@ -159,12 +168,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.3",
+          "value_code": "OIFMA_GMTS_708151.3",
           "name": "resolved",
           "description": "Absent clavicle seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_190512.4",
+          "value_code": "OIFMA_GMTS_708151.4",
           "name": "increased",
           "description": "Absent clavicle has increased",
           "index_codes": [
@@ -181,7 +190,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.5",
+          "value_code": "OIFMA_GMTS_708151.5",
           "name": "decreased",
           "description": "Absent clavicle has decreased",
           "index_codes": [
@@ -198,7 +207,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.6",
+          "value_code": "OIFMA_GMTS_708151.6",
           "name": "larger",
           "description": "Absent clavicle is larger",
           "index_codes": [
@@ -215,7 +224,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_190512.7",
+          "value_code": "OIFMA_GMTS_708151.7",
           "name": "smaller",
           "description": "Absent clavicle is smaller",
           "index_codes": [

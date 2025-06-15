@@ -1,28 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_013987",
   "name": "main pulmonary artery obstruction",
-  "description": "Blockage of the main pulmonary artery, most commonly due to thromboembolism.",
+  "description": "Blockage in the main pulmonary artery",
   "synonyms": [
-    "pulmonary artery obstruction",
-    "main PA obstruction"
+    "Pulmonary artery blockage"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
     "vascular",
     "lung",
     "diagnosis"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_952809",
+      "oifma_id": "OIFMA_GMTS_555311",
       "name": "presence",
       "description": "Presence or absence of main pulmonary artery obstruction",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_952809.0",
+          "value_code": "OIFMA_GMTS_555311.0",
           "name": "absent",
           "description": "Main pulmonary artery obstruction is absent",
           "index_codes": [
@@ -39,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952809.1",
+          "value_code": "OIFMA_GMTS_555311.1",
           "name": "present",
           "description": "Main pulmonary artery obstruction is present",
           "index_codes": [
@@ -56,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952809.2",
+          "value_code": "OIFMA_GMTS_555311.2",
           "name": "indeterminate",
           "description": "Presence of main pulmonary artery obstruction cannot be determined",
           "index_codes": [
@@ -73,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_952809.3",
+          "value_code": "OIFMA_GMTS_555311.3",
           "name": "unknown",
           "description": "Presence of main pulmonary artery obstruction is unknown",
           "index_codes": [
@@ -101,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_372212",
+      "oifma_id": "OIFMA_GMTS_574951",
       "name": "change from prior",
       "description": "Whether and how a main pulmonary artery obstruction has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_372212.0",
+          "value_code": "OIFMA_GMTS_574951.0",
           "name": "unchanged",
           "description": "Main pulmonary artery obstruction is unchanged",
           "index_codes": [
@@ -124,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.1",
+          "value_code": "OIFMA_GMTS_574951.1",
           "name": "stable",
           "description": "Main pulmonary artery obstruction is stable",
           "index_codes": [
@@ -141,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.2",
+          "value_code": "OIFMA_GMTS_574951.2",
           "name": "new",
           "description": "Main pulmonary artery obstruction is new",
           "index_codes": [
@@ -158,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.3",
+          "value_code": "OIFMA_GMTS_574951.3",
           "name": "resolved",
           "description": "Main pulmonary artery obstruction seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_372212.4",
+          "value_code": "OIFMA_GMTS_574951.4",
           "name": "increased",
           "description": "Main pulmonary artery obstruction has increased",
           "index_codes": [
@@ -180,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.5",
+          "value_code": "OIFMA_GMTS_574951.5",
           "name": "decreased",
           "description": "Main pulmonary artery obstruction has decreased",
           "index_codes": [
@@ -197,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.6",
+          "value_code": "OIFMA_GMTS_574951.6",
           "name": "larger",
           "description": "Main pulmonary artery obstruction is larger",
           "index_codes": [
@@ -214,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_372212.7",
+          "value_code": "OIFMA_GMTS_574951.7",
           "name": "smaller",
           "description": "Main pulmonary artery obstruction is smaller",
           "index_codes": [

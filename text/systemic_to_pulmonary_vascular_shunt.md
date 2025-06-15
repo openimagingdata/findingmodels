@@ -1,16 +1,16 @@
 # Systemic-to-pulmonary vascular shunt—`OIFM_GMTS_014021`
 
-**Synonyms:** systemic-pulmonary shunt
+**Synonyms:** left-to-right shunt
 
-**Tags:** chest, CT, MR, angiography, vascular, congenital anomaly, finding
+**Tags:** ultrasound, CT, MR, US, cardiac, vascular, congenital, diagnosis
 
-An abnormal vascular connection between the systemic and pulmonary circulations.
+Abnormal connection allowing blood flow from systemic to pulmonary circulation
 
 **Codes:** GAMUTS 14021 systemic-to-pulmonary vascular shunt
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_043676`
+### Presence—`OIFMA_GMTS_025641`
 
 Presence or absence of systemic-to-pulmonary vascular shunt  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of systemic-to-pulmonary vascular shunt is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_227357`
+### Change from prior—`OIFMA_GMTS_459378`
 
 Whether and how a systemic-to-pulmonary vascular shunt has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Systemic-to-pulmonary vascular shunt is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

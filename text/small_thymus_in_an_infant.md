@@ -1,16 +1,14 @@
 # Small thymus in an infant—`OIFM_GMTS_015629`
 
-**Synonyms:** thymic hypoplasia, thymic atrophy
+**Tags:** pediatric, US, CT, mediastinum, pediatrics, finding
 
-**Tags:** chest, XR, CT, mediastinum, congenital anomaly, finding
-
-Thymus gland is smaller than expected for age in an infant.
+Underdeveloped thymus in a young child.
 
 **Codes:** GAMUTS 15629 small thymus in an infant
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_447073`
+### Presence—`OIFMA_GMTS_247485`
 
 Presence or absence of small thymus in an infant  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of small thymus in an infant is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_108397`
+### Change from prior—`OIFMA_GMTS_846311`
 
 Whether and how a small thymus in an infant has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Small thymus in an infant is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

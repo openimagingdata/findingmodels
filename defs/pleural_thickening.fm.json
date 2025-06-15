@@ -1,27 +1,32 @@
 {
   "oifm_id": "OIFM_GMTS_015999",
   "name": "pleural thickening",
-  "description": "Chronic inflammation or fibrosis causing a thickened appearance of the pleura.",
-  "synonyms": [
-    "thickened pleura"
-  ],
+  "description": "Increase in thickness of the pleural lining",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "pleura",
-    "postop finding",
+    "XR",
+    "MR",
+    "thoracic",
+    "thickening",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_773711",
+      "oifma_id": "OIFMA_GMTS_223851",
       "name": "presence",
       "description": "Presence or absence of pleural thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_773711.0",
+          "value_code": "OIFMA_GMTS_223851.0",
           "name": "absent",
           "description": "Pleural thickening is absent",
           "index_codes": [
@@ -38,7 +43,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_773711.1",
+          "value_code": "OIFMA_GMTS_223851.1",
           "name": "present",
           "description": "Pleural thickening is present",
           "index_codes": [
@@ -55,7 +60,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_773711.2",
+          "value_code": "OIFMA_GMTS_223851.2",
           "name": "indeterminate",
           "description": "Presence of pleural thickening cannot be determined",
           "index_codes": [
@@ -72,7 +77,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_773711.3",
+          "value_code": "OIFMA_GMTS_223851.3",
           "name": "unknown",
           "description": "Presence of pleural thickening is unknown",
           "index_codes": [
@@ -100,13 +105,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_430043",
+      "oifma_id": "OIFMA_GMTS_724012",
       "name": "change from prior",
       "description": "Whether and how a pleural thickening has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_430043.0",
+          "value_code": "OIFMA_GMTS_724012.0",
           "name": "unchanged",
           "description": "Pleural thickening is unchanged",
           "index_codes": [
@@ -123,7 +128,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.1",
+          "value_code": "OIFMA_GMTS_724012.1",
           "name": "stable",
           "description": "Pleural thickening is stable",
           "index_codes": [
@@ -140,7 +145,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.2",
+          "value_code": "OIFMA_GMTS_724012.2",
           "name": "new",
           "description": "Pleural thickening is new",
           "index_codes": [
@@ -157,12 +162,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.3",
+          "value_code": "OIFMA_GMTS_724012.3",
           "name": "resolved",
           "description": "Pleural thickening seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_430043.4",
+          "value_code": "OIFMA_GMTS_724012.4",
           "name": "increased",
           "description": "Pleural thickening has increased",
           "index_codes": [
@@ -179,7 +184,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.5",
+          "value_code": "OIFMA_GMTS_724012.5",
           "name": "decreased",
           "description": "Pleural thickening has decreased",
           "index_codes": [
@@ -196,7 +201,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.6",
+          "value_code": "OIFMA_GMTS_724012.6",
           "name": "larger",
           "description": "Pleural thickening is larger",
           "index_codes": [
@@ -213,7 +218,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_430043.7",
+          "value_code": "OIFMA_GMTS_724012.7",
           "name": "smaller",
           "description": "Pleural thickening is smaller",
           "index_codes": [

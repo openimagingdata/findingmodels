@@ -2,15 +2,15 @@
 
 **Synonyms:** gibbus deformity
 
-**Tags:** chest, XR, musculoskeletal, chest wall, congenital anomaly, finding
+**Tags:** neuro, XR, CT, spine, congenital anomaly, finding
 
-Sharp angular kyphosis at thoracolumbar junction, often due to vertebral collapse or dysplasia.
+A kyphotic deformity of the thoracolumbar spine leading to a humpback appearance.
 
 **Codes:** GAMUTS 9601 thoracolumbar gibbus
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_738510`
+### Presence—`OIFMA_GMTS_065196`
 
 Presence or absence of thoracolumbar gibbus  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of thoracolumbar gibbus is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_529672`
+### Change from prior—`OIFMA_GMTS_483430`
 
 Whether and how a thoracolumbar gibbus has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Thoracolumbar gibbus is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

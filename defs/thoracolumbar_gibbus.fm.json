@@ -1,27 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_009601",
   "name": "thoracolumbar gibbus",
-  "description": "Sharp angular kyphosis at thoracolumbar junction, often due to vertebral collapse or dysplasia.",
+  "description": "A kyphotic deformity of the thoracolumbar spine leading to a humpback appearance.",
   "synonyms": [
     "gibbus deformity"
   ],
   "tags": [
-    "chest",
+    "neuro",
     "XR",
-    "musculoskeletal",
-    "chest wall",
+    "CT",
+    "spine",
     "congenital anomaly",
     "finding"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_738510",
+      "oifma_id": "OIFMA_GMTS_065196",
       "name": "presence",
       "description": "Presence or absence of thoracolumbar gibbus",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_738510.0",
+          "value_code": "OIFMA_GMTS_065196.0",
           "name": "absent",
           "description": "Thoracolumbar gibbus is absent",
           "index_codes": [
@@ -38,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_738510.1",
+          "value_code": "OIFMA_GMTS_065196.1",
           "name": "present",
           "description": "Thoracolumbar gibbus is present",
           "index_codes": [
@@ -55,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_738510.2",
+          "value_code": "OIFMA_GMTS_065196.2",
           "name": "indeterminate",
           "description": "Presence of thoracolumbar gibbus cannot be determined",
           "index_codes": [
@@ -72,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_738510.3",
+          "value_code": "OIFMA_GMTS_065196.3",
           "name": "unknown",
           "description": "Presence of thoracolumbar gibbus is unknown",
           "index_codes": [
@@ -100,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_529672",
+      "oifma_id": "OIFMA_GMTS_483430",
       "name": "change from prior",
       "description": "Whether and how a thoracolumbar gibbus has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_529672.0",
+          "value_code": "OIFMA_GMTS_483430.0",
           "name": "unchanged",
           "description": "Thoracolumbar gibbus is unchanged",
           "index_codes": [
@@ -123,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.1",
+          "value_code": "OIFMA_GMTS_483430.1",
           "name": "stable",
           "description": "Thoracolumbar gibbus is stable",
           "index_codes": [
@@ -140,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.2",
+          "value_code": "OIFMA_GMTS_483430.2",
           "name": "new",
           "description": "Thoracolumbar gibbus is new",
           "index_codes": [
@@ -157,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.3",
+          "value_code": "OIFMA_GMTS_483430.3",
           "name": "resolved",
           "description": "Thoracolumbar gibbus seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_529672.4",
+          "value_code": "OIFMA_GMTS_483430.4",
           "name": "increased",
           "description": "Thoracolumbar gibbus has increased",
           "index_codes": [
@@ -179,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.5",
+          "value_code": "OIFMA_GMTS_483430.5",
           "name": "decreased",
           "description": "Thoracolumbar gibbus has decreased",
           "index_codes": [
@@ -196,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.6",
+          "value_code": "OIFMA_GMTS_483430.6",
           "name": "larger",
           "description": "Thoracolumbar gibbus is larger",
           "index_codes": [
@@ -213,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_529672.7",
+          "value_code": "OIFMA_GMTS_483430.7",
           "name": "smaller",
           "description": "Thoracolumbar gibbus is smaller",
           "index_codes": [

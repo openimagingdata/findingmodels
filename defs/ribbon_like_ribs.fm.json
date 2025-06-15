@@ -1,28 +1,30 @@
 {
   "oifm_id": "OIFM_GMTS_025461",
   "name": "ribbon-like ribs",
-  "description": "Ribs that appear thin and elongated on imaging, usually seen in conditions that affect bone development.",
-  "synonyms": [
-    "ribbon ribs"
-  ],
+  "description": "Ribs that appear flat and wide, resembling a ribbon.",
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
-    "CT",
+    "rib",
     "skeletal",
-    "chest wall",
-    "congenital anomaly",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_383521",
+      "oifma_id": "OIFMA_GMTS_845247",
       "name": "presence",
       "description": "Presence or absence of ribbon-like ribs",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_383521.0",
+          "value_code": "OIFMA_GMTS_845247.0",
           "name": "absent",
           "description": "Ribbon-like ribs is absent",
           "index_codes": [
@@ -39,7 +41,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_383521.1",
+          "value_code": "OIFMA_GMTS_845247.1",
           "name": "present",
           "description": "Ribbon-like ribs is present",
           "index_codes": [
@@ -56,7 +58,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_383521.2",
+          "value_code": "OIFMA_GMTS_845247.2",
           "name": "indeterminate",
           "description": "Presence of ribbon-like ribs cannot be determined",
           "index_codes": [
@@ -73,7 +75,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_383521.3",
+          "value_code": "OIFMA_GMTS_845247.3",
           "name": "unknown",
           "description": "Presence of ribbon-like ribs is unknown",
           "index_codes": [
@@ -101,13 +103,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_384443",
+      "oifma_id": "OIFMA_GMTS_896237",
       "name": "change from prior",
       "description": "Whether and how a ribbon-like ribs has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_384443.0",
+          "value_code": "OIFMA_GMTS_896237.0",
           "name": "unchanged",
           "description": "Ribbon-like ribs is unchanged",
           "index_codes": [
@@ -124,7 +126,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.1",
+          "value_code": "OIFMA_GMTS_896237.1",
           "name": "stable",
           "description": "Ribbon-like ribs is stable",
           "index_codes": [
@@ -141,7 +143,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.2",
+          "value_code": "OIFMA_GMTS_896237.2",
           "name": "new",
           "description": "Ribbon-like ribs is new",
           "index_codes": [
@@ -158,12 +160,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.3",
+          "value_code": "OIFMA_GMTS_896237.3",
           "name": "resolved",
           "description": "Ribbon-like ribs seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_384443.4",
+          "value_code": "OIFMA_GMTS_896237.4",
           "name": "increased",
           "description": "Ribbon-like ribs has increased",
           "index_codes": [
@@ -180,7 +182,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.5",
+          "value_code": "OIFMA_GMTS_896237.5",
           "name": "decreased",
           "description": "Ribbon-like ribs has decreased",
           "index_codes": [
@@ -197,7 +199,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.6",
+          "value_code": "OIFMA_GMTS_896237.6",
           "name": "larger",
           "description": "Ribbon-like ribs is larger",
           "index_codes": [
@@ -214,7 +216,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_384443.7",
+          "value_code": "OIFMA_GMTS_896237.7",
           "name": "smaller",
           "description": "Ribbon-like ribs is smaller",
           "index_codes": [

@@ -1,0 +1,264 @@
+{
+  "oifm_id": "OIFM_GMTS_004733",
+  "name": "splenomegaly with diffuse hyperechoic pattern",
+  "description": "Enlarged spleen with increased echogenicity throughout",
+  "synonyms": [
+    "large hyperechoic spleen",
+    "diffuse hyperechoic splenomegaly"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "spleen",
+    "ultrasound",
+    "pattern",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_800440",
+      "name": "presence",
+      "description": "Presence or absence of splenomegaly with diffuse hyperechoic pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_800440.0",
+          "name": "absent",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_800440.1",
+          "name": "present",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_800440.2",
+          "name": "indeterminate",
+          "description": "Presence of splenomegaly with diffuse hyperechoic pattern cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_800440.3",
+          "name": "unknown",
+          "description": "Presence of splenomegaly with diffuse hyperechoic pattern is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_712083",
+      "name": "change from prior",
+      "description": "Whether and how a splenomegaly with diffuse hyperechoic pattern has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_712083.0",
+          "name": "unchanged",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.1",
+          "name": "stable",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.2",
+          "name": "new",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.3",
+          "name": "resolved",
+          "description": "Splenomegaly with diffuse hyperechoic pattern seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.4",
+          "name": "increased",
+          "description": "Splenomegaly with diffuse hyperechoic pattern has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.5",
+          "name": "decreased",
+          "description": "Splenomegaly with diffuse hyperechoic pattern has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.6",
+          "name": "larger",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_712083.7",
+          "name": "smaller",
+          "description": "Splenomegaly with diffuse hyperechoic pattern is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "4733",
+      "display": "splenomegaly with diffuse hyperechoic pattern"
+    }
+  ]
+}

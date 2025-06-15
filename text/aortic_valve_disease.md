@@ -1,16 +1,16 @@
 # Aortic valve disease—`OIFM_GMTS_022509`
 
-**Synonyms:** aortic valve disorder, aortic stenosis
+**Synonyms:** aortic valvulopathy, aortic valvular disease
 
-**Tags:** chest, CT, MR, US (echocardiography, primarily), valvular, cardiac, mediastinum, diagnosis
+**Tags:** ultrasound, CT, MR, US, vascular, valvular heart disease, diagnosis
 
-General term encompassing disorders of the aortic valve including stenosis and regurgitation.
+A condition involving dysfunction of the aortic valve.
 
 **Codes:** GAMUTS 22509 aortic valve disease
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_766324`
+### Presence—`OIFMA_GMTS_694578`
 
 Presence or absence of aortic valve disease  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of aortic valve disease is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_640629`
+### Change from prior—`OIFMA_GMTS_976553`
 
 Whether and how a aortic valve disease has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Aortic valve disease is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

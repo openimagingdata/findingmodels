@@ -1,30 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_013499",
   "name": "mitral insufficiency",
-  "description": "Inadequate closure of the mitral valve, causing regurgitation of blood into the left atrium.",
+  "description": "A condition where the mitral valve does not close tightly, allowing blood to flow backward in the heart.",
   "synonyms": [
-    "mitral regurgitation",
-    "MR"
+    "mitral regurgitation"
   ],
   "tags": [
-    "chest",
-    "CT",
-    "MR",
+    "ultrasound",
     "US",
+    "MR",
     "cardiac",
-    "valvular",
-    "inflammatory process",
+    "valvular disease",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_714399",
+      "oifma_id": "OIFMA_GMTS_195119",
       "name": "presence",
       "description": "Presence or absence of mitral insufficiency",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_714399.0",
+          "value_code": "OIFMA_GMTS_195119.0",
           "name": "absent",
           "description": "Mitral insufficiency is absent",
           "index_codes": [
@@ -41,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_714399.1",
+          "value_code": "OIFMA_GMTS_195119.1",
           "name": "present",
           "description": "Mitral insufficiency is present",
           "index_codes": [
@@ -58,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_714399.2",
+          "value_code": "OIFMA_GMTS_195119.2",
           "name": "indeterminate",
           "description": "Presence of mitral insufficiency cannot be determined",
           "index_codes": [
@@ -75,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_714399.3",
+          "value_code": "OIFMA_GMTS_195119.3",
           "name": "unknown",
           "description": "Presence of mitral insufficiency is unknown",
           "index_codes": [
@@ -103,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_609260",
+      "oifma_id": "OIFMA_GMTS_505827",
       "name": "change from prior",
       "description": "Whether and how a mitral insufficiency has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_609260.0",
+          "value_code": "OIFMA_GMTS_505827.0",
           "name": "unchanged",
           "description": "Mitral insufficiency is unchanged",
           "index_codes": [
@@ -126,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.1",
+          "value_code": "OIFMA_GMTS_505827.1",
           "name": "stable",
           "description": "Mitral insufficiency is stable",
           "index_codes": [
@@ -143,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.2",
+          "value_code": "OIFMA_GMTS_505827.2",
           "name": "new",
           "description": "Mitral insufficiency is new",
           "index_codes": [
@@ -160,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.3",
+          "value_code": "OIFMA_GMTS_505827.3",
           "name": "resolved",
           "description": "Mitral insufficiency seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_609260.4",
+          "value_code": "OIFMA_GMTS_505827.4",
           "name": "increased",
           "description": "Mitral insufficiency has increased",
           "index_codes": [
@@ -182,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.5",
+          "value_code": "OIFMA_GMTS_505827.5",
           "name": "decreased",
           "description": "Mitral insufficiency has decreased",
           "index_codes": [
@@ -199,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.6",
+          "value_code": "OIFMA_GMTS_505827.6",
           "name": "larger",
           "description": "Mitral insufficiency is larger",
           "index_codes": [
@@ -216,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_609260.7",
+          "value_code": "OIFMA_GMTS_505827.7",
           "name": "smaller",
           "description": "Mitral insufficiency is smaller",
           "index_codes": [

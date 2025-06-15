@@ -1,16 +1,14 @@
 # Undersegmentation of sternum—`OIFM_GMTS_031040`
 
-**Synonyms:** hyposegmentation of sternum
+**Tags:** musculoskeletal, XR, CT, sternum, congenital anomaly, finding
 
-**Tags:** chest, XR, CT, congenital anomaly, chest wall, finding
-
-Congenital failure of normal segmentation of the sternum, with fewer than usual parts visible.
+Incomplete segmentation of sternal bones, possibly congenital
 
 **Codes:** GAMUTS 31040 undersegmentation of sternum
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_254127`
+### Presence—`OIFMA_GMTS_097511`
 
 Presence or absence of undersegmentation of sternum  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of undersegmentation of sternum is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_711287`
+### Change from prior—`OIFMA_GMTS_451820`
 
 Whether and how a undersegmentation of sternum has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Undersegmentation of sternum is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

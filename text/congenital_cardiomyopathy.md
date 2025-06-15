@@ -1,16 +1,16 @@
 # Congenital cardiomyopathy—`OIFM_GMTS_013765`
 
-**Synonyms:** pediatric cardiomyopathy, inherited cardiomyopathy
+**Synonyms:** congenital myocardiopathy
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, diagnosis
+**Tags:** ultrasound, CT, MR, cardiovascular, muscle, congenital, diagnosis
 
-Heart muscle disease present from birth.
+Heart muscle disease present from birth affecting cardiac function.
 
 **Codes:** GAMUTS 13765 congenital cardiomyopathy
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_301356`
+### Presence—`OIFMA_GMTS_710876`
 
 Presence or absence of congenital cardiomyopathy  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital cardiomyopathy is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_116083`
+### Change from prior—`OIFMA_GMTS_772248`
 
 Whether and how a congenital cardiomyopathy has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Congenital cardiomyopathy is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

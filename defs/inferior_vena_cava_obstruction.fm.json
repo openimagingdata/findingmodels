@@ -1,28 +1,37 @@
 {
   "oifm_id": "OIFM_GMTS_014141",
   "name": "inferior vena cava obstruction",
-  "description": "Blockage of the inferior vena cava, which can cause venous congestion and collateral circulation.",
+  "description": "Blockage or compression of the inferior vena cava affecting venous return.",
   "synonyms": [
-    "IVC obstruction",
-    "IVC syndrome"
+    "obstruction of inferior vena cava",
+    "obstruction of IVC",
+    "IVC obstruction"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
     "vascular",
-    "mediastinum",
+    "abdominal",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_408769",
+      "oifma_id": "OIFMA_GMTS_227243",
       "name": "presence",
       "description": "Presence or absence of inferior vena cava obstruction",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_408769.0",
+          "value_code": "OIFMA_GMTS_227243.0",
           "name": "absent",
           "description": "Inferior vena cava obstruction is absent",
           "index_codes": [
@@ -39,7 +48,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_408769.1",
+          "value_code": "OIFMA_GMTS_227243.1",
           "name": "present",
           "description": "Inferior vena cava obstruction is present",
           "index_codes": [
@@ -56,7 +65,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_408769.2",
+          "value_code": "OIFMA_GMTS_227243.2",
           "name": "indeterminate",
           "description": "Presence of inferior vena cava obstruction cannot be determined",
           "index_codes": [
@@ -73,7 +82,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_408769.3",
+          "value_code": "OIFMA_GMTS_227243.3",
           "name": "unknown",
           "description": "Presence of inferior vena cava obstruction is unknown",
           "index_codes": [
@@ -101,13 +110,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_544743",
+      "oifma_id": "OIFMA_GMTS_330738",
       "name": "change from prior",
       "description": "Whether and how a inferior vena cava obstruction has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_544743.0",
+          "value_code": "OIFMA_GMTS_330738.0",
           "name": "unchanged",
           "description": "Inferior vena cava obstruction is unchanged",
           "index_codes": [
@@ -124,7 +133,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.1",
+          "value_code": "OIFMA_GMTS_330738.1",
           "name": "stable",
           "description": "Inferior vena cava obstruction is stable",
           "index_codes": [
@@ -141,7 +150,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.2",
+          "value_code": "OIFMA_GMTS_330738.2",
           "name": "new",
           "description": "Inferior vena cava obstruction is new",
           "index_codes": [
@@ -158,12 +167,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.3",
+          "value_code": "OIFMA_GMTS_330738.3",
           "name": "resolved",
           "description": "Inferior vena cava obstruction seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_544743.4",
+          "value_code": "OIFMA_GMTS_330738.4",
           "name": "increased",
           "description": "Inferior vena cava obstruction has increased",
           "index_codes": [
@@ -180,7 +189,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.5",
+          "value_code": "OIFMA_GMTS_330738.5",
           "name": "decreased",
           "description": "Inferior vena cava obstruction has decreased",
           "index_codes": [
@@ -197,7 +206,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.6",
+          "value_code": "OIFMA_GMTS_330738.6",
           "name": "larger",
           "description": "Inferior vena cava obstruction is larger",
           "index_codes": [
@@ -214,7 +223,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544743.7",
+          "value_code": "OIFMA_GMTS_330738.7",
           "name": "smaller",
           "description": "Inferior vena cava obstruction is smaller",
           "index_codes": [

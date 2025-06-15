@@ -1,16 +1,16 @@
 # Aortic insufficiency—`OIFM_GMTS_013496`
 
-**Synonyms:** aortic regurgitation, aortic valve incompetence
+**Synonyms:** aortic valve insufficiency, AR, AI, aortic regurgitation
 
-**Tags:** chest, CT, MR, US (echocardiography, primarily), valvular, cardiac, mediastinum, diagnosis
+**Tags:** ultrasound, CT, MR, US, vascular, valvular heart disease, diagnosis
 
-A condition where the aortic valve fails to close completely, causing regurgitation of blood into the left ventricle.
+The aortic valve does not close tightly, allowing blood to flow back into the heart.
 
 **Codes:** GAMUTS 13496 aortic insufficiency
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_166954`
+### Presence—`OIFMA_GMTS_412323`
 
 Presence or absence of aortic insufficiency  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of aortic insufficiency is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_507681`
+### Change from prior—`OIFMA_GMTS_855888`
 
 Whether and how a aortic insufficiency has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Aortic insufficiency is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

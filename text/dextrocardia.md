@@ -1,16 +1,16 @@
 # Dextrocardia—`OIFM_GMTS_013596`
 
-**Synonyms:** right-sided heart, mirror-image heart
+**Synonyms:** right-sided heart
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, heart, diagnosis
+**Tags:** ultrasound, XR, CT, MR, US, heart, congenital anomaly, diagnosis
 
-Heart positioned on the right side of the chest.
+Condition where the heart is located on the right side of the thorax.
 
 **Codes:** GAMUTS 13596 dextrocardia
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_776496`
+### Presence—`OIFMA_GMTS_639963`
 
 Presence or absence of dextrocardia  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of dextrocardia is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_689801`
+### Change from prior—`OIFMA_GMTS_635743`
 
 Whether and how a dextrocardia has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Dextrocardia is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

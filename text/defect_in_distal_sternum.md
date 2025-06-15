@@ -1,16 +1,16 @@
 # Defect in distal sternum—`OIFM_GMTS_031038`
 
-**Synonyms:** sternal defect, lower sternal defect
+**Synonyms:** Distal sternal defect
 
-**Tags:** chest, CT, XR, congenital anomaly, sternum, chest wall, finding
+**Tags:** musculoskeletal, CT, XR, thoracic, congenital anomaly, finding
 
-A structural anomaly or absence in the lower part of the sternum.
+Abnormality or deficit in the lower segment of the sternum.
 
 **Codes:** GAMUTS 31038 defect in distal sternum
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_395422`
+### Presence—`OIFMA_GMTS_333475`
 
 Presence or absence of defect in distal sternum  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of defect in distal sternum is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_712832`
+### Change from prior—`OIFMA_GMTS_530787`
 
 Whether and how a defect in distal sternum has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Defect in distal sternum is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

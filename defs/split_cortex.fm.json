@@ -1,0 +1,263 @@
+{
+  "oifm_id": "OIFM_GMTS_011588",
+  "name": "split cortex",
+  "description": "Appearance of separated or divided cortical bone seen on imaging, often due to disease or injury.",
+  "synonyms": [
+    "double-layer cortex"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "XR",
+    "CT",
+    "bone",
+    "structural abnormality",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_641415",
+      "name": "presence",
+      "description": "Presence or absence of split cortex",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_641415.0",
+          "name": "absent",
+          "description": "Split cortex is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_641415.1",
+          "name": "present",
+          "description": "Split cortex is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_641415.2",
+          "name": "indeterminate",
+          "description": "Presence of split cortex cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_641415.3",
+          "name": "unknown",
+          "description": "Presence of split cortex is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_136111",
+      "name": "change from prior",
+      "description": "Whether and how a split cortex has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_136111.0",
+          "name": "unchanged",
+          "description": "Split cortex is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.1",
+          "name": "stable",
+          "description": "Split cortex is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.2",
+          "name": "new",
+          "description": "Split cortex is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.3",
+          "name": "resolved",
+          "description": "Split cortex seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.4",
+          "name": "increased",
+          "description": "Split cortex has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.5",
+          "name": "decreased",
+          "description": "Split cortex has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.6",
+          "name": "larger",
+          "description": "Split cortex is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_136111.7",
+          "name": "smaller",
+          "description": "Split cortex is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "11588",
+      "display": "split cortex"
+    }
+  ]
+}

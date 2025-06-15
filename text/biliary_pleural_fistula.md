@@ -1,16 +1,14 @@
 # Biliary-pleural fistula—`OIFM_GMTS_005533`
 
-**Synonyms:** pleurobiliary fistula
+**Tags:** abdomen, CT, MR, US, thoracic, fistula, diagnosis
 
-**Tags:** chest, CT, MR, pleura, biliary, inflammatory process, postop finding: possible, diagnosis
-
-Abnormal communication between the biliary system and pleural space.
+An abnormal connection between the biliary ducts and the pleural cavity.
 
 **Codes:** GAMUTS 5533 biliary-pleural fistula
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_953645`
+### Presence—`OIFMA_GMTS_788849`
 
 Presence or absence of biliary-pleural fistula  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of biliary-pleural fistula is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_479642`
+### Change from prior—`OIFMA_GMTS_371517`
 
 Whether and how a biliary-pleural fistula has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Biliary-pleural fistula is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

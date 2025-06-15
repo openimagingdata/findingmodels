@@ -1,0 +1,266 @@
+{
+  "oifm_id": "OIFM_GMTS_011849",
+  "name": "hypoplastic terminal phalanges",
+  "description": "Underdevelopment of the distal bones of the fingers or toes.",
+  "synonyms": [
+    "spindle-shaped terminal phalanges",
+    "stubby terminal phalanges"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "XR",
+    "CT",
+    "fingers",
+    "toes",
+    "congenital anomaly",
+    "skeletal",
+    "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_705487",
+      "name": "presence",
+      "description": "Presence or absence of hypoplastic terminal phalanges",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_705487.0",
+          "name": "absent",
+          "description": "Hypoplastic terminal phalanges is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_705487.1",
+          "name": "present",
+          "description": "Hypoplastic terminal phalanges is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_705487.2",
+          "name": "indeterminate",
+          "description": "Presence of hypoplastic terminal phalanges cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_705487.3",
+          "name": "unknown",
+          "description": "Presence of hypoplastic terminal phalanges is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_341578",
+      "name": "change from prior",
+      "description": "Whether and how a hypoplastic terminal phalanges has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_341578.0",
+          "name": "unchanged",
+          "description": "Hypoplastic terminal phalanges is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.1",
+          "name": "stable",
+          "description": "Hypoplastic terminal phalanges is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.2",
+          "name": "new",
+          "description": "Hypoplastic terminal phalanges is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.3",
+          "name": "resolved",
+          "description": "Hypoplastic terminal phalanges seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.4",
+          "name": "increased",
+          "description": "Hypoplastic terminal phalanges has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.5",
+          "name": "decreased",
+          "description": "Hypoplastic terminal phalanges has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.6",
+          "name": "larger",
+          "description": "Hypoplastic terminal phalanges is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_341578.7",
+          "name": "smaller",
+          "description": "Hypoplastic terminal phalanges is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "11849",
+      "display": "hypoplastic terminal phalanges"
+    }
+  ]
+}

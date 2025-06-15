@@ -1,16 +1,14 @@
 # Generalized pulmonary arterial hypervascularity—`OIFM_GMTS_013892`
 
-**Synonyms:** pulmonary vascular engorgement, pulmonary arterial engorgement
+**Tags:** ultrasound, CT, MR, lung, vascular, finding
 
-**Tags:** chest, CT, XR, vascular, lung, finding
-
-Increased prominence and number of pulmonary arteries throughout the lungs.
+Increased visibility of pulmonary arteries; may suggest hypertension.
 
 **Codes:** GAMUTS 13892 generalized pulmonary arterial hypervascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_350756`
+### Presence—`OIFMA_GMTS_970975`
 
 Presence or absence of generalized pulmonary arterial hypervascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of generalized pulmonary arterial hypervascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_950028`
+### Change from prior—`OIFMA_GMTS_936876`
 
 Whether and how a generalized pulmonary arterial hypervascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Generalized pulmonary arterial hypervascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

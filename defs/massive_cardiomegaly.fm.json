@@ -1,29 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_013774",
   "name": "massive cardiomegaly",
-  "description": "Severe enlargement of the heart beyond normal limits.",
+  "description": "Severely enlarged heart",
   "synonyms": [
-    "severe cardiomegaly",
-    "giant heart",
-    "massive heart enlargement"
+    "grossly enlarged heart",
+    "Extreme heart enlargement"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "XR",
     "CT",
-    "MR",
     "cardiac",
     "finding"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_362931",
+      "oifma_id": "OIFMA_GMTS_116514",
       "name": "presence",
       "description": "Presence or absence of massive cardiomegaly",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_362931.0",
+          "value_code": "OIFMA_GMTS_116514.0",
           "name": "absent",
           "description": "Massive cardiomegaly is absent",
           "index_codes": [
@@ -40,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_362931.1",
+          "value_code": "OIFMA_GMTS_116514.1",
           "name": "present",
           "description": "Massive cardiomegaly is present",
           "index_codes": [
@@ -57,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_362931.2",
+          "value_code": "OIFMA_GMTS_116514.2",
           "name": "indeterminate",
           "description": "Presence of massive cardiomegaly cannot be determined",
           "index_codes": [
@@ -74,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_362931.3",
+          "value_code": "OIFMA_GMTS_116514.3",
           "name": "unknown",
           "description": "Presence of massive cardiomegaly is unknown",
           "index_codes": [
@@ -102,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_544707",
+      "oifma_id": "OIFMA_GMTS_674413",
       "name": "change from prior",
       "description": "Whether and how a massive cardiomegaly has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_544707.0",
+          "value_code": "OIFMA_GMTS_674413.0",
           "name": "unchanged",
           "description": "Massive cardiomegaly is unchanged",
           "index_codes": [
@@ -125,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.1",
+          "value_code": "OIFMA_GMTS_674413.1",
           "name": "stable",
           "description": "Massive cardiomegaly is stable",
           "index_codes": [
@@ -142,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.2",
+          "value_code": "OIFMA_GMTS_674413.2",
           "name": "new",
           "description": "Massive cardiomegaly is new",
           "index_codes": [
@@ -159,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.3",
+          "value_code": "OIFMA_GMTS_674413.3",
           "name": "resolved",
           "description": "Massive cardiomegaly seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_544707.4",
+          "value_code": "OIFMA_GMTS_674413.4",
           "name": "increased",
           "description": "Massive cardiomegaly has increased",
           "index_codes": [
@@ -181,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.5",
+          "value_code": "OIFMA_GMTS_674413.5",
           "name": "decreased",
           "description": "Massive cardiomegaly has decreased",
           "index_codes": [
@@ -198,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.6",
+          "value_code": "OIFMA_GMTS_674413.6",
           "name": "larger",
           "description": "Massive cardiomegaly is larger",
           "index_codes": [
@@ -215,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_544707.7",
+          "value_code": "OIFMA_GMTS_674413.7",
           "name": "smaller",
           "description": "Massive cardiomegaly is smaller",
           "index_codes": [

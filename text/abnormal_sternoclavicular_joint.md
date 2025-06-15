@@ -1,16 +1,14 @@
 # Abnormal sternoclavicular joint—`OIFM_GMTS_031047`
 
-**Synonyms:** sternoclavicular joint abnormality, SCJ abnormality
+**Tags:** musculoskeletal, CT, XR, MR, joint, sternum, finding
 
-**Tags:** chest, XR, CT, bone, chest wall, finding
-
-Any irregularity in the morphology or alignment of the sternoclavicular joint.
+Any irregularity or abnormality of the sternoclavicular joint.
 
 **Codes:** GAMUTS 31047 abnormal sternoclavicular joint
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_627135`
+### Presence—`OIFMA_GMTS_686870`
 
 Presence or absence of abnormal sternoclavicular joint  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of abnormal sternoclavicular joint is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_785079`
+### Change from prior—`OIFMA_GMTS_344371`
 
 Whether and how a abnormal sternoclavicular joint has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Abnormal sternoclavicular joint is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

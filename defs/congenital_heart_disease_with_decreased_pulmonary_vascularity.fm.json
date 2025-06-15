@@ -1,29 +1,34 @@
 {
   "oifm_id": "OIFM_GMTS_013519",
   "name": "congenital heart disease with decreased pulmonary vascularity",
-  "description": "Congenital heart defects associated with reduced blood flow to the lungs.",
-  "synonyms": [
-    "cyanotic heart disease with reduced pulmonary blood flow"
-  ],
+  "description": "Congenital heart defect associated with reduced blood flow to the lungs.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
-    "congenital anomaly",
+    "US",
+    "cardiovascular",
     "heart",
-    "lung vasculature",
+    "congenital",
+    "pulmonary",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_126027",
+      "oifma_id": "OIFMA_GMTS_329754",
       "name": "presence",
       "description": "Presence or absence of congenital heart disease with decreased pulmonary vascularity",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_126027.0",
+          "value_code": "OIFMA_GMTS_329754.0",
           "name": "absent",
           "description": "Congenital heart disease with decreased pulmonary vascularity is absent",
           "index_codes": [
@@ -40,7 +45,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_126027.1",
+          "value_code": "OIFMA_GMTS_329754.1",
           "name": "present",
           "description": "Congenital heart disease with decreased pulmonary vascularity is present",
           "index_codes": [
@@ -57,7 +62,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_126027.2",
+          "value_code": "OIFMA_GMTS_329754.2",
           "name": "indeterminate",
           "description": "Presence of congenital heart disease with decreased pulmonary vascularity cannot be determined",
           "index_codes": [
@@ -74,7 +79,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_126027.3",
+          "value_code": "OIFMA_GMTS_329754.3",
           "name": "unknown",
           "description": "Presence of congenital heart disease with decreased pulmonary vascularity is unknown",
           "index_codes": [
@@ -102,13 +107,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_558053",
+      "oifma_id": "OIFMA_GMTS_063182",
       "name": "change from prior",
       "description": "Whether and how a congenital heart disease with decreased pulmonary vascularity has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_558053.0",
+          "value_code": "OIFMA_GMTS_063182.0",
           "name": "unchanged",
           "description": "Congenital heart disease with decreased pulmonary vascularity is unchanged",
           "index_codes": [
@@ -125,7 +130,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.1",
+          "value_code": "OIFMA_GMTS_063182.1",
           "name": "stable",
           "description": "Congenital heart disease with decreased pulmonary vascularity is stable",
           "index_codes": [
@@ -142,7 +147,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.2",
+          "value_code": "OIFMA_GMTS_063182.2",
           "name": "new",
           "description": "Congenital heart disease with decreased pulmonary vascularity is new",
           "index_codes": [
@@ -159,12 +164,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.3",
+          "value_code": "OIFMA_GMTS_063182.3",
           "name": "resolved",
           "description": "Congenital heart disease with decreased pulmonary vascularity seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_558053.4",
+          "value_code": "OIFMA_GMTS_063182.4",
           "name": "increased",
           "description": "Congenital heart disease with decreased pulmonary vascularity has increased",
           "index_codes": [
@@ -181,7 +186,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.5",
+          "value_code": "OIFMA_GMTS_063182.5",
           "name": "decreased",
           "description": "Congenital heart disease with decreased pulmonary vascularity has decreased",
           "index_codes": [
@@ -198,7 +203,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.6",
+          "value_code": "OIFMA_GMTS_063182.6",
           "name": "larger",
           "description": "Congenital heart disease with decreased pulmonary vascularity is larger",
           "index_codes": [
@@ -215,7 +220,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_558053.7",
+          "value_code": "OIFMA_GMTS_063182.7",
           "name": "smaller",
           "description": "Congenital heart disease with decreased pulmonary vascularity is smaller",
           "index_codes": [

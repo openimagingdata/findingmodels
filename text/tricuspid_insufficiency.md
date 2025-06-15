@@ -2,15 +2,15 @@
 
 **Synonyms:** tricuspid regurgitation
 
-**Tags:** chest, CT, MR, US, heart, valvular, diagnosis
+**Tags:** ultrasound, US, MR, cardiac, valvular heart disease, diagnosis
 
-Incompetent tricuspid valve causing regurgitation of blood from right ventricle to right atrium.
+A condition where the tricuspid valve does not close properly causing backflow of blood into the right atrium.
 
 **Codes:** GAMUTS 13527 tricuspid insufficiency
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_596266`
+### Presence—`OIFMA_GMTS_794997`
 
 Presence or absence of tricuspid insufficiency  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of tricuspid insufficiency is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_129549`
+### Change from prior—`OIFMA_GMTS_917620`
 
 Whether and how a tricuspid insufficiency has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Tricuspid insufficiency is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

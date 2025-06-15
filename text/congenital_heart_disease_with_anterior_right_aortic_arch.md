@@ -1,16 +1,14 @@
 # Congenital heart disease with anterior right aortic arch—`OIFM_GMTS_013550`
 
-**Synonyms:** right anterior aortic arch with congenital heart defect, CHD with right anterior arch
+**Tags:** ultrasound, CT, MR, US, cardiovascular, heart, congenital, aortic arch, diagnosis
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, aorta, diagnosis
-
-Congenital cardiac malformation associated with aortic arch located anteriorly and to the right.
+Congenital heart defect with aortic arch positioned anteriorly on the right side.
 
 **Codes:** GAMUTS 13550 congenital heart disease with anterior right aortic arch
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_509605`
+### Presence—`OIFMA_GMTS_069826`
 
 Presence or absence of congenital heart disease with anterior right aortic arch  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of congenital heart disease with anterior right aortic arch is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_502558`
+### Change from prior—`OIFMA_GMTS_449439`
 
 Whether and how a congenital heart disease with anterior right aortic arch has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Congenital heart disease with anterior right aortic arch is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
