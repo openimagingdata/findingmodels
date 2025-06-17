@@ -1,28 +1,33 @@
 {
   "oifm_id": "OIFM_GMTS_013830",
   "name": "gas embolism",
-  "description": "The presence of gas bubbles within the vascular system, potentially causing obstruction.",
+  "description": "Gas bubbles in the vascular system, potentially causing obstruction.",
   "synonyms": [
-    "air embolism",
-    "venous gas embolus"
+    "air embolism"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
-    "XR",
     "vascular",
-    "lung",
+    "complication",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_504050",
+      "oifma_id": "OIFMA_GMTS_662949",
       "name": "presence",
       "description": "Presence or absence of gas embolism",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_504050.0",
+          "value_code": "OIFMA_GMTS_662949.0",
           "name": "absent",
           "description": "Gas embolism is absent",
           "index_codes": [
@@ -39,7 +44,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_504050.1",
+          "value_code": "OIFMA_GMTS_662949.1",
           "name": "present",
           "description": "Gas embolism is present",
           "index_codes": [
@@ -56,7 +61,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_504050.2",
+          "value_code": "OIFMA_GMTS_662949.2",
           "name": "indeterminate",
           "description": "Presence of gas embolism cannot be determined",
           "index_codes": [
@@ -73,7 +78,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_504050.3",
+          "value_code": "OIFMA_GMTS_662949.3",
           "name": "unknown",
           "description": "Presence of gas embolism is unknown",
           "index_codes": [
@@ -101,13 +106,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_257871",
+      "oifma_id": "OIFMA_GMTS_327146",
       "name": "change from prior",
       "description": "Whether and how a gas embolism has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_257871.0",
+          "value_code": "OIFMA_GMTS_327146.0",
           "name": "unchanged",
           "description": "Gas embolism is unchanged",
           "index_codes": [
@@ -124,7 +129,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.1",
+          "value_code": "OIFMA_GMTS_327146.1",
           "name": "stable",
           "description": "Gas embolism is stable",
           "index_codes": [
@@ -141,7 +146,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.2",
+          "value_code": "OIFMA_GMTS_327146.2",
           "name": "new",
           "description": "Gas embolism is new",
           "index_codes": [
@@ -158,12 +163,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.3",
+          "value_code": "OIFMA_GMTS_327146.3",
           "name": "resolved",
           "description": "Gas embolism seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_257871.4",
+          "value_code": "OIFMA_GMTS_327146.4",
           "name": "increased",
           "description": "Gas embolism has increased",
           "index_codes": [
@@ -180,7 +185,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.5",
+          "value_code": "OIFMA_GMTS_327146.5",
           "name": "decreased",
           "description": "Gas embolism has decreased",
           "index_codes": [
@@ -197,7 +202,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.6",
+          "value_code": "OIFMA_GMTS_327146.6",
           "name": "larger",
           "description": "Gas embolism is larger",
           "index_codes": [
@@ -214,7 +219,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_257871.7",
+          "value_code": "OIFMA_GMTS_327146.7",
           "name": "smaller",
           "description": "Gas embolism is smaller",
           "index_codes": [

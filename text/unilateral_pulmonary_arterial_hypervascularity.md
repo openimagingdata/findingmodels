@@ -1,16 +1,16 @@
 # Unilateral pulmonary arterial hypervascularity—`OIFM_GMTS_013902`
 
-**Synonyms:** unilateral pulmonary hyperemia, increased unilateral pulmonary vascularity
+**Synonyms:** increased pulmonary arterial circulation to one lung, unilaterally increased pulmonary arterial circulation, asymmetric pulmonary vascularity
 
-**Tags:** chest, CT, MR, XR, vascular, lung, finding
+**Tags:** ultrasound, CT, XR, pulmonary, vascular, finding
 
-Increased blood flow or density of pulmonary arteries on one side.
+Increased vascular markings in one lung, often due to underlying shunts or vascular lesions.
 
 **Codes:** GAMUTS 13902 unilateral pulmonary arterial hypervascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_132402`
+### Presence—`OIFMA_GMTS_306153`
 
 Presence or absence of unilateral pulmonary arterial hypervascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of unilateral pulmonary arterial hypervascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_477098`
+### Change from prior—`OIFMA_GMTS_319126`
 
 Whether and how a unilateral pulmonary arterial hypervascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Unilateral pulmonary arterial hypervascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

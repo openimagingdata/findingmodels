@@ -1,28 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_022479",
   "name": "esophageal rupture",
-  "description": "A tear or perforation in the esophagus, leading to air or fluid leakage into the mediastinum.",
+  "description": "Tear or rupture of the esophageal wall, possibly causing leakage into the mediastinum.",
   "synonyms": [
-    "Boerhaave syndrome",
+    "rupture of esophagus",
+    "ruptured esophagus",
     "esophageal perforation"
   ],
   "tags": [
-    "chest",
+    "abdomen",
     "CT",
     "XR",
     "esophagus",
-    "mediastinum",
+    "traumatic",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_704450",
+      "oifma_id": "OIFMA_GMTS_225903",
       "name": "presence",
       "description": "Presence or absence of esophageal rupture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_704450.0",
+          "value_code": "OIFMA_GMTS_225903.0",
           "name": "absent",
           "description": "Esophageal rupture is absent",
           "index_codes": [
@@ -39,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_704450.1",
+          "value_code": "OIFMA_GMTS_225903.1",
           "name": "present",
           "description": "Esophageal rupture is present",
           "index_codes": [
@@ -56,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_704450.2",
+          "value_code": "OIFMA_GMTS_225903.2",
           "name": "indeterminate",
           "description": "Presence of esophageal rupture cannot be determined",
           "index_codes": [
@@ -73,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_704450.3",
+          "value_code": "OIFMA_GMTS_225903.3",
           "name": "unknown",
           "description": "Presence of esophageal rupture is unknown",
           "index_codes": [
@@ -101,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_603281",
+      "oifma_id": "OIFMA_GMTS_155995",
       "name": "change from prior",
       "description": "Whether and how a esophageal rupture has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_603281.0",
+          "value_code": "OIFMA_GMTS_155995.0",
           "name": "unchanged",
           "description": "Esophageal rupture is unchanged",
           "index_codes": [
@@ -124,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.1",
+          "value_code": "OIFMA_GMTS_155995.1",
           "name": "stable",
           "description": "Esophageal rupture is stable",
           "index_codes": [
@@ -141,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.2",
+          "value_code": "OIFMA_GMTS_155995.2",
           "name": "new",
           "description": "Esophageal rupture is new",
           "index_codes": [
@@ -158,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.3",
+          "value_code": "OIFMA_GMTS_155995.3",
           "name": "resolved",
           "description": "Esophageal rupture seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_603281.4",
+          "value_code": "OIFMA_GMTS_155995.4",
           "name": "increased",
           "description": "Esophageal rupture has increased",
           "index_codes": [
@@ -180,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.5",
+          "value_code": "OIFMA_GMTS_155995.5",
           "name": "decreased",
           "description": "Esophageal rupture has decreased",
           "index_codes": [
@@ -197,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.6",
+          "value_code": "OIFMA_GMTS_155995.6",
           "name": "larger",
           "description": "Esophageal rupture is larger",
           "index_codes": [
@@ -214,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_603281.7",
+          "value_code": "OIFMA_GMTS_155995.7",
           "name": "smaller",
           "description": "Esophageal rupture is smaller",
           "index_codes": [

@@ -1,16 +1,16 @@
 # Tracheoesophageal fistula—`OIFM_GMTS_027873`
 
-**Synonyms:** TEF
+**Synonyms:** tracheo-esophageal fistula, TE fistula, TEF
 
-**Tags:** chest, XR, CT, contrast esophagram, congenital anomaly, airway, esophagus, diagnosis
+**Tags:** pediatric, CT, XR, MR, congenital anomaly, mediastinum, diagnosis
 
-An abnormal connection between the trachea and esophagus.
+An abnormal connection between the trachea and the esophagus.
 
 **Codes:** GAMUTS 27873 tracheoesophageal fistula
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_109233`
+### Presence—`OIFMA_GMTS_239086`
 
 Presence or absence of tracheoesophageal fistula  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of tracheoesophageal fistula is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_823012`
+### Change from prior—`OIFMA_GMTS_523691`
 
 Whether and how a tracheoesophageal fistula has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Tracheoesophageal fistula is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

@@ -1,29 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_013765",
   "name": "congenital cardiomyopathy",
-  "description": "Heart muscle disease present from birth.",
+  "description": "Heart muscle disease present from birth affecting cardiac function.",
   "synonyms": [
-    "pediatric cardiomyopathy",
-    "inherited cardiomyopathy"
+    "congenital myocardiopathy"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
-    "heart",
-    "congenital anomaly",
+    "cardiovascular",
+    "muscle",
+    "congenital",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_301356",
+      "oifma_id": "OIFMA_GMTS_710876",
       "name": "presence",
       "description": "Presence or absence of congenital cardiomyopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_301356.0",
+          "value_code": "OIFMA_GMTS_710876.0",
           "name": "absent",
           "description": "Congenital cardiomyopathy is absent",
           "index_codes": [
@@ -40,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_301356.1",
+          "value_code": "OIFMA_GMTS_710876.1",
           "name": "present",
           "description": "Congenital cardiomyopathy is present",
           "index_codes": [
@@ -57,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_301356.2",
+          "value_code": "OIFMA_GMTS_710876.2",
           "name": "indeterminate",
           "description": "Presence of congenital cardiomyopathy cannot be determined",
           "index_codes": [
@@ -74,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_301356.3",
+          "value_code": "OIFMA_GMTS_710876.3",
           "name": "unknown",
           "description": "Presence of congenital cardiomyopathy is unknown",
           "index_codes": [
@@ -102,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_116083",
+      "oifma_id": "OIFMA_GMTS_772248",
       "name": "change from prior",
       "description": "Whether and how a congenital cardiomyopathy has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_116083.0",
+          "value_code": "OIFMA_GMTS_772248.0",
           "name": "unchanged",
           "description": "Congenital cardiomyopathy is unchanged",
           "index_codes": [
@@ -125,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.1",
+          "value_code": "OIFMA_GMTS_772248.1",
           "name": "stable",
           "description": "Congenital cardiomyopathy is stable",
           "index_codes": [
@@ -142,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.2",
+          "value_code": "OIFMA_GMTS_772248.2",
           "name": "new",
           "description": "Congenital cardiomyopathy is new",
           "index_codes": [
@@ -159,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.3",
+          "value_code": "OIFMA_GMTS_772248.3",
           "name": "resolved",
           "description": "Congenital cardiomyopathy seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_116083.4",
+          "value_code": "OIFMA_GMTS_772248.4",
           "name": "increased",
           "description": "Congenital cardiomyopathy has increased",
           "index_codes": [
@@ -181,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.5",
+          "value_code": "OIFMA_GMTS_772248.5",
           "name": "decreased",
           "description": "Congenital cardiomyopathy has decreased",
           "index_codes": [
@@ -198,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.6",
+          "value_code": "OIFMA_GMTS_772248.6",
           "name": "larger",
           "description": "Congenital cardiomyopathy is larger",
           "index_codes": [
@@ -215,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_116083.7",
+          "value_code": "OIFMA_GMTS_772248.7",
           "name": "smaller",
           "description": "Congenital cardiomyopathy is smaller",
           "index_codes": [

@@ -1,16 +1,16 @@
 # Cardiomegaly in childhood—`OIFM_GMTS_030930`
 
-**Synonyms:** pediatric cardiomegaly, enlarged cardiac silhouette in child
+**Synonyms:** pediatric cardiomegaly
 
-**Tags:** chest, XR, CT, MR, heart, congenital anomaly, finding
+**Tags:** ultrasound, CT, XR, US, heart, childhood, enlargement, finding
 
-Enlarged heart size seen in pediatric patients.
+Enlargement of the heart in pediatric patients.
 
 **Codes:** GAMUTS 30930 cardiomegaly in childhood
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_135147`
+### Presence—`OIFMA_GMTS_298743`
 
 Presence or absence of cardiomegaly in childhood  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of cardiomegaly in childhood is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_048824`
+### Change from prior—`OIFMA_GMTS_555050`
 
 Whether and how a cardiomegaly in childhood has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Cardiomegaly in childhood is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

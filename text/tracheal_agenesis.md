@@ -1,16 +1,16 @@
 # Tracheal agenesis—`OIFM_GMTS_022612`
 
-**Synonyms:** congenital absence of trachea
+**Synonyms:** agenesis of trachea
 
-**Tags:** chest, XR, CT, congenital anomaly, airway, diagnosis
+**Tags:** pediatric, US, CT, airway, congenital anomaly, diagnosis
 
-Congenital absence of the trachea.
+Rare congenital condition where the trachea fails to develop.
 
 **Codes:** GAMUTS 22612 tracheal agenesis
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_331781`
+### Presence—`OIFMA_GMTS_845349`
 
 Presence or absence of tracheal agenesis  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of tracheal agenesis is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_010465`
+### Change from prior—`OIFMA_GMTS_988822`
 
 Whether and how a tracheal agenesis has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Tracheal agenesis is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

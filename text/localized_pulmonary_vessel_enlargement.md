@@ -1,16 +1,16 @@
 # Localized pulmonary vessel enlargement—`OIFM_GMTS_013972`
 
-**Synonyms:** focal pulmonary artery enlargement, focal pulmonary vein enlargement
+**Synonyms:** pulmonary vascular enlargement
 
-**Tags:** chest, CT, XR, lung, vascular, finding
+**Tags:** ultrasound, CT, XR, MR, pulmonary, vascular, finding
 
-A segmentally enlarged artery or vein in the lung, sometimes associated with shunts or malformations.
+Expanded blood vessels within a specific region of the lung.
 
 **Codes:** GAMUTS 13972 localized pulmonary vessel enlargement
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_006040`
+### Presence—`OIFMA_GMTS_747111`
 
 Presence or absence of localized pulmonary vessel enlargement  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of localized pulmonary vessel enlargement is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_665453`
+### Change from prior—`OIFMA_GMTS_005035`
 
 Whether and how a localized pulmonary vessel enlargement has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Localized pulmonary vessel enlargement is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

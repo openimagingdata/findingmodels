@@ -1,28 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_003706",
   "name": "pericardial effusion",
-  "description": "Abnormal accumulation of fluid in the pericardial sac.",
+  "description": "Accumulation of fluid in the pericardial cavity",
   "synonyms": [
-    "pericardial fluid"
+    "fluid around the heart"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
-    "pericardium",
-    "fluid collection",
+    "US",
+    "cardiovascular",
+    "fluid",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_569301",
+      "oifma_id": "OIFMA_GMTS_840395",
       "name": "presence",
       "description": "Presence or absence of pericardial effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_569301.0",
+          "value_code": "OIFMA_GMTS_840395.0",
           "name": "absent",
           "description": "Pericardial effusion is absent",
           "index_codes": [
@@ -39,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_569301.1",
+          "value_code": "OIFMA_GMTS_840395.1",
           "name": "present",
           "description": "Pericardial effusion is present",
           "index_codes": [
@@ -56,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_569301.2",
+          "value_code": "OIFMA_GMTS_840395.2",
           "name": "indeterminate",
           "description": "Presence of pericardial effusion cannot be determined",
           "index_codes": [
@@ -73,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_569301.3",
+          "value_code": "OIFMA_GMTS_840395.3",
           "name": "unknown",
           "description": "Presence of pericardial effusion is unknown",
           "index_codes": [
@@ -101,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_541230",
+      "oifma_id": "OIFMA_GMTS_955736",
       "name": "change from prior",
       "description": "Whether and how a pericardial effusion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_541230.0",
+          "value_code": "OIFMA_GMTS_955736.0",
           "name": "unchanged",
           "description": "Pericardial effusion is unchanged",
           "index_codes": [
@@ -124,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.1",
+          "value_code": "OIFMA_GMTS_955736.1",
           "name": "stable",
           "description": "Pericardial effusion is stable",
           "index_codes": [
@@ -141,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.2",
+          "value_code": "OIFMA_GMTS_955736.2",
           "name": "new",
           "description": "Pericardial effusion is new",
           "index_codes": [
@@ -158,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.3",
+          "value_code": "OIFMA_GMTS_955736.3",
           "name": "resolved",
           "description": "Pericardial effusion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_541230.4",
+          "value_code": "OIFMA_GMTS_955736.4",
           "name": "increased",
           "description": "Pericardial effusion has increased",
           "index_codes": [
@@ -180,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.5",
+          "value_code": "OIFMA_GMTS_955736.5",
           "name": "decreased",
           "description": "Pericardial effusion has decreased",
           "index_codes": [
@@ -197,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.6",
+          "value_code": "OIFMA_GMTS_955736.6",
           "name": "larger",
           "description": "Pericardial effusion is larger",
           "index_codes": [
@@ -214,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_541230.7",
+          "value_code": "OIFMA_GMTS_955736.7",
           "name": "smaller",
           "description": "Pericardial effusion is smaller",
           "index_codes": [

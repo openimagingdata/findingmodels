@@ -1,16 +1,16 @@
 # Diverticulum of upper esophagus—`OIFM_GMTS_003557`
 
-**Synonyms:** Zenker diverticulum, pharyngoesophageal diverticulum
+**Synonyms:** upper esophageal diverticulum
 
-**Tags:** chest, CT, fluoroscopy, esophagus, mediastinum, diagnosis
+**Tags:** abdomen, CT, XR, MR, esophagus, gastrointestinal, anatomy, finding
 
-A pouch-like outpouching from the upper esophagus.
+A diverticulum located in the upper esophagus.
 
 **Codes:** GAMUTS 3557 diverticulum of upper esophagus
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_494146`
+### Presence—`OIFMA_GMTS_935966`
 
 Presence or absence of diverticulum of upper esophagus  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of diverticulum of upper esophagus is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_860057`
+### Change from prior—`OIFMA_GMTS_545559`
 
 Whether and how a diverticulum of upper esophagus has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Diverticulum of upper esophagus is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

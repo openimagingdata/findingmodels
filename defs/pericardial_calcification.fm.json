@@ -1,27 +1,31 @@
 {
   "oifm_id": "OIFM_GMTS_013823",
   "name": "pericardial calcification",
-  "description": "Calcium deposition within the pericardium, frequently seen in chronic inflammation.",
-  "synonyms": [
-    "calcified pericardium"
-  ],
+  "description": "Calcification of the pericardium.",
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "pericardium",
-    "postop finding",
+    "XR",
+    "heart",
+    "calcification",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_527659",
+      "oifma_id": "OIFMA_GMTS_487164",
       "name": "presence",
       "description": "Presence or absence of pericardial calcification",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_527659.0",
+          "value_code": "OIFMA_GMTS_487164.0",
           "name": "absent",
           "description": "Pericardial calcification is absent",
           "index_codes": [
@@ -38,7 +42,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_527659.1",
+          "value_code": "OIFMA_GMTS_487164.1",
           "name": "present",
           "description": "Pericardial calcification is present",
           "index_codes": [
@@ -55,7 +59,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_527659.2",
+          "value_code": "OIFMA_GMTS_487164.2",
           "name": "indeterminate",
           "description": "Presence of pericardial calcification cannot be determined",
           "index_codes": [
@@ -72,7 +76,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_527659.3",
+          "value_code": "OIFMA_GMTS_487164.3",
           "name": "unknown",
           "description": "Presence of pericardial calcification is unknown",
           "index_codes": [
@@ -100,13 +104,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_512295",
+      "oifma_id": "OIFMA_GMTS_628773",
       "name": "change from prior",
       "description": "Whether and how a pericardial calcification has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_512295.0",
+          "value_code": "OIFMA_GMTS_628773.0",
           "name": "unchanged",
           "description": "Pericardial calcification is unchanged",
           "index_codes": [
@@ -123,7 +127,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.1",
+          "value_code": "OIFMA_GMTS_628773.1",
           "name": "stable",
           "description": "Pericardial calcification is stable",
           "index_codes": [
@@ -140,7 +144,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.2",
+          "value_code": "OIFMA_GMTS_628773.2",
           "name": "new",
           "description": "Pericardial calcification is new",
           "index_codes": [
@@ -157,12 +161,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.3",
+          "value_code": "OIFMA_GMTS_628773.3",
           "name": "resolved",
           "description": "Pericardial calcification seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_512295.4",
+          "value_code": "OIFMA_GMTS_628773.4",
           "name": "increased",
           "description": "Pericardial calcification has increased",
           "index_codes": [
@@ -179,7 +183,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.5",
+          "value_code": "OIFMA_GMTS_628773.5",
           "name": "decreased",
           "description": "Pericardial calcification has decreased",
           "index_codes": [
@@ -196,7 +200,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.6",
+          "value_code": "OIFMA_GMTS_628773.6",
           "name": "larger",
           "description": "Pericardial calcification is larger",
           "index_codes": [
@@ -213,7 +217,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_512295.7",
+          "value_code": "OIFMA_GMTS_628773.7",
           "name": "smaller",
           "description": "Pericardial calcification is smaller",
           "index_codes": [

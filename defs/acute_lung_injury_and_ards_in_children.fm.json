@@ -1,29 +1,37 @@
 {
   "oifm_id": "OIFM_GMTS_014342",
   "name": "acute lung injury and ards in children",
-  "description": "Acute diffuse lung damage leading to hypoxia and bilateral infiltrates in children.",
+  "description": "Injury to the lungs in children leading to acute respiratory distress.",
   "synonyms": [
     "pediatric ARDS",
-    "acute lung injury"
+    "pediatric acute lung injury"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "CT",
-    "lung",
-    "inflammatory process",
     "pediatric",
+    "CT",
+    "XR",
+    "lung",
+    "injury",
+    "pediatric",
+    "respiratory",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_588538",
+      "oifma_id": "OIFMA_GMTS_479004",
       "name": "presence",
       "description": "Presence or absence of acute lung injury and ards in children",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_588538.0",
+          "value_code": "OIFMA_GMTS_479004.0",
           "name": "absent",
           "description": "Acute lung injury and ards in children is absent",
           "index_codes": [
@@ -40,7 +48,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_588538.1",
+          "value_code": "OIFMA_GMTS_479004.1",
           "name": "present",
           "description": "Acute lung injury and ards in children is present",
           "index_codes": [
@@ -57,7 +65,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_588538.2",
+          "value_code": "OIFMA_GMTS_479004.2",
           "name": "indeterminate",
           "description": "Presence of acute lung injury and ards in children cannot be determined",
           "index_codes": [
@@ -74,7 +82,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_588538.3",
+          "value_code": "OIFMA_GMTS_479004.3",
           "name": "unknown",
           "description": "Presence of acute lung injury and ards in children is unknown",
           "index_codes": [
@@ -102,13 +110,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_644387",
+      "oifma_id": "OIFMA_GMTS_524442",
       "name": "change from prior",
       "description": "Whether and how a acute lung injury and ards in children has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_644387.0",
+          "value_code": "OIFMA_GMTS_524442.0",
           "name": "unchanged",
           "description": "Acute lung injury and ards in children is unchanged",
           "index_codes": [
@@ -125,7 +133,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.1",
+          "value_code": "OIFMA_GMTS_524442.1",
           "name": "stable",
           "description": "Acute lung injury and ards in children is stable",
           "index_codes": [
@@ -142,7 +150,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.2",
+          "value_code": "OIFMA_GMTS_524442.2",
           "name": "new",
           "description": "Acute lung injury and ards in children is new",
           "index_codes": [
@@ -159,12 +167,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.3",
+          "value_code": "OIFMA_GMTS_524442.3",
           "name": "resolved",
           "description": "Acute lung injury and ards in children seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_644387.4",
+          "value_code": "OIFMA_GMTS_524442.4",
           "name": "increased",
           "description": "Acute lung injury and ards in children has increased",
           "index_codes": [
@@ -181,7 +189,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.5",
+          "value_code": "OIFMA_GMTS_524442.5",
           "name": "decreased",
           "description": "Acute lung injury and ards in children has decreased",
           "index_codes": [
@@ -198,7 +206,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.6",
+          "value_code": "OIFMA_GMTS_524442.6",
           "name": "larger",
           "description": "Acute lung injury and ards in children is larger",
           "index_codes": [
@@ -215,7 +223,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_644387.7",
+          "value_code": "OIFMA_GMTS_524442.7",
           "name": "smaller",
           "description": "Acute lung injury and ards in children is smaller",
           "index_codes": [
@@ -252,7 +260,7 @@
     {
       "system": "GAMUTS",
       "code": "14342",
-      "display": "acute lung injury and ards in children"
+      "display": "acute lung injury and ARDS in children"
     }
   ]
 }

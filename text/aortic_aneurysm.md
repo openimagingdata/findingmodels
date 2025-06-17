@@ -1,16 +1,16 @@
 # Aortic aneurysm—`OIFM_GMTS_014057`
 
-**Synonyms:** aortic dilation, aortic ectasia, aortic bulge
+**Synonyms:** aortic dilatation, aneurysm of aorta
 
-**Tags:** chest, XR, CT, MR, vascular, mediastinum, neoplastic process: false, congenital anomaly: false, diagnosis
+**Tags:** ultrasound, CT, XR, MR, vascular, aorta, degenerative, diagnosis
 
-Abnormal dilation of a segment of the aorta, usually due to weakening of the vessel wall.
+An abnormal bulge in the wall of the aorta.
 
 **Codes:** GAMUTS 14057 aortic aneurysm
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_416270`
+### Presence—`OIFMA_GMTS_127013`
 
 Presence or absence of aortic aneurysm  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of aortic aneurysm is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_189053`
+### Change from prior—`OIFMA_GMTS_293540`
 
 Whether and how a aortic aneurysm has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Aortic aneurysm is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

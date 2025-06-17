@@ -1,28 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_014078",
   "name": "coronary artery aneurysm",
-  "description": "Localized dilatation of a coronary artery segment.",
+  "description": "Dilation of a segment of the coronary artery, which can affect blood flow.",
   "synonyms": [
-    "coronary aneurysm"
+    "coronary artery dilatation"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
+    "US",
+    "cardiac",
     "vascular",
     "aneurysm",
-    "heart",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_922493",
+      "oifma_id": "OIFMA_GMTS_616773",
       "name": "presence",
       "description": "Presence or absence of coronary artery aneurysm",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_922493.0",
+          "value_code": "OIFMA_GMTS_616773.0",
           "name": "absent",
           "description": "Coronary artery aneurysm is absent",
           "index_codes": [
@@ -39,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_922493.1",
+          "value_code": "OIFMA_GMTS_616773.1",
           "name": "present",
           "description": "Coronary artery aneurysm is present",
           "index_codes": [
@@ -56,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_922493.2",
+          "value_code": "OIFMA_GMTS_616773.2",
           "name": "indeterminate",
           "description": "Presence of coronary artery aneurysm cannot be determined",
           "index_codes": [
@@ -73,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_922493.3",
+          "value_code": "OIFMA_GMTS_616773.3",
           "name": "unknown",
           "description": "Presence of coronary artery aneurysm is unknown",
           "index_codes": [
@@ -101,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_955805",
+      "oifma_id": "OIFMA_GMTS_656183",
       "name": "change from prior",
       "description": "Whether and how a coronary artery aneurysm has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_955805.0",
+          "value_code": "OIFMA_GMTS_656183.0",
           "name": "unchanged",
           "description": "Coronary artery aneurysm is unchanged",
           "index_codes": [
@@ -124,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.1",
+          "value_code": "OIFMA_GMTS_656183.1",
           "name": "stable",
           "description": "Coronary artery aneurysm is stable",
           "index_codes": [
@@ -141,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.2",
+          "value_code": "OIFMA_GMTS_656183.2",
           "name": "new",
           "description": "Coronary artery aneurysm is new",
           "index_codes": [
@@ -158,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.3",
+          "value_code": "OIFMA_GMTS_656183.3",
           "name": "resolved",
           "description": "Coronary artery aneurysm seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_955805.4",
+          "value_code": "OIFMA_GMTS_656183.4",
           "name": "increased",
           "description": "Coronary artery aneurysm has increased",
           "index_codes": [
@@ -180,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.5",
+          "value_code": "OIFMA_GMTS_656183.5",
           "name": "decreased",
           "description": "Coronary artery aneurysm has decreased",
           "index_codes": [
@@ -197,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.6",
+          "value_code": "OIFMA_GMTS_656183.6",
           "name": "larger",
           "description": "Coronary artery aneurysm is larger",
           "index_codes": [
@@ -214,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_955805.7",
+          "value_code": "OIFMA_GMTS_656183.7",
           "name": "smaller",
           "description": "Coronary artery aneurysm is smaller",
           "index_codes": [

@@ -1,16 +1,16 @@
 # Main pulmonary artery obstruction—`OIFM_GMTS_013987`
 
-**Synonyms:** pulmonary artery obstruction, main PA obstruction
+**Synonyms:** Pulmonary artery blockage
 
-**Tags:** chest, CT, MR, vascular, lung, diagnosis
+**Tags:** ultrasound, CT, MR, vascular, lung, diagnosis
 
-Blockage of the main pulmonary artery, most commonly due to thromboembolism.
+Blockage in the main pulmonary artery
 
 **Codes:** GAMUTS 13987 main pulmonary artery obstruction
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_952809`
+### Presence—`OIFMA_GMTS_555311`
 
 Presence or absence of main pulmonary artery obstruction  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of main pulmonary artery obstruction is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_372212`
+### Change from prior—`OIFMA_GMTS_574951`
 
 Whether and how a main pulmonary artery obstruction has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Main pulmonary artery obstruction is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

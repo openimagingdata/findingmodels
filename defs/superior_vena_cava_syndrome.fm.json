@@ -1,28 +1,39 @@
 {
   "oifm_id": "OIFM_GMTS_014124",
   "name": "superior vena cava syndrome",
-  "description": "Obstruction of the superior vena cava causing venous congestion and swelling.",
+  "description": "Obstruction of the superior vena cava, causing facial swelling and venous distension",
   "synonyms": [
+    "SVC obstruction",
+    "obstruction of superior vena cava",
     "SVC syndrome",
-    "superior vena cava obstruction"
+    "superior vena cava obstruction",
+    "obstruction of SVC"
   ],
   "tags": [
-    "chest",
+    "ultrasound",
     "CT",
     "MR",
+    "XR",
     "vascular",
-    "mediastinum",
+    "thoracic",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_167367",
+      "oifma_id": "OIFMA_GMTS_762338",
       "name": "presence",
       "description": "Presence or absence of superior vena cava syndrome",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_167367.0",
+          "value_code": "OIFMA_GMTS_762338.0",
           "name": "absent",
           "description": "Superior vena cava syndrome is absent",
           "index_codes": [
@@ -39,7 +50,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_167367.1",
+          "value_code": "OIFMA_GMTS_762338.1",
           "name": "present",
           "description": "Superior vena cava syndrome is present",
           "index_codes": [
@@ -56,7 +67,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_167367.2",
+          "value_code": "OIFMA_GMTS_762338.2",
           "name": "indeterminate",
           "description": "Presence of superior vena cava syndrome cannot be determined",
           "index_codes": [
@@ -73,7 +84,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_167367.3",
+          "value_code": "OIFMA_GMTS_762338.3",
           "name": "unknown",
           "description": "Presence of superior vena cava syndrome is unknown",
           "index_codes": [
@@ -101,13 +112,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_021940",
+      "oifma_id": "OIFMA_GMTS_082569",
       "name": "change from prior",
       "description": "Whether and how a superior vena cava syndrome has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_021940.0",
+          "value_code": "OIFMA_GMTS_082569.0",
           "name": "unchanged",
           "description": "Superior vena cava syndrome is unchanged",
           "index_codes": [
@@ -124,7 +135,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.1",
+          "value_code": "OIFMA_GMTS_082569.1",
           "name": "stable",
           "description": "Superior vena cava syndrome is stable",
           "index_codes": [
@@ -141,7 +152,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.2",
+          "value_code": "OIFMA_GMTS_082569.2",
           "name": "new",
           "description": "Superior vena cava syndrome is new",
           "index_codes": [
@@ -158,12 +169,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.3",
+          "value_code": "OIFMA_GMTS_082569.3",
           "name": "resolved",
           "description": "Superior vena cava syndrome seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_021940.4",
+          "value_code": "OIFMA_GMTS_082569.4",
           "name": "increased",
           "description": "Superior vena cava syndrome has increased",
           "index_codes": [
@@ -180,7 +191,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.5",
+          "value_code": "OIFMA_GMTS_082569.5",
           "name": "decreased",
           "description": "Superior vena cava syndrome has decreased",
           "index_codes": [
@@ -197,7 +208,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.6",
+          "value_code": "OIFMA_GMTS_082569.6",
           "name": "larger",
           "description": "Superior vena cava syndrome is larger",
           "index_codes": [
@@ -214,7 +225,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_021940.7",
+          "value_code": "OIFMA_GMTS_082569.7",
           "name": "smaller",
           "description": "Superior vena cava syndrome is smaller",
           "index_codes": [

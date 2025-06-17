@@ -1,32 +1,37 @@
 {
   "oifm_id": "OIFM_GMTS_014057",
   "name": "aortic aneurysm",
-  "description": "Abnormal dilation of a segment of the aorta, usually due to weakening of the vessel wall.",
+  "description": "An abnormal bulge in the wall of the aorta.",
   "synonyms": [
-    "aortic dilation",
-    "aortic ectasia",
-    "aortic bulge"
+    "aortic dilatation",
+    "aneurysm of aorta"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
     "vascular",
-    "mediastinum",
-    "neoplastic process: false",
-    "congenital anomaly: false",
+    "aorta",
+    "degenerative",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_416270",
+      "oifma_id": "OIFMA_GMTS_127013",
       "name": "presence",
       "description": "Presence or absence of aortic aneurysm",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_416270.0",
+          "value_code": "OIFMA_GMTS_127013.0",
           "name": "absent",
           "description": "Aortic aneurysm is absent",
           "index_codes": [
@@ -43,7 +48,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_416270.1",
+          "value_code": "OIFMA_GMTS_127013.1",
           "name": "present",
           "description": "Aortic aneurysm is present",
           "index_codes": [
@@ -60,7 +65,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_416270.2",
+          "value_code": "OIFMA_GMTS_127013.2",
           "name": "indeterminate",
           "description": "Presence of aortic aneurysm cannot be determined",
           "index_codes": [
@@ -77,7 +82,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_416270.3",
+          "value_code": "OIFMA_GMTS_127013.3",
           "name": "unknown",
           "description": "Presence of aortic aneurysm is unknown",
           "index_codes": [
@@ -105,13 +110,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_189053",
+      "oifma_id": "OIFMA_GMTS_293540",
       "name": "change from prior",
       "description": "Whether and how a aortic aneurysm has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_189053.0",
+          "value_code": "OIFMA_GMTS_293540.0",
           "name": "unchanged",
           "description": "Aortic aneurysm is unchanged",
           "index_codes": [
@@ -128,7 +133,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.1",
+          "value_code": "OIFMA_GMTS_293540.1",
           "name": "stable",
           "description": "Aortic aneurysm is stable",
           "index_codes": [
@@ -145,7 +150,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.2",
+          "value_code": "OIFMA_GMTS_293540.2",
           "name": "new",
           "description": "Aortic aneurysm is new",
           "index_codes": [
@@ -162,12 +167,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.3",
+          "value_code": "OIFMA_GMTS_293540.3",
           "name": "resolved",
           "description": "Aortic aneurysm seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_189053.4",
+          "value_code": "OIFMA_GMTS_293540.4",
           "name": "increased",
           "description": "Aortic aneurysm has increased",
           "index_codes": [
@@ -184,7 +189,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.5",
+          "value_code": "OIFMA_GMTS_293540.5",
           "name": "decreased",
           "description": "Aortic aneurysm has decreased",
           "index_codes": [
@@ -201,7 +206,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.6",
+          "value_code": "OIFMA_GMTS_293540.6",
           "name": "larger",
           "description": "Aortic aneurysm is larger",
           "index_codes": [
@@ -218,7 +223,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_189053.7",
+          "value_code": "OIFMA_GMTS_293540.7",
           "name": "smaller",
           "description": "Aortic aneurysm is smaller",
           "index_codes": [

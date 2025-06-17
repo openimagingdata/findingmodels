@@ -1,14 +1,16 @@
 # Acyanotic congenital heart disease with increased pulmonary vascularity—`OIFM_GMTS_013501`
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, vascular, diagnosis
+**Synonyms:** non-cyanotic heart defect
 
-Congenital cardiac malformations that do not cause cyanosis and result in increased blood flow to the lungs.
+**Tags:** ultrasound, CT, XR, US, MR, heart, congenital, diagnosis
+
+Heart defect present at birth causing no cyanosis but increased blood flow in lungs
 
 **Codes:** GAMUTS 13501 acyanotic congenital heart disease with increased pulmonary vascularity
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_161993`
+### Presence—`OIFMA_GMTS_621729`
 
 Presence or absence of acyanotic congenital heart disease with increased pulmonary vascularity  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -23,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of acyanotic congenital heart disease with increased pulmonary vascularity is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_431159`
+### Change from prior—`OIFMA_GMTS_799033`
 
 Whether and how a acyanotic congenital heart disease with increased pulmonary vascularity has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -44,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Acyanotic congenital heart disease with increased pulmonary vascularity is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

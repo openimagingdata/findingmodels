@@ -1,0 +1,260 @@
+{
+  "oifm_id": "OIFM_GMTS_012100",
+  "name": "proximal tapering of short tubular bones of the hands and feet",
+  "description": "Bones of hands and feet exhibit narrowing at proximal ends",
+  "tags": [
+    "musculoskeletal",
+    "XR",
+    "extremities",
+    "bone",
+    "developmental",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_078387",
+      "name": "presence",
+      "description": "Presence or absence of proximal tapering of short tubular bones of the hands and feet",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_078387.0",
+          "name": "absent",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_078387.1",
+          "name": "present",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_078387.2",
+          "name": "indeterminate",
+          "description": "Presence of proximal tapering of short tubular bones of the hands and feet cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_078387.3",
+          "name": "unknown",
+          "description": "Presence of proximal tapering of short tubular bones of the hands and feet is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_892420",
+      "name": "change from prior",
+      "description": "Whether and how a proximal tapering of short tubular bones of the hands and feet has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_892420.0",
+          "name": "unchanged",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.1",
+          "name": "stable",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.2",
+          "name": "new",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.3",
+          "name": "resolved",
+          "description": "Proximal tapering of short tubular bones of the hands and feet seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.4",
+          "name": "increased",
+          "description": "Proximal tapering of short tubular bones of the hands and feet has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.5",
+          "name": "decreased",
+          "description": "Proximal tapering of short tubular bones of the hands and feet has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.6",
+          "name": "larger",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_892420.7",
+          "name": "smaller",
+          "description": "Proximal tapering of short tubular bones of the hands and feet is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "12100",
+      "display": "proximal tapering of short tubular bones of the hands and feet"
+    }
+  ]
+}

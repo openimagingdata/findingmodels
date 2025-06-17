@@ -1,29 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_002331",
   "name": "constrictive pericarditis",
-  "description": "Chronic inflammation of the pericardium resulting in constriction of the heart.",
+  "description": "A condition where the pericardium becomes thickened and fibrotic, limiting the heart's normal movement.",
   "synonyms": [
     "pericardial constriction"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
     "MR",
-    "inflammatory process",
-    "pericardium",
-    "heart",
+    "US",
+    "cardiac",
+    "inflammatory",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_843808",
+      "oifma_id": "OIFMA_GMTS_063071",
       "name": "presence",
       "description": "Presence or absence of constrictive pericarditis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_843808.0",
+          "value_code": "OIFMA_GMTS_063071.0",
           "name": "absent",
           "description": "Constrictive pericarditis is absent",
           "index_codes": [
@@ -40,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_843808.1",
+          "value_code": "OIFMA_GMTS_063071.1",
           "name": "present",
           "description": "Constrictive pericarditis is present",
           "index_codes": [
@@ -57,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_843808.2",
+          "value_code": "OIFMA_GMTS_063071.2",
           "name": "indeterminate",
           "description": "Presence of constrictive pericarditis cannot be determined",
           "index_codes": [
@@ -74,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_843808.3",
+          "value_code": "OIFMA_GMTS_063071.3",
           "name": "unknown",
           "description": "Presence of constrictive pericarditis is unknown",
           "index_codes": [
@@ -102,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_896667",
+      "oifma_id": "OIFMA_GMTS_487561",
       "name": "change from prior",
       "description": "Whether and how a constrictive pericarditis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_896667.0",
+          "value_code": "OIFMA_GMTS_487561.0",
           "name": "unchanged",
           "description": "Constrictive pericarditis is unchanged",
           "index_codes": [
@@ -125,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.1",
+          "value_code": "OIFMA_GMTS_487561.1",
           "name": "stable",
           "description": "Constrictive pericarditis is stable",
           "index_codes": [
@@ -142,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.2",
+          "value_code": "OIFMA_GMTS_487561.2",
           "name": "new",
           "description": "Constrictive pericarditis is new",
           "index_codes": [
@@ -159,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.3",
+          "value_code": "OIFMA_GMTS_487561.3",
           "name": "resolved",
           "description": "Constrictive pericarditis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_896667.4",
+          "value_code": "OIFMA_GMTS_487561.4",
           "name": "increased",
           "description": "Constrictive pericarditis has increased",
           "index_codes": [
@@ -181,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.5",
+          "value_code": "OIFMA_GMTS_487561.5",
           "name": "decreased",
           "description": "Constrictive pericarditis has decreased",
           "index_codes": [
@@ -198,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.6",
+          "value_code": "OIFMA_GMTS_487561.6",
           "name": "larger",
           "description": "Constrictive pericarditis is larger",
           "index_codes": [
@@ -215,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_896667.7",
+          "value_code": "OIFMA_GMTS_487561.7",
           "name": "smaller",
           "description": "Constrictive pericarditis is smaller",
           "index_codes": [

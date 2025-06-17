@@ -1,16 +1,16 @@
 # Large main pulmonary artery—`OIFM_GMTS_013910`
 
-**Synonyms:** pulmonary artery dilatation, main pulmonary artery enlargement
+**Synonyms:** pulmonary artery enlargement
 
-**Tags:** chest, XR, CT, MR, vascular, mediastinum, finding
+**Tags:** ultrasound, CT, XR, MR, pulmonary, vascular, finding
 
-Widening or enlargement of the main pulmonary artery.
+Enlargement of the main pulmonary artery visible on imaging.
 
 **Codes:** GAMUTS 13910 large main pulmonary artery
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_190584`
+### Presence—`OIFMA_GMTS_510084`
 
 Presence or absence of large main pulmonary artery  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of large main pulmonary artery is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_104966`
+### Change from prior—`OIFMA_GMTS_902595`
 
 Whether and how a large main pulmonary artery has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +46,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Large main pulmonary artery is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

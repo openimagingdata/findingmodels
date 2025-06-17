@@ -1,30 +1,36 @@
 {
   "oifm_id": "OIFM_GMTS_022550",
   "name": "pulmonary artery stenosis",
-  "description": "Narrowing of the pulmonary artery or its branches.",
+  "description": "Narrowing of the pulmonary artery.",
   "synonyms": [
-    "PA stenosis",
-    "pulmonary arterial narrowing"
+    "PA stenosis"
   ],
   "tags": [
-    "chest",
-    "CT",
-    "MR",
-    "XR (indirect signs)",
     "vascular",
-    "lung",
-    "congenital anomaly (if present from birth)",
+    "CT",
+    "US",
+    "MR",
+    "pulmonary artery",
+    "stenosis",
+    "congenital anomaly",
     "diagnosis"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_252275",
+      "oifma_id": "OIFMA_GMTS_069436",
       "name": "presence",
       "description": "Presence or absence of pulmonary artery stenosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_252275.0",
+          "value_code": "OIFMA_GMTS_069436.0",
           "name": "absent",
           "description": "Pulmonary artery stenosis is absent",
           "index_codes": [
@@ -41,7 +47,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_252275.1",
+          "value_code": "OIFMA_GMTS_069436.1",
           "name": "present",
           "description": "Pulmonary artery stenosis is present",
           "index_codes": [
@@ -58,7 +64,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_252275.2",
+          "value_code": "OIFMA_GMTS_069436.2",
           "name": "indeterminate",
           "description": "Presence of pulmonary artery stenosis cannot be determined",
           "index_codes": [
@@ -75,7 +81,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_252275.3",
+          "value_code": "OIFMA_GMTS_069436.3",
           "name": "unknown",
           "description": "Presence of pulmonary artery stenosis is unknown",
           "index_codes": [
@@ -103,13 +109,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_706257",
+      "oifma_id": "OIFMA_GMTS_129160",
       "name": "change from prior",
       "description": "Whether and how a pulmonary artery stenosis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_706257.0",
+          "value_code": "OIFMA_GMTS_129160.0",
           "name": "unchanged",
           "description": "Pulmonary artery stenosis is unchanged",
           "index_codes": [
@@ -126,7 +132,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.1",
+          "value_code": "OIFMA_GMTS_129160.1",
           "name": "stable",
           "description": "Pulmonary artery stenosis is stable",
           "index_codes": [
@@ -143,7 +149,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.2",
+          "value_code": "OIFMA_GMTS_129160.2",
           "name": "new",
           "description": "Pulmonary artery stenosis is new",
           "index_codes": [
@@ -160,12 +166,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.3",
+          "value_code": "OIFMA_GMTS_129160.3",
           "name": "resolved",
           "description": "Pulmonary artery stenosis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_706257.4",
+          "value_code": "OIFMA_GMTS_129160.4",
           "name": "increased",
           "description": "Pulmonary artery stenosis has increased",
           "index_codes": [
@@ -182,7 +188,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.5",
+          "value_code": "OIFMA_GMTS_129160.5",
           "name": "decreased",
           "description": "Pulmonary artery stenosis has decreased",
           "index_codes": [
@@ -199,7 +205,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.6",
+          "value_code": "OIFMA_GMTS_129160.6",
           "name": "larger",
           "description": "Pulmonary artery stenosis is larger",
           "index_codes": [
@@ -216,7 +222,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_706257.7",
+          "value_code": "OIFMA_GMTS_129160.7",
           "name": "smaller",
           "description": "Pulmonary artery stenosis is smaller",
           "index_codes": [

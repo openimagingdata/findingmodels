@@ -1,28 +1,37 @@
 {
   "oifm_id": "OIFM_GMTS_003695",
   "name": "left atrial enlargement",
-  "description": "Increased size of the left atrium, often due to cardiac or valvular disease.",
+  "description": "Enlargement of the left atrium of the heart.",
   "synonyms": [
-    "enlarged left atrium",
-    "left atrial dilatation"
+    "LA enlargement",
+    "LAE",
+    "left atrial hypertrophy"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
+    "XR",
     "MR",
+    "US",
     "cardiac",
     "finding"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_944201",
+      "oifma_id": "OIFMA_GMTS_802674",
       "name": "presence",
       "description": "Presence or absence of left atrial enlargement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_944201.0",
+          "value_code": "OIFMA_GMTS_802674.0",
           "name": "absent",
           "description": "Left atrial enlargement is absent",
           "index_codes": [
@@ -39,7 +48,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_944201.1",
+          "value_code": "OIFMA_GMTS_802674.1",
           "name": "present",
           "description": "Left atrial enlargement is present",
           "index_codes": [
@@ -56,7 +65,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_944201.2",
+          "value_code": "OIFMA_GMTS_802674.2",
           "name": "indeterminate",
           "description": "Presence of left atrial enlargement cannot be determined",
           "index_codes": [
@@ -73,7 +82,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_944201.3",
+          "value_code": "OIFMA_GMTS_802674.3",
           "name": "unknown",
           "description": "Presence of left atrial enlargement is unknown",
           "index_codes": [
@@ -101,13 +110,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_061835",
+      "oifma_id": "OIFMA_GMTS_655467",
       "name": "change from prior",
       "description": "Whether and how a left atrial enlargement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_061835.0",
+          "value_code": "OIFMA_GMTS_655467.0",
           "name": "unchanged",
           "description": "Left atrial enlargement is unchanged",
           "index_codes": [
@@ -124,7 +133,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.1",
+          "value_code": "OIFMA_GMTS_655467.1",
           "name": "stable",
           "description": "Left atrial enlargement is stable",
           "index_codes": [
@@ -141,7 +150,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.2",
+          "value_code": "OIFMA_GMTS_655467.2",
           "name": "new",
           "description": "Left atrial enlargement is new",
           "index_codes": [
@@ -158,12 +167,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.3",
+          "value_code": "OIFMA_GMTS_655467.3",
           "name": "resolved",
           "description": "Left atrial enlargement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_061835.4",
+          "value_code": "OIFMA_GMTS_655467.4",
           "name": "increased",
           "description": "Left atrial enlargement has increased",
           "index_codes": [
@@ -180,7 +189,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.5",
+          "value_code": "OIFMA_GMTS_655467.5",
           "name": "decreased",
           "description": "Left atrial enlargement has decreased",
           "index_codes": [
@@ -197,7 +206,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.6",
+          "value_code": "OIFMA_GMTS_655467.6",
           "name": "larger",
           "description": "Left atrial enlargement is larger",
           "index_codes": [
@@ -214,7 +223,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_061835.7",
+          "value_code": "OIFMA_GMTS_655467.7",
           "name": "smaller",
           "description": "Left atrial enlargement is smaller",
           "index_codes": [

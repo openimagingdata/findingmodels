@@ -1,28 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_014751",
   "name": "cavitary lung lesion in an infant or child",
-  "description": "Area within the lung containing an air-filled cavity, identified in pediatric patients.",
+  "description": "Cavity or hollow space within the lung tissue of a young patient.",
   "synonyms": [
-    "pediatric lung cavity",
-    "pulmonary cavitation in child"
+    "pediatric lung cavity"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "pediatric",
     "CT",
+    "XR",
     "lung",
     "pediatric",
+    "cystic",
     "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_368020",
+      "oifma_id": "OIFMA_GMTS_049551",
       "name": "presence",
       "description": "Presence or absence of cavitary lung lesion in an infant or child",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_368020.0",
+          "value_code": "OIFMA_GMTS_049551.0",
           "name": "absent",
           "description": "Cavitary lung lesion in an infant or child is absent",
           "index_codes": [
@@ -39,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368020.1",
+          "value_code": "OIFMA_GMTS_049551.1",
           "name": "present",
           "description": "Cavitary lung lesion in an infant or child is present",
           "index_codes": [
@@ -56,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368020.2",
+          "value_code": "OIFMA_GMTS_049551.2",
           "name": "indeterminate",
           "description": "Presence of cavitary lung lesion in an infant or child cannot be determined",
           "index_codes": [
@@ -73,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_368020.3",
+          "value_code": "OIFMA_GMTS_049551.3",
           "name": "unknown",
           "description": "Presence of cavitary lung lesion in an infant or child is unknown",
           "index_codes": [
@@ -101,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_656786",
+      "oifma_id": "OIFMA_GMTS_923797",
       "name": "change from prior",
       "description": "Whether and how a cavitary lung lesion in an infant or child has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_656786.0",
+          "value_code": "OIFMA_GMTS_923797.0",
           "name": "unchanged",
           "description": "Cavitary lung lesion in an infant or child is unchanged",
           "index_codes": [
@@ -124,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.1",
+          "value_code": "OIFMA_GMTS_923797.1",
           "name": "stable",
           "description": "Cavitary lung lesion in an infant or child is stable",
           "index_codes": [
@@ -141,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.2",
+          "value_code": "OIFMA_GMTS_923797.2",
           "name": "new",
           "description": "Cavitary lung lesion in an infant or child is new",
           "index_codes": [
@@ -158,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.3",
+          "value_code": "OIFMA_GMTS_923797.3",
           "name": "resolved",
           "description": "Cavitary lung lesion in an infant or child seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_656786.4",
+          "value_code": "OIFMA_GMTS_923797.4",
           "name": "increased",
           "description": "Cavitary lung lesion in an infant or child has increased",
           "index_codes": [
@@ -180,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.5",
+          "value_code": "OIFMA_GMTS_923797.5",
           "name": "decreased",
           "description": "Cavitary lung lesion in an infant or child has decreased",
           "index_codes": [
@@ -197,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.6",
+          "value_code": "OIFMA_GMTS_923797.6",
           "name": "larger",
           "description": "Cavitary lung lesion in an infant or child is larger",
           "index_codes": [
@@ -214,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_656786.7",
+          "value_code": "OIFMA_GMTS_923797.7",
           "name": "smaller",
           "description": "Cavitary lung lesion in an infant or child is smaller",
           "index_codes": [

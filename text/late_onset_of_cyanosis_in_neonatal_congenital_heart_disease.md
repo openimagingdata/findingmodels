@@ -1,16 +1,14 @@
 # Late onset of cyanosis in neonatal congenital heart disease—`OIFM_GMTS_013432`
 
-**Synonyms:** delayed cyanosis in congenital heart disease, neonatal cyanosis with CHD
+**Tags:** ultrasound, XR, CT, MR, cardiac, pediatric, diagnosis
 
-**Tags:** chest, XR, CT, MR, congenital anomaly, cardiac, pediatric, finding
-
-Development of cyanosis after birth in neonates due to underlying congenital cardiac defects.
+Delayed cyanotic symptoms in newborns with congenital heart conditions.
 
 **Codes:** GAMUTS 13432 late onset of cyanosis in neonatal congenital heart disease
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_096447`
+### Presence—`OIFMA_GMTS_164305`
 
 Presence or absence of late onset of cyanosis in neonatal congenital heart disease  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of late onset of cyanosis in neonatal congenital heart disease is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_257356`
+### Change from prior—`OIFMA_GMTS_907570`
 
 Whether and how a late onset of cyanosis in neonatal congenital heart disease has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,3 +44,9 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Late onset of cyanosis in neonatal congenital heart disease is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

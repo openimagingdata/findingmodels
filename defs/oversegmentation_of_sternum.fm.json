@@ -1,27 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_031039",
   "name": "oversegmentation of sternum",
-  "description": "Presence of more than normal segments or divisions in the sternum.",
+  "description": "Additional division within the sternum",
   "synonyms": [
-    "sternal segmentation anomaly"
+    "hypersegmentation of sternum"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "musculoskeletal",
     "CT",
-    "chest wall",
+    "XR",
+    "thorax",
+    "sternum",
     "congenital anomaly",
     "finding"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_593198",
+      "oifma_id": "OIFMA_GMTS_149918",
       "name": "presence",
       "description": "Presence or absence of oversegmentation of sternum",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_593198.0",
+          "value_code": "OIFMA_GMTS_149918.0",
           "name": "absent",
           "description": "Oversegmentation of sternum is absent",
           "index_codes": [
@@ -38,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_593198.1",
+          "value_code": "OIFMA_GMTS_149918.1",
           "name": "present",
           "description": "Oversegmentation of sternum is present",
           "index_codes": [
@@ -55,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_593198.2",
+          "value_code": "OIFMA_GMTS_149918.2",
           "name": "indeterminate",
           "description": "Presence of oversegmentation of sternum cannot be determined",
           "index_codes": [
@@ -72,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_593198.3",
+          "value_code": "OIFMA_GMTS_149918.3",
           "name": "unknown",
           "description": "Presence of oversegmentation of sternum is unknown",
           "index_codes": [
@@ -100,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_184525",
+      "oifma_id": "OIFMA_GMTS_388706",
       "name": "change from prior",
       "description": "Whether and how a oversegmentation of sternum has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_184525.0",
+          "value_code": "OIFMA_GMTS_388706.0",
           "name": "unchanged",
           "description": "Oversegmentation of sternum is unchanged",
           "index_codes": [
@@ -123,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.1",
+          "value_code": "OIFMA_GMTS_388706.1",
           "name": "stable",
           "description": "Oversegmentation of sternum is stable",
           "index_codes": [
@@ -140,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.2",
+          "value_code": "OIFMA_GMTS_388706.2",
           "name": "new",
           "description": "Oversegmentation of sternum is new",
           "index_codes": [
@@ -157,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.3",
+          "value_code": "OIFMA_GMTS_388706.3",
           "name": "resolved",
           "description": "Oversegmentation of sternum seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_184525.4",
+          "value_code": "OIFMA_GMTS_388706.4",
           "name": "increased",
           "description": "Oversegmentation of sternum has increased",
           "index_codes": [
@@ -179,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.5",
+          "value_code": "OIFMA_GMTS_388706.5",
           "name": "decreased",
           "description": "Oversegmentation of sternum has decreased",
           "index_codes": [
@@ -196,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.6",
+          "value_code": "OIFMA_GMTS_388706.6",
           "name": "larger",
           "description": "Oversegmentation of sternum is larger",
           "index_codes": [
@@ -213,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_184525.7",
+          "value_code": "OIFMA_GMTS_388706.7",
           "name": "smaller",
           "description": "Oversegmentation of sternum is smaller",
           "index_codes": [

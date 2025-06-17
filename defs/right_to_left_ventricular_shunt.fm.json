@@ -1,29 +1,35 @@
 {
   "oifm_id": "OIFM_GMTS_013458",
   "name": "right-to-left ventricular shunt",
-  "description": "Abnormal communication allowing blood flow from the right to left ventricle.",
+  "description": "An abnormal communication allowing blood flow from the right ventricle to the left ventricle.",
   "synonyms": [
-    "R-L ventricular shunt",
-    "VSD with right-to-left shunt"
+    "ventricular septal defect (VSD) with shunting"
   ],
   "tags": [
-    "chest",
-    "CT",
+    "ultrasound",
     "MR",
-    "echocardiography",
+    "CT",
+    "US",
     "cardiac",
     "congenital anomaly",
     "diagnosis"
   ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_989851",
+      "oifma_id": "OIFMA_GMTS_244245",
       "name": "presence",
       "description": "Presence or absence of right-to-left ventricular shunt",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_989851.0",
+          "value_code": "OIFMA_GMTS_244245.0",
           "name": "absent",
           "description": "Right-to-left ventricular shunt is absent",
           "index_codes": [
@@ -40,7 +46,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_989851.1",
+          "value_code": "OIFMA_GMTS_244245.1",
           "name": "present",
           "description": "Right-to-left ventricular shunt is present",
           "index_codes": [
@@ -57,7 +63,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_989851.2",
+          "value_code": "OIFMA_GMTS_244245.2",
           "name": "indeterminate",
           "description": "Presence of right-to-left ventricular shunt cannot be determined",
           "index_codes": [
@@ -74,7 +80,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_989851.3",
+          "value_code": "OIFMA_GMTS_244245.3",
           "name": "unknown",
           "description": "Presence of right-to-left ventricular shunt is unknown",
           "index_codes": [
@@ -102,13 +108,13 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_242601",
+      "oifma_id": "OIFMA_GMTS_151589",
       "name": "change from prior",
       "description": "Whether and how a right-to-left ventricular shunt has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_242601.0",
+          "value_code": "OIFMA_GMTS_151589.0",
           "name": "unchanged",
           "description": "Right-to-left ventricular shunt is unchanged",
           "index_codes": [
@@ -125,7 +131,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.1",
+          "value_code": "OIFMA_GMTS_151589.1",
           "name": "stable",
           "description": "Right-to-left ventricular shunt is stable",
           "index_codes": [
@@ -142,7 +148,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.2",
+          "value_code": "OIFMA_GMTS_151589.2",
           "name": "new",
           "description": "Right-to-left ventricular shunt is new",
           "index_codes": [
@@ -159,12 +165,12 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.3",
+          "value_code": "OIFMA_GMTS_151589.3",
           "name": "resolved",
           "description": "Right-to-left ventricular shunt seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_242601.4",
+          "value_code": "OIFMA_GMTS_151589.4",
           "name": "increased",
           "description": "Right-to-left ventricular shunt has increased",
           "index_codes": [
@@ -181,7 +187,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.5",
+          "value_code": "OIFMA_GMTS_151589.5",
           "name": "decreased",
           "description": "Right-to-left ventricular shunt has decreased",
           "index_codes": [
@@ -198,7 +204,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.6",
+          "value_code": "OIFMA_GMTS_151589.6",
           "name": "larger",
           "description": "Right-to-left ventricular shunt is larger",
           "index_codes": [
@@ -215,7 +221,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_242601.7",
+          "value_code": "OIFMA_GMTS_151589.7",
           "name": "smaller",
           "description": "Right-to-left ventricular shunt is smaller",
           "index_codes": [
