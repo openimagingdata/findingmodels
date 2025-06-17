@@ -1,0 +1,256 @@
+{
+  "oifm_id": "OIFM_CDE_000022",
+  "name": "CT Stroke",
+  "description": "This module describes the Common Data elements and Macros for CT stroke",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000159",
+      "name": "Hyperacute signs",
+      "description": "Hyperacute signs",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000160",
+      "name": "Location",
+      "description": "Location",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000161",
+      "name": "Vascular territory",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000162",
+      "name": "Hemorrhagic conversion",
+      "description": "Presence of hemorrhagic conversion",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000163",
+      "name": "Mass effect",
+      "description": "Mass effect",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000164",
+      "name": "Vascular pattern",
+      "description": "Vascular mechanism, pattern",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000165",
+      "name": "Midline shift",
+      "description": "Midline shift in mm",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000166",
+      "name": "Herniation",
+      "description": "Presence of herniation",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000167",
+      "name": "Hyperdense vessel",
+      "description": "Presence of hyperdense vessel",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000168",
+      "name": "Hyperdense sign",
+      "description": "Presence of hyperdense sign",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000169",
+      "name": "Arterial calcification",
+      "description": "Presence of arterial calcification",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000170",
+      "name": "Venous thrombus",
+      "description": "Presence of venous thrombus",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000171",
+      "name": "Sinus location",
+      "description": "Sinus location",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000172",
+      "name": "Hydrocephalus",
+      "description": "Presence of hydrocephalus",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000173",
+      "name": "ASPECTS classification",
+      "description": "ASPECTS classification on a scale from 1 to 10",
+      "type": "numeric",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES22",
+      "display": "ct stroke"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

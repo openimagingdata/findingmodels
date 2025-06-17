@@ -1,0 +1,789 @@
+{
+  "id": "RDES209",
+  "name": "COVID-19 on Chest CT",
+  "description": "CT Chest - COVID-19",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-10-09"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/209",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Geis, Raym",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Susan Paull",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    },
+    {
+      "name": "Emergency Radiology",
+      "abbreviation": "ER"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1359",
+      "parent_set": "RDES209",
+      "name": "Classification",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "negative"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "typical pattern"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "atypical pattern"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1360",
+      "parent_set": "RDES209",
+      "name": "Ground glass opacity ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1361",
+      "parent_set": "RDES209",
+      "name": "Side of ground glass opacity ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "right"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "left"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1362",
+      "parent_set": "RDES209",
+      "name": "Location of ground glass opacity ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "peripheral"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "central"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "diffuse"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1363",
+      "parent_set": "RDES209",
+      "name": "Predominant distribution of ground glass opacity ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "upper"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "mid"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "lower"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1369",
+      "parent_set": "RDES209",
+      "name": "Air space consolidation",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1370",
+      "parent_set": "RDES209",
+      "name": "Lymphadenopathy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1371",
+      "parent_set": "RDES209",
+      "name": "Location of lymphadenopathy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 3,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "hilar"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "mediastinal"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "other"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1372",
+      "parent_set": "RDES209",
+      "name": "Pleural effusion size",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "none"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "small"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "medium"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "large"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1373",
+      "parent_set": "RDES209",
+      "name": "Mucoid impaction",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1374",
+      "parent_set": "RDES209",
+      "name": "Bronchial wall thickening",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1375",
+      "parent_set": "RDES209",
+      "name": "Smooth interlobular septal thickening severity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "none"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "mild"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "severe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1376",
+      "parent_set": "RDES209",
+      "name": "Pulmonary cavities",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1605",
+      "parent_set": "RDES209",
+      "name": "Pleural effusion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1606",
+      "parent_set": "RDES209",
+      "name": "Smooth interlobular septal thickening",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE209.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE209.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE209.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE209.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Example Reports of Typical, Indeterminate, Atypical, and Negative Category CTs, with some selected correlative image examples J. Azadi; C. Menias; J. Ko; J. Klein; C. Meltzer; M. Mossa-Basha; COVID-19 Task Force*",
+      "url": "https://www.rsna.org/-/media/Files/RSNA/Covid-19/RSNA-COVID19ChestCT-ReportExample"
+    }
+  ]
+}

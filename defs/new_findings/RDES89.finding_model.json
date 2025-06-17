@@ -1,0 +1,136 @@
+{
+  "oifm_id": "OIFM_CDE_000089",
+  "name": "Epidural Hematoma",
+  "description": "Epidural Hematoma",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000521",
+      "name": "Width",
+      "description": "max width of extra-axial hematoma ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000522",
+      "name": "Volume",
+      "description": "volume of hematoma",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000524",
+      "name": "Shape",
+      "description": "shape/configuration of the extra-axial hematoma/collection",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000525",
+      "name": "Side",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000526",
+      "name": "Density",
+      "description": "Density of extra-axial hematoma/collection",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000527",
+      "name": "Septations",
+      "description": "presence of exta-axial hematoma septations",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000528",
+      "name": "Location",
+      "description": "location of extra-axial hematoma/collection",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES89",
+      "display": "epidural hematoma"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

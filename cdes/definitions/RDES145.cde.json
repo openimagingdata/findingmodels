@@ -1,0 +1,379 @@
+{
+  "id": "RDES145",
+  "name": "Coronary CTA",
+  "description": "This module describes the Common Data elements and Macros for Coronary CTA",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/145",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE924",
+      "parent_set": "RDES139",
+      "name": "Agatston score",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10000,
+        "step": 0.1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE925",
+      "parent_set": "RDES139",
+      "name": "Calcium volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-10"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10000,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE969",
+      "parent_set": "RDES145",
+      "name": "Stenosis of the coronary arteries",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 190,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE970",
+      "parent_set": "RDES145",
+      "name": "Maximum stenosis of the left main coronary artery",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 190,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE971",
+      "parent_set": "RDES145",
+      "name": "Maximum stenosis of the left anterior descending coronary artery",
+      "definition": "percent",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE972",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the diagonal branches",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE973",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the ramus branch",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE974",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the left circumflex artery",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE975",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the obtuse marginal branch",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE976",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the right coronary artery",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE977",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the PDA",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE978",
+      "parent_set": "RDES145",
+      "name": "Minimum stenosis of the posterior lateral branch",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    }
+  ],
+  "references": []
+}

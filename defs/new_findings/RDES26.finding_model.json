@@ -1,0 +1,166 @@
+{
+  "oifm_id": "OIFM_CDE_000026",
+  "name": "Acute Appendicitis",
+  "description": "This module describes the common data elements for acute appendicitis use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000195",
+      "name": "Presence",
+      "description": "The status of the appendix",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000196",
+      "name": "Appendiceal diameter",
+      "description": "Maximum diameter of the appendix",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000197",
+      "name": "Fat stranding",
+      "description": "Detection of fat stranding around appendix",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000198",
+      "name": "Free fluid",
+      "description": "Detection of free fluid around appendix",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000199",
+      "name": "Obstructing focus",
+      "description": "Presence of obstructing mass such as a stone or fecalith",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000200",
+      "name": "Lumen contents",
+      "description": "Content within the lumen",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000201",
+      "name": "Abscess",
+      "description": "State the presence of the peri-appendiceal abscess",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000202",
+      "name": "Opacification",
+      "description": "Opacification of the appendix",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001673",
+      "name": "Obstructing focus size",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID168",
+          "display": "appendix"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES26",
+      "display": "acute appendicitis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID168",
+      "display": "Appendix"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Appendix",
+      "index_codes": []
+    }
+  ]
+}

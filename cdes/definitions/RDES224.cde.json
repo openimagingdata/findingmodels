@@ -1,0 +1,348 @@
+{
+  "id": "RDES224",
+  "name": "CT Perfusion Stroke",
+  "description": "CT Perfusion Stroke",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2022-10-04"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/224",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Emergency Radiology",
+      "abbreviation": "ER"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1458",
+      "parent_set": "RDES224",
+      "name": "Intracerebral circulation involved",
+      "definition": "Which circulation has a perfusion abnormality?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-07-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Brain perfusion CT: principles, technique and clinical applications.",
+          "doi_url": "https://doi.org/10.1007/s11547-007-0219-4",
+          "pubmed_id": "18074193"
+        },
+        {
+          "citation": "Qualitative versus automatic evaluation of CT perfusion parameters in acute posterior circulation ischaemic stroke.",
+          "doi_url": "https://doi.org/10.1007/s00234-020-02517-6",
+          "pubmed_id": "32813027"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 8,
+        "values": [
+          {
+            "code": "RDE224.0",
+            "value": "0",
+            "name": "right middle cerebral artery"
+          },
+          {
+            "code": "RDE224.1",
+            "value": "1",
+            "name": "left middle cerebral artery"
+          },
+          {
+            "code": "RDE224.2",
+            "value": "2",
+            "name": "right anterior cerebral artery"
+          },
+          {
+            "code": "RDE224.3",
+            "value": "3",
+            "name": "left anterior cerebral artery"
+          },
+          {
+            "code": "RDE224.4",
+            "value": "4",
+            "name": "right posterior cerebral artery"
+          },
+          {
+            "code": "RDE224.5",
+            "value": "5",
+            "name": "left posterior cerebral artery"
+          },
+          {
+            "code": "RDE224.6",
+            "value": "6",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE224.7",
+            "value": "7",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1459",
+      "parent_set": "RDES224",
+      "name": "Perfusion mismatch",
+      "definition": "DIscordant or equivalent volumes of involved penumbra and ischemic core.  Expressed as none, left MCA or right MCA territory.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE224.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Select if there is no perfusion deficit or if there is matching size/territory of ischemic core and penumbra."
+          },
+          {
+            "code": "RDE224.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Ischemic penumbra exceeds ischemic core in the right MCA territory."
+          },
+          {
+            "code": "RDE224.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE224.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1460",
+      "parent_set": "RDES224",
+      "name": "Ischemic core volume",
+      "definition": "The volume of brain on CBF maps with less than 30% cerebral blood flow indicating ischemic core",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 500,
+        "step": 1,
+        "unit": "cc"
+      }
+    },
+    {
+      "id": "RDE1461",
+      "parent_set": "RDES224",
+      "name": "Ischemic penumbra volume",
+      "definition": "Volume of brain where the maximum transit time exceeds 6 seconds indicative of ischemic penumbra",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 500,
+        "step": 1,
+        "unit": "cc"
+      }
+    },
+    {
+      "id": "RDE1462",
+      "parent_set": "RDES224",
+      "name": "Mismatch volume",
+      "definition": "The difference in brain volume between the ischemic penumbra (Tmax > 6 sec) and the ischemic core (CBF <30%)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 500,
+        "step": 1,
+        "unit": "cc"
+      }
+    },
+    {
+      "id": "RDE1995",
+      "parent_set": "RDES224",
+      "name": "Poor collateral perfusion volume",
+      "definition": "(Tmax > 10 s) ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Arenillas, J. F., Cortijo, E., Garc?a-Bermejo, P., Levy, E. I., Jahan, R., Goyal, M., ... & Albers, G. W. (2017). Relative cerebral blood volume is associated with collateral status and infarct growth in stroke patients in SWIFT PRIME. Journal of Cerebral Blood Flow & Metabolism.",
+          "url": "http://www.i-rapid.com/publications/rapid-collateral-maps-jcbf.pdf"
+        }
+      ],
+      "integer_value": {
+        "step": 1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE1996",
+      "parent_set": "RDES224",
+      "name": "Hypoperfusion index",
+      "definition": "(Tmax > 10 s/Tmax > 6 s) ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Arenillas, J. F., Cortijo, E., Garc?a-Bermejo, P., Levy, E. I., Jahan, R., Goyal, M., ... & Albers, G. W. (2017). Relative cerebral blood volume is associated with collateral status and infarct growth in stroke patients in SWIFT PRIME. Journal of Cerebral Blood Flow & Metabolism.\nhttp://www.i-rapid.com/publications/rapid-collateral-maps-jcbf.pdf"
+        }
+      ],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1997",
+      "parent_set": "RDES224",
+      "name": "Mismatch ratio",
+      "definition": "Mismatch ratio is defined as the perfusion deficit divide by the infarct core volume (=volume of tissue with Tmax >6 s/volume of tissue with rCBF <30%).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    }
+  ],
+  "references": []
+}

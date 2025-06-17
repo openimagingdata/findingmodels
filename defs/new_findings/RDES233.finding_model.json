@@ -1,0 +1,42 @@
+{
+  "oifm_id": "OIFM_CDE_000233",
+  "name": "Acute Rib Fracture",
+  "description": "Acute Rib Fracture",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001480",
+      "name": "Presence",
+      "description": "Cortical breach of a rib without callus formation or union, does not include surgical rib resection or thoracotomy.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001481",
+      "name": "Side",
+      "description": "Describe ribe fracture laterality",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001482",
+      "name": "Ribs",
+      "description": "Describe numer(s) of rib(s) affected",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES233",
+      "display": "acute rib fracture"
+    }
+  ],
+  "body_parts": []
+}

@@ -1,0 +1,439 @@
+{
+  "id": "RDES97",
+  "name": "Acute Infarct on DWI Images",
+  "description": "Detection of acute infarct on DWI images",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/97",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE587",
+      "parent_set": "RDES97",
+      "name": "Size",
+      "definition": "Diameter of the lesion in mm.\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE588",
+      "parent_set": "RDES97",
+      "name": "Volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE589",
+      "parent_set": "RDES97",
+      "name": "Count",
+      "definition": "Count the number of lesions with diffusion restriction.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE591",
+      "parent_set": "RDES97",
+      "name": "True diffusion restriction",
+      "definition": "Determine if high signal on DWI is true diffusion restriction or T2 shine through by analyzing ADC signal.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE97.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE97.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE97.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE97.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE593",
+      "parent_set": "RDES97",
+      "name": "Distribution of diffusion restriction",
+      "definition": "Categorize the distribution of the diffusion restriction in the lesion.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE97.0",
+            "value": "0",
+            "name": "whole lesion"
+          },
+          {
+            "code": "RDE97.1",
+            "value": "1",
+            "name": "central"
+          },
+          {
+            "code": "RDE97.2",
+            "value": "2",
+            "name": "peripheral"
+          },
+          {
+            "code": "RDE97.3",
+            "value": "3",
+            "name": "rim"
+          },
+          {
+            "code": "RDE97.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE97.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE594",
+      "parent_set": "RDES97",
+      "name": "Signal ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE97.0",
+            "value": "0",
+            "name": "homogeneous"
+          },
+          {
+            "code": "RDE97.1",
+            "value": "1",
+            "name": "hetergeneous"
+          },
+          {
+            "code": "RDE97.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE97.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE597",
+      "parent_set": "RDES97",
+      "name": "Location",
+      "definition": "Location of the lesion(s) with diffusion restriction.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 18,
+        "values": [
+          {
+            "code": "RDE97.0",
+            "value": "0",
+            "name": "frontal"
+          },
+          {
+            "code": "RDE97.1",
+            "value": "1",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE97.2",
+            "value": "2",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE97.3",
+            "value": "3",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE97.4",
+            "value": "4",
+            "name": "deep gray nuclei",
+            "definition": "Deep gray Nuclei (Basal Ganglia / Thalami)"
+          },
+          {
+            "code": "RDE97.5",
+            "value": "5",
+            "name": "white matter"
+          },
+          {
+            "code": "RDE97.6",
+            "value": "6",
+            "name": "peniventricular white matter",
+            "definition": "Peniventricular white matter"
+          },
+          {
+            "code": "RDE97.7",
+            "value": "7",
+            "name": "deep white matter"
+          },
+          {
+            "code": "RDE97.8",
+            "value": "8",
+            "name": "subcortical white matter"
+          },
+          {
+            "code": "RDE97.9",
+            "value": "9",
+            "name": "corticospinal tract"
+          },
+          {
+            "code": "RDE97.10",
+            "value": "0",
+            "name": "cerebellar peduncles"
+          },
+          {
+            "code": "RDE97.11",
+            "value": "1",
+            "name": "brainstem"
+          },
+          {
+            "code": "RDE97.12",
+            "value": "2",
+            "name": "midbrain"
+          },
+          {
+            "code": "RDE97.13",
+            "value": "3",
+            "name": "pons"
+          },
+          {
+            "code": "RDE97.14",
+            "value": "4",
+            "name": "medulla"
+          },
+          {
+            "code": "RDE97.15",
+            "value": "5",
+            "name": "cerebellum"
+          },
+          {
+            "code": "RDE97.16",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE97.17",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE598",
+      "parent_set": "RDES97",
+      "name": "Side",
+      "definition": "define the side of the lesion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 3,
+        "values": [
+          {
+            "code": "RDE97.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE97.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE97.2",
+            "value": "2",
+            "name": "midline"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

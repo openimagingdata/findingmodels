@@ -1,0 +1,262 @@
+{
+  "id": "RDES105",
+  "name": "Thoracic Pulmonary Parenchymal Emphysema",
+  "description": "Thoracic pulmonary parenchymal emphysema",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/105",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Lung",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID1301",
+        "display": "Lung",
+        "url": "http://www.radlex.org/RID/RID1301"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE655",
+      "parent_set": "RDES105",
+      "name": "Percent lobar involvement",
+      "definition": "for any detected emphysema, measure the percent of the lobe with emphysema",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-11-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE660",
+      "parent_set": "RDES105",
+      "name": "Emphysema type",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-11-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE105.0",
+            "value": "0",
+            "name": "centrilobular"
+          },
+          {
+            "code": "RDE105.1",
+            "value": "1",
+            "name": "panlobular",
+            "definition": "present"
+          },
+          {
+            "code": "RDE105.2",
+            "value": "2",
+            "name": "paraseptal",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE105.3",
+            "value": "3",
+            "name": "paracicatricial"
+          },
+          {
+            "code": "RDE105.4",
+            "value": "4",
+            "name": "localized"
+          },
+          {
+            "code": "RDE105.5",
+            "value": "5",
+            "name": "idiopathic giant bullous"
+          },
+          {
+            "code": "RDE105.6",
+            "value": "6",
+            "name": "congenital lobar"
+          },
+          {
+            "code": "RDE105.7",
+            "value": "7",
+            "name": "interstitial"
+          },
+          {
+            "code": "RDE105.8",
+            "value": "8",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE105.9",
+            "value": "9",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE675",
+      "parent_set": "RDES105",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-02-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE105.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE105.1",
+            "value": "1",
+            "name": "present",
+            "definition": "present"
+          },
+          {
+            "code": "RDE105.2",
+            "value": "2",
+            "name": "unknown",
+            "definition": "unknown"
+          },
+          {
+            "code": "RDE105.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1603",
+      "parent_set": "RDES105",
+      "name": "Involved lobes",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-11-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE105.0",
+            "value": "0",
+            "name": "right upper lobe"
+          },
+          {
+            "code": "RDE105.1",
+            "value": "1",
+            "name": "right middle lobe"
+          },
+          {
+            "code": "RDE105.2",
+            "value": "2",
+            "name": "right lower lobe"
+          },
+          {
+            "code": "RDE105.3",
+            "value": "3",
+            "name": "left upper lobe"
+          },
+          {
+            "code": "RDE105.4",
+            "value": "4",
+            "name": "left lower lobe"
+          },
+          {
+            "code": "RDE105.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE105.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

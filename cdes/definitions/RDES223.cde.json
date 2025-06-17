@@ -1,0 +1,587 @@
+{
+  "id": "RDES223",
+  "name": "Spine Multiple Sclerosis on MR",
+  "description": "Spine Multiple sclerosis",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-10-09"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/223",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1447",
+      "parent_set": "RDES223",
+      "name": "Disease burden",
+      "definition": "How many intramedullary spine lesions",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Revised Recommendations of the Consortium of MS Centers Task Force for a Standardized MRI Protocol and Clinical Guidelines for the Diagnosis and Follow-Up of Multiple Sclerosis.",
+          "doi_url": "https://doi.org/10.3174/ajnr.A4539",
+          "pubmed_id": "26564433"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "none"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "one"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "multiple",
+            "definition": "more than 1"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1448",
+      "parent_set": "RDES223",
+      "name": "Lesion size in craniocaudal dimension",
+      "definition": "If multiple lesions, give largest lesion size ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1449",
+      "parent_set": "RDES223",
+      "name": "Lesion extent",
+      "definition": "Number of vertebral segments spanned by the lesion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "one vertebral segment"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "two vertebral segments"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "three vertebral segments"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "greater than three",
+            "definition": "Greater than 3 vertebral segments"
+          },
+          {
+            "code": "RDE223.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1450",
+      "parent_set": "RDES223",
+      "name": "Lesion location subtype",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "central"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "anterior"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "left anterolateral"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "left lateral",
+            "definition": " left lateral"
+          },
+          {
+            "code": "RDE223.4",
+            "value": "4",
+            "name": "left posterolateral",
+            "definition": "None"
+          },
+          {
+            "code": "RDE223.5",
+            "value": "5",
+            "name": "posterior"
+          },
+          {
+            "code": "RDE223.6",
+            "value": "6",
+            "name": "right posterolateral"
+          },
+          {
+            "code": "RDE223.7",
+            "value": "7",
+            "name": "right lateral"
+          },
+          {
+            "code": "RDE223.8",
+            "value": "8",
+            "name": "right anterolateral"
+          },
+          {
+            "code": "RDE223.9",
+            "value": "9",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.10",
+            "value": "0",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1451",
+      "parent_set": "RDES223",
+      "name": "Lesion axial area",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "less than 50 percent"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "greater than 50 percent"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1452",
+      "parent_set": "RDES223",
+      "name": "T2 signal",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "hyperintense"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "hypointense"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "isointense"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1453",
+      "parent_set": "RDES223",
+      "name": "T1 signal",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "isointense"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "hypointense"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "hyperintense"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1454",
+      "parent_set": "RDES223",
+      "name": "Lesion contrast enhancement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1455",
+      "parent_set": "RDES223",
+      "name": "Cord edema",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1456",
+      "parent_set": "RDES223",
+      "name": "Cord expansion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-10-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE223.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE223.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE223.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE223.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Revised Recommendations of the Consortium of MS Centers Task Force for a Standardized MRI Protocol and Clinical Guidelines for the Diagnosis and Follow-Up of Multiple Sclerosis.",
+      "doi_url": "https://doi.org/10.3174/ajnr.A4539",
+      "pubmed_id": "26564433"
+    },
+    {
+      "citation": "MRImaging of Multiple Sclerosis. M Filippi and M Rocca. Radiology June 2011; 259(3): 659-681"
+    },
+    {
+      "citation": "Consortium of Multiple Sclerosis Centers: http://www.mscare.org/page/MRI_protocol"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "oifm_id": "OIFM_CDE_000179",
+  "name": "Endotracheal Tube Placement",
+  "description": "Placement of endotracheal (ET) tube",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001247",
+      "name": "Presence",
+      "description": "Detect if an endotracheal tube is present",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001251",
+      "name": "Position appropriateness",
+      "description": "Determine position appropriateness based on the coordinates of the location of the ET tube tip, the carina, and a preset normal range",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES179",
+      "display": "endotracheal tube placement"
+    }
+  ],
+  "body_parts": []
+}

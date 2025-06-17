@@ -1,0 +1,95 @@
+{
+  "id": "RDES150",
+  "name": "Genant Classification",
+  "description": "Genant Classification",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/150",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1003",
+      "parent_set": "RDES150",
+      "name": "Genant grading scale for vertebral compression fractures",
+      "definition": "Thoracic and lumbar vertebrae from T4 to L4 graded for vertebral compression fractures. ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE150.0",
+            "value": "0",
+            "name": "grade 0",
+            "definition": "Thoracic and lumbar vertebrae from T4 to L4 are graded as normal (grade 0)"
+          },
+          {
+            "code": "RDE150.1",
+            "value": "1",
+            "name": "grade 0.5",
+            "definition": "A grade 0.5 to designate borderline vertebrae that show some deformation but cannot be clearly assigned to grade 1 fractures is some- times also employed. In addition to height reductions, the reader pays careful attention to alterations in the shape and configuration of the vertebrae relative to adjacent vertebrae and expected normal appearances."
+          },
+          {
+            "code": "RDE150.2",
+            "value": "2",
+            "name": "grade 1",
+            "definition": "mildly deformed (grade 1: approximately a 20 to 25% reduction in anterior, middle and/or posterior height and a 10 to 20% reduction in the projected vertebral area)"
+          },
+          {
+            "code": "RDE150.3",
+            "value": "3",
+            "name": "grade 2",
+            "definition": "moderately deformed (grade 2: approximately a 25 to 40% reduction in anterior, middle and/or posterior height and a 20 to 40% reduction of the projected vertebral area)"
+          },
+          {
+            "code": "RDE150.4",
+            "value": "4",
+            "name": "grade 3",
+            "definition": "Severely deformed (grade 3: approximately a 40% or greater reduction in anterior, middle and/or posterior height and the deformity (>25-40%), severe deformity (>40% in height). "
+          },
+          {
+            "code": "RDE150.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE150.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

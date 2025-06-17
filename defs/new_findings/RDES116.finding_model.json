@@ -1,0 +1,244 @@
+{
+  "oifm_id": "OIFM_CDE_000116",
+  "name": "Aging Brain",
+  "description": "Aging Brain",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000749",
+      "name": "Global cortical atrophy scale",
+      "description": "system to assess cerebral atrophy, especially in the context of neurodegenerative diseases",
+      "type": "numeric",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000750",
+      "name": "Posterior parietal atrophy score",
+      "description": "Koedman Score",
+      "type": "numeric",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000751",
+      "name": "Total brain volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000752",
+      "name": "Ventricular system volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000753",
+      "name": "Hippocampi volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000754",
+      "name": "Frontal lobes volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000755",
+      "name": "Temporal lobes volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000756",
+      "name": "Fzekas scale ",
+      "description": "Fzekas Scale (from FLAIR sequence)",
+      "type": "numeric",
+      "min": 0,
+      "max": 6,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000760",
+      "name": "Medial temporal atrophy score",
+      "description": "Visual score of the brain using coronal T1 weighted images through the hippocampus at the level of the anterior pons, based on width of the choroid fissure, width of the temporal horn of the lateral ventricle, and height of the hippocampus",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000761",
+      "name": "Frontotemporal atrophy",
+      "description": "Shrinkage of the frontotemporal lobes",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000762",
+      "name": "Midbrain atrophy",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000763",
+      "name": "Caudate head atrophy",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000764",
+      "name": "Cerebellar atrophy",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES116",
+      "display": "aging brain"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

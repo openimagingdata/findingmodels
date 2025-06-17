@@ -1,0 +1,265 @@
+{
+  "id": "RDES289",
+  "name": "ARIA baseline",
+  "description": "Baseline imaging for cognitive impairment or screening prior to initiating anti amyloid therapy",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2024-06-05"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/289",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Gibbs, Wende",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Dirk Smeets",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "icometrix"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE2006",
+      "parent_set": "RDES289",
+      "name": "Blood sensitive sequence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE289.0",
+            "value": "0",
+            "name": "SWI"
+          },
+          {
+            "code": "RDE289.1",
+            "value": "1",
+            "name": "GRE/T2*"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2007",
+      "parent_set": "RDES289",
+      "name": "Field strength",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE289.0",
+            "value": "0",
+            "name": "3 T"
+          },
+          {
+            "code": "RDE289.1",
+            "value": "1",
+            "name": "1.5T"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2008",
+      "parent_set": "RDES289",
+      "name": "Total microhemorrhages",
+      "definition": "quantity",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Lecanemab: Appropriate Use Recommendations",
+          "doi_url": "https://doi.org/ 10.14283/jpad.2023.30"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE289.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE289.1",
+            "value": "1",
+            "name": "1-4"
+          },
+          {
+            "code": "RDE289.2",
+            "value": "2",
+            "name": "greater than 4"
+          },
+          {
+            "code": "RDE289.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2009",
+      "parent_set": "RDES289",
+      "name": "Macrohemorrhages",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE289.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "none"
+          },
+          {
+            "code": "RDE289.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE289.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2010",
+      "parent_set": "RDES289",
+      "name": "Superficial siderosis",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE289.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "none"
+          },
+          {
+            "code": "RDE289.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE289.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

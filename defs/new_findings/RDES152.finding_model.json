@@ -1,0 +1,84 @@
+{
+  "oifm_id": "OIFM_CDE_000152",
+  "name": "TI RADS",
+  "description": "TI-RADS level determination",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001036",
+      "name": "Maximum Diameter",
+      "description": "",
+      "type": "numeric",
+      "min": 0.1,
+      "max": 15,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001037",
+      "name": "Quantity",
+      "description": "",
+      "type": "numeric",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001038",
+      "name": "Side",
+      "description": "Nodule's side",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001039",
+      "name": "Lobe or isthmus is the nodule location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001040",
+      "name": "Composition",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001041",
+      "name": "Echogenicity",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001042",
+      "name": "Other features",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES152",
+      "display": "ti rads"
+    }
+  ],
+  "body_parts": []
+}

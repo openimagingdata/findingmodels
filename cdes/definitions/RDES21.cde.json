@@ -1,0 +1,506 @@
+{
+  "id": "RDES21",
+  "name": "Spine Instability Neuroplastic Score (SINS)",
+  "description": "This module describes the Common Data elements and Macros for Spine Instability Neoplastic Score (SINS)",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/21",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Spine",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID7741",
+        "display": "Spine",
+        "url": "http://www.radlex.org/RID/RID7741"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Wende Gibbs MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE151",
+      "parent_set": "RDES21",
+      "name": "Spinal level",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "T1"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "T2"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "T3"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "T4"
+          },
+          {
+            "code": "RDE21.4",
+            "value": "4",
+            "name": "T5"
+          },
+          {
+            "code": "RDE21.5",
+            "value": "5",
+            "name": "T6"
+          },
+          {
+            "code": "RDE21.6",
+            "value": "6",
+            "name": "T7"
+          },
+          {
+            "code": "RDE21.7",
+            "value": "7",
+            "name": "T8"
+          },
+          {
+            "code": "RDE21.8",
+            "value": "8",
+            "name": "T9"
+          },
+          {
+            "code": "RDE21.9",
+            "value": "9",
+            "name": "T10"
+          },
+          {
+            "code": "RDE21.10",
+            "value": "0",
+            "name": "T11"
+          },
+          {
+            "code": "RDE21.11",
+            "value": "1",
+            "name": "T12"
+          },
+          {
+            "code": "RDE21.12",
+            "value": "2",
+            "name": "C1"
+          },
+          {
+            "code": "RDE21.13",
+            "value": "3",
+            "name": "C2"
+          },
+          {
+            "code": "RDE21.14",
+            "value": "4",
+            "name": "C3"
+          },
+          {
+            "code": "RDE21.15",
+            "value": "5",
+            "name": "C4"
+          },
+          {
+            "code": "RDE21.16",
+            "value": "6",
+            "name": "C5"
+          },
+          {
+            "code": "RDE21.17",
+            "value": "7",
+            "name": "C6"
+          },
+          {
+            "code": "RDE21.18",
+            "value": "8",
+            "name": "C7"
+          },
+          {
+            "code": "RDE21.19",
+            "value": "9",
+            "name": "S1"
+          },
+          {
+            "code": "RDE21.20",
+            "value": "0",
+            "name": "S2"
+          },
+          {
+            "code": "RDE21.21",
+            "value": "1",
+            "name": "S3"
+          },
+          {
+            "code": "RDE21.22",
+            "value": "2",
+            "name": "S4"
+          },
+          {
+            "code": "RDE21.23",
+            "value": "3",
+            "name": "L1"
+          },
+          {
+            "code": "RDE21.24",
+            "value": "4",
+            "name": "L2"
+          },
+          {
+            "code": "RDE21.25",
+            "value": "5",
+            "name": "L3"
+          },
+          {
+            "code": "RDE21.26",
+            "value": "6",
+            "name": "L4"
+          },
+          {
+            "code": "RDE21.27",
+            "value": "7",
+            "name": "L5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE152",
+      "parent_set": "RDES21",
+      "name": "Location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "rigid spine"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "semi-rigid spine"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "mobile spine"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "junctional spine"
+          },
+          {
+            "code": "RDE21.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE21.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE153",
+      "parent_set": "RDES21",
+      "name": "Lesion quality",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "blastic"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "mixed"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "lytic"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE21.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE154",
+      "parent_set": "RDES21",
+      "name": "Alignment",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "preserved"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "deformed"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "subluxated"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE21.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE155",
+      "parent_set": "RDES21",
+      "name": "Collapse",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "none"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "less than 50 percent  collapse"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "more than 50 percent collapse"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "no collapse with more 50 percent vertebral body involved"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE156",
+      "parent_set": "RDES21",
+      "name": "Posterior elements",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE21.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE21.1",
+            "value": "1",
+            "name": "unilateral"
+          },
+          {
+            "code": "RDE21.2",
+            "value": "2",
+            "name": "bilateral"
+          },
+          {
+            "code": "RDE21.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE21.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": " CDE URL ",
+      "url": "http://radelement.org/set/RDES21"
+    },
+    {
+      "citation": "Fisher CG, Dipaola CP, Ryken TC, et al. A novel classification system for spinal instability in neoplastic disease: an evidence-based approach and expert consensus from the Spine Oncology Study Group. Spine. 2010;35(22):E1221-9."
+    },
+    {
+      "citation": "Versteeg AL, Verlaan JJ, Sahgal A, et al. The Spinal Instability Neoplastic Score: Impact on Oncologic Decision-Making. Spine. 2016;41 Suppl 20:S231-S237."
+    }
+  ]
+}

@@ -1,0 +1,1103 @@
+{
+  "id": "RDES19",
+  "name": "Inflammatory Sinus",
+  "description": "This module describes the Common Data elements and Macros for Inflammatory Sinus",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/19",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Paransal Sinus",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID9554",
+        "display": "Paransal Sinus",
+        "url": "http://www.radlex.org/RID/RID9554"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE133",
+      "parent_set": "RDES19",
+      "name": "Side",
+      "definition": "Lateral lamella side",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "http://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE134",
+      "parent_set": "RDES19",
+      "name": "Lateral positions",
+      "definition": "Lateral Positions",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "normal",
+            "definition": "Normal in position"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "elongated"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE19.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE135",
+      "parent_set": "RDES19",
+      "name": "Keros class",
+      "definition": "Keros Class",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "none",
+            "definition": "None"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "I"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "II"
+          },
+          {
+            "code": "RDE19.3",
+            "value": "3",
+            "name": "III"
+          },
+          {
+            "code": "RDE19.4",
+            "value": "4",
+            "name": "IV"
+          },
+          {
+            "code": "RDE19.5",
+            "value": "5",
+            "name": "V"
+          },
+          {
+            "code": "RDE19.6",
+            "value": "6",
+            "name": "VI"
+          },
+          {
+            "code": "RDE19.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE19.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE136",
+      "parent_set": "RDES19",
+      "name": "Ethmoid arteries",
+      "definition": "Ethmoid arteries",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "exposed"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE19.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE137",
+      "parent_set": "RDES19",
+      "name": "Maxillary sinus vertical diameter",
+      "definition": "Max vertical diameter of the sinus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE138",
+      "parent_set": "RDES19",
+      "name": "Uncinate processes",
+      "definition": "Uncinate processes",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "lateralized"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE19.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE139",
+      "parent_set": "RDES19",
+      "name": "Maxillary Infundibulum",
+      "definition": "Maxillary Infundibulum",
+      "question": "Maxillary Infundibulum",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2018-09-18"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2018-09-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "max": 1,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE140",
+      "parent_set": "RDES19",
+      "name": "Osteomeatalunits",
+      "definition": "Osteomeatalunits",
+      "question": "Osteomeatalunits",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2018-09-18"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2018-09-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "max": 1,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE141",
+      "parent_set": "RDES19",
+      "name": "Sphenoethmoidal recesses",
+      "definition": "Sphenoethmoidal recesses",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "integer_value": {
+        "max": 1,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE142",
+      "parent_set": "RDES19",
+      "name": "Sphenoid sinus vertical diameter",
+      "definition": "Max vertical diameter of sphenoid sinuses",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "http://radelement.org/"
+        }
+      ],
+      "integer_value": {
+        "max": 1,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1723",
+      "parent_set": "RDES19",
+      "name": "Maxillary sinus horizontal diameter",
+      "definition": "Max. horizontal diameter of maxillary sinus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1724",
+      "parent_set": "RDES19",
+      "name": "Sphenoid sinus horizontal diameter",
+      "definition": "Max horizontal diameter of sphenoid sinus.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE2000",
+      "parent_set": "RDES19",
+      "name": "Nature of inflammatory disease",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE19.1",
+            "value": "1",
+            "name": "polypoid"
+          },
+          {
+            "code": "RDE19.2",
+            "value": "2",
+            "name": "diffuse"
+          },
+          {
+            "code": "RDE19.3",
+            "value": "3",
+            "name": "focal non-polypoid"
+          },
+          {
+            "code": "RDE19.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE19.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2061",
+      "parent_set": "RDES19",
+      "name": "Frontal recess patency",
+      "definition": "Patency of the frontal recess",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 6,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "Patent left frontal recess",
+            "definition": "Patent left frontal recess"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "Patent right frontal recess",
+            "definition": "Patent right frontal recess"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "Occluded right frontal recess",
+            "definition": "Occluded right frontal recess"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "Occluded left frontal recess",
+            "definition": "Occluded left frontal recess"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "Narrowed right frontal recess",
+            "definition": "Narrowed right frontal recess"
+          },
+          {
+            "code": "RDE19.5",
+            "name": "Narrowed left frontal recess",
+            "definition": "Narrowed left frontal recess"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2062",
+      "parent_set": "RDES19",
+      "name": "Nasal Septum",
+      "definition": "Position of nasal septum and presence/absence of spur",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "midline",
+            "definition": "midline"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "deviated left",
+            "definition": "deviated left"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "deviated right",
+            "definition": "deviated right"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "deviated left with septal spur",
+            "definition": "deviated left with septal spur"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "deviated right with septal spur",
+            "definition": "deviated right with septal spur"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2063",
+      "parent_set": "RDES19",
+      "name": "Ethmoid air cells aeration",
+      "definition": "Aeration of the ethmoid air cells",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "Aerated bilaterally",
+            "definition": "Aerated bilaterally"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "Opacified right anterior air cells",
+            "definition": "Opacified right anterior air cells"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "Opacified left anterior air cells",
+            "definition": "Opacified left anterior air cells"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "Opacified right posterior air cells",
+            "definition": "Opacified right posterior air cells"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "Opacified left posterior air cells",
+            "definition": "Opacified left posterior air cells"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2064",
+      "parent_set": "RDES19",
+      "name": "Sphenoethmoidal recess patency",
+      "definition": "Patency of the sphenoethmoidal recesses",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "Patent bilaterally",
+            "definition": "Patent bilaterally"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "Occluded right",
+            "definition": "Occluded right"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "Occluded left",
+            "definition": "Occluded left"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "Narrowed right",
+            "definition": "Narrowed right"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "Narrowed left",
+            "definition": "Narrowed left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2065",
+      "parent_set": "RDES19",
+      "name": "Osteo-meatal unit patency",
+      "definition": "Patency of the components of the osteo-meatal unit: infundibulum, middle meatus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 12,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "patent right infundibulum",
+            "definition": "patent right infundibulum"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "patent left infundibulum",
+            "definition": "patent left infundibulum"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "narrowed right infundibulum",
+            "definition": "narrowed right infundibulum"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "narrowed left infundibulum",
+            "definition": "narrowed left infundibulum"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "occluded right infundibulum",
+            "definition": "occluded right infundibulum"
+          },
+          {
+            "code": "RDE19.5",
+            "name": "occluded left infundibulum",
+            "definition": "occluded left infundibulum"
+          },
+          {
+            "code": "RDE19.6",
+            "name": "patent right middle meatus",
+            "definition": "patent right middle meatus"
+          },
+          {
+            "code": "RDE19.7",
+            "name": "patent left middle meatus",
+            "definition": "patent left middle meatus"
+          },
+          {
+            "code": "RDE19.8",
+            "name": "narrowed right middle meatus",
+            "definition": "narrowed right middle meatus"
+          },
+          {
+            "code": "RDE19.9",
+            "name": "narrowed left middle meatus",
+            "definition": "narrowed left middle meatus"
+          },
+          {
+            "code": "RDE19.10",
+            "name": "occluded right middle meatus",
+            "definition": "occluded right middle meatus"
+          },
+          {
+            "code": "RDE19.11",
+            "name": "occluded left middle meatus",
+            "definition": "occluded left middle meatus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2066",
+      "parent_set": "RDES19",
+      "name": "Depth of mucosal disease",
+      "definition": "greatest depth of mucosal disease measured in the maxillary sinus.  (Often used for insurance purposes where significant is => 4 mm.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 15,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE2067",
+      "parent_set": "RDES19",
+      "name": "Polyps",
+      "definition": "Presence of polyps in various structures",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 10,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "None",
+            "definition": "None"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "nasal cavity",
+            "definition": "nasal cavity"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "right maxillary sinus",
+            "definition": "right maxillary sinus"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "left maxillary sinus",
+            "definition": "left maxillary sinus"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "right ethmoid sinus",
+            "definition": "right ethmoid sinus"
+          },
+          {
+            "code": "RDE19.5",
+            "name": "left ethmoid sinus",
+            "definition": "left ethmoid sinus"
+          },
+          {
+            "code": "RDE19.6",
+            "name": "right sphenoid sinus",
+            "definition": "right sphenoid sinus"
+          },
+          {
+            "code": "RDE19.7",
+            "name": "left sphenoid sinus",
+            "definition": "left sphenoid sinus"
+          },
+          {
+            "code": "RDE19.8",
+            "name": "right frontal sinus",
+            "definition": "right frontal sinus"
+          },
+          {
+            "code": "RDE19.9",
+            "name": "left frontal sinus",
+            "definition": "left frontal sinus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2068",
+      "parent_set": "RDES19",
+      "name": "Sinus variants",
+      "definition": "Anatomic variants to the sinuses such as Onodi cells, Haller cells, intra sinus frontal, defects lamina papyracea, ethmoid bulla, concha bullosa",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 11,
+        "values": [
+          {
+            "code": "RDE19.0",
+            "name": "N/A",
+            "definition": "N/A"
+          },
+          {
+            "code": "RDE19.1",
+            "name": "right haller cell",
+            "definition": "right haller cell"
+          },
+          {
+            "code": "RDE19.2",
+            "name": "left haller cell",
+            "definition": "left haller cell"
+          },
+          {
+            "code": "RDE19.3",
+            "name": "right onodi cell",
+            "definition": "right onodi cell"
+          },
+          {
+            "code": "RDE19.4",
+            "name": "left onodi cell",
+            "definition": "left onodi cell"
+          },
+          {
+            "code": "RDE19.5",
+            "name": "right ethmoid bulla",
+            "definition": "right ethmoid bulla"
+          },
+          {
+            "code": "RDE19.6",
+            "name": "left ethmoid bulla",
+            "definition": "left ethmoid bulla"
+          },
+          {
+            "code": "RDE19.7",
+            "name": "right intrasinus air cell",
+            "definition": "right intrasinus air cell"
+          },
+          {
+            "code": "RDE19.8",
+            "name": "left intrasinus air cell",
+            "definition": "left intrasinus air cell"
+          },
+          {
+            "code": "RDE19.9",
+            "name": "right concha bullosa",
+            "definition": "right concha bullosa"
+          },
+          {
+            "code": "RDE19.10",
+            "name": "left concha bullosa",
+            "definition": "left concha bullosa"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

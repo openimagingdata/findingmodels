@@ -1,0 +1,87 @@
+{
+  "oifm_id": "OIFM_CDE_000114",
+  "name": "Chest Fluid Status on Xray",
+  "description": "Thoracic fluid status on chest xray",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000730",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000732",
+      "name": "Airspace edema",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000733",
+      "name": "Pleural effusions",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000734",
+      "name": "Pulmonary vascular cephalization",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000735",
+      "name": "Perivascular cuffing",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000736",
+      "name": "Peribronchial cuffing",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000737",
+      "name": "Interstitial edema",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000739",
+      "name": "Excess fluid volume",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES114",
+      "display": "chest fluid status on xray"
+    }
+  ],
+  "body_parts": []
+}

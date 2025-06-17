@@ -1,0 +1,144 @@
+{
+  "id": "RDES101",
+  "name": "Cervical Rib",
+  "description": "Cervical rib detection on MRI",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/101",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Rib",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID2471",
+        "display": "Rib",
+        "url": "http://www.radlex.org/RID/RID2471"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE632",
+      "parent_set": "RDES101",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE101.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE101.1",
+            "value": "1",
+            "name": "present",
+            "definition": "present"
+          },
+          {
+            "code": "RDE101.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE101.3",
+            "value": "3",
+            "name": "unknown",
+            "definition": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE633",
+      "parent_set": "RDES101",
+      "name": "Laterality",
+      "definition": "Cervical rib location.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE101.0",
+            "value": "0",
+            "name": "left",
+            "definition": "left"
+          },
+          {
+            "code": "RDE101.1",
+            "value": "1",
+            "name": "right",
+            "definition": "right"
+          },
+          {
+            "code": "RDE101.2",
+            "value": "2",
+            "name": "bilateral",
+            "definition": "bilateral"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

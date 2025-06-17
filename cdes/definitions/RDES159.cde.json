@@ -1,0 +1,263 @@
+{
+  "id": "RDES159",
+  "name": "Choledocholithiasis",
+  "description": "Choledocholithiasis  Detection",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/159",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Mona Elkholy",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1114",
+      "parent_set": "RDES159",
+      "name": "Stone size\t",
+      "definition": "If a common bile duct stone(s) is present then determine maximum measurement",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1115",
+      "parent_set": "RDES159",
+      "name": "Duct dilation measurement ",
+      "definition": "Biliary ductal dilation measurement",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1117",
+      "parent_set": "RDES159",
+      "name": "Duct dilation",
+      "definition": "Biliary ductal dilation detection based on measurement. Absent if measurement is less than 6 mm for patients younger than 60 years, allow 1 mm for each decade over 60 years. Present if measurement is less than or equal 6-9 mm for patients younger than 60 years, allow 1 mm for each decade over 60 years. Present if measurement is greater than 15 mm in the setting of prior cholecystectomy.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE159.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE159.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE159.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE159.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1118",
+      "parent_set": "RDES159",
+      "name": "Periductal fluid",
+      "definition": "Periductal fluid detection (high T2)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE159.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE159.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE159.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE159.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1119",
+      "parent_set": "RDES159",
+      "name": "Lumen distention measurement",
+      "definition": "Gallbladder lumen distention (a measurement greater than 45 mm is considered distention) ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1659",
+      "parent_set": "RDES159",
+      "name": "Presence",
+      "definition": "Presence of choledocholithiasis",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE159.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE159.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE159.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE159.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

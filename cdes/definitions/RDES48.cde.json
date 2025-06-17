@@ -1,0 +1,213 @@
+{
+  "id": "RDES48",
+  "name": "Tarsal Coalition",
+  "description": "This module describes the common data elements for tarsal coalition use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/48",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Tarsal Bone",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID35743",
+        "display": "Tarsal bone",
+        "url": "http://www.radlex.org/RID/RID35743"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Jay Patti, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE259",
+      "parent_set": "RDES48",
+      "name": "Presence",
+      "definition": "The presence of tarsal coalition",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE48.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE48.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE48.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE48.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE260",
+      "parent_set": "RDES48",
+      "name": "Characterization",
+      "definition": "If tarsal coalition exists, characterize the coalition",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE48.0",
+            "value": "0",
+            "name": "osseous"
+          },
+          {
+            "code": "RDE48.1",
+            "value": "1",
+            "name": "fibrous"
+          },
+          {
+            "code": "RDE48.2",
+            "value": "2",
+            "name": "cartilaginous"
+          },
+          {
+            "code": "RDE48.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE48.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE261",
+      "parent_set": "RDES48",
+      "name": "Type",
+      "definition": "If tarsal coalition exists, classify the type of coalition",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE48.0",
+            "value": "0",
+            "name": "calcaneonavicular"
+          },
+          {
+            "code": "RDE48.1",
+            "value": "1",
+            "name": "talocalcaneal"
+          },
+          {
+            "code": "RDE48.2",
+            "value": "2",
+            "name": "calcaneicuboid"
+          },
+          {
+            "code": "RDE48.3",
+            "value": "3",
+            "name": "talonavicular"
+          },
+          {
+            "code": "RDE48.4",
+            "value": "4",
+            "name": "cubonavicular"
+          },
+          {
+            "code": "RDE48.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE48.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

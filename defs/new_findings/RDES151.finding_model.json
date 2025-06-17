@@ -1,0 +1,24 @@
+{
+  "oifm_id": "OIFM_CDE_000151",
+  "name": "MTA-Scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "description": "MTA-scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001004",
+      "name": "MTA scale",
+      "description": "The MTA-score (Scheltens) should be rated on coronal T1-weighted images, on a slice through the corpus of the hippocampus (level of the anterior pons). The scale is based on a visual score of the width of the choroid fissure, the width of the temporal horn, and the height of the hippocampal formation.\nFor patients that are less than 75 years: score 2 or more is abnormal. For patients that are older than 75 years: score 3 or more is abnormal.\n",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES151",
+      "display": "mta-scale for medial temporal lobe atrophy (scheltens classification)"
+    }
+  ],
+  "body_parts": []
+}

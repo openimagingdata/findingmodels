@@ -1,0 +1,114 @@
+{
+  "id": "RDES288",
+  "name": "Epidural Spinal Cord Compression Scale (ESCC)",
+  "description": "Epidural Spinal Cord Compression Scale (ESCC) ",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-02-22"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/288",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Geisendorfer, Valerie",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1998",
+      "parent_set": "RDES288",
+      "name": "Compression grade",
+      "definition": "Element details for compression grade.  Measured on axial T2-W images at level of greatest compression.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE288.0",
+            "value": "0",
+            "name": "grade 0",
+            "definition": "Osseous disease only"
+          },
+          {
+            "code": "RDE288.1",
+            "value": "1",
+            "name": "grade 1a",
+            "definition": "Epidural involvement without thecal sac deformation"
+          },
+          {
+            "code": "RDE288.2",
+            "value": "2",
+            "name": "grade 1b",
+            "definition": "Thecal sac deformation without cord contact"
+          },
+          {
+            "code": "RDE288.3",
+            "value": "3",
+            "name": "grade 1c",
+            "definition": "Thecal sac deformation with cord contact"
+          },
+          {
+            "code": "RDE288.4",
+            "value": "4",
+            "name": "grade 2",
+            "definition": "Cord compression with preservation of some CSF"
+          },
+          {
+            "code": "RDE288.5",
+            "value": "5",
+            "name": "grade 3",
+            "definition": "Cord compression with complete effacement of CSF"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Bilsky MH, Laufer I, Fourney DR, et al. Reliability analysis of the epidural spinal cord compression scale. J Neurosurg Spine. 2010;13(3):324-8."
+    }
+  ]
+}

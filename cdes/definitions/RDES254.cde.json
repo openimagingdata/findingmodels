@@ -1,0 +1,88 @@
+{
+  "id": "RDES254",
+  "name": "Pleural Effusion",
+  "description": "Pleural Effusion",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-01-31"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/254",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Chase, Heather",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1652",
+      "parent_set": "RDES254",
+      "name": "Presence",
+      "definition": "Is pleural effusion present?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-31"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-31"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE254.0",
+            "value": "0",
+            "name": "present",
+            "definition": "present"
+          },
+          {
+            "code": "RDE254.1",
+            "value": "1",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE254.2",
+            "value": "2",
+            "name": "indeterminant",
+            "definition": "indeterminant"
+          },
+          {
+            "code": "RDE254.3",
+            "value": "3",
+            "name": "unknown",
+            "definition": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

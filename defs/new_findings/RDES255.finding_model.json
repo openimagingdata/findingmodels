@@ -1,0 +1,42 @@
+{
+  "oifm_id": "OIFM_CDE_000255",
+  "name": "Pneumomediastinum",
+  "description": "Pneumomediastinum is air in the mediastinum. The mediastinum is the space in the middle of the chest, between the lungs and around the heart.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001654",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001656",
+      "name": "Size",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001999",
+      "name": "Type",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES255",
+      "display": "pneumomediastinum"
+    }
+  ],
+  "body_parts": []
+}

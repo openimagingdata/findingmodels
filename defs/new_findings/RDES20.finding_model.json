@@ -1,0 +1,151 @@
+{
+  "oifm_id": "OIFM_CDE_000020",
+  "name": "Brain Imaging - Multiple Sclerosis",
+  "description": "This module describes the Common Data elements and Macros for Brain MS",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000143",
+      "name": "Supratentorial lesion number",
+      "description": "Use 0-10 scale",
+      "type": "numeric",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000144",
+      "name": "Supratentorial lesion locations",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000145",
+      "name": "Lesion location subtype",
+      "description": "DIS criteria",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000146",
+      "name": "Infratentorial lesion number",
+      "description": "Use 0-10 scale",
+      "type": "numeric",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000147",
+      "name": "Infratentorial locations",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000148",
+      "name": "Cervico-medullary",
+      "description": "Cervico-medullary",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000149",
+      "name": "Mass effect",
+      "description": "Mass effect",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000150",
+      "name": " Hypointense black holes T1",
+      "description": "Black Holes T1 hypointense?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES20",
+      "display": "brain imaging - multiple sclerosis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

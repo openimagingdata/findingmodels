@@ -1,0 +1,109 @@
+{
+  "id": "RDES151",
+  "name": "MTA-Scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "description": "MTA-scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/151",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Adam Flanders",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1004",
+      "parent_set": "RDES151",
+      "name": "MTA scale",
+      "definition": "The MTA-score (Scheltens) should be rated on coronal T1-weighted images, on a slice through the corpus of the hippocampus (level of the anterior pons). The scale is based on a visual score of the width of the choroid fissure, the width of the temporal horn, and the height of the hippocampal formation.\nFor patients that are less than 75 years: score 2 or more is abnormal. For patients that are older than 75 years: score 3 or more is abnormal.\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE151.0",
+            "value": "0",
+            "name": "MTA 0",
+            "definition": "Score 0: no atrophy."
+          },
+          {
+            "code": "RDE151.1",
+            "value": "1",
+            "name": "MTA 1",
+            "definition": "Score 1: only widening of choroid fissure."
+          },
+          {
+            "code": "RDE151.2",
+            "value": "2",
+            "name": "MTA2",
+            "definition": "Score 2: also widening of temporal horn of lateral ventricle."
+          },
+          {
+            "code": "RDE151.3",
+            "value": "3",
+            "name": "MTA 3",
+            "definition": "Score 3: moderate loss of hippocampal volume (decrease in height)."
+          },
+          {
+            "code": "RDE151.4",
+            "value": "4",
+            "name": "MTA 4",
+            "definition": "Score 4: severe volume loss of hippocampus . "
+          },
+          {
+            "code": "RDE151.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE151.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,1979 @@
+{
+  "id": "RDES272",
+  "name": "Traumatic Brain Injury",
+  "description": "A subset of data elements from the National Institute for Neurological Disorders and Stroke (NINDS). The data elements are related to the reporting template for imaging of traumatic brain injury.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/272",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "Radiological Society of North America",
+        "abbreviation": "RSNA",
+        "url": "https://www.rsna.org/",
+        "comment": "comment"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1756",
+      "parent_set": "RDES272",
+      "name": "Imaging modality",
+      "definition": "Imaging modality of the current study",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "non-contrast CT"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "contrast CT"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "CT angiography"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "X-ray angiography"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "MRI"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "MRA"
+          },
+          {
+            "code": "RDE272.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1757",
+      "parent_set": "RDES272",
+      "name": "Imaging scanner strength",
+      "definition": "Magnetic field strength; applies only to MR studies.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "1.5 t"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "3.0 t"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "4.0 t"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "7.0 t"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1758",
+      "parent_set": "RDES272",
+      "name": "Imaging sequence",
+      "definition": "Choose all that apply.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 12,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "t1"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "t2"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "flair"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "dwi"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "gre"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "swi"
+          },
+          {
+            "code": "RDE272.6",
+            "value": "6",
+            "name": "dti"
+          },
+          {
+            "code": "RDE272.7",
+            "value": "7",
+            "name": "mrsi"
+          },
+          {
+            "code": "RDE272.8",
+            "value": "8",
+            "name": "pwi"
+          },
+          {
+            "code": "RDE272.9",
+            "value": "9",
+            "name": "other"
+          },
+          {
+            "code": "RDE272.10",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.11",
+            "value": "1",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1759",
+      "parent_set": "RDES272",
+      "name": "Brain imaging result",
+      "definition": "If answered \"normal\", \"not done\" or \"unknown\", skip remaining questions.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "abnormal"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "not done"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1760",
+      "parent_set": "RDES272",
+      "name": "Skull fracture",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1761",
+      "parent_set": "RDES272",
+      "name": "Epidural hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1762",
+      "parent_set": "RDES272",
+      "name": "Extraaxial hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1763",
+      "parent_set": "RDES272",
+      "name": "Acute subdural hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1764",
+      "parent_set": "RDES272",
+      "name": "Subacute or chronic subdural hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1765",
+      "parent_set": "RDES272",
+      "name": "Subdural hematoma - mixed density or CSF-like collection",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1766",
+      "parent_set": "RDES272",
+      "name": "Subarachnoid hemorrhage",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1767",
+      "parent_set": "RDES272",
+      "name": "Traumatic aneurysm",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1768",
+      "parent_set": "RDES272",
+      "name": "Venous sinus injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1769",
+      "parent_set": "RDES272",
+      "name": "Midline shift supratentorial",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1770",
+      "parent_set": "RDES272",
+      "name": "Cisternal compression",
+      "definition": "Status of asymmetry or obliteration of the normal configuration of the perimesencephalic, suprasellar, prepontine, or superior cerebellar cistern, and/or cisterna magna due to mass effect and/or brain swelling in the setting of trauma.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1771",
+      "parent_set": "RDES272",
+      "name": "Cisternal compression type",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "visible, compressed, asymmetric"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "visible, compressed, symmetric"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "mixed",
+            "definition": "Some cisterns open, others compressed or obliterated"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "obliterated",
+            "definition": "all cisterns are obliterated"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1772",
+      "parent_set": "RDES272",
+      "name": "Fourth ventricle shift or effacement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1773",
+      "parent_set": "RDES272",
+      "name": "Contusion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1774",
+      "parent_set": "RDES272",
+      "name": "Contusion findings",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "hemorrhagic"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "non-hemorrhagic"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "cortical"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "subcortical"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "deep brain structures"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "probable brain laceration",
+            "definition": "Linear hemorrhagic or non-hemorrhagic findings"
+          },
+          {
+            "code": "RDE272.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1775",
+      "parent_set": "RDES272",
+      "name": "Intracerebral hemorrhage",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1776",
+      "parent_set": "RDES272",
+      "name": "Intraventricular hemorrhage",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1777",
+      "parent_set": "RDES272",
+      "name": "Diffuse axonal injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1778",
+      "parent_set": "RDES272",
+      "name": "Diffuse axonal injury anatonic site",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "frontal, left"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "frontal, right"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "parietal, left"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "parietal, right"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "temporal, left"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "temporal, right"
+          },
+          {
+            "code": "RDE272.6",
+            "value": "6",
+            "name": "occipital, left"
+          },
+          {
+            "code": "RDE272.7",
+            "value": "7",
+            "name": "occipital, right"
+          },
+          {
+            "code": "RDE272.8",
+            "value": "8",
+            "name": "thalamus-basal ganglia, left"
+          },
+          {
+            "code": "RDE272.9",
+            "value": "9",
+            "name": "thalamus-basal ganglia, right"
+          },
+          {
+            "code": "RDE272.10",
+            "value": "0",
+            "name": "midbrain, left"
+          },
+          {
+            "code": "RDE272.11",
+            "value": "1",
+            "name": "midbrain, right"
+          },
+          {
+            "code": "RDE272.12",
+            "value": "2",
+            "name": "pons, left"
+          },
+          {
+            "code": "RDE272.13",
+            "value": "3",
+            "name": "pons, right"
+          },
+          {
+            "code": "RDE272.14",
+            "value": "4",
+            "name": "medulla, left"
+          },
+          {
+            "code": "RDE272.15",
+            "value": "5",
+            "name": "medulla, right"
+          },
+          {
+            "code": "RDE272.16",
+            "value": "6",
+            "name": "cerebellum, left"
+          },
+          {
+            "code": "RDE272.17",
+            "value": "7",
+            "name": "cerebellum, right"
+          },
+          {
+            "code": "RDE272.18",
+            "value": "8",
+            "name": "corpus callosum, genu, left"
+          },
+          {
+            "code": "RDE272.19",
+            "value": "9",
+            "name": "corpus collosum, genu, right"
+          },
+          {
+            "code": "RDE272.20",
+            "value": "0",
+            "name": "corpus callosum, body, left"
+          },
+          {
+            "code": "RDE272.21",
+            "value": "1",
+            "name": "corpus callosum, body, right"
+          },
+          {
+            "code": "RDE272.22",
+            "value": "2",
+            "name": "corpus callosum, splenum, left"
+          },
+          {
+            "code": "RDE272.23",
+            "value": "3",
+            "name": "corpus callosum, splenum, right"
+          },
+          {
+            "code": "RDE272.24",
+            "value": "4",
+            "name": "subcortical white matter, frontal, left"
+          },
+          {
+            "code": "RDE272.25",
+            "value": "5",
+            "name": "subcortical white matter, frontal, right"
+          },
+          {
+            "code": "RDE272.26",
+            "value": "6",
+            "name": "subcortical white matter, parietal, left"
+          },
+          {
+            "code": "RDE272.27",
+            "value": "7",
+            "name": "subcortical white matter, parietal, right"
+          },
+          {
+            "code": "RDE272.28",
+            "value": "8",
+            "name": "subcortical white matter, temporal, left"
+          },
+          {
+            "code": "RDE272.29",
+            "value": "9",
+            "name": "subcortical white matter, temporal, right"
+          },
+          {
+            "code": "RDE272.30",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.31",
+            "value": "1",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1779",
+      "parent_set": "RDES272",
+      "name": "Penetrating injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1780",
+      "parent_set": "RDES272",
+      "name": "Penetrating injury associated findings",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "indriven fragment",
+            "definition": "bone, foreign body"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "through and through trajectory",
+            "definition": "Entrance and exit sites are visible"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "transventricular trajectory"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "crossed midline"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1781",
+      "parent_set": "RDES272",
+      "name": "Gunshot wound caliber number",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0.17,
+        "max": 0.5,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1782",
+      "parent_set": "RDES272",
+      "name": "Cervicomedullary junction or brainstem injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1783",
+      "parent_set": "RDES272",
+      "name": "Cervicomedullary junction or brainstem injury anatomic site",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "midbrain"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "pons"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "medulla"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "cervical"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1784",
+      "parent_set": "RDES272",
+      "name": "Edema",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1785",
+      "parent_set": "RDES272",
+      "name": "Brain swelling",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1786",
+      "parent_set": "RDES272",
+      "name": "Brain swelling extent",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "focal"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "lobar"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "multilobar"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "hemispheric"
+          },
+          {
+            "code": "RDE272.4",
+            "value": "4",
+            "name": "bihemispheric"
+          },
+          {
+            "code": "RDE272.5",
+            "value": "5",
+            "name": "posterior fossa"
+          },
+          {
+            "code": "RDE272.6",
+            "value": "6",
+            "name": "global"
+          },
+          {
+            "code": "RDE272.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1787",
+      "parent_set": "RDES272",
+      "name": "Ischemia or infarction or hypoxic-ischemic injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1788",
+      "parent_set": "RDES272",
+      "name": "Brain atrophy or encephalomalacia",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1789",
+      "parent_set": "RDES272",
+      "name": "Vascular dissection",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE272.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE272.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE272.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE272.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

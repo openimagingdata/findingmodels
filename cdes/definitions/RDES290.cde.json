@@ -1,0 +1,410 @@
+{
+  "id": "RDES290",
+  "name": "ARIA-E follow-up",
+  "description": "Follow up imaging for patients undergoing treatment with an amyloid-lowering antibody therapy",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2024-06-05"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/290",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Gibbs, Wende",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Dirk Smeets",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "icometrix"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE2012",
+      "parent_set": "RDES290",
+      "name": "Field strength",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "3T"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "1.5T"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2013",
+      "parent_set": "RDES290",
+      "name": "Baseline FLAIR hyperintensities comparison scan",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "no prior exam available"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2014",
+      "parent_set": "RDES290",
+      "name": "Prior FLAIR hyperintensities location(s)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 14,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "left frontal"
+          },
+          {
+            "code": "RDE290.2",
+            "value": "2",
+            "name": "right frontal"
+          },
+          {
+            "code": "RDE290.3",
+            "value": "3",
+            "name": "left occipital"
+          },
+          {
+            "code": "RDE290.4",
+            "value": "4",
+            "name": "right occipital"
+          },
+          {
+            "code": "RDE290.5",
+            "value": "5",
+            "name": "left parietal"
+          },
+          {
+            "code": "RDE290.6",
+            "value": "6",
+            "name": "right parietal"
+          },
+          {
+            "code": "RDE290.7",
+            "value": "7",
+            "name": "left temporal"
+          },
+          {
+            "code": "RDE290.8",
+            "value": "8",
+            "name": "right temporal"
+          },
+          {
+            "code": "RDE290.9",
+            "value": "9",
+            "name": "left cerebellum"
+          },
+          {
+            "code": "RDE290.10",
+            "value": "0",
+            "name": "right cerebellum"
+          },
+          {
+            "code": "RDE290.11",
+            "value": "1",
+            "name": "other"
+          },
+          {
+            "code": "RDE290.12",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE290.13",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2016",
+      "parent_set": "RDES290",
+      "name": "New areas for edema or effusion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE290.2",
+            "value": "2",
+            "name": "definite"
+          },
+          {
+            "code": "RDE290.3",
+            "value": "3",
+            "name": "possible"
+          },
+          {
+            "code": "RDE290.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2017",
+      "parent_set": "RDES290",
+      "name": "Largest diameter of new area of effusion or edema",
+      "definition": "The largest area of edema or effusion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2018",
+      "parent_set": "RDES290",
+      "name": "Regions of edema/effusion for ARIA-E",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "1 less than 5cm"
+          },
+          {
+            "code": "RDE290.2",
+            "value": "2",
+            "name": "1 or multiple smaller than 10cm"
+          },
+          {
+            "code": "RDE290.3",
+            "value": "3",
+            "name": "at least 1 greater than 10cm"
+          },
+          {
+            "code": "RDE290.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2019",
+      "parent_set": "RDES290",
+      "name": "ARIA-E (effusion and/or edema)",
+      "definition": "effusion and/or edema",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE290.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE290.1",
+            "value": "1",
+            "name": "mild"
+          },
+          {
+            "code": "RDE290.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE290.3",
+            "value": "3",
+            "name": "severe"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

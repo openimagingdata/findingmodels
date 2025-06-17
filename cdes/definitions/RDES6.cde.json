@@ -1,0 +1,532 @@
+{
+  "id": "RDES6",
+  "name": "Glasgow Coma Scale (GCS)",
+  "description": "The Glasgow Coma Scale (GCS) is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response. From the National Institute of Neurological Disorders and Stroke (NIH / NINDS).",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Retired",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/6",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "smita kabra",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE61",
+      "parent_set": "RDES6",
+      "name": "Glasgow Coma Scale (GCS) - eye response scale",
+      "definition": "Glasgow Coma Scale (GCS) - Best eye response (E). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
+      "question": "GCS Eye Opening:",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 3,
+        "date": "2016-01-03"
+      },
+      "status": {
+        "name": "Retired",
+        "date": "2016-01-03"
+      },
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "9267-6",
+          "display": "glasgow coma score eye opening",
+          "url": "http://purl.bioontology.org/ontology/LNC/9267-6"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6553-7",
+          "display": "no eye opening",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6553-7"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6554-5",
+          "display": "eye opening to pain",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6554-5"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6556-0",
+          "display": "eyes open spontaneously",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6556-0"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6555-2",
+          "display": "eye opening to verbal command",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6555-2"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown",
+          "url": "http://www.radlex.org/RID/RID5655"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE6.0",
+            "value": "1",
+            "name": "No eye opening"
+          },
+          {
+            "code": "RDE6.1",
+            "value": "2",
+            "name": "Eye opening to pain"
+          },
+          {
+            "code": "RDE6.2",
+            "value": "3",
+            "name": "Eye opening to speech/verbal command"
+          },
+          {
+            "code": "RDE6.3",
+            "value": "4",
+            "name": "Eyes open spontaneously"
+          },
+          {
+            "code": "RDE6.4",
+            "name": "Untestable"
+          },
+          {
+            "code": "RDE6.5",
+            "name": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE62",
+      "parent_set": "RDES6",
+      "name": "Glasgow Coma Scale (GCS) - motor response scale",
+      "definition": "Glasgow Coma Scale (GCS) - Best motor response (M). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
+      "question": "GCS Motor Response:",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 3,
+        "date": "2016-01-03"
+      },
+      "status": {
+        "name": "Retired",
+        "date": "2016-01-03"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "386554004",
+          "display": "glasgow coma scale",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/386554004"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363850001",
+          "display": "motor response",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363850001"
+        },
+        {
+          "system": "LOINC",
+          "code": "9268-4",
+          "display": "glasgow coma score motor",
+          "url": "http://purl.bioontology.org/ontology/LNC/9268-4"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6562-8",
+          "display": "no motor response",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6562-8"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6563-6",
+          "display": "extension to pain",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6563-6"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6566-9",
+          "display": "localizing pain",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6566-9"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6567-7",
+          "display": "obeys commands",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6567-7"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6564-4",
+          "display": "flexion to pain",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6564-4"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6565-1",
+          "display": "withdrawl from pain",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6565-1"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown",
+          "url": "http://www.radlex.org/RID/RID5655"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE6.0",
+            "value": "1",
+            "name": "No motor response"
+          },
+          {
+            "code": "RDE6.1",
+            "value": "2",
+            "name": "Abnormal extension/Extensor response"
+          },
+          {
+            "code": "RDE6.2",
+            "value": "3",
+            "name": "Abnormal flexion"
+          },
+          {
+            "code": "RDE6.3",
+            "value": "4",
+            "name": "Flexion withdrawal/withdraws from pain"
+          },
+          {
+            "code": "RDE6.4",
+            "value": "5",
+            "name": "Localizes pain"
+          },
+          {
+            "code": "RDE6.5",
+            "value": "6",
+            "name": "Obeys command"
+          },
+          {
+            "code": "RDE6.6",
+            "name": "Untestable"
+          },
+          {
+            "code": "RDE6.7",
+            "name": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE63",
+      "parent_set": "RDES6",
+      "name": "Glasgow Coma Scale (GCS) - verbal response scale",
+      "definition": "Score that describes the participant's verbal response according to the Glasgow Coma Scale (GCS).",
+      "question": "GCS Verbal Response:",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 3,
+        "date": "2016-01-03"
+      },
+      "status": {
+        "name": "Retired",
+        "date": "2016-01-03"
+      },
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "9270-0",
+          "display": "glasgow coma score verbal",
+          "url": "http://purl.bioontology.org/ontology/LNC/9270-0"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6557-8",
+          "display": "no verbal response (>2 yrs); no vocal response (<=2 yrs)",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6557-8"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6558-6",
+          "display": "incomprehensible sounds",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6558-6"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6559-4",
+          "display": "inappropriate words",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6559-4"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6560-2",
+          "display": "confused",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6560-2"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6561-0",
+          "display": "oriented",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA6561-0"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown",
+          "url": "http://www.radlex.org/RID/RID5655"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE6.0",
+            "value": "1",
+            "name": "No verbal response/sounds"
+          },
+          {
+            "code": "RDE6.1",
+            "value": "2",
+            "name": "Incomprehensible sound"
+          },
+          {
+            "code": "RDE6.2",
+            "value": "3",
+            "name": "Inappropriate words"
+          },
+          {
+            "code": "RDE6.3",
+            "value": "4",
+            "name": "Confused"
+          },
+          {
+            "code": "RDE6.4",
+            "value": "5",
+            "name": "Oriented"
+          },
+          {
+            "code": "RDE6.5",
+            "name": "Untestable"
+          },
+          {
+            "code": "RDE6.6",
+            "name": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE64",
+      "parent_set": "RDES6",
+      "name": "Glasgow Coma Scale (GCS) - total score",
+      "definition": "Glasgow Coma Scale (GCS) - Total Score. The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response. The total score is the sum of the scores for the three response types. (3-15)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-26"
+      },
+      "status": {
+        "name": "Retired",
+        "date": "2023-04-26"
+      },
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "35088-4",
+          "display": "glasgow coma scale",
+          "url": "http://purl.bioontology.org/ontology/LNC/35088-4"
+        },
+        {
+          "system": "LOINC",
+          "code": "LP33022-2",
+          "display": "glasgow coma scale",
+          "url": "http://purl.bioontology.org/ontology/LNC/LP33022-2"
+        },
+        {
+          "system": "LOINC",
+          "code": "9269-2",
+          "display": "glasgow coma score total",
+          "url": "http://purl.bioontology.org/ontology/LNC/9269-2"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE6.0",
+            "value": "3",
+            "name": "3"
+          },
+          {
+            "code": "RDE6.1",
+            "value": "8",
+            "name": "8"
+          },
+          {
+            "code": "RDE6.2",
+            "value": "4",
+            "name": "4"
+          },
+          {
+            "code": "RDE6.3",
+            "value": "5",
+            "name": "5"
+          },
+          {
+            "code": "RDE6.4",
+            "value": "6",
+            "name": "6"
+          },
+          {
+            "code": "RDE6.5",
+            "value": "7",
+            "name": "7"
+          },
+          {
+            "code": "RDE6.6",
+            "value": "9",
+            "name": "9"
+          },
+          {
+            "code": "RDE6.7",
+            "value": "0",
+            "name": "10"
+          },
+          {
+            "code": "RDE6.8",
+            "value": "1",
+            "name": "11"
+          },
+          {
+            "code": "RDE6.9",
+            "value": "2",
+            "name": "12"
+          },
+          {
+            "code": "RDE6.10",
+            "value": "3",
+            "name": "13"
+          },
+          {
+            "code": "RDE6.11",
+            "value": "4",
+            "name": "14"
+          },
+          {
+            "code": "RDE6.12",
+            "value": "5",
+            "name": "15"
+          },
+          {
+            "code": "RDE6.13",
+            "name": "Untestable"
+          },
+          {
+            "code": "RDE6.14",
+            "name": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1693",
+      "parent_set": "RDES6",
+      "name": "Motor response scale",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-26"
+      },
+      "status": {
+        "name": "Retired",
+        "date": "2023-04-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE6.0",
+            "value": "3",
+            "name": "123"
+          },
+          {
+            "code": "RDE6.1",
+            "value": "4",
+            "name": "234"
+          },
+          {
+            "code": "RDE6.2",
+            "value": "0",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE6.3",
+            "value": "0",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

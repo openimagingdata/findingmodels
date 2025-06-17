@@ -1,0 +1,312 @@
+{
+  "id": "RDES274",
+  "name": "Pituitary Post-Operative Sella",
+  "description": "Pituitary Post-Operative Sella",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-10-19"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/274",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Hill, Virginia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1791",
+      "parent_set": "RDES274",
+      "name": "Surgical approach",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE274.0",
+            "value": "0",
+            "name": "endonasal"
+          },
+          {
+            "code": "RDE274.1",
+            "value": "1",
+            "name": "trans-sphenoidal"
+          },
+          {
+            "code": "RDE274.2",
+            "value": "2",
+            "name": "trans-tuberculum"
+          },
+          {
+            "code": "RDE274.3",
+            "value": "3",
+            "name": "trans-planum"
+          },
+          {
+            "code": "RDE274.4",
+            "value": "4",
+            "name": "open craniotomy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1792",
+      "parent_set": "RDES274",
+      "name": "Closure",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 4,
+        "values": [
+          {
+            "code": "RDE274.0",
+            "value": "0",
+            "name": "vascularized nasoseptal flap"
+          },
+          {
+            "code": "RDE274.1",
+            "value": "1",
+            "name": "intradural fat"
+          },
+          {
+            "code": "RDE274.2",
+            "value": "2",
+            "name": "pericranial flap"
+          },
+          {
+            "code": "RDE274.3",
+            "value": "3",
+            "name": "dural substitute"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1793",
+      "parent_set": "RDES274",
+      "name": " Vascularized nasoseptal flap",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE274.0",
+            "value": "0",
+            "name": "enhances"
+          },
+          {
+            "code": "RDE274.1",
+            "value": "1",
+            "name": "does not enhance (i.e. flap failure)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1794",
+      "parent_set": "RDES274",
+      "name": "Reconstruction failure",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE274.0",
+            "value": "0",
+            "name": "flap migration from superior defect"
+          },
+          {
+            "code": "RDE274.1",
+            "value": "1",
+            "name": "fistula"
+          },
+          {
+            "code": "RDE274.2",
+            "value": "2",
+            "name": "foreign body between flap and defect"
+          },
+          {
+            "code": "RDE274.3",
+            "value": "3",
+            "name": "healthy appearance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1795",
+      "parent_set": "RDES274",
+      "name": "Amount of residual disease",
+      "definition": "Percentage of the pre-operative volume",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-19"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1796",
+      "parent_set": "RDES274",
+      "name": "Location of residual disease",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE274.0",
+            "value": "0",
+            "name": "anterior sella"
+          },
+          {
+            "code": "RDE274.1",
+            "value": "1",
+            "name": "posterior sella"
+          },
+          {
+            "code": "RDE274.2",
+            "value": "2",
+            "name": "left"
+          },
+          {
+            "code": "RDE274.3",
+            "value": "3",
+            "name": "right"
+          },
+          {
+            "code": "RDE274.4",
+            "value": "4",
+            "name": "midline"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

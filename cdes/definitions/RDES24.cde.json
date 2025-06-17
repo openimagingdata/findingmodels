@@ -1,0 +1,685 @@
+{
+  "id": "RDES24",
+  "name": "Cervical Lymph Nodes",
+  "description": "This module describes the Common Data elements and Macros for Lymph Nodes",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/24",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE185",
+      "parent_set": "RDES24",
+      "name": "Number of nodes",
+      "definition": "Number of nodes",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "single"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "multiple"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE186",
+      "parent_set": "RDES24",
+      "name": "Side",
+      "definition": "Laterality",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE187",
+      "parent_set": "RDES24",
+      "name": "Size of largest cluster",
+      "definition": "\nUse longest dimension (improved clinical-radiologic correlation and adherence to staging systems)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Liu J, Ebrahimi A, Low T-H et al., Predictive value of the 8th edition American Joint Commission Cancer (AJCC) nodal staging system for patients with cutaneous squamous cell carcinoma of the head and neck. J Surg Oncol. 2017;1?8. https://doi.org/10.1002/jso.24883"
+        }
+      ],
+      "integer_value": {
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE188",
+      "parent_set": "RDES24",
+      "name": "Levels involved",
+      "definition": "Which levels involved?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Som PM, Curtin HD, Mancuso AA. Imaging-based nodal classification for evaluation of neck metastatic adenopathy.AJR Am J Roentgenol. 2000 Mar;174(3):837-44"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "I"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "IIa"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "IIb"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "III"
+          },
+          {
+            "code": "RDE24.4",
+            "value": "4",
+            "name": "IV"
+          },
+          {
+            "code": "RDE24.5",
+            "value": "5",
+            "name": "Va"
+          },
+          {
+            "code": "RDE24.6",
+            "value": "6",
+            "name": "Vb"
+          },
+          {
+            "code": "RDE24.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE189",
+      "parent_set": "RDES24",
+      "name": "ECS ",
+      "definition": "ECS ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE190",
+      "parent_set": "RDES24",
+      "name": "Pattern of enhancement",
+      "definition": "Threshold: 20% or more cystic by volume",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Rath TJ, Narayanan S, Hughes MA, Ferris RL, Chiosea SI, Branstetter BF. Solid Lymph Nodes as an Imaging Biomarker for Risk Stratification in Human Papillomavirus-related Oropharyngeal Squamous Cell Carcinoma. AJNR Am J Neuroradiol 2017 Apr 27"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "cystic"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "solid",
+            "definition": "solid"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "necrotic",
+            "definition": "necrotic"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE191",
+      "parent_set": "RDES24",
+      "name": "Drainage pattern",
+      "definition": "Are these nodes in expected drainage pattern?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Kulzer M, Branstetter BF. Neck Node Anatomy, Imaging Based Level Nodal Classification and Impact of Primary Tumor Site on Patterns of Nodal Metastasis. Semin Ultrasound CT MR. 2017 Oct;38(5):454-465"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "expected"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "unexpected",
+            "definition": "no"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE192",
+      "parent_set": "RDES24",
+      "name": "Invasion of critical structures ",
+      "definition": "Invasion of critical structures (carotid, prevertebral)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-23"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-01-23"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "negative"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "possible"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "probable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE193",
+      "parent_set": "RDES24",
+      "name": "Degree of certainty for involvement (NIRADS)",
+      "definition": "Degree of certainty for involvement (NIRADS) - 1 = negative; 2 = low likelihood; 3 = high likelihood; 4 = definite disease",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Krieger DA, Hudgins PA, Nayak GK, Baugnon KL, Corey AS, Patel MR, Beitler JJ, Saba NF, Liu Y, Aiken AH. Initial Performance of NI-RADS to Predict Residual or Recurrent Head and Neck Squamous Cell Carcinoma. AJNR Am J Neuroradiol. 2017 Jun;38(6):1193-1199. doi: 10.3174/ajnr.A5157. Epub 2017 Mar 31"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "1",
+            "definition": "1 = negative"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "2",
+            "definition": "2 = low likelihood"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "3",
+            "definition": "3 = high likelihood"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "4",
+            "definition": "4 = definite disease"
+          },
+          {
+            "code": "RDE24.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2035",
+      "parent_set": "RDES24",
+      "name": "Non-zone nodes",
+      "definition": "Non-zone nodes (RP, facial, parotid)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-07-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-07-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "abnormal"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2036",
+      "parent_set": "RDES24",
+      "name": "Degree of certainty (ENE)",
+      "definition": "Read with high specificity - only call \"definite\" if unequivocal",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-07-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-07-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "definite"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "possible"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2052",
+      "parent_set": "RDES24",
+      "name": "Levels involved",
+      "definition": "Which levels involved?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE24.0",
+            "value": "0",
+            "name": "1"
+          },
+          {
+            "code": "RDE24.1",
+            "value": "1",
+            "name": "2a"
+          },
+          {
+            "code": "RDE24.2",
+            "value": "2",
+            "name": "2b"
+          },
+          {
+            "code": "RDE24.3",
+            "value": "3",
+            "name": "3"
+          },
+          {
+            "code": "RDE24.4",
+            "value": "4",
+            "name": "4"
+          },
+          {
+            "code": "RDE24.5",
+            "value": "5",
+            "name": "5a"
+          },
+          {
+            "code": "RDE24.6",
+            "value": "6",
+            "name": "5b"
+          },
+          {
+            "code": "RDE24.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE24.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

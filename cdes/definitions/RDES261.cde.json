@@ -1,0 +1,217 @@
+{
+  "id": "RDES261",
+  "name": "Chronic Rib Fracture",
+  "description": "Chronic Rib Fracture",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-03-27"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/261",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Visser, Jacob",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Colegrove, Carol",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1683",
+      "parent_set": "RDES261",
+      "name": "Fracture",
+      "definition": "Cortical breach of a rib with surrounding callus formation or union. ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-03-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE261.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE261.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE261.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE261.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1684",
+      "parent_set": "RDES261",
+      "name": "Side",
+      "definition": "Rib fracture laterality",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-09-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE261.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE261.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE261.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1685",
+      "parent_set": "RDES261",
+      "name": "Ribs",
+      "definition": "Describe number(s) of rib(s) affected",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-03-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE261.0",
+            "value": "0",
+            "name": "1"
+          },
+          {
+            "code": "RDE261.1",
+            "value": "1",
+            "name": "2"
+          },
+          {
+            "code": "RDE261.2",
+            "value": "2",
+            "name": "3"
+          },
+          {
+            "code": "RDE261.3",
+            "value": "3",
+            "name": "4"
+          },
+          {
+            "code": "RDE261.4",
+            "value": "4",
+            "name": "5"
+          },
+          {
+            "code": "RDE261.5",
+            "value": "5",
+            "name": "6"
+          },
+          {
+            "code": "RDE261.6",
+            "value": "6",
+            "name": "7"
+          },
+          {
+            "code": "RDE261.7",
+            "value": "7",
+            "name": "8"
+          },
+          {
+            "code": "RDE261.8",
+            "value": "8",
+            "name": "9"
+          },
+          {
+            "code": "RDE261.9",
+            "value": "9",
+            "name": "10"
+          },
+          {
+            "code": "RDE261.10",
+            "value": "0",
+            "name": "11"
+          },
+          {
+            "code": "RDE261.11",
+            "value": "1",
+            "name": "12"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

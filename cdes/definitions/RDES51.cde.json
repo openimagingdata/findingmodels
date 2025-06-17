@@ -1,0 +1,589 @@
+{
+  "id": "RDES51",
+  "name": "Scoliosis",
+  "description": "This module describes the common data elements for scoliosis use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/51",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Spine",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID7741",
+        "display": "Spine",
+        "url": "http://www.radlex.org/RID/RID7741"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Towbin, Alexander",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Matt Hawkins, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    },
+    {
+      "name": "Pediatric Radiology",
+      "abbreviation": "PD"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE264",
+      "parent_set": "RDES51",
+      "name": "Cobb angle",
+      "definition": "Measure coronal plane deformity on anteroposterior plane radiographs in the classification of scoliosis (degrees)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE265",
+      "parent_set": "RDES51",
+      "name": "Pelvic tilt",
+      "definition": "Angle between the iliac crest to the horizontal (degrees)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE266",
+      "parent_set": "RDES51",
+      "name": "Triradiate cartilage",
+      "definition": "Epiphyseal plate between the ilium, ischium, and pubis to form the acetabulum of the os coxae",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE51.0",
+            "value": "0",
+            "name": "open",
+            "definition": "open"
+          },
+          {
+            "code": "RDE51.1",
+            "value": "1",
+            "name": "closed"
+          },
+          {
+            "code": "RDE51.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE51.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE267",
+      "parent_set": "RDES51",
+      "name": "Vertebral body numbering",
+      "definition": "Numbering order of the vertebrae of the human spinal column (pixel identification)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE51.0",
+            "value": "0",
+            "name": "non vertebrae pixel"
+          },
+          {
+            "code": "RDE51.1",
+            "value": "1",
+            "name": "C1"
+          },
+          {
+            "code": "RDE51.2",
+            "value": "2",
+            "name": "C2"
+          },
+          {
+            "code": "RDE51.3",
+            "value": "3",
+            "name": "C3"
+          },
+          {
+            "code": "RDE51.4",
+            "value": "4",
+            "name": "C4"
+          },
+          {
+            "code": "RDE51.5",
+            "value": "5",
+            "name": "C5"
+          },
+          {
+            "code": "RDE51.6",
+            "value": "6",
+            "name": "C6"
+          },
+          {
+            "code": "RDE51.7",
+            "value": "7",
+            "name": "C7"
+          },
+          {
+            "code": "RDE51.8",
+            "value": "8",
+            "name": "T1"
+          },
+          {
+            "code": "RDE51.9",
+            "value": "9",
+            "name": "T2"
+          },
+          {
+            "code": "RDE51.10",
+            "value": "0",
+            "name": "T3"
+          },
+          {
+            "code": "RDE51.11",
+            "value": "1",
+            "name": "T4"
+          },
+          {
+            "code": "RDE51.12",
+            "value": "2",
+            "name": "T5"
+          },
+          {
+            "code": "RDE51.13",
+            "value": "3",
+            "name": "T6"
+          },
+          {
+            "code": "RDE51.14",
+            "value": "4",
+            "name": "T7"
+          },
+          {
+            "code": "RDE51.15",
+            "value": "5",
+            "name": "T8"
+          },
+          {
+            "code": "RDE51.16",
+            "value": "6",
+            "name": "T9"
+          },
+          {
+            "code": "RDE51.17",
+            "value": "7",
+            "name": "T10"
+          },
+          {
+            "code": "RDE51.18",
+            "value": "8",
+            "name": "T11"
+          },
+          {
+            "code": "RDE51.19",
+            "value": "9",
+            "name": "T12"
+          },
+          {
+            "code": "RDE51.20",
+            "value": "0",
+            "name": "T13"
+          },
+          {
+            "code": "RDE51.21",
+            "value": "1",
+            "name": "L1"
+          },
+          {
+            "code": "RDE51.22",
+            "value": "2",
+            "name": "L2"
+          },
+          {
+            "code": "RDE51.23",
+            "value": "3",
+            "name": "L3"
+          },
+          {
+            "code": "RDE51.24",
+            "value": "4",
+            "name": "L4"
+          },
+          {
+            "code": "RDE51.25",
+            "value": "5",
+            "name": "L5"
+          },
+          {
+            "code": "RDE51.26",
+            "value": "6",
+            "name": "L6"
+          },
+          {
+            "code": "RDE51.27",
+            "value": "7",
+            "name": "os sacrum"
+          },
+          {
+            "code": "RDE51.28",
+            "value": "8",
+            "name": "coccyx"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE268",
+      "parent_set": "RDES51",
+      "name": "Pelvic incidence",
+      "definition": "Angle of incidence is the algebraic sum of 2 complementary angles: pelvic tilt and sacral slope (degrees)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE269",
+      "parent_set": "RDES51",
+      "name": "Sagittal vertical axis",
+      "definition": "Sagittal offset of a plumb line dropped from the C7 vertebral body from the posterosuperior corner of the sacral plate (mm)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE270",
+      "parent_set": "RDES51",
+      "name": "Thoracic kyphosis angle",
+      "definition": "Thoracic convexity (degrees)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE271",
+      "parent_set": "RDES51",
+      "name": "Lumbar lordosis angle",
+      "definition": "Anterior convexity of the lumbar spine in the midsagittal plane (degrees)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-18"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-11-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE272",
+      "parent_set": "RDES51",
+      "name": "Scoliosis type",
+      "definition": "Classify the scoliosis type, which is required information for ICD-10",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE51.0",
+            "value": "0",
+            "name": "congenital"
+          },
+          {
+            "code": "RDE51.1",
+            "value": "1",
+            "name": "infantile, idiopathic"
+          },
+          {
+            "code": "RDE51.2",
+            "value": "2",
+            "name": "juvenile, idiopathic"
+          },
+          {
+            "code": "RDE51.3",
+            "value": "3",
+            "name": "thoracogenic"
+          },
+          {
+            "code": "RDE51.4",
+            "value": "4",
+            "name": "radiation related"
+          },
+          {
+            "code": "RDE51.5",
+            "value": "5",
+            "name": "syndrome related"
+          },
+          {
+            "code": "RDE51.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE51.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE273",
+      "parent_set": "RDES51",
+      "name": "Risser score",
+      "definition": "Grade skeletal maturity based on the level of ossification and fusion of the iliac crest apophyses",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "[On the practical value of differences in the level of the lamina cribrosa of the ethmoid].",
+          "pubmed_id": "14032071"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE51.0",
+            "value": "0",
+            "name": "stage 0",
+            "definition": "no ossification center at the level of iliac crest apophysis"
+          },
+          {
+            "code": "RDE51.1",
+            "value": "1",
+            "name": "stage 1",
+            "definition": "apophysis along less than 25 percent of the iliac crest"
+          },
+          {
+            "code": "RDE51.2",
+            "value": "2",
+            "name": "stage 2",
+            "definition": "apophysis along 25-50 percent of the iliac crest"
+          },
+          {
+            "code": "RDE51.3",
+            "value": "3",
+            "name": "stage 3",
+            "definition": "apophysis along 50-75 percent of the iliac crest"
+          },
+          {
+            "code": "RDE51.4",
+            "value": "4",
+            "name": "stage 4",
+            "definition": "apophysis along greater than 75 percent of the iliac crest"
+          },
+          {
+            "code": "RDE51.5",
+            "value": "5",
+            "name": "stage 5",
+            "definition": "complete ossification and fusion of the iliac crest apophysis"
+          },
+          {
+            "code": "RDE51.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE51.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

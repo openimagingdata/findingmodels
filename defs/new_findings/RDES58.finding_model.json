@@ -1,0 +1,43 @@
+{
+  "oifm_id": "OIFM_CDE_000058",
+  "name": "Carina Angle Measurment",
+  "description": "This module describes the common data elements for carina angle measurement use case",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000293",
+      "name": "Carina angle",
+      "description": "Carina angle (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1248",
+          "display": "carina"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES58",
+      "display": "carina angle measurment"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1248",
+      "display": "Carina"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Carina",
+      "index_codes": []
+    }
+  ]
+}

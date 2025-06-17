@@ -1,0 +1,88 @@
+{
+  "oifm_id": "OIFM_CDE_000104",
+  "name": "Identification and Characterization of Vena Cava Filters",
+  "description": "Identification and Characterization of Vena Cava Filters",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000646",
+      "name": "Filter count",
+      "description": "Number of filter devices ",
+      "type": "numeric",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000649",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000652",
+      "name": "Location",
+      "description": "Anatomic location of filter(s) or filter components",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000653",
+      "name": "Complications",
+      "description": "Radiographically evident filter complications",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES104",
+      "display": "identification and characterization of vena cava filters"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID480",
+      "display": "Aorta"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Aorta",
+      "index_codes": []
+    }
+  ]
+}

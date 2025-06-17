@@ -1,0 +1,296 @@
+{
+  "id": "RDES237",
+  "name": "Chest Radiograph Lines and Tubes",
+  "description": "Chest Radiograph Lines and Tubes",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-05"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/237",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1530",
+      "parent_set": "RDES237",
+      "name": "Endotracheal tube",
+      "definition": "Presence and position of endotracheal tube on XRAY",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-15"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE237.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE237.1",
+            "value": "1",
+            "name": "adequately positioned"
+          },
+          {
+            "code": "RDE237.2",
+            "value": "2",
+            "name": "malpositioned"
+          },
+          {
+            "code": "RDE237.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE237.4",
+            "value": "4",
+            "name": "suboptimally positioned"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1531",
+      "parent_set": "RDES237",
+      "name": "Central venous catheter",
+      "definition": "Presence and position of central venous catheter",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-15"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE237.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE237.1",
+            "value": "1",
+            "name": "adequately positioned"
+          },
+          {
+            "code": "RDE237.2",
+            "value": "2",
+            "name": "malpositioned"
+          },
+          {
+            "code": "RDE237.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE237.4",
+            "value": "4",
+            "name": "suboptimally positioned"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1532",
+      "parent_set": "RDES237",
+      "name": "Pulmonary artery catheter",
+      "definition": "Presence and position of pulmonary artery catheter",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-15"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE237.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE237.1",
+            "value": "1",
+            "name": "adequately positioned"
+          },
+          {
+            "code": "RDE237.2",
+            "value": "2",
+            "name": "malpositioned"
+          },
+          {
+            "code": "RDE237.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE237.4",
+            "value": "4",
+            "name": "suboptimally positioned"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1533",
+      "parent_set": "RDES237",
+      "name": "Nasogastric tube",
+      "definition": "Presence and position of nasogastric tube",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-15"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE237.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE237.1",
+            "value": "1",
+            "name": "adequately positioned"
+          },
+          {
+            "code": "RDE237.2",
+            "value": "2",
+            "name": "malpositioned"
+          },
+          {
+            "code": "RDE237.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE237.4",
+            "value": "4",
+            "name": "suboptimally positioned"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1534",
+      "parent_set": "RDES237",
+      "name": "Airway stent",
+      "definition": "Presence and position of airway stent",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-15"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE237.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE237.1",
+            "value": "1",
+            "name": "adequately positioned"
+          },
+          {
+            "code": "RDE237.2",
+            "value": "2",
+            "name": "malpositioned"
+          },
+          {
+            "code": "RDE237.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE237.4",
+            "value": "4",
+            "name": "suboptimally positioned"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

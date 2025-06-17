@@ -1,0 +1,63 @@
+{
+  "oifm_id": "OIFM_CDE_000143",
+  "name": "Cholecystitis US",
+  "description": "This module describes the Common Data elements and Macros for Cholecystitis-US",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000956",
+      "name": "Type",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000957",
+      "name": "Gallstone",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000958",
+      "name": "Murphy's sign",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000959",
+      "name": "Gallbladder wall thickness",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000960",
+      "name": "Pericholecystic fluid",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES143",
+      "display": "cholecystitis us"
+    }
+  ],
+  "body_parts": []
+}

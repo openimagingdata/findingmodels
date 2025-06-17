@@ -1,0 +1,148 @@
+{
+  "oifm_id": "OIFM_CDE_000100",
+  "name": "Focal Cortical Dysplasia",
+  "description": "Focal cortical dysplasia",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000621",
+      "name": "Thickness",
+      "description": "Thickness of the focal cortical. Thickening or thinning may suggest focal cortical dysplasia.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000623",
+      "name": "Dysplasia",
+      "description": "detection of focal cortical dysplasia",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000624",
+      "name": "Focal brain atrophy",
+      "description": "focal brain atrophy",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000625",
+      "name": "Gray-white junction blurring",
+      "description": "Blurring of the gray-white junction",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000626",
+      "name": " Increased signal on T2/FLAIR in gray and subcortical white matter",
+      "description": "Increased signal on T2/FLAIR in gray and subcortical white matter",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000627",
+      "name": "T2/FLAIR signal hyperintensity of white matter",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000628",
+      "name": "Location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000630",
+      "name": "Classification",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES100",
+      "display": "focal cortical dysplasia"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

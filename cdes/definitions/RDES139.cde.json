@@ -1,0 +1,385 @@
+{
+  "id": "RDES139",
+  "name": "Coronary Calcification on CT",
+  "description": "This module describes the Common Data elements and Macros for Coronary Calcium Detection",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/139",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE922",
+      "parent_set": "RDES139",
+      "name": "Procedures",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE139.0",
+            "value": "0",
+            "name": "triggered ECG",
+            "definition": "ECG triggered"
+          },
+          {
+            "code": "RDE139.1",
+            "value": "1",
+            "name": "non-contrast CT",
+            "definition": "Non-contrast CT"
+          },
+          {
+            "code": "RDE139.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE139.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE924",
+      "parent_set": "RDES139",
+      "name": "Agatston score",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10000,
+        "step": 0.1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE925",
+      "parent_set": "RDES139",
+      "name": "Calcium volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-11-10"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-11-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10000,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE926",
+      "parent_set": "RDES139",
+      "name": "Risk category of CAD",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE139.0",
+            "value": "0",
+            "name": "no evidence ",
+            "definition": "No evidence of CAD: 0 calcium score."
+          },
+          {
+            "code": "RDE139.1",
+            "value": "1",
+            "name": "minimal ",
+            "definition": "Minimal evidence of CAD: calcium score between 0 and 10."
+          },
+          {
+            "code": "RDE139.2",
+            "value": "2",
+            "name": "mild",
+            "definition": "Mild evidence of CAD, calcium score if between 11 and 100."
+          },
+          {
+            "code": "RDE139.3",
+            "value": "3",
+            "name": "moderate",
+            "definition": "Moderate evidence of CAD, calcium score is between 101 and 400."
+          },
+          {
+            "code": "RDE139.4",
+            "value": "4",
+            "name": "severe",
+            "definition": "Severe evidence of CAD, calcium score is more than 400."
+          },
+          {
+            "code": "RDE139.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE139.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1725",
+      "parent_set": "RDES139",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE139.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE139.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE139.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE139.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1726",
+      "parent_set": "RDES139",
+      "name": "Cardiac region location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE139.0",
+            "value": "0",
+            "name": "right coronary artery (RCA)"
+          },
+          {
+            "code": "RDE139.1",
+            "value": "1",
+            "name": "left main artery (LM)"
+          },
+          {
+            "code": "RDE139.2",
+            "value": "2",
+            "name": "left anterior descending artery (LAD)"
+          },
+          {
+            "code": "RDE139.3",
+            "value": "3",
+            "name": "left circumflex coronary artery (LCX)"
+          },
+          {
+            "code": "RDE139.4",
+            "value": "4",
+            "name": "total artery"
+          },
+          {
+            "code": "RDE139.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE139.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1727",
+      "parent_set": "RDES139",
+      "name": "Calcified lesion count",
+      "definition": "Step value: 1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1728",
+      "parent_set": "RDES139",
+      "name": "Calcified lesion mass quantified",
+      "definition": "Step value: 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 10000,
+        "step": 1,
+        "unit": "mg"
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": " CDE URL ",
+      "url": "https://radelement.org/"
+    }
+  ]
+}

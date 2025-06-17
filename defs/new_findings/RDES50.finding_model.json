@@ -1,0 +1,24 @@
+{
+  "oifm_id": "OIFM_CDE_000050",
+  "name": "Trauma Fracture",
+  "description": "This module describes the common data elements for trauma fracture use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000263",
+      "name": "Presence",
+      "description": "Detect the presence of a fracture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES50",
+      "display": "trauma fracture"
+    }
+  ],
+  "body_parts": []
+}

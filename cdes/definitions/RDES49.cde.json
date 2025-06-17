@@ -1,0 +1,95 @@
+{
+  "id": "RDES49",
+  "name": "Tarsometatarsal Joint",
+  "description": "This module describes the common data elements for tarsometatarsal joint status use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/49",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Tarsometatarsal Joint",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID3107",
+        "display": "Tarsometatarsal joint",
+        "url": "http://www.radlex.org/RID/RID3107"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Jay Patti, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE262",
+      "parent_set": "RDES49",
+      "name": "Lisfrank joint status",
+      "definition": "Status of Lisfranc joint",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-29"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-29"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE49.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE49.1",
+            "value": "1",
+            "name": "abnormal"
+          },
+          {
+            "code": "RDE49.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE49.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

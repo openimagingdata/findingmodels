@@ -1,0 +1,102 @@
+{
+  "id": "RDES86",
+  "name": "MR Brain Leukoariosis (Fazekas Scale)",
+  "description": "Scale for describing white matter changes in the brain.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/86",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Wendy Gibbs MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1555",
+      "parent_set": "RDES86",
+      "name": "Fazekas scale",
+      "definition": "Mild - punctate\nModerate - minimal confluent\nSevere - Marked confluent white matter disease",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE86.0",
+            "value": "0",
+            "name": "normal",
+            "definition": "No white matter changes"
+          },
+          {
+            "code": "RDE86.1",
+            "value": "1",
+            "name": "grade 1: mild",
+            "definition": "Punctate white matter changes"
+          },
+          {
+            "code": "RDE86.2",
+            "value": "2",
+            "name": "grade 2: moderate",
+            "definition": "Some confluent white matter changes"
+          },
+          {
+            "code": "RDE86.3",
+            "value": "3",
+            "name": "grade 3: severe",
+            "definition": "Marked confluent white matter changes"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Fazekas F, Chawluk JB, Alavi A, Hurtig HI, Zimmerman RA. MR signal abnormalities at 1.5T in Alzheimer's dementia and normal aging. AJNR Am J Neuroradiol1987;8:421-6."
+    }
+  ]
+}

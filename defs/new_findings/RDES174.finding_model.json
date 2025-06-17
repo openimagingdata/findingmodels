@@ -1,0 +1,395 @@
+{
+  "oifm_id": "OIFM_CDE_000174",
+  "name": "Morphometric CT Quantification of Liver, Spleen, and Abdominal Fat",
+  "description": "Volumetry and attenuation analysis of liver, spleen, visceral fat, and subcutaneous fat from CT images",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001193",
+      "name": "Liver-spleen CT attenuation difference",
+      "description": "Difference in mean attenuation of the liver and spleen on non-contrast CT",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID32692",
+          "display": "fatty liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001194",
+      "name": "Liver noncontrast CT attenuation mean",
+      "description": "Mean attenuation of all voxels of the segmented liver on non-contrast CT",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001195",
+      "name": "Liver noncontrast CT attenuation median",
+      "description": "Median attenuation of all voxels of the segmented liver on non-contrast CT",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001196",
+      "name": "Liver noncontrast CT attenuation maximum",
+      "description": "Maximum attenuation of all voxels of the segmented liver on non-contrast CT ",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001197",
+      "name": "Liver noncontrast CT attenuation minimum",
+      "description": "Minimum attenuation of all voxels of the segmented liver on non-contrast CT",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001198",
+      "name": "Liver noncontrast CT attenuation skewness",
+      "description": "Skewness of attenuation of all voxels of the segmented liver on non-contrast CT",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001199",
+      "name": "Liver elongation",
+      "description": "The elongation of the livers shape computed as the ratio of the largest principal moment to the smallest principal moment",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001200",
+      "name": "Liver Feret diameter",
+      "description": "The diameter in physical units cm of the sphere that includes all the segmented liver",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001201",
+      "name": "Liver ellipsoid major axis length",
+      "description": "Length of the major axis of the ellipsoid with the same volume as the liver IBSITDIC",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001202",
+      "name": "Liver ellipsoid minor axis length",
+      "description": "Length of the minor axis of the ellipsoid of the same volume as the liver IBSIPV91",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001213",
+      "name": "Spleen elongation",
+      "description": "The elongation of the spleen computed as the ratio of the largest principal moment to the smallest principal moment",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001214",
+      "name": "Spleen Feret diameter",
+      "description": "The diameter in physical units cm of the sphere that includes all the segmented spleen",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001215",
+      "name": "Spleen ellipsoid major axis length",
+      "description": "Length of the major axis of the ellipsoid with the same volume as the spleen",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001216",
+      "name": "Spleen ellipsoid minor axis length",
+      "description": "Length of the minor axis of the ellipsoid of the same volume as the spleen IBSIP9VJ",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001217",
+      "name": "Spleen ellipsoid least axis length",
+      "description": "Length of the shortest axis of the ellipsoid of the same volume as the spleen IBSI7J51",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001218",
+      "name": "Spleen spherical radius",
+      "description": "The equivalent radius of the sphere of the same volume as the spleen",
+      "type": "numeric",
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001219",
+      "name": "Spleen roundness",
+      "description": "The ratio of the spherical radius and area of the spleen",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001220",
+      "name": "Liver volume",
+      "description": "Volume of the segmented liver",
+      "type": "numeric",
+      "min": 0,
+      "max": 3000,
+      "step": 0.1,
+      "unit": "mL",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001221",
+      "name": "Spleen volume",
+      "description": "Volume of the segmented spleen",
+      "type": "numeric",
+      "min": 0,
+      "max": 3000,
+      "step": 0.1,
+      "unit": "mL",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001222",
+      "name": "Abdomen subcutaneous fat volume",
+      "description": "Volume of abdominal subcutaneous fat",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mL",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES174",
+      "display": "morphometric ct quantification of liver, spleen, and abdominal fat"
+    }
+  ],
+  "body_parts": []
+}

@@ -1,0 +1,384 @@
+{
+  "id": "RDES61",
+  "name": "Pulmonary Artery Macros",
+  "description": "This module describes the common data elements for flow in the pulmonary artery use case",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/61",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Pulmonary Artery",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID874",
+        "display": "Pulmonary artery",
+        "url": "http://www.radlex.org/RID/RID874"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Benoit Desjardins, MD, PhD. Jay Nance, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Cardiac Radiology",
+      "abbreviation": "CA"
+    },
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    },
+    {
+      "name": "Vascular Imaging",
+      "abbreviation": "VA"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE297",
+      "parent_set": "RDES61",
+      "name": "Flow rate",
+      "definition": "Measurement of net flow volume in the pulmonary artery above the aortic valve  (mL/sec)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-02-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "ml per sec"
+      }
+    },
+    {
+      "id": "RDE298",
+      "parent_set": "RDES61",
+      "name": "Maximum flow velocity",
+      "definition": "Measurement of maximum flow velocity in the pulmonary artery above the aortic valve (cm/sec)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-02"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-02-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "cm per sec"
+      }
+    },
+    {
+      "id": "RDE1740",
+      "parent_set": "RDES61",
+      "name": "Main artery diameter",
+      "definition": "Diameter of main pulmonary artery in mm, value step 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1741",
+      "parent_set": "RDES61",
+      "name": "Left artery diameter",
+      "definition": "Diameter of left pulmonary artery in mm, value step 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1742",
+      "parent_set": "RDES61",
+      "name": "Right artery diameter",
+      "definition": "Right pulmonary artery diameter in mm, step value 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1743",
+      "parent_set": "RDES61",
+      "name": "Diameter ratio",
+      "definition": "Main pulmonary artery to aortic diameter ratio MPAAo, value step 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1744",
+      "parent_set": "RDES61",
+      "name": "Flow ratio",
+      "definition": "Measurement of Qp-Qs ratio using aortic and pulmonary flow measurements, value step 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1745",
+      "parent_set": "RDES61",
+      "name": "Trunk diameter",
+      "definition": "Measure pulmonary artery trunk dimensions, value step 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1746",
+      "parent_set": "RDES61",
+      "name": "Segmental artery diameter",
+      "definition": "Defines dimensions of lobar and segmental pulmonary arteries, step value 0.1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1747",
+      "parent_set": "RDES61",
+      "name": "Measurements evaluation",
+      "definition": "Compare pulmonary artery measurements to reference values to determine status.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE61.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE61.1",
+            "value": "1",
+            "name": "enlarged"
+          },
+          {
+            "code": "RDE61.2",
+            "value": "2",
+            "name": "reduced"
+          },
+          {
+            "code": "RDE61.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE61.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1748",
+      "parent_set": "RDES61",
+      "name": "Lobar artery diameter",
+      "definition": "Value step 1",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,109 @@
+{
+  "oifm_id": "OIFM_CDE_000286",
+  "name": "Emphysema",
+  "description": "Emphysema",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001951",
+      "name": "Location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001951.1",
+          "name": "right upper lobe (RUL)",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.2",
+          "name": "right middle lobe (RML)",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.3",
+          "name": "right upper lobe and right middle lobe (RUL + RML)",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.4",
+          "name": "right lower lobe (RLL)",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.5",
+          "name": "left upper lobe (LUL)",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.6",
+          "name": "left lower lobe (LLL)",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001952",
+      "name": "Emphysema scale (% - 920HU)",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001953",
+      "name": "Emphysema scale (% - 950HU)",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001954",
+      "name": "Fissure completeness scale",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001955",
+      "name": "Volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 3000,
+      "step": 1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES286",
+      "display": "emphysema"
+    }
+  ],
+  "body_parts": []
+}

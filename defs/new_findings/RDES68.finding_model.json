@@ -1,0 +1,43 @@
+{
+  "oifm_id": "OIFM_CDE_000068",
+  "name": "Periprosthetic Hip Lucency",
+  "description": "This module describes the common data elements for periprosthetic hip lucency use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000311",
+      "name": "Measurement",
+      "description": "Measure periprosthetic lucency. Alert if greater than 2 mm",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2639",
+          "display": "hip"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES68",
+      "display": "periprosthetic hip lucency"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2639",
+      "display": "Hip"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Hip",
+      "index_codes": []
+    }
+  ]
+}

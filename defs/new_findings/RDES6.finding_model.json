@@ -1,0 +1,414 @@
+{
+  "oifm_id": "OIFM_CDE_000006",
+  "name": "Glasgow Coma Scale (GCS)",
+  "description": "The Glasgow Coma Scale (GCS) is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response. From the National Institute of Neurological Disorders and Stroke (NIH / NINDS).",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000061",
+      "name": "Glasgow Coma Scale (GCS) - eye response scale",
+      "description": "Glasgow Coma Scale (GCS) - Best eye response (E). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000061.1",
+          "name": "No eye opening",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000061.2",
+          "name": "Eye opening to pain",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000061.3",
+          "name": "Eye opening to speech/verbal command",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000061.4",
+          "name": "Eyes open spontaneously",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000061.5",
+          "name": "Untestable",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000061.6",
+          "name": "Unknown",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "9267-6",
+          "display": "glasgow coma score eye opening"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6553-7",
+          "display": "no eye opening"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6554-5",
+          "display": "eye opening to pain"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6556-0",
+          "display": "eyes open spontaneously"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6555-2",
+          "display": "eye opening to verbal command"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000062",
+      "name": "Glasgow Coma Scale (GCS) - motor response scale",
+      "description": "Glasgow Coma Scale (GCS) - Best motor response (M). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000062.1",
+          "name": "No motor response",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.2",
+          "name": "Abnormal extension/Extensor response",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.3",
+          "name": "Abnormal flexion",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.4",
+          "name": "Flexion withdrawal/withdraws from pain",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.5",
+          "name": "Localizes pain",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.6",
+          "name": "Obeys command",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.7",
+          "name": "Untestable",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000062.8",
+          "name": "Unknown",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "386554004",
+          "display": "glasgow coma scale"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363850001",
+          "display": "motor response"
+        },
+        {
+          "system": "LOINC",
+          "code": "9268-4",
+          "display": "glasgow coma score motor"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6562-8",
+          "display": "no motor response"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6563-6",
+          "display": "extension to pain"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6566-9",
+          "display": "localizing pain"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6567-7",
+          "display": "obeys commands"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6564-4",
+          "display": "flexion to pain"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6565-1",
+          "display": "withdrawl from pain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000063",
+      "name": "Glasgow Coma Scale (GCS) - verbal response scale",
+      "description": "Score that describes the participant's verbal response according to the Glasgow Coma Scale (GCS).",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000063.1",
+          "name": "No verbal response/sounds",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.2",
+          "name": "Incomprehensible sound",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.3",
+          "name": "Inappropriate words",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.4",
+          "name": "Confused",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.5",
+          "name": "Oriented",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.6",
+          "name": "Untestable",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000063.7",
+          "name": "Unknown",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "9270-0",
+          "display": "glasgow coma score verbal"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6557-8",
+          "display": "no verbal response (>2 yrs); no vocal response (<=2 yrs)"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6558-6",
+          "display": "incomprehensible sounds"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6559-4",
+          "display": "inappropriate words"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6560-2",
+          "display": "confused"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA6561-0",
+          "display": "oriented"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5655",
+          "display": "unknown"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000064",
+      "name": "Glasgow Coma Scale (GCS) - total score",
+      "description": "Glasgow Coma Scale (GCS) - Total Score. The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response. The total score is the sum of the scores for the three response types. (3-15)",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000064.1",
+          "name": "3",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.2",
+          "name": "8",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.3",
+          "name": "4",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.4",
+          "name": "5",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.5",
+          "name": "6",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.6",
+          "name": "7",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.7",
+          "name": "9",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.8",
+          "name": "10",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.9",
+          "name": "11",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.10",
+          "name": "12",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.11",
+          "name": "13",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.12",
+          "name": "14",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.13",
+          "name": "15",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.14",
+          "name": "Untestable",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000064.15",
+          "name": "Unknown",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "35088-4",
+          "display": "glasgow coma scale"
+        },
+        {
+          "system": "LOINC",
+          "code": "LP33022-2",
+          "display": "glasgow coma scale"
+        },
+        {
+          "system": "LOINC",
+          "code": "9269-2",
+          "display": "glasgow coma score total"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001693",
+      "name": "Motor response scale",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES6",
+      "display": "glasgow coma scale (gcs)"
+    }
+  ],
+  "body_parts": []
+}

@@ -1,0 +1,112 @@
+{
+  "id": "RDES40",
+  "name": "Odontoid Fracture",
+  "description": "This module describes the common data elements for odontoid fracture use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/40",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Cervical Spine Region",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID28674",
+        "display": "Cervical Spine Region",
+        "url": "http://www.radlex.org/RID/RID28674"
+      }
+    },
+    {
+      "name": "Cervical Spine Descriptor",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6141",
+        "display": "Cervical Spine Descriptor",
+        "url": "http://www.radlex.org/RID/RID6141"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Dan Chernoff, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    },
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE239",
+      "parent_set": "RDES40",
+      "name": "Presence",
+      "definition": "Define odontoid as intact or fractured",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-09-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Turkbey B, Rosenkrantz AB, Haider MA, Padhani AR, Villeirs G, Macura KJ, Tempany CM, Choyke PL, Cornud F, Margolis DJ, Thoeny HC, Verma S, Barentsz J, Weinreb JC. Prostate Imaging Reporting and Data System Version 2.1: 2019 Update of Prostate Imaging Reporting and Data System Version 2. Eur Urol. 2019 Sep;76(3):340-351. doi: 10.1016/j.eururo.2019.02.033. Epub 2019 Mar 18. PMID: 30898406."
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE40.0",
+            "value": "0",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE40.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE40.2",
+            "value": "2",
+            "name": "absent"
+          },
+          {
+            "code": "RDE40.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

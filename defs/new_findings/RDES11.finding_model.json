@@ -1,0 +1,758 @@
+{
+  "oifm_id": "OIFM_CDE_000011",
+  "name": "MR Rectal Tumor Imaging",
+  "description": "Data elements in support of the Cancer Care Ontario rectal tumor staging template",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000067",
+      "name": "Image quality",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39308",
+          "display": "adequate"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "88323005",
+          "display": "adequate"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39174",
+          "display": "suboptimal"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID10",
+          "display": "image quality"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000068",
+      "name": "Tumor location from anal verge",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "108369006",
+          "display": "tumor"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41843001",
+          "display": "anal verge"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000069",
+      "name": "Distance of lowest extent of tumor from anal verge",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 0,
+      "step": 0,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49678",
+          "display": "distance"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246132006",
+          "display": "distance"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41843001",
+          "display": "anal verge"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000070",
+      "name": "Distance of lowest extent of tumor from top of anal sphincter",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 0,
+      "step": 0,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "245453000",
+          "display": "anal sphincter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41178004",
+          "display": "anal sphincter"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID165",
+          "display": "anal sphincter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49678",
+          "display": "distance"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246132006",
+          "display": "distance"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000071",
+      "name": "Relationship to anterior peritoneal reflection",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID411",
+          "display": "peritoneal reflection"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000072",
+      "name": "Circumferential extent and location",
+      "description": "Clock-face location",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "255593009",
+          "display": "circumferential"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "260858005",
+          "display": "extent"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246267002",
+          "display": "location"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000073",
+      "name": "Craniocaudad extent",
+      "description": "Greatest distance along the craniocaudal axis.",
+      "type": "numeric",
+      "min": 0,
+      "max": 99,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000074",
+      "name": "Mucinous tumor",
+      "description": "Indicates whether the tumor is mucinous.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000074.1",
+          "name": "No",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000074.2",
+          "name": "Yes",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID5746",
+          "display": "mucinous"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000092",
+      "name": "T-category",
+      "description": "TNM tumor staging category",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39274",
+          "display": "t stage"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "78873005",
+          "display": "t stage"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000093",
+      "name": "Structures with possible invasion",
+      "description": "For T4 tumors, structures with possible invasion",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID381",
+          "display": "pubococcygeus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244958005",
+          "display": "pubococcygeus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "245019009",
+          "display": "piriformis"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2632",
+          "display": "piriformis"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "82115007",
+          "display": "obturator internus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "245025008",
+          "display": "obturator internus"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2633",
+          "display": "obturator internus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "76784001",
+          "display": "vagina"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181441005",
+          "display": "vagina"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID325",
+          "display": "vagina"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "35039007",
+          "display": "uterus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181452004",
+          "display": "uterus"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID302",
+          "display": "uterus"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID343",
+          "display": "prostate"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181422007",
+          "display": "prostate"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41216001",
+          "display": "prostate"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "25308007",
+          "display": "right ureter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "276251000",
+          "display": "right ureter"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID30844",
+          "display": "right ureter"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID30845",
+          "display": "left ureter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "276340002",
+          "display": "left ureter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "26559004",
+          "display": "left ureter"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "302512001",
+          "display": "bladder"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "89837001",
+          "display": "bladder"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID237",
+          "display": "bladder"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "699698002",
+          "display": "sacrum"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2509",
+          "display": "sacrum"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "264186006",
+          "display": "sacrum"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7819",
+          "display": "coccygeus"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID411",
+          "display": "peritoneal reflection"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283696001",
+          "display": "left internal iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "14382004",
+          "display": "left internal iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "7771000",
+          "display": "left"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5824",
+          "display": "left"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA4585-1",
+          "display": "left"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "40300007",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1194",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181399007",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "25043001",
+          "display": "right internal iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283593004",
+          "display": "right internal iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "24028007",
+          "display": "right"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5825",
+          "display": "right"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "40300007",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1194",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181399007",
+          "display": "internal iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "13914008",
+          "display": "left external iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283892001",
+          "display": "left external iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "7771000",
+          "display": "left"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5824",
+          "display": "left"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "63507001",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181400000",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1195",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283797001",
+          "display": "right external iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "18388007",
+          "display": "right external iliac artery"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "24028007",
+          "display": "right"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5825",
+          "display": "right"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "63507001",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181400000",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1195",
+          "display": "external iliac vein"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID383",
+          "display": "iliococcygeus"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244964003",
+          "display": "iliococcygeus"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39257",
+          "display": "invasion"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000094",
+      "name": "Lower extent relative to puborectalis",
+      "description": "For low rectal tumors (0 - 5 cm) only: Is the lower extent of the tumor at or below the top border of the puborectalis?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "373066001",
+          "display": "yes"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28474",
+          "display": "yes"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID382",
+          "display": "puborectalis"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244962004",
+          "display": "puborectalis"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000095",
+      "name": "Most penetrating component",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "LA17336-1",
+          "display": "penetrating"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "53568006",
+          "display": "penetrating"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246093002",
+          "display": "component"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID382",
+          "display": "puborectalis"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244962004",
+          "display": "puborectalis"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5983",
+          "display": "submucosa"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "68439008",
+          "display": "submucosa"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "260521003",
+          "display": "internal"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID13417",
+          "display": "sphincter"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49572",
+          "display": "external"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID13417",
+          "display": "sphincter"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000096",
+      "name": "Distance to MRF",
+      "description": "Shortest distance of the definitive tumor border to the mesorectal fascia (MRF)",
+      "type": "numeric",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000097",
+      "name": "Distance-to-MRF information",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000098",
+      "name": "Extramural depth of invasion",
+      "description": "Extramural depth of invasion (EMD) at the site of tumor closest to the MRF.",
+      "type": "numeric",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39257",
+          "display": "invasion"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000099",
+      "name": "Tumor component closer to the MRF",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "373066001",
+          "display": "yes"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28474",
+          "display": "yes"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES11",
+      "display": "mr rectal tumor imaging"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID163",
+      "display": "rectum"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Rectum",
+      "index_codes": []
+    }
+  ]
+}

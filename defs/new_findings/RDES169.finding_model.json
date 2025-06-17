@@ -1,0 +1,114 @@
+{
+  "oifm_id": "OIFM_CDE_000169",
+  "name": "CTA Stroke Brain",
+  "description": "CTA Stroke",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001170",
+      "name": "Large vessel occlusion",
+      "description": "Which large Cerebral  vessel is occluded? (LVO)",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001290",
+      "name": "Stenosis vessel segment",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001291",
+      "name": "Stenosis percent",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001292",
+      "name": "Anatomical variation",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001293",
+      "name": "Vessel segment irregularity",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001294",
+      "name": "Vessel segment irregularity and multiple caliber changes",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001295",
+      "name": "Vessel segment calcification",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001296",
+      "name": "Venous opacification",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001297",
+      "name": "Dissection length",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001298",
+      "name": "Dissection degree of narrowing",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "degree",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES169",
+      "display": "cta stroke brain"
+    }
+  ],
+  "body_parts": []
+}

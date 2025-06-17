@@ -1,0 +1,132 @@
+{
+  "oifm_id": "OIFM_CDE_000172",
+  "name": "Leg Length Discrepancy",
+  "description": "Leg Length Discrepancy",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001178",
+      "name": "Right lower extremity length",
+      "description": "Total length of the right lower extremity measured from the apex of the right femoral head to the center of the right tibial plafond",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001180",
+      "name": "Right femur length",
+      "description": "Length of the right femur measured from the apex of the right femoral head to the distal medial right femoral condyle",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001181",
+      "name": "Right tibia length",
+      "description": "Length of the right tibia measured from the medial right femoral condyle to the center of the right tibial plafond",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001182",
+      "name": "Left femur length",
+      "description": "Length of the left femur measured from the apex of the left femoral head to the distal medial left femoral condyle",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001183",
+      "name": "Left tibia length",
+      "description": "Length of the left tibia measured from the medial left femoral condyle to the center of the left tibial plafond",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001184",
+      "name": "Right lower extremity angle at the knee",
+      "description": "The angle between the right femur and tibia",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "Degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001185",
+      "name": "Left lower extremity angle at the knee",
+      "description": "The angle between the left femur and tibia",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "Degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001186",
+      "name": "Pelvic Tilt",
+      "description": "Angle between the iliac crest to the horizontal",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "Degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001187",
+      "name": "Leg Length Discrepancy",
+      "description": "Absolute value of the difference between the lengths of the right and left lower extremities",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001188",
+      "name": "Leg length discrepancy side",
+      "description": "The side of the leg that is longer ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES172",
+      "display": "leg length discrepancy"
+    }
+  ],
+  "body_parts": []
+}

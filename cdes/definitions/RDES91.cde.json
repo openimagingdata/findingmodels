@@ -1,0 +1,499 @@
+{
+  "id": "RDES91",
+  "name": "Subarachnoid Hemorrhage",
+  "description": "Subarachnoid hemorrhage",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/91",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE540",
+      "parent_set": "RDES91",
+      "name": "Volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-08-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE542",
+      "parent_set": "RDES91",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE543",
+      "parent_set": "RDES91",
+      "name": "Density",
+      "definition": "Density of SAH",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "high homogeneous"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "low homogeneous"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "high heterogeneous"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "low heterogeneous"
+          },
+          {
+            "code": "RDE91.4",
+            "value": "4",
+            "name": "Indeterminate"
+          },
+          {
+            "code": "RDE91.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE546",
+      "parent_set": "RDES91",
+      "name": "Intra-axial hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE547",
+      "parent_set": "RDES91",
+      "name": "Extra-axial hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE548",
+      "parent_set": "RDES91",
+      "name": "Intra-cranial mass",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE549",
+      "parent_set": "RDES91",
+      "name": "Location",
+      "definition": "Location of SAH",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 12,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "frontal"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE91.4",
+            "value": "4",
+            "name": "suprasellar cistern"
+          },
+          {
+            "code": "RDE91.5",
+            "value": "5",
+            "name": "prepontine cistern"
+          },
+          {
+            "code": "RDE91.6",
+            "value": "6",
+            "name": "medullay cistern"
+          },
+          {
+            "code": "RDE91.7",
+            "value": "7",
+            "name": "perimesencephalic cistern"
+          },
+          {
+            "code": "RDE91.8",
+            "value": "8",
+            "name": "supracerebeller/pineal cistern"
+          },
+          {
+            "code": "RDE91.9",
+            "value": "9",
+            "name": "cerebellar"
+          },
+          {
+            "code": "RDE91.10",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE91.11",
+            "value": "1",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1264",
+      "parent_set": "RDES183",
+      "name": "Quantity",
+      "definition": "Number of brain contusions",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 20,
+        "step": 0.1,
+        "unit": "N/A"
+      }
+    },
+    {
+      "id": "RDE1265",
+      "parent_set": "RDES183",
+      "name": "Size",
+      "definition": "Size of brain contusion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1694",
+      "parent_set": "RDES91",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE91.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE91.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE91.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE91.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

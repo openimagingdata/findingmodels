@@ -1,0 +1,473 @@
+{
+  "id": "RDES26",
+  "name": "Acute Appendicitis",
+  "description": "This module describes the common data elements for acute appendicitis use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/26",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Appendix",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID168",
+        "display": "Appendix",
+        "url": "http://www.radlex.org/RID/RID168"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Arun Krishnaraj, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Abdominal Radiology",
+      "abbreviation": "AB"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE195",
+      "parent_set": "RDES26",
+      "name": "Presence",
+      "definition": "The status of the appendix",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "nonruptured",
+            "definition": "Nonruptured appendicitis"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "ruptured",
+            "definition": "Ruptured appendicitis"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE196",
+      "parent_set": "RDES26",
+      "name": "Appendiceal diameter",
+      "definition": "Maximum diameter of the appendix",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE197",
+      "parent_set": "RDES26",
+      "name": "Fat stranding",
+      "definition": "Detection of fat stranding around appendix",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "\n                ACR Hello Assist",
+          "url": "https://nrdr.acr.org/lirads/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE198",
+      "parent_set": "RDES26",
+      "name": "Free fluid",
+      "definition": "Detection of free fluid around appendix",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE199",
+      "parent_set": "RDES26",
+      "name": "Obstructing focus",
+      "definition": "Presence of obstructing mass such as a stone or fecalith",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE200",
+      "parent_set": "RDES26",
+      "name": "Lumen contents",
+      "definition": "Content within the lumen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-01"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-01"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "air"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "contrast"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "fluid"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE201",
+      "parent_set": "RDES26",
+      "name": "Abscess",
+      "definition": "State the presence of the peri-appendiceal abscess",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-01"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-01"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE202",
+      "parent_set": "RDES26",
+      "name": "Opacification",
+      "definition": "Opacification of the appendix",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-01"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-01"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE26.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE26.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE26.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE26.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1673",
+      "parent_set": "RDES26",
+      "name": "Obstructing focus size",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Khosa F, et al. Managing Incidental Findings on Abdominal and Pelvic CT and MRI, Part 2: White Paper of the ACR Incidental Findings Committee II on Vascular Findings. J Am Coll Radiol 2013;10:789-794."
+        }
+      ],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    }
+  ],
+  "references": []
+}

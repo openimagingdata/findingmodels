@@ -1,0 +1,147 @@
+{
+  "id": "RDES190",
+  "name": "Hepatic Tumor Volumes",
+  "description": "Hepatic Volumes",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2021-03-26"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/190",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Gandhi, Namita",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1275",
+      "parent_set": "RDES190",
+      "name": "Liver volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE1276",
+      "parent_set": "RDES190",
+      "name": "Right  lobe volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE1277",
+      "parent_set": "RDES190",
+      "name": "Left lobe volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    },
+    {
+      "id": "RDE1278",
+      "parent_set": "RDES190",
+      "name": "Tumor volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "ml"
+      }
+    }
+  ],
+  "references": []
+}

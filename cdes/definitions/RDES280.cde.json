@@ -1,0 +1,972 @@
+{
+  "id": "RDES280",
+  "name": "Lung Density",
+  "description": "Lung Density",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-11-09"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/280",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Chase, Heather",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "Nuance Communications"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1878",
+      "parent_set": "RDES280",
+      "name": "Total lung volume",
+      "definition": "Summary by lung lobes - total lung volume in liters.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1879",
+      "parent_set": "RDES280",
+      "name": "Total lung VHD",
+      "definition": "VHD - Very High Density: > -200 HU",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1880",
+      "parent_set": "RDES280",
+      "name": "Total lung HD",
+      "definition": "High Density: -700 to -200 HU",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1881",
+      "parent_set": "RDES280",
+      "name": "Total lung LD",
+      "definition": "Low density: < -950 HU",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1882",
+      "parent_set": "RDES280",
+      "name": "Left lung volume",
+      "definition": "Summary by lung lobes - Left lung VOL in liters.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1883",
+      "parent_set": "RDES280",
+      "name": "Left lung VHD",
+      "definition": "Left lung:  Very High Density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1884",
+      "parent_set": "RDES280",
+      "name": "Left lung HD",
+      "definition": "Left Lung: High Density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1885",
+      "parent_set": "RDES280",
+      "name": "Left lung LD",
+      "definition": "Left Lung: Low Density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1886",
+      "parent_set": "RDES280",
+      "name": "Left upper lobe volume",
+      "definition": "Left upper lobe: Volume in liters",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1887",
+      "parent_set": "RDES280",
+      "name": "Left upper lobe VHD",
+      "definition": "Left upper lobe: Very High Density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1888",
+      "parent_set": "RDES280",
+      "name": "Left upper lobe HD",
+      "definition": "Left upper lobe High Density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1889",
+      "parent_set": "RDES280",
+      "name": "Left upper lobe LD",
+      "definition": "Left upper lobe low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1890",
+      "parent_set": "RDES280",
+      "name": "Left lower lobe volume",
+      "definition": "Left lower lobe volume in liters",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1891",
+      "parent_set": "RDES280",
+      "name": "Left lower lobe VHD",
+      "definition": "Left lower lobe very high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1892",
+      "parent_set": "RDES280",
+      "name": "Left lower lobe HD",
+      "definition": "Left lower lobe high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1893",
+      "parent_set": "RDES280",
+      "name": "Left lower lobe LD",
+      "definition": "Left lower lobe low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1894",
+      "parent_set": "RDES280",
+      "name": "Right lung volume",
+      "definition": "Right lung volume in liters",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1895",
+      "parent_set": "RDES280",
+      "name": "Right lung VHD",
+      "definition": "Right lung very high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1896",
+      "parent_set": "RDES280",
+      "name": "Right lung HD",
+      "definition": "Right lung high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1897",
+      "parent_set": "RDES280",
+      "name": "Right lung LD",
+      "definition": "Right lung low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1898",
+      "parent_set": "RDES280",
+      "name": "Right upper lobe volume",
+      "definition": "Right upper lobe volume in liters.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1899",
+      "parent_set": "RDES280",
+      "name": "Right upper lobe VHD",
+      "definition": "Right upper lobe very high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1900",
+      "parent_set": "RDES280",
+      "name": "Right upper lobe HD",
+      "definition": "Right upper lobe high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1901",
+      "parent_set": "RDES280",
+      "name": "Right upper lobe LD",
+      "definition": "Right upper lobe low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1902",
+      "parent_set": "RDES280",
+      "name": "Right middle lobe volume",
+      "definition": "Right middle love volume in liters.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1903",
+      "parent_set": "RDES280",
+      "name": "Right middle lobe VHD",
+      "definition": "Right middle lobe very high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1904",
+      "parent_set": "RDES280",
+      "name": "Right middle lobe HD",
+      "definition": "Right middle lobe high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1905",
+      "parent_set": "RDES280",
+      "name": "Right middle lobe LD",
+      "definition": "Right middle lobe low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1906",
+      "parent_set": "RDES280",
+      "name": "Right lower lobe volume",
+      "definition": "Right lower lobe volume in liters.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1907",
+      "parent_set": "RDES280",
+      "name": "Right lower lobe VHD",
+      "definition": "Right lower lobe very high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1908",
+      "parent_set": "RDES280",
+      "name": "Right lower lobe HD",
+      "definition": "Right lower lobe high density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1909",
+      "parent_set": "RDES280",
+      "name": "Right lower lobe LD",
+      "definition": "Right lower lobe low density %",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    }
+  ],
+  "references": []
+}

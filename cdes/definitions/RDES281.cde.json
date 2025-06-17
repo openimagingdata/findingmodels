@@ -1,0 +1,118 @@
+{
+  "id": "RDES281",
+  "name": "Pfirrmann Spine Disc Degeneration Classification",
+  "description": "Pfirrmann Spine Disc Degeneration Classification on MR",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-12-07"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/281",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Singhal, Aparna",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1929",
+      "parent_set": "RDES281",
+      "name": "Pfirrmann grade",
+      "definition": " Grading system for the assessment of lumbar disc degeneration. Grade I: The structure of the disc is homogeneous, with a bright hyperintense white signal intensity and a normal disc height. Grade II: The structure of the disc is inhomogeneous, with a hyperintense white signal. The distinction between nucleus and anulus is clear, and the disc height is normal, with or without horizontal gray bands. Grade III: The structure of the disc is inhomogeneous, with an intermediate gray signal intensity. The distinction between nucleus and anulus is unclear, and the disc height is normal or slightly decreased. Grade IV: The structure of the disc is inhomogeneous, with an hypointense dark gray signal intensity. The distinction between nucleus and anulus is lost, and the disc height is normal or moderately decreased. Grade V: The structure of the disc is inhomogeneous, with a hypointense black signal intensity. The distinction between nucleus and anulus is lost, and the disc space is collapsed.  ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-12-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Pfirrmann CW, Metzdorf A, Zanetti M et-al. Magnetic resonance classification of lumbar intervertebral disc degeneration. Spine. 2001;26 (17): 1873-8."
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE281.0",
+            "value": "0",
+            "name": "grade I",
+            "definition": "Disc is homogeneous with bright hyperintense white signal intensity and normal disc height."
+          },
+          {
+            "code": "RDE281.1",
+            "value": "1",
+            "name": "grade II",
+            "definition": "Disc is homogeneous with bright hyperintense white signal intensity and normal disc height."
+          },
+          {
+            "code": "RDE281.2",
+            "value": "2",
+            "name": "grade III",
+            "definition": "Disc is inhomogeneous with an intermittent gray signal intensity. Distinction between nucleus and annulus is unclear. Disc height is normal or slightly decreased."
+          },
+          {
+            "code": "RDE281.3",
+            "value": "3",
+            "name": "grade IV",
+            "definition": "Grade IV Disc is inhomogeneous with a hypointense dark gray signal intensity. There is no more distinction between the nucleus and annulus. Disc height is slightly or moderately decreased. Moderate disk degeneration (Pfirrmann IV) in lower lumbar segments is a risk factor of disk herniation or foraminal stenosis requiring reoperation after MD in LSS 2)."
+          },
+          {
+            "code": "RDE281.4",
+            "value": "4",
+            "name": "grade V",
+            "definition": "Disc is inhomogeneous with a hypointense black signal intensity. There is no more distinction between the nucleus and annulus."
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Magnetic resonance classification of lumbar intervertebral disc degeneration.",
+      "doi_url": "https://doi.org/10.1097/00007632-200109010-00011",
+      "pubmed_id": "11568697"
+    }
+  ]
+}

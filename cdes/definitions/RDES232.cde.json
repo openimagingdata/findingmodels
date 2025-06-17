@@ -1,0 +1,231 @@
+{
+  "id": "RDES232",
+  "name": "Humerus Fracture",
+  "description": "Acute Humerus Fracture Type",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-04"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/232",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1476",
+      "parent_set": "RDES232",
+      "name": "Presence",
+      "definition": "Cortical breach of the humerus, usually at the surgical neck of humerus.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE232.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE232.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE232.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE232.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1477",
+      "parent_set": "RDES232",
+      "name": "Type",
+      "definition": "Type of humerus fracture based on the location of the break",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE232.0",
+            "value": "0",
+            "name": "proximal"
+          },
+          {
+            "code": "RDE232.1",
+            "value": "1",
+            "name": "distal"
+          },
+          {
+            "code": "RDE232.2",
+            "value": "2",
+            "name": "shaft"
+          },
+          {
+            "code": "RDE232.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE232.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1478",
+      "parent_set": "RDES232",
+      "name": "Pattern",
+      "definition": "Fracture pattern",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE232.0",
+            "value": "0",
+            "name": "simple"
+          },
+          {
+            "code": "RDE232.1",
+            "value": "1",
+            "name": "comminuted"
+          },
+          {
+            "code": "RDE232.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE232.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1479",
+      "parent_set": "RDES232",
+      "name": "Side",
+      "definition": "Describe laterality of the fracture",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE232.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE232.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE232.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

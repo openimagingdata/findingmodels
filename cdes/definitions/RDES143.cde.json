@@ -1,0 +1,266 @@
+{
+  "id": "RDES143",
+  "name": "Cholecystitis US",
+  "description": "This module describes the Common Data elements and Macros for Cholecystitis-US",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/143",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE956",
+      "parent_set": "RDES143",
+      "name": "Type",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE143.0",
+            "value": "0",
+            "name": "acute"
+          },
+          {
+            "code": "RDE143.1",
+            "value": "1",
+            "name": "equivocal"
+          },
+          {
+            "code": "RDE143.2",
+            "value": "2",
+            "name": "complicated"
+          },
+          {
+            "code": "RDE143.3",
+            "value": "3",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE143.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE957",
+      "parent_set": "RDES143",
+      "name": "Gallstone",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE143.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE143.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE143.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE143.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE958",
+      "parent_set": "RDES143",
+      "name": "Murphy's sign",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE143.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE143.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE143.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE143.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE959",
+      "parent_set": "RDES143",
+      "name": "Gallbladder wall thickness",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE960",
+      "parent_set": "RDES143",
+      "name": "Pericholecystic fluid",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE143.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE143.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE143.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE143.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

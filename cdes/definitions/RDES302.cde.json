@@ -1,0 +1,540 @@
+{
+  "id": "RDES302",
+  "name": "Subdural Hematoma",
+  "description": "This module describes the Common Data elements and Macros for Subdural Hematoma",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-11-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/302",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Bialecki, Brian",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Gaines, John",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE835",
+      "parent_set": "RDES128",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Absent"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE836",
+      "parent_set": "RDES128",
+      "name": "Dural thickening",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Absent"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE837",
+      "parent_set": "RDES128",
+      "name": "Location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "right frontal",
+            "definition": "Right frontal"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "left frontal",
+            "definition": "Left frontal"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "right parietal",
+            "definition": "Right parietal"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "left parietal",
+            "definition": "Left parietal"
+          },
+          {
+            "code": "RDE128.4",
+            "value": "4",
+            "name": "right temporal",
+            "definition": "Right temporal"
+          },
+          {
+            "code": "RDE128.5",
+            "value": "5",
+            "name": "left temporal",
+            "definition": "Left temporal"
+          },
+          {
+            "code": "RDE128.6",
+            "value": "6",
+            "name": "right occipital",
+            "definition": "Right occipital"
+          },
+          {
+            "code": "RDE128.7",
+            "value": "7",
+            "name": "left occipital",
+            "definition": "Left occipital"
+          },
+          {
+            "code": "RDE128.8",
+            "value": "8",
+            "name": "right parafalcine",
+            "definition": "Right parafalcine"
+          },
+          {
+            "code": "RDE128.9",
+            "value": "9",
+            "name": "left parafalcine",
+            "definition": "Left parafalcine"
+          },
+          {
+            "code": "RDE128.10",
+            "value": "0",
+            "name": "right cerebellar",
+            "definition": "Right cerebellar"
+          },
+          {
+            "code": "RDE128.11",
+            "value": "1",
+            "name": "left cerebellar",
+            "definition": "Left cerebellar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE838",
+      "parent_set": "RDES128",
+      "name": "Shape",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "crescentic",
+            "definition": "Crescentic"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "lentiform",
+            "definition": "Lentiform"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "indeterminate",
+            "definition": "Undetermined"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE841",
+      "parent_set": "RDES128",
+      "name": "Width - Axial Max",
+      "definition": "Longest diameter measured in the axial plane",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2025-01-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 200,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE842",
+      "parent_set": "RDES128",
+      "name": "Volume - Tada Formula",
+      "definition": "V?=?a???b???c???1/2, where ?V? represents hematoma volume; ?a? indicates the diameter of the largest area of the hematoma layer; ?b? shows the upright diameter of the diameter of the largest area of the hematoma layer, and ?c? is the layer thickness",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2025-01-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1100000,
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE843",
+      "parent_set": "RDES128",
+      "name": "Density",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "high homogeneous",
+            "definition": "High homogeneous"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "low homogeneous",
+            "definition": "Low homogeneous"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "high heterogeneous",
+            "definition": "High heterogeneous"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "low heterogeneous",
+            "definition": "Low heterogeneous"
+          },
+          {
+            "code": "RDE128.4",
+            "value": "4",
+            "name": "indeterminate",
+            "definition": "Indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE844",
+      "parent_set": "RDES128",
+      "name": "T1 Intensity ",
+      "definition": "Hematoma T1 Intensity ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "MR"
+      }
+    },
+    {
+      "id": "RDE845",
+      "parent_set": "RDES128",
+      "name": "T2 Intensity",
+      "definition": "Hematoma T2 Intensity",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE846",
+      "parent_set": "RDES128",
+      "name": "Septations",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE128.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Absent"
+          },
+          {
+            "code": "RDE128.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE128.2",
+            "value": "2",
+            "name": "indeterminate",
+            "definition": "Indeterminate"
+          },
+          {
+            "code": "RDE128.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

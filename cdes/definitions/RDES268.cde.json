@@ -1,0 +1,287 @@
+{
+  "id": "RDES268",
+  "name": "Lung Texture Aggregate Assessment",
+  "description": "Characterization of lung parenchyma by location and texture",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-08-14"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/268",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Chase, Heather",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "Nuance Communications"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1710",
+      "parent_set": "RDES268",
+      "name": "Pulmonary region",
+      "definition": "Relevant area of the lung",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE268.0",
+            "value": "0",
+            "name": "total lung"
+          },
+          {
+            "code": "RDE268.1",
+            "value": "1",
+            "name": "left lung"
+          },
+          {
+            "code": "RDE268.2",
+            "value": "2",
+            "name": "left upper lung"
+          },
+          {
+            "code": "RDE268.3",
+            "value": "3",
+            "name": "left middle lung"
+          },
+          {
+            "code": "RDE268.4",
+            "value": "4",
+            "name": "left lower lung"
+          },
+          {
+            "code": "RDE268.5",
+            "value": "5",
+            "name": "right lung"
+          },
+          {
+            "code": "RDE268.6",
+            "value": "6",
+            "name": "right upper lung"
+          },
+          {
+            "code": "RDE268.7",
+            "value": "7",
+            "name": "right middle lung"
+          },
+          {
+            "code": "RDE268.8",
+            "value": "8",
+            "name": "right lower lung"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1711",
+      "parent_set": "RDES268",
+      "name": "Volume",
+      "definition": "Volume of the reference lung region",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "unit": "L"
+      }
+    },
+    {
+      "id": "RDE1712",
+      "parent_set": "RDES268",
+      "name": "Hyperlucent proportion",
+      "definition": "Proportion of the lung region which is hyperlucent",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1713",
+      "parent_set": "RDES268",
+      "name": "Ground glass proportion",
+      "definition": "Proportion of the lung region which is ground glass",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1714",
+      "parent_set": "RDES268",
+      "name": "Reticular proportion",
+      "definition": "Proportion of the lung region which is reticular",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1715",
+      "parent_set": "RDES268",
+      "name": "Honeycombing proportion",
+      "definition": "Proportion of the lung region which is honeycombing",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1716",
+      "parent_set": "RDES268",
+      "name": "Pulmonary vessel volume",
+      "definition": "Measurement of the amount of blood in the pulmonary arteries and veins\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 2000,
+        "step": 1,
+        "unit": "cm^3"
+      }
+    }
+  ],
+  "references": []
+}

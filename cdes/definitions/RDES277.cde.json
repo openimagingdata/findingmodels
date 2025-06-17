@@ -1,0 +1,1404 @@
+{
+  "id": "RDES277",
+  "name": "Sella Mass",
+  "description": "Sellar Mass",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-06-21"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/277",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Singhal, Aparna",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1831",
+      "parent_set": "RDES277",
+      "name": "T1 intensity ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "heterogeneous"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "homogeneous"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "T1 hyperintense"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "T1 isointense"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "T1 hypointense"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1832",
+      "parent_set": "RDES277",
+      "name": "T1 signal postcontrast",
+      "definition": "with normal pituitary as reference",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "hypoenhancing"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "hyperenhancing"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "mixed"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "no contrast"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "no enhancement"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1833",
+      "parent_set": "RDES277",
+      "name": "T2 intensity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "heterogeneous"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "homogeneous"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "T2 hyperintense"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "T2 isointense"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "T2 hypointense"
+          },
+          {
+            "code": "RDE277.5",
+            "value": "5",
+            "name": "no T2 images"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1834",
+      "parent_set": "RDES277",
+      "name": "Suprasellar extension",
+      "definition": "Select predominate direction",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "anterior"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "posterior"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "left"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "right"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1835",
+      "parent_set": "RDES277",
+      "name": "Suprasellar extension configuration",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "snowman"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "dural extension"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1836",
+      "parent_set": "RDES277",
+      "name": "Suprasellar extension in relation to chiasm",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "prechiasmatic"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "postchiasmatic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1837",
+      "parent_set": "RDES277",
+      "name": "Cranial nerve 2 compression",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1838",
+      "parent_set": "RDES277",
+      "name": "Site of cranial nerve 2 compression",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "optic chiasm"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "cisternal segment"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "optic radiation"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "not applicable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1839",
+      "parent_set": "RDES277",
+      "name": "Abnormal optic pathway signal",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1840",
+      "parent_set": "RDES277",
+      "name": "Cavernous sinus extension Knosp grade",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "grade 0"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "grade 1"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "grade 2"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "grade 3"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "grade 4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1841",
+      "parent_set": "RDES277",
+      "name": "Clivus extension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1842",
+      "parent_set": "RDES277",
+      "name": "Sphenoid sinus extension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "left"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1845",
+      "parent_set": "RDES277",
+      "name": "Infundiblulum morphology",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1846",
+      "parent_set": "RDES277",
+      "name": "Infundibulum enhancement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1912",
+      "parent_set": "RDES277",
+      "name": "Location of infundibulum",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "midline"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "anterior"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "posterior"
+          },
+          {
+            "code": "RDE277.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1913",
+      "parent_set": "RDES277",
+      "name": "Borders",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "well defined"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "ill defined"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1914",
+      "parent_set": "RDES277",
+      "name": "ICA patency",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "patent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "not patent"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1915",
+      "parent_set": "RDES277",
+      "name": "AP dimension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1916",
+      "parent_set": "RDES277",
+      "name": "TV dimension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1917",
+      "parent_set": "RDES277",
+      "name": "CC dimension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1918",
+      "parent_set": "RDES277",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1919",
+      "parent_set": "RDES277",
+      "name": "Pneumatization of sphenoid sinus",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "conchal"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "presellar"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "sellar"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "postsellar"
+          },
+          {
+            "code": "RDE277.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE277.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1920",
+      "parent_set": "RDES277",
+      "name": "Pneumatized anterior clinoid process or onodi cell",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1921",
+      "parent_set": "RDES277",
+      "name": "Supraorbital ethmoid air",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1922",
+      "parent_set": "RDES277",
+      "name": "Pneumatized, abnormal dorsum sella",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1923",
+      "parent_set": "RDES277",
+      "name": "Abnormal tuberculum sella",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1925",
+      "parent_set": "RDES277",
+      "name": "Third ventricular extension",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1926",
+      "parent_set": "RDES277",
+      "name": "Cortical cuff between tumor and ACAs",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1927",
+      "parent_set": "RDES277",
+      "name": "Location of pituitary",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "mass intrinsic to pituitary"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "mass extrinsic to pituitary"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1981",
+      "parent_set": "RDES277",
+      "name": "Surgical changes",
+      "definition": "select surgical types - transsphenoid, craniotomy, nasal-septal flap.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-21"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 4,
+        "values": [
+          {
+            "code": "RDE277.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE277.1",
+            "value": "1",
+            "name": "trans-sphenoidal"
+          },
+          {
+            "code": "RDE277.2",
+            "value": "2",
+            "name": "craniotomy"
+          },
+          {
+            "code": "RDE277.3",
+            "value": "3",
+            "name": "nasal-septal flap"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

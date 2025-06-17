@@ -1,0 +1,873 @@
+{
+  "id": "RDES239",
+  "name": "MRI Prostate Lesion",
+  "description": "MRI Prostate Imaging",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-12"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/239",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Gandhi, Namita",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Author, Marval",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Genitourinary Radiology",
+      "abbreviation": "GU"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1537",
+      "parent_set": "RDES239",
+      "name": "Peripheral zone global features",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "No focal abnormality"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Linear and/or wedge shaped T2/ADC map hypointensities"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Diffuse mild T2/ADC map hypointensity"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Focal areas of high T1 signal consistent with hemorrhage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1538",
+      "parent_set": "RDES239",
+      "name": "Transition zone global features",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Normal",
+            "definition": "Normal appearing TZ (rare) or a round, completely encapsulated nodule. (“typical nodule”)"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Benign prostate hyperplasia"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1539",
+      "parent_set": "RDES239",
+      "name": "Peripheral Zone (PZ) lesion location",
+      "definition": "This is to describe the location including laterality of the prostate lesion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Apex anterior right"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Apex anterior left"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Apex anterior right and left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Apex posteromedial right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Apex posteromedial left"
+          },
+          {
+            "code": "RDE239.5",
+            "name": "Apex posteromedial right and left"
+          },
+          {
+            "code": "RDE239.6",
+            "name": "Apex posterolateral right"
+          },
+          {
+            "code": "RDE239.7",
+            "name": "Apex posterolateral left"
+          },
+          {
+            "code": "RDE239.8",
+            "name": "Apex posteromedial/posterolateral right"
+          },
+          {
+            "code": "RDE239.9",
+            "name": "Apex posteromedial/posterolateral left"
+          },
+          {
+            "code": "RDE239.10",
+            "name": "Apex posteromedial/posterolateral right and left"
+          },
+          {
+            "code": "RDE239.11",
+            "name": "Mid anterior left"
+          },
+          {
+            "code": "RDE239.12",
+            "name": "Mid anterior right"
+          },
+          {
+            "code": "RDE239.13",
+            "name": "Mid anterior right and left"
+          },
+          {
+            "code": "RDE239.14",
+            "name": "Mid posteromedial left"
+          },
+          {
+            "code": "RDE239.15",
+            "name": "Mid posteromedial right"
+          },
+          {
+            "code": "RDE239.16",
+            "name": "Mid posteromedial right and left"
+          },
+          {
+            "code": "RDE239.17",
+            "name": "Mid posterolateral left"
+          },
+          {
+            "code": "RDE239.18",
+            "name": "Mid posterolateral right"
+          },
+          {
+            "code": "RDE239.19",
+            "name": "Mid posteromedial/posterolateral left"
+          },
+          {
+            "code": "RDE239.20",
+            "name": "Mid posteromedial/posterolateral right"
+          },
+          {
+            "code": "RDE239.21",
+            "name": "Mid posteromedial/posterolateral right and left"
+          },
+          {
+            "code": "RDE239.22",
+            "name": "Base anterior left"
+          },
+          {
+            "code": "RDE239.23",
+            "name": "Base anterior right"
+          },
+          {
+            "code": "RDE239.24",
+            "name": "Base anterior right and left"
+          },
+          {
+            "code": "RDE239.25",
+            "name": "Base posteromedial left"
+          },
+          {
+            "code": "RDE239.26",
+            "name": "Base posteromedial right"
+          },
+          {
+            "code": "RDE239.27",
+            "name": "Base posteromedial right and left"
+          },
+          {
+            "code": "RDE239.28",
+            "name": "Base posterolateral left"
+          },
+          {
+            "code": "RDE239.29",
+            "name": "Base posterolateral right"
+          },
+          {
+            "code": "RDE239.30",
+            "name": "Base posteromedial/posterolateral left"
+          },
+          {
+            "code": "RDE239.31",
+            "name": "Base posteromedial/posterolateral right"
+          },
+          {
+            "code": "RDE239.32",
+            "name": "Base posteromedial/posterolateral right and left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1540",
+      "parent_set": "RDES239",
+      "name": "Transition Zone (TZ) lesion location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 18,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Apex anterior right"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Apex anterior left"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Apex anterior right and left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Apex posterior right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Apex posterior left"
+          },
+          {
+            "code": "RDE239.5",
+            "name": "Apex posterior right and left"
+          },
+          {
+            "code": "RDE239.6",
+            "name": "Mid anterior right"
+          },
+          {
+            "code": "RDE239.7",
+            "name": "Mid anterior left"
+          },
+          {
+            "code": "RDE239.8",
+            "name": "Mid anterior right and left"
+          },
+          {
+            "code": "RDE239.9",
+            "name": "Mid posterior right"
+          },
+          {
+            "code": "RDE239.10",
+            "name": "Mid posterior left"
+          },
+          {
+            "code": "RDE239.11",
+            "name": "Mid posterior right and left"
+          },
+          {
+            "code": "RDE239.12",
+            "name": "Base anterior right"
+          },
+          {
+            "code": "RDE239.13",
+            "name": "Base anterior left"
+          },
+          {
+            "code": "RDE239.14",
+            "name": "Base anterior right and left"
+          },
+          {
+            "code": "RDE239.15",
+            "name": "Base posterior right"
+          },
+          {
+            "code": "RDE239.16",
+            "name": "Base posterior left"
+          },
+          {
+            "code": "RDE239.17",
+            "name": "Base posterior right and left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1541",
+      "parent_set": "RDES239",
+      "name": "Anterior fibromuscular stroma (AFS) lesion location",
+      "definition": "Anterior fibromuscular stroma lesion location",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Apex right"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Apex left"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Apex right and left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Mid right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Mid left"
+          },
+          {
+            "code": "RDE239.5",
+            "name": "Mid right and left"
+          },
+          {
+            "code": "RDE239.6",
+            "name": "Base right"
+          },
+          {
+            "code": "RDE239.7",
+            "name": "Base left"
+          },
+          {
+            "code": "RDE239.8",
+            "name": "Base right and left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1542",
+      "parent_set": "RDES239",
+      "name": "Lesion size",
+      "definition": "Longest dimension. In the PZ, lesions should be measured on ADC. In the TZ, lesions should be measured on T2W.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "step": 1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1543",
+      "parent_set": "RDES239",
+      "name": "Peripheral Zone (PZ)  lesion T2W imaging characteristic",
+      "definition": "This is to describe the T2 weighted imaging feature of the lesion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Circumscribed, homogeneous moderately T2 hypointense focus/mass"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Linear or wedge-shaped T2 hypointense"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Diffuse mildly T2  hypointense"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Heterogeneous T2 signal intensity"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Uniform T2 hyperintense signal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1544",
+      "parent_set": "RDES239",
+      "name": "Transition Zone (TZ) lesion T2W imaging characteristic",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Lenticular or non-circumscribed, homogeneous, moderately T2 hypointense"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Heterogeneous T2 signal intensity with obscured margins"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Encapsulated nodule"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Homogeneous circumscribed nodule without encapsulation"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Homogenous mildly hypointense area between nodules"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1545",
+      "parent_set": "RDES239",
+      "name": "Lesion Diffusion weighted Imaging (DWI) characteristic",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "No abnormality",
+            "definition": "No abnormality (i.e., normal) on ADC and high b-value DWI"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Linear/wedge shaped hypointense on ADC"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Linear/wedge shaped hyperintense on high b-value DWI"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Focal hypointense on ADC"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Focal hyperintense on high b-value DWI"
+          },
+          {
+            "code": "RDE239.5",
+            "name": "Focal markedly hypointense on ADC"
+          },
+          {
+            "code": "RDE239.6",
+            "name": "Focal markedly hyperintense on high b-value DWI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1546",
+      "parent_set": "RDES239",
+      "name": "Lesion dynamic contrast enhancement (DCE) ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "DCE negative",
+            "definition": "no early or contemporaneous enhancement; or diffuse multifocal enhancement NOT corresponding to a focal finding on T2W and/or DWI or focal enhancement corresponding to a lesion demonstrating features of BPH on T2WI"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "DCE positive",
+            "definition": "Focal, and; earlier than or contemporaneously with enhancement of adjacent normal prostatic tissues, and; corresponds to suspicious finding on T2W and/or DWI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1547",
+      "parent_set": "RDES239",
+      "name": "Lesion margin",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Extraprostatic extension present left"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Extraprostatic extension present right"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Indeterminate on left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Indeterminate on right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Extraprostatic extension absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1548",
+      "parent_set": "RDES239",
+      "name": "Lesion neurovascular bundle involvement ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Present on left"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Present on right"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Indeterminate on left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Indeterminate on right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1549",
+      "parent_set": "RDES239",
+      "name": "Lesion Seminal Vesicle involvement ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "Present on left"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "Present on right"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "Indeterminate on left"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "Indeterminate on right"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "Absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1550",
+      "parent_set": "RDES239",
+      "name": "Lesion PIRADS scoring ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE239.0",
+            "name": "PIRADS 1"
+          },
+          {
+            "code": "RDE239.1",
+            "name": "PIRADS 2"
+          },
+          {
+            "code": "RDE239.2",
+            "name": "PIRADS 3"
+          },
+          {
+            "code": "RDE239.3",
+            "name": "PIRADS 4"
+          },
+          {
+            "code": "RDE239.4",
+            "name": "PIRADS 5"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

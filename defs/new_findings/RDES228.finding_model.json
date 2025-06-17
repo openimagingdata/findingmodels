@@ -1,0 +1,33 @@
+{
+  "oifm_id": "OIFM_CDE_000228",
+  "name": "Pneumoperitoneum",
+  "description": "Pneumoperitoneum",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001466",
+      "name": "Presence",
+      "description": "Gas below the diaphragm not contained within a lumen.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001467",
+      "name": "Side",
+      "description": "Side affected by pneumoperitoneum",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES228",
+      "display": "pneumoperitoneum"
+    }
+  ],
+  "body_parts": []
+}

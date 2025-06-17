@@ -1,0 +1,739 @@
+{
+  "id": "RDES13",
+  "name": "SAR: Primary Rectal Cancer Staging on MRI",
+  "description": "Society of Abdominal Radiology (SAR) Rectal Cancer Disease-Focused Panel",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/13",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Rectum",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID163",
+        "display": "rectum",
+        "url": "http://www.radlex.org/RID/RID163"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "Society of Abdominal Radiology (SAR)"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE100",
+      "parent_set": "RDES13",
+      "name": "Distance to the anal verge",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2017-03-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2017-03-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 20,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE101",
+      "parent_set": "RDES13",
+      "name": "Distance to the top of sphincter ",
+      "definition": "Distance to the top of sphincter complex/anorectal junction",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-30"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-08-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE102",
+      "parent_set": "RDES13",
+      "name": "Relationship to anterior peritoneal reflection",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "above"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "straddles"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "below"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE103",
+      "parent_set": "RDES13",
+      "name": "Craniocaudal length",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2017-03-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2017-03-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE104",
+      "parent_set": "RDES13",
+      "name": "Morphology",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "polypoid"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "circumferential"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "semicircumferential"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE110",
+      "parent_set": "RDES13",
+      "name": "Extramural venous invasion (EMVI)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "equivocal"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE111",
+      "parent_set": "RDES13",
+      "name": "Shortest distance of tumor  (MRF)",
+      "definition": "Shortest distance of tumor to MRF or anticipated CRM",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 99,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE113",
+      "parent_set": "RDES13",
+      "name": "Circumferential resection margin:  other site",
+      "definition": "Separate tumor deposits suspiciously mph node or EMV Ithreatening 2 mm or invading 1 mm the MRF",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE114",
+      "parent_set": "RDES13",
+      "name": "Lymph nodes and tumor deposits",
+      "definition": "TME Superior Rectal Mesorectal Only",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "no visible "
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "N zero",
+            "definition": "N0: short axis more or equal to 9 mm"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "N plus",
+            "definition": "N+ : short axis 5-9 mm and at least 2 of the following criteria: round shape or irregular border contour or heterogeneous signal intensity"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "Nx",
+            "definition": "Nx: short axis less than 5 mm and round shape and irregular border contour and heterogeneous signal intensity"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE120",
+      "parent_set": "RDES13",
+      "name": "Circumferential resection margin (CRM)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "clear, tumor margin more than 2mm"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "threatened, tumor within 2 mm"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "involved, tumor within 1 mm"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE121",
+      "parent_set": "RDES13",
+      "name": "Sphincter involvement",
+      "definition": "Is the sphincter involved in the rectal cancer",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-17"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "internal sphincter"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "external sphincter"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2032",
+      "parent_set": "RDES13",
+      "name": "T-category",
+      "definition": "T-stage of rectal cancer",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-17"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "T0",
+            "definition": "no evidence of cancer"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "T1",
+            "definition": "confined to the rectal wall and invade submucosa"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "T2",
+            "definition": "confined to rectal wall invade muscularis propria (the outer layer of the rectal wall)"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "T3a",
+            "definition": "extend beyond the bowel wall into mesorectal fat"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "T3b"
+          },
+          {
+            "code": "RDE13.5",
+            "value": "5",
+            "name": "T3c"
+          },
+          {
+            "code": "RDE13.6",
+            "value": "6",
+            "name": "T3d"
+          },
+          {
+            "code": "RDE13.7",
+            "value": "8",
+            "name": "T4a",
+            "definition": "invade the peritoneum or peritoneal reflection"
+          },
+          {
+            "code": "RDE13.8",
+            "value": "9",
+            "name": "T4b",
+            "definition": "invade other organs or structure outside the meso-rectum"
+          },
+          {
+            "code": "RDE13.9",
+            "value": "0",
+            "name": "TX",
+            "definition": "Main tumor cannot be measured"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2033",
+      "parent_set": "RDES13",
+      "name": "Invasion of other organs",
+      "definition": "invasion of other organs",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-17"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE13.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE13.1",
+            "value": "1",
+            "name": "genitourinary",
+            "definition": "includes bladder, left or right ureter, cervix, uterus, vagina, prostate, seminal vesicle, urethra"
+          },
+          {
+            "code": "RDE13.2",
+            "value": "2",
+            "name": "vessels",
+            "definition": "left and right internal iliac vessels, left and right external iliac vessels"
+          },
+          {
+            "code": "RDE13.3",
+            "value": "3",
+            "name": "nerves",
+            "definition": "lumbosacral nerve roots"
+          },
+          {
+            "code": "RDE13.4",
+            "value": "4",
+            "name": "pelvic muscles",
+            "definition": "obturator intemus, piriformis, ischioccoccygeus"
+          },
+          {
+            "code": "RDE13.5",
+            "value": "5",
+            "name": "pelvic floor (levator ani)",
+            "definition": "pubococcygeus, Illiococcygeus, puborectalis"
+          },
+          {
+            "code": "RDE13.6",
+            "value": "6",
+            "name": "bones",
+            "definition": "sacrum, coccyx, ilium, ischium, pubis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2034",
+      "parent_set": "RDES13",
+      "name": "Mesorectal lymph nodes",
+      "definition": "number of suspicious lymph nodes",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-17"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-06-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "MRI of Rectal Cancer: Tumor Staging, Imaging Techniques, and Management Natally Horvat, Camila Carlos Tavares Rocha, Brunna Clemente Oliveira, Iva Petkovska, and Marc J. Gollub RadioGraphics 2019 39:2, 367-387"
+    }
+  ]
+}

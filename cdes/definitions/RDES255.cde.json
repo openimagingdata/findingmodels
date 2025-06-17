@@ -1,0 +1,173 @@
+{
+  "id": "RDES255",
+  "name": "Pneumomediastinum",
+  "description": "Pneumomediastinum is air in the mediastinum. The mediastinum is the space in the middle of the chest, between the lungs and around the heart.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-01-31"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/255",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1654",
+      "parent_set": "RDES255",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-31"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-31"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE255.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE255.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE255.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE255.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1656",
+      "parent_set": "RDES255",
+      "name": "Size",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-02"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-02"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE255.0",
+            "value": "0",
+            "name": "small",
+            "definition": "Small"
+          },
+          {
+            "code": "RDE255.1",
+            "value": "1",
+            "name": "medium",
+            "definition": "Medium"
+          },
+          {
+            "code": "RDE255.2",
+            "value": "2",
+            "name": "large",
+            "definition": "Large"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1999",
+      "parent_set": "RDES255",
+      "name": "Type",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-13"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE255.0",
+            "value": "0",
+            "name": "spontaneous",
+            "definition": "Isn't caused by injury or illness, or the cause is unknown."
+          },
+          {
+            "code": "RDE255.1",
+            "value": "1",
+            "name": "secondary",
+            "definition": "Develops because of an injury or illness."
+          },
+          {
+            "code": "RDE255.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE255.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

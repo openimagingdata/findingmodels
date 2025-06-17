@@ -1,0 +1,48 @@
+{
+  "oifm_id": "OIFM_CDE_000184",
+  "name": "Communicating Hydrocephalus",
+  "description": "Detection of Communicating Hydrocephalus",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001267",
+      "name": "Callosal angle\t",
+      "description": "Angle formed by the superior borers of the lateral ventricles in a coronal plane perpendicular to the anterior commissure posterior commissure plane.",
+      "type": "numeric",
+      "min": 30,
+      "max": 150,
+      "step": 1,
+      "unit": "Degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001268",
+      "name": "Evans Index",
+      "description": "Ratio of the maximum bi-fontal width of the lateral ventricles in axial plane to the maximum internal diameter of the skull at that level",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002005",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES184",
+      "display": "communicating hydrocephalus"
+    }
+  ],
+  "body_parts": []
+}

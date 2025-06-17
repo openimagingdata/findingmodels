@@ -1,0 +1,81 @@
+{
+  "oifm_id": "OIFM_CDE_000290",
+  "name": "ARIA-E follow-up",
+  "description": "Follow up imaging for patients undergoing treatment with an amyloid-lowering antibody therapy",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_002012",
+      "name": "Field strength",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002013",
+      "name": "Baseline FLAIR hyperintensities comparison scan",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002014",
+      "name": "Prior FLAIR hyperintensities location(s)",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002016",
+      "name": "New areas for edema or effusion",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002017",
+      "name": "Largest diameter of new area of effusion or edema",
+      "description": "The largest area of edema or effusion",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002018",
+      "name": "Regions of edema/effusion for ARIA-E",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002019",
+      "name": "ARIA-E (effusion and/or edema)",
+      "description": "effusion and/or edema",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES290",
+      "display": "aria-e follow-up"
+    }
+  ],
+  "body_parts": []
+}

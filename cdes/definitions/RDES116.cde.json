@@ -1,0 +1,517 @@
+{
+  "id": "RDES116",
+  "name": "Aging Brain",
+  "description": "Aging Brain",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/116",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE749",
+      "parent_set": "RDES116",
+      "name": "Global cortical atrophy scale",
+      "definition": "system to assess cerebral atrophy, especially in the context of neurodegenerative diseases",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 3,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE750",
+      "parent_set": "RDES116",
+      "name": "Posterior parietal atrophy score",
+      "definition": "Koedman Score",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 3,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE751",
+      "parent_set": "RDES116",
+      "name": "Total brain volume",
+      "definition": "",
+      "question": "Total brain volume",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE752",
+      "parent_set": "RDES116",
+      "name": "Ventricular system volume",
+      "definition": "",
+      "question": "Ventricular system volume",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE753",
+      "parent_set": "RDES116",
+      "name": "Hippocampi volume",
+      "definition": "",
+      "question": "Hippocampi volume",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE754",
+      "parent_set": "RDES116",
+      "name": "Frontal lobes volume",
+      "definition": "",
+      "question": "Frontal lobes volume",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE755",
+      "parent_set": "RDES116",
+      "name": "Temporal lobes volume",
+      "definition": "",
+      "question": "Temporal lobes volume",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE756",
+      "parent_set": "RDES116",
+      "name": "Fzekas scale ",
+      "definition": "Fzekas Scale (from FLAIR sequence)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 6,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE760",
+      "parent_set": "RDES116",
+      "name": "Medial temporal atrophy score",
+      "definition": "Visual score of the brain using coronal T1 weighted images through the hippocampus at the level of the anterior pons, based on width of the choroid fissure, width of the temporal horn of the lateral ventricle, and height of the hippocampus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE116.0",
+            "value": "0",
+            "name": "no CSF is visible around the hippocampus"
+          },
+          {
+            "code": "RDE116.1",
+            "value": "1",
+            "name": "choroid fissure is slightly widened"
+          },
+          {
+            "code": "RDE116.2",
+            "value": "2",
+            "name": "moderate widening of the choroid fissure, mild enlargement of the temporal horn and mild loss of hippocampal height"
+          },
+          {
+            "code": "RDE116.3",
+            "value": "3",
+            "name": "marked widening of the choroid fissure, moderate enlargement of the temporal horn, and moderate loss of hippocampal height"
+          },
+          {
+            "code": "RDE116.4",
+            "value": "4",
+            "name": " marked widening of the choroid fissure, marked enlargement of the temporal horn, and the hippocampus is markedly atrophied and internal structure is lost"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE761",
+      "parent_set": "RDES116",
+      "name": "Frontotemporal atrophy",
+      "definition": "Shrinkage of the frontotemporal lobes",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE116.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE116.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE116.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE116.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE762",
+      "parent_set": "RDES116",
+      "name": "Midbrain atrophy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE116.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE116.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE116.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE116.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE763",
+      "parent_set": "RDES116",
+      "name": "Caudate head atrophy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE116.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE116.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE116.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE116.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE764",
+      "parent_set": "RDES116",
+      "name": "Cerebellar atrophy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE116.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE116.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE116.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE116.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

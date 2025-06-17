@@ -1,0 +1,84 @@
+{
+  "oifm_id": "OIFM_CDE_000178",
+  "name": "Small Bowel Obstruction",
+  "description": "Identifying Small Bowel Obstruction",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001239",
+      "name": "Small bowel diameter",
+      "description": "Maximum small bowel diameter",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001240",
+      "name": "Transition point location",
+      "description": "Location of obstruction ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001242",
+      "name": "Enhancement",
+      "description": "Small bowel wall enhancement",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001243",
+      "name": "Small bowel wall thickness",
+      "description": "Small bowel wall thickness",
+      "type": "numeric",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001634",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001635",
+      "name": "Severity",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001636",
+      "name": "Associated findings",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES178",
+      "display": "small bowel obstruction"
+    }
+  ],
+  "body_parts": []
+}

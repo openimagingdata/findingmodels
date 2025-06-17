@@ -1,0 +1,1425 @@
+{
+  "id": "RDES221",
+  "name": "MRI Brain Baseline Glioma VASARI Feature",
+  "description": "Glioma Features (VASARI)",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2022-09-18"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/221",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Singhal, Aparna",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1414",
+      "parent_set": "RDES221",
+      "name": "Tumor center",
+      "definition": "Location of lesion geographic center; the largest component of the tumor (either CET or nCET).\n \n (multiple selections acceptable ? choose up to two)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 13,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "frontal lobe"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "insular"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "brainstem"
+          },
+          {
+            "code": "RDE221.6",
+            "value": "6",
+            "name": "corpus callosum"
+          },
+          {
+            "code": "RDE221.7",
+            "value": "7",
+            "name": "cerebellum"
+          },
+          {
+            "code": "RDE221.8",
+            "value": "8",
+            "name": "lentiform nuclei"
+          },
+          {
+            "code": "RDE221.9",
+            "value": "9",
+            "name": "caudate"
+          },
+          {
+            "code": "RDE221.10",
+            "value": "0",
+            "name": "thalamus"
+          },
+          {
+            "code": "RDE221.11",
+            "value": "1",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE221.12",
+            "value": "2",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1415",
+      "parent_set": "RDES221",
+      "name": "Side of tumor center",
+      "definition": "Side of lesion center irrespective of whether the lesion crosses into the contralateral hemisphere.\n \n \n \t\nSide of lesion center irrespective of whether the lesion crosses into the contralateral hemisphere.\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "right"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "center/bilateral",
+            "definition": "center/bilateral"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "left",
+            "definition": "Left side of midline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1416",
+      "parent_set": "RDES221",
+      "name": "Tumor involving eloquent brain",
+      "definition": "Does any component of the tumor (CET or\nnCET) involve eloquent cortex or the\nimmediate subcortical white matter of eloquent\ncortex (motor,language, vision)? (multiple selections acceptable).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 6,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "speech motor",
+            "definition": "dominant frontal operculum"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "speech receptive",
+            "definition": "Temporal or Wernickes area"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "vision",
+            "definition": "Occipital lobe"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "motor"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "no eloquent brain"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1417",
+      "parent_set": "RDES221",
+      "name": "Enhancement quality",
+      "definition": "Qualitative degree of contrast enhancement is defined as having\n all or portions of the tumor that demonstrate significantly higher signal on the postcontrast T1W images compared to precontrast T1W images. Mild = when barely discernible but unequivocal degree of enhancement is present relative to pre-contrast images. Marked = obvious tissue enhancement.\n \n (If it does not appear that contrast was administered, select No Contrast Injected.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "3",
+            "name": "no contrast administered"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "0",
+            "name": "none",
+            "definition": "No contrast enhancement, if it doesn't appear that contrast was administered."
+          },
+          {
+            "code": "RDE221.2",
+            "value": "1",
+            "name": "mild",
+            "definition": "Barely discernable  degree of enhancement"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "2",
+            "name": "marked",
+            "definition": "Obvious tissue enhancement"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1418",
+      "parent_set": "RDES221",
+      "name": "Proportion enhancing",
+      "definition": "Visually, when scanning through the entire tumor volume, what proportion of the entire tumor would you estimate is enhancing. (Assuming that the entire abnormality may be\ncomprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic\ncomponent and (4) a edema component.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "no contrast injected"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "no contrast enhancement"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "less than 5%",
+            "definition": "less than 5% of entire tumor enhancing"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "between 6 and 33%",
+            "definition": "A minor proportion of tumor enhances"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "between 34 and 67%",
+            "definition": "A moderate proportion of the tumor enhances"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "greater than 67%",
+            "definition": "The majority of the tumor enhances"
+          },
+          {
+            "code": "RDE221.6",
+            "value": "6",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1424",
+      "parent_set": "RDES221",
+      "name": "Thickness of enhancing margin",
+      "definition": "If most of the enhancing rim is thin, regular, and measures < 3mm in thickness and has homogenous enhancement the grade is minimal. If most of the rim demonstrates nodular and/or thick enhancement measuring 3mm or more, the grade is thick/nodular. If there is only solid enhancement and no rim, the grade is solid.\n \n (If it does not appear that contrast was administered, select No Contrast Injected.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "No contrast injected",
+            "definition": "No contrast injected"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "No enhancement",
+            "definition": "No enhancement"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "thin ",
+            "definition": "If most of the enhancing rim Is thin, regular, and measures < 3 mm in thickness and has homogenous enhancement the grade is thin"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "thick",
+            "definition": "If most of the rim demonstrates nodular and/or thick enhancement, that is equal or greater than 3 mm, the grade is thick."
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "solid",
+            "definition": "If there is only solid enhancement and no rim, the grade is solid."
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1425",
+      "parent_set": "RDES221",
+      "name": "Definition of the enhancing margin",
+      "definition": "The scoring is not applicable if there is no contrast enhancement. Assess if most of the outside margin of the enhancement is well defined or poorly defined. Are you able to easily trace the margin of enhancement?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "no contrast injected",
+            "definition": "no contrast injected"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "no contrast enhancement",
+            "definition": "no contrast enhancement"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "completely well-defined (100%)",
+            "definition": "completely well-defined (100%)"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "mostly well-defined (> two-thirds)",
+            "definition": "mostly well-defined (> two-thirds)"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "mixed (@50-50)",
+            "definition": "mixed (@50-50)"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "mostly poorly-defined (>two-third)",
+            "definition": "mostly poorly-defined (>two-third)"
+          },
+          {
+            "code": "RDE221.6",
+            "value": "6",
+            "name": "completely ill-defined (100%)",
+            "definition": "completely ill-defined (100%)"
+          },
+          {
+            "code": "RDE221.7",
+            "value": "7",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1426",
+      "parent_set": "RDES221",
+      "name": "Definition of the non-enhancing margin (e.g. Grade III) ",
+      "definition": "If most of the outside non-enhancing (nCET) margin of the tumor is well-defined (i.e. sharply marginated) and smooth (geographic), versus if the margin is poorly-defined (fluffy or indistinct).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "completely well-defined (100%)",
+            "definition": "completely well-defined (100%)"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "mostly well-defined (> two-thirds)",
+            "definition": "mostly well-defined (> two-thirds)"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "mixed (@50-50)",
+            "definition": "mixed (@50-50)"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "mostly poorly defined (> two-thirds)",
+            "definition": "mostly poorly defined (> two-thirds)"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "completely ill-defined (100%)",
+            "definition": "completely ill-defined (100%)"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1427",
+      "parent_set": "RDES221",
+      "name": "Proportion of edema",
+      "definition": "Visually, when scanning through the entire tumor volume, what proportion of the entire abnormality is estimated to represent vasogenic edema? \n\nEdema should be greater in signal than than nCET and somewhat lower in signal\nthan CSF. Pseudopods are characteristic of edema).\n\nAssuming that the the entire abnormality may be comprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic component and (4) a edema component.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "none ",
+            "definition": "no edema present"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "less than 5% ",
+            "definition": "Small portion of the tumor matrix"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "between 6 and 33% ",
+            "definition": "Small amount of edema surrounds tumor matrix"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "between 34 and 67% ",
+            "definition": "Moderate amount of edema comprises tumor"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "greater than 67%"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1428",
+      "parent_set": "RDES221",
+      "name": "Intratumoral hemorrhage",
+      "definition": "Intrinsic hemorrhage anywhere in the tumor matrix. Any intrinsic foci of low signal on T2WI (or gradient echo) or high signal on T1WI. Proportion is not a discriminating factor. Select cannot determine if findings are indistinct or may actually represent mineral instead of hemorrhage.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "No hemorrhage"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Hemorrhage is present"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1439",
+      "parent_set": "RDES221",
+      "name": "Perpendicular diameter",
+      "definition": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1440",
+      "parent_set": "RDES221",
+      "name": "Tumor origin",
+      "definition": "Propose where you think the tumor originated from using the following grades. Periventricular (most likely arising from periventricular/subventricular zone); Gyral (most likely arising from the cortex or adjacent gyral subcortical white matter zone);\n Deep white matter (most likely arising deep to the U fiber region but not in the periventricular zone). Use not applicable if none of these feature criteria apply. (multiple selections acceptable)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "periventricular"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "gyral"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "deep white matter"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2037",
+      "parent_set": "RDES221",
+      "name": "Enhancing tumor crosses midline",
+      "definition": "Enhancing tissue crosses midline is defined by any CET that extends into the contralateral hemisphere through white matter commissures usually expected at the midline (exclusive of herniated ipsilateral tissue).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "1",
+            "name": "no contrast injected"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "0",
+            "name": "no contract enhancement"
+          },
+          {
+            "code": "RDE221.2",
+            "name": "No"
+          },
+          {
+            "code": "RDE221.3",
+            "name": "Yes"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2038",
+      "parent_set": "RDES221",
+      "name": "Proportion nCET",
+      "definition": "When scanning through the entire tumor volume, what proportion of the entire tumor is estimated to represent nonenhancing tumor or nCET (not edema)?\n \n Non-enhancing tumor (nCET) is defined as regions of T2W intermediate hyperintensity (less than the intensity of cerebrospinal fluid or vasogenic edema, with corresponding T1W hypointensity) that are associated with mass effect and architectural distortion, including blurring of the gray-white interface. (This may be difficult to discern from vasogenic edema ? if uncertain error conservatively).\n \n (Assuming that the the entire abnormality may be comprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic component and (4) a edema component.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "minimal"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "less than 33%",
+            "definition": "Between one third and two thirds"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "between 34% and 66%"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "more than 67%"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2039",
+      "parent_set": "RDES221",
+      "name": "Proportion necrosis",
+      "definition": "Visually, when scanning through the entire tumor volume, what proportion of the tumor is estimated to represent necrosis.\n \n Necrosis is defined as a region within the tumor that does not enhance, is hyperintense on T2W and proton density images, is hypointense on T1W images, and has an irregular border).\n \n (Assuming that the entire abnormality may be comprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic component and (4) a edema component.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "minimal"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "less than 33%"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "between 33% and 66%"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "more than 67%"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminant"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2040",
+      "parent_set": "RDES221",
+      "name": "Longitudinal diameter",
+      "definition": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 200,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE2041",
+      "parent_set": "RDES221",
+      "name": "Tumor Heterogeneity",
+      "definition": "When assessing the complexity of the internal architecture of the tumor on FLAIR or T2WI overall grade the uniformity of the tumor matrix (exclusive of what appears to clearly be edema). Select homogeneous when the tumor matrix is completely uniform in consistency; minimal heterogeneity when a minority of the tumor matrix is complex and non-uniform; moderately heterogeneous when more than half of the tumor volume is non-uniform; mostly heterogeneous when only a small component of the matrix is homogeneous. FLAIR should be used primarily. T2WI can be used when FLAIR images are not included.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "complete homogeneous"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "minimal heterogeneity (< 5%)",
+            "definition": "minimal heterogeneity"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "moderate heterogeneity (33-   66%)",
+            "definition": "moderately heterogeneous"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "mostly heterogeneous (>67%)",
+            "definition": "mostly heterogeneous"
+          },
+          {
+            "code": "RDE221.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2042",
+      "parent_set": "RDES221",
+      "name": "Tumor Shape",
+      "definition": "Shape is defined as the overall contour of the abnormal tissue that you would characterize as a tumor boundary. Which descriptor best defines the shape of the entire mass: round, ovoid, lobulated or irregular. Consider the overall boundaries of the NCET and CET exclusive of any edema.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "round/spherical"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "ovoid"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "lobulated/irregular"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "none apply"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2043",
+      "parent_set": "RDES221",
+      "name": "Intratumoral cysts",
+      "definition": "Cysts are well defined, rounded,often eccentric regions of very bright T2W signal and low T1W signal essentially matching CSF signal intensity, with very thin, regular, smooth, nonenhancing or regularly enhancing walls, possibly with thin, regular, internal septations. Differentiate from a necrotic enhancing tumor cavity with thick irregular walls and complex internal fluid.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2044",
+      "parent_set": "RDES221",
+      "name": "Multi-focal or multi-centric tumor",
+      "definition": "\"Multifocal is defined as having at least one region of tumor, either enhancing or nonenhancing, which is not contiguous with the dominant lesion and is outside the region of signal abnormality (edema) surrounding the dominant mass.\n This can be defined as those resulting from dissemination or growth by an established route, spread via commissural or other pathways, or via CSF channels or local metastases, whereas Multicentric are widely separated lesions in different lobes or different hemispheres that cannot be attributed to one of the previously mentioned pathways. Gliomatosis refers to generalized neoplastic transformation of the white matter of most of a hemisphere.\"",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "focal"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "multi-focal"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "multi-centric"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "gliomatosis"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2045",
+      "parent_set": "RDES221",
+      "name": "T1-FLAIR ratio",
+      "definition": "T1/FLAIR ratio is a gross comparison in the overall lesion size between pre-contrast T1 and FLAIR (in the same plane). Select T1~FLAIR when pre-contrast T1 abnormality (exclusive of signal intensity) approximates size of FLAIR abnormality; Select T1<FLAIR when the size of T1 abnormality is moderately smaller than the surrounding FLAIR envelope; or select T1<<FLAIR when the size of the pre-contrast T1 abnormality is much smaller than size of FLAIR abnormality. (If no FLAIR images were provided select No FLAIR images).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "no FLAIR images"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "T1=FLAIR"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "T1<FLAIR"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "T1<<FLAIR"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2046",
+      "parent_set": "RDES221",
+      "name": "Ependymal invasion",
+      "definition": "Ependymal invasion is defined by tumor abutting any adjacent ependymal surface in continuity with enhancing or non-enhancing tumor matrix.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2047",
+      "parent_set": "RDES221",
+      "name": "Cortical involvement by tumor",
+      "definition": "Cortical involvement is defined by non-enhancing or enhancing tumor that extends to the cortical mantle, or if the cortex is no longer distinguishable relative to tumor.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2048",
+      "parent_set": "RDES221",
+      "name": "Deep white matter invasion by tumor",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "1",
+            "name": "corpus callosum"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "internal capsule"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "brainstem"
+          },
+          {
+            "code": "RDE221.4",
+            "value": "4",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2049",
+      "parent_set": "RDES221",
+      "name": "nCET tumor crosses midline",
+      "definition": "nCET tumor crosses midline is defined by any nCET tumor that extends into the contralateral hemisphere through white matter commissures usually expected at the midline (exclusive of herniated ipsilateral tissue).",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE221.0",
+            "value": "1",
+            "name": "no nCET component"
+          },
+          {
+            "code": "RDE221.1",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE221.2",
+            "value": "2",
+            "name": "present"
+          },
+          {
+            "code": "RDE221.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

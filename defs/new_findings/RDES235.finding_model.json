@@ -1,0 +1,123 @@
+{
+  "oifm_id": "OIFM_CDE_000235",
+  "name": "Laryngeal Cancer of the Neck on CT",
+  "description": "Laryngeal Cancer of the Neck on CT",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001502",
+      "name": "AP measurement",
+      "description": "Largest anterior-posterior dimension",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001503",
+      "name": "RL measurement",
+      "description": "Largest transverse dimension\n",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001504",
+      "name": "CC measurement",
+      "description": "Largest cranio-caudal dimension\n",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001505",
+      "name": "Portions of larynx involved",
+      "description": "Select all spaces of involvement",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001506",
+      "name": "Post contrast enhancement",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001512",
+      "name": "Cartilage invasion",
+      "description": "Is there erosion or calcification of these cartilageneous structures to suggest invasion?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001513",
+      "name": "Extension beyond laryngeal skeleton",
+      "description": "General extralaryngeal extension.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001930",
+      "name": "Extension across midline",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001931",
+      "name": "Airway narrowing",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001932",
+      "name": "Pre-vertebral invasion",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001933",
+      "name": "Carotid space invasion",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES235",
+      "display": "laryngeal cancer of the neck on ct"
+    }
+  ],
+  "body_parts": []
+}

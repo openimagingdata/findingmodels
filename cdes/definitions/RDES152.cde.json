@@ -1,0 +1,387 @@
+{
+  "id": "RDES152",
+  "name": "TI RADS",
+  "description": "TI-RADS level determination",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/152",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1036",
+      "parent_set": "RDES152",
+      "name": "Maximum Diameter",
+      "definition": "",
+      "question": "Maximum Diameter",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2020-03-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2020-03-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0.1,
+        "max": 15,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1037",
+      "parent_set": "RDES152",
+      "name": "Quantity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 4,
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1038",
+      "parent_set": "RDES152",
+      "name": "Side",
+      "definition": "Nodule's side",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE152.0",
+            "value": "0",
+            "name": "left",
+            "definition": "Left lobe"
+          },
+          {
+            "code": "RDE152.1",
+            "value": "1",
+            "name": "right",
+            "definition": "Right lobe"
+          },
+          {
+            "code": "RDE152.2",
+            "value": "3",
+            "name": "isthmus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1039",
+      "parent_set": "RDES152",
+      "name": "Lobe or isthmus is the nodule location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE152.0",
+            "value": "0",
+            "name": "upper"
+          },
+          {
+            "code": "RDE152.1",
+            "value": "1",
+            "name": "mid"
+          },
+          {
+            "code": "RDE152.2",
+            "value": "2",
+            "name": "lower"
+          },
+          {
+            "code": "RDE152.3",
+            "value": "3",
+            "name": "right"
+          },
+          {
+            "code": "RDE152.4",
+            "value": "4",
+            "name": "left"
+          },
+          {
+            "code": "RDE152.5",
+            "value": "5",
+            "name": "midline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1040",
+      "parent_set": "RDES152",
+      "name": "Composition",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE152.0",
+            "value": "0",
+            "name": "cystic or almost completely cystic ",
+            "definition": "Cystic or almost completely cystic (0 points)"
+          },
+          {
+            "code": "RDE152.1",
+            "value": "1",
+            "name": "spongiform",
+            "definition": "Spongiform (0 points)"
+          },
+          {
+            "code": "RDE152.2",
+            "value": "2",
+            "name": "mixed cystic and solid",
+            "definition": "Mixed cystic and solid (1 points)"
+          },
+          {
+            "code": "RDE152.3",
+            "value": "3",
+            "name": "solid or almost completely solid ",
+            "definition": "Solid or almost completely solid (2 points)"
+          },
+          {
+            "code": "RDE152.4",
+            "value": "4",
+            "name": "composition cannot be determined ",
+            "definition": "Composition cannot be determined (2 points)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1041",
+      "parent_set": "RDES152",
+      "name": "Echogenicity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE152.0",
+            "value": "0",
+            "name": "anechoic ",
+            "definition": "Anechoic (0 points)"
+          },
+          {
+            "code": "RDE152.1",
+            "value": "1",
+            "name": "hyperechoic or isoechoic ",
+            "definition": "Hyperechoic or isoechoic (1 points)"
+          },
+          {
+            "code": "RDE152.2",
+            "value": "2",
+            "name": "echogenicity cannot be determined ",
+            "definition": "Echogenicity cannot be determined (1 points)"
+          },
+          {
+            "code": "RDE152.3",
+            "value": "3",
+            "name": "hypoechoic ",
+            "definition": "Hypoechoic (2 points)"
+          },
+          {
+            "code": "RDE152.4",
+            "value": "4",
+            "name": "very hypoechoic",
+            "definition": "Very hypoechoic (3 points)"
+          },
+          {
+            "code": "RDE152.5",
+            "value": "5",
+            "name": "ineterminate"
+          },
+          {
+            "code": "RDE152.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1042",
+      "parent_set": "RDES152",
+      "name": "Other features",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 6,
+        "values": [
+          {
+            "code": "RDE152.0",
+            "value": "0",
+            "name": "macrocalcifications ",
+            "definition": "Macrocalcifications (1 points)"
+          },
+          {
+            "code": "RDE152.1",
+            "value": "1",
+            "name": "peripheral calcifications ",
+            "definition": "Peripheral (rim) calcifications (2 points)"
+          },
+          {
+            "code": "RDE152.2",
+            "value": "2",
+            "name": "punctate echogenic foci ",
+            "definition": "Punctate echogenic foci (3 points) "
+          },
+          {
+            "code": "RDE152.3",
+            "value": "3",
+            "name": "lobulated margin without extra-thyroidal extension ",
+            "definition": "Lobulated or irregular margin without extra-thyroidal extension (2 points)"
+          },
+          {
+            "code": "RDE152.4",
+            "value": "4",
+            "name": "taller-than-wide ",
+            "definition": "Taller-than-wide (3 points)"
+          },
+          {
+            "code": "RDE152.5",
+            "value": "5",
+            "name": "definite extra-thyroidal extension ",
+            "definition": "Definite extra-thyroidal extension (3 points)"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

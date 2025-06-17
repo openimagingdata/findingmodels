@@ -1,0 +1,513 @@
+{
+  "id": "RDES3",
+  "name": "Adrenal Nodule",
+  "description": "Detection and characterization of an adrenal nodule.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/3",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Adrenal Gland",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID88",
+        "display": "Adrenal Gland",
+        "url": "http://www.radlex.org/RID/RID88"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Genitourinary Radiology",
+      "abbreviation": "GU"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE42",
+      "parent_set": "RDES3",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE43",
+      "parent_set": "RDES3",
+      "name": "Unenhanced attenuation",
+      "definition": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained without IV contrast.",
+      "question": "Enter the attenuation of the region of interest on the unenhnaced CT.",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-01-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-01-03"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID28662",
+          "display": "Attenuation",
+          "url": "http://www.radlex.org/RID/RID28662"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID11086",
+          "display": "Unenhanced phase",
+          "url": "http://www.radlex.org/RID/RID11086"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE44",
+      "parent_set": "RDES3",
+      "name": "Enhanced attenuation",
+      "definition": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained during the portovenous phase of enhancement, 60-70s after IV contrast administration.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": " CDE URL ",
+          "url": "https://radelement.org/"
+        }
+      ],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE45",
+      "parent_set": "RDES3",
+      "name": "Delayed attenuation",
+      "definition": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained 15 min after IV contrast administration.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1695",
+      "parent_set": "RDES3",
+      "name": "Microscopic fat",
+      "definition": "The adrenal nodule contains macroscopic fat, as evidenced by at least one pixel attenuation value less than -10 HU.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE3.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1985",
+      "parent_set": "RDES3",
+      "name": "Lesion composition",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "uniformly cystic"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "non-uniformly cystic"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "solid"
+          },
+          {
+            "code": "RDE3.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE3.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1986",
+      "parent_set": "RDES3",
+      "name": "Lesion size",
+      "definition": "The greatest linear dimension of the adrenal lesion.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1987",
+      "parent_set": "RDES3",
+      "name": "Presence",
+      "definition": "Presence of adrenal nodule.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE3.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1988",
+      "parent_set": "RDES3",
+      "name": "Stability, compared to priors",
+      "definition": "Current lesion size, compared to previous imaging results.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "no priors",
+            "definition": "No prior imaging was done"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "stable for a year, or longer"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "stable, priors less than year ago"
+          },
+          {
+            "code": "RDE3.3",
+            "value": "3",
+            "name": "new"
+          },
+          {
+            "code": "RDE3.4",
+            "value": "4",
+            "name": "enlarging"
+          },
+          {
+            "code": "RDE3.5",
+            "value": "5",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1989",
+      "parent_set": "RDES3",
+      "name": "Benign features",
+      "definition": "Benign imaging features include homogeneous, low density and smooth margins.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE3.0",
+            "value": "0",
+            "name": "macroscopic fat"
+          },
+          {
+            "code": "RDE3.1",
+            "value": "1",
+            "name": "density less of equal to 10HU on unenhanced CT"
+          },
+          {
+            "code": "RDE3.2",
+            "value": "2",
+            "name": "no enhancement or less than 20 HU change"
+          },
+          {
+            "code": "RDE3.3",
+            "value": "3",
+            "name": "benign calcification",
+            "definition": "Benign calcification (old hematoma or granuloma)"
+          },
+          {
+            "code": "RDE3.4",
+            "value": "4",
+            "name": "decreased signal on CS-MRI"
+          },
+          {
+            "code": "RDE3.5",
+            "value": "5",
+            "name": "previously characterized and stable"
+          },
+          {
+            "code": "RDE3.6",
+            "value": "6",
+            "name": "no benign features"
+          },
+          {
+            "code": "RDE3.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE3.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

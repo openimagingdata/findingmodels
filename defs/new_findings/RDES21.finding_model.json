@@ -1,0 +1,115 @@
+{
+  "oifm_id": "OIFM_CDE_000021",
+  "name": "Spine Instability Neuroplastic Score (SINS)",
+  "description": "This module describes the Common Data elements and Macros for Spine Instability Neoplastic Score (SINS)",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000151",
+      "name": "Spinal level",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000152",
+      "name": "Location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000153",
+      "name": "Lesion quality",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000154",
+      "name": "Alignment",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000155",
+      "name": "Collapse",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000156",
+      "name": "Posterior elements",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES21",
+      "display": "spine instability neuroplastic score (sins)"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID7741",
+      "display": "Spine"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Spine",
+      "index_codes": []
+    }
+  ]
+}

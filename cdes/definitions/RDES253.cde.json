@@ -1,0 +1,257 @@
+{
+  "id": "RDES253",
+  "name": "Liver Tissue Characterization",
+  "description": "Liver Tissue Characterization",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-01-24"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/253",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "Nuance Communications"
+      },
+      {
+        "name": "Nuance Communications"
+      },
+      {
+        "name": "Nuance Communications"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1644",
+      "parent_set": "RDES253",
+      "name": "Fat fraction",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "percentage"
+      }
+    },
+    {
+      "id": "RDE1645",
+      "parent_set": "RDES253",
+      "name": "Fat fraction progression",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-18"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE253.0",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE253.1",
+            "value": "1",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE253.2",
+            "value": "2",
+            "name": "normal"
+          },
+          {
+            "code": "RDE253.3",
+            "value": "3",
+            "name": "elevated"
+          },
+          {
+            "code": "RDE253.4",
+            "value": "4",
+            "name": "significantly elevated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1646",
+      "parent_set": "RDES253",
+      "name": "Fat range",
+      "definition": "The spread of values across the liver ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "percent"
+      }
+    },
+    {
+      "id": "RDE1647",
+      "parent_set": "RDES253",
+      "name": "Iron concentration",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "unit": "mg Fe/g"
+      }
+    },
+    {
+      "id": "RDE1648",
+      "parent_set": "RDES253",
+      "name": "Iron concentration progression",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-18"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-08-18"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE253.0",
+            "value": "0",
+            "name": "normal iron",
+            "definition": "Normal iron"
+          },
+          {
+            "code": "RDE253.1",
+            "value": "1",
+            "name": "iron overload",
+            "definition": "Iron overload"
+          },
+          {
+            "code": "RDE253.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE253.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1649",
+      "parent_set": "RDES253",
+      "name": "Iron concentration range",
+      "definition": "The spread of values across the liver ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "unit": "mg Fe/g"
+      }
+    }
+  ],
+  "references": []
+}

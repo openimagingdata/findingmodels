@@ -1,0 +1,305 @@
+{
+  "id": "RDES245",
+  "name": "BI-RADS",
+  "description": "Breast Mass Detection on Mammography",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2022-11-11"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/245",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1586",
+      "parent_set": "RDES245",
+      "name": "Assessment category",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE245.0",
+            "value": "0",
+            "name": "category 0, incomplete - need additional imaging"
+          },
+          {
+            "code": "RDE245.1",
+            "value": "1",
+            "name": "category 1, negative"
+          },
+          {
+            "code": "RDE245.2",
+            "value": "2",
+            "name": "category 2, benign finding"
+          },
+          {
+            "code": "RDE245.3",
+            "value": "3",
+            "name": "category 3, probably benign finding"
+          },
+          {
+            "code": "RDE245.4",
+            "value": "4",
+            "name": "category 4, suspicious abnormality"
+          },
+          {
+            "code": "RDE245.5",
+            "value": "5",
+            "name": "category 4A, suspicious abnormality - low likelihood of being cancer"
+          },
+          {
+            "code": "RDE245.6",
+            "value": "6",
+            "name": "category 4B, suspicious abnormality - moderate likelihood of being cancer"
+          },
+          {
+            "code": "RDE245.7",
+            "value": "7",
+            "name": "category 4C, suspicious abnormality - high likelihood of being cancer"
+          },
+          {
+            "code": "RDE245.8",
+            "value": "8",
+            "name": "category 5, highly suggestive of malignancy"
+          },
+          {
+            "code": "RDE245.9",
+            "value": "9",
+            "name": "category 6, known biopsy - proven malignancy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1587",
+      "parent_set": "RDES245",
+      "name": "Breast composition category",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE245.0",
+            "value": "0",
+            "name": "category a, the breasts are almost entirely fatty"
+          },
+          {
+            "code": "RDE245.1",
+            "value": "1",
+            "name": "category b, there are scattered areas of fibroglandular density"
+          },
+          {
+            "code": "RDE245.2",
+            "value": "2",
+            "name": "category c, the breasts are heterogeneously dense"
+          },
+          {
+            "code": "RDE245.3",
+            "value": "3",
+            "name": "category d, the breasts are extremely dense"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1588",
+      "parent_set": "RDES245",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE245.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE245.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE245.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1589",
+      "parent_set": "RDES245",
+      "name": "Implant presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE245.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE245.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE245.2",
+            "value": "2",
+            "name": "bilateral"
+          },
+          {
+            "code": "RDE245.3",
+            "value": "3",
+            "name": "none"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1590",
+      "parent_set": "RDES245",
+      "name": "Prior mastectomy",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE245.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE245.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE245.2",
+            "value": "2",
+            "name": "bilateral"
+          },
+          {
+            "code": "RDE245.3",
+            "value": "3",
+            "name": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

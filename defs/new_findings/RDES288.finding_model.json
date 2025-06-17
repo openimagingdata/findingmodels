@@ -1,0 +1,24 @@
+{
+  "oifm_id": "OIFM_CDE_000288",
+  "name": "Epidural Spinal Cord Compression Scale (ESCC)",
+  "description": "Epidural Spinal Cord Compression Scale (ESCC) ",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001998",
+      "name": "Compression grade",
+      "description": "Element details for compression grade.  Measured on axial T2-W images at level of greatest compression.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES288",
+      "display": "epidural spinal cord compression scale (escc)"
+    }
+  ],
+  "body_parts": []
+}

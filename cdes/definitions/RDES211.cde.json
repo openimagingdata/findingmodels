@@ -1,0 +1,409 @@
+{
+  "id": "RDES211",
+  "name": "Cerebral Aneurysm on CTA",
+  "description": "Auto-detection of cerebral aneurysms on CTA",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-02-23"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/211",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Elkholy, Mona",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1381",
+      "parent_set": "RDES211",
+      "name": "Location",
+      "definition": "Location of aneurysm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-04-17"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-04-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE211.0",
+            "value": "0",
+            "name": "anterior communicating artery "
+          },
+          {
+            "code": "RDE211.1",
+            "value": "1",
+            "name": "internal carotid artery-posterior communicating "
+          },
+          {
+            "code": "RDE211.2",
+            "value": "2",
+            "name": "internal carotid artery-anterior choroidal "
+          },
+          {
+            "code": "RDE211.3",
+            "value": "3",
+            "name": "internal carotid artery ophthalmic "
+          },
+          {
+            "code": "RDE211.4",
+            "value": "4",
+            "name": "internal carotid artery terminus "
+          },
+          {
+            "code": "RDE211.5",
+            "value": "5",
+            "name": "middle cerebral artery bi or trifurcation"
+          },
+          {
+            "code": "RDE211.6",
+            "value": "6",
+            "name": "middle cerebral artery-M2 branch "
+          },
+          {
+            "code": "RDE211.7",
+            "value": "7",
+            "name": "middle cerebral artery-M3 branch "
+          },
+          {
+            "code": "RDE211.8",
+            "value": "8",
+            "name": "middle cerebral artery-M4 branch"
+          },
+          {
+            "code": "RDE211.9",
+            "value": "9",
+            "name": "anterior cerebral artery-A2 branch "
+          },
+          {
+            "code": "RDE211.10",
+            "value": "0",
+            "name": "anterior cerebral artery-A3 branch"
+          },
+          {
+            "code": "RDE211.11",
+            "value": "1",
+            "name": "anterior cerebral artery-A4 branch "
+          },
+          {
+            "code": "RDE211.12",
+            "value": "2",
+            "name": "vertebral artery-posterior inferior cerebellar artery"
+          },
+          {
+            "code": "RDE211.13",
+            "value": "3",
+            "name": "basilar artery-anterior inferior cerebellar artery"
+          },
+          {
+            "code": "RDE211.14",
+            "value": "4",
+            "name": "basilar artery-superior cerebellar artery, basilar terminus "
+          },
+          {
+            "code": "RDE211.15",
+            "value": "5",
+            "name": "posterior cerebral artery-P2 branch"
+          },
+          {
+            "code": "RDE211.16",
+            "value": "6",
+            "name": "posterior cerebral artery-P3 branch "
+          },
+          {
+            "code": "RDE211.17",
+            "value": "7",
+            "name": "posterior cerebral artery-P4 branch "
+          },
+          {
+            "code": "RDE211.18",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE211.19",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1382",
+      "parent_set": "RDES211",
+      "name": "Dome diameter",
+      "definition": "Diameter of the aneurysm dome",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1383",
+      "parent_set": "RDES211",
+      "name": "Neck diameter",
+      "definition": "Diameter of the aneurysm neck",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1384",
+      "parent_set": "RDES211",
+      "name": "Diameter ratio",
+      "definition": "Ratio of dome diameter to neck diameter",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "unit": "Ratio"
+      }
+    },
+    {
+      "id": "RDE1385",
+      "parent_set": "RDES211",
+      "name": "Width",
+      "definition": "Width of the aneurysm dome",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1386",
+      "parent_set": "RDES211",
+      "name": "Length",
+      "definition": "Length of the aneurysm dome",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1387",
+      "parent_set": "RDES211",
+      "name": "Shape",
+      "definition": "Shape of the aneurysm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE211.0",
+            "value": "0",
+            "name": "fusiform"
+          },
+          {
+            "code": "RDE211.1",
+            "value": "1",
+            "name": "saccular"
+          },
+          {
+            "code": "RDE211.2",
+            "value": "2",
+            "name": "lobulated"
+          },
+          {
+            "code": "RDE211.3",
+            "value": "3",
+            "name": "bilobular"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1388",
+      "parent_set": "RDES211",
+      "name": "Orientation",
+      "definition": "Orientation of the aneurysm dome",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE211.0",
+            "value": "0",
+            "name": "anterior"
+          },
+          {
+            "code": "RDE211.1",
+            "value": "1",
+            "name": "posterior"
+          },
+          {
+            "code": "RDE211.2",
+            "value": "2",
+            "name": "medial"
+          },
+          {
+            "code": "RDE211.3",
+            "value": "3",
+            "name": "lateral"
+          },
+          {
+            "code": "RDE211.4",
+            "value": "4",
+            "name": "cranial"
+          },
+          {
+            "code": "RDE211.5",
+            "value": "5",
+            "name": "caudal"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

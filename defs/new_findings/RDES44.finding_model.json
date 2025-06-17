@@ -1,0 +1,86 @@
+{
+  "oifm_id": "OIFM_CDE_000044",
+  "name": "Pneumothorax",
+  "description": "This module describes the Common Data elements and Macros for Pneumothorax",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000418",
+      "name": "Lung tissue collapse",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000421",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000422",
+      "name": "Pleura separation",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 40,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000423",
+      "name": "Side",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000424",
+      "name": "Size",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000425",
+      "name": "Associated chest tube",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001653",
+      "name": "Signs of tension",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES44",
+      "display": "pneumothorax"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Chest",
+      "index_codes": []
+    }
+  ]
+}

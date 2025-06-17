@@ -1,0 +1,213 @@
+{
+  "id": "RDES286",
+  "name": "Emphysema",
+  "description": "Emphysema",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-12-19"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/286",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Chase, Heather",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "Nuance Communications"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1951",
+      "parent_set": "RDES286",
+      "name": "Location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE286.0",
+            "name": "right upper lobe (RUL)"
+          },
+          {
+            "code": "RDE286.1",
+            "name": "right middle lobe (RML)"
+          },
+          {
+            "code": "RDE286.2",
+            "name": "right upper lobe and right middle lobe (RUL + RML)"
+          },
+          {
+            "code": "RDE286.3",
+            "name": "right lower lobe (RLL)"
+          },
+          {
+            "code": "RDE286.4",
+            "name": "left upper lobe (LUL)"
+          },
+          {
+            "code": "RDE286.5",
+            "name": "left lower lobe (LLL)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1952",
+      "parent_set": "RDES286",
+      "name": "Emphysema scale (% - 920HU)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1953",
+      "parent_set": "RDES286",
+      "name": "Emphysema scale (% - 950HU)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1954",
+      "parent_set": "RDES286",
+      "name": "Fissure completeness scale",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1955",
+      "parent_set": "RDES286",
+      "name": "Volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 3000,
+        "step": 1,
+        "unit": "ml"
+      }
+    }
+  ],
+  "references": []
+}

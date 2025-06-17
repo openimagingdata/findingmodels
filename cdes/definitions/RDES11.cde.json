@@ -1,0 +1,1473 @@
+{
+  "id": "RDES11",
+  "name": "MR Rectal Tumor Imaging",
+  "description": "Data elements in support of the Cancer Care Ontario rectal tumor staging template",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-22"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/11",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Rectum",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID163",
+        "display": "rectum",
+        "url": "http://www.radlex.org/RID/RID163"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "Other",
+        "abbreviation": "Other"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE67",
+      "parent_set": "RDES11",
+      "name": "Image quality",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39308",
+          "display": "adequate",
+          "url": "http://www.radlex.org/RID/RID39308"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "88323005",
+          "display": "adequate",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/88323005"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39174",
+          "display": "suboptimal",
+          "url": "http://www.radlex.org/RID/RID39174"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID10",
+          "display": "image quality",
+          "url": "http://www.radlex.org/RID/RID10"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "Adequate"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "Suboptimal"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "Non-diagnostic"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE68",
+      "parent_set": "RDES11",
+      "name": "Tumor location from anal verge",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "108369006",
+          "display": "tumor",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/108369006"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41843001",
+          "display": "anal verge",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/41843001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363351006"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "Low (0 - 5.0 cm)"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "Mid (5.1 cm - 10.0 cm)"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "High (10.1 cm - 15.0 cm)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE69",
+      "parent_set": "RDES11",
+      "name": "Distance of lowest extent of tumor from anal verge",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49678",
+          "display": "distance",
+          "url": "http://www.radlex.org/RID/RID49678"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246132006",
+          "display": "distance",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/246132006"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41843001",
+          "display": "anal verge",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/41843001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363351006"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE70",
+      "parent_set": "RDES11",
+      "name": "Distance of lowest extent of tumor from top of anal sphincter",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "245453000",
+          "display": "anal sphincter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/245453000"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41178004",
+          "display": "anal sphincter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/41178004"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID165",
+          "display": "anal sphincter",
+          "url": "http://www.radlex.org/RID/RID165"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363351006"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49678",
+          "display": "distance",
+          "url": "http://www.radlex.org/RID/RID49678"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246132006",
+          "display": "distance",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/246132006"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 0,
+        "step": 0,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE71",
+      "parent_set": "RDES11",
+      "name": "Relationship to anterior peritoneal reflection",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID411",
+          "display": "peritoneal reflection",
+          "url": "http://www.radlex.org/RID/RID411"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "Above"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "At or straddles"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "Below"
+          },
+          {
+            "code": "RDE11.3",
+            "value": "4",
+            "name": "Unable to assess"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE72",
+      "parent_set": "RDES11",
+      "name": "Circumferential extent and location",
+      "definition": "Clock-face location",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "255593009",
+          "display": "circumferential",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/255593009"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "260858005",
+          "display": "extent",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/260858005"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246267002",
+          "display": "location",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/246267002"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location",
+          "url": "http://www.radlex.org/RID/RID39038"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363351006"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "1 o-clock"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "2 o-clock"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "3 o-clock"
+          },
+          {
+            "code": "RDE11.3",
+            "value": "4",
+            "name": "4 o-clock"
+          },
+          {
+            "code": "RDE11.4",
+            "value": "5",
+            "name": "5 o-clock"
+          },
+          {
+            "code": "RDE11.5",
+            "value": "6",
+            "name": "6 o-clock"
+          },
+          {
+            "code": "RDE11.6",
+            "value": "7",
+            "name": "7 o-clock"
+          },
+          {
+            "code": "RDE11.7",
+            "value": "8",
+            "name": "8 o-clock"
+          },
+          {
+            "code": "RDE11.8",
+            "value": "9",
+            "name": "9 o-clock"
+          },
+          {
+            "code": "RDE11.9",
+            "value": "0",
+            "name": "10 o-clock"
+          },
+          {
+            "code": "RDE11.10",
+            "value": "1",
+            "name": "11 o-clock"
+          },
+          {
+            "code": "RDE11.11",
+            "value": "2",
+            "name": "12 o-clock"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE73",
+      "parent_set": "RDES11",
+      "name": "Craniocaudad extent",
+      "definition": "Greatest distance along the craniocaudal axis.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "363351006",
+          "display": "rectal cancer",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/363351006"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 99,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE74",
+      "parent_set": "RDES11",
+      "name": "Mucinous tumor",
+      "definition": "Indicates whether the tumor is mucinous.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2016-07-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2016-07-20"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID5746",
+          "display": "mucinous",
+          "url": "http://www.radlex.org/RID/RID5746"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "name": "No"
+          },
+          {
+            "code": "RDE11.1",
+            "name": "Yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE92",
+      "parent_set": "RDES11",
+      "name": "T-category",
+      "definition": "TNM tumor staging category",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39274",
+          "display": "t stage",
+          "url": "http://www.radlex.org/RID/RID39274"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "78873005",
+          "display": "t stage",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/78873005"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "2",
+            "name": "T1 or T2"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "T2 / early T3"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "T3"
+          },
+          {
+            "code": "RDE11.3",
+            "value": "4",
+            "name": "T3 / possible T4*"
+          },
+          {
+            "code": "RDE11.4",
+            "value": "4",
+            "name": "T4*"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE93",
+      "parent_set": "RDES11",
+      "name": "Structures with possible invasion",
+      "definition": "For T4 tumors, structures with possible invasion",
+      "question": "For T4 tumors, please indicate structures with possible invasion",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID381",
+          "display": "pubococcygeus",
+          "url": "http://www.radlex.org/RID/RID381"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244958005",
+          "display": "pubococcygeus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/244958005"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "245019009",
+          "display": "piriformis",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/245019009"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2632",
+          "display": "piriformis",
+          "url": "http://www.radlex.org/RID/RID2632"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "82115007",
+          "display": "obturator internus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/82115007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "245025008",
+          "display": "obturator internus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/245025008"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2633",
+          "display": "obturator internus",
+          "url": "http://www.radlex.org/RID/RID2633"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "76784001",
+          "display": "vagina",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/76784001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181441005",
+          "display": "vagina",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181441005"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID325",
+          "display": "vagina",
+          "url": "http://www.radlex.org/RID/RID325"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "35039007",
+          "display": "uterus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/35039007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181452004",
+          "display": "uterus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181452004"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID302",
+          "display": "uterus",
+          "url": "http://www.radlex.org/RID/RID302"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID343",
+          "display": "prostate",
+          "url": "http://www.radlex.org/RID/RID343"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181422007",
+          "display": "prostate",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181422007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "41216001",
+          "display": "prostate",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/41216001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "25308007",
+          "display": "right ureter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/25308007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "276251000",
+          "display": "right ureter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/276251000"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID30844",
+          "display": "right ureter",
+          "url": "http://www.radlex.org/RID/RID30844"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID30845",
+          "display": "left ureter",
+          "url": "http://www.radlex.org/RID/RID30845"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "276340002",
+          "display": "left ureter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/276340002"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "26559004",
+          "display": "left ureter",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/26559004"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "302512001",
+          "display": "bladder",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/302512001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "89837001",
+          "display": "bladder",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/89837001"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID237",
+          "display": "bladder",
+          "url": "http://www.radlex.org/RID/RID237"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "699698002",
+          "display": "sacrum",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/699698002"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID2509",
+          "display": "sacrum",
+          "url": "http://www.radlex.org/RID/RID2509"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "264186006",
+          "display": "sacrum",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/264186006"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7819",
+          "display": "coccygeus",
+          "url": "http://www.radlex.org/RID/RID7819"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID411",
+          "display": "peritoneal reflection",
+          "url": "http://www.radlex.org/RID/RID411"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283696001",
+          "display": "left internal iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/283696001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "14382004",
+          "display": "left internal iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/14382004"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "7771000",
+          "display": "Left",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/7771000"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5824",
+          "display": "Left",
+          "url": "http://www.radlex.org/RID/RID5824"
+        },
+        {
+          "system": "LOINC",
+          "code": "LA4585-1",
+          "display": "left",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA4585-1"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "40300007",
+          "display": "internal iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/40300007"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1194",
+          "display": "internal iliac vein",
+          "url": "http://www.radlex.org/RID/RID1194"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181399007",
+          "display": "internal iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181399007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "25043001",
+          "display": "right internal iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/25043001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283593004",
+          "display": "right internal iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/283593004"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "24028007",
+          "display": "Right",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/24028007"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5825",
+          "display": "Right",
+          "url": "http://www.radlex.org/RID/RID5825"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "40300007",
+          "display": "internal iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/40300007"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1194",
+          "display": "internal iliac vein",
+          "url": "http://www.radlex.org/RID/RID1194"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181399007",
+          "display": "internal iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181399007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "13914008",
+          "display": "left external iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/13914008"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283892001",
+          "display": "left external iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/283892001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "7771000",
+          "display": "Left",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/7771000"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5824",
+          "display": "Left",
+          "url": "http://www.radlex.org/RID/RID5824"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "63507001",
+          "display": "external iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/63507001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181400000",
+          "display": "external iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181400000"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1195",
+          "display": "external iliac vein",
+          "url": "http://www.radlex.org/RID/RID1195"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "283797001",
+          "display": "right external iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/283797001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "18388007",
+          "display": "right external iliac artery",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/18388007"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "24028007",
+          "display": "Right",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/24028007"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5825",
+          "display": "Right",
+          "url": "http://www.radlex.org/RID/RID5825"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "63507001",
+          "display": "external iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/63507001"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181400000",
+          "display": "external iliac vein",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/181400000"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID1195",
+          "display": "external iliac vein",
+          "url": "http://www.radlex.org/RID/RID1195"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID383",
+          "display": "iliococcygeus",
+          "url": "http://www.radlex.org/RID/RID383"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244964003",
+          "display": "iliococcygeus",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/244964003"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39257",
+          "display": "invasion",
+          "url": "http://www.radlex.org/RID/RID39257"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "(none)"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "Bladder"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "Left ureter"
+          },
+          {
+            "code": "RDE11.3",
+            "value": "4",
+            "name": "Right ureter"
+          },
+          {
+            "code": "RDE11.4",
+            "value": "5",
+            "name": "Prostate"
+          },
+          {
+            "code": "RDE11.5",
+            "value": "6",
+            "name": "Uterus"
+          },
+          {
+            "code": "RDE11.6",
+            "value": "7",
+            "name": "Vagina"
+          },
+          {
+            "code": "RDE11.7",
+            "value": "8",
+            "name": "Obturator internus"
+          },
+          {
+            "code": "RDE11.8",
+            "value": "9",
+            "name": "Piriformis"
+          },
+          {
+            "code": "RDE11.9",
+            "value": "0",
+            "name": "Pubococcygeus"
+          },
+          {
+            "code": "RDE11.10",
+            "value": "1",
+            "name": "Ileococcygeus"
+          },
+          {
+            "code": "RDE11.11",
+            "value": "2",
+            "name": "Coccygeus"
+          },
+          {
+            "code": "RDE11.12",
+            "value": "3",
+            "name": "Sacrum"
+          },
+          {
+            "code": "RDE11.13",
+            "value": "4",
+            "name": "Left internal iliac vessels"
+          },
+          {
+            "code": "RDE11.14",
+            "value": "5",
+            "name": "Right internal iliac vessels"
+          },
+          {
+            "code": "RDE11.15",
+            "value": "6",
+            "name": "Left external iliac vessels"
+          },
+          {
+            "code": "RDE11.16",
+            "value": "7",
+            "name": "Right external iliac vessels"
+          },
+          {
+            "code": "RDE11.17",
+            "value": "8",
+            "name": "Other"
+          },
+          {
+            "code": "RDE11.18",
+            "value": "9",
+            "name": "Anterior peritoneal reflection"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE94",
+      "parent_set": "RDES11",
+      "name": "Lower extent relative to puborectalis",
+      "definition": "For low rectal tumors (0 - 5 cm) only: Is the lower extent of the tumor at or below the top border of the puborectalis?",
+      "question": "Is the lower extent of the tumor at or below the top border of the puborectalis?",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "373066001",
+          "display": "yes",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/373066001"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28474",
+          "display": "yes",
+          "url": "http://www.radlex.org/RID/RID28474"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID382",
+          "display": "puborectalis",
+          "url": "http://www.radlex.org/RID/RID382"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244962004",
+          "display": "puborectalis",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/244962004"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "0",
+            "name": "No"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "1",
+            "name": "Yes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE95",
+      "parent_set": "RDES11",
+      "name": "Most penetrating component",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "LOINC",
+          "code": "LA17336-1",
+          "display": "penetrating",
+          "url": "http://purl.bioontology.org/ontology/LNC/LA17336-1"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "53568006",
+          "display": "penetrating",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/53568006"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "246093002",
+          "display": "component",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/246093002"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID382",
+          "display": "puborectalis",
+          "url": "http://www.radlex.org/RID/RID382"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "244962004",
+          "display": "puborectalis",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/244962004"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5983",
+          "display": "submucosa",
+          "url": "http://www.radlex.org/RID/RID5983"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "68439008",
+          "display": "submucosa",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/68439008"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "260521003",
+          "display": "internal",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/260521003"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID13417",
+          "display": "sphincter",
+          "url": "http://www.radlex.org/RID/RID13417"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49572",
+          "display": "external",
+          "url": "http://www.radlex.org/RID/RID49572"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID13417",
+          "display": "sphincter",
+          "url": "http://www.radlex.org/RID/RID13417"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "Possible confinement to the submucosa; no definite involvement of internal sphincter (suspected T1) "
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "Confined to the internal sphincter; no involvement of intersphincteric fat or external sphincter (early T2)"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "Through the internal sphincter and intersphincteric fat; possible or definite involvement of the external sphincter (advanced T2)"
+          },
+          {
+            "code": "RDE11.3",
+            "value": "4",
+            "name": "Through the external sphincter and into surrounding soft tissue; no organ involvement (T3)"
+          },
+          {
+            "code": "RDE11.4",
+            "value": "5",
+            "name": "Through external sphincter and possible involvement of the adjacent organs (i.e., prostate, vagina) (T3/T4)"
+          },
+          {
+            "code": "RDE11.5",
+            "value": "6",
+            "name": "Through external sphincter and definite involvement of adjacent organs (i.e., prostate, vagina) (T4)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE96",
+      "parent_set": "RDES11",
+      "name": "Distance to MRF",
+      "definition": "Shortest distance of the definitive tumor border to the mesorectal fascia (MRF)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 99,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE97",
+      "parent_set": "RDES11",
+      "name": "Distance-to-MRF information",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "1",
+            "name": "Measured"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "2",
+            "name": "Unable to estimate"
+          },
+          {
+            "code": "RDE11.2",
+            "value": "3",
+            "name": "Not applicable (involving the peritonealized portion of the rectum or T4a)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE98",
+      "parent_set": "RDES11",
+      "name": "Extramural depth of invasion",
+      "definition": "Extramural depth of invasion (EMD) at the site of tumor closest to the MRF.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39257",
+          "display": "invasion",
+          "url": "http://www.radlex.org/RID/RID39257"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 99,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE99",
+      "parent_set": "RDES11",
+      "name": "Tumor component closer to the MRF",
+      "definition": "",
+      "question": "Any other component of the tumour closer to the MRF?",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-03"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-03"
+      },
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "373066001",
+          "display": "yes",
+          "url": "http://purl.bioontology.org/ontology/SNOMEDCT/373066001"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28474",
+          "display": "yes",
+          "url": "http://www.radlex.org/RID/RID28474"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE11.0",
+            "value": "0",
+            "name": "No"
+          },
+          {
+            "code": "RDE11.1",
+            "value": "1",
+            "name": "Yes"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

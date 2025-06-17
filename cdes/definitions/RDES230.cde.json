@@ -1,0 +1,290 @@
+{
+  "id": "RDES230",
+  "name": "Vertebral Compression Fracture",
+  "description": "Vertebral Compression Fracture Detection",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-04"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/230",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Visser, Jacob",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1471",
+      "parent_set": "RDES230",
+      "name": "Presence",
+      "definition": "Acute or chronic compression, wedge, distraction or translated\nfractures. Typically seen on lateral view. Usually chronicity cannot be reliably assessed so this is not differentiated. \nFor compression or wedge fractures, there should be more than 20% loss in anterior height or central height as measured to the nearest normal vertebra or posterior vertebral body height (whichever is larger).  ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE230.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE230.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE230.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE230.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1472",
+      "parent_set": "RDES230",
+      "name": "Vertebrae",
+      "definition": "List all affected vertebrae, multichoice",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-24"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 30,
+        "values": [
+          {
+            "code": "RDE230.0",
+            "value": "0",
+            "name": "C1"
+          },
+          {
+            "code": "RDE230.1",
+            "value": "1",
+            "name": "C2"
+          },
+          {
+            "code": "RDE230.2",
+            "value": "2",
+            "name": "C3"
+          },
+          {
+            "code": "RDE230.3",
+            "value": "3",
+            "name": "C4"
+          },
+          {
+            "code": "RDE230.4",
+            "value": "4",
+            "name": "C5"
+          },
+          {
+            "code": "RDE230.5",
+            "value": "5",
+            "name": "C6"
+          },
+          {
+            "code": "RDE230.6",
+            "value": "6",
+            "name": "C7"
+          },
+          {
+            "code": "RDE230.7",
+            "value": "7",
+            "name": "C8"
+          },
+          {
+            "code": "RDE230.8",
+            "value": "9",
+            "name": "T1"
+          },
+          {
+            "code": "RDE230.9",
+            "value": "0",
+            "name": "T2"
+          },
+          {
+            "code": "RDE230.10",
+            "value": "1",
+            "name": "T3"
+          },
+          {
+            "code": "RDE230.11",
+            "value": "2",
+            "name": "T4"
+          },
+          {
+            "code": "RDE230.12",
+            "value": "3",
+            "name": "T5"
+          },
+          {
+            "code": "RDE230.13",
+            "value": "4",
+            "name": "T6"
+          },
+          {
+            "code": "RDE230.14",
+            "value": "5",
+            "name": "T7"
+          },
+          {
+            "code": "RDE230.15",
+            "value": "6",
+            "name": "T8"
+          },
+          {
+            "code": "RDE230.16",
+            "value": "7",
+            "name": "T9"
+          },
+          {
+            "code": "RDE230.17",
+            "value": "8",
+            "name": "T10"
+          },
+          {
+            "code": "RDE230.18",
+            "value": "9",
+            "name": "T11"
+          },
+          {
+            "code": "RDE230.19",
+            "value": "0",
+            "name": "T12"
+          },
+          {
+            "code": "RDE230.20",
+            "value": "1",
+            "name": "L1"
+          },
+          {
+            "code": "RDE230.21",
+            "value": "2",
+            "name": "L2"
+          },
+          {
+            "code": "RDE230.22",
+            "value": "3",
+            "name": "L3"
+          },
+          {
+            "code": "RDE230.23",
+            "value": "4",
+            "name": "L4"
+          },
+          {
+            "code": "RDE230.24",
+            "value": "5",
+            "name": "L5"
+          },
+          {
+            "code": "RDE230.25",
+            "value": "6",
+            "name": "S1"
+          },
+          {
+            "code": "RDE230.26",
+            "value": "7",
+            "name": "S2"
+          },
+          {
+            "code": "RDE230.27",
+            "value": "8",
+            "name": "S3"
+          },
+          {
+            "code": "RDE230.28",
+            "value": "9",
+            "name": "S4"
+          },
+          {
+            "code": "RDE230.29",
+            "value": "0",
+            "name": "S5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2004",
+      "parent_set": "RDES230",
+      "name": "Degree of compression",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "degree"
+      }
+    }
+  ],
+  "references": []
+}

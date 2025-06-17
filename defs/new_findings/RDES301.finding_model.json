@@ -1,0 +1,343 @@
+{
+  "oifm_id": "OIFM_CDE_000301",
+  "name": "CT Colorectal Cancer Baseline Staging - Oncology Findings",
+  "description": "Primary tumor",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_002070",
+      "name": "Primary tumor location ",
+      "description": "Please choose one or multiple contiguous locations if there is one tumor and more than one location if there are multiple primary tumors.\n",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002071",
+      "name": "Primary Tumor Size ",
+      "description": "Length of Involved segment",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002072",
+      "name": "Primary Tumor Morphology",
+      "description": "Does the tumor show annular constricting morphology or involves small circumference of the lumen or is the tumor polypoid?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002073",
+      "name": "Primary tumor  extramural venous involvement",
+      "description": "If present, please add where it is seen, series number and image number",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002074",
+      "name": "Locoregional (draining) lymph nodes overall status",
+      "description": "Please evaluate all the lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002075",
+      "name": "Suspicious and biopsy proven nodes",
+      "description": "List all the levels of suspicious, highly suspicious and biopsy proven malignant lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. \n\nIdeally requires same subheadings for each choice as \"Locoregional nodes over status\" listed above so that CDE below titled \"Locoregional LNs -indeterminate\" could be deleted",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002076",
+      "name": "Indeterminate lymph nodes",
+      "description": "List all the levels of indeterminate lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. \n",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002077",
+      "name": "Metastatic disease overall status",
+      "description": "Please provide an overall summary after evaluation of all common metastatic sites.\nPlease list all sites of indeterminate but possibly benign lesions seen (e.g. lung nodules and cystic/atypical liver lesions that need to be assessed on follow up imaging to ensure stability) \n",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002078",
+      "name": "Metastatic sites",
+      "description": "Please select all metastatic sites that are highly suspicious for malignancy/frankly malignant/ biopsy proven.\nPlease provide additional descriptions of all or any of these sites in the free text as needed.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002079",
+      "name": "Metastatic sites - indeterminate",
+      "description": "Describe all lesions that are indeterminate for metastases. Ex. Tiny lung nodules, tiny liver lesions that are difficult to characterize at baseline.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002080",
+      "name": "Number of metastases",
+      "description": "Number of metastases in all sites",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002081",
+      "name": "Number of sites involved by metastatic disease",
+      "description": "Add one for each involved site (only include suspicious, highly suspicious and biopsy proven sites). exclude indeterminate sites and their status should d be determined on follow up imaging. \n\n",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002082",
+      "name": "Size of representative sites of disease 1",
+      "description": "Ideally we need a table for measurement of up to 5-10 lesions\n\nThis can be copied and pasted as need for 5-10 lesions",
+      "type": "numeric",
+      "min": 0,
+      "max": 200,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002083",
+      "name": "Size of representative lesion 2",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002084",
+      "name": "Location of representative lesion 1",
+      "description": "Please add series number and image number in free text\nConsider adding any relevant vascular relationships of this lesion in free text",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002085",
+      "name": "Location of representative lesion 2",
+      "description": "ext\nPlease add series number and image number in free text Consider adding any relevant vascular relationships of this lesion in free text",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002086",
+      "name": "Size of representation lesion 3",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002087",
+      "name": "Location of representation lesion 3",
+      "description": "Please add series number and image number in free text. Consider adding any relevant vascular relationships of this lesion in free text. ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002088",
+      "name": "Size of representation lesion 4",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 200,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002089",
+      "name": "Location of representation lesion 4",
+      "description": "Please add series number and image number in free text. Consider adding any relevant vascular relationships of this lesion in free text.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID31011",
+          "display": "colon"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES301",
+      "display": "ct colorectal cancer baseline staging - oncology findings"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID31011",
+      "display": "Colon"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Colon",
+      "index_codes": []
+    }
+  ]
+}

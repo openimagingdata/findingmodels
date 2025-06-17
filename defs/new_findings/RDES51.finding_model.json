@@ -1,0 +1,193 @@
+{
+  "oifm_id": "OIFM_CDE_000051",
+  "name": "Scoliosis",
+  "description": "This module describes the common data elements for scoliosis use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000264",
+      "name": "Cobb angle",
+      "description": "Measure coronal plane deformity on anteroposterior plane radiographs in the classification of scoliosis (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000265",
+      "name": "Pelvic tilt",
+      "description": "Angle between the iliac crest to the horizontal (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000266",
+      "name": "Triradiate cartilage",
+      "description": "Epiphyseal plate between the ilium, ischium, and pubis to form the acetabulum of the os coxae",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000267",
+      "name": "Vertebral body numbering",
+      "description": "Numbering order of the vertebrae of the human spinal column (pixel identification)",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000268",
+      "name": "Pelvic incidence",
+      "description": "Angle of incidence is the algebraic sum of 2 complementary angles: pelvic tilt and sacral slope (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000269",
+      "name": "Sagittal vertical axis",
+      "description": "Sagittal offset of a plumb line dropped from the C7 vertebral body from the posterosuperior corner of the sacral plate (mm)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000270",
+      "name": "Thoracic kyphosis angle",
+      "description": "Thoracic convexity (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000271",
+      "name": "Lumbar lordosis angle",
+      "description": "Anterior convexity of the lumbar spine in the midsagittal plane (degrees)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000272",
+      "name": "Scoliosis type",
+      "description": "Classify the scoliosis type, which is required information for ICD-10",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000273",
+      "name": "Risser score",
+      "description": "Grade skeletal maturity based on the level of ossification and fusion of the iliac crest apophyses",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7741",
+          "display": "spine"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES51",
+      "display": "scoliosis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID7741",
+      "display": "Spine"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Spine",
+      "index_codes": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "oifm_id": "OIFM_CDE_000284",
+  "name": "Breast Focal Asymmetry",
+  "description": "Breast Focal Asymmetry",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001941",
+      "name": "Presence",
+      "description": "Presence of focal asymmetry in a breast.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001942",
+      "name": "Side",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001943",
+      "name": "Count",
+      "description": "How many focal asymmetries can be seen.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001944",
+      "name": "Quadrant",
+      "description": "Quadrant  of breast, where is the most or biggest focal asymmetry(ies) is(are) noted.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002001",
+      "name": "Region",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES284",
+      "display": "breast focal asymmetry"
+    }
+  ],
+  "body_parts": []
+}

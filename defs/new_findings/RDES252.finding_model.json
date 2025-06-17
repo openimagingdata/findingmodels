@@ -1,0 +1,84 @@
+{
+  "oifm_id": "OIFM_CDE_000252",
+  "name": "Thoracic Aortic Dissection",
+  "description": "Aortic Dissection",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001637",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001638",
+      "name": "Chronicity",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001639",
+      "name": "Location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001640",
+      "name": "Length",
+      "description": "The length of aortic dissection",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001641",
+      "name": "Diameter",
+      "description": "Aortic diameter",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001642",
+      "name": "Thrombosis of false lumen",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001643",
+      "name": "Stanford classification",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES252",
+      "display": "thoracic aortic dissection"
+    }
+  ],
+  "body_parts": []
+}

@@ -1,0 +1,1376 @@
+{
+  "id": "RDES301",
+  "name": "CT Colorectal Cancer Baseline Staging - Oncology Findings",
+  "description": "Primary tumor",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2024-09-05"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/301",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Colon",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID31011",
+        "display": "Colon",
+        "url": "http://www.radlex.org/RID/RID31011"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Gandhi, Namita",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Yedururi, Sireesha",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Oncologic Imaging",
+      "abbreviation": "OI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE2070",
+      "parent_set": "RDES301",
+      "name": "Primary tumor location ",
+      "definition": "Please choose one or multiple contiguous locations if there is one tumor and more than one location if there are multiple primary tumors.\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 14,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "0",
+            "name": "no definite residual tumor at the site of endoscopic resection and biopsy"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "1",
+            "name": "cecum"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "2",
+            "name": "ascending colon"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "3",
+            "name": "hepatic flexure"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "4",
+            "name": "transverse colon"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "5",
+            "name": "splenic flexure"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "6",
+            "name": "descending colon"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "7",
+            "name": "sigmoid colon"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "8",
+            "name": "rectosigmoid junction"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "9",
+            "name": "upper rectum",
+            "definition": "Intraperitoneal rectum (rectum above the anterior peritoneal reflection to sigmoid take off)"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "0",
+            "name": "lower rectum",
+            "definition": "Extraperitoneal rectum (below the anterior peritoneal reflection and above the anorectal ring)"
+          },
+          {
+            "code": "RDE301.11",
+            "value": "1",
+            "name": "mid rectum",
+            "definition": "Section of rectum bridging the anterior peritoneal reflection"
+          },
+          {
+            "code": "RDE301.12",
+            "value": "2",
+            "name": "anal canal",
+            "definition": "Anal verge to the top of anorectal ring.  Added this to accommodate the extension of lower rectal tumor to the level below the anorectal ring."
+          },
+          {
+            "code": "RDE301.13",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2071",
+      "parent_set": "RDES301",
+      "name": "Primary Tumor Size ",
+      "definition": "Length of Involved segment",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2072",
+      "parent_set": "RDES301",
+      "name": "Primary Tumor Morphology",
+      "definition": "Does the tumor show annular constricting morphology or involves small circumference of the lumen or is the tumor polypoid?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 4,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "Circumferential"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "Hemicircumferential"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "Polypoid"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "Indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2073",
+      "parent_set": "RDES301",
+      "name": "Primary tumor  extramural venous involvement",
+      "definition": "If present, please add where it is seen, series number and image number",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "not seen"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "2",
+            "name": "equivocal"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "3",
+            "name": "not evlauable"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2074",
+      "parent_set": "RDES301",
+      "name": "Locoregional (draining) lymph nodes overall status",
+      "definition": "Please evaluate all the lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 6,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "No suspicious lymphadenopathy"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "Likely benign lymph nodes"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "Indeterminate lymph nodes"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "Likely malignant lymph node"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "Highly suspicious for malignancy"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "Biopsy proven malignancy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2075",
+      "parent_set": "RDES301",
+      "name": "Suspicious and biopsy proven nodes",
+      "definition": "List all the levels of suspicious, highly suspicious and biopsy proven malignant lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. \n\nIdeally requires same subheadings for each choice as \"Locoregional nodes over status\" listed above so that CDE below titled \"Locoregional LNs -indeterminate\" could be deleted",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 11,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "not seen"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "1",
+            "name": "pericolonic lymph nodes"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "2",
+            "name": "mesenteric lymph node - implant"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "3",
+            "name": "perirectal lymph nodes",
+            "definition": "Nodes outside the region enveloped by mesorectal fascia or when mesorectal fascia is not well seen on CT"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "4",
+            "name": "mesorectal lymph nodes"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "5",
+            "name": "superior hemorrhoidal lymph nodes"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "6",
+            "name": "inferior mesenteric lymph nodes"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "7",
+            "name": "obturator lymph nodes"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "8",
+            "name": "internal iliac lymph nodes"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "9",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "0",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2076",
+      "parent_set": "RDES301",
+      "name": "Indeterminate lymph nodes",
+      "definition": "List all the levels of indeterminate lymph nodes along the draining lymphatics and veins to the level of inferior mesenteric vein for the tumors draining into inferior mesenteric pathways, or to the superior mesenteric vein for the tumors draining into inferior mesenteric pathways. In addition, please evaluate the pelvic side wall (obturator/internal iliac) lymph nodes for low rectal tumors. \n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 11,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "1",
+            "name": "pericolonic lymph nodes"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "2",
+            "name": "superior mesenteric lymph nodes"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "3",
+            "name": "perirectal node",
+            "definition": "nodes outside the region enveloped by mesorectal fascia or when mesorectal fascia is not well seen on CT"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "4",
+            "name": "mesorectal lymph node - implant"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "5",
+            "name": "superior hemorrhoidal nodes"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "6",
+            "name": "inferior mesenteric nodes"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "7",
+            "name": "obturator"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "8",
+            "name": "internal iliac nodes"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "9",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "0",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2077",
+      "parent_set": "RDES301",
+      "name": "Metastatic disease overall status",
+      "definition": "Please provide an overall summary after evaluation of all common metastatic sites.\nPlease list all sites of indeterminate but possibly benign lesions seen (e.g. lung nodules and cystic/atypical liver lesions that need to be assessed on follow up imaging to ensure stability) \n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 6,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "No metastatic disease"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "Likely benign"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "Indeterminate",
+            "definition": "Possibly (~50% probability of malignancy)"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "Suspicious",
+            "definition": "Suspicious  (~75% probability of malignancy) "
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "Highly suspicious for malignancy",
+            "definition": "Consistent with (>90% probability of malignancy)"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "Biopsy proven metastatic disease"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2078",
+      "parent_set": "RDES301",
+      "name": "Metastatic sites",
+      "definition": "Please select all metastatic sites that are highly suspicious for malignancy/frankly malignant/ biopsy proven.\nPlease provide additional descriptions of all or any of these sites in the free text as needed.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "peritoneum"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "non regional lymph nodes in the abdomen and pelvis"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "intrathoracic lymph nodes",
+            "definition": ".g. Hilar or mediastinal or anterior diaphragmatic or internal mammary chain lymph nodes. Specific location of intrathoracic lymph node can be added in the free text."
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "supraclavicular nodes"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "7",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "8",
+            "name": "other organ"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "9",
+            "name": "absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2079",
+      "parent_set": "RDES301",
+      "name": "Metastatic sites - indeterminate",
+      "definition": "Describe all lesions that are indeterminate for metastases. Ex. Tiny lung nodules, tiny liver lesions that are difficult to characterize at baseline.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "peritoneum"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "non regional lymph nodes in the abdomen and pelvis"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "intrathoracic lymph nodes",
+            "definition": "Added the following definition for Intrathoracic lymph nodes  \" e.g. Hilar or mediastinal or anterior diaphragmatic or internal mammary chain lymph nodes. Specific location of intrathoracic lymph node can be added in the free text.\""
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "supraclavicular nodes"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "7",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "8",
+            "name": "other organ",
+            "definition": " Please list any additional organs involved in free text"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "0",
+            "name": "absent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2080",
+      "parent_set": "RDES301",
+      "name": "Number of metastases",
+      "definition": "Number of metastases in all sites",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "1",
+            "name": "1"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "2",
+            "name": "few (2-5)"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "3",
+            "name": "multiple (6-20)"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "4",
+            "name": "numerous (>20)"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "5",
+            "name": "counting not possible due to peritoneal carcinomatosis"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "6",
+            "name": "counting not possible due to diffuse pleural involvement"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2081",
+      "parent_set": "RDES301",
+      "name": "Number of sites involved by metastatic disease",
+      "definition": "Add one for each involved site (only include suspicious, highly suspicious and biopsy proven sites). exclude indeterminate sites and their status should d be determined on follow up imaging. \n\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE2082",
+      "parent_set": "RDES301",
+      "name": "Size of representative sites of disease 1",
+      "definition": "Ideally we need a table for measurement of up to 5-10 lesions\n\nThis can be copied and pasted as need for 5-10 lesions",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-30"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 200,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2083",
+      "parent_set": "RDES301",
+      "name": "Size of representative lesion 2",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-30"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-09-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2084",
+      "parent_set": "RDES301",
+      "name": "Location of representative lesion 1",
+      "definition": "Please add series number and image number in free text\nConsider adding any relevant vascular relationships of this lesion in free text",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "pericolonic lymph node"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "superior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "perirectal lymph node"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "mesorectal lymph node and implant"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "superior hemorrhoidal lymphnode"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "inferior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "7",
+            "name": "obturator lymph node"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "8",
+            "name": "internal iliac lymph node"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "0",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "9",
+            "name": "peritoneum",
+            "definition": "Ideally not measured. Only measured when borders are clearly defined"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "1",
+            "name": "non regional lymph nodes in the abdomen and pelvis",
+            "definition": "e.g. retroperitoneal nodes or iliac chain nodes in colorectal cancer, inguinal nodes in high rectal cancer"
+          },
+          {
+            "code": "RDE301.11",
+            "value": "2",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.12",
+            "value": "3",
+            "name": "intrathoracic lymph node",
+            "definition": "e.g. Hilar or mediastinal or anterior diaphragmatic or internal mammary chain lymph nodes. Specific location of intrathoracic lymph node can be added in the free text."
+          },
+          {
+            "code": "RDE301.13",
+            "value": "4",
+            "name": "supraclavicular lymph node"
+          },
+          {
+            "code": "RDE301.14",
+            "value": "5",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.15",
+            "value": "6",
+            "name": "other organ",
+            "definition": "Specify the other organ involved in free text"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2085",
+      "parent_set": "RDES301",
+      "name": "Location of representative lesion 2",
+      "definition": "ext\nPlease add series number and image number in free text Consider adding any relevant vascular relationships of this lesion in free text",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "pericolonic lymph node"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "superior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "perirectal lymph node"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "mesorectal lymph node - implant"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "superior hemorrhoidal lymph node"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "7",
+            "name": "inferior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "8",
+            "name": "obturator lymph node"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "9",
+            "name": "internal iliac lymph node"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "0",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "2",
+            "name": "peritoneum",
+            "definition": "Ideally not measured. Only measured when borders are clearly defined"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "1",
+            "name": "non regional lymph nodes in the abdomen and pelvis",
+            "definition": "e.g. retroperitoneal nodes or iliac chain nodes in colorectal cancer, inguinal nodes in high rectal cancer"
+          },
+          {
+            "code": "RDE301.11",
+            "value": "3",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.12",
+            "value": "4",
+            "name": "intrathoracic lymph node",
+            "definition": "e.g. Hilar or mediastinal or anterior diaphragmatic or internal mammary chain lymph nodes. Specific location of intrathoracic lymph node can be added in the free text."
+          },
+          {
+            "code": "RDE301.13",
+            "value": "5",
+            "name": "supraclavicular lymph node"
+          },
+          {
+            "code": "RDE301.14",
+            "value": "6",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.15",
+            "value": "7",
+            "name": "other organ",
+            "definition": "Specify the other organ involved in free text"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2086",
+      "parent_set": "RDES301",
+      "name": "Size of representation lesion 3",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2087",
+      "parent_set": "RDES301",
+      "name": "Location of representation lesion 3",
+      "definition": "Please add series number and image number in free text. Consider adding any relevant vascular relationships of this lesion in free text. ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "pericolonic lymph node"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "superior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "perirectal lymph node"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "mesorectal lymph node and implant"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "superior hemorrhoidal lymph node"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "inferior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "7",
+            "name": "obturator lymph node"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "8",
+            "name": "internal iliac lymph node"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "9",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "0",
+            "name": "peritoneum"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "1",
+            "name": "non regional lymph nodes in the abdomen and pelvis"
+          },
+          {
+            "code": "RDE301.11",
+            "value": "2",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.12",
+            "value": "3",
+            "name": "intrathoracic lymph node"
+          },
+          {
+            "code": "RDE301.13",
+            "value": "4",
+            "name": "supraclavicular lymph node"
+          },
+          {
+            "code": "RDE301.14",
+            "value": "5",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.15",
+            "value": "6",
+            "name": "other organ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2088",
+      "parent_set": "RDES301",
+      "name": "Size of representation lesion 4",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE2089",
+      "parent_set": "RDES301",
+      "name": "Location of representation lesion 4",
+      "definition": "Please add series number and image number in free text. Consider adding any relevant vascular relationships of this lesion in free text.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-11-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-11-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE301.0",
+            "value": "1",
+            "name": "pericolonic lymph node"
+          },
+          {
+            "code": "RDE301.1",
+            "value": "2",
+            "name": "superior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.2",
+            "value": "3",
+            "name": "perirectal lymph node"
+          },
+          {
+            "code": "RDE301.3",
+            "value": "4",
+            "name": "mesorectal lymph node and implant"
+          },
+          {
+            "code": "RDE301.4",
+            "value": "5",
+            "name": "superior hemorrhoidal lymphnode"
+          },
+          {
+            "code": "RDE301.5",
+            "value": "6",
+            "name": "inferior mesenteric lymph node"
+          },
+          {
+            "code": "RDE301.6",
+            "value": "7",
+            "name": "obturator lymph node"
+          },
+          {
+            "code": "RDE301.7",
+            "value": "8",
+            "name": "internal iliac lymph node"
+          },
+          {
+            "code": "RDE301.8",
+            "value": "9",
+            "name": "liver"
+          },
+          {
+            "code": "RDE301.9",
+            "value": "0",
+            "name": "peritoneum"
+          },
+          {
+            "code": "RDE301.10",
+            "value": "1",
+            "name": "non regional lymph nodes in the abdomen and pelvis"
+          },
+          {
+            "code": "RDE301.11",
+            "value": "2",
+            "name": "lung"
+          },
+          {
+            "code": "RDE301.12",
+            "value": "3",
+            "name": "intrathoracic lymph node"
+          },
+          {
+            "code": "RDE301.13",
+            "value": "4",
+            "name": "bone"
+          },
+          {
+            "code": "RDE301.14",
+            "value": "5",
+            "name": "other organ"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

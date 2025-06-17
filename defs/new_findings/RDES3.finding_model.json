@@ -1,0 +1,192 @@
+{
+  "oifm_id": "OIFM_CDE_000003",
+  "name": "Adrenal Nodule",
+  "description": "Detection and characterization of an adrenal nodule.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000042",
+      "name": "Side",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000043",
+      "name": "Unenhanced attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained without IV contrast.",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID28662",
+          "display": "attenuation"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID11086",
+          "display": "unenhanced phase"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000044",
+      "name": "Enhanced attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained during the portovenous phase of enhancement, 60-70s after IV contrast administration.",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000045",
+      "name": "Delayed attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained 15 min after IV contrast administration.",
+      "type": "numeric",
+      "min": -1024,
+      "max": 1024,
+      "step": 1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001695",
+      "name": "Microscopic fat",
+      "description": "The adrenal nodule contains macroscopic fat, as evidenced by at least one pixel attenuation value less than -10 HU.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001985",
+      "name": "Lesion composition",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001986",
+      "name": "Lesion size",
+      "description": "The greatest linear dimension of the adrenal lesion.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001987",
+      "name": "Presence",
+      "description": "Presence of adrenal nodule.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001988",
+      "name": "Stability, compared to priors",
+      "description": "Current lesion size, compared to previous imaging results.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001989",
+      "name": "Benign features",
+      "description": "Benign imaging features include homogeneous, low density and smooth margins.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID88",
+          "display": "adrenal gland"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES3",
+      "display": "adrenal nodule"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID88",
+      "display": "Adrenal Gland"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Adrenal Gland",
+      "index_codes": []
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "oifm_id": "OIFM_CDE_000229",
+  "name": "Humerus Dislocation",
+  "description": "Humerus Dislocation",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001468",
+      "name": "Presence",
+      "description": "Upper arm bone (humerus) has come out of your shoulder joint",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001469",
+      "name": "Type",
+      "description": "Describe the way humerus got dislocated, multichoice",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001470",
+      "name": "Side",
+      "description": "Describe the affected side",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES229",
+      "display": "humerus dislocation"
+    }
+  ],
+  "body_parts": []
+}

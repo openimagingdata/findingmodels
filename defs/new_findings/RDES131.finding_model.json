@@ -1,0 +1,124 @@
+{
+  "oifm_id": "OIFM_CDE_000131",
+  "name": "Pericardial Effusion on CCTA",
+  "description": "This module describes the Common Data elements and Macros for Evaluation of Automated Volumetric Quantification of Pericardial Effusion on CCTA",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000861",
+      "name": "Thickness",
+      "description": "Pericardial thickness in mm\n",
+      "type": "numeric",
+      "min": 0,
+      "max": 120,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000862",
+      "name": "Spread",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000865",
+      "name": "Lesions",
+      "description": "Pericardial lesions presence",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000866",
+      "name": "Constrictive pericarditis",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000867",
+      "name": "Volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 1200,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000868",
+      "name": "Density",
+      "description": "Average density of the effusion",
+      "type": "numeric",
+      "min": 0,
+      "max": 1200,
+      "step": 0.1,
+      "unit": "g/cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES131",
+      "display": "pericardial effusion on ccta"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "Heart"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": []
+    }
+  ]
+}

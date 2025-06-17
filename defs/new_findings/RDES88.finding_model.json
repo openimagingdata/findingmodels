@@ -1,0 +1,124 @@
+{
+  "oifm_id": "OIFM_CDE_000088",
+  "name": "Automated Insall-Salvatti Index",
+  "description": "Automated Insall-Salvatti Index (ISI)",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000513",
+      "name": "Tendon length",
+      "description": "Length of the inner border of the patellar tendon from the lower pole of the patella to the notch in the tibial cortex at the superior border of the tibial tubercle. ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000514",
+      "name": "Patella length",
+      "description": "Oblique line connecting the inner margin of the upper pole of the patella with the most inferior point of the lower pole. This measurement should be obtained in the mid patella.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000515",
+      "name": "ISI measurement",
+      "description": "Insall - Salvatti Index = patellar tendon length/patellar length",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000518",
+      "name": "Patellar morphology",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000519",
+      "name": "Osgood schlatter",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000520",
+      "name": "Singing larsen johanssen or periosteal sleeve avulsion",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID2743",
+          "display": "knee"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES88",
+      "display": "automated insall-salvatti index"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2743",
+      "display": "Knee"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Knee",
+      "index_codes": []
+    }
+  ]
+}

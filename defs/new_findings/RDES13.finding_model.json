@@ -1,0 +1,250 @@
+{
+  "oifm_id": "OIFM_CDE_000013",
+  "name": "SAR: Primary Rectal Cancer Staging on MRI",
+  "description": "Society of Abdominal Radiology (SAR) Rectal Cancer Disease-Focused Panel",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000100",
+      "name": "Distance to the anal verge",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000101",
+      "name": "Distance to the top of sphincter ",
+      "description": "Distance to the top of sphincter complex/anorectal junction",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000102",
+      "name": "Relationship to anterior peritoneal reflection",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000103",
+      "name": "Craniocaudal length",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000104",
+      "name": "Morphology",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000110",
+      "name": "Extramural venous invasion (EMVI)",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000111",
+      "name": "Shortest distance of tumor  (MRF)",
+      "description": "Shortest distance of tumor to MRF or anticipated CRM",
+      "type": "numeric",
+      "min": 0,
+      "max": 99,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000113",
+      "name": "Circumferential resection margin:  other site",
+      "description": "Separate tumor deposits suspiciously mph node or EMV Ithreatening 2 mm or invading 1 mm the MRF",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000114",
+      "name": "Lymph nodes and tumor deposits",
+      "description": "TME Superior Rectal Mesorectal Only",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000120",
+      "name": "Circumferential resection margin (CRM)",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000121",
+      "name": "Sphincter involvement",
+      "description": "Is the sphincter involved in the rectal cancer",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002032",
+      "name": "T-category",
+      "description": "T-stage of rectal cancer",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002033",
+      "name": "Invasion of other organs",
+      "description": "invasion of other organs",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002034",
+      "name": "Mesorectal lymph nodes",
+      "description": "number of suspicious lymph nodes",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID163",
+          "display": "rectum"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES13",
+      "display": "sar: primary rectal cancer staging on mri"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID163",
+      "display": "rectum"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Rectum",
+      "index_codes": []
+    }
+  ]
+}

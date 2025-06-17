@@ -1,0 +1,63 @@
+{
+  "oifm_id": "OIFM_CDE_000240",
+  "name": "Prostate Imaging Reporting and Data System (PI-RADS)",
+  "description": "Prostate measurements",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001551",
+      "name": "Prostate anteroposterior dimension",
+      "description": "Maximum measurement in the anteroposterior dimension on mid-sagittal T2W image",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001552",
+      "name": "Prostate transverse dimension",
+      "description": "Maximum measurement in transverse (left-right) dimension on axial T2 W image",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001553",
+      "name": "Prostate longitudinal dimension",
+      "description": "Maximum measurement in longitudinal ( craniocaudal) dimension on mid-sagittal T2W image",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001554",
+      "name": "Total Prostate volume",
+      "description": "It may be determined using\nmanual or automated segmentation or calculated using ellipsoid formulation;(maximum AP\ndimension) x (maximum longitudinal dimension) [both placed on the mid-sagittal T2W image] x\n(maximum transverse dimension) [placed on the axial T2W image] x 0.52.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cc",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES240",
+      "display": "prostate imaging reporting and data system (pi-rads)"
+    }
+  ],
+  "body_parts": []
+}

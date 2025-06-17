@@ -1,0 +1,256 @@
+{
+  "id": "RDES53",
+  "name": "Mapping Veins for Cardiac Ablation Planning",
+  "description": "This module describes the common data elements for pulmonary veins mapping preablation use case.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/53",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Pulmonary Vein",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID1231",
+        "display": "Pulmonary vein",
+        "url": "http://www.radlex.org/RID/RID1231"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "David Wymer, MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Cardiac Radiology",
+      "abbreviation": "CA"
+    },
+    {
+      "name": "Vascular Imaging",
+      "abbreviation": "VA"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE280",
+      "parent_set": "RDES53",
+      "name": "Pulmonary vein diameter",
+      "definition": "Diameter of pulmonary vein mm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE281",
+      "parent_set": "RDES53",
+      "name": "Interatrial septal thickness",
+      "definition": "Interatrial septal thickness, mm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE282",
+      "parent_set": "RDES53",
+      "name": "Atrial thrombus",
+      "definition": "Determine the presence of atrial thrombus ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE53.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE53.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE53.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE53.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE283",
+      "parent_set": "RDES53",
+      "name": "Valvular calcifications",
+      "definition": "Determine the presence of valvular calcifications",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE53.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE53.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE53.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE53.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE284",
+      "parent_set": "RDES53",
+      "name": "Vein ostia proximity to esophagus",
+      "definition": "Measure the distance between the vein ostia and esophagus, cm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE285",
+      "parent_set": "RDES53",
+      "name": "Vein ostia proximity to aorta",
+      "definition": "Measure the distance between the vein ostia and aorta, cm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "cm"
+      }
+    }
+  ],
+  "references": []
+}

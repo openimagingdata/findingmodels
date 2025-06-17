@@ -1,0 +1,251 @@
+{
+  "id": "RDES183",
+  "name": "Hemorrhagic Brain Contusion",
+  "description": "Hemorrhagic Brain Contusion",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2021-02-16"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/183",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Elkholy, Mona",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE525",
+      "parent_set": "RDES89",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1263",
+      "parent_set": "RDES183",
+      "name": "Presence",
+      "definition": "Hemorrhagic Brain Contusion detection",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-09-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE183.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE183.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE183.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE183.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1264",
+      "parent_set": "RDES183",
+      "name": "Quantity",
+      "definition": "Number of brain contusions",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 20,
+        "step": 0.1,
+        "unit": "N/A"
+      }
+    },
+    {
+      "id": "RDE1265",
+      "parent_set": "RDES183",
+      "name": "Size",
+      "definition": "Size of brain contusion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1266",
+      "parent_set": "RDES183",
+      "name": "Location",
+      "definition": "Location of brain contusion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 8,
+        "values": [
+          {
+            "code": "RDE183.0",
+            "value": "0",
+            "name": "frontal"
+          },
+          {
+            "code": "RDE183.1",
+            "value": "1",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE183.2",
+            "value": "2",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE183.3",
+            "value": "3",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE183.4",
+            "value": "4",
+            "name": "brainstem"
+          },
+          {
+            "code": "RDE183.5",
+            "value": "5",
+            "name": "cerebellar"
+          },
+          {
+            "code": "RDE183.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE183.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

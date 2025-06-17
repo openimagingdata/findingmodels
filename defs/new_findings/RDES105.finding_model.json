@@ -1,0 +1,88 @@
+{
+  "oifm_id": "OIFM_CDE_000105",
+  "name": "Thoracic Pulmonary Parenchymal Emphysema",
+  "description": "Thoracic pulmonary parenchymal emphysema",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000655",
+      "name": "Percent lobar involvement",
+      "description": "for any detected emphysema, measure the percent of the lobe with emphysema",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "percent",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1301",
+          "display": "lung"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000660",
+      "name": "Emphysema type",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1301",
+          "display": "lung"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000675",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1301",
+          "display": "lung"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001603",
+      "name": "Involved lobes",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1301",
+          "display": "lung"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES105",
+      "display": "thoracic pulmonary parenchymal emphysema"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1301",
+      "display": "Lung"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Lung",
+      "index_codes": []
+    }
+  ]
+}

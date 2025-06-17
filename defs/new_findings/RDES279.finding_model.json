@@ -1,0 +1,69 @@
+{
+  "oifm_id": "OIFM_CDE_000279",
+  "name": "AO Spine Subaxial Cervical Spine injury Classification",
+  "description": "Cervical Spine Subaxial AO Injury Classification on CT",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001872",
+      "name": "Compression",
+      "description": "A0- no injury or an isolated injury such as a lamina or spinous process fracture A1 wedge, no post wall A2 split, both endplates A3 partial burst-post wall + 1 endplate A4 burst - post wall + both endplates",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001873",
+      "name": "Tension band injury",
+      "description": "B1- transosseous B2- Post tension band (hyperflexion) B3- Anterior tension band (hyperextension)",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001874",
+      "name": "Facet injury",
+      "description": " F1 nondisplaced, less than 1cm height, < 40% lateral mass F2 displaced, > 40% LM F3 floating LM (pedicolaminar) F4 subluxed, perched, dislocated",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001875",
+      "name": "Bilateral injury",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001876",
+      "name": "Translation injury",
+      "description": "In any axis-displacement or translation of one vertebral body relative to another in any direction",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001877",
+      "name": "Modifiers",
+      "description": " M1 unclear integrity of PLC M2 Significant disc herniation M3 bone disease with ankylosis: Ank Spond, DISH M4 Vertebral artery injury",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES279",
+      "display": "ao spine subaxial cervical spine injury classification"
+    }
+  ],
+  "body_parts": []
+}

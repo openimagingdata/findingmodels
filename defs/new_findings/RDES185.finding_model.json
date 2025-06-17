@@ -1,0 +1,36 @@
+{
+  "oifm_id": "OIFM_CDE_000185",
+  "name": "Hydrocephalus",
+  "description": "CSF Flow Quantification",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001269",
+      "name": "Mean systolic velocity\t",
+      "description": "Mean CSF flow velocity during cardiac systole",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm/s",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001983",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES185",
+      "display": "hydrocephalus"
+    }
+  ],
+  "body_parts": []
+}

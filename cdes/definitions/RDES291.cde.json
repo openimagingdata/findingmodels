@@ -1,0 +1,458 @@
+{
+  "id": "RDES291",
+  "name": "ARIA-H follow-up",
+  "description": "ARIA-H follow-up",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2024-06-05"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/291",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Gibbs, Wende",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Dirk Smeets",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "icometrix"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE2020",
+      "parent_set": "RDES291",
+      "name": "Blood sensitive sequence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "SWI"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "GRE/T2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2021",
+      "parent_set": "RDES291",
+      "name": "Field strength",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "3T"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "1.5T"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2022",
+      "parent_set": "RDES291",
+      "name": "Baseline microhemorrhages scan comparison",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "no prior exam available"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2023",
+      "parent_set": "RDES291",
+      "name": "Baseline microhemorrhages (ARIA-H)",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-01-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-01-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE2024",
+      "parent_set": "RDES291",
+      "name": "Total new microhemorrhages",
+      "definition": "Total new microhemorrhages compared to pre-dosing scan",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "0",
+            "definition": "absent = no ARIA"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "1-4",
+            "definition": "mild"
+          },
+          {
+            "code": "RDE291.2",
+            "value": "2",
+            "name": "5-9"
+          },
+          {
+            "code": "RDE291.3",
+            "value": "3",
+            "name": "10"
+          },
+          {
+            "code": "RDE291.4",
+            "value": "4",
+            "name": "greater than 10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2025",
+      "parent_set": "RDES291",
+      "name": "New macrohemorrhages (ARIA-H)",
+      "definition": "New compared to baseline",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE2026",
+      "parent_set": "RDES291",
+      "name": "Pre-dosing superficial siderosis",
+      "definition": "Prior exam available for comparison",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2027",
+      "parent_set": "RDES291",
+      "name": "Superficial siderosis new locations ",
+      "definition": "Number of new locations of superficial siderosis",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "0"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "1"
+          },
+          {
+            "code": "RDE291.2",
+            "value": "2",
+            "name": "greater than 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2028",
+      "parent_set": "RDES291",
+      "name": "Grading of ARIA-H related microhemorrhages",
+      "definition": "Grading of ARIA-H related microhemorrhages",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "mild"
+          },
+          {
+            "code": "RDE291.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE291.3",
+            "value": "3",
+            "name": "severe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2029",
+      "parent_set": "RDES291",
+      "name": "Grading of ARIA-H related siderosis",
+      "definition": "Grading of ARIA-H related siderosis",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-03"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2025-02-03"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE291.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "no"
+          },
+          {
+            "code": "RDE291.1",
+            "value": "1",
+            "name": "mild"
+          },
+          {
+            "code": "RDE291.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE291.3",
+            "value": "3",
+            "name": "severe"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,42 @@
+{
+  "oifm_id": "OIFM_CDE_000298",
+  "name": "Upper Cervical Spine AO Injury Classification in CT",
+  "description": "The AO Spine Upper Cervical Classification System is derived from the other AO Spine classifications, which divide injuries according to the affected region(s) (injury sites): I, injuries involving the occipital condyles and the craniocervical junction; II, injuries involving the atlas and the atlantoaxial joint; and III, injuries involving the axis and the C2-3 joint.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001731",
+      "name": "Modifiers",
+      "description": "Distinguish features that may impact treatment or outcome of a given fracture type",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002050",
+      "name": "Location",
+      "description": "Location",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002051",
+      "name": "Type of Injury",
+      "description": "Type A: Osseous only, no significant ligamentous, tension band, or disc injury Type B: Ligamentous/tension band injury (with or without osseous injury; without complete separation of anatomic integrity) Type C: Translation and separation of anatomic integrity.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES298",
+      "display": "upper cervical spine ao injury classification in ct"
+    }
+  ],
+  "body_parts": []
+}

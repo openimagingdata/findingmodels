@@ -1,0 +1,657 @@
+{
+  "id": "RDES169",
+  "name": "CTA Stroke Brain",
+  "description": "CTA Stroke",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-20"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/169",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam ",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Kristine Blackham MD",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      },
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1170",
+      "parent_set": "RDES169",
+      "name": "Large vessel occlusion",
+      "definition": "Which large Cerebral  vessel is occluded? (LVO)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "No large vessel occlusion (LVO)"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "Internal carotid artery (ICA)"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "anterior cerebral artery (A1)"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "anterior cerebral artery (A2)"
+          },
+          {
+            "code": "RDE169.4",
+            "value": "4",
+            "name": "anterior cerebral artery (A3)"
+          },
+          {
+            "code": "RDE169.5",
+            "value": "5",
+            "name": "middle cerebral artery (M1)"
+          },
+          {
+            "code": "RDE169.6",
+            "value": "6",
+            "name": "superior division of middle cerebral artery (M2)"
+          },
+          {
+            "code": "RDE169.7",
+            "value": "7",
+            "name": "inferior division middle cerebral artery (M2)"
+          },
+          {
+            "code": "RDE169.8",
+            "value": "8",
+            "name": "middle cerebral artery (M3)"
+          },
+          {
+            "code": "RDE169.9",
+            "value": "9",
+            "name": "vertebral artery (V4 segment)",
+            "definition": "vertebral artery (V4 segment)"
+          },
+          {
+            "code": "RDE169.10",
+            "value": "0",
+            "name": "posterior inferior cerebellar artery (PICA)"
+          },
+          {
+            "code": "RDE169.11",
+            "value": "1",
+            "name": "basilar artery (BA)"
+          },
+          {
+            "code": "RDE169.12",
+            "value": "2",
+            "name": "posterior cerebral artery (P1)"
+          },
+          {
+            "code": "RDE169.13",
+            "value": "3",
+            "name": "posterior cerebral artery (P2)"
+          },
+          {
+            "code": "RDE169.14",
+            "value": "4",
+            "name": "posterior cerebral artery (P3)"
+          },
+          {
+            "code": "RDE169.15",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.16",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1290",
+      "parent_set": "RDES169",
+      "name": "Stenosis vessel segment",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 17,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "no large vessel occlusion (LVO)"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "internal carotid artery (ICA)"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "anterior cerebral artery (A1)"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "anterior cerebral artery (A2)"
+          },
+          {
+            "code": "RDE169.4",
+            "value": "4",
+            "name": "anterior cerebral artery (A3)"
+          },
+          {
+            "code": "RDE169.5",
+            "value": "5",
+            "name": "middle cerebral artery (M1)"
+          },
+          {
+            "code": "RDE169.6",
+            "value": "6",
+            "name": "superior division of middle cerebral artery (M2)"
+          },
+          {
+            "code": "RDE169.7",
+            "value": "7",
+            "name": "inferior division middle cerebral artery (M2)"
+          },
+          {
+            "code": "RDE169.8",
+            "value": "8",
+            "name": "middle cerebral artery (M3)"
+          },
+          {
+            "code": "RDE169.9",
+            "value": "9",
+            "name": "vertebral artery (V4 segment)"
+          },
+          {
+            "code": "RDE169.10",
+            "value": "0",
+            "name": "posterior inferior cerebellar artery (PICA)"
+          },
+          {
+            "code": "RDE169.11",
+            "value": "1",
+            "name": "basilar artery (BA)"
+          },
+          {
+            "code": "RDE169.12",
+            "value": "2",
+            "name": "posterior cerebral artery (P1)"
+          },
+          {
+            "code": "RDE169.13",
+            "value": "3",
+            "name": "posterior cerebral artery (P2)"
+          },
+          {
+            "code": "RDE169.14",
+            "value": "4",
+            "name": "posterior cerebral artery (P3)"
+          },
+          {
+            "code": "RDE169.15",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.16",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1291",
+      "parent_set": "RDES169",
+      "name": "Stenosis percent",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Reporting Standards for Angioplasty and Stent-Assisted Angioplasty for Intracranial Atherosclerosis Stroke. 2009;40:e348-e365. DOI: 10.1161/STROKEAHA.108.527580"
+        }
+      ],
+      "integer_value": {
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1292",
+      "parent_set": "RDES169",
+      "name": "Anatomical variation",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "fenestration"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "early bifurcation M1"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "azygous ACA"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "fetal PCA"
+          },
+          {
+            "code": "RDE169.4",
+            "value": "4",
+            "name": "perisistent trigeminal artery"
+          },
+          {
+            "code": "RDE169.5",
+            "value": "5",
+            "name": "hypoplastic segment"
+          },
+          {
+            "code": "RDE169.6",
+            "value": "6",
+            "name": "aplastic segment"
+          },
+          {
+            "code": "RDE169.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1293",
+      "parent_set": "RDES169",
+      "name": "Vessel segment irregularity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1294",
+      "parent_set": "RDES169",
+      "name": "Vessel segment irregularity and multiple caliber changes",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Imaging Spectrum of CNS Vasculitis. Castillo et al, Radiographics 2014; 34:878-894"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1295",
+      "parent_set": "RDES169",
+      "name": "Vessel segment calcification",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "mild"
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "severe"
+          },
+          {
+            "code": "RDE169.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1296",
+      "parent_set": "RDES169",
+      "name": "Venous opacification",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE169.0",
+            "value": "0",
+            "name": "normal "
+          },
+          {
+            "code": "RDE169.1",
+            "value": "1",
+            "name": "abnormal "
+          },
+          {
+            "code": "RDE169.2",
+            "value": "2",
+            "name": "thrombosis"
+          },
+          {
+            "code": "RDE169.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE169.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1297",
+      "parent_set": "RDES169",
+      "name": "Dissection length",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1298",
+      "parent_set": "RDES169",
+      "name": "Dissection degree of narrowing",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "degree"
+      }
+    }
+  ],
+  "references": []
+}

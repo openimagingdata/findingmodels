@@ -1,0 +1,61 @@
+{
+  "oifm_id": "OIFM_CDE_000060",
+  "name": "Coronary Flow Reserve on PET",
+  "description": "This module describes the common data elements for coronary flow reserve on PET use case",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000295",
+      "name": "Myocardial blood flow",
+      "description": "Measure myocardial blood flow at rest and stress in each coronary artery distribution cc gm min",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cc gm min",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000296",
+      "name": "Seventeen segment coronary flow reserves",
+      "description": "Calculate coronary flow reserves from myocardial blood flow for each of the AHA segment sccgmmin",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES60",
+      "display": "coronary flow reserve on pet"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "Heart"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": []
+    }
+  ]
+}

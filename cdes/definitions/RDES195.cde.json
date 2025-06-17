@@ -1,0 +1,646 @@
+{
+  "id": "RDES195",
+  "name": "Pulmonary Nodule",
+  "description": "Pulmonary Nodule",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2021-10-28"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/195",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "Nuance Communications"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1301",
+      "parent_set": "RDES195",
+      "name": "Composition",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "solid"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "ground glass"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "part-solid"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "fat density"
+          },
+          {
+            "code": "RDE195.4",
+            "value": "4",
+            "name": "calcification"
+          },
+          {
+            "code": "RDE195.5",
+            "value": "5",
+            "name": "cavitation"
+          },
+          {
+            "code": "RDE195.6",
+            "value": "6",
+            "name": "cystic lucencies"
+          },
+          {
+            "code": "RDE195.7",
+            "value": "7",
+            "name": "air bronchgrams"
+          },
+          {
+            "code": "RDE195.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE195.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1302",
+      "parent_set": "RDES195",
+      "name": "Size",
+      "definition": "Average diameter in mm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 2,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1303",
+      "parent_set": "RDES195",
+      "name": "Solid component size",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 2,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1304",
+      "parent_set": "RDES195",
+      "name": "Location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "left lung"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "left upper lobe"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "lingula"
+          },
+          {
+            "code": "RDE195.4",
+            "value": "4",
+            "name": "left lower lobe"
+          },
+          {
+            "code": "RDE195.5",
+            "value": "5",
+            "name": "right lung"
+          },
+          {
+            "code": "RDE195.6",
+            "value": "6",
+            "name": "right upper lobe"
+          },
+          {
+            "code": "RDE195.7",
+            "value": "7",
+            "name": "right middle lobe"
+          },
+          {
+            "code": "RDE195.8",
+            "value": "8",
+            "name": "right lower lobe"
+          },
+          {
+            "code": "RDE195.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1305",
+      "parent_set": "RDES195",
+      "name": "Morphology",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "smooth"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "lobulated"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "Ill-defined"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "spiculated"
+          },
+          {
+            "code": "RDE195.4",
+            "value": "4",
+            "name": "perifissural"
+          },
+          {
+            "code": "RDE195.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE195.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1306",
+      "parent_set": "RDES195",
+      "name": "Plurality",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "single"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "multiple"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1307",
+      "parent_set": "RDES195",
+      "name": "Microcystic component",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1705",
+      "parent_set": "RDES195",
+      "name": "Volume",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 150000,
+        "step": 1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE1706",
+      "parent_set": "RDES195",
+      "name": "Change from priors",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-24"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-08-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "no priors"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "unchanged for less than 6 months"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "unchanged for 6-12 months"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "unchanged for 12-24 months"
+          },
+          {
+            "code": "RDE195.4",
+            "value": "4",
+            "name": "unchanged more than 24 months"
+          },
+          {
+            "code": "RDE195.5",
+            "value": "5",
+            "name": "larger since prior"
+          },
+          {
+            "code": "RDE195.6",
+            "value": "6",
+            "name": "smaller since prior"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1707",
+      "parent_set": "RDES195",
+      "name": "Suspicious appearance",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-24"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-08-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "yes"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "no"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1708",
+      "parent_set": "RDES195",
+      "name": "Min density",
+      "definition": "Minimum - 1000, max +1000",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1709",
+      "parent_set": "RDES195",
+      "name": "Max density",
+      "definition": "Minimum   - 1000, max   +1000",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-07-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-07-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1717",
+      "parent_set": "RDES195",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-08-24"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-08-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE195.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE195.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE195.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE195.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,166 @@
+{
+  "oifm_id": "OIFM_CDE_000085",
+  "name": "Quantification of Epicardial Adipose Tissue on CT",
+  "description": "Quantification of epicardial adipose tissue on CT",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000483",
+      "name": "Volume",
+      "description": "Volume of epicardial adipose tissue",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000484",
+      "name": "Average attenuation",
+      "description": "average attenuation of the epicardial adipose tissue",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "HU",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000485",
+      "name": "Segmentation",
+      "description": "segmentation of the epicardial adipose tissue",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000486",
+      "name": "Size",
+      "description": "size of EAT",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000487",
+      "name": "BMI",
+      "description": "weight in kilograms divided by height in meters squared (pounds by inches squared)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000488",
+      "name": "Cardiac height",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000491",
+      "name": "Slice thickness",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000497",
+      "name": "Location",
+      "description": "location of the EAT",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES85",
+      "display": "quantification of epicardial adipose tissue on ct"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "Heart"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": []
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "id": "RDES270",
+  "name": "Upper Cervical Spine AO Injury Classification in CT",
+  "description": "The AO Spine Upper Cervical Classification System is derived from the other AO Spine classifications, which divide injuries according to the affected region(s) (injury sites): I, injuries involving the occipital condyles and the craniocervical junction; II, injuries involving the atlas and the atlantoaxial joint; and III, injuries involving the axis and the C2-3 joint.",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-09-20"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/270",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Emergency Radiology",
+      "abbreviation": "ER"
+    },
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1729",
+      "parent_set": "RDES270",
+      "name": "Location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-24"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE270.0",
+            "value": "0",
+            "name": "occipital condyle and craniocervical junction"
+          },
+          {
+            "code": "RDE270.1",
+            "value": "1",
+            "name": "C1 ring and C1-2 joint"
+          },
+          {
+            "code": "RDE270.2",
+            "value": "2",
+            "name": "C2 and C2-3 joint"
+          },
+          {
+            "code": "RDE270.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE270.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1730",
+      "parent_set": "RDES270",
+      "name": "Type of injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-09"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE270.0",
+            "value": "0",
+            "name": "type A",
+            "definition": "osseous only, no significant ligamentous, tension band, or disc injury"
+          },
+          {
+            "code": "RDE270.1",
+            "value": "1",
+            "name": "type B",
+            "definition": "ligamentous, tension band injury (with or without osseous injury; without complete separation of anatomic integrity)"
+          },
+          {
+            "code": "RDE270.2",
+            "value": "2",
+            "name": "type C",
+            "definition": "translation and separation of anatomic integrity"
+          },
+          {
+            "code": "RDE270.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE270.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1731",
+      "parent_set": "RDES270",
+      "name": "Modifiers",
+      "definition": "Distinguish features that may impact treatment or outcome of a given fracture type",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE270.0",
+            "value": "0",
+            "name": "M1",
+            "definition": "high risk of non-union with nonoperative treatment"
+          },
+          {
+            "code": "RDE270.1",
+            "value": "1",
+            "name": "M2",
+            "definition": "injury with significant potential for instability"
+          },
+          {
+            "code": "RDE270.2",
+            "value": "2",
+            "name": "M3",
+            "definition": "patient specific factors affecting treatment (e.g. ankylosing disorders)"
+          },
+          {
+            "code": "RDE270.3",
+            "value": "3",
+            "name": "M4",
+            "definition": "vascular injury"
+          },
+          {
+            "code": "RDE270.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE270.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "Reliability of the New AOSpine Classification System for Upper Cervical Traumatic Injuries.",
+      "doi_url": "https://doi.org/10.1093/neuros/nyz464",
+      "pubmed_id": "31642504"
+    },
+    {
+      "citation": "AO Spine thoracolumbar spine injury classification system: fracture description, neurological status, and key modifiers.",
+      "doi_url": "https://doi.org/10.1097/BRS.0b013e3182a8a381",
+      "pubmed_id": "23970107"
+    },
+    {
+      "citation": "AO Spine subaxial cervical spine injury classification system.",
+      "doi_url": "https://doi.org/10.1007/s00586-015-3831-3",
+      "pubmed_id": "25716661"
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "oifm_id": "OIFM_CDE_000264",
+  "name": "Aortic Measurements",
+  "description": "Aortic Measurements",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001139",
+      "name": "Aortic root measurement 1",
+      "description": "Aortic root first measurement ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001140",
+      "name": "Aortic root measurement 2",
+      "description": "Aortic root second measurement ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001141",
+      "name": "Aortic root plane of measurement",
+      "description": "Plane of measurement for aortic root",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001141.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001141.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001141.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001141.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001142",
+      "name": "Sinotubular junction measurement 1",
+      "description": "Sinotubular junction measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001143",
+      "name": "Sinotubular junction measurement 2",
+      "description": "Sinotubular junction measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001144",
+      "name": "Sinotubular junction plane of measurement",
+      "description": "Sinotubular junction plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001144.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001144.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001144.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001144.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001145",
+      "name": "Ascending aorta measurement 1",
+      "description": "Ascending aorta measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001146",
+      "name": "Ascending aorta measurement 2",
+      "description": "Ascending aorta measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001147",
+      "name": "Ascending aorta plane of measurement",
+      "description": "Ascending aorta plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001147.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001147.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001147.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001147.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001148",
+      "name": "Aortic arch measurement 1",
+      "description": "Aortic arch measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001149",
+      "name": "Aortic arch measurement 2",
+      "description": "Aortic arch measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001150",
+      "name": "Aortic arch plane of measurement",
+      "description": "Aortic arch plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001150.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001150.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001150.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001150.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001151",
+      "name": "Descending thoracic aorta measurement 1",
+      "description": "Descending thoracic aorta measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001152",
+      "name": "Descending thoracic aorta measurement 2",
+      "description": "Descending thoracic aorta measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001153",
+      "name": "Descending thoracic aorta plane of measurement",
+      "description": "Descending thoracic aorta plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001153.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001153.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001153.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001153.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001154",
+      "name": "Diaphragmatic aorta measurement 1",
+      "description": "Diaphragmatic aorta measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001155",
+      "name": "Diaphragmatic aorta measurement 2",
+      "description": "Diaphragmatic aorta measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001156",
+      "name": "Diaphragmatic aorta plane of measurement",
+      "description": "Diaphragmatic aorta plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001156.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001156.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001156.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001156.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001157",
+      "name": "Suprarenal abdominal aorta measurement 1",
+      "description": "Suprarenal abdominal aorta measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001158",
+      "name": "Suprarenal abdominal aorta measurement 2",
+      "description": "Suprarenal abdominal aorta measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001159",
+      "name": "Suprarenal abdominal aorta plane of measurement",
+      "description": "Suprarenal abdominal aorta plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001159.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001159.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001159.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001159.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001160",
+      "name": "Infrarenal abdominal  aorta measurement 1",
+      "description": "Infrarenal abdominal  aorta measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001161",
+      "name": "Infrarenal abdominal  aorta measurement 2",
+      "description": "Infrarenal abdominal  aorta measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001162",
+      "name": "Infrarenal abdominal aorta plane of measurement",
+      "description": "Infrarenal abdominal aorta plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001162.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001162.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001162.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001162.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001163",
+      "name": "Growth of abdominal aortic aneurysm (greater than 5 mm in 6 months)",
+      "description": "Growth of abdominal aortic aneurysm (greater than 5 mm in 6 months)",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001163.1",
+          "name": "yes",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001163.2",
+          "name": "no",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001164",
+      "name": "Right common illiac artery measurement 1",
+      "description": "Right common illiac artery measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001165",
+      "name": "Right common illiac artery measurement 2",
+      "description": "Right common illiac artery measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001166",
+      "name": "Right common illiac artery plane of measurement",
+      "description": "Right common illiac artery plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001166.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001166.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001166.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001166.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001167",
+      "name": "Left common illiac artery measurement 1",
+      "description": "Left common illiac artery measurement 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001168",
+      "name": "Left common illiac artery measurement 2",
+      "description": "Left common illiac artery measurement 2",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001169",
+      "name": "Left common illiac artery plane of measurement",
+      "description": "Left common illiac artery plane of measurement",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001169.1",
+          "name": "axial",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001169.2",
+          "name": "perpendicular",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001169.3",
+          "name": "sagittal",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001169.4",
+          "name": "coronal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES264",
+      "display": "aortic measurements"
+    }
+  ],
+  "body_parts": []
+}

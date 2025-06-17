@@ -1,0 +1,602 @@
+{
+  "id": "RDES243",
+  "name": "Breast Cyst",
+  "description": "Breast Cyst",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-25"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/243",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1558",
+      "parent_set": "RDES241",
+      "name": "Location",
+      "definition": "Clock positions of the abnormality observed.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 12,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "one o'clock position"
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "two o'clock position"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "three o'clock position"
+          },
+          {
+            "code": "RDE241.3",
+            "value": "3",
+            "name": "four o'clock position"
+          },
+          {
+            "code": "RDE241.4",
+            "value": "4",
+            "name": "five o'clock position"
+          },
+          {
+            "code": "RDE241.5",
+            "value": "5",
+            "name": "six o'clock position"
+          },
+          {
+            "code": "RDE241.6",
+            "value": "6",
+            "name": "seven o'clock position"
+          },
+          {
+            "code": "RDE241.7",
+            "value": "7",
+            "name": "eight o'clock position"
+          },
+          {
+            "code": "RDE241.8",
+            "value": "8",
+            "name": "nine o'clock position"
+          },
+          {
+            "code": "RDE241.9",
+            "value": "9",
+            "name": "ten o'clock position"
+          },
+          {
+            "code": "RDE241.10",
+            "value": "0",
+            "name": "eleven o'clock position"
+          },
+          {
+            "code": "RDE241.11",
+            "value": "1",
+            "name": "twelve o'clock position"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1559",
+      "parent_set": "RDES241",
+      "name": "Depth",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "anterior ",
+            "definition": "Anterior depth is the outer most depth closest to the nipple of the breast."
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "middle",
+            "definition": "Middle depth in between the anterior and posterior portion of the breast ."
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "posterior",
+            "definition": "Posterior depth closest to the chest wall of the breast."
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1560",
+      "parent_set": "RDES241",
+      "name": "Breast body landmark",
+      "definition": "Breast landmark value set",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "nipple"
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "chest wall"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "skin structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1561",
+      "parent_set": "RDES241",
+      "name": "Distance from landmark",
+      "definition": "Distance from body landmark to body location of abnormality",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1562",
+      "parent_set": "RDES241",
+      "name": "Side ",
+      "definition": "Side from landmark",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-26"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-09-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "right and left"
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "midline"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "structure of right half of body"
+          },
+          {
+            "code": "RDE241.3",
+            "value": "3",
+            "name": "structure of left half of body"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1563",
+      "parent_set": "RDES241",
+      "name": "Quadrant",
+      "definition": "Quadrant of breast",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "lower inner"
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "lower outer"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "upper inner"
+          },
+          {
+            "code": "RDE241.3",
+            "value": "3",
+            "name": "upper outer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1564",
+      "parent_set": "RDES241",
+      "name": "Region",
+      "definition": "Region of breast",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-19"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "axilla",
+            "definition": "The axilla (also, armpit, underarm or oxter) is the area on the human body directly under the joint where the arm connects to the shoulder. It also contains many sweat glands."
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "axillary tail"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "axilla one",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level I is the bottom level, below the lower edge of the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE241.3",
+            "value": "3",
+            "name": "axilla two",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area):Level II is lying underneath the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE241.4",
+            "value": "4",
+            "name": "axilla three",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level III is above the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE241.5",
+            "value": "5",
+            "name": "inframammary fold",
+            "definition": "The mass/lesion is located in the inframammary crease where the lower boundary of the breast and the chest meet."
+          },
+          {
+            "code": "RDE241.6",
+            "value": "6",
+            "name": "in skin",
+            "definition": "Located within skin."
+          },
+          {
+            "code": "RDE241.7",
+            "value": "7",
+            "name": "central to nipple",
+            "definition": "Central to the nipple (central portion of the breast-behind the nipple)."
+          },
+          {
+            "code": "RDE241.8",
+            "value": "8",
+            "name": "superior"
+          },
+          {
+            "code": "RDE241.9",
+            "value": "9",
+            "name": "inferior"
+          },
+          {
+            "code": "RDE241.10",
+            "value": "0",
+            "name": "lateral"
+          },
+          {
+            "code": "RDE241.11",
+            "value": "1",
+            "name": "medial"
+          },
+          {
+            "code": "RDE241.12",
+            "value": "2",
+            "name": "retroareolar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1568",
+      "parent_set": "RDES241",
+      "name": "Distribution",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE241.0",
+            "value": "0",
+            "name": "fine, linear, branching"
+          },
+          {
+            "code": "RDE241.1",
+            "value": "1",
+            "name": "clustered"
+          },
+          {
+            "code": "RDE241.2",
+            "value": "2",
+            "name": "diffuse"
+          },
+          {
+            "code": "RDE241.3",
+            "value": "3",
+            "name": "grouped"
+          },
+          {
+            "code": "RDE241.4",
+            "value": "4",
+            "name": "linear"
+          },
+          {
+            "code": "RDE241.5",
+            "value": "5",
+            "name": "regional"
+          },
+          {
+            "code": "RDE241.6",
+            "value": "6",
+            "name": "segmental"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1569",
+      "parent_set": "RDES241",
+      "name": "Distribution width",
+      "definition": "Size of the entire region affected by abnormality in mm.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-04-27"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-04-27"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 1000,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1577",
+      "parent_set": "RDES243",
+      "name": "Type",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-05"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-01-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE243.0",
+            "value": "0",
+            "name": "complex",
+            "definition": "Complex cysts have irregular or scalloped borders, thick walls, and some evidence of solid areas and/or debris in the fluid. These solid areas echo back the sound waves from the ultrasound. A complex cyst is sometimes aspirated, or drained with a fine needle, so that the fluid inside can be tested. If blood or any unusual cells are present, further testing may be needed to rule out breast cancer."
+          },
+          {
+            "code": "RDE243.1",
+            "value": "1",
+            "name": "complicated",
+            "definition": "Complicated cysts are 'in between' simple and complex. Although they share most of the features of simple cysts, they tend to have some debris inside them and echo back some of the ultrasound waves. However, they don't have the thick walls or obvious solid components that a complex cyst has."
+          },
+          {
+            "code": "RDE243.2",
+            "value": "2",
+            "name": "micro",
+            "definition": "A microcyst Is a sac-like pocket of tissue that contains fluid, air, or other substances. A Microcyst is small and less than 2-3 mm and are often in clusters and only show up on a mammogram or ultrasound."
+          },
+          {
+            "code": "RDE243.3",
+            "value": "3",
+            "name": "oil",
+            "definition": "Oil cysts are filled with fluid that may feel smooth and soft/squishy. Oil cysts are caused by the breakdown of fatty tissue."
+          },
+          {
+            "code": "RDE243.4",
+            "value": "4",
+            "name": "simple",
+            "definition": "A simple cyst is a sac-like pocket of membranous tissue that only contains clear fluid."
+          },
+          {
+            "code": "RDE243.5",
+            "value": "5",
+            "name": "with debris",
+            "definition": "A cyst that is filled with debris and fluid substance. It Is either considered a complex or complicated cyst. The type of debris determines what kind of cyst."
+          },
+          {
+            "code": "RDE243.6",
+            "value": "6",
+            "name": "cyst"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

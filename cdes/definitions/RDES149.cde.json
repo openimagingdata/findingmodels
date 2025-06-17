@@ -1,0 +1,211 @@
+{
+  "id": "RDES149",
+  "name": "Liver Elastography on MR",
+  "description": "MR Elastography - Radiographics",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/149",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Marc Kohli",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    },
+    {
+      "name": "Abdominal Radiology",
+      "abbreviation": "AB"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE999",
+      "parent_set": "RDES149",
+      "name": "Mean liver stiffness",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-09-25"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-09-25"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "kPA"
+      }
+    },
+    {
+      "id": "RDE1722",
+      "parent_set": "RDES149",
+      "name": "Correlation with hepatic fibrosis stages",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE149.0",
+            "value": "0",
+            "name": "yes"
+          },
+          {
+            "code": "RDE149.1",
+            "value": "1",
+            "name": "no"
+          },
+          {
+            "code": "RDE149.2",
+            "value": "2",
+            "name": "normal",
+            "definition": "less than 2.5 kPa"
+          },
+          {
+            "code": "RDE149.3",
+            "value": "3",
+            "name": "normal or inflammation",
+            "definition": "from 2.5 to 2.9 kPa"
+          },
+          {
+            "code": "RDE149.4",
+            "value": "4",
+            "name": "stage 1 to 2 fibrosis",
+            "definition": "from 2.9 to 3.5 kPa"
+          },
+          {
+            "code": "RDE149.5",
+            "value": "5",
+            "name": "stage 2 to 3 fibrosis",
+            "definition": "from 3.5 to 4 kPa"
+          },
+          {
+            "code": "RDE149.6",
+            "value": "6",
+            "name": "stage 3 to 4 fibrosis",
+            "definition": "from 4 to 5 kPa"
+          },
+          {
+            "code": "RDE149.7",
+            "value": "7",
+            "name": "stage 4 fibrosis or cirrhosis",
+            "definition": "more than 5 kPa"
+          },
+          {
+            "code": "RDE149.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE149.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1749",
+      "parent_set": "RDES149",
+      "name": "Ascite amount",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-10"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE149.0",
+            "value": "0",
+            "name": "none"
+          },
+          {
+            "code": "RDE149.1",
+            "value": "1",
+            "name": "small"
+          },
+          {
+            "code": "RDE149.2",
+            "value": "2",
+            "name": "moderate"
+          },
+          {
+            "code": "RDE149.3",
+            "value": "3",
+            "name": "large"
+          },
+          {
+            "code": "RDE149.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE149.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,63 @@
+{
+  "oifm_id": "OIFM_CDE_000190",
+  "name": "Hepatic Tumor Volumes",
+  "description": "Hepatic Volumes",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001275",
+      "name": "Liver volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001276",
+      "name": "Right  lobe volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001277",
+      "name": "Left lobe volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001278",
+      "name": "Tumor volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES190",
+      "display": "hepatic tumor volumes"
+    }
+  ],
+  "body_parts": []
+}

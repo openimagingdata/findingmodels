@@ -1,0 +1,745 @@
+{
+  "id": "RDES115",
+  "name": "Glioma",
+  "description": "Glioma",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/115",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    },
+    {
+      "name": "Spinal Cord",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID7361",
+        "display": "Spinal Cord",
+        "url": "http://www.radlex.org/RID/RID7361"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Natalia Farish",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE744",
+      "parent_set": "RDES115",
+      "name": "Recurrence probability",
+      "definition": "probability of recurrence after treatment",
+      "question": "Recurrence probability",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "probability of recurrence after treatment"
+      }
+    },
+    {
+      "id": "RDE745",
+      "parent_set": "RDES115",
+      "name": "Radiation necrosis probability",
+      "definition": "probability of radiation necrosis after treatment",
+      "question": "Radiation necrosis probability",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2019-11-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2019-11-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "probability of radiation necrosis after treatment"
+      }
+    },
+    {
+      "id": "RDE746",
+      "parent_set": "RDES115",
+      "name": "Classification",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE115.0",
+            "value": "0",
+            "name": "astrocytoma"
+          },
+          {
+            "code": "RDE115.1",
+            "value": "1",
+            "name": "oligdendroglioma"
+          },
+          {
+            "code": "RDE115.2",
+            "value": "2",
+            "name": "oligastrocytoma"
+          },
+          {
+            "code": "RDE115.3",
+            "value": "3",
+            "name": "ependymoma"
+          },
+          {
+            "code": "RDE115.4",
+            "value": "4",
+            "name": "ganglioglioma"
+          },
+          {
+            "code": "RDE115.5",
+            "value": "5",
+            "name": "other",
+            "definition": "Other primary CNS tumor given the WHO classification"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE747",
+      "parent_set": "RDES115",
+      "name": "Tumor grade",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE115.0",
+            "value": "0",
+            "name": "grade I"
+          },
+          {
+            "code": "RDE115.1",
+            "value": "1",
+            "name": "grade II"
+          },
+          {
+            "code": "RDE115.2",
+            "value": "2",
+            "name": "grade III"
+          },
+          {
+            "code": "RDE115.3",
+            "value": "3",
+            "name": "grade IV"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE748",
+      "parent_set": "RDES115",
+      "name": "Mutated genes ",
+      "definition": "Identify mutated genes associated with gliomas",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE115.0",
+            "value": "0",
+            "name": "EGFR"
+          },
+          {
+            "code": "RDE115.1",
+            "value": "1",
+            "name": "ERBB2"
+          },
+          {
+            "code": "RDE115.2",
+            "value": "2",
+            "name": "IDH1"
+          },
+          {
+            "code": "RDE115.3",
+            "value": "3",
+            "name": "NF1"
+          },
+          {
+            "code": "RDE115.4",
+            "value": "4",
+            "name": "PIK3CA"
+          },
+          {
+            "code": "RDE115.5",
+            "value": "5",
+            "name": "PIK3R1"
+          },
+          {
+            "code": "RDE115.6",
+            "value": "6",
+            "name": "PTEN"
+          },
+          {
+            "code": "RDE115.7",
+            "value": "7",
+            "name": "PTPRD"
+          },
+          {
+            "code": "RDE115.8",
+            "value": "8",
+            "name": "RB1"
+          },
+          {
+            "code": "RDE115.9",
+            "value": "9",
+            "name": "TP53"
+          },
+          {
+            "code": "RDE115.10",
+            "value": "0",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE115.11",
+            "value": "1",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1956",
+      "parent_set": "RDES115",
+      "name": "Current enhancing tumor volume",
+      "definition": "Current volume of enhancing detected region, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1957",
+      "parent_set": "RDES115",
+      "name": "Current FLAIR volume",
+      "definition": "Current volume of FLAIR/edema detected region, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1958",
+      "parent_set": "RDES115",
+      "name": "Current necrosis/cavity volume",
+      "definition": "Current volume of necrosis/cavity detected region, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1959",
+      "parent_set": "RDES115",
+      "name": "Current enhancing tumor volume change from previous",
+      "definition": "Curren change in enhancing tumor volume from previous timepoint, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1960",
+      "parent_set": "RDES115",
+      "name": "Current FLAIR volume change from previous",
+      "definition": "Current change in FLAIR volume from previous timepoint, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1971",
+      "parent_set": "RDES115",
+      "name": "Prior enhancing tumor volume change from baseline",
+      "definition": "Prior change in enhancing tumor volume from baseline, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1972",
+      "parent_set": "RDES115",
+      "name": "Prior FLAIR volume change from baseline",
+      "definition": "Prior change in FLAIR volume from baseline, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1973",
+      "parent_set": "RDES115",
+      "name": "Prior necrosis/cavity volume change from baseline",
+      "definition": "Prior change in necrosis/cavity volume from baseline, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1974",
+      "parent_set": "RDES115",
+      "name": "Baseline enhancing tumor volume",
+      "definition": "Baseline volume of enhancing detected region, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1975",
+      "parent_set": "RDES115",
+      "name": "Baseline FLAIR volume",
+      "definition": "Baseline volume of FLAIR/edema detected region, step value 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1976",
+      "parent_set": "RDES115",
+      "name": "Baseline necrosis/cavity volume",
+      "definition": "Baseline volume of necrosis/cavity detected region, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 1,
+        "unit": "cm3"
+      }
+    },
+    {
+      "id": "RDE1977",
+      "parent_set": "RDES115",
+      "name": "Baseline enhancing tumor volume change from previous",
+      "definition": "Baseline change in enhancing tumor volume from previous timepoint, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1978",
+      "parent_set": "RDES115",
+      "name": "Baseline FLAIR volume change from previous",
+      "definition": "Baseline change in FLAIR volume from previous timepoint, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1979",
+      "parent_set": "RDES115",
+      "name": "Baseline necrosis/cavity volume change from previous",
+      "definition": "Current change in necrosis/cavity volume from previous timepoint, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    },
+    {
+      "id": "RDE1980",
+      "parent_set": "RDES115",
+      "name": "Baseline enhancing tumor volume change",
+      "definition": "Baseline change in enhancing tumor volume, step value: 0.01.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-08"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-01-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      }
+    }
+  ],
+  "references": []
+}

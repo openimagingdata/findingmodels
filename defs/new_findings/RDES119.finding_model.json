@@ -1,0 +1,32 @@
+{
+  "oifm_id": "OIFM_CDE_000119",
+  "name": "Alpha Angle Measurement",
+  "description": " Alpha angle measurement on CT and/or MRI",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000775",
+      "name": "Alpha angle",
+      "description": "alpha angle measurement",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES119",
+      "display": "alpha angle measurement"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Femoral Neck",
+      "index_codes": []
+    }
+  ]
+}

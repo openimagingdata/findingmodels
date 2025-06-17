@@ -1,0 +1,440 @@
+{
+  "id": "RDES299",
+  "name": "MR Cerebral Amyloid Angiopathy (Modified Boston Criteria)",
+  "description": "Cerebral Amyloid Angiopathy: Modified Boston Criteria",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-08-13"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/299",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Aparna Singhal MD",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      },
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1442",
+      "parent_set": "RDES222",
+      "name": "Hematoma size",
+      "definition": "Measure the largest dimension in any plane",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 1,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1443",
+      "parent_set": "RDES222",
+      "name": "Microhemorrhage",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-10"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-01-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE222.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE222.1",
+            "value": "1",
+            "name": "one"
+          },
+          {
+            "code": "RDE222.2",
+            "value": "2",
+            "name": "two to five"
+          },
+          {
+            "code": "RDE222.3",
+            "value": "3",
+            "name": "more than five"
+          },
+          {
+            "code": "RDE222.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE222.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1445",
+      "parent_set": "RDES222",
+      "name": "Siderosis",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-10"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-01-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE222.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE222.1",
+            "value": "1",
+            "name": "focal"
+          },
+          {
+            "code": "RDE222.2",
+            "value": "2",
+            "name": "diffuse"
+          },
+          {
+            "code": "RDE222.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE222.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1446",
+      "parent_set": "RDES222",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE222.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "No evidence of cerebral amyloid angiopathy"
+          },
+          {
+            "code": "RDE222.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE222.2",
+            "value": "2",
+            "name": "probable"
+          },
+          {
+            "code": "RDE222.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE222.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2030",
+      "parent_set": "RDES222",
+      "name": "Summary",
+      "definition": "Probable CAA: multiple lobar, cortical, or subcortical hemorrhages of varying ages without another cause/Probable CAA: single lobar, cortical, or subcortical hemorrhage and focal or disseminated superficial siderosis without another cause/Possible CAA: single lobar, cortical or subcortical hemorrhage without another cause/Possible CAA: focal or disseminated superficial siderosis without another cause/no evidence of CAA",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE222.0",
+            "value": "0",
+            "name": "no evidence of CAA",
+            "definition": "No evidence of cerebral amyloid angiopathy"
+          },
+          {
+            "code": "RDE222.1",
+            "value": "1",
+            "name": "probable CAA: multiple hemorrhages",
+            "definition": "Probable cerebral amyloid angiopathy. Multiple lobar, cortical, or subcortical hemorrhages of varying ages without another cause."
+          },
+          {
+            "code": "RDE222.2",
+            "value": "2",
+            "name": "probable CAA: single hemorrhage",
+            "definition": "probable CAA: single lobar, cortical, or subcortical hemorrhage and focal or disseminated superficial siderosis without another cause"
+          },
+          {
+            "code": "RDE222.3",
+            "value": "3",
+            "name": "possible CAA:  single hemorrhage with another cause",
+            "definition": "possible CAA: single lobar, cortical or subcortical hemorrhage without another cause"
+          },
+          {
+            "code": "RDE222.4",
+            "value": "4",
+            "name": "possible CAA:  focal or disseminated superficial siderosis  wihout another cause",
+            "definition": "possible CAA:  focal or disseminated superficial siderosis without another cause"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2053",
+      "parent_set": "RDES299",
+      "name": "Lobar hematoma",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-09-10"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-09-10"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 9,
+        "values": [
+          {
+            "code": "RDE299.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE299.1",
+            "value": "1",
+            "name": "frontal"
+          },
+          {
+            "code": "RDE299.2",
+            "value": "2",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE299.3",
+            "value": "3",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE299.4",
+            "value": "4",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE299.5",
+            "value": "5",
+            "name": "cerebellar"
+          },
+          {
+            "code": "RDE299.6",
+            "value": "6",
+            "name": "brainstem"
+          },
+          {
+            "code": "RDE299.7",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE299.8",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2054",
+      "parent_set": "RDES299",
+      "name": "Microhemorrhage location",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE299.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE299.1",
+            "value": "1",
+            "name": "cortical"
+          },
+          {
+            "code": "RDE299.2",
+            "value": "2",
+            "name": "subcortical"
+          },
+          {
+            "code": "RDE299.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE299.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

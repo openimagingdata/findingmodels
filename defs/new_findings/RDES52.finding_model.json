@@ -1,0 +1,133 @@
+{
+  "oifm_id": "OIFM_CDE_000052",
+  "name": "Myocardial Perfusion on CT",
+  "description": "This module describes the common data elements for Quantification of Myocardial Perfusion use case. ",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000274",
+      "name": "MBF quantification",
+      "description": "MBF quantification per segment mL 100 mL min",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "100 ml per min",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000275",
+      "name": "MBV quantification",
+      "description": "MBV quantification per segment mL 100 mL",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml per 100ml",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000276",
+      "name": "Global MBF quantification",
+      "description": "Global MBF quantification mL 100 mL min",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml per 100 ml per min",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000277",
+      "name": "Global MBV quantification",
+      "description": "Global MBV quantification mL 100 mL",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml per 100 ml",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000278",
+      "name": "MBF index",
+      "description": "MBF index comparing MBF from each segment to the global LV MBF value",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000279",
+      "name": "Size",
+      "description": "Size of Myocardial perfusion",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES52",
+      "display": "myocardial perfusion on ct"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "Heart"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": []
+    }
+  ]
+}

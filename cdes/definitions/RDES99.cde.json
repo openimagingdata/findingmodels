@@ -1,0 +1,541 @@
+{
+  "id": "RDES99",
+  "name": "Incidental Pulmonary Nodules",
+  "description": "Incidental pulmonary nodules on CT",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/99",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE607",
+      "parent_set": "RDES99",
+      "name": "Size",
+      "definition": "Measure largest diameter of nodule",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE608",
+      "parent_set": "RDES99",
+      "name": "Volume",
+      "definition": "Measure the volume of the nodule.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-01"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2022-12-01"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE612",
+      "parent_set": "RDES99",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "nodule absent"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE613",
+      "parent_set": "RDES99",
+      "name": "Density",
+      "definition": "Determine mean and range of HU density of nodule",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "fat ",
+            "definition": "fat density"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "groundglass"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "part solid"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "solid"
+          },
+          {
+            "code": "RDE99.4",
+            "value": "4",
+            "name": "calcification"
+          },
+          {
+            "code": "RDE99.5",
+            "value": "5",
+            "name": "cavitation"
+          },
+          {
+            "code": "RDE99.6",
+            "value": "6",
+            "name": "cystic lucencies"
+          },
+          {
+            "code": "RDE99.7",
+            "value": "7",
+            "name": "air bronchograms"
+          },
+          {
+            "code": "RDE99.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE614",
+      "parent_set": "RDES99",
+      "name": "Shape",
+      "definition": "classify shape of nodule",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "round"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "oval"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "triangular"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "irregular"
+          },
+          {
+            "code": "RDE99.4",
+            "value": "4",
+            "name": "lobular"
+          },
+          {
+            "code": "RDE99.5",
+            "value": "5",
+            "name": "indeterminate",
+            "definition": "other"
+          },
+          {
+            "code": "RDE99.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE615",
+      "parent_set": "RDES99",
+      "name": "Margin",
+      "definition": "classify shape/margin of nodule",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "smooth"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "lobulated"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "spiculated"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "ill defined"
+          },
+          {
+            "code": "RDE99.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE616",
+      "parent_set": "RDES99",
+      "name": "Location",
+      "definition": "State on which lung lobe nodule is located. Ideally pull the image with the incidental nodule",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-04"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "right upper lobe"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "right lower lobe"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "right mid lobe"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "left mid lobe"
+          },
+          {
+            "code": "RDE99.4",
+            "value": "4",
+            "name": "left upper lobe"
+          },
+          {
+            "code": "RDE99.5",
+            "value": "5",
+            "name": "left lower lobe"
+          },
+          {
+            "code": "RDE99.6",
+            "value": "6",
+            "name": "fissural"
+          },
+          {
+            "code": "RDE99.7",
+            "value": "7",
+            "name": "intraluminal"
+          },
+          {
+            "code": "RDE99.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1910",
+      "parent_set": "RDES99",
+      "name": "Attenuation",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-07-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-07-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "fat density"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "ground glass"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "part solid"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "solid"
+          },
+          {
+            "code": "RDE99.4",
+            "value": "4",
+            "name": "calcification"
+          },
+          {
+            "code": "RDE99.5",
+            "value": "5",
+            "name": "cavitation"
+          },
+          {
+            "code": "RDE99.6",
+            "value": "6",
+            "name": "cystic lucencies"
+          },
+          {
+            "code": "RDE99.7",
+            "value": "7",
+            "name": "air bronchograms"
+          },
+          {
+            "code": "RDE99.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1911",
+      "parent_set": "RDES99",
+      "name": "Pleural involvement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-07-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-07-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE99.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE99.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE99.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE99.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

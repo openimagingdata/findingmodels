@@ -1,0 +1,414 @@
+{
+  "id": "RDES126",
+  "name": "Acute Aortic Syndrome",
+  "description": "This module describes the Common Data elements and Macros for Acute Aortic Syndrome",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/126",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Aorta",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID480",
+        "display": "Aorta",
+        "url": "http://www.radlex.org/RID/RID480"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE818",
+      "parent_set": "RDES126",
+      "name": "Aortic dissection",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "acute",
+            "definition": "Acute"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "subacute",
+            "definition": "Subacute"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "chronic",
+            "definition": "Chronic"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE819",
+      "parent_set": "RDES126",
+      "name": "Ischemia",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "abdominal organ ischemia",
+            "definition": "Abdominal organ ischemia"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "limb ischemia",
+            "definition": "Limb ischemia"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "ischemic stroke",
+            "definition": "Ischemic stroke"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "embolic stroke",
+            "definition": "Embolic stroke"
+          },
+          {
+            "code": "RDE126.4",
+            "value": "4",
+            "name": "paraplegia",
+            "definition": "Paraplegia"
+          },
+          {
+            "code": "RDE126.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE821",
+      "parent_set": "RDES126",
+      "name": "Aortic emergencies",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "dissection",
+            "definition": "Aortic dissection"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "intramural hematoma",
+            "definition": "Aortic intramural hematoma"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "penetrating atherosclerotic ulcer",
+            "definition": "Penetrating atherosclerotic ulcer"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "aneurysmal rupture",
+            "definition": "Aortic aneurysmal rupture"
+          },
+          {
+            "code": "RDE126.4",
+            "value": "4",
+            "name": "traumatic thoracic aortic injury",
+            "definition": "Traumatic thoracic aortic injury"
+          },
+          {
+            "code": "RDE126.5",
+            "value": "5",
+            "name": "traumatic abdominal aortic injury",
+            "definition": "Traumatic abdominal aortic injury"
+          },
+          {
+            "code": "RDE126.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE823",
+      "parent_set": "RDES126",
+      "name": "Aortic aneurysmal rupture",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "intraperitoneal rupture",
+            "definition": "Intraperitoneal rupture"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "retroperitoneal rupture",
+            "definition": "Retroperitoneal rupture"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "aortocaval fistula",
+            "definition": "Aortocaval fistula"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "primary aorto-enteric fistula",
+            "definition": "Primary aorto-enteric fistula"
+          },
+          {
+            "code": "RDE126.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE825",
+      "parent_set": "RDES126",
+      "name": "Acute aortic syndrome",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Acute aortic syndrome absent"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Acute aortic syndrome present"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "unknown",
+            "definition": "Unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE826",
+      "parent_set": "RDES126",
+      "name": "Stanford classification",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE126.0",
+            "value": "0",
+            "name": "type a",
+            "definition": "A"
+          },
+          {
+            "code": "RDE126.1",
+            "value": "1",
+            "name": "type b",
+            "definition": "B"
+          },
+          {
+            "code": "RDE126.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE126.3",
+            "value": "3",
+            "name": "unknown",
+            "definition": "Unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": " CDE URL ",
+      "url": "https://radelement.org/"
+    }
+  ]
+}

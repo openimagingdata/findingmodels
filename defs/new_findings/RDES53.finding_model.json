@@ -1,0 +1,127 @@
+{
+  "oifm_id": "OIFM_CDE_000053",
+  "name": "Mapping Veins for Cardiac Ablation Planning",
+  "description": "This module describes the common data elements for pulmonary veins mapping preablation use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000280",
+      "name": "Pulmonary vein diameter",
+      "description": "Diameter of pulmonary vein mm",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000281",
+      "name": "Interatrial septal thickness",
+      "description": "Interatrial septal thickness, mm",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000282",
+      "name": "Atrial thrombus",
+      "description": "Determine the presence of atrial thrombus ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000283",
+      "name": "Valvular calcifications",
+      "description": "Determine the presence of valvular calcifications",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000284",
+      "name": "Vein ostia proximity to esophagus",
+      "description": "Measure the distance between the vein ostia and esophagus, cm",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000285",
+      "name": "Vein ostia proximity to aorta",
+      "description": "Measure the distance between the vein ostia and aorta, cm",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1231",
+          "display": "pulmonary vein"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES53",
+      "display": "mapping veins for cardiac ablation planning"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1231",
+      "display": "Pulmonary vein"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Pulmonary Vein",
+      "index_codes": []
+    }
+  ]
+}

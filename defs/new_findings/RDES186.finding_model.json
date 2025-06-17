@@ -1,0 +1,36 @@
+{
+  "oifm_id": "OIFM_CDE_000186",
+  "name": "White Matter Lesion in Multiple Sclerosis",
+  "description": "White Matter Lesion Tracking in Multiple Sclerosis",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001271",
+      "name": "White Matter Lesion Burden\t",
+      "description": "Total volume of abnormal supratentorial and infratentorial T2 signal",
+      "type": "numeric",
+      "min": 0,
+      "max": 1200,
+      "step": 1,
+      "unit": "cc",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001611",
+      "name": "Presence",
+      "description": "Presence of white matter lesion ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES186",
+      "display": "white matter lesion in multiple sclerosis"
+    }
+  ],
+  "body_parts": []
+}

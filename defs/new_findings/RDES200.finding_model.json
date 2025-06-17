@@ -1,0 +1,57 @@
+{
+  "oifm_id": "OIFM_CDE_000200",
+  "name": "Talo Calcaneal Angles",
+  "description": "Radiographic Evaluation of Congenital and Aqcuired Foot Deformities Talo Calcaneal Angles",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001329",
+      "name": "AP Talo-calcaneal Angle\t",
+      "description": "The angle between the lines drawn down the axis of the talus and the calcaneus on weight-bearing AP foot radiograph.",
+      "type": "numeric",
+      "min": 0,
+      "max": 180,
+      "step": 0.1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001330",
+      "name": "Lateral Talo-calcaneal Angle\t",
+      "description": "The angle formed by the intersection of the line bisecting the talus through the body and through the neck and the line along the axis of the plantar border of the calcaneus (or bisecting the calcaneus) on lateral weight-bearing views.\n\n",
+      "type": "numeric",
+      "min": 0,
+      "max": 180,
+      "step": 1,
+      "unit": "degrees",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001331",
+      "name": "AP angle interpretation\t",
+      "description": "Normal range for the AP talo-calcaneal angle is 30 to 45 degrees.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001332",
+      "name": "Lateral angle interpretation",
+      "description": "Normal range for the lateral talo-calcaneal angle is 30 to 50 degrees.\n\n",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES200",
+      "display": "talo calcaneal angles"
+    }
+  ],
+  "body_parts": []
+}

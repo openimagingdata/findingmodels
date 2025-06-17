@@ -1,0 +1,236 @@
+{
+  "id": "RDES106",
+  "name": "Genu Varus and Valgus Quantification",
+  "description": "Genu varus and valgus quantification",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/106",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Leg",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID2869",
+        "display": "Leg",
+        "url": "http://www.radlex.org/RID/RID2869"
+      }
+    },
+    {
+      "name": "Knee",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID2743",
+        "display": "Knee",
+        "url": "http://www.radlex.org/RID/RID2743"
+      }
+    },
+    {
+      "name": "Ankle",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID28545",
+        "display": "Ankle",
+        "url": "http://www.radlex.org/RID/RID28545"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE684",
+      "parent_set": "RDES106",
+      "name": "Right knee",
+      "definition": "Measure genu varus or valgus 1. Mechanical axis of femur MAF line from top of femoral head through intercondylar notch 2. Tibial axis TA line from intercondylare notch to mid tibial plafond 3. Angle between continuation of MAF to level of tibia and TA",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 200,
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE686",
+      "parent_set": "RDES106",
+      "name": "Alignment, right knee",
+      "definition": "Genu varus valgus or normal alignment. Mechanical axis MA line from top of femoral head to mid tibial plafond. If MA medial to intercondylar notch -  genu varus .If MA lateral to intercondylar notch  - genu valgus . If MA with in the intercondylar notch - normal alignment.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE106.0",
+            "value": "0",
+            "name": "normal",
+            "definition": "If MA with in the intercondylar notch - normal alignment."
+          },
+          {
+            "code": "RDE106.1",
+            "value": "1",
+            "name": "genu varus",
+            "definition": " If MA medial to intercondylar notch -  genu varus ."
+          },
+          {
+            "code": "RDE106.2",
+            "value": "2",
+            "name": "genu valgus",
+            "definition": "If MA lateral to intercondylar notch  - genu valgus ."
+          },
+          {
+            "code": "RDE106.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE106.4",
+            "value": "4",
+            "name": "unknown",
+            "definition": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1655",
+      "parent_set": "RDES106",
+      "name": "Left knee",
+      "definition": "Measure genu varus or valgus 1. Mechanical axis of femur MAF line from top of femoral head through intercondylar notch 2. Tibial axis TA line from intercondylare notch to mid tibial plafond 3. Angle between continuation of MAF to level of tibia and TA",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 100,
+        "step": 0.1,
+        "unit": "degrees"
+      }
+    },
+    {
+      "id": "RDE1750",
+      "parent_set": "RDES106",
+      "name": "Alignment, left knee",
+      "definition": "Genu varus valgus or normal alignment. Mechanical axis MA line from top of femoral head to mid tibial plafond. If MA medial to intercondylar notch -  genu varus .If MA lateral to intercondylar notch  - genu valgus . If MA with in the intercondylar notch - normal alignment",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE106.0",
+            "value": "0",
+            "name": "normal",
+            "definition": "If MA with in the intercondylar notch - normal alignment"
+          },
+          {
+            "code": "RDE106.1",
+            "value": "1",
+            "name": "genu valgus",
+            "definition": "If MA lateral to intercondylar notch  - genu valgus ."
+          },
+          {
+            "code": "RDE106.2",
+            "value": "2",
+            "name": "genu varus",
+            "definition": "If MA medial to intercondylar notch -  genu varus ."
+          },
+          {
+            "code": "RDE106.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE106.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

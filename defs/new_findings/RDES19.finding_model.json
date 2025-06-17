@@ -1,0 +1,695 @@
+{
+  "oifm_id": "OIFM_CDE_000019",
+  "name": "Inflammatory Sinus",
+  "description": "This module describes the Common Data elements and Macros for Inflammatory Sinus",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000133",
+      "name": "Side",
+      "description": "Lateral lamella side",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000134",
+      "name": "Lateral positions",
+      "description": "Lateral Positions",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000135",
+      "name": "Keros class",
+      "description": "Keros Class",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000136",
+      "name": "Ethmoid arteries",
+      "description": "Ethmoid arteries",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000137",
+      "name": "Maxillary sinus vertical diameter",
+      "description": "Max vertical diameter of the sinus",
+      "type": "numeric",
+      "min": 1,
+      "max": 1000,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000138",
+      "name": "Uncinate processes",
+      "description": "Uncinate processes",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000139",
+      "name": "Maxillary Infundibulum",
+      "description": "Maxillary Infundibulum",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000140",
+      "name": "Osteomeatalunits",
+      "description": "Osteomeatalunits",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000141",
+      "name": "Sphenoethmoidal recesses",
+      "description": "Sphenoethmoidal recesses",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000142",
+      "name": "Sphenoid sinus vertical diameter",
+      "description": "Max vertical diameter of sphenoid sinuses",
+      "type": "numeric",
+      "min": 0,
+      "max": 1,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001723",
+      "name": "Maxillary sinus horizontal diameter",
+      "description": "Max. horizontal diameter of maxillary sinus",
+      "type": "numeric",
+      "min": 1,
+      "max": 1000,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001724",
+      "name": "Sphenoid sinus horizontal diameter",
+      "description": "Max horizontal diameter of sphenoid sinus.",
+      "type": "numeric",
+      "min": 1,
+      "max": 1000,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002000",
+      "name": "Nature of inflammatory disease",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002061",
+      "name": "Frontal recess patency",
+      "description": "Patency of the frontal recess",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002061.1",
+          "name": "Patent left frontal recess",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002061.2",
+          "name": "Patent right frontal recess",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002061.3",
+          "name": "Occluded right frontal recess",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002061.4",
+          "name": "Occluded left frontal recess",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002061.5",
+          "name": "Narrowed right frontal recess",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002061.6",
+          "name": "Narrowed left frontal recess",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002062",
+      "name": "Nasal Septum",
+      "description": "Position of nasal septum and presence/absence of spur",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002062.1",
+          "name": "midline",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002062.2",
+          "name": "deviated left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002062.3",
+          "name": "deviated right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002062.4",
+          "name": "deviated left with septal spur",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002062.5",
+          "name": "deviated right with septal spur",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002063",
+      "name": "Ethmoid air cells aeration",
+      "description": "Aeration of the ethmoid air cells",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002063.1",
+          "name": "Aerated bilaterally",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002063.2",
+          "name": "Opacified right anterior air cells",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002063.3",
+          "name": "Opacified left anterior air cells",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002063.4",
+          "name": "Opacified right posterior air cells",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002063.5",
+          "name": "Opacified left posterior air cells",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002064",
+      "name": "Sphenoethmoidal recess patency",
+      "description": "Patency of the sphenoethmoidal recesses",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002064.1",
+          "name": "Patent bilaterally",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002064.2",
+          "name": "Occluded right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002064.3",
+          "name": "Occluded left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002064.4",
+          "name": "Narrowed right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002064.5",
+          "name": "Narrowed left",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002065",
+      "name": "Osteo-meatal unit patency",
+      "description": "Patency of the components of the osteo-meatal unit: infundibulum, middle meatus",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002065.1",
+          "name": "patent right infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.2",
+          "name": "patent left infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.3",
+          "name": "narrowed right infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.4",
+          "name": "narrowed left infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.5",
+          "name": "occluded right infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.6",
+          "name": "occluded left infundibulum",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.7",
+          "name": "patent right middle meatus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.8",
+          "name": "patent left middle meatus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.9",
+          "name": "narrowed right middle meatus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.10",
+          "name": "narrowed left middle meatus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.11",
+          "name": "occluded right middle meatus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002065.12",
+          "name": "occluded left middle meatus",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002066",
+      "name": "Depth of mucosal disease",
+      "description": "greatest depth of mucosal disease measured in the maxillary sinus.  (Often used for insurance purposes where significant is => 4 mm.",
+      "type": "numeric",
+      "min": 0,
+      "max": 15,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002067",
+      "name": "Polyps",
+      "description": "Presence of polyps in various structures",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002067.1",
+          "name": "None",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.2",
+          "name": "nasal cavity",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.3",
+          "name": "right maxillary sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.4",
+          "name": "left maxillary sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.5",
+          "name": "right ethmoid sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.6",
+          "name": "left ethmoid sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.7",
+          "name": "right sphenoid sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.8",
+          "name": "left sphenoid sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.9",
+          "name": "right frontal sinus",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002067.10",
+          "name": "left frontal sinus",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002068",
+      "name": "Sinus variants",
+      "description": "Anatomic variants to the sinuses such as Onodi cells, Haller cells, intra sinus frontal, defects lamina papyracea, ethmoid bulla, concha bullosa",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002068.1",
+          "name": "N/A",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.2",
+          "name": "right haller cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.3",
+          "name": "left haller cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.4",
+          "name": "right onodi cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.5",
+          "name": "left onodi cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.6",
+          "name": "right ethmoid bulla",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.7",
+          "name": "left ethmoid bulla",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.8",
+          "name": "right intrasinus air cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.9",
+          "name": "left intrasinus air cell",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.10",
+          "name": "right concha bullosa",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_002068.11",
+          "name": "left concha bullosa",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID9554",
+          "display": "paransal sinus"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES19",
+      "display": "inflammatory sinus"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID9554",
+      "display": "Paransal Sinus"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Paransal Sinus",
+      "index_codes": []
+    }
+  ]
+}

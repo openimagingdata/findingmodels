@@ -1,0 +1,343 @@
+{
+  "id": "RDES80",
+  "name": "Pulmonary Embolism",
+  "description": "This module describes the Common Data elements and Macros for Pulmonary Embolism",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/80",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Lung",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID1301",
+        "display": "Lung",
+        "url": "http://www.radlex.org/RID/RID1301"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE434",
+      "parent_set": "RDES80",
+      "name": "Clot thickness",
+      "definition": "Slice thickness of the clot on scanner in mm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 150,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE436",
+      "parent_set": "RDES80",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-07"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-02-07"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE80.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE80.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE80.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE80.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE437",
+      "parent_set": "RDES80",
+      "name": "Proximity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-01"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-01"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE80.0",
+            "value": "0",
+            "name": "main pulmonary artery"
+          },
+          {
+            "code": "RDE80.1",
+            "value": "1",
+            "name": "interlobar pulmonary artery"
+          },
+          {
+            "code": "RDE80.2",
+            "value": "2",
+            "name": "lobar pulmonary artery"
+          },
+          {
+            "code": "RDE80.3",
+            "value": "3",
+            "name": "segmental pulmonary artery"
+          },
+          {
+            "code": "RDE80.4",
+            "value": "4",
+            "name": "subsegmental pulmonary artery"
+          },
+          {
+            "code": "RDE80.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE80.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE439",
+      "parent_set": "RDES80",
+      "name": "Lobar artery involvement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-01-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE80.0",
+            "value": "0",
+            "name": "right upper lobe"
+          },
+          {
+            "code": "RDE80.1",
+            "value": "1",
+            "name": "right middle lobe"
+          },
+          {
+            "code": "RDE80.2",
+            "value": "2",
+            "name": "right lower lobe"
+          },
+          {
+            "code": "RDE80.3",
+            "value": "3",
+            "name": "left upper lobe"
+          },
+          {
+            "code": "RDE80.4",
+            "value": "4",
+            "name": "left lower lobe"
+          },
+          {
+            "code": "RDE80.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE80.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE441",
+      "parent_set": "RDES80",
+      "name": "Qanadli score",
+      "definition": "The embolus of each segmental artery was recorded as 1 point, and the total score of the pulmonary emboli above the segmental level was the sum of the segmental artery scores under it.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-26"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 90,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE442",
+      "parent_set": "RDES80",
+      "name": "Mastora score",
+      "definition": "The scoring system includes 5 mediastinal, 6 lobar, and 20 segmental arteries, which were each scored for the degree of luminal obliteration due to embolism on a scale from  0 to 5 (0=0 percent, 1= 1-24 percent, 2= 25-49%, 3= 50-74 percent, 4= 75-99 percent, 5= 100 percent)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 90,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE443",
+      "parent_set": "RDES80",
+      "name": "Total clot volume",
+      "definition": "Fully quantitative measures of total clot volume",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 90,
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": " CDE URL ",
+      "url": "https://radelement.org/"
+    }
+  ]
+}

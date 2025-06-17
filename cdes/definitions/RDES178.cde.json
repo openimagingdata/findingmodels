@@ -1,0 +1,353 @@
+{
+  "id": "RDES178",
+  "name": "Small Bowel Obstruction",
+  "description": "Identifying Small Bowel Obstruction",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2020-10-20"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/178",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1239",
+      "parent_set": "RDES178",
+      "name": "Small bowel diameter",
+      "definition": "Maximum small bowel diameter",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1240",
+      "parent_set": "RDES178",
+      "name": "Transition point location",
+      "definition": "Location of obstruction ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE178.0",
+            "value": "0",
+            "name": "proximal",
+            "definition": "Proximal"
+          },
+          {
+            "code": "RDE178.1",
+            "value": "1",
+            "name": "mid",
+            "definition": "Mid"
+          },
+          {
+            "code": "RDE178.2",
+            "value": "2",
+            "name": "distal",
+            "definition": "Distal"
+          },
+          {
+            "code": "RDE178.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE178.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1242",
+      "parent_set": "RDES178",
+      "name": "Enhancement",
+      "definition": "Small bowel wall enhancement",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-19"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE178.0",
+            "value": "0",
+            "name": "diffuse present"
+          },
+          {
+            "code": "RDE178.1",
+            "value": "1",
+            "name": "partial absent"
+          },
+          {
+            "code": "RDE178.2",
+            "value": "2",
+            "name": "completely absent"
+          },
+          {
+            "code": "RDE178.3",
+            "value": "3",
+            "name": "indeterminate",
+            "definition": "Undetermined"
+          },
+          {
+            "code": "RDE178.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1243",
+      "parent_set": "RDES178",
+      "name": "Small bowel wall thickness",
+      "definition": "Small bowel wall thickness",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1634",
+      "parent_set": "RDES178",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-02-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-02-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE178.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE178.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE178.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE178.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1635",
+      "parent_set": "RDES178",
+      "name": "Severity",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-19"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-19"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE178.0",
+            "value": "0",
+            "name": "partial low grade"
+          },
+          {
+            "code": "RDE178.1",
+            "value": "1",
+            "name": "partial high grade"
+          },
+          {
+            "code": "RDE178.2",
+            "value": "2",
+            "name": "complete obstruction"
+          },
+          {
+            "code": "RDE178.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE178.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1636",
+      "parent_set": "RDES178",
+      "name": "Associated findings",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-15"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-15"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 4,
+        "values": [
+          {
+            "code": "RDE178.0",
+            "value": "0",
+            "name": "ascites"
+          },
+          {
+            "code": "RDE178.1",
+            "value": "1",
+            "name": "pneumatosis"
+          },
+          {
+            "code": "RDE178.2",
+            "value": "2",
+            "name": "pneumoperitoneum"
+          },
+          {
+            "code": "RDE178.3",
+            "value": "3",
+            "name": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

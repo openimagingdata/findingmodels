@@ -1,0 +1,76 @@
+{
+  "oifm_id": "OIFM_CDE_000031",
+  "name": "Flow in the Ascending Aorta",
+  "description": "This module describes the common data elements for flow in the ascending aorta use case",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000209",
+      "name": "Flow rate",
+      "description": "Measurement of net flow volume in the ascending thoracic aorta above the aortic valve mL/sec",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml per sec",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000210",
+      "name": "Gradient",
+      "description": "Pressure of aortic flow Pa",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "Pa",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000211",
+      "name": "Aliasing",
+      "description": "Presenceofaliasing",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID480",
+          "display": "aorta"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES31",
+      "display": "flow in the ascending aorta"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID480",
+      "display": "Aorta"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Aorta",
+      "index_codes": []
+    }
+  ]
+}

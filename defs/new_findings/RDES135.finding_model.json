@@ -1,0 +1,76 @@
+{
+  "oifm_id": "OIFM_CDE_000135",
+  "name": "Myocardial Iron Quantification",
+  "description": "This module describes the Common Data elements and Macros for Myocardial Iron Quantification",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000889",
+      "name": "T2",
+      "description": "T2 value",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "unit": "ms",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001751",
+      "name": "Estimated iron content",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 500,
+      "step": 1,
+      "unit": "mcg/dL",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001752",
+      "name": "Iron content determination",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID1385",
+          "display": "heart"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES135",
+      "display": "myocardial iron quantification"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "Heart"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": []
+    }
+  ]
+}

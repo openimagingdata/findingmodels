@@ -1,0 +1,425 @@
+{
+  "id": "RDES76",
+  "name": "Pneumonia",
+  "description": "This module describes the Common Data elements and Macros for Pneumonia",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/76",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Lung",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID1301",
+        "display": "Lung",
+        "url": "http://www.radlex.org/RID/RID1301"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American College of Radiology - Data Science Institute",
+        "abbreviation": "ACR-DSI",
+        "url": "http://www.acrdsi.org"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE397",
+      "parent_set": "RDES76",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "present"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "indeterminate"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE398",
+      "parent_set": "RDES76",
+      "name": "Pleural fluid",
+      "definition": "pleural fluid (including air/fluid levels)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE400",
+      "parent_set": "RDES76",
+      "name": "Pneumomediastinum",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE401",
+      "parent_set": "RDES76",
+      "name": "Extrapleural air ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE403",
+      "parent_set": "RDES76",
+      "name": "Lobar collapse",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE406",
+      "parent_set": "RDES76",
+      "name": "Pulmonary edema",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE410",
+      "parent_set": "RDES76",
+      "name": "Lung tissue involvement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE76.0",
+            "value": "0",
+            "name": "segmental"
+          },
+          {
+            "code": "RDE76.1",
+            "value": "1",
+            "name": "patchy"
+          },
+          {
+            "code": "RDE76.2",
+            "value": "2",
+            "name": "lobar"
+          },
+          {
+            "code": "RDE76.3",
+            "value": "3",
+            "name": "multilobar"
+          },
+          {
+            "code": "RDE76.4",
+            "value": "4",
+            "name": "diffuse"
+          },
+          {
+            "code": "RDE76.5",
+            "value": "5",
+            "name": "cavitary"
+          },
+          {
+            "code": "RDE76.6",
+            "value": "6",
+            "name": "nodular"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": " CDE URL ",
+      "url": "http://radelement.org/"
+    },
+    {
+      "citation": "Kinetics of the disordered chain-to-beta transformation of poly(L-tyrosine) in aqueous solution.",
+      "doi_url": "https://doi.org/10.1016/0301-4622(76)80002-6",
+      "pubmed_id": "2346"
+    }
+  ]
+}

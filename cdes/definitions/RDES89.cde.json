@@ -1,0 +1,365 @@
+{
+  "id": "RDES89",
+  "name": "Epidural Hematoma",
+  "description": "Epidural Hematoma",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/89",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE521",
+      "parent_set": "RDES89",
+      "name": "Width",
+      "definition": "max width of extra-axial hematoma ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE522",
+      "parent_set": "RDES89",
+      "name": "Volume",
+      "definition": "volume of hematoma",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-12-09"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-12-09"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE524",
+      "parent_set": "RDES89",
+      "name": "Shape",
+      "definition": "shape/configuration of the extra-axial hematoma/collection",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "crescentic"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "lentiform"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE89.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE525",
+      "parent_set": "RDES89",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE526",
+      "parent_set": "RDES89",
+      "name": "Density",
+      "definition": "Density of extra-axial hematoma/collection",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "high homogeneous"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "low homogeneous"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "high heterogeneous"
+          },
+          {
+            "code": "RDE89.3",
+            "value": "3",
+            "name": "low heterogeneous"
+          },
+          {
+            "code": "RDE89.4",
+            "value": "4",
+            "name": "Indeterminate"
+          },
+          {
+            "code": "RDE89.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE527",
+      "parent_set": "RDES89",
+      "name": "Septations",
+      "definition": "presence of exta-axial hematoma septations",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE89.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE528",
+      "parent_set": "RDES89",
+      "name": "Location",
+      "definition": "location of extra-axial hematoma/collection",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-12"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 8,
+        "values": [
+          {
+            "code": "RDE89.0",
+            "value": "0",
+            "name": "frontal"
+          },
+          {
+            "code": "RDE89.1",
+            "value": "1",
+            "name": "parietal"
+          },
+          {
+            "code": "RDE89.2",
+            "value": "2",
+            "name": "temporal"
+          },
+          {
+            "code": "RDE89.3",
+            "value": "3",
+            "name": "occipital"
+          },
+          {
+            "code": "RDE89.4",
+            "value": "4",
+            "name": "parafalcine"
+          },
+          {
+            "code": "RDE89.5",
+            "value": "5",
+            "name": "cerebellar"
+          },
+          {
+            "code": "RDE89.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE89.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

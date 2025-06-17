@@ -1,0 +1,273 @@
+{
+  "id": "RDES88",
+  "name": "Automated Insall-Salvatti Index",
+  "description": "Automated Insall-Salvatti Index (ISI)",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/88",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Knee",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID2743",
+        "display": "Knee",
+        "url": "http://www.radlex.org/RID/RID2743"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE513",
+      "parent_set": "RDES88",
+      "name": "Tendon length",
+      "definition": "Length of the inner border of the patellar tendon from the lower pole of the patella to the notch in the tibial cortex at the superior border of the tibial tubercle. ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE514",
+      "parent_set": "RDES88",
+      "name": "Patella length",
+      "definition": "Oblique line connecting the inner margin of the upper pole of the patella with the most inferior point of the lower pole. This measurement should be obtained in the mid patella.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE515",
+      "parent_set": "RDES88",
+      "name": "ISI measurement",
+      "definition": "Insall - Salvatti Index = patellar tendon length/patellar length",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE518",
+      "parent_set": "RDES88",
+      "name": "Patellar morphology",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE88.0",
+            "value": "0",
+            "name": "elongated inferior pole"
+          },
+          {
+            "code": "RDE88.1",
+            "value": "1",
+            "name": "truncated lower pole"
+          },
+          {
+            "code": "RDE88.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE88.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE519",
+      "parent_set": "RDES88",
+      "name": "Osgood schlatter",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE88.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE88.1",
+            "value": "1",
+            "name": "present",
+            "definition": "present"
+          },
+          {
+            "code": "RDE88.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE88.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE520",
+      "parent_set": "RDES88",
+      "name": "Singing larsen johanssen or periosteal sleeve avulsion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE88.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "absent"
+          },
+          {
+            "code": "RDE88.1",
+            "value": "1",
+            "name": "present",
+            "definition": "present"
+          },
+          {
+            "code": "RDE88.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE88.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

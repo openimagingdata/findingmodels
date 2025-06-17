@@ -1,0 +1,231 @@
+{
+  "id": "RDES194",
+  "name": "Acute Intracranial Hemorrhage",
+  "description": "Critical Test Results - Acute Intracranial Hemorrhage",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2021-10-12"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/194",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1287",
+      "parent_set": "RDES194",
+      "name": "Presence",
+      "definition": "Detection of acute intracranial blood products",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE194.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "Absent"
+          },
+          {
+            "code": "RDE194.1",
+            "value": "1",
+            "name": "present",
+            "definition": "Present"
+          },
+          {
+            "code": "RDE194.2",
+            "value": "2",
+            "name": "indeterminate",
+            "definition": "Indeterminate"
+          },
+          {
+            "code": "RDE194.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1288",
+      "parent_set": "RDES194",
+      "name": "Side ",
+      "definition": "Defines the side of the acute intracranial blood products when present.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE194.0",
+            "value": "0",
+            "name": "left",
+            "definition": "Left"
+          },
+          {
+            "code": "RDE194.1",
+            "value": "1",
+            "name": "right",
+            "definition": "Right"
+          },
+          {
+            "code": "RDE194.2",
+            "value": "2",
+            "name": "bilateral",
+            "definition": "Bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1289",
+      "parent_set": "RDES194",
+      "name": "Size",
+      "definition": "Classify the size of the acute intracranial blood products.\n\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE194.0",
+            "value": "0",
+            "name": "small",
+            "definition": "Small"
+          },
+          {
+            "code": "RDE194.1",
+            "value": "1",
+            "name": "moderate",
+            "definition": "Moderate"
+          },
+          {
+            "code": "RDE194.2",
+            "value": "2",
+            "name": "large",
+            "definition": "Large"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1700",
+      "parent_set": "RDES194",
+      "name": "Location ",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-30"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-30"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE194.0",
+            "value": "0",
+            "name": "epidural"
+          },
+          {
+            "code": "RDE194.1",
+            "value": "1",
+            "name": "subarachnoid"
+          },
+          {
+            "code": "RDE194.2",
+            "value": "2",
+            "name": "intraaxial"
+          },
+          {
+            "code": "RDE194.3",
+            "value": "3",
+            "name": "intraventricular"
+          },
+          {
+            "code": "RDE194.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE194.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,60 @@
+{
+  "oifm_id": "OIFM_CDE_000137",
+  "name": "Cardiac Amyloid",
+  "description": "This module describes the Common Data elements and Macros for Evaluation of Cardiac Amyloid",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000896",
+      "name": "Metastases",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000897",
+      "name": "Dextrocardia",
+      "description": "The heart is positioned on the right side of the chest instead of its normal position on the left side",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000906",
+      "name": "Myocardial Tc-99m PYP cardiac uptake",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000908",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000909",
+      "name": "Type",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES137",
+      "display": "cardiac amyloid"
+    }
+  ],
+  "body_parts": []
+}

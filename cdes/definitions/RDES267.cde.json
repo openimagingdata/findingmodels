@@ -1,0 +1,320 @@
+{
+  "id": "RDES267",
+  "name": "Lung-RADS categorization",
+  "description": "Lung-RADS categorization",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-07-26"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/267",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American College of Radiology",
+        "abbreviation": "ACR",
+        "url": "http://www.acr.org"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Chest Radiology",
+      "abbreviation": "CH"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1702",
+      "parent_set": "RDES267",
+      "name": "Category of findings",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-31"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-31"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE267.0",
+            "value": "0",
+            "name": "Lung-RADS 0: incomplete, locating priors",
+            "definition": "Lung-RADS 0: Incomplete. Prior chest CT examination being located for comparison."
+          },
+          {
+            "code": "RDE267.1",
+            "value": "1",
+            "name": "Lung-RADS 0: incomplete, cannot evaluate",
+            "definition": "Lung-RADS 0: Incomplete. Part or all of lungs cannot be evaluated"
+          },
+          {
+            "code": "RDE267.2",
+            "value": "2",
+            "name": "Lung-RADS 0: incomplete, inflammatory or infectious process",
+            "definition": "Lung-RADS 0: Incomplete. Findings suggestive of an inflammatory or infectious process"
+          },
+          {
+            "code": "RDE267.3",
+            "value": "3",
+            "name": "Lung-RADS 1: negative for lung nodules",
+            "definition": "No lung nodules are found"
+          },
+          {
+            "code": "RDE267.4",
+            "value": "4",
+            "name": "Lung-RADS 1: negative, nodule is benign",
+            "definition": "Benign nodules are found, complete, central, popcorn, concentric ring calcifications or fat-containing nodules"
+          },
+          {
+            "code": "RDE267.5",
+            "value": "5",
+            "name": "Lung-RADS 2: benign, juxtapleural nodule",
+            "definition": "nodule is less than 10 mm (524 mm3 ) mean diameter at baseline or new. It is solid; smooth margins; and oval, lentiform, or triangular shape."
+          },
+          {
+            "code": "RDE267.6",
+            "value": "6",
+            "name": "Lung-RADS 2: benign, solid nodule",
+            "definition": "Nodule is less than 6 mm or 113 mm3  at baseline OR  new, less than  4 mm or 34 mm3"
+          },
+          {
+            "code": "RDE267.7",
+            "value": "7",
+            "name": "Lung-RADS 2: benign,  part solid nodule",
+            "definition": "less than 6 mm total mean diameter or 113 mm3 at baseline"
+          },
+          {
+            "code": "RDE267.8",
+            "value": "8",
+            "name": "Lung-RADS 2: benign, non-solid nodule",
+            "definition": "less than 30 mm or 14,137 mm3  at baseline, new, or growing OR greater of equals to 30 mm or 14,137 mm3 . Stable or slowly growing."
+          },
+          {
+            "code": "RDE267.9",
+            "value": "9",
+            "name": "Lung-RADS 2: benign, airway nodule",
+            "definition": "subsegmental - at baseline, new, or stable"
+          },
+          {
+            "code": "RDE267.10",
+            "value": "0",
+            "name": "Lung-RADS 2: category 3 or 4B, benign, after diagnostic workup",
+            "definition": "Category 3 lesion that is stable or decreased in size at 6-month follow-up CT OR Category 4B lesion proven to be benign in etiology following appropriate diagnostic workup"
+          },
+          {
+            "code": "RDE267.11",
+            "value": "1",
+            "name": "Lung-RADS 3: probably benign, solid nodule",
+            "definition": "more of equal to 6 mm to less than 8 mm or more or equal to 113 to less than 268 mm3  at baseline OR  New 4 mm to less than 6 mm  or 34 to less than 113 mm3"
+          },
+          {
+            "code": "RDE267.12",
+            "value": "2",
+            "name": "Lung-RADS 3: probably benign, part solid nodule",
+            "definition": "more of equal to 6 mm total mean diameter more or equal to 113 mm3  with solid component less than 6 mm or less than 113 mm3  at baseline OR   New less than 6 mm total mean diameter or less than 113 mm3"
+          },
+          {
+            "code": "RDE267.13",
+            "value": "3",
+            "name": "Lung-RADS 3: probably benign, non-solid nodule",
+            "definition": "more of equal to 30 mm or more or equal to 14,137 mm3 at baseline or new"
+          },
+          {
+            "code": "RDE267.14",
+            "value": "4",
+            "name": "Lung-RADS 3: probably benign, atypical pulmonary cyst",
+            "definition": "Growing cystic component (mean diameter) of a thick-walled cyst"
+          },
+          {
+            "code": "RDE267.15",
+            "value": "5",
+            "name": "Lung-RADS 3: category 4A, probably benign, after diagnostic workup",
+            "definition": "Category 4A lesion that is stable or decreased in size at 3-month follow-up CT (excluding airway nodules)"
+          },
+          {
+            "code": "RDE267.16",
+            "value": "6",
+            "name": "Lung-RADS 4A: suspicious, solid nodule",
+            "definition": "more or equal to 8 to less than 15 mm or more or equal to 268 to less than 1,767 mm3 at baseline OR  Growing less than 8 mm or less than 268 mm3 OR  New 6 to less than 8 mm 113 to less than 268 mm3"
+          },
+          {
+            "code": "RDE267.17",
+            "value": "7",
+            "name": "Lung-RADS 4A: suspicious, part solid nodule",
+            "definition": "more or equal to 6 mm total mean diameter or more or equal to 113 mm3  with solid component more or equal to 6 mm to less than 8 mm or more or equal to 113 to less than 268 mm3  at baseline OR  New or growing less than 4 mm or less than 34 mm3  solid component"
+          },
+          {
+            "code": "RDE267.18",
+            "value": "8",
+            "name": "Lung-RADS 4A: suspicious, airway nodule",
+            "definition": "Airway nodule, segmental or more proximal - at baseline"
+          },
+          {
+            "code": "RDE267.19",
+            "value": "9",
+            "name": "Lung-RADS 4A: suspicious, atypical pulmonary cyst",
+            "definition": "Thick-walled cyst OR Multilocular cyst at baseline OR Thin- or thick-walled cyst that becomes multilocular"
+          },
+          {
+            "code": "RDE267.20",
+            "value": "0",
+            "name": "Lung-RADS 4B: very suspicious, airway nodule",
+            "definition": ", segmental or more proximal - stable or growing"
+          },
+          {
+            "code": "RDE267.21",
+            "value": "1",
+            "name": "Lung-RADS 4B: very suspicious, solid nodule",
+            "definition": "more of equal to 15 mm or more or equal to 1767 mm3 at baseline OR  New or growing more of equal to 8 mm or more or equal to 268 mm3"
+          },
+          {
+            "code": "RDE267.22",
+            "value": "2",
+            "name": "Lung-RADS 4B: very suspicious, part solid nodule",
+            "definition": "Solid component more or equal to 8 mm more or equal to 268 mm3  at baseline OR  New or growing more or equal to 4 mm or more or equal to 34 mm?  solid component"
+          },
+          {
+            "code": "RDE267.23",
+            "value": "3",
+            "name": "Lung-RADS 4B: very suspicious, atypical pulmonary cyst",
+            "definition": "Thick-walled cyst with growing wall thickness or nodularity OR  Growing multilocular cyst (mean diameter) OR  Multilocular cyst with increased loculation or new or increased opacity (nodular, ground glass, or consolidation)"
+          },
+          {
+            "code": "RDE267.24",
+            "value": "4",
+            "name": "Lung-RADS 4B: very suspicious, slow growing solid or part solid nodule",
+            "definition": "Slow growing solid or part solid nodule e that demonstrates growth over multiple screening exams"
+          },
+          {
+            "code": "RDE267.25",
+            "value": "5",
+            "name": "Lung-RADS 4X: category 3 or 4, increased suspicion for lung cancer",
+            "definition": "Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1703",
+      "parent_set": "RDES267",
+      "name": "Baseline study",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-31"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-31"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE267.0",
+            "value": "0",
+            "name": "yes"
+          },
+          {
+            "code": "RDE267.1",
+            "value": "1",
+            "name": "no"
+          },
+          {
+            "code": "RDE267.2",
+            "value": "2",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1704",
+      "parent_set": "RDES267",
+      "name": "Significant finding",
+      "definition": "A specific finding may add d to category 0-4 for clinically significant or potentially clinically significant findings unrelated to lung cancer",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-05-31"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-05-31"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE267.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE267.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE267.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE267.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

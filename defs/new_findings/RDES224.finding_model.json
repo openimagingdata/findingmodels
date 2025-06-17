@@ -1,0 +1,105 @@
+{
+  "oifm_id": "OIFM_CDE_000224",
+  "name": "CT Perfusion Stroke",
+  "description": "CT Perfusion Stroke",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001458",
+      "name": "Intracerebral circulation involved",
+      "description": "Which circulation has a perfusion abnormality?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001459",
+      "name": "Perfusion mismatch",
+      "description": "DIscordant or equivalent volumes of involved penumbra and ischemic core.  Expressed as none, left MCA or right MCA territory.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001460",
+      "name": "Ischemic core volume",
+      "description": "The volume of brain on CBF maps with less than 30% cerebral blood flow indicating ischemic core",
+      "type": "numeric",
+      "min": 0,
+      "max": 500,
+      "step": 1,
+      "unit": "cc",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001461",
+      "name": "Ischemic penumbra volume",
+      "description": "Volume of brain where the maximum transit time exceeds 6 seconds indicative of ischemic penumbra",
+      "type": "numeric",
+      "min": 0,
+      "max": 500,
+      "step": 1,
+      "unit": "cc",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001462",
+      "name": "Mismatch volume",
+      "description": "The difference in brain volume between the ischemic penumbra (Tmax > 6 sec) and the ischemic core (CBF <30%)",
+      "type": "numeric",
+      "min": 0,
+      "max": 500,
+      "step": 1,
+      "unit": "cc",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001995",
+      "name": "Poor collateral perfusion volume",
+      "description": "(Tmax > 10 s) ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001996",
+      "name": "Hypoperfusion index",
+      "description": "(Tmax > 10 s/Tmax > 6 s) ",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001997",
+      "name": "Mismatch ratio",
+      "description": "Mismatch ratio is defined as the perfusion deficit divide by the infarct core volume (=volume of tissue with Tmax >6 s/volume of tissue with rCBF <30%).",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES224",
+      "display": "ct perfusion stroke"
+    }
+  ],
+  "body_parts": []
+}

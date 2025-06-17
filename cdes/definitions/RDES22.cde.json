@@ -1,0 +1,851 @@
+{
+  "id": "RDES22",
+  "name": "CT Stroke",
+  "description": "This module describes the Common Data elements and Macros for CT stroke",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-20"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/22",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID6434",
+        "display": "Brain",
+        "url": "http://www.radlex.org/RID/RID6434"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Sameer Ansari MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE159",
+      "parent_set": "RDES22",
+      "name": "Hyperacute signs",
+      "definition": "Hyperacute signs",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "no"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present",
+            "definition": "yes"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE160",
+      "parent_set": "RDES22",
+      "name": "Location",
+      "definition": "Location",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "right frontal",
+            "definition": "right frontal"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "right temporal",
+            "definition": "right temporal"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "right parietal",
+            "definition": "right parietal"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "right occipital",
+            "definition": "right occipital"
+          },
+          {
+            "code": "RDE22.4",
+            "value": "4",
+            "name": "left frontal",
+            "definition": "left frontal"
+          },
+          {
+            "code": "RDE22.5",
+            "value": "5",
+            "name": "left temporal",
+            "definition": "left temporal"
+          },
+          {
+            "code": "RDE22.6",
+            "value": "6",
+            "name": "left parietal",
+            "definition": "left parietal"
+          },
+          {
+            "code": "RDE22.7",
+            "value": "7",
+            "name": "left occipital",
+            "definition": "left occipital"
+          },
+          {
+            "code": "RDE22.8",
+            "value": "8",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.9",
+            "value": "9",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE161",
+      "parent_set": "RDES22",
+      "name": "Vascular territory",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "ACA"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "MCA"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "PCA"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "SCA"
+          },
+          {
+            "code": "RDE22.4",
+            "value": "4",
+            "name": "AICA"
+          },
+          {
+            "code": "RDE22.5",
+            "value": "5",
+            "name": "PICA"
+          },
+          {
+            "code": "RDE22.6",
+            "value": "6",
+            "name": "basil perforator"
+          },
+          {
+            "code": "RDE22.7",
+            "value": "7",
+            "name": "thalamo perforator"
+          },
+          {
+            "code": "RDE22.8",
+            "value": "8",
+            "name": "antchoroidal"
+          },
+          {
+            "code": "RDE22.9",
+            "value": "9",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.10",
+            "value": "0",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE162",
+      "parent_set": "RDES22",
+      "name": "Hemorrhagic conversion",
+      "definition": "Presence of hemorrhagic conversion",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE163",
+      "parent_set": "RDES22",
+      "name": "Mass effect",
+      "definition": "Mass effect",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE164",
+      "parent_set": "RDES22",
+      "name": "Vascular pattern",
+      "definition": "Vascular mechanism, pattern",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "embolic",
+            "definition": "Embolic vascular pattern"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "perforator"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "borderzone ischemia",
+            "definition": "Borderzone ischemia"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE165",
+      "parent_set": "RDES22",
+      "name": "Midline shift",
+      "definition": "Midline shift in mm",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "max": 1,
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE166",
+      "parent_set": "RDES22",
+      "name": "Herniation",
+      "definition": "Presence of herniation",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "subfalcine"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "transtentorial"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE167",
+      "parent_set": "RDES22",
+      "name": "Hyperdense vessel",
+      "definition": "Presence of hyperdense vessel",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE168",
+      "parent_set": "RDES22",
+      "name": "Hyperdense sign",
+      "definition": "Presence of hyperdense sign",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "middle cerebral"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "anteriorcerebral"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "intrasylvian cortical"
+          },
+          {
+            "code": "RDE22.4",
+            "value": "4",
+            "name": "basilar artery"
+          },
+          {
+            "code": "RDE22.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE169",
+      "parent_set": "RDES22",
+      "name": "Arterial calcification",
+      "definition": "Presence of arterial calcification",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE170",
+      "parent_set": "RDES22",
+      "name": "Venous thrombus",
+      "definition": "Presence of venous thrombus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE171",
+      "parent_set": "RDES22",
+      "name": "Sinus location",
+      "definition": "Sinus location",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "dural venous sinus"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "cortical vein"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE172",
+      "parent_set": "RDES22",
+      "name": "Hydrocephalus",
+      "definition": "Presence of hydrocephalus",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE22.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE22.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE22.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE22.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE173",
+      "parent_set": "RDES22",
+      "name": "ASPECTS classification",
+      "definition": "ASPECTS classification on a scale from 1 to 10",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-20"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "unit": ""
+      }
+    }
+  ],
+  "references": []
+}

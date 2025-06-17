@@ -1,0 +1,350 @@
+{
+  "id": "RDES104",
+  "name": "Identification and Characterization of Vena Cava Filters",
+  "description": "Identification and Characterization of Vena Cava Filters",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/104",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Aorta",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID480",
+        "display": "Aorta",
+        "url": "http://www.radlex.org/RID/RID480"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE646",
+      "parent_set": "RDES104",
+      "name": "Filter count",
+      "definition": "Number of filter devices ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2025-02-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE649",
+      "parent_set": "RDES104",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-01-26"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-01-26"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE104.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE104.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE104.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE104.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE652",
+      "parent_set": "RDES104",
+      "name": "Location",
+      "definition": "Anatomic location of filter(s) or filter components",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-05"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2025-02-05"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 22,
+        "values": [
+          {
+            "code": "RDE104.0",
+            "value": "0",
+            "name": "infrarenal vena cava"
+          },
+          {
+            "code": "RDE104.1",
+            "value": "1",
+            "name": "suprarenal vena cava",
+            "definition": "suprarenal vena cava"
+          },
+          {
+            "code": "RDE104.2",
+            "value": "2",
+            "name": "right common iliac vein"
+          },
+          {
+            "code": "RDE104.3",
+            "value": "3",
+            "name": "left common iliac vein"
+          },
+          {
+            "code": "RDE104.4",
+            "value": "4",
+            "name": "right testicular vein"
+          },
+          {
+            "code": "RDE104.5",
+            "value": "5",
+            "name": "left testicular vein"
+          },
+          {
+            "code": "RDE104.6",
+            "value": "6",
+            "name": "right ovarian vein"
+          },
+          {
+            "code": "RDE104.7",
+            "value": "7",
+            "name": "left ovarian vein"
+          },
+          {
+            "code": "RDE104.8",
+            "value": "8",
+            "name": "right renal vein"
+          },
+          {
+            "code": "RDE104.9",
+            "value": "9",
+            "name": "left renal vein"
+          },
+          {
+            "code": "RDE104.10",
+            "value": "0",
+            "name": "superior vena cava"
+          },
+          {
+            "code": "RDE104.11",
+            "value": "1",
+            "name": "right atrium"
+          },
+          {
+            "code": "RDE104.12",
+            "value": "2",
+            "name": "right ventricle"
+          },
+          {
+            "code": "RDE104.13",
+            "value": "3",
+            "name": "left ventricle"
+          },
+          {
+            "code": "RDE104.14",
+            "value": "4",
+            "name": "interventricular septum"
+          },
+          {
+            "code": "RDE104.15",
+            "value": "5",
+            "name": "main pulmonary artery"
+          },
+          {
+            "code": "RDE104.16",
+            "value": "6",
+            "name": "right main pulmonary artery"
+          },
+          {
+            "code": "RDE104.17",
+            "value": "7",
+            "name": "left main pulmonary artery"
+          },
+          {
+            "code": "RDE104.18",
+            "value": "8",
+            "name": "segmental right pulmonary artery"
+          },
+          {
+            "code": "RDE104.19",
+            "value": "9",
+            "name": "segmental left pulmonary artery"
+          },
+          {
+            "code": "RDE104.20",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE104.21",
+            "value": "1",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE653",
+      "parent_set": "RDES104",
+      "name": "Complications",
+      "definition": "Radiographically evident filter complications",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2025-02-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2025-02-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 13,
+        "values": [
+          {
+            "code": "RDE104.0",
+            "value": "0",
+            "name": "absent",
+            "definition": "none"
+          },
+          {
+            "code": "RDE104.1",
+            "value": "1",
+            "name": "thrombosis"
+          },
+          {
+            "code": "RDE104.2",
+            "value": "2",
+            "name": "tilt"
+          },
+          {
+            "code": "RDE104.3",
+            "value": "3",
+            "name": "perforation"
+          },
+          {
+            "code": "RDE104.4",
+            "value": "4",
+            "name": "fracture"
+          },
+          {
+            "code": "RDE104.5",
+            "value": "5",
+            "name": "migration"
+          },
+          {
+            "code": "RDE104.6",
+            "value": "6",
+            "name": "pulmonary embolism"
+          },
+          {
+            "code": "RDE104.7",
+            "value": "7",
+            "name": "infection"
+          },
+          {
+            "code": "RDE104.8",
+            "value": "8",
+            "name": "malposition",
+            "definition": "malposition (e.g., proximal, distal)"
+          },
+          {
+            "code": "RDE104.9",
+            "value": "9",
+            "name": "incomplete deployment"
+          },
+          {
+            "code": "RDE104.10",
+            "value": "0",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE104.11",
+            "value": "1",
+            "name": "unknown"
+          },
+          {
+            "code": "RDE104.12",
+            "value": "2",
+            "name": "other"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

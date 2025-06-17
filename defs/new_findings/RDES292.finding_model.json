@@ -1,0 +1,72 @@
+{
+  "oifm_id": "OIFM_CDE_000292",
+  "name": "Hepatic Tumor Volumes",
+  "description": "Hepatic Volumes",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001275",
+      "name": "Liver volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001276",
+      "name": "Right  lobe volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001277",
+      "name": "Left lobe volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001278",
+      "name": "Tumor volume",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002069",
+      "name": "Couinad's hepatic segments I through VIII  ",
+      "description": "Select all of the quadrants affected by the tumor",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES292",
+      "display": "hepatic tumor volumes"
+    }
+  ],
+  "body_parts": []
+}

@@ -1,0 +1,369 @@
+{
+  "id": "RDES285",
+  "name": "Breast Architectural Distortion",
+  "description": "Breast Architectural Distortion",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-12-12"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/285",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1945",
+      "parent_set": "RDES285",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE285.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE285.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE285.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE285.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1946",
+      "parent_set": "RDES285",
+      "name": "Region",
+      "definition": "Region of breast.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-20"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-20"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE285.0",
+            "value": "0",
+            "name": "axilla",
+            "definition": "The axilla (also, armpit, underarm or oxter) is the area on the human body directly under the joint where the arm connects to the shoulder."
+          },
+          {
+            "code": "RDE285.1",
+            "value": "1",
+            "name": "axillary tail"
+          },
+          {
+            "code": "RDE285.2",
+            "value": "2",
+            "name": "axilla one",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level I is the bottom level, below the lower edge of the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE285.3",
+            "value": "3",
+            "name": "axilla two",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area):Level II is lying underneath the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE285.4",
+            "value": "4",
+            "name": "axilla three",
+            "definition": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level III is above the pectoralis minor muscle."
+          },
+          {
+            "code": "RDE285.5",
+            "value": "5",
+            "name": "inframammary fold",
+            "definition": "The mass/lesion is located in the inframammary crease where the lower boundary of the breast and the chest meet."
+          },
+          {
+            "code": "RDE285.6",
+            "value": "6",
+            "name": "in skin",
+            "definition": "Located within skin."
+          },
+          {
+            "code": "RDE285.7",
+            "value": "7",
+            "name": "central to nipple",
+            "definition": "Central to the nipple (central portion of the breast-behind the nipple)."
+          },
+          {
+            "code": "RDE285.8",
+            "value": "8",
+            "name": "superior"
+          },
+          {
+            "code": "RDE285.9",
+            "value": "9",
+            "name": "inferior"
+          },
+          {
+            "code": "RDE285.10",
+            "value": "0",
+            "name": "lateral"
+          },
+          {
+            "code": "RDE285.11",
+            "value": "1",
+            "name": "medial"
+          },
+          {
+            "code": "RDE285.12",
+            "value": "2",
+            "name": "retroareolar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1947",
+      "parent_set": "RDES285",
+      "name": "Quadrant",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE285.0",
+            "value": "0",
+            "name": "lower inner"
+          },
+          {
+            "code": "RDE285.1",
+            "value": "1",
+            "name": "lower outer"
+          },
+          {
+            "code": "RDE285.2",
+            "value": "2",
+            "name": "upper inner"
+          },
+          {
+            "code": "RDE285.3",
+            "value": "3",
+            "name": "upper outer"
+          },
+          {
+            "code": "RDE285.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE285.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1948",
+      "parent_set": "RDES285",
+      "name": "Side",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE285.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE285.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE285.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1949",
+      "parent_set": "RDES285",
+      "name": "Landmark",
+      "definition": "Breast body landmark",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-14"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE285.0",
+            "value": "0",
+            "name": "nipple"
+          },
+          {
+            "code": "RDE285.1",
+            "value": "1",
+            "name": "chest wall"
+          },
+          {
+            "code": "RDE285.2",
+            "value": "2",
+            "name": "skin structure"
+          },
+          {
+            "code": "RDE285.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE285.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1950",
+      "parent_set": "RDES285",
+      "name": "Distance from landmark",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-12"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-12-12"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,298 @@
+{
+  "id": "RDES85",
+  "name": "Quantification of Epicardial Adipose Tissue on CT",
+  "description": "Quantification of epicardial adipose tissue on CT",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-11-17"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/85",
+  "index_codes": [],
+  "body_parts": [
+    {
+      "name": "Heart",
+      "index_codes": {
+        "system": "RADLEX",
+        "code": "RID1385",
+        "display": "Heart",
+        "url": "http://www.radlex.org/RID/RID1385"
+      }
+    }
+  ],
+  "contributors": {
+    "people": [
+      {
+        "name": "Alkasab, Tarik",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "American College of Radiology",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE483",
+      "parent_set": "RDES85",
+      "name": "Volume",
+      "definition": "Volume of epicardial adipose tissue",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm3"
+      }
+    },
+    {
+      "id": "RDE484",
+      "parent_set": "RDES85",
+      "name": "Average attenuation",
+      "definition": "average attenuation of the epicardial adipose tissue",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE485",
+      "parent_set": "RDES85",
+      "name": "Segmentation",
+      "definition": "segmentation of the epicardial adipose tissue",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE486",
+      "parent_set": "RDES85",
+      "name": "Size",
+      "definition": "size of EAT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE487",
+      "parent_set": "RDES85",
+      "name": "BMI",
+      "definition": "weight in kilograms divided by height in meters squared (pounds by inches squared)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE488",
+      "parent_set": "RDES85",
+      "name": "Cardiac height",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE491",
+      "parent_set": "RDES85",
+      "name": "Slice thickness",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "step": 1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE497",
+      "parent_set": "RDES85",
+      "name": "Location",
+      "definition": "location of the EAT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-17"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-11-17"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE85.0",
+            "value": "0",
+            "name": "surrounding the heart"
+          },
+          {
+            "code": "RDE85.1",
+            "value": "1",
+            "name": "more prominent at the base and the apex"
+          },
+          {
+            "code": "RDE85.2",
+            "value": "2",
+            "name": "atrioventricular sulci"
+          },
+          {
+            "code": "RDE85.3",
+            "value": "3",
+            "name": "entire surface of the right ventricle"
+          },
+          {
+            "code": "RDE85.4",
+            "value": "4",
+            "name": "around the great coronary vessels with their origins"
+          },
+          {
+            "code": "RDE85.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE85.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

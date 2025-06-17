@@ -1,0 +1,72 @@
+{
+  "oifm_id": "OIFM_CDE_000274",
+  "name": "Pituitary Post-Operative Sella",
+  "description": "Pituitary Post-Operative Sella",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001791",
+      "name": "Surgical approach",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001792",
+      "name": "Closure",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001793",
+      "name": " Vascularized nasoseptal flap",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001794",
+      "name": "Reconstruction failure",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001795",
+      "name": "Amount of residual disease",
+      "description": "Percentage of the pre-operative volume",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "%",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001796",
+      "name": "Location of residual disease",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES274",
+      "display": "pituitary post-operative sella"
+    }
+  ],
+  "body_parts": []
+}

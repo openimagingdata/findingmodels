@@ -1,0 +1,66 @@
+{
+  "oifm_id": "OIFM_CDE_000183",
+  "name": "Hemorrhagic Brain Contusion",
+  "description": "Hemorrhagic Brain Contusion",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000525",
+      "name": "Side",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001263",
+      "name": "Presence",
+      "description": "Hemorrhagic Brain Contusion detection",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001264",
+      "name": "Quantity",
+      "description": "Number of brain contusions",
+      "type": "numeric",
+      "min": 0,
+      "max": 20,
+      "step": 0.1,
+      "unit": "N/A",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001265",
+      "name": "Size",
+      "description": "Size of brain contusion",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001266",
+      "name": "Location",
+      "description": "Location of brain contusion",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES183",
+      "display": "hemorrhagic brain contusion"
+    }
+  ],
+  "body_parts": []
+}

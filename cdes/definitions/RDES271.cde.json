@@ -1,0 +1,321 @@
+{
+  "id": "RDES271",
+  "name": "Thoracolumbar Spine AO Injury Classification on CT (TLICS)",
+  "description": "Thoracolumbar Spine AO Injury Classification on CT (TLICS)",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2023-10-09"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/271",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Gibbs, Wende",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Singhal, Aparna",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Emergency Radiology",
+      "abbreviation": "ER"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1753",
+      "parent_set": "RDES271",
+      "name": "Levels of injury",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-11"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-10-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE271.0",
+            "value": "0",
+            "name": "T1"
+          },
+          {
+            "code": "RDE271.1",
+            "value": "1",
+            "name": "T2"
+          },
+          {
+            "code": "RDE271.2",
+            "value": "2",
+            "name": "T3"
+          },
+          {
+            "code": "RDE271.3",
+            "value": "3",
+            "name": "T4"
+          },
+          {
+            "code": "RDE271.4",
+            "value": "4",
+            "name": "T5"
+          },
+          {
+            "code": "RDE271.5",
+            "value": "5",
+            "name": "T6"
+          },
+          {
+            "code": "RDE271.6",
+            "value": "6",
+            "name": "T7"
+          },
+          {
+            "code": "RDE271.7",
+            "value": "7",
+            "name": "T8"
+          },
+          {
+            "code": "RDE271.8",
+            "value": "8",
+            "name": "T9"
+          },
+          {
+            "code": "RDE271.9",
+            "value": "9",
+            "name": "T10"
+          },
+          {
+            "code": "RDE271.10",
+            "value": "0",
+            "name": "T11"
+          },
+          {
+            "code": "RDE271.11",
+            "value": "1",
+            "name": "T12"
+          },
+          {
+            "code": "RDE271.12",
+            "value": "2",
+            "name": "L1"
+          },
+          {
+            "code": "RDE271.13",
+            "value": "3",
+            "name": "L2"
+          },
+          {
+            "code": "RDE271.14",
+            "value": "4",
+            "name": "L3"
+          },
+          {
+            "code": "RDE271.15",
+            "value": "5",
+            "name": "L4"
+          },
+          {
+            "code": "RDE271.16",
+            "value": "6",
+            "name": "L5"
+          },
+          {
+            "code": "RDE271.17",
+            "value": "7",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE271.18",
+            "value": "8",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1754",
+      "parent_set": "RDES271",
+      "name": "Type of injury",
+      "definition": "Type A: Compression A0 Minor, nonstructural (TP or spinous process) A1 wedge, no post wall A2 split, both endplates A3 partial burst-post wall + 1 endplate A4 burst - post wall + both endplates Type B: Tension band injury B1 Transosseous tension band (Chance fx) B2 Posterior tension band (hyperflexion) B3 Anterior tension band (hyperextension) Type C: Subluxation, translation",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-21"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE271.0",
+            "value": "0",
+            "name": "A0",
+            "definition": "minor injury not affecting structural integrity of spinal column"
+          },
+          {
+            "code": "RDE271.1",
+            "value": "1",
+            "name": "A1",
+            "definition": "one endplate"
+          },
+          {
+            "code": "RDE271.2",
+            "value": "2",
+            "name": "A2",
+            "definition": "both endplates"
+          },
+          {
+            "code": "RDE271.3",
+            "value": "3",
+            "name": "A3",
+            "definition": "partial burst - one endplate and posterior wall"
+          },
+          {
+            "code": "RDE271.4",
+            "value": "5",
+            "name": "A4",
+            "definition": "compression/Burst - both endplates and posterior wall"
+          },
+          {
+            "code": "RDE271.5",
+            "value": "6",
+            "name": "B2",
+            "definition": "posterior, osseous and ligamentous"
+          },
+          {
+            "code": "RDE271.6",
+            "value": "7",
+            "name": "B3",
+            "definition": "anterior"
+          },
+          {
+            "code": "RDE271.7",
+            "value": "8",
+            "name": "C",
+            "definition": "subluxation"
+          },
+          {
+            "code": "RDE271.8",
+            "value": "9",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE271.9",
+            "value": "0",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1755",
+      "parent_set": "RDES271",
+      "name": "Modifiers",
+      "definition": " M1 Indeterminate injury to tension band based on imaging M2 Patient specific comorbidity (e.g. Ankylosing spondylitis, burns, etc...)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-11-21"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-11-21"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE271.0",
+            "value": "1",
+            "name": "M1",
+            "definition": "indeterminate injury to tension band"
+          },
+          {
+            "code": "RDE271.1",
+            "value": "2",
+            "name": "M2",
+            "definition": "Patient specific comorbidity (ankylosing bone disease)"
+          },
+          {
+            "code": "RDE271.2",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE271.3",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "citation": "AOSpine thoracolumbar spine injury classification system: fracture description, neurological status, and key modifiers.",
+      "doi_url": "https://doi.org/10.1097/BRS.0b013e3182a8a381",
+      "pubmed_id": "23970107"
+    }
+  ]
+}

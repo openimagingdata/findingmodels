@@ -1,0 +1,126 @@
+{
+  "oifm_id": "OIFM_CDE_000024",
+  "name": "Cervical Lymph Nodes",
+  "description": "This module describes the Common Data elements and Macros for Lymph Nodes",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000185",
+      "name": "Number of nodes",
+      "description": "Number of nodes",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000186",
+      "name": "Side",
+      "description": "Laterality",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000187",
+      "name": "Size of largest cluster",
+      "description": "\nUse longest dimension (improved clinical-radiologic correlation and adherence to staging systems)",
+      "type": "numeric",
+      "min": 1,
+      "max": 1000,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000188",
+      "name": "Levels involved",
+      "description": "Which levels involved?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000189",
+      "name": "ECS ",
+      "description": "ECS ",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000190",
+      "name": "Pattern of enhancement",
+      "description": "Threshold: 20% or more cystic by volume",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000191",
+      "name": "Drainage pattern",
+      "description": "Are these nodes in expected drainage pattern?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000192",
+      "name": "Invasion of critical structures ",
+      "description": "Invasion of critical structures (carotid, prevertebral)",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000193",
+      "name": "Degree of certainty for involvement (NIRADS)",
+      "description": "Degree of certainty for involvement (NIRADS) - 1 = negative; 2 = low likelihood; 3 = high likelihood; 4 = definite disease",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002035",
+      "name": "Non-zone nodes",
+      "description": "Non-zone nodes (RP, facial, parotid)",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002036",
+      "name": "Degree of certainty (ENE)",
+      "description": "Read with high specificity - only call \"definite\" if unequivocal",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002052",
+      "name": "Levels involved",
+      "description": "Which levels involved?",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES24",
+      "display": "cervical lymph nodes"
+    }
+  ],
+  "body_parts": []
+}

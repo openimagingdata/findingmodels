@@ -1,0 +1,220 @@
+{
+  "oifm_id": "OIFM_CDE_000061",
+  "name": "Pulmonary Artery Macros",
+  "description": "This module describes the common data elements for flow in the pulmonary artery use case",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000297",
+      "name": "Flow rate",
+      "description": "Measurement of net flow volume in the pulmonary artery above the aortic valve  (mL/sec)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "ml per sec",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000298",
+      "name": "Maximum flow velocity",
+      "description": "Measurement of maximum flow velocity in the pulmonary artery above the aortic valve (cm/sec)",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "cm per sec",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001740",
+      "name": "Main artery diameter",
+      "description": "Diameter of main pulmonary artery in mm, value step 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001741",
+      "name": "Left artery diameter",
+      "description": "Diameter of left pulmonary artery in mm, value step 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001742",
+      "name": "Right artery diameter",
+      "description": "Right pulmonary artery diameter in mm, step value 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001743",
+      "name": "Diameter ratio",
+      "description": "Main pulmonary artery to aortic diameter ratio MPAAo, value step 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001744",
+      "name": "Flow ratio",
+      "description": "Measurement of Qp-Qs ratio using aortic and pulmonary flow measurements, value step 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001745",
+      "name": "Trunk diameter",
+      "description": "Measure pulmonary artery trunk dimensions, value step 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001746",
+      "name": "Segmental artery diameter",
+      "description": "Defines dimensions of lobar and segmental pulmonary arteries, step value 0.1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001747",
+      "name": "Measurements evaluation",
+      "description": "Compare pulmonary artery measurements to reference values to determine status.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001748",
+      "name": "Lobar artery diameter",
+      "description": "Value step 1",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID874",
+          "display": "pulmonary artery"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES61",
+      "display": "pulmonary artery macros"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID874",
+      "display": "Pulmonary artery"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Pulmonary Artery",
+      "index_codes": []
+    }
+  ]
+}

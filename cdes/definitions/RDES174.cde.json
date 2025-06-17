@@ -1,0 +1,770 @@
+{
+  "id": "RDES174",
+  "name": "Morphometric CT Quantification of Liver, Spleen, and Abdominal Fat",
+  "description": "Volumetry and attenuation analysis of liver, spleen, visceral fat, and subcutaneous fat from CT images",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2023-05-22"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/174",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Kahn, Charles",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Gastrointestinal Radiology",
+      "abbreviation": "GI"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1193",
+      "parent_set": "RDES174",
+      "name": "Liver-spleen CT attenuation difference",
+      "definition": "Difference in mean attenuation of the liver and spleen on non-contrast CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID32692",
+          "display": "fatty liver",
+          "url": "http://www.radlex.org/RID/RID32692"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1194",
+      "parent_set": "RDES174",
+      "name": "Liver noncontrast CT attenuation mean",
+      "definition": "Mean attenuation of all voxels of the segmented liver on non-contrast CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1195",
+      "parent_set": "RDES174",
+      "name": "Liver noncontrast CT attenuation median",
+      "definition": "Median attenuation of all voxels of the segmented liver on non-contrast CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1196",
+      "parent_set": "RDES174",
+      "name": "Liver noncontrast CT attenuation maximum",
+      "definition": "Maximum attenuation of all voxels of the segmented liver on non-contrast CT ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1197",
+      "parent_set": "RDES174",
+      "name": "Liver noncontrast CT attenuation minimum",
+      "definition": "Minimum attenuation of all voxels of the segmented liver on non-contrast CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "integer_value": {
+        "min": -1024,
+        "max": 1024,
+        "step": 1,
+        "unit": "HU"
+      }
+    },
+    {
+      "id": "RDE1198",
+      "parent_set": "RDES174",
+      "name": "Liver noncontrast CT attenuation skewness",
+      "definition": "Skewness of attenuation of all voxels of the segmented liver on non-contrast CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1199",
+      "parent_set": "RDES174",
+      "name": "Liver elongation",
+      "definition": "The elongation of the livers shape computed as the ratio of the largest principal moment to the smallest principal moment",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1200",
+      "parent_set": "RDES174",
+      "name": "Liver Feret diameter",
+      "definition": "The diameter in physical units cm of the sphere that includes all the segmented liver",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1201",
+      "parent_set": "RDES174",
+      "name": "Liver ellipsoid major axis length",
+      "definition": "Length of the major axis of the ellipsoid with the same volume as the liver IBSITDIC",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1202",
+      "parent_set": "RDES174",
+      "name": "Liver ellipsoid minor axis length",
+      "definition": "Length of the minor axis of the ellipsoid of the same volume as the liver IBSIPV91",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1213",
+      "parent_set": "RDES174",
+      "name": "Spleen elongation",
+      "definition": "The elongation of the spleen computed as the ratio of the largest principal moment to the smallest principal moment",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1214",
+      "parent_set": "RDES174",
+      "name": "Spleen Feret diameter",
+      "definition": "The diameter in physical units cm of the sphere that includes all the segmented spleen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1215",
+      "parent_set": "RDES174",
+      "name": "Spleen ellipsoid major axis length",
+      "definition": "Length of the major axis of the ellipsoid with the same volume as the spleen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1216",
+      "parent_set": "RDES174",
+      "name": "Spleen ellipsoid minor axis length",
+      "definition": "Length of the minor axis of the ellipsoid of the same volume as the spleen IBSIP9VJ",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1217",
+      "parent_set": "RDES174",
+      "name": "Spleen ellipsoid least axis length",
+      "definition": "Length of the shortest axis of the ellipsoid of the same volume as the spleen IBSI7J51",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1218",
+      "parent_set": "RDES174",
+      "name": "Spleen spherical radius",
+      "definition": "The equivalent radius of the sphere of the same volume as the spleen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    },
+    {
+      "id": "RDE1219",
+      "parent_set": "RDES174",
+      "name": "Spleen roundness",
+      "definition": "The ratio of the spherical radius and area of the spleen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": ""
+      }
+    },
+    {
+      "id": "RDE1220",
+      "parent_set": "RDES174",
+      "name": "Liver volume",
+      "definition": "Volume of the segmented liver",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver",
+          "url": "http://www.radlex.org/RID/RID58"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume",
+          "url": "http://www.radlex.org/RID/RID28668"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 3000,
+        "step": 0.1,
+        "unit": "mL"
+      }
+    },
+    {
+      "id": "RDE1221",
+      "parent_set": "RDES174",
+      "name": "Spleen volume",
+      "definition": "Volume of the segmented spleen",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID86",
+          "display": "spleen",
+          "url": "http://www.radlex.org/RID/RID86"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume",
+          "url": "http://www.radlex.org/RID/RID28668"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 3000,
+        "step": 0.1,
+        "unit": "mL"
+      }
+    },
+    {
+      "id": "RDE1222",
+      "parent_set": "RDES174",
+      "name": "Abdomen subcutaneous fat volume",
+      "definition": "Volume of abdominal subcutaneous fat",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-16"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-16"
+      },
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID28668",
+          "display": "volume",
+          "url": "http://www.radlex.org/RID/RID28668"
+        }
+      ],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mL"
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,187 @@
+{
+  "oifm_id": "OIFM_CDE_000128",
+  "name": "Subdural Hematoma",
+  "description": "This module describes the Common Data elements and Macros for Subdural Hematoma",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000835",
+      "name": "Presence",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000836",
+      "name": "Dural thickening",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000837",
+      "name": "Location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000838",
+      "name": "Shape",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000841",
+      "name": "Width - Axial Max",
+      "description": "Longest diameter measured in the axial plane",
+      "type": "numeric",
+      "min": 0,
+      "max": 200,
+      "step": 0.1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000842",
+      "name": "Volume - Tada Formula",
+      "description": "V?=?a???b???c???1/2, where ?V? represents hematoma volume; ?a? indicates the diameter of the largest area of the hematoma layer; ?b? shows the upright diameter of the diameter of the largest area of the hematoma layer, and ?c? is the layer thickness",
+      "type": "numeric",
+      "min": 0,
+      "max": 1100000,
+      "step": 0.1,
+      "unit": "mm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000843",
+      "name": "Density",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000844",
+      "name": "T1 Intensity ",
+      "description": "Hematoma T1 Intensity ",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "unit": "MR",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000845",
+      "name": "T2 Intensity",
+      "description": "Hematoma T2 Intensity",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 0.1,
+      "unit": "unit",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000846",
+      "name": "Septations",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES128",
+      "display": "subdural hematoma"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    }
+  ]
+}

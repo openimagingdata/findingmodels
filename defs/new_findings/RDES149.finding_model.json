@@ -1,0 +1,45 @@
+{
+  "oifm_id": "OIFM_CDE_000149",
+  "name": "Liver Elastography on MR",
+  "description": "MR Elastography - Radiographics",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000999",
+      "name": "Mean liver stiffness",
+      "description": "",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "kPA",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001722",
+      "name": "Correlation with hepatic fibrosis stages",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001749",
+      "name": "Ascite amount",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES149",
+      "display": "liver elastography on mr"
+    }
+  ],
+  "body_parts": []
+}

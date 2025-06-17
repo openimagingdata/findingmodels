@@ -1,0 +1,70 @@
+{
+  "oifm_id": "OIFM_CDE_000048",
+  "name": "Tarsal Coalition",
+  "description": "This module describes the common data elements for tarsal coalition use case.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000259",
+      "name": "Presence",
+      "description": "The presence of tarsal coalition",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID35743",
+          "display": "tarsal bone"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000260",
+      "name": "Characterization",
+      "description": "If tarsal coalition exists, characterize the coalition",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID35743",
+          "display": "tarsal bone"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000261",
+      "name": "Type",
+      "description": "If tarsal coalition exists, classify the type of coalition",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID35743",
+          "display": "tarsal bone"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES48",
+      "display": "tarsal coalition"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID35743",
+      "display": "Tarsal bone"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Tarsal Bone",
+      "index_codes": []
+    }
+  ]
+}

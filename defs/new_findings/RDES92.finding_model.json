@@ -1,0 +1,194 @@
+{
+  "oifm_id": "OIFM_CDE_000092",
+  "name": "Craniosynostosis",
+  "description": "Craniosynostosis",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000552",
+      "name": "Metopic suture\t",
+      "description": "Status of the midline frontal (metopic) suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000553",
+      "name": "Sagittal suture\t",
+      "description": "Status of the midline sagittal suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000554",
+      "name": "Left coronal suture",
+      "description": "Status of the left coronal suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000555",
+      "name": "Right lambdoid suture",
+      "description": "Status of the right lambdoid suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000556",
+      "name": "Left lambdoid suture",
+      "description": "Status of the left lambdoid suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000557",
+      "name": "Right squamosal suture",
+      "description": "Status of the right squamosal/temporosquamosal suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000558",
+      "name": "Left squamosal suture",
+      "description": "Status of the left  squamosal/temporosquamosal suture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000559",
+      "name": "Wormian bones suture",
+      "description": "Presence of wormian bones",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID9196",
+          "display": "skull"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES92",
+      "display": "craniosynostosis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID9196",
+      "display": "skull"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    },
+    {
+      "name": "Skull",
+      "index_codes": []
+    }
+  ]
+}

@@ -1,0 +1,506 @@
+{
+  "id": "RDES235",
+  "name": "Laryngeal Cancer of the Neck on CT",
+  "description": "Laryngeal Cancer of the Neck on CT",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2022-10-04"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/235",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Aparna Singhal MD",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Head and Neck",
+      "abbreviation": "HN"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1502",
+      "parent_set": "RDES235",
+      "name": "AP measurement",
+      "definition": "Largest anterior-posterior dimension",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1503",
+      "parent_set": "RDES235",
+      "name": "RL measurement",
+      "definition": "Largest transverse dimension\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1504",
+      "parent_set": "RDES235",
+      "name": "CC measurement",
+      "definition": "Largest cranio-caudal dimension\n",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2022-10-04"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2022-10-04"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1505",
+      "parent_set": "RDES235",
+      "name": "Portions of larynx involved",
+      "definition": "Select all spaces of involvement",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "glottis"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "supraglottis"
+          },
+          {
+            "code": "RDE235.2",
+            "value": "2",
+            "name": "subglottis"
+          },
+          {
+            "code": "RDE235.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE235.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1506",
+      "parent_set": "RDES235",
+      "name": "Post contrast enhancement",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE235.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE235.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1512",
+      "parent_set": "RDES235",
+      "name": "Cartilage invasion",
+      "definition": "Is there erosion or calcification of these cartilageneous structures to suggest invasion?",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "thyroid",
+            "definition": "thyroid cartilage invasion"
+          },
+          {
+            "code": "RDE235.2",
+            "value": "2",
+            "name": "cricoid",
+            "definition": "cricoid cartilage invasion "
+          },
+          {
+            "code": "RDE235.3",
+            "value": "3",
+            "name": "arytenoid",
+            "definition": "arytenoid cartilage invasion"
+          },
+          {
+            "code": "RDE235.4",
+            "value": "4",
+            "name": "tracheal ring",
+            "definition": "tracheal ring invasion"
+          },
+          {
+            "code": "RDE235.5",
+            "value": "5",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE235.6",
+            "value": "6",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1513",
+      "parent_set": "RDES235",
+      "name": "Extension beyond laryngeal skeleton",
+      "definition": "General extralaryngeal extension.",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-12-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-12-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE235.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE235.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1930",
+      "parent_set": "RDES235",
+      "name": "Extension across midline",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1931",
+      "parent_set": "RDES235",
+      "name": "Airway narrowing",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1932",
+      "parent_set": "RDES235",
+      "name": "Pre-vertebral invasion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1933",
+      "parent_set": "RDES235",
+      "name": "Carotid space invasion",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE235.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE235.1",
+            "value": "1",
+            "name": "present"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

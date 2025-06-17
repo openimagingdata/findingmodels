@@ -1,0 +1,182 @@
+{
+  "id": "RDES229",
+  "name": "Humerus Dislocation",
+  "description": "Humerus Dislocation",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-10-04"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/229",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Visser, Jacob",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Farish, Natalia",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1468",
+      "parent_set": "RDES229",
+      "name": "Presence",
+      "definition": "Upper arm bone (humerus) has come out of your shoulder joint",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE229.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE229.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE229.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE229.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1469",
+      "parent_set": "RDES229",
+      "name": "Type",
+      "definition": "Describe the way humerus got dislocated, multichoice",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 5,
+        "values": [
+          {
+            "code": "RDE229.0",
+            "value": "0",
+            "name": "inferior"
+          },
+          {
+            "code": "RDE229.1",
+            "value": "1",
+            "name": "posterior"
+          },
+          {
+            "code": "RDE229.2",
+            "value": "2",
+            "name": "anterior"
+          },
+          {
+            "code": "RDE229.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE229.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1470",
+      "parent_set": "RDES229",
+      "name": "Side",
+      "definition": "Describe the affected side",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE229.0",
+            "value": "0",
+            "name": "left"
+          },
+          {
+            "code": "RDE229.1",
+            "value": "1",
+            "name": "right"
+          },
+          {
+            "code": "RDE229.2",
+            "value": "2",
+            "name": "bilateral"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,33 @@
+{
+  "oifm_id": "OIFM_CDE_000231",
+  "name": "Acute Clavicle Fracture",
+  "description": "Acute Clavicle Fracture Detection",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001474",
+      "name": "Side",
+      "description": "Describe clavicle fracture laterality",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001475",
+      "name": "Type",
+      "description": "Clavicle fractures are classiied into three types based on the location of the fracture",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES231",
+      "display": "acute clavicle fracture"
+    }
+  ],
+  "body_parts": []
+}

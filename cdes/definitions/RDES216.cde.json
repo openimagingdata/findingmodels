@@ -1,0 +1,209 @@
+{
+  "id": "RDES216",
+  "name": "Dermoid Cyst",
+  "description": "Dermoid Cyst detection on CT",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Proposed",
+    "date": "2022-06-15"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/216",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Visser, Jacob",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Elkholy, Mona",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE1396",
+      "parent_set": "RDES216",
+      "name": "Measurement",
+      "definition": "Mass size",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-29"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2023-03-29"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE1660",
+      "parent_set": "RDES216",
+      "name": "Calcium",
+      "definition": "Presence of calcium in the mass ( more or equal to 1000 HU)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE216.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE216.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE216.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE216.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1661",
+      "parent_set": "RDES216",
+      "name": "Fat",
+      "definition": "Presence of fat in the mass (between 30 and 70 HU)",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE216.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE216.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE216.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE216.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2003",
+      "parent_set": "RDES216",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-03-22"
+      },
+      "status": {
+        "name": "Proposed",
+        "date": "2024-03-22"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE216.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE216.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE216.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE216.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}

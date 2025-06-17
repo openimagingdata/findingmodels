@@ -1,0 +1,485 @@
+{
+  "oifm_id": "OIFM_CDE_000115",
+  "name": "Glioma",
+  "description": "Glioma",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000744",
+      "name": "Recurrence probability",
+      "description": "probability of recurrence after treatment",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "probability of recurrence after treatment",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000745",
+      "name": "Radiation necrosis probability",
+      "description": "probability of radiation necrosis after treatment",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 0.1,
+      "unit": "probability of radiation necrosis after treatment",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000746",
+      "name": "Classification",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000747",
+      "name": "Tumor grade",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000748",
+      "name": "Mutated genes ",
+      "description": "Identify mutated genes associated with gliomas",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001956",
+      "name": "Current enhancing tumor volume",
+      "description": "Current volume of enhancing detected region, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001957",
+      "name": "Current FLAIR volume",
+      "description": "Current volume of FLAIR/edema detected region, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001958",
+      "name": "Current necrosis/cavity volume",
+      "description": "Current volume of necrosis/cavity detected region, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001959",
+      "name": "Current enhancing tumor volume change from previous",
+      "description": "Curren change in enhancing tumor volume from previous timepoint, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001960",
+      "name": "Current FLAIR volume change from previous",
+      "description": "Current change in FLAIR volume from previous timepoint, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001971",
+      "name": "Prior enhancing tumor volume change from baseline",
+      "description": "Prior change in enhancing tumor volume from baseline, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001972",
+      "name": "Prior FLAIR volume change from baseline",
+      "description": "Prior change in FLAIR volume from baseline, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001973",
+      "name": "Prior necrosis/cavity volume change from baseline",
+      "description": "Prior change in necrosis/cavity volume from baseline, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001974",
+      "name": "Baseline enhancing tumor volume",
+      "description": "Baseline volume of enhancing detected region, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001975",
+      "name": "Baseline FLAIR volume",
+      "description": "Baseline volume of FLAIR/edema detected region, step value 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001976",
+      "name": "Baseline necrosis/cavity volume",
+      "description": "Baseline volume of necrosis/cavity detected region, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit": "cm3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001977",
+      "name": "Baseline enhancing tumor volume change from previous",
+      "description": "Baseline change in enhancing tumor volume from previous timepoint, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001978",
+      "name": "Baseline FLAIR volume change from previous",
+      "description": "Baseline change in FLAIR volume from previous timepoint, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001979",
+      "name": "Baseline necrosis/cavity volume change from previous",
+      "description": "Current change in necrosis/cavity volume from previous timepoint, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001980",
+      "name": "Baseline enhancing tumor volume change",
+      "description": "Baseline change in enhancing tumor volume, step value: 0.01.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434",
+          "display": "brain"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID7361",
+          "display": "spinal cord"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES115",
+      "display": "glioma"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "Brain"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID7361",
+      "display": "Spinal Cord"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Brain",
+      "index_codes": []
+    },
+    {
+      "name": "Spinal Cord",
+      "index_codes": []
+    }
+  ]
+}

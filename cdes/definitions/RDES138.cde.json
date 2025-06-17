@@ -1,0 +1,358 @@
+{
+  "id": "RDES138",
+  "name": "Acute Diverticulitis",
+  "description": "This module describes the Common Data elements and Macros for Diverticulitis Detection",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "1915-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "1915-01-01"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/138",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "ACR Assist",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": []
+  },
+  "history": [],
+  "specialties": [],
+  "elements": [
+    {
+      "id": "RDE914",
+      "parent_set": "RDES138",
+      "name": "Sigmoid colon wall thickness",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "max": 1000,
+        "step": 0.1,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "RDE916",
+      "parent_set": "RDES138",
+      "name": "Lymph nodes",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE138.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE138.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE138.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE138.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE917",
+      "parent_set": "RDES138",
+      "name": "Extramural fluid",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-24"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-24"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE138.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE138.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE138.2",
+            "value": "2",
+            "name": "free fluid"
+          },
+          {
+            "code": "RDE138.3",
+            "value": "3",
+            "name": "organized collection"
+          },
+          {
+            "code": "RDE138.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE138.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE919",
+      "parent_set": "RDES138",
+      "name": "Free air",
+      "definition": "Free air detection in abdomen on CT",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-01-11"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-01-11"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE138.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE138.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE138.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE138.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1658",
+      "parent_set": "RDES138",
+      "name": "Presence",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE138.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE138.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE138.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE138.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1678",
+      "parent_set": "RDES138",
+      "name": "Involved bowel",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-10-06"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-10-06"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 7,
+        "values": [
+          {
+            "code": "RDE138.0",
+            "value": "0",
+            "name": "small bowel"
+          },
+          {
+            "code": "RDE138.1",
+            "value": "2",
+            "name": "ascending colon"
+          },
+          {
+            "code": "RDE138.2",
+            "value": "3",
+            "name": "transverse colon"
+          },
+          {
+            "code": "RDE138.3",
+            "value": "4",
+            "name": "descending colon"
+          },
+          {
+            "code": "RDE138.4",
+            "value": "5",
+            "name": "sigmoid colon"
+          },
+          {
+            "code": "RDE138.5",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE138.6",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1679",
+      "parent_set": "RDES138",
+      "name": "Organized collection size",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2023-03-08"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2023-03-08"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "float_value": {
+        "min": 0,
+        "step": 0.1,
+        "unit": "cm"
+      }
+    }
+  ],
+  "references": []
+}

@@ -1,0 +1,771 @@
+{
+  "id": "RDES300",
+  "name": "MR Lumbar Degenerative Disc Disease",
+  "description": "Lumbar degenerative disc disease",
+  "schema_version": "1.0.0",
+  "set_version": {
+    "number": 1,
+    "date": "0001-01-01"
+  },
+  "status": {
+    "name": "Published",
+    "date": "2024-08-13"
+  },
+  "url": "https://api3.rsna.org/radelement/public/sets/300",
+  "index_codes": [],
+  "body_parts": [],
+  "contributors": {
+    "people": [
+      {
+        "name": "Singhal, Aparna",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Flanders, Adam",
+        "email": "cdesupport@rsna.org"
+      },
+      {
+        "name": "Kohli, Marc",
+        "email": "cdesupport@rsna.org"
+      }
+    ],
+    "organizations": [
+      {
+        "name": "American Society of Neuroradiology",
+        "abbreviation": "ASNR"
+      }
+    ]
+  },
+  "history": [],
+  "specialties": [
+    {
+      "name": "Musculoskeletal Radiology",
+      "abbreviation": "MK"
+    },
+    {
+      "name": "Neuroradiology",
+      "abbreviation": "NR"
+    }
+  ],
+  "elements": [
+    {
+      "id": "RDE1514",
+      "parent_set": "RDES236",
+      "name": "Disc level",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE236.0",
+            "value": "0",
+            "name": "T12-L1"
+          },
+          {
+            "code": "RDE236.1",
+            "value": "1",
+            "name": "L1-2"
+          },
+          {
+            "code": "RDE236.2",
+            "value": "2",
+            "name": "L2-3"
+          },
+          {
+            "code": "RDE236.3",
+            "value": "3",
+            "name": "L3-4"
+          },
+          {
+            "code": "RDE236.4",
+            "value": "4",
+            "name": "L4-5"
+          },
+          {
+            "code": "RDE236.5",
+            "value": "5",
+            "name": "L5-S1"
+          },
+          {
+            "code": "RDE236.6",
+            "value": "6",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE236.7",
+            "value": "7",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1515",
+      "parent_set": "RDES236",
+      "name": "Disc space narrowing",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE236.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE236.1",
+            "value": "1",
+            "name": "present"
+          },
+          {
+            "code": "RDE236.2",
+            "value": "2",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE236.3",
+            "value": "3",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1517",
+      "parent_set": "RDES236",
+      "name": "Modic endplate changes",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [
+        {
+          "citation": "Degenerative disk disease: assessment of changes in vertebral body marrow with MR imaging.",
+          "doi_url": "https://doi.org/10.1148/radiology.166.1.3336678",
+          "pubmed_id": "3336678"
+        }
+      ],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE236.0",
+            "value": "0",
+            "name": "absent"
+          },
+          {
+            "code": "RDE236.1",
+            "value": "1",
+            "name": "type I"
+          },
+          {
+            "code": "RDE236.2",
+            "value": "2",
+            "name": "type II"
+          },
+          {
+            "code": "RDE236.3",
+            "value": "3",
+            "name": "type III"
+          },
+          {
+            "code": "RDE236.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE236.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE1518",
+      "parent_set": "RDES236",
+      "name": "Disc morphology",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-02-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-02-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 18,
+        "values": [
+          {
+            "code": "RDE236.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE236.1",
+            "value": "1",
+            "name": "diffusely bulging"
+          },
+          {
+            "code": "RDE236.2",
+            "value": "2",
+            "name": "bulging asymmetrically to the left"
+          },
+          {
+            "code": "RDE236.3",
+            "value": "3",
+            "name": "bulging asymmetrically to the right"
+          },
+          {
+            "code": "RDE236.4",
+            "value": "4",
+            "name": "central protrusion ",
+            "definition": "Protruding centrally"
+          },
+          {
+            "code": "RDE236.5",
+            "value": "5",
+            "name": "right central protrusion",
+            "definition": "Protruding to the right of midline"
+          },
+          {
+            "code": "RDE236.6",
+            "value": "6",
+            "name": "left central protrusion",
+            "definition": "protruding to the left of midline"
+          },
+          {
+            "code": "RDE236.7",
+            "value": "7",
+            "name": "extruded centrally"
+          },
+          {
+            "code": "RDE236.8",
+            "value": "8",
+            "name": "extruded right of midline"
+          },
+          {
+            "code": "RDE236.9",
+            "value": "9",
+            "name": "extruded left of midline"
+          },
+          {
+            "code": "RDE236.10",
+            "value": "0",
+            "name": "right subarticular protrusion",
+            "definition": "Protruding in the right subarticular zone"
+          },
+          {
+            "code": "RDE236.11",
+            "value": "1",
+            "name": "left subarticular protrusion",
+            "definition": "Protruding in the left subarticular zone"
+          },
+          {
+            "code": "RDE236.12",
+            "value": "2",
+            "name": "right subarticular extrusion"
+          },
+          {
+            "code": "RDE236.13",
+            "value": "3",
+            "name": "left subarticular extrusion"
+          },
+          {
+            "code": "RDE236.14",
+            "value": "4",
+            "name": "right foraminal protrusion",
+            "definition": "protruding in the right foramen"
+          },
+          {
+            "code": "RDE236.15",
+            "value": "5",
+            "name": "left foraminal protrusion",
+            "definition": "protruding in the left foramen"
+          },
+          {
+            "code": "RDE236.16",
+            "value": "6",
+            "name": "right foraminal extrusion",
+            "definition": "extrusion in the right foramen"
+          },
+          {
+            "code": "RDE236.17",
+            "value": "7",
+            "name": "left foraminal extrusion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2031",
+      "parent_set": "RDES236",
+      "name": "Left subarticular recess",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-06-14"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-06-14"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE236.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE236.1",
+            "value": "1",
+            "name": "mildly stenosed"
+          },
+          {
+            "code": "RDE236.2",
+            "value": "2",
+            "name": "moderately stenosed"
+          },
+          {
+            "code": "RDE236.3",
+            "value": "3",
+            "name": "severely stenosed"
+          },
+          {
+            "code": "RDE236.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE236.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2055",
+      "parent_set": "RDES300",
+      "name": "Pfirmann grade disc degeneration",
+      "definition": "Disc degeneration can be graded on MRI T2 spin-echo sequence weighted images using a grading system proposed by Pfirrmann",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "grade 1:  homogeneous",
+            "definition": "RDE1519.0"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "grade 2: central band visible",
+            "definition": "Grade II: disc is inhomogeneous, but keeping the hyperintense white signal. Nucleus and annulus are clearly differentiated and a horizontal gray band could be present. Disc height is normal."
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "grade 3: distinction between nucleus-annulus",
+            "definition": "Grade III: disc is inhomogeneous with an intermittent gray signal intensity. Distinction between nucleus and annulus is unclear. Disc height is normal or slightly decreased."
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "grade 4: poor nucleus-annulus distinction",
+            "definition": "Grade IV: disc is inhomogeneous with a hypointense dark gray signal intensity. There is no more distinction between the nucleus and annulus. Disc height is slightly or moderately decreased. Moderate disk degeneration (Pfirrmann IV) in lower lumbar segments is a risk factor of disk herniation or foraminal stenosis requiring reoperation after MD in LSS 2."
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "grade 5: collapsed disc space",
+            "definition": "Grade V: disc is inhomogeneous with a hypointense black signal intensity. There is no more distinction between the nucleus and annulus."
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2056",
+      "parent_set": "RDES300",
+      "name": "Right facet joint",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "mildly degenerated"
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "moderately degenerated"
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "severely degenerated"
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE300.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2057",
+      "parent_set": "RDES300",
+      "name": "Left facet joint",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "mildly degenerated"
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "moderately degenerated"
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "severely degenerated"
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE300.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2058",
+      "parent_set": "RDES300",
+      "name": "Central spinal canal",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "mildly stenotic"
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "moderately stenotic"
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "severely stenotic"
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE300.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2059",
+      "parent_set": "RDES300",
+      "name": "Vertebral endplates",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "smooth"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "irregular"
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "irregular with Schmorl's nodes"
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "unknown"
+          }
+        ]
+      }
+    },
+    {
+      "id": "RDE2060",
+      "parent_set": "RDES300",
+      "name": "Right subarticular recess",
+      "definition": "",
+      "question": "",
+      "schema_version": "1.0.0",
+      "element_version": {
+        "number": 1,
+        "date": "2024-08-13"
+      },
+      "status": {
+        "name": "Published",
+        "date": "2024-08-13"
+      },
+      "index_codes": [],
+      "contributors": {
+        "people": [],
+        "organizations": []
+      },
+      "history": [],
+      "references": [],
+      "value_set": {
+        "min_cardinality": 1,
+        "max_cardinality": 1,
+        "values": [
+          {
+            "code": "RDE300.0",
+            "value": "0",
+            "name": "normal"
+          },
+          {
+            "code": "RDE300.1",
+            "value": "1",
+            "name": "mildly stenosed"
+          },
+          {
+            "code": "RDE300.2",
+            "value": "2",
+            "name": "moderately stenosed"
+          },
+          {
+            "code": "RDE300.3",
+            "value": "3",
+            "name": "severely stenosed"
+          },
+          {
+            "code": "RDE300.4",
+            "value": "4",
+            "name": "indeterminate"
+          },
+          {
+            "code": "RDE300.5",
+            "value": "5",
+            "name": "unknown"
+          }
+        ]
+      }
+    }
+  ],
+  "references": []
+}
