@@ -78,7 +78,7 @@ class CDEToFindingModel:
             return []
 
         values = []
-        for i, value in enumerate(value_set["values"], 1):
+        for i, value in enumerate(value_set["values"], 0):
             value_code = f"{attribute_id}.{i}"
             name = value.get("name", "")
             definition = value.get("definition", "")
@@ -129,7 +129,7 @@ class CDEToFindingModel:
 
     @staticmethod
     def convert_cde(cde_data: Dict) -> Dict:
-        """Convert a CDE to FindingModel format."""
+        """Convert a CDE to FindingModel."""
         model_id = CDEToFindingModel._generate_model_id(cde_data["id"])
         
         # Get body part index codes
