@@ -1,8 +1,6 @@
-# TODO
+# Tasks for finding models repository
 
 Deprecated; see GitHub Issues. Last updated 2025-Jun-15.
-
-# Tasks for finding models repository
 
 - [x] Create `index.md` and `ids.json`
 - [x] Create markdown files for the json files
