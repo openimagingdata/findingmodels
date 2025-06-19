@@ -1,0 +1,469 @@
+{
+  "oifm_id": "OIFM_CDE_000005",
+  "name": "Liver Imaging",
+  "description": "The Liver Imaging Reporting and Data System (LI-RADS) was created to standardize the reporting and data collection of CT and MR imaging for hepatocellular carcinoma (HCC). ",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000065",
+      "name": "LI-RADS assessment category",
+      "description": "Ordinal score assigned to an observation indicating its likelihood of hepatocellular carcinoma (HCC) or malignancy. ",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000065.0",
+          "name": "Definitely benign",
+          "description": "100% certainty observation is benign.  \r\n\r\nObservation with: Imaging features diagnostic of a benign entity\r\nor Definite spontaneous disappearance at follow up\r\n\r\nExamples: Observations that may be categorized as LR-1: definite benign entities.\r\n\r\nReporting: LR-1 observations may be reported at radiologist\u2019s discretion.\r\nSince LR-1 observations are definitely benign, they may be reported or not reported at the radiologist's discretion\r\nLR-1 observations may be reported in aggregate.",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.1",
+          "name": "Probably benign",
+          "description": "High likelihood observation is benign.\r\n\r\nObservation with imaging features suggestive but not diagnostic of a benign entity.\r\n\r\nExamples:  Observations that may be categorized as LR-2: probable benign entities.\r\n\r\nReporting:  \r\n\r\nLR-2 observations may be reported at the radiologist\u2019s discretion.\r\n\r\nSince LR-2 observations are likely benign, they may be reported or not reported at the radiologist's discretion.\r\n\r\nLR-2 observations may be reported in aggregate.\r\n\r\nManagement implications:\r\n\r\nContinued routine surveillance usually is appropriate.",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.2",
+          "name": "Intermediate probability for HCC",
+          "description": "Observation that does not meet unequivocal criteria for other LI-RADS categories. \r\n\r\nCriteria:  Not definite benign entity, not probable benign entity, not non-HCC malignancy, not tumor in vein and one of the following:\r\n\r\nMass with hepatic arterial phase hypo- or isoenhancement\r\n< 20mm mass with \u2264 1 of following: \u201cwashout\u201d, \u201ccapsule\u201d, and threshold growth\r\n\u2265 20mm mass with none of following: \u201cwashout\u201d, \u201ccapsule\u201d, and threshold growth\r\nMass with hepatic arterial phase hyperenhancement\r\n< 20mm mass with none of following: \u201cwashout\u201d, \u201ccapsule\u201d, and  threshold growth",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.3",
+          "name": "Probably HCC",
+          "description": "Observation with imaging features suggestive but not diagnostic of HCC. ",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.4",
+          "name": "Definitely HCC",
+          "description": "Observation with imaging features diagnostic of HCC. ",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.5",
+          "name": "Definite tumor in vein",
+          "description": "Observation associated with definite tumor in vein.\r\n\r\nCriterion: Definite enhancing soft tissue in vein.",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.6",
+          "name": "Probably malignant, not specific for HCC",
+          "description": "Observation with one or more imaging features that favor non-HCC malignancy.",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000065.7",
+          "name": "Treated observation",
+          "description": "An observation that has undergone loco-regional treatment.\r\n\r\nComments: \r\nLR-Treated does not imply that loco-regional treatment was successful.\r\nResidual or recurrent HCC may be present.",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49794",
+          "display": "lr-1"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49795",
+          "display": "lr-2"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49796",
+          "display": "lr-3"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49797",
+          "display": "lr-4"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49799",
+          "display": "lr-5"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49802",
+          "display": "lr-5v"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49804",
+          "display": "lr-treated"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49803",
+          "display": "lr-m"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID49823",
+          "display": "li-rads assessment"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000080",
+      "name": "Tumor in vein",
+      "description": "Presence of tumor in vein lumen.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "SNOMEDCT",
+          "code": "52101004",
+          "display": "present"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28472",
+          "display": "present"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID39483",
+          "display": "tumor in vein"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "2667000",
+          "display": "absent"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID28473",
+          "display": "absent"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000081",
+      "name": "Diameter",
+      "description": "The largest dimension (outer edge to outer edge) of an observation, measured in millimeters.",
+      "type": "numeric",
+      "min": 0,
+      "max": 999,
+      "step": 1,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000082",
+      "name": "Arterial phase hyperenhancement",
+      "description": "Enhancement in the arterial phase that unequivocally is greater than that of liver.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000082.0",
+          "name": "Arterial phase hyperenhancement",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000082.1",
+          "name": "Arterial phase hypo- or isoenhancement",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000083",
+      "name": "Capsule appearance",
+      "description": "Peripheral rim of smooth hyper-enhancement in the portal venous phase ordelayed phase that unequivocally is thicker or more conspicuous than the rim's surrounding background nodule.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000083.0",
+          "name": "Capsule appearance.",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000083.1",
+          "name": "No capsule appearance.",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39146",
+          "display": "capsule appearance"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "10200004",
+          "display": "liver"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "181268008",
+          "display": "liver"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000084",
+      "name": "Threshold growth",
+      "description": "Increase in diameter of a mass compared to its baseline by a minimum of 5 mm AND depending on the time interval between examinations, by the following amounts:<ul><li>&lt;6 months: &gt;50% diameter increase</li><li>&gt;6 months: &gt;100% diameter increase</li></ul>",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000084.0",
+          "name": "Threshold growth",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000084.1",
+          "name": "No threshold growth",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000085",
+      "name": "Washout",
+      "description": "Enhancement in the portal venous or delayed phases that unequivocally is less than that of liver.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000085.0",
+          "name": "Washout",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000085.1",
+          "name": "No washout",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000086",
+      "name": "Hepatobiliary phase hypointensity",
+      "description": "Intensity in the hepatobiliary phase that unequivocally is less than that of the surrounding liver.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000086.0",
+          "name": "Hepatobiliary phase hypointensity",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000086.1",
+          "name": "Hepatobiliary phase iso- or hyperintensity",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000087",
+      "name": "Mild-moderate T2 hyperintensity",
+      "description": "Having mildly or moderately higher signal intensity on T2w images than liver.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000087.0",
+          "name": "Mild-moderate T2 hyperintensity",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000087.1",
+          "name": "Not mild-moderate T2 hyperintensity",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000088",
+      "name": "T2 signal intensity",
+      "description": "Signal intensity relative to liver on T2w images.",
+      "type": "choice",
+      "required": false,
+      "values": [],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000089",
+      "name": "Restricted diffusion",
+      "description": "Having higher signal intensity, not attributable solely to T2 shine-through, than liver on diffusion-weighted (DW) images. ",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000089.0",
+          "name": "Restricted diffusion",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000089.1",
+          "name": "No restricted diffusion",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000090",
+      "name": "Mosaic architecture",
+      "description": "Observation that appears to consist of nodules or compartments with differing appearances (enhancement, attenuation, intensity).  This term can also be applied to lesions with internal enhancing septations. The nodules, compartments, or septations appear randomly distributed within the observation.",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000090.0",
+          "name": "Mosaic architecture",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000090.1",
+          "name": "No mosaic architecture",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000091",
+      "name": "Intralesional fat",
+      "description": "Presence of lipid in higher concentration within a mass than in background reference tissue (e.g., liver).",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000091.0",
+          "name": "Intralesional fat",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_000091.1",
+          "name": "No intralesional fat",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID58",
+          "display": "liver"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES5",
+      "display": "liver imaging"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID49823",
+      "display": "li-rads assessment"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID58",
+      "display": "liver"
+    }
+  ],
+  "body_parts": [
+    {
+      "name": "Liver",
+      "index_codes": []
+    }
+  ]
+}
