@@ -199,31 +199,16 @@ class CDEToFindingModel:
             
             finding_model = CDEToFindingModel.convert_cde(cde_data)
             
-            # Ensure minimum length for string values
-            if finding_model.get("description") and len(finding_model["description"]) < 3:
-                finding_model["description"] = "No description provided"
+            if not finding_model.get("description") or len(finding_model["description"]) < 5:
+                print(f"Warning: CDE {cde_data['id']} has a missing or short description.")
             
-            # Ensure attributes array is not empty
+            # Alert no attributes created 
             if not finding_model.get("attributes"):
-                finding_model["attributes"] = [{
-                    "oifma_id": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}",
-                    "name": "Presence",
-                    "description": "Whether the finding is present",
-                    "type": "choice",
-                    "required": True,
-                    "values": [
-                        {
-                            "value_code": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}.1",
-                            "name": "Present",
-                            "description": "The finding is present"
-                        },
-                        {
-                            "value_code": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}.2",
-                            "name": "Absent",
-                            "description": "The finding is absent"
-                        }
-                    ]
-                }]
+                print(f"Warning: No attributes found in {input_file}")
+
+            index_codes = finding_model.get("index_codes")
+            if index_codes is None or len(index_codes) < 1:
+                print(f"Warning: Finding Model does not meet minimum index code requirement of 1")
             
             # Fix numeric attributes
             for attr in finding_model.get("attributes", []):
