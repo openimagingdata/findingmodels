@@ -2,27 +2,7 @@
   "oifm_id": "OIFM_CDE_000154",
   "name": "LI-RADS",
   "description": "This module can be used for characterizing liver lesion for\n\t\t\t\tMRI",
-  "attributes": [
-    {
-      "oifma_id": "OIFMA_CDE_000154",
-      "name": "Presence",
-      "description": "Whether the finding is present",
-      "type": "choice",
-      "required": true,
-      "values": [
-        {
-          "value_code": "OIFMA_CDE_000154.1",
-          "name": "Present",
-          "description": "The finding is present"
-        },
-        {
-          "value_code": "OIFMA_CDE_000154.2",
-          "name": "Absent",
-          "description": "The finding is absent"
-        }
-      ]
-    }
-  ],
+  "attributes": [],
   "index_codes": [
     {
       "system": "RADELEMENT",

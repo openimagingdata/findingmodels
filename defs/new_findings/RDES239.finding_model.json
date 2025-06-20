@@ -1,0 +1,787 @@
+{
+  "oifm_id": "OIFM_CDE_000239",
+  "name": "MRI Prostate Lesion",
+  "description": "MRI Prostate Imaging",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001537",
+      "name": "Peripheral zone global features",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001537.0",
+          "name": "No focal abnormality",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001537.1",
+          "name": "Linear and/or wedge shaped T2/ADC map hypointensities",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001537.2",
+          "name": "Diffuse mild T2/ADC map hypointensity",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001537.3",
+          "name": "Focal areas of high T1 signal consistent with hemorrhage",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001538",
+      "name": "Transition zone global features",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001538.0",
+          "name": "Normal",
+          "description": "Normal appearing TZ (rare) or a round, completely encapsulated nodule. (\u201ctypical nodule\u201d)",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001538.1",
+          "name": "Benign prostate hyperplasia",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001539",
+      "name": "Peripheral Zone (PZ) lesion location",
+      "description": "This is to describe the location including laterality of the prostate lesion",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001539.0",
+          "name": "Apex anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.1",
+          "name": "Apex anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.2",
+          "name": "Apex anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.3",
+          "name": "Apex posteromedial right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.4",
+          "name": "Apex posteromedial left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.5",
+          "name": "Apex posteromedial right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.6",
+          "name": "Apex posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.7",
+          "name": "Apex posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.8",
+          "name": "Apex posteromedial/posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.9",
+          "name": "Apex posteromedial/posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.10",
+          "name": "Apex posteromedial/posterolateral right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.11",
+          "name": "Mid anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.12",
+          "name": "Mid anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.13",
+          "name": "Mid anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.14",
+          "name": "Mid posteromedial left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.15",
+          "name": "Mid posteromedial right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.16",
+          "name": "Mid posteromedial right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.17",
+          "name": "Mid posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.18",
+          "name": "Mid posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.19",
+          "name": "Mid posteromedial/posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.20",
+          "name": "Mid posteromedial/posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.21",
+          "name": "Mid posteromedial/posterolateral right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.22",
+          "name": "Base anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.23",
+          "name": "Base anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.24",
+          "name": "Base anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.25",
+          "name": "Base posteromedial left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.26",
+          "name": "Base posteromedial right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.27",
+          "name": "Base posteromedial right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.28",
+          "name": "Base posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.29",
+          "name": "Base posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.30",
+          "name": "Base posteromedial/posterolateral left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.31",
+          "name": "Base posteromedial/posterolateral right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001539.32",
+          "name": "Base posteromedial/posterolateral right and left",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001540",
+      "name": "Transition Zone (TZ) lesion location",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001540.0",
+          "name": "Apex anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.1",
+          "name": "Apex anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.2",
+          "name": "Apex anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.3",
+          "name": "Apex posterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.4",
+          "name": "Apex posterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.5",
+          "name": "Apex posterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.6",
+          "name": "Mid anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.7",
+          "name": "Mid anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.8",
+          "name": "Mid anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.9",
+          "name": "Mid posterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.10",
+          "name": "Mid posterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.11",
+          "name": "Mid posterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.12",
+          "name": "Base anterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.13",
+          "name": "Base anterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.14",
+          "name": "Base anterior right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.15",
+          "name": "Base posterior right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.16",
+          "name": "Base posterior left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001540.17",
+          "name": "Base posterior right and left",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001541",
+      "name": "Anterior fibromuscular stroma (AFS) lesion location",
+      "description": "Anterior fibromuscular stroma lesion location",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001541.0",
+          "name": "Apex right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.1",
+          "name": "Apex left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.2",
+          "name": "Apex right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.3",
+          "name": "Mid right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.4",
+          "name": "Mid left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.5",
+          "name": "Mid right and left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.6",
+          "name": "Base right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.7",
+          "name": "Base left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001541.8",
+          "name": "Base right and left",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001542",
+      "name": "Lesion size",
+      "description": "Longest dimension. In the PZ, lesions should be measured on ADC. In the TZ, lesions should be measured on T2W.",
+      "type": "numeric",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "cm",
+      "required": false,
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001543",
+      "name": "Peripheral Zone (PZ)  lesion T2W imaging characteristic",
+      "description": "This is to describe the T2 weighted imaging feature of the lesion",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001543.0",
+          "name": "Circumscribed, homogeneous moderately T2 hypointense focus/mass",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001543.1",
+          "name": "Linear or wedge-shaped T2 hypointense",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001543.2",
+          "name": "Diffuse mildly T2  hypointense",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001543.3",
+          "name": "Heterogeneous T2 signal intensity",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001543.4",
+          "name": "Uniform T2 hyperintense signal",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001544",
+      "name": "Transition Zone (TZ) lesion T2W imaging characteristic",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001544.0",
+          "name": "Lenticular or non-circumscribed, homogeneous, moderately T2 hypointense",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001544.1",
+          "name": "Heterogeneous T2 signal intensity with obscured margins",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001544.2",
+          "name": "Encapsulated nodule",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001544.3",
+          "name": "Homogeneous circumscribed nodule without encapsulation",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001544.4",
+          "name": "Homogenous mildly hypointense area between nodules",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001545",
+      "name": "Lesion Diffusion weighted Imaging (DWI) characteristic",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001545.0",
+          "name": "No abnormality",
+          "description": "No abnormality (i.e., normal) on ADC and high b-value DWI",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.1",
+          "name": "Linear/wedge shaped hypointense on ADC",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.2",
+          "name": "Linear/wedge shaped hyperintense on high b-value DWI",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.3",
+          "name": "Focal hypointense on ADC",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.4",
+          "name": "Focal hyperintense on high b-value DWI",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.5",
+          "name": "Focal markedly hypointense on ADC",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001545.6",
+          "name": "Focal markedly hyperintense on high b-value DWI",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001546",
+      "name": "Lesion dynamic contrast enhancement (DCE) ",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001546.0",
+          "name": "DCE negative",
+          "description": "no early or contemporaneous enhancement; or diffuse multifocal enhancement NOT corresponding to a focal finding on T2W and/or DWI or focal enhancement corresponding to a lesion demonstrating features of BPH on T2WI",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001546.1",
+          "name": "DCE positive",
+          "description": "Focal, and; earlier than or contemporaneously with enhancement of adjacent normal prostatic tissues, and; corresponds to suspicious finding on T2W and/or DWI",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001547",
+      "name": "Lesion margin",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001547.0",
+          "name": "Extraprostatic extension present left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001547.1",
+          "name": "Extraprostatic extension present right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001547.2",
+          "name": "Indeterminate on left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001547.3",
+          "name": "Indeterminate on right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001547.4",
+          "name": "Extraprostatic extension absent",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001548",
+      "name": "Lesion neurovascular bundle involvement ",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001548.0",
+          "name": "Present on left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001548.1",
+          "name": "Present on right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001548.2",
+          "name": "Indeterminate on left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001548.3",
+          "name": "Indeterminate on right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001548.4",
+          "name": "Absent",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001549",
+      "name": "Lesion Seminal Vesicle involvement ",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001549.0",
+          "name": "Present on left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001549.1",
+          "name": "Present on right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001549.2",
+          "name": "Indeterminate on left",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001549.3",
+          "name": "Indeterminate on right",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001549.4",
+          "name": "Absent",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001550",
+      "name": "Lesion PIRADS scoring ",
+      "description": "",
+      "type": "choice",
+      "required": false,
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001550.0",
+          "name": "PIRADS 1",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001550.1",
+          "name": "PIRADS 2",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001550.2",
+          "name": "PIRADS 3",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001550.3",
+          "name": "PIRADS 4",
+          "description": "",
+          "index_codes": []
+        },
+        {
+          "value_code": "OIFMA_CDE_001550.4",
+          "name": "PIRADS 5",
+          "description": "",
+          "index_codes": []
+        }
+      ],
+      "index_codes": []
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES239",
+      "display": "mri prostate lesion"
+    }
+  ],
+  "body_parts": []
+}

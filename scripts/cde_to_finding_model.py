@@ -20,7 +20,7 @@ class CDEToFindingModel:
 
     @staticmethod
     def _create_radelement_code(cde_id: str, name: str) -> Dict:
-        """Create a RADELEMENT code for the model."""
+        """Create a RADELEMENT code reference to the original CDE"""
         return {
             "system": "RADELEMENT",
             "code": cde_id,
@@ -46,7 +46,7 @@ class CDEToFindingModel:
 
     @staticmethod
     def _process_body_parts(body_parts: List[Dict]) -> List[Dict]:
-        """Process body parts from CDE to FindingModel format."""
+        """Process body parts from CDE to FindingModel to be placed at the top level of finding model."""
         if not body_parts:
             return []
         
@@ -60,6 +60,7 @@ class CDEToFindingModel:
                 processed_parts.append(processed_part)
         return processed_parts
 
+        
     @staticmethod
     def _is_numeric_value_set(value_set: Dict) -> bool:
         """Check if a value set contains only numeric values."""
@@ -185,7 +186,7 @@ class CDEToFindingModel:
                 
             attributes.append(attribute)
 
-        # Create base index codes for the model
+        # Initialize index codes
         model_index_codes = []
         
         # Add RADELEMENT code
@@ -227,33 +228,16 @@ class CDEToFindingModel:
             
             finding_model = CDEToFindingModel.convert_cde(cde_data)
             
-            # Ensure minimum length for string values
-            if finding_model.get("description") and len(finding_model["description"]) < 3:
-                finding_model["description"] = "No description provided"
+            if not finding_model.get("description") or len(finding_model["description"]) < 5:
+                print(f"Warning: CDE {cde_data['id']} has a missing or short description.")
             
-            # Ensure attributes array is not empty
+            # Alert no attributes created 
             if not finding_model.get("attributes"):
-                # Extract number from CDE ID and format properly
-                cde_number = int(cde_data['id'].replace('RDES', ''))
-                finding_model["attributes"] = [{
-                    "oifma_id": f"OIFMA_CDE_{cde_number:06d}",
-                    "name": "Presence",
-                    "description": "Whether the finding is present",
-                    "type": "choice",
-                    "required": True,
-                    "values": [
-                        {
-                            "value_code": f"OIFMA_CDE_{cde_number:06d}.1",
-                            "name": "Present",
-                            "description": "The finding is present"
-                        },
-                        {
-                            "value_code": f"OIFMA_CDE_{cde_number:06d}.2",
-                            "name": "Absent",
-                            "description": "The finding is absent"
-                        }
-                    ]
-                }]
+                print(f"Warning: No attributes found in {input_file}")
+
+            index_codes = finding_model.get("index_codes")
+            if index_codes is None or len(index_codes) < 1:
+                print(f"Warning: Finding Model does not meet minimum index code requirement of 1")
             
             # Fix numeric attributes
             for attr in finding_model.get("attributes", []):
