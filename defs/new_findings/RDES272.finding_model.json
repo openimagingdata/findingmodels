@@ -233,9 +233,8 @@
       "name": "Gunshot wound caliber number",
       "description": "",
       "type": "numeric",
-      "min": 0.17,
-      "max": 0.5,
-      "step": 0.1,
+      "minimum": 0.17,
+      "maximum": 0.5,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -319,6 +318,5 @@
       "code": "RDES272",
       "display": "traumatic brain injury"
     }
-  ],
-  "body_parts": []
+  ]
 }

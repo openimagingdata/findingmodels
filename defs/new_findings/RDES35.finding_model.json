@@ -8,9 +8,8 @@
       "name": "End diastolic volume",
       "description": "Measure LV end-diastolic volume ",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "End systolic volume",
       "description": "Measure LV end-systolic volume",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": [
@@ -44,9 +42,8 @@
       "name": "Ejection fraction",
       "description": "LV ejection fraction, calculated dividing stroke volume by the end-diastolic volume. The stroke volume is calculated subtracting LV ESV from LV EDV (EDV-ESV)",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "percent",
       "required": false,
       "index_codes": [
@@ -62,9 +59,8 @@
       "name": "Indexed end diastolic volume",
       "description": "LV end-diastolic volume indexed to body surface area ",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mL/m2",
       "required": false,
       "index_codes": [
@@ -80,9 +76,8 @@
       "name": "Indexed end systolic volume",
       "description": "LV end-systolic volume indexed to body surface area",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mL/m2",
       "required": false,
       "index_codes": [
@@ -98,9 +93,8 @@
       "name": "Cardiothoracic ratio",
       "description": "Cardiac size expressed as cardiothoracic ratio. Value step: 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -131,9 +125,8 @@
       "name": "Carina angle",
       "description": "Value step: 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -164,9 +157,8 @@
       "name": "Cardiac output",
       "description": "Calculated multiplying LV stroke volume by the heart rate. Value step:0.1.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "L/min",
       "required": false,
       "index_codes": [
@@ -187,13 +179,7 @@
     {
       "system": "RADLEX",
       "code": "RID1392",
-      "display": "Left Ventricle"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Left Ventricle",
-      "index_codes": []
+      "display": "left ventricle"
     }
   ]
 }

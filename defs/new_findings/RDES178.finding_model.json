@@ -8,9 +8,8 @@
       "name": "Small bowel diameter",
       "description": "Maximum small bowel diameter",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -38,9 +37,8 @@
       "name": "Small bowel wall thickness",
       "description": "Small bowel wall thickness",
       "type": "numeric",
-      "min": 0,
-      "max": 10,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 10,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -79,6 +77,5 @@
       "code": "RDES178",
       "display": "small bowel obstruction"
     }
-  ],
-  "body_parts": []
+  ]
 }

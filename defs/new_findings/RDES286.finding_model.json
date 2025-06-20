@@ -11,37 +11,37 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_001951.1",
+          "value_code": "OIFMA_CDE_000286.00",
           "name": "right upper lobe (RUL)",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_001951.2",
+          "value_code": "OIFMA_CDE_000286.01",
           "name": "right middle lobe (RML)",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_001951.3",
+          "value_code": "OIFMA_CDE_000286.02",
           "name": "right upper lobe and right middle lobe (RUL + RML)",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_001951.4",
+          "value_code": "OIFMA_CDE_000286.03",
           "name": "right lower lobe (RLL)",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_001951.5",
+          "value_code": "OIFMA_CDE_000286.04",
           "name": "left upper lobe (LUL)",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_001951.6",
+          "value_code": "OIFMA_CDE_000286.05",
           "name": "left lower lobe (LLL)",
           "description": "",
           "index_codes": []
@@ -54,9 +54,8 @@
       "name": "Emphysema scale (% - 920HU)",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -66,9 +65,8 @@
       "name": "Emphysema scale (% - 950HU)",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -78,9 +76,8 @@
       "name": "Fissure completeness scale",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -90,9 +87,8 @@
       "name": "Volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 3000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 3000,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -104,6 +100,5 @@
       "code": "RDES286",
       "display": "emphysema"
     }
-  ],
-  "body_parts": []
+  ]
 }

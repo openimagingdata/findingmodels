@@ -8,9 +8,8 @@
       "name": "White Matter Lesion Burden\t",
       "description": "Total volume of abnormal supratentorial and infratentorial T2 signal",
       "type": "numeric",
-      "min": 0,
-      "max": 1200,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1200,
       "unit": "cc",
       "required": false,
       "index_codes": []
@@ -31,6 +30,5 @@
       "code": "RDES186",
       "display": "white matter lesion in multiple sclerosis"
     }
-  ],
-  "body_parts": []
+  ]
 }

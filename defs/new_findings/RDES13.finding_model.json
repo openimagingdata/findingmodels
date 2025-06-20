@@ -8,9 +8,8 @@
       "name": "Distance to the anal verge",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 20,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 20,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Distance to the top of sphincter ",
       "description": "Distance to the top of sphincter complex/anorectal junction",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -59,9 +57,8 @@
       "name": "Craniocaudal length",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -107,9 +104,8 @@
       "name": "Shortest distance of tumor  (MRF)",
       "description": "Shortest distance of tumor to MRF or anticipated CRM",
       "type": "numeric",
-      "min": 0,
-      "max": 99,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 99,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -215,9 +211,8 @@
       "name": "Mesorectal lymph nodes",
       "description": "number of suspicious lymph nodes",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -239,12 +234,6 @@
       "system": "RADLEX",
       "code": "RID163",
       "display": "rectum"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Rectum",
-      "index_codes": []
     }
   ]
 }

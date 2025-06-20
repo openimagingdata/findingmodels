@@ -26,9 +26,8 @@
       "name": "Pleura separation",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 40,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 40,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -75,12 +74,6 @@
       "system": "RADELEMENT",
       "code": "RDES44",
       "display": "pneumothorax"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Chest",
-      "index_codes": []
     }
   ]
 }

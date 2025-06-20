@@ -35,9 +35,8 @@
       "name": "Distance from landmark",
       "description": "Distance from body landmark to body location of abnormality",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -83,9 +82,8 @@
       "name": "Distribution width",
       "description": "Size of the entire region affected by abnormality in mm.",
       "type": "numeric",
-      "min": 1,
-      "max": 1000,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -106,6 +104,5 @@
       "code": "RDES243",
       "display": "breast cyst"
     }
-  ],
-  "body_parts": []
+  ]
 }

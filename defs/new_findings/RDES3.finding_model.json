@@ -23,9 +23,8 @@
       "name": "Unenhanced attenuation",
       "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained without IV contrast.",
       "type": "numeric",
-      "min": -1024,
-      "max": 1024,
-      "step": 1,
+      "minimum": -1024,
+      "maximum": 1024,
       "unit": "HU",
       "required": false,
       "index_codes": [
@@ -46,9 +45,8 @@
       "name": "Enhanced attenuation",
       "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained during the portovenous phase of enhancement, 60-70s after IV contrast administration.",
       "type": "numeric",
-      "min": -1024,
-      "max": 1024,
-      "step": 1,
+      "minimum": -1024,
+      "maximum": 1024,
       "unit": "HU",
       "required": false,
       "index_codes": [
@@ -64,9 +62,8 @@
       "name": "Delayed attenuation",
       "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained 15 min after IV contrast administration.",
       "type": "numeric",
-      "min": -1024,
-      "max": 1024,
-      "step": 1,
+      "minimum": -1024,
+      "maximum": 1024,
       "unit": "HU",
       "required": false,
       "index_codes": [
@@ -112,9 +109,8 @@
       "name": "Lesion size",
       "description": "The greatest linear dimension of the adrenal lesion.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -180,13 +176,7 @@
     {
       "system": "RADLEX",
       "code": "RID88",
-      "display": "Adrenal Gland"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Adrenal Gland",
-      "index_codes": []
+      "display": "adrenal gland"
     }
   ]
 }

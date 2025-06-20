@@ -4,19 +4,19 @@
   "description": "Spinal Cord Injury on MR",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_282",
+      "oifma_id": "OIFMA_CDE_000282",
       "name": "Presence",
       "description": "Whether the finding is present",
       "type": "choice",
       "required": true,
       "values": [
         {
-          "value_code": "OIFMA_CDE_282.1",
+          "value_code": "OIFMA_CDE_000282.1",
           "name": "Present",
           "description": "The finding is present"
         },
         {
-          "value_code": "OIFMA_CDE_282.2",
+          "value_code": "OIFMA_CDE_000282.2",
           "name": "Absent",
           "description": "The finding is absent"
         }
@@ -29,6 +29,5 @@
       "code": "RDES282",
       "display": "spinal cord injury on mr"
     }
-  ],
-  "body_parts": []
+  ]
 }

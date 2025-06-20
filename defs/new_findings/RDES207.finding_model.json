@@ -17,9 +17,8 @@
       "name": "Density",
       "description": "If a pancreatic lesion is present then determine density in Hounsfield units.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "HU (Hounsfield units)",
       "required": false,
       "index_codes": []
@@ -74,9 +73,8 @@
       "name": "Size",
       "description": "If a pancreatic lesion is present then determine maximal size measurement.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -86,9 +84,8 @@
       "name": "Pancreatic duct caliber",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -109,6 +106,5 @@
       "code": "RDES207",
       "display": "pancreatic cyst on ct"
     }
-  ],
-  "body_parts": []
+  ]
 }

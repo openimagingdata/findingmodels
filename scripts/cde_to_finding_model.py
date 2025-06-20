@@ -28,10 +28,10 @@ class CDEToFindingModel:
         }
 
     @staticmethod
-    def _process_index_codes(index_codes: List[Dict]) -> List[Dict]:
+    def _process_index_codes(index_codes: List[Dict]) -> Optional[List[Dict]]:
         """Process index codes from CDE to FindingModel format."""
         if not index_codes:
-            return []
+            return None
         
         processed_codes = []
         for code in index_codes:
@@ -42,7 +42,7 @@ class CDEToFindingModel:
                     "display": code.get("display", "").lower()
                 }
                 processed_codes.append(processed_code)
-        return processed_codes
+        return processed_codes if processed_codes else None
 
     @staticmethod
     def _process_body_parts(body_parts: List[Dict]) -> List[Dict]:
@@ -79,19 +79,42 @@ class CDEToFindingModel:
 
         values = []
         for i, value in enumerate(value_set["values"], 0):
-            value_code = f"{attribute_id}.{i}"
-            name = value.get("name", "")
-            definition = value.get("definition", "")
+            # Convert CDE code to proper FindingModel format
+            cde_code = value.get("code", "")
+            if cde_code and cde_code.startswith("RDE"):
+                # Extract number from RDE code (e.g., "RDE154.0" -> "154")
+                number = cde_code.split(".")[0].replace("RDE", "")
+                # Generate proper FindingModel value code with zero-padding
+                value_code = f"OIFMA_CDE_{int(number):06d}.{i:02d}"
+            else:
+                # Fallback to attribute_id format with zero-padding
+                value_code = f"{attribute_id}.{i:02d}"
             
-            # Skip if definition is same as name
-            if definition == name:
-                definition = ""
+            cde_name = value.get("name", "")
+            cde_value = value.get("value", "")
+            cde_definition = value.get("definition", "")
+            
+            # Handle the complex name/description logic
+            if cde_value and cde_name:
+                # Both value and name are defined: put value in name, name in description
+                fm_name = cde_value
+                fm_description = cde_name
+                if cde_definition and cde_definition != cde_name:
+                    fm_description = f"{cde_name}: {cde_definition}"
+            elif cde_value:
+                # Only value is defined: use value as name
+                fm_name = cde_value
+                fm_description = cde_definition if cde_definition != cde_value else ""
+            else:
+                # Only name is defined (or neither): use name as name
+                fm_name = cde_name
+                fm_description = cde_definition if cde_definition != cde_name else ""
 
             processed_value = {
                 "value_code": value_code,
-                "name": name,
-                "description": definition,
-                "index_codes": CDEToFindingModel._process_index_codes(value.get("index_codes", []))
+                "name": fm_name,
+                "description": fm_description,
+                "index_codes": CDEToFindingModel._process_index_codes(value.get("index_codes", [])) or []
             }
             values.append(processed_value)
         return values
@@ -105,12 +128,11 @@ class CDEToFindingModel:
             "name": element.get("name", ""),
             "description": element.get("definition", ""),
             "type": "numeric",
-            "min": numeric_value.get("min"),
-            "max": numeric_value.get("max"),
-            "step": numeric_value.get("step", 1),
+            "minimum": numeric_value.get("min"),
+            "maximum": numeric_value.get("max"),
             "unit": numeric_value.get("unit", "unit"),
             "required": False,
-            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", []))
+            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", [])) or []
         }
 
     @staticmethod
@@ -124,7 +146,7 @@ class CDEToFindingModel:
             "type": "choice",
             "required": False,
             "values": CDEToFindingModel._process_value_set(value_set, attribute_id),
-            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", []))
+            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", [])) or []
         }
 
     @staticmethod
@@ -132,11 +154,17 @@ class CDEToFindingModel:
         """Convert a CDE to FindingModel."""
         model_id = CDEToFindingModel._generate_model_id(cde_data["id"])
         
-        # Get body part index codes
+        # Get body part index codes - handle both single objects and arrays
         body_part_codes = []
         for part in cde_data.get("body_parts", []):
             if "index_codes" in part:
-                body_part_codes.append(part["index_codes"])
+                index_codes = part["index_codes"]
+                if isinstance(index_codes, dict):
+                    # Single index code object
+                    body_part_codes.append(index_codes)
+                elif isinstance(index_codes, list):
+                    # Array of index codes
+                    body_part_codes.extend(index_codes)
         
         # Process attributes
         attributes = []
@@ -153,7 +181,7 @@ class CDEToFindingModel:
             
             # If attribute has no index codes but we have body part codes, use those
             if not attribute.get("index_codes") and body_part_codes:
-                attribute["index_codes"] = CDEToFindingModel._process_index_codes(body_part_codes)
+                attribute["index_codes"] = CDEToFindingModel._process_index_codes(body_part_codes) or []
                 
             attributes.append(attribute)
 
@@ -165,26 +193,27 @@ class CDEToFindingModel:
         
         # Add any existing index codes
         if cde_data.get("index_codes"):
-            model_index_codes.extend(CDEToFindingModel._process_index_codes(cde_data["index_codes"]) or [])
+            existing_codes = CDEToFindingModel._process_index_codes(cde_data["index_codes"])
+            if existing_codes:
+                model_index_codes.extend(existing_codes)
 
-        # Create FindingModel
+        # Create FindingModel - REMOVE body_parts from output
         finding_model = {
             "oifm_id": model_id,
             "name": cde_data["name"],
             "description": cde_data["description"],
             "attributes": attributes,
-            "index_codes": model_index_codes,
-            "body_parts": CDEToFindingModel._process_body_parts(cde_data.get("body_parts", []))
+            "index_codes": model_index_codes
         }
 
         # Add body part codes to top-level index_codes
         if body_part_codes:
             for code in body_part_codes:
-                if isinstance(code, dict):  # Handle single code object
+                if isinstance(code, dict):
                     finding_model["index_codes"].append({
                         "system": code["system"],
                         "code": code["code"],
-                        "display": code.get("display")
+                        "display": code.get("display", "").lower()
                     })
 
         return finding_model
@@ -204,20 +233,22 @@ class CDEToFindingModel:
             
             # Ensure attributes array is not empty
             if not finding_model.get("attributes"):
+                # Extract number from CDE ID and format properly
+                cde_number = int(cde_data['id'].replace('RDES', ''))
                 finding_model["attributes"] = [{
-                    "oifma_id": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}",
+                    "oifma_id": f"OIFMA_CDE_{cde_number:06d}",
                     "name": "Presence",
                     "description": "Whether the finding is present",
                     "type": "choice",
                     "required": True,
                     "values": [
                         {
-                            "value_code": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}.1",
+                            "value_code": f"OIFMA_CDE_{cde_number:06d}.1",
                             "name": "Present",
                             "description": "The finding is present"
                         },
                         {
-                            "value_code": f"OIFMA_CDE_{cde_data['id'].replace('RDES', '')}.2",
+                            "value_code": f"OIFMA_CDE_{cde_number:06d}.2",
                             "name": "Absent",
                             "description": "The finding is absent"
                         }
@@ -227,12 +258,10 @@ class CDEToFindingModel:
             # Fix numeric attributes
             for attr in finding_model.get("attributes", []):
                 if attr.get("type") == "numeric":
-                    if attr.get("min") is None:
-                        attr["min"] = 0
-                    if attr.get("max") is None:
-                        attr["max"] = 100
-                    if attr.get("step") is None:
-                        attr["step"] = 1
+                    if attr.get("minimum") is None:
+                        attr["minimum"] = 0
+                    if attr.get("maximum") is None:
+                        attr["maximum"] = 100
                     if not attr.get("unit"):
                         attr["unit"] = "unit"
             

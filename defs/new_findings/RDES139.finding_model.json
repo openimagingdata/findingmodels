@@ -17,9 +17,8 @@
       "name": "Agatston score",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 10000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10000,
       "unit": "HU",
       "required": false,
       "index_codes": []
@@ -29,9 +28,8 @@
       "name": "Calcium volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 10000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10000,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -68,9 +66,8 @@
       "name": "Calcified lesion count",
       "description": "Step value: 1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -80,9 +77,8 @@
       "name": "Calcified lesion mass quantified",
       "description": "Step value: 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 10000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 10000,
       "unit": "mg",
       "required": false,
       "index_codes": []
@@ -94,6 +90,5 @@
       "code": "RDES139",
       "display": "coronary calcification on ct"
     }
-  ],
-  "body_parts": []
+  ]
 }

@@ -8,9 +8,8 @@
       "name": "Sigmoid colon wall thickness",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -65,9 +64,8 @@
       "name": "Organized collection size",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -79,6 +77,5 @@
       "code": "RDES138",
       "display": "acute diverticulitis"
     }
-  ],
-  "body_parts": []
+  ]
 }

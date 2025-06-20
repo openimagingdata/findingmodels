@@ -8,9 +8,8 @@
       "name": "Global cortical atrophy scale",
       "description": "system to assess cerebral atrophy, especially in the context of neurodegenerative diseases",
       "type": "numeric",
-      "min": 0,
-      "max": 3,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 3,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Posterior parietal atrophy score",
       "description": "Koedman Score",
       "type": "numeric",
-      "min": 0,
-      "max": 3,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 3,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -44,9 +42,8 @@
       "name": "Total brain volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -62,9 +59,8 @@
       "name": "Ventricular system volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -80,9 +76,8 @@
       "name": "Hippocampi volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -98,9 +93,8 @@
       "name": "Frontal lobes volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -116,9 +110,8 @@
       "name": "Temporal lobes volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -134,9 +127,8 @@
       "name": "Fzekas scale ",
       "description": "Fzekas Scale (from FLAIR sequence)",
       "type": "numeric",
-      "min": 0,
-      "max": 6,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 6,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -232,13 +224,7 @@
     {
       "system": "RADLEX",
       "code": "RID6434",
-      "display": "Brain"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Brain",
-      "index_codes": []
+      "display": "brain"
     }
   ]
 }

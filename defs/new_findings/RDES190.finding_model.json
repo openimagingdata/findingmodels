@@ -8,9 +8,8 @@
       "name": "Liver volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Right  lobe volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -32,9 +30,8 @@
       "name": "Left lobe volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -44,9 +41,8 @@
       "name": "Tumor volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -58,6 +54,5 @@
       "code": "RDES190",
       "display": "hepatic tumor volumes"
     }
-  ],
-  "body_parts": []
+  ]
 }

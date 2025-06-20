@@ -8,9 +8,8 @@
       "name": "Programmable valve setting",
       "description": "setting of the programmable valve",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm H2O",
       "required": false,
       "index_codes": []
@@ -49,6 +48,5 @@
       "code": "RDES118",
       "display": "ventriculoperitoneal shunt assessment"
     }
-  ],
-  "body_parts": []
+  ]
 }

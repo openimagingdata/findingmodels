@@ -8,9 +8,8 @@
       "name": "Stone size\t",
       "description": "If a common bile duct stone(s) is present then determine maximum measurement",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Duct dilation measurement ",
       "description": "Biliary ductal dilation measurement",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -50,9 +48,8 @@
       "name": "Lumen distention measurement",
       "description": "Gallbladder lumen distention (a measurement greater than 45 mm is considered distention) ",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -73,6 +70,5 @@
       "code": "RDES159",
       "display": "choledocholithiasis"
     }
-  ],
-  "body_parts": []
+  ]
 }

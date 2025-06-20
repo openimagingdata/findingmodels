@@ -8,9 +8,8 @@
       "name": "MBF quantification",
       "description": "MBF quantification per segment mL 100 mL min",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "100 ml per min",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "MBV quantification",
       "description": "MBV quantification per segment mL 100 mL",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml per 100ml",
       "required": false,
       "index_codes": [
@@ -44,9 +42,8 @@
       "name": "Global MBF quantification",
       "description": "Global MBF quantification mL 100 mL min",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml per 100 ml per min",
       "required": false,
       "index_codes": [
@@ -62,9 +59,8 @@
       "name": "Global MBV quantification",
       "description": "Global MBV quantification mL 100 mL",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml per 100 ml",
       "required": false,
       "index_codes": [
@@ -80,9 +76,8 @@
       "name": "MBF index",
       "description": "MBF index comparing MBF from each segment to the global LV MBF value",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -98,9 +93,8 @@
       "name": "Size",
       "description": "Size of Myocardial perfusion",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -121,13 +115,7 @@
     {
       "system": "RADLEX",
       "code": "RID1385",
-      "display": "Heart"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Heart",
-      "index_codes": []
+      "display": "heart"
     }
   ]
 }

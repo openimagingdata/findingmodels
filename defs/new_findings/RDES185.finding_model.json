@@ -8,9 +8,8 @@
       "name": "Mean systolic velocity\t",
       "description": "Mean CSF flow velocity during cardiac systole",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm/s",
       "required": false,
       "index_codes": []
@@ -31,6 +30,5 @@
       "code": "RDES185",
       "display": "hydrocephalus"
     }
-  ],
-  "body_parts": []
+  ]
 }

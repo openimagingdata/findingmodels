@@ -8,9 +8,8 @@
       "name": "Size",
       "description": "Measure largest diameter of nodule",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Volume",
       "description": "Measure the volume of the nodule.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm3",
       "required": false,
       "index_codes": []
@@ -97,6 +95,5 @@
       "code": "RDES99",
       "display": "incidental pulmonary nodules"
     }
-  ],
-  "body_parts": []
+  ]
 }

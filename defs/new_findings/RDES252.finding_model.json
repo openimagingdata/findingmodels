@@ -35,9 +35,8 @@
       "name": "Length",
       "description": "The length of aortic dissection",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -47,9 +46,8 @@
       "name": "Diameter",
       "description": "Aortic diameter",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -79,6 +77,5 @@
       "code": "RDES252",
       "display": "thoracic aortic dissection"
     }
-  ],
-  "body_parts": []
+  ]
 }

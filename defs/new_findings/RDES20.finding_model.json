@@ -8,9 +8,8 @@
       "name": "Supratentorial lesion number",
       "description": "Use 0-10 scale",
       "type": "numeric",
-      "min": 1,
-      "max": 10,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 10,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -56,9 +55,8 @@
       "name": "Infratentorial lesion number",
       "description": "Use 0-10 scale",
       "type": "numeric",
-      "min": 0,
-      "max": 10,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 10,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -139,13 +137,7 @@
     {
       "system": "RADLEX",
       "code": "RID6434",
-      "display": "Brain"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Brain",
-      "index_codes": []
+      "display": "brain"
     }
   ]
 }

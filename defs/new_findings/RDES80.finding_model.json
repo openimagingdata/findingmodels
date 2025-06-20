@@ -8,9 +8,8 @@
       "name": "Clot thickness",
       "description": "Slice thickness of the clot on scanner in mm",
       "type": "numeric",
-      "min": 0,
-      "max": 150,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 150,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -71,9 +70,8 @@
       "name": "Qanadli score",
       "description": "The embolus of each segmental artery was recorded as 1 point, and the total score of the pulmonary emboli above the segmental level was the sum of the segmental artery scores under it.",
       "type": "numeric",
-      "min": 0,
-      "max": 90,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 90,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -89,9 +87,8 @@
       "name": "Mastora score",
       "description": "The scoring system includes 5 mediastinal, 6 lobar, and 20 segmental arteries, which were each scored for the degree of luminal obliteration due to embolism on a scale from  0 to 5 (0=0 percent, 1= 1-24 percent, 2= 25-49%, 3= 50-74 percent, 4= 75-99 percent, 5= 100 percent)",
       "type": "numeric",
-      "min": 0,
-      "max": 90,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 90,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -107,9 +104,8 @@
       "name": "Total clot volume",
       "description": "Fully quantitative measures of total clot volume",
       "type": "numeric",
-      "min": 0,
-      "max": 90,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 90,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -130,13 +126,7 @@
     {
       "system": "RADLEX",
       "code": "RID1301",
-      "display": "Lung"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Lung",
-      "index_codes": []
+      "display": "lung"
     }
   ]
 }

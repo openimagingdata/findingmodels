@@ -8,9 +8,8 @@
       "name": "Right knee",
       "description": "Measure genu varus or valgus 1. Mechanical axis of femur MAF line from top of femoral head through intercondylar notch 2. Tibial axis TA line from intercondylare notch to mid tibial plafond 3. Angle between continuation of MAF to level of tibia and TA",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -61,9 +60,8 @@
       "name": "Left knee",
       "description": "Measure genu varus or valgus 1. Mechanical axis of femur MAF line from top of femoral head through intercondylar notch 2. Tibial axis TA line from intercondylare notch to mid tibial plafond 3. Angle between continuation of MAF to level of tibia and TA",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -119,31 +117,17 @@
     {
       "system": "RADLEX",
       "code": "RID2869",
-      "display": "Leg"
+      "display": "leg"
     },
     {
       "system": "RADLEX",
       "code": "RID2743",
-      "display": "Knee"
+      "display": "knee"
     },
     {
       "system": "RADLEX",
       "code": "RID28545",
-      "display": "Ankle"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Leg",
-      "index_codes": []
-    },
-    {
-      "name": "Knee",
-      "index_codes": []
-    },
-    {
-      "name": "Ankle",
-      "index_codes": []
+      "display": "ankle"
     }
   ]
 }

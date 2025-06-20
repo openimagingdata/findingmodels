@@ -68,9 +68,8 @@
       "name": "Maxillary sinus vertical diameter",
       "description": "Max vertical diameter of the sinus",
       "type": "numeric",
-      "min": 1,
-      "max": 1000,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -101,9 +100,8 @@
       "name": "Maxillary Infundibulum",
       "description": "Maxillary Infundibulum",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -119,9 +117,8 @@
       "name": "Osteomeatalunits",
       "description": "Osteomeatalunits",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -137,9 +134,8 @@
       "name": "Sphenoethmoidal recesses",
       "description": "Sphenoethmoidal recesses",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -155,9 +151,8 @@
       "name": "Sphenoid sinus vertical diameter",
       "description": "Max vertical diameter of sphenoid sinuses",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -173,9 +168,8 @@
       "name": "Maxillary sinus horizontal diameter",
       "description": "Max. horizontal diameter of maxillary sinus",
       "type": "numeric",
-      "min": 1,
-      "max": 1000,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -191,9 +185,8 @@
       "name": "Sphenoid sinus horizontal diameter",
       "description": "Max horizontal diameter of sphenoid sinus.",
       "type": "numeric",
-      "min": 1,
-      "max": 1000,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 1000,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -227,37 +220,37 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002061.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "Patent left frontal recess",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002061.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "Patent right frontal recess",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002061.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "Occluded right frontal recess",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002061.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "Occluded left frontal recess",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002061.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "Narrowed right frontal recess",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002061.6",
+          "value_code": "OIFMA_CDE_000019.05",
           "name": "Narrowed left frontal recess",
           "description": "",
           "index_codes": []
@@ -279,31 +272,31 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002062.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "midline",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002062.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "deviated left",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002062.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "deviated right",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002062.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "deviated left with septal spur",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002062.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "deviated right with septal spur",
           "description": "",
           "index_codes": []
@@ -325,31 +318,31 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002063.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "Aerated bilaterally",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002063.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "Opacified right anterior air cells",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002063.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "Opacified left anterior air cells",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002063.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "Opacified right posterior air cells",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002063.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "Opacified left posterior air cells",
           "description": "",
           "index_codes": []
@@ -371,31 +364,31 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002064.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "Patent bilaterally",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002064.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "Occluded right",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002064.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "Occluded left",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002064.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "Narrowed right",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002064.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "Narrowed left",
           "description": "",
           "index_codes": []
@@ -417,73 +410,73 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002065.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "patent right infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "patent left infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "narrowed right infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "narrowed left infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "occluded right infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.6",
+          "value_code": "OIFMA_CDE_000019.05",
           "name": "occluded left infundibulum",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.7",
+          "value_code": "OIFMA_CDE_000019.06",
           "name": "patent right middle meatus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.8",
+          "value_code": "OIFMA_CDE_000019.07",
           "name": "patent left middle meatus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.9",
+          "value_code": "OIFMA_CDE_000019.08",
           "name": "narrowed right middle meatus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.10",
+          "value_code": "OIFMA_CDE_000019.09",
           "name": "narrowed left middle meatus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.11",
+          "value_code": "OIFMA_CDE_000019.10",
           "name": "occluded right middle meatus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002065.12",
+          "value_code": "OIFMA_CDE_000019.11",
           "name": "occluded left middle meatus",
           "description": "",
           "index_codes": []
@@ -502,9 +495,8 @@
       "name": "Depth of mucosal disease",
       "description": "greatest depth of mucosal disease measured in the maxillary sinus.  (Often used for insurance purposes where significant is => 4 mm.",
       "type": "numeric",
-      "min": 0,
-      "max": 15,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 15,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -523,61 +515,61 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002067.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "None",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "nasal cavity",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "right maxillary sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "left maxillary sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "right ethmoid sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.6",
+          "value_code": "OIFMA_CDE_000019.05",
           "name": "left ethmoid sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.7",
+          "value_code": "OIFMA_CDE_000019.06",
           "name": "right sphenoid sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.8",
+          "value_code": "OIFMA_CDE_000019.07",
           "name": "left sphenoid sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.9",
+          "value_code": "OIFMA_CDE_000019.08",
           "name": "right frontal sinus",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002067.10",
+          "value_code": "OIFMA_CDE_000019.09",
           "name": "left frontal sinus",
           "description": "",
           "index_codes": []
@@ -599,67 +591,67 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002068.1",
+          "value_code": "OIFMA_CDE_000019.00",
           "name": "N/A",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.2",
+          "value_code": "OIFMA_CDE_000019.01",
           "name": "right haller cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.3",
+          "value_code": "OIFMA_CDE_000019.02",
           "name": "left haller cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.4",
+          "value_code": "OIFMA_CDE_000019.03",
           "name": "right onodi cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.5",
+          "value_code": "OIFMA_CDE_000019.04",
           "name": "left onodi cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.6",
+          "value_code": "OIFMA_CDE_000019.05",
           "name": "right ethmoid bulla",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.7",
+          "value_code": "OIFMA_CDE_000019.06",
           "name": "left ethmoid bulla",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.8",
+          "value_code": "OIFMA_CDE_000019.07",
           "name": "right intrasinus air cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.9",
+          "value_code": "OIFMA_CDE_000019.08",
           "name": "left intrasinus air cell",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.10",
+          "value_code": "OIFMA_CDE_000019.09",
           "name": "right concha bullosa",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002068.11",
+          "value_code": "OIFMA_CDE_000019.10",
           "name": "left concha bullosa",
           "description": "",
           "index_codes": []
@@ -683,13 +675,7 @@
     {
       "system": "RADLEX",
       "code": "RID9554",
-      "display": "Paransal Sinus"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Paransal Sinus",
-      "index_codes": []
+      "display": "paransal sinus"
     }
   ]
 }

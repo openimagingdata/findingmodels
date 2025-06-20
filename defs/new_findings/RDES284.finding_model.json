@@ -26,9 +26,8 @@
       "name": "Count",
       "description": "How many focal asymmetries can be seen.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -58,6 +57,5 @@
       "code": "RDES284",
       "display": "breast focal asymmetry"
     }
-  ],
-  "body_parts": []
+  ]
 }

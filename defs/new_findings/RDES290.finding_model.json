@@ -44,9 +44,8 @@
       "name": "Largest diameter of new area of effusion or edema",
       "description": "The largest area of edema or effusion",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -76,6 +75,5 @@
       "code": "RDES290",
       "display": "aria-e follow-up"
     }
-  ],
-  "body_parts": []
+  ]
 }

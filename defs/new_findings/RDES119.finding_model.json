@@ -8,9 +8,8 @@
       "name": "Alpha angle",
       "description": "alpha angle measurement",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": []
@@ -21,12 +20,6 @@
       "system": "RADELEMENT",
       "code": "RDES119",
       "display": "alpha angle measurement"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Femoral Neck",
-      "index_codes": []
     }
   ]
 }

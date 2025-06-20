@@ -8,9 +8,8 @@
       "name": "Prostate anteroposterior dimension",
       "description": "Maximum measurement in the anteroposterior dimension on mid-sagittal T2W image",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Prostate transverse dimension",
       "description": "Maximum measurement in transverse (left-right) dimension on axial T2 W image",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -32,9 +30,8 @@
       "name": "Prostate longitudinal dimension",
       "description": "Maximum measurement in longitudinal ( craniocaudal) dimension on mid-sagittal T2W image",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -44,9 +41,8 @@
       "name": "Total Prostate volume",
       "description": "It may be determined using\nmanual or automated segmentation or calculated using ellipsoid formulation;(maximum AP\ndimension) x (maximum longitudinal dimension) [both placed on the mid-sagittal T2W image] x\n(maximum transverse dimension) [placed on the axial T2W image] x 0.52.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cc",
       "required": false,
       "index_codes": []
@@ -58,6 +54,5 @@
       "code": "RDES240",
       "display": "prostate imaging reporting and data system (pi-rads)"
     }
-  ],
-  "body_parts": []
+  ]
 }

@@ -8,9 +8,8 @@
       "name": "AP measurement",
       "description": "Largest anterior-posterior dimension",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "RL measurement",
       "description": "Largest transverse dimension\n",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -32,9 +30,8 @@
       "name": "CC measurement",
       "description": "Largest cranio-caudal dimension\n",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -118,6 +115,5 @@
       "code": "RDES235",
       "display": "laryngeal cancer of the neck on ct"
     }
-  ],
-  "body_parts": []
+  ]
 }

@@ -17,9 +17,8 @@
       "name": "Volume",
       "description": "Volume of the reference lung region",
       "type": "numeric",
-      "min": 0,
-      "max": 10,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10,
       "unit": "L",
       "required": false,
       "index_codes": []
@@ -29,9 +28,8 @@
       "name": "Hyperlucent proportion",
       "description": "Proportion of the lung region which is hyperlucent",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -41,9 +39,8 @@
       "name": "Ground glass proportion",
       "description": "Proportion of the lung region which is ground glass",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -53,9 +50,8 @@
       "name": "Reticular proportion",
       "description": "Proportion of the lung region which is reticular",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -65,9 +61,8 @@
       "name": "Honeycombing proportion",
       "description": "Proportion of the lung region which is honeycombing",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -77,9 +72,8 @@
       "name": "Pulmonary vessel volume",
       "description": "Measurement of the amount of blood in the pulmonary arteries and veins\n",
       "type": "numeric",
-      "min": 0,
-      "max": 2000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 2000,
       "unit": "cm^3",
       "required": false,
       "index_codes": []
@@ -91,6 +85,5 @@
       "code": "RDES268",
       "display": "lung texture aggregate assessment"
     }
-  ],
-  "body_parts": []
+  ]
 }

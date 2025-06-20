@@ -8,9 +8,8 @@
       "name": "Agatston score",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 10000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10000,
       "unit": "HU",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Calcium volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 10000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10000,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -32,9 +30,8 @@
       "name": "Stenosis of the coronary arteries",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 190,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 190,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -44,9 +41,8 @@
       "name": "Maximum stenosis of the left main coronary artery",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 190,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 190,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -56,9 +52,8 @@
       "name": "Maximum stenosis of the left anterior descending coronary artery",
       "description": "percent",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -68,9 +63,8 @@
       "name": "Minimum stenosis of the diagonal branches",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -80,9 +74,8 @@
       "name": "Minimum stenosis of the ramus branch",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -92,9 +85,8 @@
       "name": "Minimum stenosis of the left circumflex artery",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -104,9 +96,8 @@
       "name": "Minimum stenosis of the obtuse marginal branch",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -116,9 +107,8 @@
       "name": "Minimum stenosis of the right coronary artery",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -128,9 +118,8 @@
       "name": "Minimum stenosis of the PDA",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -140,9 +129,8 @@
       "name": "Minimum stenosis of the posterior lateral branch",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "percent",
       "required": false,
       "index_codes": []
@@ -154,6 +142,5 @@
       "code": "RDES145",
       "display": "coronary cta"
     }
-  ],
-  "body_parts": []
+  ]
 }

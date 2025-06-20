@@ -26,9 +26,8 @@
       "name": "Ischemic core volume",
       "description": "The volume of brain on CBF maps with less than 30% cerebral blood flow indicating ischemic core",
       "type": "numeric",
-      "min": 0,
-      "max": 500,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 500,
       "unit": "cc",
       "required": false,
       "index_codes": []
@@ -38,9 +37,8 @@
       "name": "Ischemic penumbra volume",
       "description": "Volume of brain where the maximum transit time exceeds 6 seconds indicative of ischemic penumbra",
       "type": "numeric",
-      "min": 0,
-      "max": 500,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 500,
       "unit": "cc",
       "required": false,
       "index_codes": []
@@ -50,9 +48,8 @@
       "name": "Mismatch volume",
       "description": "The difference in brain volume between the ischemic penumbra (Tmax > 6 sec) and the ischemic core (CBF <30%)",
       "type": "numeric",
-      "min": 0,
-      "max": 500,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 500,
       "unit": "cc",
       "required": false,
       "index_codes": []
@@ -62,9 +59,8 @@
       "name": "Poor collateral perfusion volume",
       "description": "(Tmax > 10 s) ",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml",
       "required": false,
       "index_codes": []
@@ -74,9 +70,8 @@
       "name": "Hypoperfusion index",
       "description": "(Tmax > 10 s/Tmax > 6 s) ",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -86,9 +81,8 @@
       "name": "Mismatch ratio",
       "description": "Mismatch ratio is defined as the perfusion deficit divide by the infarct core volume (=volume of tissue with Tmax >6 s/volume of tissue with rCBF <30%).",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -100,6 +94,5 @@
       "code": "RDES224",
       "display": "ct perfusion stroke"
     }
-  ],
-  "body_parts": []
+  ]
 }

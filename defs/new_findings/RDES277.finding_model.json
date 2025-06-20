@@ -161,9 +161,8 @@
       "name": "AP dimension",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -173,9 +172,8 @@
       "name": "TV dimension",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -185,9 +183,8 @@
       "name": "CC dimension",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -289,6 +286,5 @@
       "code": "RDES277",
       "display": "sella mass"
     }
-  ],
-  "body_parts": []
+  ]
 }

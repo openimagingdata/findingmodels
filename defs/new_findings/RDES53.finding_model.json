@@ -8,9 +8,8 @@
       "name": "Pulmonary vein diameter",
       "description": "Diameter of pulmonary vein mm",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Interatrial septal thickness",
       "description": "Interatrial septal thickness, mm",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -74,9 +72,8 @@
       "name": "Vein ostia proximity to esophagus",
       "description": "Measure the distance between the vein ostia and esophagus, cm",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -92,9 +89,8 @@
       "name": "Vein ostia proximity to aorta",
       "description": "Measure the distance between the vein ostia and aorta, cm",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -115,13 +111,7 @@
     {
       "system": "RADLEX",
       "code": "RID1231",
-      "display": "Pulmonary vein"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Pulmonary Vein",
-      "index_codes": []
+      "display": "pulmonary vein"
     }
   ]
 }

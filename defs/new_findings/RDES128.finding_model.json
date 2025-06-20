@@ -68,9 +68,8 @@
       "name": "Width - Axial Max",
       "description": "Longest diameter measured in the axial plane",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -86,9 +85,8 @@
       "name": "Volume - Tada Formula",
       "description": "V?=?a???b???c???1/2, where ?V? represents hematoma volume; ?a? indicates the diameter of the largest area of the hematoma layer; ?b? shows the upright diameter of the diameter of the largest area of the hematoma layer, and ?c? is the layer thickness",
       "type": "numeric",
-      "min": 0,
-      "max": 1100000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1100000,
       "unit": "mm3",
       "required": false,
       "index_codes": [
@@ -119,9 +117,8 @@
       "name": "T1 Intensity ",
       "description": "Hematoma T1 Intensity ",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "MR",
       "required": false,
       "index_codes": [
@@ -137,9 +134,8 @@
       "name": "T2 Intensity",
       "description": "Hematoma T2 Intensity",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -175,13 +171,7 @@
     {
       "system": "RADLEX",
       "code": "RID6434",
-      "display": "Brain"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Brain",
-      "index_codes": []
+      "display": "brain"
     }
   ]
 }

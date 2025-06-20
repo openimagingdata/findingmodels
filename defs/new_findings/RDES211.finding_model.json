@@ -17,9 +17,8 @@
       "name": "Dome diameter",
       "description": "Diameter of the aneurysm dome",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -29,9 +28,8 @@
       "name": "Neck diameter",
       "description": "Diameter of the aneurysm neck",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -41,9 +39,8 @@
       "name": "Diameter ratio",
       "description": "Ratio of dome diameter to neck diameter",
       "type": "numeric",
-      "min": 0,
-      "max": 10,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 10,
       "unit": "Ratio",
       "required": false,
       "index_codes": []
@@ -53,9 +50,8 @@
       "name": "Width",
       "description": "Width of the aneurysm dome",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -65,9 +61,8 @@
       "name": "Length",
       "description": "Length of the aneurysm dome",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -97,6 +92,5 @@
       "code": "RDES211",
       "display": "cerebral aneurysm on cta"
     }
-  ],
-  "body_parts": []
+  ]
 }

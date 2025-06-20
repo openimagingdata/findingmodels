@@ -23,9 +23,8 @@
       "name": "Primary Tumor Size ",
       "description": "Length of Involved segment",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -176,9 +175,8 @@
       "name": "Number of sites involved by metastatic disease",
       "description": "Add one for each involved site (only include suspicious, highly suspicious and biopsy proven sites). exclude indeterminate sites and their status should d be determined on follow up imaging. \n\n",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -194,9 +192,8 @@
       "name": "Size of representative sites of disease 1",
       "description": "Ideally we need a table for measurement of up to 5-10 lesions\n\nThis can be copied and pasted as need for 5-10 lesions",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -212,9 +209,8 @@
       "name": "Size of representative lesion 2",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -260,9 +256,8 @@
       "name": "Size of representation lesion 3",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -293,9 +288,8 @@
       "name": "Size of representation lesion 4",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 200,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 200,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -331,13 +325,7 @@
     {
       "system": "RADLEX",
       "code": "RID31011",
-      "display": "Colon"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Colon",
-      "index_codes": []
+      "display": "colon"
     }
   ]
 }

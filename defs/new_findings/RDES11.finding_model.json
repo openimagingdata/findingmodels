@@ -63,9 +63,8 @@
       "name": "Distance of lowest extent of tumor from anal verge",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 0,
-      "step": 0,
+      "minimum": 0,
+      "maximum": 0,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -96,9 +95,8 @@
       "name": "Distance of lowest extent of tumor from top of anal sphincter",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 0,
-      "step": 0,
+      "minimum": 0,
+      "maximum": 0,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -189,9 +187,8 @@
       "name": "Craniocaudad extent",
       "description": "Greatest distance along the craniocaudal axis.",
       "type": "numeric",
-      "min": 0,
-      "max": 99,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 99,
       "unit": "cm",
       "required": false,
       "index_codes": [
@@ -210,13 +207,13 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000074.1",
+          "value_code": "OIFMA_CDE_000011.00",
           "name": "No",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_000074.2",
+          "value_code": "OIFMA_CDE_000011.01",
           "name": "Yes",
           "description": "",
           "index_codes": []
@@ -670,9 +667,8 @@
       "name": "Distance to MRF",
       "description": "Shortest distance of the definitive tumor border to the mesorectal fascia (MRF)",
       "type": "numeric",
-      "min": 0,
-      "max": 99,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 99,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -703,9 +699,8 @@
       "name": "Extramural depth of invasion",
       "description": "Extramural depth of invasion (EMD) at the site of tumor closest to the MRF.",
       "type": "numeric",
-      "min": 0,
-      "max": 99,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 99,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -747,12 +742,6 @@
       "system": "RADLEX",
       "code": "RID163",
       "display": "rectum"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Rectum",
-      "index_codes": []
     }
   ]
 }

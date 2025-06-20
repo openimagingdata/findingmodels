@@ -8,9 +8,8 @@
       "name": "Cobb angle",
       "description": "Measure coronal plane deformity on anteroposterior plane radiographs in the classification of scoliosis (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Pelvic tilt",
       "description": "Angle between the iliac crest to the horizontal (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -74,9 +72,8 @@
       "name": "Pelvic incidence",
       "description": "Angle of incidence is the algebraic sum of 2 complementary angles: pelvic tilt and sacral slope (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -92,9 +89,8 @@
       "name": "Sagittal vertical axis",
       "description": "Sagittal offset of a plumb line dropped from the C7 vertebral body from the posterosuperior corner of the sacral plate (mm)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -110,9 +106,8 @@
       "name": "Thoracic kyphosis angle",
       "description": "Thoracic convexity (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -128,9 +123,8 @@
       "name": "Lumbar lordosis angle",
       "description": "Anterior convexity of the lumbar spine in the midsagittal plane (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degrees",
       "required": false,
       "index_codes": [
@@ -181,13 +175,7 @@
     {
       "system": "RADLEX",
       "code": "RID7741",
-      "display": "Spine"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Spine",
-      "index_codes": []
+      "display": "spine"
     }
   ]
 }

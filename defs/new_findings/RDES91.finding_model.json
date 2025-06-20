@@ -8,9 +8,8 @@
       "name": "Volume",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -74,9 +73,8 @@
       "name": "Quantity",
       "description": "Number of brain contusions",
       "type": "numeric",
-      "min": 0,
-      "max": 20,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 20,
       "unit": "N/A",
       "required": false,
       "index_codes": []
@@ -86,9 +84,8 @@
       "name": "Size",
       "description": "Size of brain contusion",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -109,6 +106,5 @@
       "code": "RDES91",
       "display": "subarachnoid hemorrhage"
     }
-  ],
-  "body_parts": []
+  ]
 }

@@ -8,9 +8,8 @@
       "name": "Recurrence probability",
       "description": "probability of recurrence after treatment",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "probability of recurrence after treatment",
       "required": false,
       "index_codes": [
@@ -31,9 +30,8 @@
       "name": "Radiation necrosis probability",
       "description": "probability of radiation necrosis after treatment",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "probability of radiation necrosis after treatment",
       "required": false,
       "index_codes": [
@@ -114,9 +112,8 @@
       "name": "Current enhancing tumor volume",
       "description": "Current volume of enhancing detected region, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -137,9 +134,8 @@
       "name": "Current FLAIR volume",
       "description": "Current volume of FLAIR/edema detected region, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -160,9 +156,8 @@
       "name": "Current necrosis/cavity volume",
       "description": "Current volume of necrosis/cavity detected region, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -183,9 +178,8 @@
       "name": "Current enhancing tumor volume change from previous",
       "description": "Curren change in enhancing tumor volume from previous timepoint, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -206,9 +200,8 @@
       "name": "Current FLAIR volume change from previous",
       "description": "Current change in FLAIR volume from previous timepoint, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -229,9 +222,8 @@
       "name": "Prior enhancing tumor volume change from baseline",
       "description": "Prior change in enhancing tumor volume from baseline, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -252,9 +244,8 @@
       "name": "Prior FLAIR volume change from baseline",
       "description": "Prior change in FLAIR volume from baseline, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -275,9 +266,8 @@
       "name": "Prior necrosis/cavity volume change from baseline",
       "description": "Prior change in necrosis/cavity volume from baseline, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -298,9 +288,8 @@
       "name": "Baseline enhancing tumor volume",
       "description": "Baseline volume of enhancing detected region, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -321,9 +310,8 @@
       "name": "Baseline FLAIR volume",
       "description": "Baseline volume of FLAIR/edema detected region, step value 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -344,9 +332,8 @@
       "name": "Baseline necrosis/cavity volume",
       "description": "Baseline volume of necrosis/cavity detected region, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "cm3",
       "required": false,
       "index_codes": [
@@ -367,9 +354,8 @@
       "name": "Baseline enhancing tumor volume change from previous",
       "description": "Baseline change in enhancing tumor volume from previous timepoint, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -390,9 +376,8 @@
       "name": "Baseline FLAIR volume change from previous",
       "description": "Baseline change in FLAIR volume from previous timepoint, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -413,9 +398,8 @@
       "name": "Baseline necrosis/cavity volume change from previous",
       "description": "Current change in necrosis/cavity volume from previous timepoint, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -436,9 +420,8 @@
       "name": "Baseline enhancing tumor volume change",
       "description": "Baseline change in enhancing tumor volume, step value: 0.01.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": [
@@ -464,22 +447,12 @@
     {
       "system": "RADLEX",
       "code": "RID6434",
-      "display": "Brain"
+      "display": "brain"
     },
     {
       "system": "RADLEX",
       "code": "RID7361",
-      "display": "Spinal Cord"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Brain",
-      "index_codes": []
-    },
-    {
-      "name": "Spinal Cord",
-      "index_codes": []
+      "display": "spinal cord"
     }
   ]
 }

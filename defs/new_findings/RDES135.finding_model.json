@@ -8,9 +8,8 @@
       "name": "T2",
       "description": "T2 value",
       "type": "numeric",
-      "min": 0,
-      "max": 1000,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 1000,
       "unit": "ms",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Estimated iron content",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 500,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 500,
       "unit": "mcg/dL",
       "required": false,
       "index_codes": [
@@ -64,13 +62,7 @@
     {
       "system": "RADLEX",
       "code": "RID1385",
-      "display": "Heart"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Heart",
-      "index_codes": []
+      "display": "heart"
     }
   ]
 }

@@ -8,9 +8,8 @@
       "name": "Percent lobar involvement",
       "description": "for any detected emphysema, measure the percent of the lobe with emphysema",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "percent",
       "required": false,
       "index_codes": [
@@ -76,13 +75,7 @@
     {
       "system": "RADLEX",
       "code": "RID1301",
-      "display": "Lung"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Lung",
-      "index_codes": []
+      "display": "lung"
     }
   ]
 }

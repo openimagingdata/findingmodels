@@ -35,9 +35,8 @@
       "name": "Baseline microhemorrhages (ARIA-H)",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -56,9 +55,8 @@
       "name": "New macrohemorrhages (ARIA-H)",
       "description": "New compared to baseline",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": []
@@ -106,6 +104,5 @@
       "code": "RDES291",
       "display": "aria-h follow-up"
     }
-  ],
-  "body_parts": []
+  ]
 }

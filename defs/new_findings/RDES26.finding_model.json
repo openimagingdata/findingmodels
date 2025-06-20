@@ -23,9 +23,8 @@
       "name": "Appendiceal diameter",
       "description": "Maximum diameter of the appendix",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -131,9 +130,8 @@
       "name": "Obstructing focus size",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -154,13 +152,7 @@
     {
       "system": "RADLEX",
       "code": "RID168",
-      "display": "Appendix"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Appendix",
-      "index_codes": []
+      "display": "appendix"
     }
   ]
 }

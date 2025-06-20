@@ -53,9 +53,8 @@
       "name": "Distance from landmark",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -67,6 +66,5 @@
       "code": "RDES285",
       "display": "breast architectural distortion"
     }
-  ],
-  "body_parts": []
+  ]
 }

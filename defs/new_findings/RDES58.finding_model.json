@@ -8,9 +8,8 @@
       "name": "Carina angle",
       "description": "Carina angle (degrees)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -31,13 +30,7 @@
     {
       "system": "RADLEX",
       "code": "RID1248",
-      "display": "Carina"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Carina",
-      "index_codes": []
+      "display": "carina"
     }
   ]
 }

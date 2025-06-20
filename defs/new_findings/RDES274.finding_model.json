@@ -44,9 +44,8 @@
       "name": "Amount of residual disease",
       "description": "Percentage of the pre-operative volume",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -67,6 +66,5 @@
       "code": "RDES274",
       "display": "pituitary post-operative sella"
     }
-  ],
-  "body_parts": []
+  ]
 }

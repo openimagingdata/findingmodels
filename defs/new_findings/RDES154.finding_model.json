@@ -4,19 +4,19 @@
   "description": "This module can be used for characterizing liver lesion for\n\t\t\t\tMRI",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_154",
+      "oifma_id": "OIFMA_CDE_000154",
       "name": "Presence",
       "description": "Whether the finding is present",
       "type": "choice",
       "required": true,
       "values": [
         {
-          "value_code": "OIFMA_CDE_154.1",
+          "value_code": "OIFMA_CDE_000154.1",
           "name": "Present",
           "description": "The finding is present"
         },
         {
-          "value_code": "OIFMA_CDE_154.2",
+          "value_code": "OIFMA_CDE_000154.2",
           "name": "Absent",
           "description": "The finding is absent"
         }
@@ -29,6 +29,5 @@
       "code": "RDES154",
       "display": "li-rads"
     }
-  ],
-  "body_parts": []
+  ]
 }

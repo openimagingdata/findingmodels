@@ -8,9 +8,8 @@
       "name": "Right lower extremity length",
       "description": "Total length of the right lower extremity measured from the apex of the right femoral head to the center of the right tibial plafond",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -20,9 +19,8 @@
       "name": "Right femur length",
       "description": "Length of the right femur measured from the apex of the right femoral head to the distal medial right femoral condyle",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -32,9 +30,8 @@
       "name": "Right tibia length",
       "description": "Length of the right tibia measured from the medial right femoral condyle to the center of the right tibial plafond",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -44,9 +41,8 @@
       "name": "Left femur length",
       "description": "Length of the left femur measured from the apex of the left femoral head to the distal medial left femoral condyle",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -56,9 +52,8 @@
       "name": "Left tibia length",
       "description": "Length of the left tibia measured from the medial left femoral condyle to the center of the left tibial plafond",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -68,9 +63,8 @@
       "name": "Right lower extremity angle at the knee",
       "description": "The angle between the right femur and tibia",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "Degrees",
       "required": false,
       "index_codes": []
@@ -80,9 +74,8 @@
       "name": "Left lower extremity angle at the knee",
       "description": "The angle between the left femur and tibia",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "Degrees",
       "required": false,
       "index_codes": []
@@ -92,9 +85,8 @@
       "name": "Pelvic Tilt",
       "description": "Angle between the iliac crest to the horizontal",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "Degrees",
       "required": false,
       "index_codes": []
@@ -104,9 +96,8 @@
       "name": "Leg Length Discrepancy",
       "description": "Absolute value of the difference between the lengths of the right and left lower extremities",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm",
       "required": false,
       "index_codes": []
@@ -127,6 +118,5 @@
       "code": "RDES172",
       "display": "leg length discrepancy"
     }
-  ],
-  "body_parts": []
+  ]
 }

@@ -53,9 +53,8 @@
       "name": "Stenosis NASCET degree",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "percentage",
       "required": false,
       "index_codes": []
@@ -65,9 +64,8 @@
       "name": "Stenosis length",
       "description": "Stenosis length is expressed as a fraction of the diameter (D) of the undiseased CCA. Examples a?c show length 1 and length 2 in different situations.",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "fraction of the diameter",
       "required": false,
       "index_codes": []
@@ -97,6 +95,5 @@
       "code": "RDES234",
       "display": "ct angiogram neck carotid atherosclerotic"
     }
-  ],
-  "body_parts": []
+  ]
 }

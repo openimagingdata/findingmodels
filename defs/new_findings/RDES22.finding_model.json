@@ -98,9 +98,8 @@
       "name": "Midline shift",
       "description": "Midline shift in mm",
       "type": "numeric",
-      "min": 0,
-      "max": 1,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 1,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -221,9 +220,8 @@
       "name": "ASPECTS classification",
       "description": "ASPECTS classification on a scale from 1 to 10",
       "type": "numeric",
-      "min": 1,
-      "max": 10,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 10,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -244,13 +242,7 @@
     {
       "system": "RADLEX",
       "code": "RID6434",
-      "display": "Brain"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Brain",
-      "index_codes": []
+      "display": "brain"
     }
   ]
 }

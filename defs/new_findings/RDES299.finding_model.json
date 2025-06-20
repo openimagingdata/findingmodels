@@ -8,9 +8,8 @@
       "name": "Hematoma size",
       "description": "Measure the largest dimension in any plane",
       "type": "numeric",
-      "min": 1,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 1,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -76,6 +75,5 @@
       "code": "RDES299",
       "display": "mr cerebral amyloid angiopathy (modified boston criteria)"
     }
-  ],
-  "body_parts": []
+  ]
 }

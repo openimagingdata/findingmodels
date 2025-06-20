@@ -8,9 +8,8 @@
       "name": "Flow rate",
       "description": "Measurement of net flow volume in the pulmonary artery above the aortic valve  (mL/sec)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "ml per sec",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Maximum flow velocity",
       "description": "Measurement of maximum flow velocity in the pulmonary artery above the aortic valve (cm/sec)",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cm per sec",
       "required": false,
       "index_codes": [
@@ -44,9 +42,8 @@
       "name": "Main artery diameter",
       "description": "Diameter of main pulmonary artery in mm, value step 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -62,9 +59,8 @@
       "name": "Left artery diameter",
       "description": "Diameter of left pulmonary artery in mm, value step 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -80,9 +76,8 @@
       "name": "Right artery diameter",
       "description": "Right pulmonary artery diameter in mm, step value 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -98,9 +93,8 @@
       "name": "Diameter ratio",
       "description": "Main pulmonary artery to aortic diameter ratio MPAAo, value step 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -116,9 +110,8 @@
       "name": "Flow ratio",
       "description": "Measurement of Qp-Qs ratio using aortic and pulmonary flow measurements, value step 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 5,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 5,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -134,9 +127,8 @@
       "name": "Trunk diameter",
       "description": "Measure pulmonary artery trunk dimensions, value step 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -152,9 +144,8 @@
       "name": "Segmental artery diameter",
       "description": "Defines dimensions of lobar and segmental pulmonary arteries, step value 0.1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -185,9 +176,8 @@
       "name": "Lobar artery diameter",
       "description": "Value step 1",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": [
@@ -208,13 +198,7 @@
     {
       "system": "RADLEX",
       "code": "RID874",
-      "display": "Pulmonary artery"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Pulmonary Artery",
-      "index_codes": []
+      "display": "pulmonary artery"
     }
   ]
 }

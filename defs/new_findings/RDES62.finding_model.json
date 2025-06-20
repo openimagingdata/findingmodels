@@ -8,9 +8,8 @@
       "name": "Measurement",
       "description": "Measure the  amount of  subsidence. Alert if  subsidence  is greater than or equal to 10 mm",
       "type": "numeric",
-      "min": 0,
-      "max": 30,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 30,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -31,13 +30,7 @@
     {
       "system": "RADLEX",
       "code": "RID2639",
-      "display": "Hip"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Hip",
-      "index_codes": []
+      "display": "hip"
     }
   ]
 }

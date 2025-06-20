@@ -26,9 +26,8 @@
       "name": "Stenosis percent",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "%",
       "required": false,
       "index_codes": []
@@ -83,9 +82,8 @@
       "name": "Dissection length",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -95,9 +93,8 @@
       "name": "Dissection degree of narrowing",
       "description": "",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "degree",
       "required": false,
       "index_codes": []
@@ -109,6 +106,5 @@
       "code": "RDES169",
       "display": "cta stroke brain"
     }
-  ],
-  "body_parts": []
+  ]
 }

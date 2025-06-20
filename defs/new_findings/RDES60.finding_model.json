@@ -8,9 +8,8 @@
       "name": "Myocardial blood flow",
       "description": "Measure myocardial blood flow at rest and stress in each coronary artery distribution cc gm min",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "cc gm min",
       "required": false,
       "index_codes": [
@@ -26,9 +25,8 @@
       "name": "Seventeen segment coronary flow reserves",
       "description": "Calculate coronary flow reserves from myocardial blood flow for each of the AHA segment sccgmmin",
       "type": "numeric",
-      "min": 0,
-      "max": 100,
-      "step": 0.1,
+      "minimum": 0,
+      "maximum": 100,
       "unit": "unit",
       "required": false,
       "index_codes": [
@@ -49,13 +47,7 @@
     {
       "system": "RADLEX",
       "code": "RID1385",
-      "display": "Heart"
-    }
-  ],
-  "body_parts": [
-    {
-      "name": "Heart",
-      "index_codes": []
+      "display": "heart"
     }
   ]
 }

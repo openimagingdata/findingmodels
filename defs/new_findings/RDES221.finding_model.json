@@ -98,9 +98,8 @@
       "name": "Perpendicular diameter",
       "description": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
       "type": "numeric",
-      "min": 1,
-      "max": 200,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 200,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -122,33 +121,33 @@
       "required": false,
       "values": [
         {
-          "value_code": "OIFMA_CDE_002037.1",
-          "name": "no contrast injected",
-          "description": "",
+          "value_code": "OIFMA_CDE_000221.00",
+          "name": "1",
+          "description": "no contrast injected",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002037.2",
-          "name": "no contract enhancement",
-          "description": "",
+          "value_code": "OIFMA_CDE_000221.01",
+          "name": "0",
+          "description": "no contract enhancement",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002037.3",
+          "value_code": "OIFMA_CDE_000221.02",
           "name": "No",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002037.4",
+          "value_code": "OIFMA_CDE_000221.03",
           "name": "Yes",
           "description": "",
           "index_codes": []
         },
         {
-          "value_code": "OIFMA_CDE_002037.5",
-          "name": "indeterminate",
-          "description": "",
+          "value_code": "OIFMA_CDE_000221.04",
+          "name": "2",
+          "description": "indeterminate",
           "index_codes": []
         }
       ],
@@ -177,9 +176,8 @@
       "name": "Longitudinal diameter",
       "description": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
       "type": "numeric",
-      "min": 1,
-      "max": 200,
-      "step": 1,
+      "minimum": 1,
+      "maximum": 200,
       "unit": "mm",
       "required": false,
       "index_codes": []
@@ -272,6 +270,5 @@
       "code": "RDES221",
       "display": "mri brain baseline glioma vasari feature"
     }
-  ],
-  "body_parts": []
+  ]
 }
