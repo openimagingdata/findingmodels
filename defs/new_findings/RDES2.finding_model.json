@@ -4,19 +4,19 @@
   "description": "CAR/DS defines a set of algorithms (decision trees) to generate consistent recommendations for imaging findings.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_000002",
+      "oifma_id": "OIFMA_CDE_2",
       "name": "Presence",
       "description": "Whether the finding is present",
       "type": "choice",
       "required": true,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000002.1",
+          "value_code": "OIFMA_CDE_2.1",
           "name": "Present",
           "description": "The finding is present"
         },
         {
-          "value_code": "OIFMA_CDE_000002.2",
+          "value_code": "OIFMA_CDE_2.2",
           "name": "Absent",
           "description": "The finding is absent"
         }
