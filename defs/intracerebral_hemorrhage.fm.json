@@ -1,37 +1,28 @@
 {
-  "oifm_id": "OIFM_GMTS_007650",
-  "name": "intracerebral hemorrhage",
-  "description": "Bleeding within the cerebral parenchyma.",
+  "oifm_id": "OIFM_MSFT_218756",
+  "name": "Intracerebral Hemorrhage",
+  "description": "Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.",
   "synonyms": [
-    "ICH",
-    "cerebral hemorrhage"
-  ],
-  "tags": [
-    "neuro",
-    "CT",
-    "MR",
-    "bleeding",
-    "neurology",
-    "diagnosis"
+    "ICH"
   ],
   "contributors": [
     {
-      "name": "Radiology Gamuts Ontology",
-      "code": "GMTS",
-      "url": "https://gamuts.net/"
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_449529",
+      "oifma_id": "OIFMA_MSFT_953007",
       "name": "presence",
-      "description": "Presence or absence of intracerebral hemorrhage",
+      "description": "Indicates whether an intracerebral hemorrhage is absent, present, or unclear.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_449529.0",
+          "value_code": "OIFMA_MSFT_953007.0",
           "name": "absent",
-          "description": "Intracerebral hemorrhage is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -46,9 +37,8 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449529.1",
+          "value_code": "OIFMA_MSFT_953007.1",
           "name": "present",
-          "description": "Intracerebral hemorrhage is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -63,26 +53,8 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_449529.2",
-          "name": "indeterminate",
-          "description": "Presence of intracerebral hemorrhage cannot be determined",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID39110",
-              "display": "indeterminate"
-            },
-            {
-              "system": "SNOMED",
-              "code": "82334004",
-              "display": "Indeterminate (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_449529.3",
+          "value_code": "OIFMA_MSFT_953007.2",
           "name": "unknown",
-          "description": "Presence of intracerebral hemorrhage is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -95,9 +67,25 @@
               "display": "Unknown (qualifier value)"
             }
           ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_953007.3",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
