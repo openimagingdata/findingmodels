@@ -1,0 +1,80 @@
+{
+  "oifm_id": "OIFM_MSFT_113965",
+  "name": "Quantified ICH",
+  "description": "A condition characterized by the presence of blood within the brain tissue and associated perfusion metrics measured by CT.",
+  "synonyms": [
+    "ICH+"
+  ],
+  "tags": [
+    "hemorrhage",
+    "ICH+",
+    "neurology",
+    "brain imaging"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_742741",
+      "name": "hd1 volume",
+      "description": "Volume of hemorrhage density region 1 in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_617615",
+      "name": "hd2 volume",
+      "description": "Volume of hemorrhage density region 2 in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_936229",
+      "name": "total volume",
+      "description": "Total volume of intracranial hemorrhage in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_695140",
+      "name": "rlv volume",
+      "description": "Volume of the right lateral ventricle in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_757453",
+      "name": "llv volume",
+      "description": "Volume of the left lateral ventricle in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_746170",
+      "name": "lv asymmetry ratio",
+      "description": "Ratio of right lateral ventricle volume to left lateral ventricle volume.",
+      "type": "numeric",
+      "unit": "dimensionless",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_304980",
+      "name": "midline shift",
+      "description": "Deviation from midline in millimeters.",
+      "type": "numeric",
+      "unit": "mm",
+      "required": false
+     }
+  ]
+}
