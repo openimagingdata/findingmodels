@@ -1,0 +1,110 @@
+{
+  "oifm_id": "OIFM_MSFT_273398",
+  "name": "CT Perfusion",
+  "description": "CT perfusion is an imaging technique that assesses blood flow in the brain using computed tomography imaging. It is used to identify areas of ischemia and guide clinical management.",
+  "synonyms": [
+    "CTP",
+    "Computed Tomography Perfusion",
+    "Perfusion CT"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_122477",
+      "name": "tmax volume",
+      "description": "Volume of tissue with Tmax greater than 6 seconds in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_677533",
+      "name": "mismatch volume",
+      "description": "Difference between penumbra and core volumes in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_589582",
+      "name": "mismatch ratio",
+      "description": "Ratio of penumbra to core volume.",
+      "type": "numeric",
+      "unit": "dimensionless",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_840219",
+      "name": "hypoperfusion index",
+      "description": "Index representing the severity of perfusion deficit.",
+      "type": "numeric",
+      "unit": "dimensionless",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_883923",
+      "name": "ischemic core volume",
+      "description": "Volume of ischemic core in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_427638",
+      "name": "penumbra volume",
+      "description": "Volume of penumbra in milliliters.",
+      "type": "numeric",
+      "unit": "mL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_416942",
+      "name": "mean transit time",
+      "description": "Mean transit time in seconds.",
+      "type": "numeric",
+      "unit": "seconds",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_794768",
+      "name": "cerebral blood flow",
+      "description": "Cerebral blood flow compared to the contralateral side in mL/100g/min.",
+      "type": "numeric",
+      "unit": "mL/100g/min",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_779814",
+      "name": "cerebral blood volume",
+      "description": "Cerebral blood volume used to define infarct core in mL/100g.",
+      "type": "numeric",
+      "unit": "mL/100g",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_018105",
+      "name": "target mismatch profile",
+      "description": "Indicates the status of target mismatch profile based on multiple perfusion measures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_018105.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MSFT_018105.1",
+          "name": "no"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
