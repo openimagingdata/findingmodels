@@ -80,16 +80,9 @@ class CDEToFindingModel:
 
         values = []
         for i, value in enumerate(value_set["values"], 0):
-            # Convert CDE code to proper FindingModel format
-            cde_code = value.get("code", "")
-            if cde_code and cde_code.startswith("RDE"):
-                # Extract number from RDE code (e.g., "RDE154.0" -> "154")
-                number = cde_code.split(".")[0].replace("RDE", "")
-                # Generate proper FindingModel value code with zero-padding
-                value_code = f"OIFMA_CDE_{int(number):06d}.{i:02d}"
-            else:
-                # Fallback to attribute_id format with zero-padding
-                value_code = f"{attribute_id}.{i:02d}"
+            # Generate value code using the attribute_id (not the CDE value code)
+            # This ensures consistency with the attribute ID
+            value_code = f"{attribute_id}.{i:02d}"
             
             cde_name = value.get("name", "")
             cde_value = value.get("value", "")
@@ -140,12 +133,26 @@ class CDEToFindingModel:
     def _process_choice_attribute(element: Dict, attribute_id: str) -> Dict:
         """Process a choice attribute from CDE to FindingModel format."""
         value_set = element.get("value_set", {})
+        
+        # Get max_selected from value_set cardinality
+        max_selected = 1  # default
+        if value_set.get("max_cardinality"):
+            max_cardinality = value_set["max_cardinality"]
+            if max_cardinality == "all":
+                max_selected = "all"
+            else:
+                try:
+                    max_selected = int(max_cardinality)
+                except (ValueError, TypeError):
+                    max_selected = 1
+        
         return {
             "oifma_id": attribute_id,
             "name": element.get("name", ""),
             "description": element.get("definition", ""),
             "type": "choice",
             "required": False,
+            "max_selected": max_selected,
             "values": CDEToFindingModel._process_value_set(value_set, attribute_id),
             "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", [])) or []
         }
@@ -180,10 +187,8 @@ class CDEToFindingModel:
             else:
                 continue
             
-            # If attribute has no index codes but we have body part codes, use those
-            if not attribute.get("index_codes") and body_part_codes:
-                attribute["index_codes"] = CDEToFindingModel._process_index_codes(body_part_codes) or []
-                
+            # Only add body part codes to attributes if the element itself has index codes
+            # Body part codes should only be at the top level, not copied to individual attributes
             attributes.append(attribute)
 
         # Initialize index codes
