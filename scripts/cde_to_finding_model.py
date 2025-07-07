@@ -108,7 +108,7 @@ class CDEToFindingModel:
                 "value_code": value_code,
                 "name": fm_name,
                 "description": fm_description,
-                "index_codes": CDEToFindingModel._process_index_codes(value.get("index_codes", [])) or []
+                "index_codes": CDEToFindingModel._process_index_codes(value.get("index_codes", []))
             }
             values.append(processed_value)
         return values
@@ -126,7 +126,7 @@ class CDEToFindingModel:
             "maximum": numeric_value.get("max"),
             "unit": numeric_value.get("unit", "unit"),
             "required": False,
-            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", [])) or []
+            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", []))
         }
 
     @staticmethod
@@ -154,7 +154,7 @@ class CDEToFindingModel:
             "required": False,
             "max_selected": max_selected,
             "values": CDEToFindingModel._process_value_set(value_set, attribute_id),
-            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", [])) or []
+            "index_codes": CDEToFindingModel._process_index_codes(element.get("index_codes", []))
         }
 
     @staticmethod
