@@ -181,15 +181,15 @@ class CDEToFindingModel:
             attribute_id = CDEToFindingModel._generate_attribute_id(cde_data["id"], element_id)
             
             if "value_set" in element:
+                # Process choice attribute but only add it if it has values
                 attribute = CDEToFindingModel._process_choice_attribute(element, attribute_id)
+                if attribute.get("values"):  # Only add if it has values
+                    attributes.append(attribute)
             elif "integer_value" in element or "float_value" in element:
                 attribute = CDEToFindingModel._process_numeric_attribute(element, attribute_id)
+                attributes.append(attribute)
             else:
                 continue
-            
-            # Only add body part codes to attributes if the element itself has index codes
-            # Body part codes should only be at the top level, not copied to individual attributes
-            attributes.append(attribute)
 
         # Initialize index codes
         model_index_codes = []
