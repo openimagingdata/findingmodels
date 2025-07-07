@@ -4,15 +4,6 @@
   "description": "Pancreatic cyst categorization on computerized tomography. ",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001281",
-      "name": "Presence\t",
-      "description": "Detection of lesion",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001283",
       "name": "Density",
       "description": "If a pancreatic lesion is present then determine density in Hounsfield units.",
@@ -21,52 +12,7 @@
       "maximum": 100,
       "unit": "HU (Hounsfield units)",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001284",
-      "name": "Categorization\t",
-      "description": "Categorization of cyst if lesion attenuation is less than or equal to 20 HU, categorization as undetermined if lesion attenuation is 21-29 HU, and categorized as solid if lesion attenuation is greater than or equal to 30 HU.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001346",
-      "name": "Pancreatic duct dilation \t",
-      "description": "Detection of dilated MPD greater than or equal to 10 mm",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001347",
-      "name": "Solid component",
-      "description": "Detection of solid components in the cyst",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001348",
-      "name": "Peripheral calcification\t",
-      "description": "Detection of Peripheral calcifications components in the cyst\t\n",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001349",
-      "name": "Wall thickening",
-      "description": "Detection of wall thickening in the cyst",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001680",
@@ -77,7 +23,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001681",
@@ -88,16 +34,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001682",
-      "name": "Main duct communication",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

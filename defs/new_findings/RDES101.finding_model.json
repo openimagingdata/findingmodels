@@ -2,38 +2,7 @@
   "oifm_id": "OIFM_CDE_000101",
   "name": "Cervical Rib",
   "description": "Cervical rib detection on MRI",
-  "attributes": [
-    {
-      "oifma_id": "OIFMA_CDE_000632",
-      "name": "Presence",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2471",
-          "display": "rib"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000633",
-      "name": "Laterality",
-      "description": "Cervical rib location.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2471",
-          "display": "rib"
-        }
-      ]
-    }
-  ],
+  "attributes": [],
   "index_codes": [
     {
       "system": "RADELEMENT",

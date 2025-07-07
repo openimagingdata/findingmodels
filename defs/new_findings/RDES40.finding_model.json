@@ -2,28 +2,7 @@
   "oifm_id": "OIFM_CDE_000040",
   "name": "Odontoid Fracture",
   "description": "This module describes the common data elements for odontoid fracture use case.",
-  "attributes": [
-    {
-      "oifma_id": "OIFMA_CDE_000239",
-      "name": "Presence",
-      "description": "Define odontoid as intact or fractured",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID28674",
-          "display": "cervical spine region"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID6141",
-          "display": "cervical spine descriptor"
-        }
-      ]
-    }
-  ],
+  "attributes": [],
   "index_codes": [
     {
       "system": "RADELEMENT",

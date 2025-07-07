@@ -12,7 +12,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001115",
@@ -23,25 +23,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001117",
-      "name": "Duct dilation",
-      "description": "Biliary ductal dilation detection based on measurement. Absent if measurement is less than 6 mm for patients younger than 60 years, allow 1 mm for each decade over 60 years. Present if measurement is less than or equal 6-9 mm for patients younger than 60 years, allow 1 mm for each decade over 60 years. Present if measurement is greater than 15 mm in the setting of prior cholecystectomy.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001118",
-      "name": "Periductal fluid",
-      "description": "Periductal fluid detection (high T2)",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001119",
@@ -52,16 +34,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001659",
-      "name": "Presence",
-      "description": "Presence of choledocholithiasis",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

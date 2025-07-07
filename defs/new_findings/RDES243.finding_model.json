@@ -4,33 +4,6 @@
   "description": "Breast Cyst",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001558",
-      "name": "Location",
-      "description": "Clock positions of the abnormality observed.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001559",
-      "name": "Depth",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001560",
-      "name": "Breast body landmark",
-      "description": "Breast landmark value set",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001561",
       "name": "Distance from landmark",
       "description": "Distance from body landmark to body location of abnormality",
@@ -39,43 +12,7 @@
       "maximum": 1000,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001562",
-      "name": "Side ",
-      "description": "Side from landmark",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001563",
-      "name": "Quadrant",
-      "description": "Quadrant of breast",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001564",
-      "name": "Region",
-      "description": "Region of breast",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001568",
-      "name": "Distribution",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001569",
@@ -86,16 +23,7 @@
       "maximum": 1000,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001577",
-      "name": "Type",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

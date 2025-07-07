@@ -4,15 +4,6 @@
   "description": "Cerebral Amyloid Angiopathy: Modified Boston Criteria",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001441",
-      "name": "Lobar hematoma",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001442",
       "name": "Hematoma size",
       "description": "Measure the largest dimension in any plane",
@@ -21,52 +12,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001443",
-      "name": "Microhemorrhage",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001444",
-      "name": "Microhemorrhage location",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001445",
-      "name": "Siderosis",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001446",
-      "name": "Presence",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_002030",
-      "name": "Summary",
-      "description": "Probable CAA: multiple lobar, cortical, or subcortical hemorrhages of varying ages without another cause/Probable CAA: single lobar, cortical, or subcortical hemorrhage and focal or disseminated superficial siderosis without another cause/Possible CAA: single lobar, cortical or subcortical hemorrhage without another cause/Possible CAA: focal or disseminated superficial siderosis without another cause/no evidence of CAA",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

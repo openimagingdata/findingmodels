@@ -9,42 +9,43 @@
       "description": "Glasgow Coma Scale (GCS) - Best eye response (E). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
       "type": "choice",
       "required": false,
+      "max_selected": 1,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000006.00",
+          "value_code": "OIFMA_CDE_000061.00",
           "name": "1",
           "description": "No eye opening",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.01",
+          "value_code": "OIFMA_CDE_000061.01",
           "name": "2",
           "description": "Eye opening to pain",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.02",
+          "value_code": "OIFMA_CDE_000061.02",
           "name": "3",
           "description": "Eye opening to speech/verbal command",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.03",
+          "value_code": "OIFMA_CDE_000061.03",
           "name": "4",
           "description": "Eyes open spontaneously",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.04",
+          "value_code": "OIFMA_CDE_000061.04",
           "name": "Untestable",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.05",
+          "value_code": "OIFMA_CDE_000061.05",
           "name": "Unknown",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         }
       ],
       "index_codes": [
@@ -86,54 +87,55 @@
       "description": "Glasgow Coma Scale (GCS) - Best motor response (M). The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response.",
       "type": "choice",
       "required": false,
+      "max_selected": 1,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000006.00",
+          "value_code": "OIFMA_CDE_000062.00",
           "name": "1",
           "description": "No motor response",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.01",
+          "value_code": "OIFMA_CDE_000062.01",
           "name": "2",
           "description": "Abnormal extension/Extensor response",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.02",
+          "value_code": "OIFMA_CDE_000062.02",
           "name": "3",
           "description": "Abnormal flexion",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.03",
+          "value_code": "OIFMA_CDE_000062.03",
           "name": "4",
           "description": "Flexion withdrawal/withdraws from pain",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.04",
+          "value_code": "OIFMA_CDE_000062.04",
           "name": "5",
           "description": "Localizes pain",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.05",
+          "value_code": "OIFMA_CDE_000062.05",
           "name": "6",
           "description": "Obeys command",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.06",
+          "value_code": "OIFMA_CDE_000062.06",
           "name": "Untestable",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.07",
+          "value_code": "OIFMA_CDE_000062.07",
           "name": "Unknown",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         }
       ],
       "index_codes": [
@@ -195,48 +197,49 @@
       "description": "Score that describes the participant's verbal response according to the Glasgow Coma Scale (GCS).",
       "type": "choice",
       "required": false,
+      "max_selected": 1,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000006.00",
+          "value_code": "OIFMA_CDE_000063.00",
           "name": "1",
           "description": "No verbal response/sounds",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.01",
+          "value_code": "OIFMA_CDE_000063.01",
           "name": "2",
           "description": "Incomprehensible sound",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.02",
+          "value_code": "OIFMA_CDE_000063.02",
           "name": "3",
           "description": "Inappropriate words",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.03",
+          "value_code": "OIFMA_CDE_000063.03",
           "name": "4",
           "description": "Confused",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.04",
+          "value_code": "OIFMA_CDE_000063.04",
           "name": "5",
           "description": "Oriented",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.05",
+          "value_code": "OIFMA_CDE_000063.05",
           "name": "Untestable",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.06",
+          "value_code": "OIFMA_CDE_000063.06",
           "name": "Unknown",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         }
       ],
       "index_codes": [
@@ -283,96 +286,97 @@
       "description": "Glasgow Coma Scale (GCS) - Total Score. The GCS is a standardized instrument for assessing the level of consciousness. It evaluates three aspects of responsiveness: eye opening, motor response, verbal response. The total score is the sum of the scores for the three response types. (3-15)",
       "type": "choice",
       "required": false,
+      "max_selected": 1,
       "values": [
         {
-          "value_code": "OIFMA_CDE_000006.00",
+          "value_code": "OIFMA_CDE_000064.00",
           "name": "3",
           "description": "3",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.01",
+          "value_code": "OIFMA_CDE_000064.01",
           "name": "8",
           "description": "8",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.02",
+          "value_code": "OIFMA_CDE_000064.02",
           "name": "4",
           "description": "4",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.03",
+          "value_code": "OIFMA_CDE_000064.03",
           "name": "5",
           "description": "5",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.04",
+          "value_code": "OIFMA_CDE_000064.04",
           "name": "6",
           "description": "6",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.05",
+          "value_code": "OIFMA_CDE_000064.05",
           "name": "7",
           "description": "7",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.06",
+          "value_code": "OIFMA_CDE_000064.06",
           "name": "9",
           "description": "9",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.07",
+          "value_code": "OIFMA_CDE_000064.07",
           "name": "0",
           "description": "10",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.08",
+          "value_code": "OIFMA_CDE_000064.08",
           "name": "1",
           "description": "11",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.09",
+          "value_code": "OIFMA_CDE_000064.09",
           "name": "2",
           "description": "12",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.10",
+          "value_code": "OIFMA_CDE_000064.10",
           "name": "3",
           "description": "13",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.11",
+          "value_code": "OIFMA_CDE_000064.11",
           "name": "4",
           "description": "14",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.12",
+          "value_code": "OIFMA_CDE_000064.12",
           "name": "5",
           "description": "15",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.13",
+          "value_code": "OIFMA_CDE_000064.13",
           "name": "Untestable",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         },
         {
-          "value_code": "OIFMA_CDE_000006.14",
+          "value_code": "OIFMA_CDE_000064.14",
           "name": "Unknown",
           "description": "",
-          "index_codes": []
+          "index_codes": null
         }
       ],
       "index_codes": [
@@ -392,15 +396,6 @@
           "display": "glasgow coma score total"
         }
       ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001693",
-      "name": "Motor response scale",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
     }
   ],
   "index_codes": [

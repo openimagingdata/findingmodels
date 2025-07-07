@@ -2,53 +2,7 @@
   "oifm_id": "OIFM_CDE_000032",
   "name": "Hip Osteolysis",
   "description": "This module describes the common data elements for hip osteolysis use case",
-  "attributes": [
-    {
-      "oifma_id": "OIFMA_CDE_000212",
-      "name": "Presence",
-      "description": "Detect osteolysis, if present",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2639",
-          "display": "hip"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000213",
-      "name": "Hip arthroplasty",
-      "description": "Status of the total hip arthroplasty",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2639",
-          "display": "hip"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001982",
-      "name": "Laterality",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2639",
-          "display": "hip"
-        }
-      ]
-    }
-  ],
+  "attributes": [],
   "index_codes": [
     {
       "system": "RADELEMENT",

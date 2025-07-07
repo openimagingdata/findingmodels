@@ -12,48 +12,7 @@
       "maximum": 200,
       "unit": "degrees",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2869",
-          "display": "leg"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID2743",
-          "display": "knee"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID28545",
-          "display": "ankle"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000686",
-      "name": "Alignment, right knee",
-      "description": "Genu varus valgus or normal alignment. Mechanical axis MA line from top of femoral head to mid tibial plafond. If MA medial to intercondylar notch -  genu varus .If MA lateral to intercondylar notch  - genu valgus . If MA with in the intercondylar notch - normal alignment.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2869",
-          "display": "leg"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID2743",
-          "display": "knee"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID28545",
-          "display": "ankle"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001655",
@@ -64,48 +23,7 @@
       "maximum": 100,
       "unit": "degrees",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2869",
-          "display": "leg"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID2743",
-          "display": "knee"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID28545",
-          "display": "ankle"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001750",
-      "name": "Alignment, left knee",
-      "description": "Genu varus valgus or normal alignment. Mechanical axis MA line from top of femoral head to mid tibial plafond. If MA medial to intercondylar notch -  genu varus .If MA lateral to intercondylar notch  - genu valgus . If MA with in the intercondylar notch - normal alignment",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID2869",
-          "display": "leg"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID2743",
-          "display": "knee"
-        },
-        {
-          "system": "RADLEX",
-          "code": "RID28545",
-          "display": "ankle"
-        }
-      ]
+      "index_codes": null
     }
   ],
   "index_codes": [

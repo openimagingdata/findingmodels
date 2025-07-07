@@ -12,13 +12,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000588",
@@ -29,13 +23,7 @@
       "maximum": 100,
       "unit": "mm3",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000589",
@@ -46,88 +34,7 @@
       "maximum": 100,
       "unit": "unit",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000591",
-      "name": "True diffusion restriction",
-      "description": "Determine if high signal on DWI is true diffusion restriction or T2 shine through by analyzing ADC signal.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000593",
-      "name": "Distribution of diffusion restriction",
-      "description": "Categorize the distribution of the diffusion restriction in the lesion.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000594",
-      "name": "Signal ",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000597",
-      "name": "Location",
-      "description": "Location of the lesion(s) with diffusion restriction.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000598",
-      "name": "Side",
-      "description": "define the side of the lesion",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     }
   ],
   "index_codes": [

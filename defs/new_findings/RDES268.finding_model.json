@@ -4,15 +4,6 @@
   "description": "Characterization of lung parenchyma by location and texture",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001710",
-      "name": "Pulmonary region",
-      "description": "Relevant area of the lung",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001711",
       "name": "Volume",
       "description": "Volume of the reference lung region",
@@ -21,7 +12,7 @@
       "maximum": 10,
       "unit": "L",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001712",
@@ -32,7 +23,7 @@
       "maximum": 100,
       "unit": "%",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001713",
@@ -43,7 +34,7 @@
       "maximum": 100,
       "unit": "%",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001714",
@@ -54,7 +45,7 @@
       "maximum": 100,
       "unit": "%",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001715",
@@ -65,7 +56,7 @@
       "maximum": 100,
       "unit": "%",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001716",
@@ -76,7 +67,7 @@
       "maximum": 2000,
       "unit": "cm^3",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

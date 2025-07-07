@@ -4,24 +4,6 @@
   "description": "Vertebral Compression Fracture Detection",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001471",
-      "name": "Presence",
-      "description": "Acute or chronic compression, wedge, distraction or translated\nfractures. Typically seen on lateral view. Usually chronicity cannot be reliably assessed so this is not differentiated. \nFor compression or wedge fractures, there should be more than 20% loss in anterior height or central height as measured to the nearest normal vertebra or posterior vertebral body height (whichever is larger).  ",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001472",
-      "name": "Vertebrae",
-      "description": "List all affected vertebrae, multichoice",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_002004",
       "name": "Degree of compression",
       "description": "",
@@ -30,7 +12,7 @@
       "maximum": 100,
       "unit": "degree",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

@@ -4,15 +4,6 @@
   "description": "This module describes the Common Data elements and Macros for Coronary Calcium Detection",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_000922",
-      "name": "Procedures",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_000924",
       "name": "Agatston score",
       "description": "",
@@ -21,7 +12,7 @@
       "maximum": 10000,
       "unit": "HU",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000925",
@@ -32,34 +23,7 @@
       "maximum": 10000,
       "unit": "ml",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000926",
-      "name": "Risk category of CAD",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001725",
-      "name": "Presence",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001726",
-      "name": "Cardiac region location",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001727",
@@ -70,7 +34,7 @@
       "maximum": 100,
       "unit": "unit",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001728",
@@ -81,7 +45,7 @@
       "maximum": 10000,
       "unit": "mg",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

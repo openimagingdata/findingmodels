@@ -4,66 +4,6 @@
   "description": "This module describes the Common Data elements and Macros for Subdural Hematoma",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_000835",
-      "name": "Presence",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000836",
-      "name": "Dural thickening",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000837",
-      "name": "Location",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000838",
-      "name": "Shape",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
       "oifma_id": "OIFMA_CDE_000841",
       "name": "Width - Axial Max",
       "description": "Longest diameter measured in the axial plane",
@@ -72,13 +12,7 @@
       "maximum": 200,
       "unit": "mm",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000842",
@@ -89,28 +23,7 @@
       "maximum": 1100000,
       "unit": "mm3",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000843",
-      "name": "Density",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000844",
@@ -121,13 +34,7 @@
       "maximum": 1000,
       "unit": "MR",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000845",
@@ -138,28 +45,7 @@
       "maximum": 1000,
       "unit": "unit",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000846",
-      "name": "Septations",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID6434",
-          "display": "brain"
-        }
-      ]
+      "index_codes": null
     }
   ],
   "index_codes": [

@@ -4,24 +4,6 @@
   "description": "CT Perfusion Stroke",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001458",
-      "name": "Intracerebral circulation involved",
-      "description": "Which circulation has a perfusion abnormality?",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001459",
-      "name": "Perfusion mismatch",
-      "description": "DIscordant or equivalent volumes of involved penumbra and ischemic core.  Expressed as none, left MCA or right MCA territory.",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001460",
       "name": "Ischemic core volume",
       "description": "The volume of brain on CBF maps with less than 30% cerebral blood flow indicating ischemic core",
@@ -30,7 +12,7 @@
       "maximum": 500,
       "unit": "cc",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001461",
@@ -41,7 +23,7 @@
       "maximum": 500,
       "unit": "cc",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001462",
@@ -52,7 +34,7 @@
       "maximum": 500,
       "unit": "cc",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001995",
@@ -63,7 +45,7 @@
       "maximum": 100,
       "unit": "ml",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001996",
@@ -74,7 +56,7 @@
       "maximum": 100,
       "unit": "unit",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001997",
@@ -85,7 +67,7 @@
       "maximum": 100,
       "unit": "unit",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

@@ -4,15 +4,6 @@
   "description": "Pediatric Hip US - relatively simple classification scheme",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001259",
-      "name": "Stability",
-      "description": "Stability",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001260",
       "name": "Alpha angle",
       "description": "",
@@ -21,7 +12,7 @@
       "maximum": 100,
       "unit": "Degrees",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001261",
@@ -32,25 +23,7 @@
       "maximum": 100,
       "unit": "Degrees",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001262",
-      "name": "Femoral head coverage",
-      "description": "Detection of femoral head coverage\n",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001600",
-      "name": "Femoral head position",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

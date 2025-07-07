@@ -4,15 +4,6 @@
   "description": "Spine Multiple sclerosis",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001447",
-      "name": "Disease burden",
-      "description": "How many intramedullary spine lesions",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001448",
       "name": "Lesion size in craniocaudal dimension",
       "description": "If multiple lesions, give largest lesion size ",
@@ -21,79 +12,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001449",
-      "name": "Lesion extent",
-      "description": "Number of vertebral segments spanned by the lesion",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001450",
-      "name": "Lesion location subtype",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001451",
-      "name": "Lesion axial area",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001452",
-      "name": "T2 signal",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001453",
-      "name": "T1 signal",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001454",
-      "name": "Lesion contrast enhancement",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001455",
-      "name": "Cord edema",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001456",
-      "name": "Cord expansion",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

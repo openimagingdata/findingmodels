@@ -4,15 +4,6 @@
   "description": "Auto-detection of cerebral aneurysms on CTA",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_001381",
-      "name": "Location",
-      "description": "Location of aneurysm",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001382",
       "name": "Dome diameter",
       "description": "Diameter of the aneurysm dome",
@@ -21,7 +12,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001383",
@@ -32,7 +23,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001384",
@@ -43,7 +34,7 @@
       "maximum": 10,
       "unit": "Ratio",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001385",
@@ -54,7 +45,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001386",
@@ -65,25 +56,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001387",
-      "name": "Shape",
-      "description": "Shape of the aneurysm",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001388",
-      "name": "Orientation",
-      "description": "Orientation of the aneurysm dome",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

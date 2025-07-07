@@ -2,53 +2,7 @@
   "oifm_id": "OIFM_CDE_000047",
   "name": "Stener Lesion",
   "description": "This module describes the common data elements for stener lesion use case.",
-  "attributes": [
-    {
-      "oifma_id": "OIFMA_CDE_000256",
-      "name": "Classification",
-      "description": "If UCL is abnormal, determine the UCL tear type",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID40883",
-          "display": "ulnar collateral ligament"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000257",
-      "name": "Status",
-      "description": "Determine the status of the UCL",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID40883",
-          "display": "ulnar collateral ligament"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000258",
-      "name": "Presence",
-      "description": "If UCL is abnormal, detect the presence of a Stener lesion",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID40883",
-          "display": "ulnar collateral ligament"
-        }
-      ]
-    }
-  ],
+  "attributes": [],
   "index_codes": [
     {
       "system": "RADELEMENT",

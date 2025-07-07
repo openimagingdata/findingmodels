@@ -12,13 +12,7 @@
       "maximum": 100,
       "unit": "ml per sec",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_000210",
@@ -29,28 +23,7 @@
       "maximum": 100,
       "unit": "Pa",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000211",
-      "name": "Aliasing",
-      "description": "Presenceofaliasing",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
+      "index_codes": null
     }
   ],
   "index_codes": [

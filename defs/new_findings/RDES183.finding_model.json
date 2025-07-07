@@ -4,24 +4,6 @@
   "description": "Hemorrhagic Brain Contusion",
   "attributes": [
     {
-      "oifma_id": "OIFMA_CDE_000525",
-      "name": "Side",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001263",
-      "name": "Presence",
-      "description": "Hemorrhagic Brain Contusion detection",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
-    },
-    {
       "oifma_id": "OIFMA_CDE_001264",
       "name": "Quantity",
       "description": "Number of brain contusions",
@@ -30,7 +12,7 @@
       "maximum": 20,
       "unit": "N/A",
       "required": false,
-      "index_codes": []
+      "index_codes": null
     },
     {
       "oifma_id": "OIFMA_CDE_001265",
@@ -41,16 +23,7 @@
       "maximum": 100,
       "unit": "mm",
       "required": false,
-      "index_codes": []
-    },
-    {
-      "oifma_id": "OIFMA_CDE_001266",
-      "name": "Location",
-      "description": "Location of brain contusion",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": []
+      "index_codes": null
     }
   ],
   "index_codes": [

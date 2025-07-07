@@ -12,58 +12,7 @@
       "maximum": 5,
       "unit": "unit",
       "required": false,
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000649",
-      "name": "Presence",
-      "description": "",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000652",
-      "name": "Location",
-      "description": "Anatomic location of filter(s) or filter components",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
-    },
-    {
-      "oifma_id": "OIFMA_CDE_000653",
-      "name": "Complications",
-      "description": "Radiographically evident filter complications",
-      "type": "choice",
-      "required": false,
-      "values": [],
-      "index_codes": [
-        {
-          "system": "RADLEX",
-          "code": "RID480",
-          "display": "aorta"
-        }
-      ]
+      "index_codes": null
     }
   ],
   "index_codes": [
