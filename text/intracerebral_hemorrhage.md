@@ -1,29 +1,29 @@
-# Intracerebral hemorrhage—`OIFM_GMTS_007650`
+# Intracerebral hemorrhage—`OIFM_MSFT_218756`
 
 **Synonyms:** ICH, cerebral hemorrhage
 
-**Tags:** neuro, CT, MR, bleeding, neurology, diagnosis
+**Tags:** neuro, CT, MR, diagnosis
 
-Bleeding within the cerebral parenchyma.
+Intracerebral hemorrhage refers to bleeding that occurs within the brain tissue itself, often due to a ruptured blood vessel.
 
 **Codes:** GAMUTS 7650 intracerebral hemorrhage
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_449529`
+### Presence—`OIFMA_MSFT_953007`
 
-Presence or absence of intracerebral hemorrhage  
+Indicates whether an intracerebral hemorrhage is absent, present, or unclear.  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
 *(Select one)*
 
-- **absent**: Intracerebral hemorrhage is absent  
+- **absent**  
 _RADLEX RID28473 absent; SNOMED 2667000 Absent (qualifier value)_
-- **present**: Intracerebral hemorrhage is present  
+- **present**  
 _RADLEX RID28472 present; SNOMED 52101004 Present (qualifier value)_
-- **indeterminate**: Presence of intracerebral hemorrhage cannot be determined  
-_RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
-- **unknown**: Presence of intracerebral hemorrhage is unknown  
+- **unknown**  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
+- **indeterminate**  
+_RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 
 ### Change from prior—`OIFMA_GMTS_038058`
 
@@ -51,4 +51,4 @@ _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 
 **Contributors**
 
-- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
+- Heather Chase (MSFT) — [Email](mailto:heatherchase@microsoft.com)

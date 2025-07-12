@@ -1,4 +1,4 @@
-# Pulmonary embolism—`OIFM_GMTS_022548`
+# Pulmonary embolism—`OIFM_MSFT_932618`
 
 **Synonyms:** pulmonary artery thromboembolism, PE, pulmonary artery embolism, pulmonary artery thrombosis, pulmonary thromboembolism
 
@@ -10,7 +10,7 @@ Blockage of an artery in the lungs by a substance that has moved from elsewhere 
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_573739`
+### Presence—`OIFMA_MSFT_463871`
 
 Presence or absence of pulmonary embolism  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +25,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of pulmonary embolism is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_793048`
+### Change from prior—`OIFMA_MSFT_592864`
 
 Whether and how a pulmonary embolism has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
