@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import json
 import os
 from typing import Dict, List, Optional, Union
@@ -77,7 +75,6 @@ class CDEToFindingModel:
             cde_name = value.get("name", "")
             cde_definition = value.get("definition", "")
             
-            # New logic: name → name, definition → description if different
             fm_name = cde_name
             fm_description = None
             
@@ -107,10 +104,8 @@ class CDEToFindingModel:
         """Process a numeric attribute from CDE to FindingModel format."""
         numeric_value = element.get("float_value", {}) or element.get("integer_value", {})
         
-        # Process index codes - only include if there are actual codes
         index_codes = CDEToFindingModel._process_index_codes(element.get("index_codes", []))
         
-        # Handle description - use None if empty or too short, otherwise use definition
         description = element.get("definition", "")
         if not description or len(description) < 5:
             description = None  # Use None instead of empty string
@@ -134,8 +129,7 @@ class CDEToFindingModel:
         """Process a choice attribute from CDE to FindingModel format."""
         value_set = element.get("value_set", {})
         
-        # Get max_selected from value_set cardinality
-        max_selected = 1  # default
+        max_selected = 1  
         if value_set.get("max_cardinality"):
             max_cardinality = value_set["max_cardinality"]
             if max_cardinality == "all":
@@ -146,10 +140,8 @@ class CDEToFindingModel:
                 except (ValueError, TypeError):
                     max_selected = 1
         
-        # Process index codes - only include if there are actual codes
         index_codes = CDEToFindingModel._process_index_codes(element.get("index_codes", []))
         
-        # Handle description - use None if empty or too short, otherwise use definition
         description = element.get("definition", "")
         if not description or len(description) < 5:
             description = None  # Use None instead of empty string
@@ -172,7 +164,6 @@ class CDEToFindingModel:
         """Convert a CDE to FindingModel."""
         model_id = CDEToFindingModel._generate_model_id(cde_data["id"])
         
-        # Get body part index codes - handle both single objects and arrays
         body_part_codes = []
         for part in cde_data.get("body_parts", []):
             if "index_codes" in part:
@@ -262,7 +253,6 @@ class CDEToFindingModel:
     def process_file(input_file: str, output_dir: str) -> bool:
         """Process a single CDE file."""
         try:
-            # Try UTF-8 first, fall back to other encodings if needed
             try:
                 with open(input_file, "r", encoding="utf-8") as f:
                     cde_data = json.load(f)
@@ -276,13 +266,11 @@ class CDEToFindingModel:
             
             finding_model_dict = CDEToFindingModel.convert_cde(cde_data)
             
-            # Ensure CDE description meets minimum length requirement
             if not finding_model_dict.get("description") or len(finding_model_dict["description"]) < 5:
                 # For the main FindingModel, we need a description of at least 5 characters
                 finding_model_dict["description"] = f"Description for {cde_data.get('name', 'finding model')}"
                 print(f"Warning: CDE {cde_data['id']} had a missing or short description, using default.")
             
-            # Alert no attributes created 
             if not finding_model_dict.get("attributes"):
                 print(f"Warning: No attributes found in {input_file}")
 

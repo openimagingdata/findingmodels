@@ -1,0 +1,246 @@
+{
+  "oifm_id": "OIFM_CDE_000302",
+  "name": "Subdural Hematoma",
+  "description": "This module describes the Common Data elements and Macros for Subdural Hematoma",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000835",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000835.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000835.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000835.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000835.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000836",
+      "name": "Dural thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000836.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000836.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000836.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000836.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000837",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000837.0",
+          "name": "right frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.1",
+          "name": "left frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.2",
+          "name": "right parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.3",
+          "name": "left parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.4",
+          "name": "right temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.5",
+          "name": "left temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.6",
+          "name": "right occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.7",
+          "name": "left occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.8",
+          "name": "right parafalcine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.9",
+          "name": "left parafalcine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.10",
+          "name": "right cerebellar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000837.11",
+          "name": "left cerebellar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000838",
+      "name": "Shape",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000838.0",
+          "name": "crescentic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000838.1",
+          "name": "lentiform"
+        },
+        {
+          "value_code": "OIFMA_CDE_000838.2",
+          "name": "indeterminate",
+          "description": "Undetermined"
+        },
+        {
+          "value_code": "OIFMA_CDE_000838.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000841",
+      "name": "Width - Axial Max",
+      "description": "Longest diameter measured in the axial plane",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 200,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000842",
+      "name": "Volume - Tada Formula",
+      "description": "V?=?a???b???c???1/2, where ?V? represents hematoma volume; ?a? indicates the diameter of the largest area of the hematoma layer; ?b? shows the upright diameter of the diameter of the largest area of the hematoma layer, and ?c? is the layer thickness",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1100000,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000843",
+      "name": "Density",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000843.0",
+          "name": "high homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000843.1",
+          "name": "low homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000843.2",
+          "name": "high heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000843.3",
+          "name": "low heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000843.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000844",
+      "name": "T1 Intensity ",
+      "description": "Hematoma T1 Intensity ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1000,
+      "unit": "MR",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000845",
+      "name": "T2 Intensity",
+      "description": "Hematoma T2 Intensity",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1000,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000846",
+      "name": "Septations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000846.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000846.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000846.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000846.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES302",
+      "display": "subdural hematoma"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}
