@@ -29,6 +29,33 @@ class CDEToFindingModel:
         }
 
     @staticmethod
+    def _create_oidm_organization() -> Dict:
+        """Create the OIDM organization contributor."""
+        return {
+            "name": "Open Imaging Data Model",
+            "code": "OIDM",
+            "url": "https://openimagingdata.org"
+        }
+
+    @staticmethod
+    def _create_hood_person() -> Dict:
+        """Create the C. Michael Hood person contributor."""
+        return {
+            "github_username": "hoodcm",
+            "email": "chood@mgh.harvard.edu",
+            "name": "C. Michael Hood, MD",
+            "organization_code": "MGB"
+        }
+
+    @staticmethod
+    def _create_default_contributors() -> List[Dict]:
+        """Create the default contributors for CDE finding models."""
+        return [
+            CDEToFindingModel._create_oidm_organization(),
+            CDEToFindingModel._create_hood_person()
+        ]
+
+    @staticmethod
     def _process_index_codes(index_codes: List[Dict]) -> Optional[List[Dict]]:
         """Process index codes from CDE to FindingModel format."""
         if not index_codes:
@@ -234,7 +261,8 @@ class CDEToFindingModel:
             "name": cde_data["name"],
             "description": cde_data["description"],
             "attributes": attributes,
-            "index_codes": model_index_codes
+            "index_codes": model_index_codes,
+            "contributors": CDEToFindingModel._create_default_contributors()
         }
 
         # Add body part codes to top-level index_codes
