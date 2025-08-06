@@ -1,0 +1,305 @@
+{
+  "oifm_id": "OIFM_HOOD_508652",
+  "name": "Wedge Resection",
+  "description": "A surgical procedure in which a small, wedge-shaped portion of lung tissue is removed.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_589198",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_589198.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_589198.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_401909",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_401909.0",
+          "name": "Post-operative changes observed",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_401909.1",
+          "name": "No post-operative changes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_401909.2",
+          "name": "Healing",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_684172",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_684172.0",
+          "name": "Right upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.1",
+          "name": "Right middle lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.2",
+          "name": "Right lower lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.3",
+          "name": "Left upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.4",
+          "name": "Left lower lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.5",
+          "name": "Bilateral",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_684172.6",
+          "name": "Segmental",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_331019",
+      "name": "Resection Margin",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_331019.0",
+          "name": "Clear",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_331019.1",
+          "name": "Involved",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_331019.2",
+          "name": "Not specified",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_331019.3",
+          "name": "Close",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_852199",
+      "name": "Size of Resection",
+      "type": "numeric",
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_777001",
+      "name": "Number of lesions resected",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_777001.0",
+          "name": "Single",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_777001.1",
+          "name": "Multiple",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_777001.2",
+          "name": "Extensive resection",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_473541",
+      "name": "Completeness",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_473541.0",
+          "name": "Complete",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_473541.1",
+          "name": "Incomplete",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_098779",
+      "name": "Pleural effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_098779.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_098779.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_553324",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_553324.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_553324.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_854240",
+      "name": "Atelectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_854240.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_854240.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_380297",
+      "name": "Surgical clips",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_380297.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_380297.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_044448",
+      "name": "Residual tumor",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_044448.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_044448.1",
+          "name": "Absent",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_044448.2",
+          "name": "Suspected",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_610904",
+      "name": "Scar tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_610904.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_610904.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

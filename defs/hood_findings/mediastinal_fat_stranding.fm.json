@@ -1,0 +1,177 @@
+{
+  "oifm_id": "OIFM_HOOD_421997",
+  "name": "Mediastinal Fat Stranding",
+  "description": "Mediastinal fat stranding refers to increased attenuation of mediastinal fat compared to normal fat.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_134291",
+      "name": "presence",
+      "description": "Presence of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_134291.0",
+          "name": "Yes",
+          "description": "Mediastinal fat stranding is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_134291.1",
+          "name": "No",
+          "description": "Mediastinal fat stranding is not present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_029384",
+      "name": "location",
+      "description": "Location of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_029384.0",
+          "name": "Anterior",
+          "description": "Mediastinal fat stranding is located in the anterior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_HOOD_029384.1",
+          "name": "Middle",
+          "description": "Mediastinal fat stranding is located in the middle mediastinum."
+        },
+        {
+          "value_code": "OIFMA_HOOD_029384.2",
+          "name": "Superior",
+          "description": "Mediastinal fat stranding is located in the superior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_HOOD_029384.3",
+          "name": "Posterior",
+          "description": "Mediastinal fat stranding is located in the posterior mediastinum."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_590396",
+      "name": "extent",
+      "description": "Extent of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_590396.0",
+          "name": "Localized",
+          "description": "Mediastinal fat stranding is localized."
+        },
+        {
+          "value_code": "OIFMA_HOOD_590396.1",
+          "name": "Diffuse",
+          "description": "Mediastinal fat stranding is diffuse."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_777978",
+      "name": "density",
+      "description": "Attenuation of mediastinal fat relative to normal fat.",
+      "type": "numeric",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_151408",
+      "name": "associated_findings",
+      "description": "Associated findings with mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_151408.0",
+          "name": "Lymphadenopathy",
+          "description": "Presence of lymphadenopathy."
+        },
+        {
+          "value_code": "OIFMA_HOOD_151408.1",
+          "name": "Fluid collections",
+          "description": "Presence of fluid collections."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_798525",
+      "name": "implications",
+      "description": "Potential implications or associated conditions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_798525.0",
+          "name": "Inflammation",
+          "description": "Inflammation is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_HOOD_798525.1",
+          "name": "Infection",
+          "description": "Infection is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_HOOD_798525.2",
+          "name": "Trauma",
+          "description": "Trauma is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_HOOD_798525.3",
+          "name": "Postoperative changes",
+          "description": "Postoperative changes are a potential implication or associated condition."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_151752",
+      "name": "imaging_features",
+      "description": "Imaging features suggestive of etiology.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_151752.0",
+          "name": "Radiation therapy",
+          "description": "Radiation therapy is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_HOOD_151752.1",
+          "name": "Infection",
+          "description": "Infection is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_HOOD_151752.2",
+          "name": "Trauma",
+          "description": "Trauma is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_HOOD_151752.3",
+          "name": "Postoperative changes",
+          "description": "Postoperative changes are a potential etiology."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

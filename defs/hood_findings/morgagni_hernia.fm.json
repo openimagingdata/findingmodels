@@ -1,0 +1,160 @@
+{
+  "oifm_id": "OIFM_HOOD_321916",
+  "name": "Morgagni Hernia",
+  "description": "A hernia that occurs in the anterior portion of the diaphragm, specifically in the area of the Morgagni foramen.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_826315",
+      "name": "Presence of Morgagni Hernia",
+      "description": "Whether a Morgagni Hernia is present or not",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_826315.0",
+          "name": "Yes",
+          "description": "Morgagni Hernia is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_826315.1",
+          "name": "No",
+          "description": "Morgagni Hernia is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_567825",
+      "name": "Side",
+      "description": "The side of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_567825.0",
+          "name": "Left",
+          "description": "Morgagni Hernia is on the left side"
+        },
+        {
+          "value_code": "OIFMA_HOOD_567825.1",
+          "name": "Right",
+          "description": "Morgagni Hernia is on the right side"
+        },
+        {
+          "value_code": "OIFMA_HOOD_567825.2",
+          "name": "Bilateral",
+          "description": "Morgagni Hernia is on both sides"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_146833",
+      "name": "Size",
+      "description": "The size of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_146833.0",
+          "name": "Small",
+          "description": "Morgagni Hernia is small in size"
+        },
+        {
+          "value_code": "OIFMA_HOOD_146833.1",
+          "name": "Medium",
+          "description": "Morgagni Hernia is medium in size"
+        },
+        {
+          "value_code": "OIFMA_HOOD_146833.2",
+          "name": "Large",
+          "description": "Morgagni Hernia is large in size"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_994030",
+      "name": "Contents",
+      "description": "The contents of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_994030.0",
+          "name": "Fat",
+          "description": "Morgagni Hernia contains fat"
+        },
+        {
+          "value_code": "OIFMA_HOOD_994030.1",
+          "name": "Bowel",
+          "description": "Morgagni Hernia contains bowel"
+        },
+        {
+          "value_code": "OIFMA_HOOD_994030.2",
+          "name": "Both",
+          "description": "Morgagni Hernia contains both fat and bowel"
+        },
+        {
+          "value_code": "OIFMA_HOOD_994030.3",
+          "name": "Other",
+          "description": "Morgagni Hernia contains other contents"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_839182",
+      "name": "Cardiac or Mediastinal Displacement",
+      "description": "Whether there is associated cardiac or mediastinal displacement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_839182.0",
+          "name": "Present",
+          "description": "Associated cardiac or mediastinal displacement is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_839182.1",
+          "name": "Absent",
+          "description": "Associated cardiac or mediastinal displacement is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_037444",
+      "name": "Other Diaphragmatic Hernias",
+      "description": "Whether there are other diaphragmatic hernias present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_037444.0",
+          "name": "Present",
+          "description": "Other diaphragmatic hernias are present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_037444.1",
+          "name": "Absent",
+          "description": "Other diaphragmatic hernias are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

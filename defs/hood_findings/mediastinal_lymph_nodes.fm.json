@@ -1,0 +1,270 @@
+{
+  "oifm_id": "OIFM_HOOD_857652",
+  "name": "Mediastinal Lymph Nodes",
+  "description": "Enlarged lymph nodes in the mediastinum.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_905745",
+      "name": "Presence of Enlarged Mediastinal Lymph Nodes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_905745.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_905745.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_083168",
+      "name": "IASLC Lymph Node Stations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_083168.0",
+          "name": "1: Low Cervical, Supraclavicular, and Stellate Lymph Nodes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.1",
+          "name": "2R: Upper Paratracheal Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.2",
+          "name": "2L: Upper Paratracheal Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.3",
+          "name": "3A: Prevascular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.4",
+          "name": "3P: Retrotracheal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.5",
+          "name": "4R: Lower Paratracheal Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.6",
+          "name": "4L: Lower Paratracheal Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.7",
+          "name": "5: Subaortic (Aortopulmonary Window)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.8",
+          "name": "6: Para-Aortic (Ascending Aorta or Phrenic)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.9",
+          "name": "7: Subcarinal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.10",
+          "name": "8: Paraesophageal (Below Carina)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.11",
+          "name": "9: Pulmonary Ligament",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_083168.12",
+          "name": "10: Hilar",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_258629",
+      "name": "Station Involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_258629.0",
+          "name": "Low Cervical, Supraclavicular, and Stellate Lymph Nodes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.1",
+          "name": "Upper Paratracheal Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.2",
+          "name": "Upper Paratracheal Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.3",
+          "name": "Prevascular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.4",
+          "name": "Retrotracheal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.5",
+          "name": "Lower Paratracheal Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.6",
+          "name": "Lower Paratracheal Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.7",
+          "name": "Subaortic (Aortopulmonary Window)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.8",
+          "name": "Para-Aortic (Ascending Aorta or Phrenic)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.9",
+          "name": "Subcarinal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.10",
+          "name": "Paraesophageal (Below Carina)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.11",
+          "name": "Pulmonary Ligament",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_258629.12",
+          "name": "Hilar",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_236232",
+      "name": "Short-Axis Diameter",
+      "type": "numeric",
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_340469",
+      "name": "Shape",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_340469.0",
+          "name": "Round",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_340469.1",
+          "name": "Oval",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_606966",
+      "name": "Density",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_606966.0",
+          "name": "Homogeneous",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_606966.1",
+          "name": "Heterogeneous",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_381310",
+      "name": "Evidence of Metastasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_381310.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_381310.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_706488",
+      "name": "Involvement of Adjacent Structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_706488.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_706488.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

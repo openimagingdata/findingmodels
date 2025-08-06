@@ -1,0 +1,207 @@
+{
+  "oifm_id": "OIFM_HOOD_681740",
+  "name": "Subpleural Reticular Opacities",
+  "description": "Presence of subpleural reticular opacities in the lungs",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_640157",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_640157.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_640157.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_565779",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_565779.0",
+          "name": "Stable",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_565779.1",
+          "name": "New",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_565779.2",
+          "name": "Worsened",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_565779.3",
+          "name": "Improved",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_088383",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_088383.0",
+          "name": "Localized",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_088383.1",
+          "name": "Diffuse",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_543586",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_543586.0",
+          "name": "Mild",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_543586.1",
+          "name": "Moderate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_543586.2",
+          "name": "Severe",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_426611",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_426611.0",
+          "name": "Right upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_426611.1",
+          "name": "Right middle lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_426611.2",
+          "name": "Right lower lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_426611.3",
+          "name": "Left upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_426611.4",
+          "name": "Left lower lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_426611.5",
+          "name": "Bilateral",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_326609",
+      "name": "Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_326609.0",
+          "name": "Fine",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_326609.1",
+          "name": "Coarse",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_332772",
+      "name": "Association with pleural thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_332772.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_332772.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_530607",
+      "name": "Association with volume loss",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_530607.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_530607.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

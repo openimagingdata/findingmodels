@@ -1,0 +1,130 @@
+{
+  "oifm_id": "OIFM_HOOD_364326",
+  "name": "Left Atrial Appendage Occlusion Device",
+  "description": "Presence of a left atrial appendage occlusion device",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_564862",
+      "name": "Presence of Left Atrial Appendage Occlusion Device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_564862.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_564862.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_169542",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_169542.0",
+          "name": "New placement",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_169542.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_169542.2",
+          "name": "Complication",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_169542.3",
+          "name": "Removed",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_560820",
+      "name": "Device Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_560820.0",
+          "name": "Watchman",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_560820.1",
+          "name": "Amplatzer Cardiac Plug",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_560820.2",
+          "name": "Other",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_244571",
+      "name": "Appropriate position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_244571.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_244571.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_943120",
+      "name": "Device-Related Thrombus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_943120.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_943120.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

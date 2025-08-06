@@ -1,0 +1,298 @@
+{
+  "oifm_id": "OIFM_HOOD_079927",
+  "name": "Pneumothorax",
+  "description": "A radiologic finding of abnormal air collection in the pleural space.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_061785",
+      "name": "Presence",
+      "description": "Presence of pneumothorax.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_061785.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_061785.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_288673",
+      "name": "Status",
+      "description": "Status of pneumothorax.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_288673.0",
+          "name": "Acute"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.1",
+          "name": "Chronic"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.2",
+          "name": "Resolving"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.3",
+          "name": "Newly identified"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.4",
+          "name": "Increased"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.5",
+          "name": "Decreased"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.6",
+          "name": "Resolved"
+        },
+        {
+          "value_code": "OIFMA_HOOD_288673.7",
+          "name": "Persisting"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_696982",
+      "name": "Size",
+      "description": "Size of pneumothorax.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_696982.0",
+          "name": "Small (<20% lung volume)"
+        },
+        {
+          "value_code": "OIFMA_HOOD_696982.1",
+          "name": "Medium (20-50% lung volume)"
+        },
+        {
+          "value_code": "OIFMA_HOOD_696982.2",
+          "name": "Large (>50% lung volume)"
+        },
+        {
+          "value_code": "OIFMA_HOOD_696982.3",
+          "name": "Tension"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_461215",
+      "name": "Location",
+      "description": "Location of pneumothorax.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_461215.0",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_HOOD_461215.1",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_HOOD_461215.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_023551",
+      "name": "Distribution",
+      "description": "Distribution of pneumothorax.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_023551.0",
+          "name": "Apical"
+        },
+        {
+          "value_code": "OIFMA_HOOD_023551.1",
+          "name": "Basilar"
+        },
+        {
+          "value_code": "OIFMA_HOOD_023551.2",
+          "name": "Diffuse"
+        },
+        {
+          "value_code": "OIFMA_HOOD_023551.3",
+          "name": "Localized"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_181832",
+      "name": "Chest tube",
+      "description": "Presence of chest tube.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_181832.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_181832.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_883047",
+      "name": "Subcutaneous emphysema",
+      "description": "Presence of subcutaneous emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_883047.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_883047.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_513855",
+      "name": "Rib fractures",
+      "description": "Presence of rib fractures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_513855.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_513855.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_218839",
+      "name": "Pleural effusion",
+      "description": "Presence of pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_218839.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_218839.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_376465",
+      "name": "Lung collapse",
+      "description": "Presence of lung collapse.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_376465.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_376465.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_746271",
+      "name": "Pleural adhesions",
+      "description": "Presence of pleural adhesions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_746271.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_746271.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_304731",
+      "name": "Mediastinal shift",
+      "description": "Presence of mediastinal shift.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_304731.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_304731.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_058401",
+      "name": "Herniation",
+      "description": "Presence of herniation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_058401.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_058401.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

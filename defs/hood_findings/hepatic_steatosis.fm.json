@@ -1,0 +1,243 @@
+{
+  "oifm_id": "OIFM_HOOD_757433",
+  "name": "Hepatic Steatosis",
+  "description": "Hepatic steatosis refers to the accumulation of fat in the liver.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_240036",
+      "name": "Presence",
+      "description": "The presence or absence of hepatic steatosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_240036.0",
+          "name": "Present",
+          "description": "Hepatic steatosis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_240036.1",
+          "name": "Absent",
+          "description": "Hepatic steatosis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_307715",
+      "name": "Severity",
+      "description": "The severity of hepatic steatosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_307715.0",
+          "name": "Mild",
+          "description": "Mild hepatic steatosis."
+        },
+        {
+          "value_code": "OIFMA_HOOD_307715.1",
+          "name": "Moderate",
+          "description": "Moderate hepatic steatosis."
+        },
+        {
+          "value_code": "OIFMA_HOOD_307715.2",
+          "name": "Severe",
+          "description": "Severe hepatic steatosis."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_163447",
+      "name": "Density (noncontrast exam)",
+      "description": "The density of hepatic steatosis on a noncontrast exam (in Hounsfield Units).",
+      "type": "numeric",
+      "unit": "HU",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_115881",
+      "name": "Distribution",
+      "description": "The distribution of hepatic steatosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_115881.0",
+          "name": "Diffuse",
+          "description": "Hepatic steatosis is distributed diffusely."
+        },
+        {
+          "value_code": "OIFMA_HOOD_115881.1",
+          "name": "Focal",
+          "description": "Hepatic steatosis is distributed focally."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_279146",
+      "name": "Pattern",
+      "description": "The pattern of hepatic steatosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_279146.0",
+          "name": "Homogeneous",
+          "description": "Hepatic steatosis has a homogeneous pattern."
+        },
+        {
+          "value_code": "OIFMA_HOOD_279146.1",
+          "name": "Heterogeneous",
+          "description": "Hepatic steatosis has a heterogeneous pattern."
+        },
+        {
+          "value_code": "OIFMA_HOOD_279146.2",
+          "name": "Patchy",
+          "description": "Hepatic steatosis has a patchy pattern."
+        },
+        {
+          "value_code": "OIFMA_HOOD_279146.3",
+          "name": "Geographic",
+          "description": "Hepatic steatosis has a geographic pattern."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_470355",
+      "name": "Falciform ligament",
+      "description": "The presence of focal fat infiltration or focal fat sparing in the falciform ligament.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_470355.0",
+          "name": "Focal fat infiltration",
+          "description": "Focal fat infiltration is present in the falciform ligament."
+        },
+        {
+          "value_code": "OIFMA_HOOD_470355.1",
+          "name": "Focal fat sparing",
+          "description": "Focal fat sparing is present in the falciform ligament."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_230368",
+      "name": "Hepatomegaly",
+      "description": "The presence or absence of hepatomegaly.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_230368.0",
+          "name": "Present",
+          "description": "Hepatomegaly is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_230368.1",
+          "name": "Absent",
+          "description": "Hepatomegaly is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_832223",
+      "name": "Focal Lesions",
+      "description": "The presence or absence of focal lesions in the liver.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_832223.0",
+          "name": "Present",
+          "description": "Focal lesions are present in the liver."
+        },
+        {
+          "value_code": "OIFMA_HOOD_832223.1",
+          "name": "Absent",
+          "description": "Focal lesions are absent in the liver."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_066289",
+      "name": "Portal Vein Thrombosis",
+      "description": "The presence or absence of portal vein thrombosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_066289.0",
+          "name": "Present",
+          "description": "Portal vein thrombosis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_066289.1",
+          "name": "Absent",
+          "description": "Portal vein thrombosis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_182830",
+      "name": "Ascites",
+      "description": "The presence or absence of ascites.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_182830.0",
+          "name": "Present",
+          "description": "Ascites is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_182830.1",
+          "name": "Absent",
+          "description": "Ascites is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_168445",
+      "name": "Biliary Dilatation",
+      "description": "The presence or absence of biliary dilatation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_168445.0",
+          "name": "Present",
+          "description": "Biliary dilatation is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_168445.1",
+          "name": "Absent",
+          "description": "Biliary dilatation is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

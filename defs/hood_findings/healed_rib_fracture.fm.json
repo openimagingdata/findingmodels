@@ -1,0 +1,225 @@
+{
+  "oifm_id": "OIFM_HOOD_358636",
+  "name": "Healed Rib Fracture",
+  "description": "Non-acute rib fracture that has healed",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_692467",
+      "name": "Multiplicity",
+      "description": "Multiplicity of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_692467.0",
+          "name": "Single",
+          "description": "A single rib fracture"
+        },
+        {
+          "value_code": "OIFMA_HOOD_692467.1",
+          "name": "Multiple",
+          "description": "Multiple rib fractures"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_234156",
+      "name": "Side",
+      "description": "Side of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_234156.0",
+          "name": "Bilateral",
+          "description": "Rib fracture on both sides"
+        },
+        {
+          "value_code": "OIFMA_HOOD_234156.1",
+          "name": "Left",
+          "description": "Rib fracture on the left side"
+        },
+        {
+          "value_code": "OIFMA_HOOD_234156.2",
+          "name": "Right",
+          "description": "Rib fracture on the right side"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_335205",
+      "name": "Level",
+      "description": "Level of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_335205.0",
+          "name": "First",
+          "description": "Rib fracture at the first level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.1",
+          "name": "Second",
+          "description": "Rib fracture at the second level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.2",
+          "name": "Third",
+          "description": "Rib fracture at the third level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.3",
+          "name": "Fourth",
+          "description": "Rib fracture at the fourth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.4",
+          "name": "Fifth",
+          "description": "Rib fracture at the fifth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.5",
+          "name": "Sixth",
+          "description": "Rib fracture at the sixth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.6",
+          "name": "Seventh",
+          "description": "Rib fracture at the seventh level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.7",
+          "name": "Eighth",
+          "description": "Rib fracture at the eighth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.8",
+          "name": "Ninth",
+          "description": "Rib fracture at the ninth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.9",
+          "name": "Tenth",
+          "description": "Rib fracture at the tenth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.10",
+          "name": "Eleventh",
+          "description": "Rib fracture at the eleventh level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.11",
+          "name": "Twelfth",
+          "description": "Rib fracture at the twelfth level"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.12",
+          "name": "Upper",
+          "description": "Rib fracture in the upper region"
+        },
+        {
+          "value_code": "OIFMA_HOOD_335205.13",
+          "name": "Lower",
+          "description": "Rib fracture in the lower region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_803964",
+      "name": "Location",
+      "description": "Location of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_803964.0",
+          "name": "Anterior",
+          "description": "Rib fracture located in the anterior region"
+        },
+        {
+          "value_code": "OIFMA_HOOD_803964.1",
+          "name": "Posterior",
+          "description": "Rib fracture located in the posterior region"
+        },
+        {
+          "value_code": "OIFMA_HOOD_803964.2",
+          "name": "Lateral",
+          "description": "Rib fracture located in the lateral region"
+        },
+        {
+          "value_code": "OIFMA_HOOD_803964.3",
+          "name": "Anterolateral",
+          "description": "Rib fracture located in the anterolateral region"
+        },
+        {
+          "value_code": "OIFMA_HOOD_803964.4",
+          "name": "Posterolateral",
+          "description": "Rib fracture located in the posterolateral region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_985435",
+      "name": "Status",
+      "description": "Status of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_985435.0",
+          "name": "Subacute",
+          "description": "Rib fracture in the subacute stage"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.1",
+          "name": "Healing",
+          "description": "Rib fracture in the healing stage"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.2",
+          "name": "Remote",
+          "description": "Remote rib fracture"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.3",
+          "name": "Healed",
+          "description": "Healed rib fracture"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.4",
+          "name": "Chronic",
+          "description": "Chronic rib fracture"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.5",
+          "name": "Old",
+          "description": "Old rib fracture"
+        },
+        {
+          "value_code": "OIFMA_HOOD_985435.6",
+          "name": "Old healed",
+          "description": "Old healed rib fracture"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

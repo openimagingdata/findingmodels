@@ -1,0 +1,338 @@
+{
+  "oifm_id": "OIFM_HOOD_188313",
+  "name": "Bronchiolectasis",
+  "description": "Bronchiolectasis is characterized by the dilation and thickening of the bronchioles.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_715070",
+      "name": "Presence of Bronchiolectasis",
+      "description": "Indicates whether bronchiolectasis is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_715070.0",
+          "name": "Yes",
+          "description": "Bronchiolectasis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_715070.1",
+          "name": "No",
+          "description": "Bronchiolectasis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_358150",
+      "name": "Distribution",
+      "description": "The distribution pattern of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_358150.0",
+          "name": "Focal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_358150.1",
+          "name": "Multifocal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_358150.2",
+          "name": "Diffuse"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_898716",
+      "name": "Severity",
+      "description": "The severity of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_898716.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_HOOD_898716.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_HOOD_898716.2",
+          "name": "Severe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_910317",
+      "name": "Location",
+      "description": "The location of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_910317.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_HOOD_910317.1",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_HOOD_910317.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_904403",
+      "name": "Lung Zone",
+      "description": "The lung zone where bronchiolectasis is located.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_904403.0",
+          "name": "Upper"
+        },
+        {
+          "value_code": "OIFMA_HOOD_904403.1",
+          "name": "Middle"
+        },
+        {
+          "value_code": "OIFMA_HOOD_904403.2",
+          "name": "Lower"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_642051",
+      "name": "Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_642051.0",
+          "name": "Right Upper Lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_642051.1",
+          "name": "Right Middle Lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_642051.2",
+          "name": "Right Lower Lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_642051.3",
+          "name": "Left Upper Lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_642051.4",
+          "name": "Left Lower Lobe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_909103",
+      "name": "Right Upper Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_909103.0",
+          "name": "Apical"
+        },
+        {
+          "value_code": "OIFMA_HOOD_909103.1",
+          "name": "Posterior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_909103.2",
+          "name": "Anterior"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_917658",
+      "name": "Right Middle Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_917658.0",
+          "name": "Lateral"
+        },
+        {
+          "value_code": "OIFMA_HOOD_917658.1",
+          "name": "Medial"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_160951",
+      "name": "Right Lower Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_160951.0",
+          "name": "Superior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_160951.1",
+          "name": "Medial Basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_160951.2",
+          "name": "Anterior Basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_160951.3",
+          "name": "Lateral Basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_160951.4",
+          "name": "Posterior Basal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_210321",
+      "name": "Left Upper Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_210321.0",
+          "name": "Apical"
+        },
+        {
+          "value_code": "OIFMA_HOOD_210321.1",
+          "name": "Posterior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_210321.2",
+          "name": "Anterior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_210321.3",
+          "name": "Superior Lingular"
+        },
+        {
+          "value_code": "OIFMA_HOOD_210321.4",
+          "name": "Inferior Lingular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_828267",
+      "name": "Left Lower Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_828267.0",
+          "name": "Superior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_828267.1",
+          "name": "Anteromedial Basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_828267.2",
+          "name": "Lateral Basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_828267.3",
+          "name": "Posterior Basal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_981633",
+      "name": "Mucous Plugging",
+      "description": "Indicates the presence of mucous plugging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_981633.0",
+          "name": "Present",
+          "description": "Mucous plugging is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_981633.1",
+          "name": "Absent",
+          "description": "Mucous plugging is absent."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_578786",
+      "name": "Air Trapping",
+      "description": "Indicates the presence of air trapping.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_578786.0",
+          "name": "Present",
+          "description": "Air trapping is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578786.1",
+          "name": "Absent",
+          "description": "Air trapping is absent."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_208819",
+      "name": "Signs of Infection",
+      "description": "Indicates the presence of signs of infection.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_208819.0",
+          "name": "Present",
+          "description": "Signs of infection are present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_208819.1",
+          "name": "Absent",
+          "description": "Signs of infection are absent."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

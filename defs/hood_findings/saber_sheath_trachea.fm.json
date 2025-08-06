@@ -1,0 +1,173 @@
+{
+  "oifm_id": "OIFM_HOOD_490189",
+  "name": "Saber Sheath Trachea",
+  "description": "A condition where the trachea appears narrowed and elongated, resembling a saber or a sheath.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_842387",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_842387.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_842387.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_313636",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_313636.0",
+          "name": "Mild",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_313636.1",
+          "name": "Moderate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_313636.2",
+          "name": "Severe",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_700202",
+      "name": "Coronal Diameter Reduction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_700202.0",
+          "name": "<50%",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_700202.1",
+          "name": "50-75%",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_700202.2",
+          "name": ">75%",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_015132",
+      "name": "Involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_015132.0",
+          "name": "Upper Trachea",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_015132.1",
+          "name": "Mid Trachea",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_015132.2",
+          "name": "Lower Trachea",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_015132.3",
+          "name": "Entire Trachea",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_660974",
+      "name": "COPD Signs",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_660974.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_660974.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_358938",
+      "name": "Air Trapping",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_358938.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_358938.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_330139",
+      "name": "Bronchial Wall Thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_330139.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_330139.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "oifm_id": "OIFM_HOOD_221526",
+  "name": "Pneumobilia",
+  "description": "The presence of air in the biliary ducts.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_600492",
+      "name": "Presence",
+      "description": "Whether pneumobilia is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_600492.0",
+          "name": "Present",
+          "description": "The finding is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_600492.1",
+          "name": "Absent",
+          "description": "The finding is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_468655",
+      "name": "Extent",
+      "description": "The extent of pneumobilia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_468655.0",
+          "name": "Limited",
+          "description": "Pneumobilia is limited in extent."
+        },
+        {
+          "value_code": "OIFMA_HOOD_468655.1",
+          "name": "Extensive",
+          "description": "Pneumobilia is extensive."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_801429",
+      "name": "Location",
+      "description": "The location of pneumobilia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_801429.0",
+          "name": "Intrahepatic ducts",
+          "description": "Pneumobilia is located in the intrahepatic ducts."
+        },
+        {
+          "value_code": "OIFMA_HOOD_801429.1",
+          "name": "Common bile duct",
+          "description": "Pneumobilia is located in the common bile duct."
+        },
+        {
+          "value_code": "OIFMA_HOOD_801429.2",
+          "name": "Both",
+          "description": "Pneumobilia is located in both the intrahepatic ducts and common bile duct."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_017283",
+      "name": "Associated bile duct dilation",
+      "description": "Whether there is associated bile duct dilation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_017283.0",
+          "name": "Present",
+          "description": "There is associated bile duct dilation."
+        },
+        {
+          "value_code": "OIFMA_HOOD_017283.1",
+          "name": "Absent",
+          "description": "There is no associated bile duct dilation."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_238431",
+      "name": "Cholecystitis",
+      "description": "Whether cholecystitis is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_238431.0",
+          "name": "Present",
+          "description": "Cholecystitis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_238431.1",
+          "name": "Absent",
+          "description": "Cholecystitis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_263136",
+      "name": "Choledocholithiasis",
+      "description": "Whether choledocholithiasis is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_263136.0",
+          "name": "Present",
+          "description": "Choledocholithiasis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_263136.1",
+          "name": "Absent",
+          "description": "Choledocholithiasis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_218346",
+      "name": "Biliary stent",
+      "description": "Whether a biliary stent is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_218346.0",
+          "name": "Present",
+          "description": "A biliary stent is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_218346.1",
+          "name": "Absent",
+          "description": "A biliary stent is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_147325",
+      "name": "Acute pancreatitis",
+      "description": "Whether acute pancreatitis is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_147325.0",
+          "name": "Present",
+          "description": "Acute pancreatitis is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_147325.1",
+          "name": "Absent",
+          "description": "Acute pancreatitis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_767484",
+      "name": "Periportal edema",
+      "description": "Whether periportal edema is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_767484.0",
+          "name": "Present",
+          "description": "Periportal edema is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_767484.1",
+          "name": "Absent",
+          "description": "Periportal edema is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_410571",
+      "name": "Portal vein gas",
+      "description": "Whether portal vein gas is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_410571.0",
+          "name": "Present",
+          "description": "Portal vein gas is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_410571.1",
+          "name": "Absent",
+          "description": "Portal vein gas is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

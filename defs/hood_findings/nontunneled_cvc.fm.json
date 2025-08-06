@@ -1,0 +1,327 @@
+{
+  "oifm_id": "OIFM_HOOD_793366",
+  "name": "Nontunneled Cvc",
+  "description": "Non-tunneled Central Venous Catheter (CVC)",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_148842",
+      "name": "Presence of Non-tunneled Central Venous Catheter (CVC)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_148842.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_148842.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_177350",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_177350.0",
+          "name": "New placement",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_177350.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_177350.2",
+          "name": "Migrated",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_177350.3",
+          "name": "Removed",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_032853",
+      "name": "Appropriate location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_032853.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_032853.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_417802",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_417802.0",
+          "name": "Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_417802.1",
+          "name": "Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_417802.2",
+          "name": "Unknown",
+          "description": "inferior approach"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_930900",
+      "name": "Number of Lumens",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_930900.0",
+          "name": "Single",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_930900.1",
+          "name": "Double",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_930900.2",
+          "name": "Triple",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_930900.3",
+          "name": "Quad",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_142753",
+      "name": "Vein approach",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_142753.0",
+          "name": "Internal jugular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_142753.1",
+          "name": "Subclavian",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_142753.2",
+          "name": "Femoral",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_183616",
+      "name": "Course",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_183616.0",
+          "name": "Appropriate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_183616.1",
+          "name": "Kinking",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_183616.2",
+          "name": "Coiling",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_927495",
+      "name": "Distal tip location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_927495.0",
+          "name": "Subclavian vein",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.1",
+          "name": "Brachiocephalic vein",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.2",
+          "name": "SVC",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.3",
+          "name": "Superior cavoatrial junction",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.4",
+          "name": "Azygous vein",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.5",
+          "name": "Inferior cavoatrial junction",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.6",
+          "name": "Internal jugular vein",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_927495.7",
+          "name": "IVC",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_522818",
+      "name": "Complications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_522818.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_522818.1",
+          "name": "Occlusion",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_522818.2",
+          "name": "Thrombosis (fibrin sheath)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_522818.3",
+          "name": "Catheter fracture",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_522818.4",
+          "name": "Tip Migration",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_580605",
+      "name": "Hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_580605.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_580605.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_767568",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_767568.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_767568.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_029022",
+      "name": "Hemothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_029022.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_029022.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

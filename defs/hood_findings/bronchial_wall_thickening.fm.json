@@ -1,0 +1,240 @@
+{
+  "oifm_id": "OIFM_HOOD_743738",
+  "name": "Bronchial Wall Thickening",
+  "description": "Thickening of the bronchial wall.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_301170",
+      "name": "Presence",
+      "description": "Presence of bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_301170.0",
+          "name": "Present",
+          "description": "Bronchial wall thickening is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_301170.1",
+          "name": "Absent",
+          "description": "Bronchial wall thickening is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_666889",
+      "name": "Status",
+      "description": "Status of the bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_666889.0",
+          "name": "New",
+          "description": "Bronchial wall thickening is new."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.1",
+          "name": "Stable",
+          "description": "Bronchial wall thickening is stable."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.2",
+          "name": "Resolved",
+          "description": "Bronchial wall thickening has resolved."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.3",
+          "name": "Worsened",
+          "description": "Bronchial wall thickening has worsened."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.4",
+          "name": "Decreased",
+          "description": "Bronchial wall thickening has decreased."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.5",
+          "name": "Unchanged",
+          "description": "Bronchial wall thickening has remained unchanged."
+        },
+        {
+          "value_code": "OIFMA_HOOD_666889.6",
+          "name": "Improved",
+          "description": "Bronchial wall thickening has improved."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_896921",
+      "name": "Severity",
+      "description": "Severity of the bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_896921.0",
+          "name": "Mild",
+          "description": "Mild bronchial wall thickening."
+        },
+        {
+          "value_code": "OIFMA_HOOD_896921.1",
+          "name": "Moderate",
+          "description": "Moderate bronchial wall thickening."
+        },
+        {
+          "value_code": "OIFMA_HOOD_896921.2",
+          "name": "Severe",
+          "description": "Severe bronchial wall thickening."
+        },
+        {
+          "value_code": "OIFMA_HOOD_896921.3",
+          "name": "Diffuse",
+          "description": "Bronchial wall thickening is diffuse."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_381023",
+      "name": "Distribution",
+      "description": "Distribution of the bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_381023.0",
+          "name": "Diffuse",
+          "description": "Bronchial wall thickening is diffuse."
+        },
+        {
+          "value_code": "OIFMA_HOOD_381023.1",
+          "name": "Localized",
+          "description": "Bronchial wall thickening is localized."
+        },
+        {
+          "value_code": "OIFMA_HOOD_381023.2",
+          "name": "Scattered",
+          "description": "Bronchial wall thickening is scattered."
+        },
+        {
+          "value_code": "OIFMA_HOOD_381023.3",
+          "name": "Bilateral",
+          "description": "Bronchial wall thickening is bilateral."
+        },
+        {
+          "value_code": "OIFMA_HOOD_381023.4",
+          "name": "Central",
+          "description": "Bronchial wall thickening is central."
+        },
+        {
+          "value_code": "OIFMA_HOOD_381023.5",
+          "name": "Peripheral",
+          "description": "Bronchial wall thickening is peripheral."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_991711",
+      "name": "Location",
+      "description": "Location of the bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_991711.0",
+          "name": "Upper lobes",
+          "description": "Bronchial wall thickening is in the upper lobes."
+        },
+        {
+          "value_code": "OIFMA_HOOD_991711.1",
+          "name": "Middle lobe",
+          "description": "Bronchial wall thickening is in the middle lobe."
+        },
+        {
+          "value_code": "OIFMA_HOOD_991711.2",
+          "name": "Lower lobes",
+          "description": "Bronchial wall thickening is in the lower lobes."
+        },
+        {
+          "value_code": "OIFMA_HOOD_991711.3",
+          "name": "Lingula",
+          "description": "Bronchial wall thickening is in the lingula."
+        },
+        {
+          "value_code": "OIFMA_HOOD_991711.4",
+          "name": "Right",
+          "description": "Bronchial wall thickening is in the right lung."
+        },
+        {
+          "value_code": "OIFMA_HOOD_991711.5",
+          "name": "Left",
+          "description": "Bronchial wall thickening is in the left lung."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_737183",
+      "name": "Size",
+      "description": "Size of the bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_737183.0",
+          "name": "Small (<3 mm)",
+          "description": "Bronchial wall thickening is small (<3 mm)."
+        },
+        {
+          "value_code": "OIFMA_HOOD_737183.1",
+          "name": "Medium (3-6 mm)",
+          "description": "Bronchial wall thickening is medium (3-6 mm)."
+        },
+        {
+          "value_code": "OIFMA_HOOD_737183.2",
+          "name": "Large (>6 mm)",
+          "description": "Bronchial wall thickening is large (>6 mm)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_613122",
+      "name": "Associated patterns",
+      "description": "Associated patterns with bronchial wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_613122.0",
+          "name": "Decreased tree-in-bud nodules",
+          "description": "Decreased tree-in-bud nodules are associated with bronchial wall thickening."
+        },
+        {
+          "value_code": "OIFMA_HOOD_613122.1",
+          "name": "Cavitary lesions",
+          "description": "Cavitary lesions are associated with bronchial wall thickening."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

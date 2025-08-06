@@ -1,0 +1,248 @@
+{
+  "oifm_id": "OIFM_HOOD_959830",
+  "name": "Pulmonary Emboli",
+  "description": "Pulmonary emboli refer to blood clots that block the pulmonary arteries, which carry blood from the heart to the lungs.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_353112",
+      "name": "Presence",
+      "description": "Indicates whether pulmonary emboli are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_353112.0",
+          "name": "Present",
+          "description": "Pulmonary emboli are present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_353112.1",
+          "name": "Absent",
+          "description": "Pulmonary emboli are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_359309",
+      "name": "Stage",
+      "description": "Indicates the stage of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_359309.0",
+          "name": "Acute",
+          "description": "Acute stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_HOOD_359309.1",
+          "name": "Chronic",
+          "description": "Chronic stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_HOOD_359309.2",
+          "name": "Subacute",
+          "description": "Subacute stage of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_070526",
+      "name": "Location",
+      "description": "Indicates the location of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_070526.0",
+          "name": "Central",
+          "description": "Main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_070526.1",
+          "name": "Right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_070526.2",
+          "name": "Left pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_070526.3",
+          "name": "Lobar",
+          "description": "Lobar branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_070526.4",
+          "name": "Segmental",
+          "description": "Segmental branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_070526.5",
+          "name": "Subsegmental",
+          "description": "Subsegmental branch of the pulmonary artery"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_992044",
+      "name": "Number",
+      "description": "Indicates the number of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_992044.0",
+          "name": "Single",
+          "description": "A single pulmonary embolus"
+        },
+        {
+          "value_code": "OIFMA_HOOD_992044.1",
+          "name": "Multiple",
+          "description": "Multiple pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_860866",
+      "name": "Burden",
+      "description": "Indicates the burden of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_860866.0",
+          "name": "Low",
+          "description": "Low burden of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_HOOD_860866.1",
+          "name": "Moderate",
+          "description": "Moderate burden of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_HOOD_860866.2",
+          "name": "High",
+          "description": "High burden of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_628540",
+      "name": "Right heart strain",
+      "description": "Indicates the presence or absence of right heart strain associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_628540.0",
+          "name": "Yes",
+          "description": "Right heart strain is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_628540.1",
+          "name": "No",
+          "description": "Right heart strain is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_918875",
+      "name": "Pulmonary hypertension",
+      "description": "Indicates the presence or absence of pulmonary hypertension associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_918875.0",
+          "name": "Yes",
+          "description": "Pulmonary hypertension is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_918875.1",
+          "name": "No",
+          "description": "Pulmonary hypertension is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_548807",
+      "name": "Pulmonary infarction",
+      "description": "Indicates the presence or absence of pulmonary infarction associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_548807.0",
+          "name": "Present",
+          "description": "Pulmonary infarction is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_548807.1",
+          "name": "Absent",
+          "description": "Pulmonary infarction is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_884161",
+      "name": "Pulmonary artery aneurysm",
+      "description": "Indicates the presence or absence of pulmonary artery aneurysm associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_884161.0",
+          "name": "Yes",
+          "description": "Pulmonary artery aneurysm is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_884161.1",
+          "name": "No",
+          "description": "Pulmonary artery aneurysm is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_471228",
+      "name": "Pulmonary hemorrhage",
+      "description": "Indicates the presence or absence of pulmonary hemorrhage associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_471228.0",
+          "name": "Yes",
+          "description": "Pulmonary hemorrhage is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_471228.1",
+          "name": "No",
+          "description": "Pulmonary hemorrhage is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

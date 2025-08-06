@@ -1,0 +1,168 @@
+{
+  "oifm_id": "OIFM_HOOD_712899",
+  "name": "Annular Calcifications",
+  "description": "Presence of annular calcifications",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_095363",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_095363.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_095363.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_027323",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_027323.0",
+          "name": "Mitral valve annulus",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_027323.1",
+          "name": "Aortic valve annulus",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_027323.2",
+          "name": "Tricuspid valve annulus",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_027323.3",
+          "name": "Pulmonary valve annulus",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_796720",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_796720.0",
+          "name": "Mild",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_796720.1",
+          "name": "Moderate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_796720.2",
+          "name": "Severe",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_234501",
+      "name": "Cardiomegaly",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_234501.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_234501.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_635457",
+      "name": "Coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_635457.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_635457.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_198794",
+      "name": "Left atrial enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_198794.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_198794.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_343957",
+      "name": "Pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_343957.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_343957.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

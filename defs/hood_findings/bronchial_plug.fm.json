@@ -1,0 +1,211 @@
+{
+  "oifm_id": "OIFM_HOOD_488588",
+  "name": "Bronchial Plug",
+  "description": "Presence of a bronchial plug",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_580534",
+      "name": "Presence of Bronchial Plug",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_580534.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_580534.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_542446",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_542446.0",
+          "name": "New placement",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_542446.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_542446.2",
+          "name": "Complication",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_542446.3",
+          "name": "Removed",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_542446.4",
+          "name": "Resorbed",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_988448",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_988448.0",
+          "name": "Main bronchus",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_988448.1",
+          "name": "Lobar bronchus",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_988448.2",
+          "name": "Segmental bronchus",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_502481",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_502481.0",
+          "name": "Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_502481.1",
+          "name": "Left",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_815058",
+      "name": "Device Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_815058.0",
+          "name": "Bioresorbable",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_815058.1",
+          "name": "Non-bioresorbable",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_845710",
+      "name": "Deployment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_845710.0",
+          "name": "Complete",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_845710.1",
+          "name": "Partial",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_135634",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_135634.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_135634.1",
+          "name": "Mucosal erosion",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_135634.2",
+          "name": "Perforation",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_135634.3",
+          "name": "Migration",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_135634.4",
+          "name": "Stenosis",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_135634.5",
+          "name": "Occlusion",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_205127",
+      "name": "Airspace consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_205127.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_205127.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

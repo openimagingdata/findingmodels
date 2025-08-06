@@ -1,0 +1,215 @@
+{
+  "oifm_id": "OIFM_HOOD_892192",
+  "name": "Emphysema",
+  "description": "Emphysema is a chronic lung condition characterized by the destruction of the air sacs in the lungs, leading to difficulty in breathing.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_033467",
+      "name": "Presence",
+      "description": "The presence or absence of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_033467.0",
+          "name": "Present",
+          "description": "Emphysema is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_033467.1",
+          "name": "Absent",
+          "description": "Emphysema is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_578293",
+      "name": "Type",
+      "description": "The type of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_578293.0",
+          "name": "Centrilobular",
+          "description": "Emphysema affects the central part of the lobule."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578293.1",
+          "name": "Panlobular",
+          "description": "Emphysema affects the entire lobule."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578293.2",
+          "name": "Paraseptal",
+          "description": "Emphysema affects the distal parts of the lobule."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578293.3",
+          "name": "Bullous",
+          "description": "Emphysema causes bullae (large air spaces) to form in the lung."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578293.4",
+          "name": "Irregular",
+          "description": "Emphysema has irregularly distributed areas of destruction."
+        },
+        {
+          "value_code": "OIFMA_HOOD_578293.5",
+          "name": "Subpleural",
+          "description": "Emphysema is predominantly located near the pleura."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_297742",
+      "name": "Severity",
+      "description": "The severity of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_297742.0",
+          "name": "Mild",
+          "description": "Emphysema is mild."
+        },
+        {
+          "value_code": "OIFMA_HOOD_297742.1",
+          "name": "Moderate",
+          "description": "Emphysema is moderate."
+        },
+        {
+          "value_code": "OIFMA_HOOD_297742.2",
+          "name": "Severe",
+          "description": "Emphysema is severe."
+        },
+        {
+          "value_code": "OIFMA_HOOD_297742.3",
+          "name": "Very Severe",
+          "description": "Emphysema is very severe."
+        },
+        {
+          "value_code": "OIFMA_HOOD_297742.4",
+          "name": "Extensive",
+          "description": "Emphysema is extensive."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_382995",
+      "name": "Location",
+      "description": "The location of emphysema in the lungs.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_382995.0",
+          "name": "Upper Lobes",
+          "description": "Emphysema is located in the upper lobes of the lungs."
+        },
+        {
+          "value_code": "OIFMA_HOOD_382995.1",
+          "name": "Lower Lobes",
+          "description": "Emphysema is located in the lower lobes of the lungs."
+        },
+        {
+          "value_code": "OIFMA_HOOD_382995.2",
+          "name": "Diffuse",
+          "description": "Emphysema is distributed throughout the lungs."
+        },
+        {
+          "value_code": "OIFMA_HOOD_382995.3",
+          "name": "Peribronchovascular",
+          "description": "Emphysema is located around the bronchovascular bundles."
+        },
+        {
+          "value_code": "OIFMA_HOOD_382995.4",
+          "name": "Apex to Base",
+          "description": "Emphysema is distributed from the apex to the base of the lungs."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_320556",
+      "name": "Laterality",
+      "description": "The laterality of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_320556.0",
+          "name": "Right",
+          "description": "Emphysema is localized to the right lung."
+        },
+        {
+          "value_code": "OIFMA_HOOD_320556.1",
+          "name": "Left",
+          "description": "Emphysema is localized to the left lung."
+        },
+        {
+          "value_code": "OIFMA_HOOD_320556.2",
+          "name": "Bilateral",
+          "description": "Emphysema is present in both lungs."
+        },
+        {
+          "value_code": "OIFMA_HOOD_320556.3",
+          "name": "Predominant Side",
+          "description": "Emphysema is predominantly located on one side."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_089164",
+      "name": "Associated Findings",
+      "description": "The associated findings with emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_089164.0",
+          "name": "Air trapping",
+          "description": "Emphysema is associated with air trapping."
+        },
+        {
+          "value_code": "OIFMA_HOOD_089164.1",
+          "name": "Pulmonary nodules",
+          "description": "Emphysema is associated with pulmonary nodules."
+        },
+        {
+          "value_code": "OIFMA_HOOD_089164.2",
+          "name": "Fibrosis",
+          "description": "Emphysema is associated with fibrosis."
+        },
+        {
+          "value_code": "OIFMA_HOOD_089164.3",
+          "name": "Pleural abnormalities",
+          "description": "Emphysema is associated with pleural abnormalities."
+        },
+        {
+          "value_code": "OIFMA_HOOD_089164.4",
+          "name": "Bronchiectasis",
+          "description": "Emphysema is associated with bronchiectasis."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

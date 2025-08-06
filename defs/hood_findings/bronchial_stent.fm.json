@@ -1,0 +1,197 @@
+{
+  "oifm_id": "OIFM_HOOD_908612",
+  "name": "Bronchial Stent",
+  "description": "A bronchial stent is a medical device used to support the walls of the bronchial tubes and keep them open. It is typically used to treat airway obstructions or strictures.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_946913",
+      "name": "Presence of Bronchial Stent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_946913.0",
+          "name": "Present",
+          "description": "The bronchial stent is present in the patient's airway."
+        },
+        {
+          "value_code": "OIFMA_HOOD_946913.1",
+          "name": "Absent",
+          "description": "There is no bronchial stent present in the patient's airway."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_261252",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_261252.0",
+          "name": "New placement",
+          "description": "The bronchial stent has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_HOOD_261252.1",
+          "name": "Unchanged",
+          "description": "The bronchial stent remains in the same position as before."
+        },
+        {
+          "value_code": "OIFMA_HOOD_261252.2",
+          "name": "Complication",
+          "description": "The bronchial stent is causing complications."
+        },
+        {
+          "value_code": "OIFMA_HOOD_261252.3",
+          "name": "Removed",
+          "description": "The bronchial stent has been removed from the patient's airway."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_480953",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_480953.0",
+          "name": "Right main bronchus",
+          "description": "The bronchial stent is located in the right main bronchus."
+        },
+        {
+          "value_code": "OIFMA_HOOD_480953.1",
+          "name": "Left main bronchus",
+          "description": "The bronchial stent is located in the left main bronchus."
+        },
+        {
+          "value_code": "OIFMA_HOOD_480953.2",
+          "name": "Lobar bronchus",
+          "description": "The bronchial stent is located in a lobar bronchus (specific lobe to be specified separately)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_972023",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_972023.0",
+          "name": "Right",
+          "description": "The bronchial stent is located on the right side of the airway."
+        },
+        {
+          "value_code": "OIFMA_HOOD_972023.1",
+          "name": "Left",
+          "description": "The bronchial stent is located on the left side of the airway."
+        },
+        {
+          "value_code": "OIFMA_HOOD_972023.2",
+          "name": "NA",
+          "description": "The side of the bronchial stent is not applicable or specified."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_284979",
+      "name": "Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_284979.0",
+          "name": "Fully covered",
+          "description": "The bronchial stent is fully covered."
+        },
+        {
+          "value_code": "OIFMA_HOOD_284979.1",
+          "name": "Partially covered",
+          "description": "The bronchial stent is partially covered."
+        },
+        {
+          "value_code": "OIFMA_HOOD_284979.2",
+          "name": "Uncovered",
+          "description": "The bronchial stent is not covered."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_308639",
+      "name": "Stent Length",
+      "description": "The length of the bronchial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_621848",
+      "name": "Lumen Diameter",
+      "description": "The diameter of the lumen of the bronchial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_304814",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_304814.0",
+          "name": "None",
+          "description": "There are no complications associated with the bronchial stent."
+        },
+        {
+          "value_code": "OIFMA_HOOD_304814.1",
+          "name": "Mucosal erosion",
+          "description": "The bronchial stent has caused erosion of the surrounding mucosal tissue."
+        },
+        {
+          "value_code": "OIFMA_HOOD_304814.2",
+          "name": "Perforation",
+          "description": "The bronchial stent has caused a perforation in the airway."
+        },
+        {
+          "value_code": "OIFMA_HOOD_304814.3",
+          "name": "Migration",
+          "description": "The bronchial stent has migrated from its original position."
+        },
+        {
+          "value_code": "OIFMA_HOOD_304814.4",
+          "name": "Stenosis",
+          "description": "The bronchial stent has caused narrowing or constriction of the airway."
+        },
+        {
+          "value_code": "OIFMA_HOOD_304814.5",
+          "name": "Occlusion",
+          "description": "The bronchial stent is causing a blockage in the airway."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

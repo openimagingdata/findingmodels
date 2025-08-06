@@ -1,0 +1,190 @@
+{
+  "oifm_id": "OIFM_HOOD_324993",
+  "name": "Nephrolithiasis",
+  "description": "Presence of kidney stones",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_069001",
+      "name": "Presence",
+      "description": "Presence of nephrolithiasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_069001.0",
+          "name": "Present",
+          "description": "Nephrolithiasis is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_069001.1",
+          "name": "Absent",
+          "description": "Nephrolithiasis is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_715043",
+      "name": "Number of Stones",
+      "description": "Number of kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_715043.0",
+          "name": "Single",
+          "description": "One kidney stone"
+        },
+        {
+          "value_code": "OIFMA_HOOD_715043.1",
+          "name": "Multiple",
+          "description": "Multiple kidney stones"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_398225",
+      "name": "Location",
+      "description": "Location of the kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_398225.0",
+          "name": "Right kidney",
+          "description": "Kidney stones in the right kidney"
+        },
+        {
+          "value_code": "OIFMA_HOOD_398225.1",
+          "name": "Left kidney",
+          "description": "Kidney stones in the left kidney"
+        },
+        {
+          "value_code": "OIFMA_HOOD_398225.2",
+          "name": "Both kidneys",
+          "description": "Kidney stones in both kidneys"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_429690",
+      "name": "Stone Size",
+      "description": "Size of the kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_429690.0",
+          "name": "<5mm",
+          "description": "Kidney stones smaller than 5mm"
+        },
+        {
+          "value_code": "OIFMA_HOOD_429690.1",
+          "name": "5-10mm",
+          "description": "Kidney stones between 5mm and 10mm"
+        },
+        {
+          "value_code": "OIFMA_HOOD_429690.2",
+          "name": ">10mm",
+          "description": "Kidney stones larger than 10mm"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_539413",
+      "name": "Hydronephrosis",
+      "description": "Presence of hydronephrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_539413.0",
+          "name": "Present",
+          "description": "Hydronephrosis is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_539413.1",
+          "name": "Absent",
+          "description": "Hydronephrosis is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_473673",
+      "name": "Hydroureter",
+      "description": "Presence of hydroureter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_473673.0",
+          "name": "Present",
+          "description": "Hydroureter is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_473673.1",
+          "name": "Absent",
+          "description": "Hydroureter is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_438415",
+      "name": "Perinephric Stranding",
+      "description": "Presence of perinephric stranding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_438415.0",
+          "name": "Present",
+          "description": "Perinephric stranding is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_438415.1",
+          "name": "Absent",
+          "description": "Perinephric stranding is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_167540",
+      "name": "Ureteral obstruction",
+      "description": "Presence of ureteral obstruction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_167540.0",
+          "name": "Present",
+          "description": "Ureteral obstruction is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_167540.1",
+          "name": "Absent",
+          "description": "Ureteral obstruction is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

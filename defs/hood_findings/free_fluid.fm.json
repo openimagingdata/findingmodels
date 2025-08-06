@@ -1,0 +1,173 @@
+{
+  "oifm_id": "OIFM_HOOD_282436",
+  "name": "Free Fluid",
+  "description": "Presence of free fluid in the abdominal cavity, also known as ascites",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_347066",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_347066.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_347066.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_960437",
+      "name": "Volume",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_960437.0",
+          "name": "Small",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_960437.1",
+          "name": "Moderate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_960437.2",
+          "name": "Large",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_505764",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_505764.0",
+          "name": "Upper abdominal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_505764.1",
+          "name": "Perihepatic",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_505764.2",
+          "name": "Perisplenic",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_505764.3",
+          "name": "Morrison's pouch",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_505764.4",
+          "name": "Subphrenic",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_062032",
+      "name": "Attenuation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_062032.0",
+          "name": "Simple",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_062032.1",
+          "name": "Complex",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_009893",
+      "name": "Hemoperitoneum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_009893.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_009893.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_756085",
+      "name": "Organ Injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_756085.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_756085.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_906123",
+      "name": "Pneumoperitoneum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_906123.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_906123.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

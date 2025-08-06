@@ -1,0 +1,130 @@
+{
+  "oifm_id": "OIFM_HOOD_183536",
+  "name": "Chest Tube",
+  "description": "A tube inserted into the chest to drain fluid or air.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_230368",
+      "name": "Side",
+      "description": "The side of the chest where the tube is inserted.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_230368.0",
+          "name": "Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_230368.1",
+          "name": "Right",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_764630",
+      "name": "Type",
+      "description": "The type of chest tube.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_764630.0",
+          "name": "Pigtail",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_764630.1",
+          "name": "Large bore",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_845758",
+      "name": "Directed toward",
+      "description": "The direction in which the chest tube is inserted.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_845758.0",
+          "name": "Apex",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_845758.1",
+          "name": "Base",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_845758.2",
+          "name": "Costophrenic sulcus",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_803546",
+      "name": "Intraparechymal placement",
+      "description": "Indicates whether the chest tube is placed within the lung tissue.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_803546.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_803546.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_035634",
+      "name": "Related topics",
+      "description": "Other findings or conditions related to the presence of a chest tube.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_035634.0",
+          "name": "Pleural effusion",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_035634.1",
+          "name": "Pneumothorax",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_035634.2",
+          "name": "Post-surgical changes",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

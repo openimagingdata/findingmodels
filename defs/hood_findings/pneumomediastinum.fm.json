@@ -1,0 +1,143 @@
+{
+  "oifm_id": "OIFM_HOOD_500450",
+  "name": "Pneumomediastinum",
+  "description": "Presence of air in the mediastinum.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_370637",
+      "name": "Presence of Pneumomediastinum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_370637.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_370637.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_332239",
+      "name": "Extent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_332239.0",
+          "name": "Localized",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_332239.1",
+          "name": "Extensive",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_794643",
+      "name": "Associated Injuries",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_794643.0",
+          "name": "Tracheal Injury",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_794643.1",
+          "name": "Bronchial Injury",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_794643.2",
+          "name": "Esophageal Injury",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_794643.3",
+          "name": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_856881",
+      "name": "Subcutaneous Emphysema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_856881.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_856881.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_484344",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_484344.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_484344.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_821235",
+      "name": "Other Air Leaks",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_821235.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_821235.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

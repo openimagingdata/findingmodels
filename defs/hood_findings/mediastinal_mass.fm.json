@@ -1,0 +1,220 @@
+{
+  "oifm_id": "OIFM_HOOD_249824",
+  "name": "Mediastinal Mass",
+  "description": "A mass located in the mediastinum, which is the area between the lungs that contains the heart, great vessels, and other structures.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_460598",
+      "name": "Presence of Mediastinal Mass",
+      "description": "Indicates whether a mediastinal mass is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_460598.0",
+          "name": "Yes",
+          "description": "A mediastinal mass is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_460598.1",
+          "name": "No",
+          "description": "No mediastinal mass is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_313621",
+      "name": "Anatomical Location",
+      "description": "The anatomical location of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_313621.0",
+          "name": "Anterior Mediastinum",
+          "description": "The mass is located in the anterior mediastinum, which is in front of the heart and behind the sternum."
+        },
+        {
+          "value_code": "OIFMA_HOOD_313621.1",
+          "name": "Middle Mediastinum",
+          "description": "The mass is located in the middle mediastinum, which contains the heart and pericardium."
+        },
+        {
+          "value_code": "OIFMA_HOOD_313621.2",
+          "name": "Posterior Mediastinum",
+          "description": "The mass is located in the posterior mediastinum, which is behind the heart and in front of the spine."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_532893",
+      "name": "Size",
+      "description": "The size of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_532893.0",
+          "name": "Small",
+          "description": "The mass is small in size."
+        },
+        {
+          "value_code": "OIFMA_HOOD_532893.1",
+          "name": "Medium",
+          "description": "The mass is medium in size."
+        },
+        {
+          "value_code": "OIFMA_HOOD_532893.2",
+          "name": "Large",
+          "description": "The mass is large in size."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_844674",
+      "name": "Density",
+      "description": "The density of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_844674.0",
+          "name": "Solid",
+          "description": "The mass has a solid consistency."
+        },
+        {
+          "value_code": "OIFMA_HOOD_844674.1",
+          "name": "Cystic",
+          "description": "The mass has a cystic consistency, containing fluid or air-filled spaces."
+        },
+        {
+          "value_code": "OIFMA_HOOD_844674.2",
+          "name": "Mixed",
+          "description": "The mass has a mixture of solid and cystic components."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_135669",
+      "name": "Borders",
+      "description": "The borders of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_135669.0",
+          "name": "Well-defined",
+          "description": "The borders of the mass are well-defined."
+        },
+        {
+          "value_code": "OIFMA_HOOD_135669.1",
+          "name": "Poorly defined",
+          "description": "The borders of the mass are poorly defined."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_108533",
+      "name": "Effects on Surrounding Structures",
+      "description": "The effects of the mediastinal mass on the surrounding structures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_108533.0",
+          "name": "Compression",
+          "description": "The mass is compressing the surrounding structures."
+        },
+        {
+          "value_code": "OIFMA_HOOD_108533.1",
+          "name": "Displacement",
+          "description": "The mass is displacing the surrounding structures."
+        },
+        {
+          "value_code": "OIFMA_HOOD_108533.2",
+          "name": "None",
+          "description": "The mass is not causing any effects on the surrounding structures."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_504845",
+      "name": "Lymphadenopathy",
+      "description": "Indicates whether lymphadenopathy, or enlarged lymph nodes, is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_504845.0",
+          "name": "Present",
+          "description": "Lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_504845.1",
+          "name": "Absent",
+          "description": "No lymphadenopathy is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_579002",
+      "name": "Calcifications",
+      "description": "Indicates whether calcifications are present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_579002.0",
+          "name": "Present",
+          "description": "Calcifications are present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_579002.1",
+          "name": "Absent",
+          "description": "No calcifications are present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_322901",
+      "name": "Signs of Invasion",
+      "description": "Indicates whether signs of invasion, such as infiltration into surrounding tissue, are present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_322901.0",
+          "name": "Present",
+          "description": "Signs of invasion are present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_322901.1",
+          "name": "Absent",
+          "description": "No signs of invasion are present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

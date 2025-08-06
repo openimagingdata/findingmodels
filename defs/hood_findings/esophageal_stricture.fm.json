@@ -1,0 +1,95 @@
+{
+  "oifm_id": "OIFM_HOOD_580174",
+  "name": "Esophageal Stricture",
+  "description": "Narrowing of the esophagus",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_708136",
+      "name": "descriptors",
+      "description": "Descriptors that may be used to characterize the esophageal stricture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_708136.0",
+          "name": "patulous",
+          "description": "Esophageal stricture is characterized as patulous"
+        },
+        {
+          "value_code": "OIFMA_HOOD_708136.1",
+          "name": "distended",
+          "description": "Esophageal stricture is characterized as distended"
+        },
+        {
+          "value_code": "OIFMA_HOOD_708136.2",
+          "name": "fluid-filled",
+          "description": "Esophageal stricture is characterized as fluid-filled"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_960398",
+      "name": "presence_of_stricture",
+      "description": "Indicates whether the esophageal stricture is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_960398.0",
+          "name": "present",
+          "description": "Esophageal stricture is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_960398.1",
+          "name": "absent",
+          "description": "Esophageal stricture is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_098095",
+      "name": "location_of_stricture",
+      "description": "The location of the esophageal stricture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_098095.0",
+          "name": "proximal esophagus",
+          "description": "Esophageal stricture is located in the proximal esophagus"
+        },
+        {
+          "value_code": "OIFMA_HOOD_098095.1",
+          "name": "middle esophagus",
+          "description": "Esophageal stricture is located in the middle esophagus"
+        },
+        {
+          "value_code": "OIFMA_HOOD_098095.2",
+          "name": "distal esophagus",
+          "description": "Esophageal stricture is located in the distal esophagus"
+        },
+        {
+          "value_code": "OIFMA_HOOD_098095.3",
+          "name": "gastroesophageal junction",
+          "description": "Esophageal stricture is located at the gastroesophageal junction"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

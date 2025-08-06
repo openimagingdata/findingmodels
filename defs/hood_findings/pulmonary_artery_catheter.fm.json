@@ -1,0 +1,185 @@
+{
+  "oifm_id": "OIFM_HOOD_238004",
+  "name": "Pulmonary Artery Catheter",
+  "description": "A catheter used to measure pressures in the pulmonary arteries and heart chambers",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_629095",
+      "name": "Presence of Pulmonary Artery Catheter",
+      "description": "Indicates whether a pulmonary artery catheter is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_629095.0",
+          "name": "Present",
+          "description": "Pulmonary artery catheter is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_629095.1",
+          "name": "Absent",
+          "description": "Pulmonary artery catheter is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_361847",
+      "name": "Status",
+      "description": "Indicates the status of the pulmonary artery catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_361847.0",
+          "name": "New placement",
+          "description": "The catheter has been newly inserted"
+        },
+        {
+          "value_code": "OIFMA_HOOD_361847.1",
+          "name": "Unchanged",
+          "description": "The catheter has not changed position or status"
+        },
+        {
+          "value_code": "OIFMA_HOOD_361847.2",
+          "name": "Complication",
+          "description": "There is a complication associated with the catheter"
+        },
+        {
+          "value_code": "OIFMA_HOOD_361847.3",
+          "name": "Removed",
+          "description": "The catheter has been removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_004106",
+      "name": "Appropriate location",
+      "description": "Indicates whether the catheter is at the appropriate location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_004106.0",
+          "name": "Yes",
+          "description": "The catheter is at the appropriate location"
+        },
+        {
+          "value_code": "OIFMA_HOOD_004106.1",
+          "name": "No",
+          "description": "The catheter is not at the appropriate location"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_760872",
+      "name": "Insertion Site",
+      "description": "Indicates the site of catheter insertion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_760872.0",
+          "name": "Internal jugular",
+          "description": "Catheter inserted through the internal jugular vein"
+        },
+        {
+          "value_code": "OIFMA_HOOD_760872.1",
+          "name": "Subclavian",
+          "description": "Catheter inserted through the subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_HOOD_760872.2",
+          "name": "Femoral",
+          "description": "Catheter inserted through the femoral vein"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_201217",
+      "name": "Side",
+      "description": "Indicates the side of catheter placement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_201217.0",
+          "name": "Left",
+          "description": "Catheter placed on the left side"
+        },
+        {
+          "value_code": "OIFMA_HOOD_201217.1",
+          "name": "Right",
+          "description": "Catheter placed on the right side"
+        },
+        {
+          "value_code": "OIFMA_HOOD_201217.2",
+          "name": "NA",
+          "description": "Not applicable"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_328188",
+      "name": "Distal tip location",
+      "description": "Indicates the location of the distal tip of the catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_328188.0",
+          "name": "Main pulmonary artery",
+          "description": "Distal tip of the catheter is in the main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_328188.1",
+          "name": "Right pulmonary artery",
+          "description": "Distal tip of the catheter is in the right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_328188.2",
+          "name": "Left pulmonary artery",
+          "description": "Distal tip of the catheter is in the left pulmonary artery"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_879227",
+      "name": "Balloon Inflation",
+      "description": "Indicates whether the balloon of the catheter is inflated or not at the time of imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_879227.0",
+          "name": "Inflated",
+          "description": "Balloon of the catheter is inflated"
+        },
+        {
+          "value_code": "OIFMA_HOOD_879227.1",
+          "name": "Not inflated",
+          "description": "Balloon of the catheter is not inflated"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

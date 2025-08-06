@@ -1,0 +1,114 @@
+{
+  "oifm_id": "OIFM_HOOD_337931",
+  "name": "Sclerotic Lesion",
+  "description": "A sclerotic lesion is a finding characterized by an area of increased bone density.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_360985",
+      "name": "presence",
+      "description": "Indicates whether the sclerotic lesion is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_360985.0",
+          "name": "present",
+          "description": "The sclerotic lesion is present."
+        },
+        {
+          "value_code": "OIFMA_HOOD_360985.1",
+          "name": "absent",
+          "description": "The sclerotic lesion is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_261296",
+      "name": "status",
+      "description": "Indicates the status of the sclerotic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_261296.0",
+          "name": "stable",
+          "description": "The sclerotic lesion is stable."
+        },
+        {
+          "value_code": "OIFMA_HOOD_261296.1",
+          "name": "enlarging",
+          "description": "The sclerotic lesion is enlarging."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_977880",
+      "name": "location",
+      "description": "Indicates the location of the sclerotic lesion in the bone.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_977880.0",
+          "name": "Not specified",
+          "description": "The location of the sclerotic lesion is not specified."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.1",
+          "name": "Frontal bone",
+          "description": "The sclerotic lesion is located in the frontal bone."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.2",
+          "name": "Occipital bone",
+          "description": "The sclerotic lesion is located in the occipital bone."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.3",
+          "name": "Temporal bone",
+          "description": "The sclerotic lesion is located in the temporal bone."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.4",
+          "name": "Parietal bone",
+          "description": "The sclerotic lesion is located in the parietal bone."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.5",
+          "name": "Maxilla",
+          "description": "The sclerotic lesion is located in the maxilla."
+        },
+        {
+          "value_code": "OIFMA_HOOD_977880.6",
+          "name": "Mandible",
+          "description": "The sclerotic lesion is located in the mandible."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_292428",
+      "name": "density",
+      "description": "Indicates the density of the sclerotic lesion.",
+      "type": "numeric",
+      "minimum": 1000,
+      "unit": "HU",
+      "required": false
+    }
+  ]
+}

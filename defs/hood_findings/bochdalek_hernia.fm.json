@@ -1,0 +1,154 @@
+{
+  "oifm_id": "OIFM_HOOD_637694",
+  "name": "Bochdalek Hernia",
+  "description": "Bochdalek Hernia is a congenital diaphragmatic hernia that allows abdominal contents to herniate into the chest cavity through a defect in the diaphragm.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_641309",
+      "name": "Presence of Bochdalek Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_641309.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_641309.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_766086",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_766086.0",
+          "name": "Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_766086.1",
+          "name": "Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_766086.2",
+          "name": "Bilateral",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_409806",
+      "name": "Size",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_409806.0",
+          "name": "Small",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_409806.1",
+          "name": "Medium",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_409806.2",
+          "name": "Large",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_996202",
+      "name": "Contents",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_996202.0",
+          "name": "Fat",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_996202.1",
+          "name": "Bowel",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_996202.2",
+          "name": "Both",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_996202.3",
+          "name": "Other",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_380047",
+      "name": "Pulmonary Hypoplasia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_380047.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_380047.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_531946",
+      "name": "Other Diaphragmatic Hernias",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_531946.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_531946.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

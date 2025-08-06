@@ -1,0 +1,128 @@
+{
+  "oifm_id": "OIFM_HOOD_900752",
+  "name": "Pulmonary Artery Dilation",
+  "description": "Pulmonary Artery Dilation",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_420804",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_420804.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_420804.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_241595",
+      "name": "Diameter",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_534343",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_534343.0",
+          "name": "Main pulmonary artery",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_534343.1",
+          "name": "Right pulmonary artery",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_534343.2",
+          "name": "Left pulmonary artery",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_956589",
+      "name": "Pulmonary Hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_956589.0",
+          "name": "Suspected",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_956589.1",
+          "name": "Confirmed",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_680284",
+      "name": "Right Heart Strain",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_680284.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_680284.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_765012",
+      "name": "Pulmonary Embolism",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_765012.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_765012.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

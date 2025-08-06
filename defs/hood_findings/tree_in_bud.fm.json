@@ -1,0 +1,290 @@
+{
+  "oifm_id": "OIFM_HOOD_552601",
+  "name": "Tree In Bud",
+  "description": "Tree-in-Bud Opacities",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_466060",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_466060.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_466060.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_212475",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_212475.0",
+          "name": "New",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_212475.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_212475.2",
+          "name": "Improved",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_212475.3",
+          "name": "Increasing",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_232425",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_232425.0",
+          "name": "Bilateral",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.1",
+          "name": "Unilateral",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.2",
+          "name": "Right",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.3",
+          "name": "Left",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.4",
+          "name": "Upper lobes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.5",
+          "name": "Middle lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.6",
+          "name": "Lower lobes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.7",
+          "name": "Lung apices",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_232425.8",
+          "name": "Lung bases",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_564302",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_564302.0",
+          "name": "Mild",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_564302.1",
+          "name": "Moderate",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_564302.2",
+          "name": "Severe",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_729632",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_729632.0",
+          "name": "Right upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.1",
+          "name": "Right lower lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.2",
+          "name": "Left upper lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.3",
+          "name": "Lingula",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.4",
+          "name": "Middle lobe",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.5",
+          "name": "Lower lobes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.6",
+          "name": "Lung apices",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_729632.7",
+          "name": "Posterior right upper lobe",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_548665",
+      "name": "Consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_548665.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_548665.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_008532",
+      "name": "Pulmonary Fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_008532.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_008532.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_463471",
+      "name": "Groundglass Opacity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_463471.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_463471.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_467712",
+      "name": "Bronchiectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_467712.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_467712.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_263291",
+      "name": "Mucus Plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_263291.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_263291.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

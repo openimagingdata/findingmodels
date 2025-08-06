@@ -1,0 +1,155 @@
+{
+  "oifm_id": "OIFM_HOOD_592902",
+  "name": "Ivc Filter",
+  "description": "Presence of an IVC filter and its characteristics",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_084638",
+      "name": "Presence of IVC Filter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_084638.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_084638.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_179592",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_179592.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_HOOD_179592.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_HOOD_179592.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_HOOD_179592.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_804260",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_804260.0",
+          "name": "Suprarenal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_804260.1",
+          "name": "Infrarenal"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_386964",
+      "name": "Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_386964.0",
+          "name": "Permanent"
+        },
+        {
+          "value_code": "OIFMA_HOOD_386964.1",
+          "name": "Retrievable"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_945525",
+      "name": "Orientation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_945525.0",
+          "name": "Appropriate"
+        },
+        {
+          "value_code": "OIFMA_HOOD_945525.1",
+          "name": "Tilted"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_699996",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_699996.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_699996.1",
+          "name": "Tine Penetration"
+        },
+        {
+          "value_code": "OIFMA_HOOD_699996.2",
+          "name": "Migration"
+        },
+        {
+          "value_code": "OIFMA_HOOD_699996.3",
+          "name": "Tilted"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_619579",
+      "name": "Thrombosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_619579.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_619579.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

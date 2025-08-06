@@ -1,0 +1,230 @@
+{
+  "oifm_id": "OIFM_HOOD_185918",
+  "name": "Breast Implant",
+  "description": "Presence and characteristics of breast implants",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_214332",
+      "name": "Presence of Breast Implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_214332.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_214332.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_969747",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_969747.0",
+          "name": "New",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_969747.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_969747.2",
+          "name": "Complication",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_969747.3",
+          "name": "Removed",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_665610",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_665610.0",
+          "name": "Right breast",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_665610.1",
+          "name": "Left breast",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_665610.2",
+          "name": "Bilateral",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_310785",
+      "name": "Implant Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_310785.0",
+          "name": "Saline",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_310785.1",
+          "name": "Silicone",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_223758",
+      "name": "Position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_223758.0",
+          "name": "Preglandular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_223758.1",
+          "name": "Subpectoral",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_496843",
+      "name": "Implant Rupture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_496843.0",
+          "name": "Intracapsular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_496843.1",
+          "name": "Extracapsular",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_496843.2",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_487322",
+      "name": "Silicone Leakage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_487322.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_487322.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_748116",
+      "name": "Capsular Contracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_748116.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_748116.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_604714",
+      "name": "Capsular Calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_604714.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_604714.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_662924",
+      "name": "Axillary Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_662924.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_662924.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

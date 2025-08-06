@@ -1,0 +1,173 @@
+{
+  "oifm_id": "OIFM_HOOD_218934",
+  "name": "Ascending Aortic Repair",
+  "description": "Repair of the ascending aorta",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_569473",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_569473.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_569473.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_216250",
+      "name": "Type of Repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_216250.0",
+          "name": "Graft",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_216250.1",
+          "name": "Stent",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_216250.2",
+          "name": "Valve replacement",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_216250.3",
+          "name": "Valve-sparing",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_604139",
+      "name": "Condition Treated",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_604139.0",
+          "name": "Aneurysm",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_604139.1",
+          "name": "Dissection",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_604139.2",
+          "name": "Both",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_429029",
+      "name": "Location of Repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_429029.0",
+          "name": "Ascending aorta",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_429029.1",
+          "name": "Aortic root",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_429029.2",
+          "name": "Aortic arch",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_202123",
+      "name": "Aortic Dilation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_202123.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_202123.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_104370",
+      "name": "Residual Dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_104370.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_104370.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_219729",
+      "name": "Pericardial Effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_219729.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_219729.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

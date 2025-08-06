@@ -1,0 +1,184 @@
+{
+  "oifm_id": "OIFM_HOOD_488942",
+  "name": "Neurostimulator Device",
+  "description": "Presence and characteristics of a neurostimulator device.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_845514",
+      "name": "Presence of Neurostimulator Device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_845514.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_845514.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_448540",
+      "name": "Status",
+      "description": "Current status of the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_448540.0",
+          "name": "New placement",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_448540.1",
+          "name": "Unchanged",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_448540.2",
+          "name": "Complication",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_448540.3",
+          "name": "Removed",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_023463",
+      "name": "Lead Location",
+      "description": "Location of the neurostimulator lead.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_023463.0",
+          "name": "Spinal canal",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_023463.1",
+          "name": "Above FOV",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_023463.2",
+          "name": "Below FOV",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_685270",
+      "name": "Appropriate position",
+      "description": "Whether the neurostimulator device is in an appropriate position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_685270.0",
+          "name": "Yes",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_685270.1",
+          "name": "No",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_743442",
+      "name": "Device Type",
+      "description": "Type of the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_743442.0",
+          "name": "Deep Brain Stimulator (DBS)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_743442.1",
+          "name": "Spinal Cord Stimulator (SCS)",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_743442.2",
+          "name": "Vagus Nerve Stimulator (VNS)",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_005784",
+      "name": "Device/Battery Location",
+      "description": "Location of the neurostimulator device or battery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_005784.0",
+          "name": "Chest",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_005784.1",
+          "name": "Abdomen",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_005784.2",
+          "name": "Buttock",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_658684",
+      "name": "Fluid collection",
+      "description": "Presence of fluid collection associated with the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_658684.0",
+          "name": "Present",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_658684.1",
+          "name": "Absent",
+          "description": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}
