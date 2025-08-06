@@ -6,7 +6,7 @@ from pathlib import Path
 
 from findingmodel import FindingModelFull, FindingInfo
 from findingmodel.common import model_file_name
-from findingmodel.tools.markdown_in import create_model_from_markdown
+from findingmodel.tools import create_model_from_markdown
 
 
 class MarkdownToFindingModel:
