@@ -388,6 +388,10 @@ class CDEToFindingModel:
             fm = FindingModelFull(**finding_model_dict)
             output_file = Path(output_dir) / model_file_name(fm.name)
             
+            # Check if file already exists (potential overwrite)
+            if output_file.exists():
+                print(f"WARNING: Overwriting existing file: {output_file.name} (CDE: {cde_data['id']})")
+            
             # Ensure output directory exists
             output_file.parent.mkdir(parents=True, exist_ok=True)
             
@@ -412,6 +416,7 @@ def main():
     successful_count = 0
     failed_count = 0
     total_files = 0
+    overwrite_count = 0
     
     # Process all CDE files
     for filename in os.listdir(input_dir):
@@ -425,6 +430,9 @@ def main():
                 print(f"Failed to process {filename}")
                 failed_count += 1
     
+    # Count unique output files generated
+    unique_output_files = len([f for f in os.listdir(output_dir) if f.endswith('.fm.json')])
+    
     # Print summary
     print("\n" + "="*50)
     print("PROCESSING SUMMARY")
@@ -433,6 +441,8 @@ def main():
     print(f"Successfully converted: {successful_count}")
     print(f"Failed to convert: {failed_count}")
     print(f"Success rate: {(successful_count/total_files*100):.1f}%" if total_files > 0 else "Success rate: N/A")
+    print(f"Unique finding models generated: {unique_output_files}")
+    print(f"Files overwritten: {successful_count - unique_output_files}")
     print("="*50)
     print("Processing complete!")
 
