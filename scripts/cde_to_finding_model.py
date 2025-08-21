@@ -32,9 +32,9 @@ class CDEToFindingModel:
     def _create_oidm_organization() -> Dict:
         """Create the OIDM organization contributor."""
         return {
-            "name": "Open Imaging Data Model",
-            "code": "OIDM",
-            "url": "https://openimagingdata.org"
+            "name": "ACR/RSNA Common Data Elements Project",
+            "code": "CDE",
+            "url": "https://radelement.org"
         }
 
     @staticmethod
@@ -42,9 +42,9 @@ class CDEToFindingModel:
         """Create contributors for CDE finding models."""
         return [
             {
-                "name": "Open Imaging Data Model",
-                "code": "OIDM",
-                "url": "https://openimagingdata.org"
+                "name": "ACR/RSNA Common Data Elements Project",
+                "code": "CDE",
+                "url": "https://radelement.org"
             }
         ]
 
@@ -120,6 +120,66 @@ class CDEToFindingModel:
         return values
 
     @staticmethod
+    def _expand_short_name(name: str) -> str:
+        """Expand short names to be more descriptive while maintaining medical meaning."""
+        # Common medical abbreviations that need expansion
+        expansions = {
+            "T0": "T0 Stage",
+            "T1": "T1 Stage", 
+            "T2": "T2 Stage",
+            "T3": "T3 Stage",
+            "T4": "T4 Stage",
+            "T5": "T5 Stage",
+            "T6": "T6 Stage",
+            "T7": "T7 Stage",
+            "T8": "T8 Stage",
+            "T9": "T9 Stage",
+            "C1": "C1 Vertebra",
+            "C2": "C2 Vertebra",
+            "C3": "C3 Vertebra",
+            "C4": "C4 Vertebra",
+            "C5": "C5 Vertebra",
+            "C6": "C6 Vertebra",
+            "C7": "C7 Vertebra",
+            "L1": "L1 Vertebra",
+            "L2": "L2 Vertebra",
+            "L3": "L3 Vertebra",
+            "L4": "L4 Vertebra",
+            "L5": "L5 Vertebra",
+            "S1": "S1 Vertebra",
+            "S2": "S2 Vertebra",
+            "S3": "S3 Vertebra",
+            "S4": "S4 Vertebra",
+            "S5": "S5 Vertebra",
+            "A0": "A0 Stage",
+            "A1": "A1 Stage",
+            "A2": "A2 Stage",
+            "A3": "A3 Stage",
+            "A4": "A4 Stage",
+            "B1": "B1 Stage",
+            "B2": "B2 Stage",
+            "B3": "B3 Stage",
+            "M1": "M1 Stage",
+            "M2": "M2 Stage",
+            "M3": "M3 Stage",
+            "M4": "M4 Stage",
+            "F1": "F1 Stage",
+            "F2": "F2 Stage",
+            "F3": "F3 Stage",
+            "F4": "F4 Stage"
+        }
+        
+        # Check if name needs expansion
+        if name in expansions:
+            return expansions[name]
+        
+        # If name is too short but not in our expansion list, add "Value" suffix
+        if len(name) < 3:
+            return f"{name} Value"
+        
+        return name
+
+    @staticmethod
     def _process_numeric_attribute(element: Dict, attribute_id: str) -> Dict:
         """Process a numeric attribute from CDE to FindingModel format."""
         numeric_value = element.get("float_value", {}) or element.get("integer_value", {})
@@ -132,9 +192,12 @@ class CDEToFindingModel:
         else:
             description = description
         
+        # Expand short names to meet schema requirements
+        expanded_name = CDEToFindingModel._expand_short_name(element.get("name", ""))
+        
         return {
             "oifma_id": attribute_id,
-            "name": element.get("name", ""),
+            "name": expanded_name,
             "description": description,
             "type": "numeric",
             "minimum": numeric_value.get("min"),
@@ -168,9 +231,12 @@ class CDEToFindingModel:
         else:
             description = description
         
+        # Expand short names to meet schema requirements
+        expanded_name = CDEToFindingModel._expand_short_name(element.get("name", ""))
+        
         return {
             "oifma_id": attribute_id,
-            "name": element.get("name", ""),
+            "name": expanded_name,
             "description": description,
             "type": "choice",
             "required": False,
