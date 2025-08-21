@@ -109,7 +109,7 @@ class CDEToFindingModel:
             
             # Only add description if it exists and is different from name
             if fm_description:
-                processed_value["description"] = fm_description
+                processed_value["description"] = CDEToFindingModel._truncate_description(fm_description)
                 
             # Add index codes if they exist
             index_codes = CDEToFindingModel._process_index_codes(value.get("index_codes", []))
@@ -119,6 +119,15 @@ class CDEToFindingModel:
             values.append(processed_value)
         return values
 
+    @staticmethod
+    def _truncate_description(description: str, max_length: int = 500) -> str:
+        """Truncate description to max_length-4 characters and add '...' if needed."""
+        if not description or len(description) <= max_length:
+            return description
+        
+        # Truncate to max_length-4 and add "..."
+        return description[:max_length-4] + "..."
+    
     @staticmethod
     def _expand_short_name(name: str) -> str:
         """Expand short names to be more descriptive while maintaining medical meaning."""
@@ -190,7 +199,7 @@ class CDEToFindingModel:
         if not description or len(description) < 5:
             description = None  # Use None instead of empty string
         else:
-            description = description
+            description = CDEToFindingModel._truncate_description(description)
         
         # Expand short names to meet schema requirements
         expanded_name = CDEToFindingModel._expand_short_name(element.get("name", ""))
@@ -229,7 +238,7 @@ class CDEToFindingModel:
         if not description or len(description) < 5:
             description = None  # Use None instead of empty string
         else:
-            description = description
+            description = CDEToFindingModel._truncate_description(description)
         
         # Expand short names to meet schema requirements
         expanded_name = CDEToFindingModel._expand_short_name(element.get("name", ""))
@@ -318,7 +327,7 @@ class CDEToFindingModel:
         finding_model = {
             "oifm_id": model_id,
             "name": cde_data["name"],
-            "description": cde_data["description"],
+            "description": CDEToFindingModel._truncate_description(cde_data["description"]),
             "attributes": attributes,
             "index_codes": model_index_codes,
             "contributors": CDEToFindingModel._create_cde_contributors(cde_data)
@@ -399,12 +408,33 @@ def main():
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     
+    # Track success and failure counts
+    successful_count = 0
+    failed_count = 0
+    total_files = 0
+    
     # Process all CDE files
     for filename in os.listdir(input_dir):
         if filename.endswith(".cde.json"):
+            total_files += 1
             input_file = os.path.join(input_dir, filename)
             if CDEToFindingModel.process_file(input_file, output_dir):
                 print(f"Processed {filename}")
+                successful_count += 1
+            else:
+                print(f"Failed to process {filename}")
+                failed_count += 1
+    
+    # Print summary
+    print("\n" + "="*50)
+    print("PROCESSING SUMMARY")
+    print("="*50)
+    print(f"Total CDE files found: {total_files}")
+    print(f"Successfully converted: {successful_count}")
+    print(f"Failed to convert: {failed_count}")
+    print(f"Success rate: {(successful_count/total_files*100):.1f}%" if total_files > 0 else "Success rate: N/A")
+    print("="*50)
+    print("Processing complete!")
 
 if __name__ == "__main__":
     main() 

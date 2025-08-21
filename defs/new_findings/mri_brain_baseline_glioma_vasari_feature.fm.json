@@ -1,0 +1,782 @@
+{
+  "oifm_id": "OIFM_CDE_000221",
+  "name": "MRI Brain Baseline Glioma VASARI Feature",
+  "description": "Glioma Features (VASARI)",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001414",
+      "name": "Tumor center",
+      "description": "Location of lesion geographic center; the largest component of the tumor (either CET or nCET).\n \n (multiple selections acceptable ? choose up to two)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001414.0",
+          "name": "frontal lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.1",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.2",
+          "name": "insular"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.3",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.4",
+          "name": "occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.5",
+          "name": "brainstem"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.6",
+          "name": "corpus callosum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.7",
+          "name": "cerebellum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.8",
+          "name": "lentiform nuclei"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.9",
+          "name": "caudate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.10",
+          "name": "thalamus"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.11",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001414.12",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 13
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001415",
+      "name": "Side of tumor center",
+      "description": "Side of lesion center irrespective of whether the lesion crosses into the contralateral hemisphere.\n \n \n \t\nSide of lesion center irrespective of whether the lesion crosses into the contralateral hemisphere.\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001415.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001415.1",
+          "name": "center/bilateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001415.2",
+          "name": "left",
+          "description": "Left side of midline"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001416",
+      "name": "Tumor involving eloquent brain",
+      "description": "Does any component of the tumor (CET or\nnCET) involve eloquent cortex or the\nimmediate subcortical white matter of eloquent\ncortex (motor,language, vision)? (multiple selections acceptable).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001416.0",
+          "name": "speech motor",
+          "description": "dominant frontal operculum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001416.1",
+          "name": "speech receptive",
+          "description": "Temporal or Wernickes area"
+        },
+        {
+          "value_code": "OIFMA_CDE_001416.2",
+          "name": "vision",
+          "description": "Occipital lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001416.3",
+          "name": "motor"
+        },
+        {
+          "value_code": "OIFMA_CDE_001416.4",
+          "name": "no eloquent brain"
+        },
+        {
+          "value_code": "OIFMA_CDE_001416.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 6
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001417",
+      "name": "Enhancement quality",
+      "description": "Qualitative degree of contrast enhancement is defined as having\n all or portions of the tumor that demonstrate significantly higher signal on the postcontrast T1W images compared to precontrast T1W images. Mild = when barely discernible but unequivocal degree of enhancement is present relative to pre-contrast images. Marked = obvious tissue enhancement.\n \n (If it does not appear that contrast was administered, select No Contrast Injected.)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001417.0",
+          "name": "no contrast administered"
+        },
+        {
+          "value_code": "OIFMA_CDE_001417.1",
+          "name": "none",
+          "description": "No contrast enhancement, if it doesn't appear that contrast was administered."
+        },
+        {
+          "value_code": "OIFMA_CDE_001417.2",
+          "name": "mild",
+          "description": "Barely discernable  degree of enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_001417.3",
+          "name": "marked",
+          "description": "Obvious tissue enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_001417.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001418",
+      "name": "Proportion enhancing",
+      "description": "Visually, when scanning through the entire tumor volume, what proportion of the entire tumor would you estimate is enhancing. (Assuming that the entire abnormality may be\ncomprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic\ncomponent and (4) a edema component.)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001418.0",
+          "name": "no contrast injected"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.1",
+          "name": "no contrast enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.2",
+          "name": "less than 5%",
+          "description": "less than 5% of entire tumor enhancing"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.3",
+          "name": "between 6 and 33%",
+          "description": "A minor proportion of tumor enhances"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.4",
+          "name": "between 34 and 67%",
+          "description": "A moderate proportion of the tumor enhances"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.5",
+          "name": "greater than 67%",
+          "description": "The majority of the tumor enhances"
+        },
+        {
+          "value_code": "OIFMA_CDE_001418.6",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001424",
+      "name": "Thickness of enhancing margin",
+      "description": "If most of the enhancing rim is thin, regular, and measures < 3mm in thickness and has homogenous enhancement the grade is minimal. If most of the rim demonstrates nodular and/or thick enhancement measuring 3mm or more, the grade is thick/nodular. If there is only solid enhancement and no rim, the grade is solid.\n \n (If it does not appear that contrast was administered, select No Contrast Injected.)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001424.0",
+          "name": "No contrast injected"
+        },
+        {
+          "value_code": "OIFMA_CDE_001424.1",
+          "name": "No enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_001424.2",
+          "name": "thin ",
+          "description": "If most of the enhancing rim Is thin, regular, and measures < 3 mm in thickness and has homogenous enhancement the grade is thin"
+        },
+        {
+          "value_code": "OIFMA_CDE_001424.3",
+          "name": "thick",
+          "description": "If most of the rim demonstrates nodular and/or thick enhancement, that is equal or greater than 3 mm, the grade is thick."
+        },
+        {
+          "value_code": "OIFMA_CDE_001424.4",
+          "name": "solid",
+          "description": "If there is only solid enhancement and no rim, the grade is solid."
+        },
+        {
+          "value_code": "OIFMA_CDE_001424.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001425",
+      "name": "Definition of the enhancing margin",
+      "description": "The scoring is not applicable if there is no contrast enhancement. Assess if most of the outside margin of the enhancement is well defined or poorly defined. Are you able to easily trace the margin of enhancement?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001425.0",
+          "name": "no contrast injected"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.1",
+          "name": "no contrast enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.2",
+          "name": "completely well-defined (100%)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.3",
+          "name": "mostly well-defined (> two-thirds)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.4",
+          "name": "mixed (@50-50)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.5",
+          "name": "mostly poorly-defined (>two-third)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.6",
+          "name": "completely ill-defined (100%)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001425.7",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001426",
+      "name": "Definition of the non-enhancing margin (e.g. Grade III) ",
+      "description": "If most of the outside non-enhancing (nCET) margin of the tumor is well-defined (i.e. sharply marginated) and smooth (geographic), versus if the margin is poorly-defined (fluffy or indistinct).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001426.0",
+          "name": "completely well-defined (100%)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001426.1",
+          "name": "mostly well-defined (> two-thirds)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001426.2",
+          "name": "mixed (@50-50)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001426.3",
+          "name": "mostly poorly defined (> two-thirds)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001426.4",
+          "name": "completely ill-defined (100%)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001426.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001427",
+      "name": "Proportion of edema",
+      "description": "Visually, when scanning through the entire tumor volume, what proportion of the entire abnormality is estimated to represent vasogenic edema? \n\nEdema should be greater in signal than than nCET and somewhat lower in signal\nthan CSF. Pseudopods are characteristic of edema).\n\nAssuming that the the entire abnormality may be comprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic component and (4) a edema component.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001427.0",
+          "name": "none ",
+          "description": "no edema present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001427.1",
+          "name": "less than 5% ",
+          "description": "Small portion of the tumor matrix"
+        },
+        {
+          "value_code": "OIFMA_CDE_001427.2",
+          "name": "between 6 and 33% ",
+          "description": "Small amount of edema surrounds tumor matrix"
+        },
+        {
+          "value_code": "OIFMA_CDE_001427.3",
+          "name": "between 34 and 67% ",
+          "description": "Moderate amount of edema comprises tumor"
+        },
+        {
+          "value_code": "OIFMA_CDE_001427.4",
+          "name": "greater than 67%"
+        },
+        {
+          "value_code": "OIFMA_CDE_001427.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001428",
+      "name": "Intratumoral hemorrhage",
+      "description": "Intrinsic hemorrhage anywhere in the tumor matrix. Any intrinsic foci of low signal on T2WI (or gradient echo) or high signal on T1WI. Proportion is not a discriminating factor. Select cannot determine if findings are indistinct or may actually represent mineral instead of hemorrhage.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001428.0",
+          "name": "absent",
+          "description": "No hemorrhage"
+        },
+        {
+          "value_code": "OIFMA_CDE_001428.1",
+          "name": "present",
+          "description": "Hemorrhage is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001428.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001439",
+      "name": "Perpendicular diameter",
+      "description": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 200,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001440",
+      "name": "Tumor origin",
+      "description": "Propose where you think the tumor originated from using the following grades. Periventricular (most likely arising from periventricular/subventricular zone); Gyral (most likely arising from the cortex or adjacent gyral subcortical white matter zone);\n Deep white matter (most likely arising deep to the U fiber region but not in the periventricular zone). Use not applicable if none of these feature criteria apply. (multiple selections acceptable)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001440.0",
+          "name": "periventricular"
+        },
+        {
+          "value_code": "OIFMA_CDE_001440.1",
+          "name": "gyral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001440.2",
+          "name": "deep white matter"
+        },
+        {
+          "value_code": "OIFMA_CDE_001440.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002037",
+      "name": "Enhancing tumor crosses midline",
+      "description": "Enhancing tissue crosses midline is defined by any CET that extends into the contralateral hemisphere through white matter commissures usually expected at the midline (exclusive of herniated ipsilateral tissue).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002037.0",
+          "name": "no contrast injected"
+        },
+        {
+          "value_code": "OIFMA_CDE_002037.1",
+          "name": "no contract enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_002037.2",
+          "name": "No"
+        },
+        {
+          "value_code": "OIFMA_CDE_002037.3",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_002037.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002038",
+      "name": "Proportion nCET",
+      "description": "When scanning through the entire tumor volume, what proportion of the entire tumor is estimated to represent nonenhancing tumor or nCET (not edema)?\n \n Non-enhancing tumor (nCET) is defined as regions of T2W intermediate hyperintensity (less than the intensity of cerebrospinal fluid or vasogenic edema, with corresponding T1W hypointensity) that are associated with mass effect and architectural distortion, including blurring of the gray-white interface. (This may be difficult to discern from ...",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002038.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002038.1",
+          "name": "minimal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002038.2",
+          "name": "less than 33%",
+          "description": "Between one third and two thirds"
+        },
+        {
+          "value_code": "OIFMA_CDE_002038.3",
+          "name": "between 34% and 66%"
+        },
+        {
+          "value_code": "OIFMA_CDE_002038.4",
+          "name": "more than 67%"
+        },
+        {
+          "value_code": "OIFMA_CDE_002038.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002039",
+      "name": "Proportion necrosis",
+      "description": "Visually, when scanning through the entire tumor volume, what proportion of the tumor is estimated to represent necrosis.\n \n Necrosis is defined as a region within the tumor that does not enhance, is hyperintense on T2W and proton density images, is hypointense on T1W images, and has an irregular border).\n \n (Assuming that the entire abnormality may be comprised of: (1) an enhancing component, (2) a non-enhancing component, (3) a necrotic component and (4) a edema component.)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002039.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002039.1",
+          "name": "minimal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002039.2",
+          "name": "less than 33%"
+        },
+        {
+          "value_code": "OIFMA_CDE_002039.3",
+          "name": "between 33% and 66%"
+        },
+        {
+          "value_code": "OIFMA_CDE_002039.4",
+          "name": "more than 67%"
+        },
+        {
+          "value_code": "OIFMA_CDE_002039.5",
+          "name": "indeterminant"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002040",
+      "name": "Longitudinal diameter",
+      "description": "Lesion size is defined as the largest perpendicular (x-y) cross- sectional diameter of entire T2 signal abnormality (longest dimension x perpendicular dimension) measured the single axial image that reveals the largest cross-sectional area of the lesion. (Measurement should incorporate all cardinal imaging features of CET, nCET, necrosis and edema.)",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 200,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002041",
+      "name": "Tumor Heterogeneity",
+      "description": "When assessing the complexity of the internal architecture of the tumor on FLAIR or T2WI overall grade the uniformity of the tumor matrix (exclusive of what appears to clearly be edema). Select homogeneous when the tumor matrix is completely uniform in consistency; minimal heterogeneity when a minority of the tumor matrix is complex and non-uniform; moderately heterogeneous when more than half of the tumor volume is non-uniform; mostly heterogeneous when only a small component of the matrix ...",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002041.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002041.1",
+          "name": "complete homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_002041.2",
+          "name": "minimal heterogeneity (< 5%)",
+          "description": "minimal heterogeneity"
+        },
+        {
+          "value_code": "OIFMA_CDE_002041.3",
+          "name": "moderate heterogeneity (33-   66%)",
+          "description": "moderately heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_002041.4",
+          "name": "mostly heterogeneous (>67%)",
+          "description": "mostly heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_002041.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002042",
+      "name": "Tumor Shape",
+      "description": "Shape is defined as the overall contour of the abnormal tissue that you would characterize as a tumor boundary. Which descriptor best defines the shape of the entire mass: round, ovoid, lobulated or irregular. Consider the overall boundaries of the NCET and CET exclusive of any edema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002042.0",
+          "name": "round/spherical"
+        },
+        {
+          "value_code": "OIFMA_CDE_002042.1",
+          "name": "ovoid"
+        },
+        {
+          "value_code": "OIFMA_CDE_002042.2",
+          "name": "lobulated/irregular"
+        },
+        {
+          "value_code": "OIFMA_CDE_002042.3",
+          "name": "none apply"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002043",
+      "name": "Intratumoral cysts",
+      "description": "Cysts are well defined, rounded,often eccentric regions of very bright T2W signal and low T1W signal essentially matching CSF signal intensity, with very thin, regular, smooth, nonenhancing or regularly enhancing walls, possibly with thin, regular, internal septations. Differentiate from a necrotic enhancing tumor cavity with thick irregular walls and complex internal fluid.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002043.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002043.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002043.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002044",
+      "name": "Multi-focal or multi-centric tumor",
+      "description": "\"Multifocal is defined as having at least one region of tumor, either enhancing or nonenhancing, which is not contiguous with the dominant lesion and is outside the region of signal abnormality (edema) surrounding the dominant mass.\n This can be defined as those resulting from dissemination or growth by an established route, spread via commissural or other pathways, or via CSF channels or local metastases, whereas Multicentric are widely separated lesions in different lobes or different hemi...",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002044.0",
+          "name": "focal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002044.1",
+          "name": "multi-focal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002044.2",
+          "name": "multi-centric"
+        },
+        {
+          "value_code": "OIFMA_CDE_002044.3",
+          "name": "gliomatosis"
+        },
+        {
+          "value_code": "OIFMA_CDE_002044.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002045",
+      "name": "T1-FLAIR ratio",
+      "description": "T1/FLAIR ratio is a gross comparison in the overall lesion size between pre-contrast T1 and FLAIR (in the same plane). Select T1~FLAIR when pre-contrast T1 abnormality (exclusive of signal intensity) approximates size of FLAIR abnormality; Select T1<FLAIR when the size of T1 abnormality is moderately smaller than the surrounding FLAIR envelope; or select T1<<FLAIR when the size of the pre-contrast T1 abnormality is much smaller than size of FLAIR abnormality. (If no FLAIR images were provide...",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002045.0",
+          "name": "no FLAIR images"
+        },
+        {
+          "value_code": "OIFMA_CDE_002045.1",
+          "name": "T1=FLAIR"
+        },
+        {
+          "value_code": "OIFMA_CDE_002045.2",
+          "name": "T1<FLAIR"
+        },
+        {
+          "value_code": "OIFMA_CDE_002045.3",
+          "name": "T1<<FLAIR"
+        },
+        {
+          "value_code": "OIFMA_CDE_002045.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002046",
+      "name": "Ependymal invasion",
+      "description": "Ependymal invasion is defined by tumor abutting any adjacent ependymal surface in continuity with enhancing or non-enhancing tumor matrix.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002046.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002046.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002046.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002047",
+      "name": "Cortical involvement by tumor",
+      "description": "Cortical involvement is defined by non-enhancing or enhancing tumor that extends to the cortical mantle, or if the cortex is no longer distinguishable relative to tumor.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002047.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002047.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002047.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002048",
+      "name": "Deep white matter invasion by tumor",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002048.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002048.1",
+          "name": "corpus callosum"
+        },
+        {
+          "value_code": "OIFMA_CDE_002048.2",
+          "name": "internal capsule"
+        },
+        {
+          "value_code": "OIFMA_CDE_002048.3",
+          "name": "brainstem"
+        },
+        {
+          "value_code": "OIFMA_CDE_002048.4",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002049",
+      "name": "nCET tumor crosses midline",
+      "description": "nCET tumor crosses midline is defined by any nCET tumor that extends into the contralateral hemisphere through white matter commissures usually expected at the midline (exclusive of herniated ipsilateral tissue).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002049.0",
+          "name": "no nCET component"
+        },
+        {
+          "value_code": "OIFMA_CDE_002049.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002049.2",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002049.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES221",
+      "display": "mri brain baseline glioma vasari feature"
+    }
+  ]
+}

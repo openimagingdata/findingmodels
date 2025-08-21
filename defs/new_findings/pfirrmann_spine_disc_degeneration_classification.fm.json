@@ -1,0 +1,56 @@
+{
+  "oifm_id": "OIFM_CDE_000281",
+  "name": "Pfirrmann Spine Disc Degeneration Classification",
+  "description": "Pfirrmann Spine Disc Degeneration Classification on MR",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001929",
+      "name": "Pfirrmann grade",
+      "description": " Grading system for the assessment of lumbar disc degeneration. Grade I: The structure of the disc is homogeneous, with a bright hyperintense white signal intensity and a normal disc height. Grade II: The structure of the disc is inhomogeneous, with a hyperintense white signal. The distinction between nucleus and anulus is clear, and the disc height is normal, with or without horizontal gray bands. Grade III: The structure of the disc is inhomogeneous, with an intermediate gray signal intens...",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001929.0",
+          "name": "grade I",
+          "description": "Disc is homogeneous with bright hyperintense white signal intensity and normal disc height."
+        },
+        {
+          "value_code": "OIFMA_CDE_001929.1",
+          "name": "grade II",
+          "description": "Disc is homogeneous with bright hyperintense white signal intensity and normal disc height."
+        },
+        {
+          "value_code": "OIFMA_CDE_001929.2",
+          "name": "grade III",
+          "description": "Disc is inhomogeneous with an intermittent gray signal intensity. Distinction between nucleus and annulus is unclear. Disc height is normal or slightly decreased."
+        },
+        {
+          "value_code": "OIFMA_CDE_001929.3",
+          "name": "grade IV",
+          "description": "Grade IV Disc is inhomogeneous with a hypointense dark gray signal intensity. There is no more distinction between the nucleus and annulus. Disc height is slightly or moderately decreased. Moderate disk degeneration (Pfirrmann IV) in lower lumbar segments is a risk factor of disk herniation or foraminal stenosis requiring reoperation after MD in LSS 2)."
+        },
+        {
+          "value_code": "OIFMA_CDE_001929.4",
+          "name": "grade V",
+          "description": "Disc is inhomogeneous with a hypointense black signal intensity. There is no more distinction between the nucleus and annulus."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES281",
+      "display": "pfirrmann spine disc degeneration classification"
+    }
+  ]
+}
