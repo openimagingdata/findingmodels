@@ -1,0 +1,211 @@
+{
+  "oifm_id": "OIFM_CDE_000152",
+  "name": "TI RADS",
+  "description": "TI-RADS level determination",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001036",
+      "name": "Maximum Diameter",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 15,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001037",
+      "name": "Quantity",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 4,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001038",
+      "name": "Side",
+      "description": "Nodule's side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001038.0",
+          "name": "left",
+          "description": "Left lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001038.1",
+          "name": "right",
+          "description": "Right lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001038.2",
+          "name": "isthmus"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001039",
+      "name": "Lobe or isthmus is the nodule location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001039.0",
+          "name": "upper"
+        },
+        {
+          "value_code": "OIFMA_CDE_001039.1",
+          "name": "mid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001039.2",
+          "name": "lower"
+        },
+        {
+          "value_code": "OIFMA_CDE_001039.3",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001039.4",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001039.5",
+          "name": "midline"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001040",
+      "name": "Composition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001040.0",
+          "name": "cystic or almost completely cystic ",
+          "description": "Cystic or almost completely cystic (0 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001040.1",
+          "name": "spongiform",
+          "description": "Spongiform (0 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001040.2",
+          "name": "mixed cystic and solid",
+          "description": "Mixed cystic and solid (1 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001040.3",
+          "name": "solid or almost completely solid ",
+          "description": "Solid or almost completely solid (2 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001040.4",
+          "name": "composition cannot be determined ",
+          "description": "Composition cannot be determined (2 points)"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001041",
+      "name": "Echogenicity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001041.0",
+          "name": "anechoic ",
+          "description": "Anechoic (0 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.1",
+          "name": "hyperechoic or isoechoic ",
+          "description": "Hyperechoic or isoechoic (1 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.2",
+          "name": "echogenicity cannot be determined ",
+          "description": "Echogenicity cannot be determined (1 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.3",
+          "name": "hypoechoic ",
+          "description": "Hypoechoic (2 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.4",
+          "name": "very hypoechoic",
+          "description": "Very hypoechoic (3 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.5",
+          "name": "ineterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001041.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001042",
+      "name": "Other features",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001042.0",
+          "name": "macrocalcifications ",
+          "description": "Macrocalcifications (1 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001042.1",
+          "name": "peripheral calcifications ",
+          "description": "Peripheral (rim) calcifications (2 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001042.2",
+          "name": "punctate echogenic foci ",
+          "description": "Punctate echogenic foci (3 points) "
+        },
+        {
+          "value_code": "OIFMA_CDE_001042.3",
+          "name": "lobulated margin without extra-thyroidal extension ",
+          "description": "Lobulated or irregular margin without extra-thyroidal extension (2 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001042.4",
+          "name": "taller-than-wide ",
+          "description": "Taller-than-wide (3 points)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001042.5",
+          "name": "definite extra-thyroidal extension ",
+          "description": "Definite extra-thyroidal extension (3 points)"
+        }
+      ],
+      "required": false,
+      "max_selected": 6
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES152",
+      "display": "ti rads"
+    }
+  ]
+}

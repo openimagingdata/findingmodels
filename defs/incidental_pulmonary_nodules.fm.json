@@ -1,0 +1,315 @@
+{
+  "oifm_id": "OIFM_CDE_000099",
+  "name": "Incidental Pulmonary Nodules",
+  "description": "Incidental pulmonary nodules on CT",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000607",
+      "name": "Size",
+      "description": "Measure largest diameter of nodule",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000608",
+      "name": "Volume",
+      "description": "Measure the volume of the nodule.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000612",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000612.0",
+          "name": "absent",
+          "description": "nodule absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000612.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000612.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000612.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000613",
+      "name": "Density",
+      "description": "Determine mean and range of HU density of nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000613.0",
+          "name": "fat ",
+          "description": "fat density"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.1",
+          "name": "groundglass"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.2",
+          "name": "part solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.3",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.4",
+          "name": "calcification"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.5",
+          "name": "cavitation"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.6",
+          "name": "cystic lucencies"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.7",
+          "name": "air bronchograms"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000613.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000614",
+      "name": "Shape",
+      "description": "classify shape of nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000614.0",
+          "name": "round"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.1",
+          "name": "oval"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.2",
+          "name": "triangular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.3",
+          "name": "irregular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.4",
+          "name": "lobular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.5",
+          "name": "indeterminate",
+          "description": "other"
+        },
+        {
+          "value_code": "OIFMA_CDE_000614.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000615",
+      "name": "Margin",
+      "description": "classify shape/margin of nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000615.0",
+          "name": "smooth"
+        },
+        {
+          "value_code": "OIFMA_CDE_000615.1",
+          "name": "lobulated"
+        },
+        {
+          "value_code": "OIFMA_CDE_000615.2",
+          "name": "spiculated"
+        },
+        {
+          "value_code": "OIFMA_CDE_000615.3",
+          "name": "ill defined"
+        },
+        {
+          "value_code": "OIFMA_CDE_000615.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000615.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000616",
+      "name": "Location",
+      "description": "State on which lung lobe nodule is located. Ideally pull the image with the incidental nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000616.0",
+          "name": "right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.1",
+          "name": "right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.2",
+          "name": "right mid lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.3",
+          "name": "left mid lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.4",
+          "name": "left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.5",
+          "name": "left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.6",
+          "name": "fissural"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.7",
+          "name": "intraluminal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000616.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001910",
+      "name": "Attenuation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001910.0",
+          "name": "fat density"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.1",
+          "name": "ground glass"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.2",
+          "name": "part solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.3",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.4",
+          "name": "calcification"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.5",
+          "name": "cavitation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.6",
+          "name": "cystic lucencies"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.7",
+          "name": "air bronchograms"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001910.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001911",
+      "name": "Pleural involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001911.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001911.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001911.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001911.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES99",
+      "display": "incidental pulmonary nodules"
+    }
+  ]
+}

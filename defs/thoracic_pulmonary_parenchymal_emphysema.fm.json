@@ -1,0 +1,149 @@
+{
+  "oifm_id": "OIFM_CDE_000105",
+  "name": "Thoracic Pulmonary Parenchymal Emphysema",
+  "description": "Thoracic pulmonary parenchymal emphysema",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000655",
+      "name": "Percent lobar involvement",
+      "description": "for any detected emphysema, measure the percent of the lobe with emphysema",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "percent",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000660",
+      "name": "Emphysema type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000660.0",
+          "name": "centrilobular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.1",
+          "name": "panlobular",
+          "description": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.2",
+          "name": "paraseptal",
+          "description": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.3",
+          "name": "paracicatricial"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.4",
+          "name": "localized"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.5",
+          "name": "idiopathic giant bullous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.6",
+          "name": "congenital lobar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.7",
+          "name": "interstitial"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.8",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000660.9",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000675",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000675.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000675.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000675.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000675.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001603",
+      "name": "Involved lobes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001603.0",
+          "name": "right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.1",
+          "name": "right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.2",
+          "name": "right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.3",
+          "name": "left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.4",
+          "name": "left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001603.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 7
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES105",
+      "display": "thoracic pulmonary parenchymal emphysema"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1301",
+      "display": "lung"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "oifm_id": "OIFM_CDE_000020",
+  "name": "Brain Imaging - Multiple Sclerosis",
+  "description": "This module describes the Common Data elements and Macros for Brain MS",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000143",
+      "name": "Supratentorial lesion number",
+      "description": "Use 0-10 scale",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 10,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000144",
+      "name": "Supratentorial lesion locations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000144.0",
+          "name": "frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000144.1",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000144.2",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000144.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000144.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000145",
+      "name": "Lesion location subtype",
+      "description": "DIS criteria",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000145.0",
+          "name": "juxtacortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_000145.1",
+          "name": "periventricular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000145.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000145.3",
+          "name": "unknown",
+          "description": "other"
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000146",
+      "name": "Infratentorial lesion number",
+      "description": "Use 0-10 scale",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000147",
+      "name": "Infratentorial locations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000147.0",
+          "name": "midbrain"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.1",
+          "name": "left pons"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.2",
+          "name": "right pons"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.3",
+          "name": "left brachium pontis"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.4",
+          "name": "right brachium pontis"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.5",
+          "name": "right cerebellum"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.6",
+          "name": "left cerebellum"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000147.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000148",
+      "name": "Cervico-medullary",
+      "description": "Cervico-medullary",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000148.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_000148.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_000148.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000148.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000149",
+      "name": "Mass effect",
+      "description": "Mass effect",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000149.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_000149.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_000149.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000149.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000150",
+      "name": " Hypointense black holes T1",
+      "description": "Black Holes T1 hypointense?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000150.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_000150.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_000150.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000150.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES20",
+      "display": "brain imaging - multiple sclerosis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "oifm_id": "OIFM_CDE_000014",
+  "name": "Pediatric Bone Age",
+  "description": "Estimated skeletal age",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000122",
+      "name": "Chronological age",
+      "description": "The patient's chronological age in months.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 228,
+      "unit": "month",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000123",
+      "name": "Skeletal age",
+      "description": "The estimated skeletal age in months",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 228,
+      "unit": "month",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001732",
+      "name": "Brush foundation mean bone age",
+      "description": "Brush foundation mean bone age per age.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001733",
+      "name": "Bone age determination",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001733.0",
+          "name": "delayed"
+        },
+        {
+          "value_code": "OIFMA_CDE_001733.1",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001733.2",
+          "name": "advanced"
+        },
+        {
+          "value_code": "OIFMA_CDE_001733.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001733.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001734",
+      "name": "Standard deviation for age",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 228,
+      "unit": "month",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES14",
+      "display": "pediatric bone age"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2318",
+      "display": "hand"
+    }
+  ]
+}

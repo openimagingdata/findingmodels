@@ -1,0 +1,115 @@
+{
+  "oifm_id": "OIFM_CDE_000118",
+  "name": "Ventriculoperitoneal Shunt Assessment",
+  "description": "Shunt Detector",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000770",
+      "name": "Programmable valve setting",
+      "description": "setting of the programmable valve",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm H2O",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000772",
+      "name": "Shunt catheter status",
+      "description": "status of the VP shunt",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000772.0",
+          "name": "intact"
+        },
+        {
+          "value_code": "OIFMA_CDE_000772.1",
+          "name": "discontinuous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000772.2",
+          "name": "kinked"
+        },
+        {
+          "value_code": "OIFMA_CDE_000772.3",
+          "name": "discontinuous and kinked"
+        },
+        {
+          "value_code": "OIFMA_CDE_000772.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000772.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000773",
+      "name": "Abandoned shunt catheters",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000773.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000773.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000773.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000773.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001594",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001594.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001594.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001594.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001594.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES118",
+      "display": "ventriculoperitoneal shunt assessment"
+    }
+  ]
+}

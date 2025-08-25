@@ -1,0 +1,207 @@
+{
+  "oifm_id": "OIFM_CDE_000267",
+  "name": "Lung-RADS categorization",
+  "description": "Lung-RADS categorization",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001702",
+      "name": "Category of findings",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001702.0",
+          "name": "Lung-RADS 0: incomplete, locating priors",
+          "description": "Lung-RADS 0: Incomplete. Prior chest CT examination being located for comparison."
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.1",
+          "name": "Lung-RADS 0: incomplete, cannot evaluate",
+          "description": "Lung-RADS 0: Incomplete. Part or all of lungs cannot be evaluated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.2",
+          "name": "Lung-RADS 0: incomplete, inflammatory or infectious process",
+          "description": "Lung-RADS 0: Incomplete. Findings suggestive of an inflammatory or infectious process"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.3",
+          "name": "Lung-RADS 1: negative for lung nodules",
+          "description": "No lung nodules are found"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.4",
+          "name": "Lung-RADS 1: negative, nodule is benign",
+          "description": "Benign nodules are found, complete, central, popcorn, concentric ring calcifications or fat-containing nodules"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.5",
+          "name": "Lung-RADS 2: benign, juxtapleural nodule",
+          "description": "nodule is less than 10 mm (524 mm3 ) mean diameter at baseline or new. It is solid; smooth margins; and oval, lentiform, or triangular shape."
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.6",
+          "name": "Lung-RADS 2: benign, solid nodule",
+          "description": "Nodule is less than 6 mm or 113 mm3  at baseline OR  new, less than  4 mm or 34 mm3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.7",
+          "name": "Lung-RADS 2: benign,  part solid nodule",
+          "description": "less than 6 mm total mean diameter or 113 mm3 at baseline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.8",
+          "name": "Lung-RADS 2: benign, non-solid nodule",
+          "description": "less than 30 mm or 14,137 mm3  at baseline, new, or growing OR greater of equals to 30 mm or 14,137 mm3 . Stable or slowly growing."
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.9",
+          "name": "Lung-RADS 2: benign, airway nodule",
+          "description": "subsegmental - at baseline, new, or stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.10",
+          "name": "Lung-RADS 2: category 3 or 4B, benign, after diagnostic workup",
+          "description": "Category 3 lesion that is stable or decreased in size at 6-month follow-up CT OR Category 4B lesion proven to be benign in etiology following appropriate diagnostic workup"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.11",
+          "name": "Lung-RADS 3: probably benign, solid nodule",
+          "description": "more of equal to 6 mm to less than 8 mm or more or equal to 113 to less than 268 mm3  at baseline OR  New 4 mm to less than 6 mm  or 34 to less than 113 mm3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.12",
+          "name": "Lung-RADS 3: probably benign, part solid nodule",
+          "description": "more of equal to 6 mm total mean diameter more or equal to 113 mm3  with solid component less than 6 mm or less than 113 mm3  at baseline OR   New less than 6 mm total mean diameter or less than 113 mm3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.13",
+          "name": "Lung-RADS 3: probably benign, non-solid nodule",
+          "description": "more of equal to 30 mm or more or equal to 14,137 mm3 at baseline or new"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.14",
+          "name": "Lung-RADS 3: probably benign, atypical pulmonary cyst",
+          "description": "Growing cystic component (mean diameter) of a thick-walled cyst"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.15",
+          "name": "Lung-RADS 3: category 4A, probably benign, after diagnostic workup",
+          "description": "Category 4A lesion that is stable or decreased in size at 3-month follow-up CT (excluding airway nodules)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.16",
+          "name": "Lung-RADS 4A: suspicious, solid nodule",
+          "description": "more or equal to 8 to less than 15 mm or more or equal to 268 to less than 1,767 mm3 at baseline OR  Growing less than 8 mm or less than 268 mm3 OR  New 6 to less than 8 mm 113 to less than 268 mm3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.17",
+          "name": "Lung-RADS 4A: suspicious, part solid nodule",
+          "description": "more or equal to 6 mm total mean diameter or more or equal to 113 mm3  with solid component more or equal to 6 mm to less than 8 mm or more or equal to 113 to less than 268 mm3  at baseline OR  New or growing less than 4 mm or less than 34 mm3  solid component"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.18",
+          "name": "Lung-RADS 4A: suspicious, airway nodule",
+          "description": "Airway nodule, segmental or more proximal - at baseline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.19",
+          "name": "Lung-RADS 4A: suspicious, atypical pulmonary cyst",
+          "description": "Thick-walled cyst OR Multilocular cyst at baseline OR Thin- or thick-walled cyst that becomes multilocular"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.20",
+          "name": "Lung-RADS 4B: very suspicious, airway nodule",
+          "description": ", segmental or more proximal - stable or growing"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.21",
+          "name": "Lung-RADS 4B: very suspicious, solid nodule",
+          "description": "more of equal to 15 mm or more or equal to 1767 mm3 at baseline OR  New or growing more of equal to 8 mm or more or equal to 268 mm3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.22",
+          "name": "Lung-RADS 4B: very suspicious, part solid nodule",
+          "description": "Solid component more or equal to 8 mm more or equal to 268 mm3  at baseline OR  New or growing more or equal to 4 mm or more or equal to 34 mm?  solid component"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.23",
+          "name": "Lung-RADS 4B: very suspicious, atypical pulmonary cyst",
+          "description": "Thick-walled cyst with growing wall thickness or nodularity OR  Growing multilocular cyst (mean diameter) OR  Multilocular cyst with increased loculation or new or increased opacity (nodular, ground glass, or consolidation)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.24",
+          "name": "Lung-RADS 4B: very suspicious, slow growing solid or part solid nodule",
+          "description": "Slow growing solid or part solid nodule e that demonstrates growth over multiple screening exams"
+        },
+        {
+          "value_code": "OIFMA_CDE_001702.25",
+          "name": "Lung-RADS 4X: category 3 or 4, increased suspicion for lung cancer",
+          "description": "Category 3 or 4 nodules with additional features or imaging findings that increase suspicion for lung cancer"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001703",
+      "name": "Baseline study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001703.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001703.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_001703.2",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001704",
+      "name": "Significant finding",
+      "description": "A specific finding may add d to category 0-4 for clinically significant or potentially clinically significant findings unrelated to lung cancer",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001704.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001704.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001704.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001704.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES267",
+      "display": "lung-rads categorization"
+    }
+  ]
+}

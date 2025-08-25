@@ -1,0 +1,361 @@
+{
+  "oifm_id": "OIFM_CDE_000024",
+  "name": "Cervical Lymph Nodes",
+  "description": "This module describes the Common Data elements and Macros for Lymph Nodes",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000185",
+      "name": "Number of nodes",
+      "description": "Number of nodes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000185.0",
+          "name": "single"
+        },
+        {
+          "value_code": "OIFMA_CDE_000185.1",
+          "name": "multiple"
+        },
+        {
+          "value_code": "OIFMA_CDE_000185.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000185.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000186",
+      "name": "Side",
+      "description": "Laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000186.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000186.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000186.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000187",
+      "name": "Size of largest cluster",
+      "description": "\nUse longest dimension (improved clinical-radiologic correlation and adherence to staging systems)",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 1000,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000188",
+      "name": "Levels involved",
+      "description": "Which levels involved?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000188.0",
+          "name": "I"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.1",
+          "name": "IIa"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.2",
+          "name": "IIb"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.3",
+          "name": "III"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.4",
+          "name": "IV"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.5",
+          "name": "Va"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.6",
+          "name": "Vb"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000188.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000189",
+      "name": "ECS ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000189.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000189.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000189.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000189.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000190",
+      "name": "Pattern of enhancement",
+      "description": "Threshold: 20% or more cystic by volume",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000190.0",
+          "name": "cystic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000190.1",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000190.2",
+          "name": "necrotic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000190.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000190.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000191",
+      "name": "Drainage pattern",
+      "description": "Are these nodes in expected drainage pattern?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000191.0",
+          "name": "expected"
+        },
+        {
+          "value_code": "OIFMA_CDE_000191.1",
+          "name": "unexpected",
+          "description": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_000191.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000191.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000192",
+      "name": "Invasion of critical structures ",
+      "description": "Invasion of critical structures (carotid, prevertebral)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000192.0",
+          "name": "negative"
+        },
+        {
+          "value_code": "OIFMA_CDE_000192.1",
+          "name": "possible"
+        },
+        {
+          "value_code": "OIFMA_CDE_000192.2",
+          "name": "probable"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000193",
+      "name": "Degree of certainty for involvement (NIRADS)",
+      "description": "Degree of certainty for involvement (NIRADS) - 1 = negative; 2 = low likelihood; 3 = high likelihood; 4 = definite disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000193.0",
+          "name": "1",
+          "description": "1 = negative"
+        },
+        {
+          "value_code": "OIFMA_CDE_000193.1",
+          "name": "2",
+          "description": "2 = low likelihood"
+        },
+        {
+          "value_code": "OIFMA_CDE_000193.2",
+          "name": "3",
+          "description": "3 = high likelihood"
+        },
+        {
+          "value_code": "OIFMA_CDE_000193.3",
+          "name": "4",
+          "description": "4 = definite disease"
+        },
+        {
+          "value_code": "OIFMA_CDE_000193.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000193.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002035",
+      "name": "Non-zone nodes",
+      "description": "Non-zone nodes (RP, facial, parotid)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002035.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002035.1",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002035.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002036",
+      "name": "Degree of certainty (ENE)",
+      "description": "Read with high specificity - only call \"definite\" if unequivocal",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002036.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002036.1",
+          "name": "definite"
+        },
+        {
+          "value_code": "OIFMA_CDE_002036.2",
+          "name": "possible"
+        },
+        {
+          "value_code": "OIFMA_CDE_002036.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002052",
+      "name": "Levels involved",
+      "description": "Which levels involved?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002052.0",
+          "name": "1"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.1",
+          "name": "2a"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.2",
+          "name": "2b"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.3",
+          "name": "3"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.4",
+          "name": "4"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.5",
+          "name": "5a"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.6",
+          "name": "5b"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002052.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES24",
+      "display": "cervical lymph nodes"
+    }
+  ]
+}

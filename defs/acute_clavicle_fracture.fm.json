@@ -1,0 +1,81 @@
+{
+  "oifm_id": "OIFM_CDE_000231",
+  "name": "Acute Clavicle Fracture",
+  "description": "Acute Clavicle Fracture Detection",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001474",
+      "name": "Side",
+      "description": "Describe clavicle fracture laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001474.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001474.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001474.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001474.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001475",
+      "name": "Type",
+      "description": "Clavicle fractures are classiied into three types based on the location of the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001475.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001475.1",
+          "name": "proximal to sternum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001475.2",
+          "name": "proximal to AC joint"
+        },
+        {
+          "value_code": "OIFMA_CDE_001475.3",
+          "name": "middle of the bone, between the sternum and AC joint"
+        },
+        {
+          "value_code": "OIFMA_CDE_001475.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001475.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES231",
+      "display": "acute clavicle fracture"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "oifm_id": "OIFM_CDE_000104",
+  "name": "Identification and Characterization of Vena Cava Filters",
+  "description": "Identification and Characterization of Vena Cava Filters",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000646",
+      "name": "Filter count",
+      "description": "Number of filter devices ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 5,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000649",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000649.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000649.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000649.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000649.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000652",
+      "name": "Location",
+      "description": "Anatomic location of filter(s) or filter components",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000652.0",
+          "name": "infrarenal vena cava"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.1",
+          "name": "suprarenal vena cava"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.2",
+          "name": "right common iliac vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.3",
+          "name": "left common iliac vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.4",
+          "name": "right testicular vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.5",
+          "name": "left testicular vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.6",
+          "name": "right ovarian vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.7",
+          "name": "left ovarian vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.8",
+          "name": "right renal vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.9",
+          "name": "left renal vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.10",
+          "name": "superior vena cava"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.11",
+          "name": "right atrium"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.12",
+          "name": "right ventricle"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.13",
+          "name": "left ventricle"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.14",
+          "name": "interventricular septum"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.15",
+          "name": "main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.16",
+          "name": "right main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.17",
+          "name": "left main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.18",
+          "name": "segmental right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.19",
+          "name": "segmental left pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.20",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000652.21",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 22
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000653",
+      "name": "Complications",
+      "description": "Radiographically evident filter complications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000653.0",
+          "name": "absent",
+          "description": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.1",
+          "name": "thrombosis"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.2",
+          "name": "tilt"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.3",
+          "name": "perforation"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.4",
+          "name": "fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.5",
+          "name": "migration"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.6",
+          "name": "pulmonary embolism"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.7",
+          "name": "infection"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.8",
+          "name": "malposition",
+          "description": "malposition (e.g., proximal, distal)"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.9",
+          "name": "incomplete deployment"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.10",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.11",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000653.12",
+          "name": "other"
+        }
+      ],
+      "required": false,
+      "max_selected": 13
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES104",
+      "display": "identification and characterization of vena cava filters"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID480",
+      "display": "aorta"
+    }
+  ]
+}

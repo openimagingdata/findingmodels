@@ -1,0 +1,400 @@
+{
+  "oifm_id": "OIFM_CDE_000296",
+  "name": "COVID-19 on Chest CT",
+  "description": "CT Chest - COVID-19",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001359",
+      "name": "Classification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001359.0",
+          "name": "negative"
+        },
+        {
+          "value_code": "OIFMA_CDE_001359.1",
+          "name": "typical pattern"
+        },
+        {
+          "value_code": "OIFMA_CDE_001359.2",
+          "name": "atypical pattern"
+        },
+        {
+          "value_code": "OIFMA_CDE_001359.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001359.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001360",
+      "name": "Ground glass opacity ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001360.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001360.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001360.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001360.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001361",
+      "name": "Side of ground glass opacity ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001361.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001361.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001361.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001362",
+      "name": "Location of ground glass opacity ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001362.0",
+          "name": "peripheral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001362.1",
+          "name": "central"
+        },
+        {
+          "value_code": "OIFMA_CDE_001362.2",
+          "name": "diffuse"
+        },
+        {
+          "value_code": "OIFMA_CDE_001362.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001362.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001363",
+      "name": "Predominant distribution of ground glass opacity ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001363.0",
+          "name": "upper"
+        },
+        {
+          "value_code": "OIFMA_CDE_001363.1",
+          "name": "mid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001363.2",
+          "name": "lower"
+        },
+        {
+          "value_code": "OIFMA_CDE_001363.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001363.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001369",
+      "name": "Air space consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001369.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001369.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001369.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001369.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001370",
+      "name": "Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001370.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001370.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001370.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001370.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001371",
+      "name": "Location of lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001371.0",
+          "name": "hilar"
+        },
+        {
+          "value_code": "OIFMA_CDE_001371.1",
+          "name": "mediastinal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001371.2",
+          "name": "other"
+        }
+      ],
+      "required": false,
+      "max_selected": 3
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001372",
+      "name": "Pleural effusion size",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001372.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_001372.1",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_001372.2",
+          "name": "medium"
+        },
+        {
+          "value_code": "OIFMA_CDE_001372.3",
+          "name": "large"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001373",
+      "name": "Mucoid impaction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001373.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001373.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001373.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001373.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001374",
+      "name": "Bronchial wall thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001374.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001374.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001374.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001374.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001375",
+      "name": "Smooth interlobular septal thickening severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001375.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_001375.1",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_001375.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001375.3",
+          "name": "severe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001376",
+      "name": "Pulmonary cavities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001376.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001376.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001376.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001376.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001605",
+      "name": "Pleural effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001605.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001605.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001605.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001605.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001606",
+      "name": "Smooth interlobular septal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001606.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001606.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001606.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001606.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES296",
+      "display": "covid-19 on chest ct"
+    }
+  ]
+}

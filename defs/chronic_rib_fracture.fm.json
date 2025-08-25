@@ -1,0 +1,127 @@
+{
+  "oifm_id": "OIFM_CDE_000261",
+  "name": "Chronic Rib Fracture",
+  "description": "Chronic Rib Fracture",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001683",
+      "name": "Fracture",
+      "description": "Cortical breach of a rib with surrounding callus formation or union. ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001683.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001684",
+      "name": "Side",
+      "description": "Rib fracture laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001684.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001684.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001684.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001685",
+      "name": "Ribs",
+      "description": "Describe number(s) of rib(s) affected",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001685.0",
+          "name": "1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.1",
+          "name": "2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.2",
+          "name": "3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.3",
+          "name": "4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.4",
+          "name": "5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.5",
+          "name": "6"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.6",
+          "name": "7"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.7",
+          "name": "8"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.8",
+          "name": "9"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.9",
+          "name": "10"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.10",
+          "name": "11"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.11",
+          "name": "12"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES261",
+      "display": "chronic rib fracture"
+    }
+  ]
+}

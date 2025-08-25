@@ -1,0 +1,173 @@
+{
+  "oifm_id": "OIFM_CDE_000284",
+  "name": "Breast Focal Asymmetry",
+  "description": "Breast Focal Asymmetry",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001941",
+      "name": "Presence",
+      "description": "Presence of focal asymmetry in a breast.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001941.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001941.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001941.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001941.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001942",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001942.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001942.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001942.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001943",
+      "name": "Count",
+      "description": "How many focal asymmetries can be seen.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001944",
+      "name": "Quadrant",
+      "description": "Quadrant  of breast, where is the most or biggest focal asymmetry(ies) is(are) noted.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001944.0",
+          "name": "lower inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001944.1",
+          "name": "lower outer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001944.2",
+          "name": "upper inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001944.3",
+          "name": "upper outer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001944.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001944.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002001",
+      "name": "Region",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002001.0",
+          "name": "axilla"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.1",
+          "name": "axillary tail"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.2",
+          "name": "axilla one"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.3",
+          "name": "axilla two"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.4",
+          "name": "axilla three"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.5",
+          "name": "inframammary fold"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.6",
+          "name": "in skin"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.7",
+          "name": "central to nipple"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.8",
+          "name": "superior"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.9",
+          "name": "inferior"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.10",
+          "name": "lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.11",
+          "name": "medial"
+        },
+        {
+          "value_code": "OIFMA_CDE_002001.12",
+          "name": "retroareolar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES284",
+      "display": "breast focal asymmetry"
+    }
+  ]
+}

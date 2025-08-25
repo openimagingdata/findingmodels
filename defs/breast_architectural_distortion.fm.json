@@ -1,0 +1,208 @@
+{
+  "oifm_id": "OIFM_CDE_000285",
+  "name": "Breast Architectural Distortion",
+  "description": "Breast Architectural Distortion",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001945",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001945.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001945.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001945.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001945.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001946",
+      "name": "Region",
+      "description": "Region of breast.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001946.0",
+          "name": "axilla",
+          "description": "The axilla (also, armpit, underarm or oxter) is the area on the human body directly under the joint where the arm connects to the shoulder."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.1",
+          "name": "axillary tail"
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.2",
+          "name": "axilla one",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level I is the bottom level, below the lower edge of the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.3",
+          "name": "axilla two",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area):Level II is lying underneath the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.4",
+          "name": "axilla three",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level III is above the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.5",
+          "name": "inframammary fold",
+          "description": "The mass/lesion is located in the inframammary crease where the lower boundary of the breast and the chest meet."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.6",
+          "name": "in skin",
+          "description": "Located within skin."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.7",
+          "name": "central to nipple",
+          "description": "Central to the nipple (central portion of the breast-behind the nipple)."
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.8",
+          "name": "superior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.9",
+          "name": "inferior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.10",
+          "name": "lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.11",
+          "name": "medial"
+        },
+        {
+          "value_code": "OIFMA_CDE_001946.12",
+          "name": "retroareolar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001947",
+      "name": "Quadrant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001947.0",
+          "name": "lower inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001947.1",
+          "name": "lower outer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001947.2",
+          "name": "upper inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001947.3",
+          "name": "upper outer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001947.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001947.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001948",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001948.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001948.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001948.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001949",
+      "name": "Landmark",
+      "description": "Breast body landmark",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001949.0",
+          "name": "nipple"
+        },
+        {
+          "value_code": "OIFMA_CDE_001949.1",
+          "name": "chest wall"
+        },
+        {
+          "value_code": "OIFMA_CDE_001949.2",
+          "name": "skin structure"
+        },
+        {
+          "value_code": "OIFMA_CDE_001949.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001949.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001950",
+      "name": "Distance from landmark",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES285",
+      "display": "breast architectural distortion"
+    }
+  ]
+}

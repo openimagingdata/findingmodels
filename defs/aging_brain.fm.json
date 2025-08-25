@@ -1,0 +1,232 @@
+{
+  "oifm_id": "OIFM_CDE_000116",
+  "name": "Aging Brain",
+  "description": "Aging Brain",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000749",
+      "name": "Global cortical atrophy scale",
+      "description": "system to assess cerebral atrophy, especially in the context of neurodegenerative diseases",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 3,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000750",
+      "name": "Posterior parietal atrophy score",
+      "description": "Koedman Score",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 3,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000751",
+      "name": "Total brain volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000752",
+      "name": "Ventricular system volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000753",
+      "name": "Hippocampi volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000754",
+      "name": "Frontal lobes volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000755",
+      "name": "Temporal lobes volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000756",
+      "name": "Fzekas scale ",
+      "description": "Fzekas Scale (from FLAIR sequence)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 6,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000760",
+      "name": "Medial temporal atrophy score",
+      "description": "Visual score of the brain using coronal T1 weighted images through the hippocampus at the level of the anterior pons, based on width of the choroid fissure, width of the temporal horn of the lateral ventricle, and height of the hippocampus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000760.0",
+          "name": "no CSF is visible around the hippocampus"
+        },
+        {
+          "value_code": "OIFMA_CDE_000760.1",
+          "name": "choroid fissure is slightly widened"
+        },
+        {
+          "value_code": "OIFMA_CDE_000760.2",
+          "name": "moderate widening of the choroid fissure, mild enlargement of the temporal horn and mild loss of hippocampal height"
+        },
+        {
+          "value_code": "OIFMA_CDE_000760.3",
+          "name": "marked widening of the choroid fissure, moderate enlargement of the temporal horn, and moderate loss of hippocampal height"
+        },
+        {
+          "value_code": "OIFMA_CDE_000760.4",
+          "name": " marked widening of the choroid fissure, marked enlargement of the temporal horn, and the hippocampus is markedly atrophied and internal structure is lost"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000761",
+      "name": "Frontotemporal atrophy",
+      "description": "Shrinkage of the frontotemporal lobes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000761.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000761.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000761.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000761.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000762",
+      "name": "Midbrain atrophy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000762.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000762.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000762.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000762.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000763",
+      "name": "Caudate head atrophy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000763.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000763.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000763.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000763.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000764",
+      "name": "Cerebellar atrophy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000764.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000764.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000764.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000764.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES116",
+      "display": "aging brain"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

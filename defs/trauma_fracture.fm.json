@@ -1,0 +1,47 @@
+{
+  "oifm_id": "OIFM_CDE_000050",
+  "name": "Trauma Fracture",
+  "description": "This module describes the common data elements for trauma fracture use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000263",
+      "name": "Presence",
+      "description": "Detect the presence of a fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000263.0",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000263.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000263.2",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000263.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES50",
+      "display": "trauma fracture"
+    }
+  ]
+}

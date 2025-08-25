@@ -1,0 +1,132 @@
+{
+  "oifm_id": "OIFM_CDE_000085",
+  "name": "Quantification of Epicardial Adipose Tissue on CT",
+  "description": "Quantification of epicardial adipose tissue on CT",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000483",
+      "name": "Volume",
+      "description": "Volume of epicardial adipose tissue",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000484",
+      "name": "Average attenuation",
+      "description": "average attenuation of the epicardial adipose tissue",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000485",
+      "name": "Segmentation",
+      "description": "segmentation of the epicardial adipose tissue",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000486",
+      "name": "Size",
+      "description": "size of EAT",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000487",
+      "name": "BMI",
+      "description": "weight in kilograms divided by height in meters squared (pounds by inches squared)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000488",
+      "name": "Cardiac height",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000491",
+      "name": "Slice thickness",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000497",
+      "name": "Location",
+      "description": "location of the EAT",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000497.0",
+          "name": "surrounding the heart"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.1",
+          "name": "more prominent at the base and the apex"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.2",
+          "name": "atrioventricular sulci"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.3",
+          "name": "entire surface of the right ventricle"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.4",
+          "name": "around the great coronary vessels with their origins"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000497.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 7
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES85",
+      "display": "quantification of epicardial adipose tissue on ct"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "heart"
+    }
+  ]
+}

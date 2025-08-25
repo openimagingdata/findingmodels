@@ -1,0 +1,157 @@
+{
+  "oifm_id": "OIFM_CDE_000035",
+  "name": "Left Ventricle Macros",
+  "description": "This module describes the common data elements for left ventricle volume use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000218",
+      "name": "End diastolic volume",
+      "description": "Measure LV end-diastolic volume ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000219",
+      "name": "End systolic volume",
+      "description": "Measure LV end-systolic volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000220",
+      "name": "Ejection fraction",
+      "description": "LV ejection fraction, calculated dividing stroke volume by the end-diastolic volume. The stroke volume is calculated subtracting LV ESV from LV EDV (EDV-ESV)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1,
+      "unit": "percent",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000221",
+      "name": "Indexed end diastolic volume",
+      "description": "LV end-diastolic volume indexed to body surface area ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mL/m2",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000222",
+      "name": "Indexed end systolic volume",
+      "description": "LV end-systolic volume indexed to body surface area",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mL/m2",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001735",
+      "name": "Cardiothoracic ratio",
+      "description": "Cardiac size expressed as cardiothoracic ratio. Value step: 0.1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001736",
+      "name": "Cardiomegaly",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001736.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001736.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001736.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001736.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001737",
+      "name": "Carina angle",
+      "description": "Value step: 0.1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001738",
+      "name": "Left atrial enlargement",
+      "description": "Presence of left atrial enlargement If the cardiothoracic ratio is greater than 05 and the carina angle is greater than 100 degrees then suggest left atrial enlargement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001738.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001738.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001738.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001738.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001739",
+      "name": "Cardiac output",
+      "description": "Calculated multiplying LV stroke volume by the heart rate. Value step:0.1.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "L/min",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES35",
+      "display": "left ventricle macros"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1392",
+      "display": "left ventricle"
+    }
+  ]
+}

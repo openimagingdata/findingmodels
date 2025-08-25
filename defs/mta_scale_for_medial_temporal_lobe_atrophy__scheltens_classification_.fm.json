@@ -1,0 +1,64 @@
+{
+  "oifm_id": "OIFM_CDE_000151",
+  "name": "MTA-Scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "description": "MTA-scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001004",
+      "name": "MTA scale",
+      "description": "The MTA-score (Scheltens) should be rated on coronal T1-weighted images, on a slice through the corpus of the hippocampus (level of the anterior pons). The scale is based on a visual score of the width of the choroid fissure, the width of the temporal horn, and the height of the hippocampal formation.\nFor patients that are less than 75 years: score 2 or more is abnormal. For patients that are older than 75 years: score 3 or more is abnormal.\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001004.0",
+          "name": "MTA 0",
+          "description": "Score 0: no atrophy."
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.1",
+          "name": "MTA 1",
+          "description": "Score 1: only widening of choroid fissure."
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.2",
+          "name": "MTA2",
+          "description": "Score 2: also widening of temporal horn of lateral ventricle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.3",
+          "name": "MTA 3",
+          "description": "Score 3: moderate loss of hippocampal volume (decrease in height)."
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.4",
+          "name": "MTA 4",
+          "description": "Score 4: severe volume loss of hippocampus . "
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001004.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES151",
+      "display": "mta-scale for medial temporal lobe atrophy (scheltens classification)"
+    }
+  ]
+}

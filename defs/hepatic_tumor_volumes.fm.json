@@ -1,0 +1,112 @@
+{
+  "oifm_id": "OIFM_CDE_000292",
+  "name": "Hepatic Tumor Volumes",
+  "description": "Hepatic Volumes",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001275",
+      "name": "Liver volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001276",
+      "name": "Right  lobe volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001277",
+      "name": "Left lobe volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001278",
+      "name": "Tumor volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002069",
+      "name": "Couinad's hepatic segments I through VIII  ",
+      "description": "Select all of the quadrants affected by the tumor",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002069.0",
+          "name": "segment I",
+          "description": "caudate lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.1",
+          "name": "segment II",
+          "description": "left lateral lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.2",
+          "name": "segment III",
+          "description": "left medial lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.3",
+          "name": "segment IVa",
+          "description": "left anterior inferior lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.4",
+          "name": "segment IVb",
+          "description": "left posterior inferior lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.5",
+          "name": "segment V",
+          "description": "caudate posterior inferior lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.6",
+          "name": "segment VI",
+          "description": "right anterior inferior lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.7",
+          "name": "segment VII",
+          "description": "right posterior inferior lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_002069.8",
+          "name": "segment VIII",
+          "description": "right lobe"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES292",
+      "display": "hepatic tumor volumes"
+    }
+  ]
+}

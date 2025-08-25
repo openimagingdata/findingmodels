@@ -1,0 +1,237 @@
+{
+  "oifm_id": "OIFM_CDE_000026",
+  "name": "Acute Appendicitis",
+  "description": "This module describes the common data elements for acute appendicitis use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000195",
+      "name": "Presence",
+      "description": "The status of the appendix",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000195.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000195.1",
+          "name": "nonruptured",
+          "description": "Nonruptured appendicitis"
+        },
+        {
+          "value_code": "OIFMA_CDE_000195.2",
+          "name": "ruptured",
+          "description": "Ruptured appendicitis"
+        },
+        {
+          "value_code": "OIFMA_CDE_000195.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000195.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000196",
+      "name": "Appendiceal diameter",
+      "description": "Maximum diameter of the appendix",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000197",
+      "name": "Fat stranding",
+      "description": "Detection of fat stranding around appendix",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000197.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000197.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000197.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000197.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000198",
+      "name": "Free fluid",
+      "description": "Detection of free fluid around appendix",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000198.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000198.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000198.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000198.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000199",
+      "name": "Obstructing focus",
+      "description": "Presence of obstructing mass such as a stone or fecalith",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000199.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000199.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000199.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000199.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000200",
+      "name": "Lumen contents",
+      "description": "Content within the lumen",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000200.0",
+          "name": "air"
+        },
+        {
+          "value_code": "OIFMA_CDE_000200.1",
+          "name": "contrast"
+        },
+        {
+          "value_code": "OIFMA_CDE_000200.2",
+          "name": "fluid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000200.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000200.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000201",
+      "name": "Abscess",
+      "description": "State the presence of the peri-appendiceal abscess",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000201.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000201.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000201.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000201.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000202",
+      "name": "Opacification",
+      "description": "Opacification of the appendix",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000202.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000202.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000202.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000202.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001673",
+      "name": "Obstructing focus size",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES26",
+      "display": "acute appendicitis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID168",
+      "display": "appendix"
+    }
+  ]
+}

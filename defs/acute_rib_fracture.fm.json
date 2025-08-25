@@ -1,0 +1,127 @@
+{
+  "oifm_id": "OIFM_CDE_000233",
+  "name": "Acute Rib Fracture",
+  "description": "Acute Rib Fracture",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001480",
+      "name": "Presence",
+      "description": "Cortical breach of a rib without callus formation or union, does not include surgical rib resection or thoracotomy.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001480.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001480.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001480.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001480.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001481",
+      "name": "Side",
+      "description": "Describe ribe fracture laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001481.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001481.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001481.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001482",
+      "name": "Ribs",
+      "description": "Describe numer(s) of rib(s) affected",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001482.0",
+          "name": "1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.1",
+          "name": "2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.2",
+          "name": "3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.3",
+          "name": "4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.4",
+          "name": "5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.5",
+          "name": "6"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.6",
+          "name": "7"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.7",
+          "name": "8"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.8",
+          "name": "9"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.9",
+          "name": "10"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.10",
+          "name": "11"
+        },
+        {
+          "value_code": "OIFMA_CDE_001482.11",
+          "name": "12"
+        }
+      ],
+      "required": false,
+      "max_selected": 12
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES233",
+      "display": "acute rib fracture"
+    }
+  ]
+}

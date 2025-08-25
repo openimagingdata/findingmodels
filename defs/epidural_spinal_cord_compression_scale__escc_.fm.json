@@ -1,0 +1,61 @@
+{
+  "oifm_id": "OIFM_CDE_000288",
+  "name": "Epidural Spinal Cord Compression Scale (ESCC)",
+  "description": "Epidural Spinal Cord Compression Scale (ESCC) ",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001998",
+      "name": "Compression grade",
+      "description": "Element details for compression grade.  Measured on axial T2-W images at level of greatest compression.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001998.0",
+          "name": "grade 0",
+          "description": "Osseous disease only"
+        },
+        {
+          "value_code": "OIFMA_CDE_001998.1",
+          "name": "grade 1a",
+          "description": "Epidural involvement without thecal sac deformation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001998.2",
+          "name": "grade 1b",
+          "description": "Thecal sac deformation without cord contact"
+        },
+        {
+          "value_code": "OIFMA_CDE_001998.3",
+          "name": "grade 1c",
+          "description": "Thecal sac deformation with cord contact"
+        },
+        {
+          "value_code": "OIFMA_CDE_001998.4",
+          "name": "grade 2",
+          "description": "Cord compression with preservation of some CSF"
+        },
+        {
+          "value_code": "OIFMA_CDE_001998.5",
+          "name": "grade 3",
+          "description": "Cord compression with complete effacement of CSF"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES288",
+      "display": "epidural spinal cord compression scale (escc)"
+    }
+  ]
+}

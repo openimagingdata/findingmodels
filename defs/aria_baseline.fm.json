@@ -1,0 +1,125 @@
+{
+  "oifm_id": "OIFM_CDE_000289",
+  "name": "ARIA baseline",
+  "description": "Baseline imaging for cognitive impairment or screening prior to initiating anti amyloid therapy",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_002006",
+      "name": "Blood sensitive sequence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002006.0",
+          "name": "SWI"
+        },
+        {
+          "value_code": "OIFMA_CDE_002006.1",
+          "name": "GRE/T2*"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002007",
+      "name": "Field strength",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002007.0",
+          "name": "3 T"
+        },
+        {
+          "value_code": "OIFMA_CDE_002007.1",
+          "name": "1.5T"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002008",
+      "name": "Total microhemorrhages",
+      "description": "quantity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002008.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002008.1",
+          "name": "1-4"
+        },
+        {
+          "value_code": "OIFMA_CDE_002008.2",
+          "name": "greater than 4"
+        },
+        {
+          "value_code": "OIFMA_CDE_002008.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002009",
+      "name": "Macrohemorrhages",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002009.0",
+          "name": "absent",
+          "description": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_002009.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002009.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002010",
+      "name": "Superficial siderosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002010.0",
+          "name": "absent",
+          "description": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_002010.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002010.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES289",
+      "display": "aria baseline"
+    }
+  ]
+}

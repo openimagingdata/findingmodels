@@ -1,0 +1,79 @@
+{
+  "oifm_id": "OIFM_CDE_000225",
+  "name": "Chest Radiograph Airspace Opacities",
+  "description": "Chest Radiograph Airspace Opacities",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001536",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001536.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001536.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001536.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001536.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001572",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001572.0",
+          "name": "focal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001572.1",
+          "name": "multifocal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001572.2",
+          "name": "diffuse upper"
+        },
+        {
+          "value_code": "OIFMA_CDE_001572.3",
+          "name": "diffuse lower"
+        },
+        {
+          "value_code": "OIFMA_CDE_001572.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001572.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES225",
+      "display": "chest radiograph airspace opacities"
+    }
+  ]
+}

@@ -1,0 +1,1097 @@
+{
+  "oifm_id": "OIFM_CDE_000272",
+  "name": "Traumatic Brain Injury",
+  "description": "A subset of data elements from the National Institute for Neurological Disorders and Stroke (NINDS). The data elements are related to the reporting template for imaging of traumatic brain injury.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001756",
+      "name": "Imaging modality",
+      "description": "Imaging modality of the current study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001756.0",
+          "name": "non-contrast CT"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.1",
+          "name": "contrast CT"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.2",
+          "name": "CT angiography"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.3",
+          "name": "X-ray angiography"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.4",
+          "name": "MRI"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.5",
+          "name": "MRA"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.6",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001756.7",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001757",
+      "name": "Imaging scanner strength",
+      "description": "Magnetic field strength; applies only to MR studies.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001757.0",
+          "name": "1.5 t"
+        },
+        {
+          "value_code": "OIFMA_CDE_001757.1",
+          "name": "3.0 t"
+        },
+        {
+          "value_code": "OIFMA_CDE_001757.2",
+          "name": "4.0 t"
+        },
+        {
+          "value_code": "OIFMA_CDE_001757.3",
+          "name": "7.0 t"
+        },
+        {
+          "value_code": "OIFMA_CDE_001757.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001757.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001758",
+      "name": "Imaging sequence",
+      "description": "Choose all that apply.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001758.0",
+          "name": "t1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.1",
+          "name": "t2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.2",
+          "name": "flair"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.3",
+          "name": "dwi"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.4",
+          "name": "gre"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.5",
+          "name": "swi"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.6",
+          "name": "dti"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.7",
+          "name": "mrsi"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.8",
+          "name": "pwi"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.9",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.10",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001758.11",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 12
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001759",
+      "name": "Brain imaging result",
+      "description": "If answered \"normal\", \"not done\" or \"unknown\", skip remaining questions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001759.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001759.1",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001759.2",
+          "name": "not done"
+        },
+        {
+          "value_code": "OIFMA_CDE_001759.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001759.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001760",
+      "name": "Skull fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001760.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001760.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001760.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001760.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001761",
+      "name": "Epidural hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001761.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001761.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001761.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001761.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001762",
+      "name": "Extraaxial hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001762.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001762.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001762.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001762.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001763",
+      "name": "Acute subdural hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001763.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001763.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001763.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001763.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001764",
+      "name": "Subacute or chronic subdural hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001764.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001764.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001764.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001764.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001765",
+      "name": "Subdural hematoma - mixed density or CSF-like collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001765.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001765.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001765.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001765.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001766",
+      "name": "Subarachnoid hemorrhage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001766.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001766.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001766.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001766.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001767",
+      "name": "Traumatic aneurysm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001767.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001767.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001767.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001767.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001768",
+      "name": "Venous sinus injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001768.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001768.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001768.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001768.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001769",
+      "name": "Midline shift supratentorial",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001769.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001769.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001769.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001769.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001770",
+      "name": "Cisternal compression",
+      "description": "Status of asymmetry or obliteration of the normal configuration of the perimesencephalic, suprasellar, prepontine, or superior cerebellar cistern, and/or cisterna magna due to mass effect and/or brain swelling in the setting of trauma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001770.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001770.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001770.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001770.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001771",
+      "name": "Cisternal compression type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001771.0",
+          "name": "visible, compressed, asymmetric"
+        },
+        {
+          "value_code": "OIFMA_CDE_001771.1",
+          "name": "visible, compressed, symmetric"
+        },
+        {
+          "value_code": "OIFMA_CDE_001771.2",
+          "name": "mixed",
+          "description": "Some cisterns open, others compressed or obliterated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001771.3",
+          "name": "obliterated",
+          "description": "all cisterns are obliterated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001771.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001771.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001772",
+      "name": "Fourth ventricle shift or effacement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001772.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001772.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001772.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001772.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001773",
+      "name": "Contusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001773.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001773.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001773.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001773.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001774",
+      "name": "Contusion findings",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001774.0",
+          "name": "hemorrhagic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.1",
+          "name": "non-hemorrhagic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.2",
+          "name": "cortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.3",
+          "name": "subcortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.4",
+          "name": "deep brain structures"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.5",
+          "name": "probable brain laceration",
+          "description": "Linear hemorrhagic or non-hemorrhagic findings"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.6",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001774.7",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001775",
+      "name": "Intracerebral hemorrhage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001775.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001775.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001775.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001775.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001776",
+      "name": "Intraventricular hemorrhage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001776.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001776.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001776.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001776.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001777",
+      "name": "Diffuse axonal injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001777.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001777.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001777.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001777.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001778",
+      "name": "Diffuse axonal injury anatonic site",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001778.0",
+          "name": "frontal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.1",
+          "name": "frontal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.2",
+          "name": "parietal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.3",
+          "name": "parietal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.4",
+          "name": "temporal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.5",
+          "name": "temporal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.6",
+          "name": "occipital, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.7",
+          "name": "occipital, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.8",
+          "name": "thalamus-basal ganglia, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.9",
+          "name": "thalamus-basal ganglia, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.10",
+          "name": "midbrain, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.11",
+          "name": "midbrain, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.12",
+          "name": "pons, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.13",
+          "name": "pons, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.14",
+          "name": "medulla, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.15",
+          "name": "medulla, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.16",
+          "name": "cerebellum, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.17",
+          "name": "cerebellum, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.18",
+          "name": "corpus callosum, genu, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.19",
+          "name": "corpus collosum, genu, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.20",
+          "name": "corpus callosum, body, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.21",
+          "name": "corpus callosum, body, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.22",
+          "name": "corpus callosum, splenum, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.23",
+          "name": "corpus callosum, splenum, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.24",
+          "name": "subcortical white matter, frontal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.25",
+          "name": "subcortical white matter, frontal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.26",
+          "name": "subcortical white matter, parietal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.27",
+          "name": "subcortical white matter, parietal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.28",
+          "name": "subcortical white matter, temporal, left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.29",
+          "name": "subcortical white matter, temporal, right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.30",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001778.31",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001779",
+      "name": "Penetrating injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001779.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001779.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001779.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001779.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001780",
+      "name": "Penetrating injury associated findings",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001780.0",
+          "name": "indriven fragment",
+          "description": "bone, foreign body"
+        },
+        {
+          "value_code": "OIFMA_CDE_001780.1",
+          "name": "through and through trajectory",
+          "description": "Entrance and exit sites are visible"
+        },
+        {
+          "value_code": "OIFMA_CDE_001780.2",
+          "name": "transventricular trajectory"
+        },
+        {
+          "value_code": "OIFMA_CDE_001780.3",
+          "name": "crossed midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001780.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001780.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001781",
+      "name": "Gunshot wound caliber number",
+      "type": "numeric",
+      "minimum": 0.17,
+      "maximum": 0.5,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001782",
+      "name": "Cervicomedullary junction or brainstem injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001782.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001782.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001782.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001782.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001783",
+      "name": "Cervicomedullary junction or brainstem injury anatomic site",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001783.0",
+          "name": "midbrain"
+        },
+        {
+          "value_code": "OIFMA_CDE_001783.1",
+          "name": "pons"
+        },
+        {
+          "value_code": "OIFMA_CDE_001783.2",
+          "name": "medulla"
+        },
+        {
+          "value_code": "OIFMA_CDE_001783.3",
+          "name": "cervical"
+        },
+        {
+          "value_code": "OIFMA_CDE_001783.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001783.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001784",
+      "name": "Edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001784.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001784.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001784.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001784.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001785",
+      "name": "Brain swelling",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001785.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001785.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001785.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001785.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001786",
+      "name": "Brain swelling extent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001786.0",
+          "name": "focal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.1",
+          "name": "lobar"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.2",
+          "name": "multilobar"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.3",
+          "name": "hemispheric"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.4",
+          "name": "bihemispheric"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.5",
+          "name": "posterior fossa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.6",
+          "name": "global"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001786.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001787",
+      "name": "Ischemia or infarction or hypoxic-ischemic injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001787.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001787.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001787.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001787.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001788",
+      "name": "Brain atrophy or encephalomalacia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001788.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001788.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001788.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001788.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001789",
+      "name": "Vascular dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001789.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001789.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001789.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001789.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES272",
+      "display": "traumatic brain injury"
+    }
+  ]
+}

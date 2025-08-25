@@ -1,0 +1,54 @@
+{
+  "oifm_id": "OIFM_CDE_000273",
+  "name": "Sinus Keros Classification on CT",
+  "description": "Sinus Keros Classification on CT",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001790",
+      "name": "Keros type",
+      "description": "The Keros classification is a method of classifying the depth of the olfactory fossa on a coronal CT image through the cribiform plate. ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001790.0",
+          "name": "type I (0-3mm)",
+          "description": " When the vertical depth of the fossa is less than 4 mm, it is designated as a Type I.  "
+        },
+        {
+          "value_code": "OIFMA_CDE_001790.1",
+          "name": "type II (4-7mm)",
+          "description": "A Type II is 4-7 mm in depth."
+        },
+        {
+          "value_code": "OIFMA_CDE_001790.2",
+          "name": "type III (>7mm)",
+          "description": "Type III is more than 7 mm"
+        },
+        {
+          "value_code": "OIFMA_CDE_001790.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001790.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES273",
+      "display": "sinus keros classification on ct"
+    }
+  ]
+}

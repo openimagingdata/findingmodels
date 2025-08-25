@@ -1,0 +1,118 @@
+{
+  "oifm_id": "OIFM_CDE_000149",
+  "name": "Liver Elastography on MR",
+  "description": "MR Elastography - Radiographics",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000999",
+      "name": "Mean liver stiffness",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "kPA",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001722",
+      "name": "Correlation with hepatic fibrosis stages",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001722.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.2",
+          "name": "normal",
+          "description": "less than 2.5 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.3",
+          "name": "normal or inflammation",
+          "description": "from 2.5 to 2.9 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.4",
+          "name": "stage 1 to 2 fibrosis",
+          "description": "from 2.9 to 3.5 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.5",
+          "name": "stage 2 to 3 fibrosis",
+          "description": "from 3.5 to 4 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.6",
+          "name": "stage 3 to 4 fibrosis",
+          "description": "from 4 to 5 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.7",
+          "name": "stage 4 fibrosis or cirrhosis",
+          "description": "more than 5 kPa"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001722.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001749",
+      "name": "Ascite amount",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001749.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_001749.1",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_001749.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001749.3",
+          "name": "large"
+        },
+        {
+          "value_code": "OIFMA_CDE_001749.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001749.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES149",
+      "display": "liver elastography on mr"
+    }
+  ]
+}

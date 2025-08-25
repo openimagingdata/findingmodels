@@ -1,0 +1,361 @@
+{
+  "oifm_id": "OIFM_CDE_000169",
+  "name": "CTA Stroke Brain",
+  "description": "CTA Stroke",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001170",
+      "name": "Large vessel occlusion",
+      "description": "Which large Cerebral  vessel is occluded? (LVO)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001170.0",
+          "name": "absent",
+          "description": "No large vessel occlusion (LVO)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.1",
+          "name": "Internal carotid artery (ICA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.2",
+          "name": "anterior cerebral artery (A1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.3",
+          "name": "anterior cerebral artery (A2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.4",
+          "name": "anterior cerebral artery (A3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.5",
+          "name": "middle cerebral artery (M1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.6",
+          "name": "superior division of middle cerebral artery (M2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.7",
+          "name": "inferior division middle cerebral artery (M2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.8",
+          "name": "middle cerebral artery (M3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.9",
+          "name": "vertebral artery (V4 segment)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.10",
+          "name": "posterior inferior cerebellar artery (PICA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.11",
+          "name": "basilar artery (BA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.12",
+          "name": "posterior cerebral artery (P1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.13",
+          "name": "posterior cerebral artery (P2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.14",
+          "name": "posterior cerebral artery (P3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.15",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001170.16",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001290",
+      "name": "Stenosis vessel segment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001290.0",
+          "name": "no large vessel occlusion (LVO)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.1",
+          "name": "internal carotid artery (ICA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.2",
+          "name": "anterior cerebral artery (A1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.3",
+          "name": "anterior cerebral artery (A2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.4",
+          "name": "anterior cerebral artery (A3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.5",
+          "name": "middle cerebral artery (M1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.6",
+          "name": "superior division of middle cerebral artery (M2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.7",
+          "name": "inferior division middle cerebral artery (M2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.8",
+          "name": "middle cerebral artery (M3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.9",
+          "name": "vertebral artery (V4 segment)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.10",
+          "name": "posterior inferior cerebellar artery (PICA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.11",
+          "name": "basilar artery (BA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.12",
+          "name": "posterior cerebral artery (P1)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.13",
+          "name": "posterior cerebral artery (P2)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.14",
+          "name": "posterior cerebral artery (P3)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.15",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001290.16",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 17
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001291",
+      "name": "Stenosis percent",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001292",
+      "name": "Anatomical variation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001292.0",
+          "name": "fenestration"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.1",
+          "name": "early bifurcation M1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.2",
+          "name": "azygous ACA"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.3",
+          "name": "fetal PCA"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.4",
+          "name": "perisistent trigeminal artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.5",
+          "name": "hypoplastic segment"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.6",
+          "name": "aplastic segment"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001292.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001293",
+      "name": "Vessel segment irregularity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001293.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001293.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001293.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001293.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001294",
+      "name": "Vessel segment irregularity and multiple caliber changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001294.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001294.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001294.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001294.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001295",
+      "name": "Vessel segment calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001295.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001295.1",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_001295.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001295.3",
+          "name": "severe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001295.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001295.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001296",
+      "name": "Venous opacification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001296.0",
+          "name": "normal "
+        },
+        {
+          "value_code": "OIFMA_CDE_001296.1",
+          "name": "abnormal "
+        },
+        {
+          "value_code": "OIFMA_CDE_001296.2",
+          "name": "thrombosis"
+        },
+        {
+          "value_code": "OIFMA_CDE_001296.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001296.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001297",
+      "name": "Dissection length",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001298",
+      "name": "Dissection degree of narrowing",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "degree",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES169",
+      "display": "cta stroke brain"
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "oifm_id": "OIFM_CDE_000300",
+  "name": "MR Lumbar Degenerative Disc Disease",
+  "description": "Lumbar degenerative disc disease",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001514",
+      "name": "Disc level",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001514.0",
+          "name": "T12-L1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.1",
+          "name": "L1-2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.2",
+          "name": "L2-3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.3",
+          "name": "L3-4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.4",
+          "name": "L4-5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.5",
+          "name": "L5-S1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.6",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001514.7",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001515",
+      "name": "Disc space narrowing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001515.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001515.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001515.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001515.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001517",
+      "name": "Modic endplate changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001517.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001517.1",
+          "name": "type I"
+        },
+        {
+          "value_code": "OIFMA_CDE_001517.2",
+          "name": "type II"
+        },
+        {
+          "value_code": "OIFMA_CDE_001517.3",
+          "name": "type III"
+        },
+        {
+          "value_code": "OIFMA_CDE_001517.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001517.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001518",
+      "name": "Disc morphology",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001518.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.1",
+          "name": "diffusely bulging"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.2",
+          "name": "bulging asymmetrically to the left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.3",
+          "name": "bulging asymmetrically to the right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.4",
+          "name": "central protrusion ",
+          "description": "Protruding centrally"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.5",
+          "name": "right central protrusion",
+          "description": "Protruding to the right of midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.6",
+          "name": "left central protrusion",
+          "description": "protruding to the left of midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.7",
+          "name": "extruded centrally"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.8",
+          "name": "extruded right of midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.9",
+          "name": "extruded left of midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.10",
+          "name": "right subarticular protrusion",
+          "description": "Protruding in the right subarticular zone"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.11",
+          "name": "left subarticular protrusion",
+          "description": "Protruding in the left subarticular zone"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.12",
+          "name": "right subarticular extrusion"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.13",
+          "name": "left subarticular extrusion"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.14",
+          "name": "right foraminal protrusion",
+          "description": "protruding in the right foramen"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.15",
+          "name": "left foraminal protrusion",
+          "description": "protruding in the left foramen"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.16",
+          "name": "right foraminal extrusion",
+          "description": "extrusion in the right foramen"
+        },
+        {
+          "value_code": "OIFMA_CDE_001518.17",
+          "name": "left foraminal extrusion"
+        }
+      ],
+      "required": false,
+      "max_selected": 18
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002031",
+      "name": "Left subarticular recess",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002031.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002031.1",
+          "name": "mildly stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002031.2",
+          "name": "moderately stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002031.3",
+          "name": "severely stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002031.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002031.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002055",
+      "name": "Pfirmann grade disc degeneration",
+      "description": "Disc degeneration can be graded on MRI T2 spin-echo sequence weighted images using a grading system proposed by Pfirrmann",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002055.0",
+          "name": "grade 1:  homogeneous",
+          "description": "RDE1519.0"
+        },
+        {
+          "value_code": "OIFMA_CDE_002055.1",
+          "name": "grade 2: central band visible",
+          "description": "Grade II: disc is inhomogeneous, but keeping the hyperintense white signal. Nucleus and annulus are clearly differentiated and a horizontal gray band could be present. Disc height is normal."
+        },
+        {
+          "value_code": "OIFMA_CDE_002055.2",
+          "name": "grade 3: distinction between nucleus-annulus",
+          "description": "Grade III: disc is inhomogeneous with an intermittent gray signal intensity. Distinction between nucleus and annulus is unclear. Disc height is normal or slightly decreased."
+        },
+        {
+          "value_code": "OIFMA_CDE_002055.3",
+          "name": "grade 4: poor nucleus-annulus distinction",
+          "description": "Grade IV: disc is inhomogeneous with a hypointense dark gray signal intensity. There is no more distinction between the nucleus and annulus. Disc height is slightly or moderately decreased. Moderate disk degeneration (Pfirrmann IV) in lower lumbar segments is a risk factor of disk herniation or foraminal stenosis requiring reoperation after MD in LSS 2."
+        },
+        {
+          "value_code": "OIFMA_CDE_002055.4",
+          "name": "grade 5: collapsed disc space",
+          "description": "Grade V: disc is inhomogeneous with a hypointense black signal intensity. There is no more distinction between the nucleus and annulus."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002056",
+      "name": "Right facet joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002056.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002056.1",
+          "name": "mildly degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002056.2",
+          "name": "moderately degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002056.3",
+          "name": "severely degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002056.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002056.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002057",
+      "name": "Left facet joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002057.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002057.1",
+          "name": "mildly degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002057.2",
+          "name": "moderately degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002057.3",
+          "name": "severely degenerated"
+        },
+        {
+          "value_code": "OIFMA_CDE_002057.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002057.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002058",
+      "name": "Central spinal canal",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002058.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002058.1",
+          "name": "mildly stenotic"
+        },
+        {
+          "value_code": "OIFMA_CDE_002058.2",
+          "name": "moderately stenotic"
+        },
+        {
+          "value_code": "OIFMA_CDE_002058.3",
+          "name": "severely stenotic"
+        },
+        {
+          "value_code": "OIFMA_CDE_002058.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002058.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002059",
+      "name": "Vertebral endplates",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002059.0",
+          "name": "smooth"
+        },
+        {
+          "value_code": "OIFMA_CDE_002059.1",
+          "name": "irregular"
+        },
+        {
+          "value_code": "OIFMA_CDE_002059.2",
+          "name": "irregular with Schmorl's nodes"
+        },
+        {
+          "value_code": "OIFMA_CDE_002059.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002059.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002060",
+      "name": "Right subarticular recess",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002060.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002060.1",
+          "name": "mildly stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002060.2",
+          "name": "moderately stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002060.3",
+          "name": "severely stenosed"
+        },
+        {
+          "value_code": "OIFMA_CDE_002060.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002060.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES300",
+      "display": "mr lumbar degenerative disc disease"
+    }
+  ]
+}

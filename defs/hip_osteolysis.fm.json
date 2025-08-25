@@ -1,0 +1,99 @@
+{
+  "oifm_id": "OIFM_CDE_000032",
+  "name": "Hip Osteolysis",
+  "description": "This module describes the common data elements for hip osteolysis use case",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000212",
+      "name": "Presence",
+      "description": "Detect osteolysis, if present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000212.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000212.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000212.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000212.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000213",
+      "name": "Hip arthroplasty",
+      "description": "Status of the total hip arthroplasty",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000213.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000213.1",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000213.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000213.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001982",
+      "name": "Laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001982.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001982.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001982.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES32",
+      "display": "hip osteolysis"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2639",
+      "display": "hip"
+    }
+  ]
+}

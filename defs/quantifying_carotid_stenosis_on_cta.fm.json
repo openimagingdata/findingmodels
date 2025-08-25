@@ -1,0 +1,31 @@
+{
+  "oifm_id": "OIFM_CDE_000187",
+  "name": "Quantifying Carotid Stenosis on CTA",
+  "description": "Quantifying Carotid Stenosis on CTA",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001272",
+      "name": "Maximum carotid stenosis\t",
+      "description": "\nGreatest degree of stenosis of the proximal cervical internal carotid artery\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "Percent",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES187",
+      "display": "quantifying carotid stenosis on cta"
+    }
+  ]
+}

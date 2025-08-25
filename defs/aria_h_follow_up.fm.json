@@ -1,0 +1,217 @@
+{
+  "oifm_id": "OIFM_CDE_000291",
+  "name": "ARIA-H follow-up",
+  "description": "ARIA-H follow-up",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_002020",
+      "name": "Blood sensitive sequence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002020.0",
+          "name": "SWI"
+        },
+        {
+          "value_code": "OIFMA_CDE_002020.1",
+          "name": "GRE/T2"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002021",
+      "name": "Field strength",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002021.0",
+          "name": "3T"
+        },
+        {
+          "value_code": "OIFMA_CDE_002021.1",
+          "name": "1.5T"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002022",
+      "name": "Baseline microhemorrhages scan comparison",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002022.0",
+          "name": "absent",
+          "description": "no prior exam available"
+        },
+        {
+          "value_code": "OIFMA_CDE_002022.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002023",
+      "name": "Baseline microhemorrhages (ARIA-H)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002024",
+      "name": "Total new microhemorrhages",
+      "description": "Total new microhemorrhages compared to pre-dosing scan",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002024.0",
+          "name": "0",
+          "description": "absent = no ARIA"
+        },
+        {
+          "value_code": "OIFMA_CDE_002024.1",
+          "name": "1-4",
+          "description": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_002024.2",
+          "name": "5-9"
+        },
+        {
+          "value_code": "OIFMA_CDE_002024.3",
+          "name": "10"
+        },
+        {
+          "value_code": "OIFMA_CDE_002024.4",
+          "name": "greater than 10"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002025",
+      "name": "New macrohemorrhages (ARIA-H)",
+      "description": "New compared to baseline",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002026",
+      "name": "Pre-dosing superficial siderosis",
+      "description": "Prior exam available for comparison",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002026.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002026.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002027",
+      "name": "Superficial siderosis new locations ",
+      "description": "Number of new locations of superficial siderosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002027.0",
+          "name": "0"
+        },
+        {
+          "value_code": "OIFMA_CDE_002027.1",
+          "name": "1"
+        },
+        {
+          "value_code": "OIFMA_CDE_002027.2",
+          "name": "greater than 1"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002028",
+      "name": "Grading of ARIA-H related microhemorrhages",
+      "description": "Grading of ARIA-H related microhemorrhages",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002028.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002028.1",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_002028.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002028.3",
+          "name": "severe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002029",
+      "name": "Grading of ARIA-H related siderosis",
+      "description": "Grading of ARIA-H related siderosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002029.0",
+          "name": "absent",
+          "description": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_002029.1",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_002029.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002029.3",
+          "name": "severe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES291",
+      "display": "aria-h follow-up"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "oifm_id": "OIFM_CDE_000297",
+  "name": "Spine Multiple Sclerosis on MR",
+  "description": "Spine Multiple sclerosis",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001447",
+      "name": "Disease burden",
+      "description": "How many intramedullary spine lesions",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001447.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_001447.1",
+          "name": "one"
+        },
+        {
+          "value_code": "OIFMA_CDE_001447.2",
+          "name": "multiple",
+          "description": "more than 1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001447.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001447.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001448",
+      "name": "Lesion size in craniocaudal dimension",
+      "description": "If multiple lesions, give largest lesion size ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001449",
+      "name": "Lesion extent",
+      "description": "Number of vertebral segments spanned by the lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001449.0",
+          "name": "one vertebral segment"
+        },
+        {
+          "value_code": "OIFMA_CDE_001449.1",
+          "name": "two vertebral segments"
+        },
+        {
+          "value_code": "OIFMA_CDE_001449.2",
+          "name": "three vertebral segments"
+        },
+        {
+          "value_code": "OIFMA_CDE_001449.3",
+          "name": "greater than three",
+          "description": "Greater than 3 vertebral segments"
+        },
+        {
+          "value_code": "OIFMA_CDE_001449.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001449.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001450",
+      "name": "Lesion location subtype",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001450.0",
+          "name": "central"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.1",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.2",
+          "name": "left anterolateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.3",
+          "name": "left lateral",
+          "description": " left lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.4",
+          "name": "left posterolateral",
+          "description": "None"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.5",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.6",
+          "name": "right posterolateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.7",
+          "name": "right lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.8",
+          "name": "right anterolateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.9",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001450.10",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001451",
+      "name": "Lesion axial area",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001451.0",
+          "name": "less than 50 percent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001451.1",
+          "name": "greater than 50 percent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001451.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001451.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001452",
+      "name": "T2 signal",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001452.0",
+          "name": "hyperintense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001452.1",
+          "name": "hypointense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001452.2",
+          "name": "isointense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001452.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001452.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001453",
+      "name": "T1 signal",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001453.0",
+          "name": "isointense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001453.1",
+          "name": "hypointense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001453.2",
+          "name": "hyperintense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001453.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001453.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001454",
+      "name": "Lesion contrast enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001454.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001454.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001454.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001454.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001455",
+      "name": "Cord edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001455.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001455.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001455.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001455.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001456",
+      "name": "Cord expansion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001456.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001456.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001456.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001456.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES297",
+      "display": "spine multiple sclerosis on mr"
+    }
+  ]
+}

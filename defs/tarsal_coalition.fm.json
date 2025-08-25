@@ -1,0 +1,120 @@
+{
+  "oifm_id": "OIFM_CDE_000048",
+  "name": "Tarsal Coalition",
+  "description": "This module describes the common data elements for tarsal coalition use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000259",
+      "name": "Presence",
+      "description": "The presence of tarsal coalition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000259.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000259.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000259.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000259.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000260",
+      "name": "Characterization",
+      "description": "If tarsal coalition exists, characterize the coalition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000260.0",
+          "name": "osseous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000260.1",
+          "name": "fibrous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000260.2",
+          "name": "cartilaginous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000260.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000260.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000261",
+      "name": "Type",
+      "description": "If tarsal coalition exists, classify the type of coalition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000261.0",
+          "name": "calcaneonavicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.1",
+          "name": "talocalcaneal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.2",
+          "name": "calcaneicuboid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.3",
+          "name": "talonavicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.4",
+          "name": "cubonavicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000261.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES48",
+      "display": "tarsal coalition"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID35743",
+      "display": "tarsal bone"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "oifm_id": "OIFM_CDE_000131",
+  "name": "Pericardial Effusion on CCTA",
+  "description": "This module describes the Common Data elements and Macros for Evaluation of Automated Volumetric Quantification of Pericardial Effusion on CCTA",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000861",
+      "name": "Thickness",
+      "description": "Pericardial thickness in mm\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 120,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000862",
+      "name": "Spread",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000862.0",
+          "name": "global",
+          "description": "Global effusion"
+        },
+        {
+          "value_code": "OIFMA_CDE_000862.1",
+          "name": "locaulated"
+        },
+        {
+          "value_code": "OIFMA_CDE_000862.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000862.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000865",
+      "name": "Lesions",
+      "description": "Pericardial lesions presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000865.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000865.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000865.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000865.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000866",
+      "name": "Constrictive pericarditis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000866.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000866.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000866.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000866.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000867",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1200,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000868",
+      "name": "Density",
+      "description": "Average density of the effusion",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1200,
+      "unit": "g/cm3",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES131",
+      "display": "pericardial effusion on ccta"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "heart"
+    }
+  ]
+}

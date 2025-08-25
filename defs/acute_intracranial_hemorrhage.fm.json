@@ -1,0 +1,124 @@
+{
+  "oifm_id": "OIFM_CDE_000194",
+  "name": "Acute Intracranial Hemorrhage",
+  "description": "Critical Test Results - Acute Intracranial Hemorrhage",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001287",
+      "name": "Presence",
+      "description": "Detection of acute intracranial blood products",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001287.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001287.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001287.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001287.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001288",
+      "name": "Side ",
+      "description": "Defines the side of the acute intracranial blood products when present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001288.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001288.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001288.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001289",
+      "name": "Size",
+      "description": "Classify the size of the acute intracranial blood products.\n\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001289.0",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_001289.1",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001289.2",
+          "name": "large"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001700",
+      "name": "Location ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001700.0",
+          "name": "epidural"
+        },
+        {
+          "value_code": "OIFMA_CDE_001700.1",
+          "name": "subarachnoid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001700.2",
+          "name": "intraaxial"
+        },
+        {
+          "value_code": "OIFMA_CDE_001700.3",
+          "name": "intraventricular"
+        },
+        {
+          "value_code": "OIFMA_CDE_001700.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001700.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES194",
+      "display": "acute intracranial hemorrhage"
+    }
+  ]
+}

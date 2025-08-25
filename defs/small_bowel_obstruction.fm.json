@@ -1,0 +1,181 @@
+{
+  "oifm_id": "OIFM_CDE_000178",
+  "name": "Small Bowel Obstruction",
+  "description": "Identifying Small Bowel Obstruction",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001239",
+      "name": "Small bowel diameter",
+      "description": "Maximum small bowel diameter",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001240",
+      "name": "Transition point location",
+      "description": "Location of obstruction ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001240.0",
+          "name": "proximal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001240.1",
+          "name": "mid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001240.2",
+          "name": "distal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001240.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001240.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001242",
+      "name": "Enhancement",
+      "description": "Small bowel wall enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001242.0",
+          "name": "diffuse present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001242.1",
+          "name": "partial absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001242.2",
+          "name": "completely absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001242.3",
+          "name": "indeterminate",
+          "description": "Undetermined"
+        },
+        {
+          "value_code": "OIFMA_CDE_001242.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001243",
+      "name": "Small bowel wall thickness",
+      "description": "Small bowel wall thickness",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001634",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001634.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001634.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001634.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001634.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001635",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001635.0",
+          "name": "partial low grade"
+        },
+        {
+          "value_code": "OIFMA_CDE_001635.1",
+          "name": "partial high grade"
+        },
+        {
+          "value_code": "OIFMA_CDE_001635.2",
+          "name": "complete obstruction"
+        },
+        {
+          "value_code": "OIFMA_CDE_001635.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001635.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001636",
+      "name": "Associated findings",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001636.0",
+          "name": "ascites"
+        },
+        {
+          "value_code": "OIFMA_CDE_001636.1",
+          "name": "pneumatosis"
+        },
+        {
+          "value_code": "OIFMA_CDE_001636.2",
+          "name": "pneumoperitoneum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001636.3",
+          "name": "none"
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES178",
+      "display": "small bowel obstruction"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "oifm_id": "OIFM_CDE_000234",
+  "name": "CT Angiogram Neck Carotid Atherosclerotic",
+  "description": "CTA Carotid Atherosclerotic",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001498",
+      "name": "Carotid  plaque characterization",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001498.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.1",
+          "name": "predominantly soft"
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.2",
+          "name": "ulceration "
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.3",
+          "name": "irregular surface"
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.4",
+          "name": "predominantly calcified"
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001498.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001499",
+      "name": "CCA/ICA angle greater than 60 degrees",
+      "description": "Angle subtended between the CCA and the ICA when greater than 60 degrees is an independant risk factor for early carotid atherosclerotic disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001499.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001499.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001499.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001499.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001500",
+      "name": "Tandem ostial stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001500.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001500.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001500.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001500.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001501",
+      "name": "Cavernous ostial stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001501.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001501.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001501.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001501.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001990",
+      "name": "Internal carotid artery (ICA)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001990.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001990.1",
+          "name": "right"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001991",
+      "name": "Stenosis NASCET degree",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "percentage",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001992",
+      "name": "Stenosis length",
+      "description": "Stenosis length is expressed as a fraction of the diameter (D) of the undiseased CCA. Examples a?c show length 1 and length 2 in different situations.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "fraction of the diameter",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001993",
+      "name": "Occlusion chronicity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001993.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001993.1",
+          "name": "acute"
+        },
+        {
+          "value_code": "OIFMA_CDE_001993.2",
+          "name": "chronic"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001994",
+      "name": "Vessel occlusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001994.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001994.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001994.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001994.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES234",
+      "display": "ct angiogram neck carotid atherosclerotic"
+    }
+  ]
+}

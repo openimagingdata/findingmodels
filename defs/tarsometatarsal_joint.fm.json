@@ -1,0 +1,52 @@
+{
+  "oifm_id": "OIFM_CDE_000049",
+  "name": "Tarsometatarsal Joint",
+  "description": "This module describes the common data elements for tarsometatarsal joint status use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000262",
+      "name": "Lisfrank joint status",
+      "description": "Status of Lisfranc joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000262.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000262.1",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000262.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000262.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES49",
+      "display": "tarsometatarsal joint"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID3107",
+      "display": "tarsometatarsal joint"
+    }
+  ]
+}

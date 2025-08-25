@@ -1,0 +1,186 @@
+{
+  "oifm_id": "OIFM_CDE_000230",
+  "name": "Vertebral Compression Fracture",
+  "description": "Vertebral Compression Fracture Detection",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001471",
+      "name": "Presence",
+      "description": "Acute or chronic compression, wedge, distraction or translated\nfractures. Typically seen on lateral view. Usually chronicity cannot be reliably assessed so this is not differentiated. \nFor compression or wedge fractures, there should be more than 20% loss in anterior height or central height as measured to the nearest normal vertebra or posterior vertebral body height (whichever is larger).  ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001471.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001471.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001471.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001471.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001472",
+      "name": "Vertebrae",
+      "description": "List all affected vertebrae, multichoice",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001472.0",
+          "name": "C1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.1",
+          "name": "C2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.2",
+          "name": "C3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.3",
+          "name": "C4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.4",
+          "name": "C5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.5",
+          "name": "C6"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.6",
+          "name": "C7"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.7",
+          "name": "C8"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.8",
+          "name": "T1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.9",
+          "name": "T2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.10",
+          "name": "T3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.11",
+          "name": "T4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.12",
+          "name": "T5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.13",
+          "name": "T6"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.14",
+          "name": "T7"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.15",
+          "name": "T8"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.16",
+          "name": "T9"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.17",
+          "name": "T10"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.18",
+          "name": "T11"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.19",
+          "name": "T12"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.20",
+          "name": "L1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.21",
+          "name": "L2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.22",
+          "name": "L3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.23",
+          "name": "L4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.24",
+          "name": "L5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.25",
+          "name": "S1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.26",
+          "name": "S2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.27",
+          "name": "S3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.28",
+          "name": "S4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001472.29",
+          "name": "S5"
+        }
+      ],
+      "required": false,
+      "max_selected": 30
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002004",
+      "name": "Degree of compression",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "degree",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES230",
+      "display": "vertebral compression fracture"
+    }
+  ]
+}

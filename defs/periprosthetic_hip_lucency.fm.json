@@ -1,0 +1,36 @@
+{
+  "oifm_id": "OIFM_CDE_000068",
+  "name": "Periprosthetic Hip Lucency",
+  "description": "This module describes the common data elements for periprosthetic hip lucency use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000311",
+      "name": "Measurement",
+      "description": "Measure periprosthetic lucency. Alert if greater than 2 mm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES68",
+      "display": "periprosthetic hip lucency"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2639",
+      "display": "hip"
+    }
+  ]
+}
