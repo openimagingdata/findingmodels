@@ -1,0 +1,178 @@
+{
+  "oifm_id": "OIFM_CDE_000252",
+  "name": "Thoracic Aortic Dissection",
+  "description": "Aortic Dissection",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001637",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001637.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001637.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001637.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001637.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001638",
+      "name": "Chronicity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001638.0",
+          "name": "acute"
+        },
+        {
+          "value_code": "OIFMA_CDE_001638.1",
+          "name": "subacute"
+        },
+        {
+          "value_code": "OIFMA_CDE_001638.2",
+          "name": "chronic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001638.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001638.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001639",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001639.0",
+          "name": "ascending"
+        },
+        {
+          "value_code": "OIFMA_CDE_001639.1",
+          "name": "arch"
+        },
+        {
+          "value_code": "OIFMA_CDE_001639.2",
+          "name": "descending"
+        },
+        {
+          "value_code": "OIFMA_CDE_001639.3",
+          "name": "root"
+        },
+        {
+          "value_code": "OIFMA_CDE_001639.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001639.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 6
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001640",
+      "name": "Length",
+      "description": "The length of aortic dissection",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001641",
+      "name": "Diameter",
+      "description": "Aortic diameter",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001642",
+      "name": "Thrombosis of false lumen",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001642.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001642.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001642.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001642.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001643",
+      "name": "Stanford classification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001643.0",
+          "name": "type a"
+        },
+        {
+          "value_code": "OIFMA_CDE_001643.1",
+          "name": "type b"
+        },
+        {
+          "value_code": "OIFMA_CDE_001643.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001643.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES252",
+      "display": "thoracic aortic dissection"
+    }
+  ]
+}

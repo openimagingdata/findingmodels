@@ -1,0 +1,64 @@
+{
+  "oifm_id": "OIFM_CDE_000150",
+  "name": "Genant Classification",
+  "description": "Genant Classification",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001003",
+      "name": "Genant grading scale for vertebral compression fractures",
+      "description": "Thoracic and lumbar vertebrae from T4 to L4 graded for vertebral compression fractures. ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001003.0",
+          "name": "grade 0",
+          "description": "Thoracic and lumbar vertebrae from T4 to L4 are graded as normal (grade 0)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.1",
+          "name": "grade 0.5",
+          "description": "A grade 0.5 to designate borderline vertebrae that show some deformation but cannot be clearly assigned to grade 1 fractures is some- times also employed. In addition to height reductions, the reader pays careful attention to alterations in the shape and configuration of the vertebrae relative to adjacent vertebrae and expected normal appearances."
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.2",
+          "name": "grade 1",
+          "description": "mildly deformed (grade 1: approximately a 20 to 25% reduction in anterior, middle and/or posterior height and a 10 to 20% reduction in the projected vertebral area)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.3",
+          "name": "grade 2",
+          "description": "moderately deformed (grade 2: approximately a 25 to 40% reduction in anterior, middle and/or posterior height and a 20 to 40% reduction of the projected vertebral area)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.4",
+          "name": "grade 3",
+          "description": "Severely deformed (grade 3: approximately a 40% or greater reduction in anterior, middle and/or posterior height and the deformity (>25-40%), severe deformity (>40% in height). "
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001003.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES150",
+      "display": "genant classification"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "oifm_id": "OIFM_CDE_000237",
+  "name": "Chest Radiograph Lines and Tubes",
+  "description": "Chest Radiograph Lines and Tubes",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001530",
+      "name": "Endotracheal tube",
+      "description": "Presence and position of endotracheal tube on XRAY",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001530.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001531",
+      "name": "Central venous catheter",
+      "description": "Presence and position of central venous catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001531.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001532",
+      "name": "Pulmonary artery catheter",
+      "description": "Presence and position of pulmonary artery catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001532.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001533",
+      "name": "Nasogastric tube",
+      "description": "Presence and position of nasogastric tube",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001533.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001534",
+      "name": "Airway stent",
+      "description": "Presence and position of airway stent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001534.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES237",
+      "display": "chest radiograph lines and tubes"
+    }
+  ]
+}

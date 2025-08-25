@@ -1,0 +1,104 @@
+{
+  "oifm_id": "OIFM_CDE_000047",
+  "name": "Stener Lesion",
+  "description": "This module describes the common data elements for stener lesion use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000256",
+      "name": "Classification",
+      "description": "If UCL is abnormal, determine the UCL tear type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000256.0",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000256.1",
+          "name": "partial tear"
+        },
+        {
+          "value_code": "OIFMA_CDE_000256.2",
+          "name": "full-thickness tear"
+        },
+        {
+          "value_code": "OIFMA_CDE_000256.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000257",
+      "name": "Status",
+      "description": "Determine the status of the UCL",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000257.0",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000257.1",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000257.2",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000257.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000258",
+      "name": "Presence",
+      "description": "If UCL is abnormal, detect the presence of a Stener lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000258.0",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000258.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000258.2",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000258.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES47",
+      "display": "stener lesion"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID40883",
+      "display": "ulnar collateral ligament"
+    }
+  ]
+}

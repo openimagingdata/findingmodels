@@ -1,0 +1,125 @@
+{
+  "oifm_id": "OIFM_CDE_000232",
+  "name": "Humerus Fracture",
+  "description": "Acute Humerus Fracture Type",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001476",
+      "name": "Presence",
+      "description": "Cortical breach of the humerus, usually at the surgical neck of humerus.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001476.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001476.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001476.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001476.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001477",
+      "name": "Type",
+      "description": "Type of humerus fracture based on the location of the break",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001477.0",
+          "name": "proximal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001477.1",
+          "name": "distal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001477.2",
+          "name": "shaft"
+        },
+        {
+          "value_code": "OIFMA_CDE_001477.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001477.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001478",
+      "name": "Pattern",
+      "description": "Fracture pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001478.0",
+          "name": "simple"
+        },
+        {
+          "value_code": "OIFMA_CDE_001478.1",
+          "name": "comminuted"
+        },
+        {
+          "value_code": "OIFMA_CDE_001478.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001478.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001479",
+      "name": "Side",
+      "description": "Describe laterality of the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001479.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001479.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001479.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES232",
+      "display": "humerus fracture"
+    }
+  ]
+}

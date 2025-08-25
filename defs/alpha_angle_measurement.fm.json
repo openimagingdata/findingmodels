@@ -1,0 +1,31 @@
+{
+  "oifm_id": "OIFM_CDE_000119",
+  "name": "Alpha Angle Measurement",
+  "description": " Alpha angle measurement on CT and/or MRI",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000775",
+      "name": "Alpha angle",
+      "description": "alpha angle measurement",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "degrees",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES119",
+      "display": "alpha angle measurement"
+    }
+  ]
+}

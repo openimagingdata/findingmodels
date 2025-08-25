@@ -1,0 +1,73 @@
+{
+  "oifm_id": "OIFM_CDE_000101",
+  "name": "Cervical Rib",
+  "description": "Cervical rib detection on MRI",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000632",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000632.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000632.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000632.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000632.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000633",
+      "name": "Laterality",
+      "description": "Cervical rib location.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000633.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000633.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000633.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES101",
+      "display": "cervical rib"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2471",
+      "display": "rib"
+    }
+  ]
+}

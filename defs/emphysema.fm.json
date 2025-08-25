@@ -1,0 +1,90 @@
+{
+  "oifm_id": "OIFM_CDE_000286",
+  "name": "Emphysema",
+  "description": "Emphysema",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001951",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001951.0",
+          "name": "right upper lobe (RUL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.1",
+          "name": "right middle lobe (RML)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.2",
+          "name": "right upper lobe and right middle lobe (RUL + RML)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.3",
+          "name": "right lower lobe (RLL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.4",
+          "name": "left upper lobe (LUL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.5",
+          "name": "left lower lobe (LLL)"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001952",
+      "name": "Emphysema scale (% - 920HU)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001953",
+      "name": "Emphysema scale (% - 950HU)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001954",
+      "name": "Fissure completeness scale",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001955",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 3000,
+      "unit": "ml",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES286",
+      "display": "emphysema"
+    }
+  ]
+}

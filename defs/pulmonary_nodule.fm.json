@@ -1,0 +1,329 @@
+{
+  "oifm_id": "OIFM_CDE_000195",
+  "name": "Pulmonary Nodule",
+  "description": "Pulmonary Nodule",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001301",
+      "name": "Composition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001301.0",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.1",
+          "name": "ground glass"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.2",
+          "name": "part-solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.3",
+          "name": "fat density"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.4",
+          "name": "calcification"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.5",
+          "name": "cavitation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.6",
+          "name": "cystic lucencies"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.7",
+          "name": "air bronchgrams"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001301.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001302",
+      "name": "Size",
+      "description": "Average diameter in mm",
+      "type": "numeric",
+      "minimum": 2,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001303",
+      "name": "Solid component size",
+      "type": "numeric",
+      "minimum": 2,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001304",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001304.0",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.1",
+          "name": "left lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.2",
+          "name": "left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.3",
+          "name": "lingula"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.4",
+          "name": "left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.5",
+          "name": "right lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.6",
+          "name": "right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.7",
+          "name": "right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.8",
+          "name": "right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_001304.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001305",
+      "name": "Morphology",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001305.0",
+          "name": "smooth"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.1",
+          "name": "lobulated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.2",
+          "name": "Ill-defined"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.3",
+          "name": "spiculated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.4",
+          "name": "perifissural"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001305.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001306",
+      "name": "Plurality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001306.0",
+          "name": "single"
+        },
+        {
+          "value_code": "OIFMA_CDE_001306.1",
+          "name": "multiple"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001307",
+      "name": "Microcystic component",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001307.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001307.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001307.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001307.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001705",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 150000,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001706",
+      "name": "Change from priors",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001706.0",
+          "name": "no priors"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.1",
+          "name": "unchanged for less than 6 months"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.2",
+          "name": "unchanged for 6-12 months"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.3",
+          "name": "unchanged for 12-24 months"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.4",
+          "name": "unchanged more than 24 months"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.5",
+          "name": "larger since prior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001706.6",
+          "name": "smaller since prior"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001707",
+      "name": "Suspicious appearance",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001707.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001707.1",
+          "name": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_001707.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001708",
+      "name": "Min density",
+      "description": "Minimum - 1000, max +1000",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001709",
+      "name": "Max density",
+      "description": "Minimum   - 1000, max   +1000",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001717",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001717.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001717.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001717.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001717.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES195",
+      "display": "pulmonary nodule"
+    }
+  ]
+}

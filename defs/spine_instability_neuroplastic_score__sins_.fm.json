@@ -1,0 +1,292 @@
+{
+  "oifm_id": "OIFM_CDE_000021",
+  "name": "Spine Instability Neuroplastic Score (SINS)",
+  "description": "This module describes the Common Data elements and Macros for Spine Instability Neoplastic Score (SINS)",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000151",
+      "name": "Spinal level",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000151.0",
+          "name": "T1"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.1",
+          "name": "T2"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.2",
+          "name": "T3"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.3",
+          "name": "T4"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.4",
+          "name": "T5"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.5",
+          "name": "T6"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.6",
+          "name": "T7"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.7",
+          "name": "T8"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.8",
+          "name": "T9"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.9",
+          "name": "T10"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.10",
+          "name": "T11"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.11",
+          "name": "T12"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.12",
+          "name": "C1"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.13",
+          "name": "C2"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.14",
+          "name": "C3"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.15",
+          "name": "C4"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.16",
+          "name": "C5"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.17",
+          "name": "C6"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.18",
+          "name": "C7"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.19",
+          "name": "S1"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.20",
+          "name": "S2"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.21",
+          "name": "S3"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.22",
+          "name": "S4"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.23",
+          "name": "L1"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.24",
+          "name": "L2"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.25",
+          "name": "L3"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.26",
+          "name": "L4"
+        },
+        {
+          "value_code": "OIFMA_CDE_000151.27",
+          "name": "L5"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000152",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000152.0",
+          "name": "rigid spine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000152.1",
+          "name": "semi-rigid spine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000152.2",
+          "name": "mobile spine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000152.3",
+          "name": "junctional spine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000152.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000152.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000153",
+      "name": "Lesion quality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000153.0",
+          "name": "blastic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000153.1",
+          "name": "mixed"
+        },
+        {
+          "value_code": "OIFMA_CDE_000153.2",
+          "name": "lytic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000153.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000153.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000154",
+      "name": "Alignment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000154.0",
+          "name": "preserved"
+        },
+        {
+          "value_code": "OIFMA_CDE_000154.1",
+          "name": "deformed"
+        },
+        {
+          "value_code": "OIFMA_CDE_000154.2",
+          "name": "subluxated"
+        },
+        {
+          "value_code": "OIFMA_CDE_000154.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000154.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000155",
+      "name": "Collapse",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000155.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_000155.1",
+          "name": "less than 50 percent  collapse"
+        },
+        {
+          "value_code": "OIFMA_CDE_000155.2",
+          "name": "more than 50 percent collapse"
+        },
+        {
+          "value_code": "OIFMA_CDE_000155.3",
+          "name": "no collapse with more 50 percent vertebral body involved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000156",
+      "name": "Posterior elements",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000156.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000156.1",
+          "name": "unilateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_000156.2",
+          "name": "bilateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_000156.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000156.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES21",
+      "display": "spine instability neuroplastic score (sins)"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID7741",
+      "display": "spine"
+    }
+  ]
+}

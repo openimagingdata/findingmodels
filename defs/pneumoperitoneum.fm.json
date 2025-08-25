@@ -1,0 +1,69 @@
+{
+  "oifm_id": "OIFM_CDE_000228",
+  "name": "Pneumoperitoneum",
+  "description": "Pneumoperitoneum",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001466",
+      "name": "Presence",
+      "description": "Gas below the diaphragm not contained within a lumen.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001466.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001466.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001466.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001466.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001467",
+      "name": "Side",
+      "description": "Side affected by pneumoperitoneum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001467.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001467.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001467.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES228",
+      "display": "pneumoperitoneum"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "oifm_id": "OIFM_CDE_000086",
+  "name": "MR Brain Leukoariosis (Fazekas Scale)",
+  "description": "Scale for describing white matter changes in the brain.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001555",
+      "name": "Fazekas scale",
+      "description": "Mild - punctate\nModerate - minimal confluent\nSevere - Marked confluent white matter disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001555.0",
+          "name": "normal",
+          "description": "No white matter changes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001555.1",
+          "name": "grade 1: mild",
+          "description": "Punctate white matter changes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001555.2",
+          "name": "grade 2: moderate",
+          "description": "Some confluent white matter changes"
+        },
+        {
+          "value_code": "OIFMA_CDE_001555.3",
+          "name": "grade 3: severe",
+          "description": "Marked confluent white matter changes"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES86",
+      "display": "mr brain leukoariosis (fazekas scale)"
+    }
+  ]
+}

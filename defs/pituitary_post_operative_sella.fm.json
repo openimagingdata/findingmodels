@@ -1,0 +1,156 @@
+{
+  "oifm_id": "OIFM_CDE_000274",
+  "name": "Pituitary Post-Operative Sella",
+  "description": "Pituitary Post-Operative Sella",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001791",
+      "name": "Surgical approach",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001791.0",
+          "name": "endonasal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001791.1",
+          "name": "trans-sphenoidal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001791.2",
+          "name": "trans-tuberculum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001791.3",
+          "name": "trans-planum"
+        },
+        {
+          "value_code": "OIFMA_CDE_001791.4",
+          "name": "open craniotomy"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001792",
+      "name": "Closure",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001792.0",
+          "name": "vascularized nasoseptal flap"
+        },
+        {
+          "value_code": "OIFMA_CDE_001792.1",
+          "name": "intradural fat"
+        },
+        {
+          "value_code": "OIFMA_CDE_001792.2",
+          "name": "pericranial flap"
+        },
+        {
+          "value_code": "OIFMA_CDE_001792.3",
+          "name": "dural substitute"
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001793",
+      "name": " Vascularized nasoseptal flap",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001793.0",
+          "name": "enhances"
+        },
+        {
+          "value_code": "OIFMA_CDE_001793.1",
+          "name": "does not enhance (i.e. flap failure)"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001794",
+      "name": "Reconstruction failure",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001794.0",
+          "name": "flap migration from superior defect"
+        },
+        {
+          "value_code": "OIFMA_CDE_001794.1",
+          "name": "fistula"
+        },
+        {
+          "value_code": "OIFMA_CDE_001794.2",
+          "name": "foreign body between flap and defect"
+        },
+        {
+          "value_code": "OIFMA_CDE_001794.3",
+          "name": "healthy appearance"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001795",
+      "name": "Amount of residual disease",
+      "description": "Percentage of the pre-operative volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001796",
+      "name": "Location of residual disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001796.0",
+          "name": "anterior sella"
+        },
+        {
+          "value_code": "OIFMA_CDE_001796.1",
+          "name": "posterior sella"
+        },
+        {
+          "value_code": "OIFMA_CDE_001796.2",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001796.3",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001796.4",
+          "name": "midline"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES274",
+      "display": "pituitary post-operative sella"
+    }
+  ]
+}

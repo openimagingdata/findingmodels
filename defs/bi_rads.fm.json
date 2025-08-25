@@ -1,0 +1,166 @@
+{
+  "oifm_id": "OIFM_CDE_000245",
+  "name": "BI-RADS",
+  "description": "Breast Mass Detection on Mammography",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001586",
+      "name": "Assessment category",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001586.0",
+          "name": "category 0, incomplete - need additional imaging"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.1",
+          "name": "category 1, negative"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.2",
+          "name": "category 2, benign finding"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.3",
+          "name": "category 3, probably benign finding"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.4",
+          "name": "category 4, suspicious abnormality"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.5",
+          "name": "category 4A, suspicious abnormality - low likelihood of being cancer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.6",
+          "name": "category 4B, suspicious abnormality - moderate likelihood of being cancer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.7",
+          "name": "category 4C, suspicious abnormality - high likelihood of being cancer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.8",
+          "name": "category 5, highly suggestive of malignancy"
+        },
+        {
+          "value_code": "OIFMA_CDE_001586.9",
+          "name": "category 6, known biopsy - proven malignancy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001587",
+      "name": "Breast composition category",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001587.0",
+          "name": "category a, the breasts are almost entirely fatty"
+        },
+        {
+          "value_code": "OIFMA_CDE_001587.1",
+          "name": "category b, there are scattered areas of fibroglandular density"
+        },
+        {
+          "value_code": "OIFMA_CDE_001587.2",
+          "name": "category c, the breasts are heterogeneously dense"
+        },
+        {
+          "value_code": "OIFMA_CDE_001587.3",
+          "name": "category d, the breasts are extremely dense"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001588",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001588.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001588.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001588.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001589",
+      "name": "Implant presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001589.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001589.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001589.2",
+          "name": "bilateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001589.3",
+          "name": "none"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001590",
+      "name": "Prior mastectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001590.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001590.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001590.2",
+          "name": "bilateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001590.3",
+          "name": "none"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES245",
+      "display": "bi-rads"
+    }
+  ]
+}

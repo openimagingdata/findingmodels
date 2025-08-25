@@ -1,0 +1,106 @@
+{
+  "oifm_id": "OIFM_CDE_000200",
+  "name": "Talo Calcaneal Angles",
+  "description": "Radiographic Evaluation of Congenital and Aqcuired Foot Deformities Talo Calcaneal Angles",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001329",
+      "name": "AP Talo-calcaneal Angle\t",
+      "description": "The angle between the lines drawn down the axis of the talus and the calcaneus on weight-bearing AP foot radiograph.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 180,
+      "unit": "degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001330",
+      "name": "Lateral Talo-calcaneal Angle\t",
+      "description": "The angle formed by the intersection of the line bisecting the talus through the body and through the neck and the line along the axis of the plantar border of the calcaneus (or bisecting the calcaneus) on lateral weight-bearing views.\n\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 180,
+      "unit": "degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001331",
+      "name": "AP angle interpretation\t",
+      "description": "Normal range for the AP talo-calcaneal angle is 30 to 45 degrees.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001331.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001331.1",
+          "name": "hindfoot varus",
+          "description": "Decreased, less than 30, hindfoot varus"
+        },
+        {
+          "value_code": "OIFMA_CDE_001331.2",
+          "name": "hindfoot valgus",
+          "description": "Increased less than 45, hindfoot valgus"
+        },
+        {
+          "value_code": "OIFMA_CDE_001331.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001331.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001332",
+      "name": "Lateral angle interpretation",
+      "description": "Normal range for the lateral talo-calcaneal angle is 30 to 50 degrees.\n\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001332.0",
+          "name": "normal",
+          "description": "normal 35-50"
+        },
+        {
+          "value_code": "OIFMA_CDE_001332.1",
+          "name": "hindfoot varus",
+          "description": "Decreased, less than 35, hindfoot varus"
+        },
+        {
+          "value_code": "OIFMA_CDE_001332.2",
+          "name": "hindfoot valgus",
+          "description": "Increased, more than 50, hindfoot valgus"
+        },
+        {
+          "value_code": "OIFMA_CDE_001332.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001332.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES200",
+      "display": "talo calcaneal angles"
+    }
+  ]
+}

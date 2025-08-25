@@ -1,0 +1,108 @@
+{
+  "oifm_id": "OIFM_CDE_000216",
+  "name": "Dermoid Cyst",
+  "description": "Dermoid Cyst detection on CT",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001396",
+      "name": "Measurement",
+      "description": "Mass size",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001660",
+      "name": "Calcium",
+      "description": "Presence of calcium in the mass ( more or equal to 1000 HU)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001660.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001660.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001660.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001660.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001661",
+      "name": "Fat",
+      "description": "Presence of fat in the mass (between 30 and 70 HU)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001661.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001661.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001661.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001661.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002003",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002003.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002003.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002003.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002003.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES216",
+      "display": "dermoid cyst"
+    }
+  ]
+}

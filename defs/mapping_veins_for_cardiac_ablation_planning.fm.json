@@ -1,0 +1,118 @@
+{
+  "oifm_id": "OIFM_CDE_000053",
+  "name": "Mapping Veins for Cardiac Ablation Planning",
+  "description": "This module describes the common data elements for pulmonary veins mapping preablation use case.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000280",
+      "name": "Pulmonary vein diameter",
+      "description": "Diameter of pulmonary vein mm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000281",
+      "name": "Interatrial septal thickness",
+      "description": "Interatrial septal thickness, mm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000282",
+      "name": "Atrial thrombus",
+      "description": "Determine the presence of atrial thrombus ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000282.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000282.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000282.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000282.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000283",
+      "name": "Valvular calcifications",
+      "description": "Determine the presence of valvular calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000283.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000283.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000283.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000283.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000284",
+      "name": "Vein ostia proximity to esophagus",
+      "description": "Measure the distance between the vein ostia and esophagus, cm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000285",
+      "name": "Vein ostia proximity to aorta",
+      "description": "Measure the distance between the vein ostia and aorta, cm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES53",
+      "display": "mapping veins for cardiac ablation planning"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1231",
+      "display": "pulmonary vein"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "oifm_id": "OIFM_CDE_000211",
+  "name": "Cerebral Aneurysm on CTA",
+  "description": "Auto-detection of cerebral aneurysms on CTA",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001381",
+      "name": "Location",
+      "description": "Location of aneurysm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001381.0",
+          "name": "anterior communicating artery "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.1",
+          "name": "internal carotid artery-posterior communicating "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.2",
+          "name": "internal carotid artery-anterior choroidal "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.3",
+          "name": "internal carotid artery ophthalmic "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.4",
+          "name": "internal carotid artery terminus "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.5",
+          "name": "middle cerebral artery bi or trifurcation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.6",
+          "name": "middle cerebral artery-M2 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.7",
+          "name": "middle cerebral artery-M3 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.8",
+          "name": "middle cerebral artery-M4 branch"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.9",
+          "name": "anterior cerebral artery-A2 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.10",
+          "name": "anterior cerebral artery-A3 branch"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.11",
+          "name": "anterior cerebral artery-A4 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.12",
+          "name": "vertebral artery-posterior inferior cerebellar artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.13",
+          "name": "basilar artery-anterior inferior cerebellar artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.14",
+          "name": "basilar artery-superior cerebellar artery, basilar terminus "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.15",
+          "name": "posterior cerebral artery-P2 branch"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.16",
+          "name": "posterior cerebral artery-P3 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.17",
+          "name": "posterior cerebral artery-P4 branch "
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.18",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001381.19",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001382",
+      "name": "Dome diameter",
+      "description": "Diameter of the aneurysm dome",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001383",
+      "name": "Neck diameter",
+      "description": "Diameter of the aneurysm neck",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001384",
+      "name": "Diameter ratio",
+      "description": "Ratio of dome diameter to neck diameter",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10,
+      "unit": "Ratio",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001385",
+      "name": "Width",
+      "description": "Width of the aneurysm dome",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001386",
+      "name": "Length",
+      "description": "Length of the aneurysm dome",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001387",
+      "name": "Shape",
+      "description": "Shape of the aneurysm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001387.0",
+          "name": "fusiform"
+        },
+        {
+          "value_code": "OIFMA_CDE_001387.1",
+          "name": "saccular"
+        },
+        {
+          "value_code": "OIFMA_CDE_001387.2",
+          "name": "lobulated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001387.3",
+          "name": "bilobular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001388",
+      "name": "Orientation",
+      "description": "Orientation of the aneurysm dome",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001388.0",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001388.1",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001388.2",
+          "name": "medial"
+        },
+        {
+          "value_code": "OIFMA_CDE_001388.3",
+          "name": "lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001388.4",
+          "name": "cranial"
+        },
+        {
+          "value_code": "OIFMA_CDE_001388.5",
+          "name": "caudal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES211",
+      "display": "cerebral aneurysm on cta"
+    }
+  ]
+}

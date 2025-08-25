@@ -1,0 +1,221 @@
+{
+  "oifm_id": "OIFM_CDE_000100",
+  "name": "Focal Cortical Dysplasia",
+  "description": "Focal cortical dysplasia",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000621",
+      "name": "Thickness",
+      "description": "Thickness of the focal cortical. Thickening or thinning may suggest focal cortical dysplasia.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000623",
+      "name": "Dysplasia",
+      "description": "detection of focal cortical dysplasia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000623.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000623.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000623.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000623.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000624",
+      "name": "Focal brain atrophy",
+      "description": "focal brain atrophy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000624.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000624.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000624.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000624.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000625",
+      "name": "Gray-white junction blurring",
+      "description": "Blurring of the gray-white junction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000625.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000625.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000625.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000625.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000626",
+      "name": " Increased signal on T2/FLAIR in gray and subcortical white matter",
+      "description": "Increased signal on T2/FLAIR in gray and subcortical white matter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000626.0",
+          "name": "absent",
+          "description": "no signal increase"
+        },
+        {
+          "value_code": "OIFMA_CDE_000626.1",
+          "name": "present",
+          "description": "signal increase"
+        },
+        {
+          "value_code": "OIFMA_CDE_000626.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000626.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000627",
+      "name": "T2/FLAIR signal hyperintensity of white matter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000627.0",
+          "name": "with transmantle sign"
+        },
+        {
+          "value_code": "OIFMA_CDE_000627.1",
+          "name": "without transmantle sign"
+        },
+        {
+          "value_code": "OIFMA_CDE_000627.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000627.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000628",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000628.0",
+          "name": "outside temporal lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000628.1",
+          "name": "inside temporal lobe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000628.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000628.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000630",
+      "name": "Classification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000630.0",
+          "name": "type 1"
+        },
+        {
+          "value_code": "OIFMA_CDE_000630.1",
+          "name": "type 2"
+        },
+        {
+          "value_code": "OIFMA_CDE_000630.2",
+          "name": "type 3"
+        },
+        {
+          "value_code": "OIFMA_CDE_000630.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000630.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES100",
+      "display": "focal cortical dysplasia"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "oifm_id": "OIFM_CDE_000179",
+  "name": "Endotracheal Tube Placement",
+  "description": "Placement of endotracheal (ET) tube",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001247",
+      "name": "Presence",
+      "description": "Detect if an endotracheal tube is present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001247.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001247.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001247.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001247.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001251",
+      "name": "Position appropriateness",
+      "description": "Determine position appropriateness based on the coordinates of the location of the ET tube tip, the carina, and a preset normal range",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001251.0",
+          "name": "not  far enough"
+        },
+        {
+          "value_code": "OIFMA_CDE_001251.1",
+          "name": "correctly positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001251.2",
+          "name": "too far"
+        },
+        {
+          "value_code": "OIFMA_CDE_001251.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001251.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES179",
+      "display": "endotracheal tube placement"
+    }
+  ]
+}

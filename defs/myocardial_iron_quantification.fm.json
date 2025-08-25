@@ -1,0 +1,70 @@
+{
+  "oifm_id": "OIFM_CDE_000135",
+  "name": "Myocardial Iron Quantification",
+  "description": "This module describes the Common Data elements and Macros for Myocardial Iron Quantification",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000889",
+      "name": "T2 Stage",
+      "description": "T2 value",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1000,
+      "unit": "ms",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001751",
+      "name": "Estimated iron content",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 500,
+      "unit": "mcg/dL",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001752",
+      "name": "Iron content determination",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001752.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001752.1",
+          "name": "abnormal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001752.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001752.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES135",
+      "display": "myocardial iron quantification"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1385",
+      "display": "heart"
+    }
+  ]
+}

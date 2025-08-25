@@ -1,0 +1,242 @@
+{
+  "oifm_id": "OIFM_CDE_000235",
+  "name": "Laryngeal Cancer of the Neck on CT",
+  "description": "Laryngeal Cancer of the Neck on CT",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001502",
+      "name": "AP measurement",
+      "description": "Largest anterior-posterior dimension",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001503",
+      "name": "RL measurement",
+      "description": "Largest transverse dimension\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001504",
+      "name": "CC measurement",
+      "description": "Largest cranio-caudal dimension\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001505",
+      "name": "Portions of larynx involved",
+      "description": "Select all spaces of involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001505.0",
+          "name": "glottis"
+        },
+        {
+          "value_code": "OIFMA_CDE_001505.1",
+          "name": "supraglottis"
+        },
+        {
+          "value_code": "OIFMA_CDE_001505.2",
+          "name": "subglottis"
+        },
+        {
+          "value_code": "OIFMA_CDE_001505.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001505.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001506",
+      "name": "Post contrast enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001506.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001506.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001506.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001506.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001512",
+      "name": "Cartilage invasion",
+      "description": "Is there erosion or calcification of these cartilageneous structures to suggest invasion?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001512.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.1",
+          "name": "thyroid",
+          "description": "thyroid cartilage invasion"
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.2",
+          "name": "cricoid",
+          "description": "cricoid cartilage invasion "
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.3",
+          "name": "arytenoid",
+          "description": "arytenoid cartilage invasion"
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.4",
+          "name": "tracheal ring",
+          "description": "tracheal ring invasion"
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001512.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 7
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001513",
+      "name": "Extension beyond laryngeal skeleton",
+      "description": "General extralaryngeal extension.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001513.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001513.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001513.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001513.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001930",
+      "name": "Extension across midline",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001930.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001930.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001931",
+      "name": "Airway narrowing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001931.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001931.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001932",
+      "name": "Pre-vertebral invasion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001932.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001932.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001933",
+      "name": "Carotid space invasion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001933.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001933.1",
+          "name": "present"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES235",
+      "display": "laryngeal cancer of the neck on ct"
+    }
+  ]
+}

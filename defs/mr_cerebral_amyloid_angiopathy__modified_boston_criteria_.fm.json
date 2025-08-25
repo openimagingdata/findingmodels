@@ -1,0 +1,232 @@
+{
+  "oifm_id": "OIFM_CDE_000299",
+  "name": "MR Cerebral Amyloid Angiopathy (Modified Boston Criteria)",
+  "description": "Cerebral Amyloid Angiopathy: Modified Boston Criteria",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001442",
+      "name": "Hematoma size",
+      "description": "Measure the largest dimension in any plane",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001443",
+      "name": "Microhemorrhage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001443.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001443.1",
+          "name": "one"
+        },
+        {
+          "value_code": "OIFMA_CDE_001443.2",
+          "name": "two to five"
+        },
+        {
+          "value_code": "OIFMA_CDE_001443.3",
+          "name": "more than five"
+        },
+        {
+          "value_code": "OIFMA_CDE_001443.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001443.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001445",
+      "name": "Siderosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001445.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001445.1",
+          "name": "focal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001445.2",
+          "name": "diffuse"
+        },
+        {
+          "value_code": "OIFMA_CDE_001445.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001445.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001446",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001446.0",
+          "name": "absent",
+          "description": "No evidence of cerebral amyloid angiopathy"
+        },
+        {
+          "value_code": "OIFMA_CDE_001446.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001446.2",
+          "name": "probable"
+        },
+        {
+          "value_code": "OIFMA_CDE_001446.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001446.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002030",
+      "name": "Summary",
+      "description": "Probable CAA: multiple lobar, cortical, or subcortical hemorrhages of varying ages without another cause/Probable CAA: single lobar, cortical, or subcortical hemorrhage and focal or disseminated superficial siderosis without another cause/Possible CAA: single lobar, cortical or subcortical hemorrhage without another cause/Possible CAA: focal or disseminated superficial siderosis without another cause/no evidence of CAA",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002030.0",
+          "name": "no evidence of CAA",
+          "description": "No evidence of cerebral amyloid angiopathy"
+        },
+        {
+          "value_code": "OIFMA_CDE_002030.1",
+          "name": "probable CAA: multiple hemorrhages",
+          "description": "Probable cerebral amyloid angiopathy. Multiple lobar, cortical, or subcortical hemorrhages of varying ages without another cause."
+        },
+        {
+          "value_code": "OIFMA_CDE_002030.2",
+          "name": "probable CAA: single hemorrhage",
+          "description": "probable CAA: single lobar, cortical, or subcortical hemorrhage and focal or disseminated superficial siderosis without another cause"
+        },
+        {
+          "value_code": "OIFMA_CDE_002030.3",
+          "name": "possible CAA:  single hemorrhage with another cause",
+          "description": "possible CAA: single lobar, cortical or subcortical hemorrhage without another cause"
+        },
+        {
+          "value_code": "OIFMA_CDE_002030.4",
+          "name": "possible CAA:  focal or disseminated superficial siderosis  wihout another cause",
+          "description": "possible CAA:  focal or disseminated superficial siderosis without another cause"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002053",
+      "name": "Lobar hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002053.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.1",
+          "name": "frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.2",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.3",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.4",
+          "name": "occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.5",
+          "name": "cerebellar"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.6",
+          "name": "brainstem"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002053.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002054",
+      "name": "Microhemorrhage location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002054.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002054.1",
+          "name": "cortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_002054.2",
+          "name": "subcortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_002054.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002054.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES299",
+      "display": "mr cerebral amyloid angiopathy (modified boston criteria)"
+    }
+  ]
+}

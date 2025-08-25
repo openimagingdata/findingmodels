@@ -1,0 +1,214 @@
+{
+  "oifm_id": "OIFM_CDE_000076",
+  "name": "Pneumonia",
+  "description": "This module describes the Common Data elements and Macros for Pneumonia",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000397",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000397.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000397.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000397.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_000397.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000398",
+      "name": "Pleural fluid",
+      "description": "pleural fluid (including air/fluid levels)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000398.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000398.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000398.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000398.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000400",
+      "name": "Pneumomediastinum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000400.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000400.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000400.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000400.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000401",
+      "name": "Extrapleural air ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000401.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000401.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000401.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000401.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000403",
+      "name": "Lobar collapse",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000403.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000403.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000403.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000403.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000406",
+      "name": "Pulmonary edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000406.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000406.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000406.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000406.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000410",
+      "name": "Lung tissue involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000410.0",
+          "name": "segmental"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.1",
+          "name": "patchy"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.2",
+          "name": "lobar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.3",
+          "name": "multilobar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.4",
+          "name": "diffuse"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.5",
+          "name": "cavitary"
+        },
+        {
+          "value_code": "OIFMA_CDE_000410.6",
+          "name": "nodular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES76",
+      "display": "pneumonia"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1301",
+      "display": "lung"
+    }
+  ]
+}

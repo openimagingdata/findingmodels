@@ -1,0 +1,245 @@
+{
+  "oifm_id": "OIFM_CDE_000097",
+  "name": "Acute Infarct on DWI Images",
+  "description": "Detection of acute infarct on DWI images",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000587",
+      "name": "Size",
+      "description": "Diameter of the lesion in mm.\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000588",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000589",
+      "name": "Count",
+      "description": "Count the number of lesions with diffusion restriction.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000591",
+      "name": "True diffusion restriction",
+      "description": "Determine if high signal on DWI is true diffusion restriction or T2 shine through by analyzing ADC signal.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000591.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000591.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000591.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000591.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000593",
+      "name": "Distribution of diffusion restriction",
+      "description": "Categorize the distribution of the diffusion restriction in the lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000593.0",
+          "name": "whole lesion"
+        },
+        {
+          "value_code": "OIFMA_CDE_000593.1",
+          "name": "central"
+        },
+        {
+          "value_code": "OIFMA_CDE_000593.2",
+          "name": "peripheral"
+        },
+        {
+          "value_code": "OIFMA_CDE_000593.3",
+          "name": "rim"
+        },
+        {
+          "value_code": "OIFMA_CDE_000593.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000593.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000594",
+      "name": "Signal ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000594.0",
+          "name": "homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000594.1",
+          "name": "hetergeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000594.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000594.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000597",
+      "name": "Location",
+      "description": "Location of the lesion(s) with diffusion restriction.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000597.0",
+          "name": "frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.1",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.2",
+          "name": "occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.3",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.4",
+          "name": "deep gray nuclei",
+          "description": "Deep gray Nuclei (Basal Ganglia / Thalami)"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.5",
+          "name": "white matter"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.6",
+          "name": "peniventricular white matter"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.7",
+          "name": "deep white matter"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.8",
+          "name": "subcortical white matter"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.9",
+          "name": "corticospinal tract"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.10",
+          "name": "cerebellar peduncles"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.11",
+          "name": "brainstem"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.12",
+          "name": "midbrain"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.13",
+          "name": "pons"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.14",
+          "name": "medulla"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.15",
+          "name": "cerebellum"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.16",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000597.17",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 18
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000598",
+      "name": "Side",
+      "description": "define the side of the lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000598.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000598.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000598.2",
+          "name": "midline"
+        }
+      ],
+      "required": false,
+      "max_selected": 3
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES97",
+      "display": "acute infarct on dwi images"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

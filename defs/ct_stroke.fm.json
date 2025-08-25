@@ -1,0 +1,458 @@
+{
+  "oifm_id": "OIFM_CDE_000022",
+  "name": "CT Stroke",
+  "description": "This module describes the Common Data elements and Macros for CT stroke",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000159",
+      "name": "Hyperacute signs",
+      "description": "Hyperacute signs",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000159.0",
+          "name": "absent",
+          "description": "no"
+        },
+        {
+          "value_code": "OIFMA_CDE_000159.1",
+          "name": "present",
+          "description": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_000159.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000159.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000160",
+      "name": "Location",
+      "description": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000160.0",
+          "name": "right frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.1",
+          "name": "right temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.2",
+          "name": "right parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.3",
+          "name": "right occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.4",
+          "name": "left frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.5",
+          "name": "left temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.6",
+          "name": "left parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.7",
+          "name": "left occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.8",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000160.9",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000161",
+      "name": "Vascular territory",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000161.0",
+          "name": "ACA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.1",
+          "name": "MCA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.2",
+          "name": "PCA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.3",
+          "name": "SCA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.4",
+          "name": "AICA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.5",
+          "name": "PICA"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.6",
+          "name": "basil perforator"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.7",
+          "name": "thalamo perforator"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.8",
+          "name": "antchoroidal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.9",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000161.10",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000162",
+      "name": "Hemorrhagic conversion",
+      "description": "Presence of hemorrhagic conversion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000162.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000162.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000162.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000162.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000163",
+      "name": "Mass effect",
+      "description": "Mass effect",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000163.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000163.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000163.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000163.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000164",
+      "name": "Vascular pattern",
+      "description": "Vascular mechanism, pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000164.0",
+          "name": "embolic",
+          "description": "Embolic vascular pattern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000164.1",
+          "name": "perforator"
+        },
+        {
+          "value_code": "OIFMA_CDE_000164.2",
+          "name": "borderzone ischemia"
+        },
+        {
+          "value_code": "OIFMA_CDE_000164.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000164.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000165",
+      "name": "Midline shift",
+      "description": "Midline shift in mm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000166",
+      "name": "Herniation",
+      "description": "Presence of herniation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000166.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000166.1",
+          "name": "subfalcine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000166.2",
+          "name": "transtentorial"
+        },
+        {
+          "value_code": "OIFMA_CDE_000166.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000166.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000167",
+      "name": "Hyperdense vessel",
+      "description": "Presence of hyperdense vessel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000167.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000167.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000167.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000167.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000168",
+      "name": "Hyperdense sign",
+      "description": "Presence of hyperdense sign",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000168.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.1",
+          "name": "middle cerebral"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.2",
+          "name": "anteriorcerebral"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.3",
+          "name": "intrasylvian cortical"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.4",
+          "name": "basilar artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000168.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000169",
+      "name": "Arterial calcification",
+      "description": "Presence of arterial calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000169.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000169.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000169.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000169.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000170",
+      "name": "Venous thrombus",
+      "description": "Presence of venous thrombus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000170.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000170.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000170.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000170.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000171",
+      "name": "Sinus location",
+      "description": "Sinus location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000171.0",
+          "name": "dural venous sinus"
+        },
+        {
+          "value_code": "OIFMA_CDE_000171.1",
+          "name": "cortical vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_000171.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000171.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000172",
+      "name": "Hydrocephalus",
+      "description": "Presence of hydrocephalus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000172.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000172.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000172.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000172.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000173",
+      "name": "ASPECTS classification",
+      "description": "ASPECTS classification on a scale from 1 to 10",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 10,
+      "unit": "unit",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES22",
+      "display": "ct stroke"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

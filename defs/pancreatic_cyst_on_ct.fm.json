@@ -1,0 +1,231 @@
+{
+  "oifm_id": "OIFM_CDE_000207",
+  "name": "Pancreatic Cyst on CT",
+  "description": "Pancreatic cyst categorization on computerized tomography. ",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001281",
+      "name": "Presence\t",
+      "description": "Detection of lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001281.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001281.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001281.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001281.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001283",
+      "name": "Density",
+      "description": "If a pancreatic lesion is present then determine density in Hounsfield units.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "HU (Hounsfield units)",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001284",
+      "name": "Categorization\t",
+      "description": "Categorization of cyst if lesion attenuation is less than or equal to 20 HU, categorization as undetermined if lesion attenuation is 21-29 HU, and categorized as solid if lesion attenuation is greater than or equal to 30 HU.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001284.0",
+          "name": "cyst"
+        },
+        {
+          "value_code": "OIFMA_CDE_001284.1",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_001284.2",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001284.3",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001346",
+      "name": "Pancreatic duct dilation \t",
+      "description": "Detection of dilated MPD greater than or equal to 10 mm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001346.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001346.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001346.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001346.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001347",
+      "name": "Solid component",
+      "description": "Detection of solid components in the cyst",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001347.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001347.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001347.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001347.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001348",
+      "name": "Peripheral calcification\t",
+      "description": "Detection of Peripheral calcifications components in the cyst\t\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001348.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001348.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001348.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001348.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001349",
+      "name": "Wall thickening",
+      "description": "Detection of wall thickening in the cyst",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001349.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001349.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001349.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001349.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001680",
+      "name": "Size",
+      "description": "If a pancreatic lesion is present then determine maximal size measurement.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001681",
+      "name": "Pancreatic duct caliber",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001682",
+      "name": "Main duct communication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001682.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001682.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001682.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001682.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES207",
+      "display": "pancreatic cyst on ct"
+    }
+  ]
+}

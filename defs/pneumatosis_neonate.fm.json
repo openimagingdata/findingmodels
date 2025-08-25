@@ -1,0 +1,135 @@
+{
+  "oifm_id": "OIFM_CDE_000096",
+  "name": "Pneumatosis Neonate",
+  "description": "Pneumatosis Plain Film Neonate",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000582",
+      "name": "Bowel gas pattern ",
+      "description": "Description of the pattern of air in loops of bowel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000582.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000582.1",
+          "name": "paucity of gas",
+          "description": "paucity of bowel gas"
+        },
+        {
+          "value_code": "OIFMA_CDE_000582.2",
+          "name": "distended air-filled loops"
+        },
+        {
+          "value_code": "OIFMA_CDE_000582.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000582.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000583",
+      "name": "Presence",
+      "description": "locules of air within the wall of bowel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000583.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000583.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000583.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000583.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000584",
+      "name": "Portal venous gas",
+      "description": "Air within the portal vein and intrahepatic portal venous system",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000584.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000584.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000584.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000584.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000585",
+      "name": "Intraperitoneal free air ",
+      "description": "air within the abdomen, outside of loops of bowel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000585.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000585.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000585.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000585.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES96",
+      "display": "pneumatosis neonate"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID1301",
+      "display": "lung"
+    }
+  ]
+}

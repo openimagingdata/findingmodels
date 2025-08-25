@@ -1,0 +1,99 @@
+{
+  "oifm_id": "OIFM_CDE_000229",
+  "name": "Humerus Dislocation",
+  "description": "Humerus Dislocation",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001468",
+      "name": "Presence",
+      "description": "Upper arm bone (humerus) has come out of your shoulder joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001468.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001468.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001468.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001468.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001469",
+      "name": "Type",
+      "description": "Describe the way humerus got dislocated, multichoice",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001469.0",
+          "name": "inferior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001469.1",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001469.2",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001469.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001469.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001470",
+      "name": "Side",
+      "description": "Describe the affected side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001470.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001470.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001470.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES229",
+      "display": "humerus dislocation"
+    }
+  ]
+}

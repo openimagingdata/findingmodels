@@ -1,0 +1,127 @@
+{
+  "oifm_id": "OIFM_CDE_000268",
+  "name": "Lung Texture Aggregate Assessment",
+  "description": "Characterization of lung parenchyma by location and texture",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001710",
+      "name": "Pulmonary region",
+      "description": "Relevant area of the lung",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001710.0",
+          "name": "total lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.1",
+          "name": "left lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.2",
+          "name": "left upper lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.3",
+          "name": "left middle lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.4",
+          "name": "left lower lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.5",
+          "name": "right lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.6",
+          "name": "right upper lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.7",
+          "name": "right middle lung"
+        },
+        {
+          "value_code": "OIFMA_CDE_001710.8",
+          "name": "right lower lung"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001711",
+      "name": "Volume",
+      "description": "Volume of the reference lung region",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10,
+      "unit": "L",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001712",
+      "name": "Hyperlucent proportion",
+      "description": "Proportion of the lung region which is hyperlucent",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001713",
+      "name": "Ground glass proportion",
+      "description": "Proportion of the lung region which is ground glass",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001714",
+      "name": "Reticular proportion",
+      "description": "Proportion of the lung region which is reticular",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001715",
+      "name": "Honeycombing proportion",
+      "description": "Proportion of the lung region which is honeycombing",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001716",
+      "name": "Pulmonary vessel volume",
+      "description": "Measurement of the amount of blood in the pulmonary arteries and veins\n",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 2000,
+      "unit": "cm^3",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES268",
+      "display": "lung texture aggregate assessment"
+    }
+  ]
+}

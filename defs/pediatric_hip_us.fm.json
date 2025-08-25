@@ -1,0 +1,120 @@
+{
+  "oifm_id": "OIFM_CDE_000182",
+  "name": "Pediatric Hip US",
+  "description": "Pediatric Hip US - relatively simple classification scheme",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001259",
+      "name": "Stability",
+      "description": "Stability",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001259.0",
+          "name": "stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_001259.1",
+          "name": "unstable"
+        },
+        {
+          "value_code": "OIFMA_CDE_001259.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001259.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001260",
+      "name": "Alpha angle",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "Degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001261",
+      "name": "Beta angle",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "Degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001262",
+      "name": "Femoral head coverage",
+      "description": "Detection of femoral head coverage\n",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001262.0",
+          "name": "more than 50 percent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001262.1",
+          "name": "less than 50 percent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001262.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001262.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001600",
+      "name": "Femoral head position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001600.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001600.1",
+          "name": "subluxation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001600.2",
+          "name": "dislocation"
+        },
+        {
+          "value_code": "OIFMA_CDE_001600.3",
+          "name": "indeterminated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001600.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES182",
+      "display": "pediatric hip us"
+    }
+  ]
+}

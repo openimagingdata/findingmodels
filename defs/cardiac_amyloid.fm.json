@@ -1,0 +1,157 @@
+{
+  "oifm_id": "OIFM_CDE_000137",
+  "name": "Cardiac Amyloid",
+  "description": "This module describes the Common Data elements and Macros for Evaluation of Cardiac Amyloid",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000896",
+      "name": "Metastases",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000896.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000896.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000896.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000896.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000897",
+      "name": "Dextrocardia",
+      "description": "The heart is positioned on the right side of the chest instead of its normal position on the left side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000897.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000897.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000897.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000897.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000906",
+      "name": "Myocardial Tc-99m PYP cardiac uptake",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000906.0",
+          "name": "no uptake and normal bone uptake"
+        },
+        {
+          "value_code": "OIFMA_CDE_000906.1",
+          "name": "uptake less than rib uptake"
+        },
+        {
+          "value_code": "OIFMA_CDE_000906.2",
+          "name": "uptake equal to rib uptake"
+        },
+        {
+          "value_code": "OIFMA_CDE_000906.3",
+          "name": "uptake greater than rib uptake with mild or absent rib uptake"
+        },
+        {
+          "value_code": "OIFMA_CDE_000906.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000906.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000908",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000908.0",
+          "name": "absent",
+          "description": "Cardiac amyloid absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000908.1",
+          "name": "present",
+          "description": "Cardiac amyloid present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000908.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000908.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000909",
+      "name": "Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000909.0",
+          "name": "AL"
+        },
+        {
+          "value_code": "OIFMA_CDE_000909.1",
+          "name": "ATTR"
+        },
+        {
+          "value_code": "OIFMA_CDE_000909.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000909.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES137",
+      "display": "cardiac amyloid"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "oifm_id": "OIFM_CDE_000253",
+  "name": "Liver Tissue Characterization",
+  "description": "Liver Tissue Characterization",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001644",
+      "name": "Fat fraction",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "percentage",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001645",
+      "name": "Fat fraction progression",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001645.0",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001645.1",
+          "name": "unknown"
+        },
+        {
+          "value_code": "OIFMA_CDE_001645.2",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_CDE_001645.3",
+          "name": "elevated"
+        },
+        {
+          "value_code": "OIFMA_CDE_001645.4",
+          "name": "significantly elevated"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001646",
+      "name": "Fat range",
+      "description": "The spread of values across the liver ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "percent",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001647",
+      "name": "Iron concentration",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 5,
+      "unit": "mg Fe/g",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001648",
+      "name": "Iron concentration progression",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001648.0",
+          "name": "normal iron"
+        },
+        {
+          "value_code": "OIFMA_CDE_001648.1",
+          "name": "iron overload"
+        },
+        {
+          "value_code": "OIFMA_CDE_001648.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001648.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001649",
+      "name": "Iron concentration range",
+      "description": "The spread of values across the liver ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 5,
+      "unit": "mg Fe/g",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES253",
+      "display": "liver tissue characterization"
+    }
+  ]
+}

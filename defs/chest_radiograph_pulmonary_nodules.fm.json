@@ -1,0 +1,55 @@
+{
+  "oifm_id": "OIFM_CDE_000227",
+  "name": "Chest Radiograph Pulmonary Nodules",
+  "description": "Chest Radiograph Pulmonary Nodules",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001465",
+      "name": "Presence",
+      "description": "nodules < 3 cm ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001465.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001465.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001465.2",
+          "name": "single"
+        },
+        {
+          "value_code": "OIFMA_CDE_001465.3",
+          "name": "multiple"
+        },
+        {
+          "value_code": "OIFMA_CDE_001465.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001465.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES227",
+      "display": "chest radiograph pulmonary nodules"
+    }
+  ]
+}

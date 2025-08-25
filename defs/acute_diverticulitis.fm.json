@@ -1,0 +1,185 @@
+{
+  "oifm_id": "OIFM_CDE_000138",
+  "name": "Acute Diverticulitis",
+  "description": "This module describes the Common Data elements and Macros for Diverticulitis Detection",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000914",
+      "name": "Sigmoid colon wall thickness",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1000,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000916",
+      "name": "Lymph nodes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000916.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000916.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000916.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000916.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000917",
+      "name": "Extramural fluid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000917.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000917.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000917.2",
+          "name": "free fluid"
+        },
+        {
+          "value_code": "OIFMA_CDE_000917.3",
+          "name": "organized collection"
+        },
+        {
+          "value_code": "OIFMA_CDE_000917.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000917.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000919",
+      "name": "Free air",
+      "description": "Free air detection in abdomen on CT",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000919.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000919.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000919.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000919.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001658",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001658.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001658.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001658.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001658.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001678",
+      "name": "Involved bowel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001678.0",
+          "name": "small bowel"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.1",
+          "name": "ascending colon"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.2",
+          "name": "transverse colon"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.3",
+          "name": "descending colon"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.4",
+          "name": "sigmoid colon"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001678.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 7
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001679",
+      "name": "Organized collection size",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES138",
+      "display": "acute diverticulitis"
+    }
+  ]
+}

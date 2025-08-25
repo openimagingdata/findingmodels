@@ -1,0 +1,229 @@
+{
+  "oifm_id": "OIFM_CDE_000114",
+  "name": "Chest Fluid Status on Xray",
+  "description": "Thoracic fluid status on chest xray",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000730",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000730.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000730.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000730.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000730.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000732",
+      "name": "Airspace edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000732.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000732.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000732.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000732.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000733",
+      "name": "Pleural effusions",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000733.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000733.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000733.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000733.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000734",
+      "name": "Pulmonary vascular cephalization",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000734.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000734.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000734.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000734.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000735",
+      "name": "Perivascular cuffing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000735.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000735.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000735.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000735.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000736",
+      "name": "Peribronchial cuffing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000736.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000736.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000736.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000736.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000737",
+      "name": "Interstitial edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000737.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000737.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000737.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000737.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000739",
+      "name": "Excess fluid volume",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000739.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_CDE_000739.1",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_CDE_000739.2",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000739.3",
+          "name": "severe"
+        },
+        {
+          "value_code": "OIFMA_CDE_000739.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000739.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES114",
+      "display": "chest fluid status on xray"
+    }
+  ]
+}

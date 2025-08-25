@@ -1,0 +1,223 @@
+{
+  "oifm_id": "OIFM_CDE_000126",
+  "name": "Acute Aortic Syndrome",
+  "description": "This module describes the Common Data elements and Macros for Acute Aortic Syndrome",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000818",
+      "name": "Aortic dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000818.0",
+          "name": "acute"
+        },
+        {
+          "value_code": "OIFMA_CDE_000818.1",
+          "name": "subacute"
+        },
+        {
+          "value_code": "OIFMA_CDE_000818.2",
+          "name": "chronic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000818.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000818.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000819",
+      "name": "Ischemia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000819.0",
+          "name": "abdominal organ ischemia"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.1",
+          "name": "limb ischemia"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.2",
+          "name": "ischemic stroke"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.3",
+          "name": "embolic stroke"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.4",
+          "name": "paraplegia"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000819.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000821",
+      "name": "Aortic emergencies",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000821.0",
+          "name": "dissection",
+          "description": "Aortic dissection"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.1",
+          "name": "intramural hematoma",
+          "description": "Aortic intramural hematoma"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.2",
+          "name": "penetrating atherosclerotic ulcer"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.3",
+          "name": "aneurysmal rupture",
+          "description": "Aortic aneurysmal rupture"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.4",
+          "name": "traumatic thoracic aortic injury"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.5",
+          "name": "traumatic abdominal aortic injury"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.6",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000821.7",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000823",
+      "name": "Aortic aneurysmal rupture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000823.0",
+          "name": "intraperitoneal rupture"
+        },
+        {
+          "value_code": "OIFMA_CDE_000823.1",
+          "name": "retroperitoneal rupture"
+        },
+        {
+          "value_code": "OIFMA_CDE_000823.2",
+          "name": "aortocaval fistula"
+        },
+        {
+          "value_code": "OIFMA_CDE_000823.3",
+          "name": "primary aorto-enteric fistula"
+        },
+        {
+          "value_code": "OIFMA_CDE_000823.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000823.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000825",
+      "name": "Acute aortic syndrome",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000825.0",
+          "name": "absent",
+          "description": "Acute aortic syndrome absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000825.1",
+          "name": "present",
+          "description": "Acute aortic syndrome present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000825.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000825.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000826",
+      "name": "Stanford classification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000826.0",
+          "name": "type a",
+          "description": "A"
+        },
+        {
+          "value_code": "OIFMA_CDE_000826.1",
+          "name": "type b",
+          "description": "B"
+        },
+        {
+          "value_code": "OIFMA_CDE_000826.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000826.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES126",
+      "display": "acute aortic syndrome"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID480",
+      "display": "aorta"
+    }
+  ]
+}

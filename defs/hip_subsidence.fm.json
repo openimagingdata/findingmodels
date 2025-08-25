@@ -1,0 +1,36 @@
+{
+  "oifm_id": "OIFM_CDE_000062",
+  "name": "Hip Subsidence",
+  "description": "This module describes the common data elements for hip subsidence use case",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000299",
+      "name": "Measurement",
+      "description": "Measure the  amount of  subsidence. Alert if  subsidence  is greater than or equal to 10 mm",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 30,
+      "unit": "unit",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES62",
+      "display": "hip subsidence"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID2639",
+      "display": "hip"
+    }
+  ]
+}
