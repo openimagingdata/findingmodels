@@ -1,0 +1,396 @@
+{
+  "oifm_id": "OIFM_CDE_000241",
+  "name": "Breast Calcification",
+  "description": "Breast Calcification",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001558",
+      "name": "Location",
+      "description": "Clock positions of the abnormality observed.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001558.0",
+          "name": "one o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.1",
+          "name": "two o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.2",
+          "name": "three o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.3",
+          "name": "four o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.4",
+          "name": "five o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.5",
+          "name": "six o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.6",
+          "name": "seven o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.7",
+          "name": "eight o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.8",
+          "name": "nine o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.9",
+          "name": "ten o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.10",
+          "name": "eleven o'clock position"
+        },
+        {
+          "value_code": "OIFMA_CDE_001558.11",
+          "name": "twelve o'clock position"
+        }
+      ],
+      "required": false,
+      "max_selected": 12
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001559",
+      "name": "Depth",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001559.0",
+          "name": "anterior ",
+          "description": "Anterior depth is the outer most depth closest to the nipple of the breast."
+        },
+        {
+          "value_code": "OIFMA_CDE_001559.1",
+          "name": "middle",
+          "description": "Middle depth in between the anterior and posterior portion of the breast ."
+        },
+        {
+          "value_code": "OIFMA_CDE_001559.2",
+          "name": "posterior",
+          "description": "Posterior depth closest to the chest wall of the breast."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001560",
+      "name": "Breast body landmark",
+      "description": "Breast landmark value set",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001560.0",
+          "name": "nipple"
+        },
+        {
+          "value_code": "OIFMA_CDE_001560.1",
+          "name": "chest wall"
+        },
+        {
+          "value_code": "OIFMA_CDE_001560.2",
+          "name": "skin structure"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001561",
+      "name": "Distance from landmark",
+      "description": "Distance from body landmark to body location of abnormality",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1000,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001562",
+      "name": "Side ",
+      "description": "Side from landmark",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001562.0",
+          "name": "right and left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001562.1",
+          "name": "midline"
+        },
+        {
+          "value_code": "OIFMA_CDE_001562.2",
+          "name": "structure of right half of body"
+        },
+        {
+          "value_code": "OIFMA_CDE_001562.3",
+          "name": "structure of left half of body"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001563",
+      "name": "Quadrant",
+      "description": "Quadrant of breast",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001563.0",
+          "name": "lower inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001563.1",
+          "name": "lower outer"
+        },
+        {
+          "value_code": "OIFMA_CDE_001563.2",
+          "name": "upper inner"
+        },
+        {
+          "value_code": "OIFMA_CDE_001563.3",
+          "name": "upper outer"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001564",
+      "name": "Region",
+      "description": "Region of breast",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001564.0",
+          "name": "axilla",
+          "description": "The axilla (also, armpit, underarm or oxter) is the area on the human body directly under the joint where the arm connects to the shoulder. It also contains many sweat glands."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.1",
+          "name": "axillary tail"
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.2",
+          "name": "axilla one",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level I is the bottom level, below the lower edge of the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.3",
+          "name": "axilla two",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area):Level II is lying underneath the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.4",
+          "name": "axilla three",
+          "description": "There are three levels of axillary lymph nodes (the nodes in the underarm or 'axilla' area): Level III is above the pectoralis minor muscle."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.5",
+          "name": "inframammary fold",
+          "description": "The mass/lesion is located in the inframammary crease where the lower boundary of the breast and the chest meet."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.6",
+          "name": "in skin",
+          "description": "Located within skin."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.7",
+          "name": "central to nipple",
+          "description": "Central to the nipple (central portion of the breast-behind the nipple)."
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.8",
+          "name": "superior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.9",
+          "name": "inferior"
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.10",
+          "name": "lateral"
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.11",
+          "name": "medial"
+        },
+        {
+          "value_code": "OIFMA_CDE_001564.12",
+          "name": "retroareolar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001565",
+      "name": "Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001565.0",
+          "name": "amorphous"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.1",
+          "name": "coarse"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.2",
+          "name": "dystrophic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.3",
+          "name": "eggshell"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.4",
+          "name": "fine"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.5",
+          "name": "generic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.6",
+          "name": "coarse heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.7",
+          "name": "indistinct"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.8",
+          "name": "large roadlike"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.9",
+          "name": "layering"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.10",
+          "name": "fine linear"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.11",
+          "name": "lucent centered"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.12",
+          "name": "milk of calcium"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.13",
+          "name": "fine pleomorphic"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.14",
+          "name": "punctate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.15",
+          "name": "rim"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.16",
+          "name": "round"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.17",
+          "name": "skin"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.18",
+          "name": "spherical"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.19",
+          "name": "sature"
+        },
+        {
+          "value_code": "OIFMA_CDE_001565.20",
+          "name": "vascular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001568",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001568.0",
+          "name": "fine, linear, branching"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.1",
+          "name": "clustered"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.2",
+          "name": "diffuse"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.3",
+          "name": "grouped"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.4",
+          "name": "linear"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.5",
+          "name": "regional"
+        },
+        {
+          "value_code": "OIFMA_CDE_001568.6",
+          "name": "segmental"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001569",
+      "name": "Distribution width",
+      "description": "Size of the entire region affected by abnormality in mm.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 1000,
+      "unit": "mm",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES241",
+      "display": "breast calcification"
+    }
+  ]
+}

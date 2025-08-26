@@ -1,0 +1,41 @@
+{
+  "oifm_id": "OIFM_CDE_000002",
+  "name": "Computer-Assisted Reporting / Decision Support (CAR/DS)",
+  "description": "CAR/DS defines a set of algorithms (decision trees) to generate consistent recommendations for imaging findings.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000999",
+      "name": "Presence",
+      "description": "Whether the finding is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000999.0",
+          "name": "Present",
+          "description": "The finding is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000999.1",
+          "name": "Absent",
+          "description": "The finding is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES2",
+      "display": "computer-assisted reporting / decision support (car/ds)"
+    }
+  ]
+}

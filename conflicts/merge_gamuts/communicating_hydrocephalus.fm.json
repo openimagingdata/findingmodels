@@ -1,0 +1,66 @@
+{
+  "oifm_id": "OIFM_CDE_000184",
+  "name": "Communicating Hydrocephalus",
+  "description": "Detection of Communicating Hydrocephalus",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001267",
+      "name": "Callosal angle\t",
+      "description": "Angle formed by the superior borers of the lateral ventricles in a coronal plane perpendicular to the anterior commissure posterior commissure plane.",
+      "type": "numeric",
+      "minimum": 30,
+      "maximum": 150,
+      "unit": "Degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001268",
+      "name": "Evans Index",
+      "description": "Ratio of the maximum bi-fontal width of the lateral ventricles in axial plane to the maximum internal diameter of the skull at that level",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 1,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002005",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_002005.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_002005.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_002005.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_002005.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES184",
+      "display": "communicating hydrocephalus"
+    }
+  ]
+}

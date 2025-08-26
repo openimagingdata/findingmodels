@@ -1,0 +1,41 @@
+{
+  "oifm_id": "OIFM_CDE_000154",
+  "name": "LI-RADS",
+  "description": "This module can be used for characterizing liver lesion for\n\t\t\t\tMRI",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000999",
+      "name": "Presence",
+      "description": "Whether the finding is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000999.0",
+          "name": "Present",
+          "description": "The finding is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000999.1",
+          "name": "Absent",
+          "description": "The finding is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES154",
+      "display": "li-rads"
+    }
+  ]
+}
