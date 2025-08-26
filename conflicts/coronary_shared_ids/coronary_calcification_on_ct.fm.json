@@ -1,0 +1,189 @@
+{
+  "oifm_id": "OIFM_CDE_000139",
+  "name": "Coronary Calcification on CT",
+  "description": "This module describes the Common Data elements and Macros for Coronary Calcium Detection",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000922",
+      "name": "Procedures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000922.0",
+          "name": "triggered ECG",
+          "description": "ECG triggered"
+        },
+        {
+          "value_code": "OIFMA_CDE_000922.1",
+          "name": "non-contrast CT"
+        },
+        {
+          "value_code": "OIFMA_CDE_000922.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000922.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000924",
+      "name": "Agatston score",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10000,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000925",
+      "name": "Calcium volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10000,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000926",
+      "name": "Risk category of CAD",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000926.0",
+          "name": "no evidence ",
+          "description": "No evidence of CAD: 0 calcium score."
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.1",
+          "name": "minimal ",
+          "description": "Minimal evidence of CAD: calcium score between 0 and 10."
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.2",
+          "name": "mild",
+          "description": "Mild evidence of CAD, calcium score if between 11 and 100."
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.3",
+          "name": "moderate",
+          "description": "Moderate evidence of CAD, calcium score is between 101 and 400."
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.4",
+          "name": "severe",
+          "description": "Severe evidence of CAD, calcium score is more than 400."
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000926.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001725",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001725.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001725.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001725.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001725.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001726",
+      "name": "Cardiac region location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001726.0",
+          "name": "right coronary artery (RCA)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.1",
+          "name": "left main artery (LM)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.2",
+          "name": "left anterior descending artery (LAD)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.3",
+          "name": "left circumflex coronary artery (LCX)"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.4",
+          "name": "total artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.5",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001726.6",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001727",
+      "name": "Calcified lesion count",
+      "description": "Step value: 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "unit",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001728",
+      "name": "Calcified lesion mass quantified",
+      "description": "Step value: 0.1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 10000,
+      "unit": "mg",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES139",
+      "display": "coronary calcification on ct"
+    }
+  ]
+}

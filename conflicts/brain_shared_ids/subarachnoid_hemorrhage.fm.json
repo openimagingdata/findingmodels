@@ -1,0 +1,263 @@
+{
+  "oifm_id": "OIFM_CDE_000091",
+  "name": "Subarachnoid Hemorrhage",
+  "description": "Subarachnoid hemorrhage",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000540",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000542",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000542.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000542.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000542.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000543",
+      "name": "Density",
+      "description": "Density of SAH",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000543.0",
+          "name": "high homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000543.1",
+          "name": "low homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000543.2",
+          "name": "high heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000543.3",
+          "name": "low heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000543.4",
+          "name": "Indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000543.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000546",
+      "name": "Intra-axial hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000546.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000546.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000546.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000546.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000547",
+      "name": "Extra-axial hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000547.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000547.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000547.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000547.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000548",
+      "name": "Intra-cranial mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000548.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000548.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000548.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000548.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000549",
+      "name": "Location",
+      "description": "Location of SAH",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000549.0",
+          "name": "frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.1",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.2",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.3",
+          "name": "occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.4",
+          "name": "suprasellar cistern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.5",
+          "name": "prepontine cistern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.6",
+          "name": "medullay cistern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.7",
+          "name": "perimesencephalic cistern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.8",
+          "name": "supracerebeller/pineal cistern"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.9",
+          "name": "cerebellar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.10",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000549.11",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 12
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001264",
+      "name": "Quantity",
+      "description": "Number of brain contusions",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 20,
+      "unit": "N/A",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001265",
+      "name": "Size",
+      "description": "Size of brain contusion",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001694",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001694.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001694.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001694.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001694.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES91",
+      "display": "subarachnoid hemorrhage"
+    }
+  ]
+}

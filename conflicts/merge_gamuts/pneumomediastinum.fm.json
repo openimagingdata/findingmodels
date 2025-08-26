@@ -1,0 +1,94 @@
+{
+  "oifm_id": "OIFM_CDE_000255",
+  "name": "Pneumomediastinum",
+  "description": "Pneumomediastinum is air in the mediastinum. The mediastinum is the space in the middle of the chest, between the lungs and around the heart.",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001654",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001654.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001654.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001654.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001654.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001656",
+      "name": "Size",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001656.0",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_001656.1",
+          "name": "medium"
+        },
+        {
+          "value_code": "OIFMA_CDE_001656.2",
+          "name": "large"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001999",
+      "name": "Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001999.0",
+          "name": "spontaneous",
+          "description": "Isn't caused by injury or illness, or the cause is unknown."
+        },
+        {
+          "value_code": "OIFMA_CDE_001999.1",
+          "name": "secondary",
+          "description": "Develops because of an injury or illness."
+        },
+        {
+          "value_code": "OIFMA_CDE_001999.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001999.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES255",
+      "display": "pneumomediastinum"
+    }
+  ]
+}

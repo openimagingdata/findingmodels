@@ -1,0 +1,195 @@
+{
+  "oifm_id": "OIFM_CDE_000089",
+  "name": "Epidural Hematoma",
+  "description": "Epidural Hematoma",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000521",
+      "name": "Width",
+      "description": "max width of extra-axial hematoma ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000522",
+      "name": "Volume",
+      "description": "volume of hematoma",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000524",
+      "name": "Shape",
+      "description": "shape/configuration of the extra-axial hematoma/collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000524.0",
+          "name": "crescentic"
+        },
+        {
+          "value_code": "OIFMA_CDE_000524.1",
+          "name": "lentiform"
+        },
+        {
+          "value_code": "OIFMA_CDE_000524.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000524.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000525",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000525.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000525.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000525.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000526",
+      "name": "Density",
+      "description": "Density of extra-axial hematoma/collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000526.0",
+          "name": "high homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000526.1",
+          "name": "low homogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000526.2",
+          "name": "high heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000526.3",
+          "name": "low heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_CDE_000526.4",
+          "name": "Indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000526.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000527",
+      "name": "Septations",
+      "description": "presence of exta-axial hematoma septations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000527.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000527.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000527.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000527.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000528",
+      "name": "Location",
+      "description": "location of extra-axial hematoma/collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000528.0",
+          "name": "frontal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.1",
+          "name": "parietal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.2",
+          "name": "temporal"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.3",
+          "name": "occipital"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.4",
+          "name": "parafalcine"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.5",
+          "name": "cerebellar"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.6",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000528.7",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 8
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES89",
+      "display": "epidural hematoma"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ]
+}

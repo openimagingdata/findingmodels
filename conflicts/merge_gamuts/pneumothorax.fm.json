@@ -1,0 +1,198 @@
+{
+  "oifm_id": "OIFM_CDE_000044",
+  "name": "Pneumothorax",
+  "description": "This module describes the Common Data elements and Macros for Pneumothorax",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_000418",
+      "name": "Lung tissue collapse",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000418.0",
+          "name": "complete",
+          "description": "Complete collapse"
+        },
+        {
+          "value_code": "OIFMA_CDE_000418.1",
+          "name": "partial",
+          "description": "Partial collapse"
+        },
+        {
+          "value_code": "OIFMA_CDE_000418.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000418.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000421",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000421.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000421.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_000421.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000421.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000422",
+      "name": "Pleura separation",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 40,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000423",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000423.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_000423.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_000423.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000424",
+      "name": "Size",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000424.0",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_000424.1",
+          "name": "medium"
+        },
+        {
+          "value_code": "OIFMA_CDE_000424.2",
+          "name": "large"
+        },
+        {
+          "value_code": "OIFMA_CDE_000424.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000424.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_000425",
+      "name": "Associated chest tube",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_000425.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_000425.1",
+          "name": "present, well-positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_000425.2",
+          "name": "present, positioning indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000425.3",
+          "name": "present, malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_000425.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_000425.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001653",
+      "name": "Signs of tension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001653.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001653.1",
+          "name": "contralateral mediastinal shift"
+        },
+        {
+          "value_code": "OIFMA_CDE_001653.2",
+          "name": "ipsilateral increased intercostal spaces"
+        },
+        {
+          "value_code": "OIFMA_CDE_001653.3",
+          "name": "ipsilateral hemidiaphragm depression"
+        },
+        {
+          "value_code": "OIFMA_CDE_001653.4",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001653.5",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 6
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES44",
+      "display": "pneumothorax"
+    }
+  ]
+}
