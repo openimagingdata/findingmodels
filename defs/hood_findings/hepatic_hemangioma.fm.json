@@ -1,0 +1,108 @@
+{
+  "oifm_id": "OIFM_HOOD_896547",
+  "name": "Hepatic Hemangioma",
+  "description": "Description for hepatic hemangioma",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_633615",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_633615.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_633615.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_301428",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_301428.0",
+          "name": "Right hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_301428.1",
+          "name": "Left hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_301428.2",
+          "name": "Segment",
+          "description": "Select segment"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_982353",
+      "name": "Size Finding",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_941499",
+      "name": "Enhancement Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_941499.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_HOOD_941499.1",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_HOOD_941499.2",
+          "name": "Peripheral nodular"
+        },
+        {
+          "value_code": "OIFMA_HOOD_941499.3",
+          "name": "Progressive centripetal"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_526837",
+      "name": "Number",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_526837.0",
+          "name": "Single"
+        },
+        {
+          "value_code": "OIFMA_HOOD_526837.1",
+          "name": "Multiple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

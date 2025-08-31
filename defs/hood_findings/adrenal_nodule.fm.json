@@ -1,0 +1,114 @@
+{
+  "oifm_id": "OIFM_HOOD_113455",
+  "name": "Adrenal Nodule",
+  "description": "Description for adrenal nodule",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_339152",
+      "name": "presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_339152.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_339152.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_202623",
+      "name": "status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_202623.0",
+          "name": "new"
+        },
+        {
+          "value_code": "OIFMA_HOOD_202623.1",
+          "name": "stable"
+        },
+        {
+          "value_code": "OIFMA_HOOD_202623.2",
+          "name": "enlarged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_697238",
+      "name": "size Finding",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_469386",
+      "name": "side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_469386.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_HOOD_469386.1",
+          "name": "left"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_818089",
+      "name": "Hounsfield units (HU)",
+      "description": "Hounsfield units (HU) at non-contrast CT",
+      "type": "numeric",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_276859",
+      "name": "enhancement pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_276859.0",
+          "name": "nonenhancing"
+        },
+        {
+          "value_code": "OIFMA_HOOD_276859.1",
+          "name": "enhancing"
+        },
+        {
+          "value_code": "OIFMA_HOOD_276859.2",
+          "name": "rapid wash-in and wash-out"
+        },
+        {
+          "value_code": "OIFMA_HOOD_276859.3",
+          "name": "delayed wash-out"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

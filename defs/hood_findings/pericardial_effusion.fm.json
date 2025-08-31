@@ -1,0 +1,135 @@
+{
+  "oifm_id": "OIFM_HOOD_529211",
+  "name": "Pericardial Effusion",
+  "description": "A collection of fluid in the pericardial space surrounding the heart",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_146903",
+      "name": "size Finding",
+      "description": "The size of the pericardial effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_146903.0",
+          "name": "trace",
+          "description": "≤ 5 mm"
+        },
+        {
+          "value_code": "OIFMA_HOOD_146903.1",
+          "name": "small",
+          "description": "<10 mm"
+        },
+        {
+          "value_code": "OIFMA_HOOD_146903.2",
+          "name": "moderate",
+          "description": "10-20 mm"
+        },
+        {
+          "value_code": "OIFMA_HOOD_146903.3",
+          "name": "large",
+          "description": ">20 mm"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_908353",
+      "name": "density",
+      "description": "The density of the pericardial effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_908353.0",
+          "name": "fluid",
+          "description": "Fluid density"
+        },
+        {
+          "value_code": "OIFMA_HOOD_908353.1",
+          "name": "intermediate",
+          "description": "> 30 HU"
+        },
+        {
+          "value_code": "OIFMA_HOOD_908353.2",
+          "name": "hemopericardium",
+          "description": "Presence of blood in the pericardial effusion"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_539141",
+      "name": "pericardial enhancement",
+      "description": "Presence or absence of pericardial enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_539141.0",
+          "name": "present",
+          "description": "Pericardial enhancement is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_539141.1",
+          "name": "absent",
+          "description": "Pericardial enhancement is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_808349",
+      "name": "pericardial thickening",
+      "description": "Presence or absence of pericardial thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_808349.0",
+          "name": "present",
+          "description": "Pericardial thickening is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_808349.1",
+          "name": "absent",
+          "description": "Pericardial thickening is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_880214",
+      "name": "pericardial calcification",
+      "description": "Presence or absence of pericardial calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_880214.0",
+          "name": "present",
+          "description": "Pericardial calcification is present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_880214.1",
+          "name": "absent",
+          "description": "Pericardial calcification is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

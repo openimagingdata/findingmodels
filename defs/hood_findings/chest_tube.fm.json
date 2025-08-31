@@ -1,7 +1,7 @@
 {
-  "oifm_id": "OIFM_HOOD_183536",
+  "oifm_id": "OIFM_HOOD_846463",
   "name": "Chest Tube",
-  "description": "A tube inserted into the chest to drain fluid or air.",
+  "description": "A tube inserted into the chest to drain air or fluid",
   "contributors": [
     {
       "name": "Open Imaging Data Model",
@@ -17,113 +17,226 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_230368",
-      "name": "Side",
-      "description": "The side of the chest where the tube is inserted.",
+      "oifma_id": "OIFMA_HOOD_023709",
+      "name": "presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_230368.0",
-          "name": "Left",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_023709.0",
+          "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_230368.1",
-          "name": "Right",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_023709.1",
+          "name": "absent"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_764630",
-      "name": "Type",
-      "description": "The type of chest tube.",
+      "oifma_id": "OIFMA_HOOD_757817",
+      "name": "status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_764630.0",
-          "name": "Pigtail",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_757817.0",
+          "name": "new"
         },
         {
-          "value_code": "OIFMA_HOOD_764630.1",
-          "name": "Large bore",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_757817.1",
+          "name": "unchanged"
+        },
+        {
+          "value_code": "OIFMA_HOOD_757817.2",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_HOOD_757817.3",
+          "name": "resolved"
+        },
+        {
+          "value_code": "OIFMA_HOOD_757817.4",
+          "name": "removed"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_845758",
-      "name": "Directed toward",
-      "description": "The direction in which the chest tube is inserted.",
+      "oifma_id": "OIFMA_HOOD_059141",
+      "name": "side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_845758.0",
-          "name": "Apex",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_059141.0",
+          "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_845758.1",
-          "name": "Base",
-          "description": "None"
-        },
-        {
-          "value_code": "OIFMA_HOOD_845758.2",
-          "name": "Costophrenic sulcus",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_059141.1",
+          "name": "left"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_803546",
-      "name": "Intraparechymal placement",
-      "description": "Indicates whether the chest tube is placed within the lung tissue.",
+      "oifma_id": "OIFMA_HOOD_497415",
+      "name": "location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_803546.0",
-          "name": "Yes",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_497415.0",
+          "name": "apical"
         },
         {
-          "value_code": "OIFMA_HOOD_803546.1",
-          "name": "No",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_497415.1",
+          "name": "basal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_497415.2",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_497415.3",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_HOOD_497415.4",
+          "name": "medial"
+        },
+        {
+          "value_code": "OIFMA_HOOD_497415.5",
+          "name": "lateral"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_035634",
-      "name": "Related topics",
-      "description": "Other findings or conditions related to the presence of a chest tube.",
+      "oifma_id": "OIFMA_HOOD_910827",
+      "name": "current_tip_position",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_035634.0",
-          "name": "Pleural effusion",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_910827.0",
+          "name": "pleural space"
         },
         {
-          "value_code": "OIFMA_HOOD_035634.1",
-          "name": "Pneumothorax",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_910827.1",
+          "name": "intraparenchymal"
         },
         {
-          "value_code": "OIFMA_HOOD_035634.2",
-          "name": "Post-surgical changes",
-          "description": "None"
+          "value_code": "OIFMA_HOOD_910827.2",
+          "name": "chest wall"
         }
       ],
-      "required": false,
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_656423",
+      "name": "previous_tip_position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_656423.0",
+          "name": "pleural space"
+        },
+        {
+          "value_code": "OIFMA_HOOD_656423.1",
+          "name": "intraparenchymal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_656423.2",
+          "name": "chest wall"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_973429",
+      "name": "pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_973429.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_973429.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_934426",
+      "name": "pleural_effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_934426.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_934426.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_148193",
+      "name": "hemothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_148193.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_148193.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_820846",
+      "name": "rib_fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_820846.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_820846.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_666561",
+      "name": "pulmonary_bleb",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_666561.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_666561.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
       "max_selected": 1
     }
   ]

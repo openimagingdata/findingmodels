@@ -1,0 +1,132 @@
+{
+  "oifm_id": "OIFM_HOOD_442907",
+  "name": "Picc Finding",
+  "description": "Peripherally inserted central catheter (PICC)",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_886584",
+      "name": "Side Finding",
+      "description": "The side of the body where the PICC is inserted",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_886584.0",
+          "name": "Left upper extremity"
+        },
+        {
+          "value_code": "OIFMA_HOOD_886584.1",
+          "name": "Right upper extremity"
+        },
+        {
+          "value_code": "OIFMA_HOOD_886584.2",
+          "name": "Left lower extremity"
+        },
+        {
+          "value_code": "OIFMA_HOOD_886584.3",
+          "name": "Right lower extremity"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_091398",
+      "name": "Distal tip location",
+      "description": "The location of the distal tip of the PICC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_091398.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.2",
+          "name": "SVC"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_HOOD_091398.6",
+          "name": "Internal jugular vein"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_276216",
+      "name": "Appropriate location",
+      "description": "Whether the location of the PICC is appropriate",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_276216.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_HOOD_276216.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_195501",
+      "name": "Change from prior",
+      "description": "Any change in the PICC placement from the prior study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_195501.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_HOOD_195501.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_HOOD_195501.2",
+          "name": "Retracted"
+        },
+        {
+          "value_code": "OIFMA_HOOD_195501.3",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_HOOD_195501.4",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "oifm_id": "OIFM_HOOD_545209",
+  "name": "Thymus",
+  "description": "Description for Thymus",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_865053",
+      "name": "Presence of Thymic Tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_865053.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_HOOD_865053.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_101151",
+      "name": "Size Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_101151.0",
+          "name": "Normal"
+        },
+        {
+          "value_code": "OIFMA_HOOD_101151.1",
+          "name": "Enlarged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_307589",
+      "name": "Consistency",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_307589.0",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_HOOD_307589.1",
+          "name": "Heterogeneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_614396",
+      "name": "Calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_614396.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_614396.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_728960",
+      "name": "Fatty Involution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_728960.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_HOOD_728960.1",
+          "name": "Partial"
+        },
+        {
+          "value_code": "OIFMA_HOOD_728960.2",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_537792",
+      "name": "Cystic Changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_537792.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_537792.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_775342",
+      "name": "Thymoma / Thymic Mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_775342.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_775342.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

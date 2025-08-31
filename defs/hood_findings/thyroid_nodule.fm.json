@@ -1,0 +1,253 @@
+{
+  "oifm_id": "OIFM_HOOD_693776",
+  "name": "Thyroid Nodule",
+  "description": "A finding characterized by the presence of a nodule in the thyroid gland.",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_018957",
+      "name": "Presence of Thyroid Nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_018957.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_018957.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_769355",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_769355.0",
+          "name": "New"
+        },
+        {
+          "value_code": "OIFMA_HOOD_769355.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_HOOD_769355.2",
+          "name": "Increased"
+        },
+        {
+          "value_code": "OIFMA_HOOD_769355.3",
+          "name": "Decreased"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_849615",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_849615.0",
+          "name": "Right lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_849615.1",
+          "name": "Left lobe"
+        },
+        {
+          "value_code": "OIFMA_HOOD_849615.2",
+          "name": "Isthmus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_175885",
+      "name": "Size (cm)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_414910",
+      "name": "Composition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_414910.0",
+          "name": "Cystic"
+        },
+        {
+          "value_code": "OIFMA_HOOD_414910.1",
+          "name": "Solid"
+        },
+        {
+          "value_code": "OIFMA_HOOD_414910.2",
+          "name": "Mixed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_776113",
+      "name": "Calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_776113.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_776113.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_478037",
+      "name": "Margins",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_478037.0",
+          "name": "Smooth"
+        },
+        {
+          "value_code": "OIFMA_HOOD_478037.1",
+          "name": "Irregular"
+        },
+        {
+          "value_code": "OIFMA_HOOD_478037.2",
+          "name": "Lobulated"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_981928",
+      "name": "Enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_981928.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_981928.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_494324",
+      "name": "Prior Fine Needle Aspiration",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_494324.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_HOOD_494324.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_380023",
+      "name": "Prior Fine Needle Aspiration Date",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_380023.0",
+          "name": "Specify date"
+        },
+        {
+          "value_code": "OIFMA_HOOD_380023.1",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_068582",
+      "name": "Invasion Into Adjacent Structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_068582.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_068582.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_048860",
+      "name": "Cervical Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_048860.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_048860.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_496662",
+      "name": "Thyroid Goiter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_496662.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_496662.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

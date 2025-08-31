@@ -1,0 +1,293 @@
+{
+  "oifm_id": "OIFM_HOOD_675653",
+  "name": "Interlobular Septal Thickening",
+  "description": "Description for Interlobular Septal Thickening",
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_HOOD_756296",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_756296.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_756296.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_241845",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_241845.0",
+          "name": "New"
+        },
+        {
+          "value_code": "OIFMA_HOOD_241845.1",
+          "name": "Stable"
+        },
+        {
+          "value_code": "OIFMA_HOOD_241845.2",
+          "name": "Worsened"
+        },
+        {
+          "value_code": "OIFMA_HOOD_241845.3",
+          "name": "Improved"
+        },
+        {
+          "value_code": "OIFMA_HOOD_241845.4",
+          "name": "Progressing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_427456",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_427456.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_HOOD_427456.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_HOOD_427456.2",
+          "name": "Severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_404199",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_404199.0",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_HOOD_404199.1",
+          "name": "Diffuse"
+        },
+        {
+          "value_code": "OIFMA_HOOD_404199.2",
+          "name": "Bilateral"
+        },
+        {
+          "value_code": "OIFMA_HOOD_404199.3",
+          "name": "Patchy"
+        },
+        {
+          "value_code": "OIFMA_HOOD_404199.4",
+          "name": "Throughout the lungs"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_037218",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_037218.0",
+          "name": "Bilateral"
+        },
+        {
+          "value_code": "OIFMA_HOOD_037218.1",
+          "name": "Unilateral"
+        },
+        {
+          "value_code": "OIFMA_HOOD_037218.2",
+          "name": "Periphery"
+        },
+        {
+          "value_code": "OIFMA_HOOD_037218.3",
+          "name": "Central"
+        },
+        {
+          "value_code": "OIFMA_HOOD_037218.4",
+          "name": "Specific lobes or segments"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_562378",
+      "name": "Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_562378.0",
+          "name": "Smooth"
+        },
+        {
+          "value_code": "OIFMA_HOOD_562378.1",
+          "name": "Nodular"
+        },
+        {
+          "value_code": "OIFMA_HOOD_562378.2",
+          "name": "Irregular"
+        },
+        {
+          "value_code": "OIFMA_HOOD_562378.3",
+          "name": "Kerley lines"
+        },
+        {
+          "value_code": "OIFMA_HOOD_562378.4",
+          "name": "Reticular patterns"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_010619",
+      "name": "Pleural effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_010619.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_010619.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_287262",
+      "name": "Ground-glass opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_287262.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_287262.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_652788",
+      "name": "Honeycombing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_652788.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_652788.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_779662",
+      "name": "Consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_779662.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_779662.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_794894",
+      "name": "Pulmonary edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_794894.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_794894.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_944109",
+      "name": "Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_944109.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_HOOD_944109.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_HOOD_853273",
+      "name": "Pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_HOOD_853273.0",
+          "name": "Indicated by other findings"
+        },
+        {
+          "value_code": "OIFMA_HOOD_853273.1",
+          "name": "Not indicated"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}
