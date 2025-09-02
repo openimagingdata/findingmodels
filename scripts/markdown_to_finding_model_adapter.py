@@ -73,7 +73,7 @@ class MarkdownToFindingModelAdapter:
             print(f"  Generated description for '{finding_name}': {model.description[:100]}...")
             
             # Add our custom enhancements
-            full_model = add_ids_to_model(model, source="HOOD")
+            full_model = add_ids_to_model(model, source="MGB")
             add_standard_codes_to_model(full_model)
             full_model.contributors = MarkdownToFindingModelAdapter._create_default_contributors()
             
