@@ -1,10 +1,16 @@
+import asyncio
 import json
 import os
 from typing import Dict, List
 from pathlib import Path
 
+from dotenv import load_dotenv
 from findingmodel import FindingModelFull
 from findingmodel.common import model_file_name
+from findingmodel.tools import create_info_from_name
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 class HoodJsonAdapter:
@@ -37,58 +43,57 @@ class HoodJsonAdapter:
         """Expand short names to be more descriptive while maintaining medical meaning."""
         # Common medical abbreviations that need expansion
         expansions = {
-            "T0": "T0 Stage",
-            "T1": "T1 Stage", 
-            "T2": "T2 Stage",
-            "T3": "T3 Stage",
-            "T4": "T4 Stage",
-            "T5": "T5 Stage",
-            "T6": "T6 Stage",
-            "T7": "T7 Stage",
-            "T8": "T8 Stage",
-            "T9": "T9 Stage",
-            "C1": "C1 Vertebra",
-            "C2": "C2 Vertebra",
-            "C3": "C3 Vertebra",
-            "C4": "C4 Vertebra",
-            "C5": "C5 Vertebra",
-            "C6": "C6 Vertebra",
-            "C7": "C7 Vertebra",
-            "L1": "L1 Vertebra",
-            "L2": "L2 Vertebra",
-            "L3": "L3 Vertebra",
-            "L4": "L4 Vertebra",
-            "L5": "L5 Vertebra",
-            "S1": "S1 Vertebra",
-            "S2": "S2 Vertebra",
-            "S3": "S3 Vertebra",
-            "S4": "S4 Vertebra",
-            "S5": "S5 Vertebra",
-            "A0": "A0 Stage",
-            "A1": "A1 Stage",
-            "A2": "A2 Stage",
-            "A3": "A3 Stage",
-            "A4": "A4 Stage",
-            "B1": "B1 Stage",
-            "B2": "B2 Stage",
-            "B3": "B3 Stage",
-            "M1": "M1 Stage",
-            "M2": "M2 Stage",
-            "M3": "M3 Stage",
-            "M4": "M4 Stage",
-            "F1": "F1 Stage",
-            "F2": "F2 Stage",
-            "F3": "F3 Stage",
-            "F4": "F4 Stage",
-            # Additional medical abbreviations from hood data
-            "Cabg": "CABG Surgery",
-            "Ipmn": "IPMN Lesion",
-            "Picc": "PICC Line",
-            "CVC": "Central Venous Catheter",
-            "ECMO": "ECMO Cannula",
-            "LVAD": "LVAD Device",
-            "PFO": "PFO Closure",
-            "UIP": "UIP Pattern"
+            "T0": "T0 stage",
+            "T1": "T1 stage", 
+            "T2": "T2 stage",
+            "T3": "T3 stage",
+            "T4": "T4 stage",
+            "T5": "T5 stage",
+            "T6": "T6 stage",
+            "T7": "T7 stage",
+            "T8": "T8 stage",
+            "T9": "T9 stage",
+            "C1": "C1 vertebra",
+            "C2": "C2 vertebra",
+            "C3": "C3 vertebra",
+            "C4": "C4 vertebra",
+            "C5": "C5 vertebra",
+            "C6": "C6 vertebra",
+            "C7": "C7 vertebra",
+            "L1": "L1 vertebra",
+            "L2": "L2 vertebra",
+            "L3": "L3 vertebra",
+            "L4": "L4 vertebra",
+            "L5": "L5 vertebra",
+            "S1": "S1 vertebra",
+            "S2": "S2 vertebra",
+            "S3": "S3 vertebra",
+            "S4": "S4 vertebra",
+            "S5": "S5 vertebra",
+            "A0": "A0 stage",
+            "A1": "A1 stage",
+            "A2": "A2 stage",
+            "A3": "A3 stage",
+            "A4": "A4 stage",
+            "B1": "B1 stage",
+            "B2": "B2 stage",
+            "B3": "B3 stage",
+            "M1": "M1 stage",
+            "M2": "M2 stage",
+            "M3": "M3 stage",
+            "M4": "M4 stage",
+            "F1": "F1 stage",
+            "F2": "F2 stage",
+            "F3": "F3 stage",
+            "F4": "F4 stage",
+            "Cabg": "CABG surgery",
+            "Ipmn": "IPMN lesion",
+            "Picc": "PICC line",
+            "CVC": "central venous catheter",
+            "ECMO": "ECMO cannula",
+            "LVAD": "LVAD device",
+            "PFO": "PFO closure",
+            "UIP": "UIP pattern"
         }
         
         # Check if name needs expansion
@@ -149,7 +154,7 @@ class HoodJsonAdapter:
         ]
 
     @staticmethod
-    def adapt_hood_json(hood_data: Dict, filename: str) -> Dict:
+    async def adapt_hood_json(hood_data: Dict, filename: str) -> Dict:
         """Adapt hood JSON format to FindingModel format."""
         finding_name = hood_data["finding_name"]
         model_id = HoodJsonAdapter._generate_model_id(filename)
@@ -159,11 +164,16 @@ class HoodJsonAdapter:
         if expanded_finding_name != finding_name:
             print(f"  Fixed: Short name '{finding_name}' -> '{expanded_finding_name}'")
         
-        # Handle description - main finding description is required, so provide fallback
+        # Handle description - use create_info_from_name if description is too short
         description = hood_data.get("description", "")
         if not description or len(description) < 5:
-            description = f"Description for {expanded_finding_name}"  # Required field needs fallback
-            print(f"  Fixed: Short description -> '{description}'")
+            try:
+                finding_info = await create_info_from_name(expanded_finding_name)
+                description = finding_info.description
+                print(f"  Generated description for '{expanded_finding_name}': {description[:100]}...")
+            except Exception as e:
+                print(f"  Warning: Could not generate description for '{expanded_finding_name}': {e}")
+                description = f"Description for {expanded_finding_name}"
         else:
             description = HoodJsonAdapter._truncate_description(description)
         
@@ -222,7 +232,7 @@ class HoodJsonAdapter:
         return finding_model
 
     @staticmethod
-    def process_file(input_file: str, output_dir: str) -> bool:
+    async def process_file(input_file: str, output_dir: str) -> bool:
         try:
             # Try multiple encodings to handle Unicode issues
             try:
@@ -238,7 +248,7 @@ class HoodJsonAdapter:
             
             filename = Path(input_file).name
             
-            finding_model_dict = HoodJsonAdapter.adapt_hood_json(hood_data, filename)
+            finding_model_dict = await HoodJsonAdapter.adapt_hood_json(hood_data, filename)
             
             fm = FindingModelFull(**finding_model_dict)
             output_file = Path(output_dir) / model_file_name(fm.name)
@@ -255,7 +265,7 @@ class HoodJsonAdapter:
             return False
 
     @staticmethod
-    def process_directory(input_dir: str, output_dir: str):
+    async def process_directory(input_dir: str, output_dir: str):
         """Process all JSON files in a directory."""
         os.makedirs(output_dir, exist_ok=True)
         
@@ -274,7 +284,7 @@ class HoodJsonAdapter:
                 input_file = os.path.join(input_dir, filename)
                 
                 print(f"Processing {filename}...")
-                if HoodJsonAdapter.process_file(input_file, output_dir):
+                if await HoodJsonAdapter.process_file(input_file, output_dir):
                     successful_count += 1
                 else:
                     failed_count += 1
@@ -297,15 +307,15 @@ class HoodJsonAdapter:
         print("Processing complete!")
 
 
-def main():
+async def main():
     input_dir = "../CDEStaging/definitions/hood_CT_chest"
     output_dir = "defs/hood_findings"
     
     print(f"Adapting hood JSON files from {input_dir}")
     print(f"Output directory: {output_dir}")
     
-    HoodJsonAdapter.process_directory(input_dir, output_dir)
+    await HoodJsonAdapter.process_directory(input_dir, output_dir)
 
 
 if __name__ == "__main__":
-    main() 
+    asyncio.run(main()) 
