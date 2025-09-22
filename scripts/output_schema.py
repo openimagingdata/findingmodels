@@ -1,9 +1,3 @@
-# /// script
-# requires-python = ">=3.13"
-# dependencies = [
-#     "findingmodel",
-# ]
-# ///
 import json
 
 from findingmodel import FindingModelFull
