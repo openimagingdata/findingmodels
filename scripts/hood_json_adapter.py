@@ -169,7 +169,7 @@ class HoodJsonAdapter:
             "contributors": HoodJsonAdapter._create_default_contributors()
         }
         
-        # Process attributes and add them to the dict
+        # Process attributes and \ them to the dict
         for i, attribute in enumerate(hood_data.get("attributes", [])):
             # Expand short attribute names using the same method as CDE converter
             attr_name = HoodJsonAdapter._expand_short_name(attribute["name"])
@@ -225,7 +225,7 @@ class HoodJsonAdapter:
         base_model = FindingModelBase(**finding_model_dict)
         
         # Use the built-in tool to add IDs
-        full_model = add_ids_to_model(base_model, source="HOOD")
+        full_model = add_ids_to_model(base_model, source="MGB")
         
         return full_model
 
