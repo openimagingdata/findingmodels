@@ -1,0 +1,261 @@
+{
+  "oifm_id": "OIFM_GMTS_009205",
+  "name": "soft-tissue neck mass",
+  "description": "Mass of soft tissue density located in the neck region.",
+  "tags": [
+    "head_neck",
+    "CT",
+    "MR",
+    "US",
+    "neck",
+    "neoplastic",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "name": "Radiology Gamuts Ontology",
+      "code": "GMTS",
+      "url": "https://gamuts.net/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_028510",
+      "name": "presence",
+      "description": "Presence or absence of soft-tissue neck mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_028510.0",
+          "name": "absent",
+          "description": "Soft-tissue neck mass is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_028510.1",
+          "name": "present",
+          "description": "Soft-tissue neck mass is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_028510.2",
+          "name": "indeterminate",
+          "description": "Presence of soft-tissue neck mass cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_028510.3",
+          "name": "unknown",
+          "description": "Presence of soft-tissue neck mass is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_134383",
+      "name": "change from prior",
+      "description": "Whether and how a soft-tissue neck mass has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_134383.0",
+          "name": "unchanged",
+          "description": "Soft-tissue neck mass is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.1",
+          "name": "stable",
+          "description": "Soft-tissue neck mass is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.2",
+          "name": "new",
+          "description": "Soft-tissue neck mass is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.3",
+          "name": "resolved",
+          "description": "Soft-tissue neck mass seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.4",
+          "name": "increased",
+          "description": "Soft-tissue neck mass has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.5",
+          "name": "decreased",
+          "description": "Soft-tissue neck mass has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.6",
+          "name": "larger",
+          "description": "Soft-tissue neck mass is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_GMTS_134383.7",
+          "name": "smaller",
+          "description": "Soft-tissue neck mass is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "GAMUTS",
+      "code": "9205",
+      "display": "soft-tissue neck mass"
+    }
+  ]
+}
