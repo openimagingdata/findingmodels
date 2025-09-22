@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_764257",
+  "oifm_id": "OIFM_HOOD_813537",
   "name": "Hepatic Cyst",
   "description": "A fluid-filled sac in the liver.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_724288",
+      "oifma_id": "OIFMA_HOOD_778908",
       "name": "Multiplicity",
       "description": "The number of cysts present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_724288.0",
+          "value_code": "OIFMA_HOOD_778908.0",
           "name": "Single"
         },
         {
-          "value_code": "OIFMA_HOOD_724288.1",
+          "value_code": "OIFMA_HOOD_778908.1",
           "name": "Multiple"
         }
       ],
@@ -35,58 +22,58 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_646850",
+      "oifma_id": "OIFMA_HOOD_312773",
       "name": "Location",
       "description": "The specific location of the cyst.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_646850.0",
+          "value_code": "OIFMA_HOOD_312773.0",
           "name": "Hepatic (unspecified)",
           "description": "The cyst is located in the liver."
         },
         {
-          "value_code": "OIFMA_HOOD_646850.1",
+          "value_code": "OIFMA_HOOD_312773.1",
           "name": "Left hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.2",
+          "value_code": "OIFMA_HOOD_312773.2",
           "name": "Right hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.3",
+          "value_code": "OIFMA_HOOD_312773.3",
           "name": "Hepatic segment 1"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.4",
+          "value_code": "OIFMA_HOOD_312773.4",
           "name": "Hepatic segment 2"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.5",
+          "value_code": "OIFMA_HOOD_312773.5",
           "name": "Hepatic segment 3"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.6",
+          "value_code": "OIFMA_HOOD_312773.6",
           "name": "Hepatic segment 4a"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.7",
+          "value_code": "OIFMA_HOOD_312773.7",
           "name": "Hepatic segment 4b"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.8",
+          "value_code": "OIFMA_HOOD_312773.8",
           "name": "Hepatic segment 5"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.9",
+          "value_code": "OIFMA_HOOD_312773.9",
           "name": "Hepatic segment 6"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.10",
+          "value_code": "OIFMA_HOOD_312773.10",
           "name": "Hepatic segment 7"
         },
         {
-          "value_code": "OIFMA_HOOD_646850.11",
+          "value_code": "OIFMA_HOOD_312773.11",
           "name": "Hepatic segment 8"
         }
       ],
@@ -94,7 +81,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_462783",
+      "oifma_id": "OIFMA_HOOD_095167",
       "name": "Size of largest cyst",
       "description": "The size of the largest cyst in centimeters.",
       "type": "numeric",
@@ -102,22 +89,22 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_238859",
+      "oifma_id": "OIFMA_HOOD_815990",
       "name": "Stability",
       "description": "The stability of the cyst.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_238859.0",
+          "value_code": "OIFMA_HOOD_815990.0",
           "name": "Unchanged",
           "description": "The cyst has not changed in size."
         },
         {
-          "value_code": "OIFMA_HOOD_238859.1",
+          "value_code": "OIFMA_HOOD_815990.1",
           "name": "Increased"
         },
         {
-          "value_code": "OIFMA_HOOD_238859.2",
+          "value_code": "OIFMA_HOOD_815990.2",
           "name": "Decreased"
         }
       ],

@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_180740",
+  "oifm_id": "OIFM_HOOD_875157",
   "name": "Airway Mucus Plugging",
   "description": "Mucus plugging in the airways.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_587701",
+      "oifma_id": "OIFMA_HOOD_226350",
       "name": "Presence",
       "description": "Presence of mucus plugging",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_587701.0",
+          "value_code": "OIFMA_HOOD_226350.0",
           "name": "Present",
           "description": "Mucus plugging is present"
         },
         {
-          "value_code": "OIFMA_HOOD_587701.1",
+          "value_code": "OIFMA_HOOD_226350.1",
           "name": "Absent",
           "description": "Mucus plugging is absent"
         }
@@ -37,23 +24,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_700844",
+      "oifma_id": "OIFMA_HOOD_496808",
       "name": "Location",
       "description": "Location of mucus plugging",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_700844.0",
+          "value_code": "OIFMA_HOOD_496808.0",
           "name": "Central airways",
           "description": "Mucus plugging in the central airways"
         },
         {
-          "value_code": "OIFMA_HOOD_700844.1",
+          "value_code": "OIFMA_HOOD_496808.1",
           "name": "Segmental bronchi",
           "description": "Mucus plugging in the segmental bronchi"
         },
         {
-          "value_code": "OIFMA_HOOD_700844.2",
+          "value_code": "OIFMA_HOOD_496808.2",
           "name": "Subsegmental bronchi",
           "description": "Mucus plugging in the subsegmental bronchi"
         }
@@ -62,23 +49,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_656049",
+      "oifma_id": "OIFMA_HOOD_666651",
       "name": "Extent",
       "description": "Extent of mucus plugging",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_656049.0",
+          "value_code": "OIFMA_HOOD_666651.0",
           "name": "Focal",
           "description": "Mucus plugging is focal"
         },
         {
-          "value_code": "OIFMA_HOOD_656049.1",
+          "value_code": "OIFMA_HOOD_666651.1",
           "name": "Multifocal",
           "description": "Mucus plugging is multifocal"
         },
         {
-          "value_code": "OIFMA_HOOD_656049.2",
+          "value_code": "OIFMA_HOOD_666651.2",
           "name": "Diffuse",
           "description": "Mucus plugging is diffuse"
         }
@@ -87,18 +74,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_320133",
+      "oifma_id": "OIFMA_HOOD_562995",
       "name": "Airway Wall Thickening",
       "description": "Presence of airway wall thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_320133.0",
+          "value_code": "OIFMA_HOOD_562995.0",
           "name": "Present",
           "description": "Airway wall thickening is present"
         },
         {
-          "value_code": "OIFMA_HOOD_320133.1",
+          "value_code": "OIFMA_HOOD_562995.1",
           "name": "Absent",
           "description": "Airway wall thickening is absent"
         }
@@ -107,18 +94,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_662170",
+      "oifma_id": "OIFMA_HOOD_118355",
       "name": "Bronchiectasis",
       "description": "Presence of bronchiectasis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_662170.0",
+          "value_code": "OIFMA_HOOD_118355.0",
           "name": "Present",
           "description": "Bronchiectasis is present"
         },
         {
-          "value_code": "OIFMA_HOOD_662170.1",
+          "value_code": "OIFMA_HOOD_118355.1",
           "name": "Absent",
           "description": "Bronchiectasis is absent"
         }
@@ -127,18 +114,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_058511",
+      "oifma_id": "OIFMA_HOOD_499951",
       "name": "Consolidation",
       "description": "Presence of consolidation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_058511.0",
+          "value_code": "OIFMA_HOOD_499951.0",
           "name": "Present",
           "description": "Consolidation is present"
         },
         {
-          "value_code": "OIFMA_HOOD_058511.1",
+          "value_code": "OIFMA_HOOD_499951.1",
           "name": "Absent",
           "description": "Consolidation is absent"
         }
@@ -147,18 +134,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_197855",
+      "oifma_id": "OIFMA_HOOD_526683",
       "name": "Ground Glass Opacities",
       "description": "Presence of ground glass opacities",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_197855.0",
+          "value_code": "OIFMA_HOOD_526683.0",
           "name": "Present",
           "description": "Ground glass opacities are present"
         },
         {
-          "value_code": "OIFMA_HOOD_197855.1",
+          "value_code": "OIFMA_HOOD_526683.1",
           "name": "Absent",
           "description": "Ground glass opacities are absent"
         }

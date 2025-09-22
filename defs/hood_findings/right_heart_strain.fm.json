@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_591873",
+  "oifm_id": "OIFM_HOOD_949459",
   "name": "Right Heart Strain",
   "description": "Right heart strain is characterized by the dilation of the right ventricle, right atrial enlargement, and bowing of the interventricular septum.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_428094",
+      "oifma_id": "OIFMA_HOOD_008629",
       "name": "Presence",
       "description": "Indicates whether right heart strain is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_428094.0",
+          "value_code": "OIFMA_HOOD_008629.0",
           "name": "Present",
           "description": "Right heart strain is present."
         },
         {
-          "value_code": "OIFMA_HOOD_428094.1",
+          "value_code": "OIFMA_HOOD_008629.1",
           "name": "Absent",
           "description": "Right heart strain is absent."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_362340",
+      "oifma_id": "OIFMA_HOOD_727686",
       "name": "Dilation of Right Ventricle",
       "description": "Indicates whether there is dilation of the right ventricle.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_362340.0",
+          "value_code": "OIFMA_HOOD_727686.0",
           "name": "Yes",
           "description": "There is dilation of the right ventricle."
         },
         {
-          "value_code": "OIFMA_HOOD_362340.1",
+          "value_code": "OIFMA_HOOD_727686.1",
           "name": "No",
           "description": "There is no dilation of the right ventricle."
         }
@@ -57,18 +44,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_178221",
+      "oifma_id": "OIFMA_HOOD_133806",
       "name": "Right Atrial Enlargement",
       "description": "Indicates whether there is right atrial enlargement.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_178221.0",
+          "value_code": "OIFMA_HOOD_133806.0",
           "name": "Yes",
           "description": "There is right atrial enlargement."
         },
         {
-          "value_code": "OIFMA_HOOD_178221.1",
+          "value_code": "OIFMA_HOOD_133806.1",
           "name": "No",
           "description": "There is no right atrial enlargement."
         }
@@ -77,18 +64,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_476095",
+      "oifma_id": "OIFMA_HOOD_106419",
       "name": "Bowing of Interventricular Septum",
       "description": "Indicates whether there is bowing of the interventricular septum.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_476095.0",
+          "value_code": "OIFMA_HOOD_106419.0",
           "name": "Yes",
           "description": "There is bowing of the interventricular septum."
         },
         {
-          "value_code": "OIFMA_HOOD_476095.1",
+          "value_code": "OIFMA_HOOD_106419.1",
           "name": "No",
           "description": "There is no bowing of the interventricular septum."
         }
@@ -97,7 +84,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_094813",
+      "oifma_id": "OIFMA_HOOD_017744",
       "name": "RV/LV Ratio",
       "description": "Ratio of the right ventricular diameter to the left ventricular diameter.",
       "type": "numeric",

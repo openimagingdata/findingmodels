@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_282436",
+  "oifm_id": "OIFM_HOOD_608570",
   "name": "Free Fluid",
   "description": "Presence of free fluid in the abdominal cavity, also known as ascites",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_347066",
+      "oifma_id": "OIFMA_HOOD_785029",
       "name": "Presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_347066.0",
+          "value_code": "OIFMA_HOOD_785029.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_347066.1",
+          "value_code": "OIFMA_HOOD_785029.1",
           "name": "Absent"
         }
       ],
@@ -34,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_960437",
+      "oifma_id": "OIFMA_HOOD_747438",
       "name": "Volume",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_960437.0",
+          "value_code": "OIFMA_HOOD_747438.0",
           "name": "Small"
         },
         {
-          "value_code": "OIFMA_HOOD_960437.1",
+          "value_code": "OIFMA_HOOD_747438.1",
           "name": "Moderate"
         },
         {
-          "value_code": "OIFMA_HOOD_960437.2",
+          "value_code": "OIFMA_HOOD_747438.2",
           "name": "Large"
         }
       ],
@@ -55,28 +42,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_505764",
+      "oifma_id": "OIFMA_HOOD_149945",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_505764.0",
+          "value_code": "OIFMA_HOOD_149945.0",
           "name": "Upper abdominal"
         },
         {
-          "value_code": "OIFMA_HOOD_505764.1",
+          "value_code": "OIFMA_HOOD_149945.1",
           "name": "Perihepatic"
         },
         {
-          "value_code": "OIFMA_HOOD_505764.2",
+          "value_code": "OIFMA_HOOD_149945.2",
           "name": "Perisplenic"
         },
         {
-          "value_code": "OIFMA_HOOD_505764.3",
+          "value_code": "OIFMA_HOOD_149945.3",
           "name": "Morrison's pouch"
         },
         {
-          "value_code": "OIFMA_HOOD_505764.4",
+          "value_code": "OIFMA_HOOD_149945.4",
           "name": "Subphrenic"
         }
       ],
@@ -84,16 +71,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_062032",
+      "oifma_id": "OIFMA_HOOD_160333",
       "name": "Attenuation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_062032.0",
+          "value_code": "OIFMA_HOOD_160333.0",
           "name": "Simple"
         },
         {
-          "value_code": "OIFMA_HOOD_062032.1",
+          "value_code": "OIFMA_HOOD_160333.1",
           "name": "Complex"
         }
       ],
@@ -101,16 +88,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_009893",
+      "oifma_id": "OIFMA_HOOD_980656",
       "name": "Hemoperitoneum",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_009893.0",
+          "value_code": "OIFMA_HOOD_980656.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_009893.1",
+          "value_code": "OIFMA_HOOD_980656.1",
           "name": "Absent"
         }
       ],
@@ -118,16 +105,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_756085",
+      "oifma_id": "OIFMA_HOOD_020559",
       "name": "Organ Injury",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_756085.0",
+          "value_code": "OIFMA_HOOD_020559.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_756085.1",
+          "value_code": "OIFMA_HOOD_020559.1",
           "name": "Absent"
         }
       ],
@@ -135,16 +122,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_906123",
+      "oifma_id": "OIFMA_HOOD_079576",
       "name": "Pneumoperitoneum",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_906123.0",
+          "value_code": "OIFMA_HOOD_079576.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_906123.1",
+          "value_code": "OIFMA_HOOD_079576.1",
           "name": "Absent"
         }
       ],

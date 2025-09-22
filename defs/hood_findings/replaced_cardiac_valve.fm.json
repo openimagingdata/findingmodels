@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_454255",
+  "oifm_id": "OIFM_HOOD_225216",
   "name": "Replaced Cardiac Valve",
   "description": "A finding indicating the presence of a replaced cardiac valve.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_729454",
+      "oifma_id": "OIFMA_HOOD_232192",
       "name": "Aortic Valve",
       "description": "The type of replacement valve used in the aortic position.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_729454.0",
+          "value_code": "OIFMA_HOOD_232192.0",
           "name": "Bioprosthetic Valve",
           "description": "A bioprosthetic valve used in the aortic position."
         },
         {
-          "value_code": "OIFMA_HOOD_729454.1",
+          "value_code": "OIFMA_HOOD_232192.1",
           "name": "TAVR",
           "description": "A TAVR procedure performed in the aortic position."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_991800",
+      "oifma_id": "OIFMA_HOOD_853553",
       "name": "Mitral Valve",
       "description": "The presence or absence of a replacement valve in the mitral position.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_991800.0",
+          "value_code": "OIFMA_HOOD_853553.0",
           "name": "Present",
           "description": "A replacement valve is present in the mitral position."
         },
         {
-          "value_code": "OIFMA_HOOD_991800.1",
+          "value_code": "OIFMA_HOOD_853553.1",
           "name": "Absent",
           "description": "No replacement valve is present in the mitral position."
         }
@@ -57,18 +44,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_928151",
+      "oifma_id": "OIFMA_HOOD_357979",
       "name": "Pulmonary Valve",
       "description": "The presence or absence of a replacement valve in the pulmonary position.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_928151.0",
+          "value_code": "OIFMA_HOOD_357979.0",
           "name": "Present",
           "description": "A replacement valve is present in the pulmonary position."
         },
         {
-          "value_code": "OIFMA_HOOD_928151.1",
+          "value_code": "OIFMA_HOOD_357979.1",
           "name": "Absent",
           "description": "No replacement valve is present in the pulmonary position."
         }
@@ -77,18 +64,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_257493",
+      "oifma_id": "OIFMA_HOOD_131014",
       "name": "Tricuspid Valve",
       "description": "The presence or absence of a replacement valve in the tricuspid position.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_257493.0",
+          "value_code": "OIFMA_HOOD_131014.0",
           "name": "Present",
           "description": "A replacement valve is present in the tricuspid position."
         },
         {
-          "value_code": "OIFMA_HOOD_257493.1",
+          "value_code": "OIFMA_HOOD_131014.1",
           "name": "Absent",
           "description": "No replacement valve is present in the tricuspid position."
         }

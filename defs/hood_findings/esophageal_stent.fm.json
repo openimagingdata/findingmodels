@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_767700",
+  "oifm_id": "OIFM_HOOD_122343",
   "name": "Esophageal Stent",
   "description": "Esophageal stent is used to treat strictures or blockages in the esophagus.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_786933",
+      "oifma_id": "OIFMA_HOOD_927616",
       "name": "Presence of Esophageal Stent",
       "description": "Whether an esophageal stent is present or not.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_786933.0",
+          "value_code": "OIFMA_HOOD_927616.0",
           "name": "Present",
           "description": "An esophageal stent is present."
         },
         {
-          "value_code": "OIFMA_HOOD_786933.1",
+          "value_code": "OIFMA_HOOD_927616.1",
           "name": "Absent",
           "description": "No esophageal stent is present."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_659799",
+      "oifma_id": "OIFMA_HOOD_958365",
       "name": "Status",
       "description": "The status of the esophageal stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_659799.0",
+          "value_code": "OIFMA_HOOD_958365.0",
           "name": "New placement",
           "description": "The esophageal stent is newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_659799.1",
+          "value_code": "OIFMA_HOOD_958365.1",
           "name": "Unchanged",
           "description": "The esophageal stent remains unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_659799.2",
+          "value_code": "OIFMA_HOOD_958365.2",
           "name": "Complication",
           "description": "There is a complication related to the esophageal stent."
         },
         {
-          "value_code": "OIFMA_HOOD_659799.3",
+          "value_code": "OIFMA_HOOD_958365.3",
           "name": "Removed",
           "description": "The esophageal stent has been removed."
         }
@@ -67,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_029461",
+      "oifma_id": "OIFMA_HOOD_218505",
       "name": "Location",
       "description": "The location of the esophageal stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_029461.0",
+          "value_code": "OIFMA_HOOD_218505.0",
           "name": "Upper esophagus",
           "description": "The esophageal stent is located in the upper esophagus."
         },
         {
-          "value_code": "OIFMA_HOOD_029461.1",
+          "value_code": "OIFMA_HOOD_218505.1",
           "name": "Mid esophagus",
           "description": "The esophageal stent is located in the mid esophagus."
         },
         {
-          "value_code": "OIFMA_HOOD_029461.2",
+          "value_code": "OIFMA_HOOD_218505.2",
           "name": "Lower esophagus",
           "description": "The esophageal stent is located in the lower esophagus."
         }
@@ -92,23 +79,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_280789",
+      "oifma_id": "OIFMA_HOOD_438498",
       "name": "Type Finding",
       "description": "The type of esophageal stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_280789.0",
+          "value_code": "OIFMA_HOOD_438498.0",
           "name": "Fully covered",
           "description": "The esophageal stent is fully covered."
         },
         {
-          "value_code": "OIFMA_HOOD_280789.1",
+          "value_code": "OIFMA_HOOD_438498.1",
           "name": "Partially covered",
           "description": "The esophageal stent is partially covered."
         },
         {
-          "value_code": "OIFMA_HOOD_280789.2",
+          "value_code": "OIFMA_HOOD_438498.2",
           "name": "Uncovered",
           "description": "The esophageal stent is uncovered."
         }
@@ -117,7 +104,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_428754",
+      "oifma_id": "OIFMA_HOOD_156856",
       "name": "Stent Length",
       "description": "The length of the esophageal stent.",
       "type": "numeric",
@@ -125,7 +112,7 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_161743",
+      "oifma_id": "OIFMA_HOOD_316667",
       "name": "Stent Diameter",
       "description": "The diameter of the esophageal stent.",
       "type": "numeric",
@@ -133,33 +120,33 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_813138",
+      "oifma_id": "OIFMA_HOOD_371677",
       "name": "Complication",
       "description": "The complication associated with the esophageal stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_813138.0",
+          "value_code": "OIFMA_HOOD_371677.0",
           "name": "None",
           "description": "No complication is present."
         },
         {
-          "value_code": "OIFMA_HOOD_813138.1",
+          "value_code": "OIFMA_HOOD_371677.1",
           "name": "Mucosal erosion",
           "description": "There is mucosal erosion related to the esophageal stent."
         },
         {
-          "value_code": "OIFMA_HOOD_813138.2",
+          "value_code": "OIFMA_HOOD_371677.2",
           "name": "Perforation",
           "description": "Perforation is observed related to the esophageal stent."
         },
         {
-          "value_code": "OIFMA_HOOD_813138.3",
+          "value_code": "OIFMA_HOOD_371677.3",
           "name": "Migration",
           "description": "Migration of the esophageal stent is observed."
         },
         {
-          "value_code": "OIFMA_HOOD_813138.4",
+          "value_code": "OIFMA_HOOD_371677.4",
           "name": "Impaction",
           "description": "Impaction of the esophageal stent is observed."
         }

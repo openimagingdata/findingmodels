@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_337931",
+  "oifm_id": "OIFM_HOOD_984230",
   "name": "Sclerotic Lesion",
   "description": "A sclerotic lesion is a finding characterized by an area of increased bone density.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_360985",
+      "oifma_id": "OIFMA_HOOD_487140",
       "name": "presence",
       "description": "Indicates whether the sclerotic lesion is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_360985.0",
+          "value_code": "OIFMA_HOOD_487140.0",
           "name": "present",
           "description": "The sclerotic lesion is present."
         },
         {
-          "value_code": "OIFMA_HOOD_360985.1",
+          "value_code": "OIFMA_HOOD_487140.1",
           "name": "absent",
           "description": "The sclerotic lesion is absent."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_261296",
+      "oifma_id": "OIFMA_HOOD_971329",
       "name": "status",
       "description": "Indicates the status of the sclerotic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_261296.0",
+          "value_code": "OIFMA_HOOD_971329.0",
           "name": "stable",
           "description": "The sclerotic lesion is stable."
         },
         {
-          "value_code": "OIFMA_HOOD_261296.1",
+          "value_code": "OIFMA_HOOD_971329.1",
           "name": "enlarging",
           "description": "The sclerotic lesion is enlarging."
         }
@@ -57,43 +44,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_977880",
+      "oifma_id": "OIFMA_HOOD_891257",
       "name": "location",
       "description": "Indicates the location of the sclerotic lesion in the bone.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_977880.0",
+          "value_code": "OIFMA_HOOD_891257.0",
           "name": "Not specified",
           "description": "The location of the sclerotic lesion is not specified."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.1",
+          "value_code": "OIFMA_HOOD_891257.1",
           "name": "Frontal bone",
           "description": "The sclerotic lesion is located in the frontal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.2",
+          "value_code": "OIFMA_HOOD_891257.2",
           "name": "Occipital bone",
           "description": "The sclerotic lesion is located in the occipital bone."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.3",
+          "value_code": "OIFMA_HOOD_891257.3",
           "name": "Temporal bone",
           "description": "The sclerotic lesion is located in the temporal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.4",
+          "value_code": "OIFMA_HOOD_891257.4",
           "name": "Parietal bone",
           "description": "The sclerotic lesion is located in the parietal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.5",
+          "value_code": "OIFMA_HOOD_891257.5",
           "name": "Maxilla",
           "description": "The sclerotic lesion is located in the maxilla."
         },
         {
-          "value_code": "OIFMA_HOOD_977880.6",
+          "value_code": "OIFMA_HOOD_891257.6",
           "name": "Mandible",
           "description": "The sclerotic lesion is located in the mandible."
         }
@@ -102,7 +89,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_292428",
+      "oifma_id": "OIFMA_HOOD_484794",
       "name": "density",
       "description": "Indicates the density of the sclerotic lesion.",
       "type": "numeric",

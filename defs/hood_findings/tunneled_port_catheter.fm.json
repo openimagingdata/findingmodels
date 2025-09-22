@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_827500",
+  "oifm_id": "OIFM_HOOD_912053",
   "name": "Tunneled Port Catheter",
   "description": "A tunneled port catheter is a device used for long-term venous access that is placed under the skin and has a port for connecting to an infusion system.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_063443",
+      "oifma_id": "OIFMA_HOOD_997737",
       "name": "Presence of Tunneled Port Catheter",
       "description": "Indicates whether a tunneled port catheter is present or not.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_063443.0",
+          "value_code": "OIFMA_HOOD_997737.0",
           "name": "Present",
           "description": "A tunneled port catheter is present."
         },
         {
-          "value_code": "OIFMA_HOOD_063443.1",
+          "value_code": "OIFMA_HOOD_997737.1",
           "name": "Absent",
           "description": "A tunneled port catheter is absent."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_166531",
+      "oifma_id": "OIFMA_HOOD_202678",
       "name": "Status",
       "description": "Indicates the status of the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_166531.0",
+          "value_code": "OIFMA_HOOD_202678.0",
           "name": "New placement",
           "description": "The tunneled port catheter is newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_166531.1",
+          "value_code": "OIFMA_HOOD_202678.1",
           "name": "Unchanged",
           "description": "The tunneled port catheter is unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_166531.2",
+          "value_code": "OIFMA_HOOD_202678.2",
           "name": "Migrated",
           "description": "The tunneled port catheter has migrated from its original placement."
         },
         {
-          "value_code": "OIFMA_HOOD_166531.3",
+          "value_code": "OIFMA_HOOD_202678.3",
           "name": "Removed",
           "description": "The tunneled port catheter has been removed."
         }
@@ -67,18 +54,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_167192",
+      "oifma_id": "OIFMA_HOOD_488146",
       "name": "Appropriate location",
       "description": "Indicates whether the tunneled port catheter is in an appropriate location.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_167192.0",
+          "value_code": "OIFMA_HOOD_488146.0",
           "name": "Yes",
           "description": "The tunneled port catheter is in an appropriate location."
         },
         {
-          "value_code": "OIFMA_HOOD_167192.1",
+          "value_code": "OIFMA_HOOD_488146.1",
           "name": "No",
           "description": "The tunneled port catheter is not in an appropriate location."
         }
@@ -87,18 +74,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_095897",
+      "oifma_id": "OIFMA_HOOD_555708",
       "name": "Side Finding",
       "description": "Indicates the side of the body where the tunneled port catheter is located.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_095897.0",
+          "value_code": "OIFMA_HOOD_555708.0",
           "name": "Left",
           "description": "The tunneled port catheter is on the left side of the body."
         },
         {
-          "value_code": "OIFMA_HOOD_095897.1",
+          "value_code": "OIFMA_HOOD_555708.1",
           "name": "Right",
           "description": "The tunneled port catheter is on the right side of the body."
         }
@@ -107,18 +94,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_414967",
+      "oifma_id": "OIFMA_HOOD_014885",
       "name": "Number of Lumens",
       "description": "Indicates the number of lumens (channels) in the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_414967.0",
+          "value_code": "OIFMA_HOOD_014885.0",
           "name": "Single",
           "description": "The tunneled port catheter has a single lumen."
         },
         {
-          "value_code": "OIFMA_HOOD_414967.1",
+          "value_code": "OIFMA_HOOD_014885.1",
           "name": "Double",
           "description": "The tunneled port catheter has two lumens."
         }
@@ -127,18 +114,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_753857",
+      "oifma_id": "OIFMA_HOOD_687706",
       "name": "Vein approach",
       "description": "Indicates the vein approach used for inserting the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_753857.0",
+          "value_code": "OIFMA_HOOD_687706.0",
           "name": "Internal jugular",
           "description": "The tunneled port catheter was inserted through the internal jugular vein."
         },
         {
-          "value_code": "OIFMA_HOOD_753857.1",
+          "value_code": "OIFMA_HOOD_687706.1",
           "name": "Subclavian",
           "description": "The tunneled port catheter was inserted through the subclavian vein."
         }
@@ -147,23 +134,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_204806",
+      "oifma_id": "OIFMA_HOOD_367710",
       "name": "Course",
       "description": "Indicates the course of the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_204806.0",
+          "value_code": "OIFMA_HOOD_367710.0",
           "name": "Appropriate",
           "description": "The tunneled port catheter has an appropriate course."
         },
         {
-          "value_code": "OIFMA_HOOD_204806.1",
+          "value_code": "OIFMA_HOOD_367710.1",
           "name": "Kinking",
           "description": "The tunneled port catheter is kinking."
         },
         {
-          "value_code": "OIFMA_HOOD_204806.2",
+          "value_code": "OIFMA_HOOD_367710.2",
           "name": "Coiling",
           "description": "The tunneled port catheter is coiling."
         }
@@ -172,43 +159,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_035405",
+      "oifma_id": "OIFMA_HOOD_031721",
       "name": "Distal tip location",
       "description": "Indicates the location of the distal tip of the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_035405.0",
+          "value_code": "OIFMA_HOOD_031721.0",
           "name": "Subclavian vein",
           "description": "The distal tip of the tunneled port catheter is in the subclavian vein."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.1",
+          "value_code": "OIFMA_HOOD_031721.1",
           "name": "Brachiocephalic vein",
           "description": "The distal tip of the tunneled port catheter is in the brachiocephalic vein."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.2",
+          "value_code": "OIFMA_HOOD_031721.2",
           "name": "SVC",
           "description": "The distal tip of the tunneled port catheter is in the superior vena cava (SVC)."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.3",
+          "value_code": "OIFMA_HOOD_031721.3",
           "name": "Superior cavoatrial junction",
           "description": "The distal tip of the tunneled port catheter is in the superior cavoatrial junction."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.4",
+          "value_code": "OIFMA_HOOD_031721.4",
           "name": "Azygous vein",
           "description": "The distal tip of the tunneled port catheter is in the azygous vein."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.5",
+          "value_code": "OIFMA_HOOD_031721.5",
           "name": "Inferior cavoatrial junction",
           "description": "The distal tip of the tunneled port catheter is in the inferior cavoatrial junction."
         },
         {
-          "value_code": "OIFMA_HOOD_035405.6",
+          "value_code": "OIFMA_HOOD_031721.6",
           "name": "Internal jugular vein",
           "description": "The distal tip of the tunneled port catheter is in the internal jugular vein."
         }
@@ -217,18 +204,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_110497",
+      "oifma_id": "OIFMA_HOOD_808653",
       "name": "Port location",
       "description": "Indicates the location of the port of the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_110497.0",
+          "value_code": "OIFMA_HOOD_808653.0",
           "name": "Pectoral",
           "description": "The port of the tunneled port catheter is in the pectoral area."
         },
         {
-          "value_code": "OIFMA_HOOD_110497.1",
+          "value_code": "OIFMA_HOOD_808653.1",
           "name": "Abdominal",
           "description": "The port of the tunneled port catheter is in the abdominal area."
         }
@@ -237,38 +224,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_077535",
+      "oifma_id": "OIFMA_HOOD_575025",
       "name": "Complications",
       "description": "Indicates the complications associated with the tunneled port catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_077535.0",
+          "value_code": "OIFMA_HOOD_575025.0",
           "name": "None",
           "description": "There are no complications associated with the tunneled port catheter."
         },
         {
-          "value_code": "OIFMA_HOOD_077535.1",
+          "value_code": "OIFMA_HOOD_575025.1",
           "name": "Occlusion",
           "description": "There is occlusion (blockage) in the tunneled port catheter."
         },
         {
-          "value_code": "OIFMA_HOOD_077535.2",
+          "value_code": "OIFMA_HOOD_575025.2",
           "name": "Catheter fracture",
           "description": "The tunneled port catheter has fractured."
         },
         {
-          "value_code": "OIFMA_HOOD_077535.3",
+          "value_code": "OIFMA_HOOD_575025.3",
           "name": "Port displacement",
           "description": "The port of the tunneled port catheter has displaced."
         },
         {
-          "value_code": "OIFMA_HOOD_077535.4",
+          "value_code": "OIFMA_HOOD_575025.4",
           "name": "Thrombosis (fibrin sheath)",
           "description": "There is a thrombosis (fibrin sheath) in the tunneled port catheter."
         },
         {
-          "value_code": "OIFMA_HOOD_077535.5",
+          "value_code": "OIFMA_HOOD_575025.5",
           "name": "Tip migration",
           "description": "The distal tip of the tunneled port catheter has migrated."
         }

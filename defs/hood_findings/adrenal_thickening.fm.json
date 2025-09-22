@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_510469",
+  "oifm_id": "OIFM_HOOD_233117",
   "name": "Adrenal Thickening",
   "description": "Thickening of the adrenal gland",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_875455",
+      "oifma_id": "OIFMA_HOOD_571898",
       "name": "presence",
       "description": "Presence of adrenal thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_875455.0",
+          "value_code": "OIFMA_HOOD_571898.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_875455.1",
+          "value_code": "OIFMA_HOOD_571898.1",
           "name": "absent"
         }
       ],
@@ -35,21 +22,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_100411",
+      "oifma_id": "OIFMA_HOOD_041674",
       "name": "laterality",
       "description": "Laterality of the adrenal thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_100411.0",
+          "value_code": "OIFMA_HOOD_041674.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_100411.1",
+          "value_code": "OIFMA_HOOD_041674.1",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_HOOD_100411.2",
+          "value_code": "OIFMA_HOOD_041674.2",
           "name": "bilateral"
         }
       ],
@@ -57,21 +44,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_467338",
+      "oifma_id": "OIFMA_HOOD_196343",
       "name": "thickness",
       "description": "Severity of the adrenal thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_467338.0",
+          "value_code": "OIFMA_HOOD_196343.0",
           "name": "mild"
         },
         {
-          "value_code": "OIFMA_HOOD_467338.1",
+          "value_code": "OIFMA_HOOD_196343.1",
           "name": "moderate"
         },
         {
-          "value_code": "OIFMA_HOOD_467338.2",
+          "value_code": "OIFMA_HOOD_196343.2",
           "name": "severe"
         }
       ],
@@ -79,17 +66,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_217102",
+      "oifma_id": "OIFMA_HOOD_001637",
       "name": "homogeneity",
       "description": "Homogeneity of the adrenal thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_217102.0",
+          "value_code": "OIFMA_HOOD_001637.0",
           "name": "homogeneous"
         },
         {
-          "value_code": "OIFMA_HOOD_217102.1",
+          "value_code": "OIFMA_HOOD_001637.1",
           "name": "heterogeneous"
         }
       ],
@@ -97,17 +84,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_734538",
+      "oifma_id": "OIFMA_HOOD_847477",
       "name": "lymphadenopathy",
       "description": "Presence of lymphadenopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_734538.0",
+          "value_code": "OIFMA_HOOD_847477.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_734538.1",
+          "value_code": "OIFMA_HOOD_847477.1",
           "name": "absent"
         }
       ],

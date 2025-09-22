@@ -1,39 +1,26 @@
 {
-  "oifm_id": "OIFM_HOOD_885049",
+  "oifm_id": "OIFM_HOOD_784115",
   "name": "Bronchiectasis",
   "description": "Bronchiectasis is a condition characterized by the irreversible dilation and destruction of the bronchi.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_050510",
+      "oifma_id": "OIFMA_HOOD_655693",
       "name": "Predominant Type(s)",
       "description": "The predominant type(s) of bronchiectasis present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_050510.0",
+          "value_code": "OIFMA_HOOD_655693.0",
           "name": "Cylindrical",
           "description": "Bronchiectasis with cylindrical-shaped dilated bronchi."
         },
         {
-          "value_code": "OIFMA_HOOD_050510.1",
+          "value_code": "OIFMA_HOOD_655693.1",
           "name": "Varicose",
           "description": "Bronchiectasis with varicose-shaped dilated bronchi."
         },
         {
-          "value_code": "OIFMA_HOOD_050510.2",
+          "value_code": "OIFMA_HOOD_655693.2",
           "name": "Cystic",
           "description": "Bronchiectasis with cystic-shaped dilated bronchi."
         }
@@ -42,23 +29,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_667340",
+      "oifma_id": "OIFMA_HOOD_795141",
       "name": "Severity",
       "description": "The severity of bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_667340.0",
+          "value_code": "OIFMA_HOOD_795141.0",
           "name": "Mild",
           "description": "Mildly severe bronchiectasis."
         },
         {
-          "value_code": "OIFMA_HOOD_667340.1",
+          "value_code": "OIFMA_HOOD_795141.1",
           "name": "Moderate",
           "description": "Moderately severe bronchiectasis."
         },
         {
-          "value_code": "OIFMA_HOOD_667340.2",
+          "value_code": "OIFMA_HOOD_795141.2",
           "name": "Severe",
           "description": "Severely severe bronchiectasis."
         }
@@ -67,28 +54,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_552705",
+      "oifma_id": "OIFMA_HOOD_724727",
       "name": "Regional predominance",
       "description": "The regional predominance of bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_552705.0",
+          "value_code": "OIFMA_HOOD_724727.0",
           "name": "Apices",
           "description": "Bronchiectasis predominantly affecting the apices of the lungs."
         },
         {
-          "value_code": "OIFMA_HOOD_552705.1",
+          "value_code": "OIFMA_HOOD_724727.1",
           "name": "Upper lung zone",
           "description": "Bronchiectasis predominantly affecting the upper lung zone."
         },
         {
-          "value_code": "OIFMA_HOOD_552705.2",
+          "value_code": "OIFMA_HOOD_724727.2",
           "name": "Middle lung zone",
           "description": "Bronchiectasis predominantly affecting the middle lung zone."
         },
         {
-          "value_code": "OIFMA_HOOD_552705.3",
+          "value_code": "OIFMA_HOOD_724727.3",
           "name": "Lower lung zone",
           "description": "Bronchiectasis predominantly affecting the lower lung zone."
         }
@@ -97,38 +84,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_203230",
+      "oifma_id": "OIFMA_HOOD_124213",
       "name": "Associated diagnoses",
       "description": "Associated diagnoses related to bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_203230.0",
+          "value_code": "OIFMA_HOOD_124213.0",
           "name": "Immunodeficiency",
           "description": "Bronchiectasis associated with immunodeficiency."
         },
         {
-          "value_code": "OIFMA_HOOD_203230.1",
+          "value_code": "OIFMA_HOOD_124213.1",
           "name": "Postinfective",
           "description": "Bronchiectasis associated with postinfective causes."
         },
         {
-          "value_code": "OIFMA_HOOD_203230.2",
+          "value_code": "OIFMA_HOOD_124213.2",
           "name": "Allergic and autoimmune",
           "description": "Bronchiectasis associated with allergic and autoimmune causes."
         },
         {
-          "value_code": "OIFMA_HOOD_203230.3",
+          "value_code": "OIFMA_HOOD_124213.3",
           "name": "Obstruction",
           "description": "Bronchiectasis associated with obstruction causes."
         },
         {
-          "value_code": "OIFMA_HOOD_203230.4",
+          "value_code": "OIFMA_HOOD_124213.4",
           "name": "Congenital",
           "description": "Bronchiectasis associated with congenital causes."
         },
         {
-          "value_code": "OIFMA_HOOD_203230.5",
+          "value_code": "OIFMA_HOOD_124213.5",
           "name": "Others",
           "description": "Other associated diagnoses related to bronchiectasis."
         }

@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_572034",
+  "oifm_id": "OIFM_HOOD_212305",
   "name": "Breast Calcification",
   "description": "Calcifications in the breast tissue.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_141060",
+      "oifma_id": "OIFMA_HOOD_248843",
       "name": "Presence of Breast Calcification",
       "description": "Presence or absence of breast calcification.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_141060.0",
+          "value_code": "OIFMA_HOOD_248843.0",
           "name": "Present",
           "description": "Calcifications are present."
         },
         {
-          "value_code": "OIFMA_HOOD_141060.1",
+          "value_code": "OIFMA_HOOD_248843.1",
           "name": "Absent",
           "description": "Calcifications are absent."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_395267",
+      "oifma_id": "OIFMA_HOOD_018369",
       "name": "Status",
       "description": "Status of the breast calcification.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_395267.0",
+          "value_code": "OIFMA_HOOD_018369.0",
           "name": "New",
           "description": "New calcifications."
         },
         {
-          "value_code": "OIFMA_HOOD_395267.1",
+          "value_code": "OIFMA_HOOD_018369.1",
           "name": "Unchanged",
           "description": "Calcifications remain the same."
         },
         {
-          "value_code": "OIFMA_HOOD_395267.2",
+          "value_code": "OIFMA_HOOD_018369.2",
           "name": "Increased",
           "description": "Calcifications have increased in number or size."
         },
         {
-          "value_code": "OIFMA_HOOD_395267.3",
+          "value_code": "OIFMA_HOOD_018369.3",
           "name": "Decreased",
           "description": "Calcifications have decreased in number or size."
         }
@@ -67,21 +54,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_664171",
+      "oifma_id": "OIFMA_HOOD_250931",
       "name": "Location",
       "description": "Location of the breast calcification.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_664171.0",
+          "value_code": "OIFMA_HOOD_250931.0",
           "name": "Right breast"
         },
         {
-          "value_code": "OIFMA_HOOD_664171.1",
+          "value_code": "OIFMA_HOOD_250931.1",
           "name": "Left breast"
         },
         {
-          "value_code": "OIFMA_HOOD_664171.2",
+          "value_code": "OIFMA_HOOD_250931.2",
           "name": "Bilateral"
         }
       ],
@@ -89,33 +76,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_248152",
+      "oifma_id": "OIFMA_HOOD_116353",
       "name": "Distribution Pattern",
       "description": "Pattern of distribution of the breast calcification.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_248152.0",
+          "value_code": "OIFMA_HOOD_116353.0",
           "name": "Diffuse"
         },
         {
-          "value_code": "OIFMA_HOOD_248152.1",
+          "value_code": "OIFMA_HOOD_116353.1",
           "name": "Regional"
         },
         {
-          "value_code": "OIFMA_HOOD_248152.2",
+          "value_code": "OIFMA_HOOD_116353.2",
           "name": "Linear"
         },
         {
-          "value_code": "OIFMA_HOOD_248152.3",
+          "value_code": "OIFMA_HOOD_116353.3",
           "name": "Segmental"
         },
         {
-          "value_code": "OIFMA_HOOD_248152.4",
+          "value_code": "OIFMA_HOOD_116353.4",
           "name": "Grouped"
         },
         {
-          "value_code": "OIFMA_HOOD_248152.5",
+          "value_code": "OIFMA_HOOD_116353.5",
           "name": "Clustered"
         }
       ],
@@ -123,33 +110,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_722683",
+      "oifma_id": "OIFMA_HOOD_933271",
       "name": "Morphology",
       "description": "Morphology of the breast calcification.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_722683.0",
+          "value_code": "OIFMA_HOOD_933271.0",
           "name": "Round"
         },
         {
-          "value_code": "OIFMA_HOOD_722683.1",
+          "value_code": "OIFMA_HOOD_933271.1",
           "name": "Punctate"
         },
         {
-          "value_code": "OIFMA_HOOD_722683.2",
+          "value_code": "OIFMA_HOOD_933271.2",
           "name": "Vascular"
         },
         {
-          "value_code": "OIFMA_HOOD_722683.3",
+          "value_code": "OIFMA_HOOD_933271.3",
           "name": "Coarse"
         },
         {
-          "value_code": "OIFMA_HOOD_722683.4",
+          "value_code": "OIFMA_HOOD_933271.4",
           "name": "Fine Pleomorphic"
         },
         {
-          "value_code": "OIFMA_HOOD_722683.5",
+          "value_code": "OIFMA_HOOD_933271.5",
           "name": "Fine Linear or Fine Linear Branching"
         }
       ],
@@ -157,17 +144,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_324824",
+      "oifma_id": "OIFMA_HOOD_129308",
       "name": "Breast Skin Thickening",
       "description": "Presence or absence of breast skin thickening.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_324824.0",
+          "value_code": "OIFMA_HOOD_129308.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_324824.1",
+          "value_code": "OIFMA_HOOD_129308.1",
           "name": "Absent"
         }
       ],
@@ -175,17 +162,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_990222",
+      "oifma_id": "OIFMA_HOOD_096993",
       "name": "Dermal Calcifications",
       "description": "Presence or absence of dermal calcifications.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_990222.0",
+          "value_code": "OIFMA_HOOD_096993.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_990222.1",
+          "value_code": "OIFMA_HOOD_096993.1",
           "name": "Absent"
         }
       ],
@@ -193,17 +180,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_710753",
+      "oifma_id": "OIFMA_HOOD_591041",
       "name": "Vascular Calcifications",
       "description": "Presence or absence of vascular calcifications.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_710753.0",
+          "value_code": "OIFMA_HOOD_591041.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_710753.1",
+          "value_code": "OIFMA_HOOD_591041.1",
           "name": "Absent"
         }
       ],
@@ -211,17 +198,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_883367",
+      "oifma_id": "OIFMA_HOOD_907188",
       "name": "Breast Mass",
       "description": "Presence or absence of a breast mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_883367.0",
+          "value_code": "OIFMA_HOOD_907188.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_883367.1",
+          "value_code": "OIFMA_HOOD_907188.1",
           "name": "Absent"
         }
       ],
@@ -229,17 +216,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_980103",
+      "oifma_id": "OIFMA_HOOD_464990",
       "name": "Axillary Lymphadenopathy",
       "description": "Presence or absence of axillary lymphadenopathy.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_980103.0",
+          "value_code": "OIFMA_HOOD_464990.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_980103.1",
+          "value_code": "OIFMA_HOOD_464990.1",
           "name": "Absent"
         }
       ],

@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_228148",
+  "oifm_id": "OIFM_HOOD_200091",
   "name": "Lytic Lesion",
   "description": "A lytic lesion refers to an area of bone loss or destruction.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_409418",
+      "oifma_id": "OIFMA_HOOD_909628",
       "name": "presence",
       "description": "Indicates whether the lytic lesion is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_409418.0",
+          "value_code": "OIFMA_HOOD_909628.0",
           "name": "present",
           "description": "The lytic lesion is present."
         },
         {
-          "value_code": "OIFMA_HOOD_409418.1",
+          "value_code": "OIFMA_HOOD_909628.1",
           "name": "absent",
           "description": "The lytic lesion is absent."
         }
@@ -37,23 +24,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_873623",
+      "oifma_id": "OIFMA_HOOD_656343",
       "name": "status",
       "description": "Describes the status of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_873623.0",
+          "value_code": "OIFMA_HOOD_656343.0",
           "name": "stable",
           "description": "The lytic lesion is stable."
         },
         {
-          "value_code": "OIFMA_HOOD_873623.1",
+          "value_code": "OIFMA_HOOD_656343.1",
           "name": "enlarging",
           "description": "The lytic lesion is enlarging."
         },
         {
-          "value_code": "OIFMA_HOOD_873623.2",
+          "value_code": "OIFMA_HOOD_656343.2",
           "name": "decreased",
           "description": "The lytic lesion is decreased."
         }
@@ -62,18 +49,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_494914",
+      "oifma_id": "OIFMA_HOOD_790555",
       "name": "location",
       "description": "Specifies the location of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_494914.0",
+          "value_code": "OIFMA_HOOD_790555.0",
           "name": "select list for bones",
           "description": "The location of the lytic lesion is selectable from a list of bones."
         },
         {
-          "value_code": "OIFMA_HOOD_494914.1",
+          "value_code": "OIFMA_HOOD_790555.1",
           "name": "other",
           "description": "Location is specified in free text."
         }
@@ -82,23 +69,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_742955",
+      "oifma_id": "OIFMA_HOOD_517736",
       "name": "size Finding",
       "description": "Indicates the size of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_742955.0",
+          "value_code": "OIFMA_HOOD_517736.0",
           "name": "small",
           "description": "<1 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_742955.1",
+          "value_code": "OIFMA_HOOD_517736.1",
           "name": "medium",
           "description": "1-2 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_742955.2",
+          "value_code": "OIFMA_HOOD_517736.2",
           "name": "large",
           "description": ">2 cm"
         }
@@ -107,18 +94,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_811168",
+      "oifma_id": "OIFMA_HOOD_519228",
       "name": "number",
       "description": "Specifies the number of lytic lesions.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_811168.0",
+          "value_code": "OIFMA_HOOD_519228.0",
           "name": "single",
           "description": "There is a single lytic lesion."
         },
         {
-          "value_code": "OIFMA_HOOD_811168.1",
+          "value_code": "OIFMA_HOOD_519228.1",
           "name": "multiple",
           "description": "There are multiple lytic lesions."
         }
@@ -127,18 +114,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_051647",
+      "oifma_id": "OIFMA_HOOD_662693",
       "name": "margin",
       "description": "Describes the margin of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_051647.0",
+          "value_code": "OIFMA_HOOD_662693.0",
           "name": "well-defined",
           "description": "The margin of the lytic lesion is well-defined."
         },
         {
-          "value_code": "OIFMA_HOOD_051647.1",
+          "value_code": "OIFMA_HOOD_662693.1",
           "name": "ill-defined",
           "description": "The margin of the lytic lesion is ill-defined."
         }
@@ -147,23 +134,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_108796",
+      "oifma_id": "OIFMA_HOOD_056284",
       "name": "density",
       "description": "Indicates the density of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_108796.0",
+          "value_code": "OIFMA_HOOD_056284.0",
           "name": "high",
           "description": "The density of the lytic lesion is high."
         },
         {
-          "value_code": "OIFMA_HOOD_108796.1",
+          "value_code": "OIFMA_HOOD_056284.1",
           "name": "low",
           "description": "The density of the lytic lesion is low."
         },
         {
-          "value_code": "OIFMA_HOOD_108796.2",
+          "value_code": "OIFMA_HOOD_056284.2",
           "name": "mixed",
           "description": "The density of the lytic lesion is mixed."
         }
@@ -172,18 +159,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_957736",
+      "oifma_id": "OIFMA_HOOD_420204",
       "name": "extra-osseous extension",
       "description": "Indicates whether there is extra-osseous extension of the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_957736.0",
+          "value_code": "OIFMA_HOOD_420204.0",
           "name": "present",
           "description": "There is extra-osseous extension of the lytic lesion."
         },
         {
-          "value_code": "OIFMA_HOOD_957736.1",
+          "value_code": "OIFMA_HOOD_420204.1",
           "name": "absent",
           "description": "There is no extra-osseous extension of the lytic lesion."
         }
@@ -192,18 +179,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_328518",
+      "oifma_id": "OIFMA_HOOD_885186",
       "name": "soft tissue component",
       "description": "Specifies whether there is a soft tissue component associated with the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_328518.0",
+          "value_code": "OIFMA_HOOD_885186.0",
           "name": "yes",
           "description": "There is a soft tissue component associated with the lytic lesion."
         },
         {
-          "value_code": "OIFMA_HOOD_328518.1",
+          "value_code": "OIFMA_HOOD_885186.1",
           "name": "no",
           "description": "There is no soft tissue component associated with the lytic lesion."
         }
@@ -212,18 +199,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_606966",
+      "oifma_id": "OIFMA_HOOD_334446",
       "name": "pathologic fracture",
       "description": "Indicates whether there is a pathologic fracture associated with the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_606966.0",
+          "value_code": "OIFMA_HOOD_334446.0",
           "name": "yes",
           "description": "There is a pathologic fracture associated with the lytic lesion."
         },
         {
-          "value_code": "OIFMA_HOOD_606966.1",
+          "value_code": "OIFMA_HOOD_334446.1",
           "name": "no",
           "description": "There is no pathologic fracture associated with the lytic lesion."
         }
@@ -232,18 +219,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_544953",
+      "oifma_id": "OIFMA_HOOD_957439",
       "name": "surrounding bone sclerosis",
       "description": "Specifies whether there is surrounding bone sclerosis associated with the lytic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_544953.0",
+          "value_code": "OIFMA_HOOD_957439.0",
           "name": "yes",
           "description": "There is surrounding bone sclerosis associated with the lytic lesion."
         },
         {
-          "value_code": "OIFMA_HOOD_544953.1",
+          "value_code": "OIFMA_HOOD_957439.1",
           "name": "no",
           "description": "There is no surrounding bone sclerosis associated with the lytic lesion."
         }

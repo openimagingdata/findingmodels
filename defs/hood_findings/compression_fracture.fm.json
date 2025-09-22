@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_878095",
+  "oifm_id": "OIFM_HOOD_439446",
   "name": "Compression Fracture",
   "description": "A fracture in one or more vertebrae resulting from compression forces",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_876155",
+      "oifma_id": "OIFMA_HOOD_569114",
       "name": "presence",
       "description": "Indicates whether a compression fracture is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_876155.0",
+          "value_code": "OIFMA_HOOD_569114.0",
           "name": "present",
           "description": "A compression fracture is present"
         },
         {
-          "value_code": "OIFMA_HOOD_876155.1",
+          "value_code": "OIFMA_HOOD_569114.1",
           "name": "absent",
           "description": "No compression fracture is present"
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_081767",
+      "oifma_id": "OIFMA_HOOD_213866",
       "name": "acuity",
       "description": "The acuity of the compression fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_081767.0",
+          "value_code": "OIFMA_HOOD_213866.0",
           "name": "acute",
           "description": "Recently occurred compression fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_081767.1",
+          "value_code": "OIFMA_HOOD_213866.1",
           "name": "chronic",
           "description": "Long-standing compression fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_081767.2",
+          "value_code": "OIFMA_HOOD_213866.2",
           "name": "subacute",
           "description": "Compression fracture in the healing phase"
         },
         {
-          "value_code": "OIFMA_HOOD_081767.3",
+          "value_code": "OIFMA_HOOD_213866.3",
           "name": "healing",
           "description": "Compression fracture in the process of healing"
         }
@@ -67,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_042025",
+      "oifma_id": "OIFMA_HOOD_883385",
       "name": "location",
       "description": "The location of the compression fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_042025.0",
+          "value_code": "OIFMA_HOOD_883385.0",
           "name": "thoracic",
           "description": "Compression fracture in the thoracic region"
         },
         {
-          "value_code": "OIFMA_HOOD_042025.1",
+          "value_code": "OIFMA_HOOD_883385.1",
           "name": "lumbar",
           "description": "Compression fracture in the lumbar region"
         },
         {
-          "value_code": "OIFMA_HOOD_042025.2",
+          "value_code": "OIFMA_HOOD_883385.2",
           "name": "cervical",
           "description": "Compression fracture in the cervical region"
         }
@@ -92,23 +79,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_866107",
+      "oifma_id": "OIFMA_HOOD_692976",
       "name": "number_of_vertebrae_affected",
       "description": "The number of vertebrae affected by the compression fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_866107.0",
+          "value_code": "OIFMA_HOOD_692976.0",
           "name": "single",
           "description": "Compression fracture only affecting a single vertebra"
         },
         {
-          "value_code": "OIFMA_HOOD_866107.1",
+          "value_code": "OIFMA_HOOD_692976.1",
           "name": "multiple",
           "description": "Compression fracture affecting multiple vertebrae"
         },
         {
-          "value_code": "OIFMA_HOOD_866107.2",
+          "value_code": "OIFMA_HOOD_692976.2",
           "name": "diffuse_involvement",
           "description": "Compression fracture with diffuse involvement of vertebrae"
         }
@@ -117,33 +104,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_242263",
+      "oifma_id": "OIFMA_HOOD_293824",
       "name": "severity",
       "description": "The severity of the compression fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_242263.0",
+          "value_code": "OIFMA_HOOD_293824.0",
           "name": "mild",
           "description": "Mild compression fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_242263.1",
+          "value_code": "OIFMA_HOOD_293824.1",
           "name": "moderate",
           "description": "Moderate compression fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_242263.2",
+          "value_code": "OIFMA_HOOD_293824.2",
           "name": "severe",
           "description": "Severe compression fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_242263.3",
+          "value_code": "OIFMA_HOOD_293824.3",
           "name": "collapse",
           "description": "Compression fracture with collapse of the affected vertebra"
         },
         {
-          "value_code": "OIFMA_HOOD_242263.4",
+          "value_code": "OIFMA_HOOD_293824.4",
           "name": "complete_destruction",
           "description": "Compression fracture with complete destruction of the affected vertebra"
         }
@@ -152,33 +139,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_992407",
+      "oifma_id": "OIFMA_HOOD_750923",
       "name": "morphology",
       "description": "The morphology of the compression fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_992407.0",
+          "value_code": "OIFMA_HOOD_750923.0",
           "name": "wedge-shaped",
           "description": "Compression fracture with a wedge-shaped appearance"
         },
         {
-          "value_code": "OIFMA_HOOD_992407.1",
+          "value_code": "OIFMA_HOOD_750923.1",
           "name": "biconcave",
           "description": "Compression fracture with a biconcave appearance"
         },
         {
-          "value_code": "OIFMA_HOOD_992407.2",
+          "value_code": "OIFMA_HOOD_750923.2",
           "name": "crush",
           "description": "Compression fracture with a crush appearance"
         },
         {
-          "value_code": "OIFMA_HOOD_992407.3",
+          "value_code": "OIFMA_HOOD_750923.3",
           "name": "endplate_involvement",
           "description": "Compression fracture with endplate involvement"
         },
         {
-          "value_code": "OIFMA_HOOD_992407.4",
+          "value_code": "OIFMA_HOOD_750923.4",
           "name": "cortical_disruption",
           "description": "Compression fracture with cortical disruption"
         }
@@ -187,18 +174,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_326832",
+      "oifma_id": "OIFMA_HOOD_347210",
       "name": "bone_marrow_edema",
       "description": "Indicates whether bone marrow edema is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_326832.0",
+          "value_code": "OIFMA_HOOD_347210.0",
           "name": "present",
           "description": "Bone marrow edema is present"
         },
         {
-          "value_code": "OIFMA_HOOD_326832.1",
+          "value_code": "OIFMA_HOOD_347210.1",
           "name": "absent",
           "description": "No bone marrow edema is present"
         }
@@ -207,23 +194,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_008264",
+      "oifma_id": "OIFMA_HOOD_676913",
       "name": "adjacent_disc_involvement",
       "description": "Indicates whether adjacent disc involvement is present, absent, or shows degenerative changes",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_008264.0",
+          "value_code": "OIFMA_HOOD_676913.0",
           "name": "present",
           "description": "Adjacent disc involvement is present"
         },
         {
-          "value_code": "OIFMA_HOOD_008264.1",
+          "value_code": "OIFMA_HOOD_676913.1",
           "name": "absent",
           "description": "No adjacent disc involvement is present"
         },
         {
-          "value_code": "OIFMA_HOOD_008264.2",
+          "value_code": "OIFMA_HOOD_676913.2",
           "name": "degenerative_changes",
           "description": "Adjacent disc involvement shows degenerative changes"
         }
@@ -232,18 +219,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_208496",
+      "oifma_id": "OIFMA_HOOD_461084",
       "name": "soft_tissue_swelling",
       "description": "Indicates whether soft tissue swelling is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_208496.0",
+          "value_code": "OIFMA_HOOD_461084.0",
           "name": "present",
           "description": "Soft tissue swelling is present"
         },
         {
-          "value_code": "OIFMA_HOOD_208496.1",
+          "value_code": "OIFMA_HOOD_461084.1",
           "name": "absent",
           "description": "No soft tissue swelling is present"
         }
@@ -252,23 +239,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_141975",
+      "oifma_id": "OIFMA_HOOD_249734",
       "name": "canal_compromise",
       "description": "Indicates whether canal compromise is present, absent, or shows stenosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_141975.0",
+          "value_code": "OIFMA_HOOD_249734.0",
           "name": "present",
           "description": "Canal compromise is present"
         },
         {
-          "value_code": "OIFMA_HOOD_141975.1",
+          "value_code": "OIFMA_HOOD_249734.1",
           "name": "absent",
           "description": "No canal compromise is present"
         },
         {
-          "value_code": "OIFMA_HOOD_141975.2",
+          "value_code": "OIFMA_HOOD_249734.2",
           "name": "stenosis",
           "description": "Canal compromise shows stenosis"
         }
@@ -277,18 +264,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_554027",
+      "oifma_id": "OIFMA_HOOD_231875",
       "name": "paravertebral_hematoma",
       "description": "Indicates whether paravertebral hematoma is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_554027.0",
+          "value_code": "OIFMA_HOOD_231875.0",
           "name": "present",
           "description": "Paravertebral hematoma is present"
         },
         {
-          "value_code": "OIFMA_HOOD_554027.1",
+          "value_code": "OIFMA_HOOD_231875.1",
           "name": "absent",
           "description": "No paravertebral hematoma is present"
         }
@@ -297,18 +284,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_897946",
+      "oifma_id": "OIFMA_HOOD_368699",
       "name": "neurological_compromise",
       "description": "Indicates whether neurological compromise is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_897946.0",
+          "value_code": "OIFMA_HOOD_368699.0",
           "name": "present",
           "description": "Neurological compromise is present"
         },
         {
-          "value_code": "OIFMA_HOOD_897946.1",
+          "value_code": "OIFMA_HOOD_368699.1",
           "name": "absent",
           "description": "No neurological compromise is present"
         }

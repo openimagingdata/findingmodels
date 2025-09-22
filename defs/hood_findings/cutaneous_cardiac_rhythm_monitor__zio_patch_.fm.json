@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_950589",
+  "oifm_id": "OIFM_HOOD_013083",
   "name": "Cutaneous Cardiac Rhythm Monitor (Zio Patch)",
   "description": "Cutaneous cardiac rhythm monitor used for continuous heart monitoring.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_516155",
+      "oifma_id": "OIFMA_HOOD_405353",
       "name": "Presence of ZIO Patch",
       "description": "Indicates whether the ZIO Patch is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_516155.0",
+          "value_code": "OIFMA_HOOD_405353.0",
           "name": "Present",
           "description": "The ZIO Patch is present"
         },
         {
-          "value_code": "OIFMA_HOOD_516155.1",
+          "value_code": "OIFMA_HOOD_405353.1",
           "name": "Absent",
           "description": "The ZIO Patch is absent"
         }
@@ -37,23 +24,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_441823",
+      "oifma_id": "OIFMA_HOOD_326055",
       "name": "Status",
       "description": "Indicates the status of the ZIO Patch",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_441823.0",
+          "value_code": "OIFMA_HOOD_326055.0",
           "name": "Functioning",
           "description": "The ZIO Patch is functioning properly"
         },
         {
-          "value_code": "OIFMA_HOOD_441823.1",
+          "value_code": "OIFMA_HOOD_326055.1",
           "name": "Malfunctioning",
           "description": "The ZIO Patch is not functioning properly"
         },
         {
-          "value_code": "OIFMA_HOOD_441823.2",
+          "value_code": "OIFMA_HOOD_326055.2",
           "name": "Removed",
           "description": "The ZIO Patch has been removed"
         }
@@ -62,23 +49,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_594397",
+      "oifma_id": "OIFMA_HOOD_972893",
       "name": "Location",
       "description": "Indicates the location of the ZIO Patch on the body",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_594397.0",
+          "value_code": "OIFMA_HOOD_972893.0",
           "name": "Chest",
           "description": "The ZIO Patch is located on the chest"
         },
         {
-          "value_code": "OIFMA_HOOD_594397.1",
+          "value_code": "OIFMA_HOOD_972893.1",
           "name": "Abdomen",
           "description": "The ZIO Patch is located on the abdomen"
         },
         {
-          "value_code": "OIFMA_HOOD_594397.2",
+          "value_code": "OIFMA_HOOD_972893.2",
           "name": "Other",
           "description": "The ZIO Patch is located on another area of the body"
         }
@@ -87,23 +74,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_127592",
+      "oifma_id": "OIFMA_HOOD_193221",
       "name": "Side Finding",
       "description": "Indicates the side of the body where the ZIO Patch is located",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_127592.0",
+          "value_code": "OIFMA_HOOD_193221.0",
           "name": "Left",
           "description": "The ZIO Patch is located on the left side"
         },
         {
-          "value_code": "OIFMA_HOOD_127592.1",
+          "value_code": "OIFMA_HOOD_193221.1",
           "name": "Right",
           "description": "The ZIO Patch is located on the right side"
         },
         {
-          "value_code": "OIFMA_HOOD_127592.2",
+          "value_code": "OIFMA_HOOD_193221.2",
           "name": "NA",
           "description": "Not applicable"
         }
@@ -112,23 +99,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_986101",
+      "oifma_id": "OIFMA_HOOD_023537",
       "name": "Orientation",
       "description": "Indicates the orientation of the ZIO Patch on the body",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_986101.0",
+          "value_code": "OIFMA_HOOD_023537.0",
           "name": "Parallel to skin",
           "description": "The ZIO Patch is parallel to the skin"
         },
         {
-          "value_code": "OIFMA_HOOD_986101.1",
+          "value_code": "OIFMA_HOOD_023537.1",
           "name": "Perpendicular to skin",
           "description": "The ZIO Patch is perpendicular to the skin"
         },
         {
-          "value_code": "OIFMA_HOOD_986101.2",
+          "value_code": "OIFMA_HOOD_023537.2",
           "name": "Other",
           "description": "The ZIO Patch is oriented in another way"
         }
@@ -137,23 +124,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_666888",
+      "oifma_id": "OIFMA_HOOD_418138",
       "name": "Adherence",
       "description": "Indicates the adherence of the ZIO Patch",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_666888.0",
+          "value_code": "OIFMA_HOOD_418138.0",
           "name": "Fully adherent",
           "description": "The ZIO Patch is fully adherent to the skin"
         },
         {
-          "value_code": "OIFMA_HOOD_666888.1",
+          "value_code": "OIFMA_HOOD_418138.1",
           "name": "Partially detached",
           "description": "The ZIO Patch is partially detached from the skin"
         },
         {
-          "value_code": "OIFMA_HOOD_666888.2",
+          "value_code": "OIFMA_HOOD_418138.2",
           "name": "Completely detached",
           "description": "The ZIO Patch is completely detached from the skin"
         }
@@ -162,28 +149,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_057410",
+      "oifma_id": "OIFMA_HOOD_262899",
       "name": "Skin Irritation",
       "description": "Indicates the presence and severity of skin irritation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_057410.0",
+          "value_code": "OIFMA_HOOD_262899.0",
           "name": "None",
           "description": "No skin irritation is present"
         },
         {
-          "value_code": "OIFMA_HOOD_057410.1",
+          "value_code": "OIFMA_HOOD_262899.1",
           "name": "Mild",
           "description": "Mild skin irritation is present"
         },
         {
-          "value_code": "OIFMA_HOOD_057410.2",
+          "value_code": "OIFMA_HOOD_262899.2",
           "name": "Moderate",
           "description": "Moderate skin irritation is present"
         },
         {
-          "value_code": "OIFMA_HOOD_057410.3",
+          "value_code": "OIFMA_HOOD_262899.3",
           "name": "Severe",
           "description": "Severe skin irritation is present"
         }
@@ -192,23 +179,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_414354",
+      "oifma_id": "OIFMA_HOOD_336854",
       "name": "Infection",
       "description": "Indicates the presence of infection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_414354.0",
+          "value_code": "OIFMA_HOOD_336854.0",
           "name": "Present",
           "description": "Infection is present"
         },
         {
-          "value_code": "OIFMA_HOOD_414354.1",
+          "value_code": "OIFMA_HOOD_336854.1",
           "name": "Absent",
           "description": "No infection is present"
         },
         {
-          "value_code": "OIFMA_HOOD_414354.2",
+          "value_code": "OIFMA_HOOD_336854.2",
           "name": "Suspected",
           "description": "Infection is suspected"
         }
@@ -217,18 +204,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_773456",
+      "oifma_id": "OIFMA_HOOD_335060",
       "name": "Hematoma",
       "description": "Indicates the presence of a hematoma",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_773456.0",
+          "value_code": "OIFMA_HOOD_335060.0",
           "name": "Present",
           "description": "Hematoma is present"
         },
         {
-          "value_code": "OIFMA_HOOD_773456.1",
+          "value_code": "OIFMA_HOOD_335060.1",
           "name": "Absent",
           "description": "No hematoma is present"
         }
@@ -237,18 +224,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_558186",
+      "oifma_id": "OIFMA_HOOD_633517",
       "name": "Evidence of Repeated Applications",
       "description": "Indicates whether there is evidence of repeated applications of the ZIO Patch",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_558186.0",
+          "value_code": "OIFMA_HOOD_633517.0",
           "name": "Yes",
           "description": "There is evidence of repeated applications"
         },
         {
-          "value_code": "OIFMA_HOOD_558186.1",
+          "value_code": "OIFMA_HOOD_633517.1",
           "name": "No",
           "description": "There is no evidence of repeated applications"
         }

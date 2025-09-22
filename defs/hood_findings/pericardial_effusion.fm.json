@@ -1,44 +1,31 @@
 {
-  "oifm_id": "OIFM_HOOD_529211",
+  "oifm_id": "OIFM_HOOD_836095",
   "name": "Pericardial Effusion",
   "description": "A collection of fluid in the pericardial space surrounding the heart",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_146903",
+      "oifma_id": "OIFMA_HOOD_473679",
       "name": "size Finding",
       "description": "The size of the pericardial effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_146903.0",
+          "value_code": "OIFMA_HOOD_473679.0",
           "name": "trace",
           "description": "≤ 5 mm"
         },
         {
-          "value_code": "OIFMA_HOOD_146903.1",
+          "value_code": "OIFMA_HOOD_473679.1",
           "name": "small",
           "description": "<10 mm"
         },
         {
-          "value_code": "OIFMA_HOOD_146903.2",
+          "value_code": "OIFMA_HOOD_473679.2",
           "name": "moderate",
           "description": "10-20 mm"
         },
         {
-          "value_code": "OIFMA_HOOD_146903.3",
+          "value_code": "OIFMA_HOOD_473679.3",
           "name": "large",
           "description": ">20 mm"
         }
@@ -47,23 +34,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_908353",
+      "oifma_id": "OIFMA_HOOD_490157",
       "name": "density",
       "description": "The density of the pericardial effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_908353.0",
+          "value_code": "OIFMA_HOOD_490157.0",
           "name": "fluid",
           "description": "Fluid density"
         },
         {
-          "value_code": "OIFMA_HOOD_908353.1",
+          "value_code": "OIFMA_HOOD_490157.1",
           "name": "intermediate",
           "description": "> 30 HU"
         },
         {
-          "value_code": "OIFMA_HOOD_908353.2",
+          "value_code": "OIFMA_HOOD_490157.2",
           "name": "hemopericardium",
           "description": "Presence of blood in the pericardial effusion"
         }
@@ -72,18 +59,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_539141",
+      "oifma_id": "OIFMA_HOOD_006299",
       "name": "pericardial enhancement",
       "description": "Presence or absence of pericardial enhancement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_539141.0",
+          "value_code": "OIFMA_HOOD_006299.0",
           "name": "present",
           "description": "Pericardial enhancement is present"
         },
         {
-          "value_code": "OIFMA_HOOD_539141.1",
+          "value_code": "OIFMA_HOOD_006299.1",
           "name": "absent",
           "description": "Pericardial enhancement is absent"
         }
@@ -92,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_808349",
+      "oifma_id": "OIFMA_HOOD_936471",
       "name": "pericardial thickening",
       "description": "Presence or absence of pericardial thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_808349.0",
+          "value_code": "OIFMA_HOOD_936471.0",
           "name": "present",
           "description": "Pericardial thickening is present"
         },
         {
-          "value_code": "OIFMA_HOOD_808349.1",
+          "value_code": "OIFMA_HOOD_936471.1",
           "name": "absent",
           "description": "Pericardial thickening is absent"
         }
@@ -112,18 +99,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_880214",
+      "oifma_id": "OIFMA_HOOD_493972",
       "name": "pericardial calcification",
       "description": "Presence or absence of pericardial calcification",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_880214.0",
+          "value_code": "OIFMA_HOOD_493972.0",
           "name": "present",
           "description": "Pericardial calcification is present"
         },
         {
-          "value_code": "OIFMA_HOOD_880214.1",
+          "value_code": "OIFMA_HOOD_493972.1",
           "name": "absent",
           "description": "Pericardial calcification is absent"
         }

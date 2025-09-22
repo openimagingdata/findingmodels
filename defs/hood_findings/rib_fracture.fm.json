@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_163169",
+  "oifm_id": "OIFM_HOOD_463401",
   "name": "Rib Fracture",
   "description": "Fracture of one or more ribs",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_287548",
+      "oifma_id": "OIFMA_HOOD_431214",
       "name": "Presence",
       "description": "Whether a rib fracture is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_287548.0",
+          "value_code": "OIFMA_HOOD_431214.0",
           "name": "Present",
           "description": "A rib fracture is present"
         },
         {
-          "value_code": "OIFMA_HOOD_287548.1",
+          "value_code": "OIFMA_HOOD_431214.1",
           "name": "Absent",
           "description": "No rib fracture is present"
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_737973",
+      "oifma_id": "OIFMA_HOOD_191227",
       "name": "Number of ribs involved",
       "description": "The number of ribs involved in the fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_737973.0",
+          "value_code": "OIFMA_HOOD_191227.0",
           "name": "Single",
           "description": "Only one rib is involved"
         },
         {
-          "value_code": "OIFMA_HOOD_737973.1",
+          "value_code": "OIFMA_HOOD_191227.1",
           "name": "Multiple",
           "description": "Multiple ribs are involved"
         }
@@ -57,43 +44,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_471801",
+      "oifma_id": "OIFMA_HOOD_966767",
       "name": "Location",
       "description": "The location of the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_471801.0",
+          "value_code": "OIFMA_HOOD_966767.0",
           "name": "Right: Upper",
           "description": "Fracture is in the upper right rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.1",
+          "value_code": "OIFMA_HOOD_966767.1",
           "name": "Right: Middle",
           "description": "Fracture is in the middle right rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.2",
+          "value_code": "OIFMA_HOOD_966767.2",
           "name": "Right: Lower",
           "description": "Fracture is in the lower right rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.3",
+          "value_code": "OIFMA_HOOD_966767.3",
           "name": "Left: Upper",
           "description": "Fracture is in the upper left rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.4",
+          "value_code": "OIFMA_HOOD_966767.4",
           "name": "Left: Middle",
           "description": "Fracture is in the middle left rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.5",
+          "value_code": "OIFMA_HOOD_966767.5",
           "name": "Left: Lower",
           "description": "Fracture is in the lower left rib"
         },
         {
-          "value_code": "OIFMA_HOOD_471801.6",
+          "value_code": "OIFMA_HOOD_966767.6",
           "name": "Bilateral",
           "description": "Fracture is present in both right and left ribs"
         }
@@ -102,68 +89,68 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_813791",
+      "oifma_id": "OIFMA_HOOD_706629",
       "name": "Specific ribs affected",
       "description": "The specific ribs affected by the fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_813791.0",
+          "value_code": "OIFMA_HOOD_706629.0",
           "name": "First",
           "description": "Fracture involves the first rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.1",
+          "value_code": "OIFMA_HOOD_706629.1",
           "name": "Second",
           "description": "Fracture involves the second rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.2",
+          "value_code": "OIFMA_HOOD_706629.2",
           "name": "Third",
           "description": "Fracture involves the third rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.3",
+          "value_code": "OIFMA_HOOD_706629.3",
           "name": "Fourth",
           "description": "Fracture involves the fourth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.4",
+          "value_code": "OIFMA_HOOD_706629.4",
           "name": "Fifth",
           "description": "Fracture involves the fifth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.5",
+          "value_code": "OIFMA_HOOD_706629.5",
           "name": "Sixth",
           "description": "Fracture involves the sixth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.6",
+          "value_code": "OIFMA_HOOD_706629.6",
           "name": "Seventh",
           "description": "Fracture involves the seventh rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.7",
+          "value_code": "OIFMA_HOOD_706629.7",
           "name": "Eighth",
           "description": "Fracture involves the eighth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.8",
+          "value_code": "OIFMA_HOOD_706629.8",
           "name": "Ninth",
           "description": "Fracture involves the ninth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.9",
+          "value_code": "OIFMA_HOOD_706629.9",
           "name": "Tenth",
           "description": "Fracture involves the tenth rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.10",
+          "value_code": "OIFMA_HOOD_706629.10",
           "name": "Eleventh",
           "description": "Fracture involves the eleventh rib"
         },
         {
-          "value_code": "OIFMA_HOOD_813791.11",
+          "value_code": "OIFMA_HOOD_706629.11",
           "name": "Twelfth",
           "description": "Fracture involves the twelfth rib"
         }
@@ -172,28 +159,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_578327",
+      "oifma_id": "OIFMA_HOOD_042474",
       "name": "Fracture type",
       "description": "The type of rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_578327.0",
+          "value_code": "OIFMA_HOOD_042474.0",
           "name": "Displaced",
           "description": "The fragments of the rib are separated from each other"
         },
         {
-          "value_code": "OIFMA_HOOD_578327.1",
+          "value_code": "OIFMA_HOOD_042474.1",
           "name": "Non-displaced",
           "description": "The fragments of the rib are still aligned"
         },
         {
-          "value_code": "OIFMA_HOOD_578327.2",
+          "value_code": "OIFMA_HOOD_042474.2",
           "name": "Comminuted",
           "description": "The rib is fractured into multiple pieces"
         },
         {
-          "value_code": "OIFMA_HOOD_578327.3",
+          "value_code": "OIFMA_HOOD_042474.3",
           "name": "Buckle",
           "description": "The rib is partially fractured and has a visible bend"
         }
@@ -202,18 +189,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_257381",
+      "oifma_id": "OIFMA_HOOD_693456",
       "name": "Pneumothorax",
       "description": "Presence or absence of pneumothorax associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_257381.0",
+          "value_code": "OIFMA_HOOD_693456.0",
           "name": "Present",
           "description": "Pneumothorax is present"
         },
         {
-          "value_code": "OIFMA_HOOD_257381.1",
+          "value_code": "OIFMA_HOOD_693456.1",
           "name": "Absent",
           "description": "No pneumothorax is present"
         }
@@ -222,18 +209,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_657709",
+      "oifma_id": "OIFMA_HOOD_229255",
       "name": "Hemothorax",
       "description": "Presence or absence of hemothorax associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_657709.0",
+          "value_code": "OIFMA_HOOD_229255.0",
           "name": "Present",
           "description": "Hemothorax is present"
         },
         {
-          "value_code": "OIFMA_HOOD_657709.1",
+          "value_code": "OIFMA_HOOD_229255.1",
           "name": "Absent",
           "description": "No hemothorax is present"
         }
@@ -242,18 +229,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_630833",
+      "oifma_id": "OIFMA_HOOD_490735",
       "name": "Pulmonary contusion",
       "description": "Presence or absence of pulmonary contusion associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_630833.0",
+          "value_code": "OIFMA_HOOD_490735.0",
           "name": "Present",
           "description": "Pulmonary contusion is present"
         },
         {
-          "value_code": "OIFMA_HOOD_630833.1",
+          "value_code": "OIFMA_HOOD_490735.1",
           "name": "Absent",
           "description": "No pulmonary contusion is present"
         }
@@ -262,18 +249,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_116510",
+      "oifma_id": "OIFMA_HOOD_993949",
       "name": "Subcutaneous emphysema",
       "description": "Presence or absence of subcutaneous emphysema associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_116510.0",
+          "value_code": "OIFMA_HOOD_993949.0",
           "name": "Present",
           "description": "Subcutaneous emphysema is present"
         },
         {
-          "value_code": "OIFMA_HOOD_116510.1",
+          "value_code": "OIFMA_HOOD_993949.1",
           "name": "Absent",
           "description": "No subcutaneous emphysema is present"
         }
@@ -282,18 +269,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_122721",
+      "oifma_id": "OIFMA_HOOD_189744",
       "name": "Flail chest",
       "description": "Presence or absence of flail chest associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_122721.0",
+          "value_code": "OIFMA_HOOD_189744.0",
           "name": "Present",
           "description": "Flail chest is present"
         },
         {
-          "value_code": "OIFMA_HOOD_122721.1",
+          "value_code": "OIFMA_HOOD_189744.1",
           "name": "Absent",
           "description": "No flail chest is present"
         }
@@ -302,18 +289,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_922425",
+      "oifma_id": "OIFMA_HOOD_807937",
       "name": "Vertebral fracture",
       "description": "Presence or absence of vertebral fracture associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_922425.0",
+          "value_code": "OIFMA_HOOD_807937.0",
           "name": "Present",
           "description": "Vertebral fracture is present"
         },
         {
-          "value_code": "OIFMA_HOOD_922425.1",
+          "value_code": "OIFMA_HOOD_807937.1",
           "name": "Absent",
           "description": "No vertebral fracture is present"
         }
@@ -322,18 +309,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_390022",
+      "oifma_id": "OIFMA_HOOD_498354",
       "name": "Sternal fracture",
       "description": "Presence or absence of sternal fracture associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_390022.0",
+          "value_code": "OIFMA_HOOD_498354.0",
           "name": "Present",
           "description": "Sternal fracture is present"
         },
         {
-          "value_code": "OIFMA_HOOD_390022.1",
+          "value_code": "OIFMA_HOOD_498354.1",
           "name": "Absent",
           "description": "No sternal fracture is present"
         }
@@ -342,18 +329,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_893785",
+      "oifma_id": "OIFMA_HOOD_255941",
       "name": "Clavicular fracture",
       "description": "Presence or absence of clavicular fracture associated with the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_893785.0",
+          "value_code": "OIFMA_HOOD_255941.0",
           "name": "Present",
           "description": "Clavicular fracture is present"
         },
         {
-          "value_code": "OIFMA_HOOD_893785.1",
+          "value_code": "OIFMA_HOOD_255941.1",
           "name": "Absent",
           "description": "No clavicular fracture is present"
         }
@@ -362,18 +349,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_332752",
+      "oifma_id": "OIFMA_HOOD_691803",
       "name": "Evidence of healing",
       "description": "Presence or absence of evidence of healing in the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_332752.0",
+          "value_code": "OIFMA_HOOD_691803.0",
           "name": "Present",
           "description": "Evidence of healing is present"
         },
         {
-          "value_code": "OIFMA_HOOD_332752.1",
+          "value_code": "OIFMA_HOOD_691803.1",
           "name": "Absent",
           "description": "No evidence of healing is present"
         }
@@ -382,18 +369,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_060268",
+      "oifma_id": "OIFMA_HOOD_046210",
       "name": "Mechanism of Injury",
       "description": "The mechanism of injury causing the rib fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_060268.0",
+          "value_code": "OIFMA_HOOD_046210.0",
           "name": "Blunt trauma",
           "description": "Rib fracture caused by blunt trauma"
         },
         {
-          "value_code": "OIFMA_HOOD_060268.1",
+          "value_code": "OIFMA_HOOD_046210.1",
           "name": "Penetrating trauma",
           "description": "Rib fracture caused by penetrating trauma"
         }

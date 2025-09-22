@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_527065",
+  "oifm_id": "OIFM_HOOD_975798",
   "name": "Epidermal Inclusion Cyst",
   "description": "Presence of an epidermal inclusion cyst",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_754962",
+      "oifma_id": "OIFMA_HOOD_848428",
       "name": "Presence of Epidermal Inclusion Cyst",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_754962.0",
+          "value_code": "OIFMA_HOOD_848428.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_754962.1",
+          "value_code": "OIFMA_HOOD_848428.1",
           "name": "Absent"
         }
       ],
@@ -34,28 +21,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_914894",
+      "oifma_id": "OIFMA_HOOD_441324",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_914894.0",
+          "value_code": "OIFMA_HOOD_441324.0",
           "name": "New"
         },
         {
-          "value_code": "OIFMA_HOOD_914894.1",
+          "value_code": "OIFMA_HOOD_441324.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_914894.2",
+          "value_code": "OIFMA_HOOD_441324.2",
           "name": "Increased"
         },
         {
-          "value_code": "OIFMA_HOOD_914894.3",
+          "value_code": "OIFMA_HOOD_441324.3",
           "name": "Decreased"
         },
         {
-          "value_code": "OIFMA_HOOD_914894.4",
+          "value_code": "OIFMA_HOOD_441324.4",
           "name": "Removed"
         }
       ],
@@ -63,16 +50,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_898243",
+      "oifma_id": "OIFMA_HOOD_832501",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_898243.0",
+          "value_code": "OIFMA_HOOD_832501.0",
           "name": "Specify location"
         },
         {
-          "value_code": "OIFMA_HOOD_898243.1",
+          "value_code": "OIFMA_HOOD_832501.1",
           "name": "Not specified"
         }
       ],
@@ -80,23 +67,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_779480",
+      "oifma_id": "OIFMA_HOOD_872786",
       "name": "Size (cm)",
       "type": "numeric",
       "unit": "cm",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_157173",
+      "oifma_id": "OIFMA_HOOD_499406",
       "name": "Morphology",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_157173.0",
+          "value_code": "OIFMA_HOOD_499406.0",
           "name": "Round"
         },
         {
-          "value_code": "OIFMA_HOOD_157173.1",
+          "value_code": "OIFMA_HOOD_499406.1",
           "name": "Oval"
         }
       ],
@@ -104,24 +91,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_989010",
+      "oifma_id": "OIFMA_HOOD_397040",
       "name": "Content",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_989010.0",
+          "value_code": "OIFMA_HOOD_397040.0",
           "name": "Homogeneous"
         },
         {
-          "value_code": "OIFMA_HOOD_989010.1",
+          "value_code": "OIFMA_HOOD_397040.1",
           "name": "Heterogeneous"
         },
         {
-          "value_code": "OIFMA_HOOD_989010.2",
+          "value_code": "OIFMA_HOOD_397040.2",
           "name": "Calcified"
         },
         {
-          "value_code": "OIFMA_HOOD_989010.3",
+          "value_code": "OIFMA_HOOD_397040.3",
           "name": "Not specified"
         }
       ],

@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_672318",
+  "oifm_id": "OIFM_HOOD_245356",
   "name": "Tracheomalacia",
   "description": "Tracheomalacia is the weakening or collapse of the tracheal walls, which can lead to airway obstruction.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_836252",
+      "oifma_id": "OIFMA_HOOD_101436",
       "name": "Presence",
       "description": "Indicates whether tracheomalacia is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_836252.0",
+          "value_code": "OIFMA_HOOD_101436.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_836252.1",
+          "value_code": "OIFMA_HOOD_101436.1",
           "name": "Absent"
         }
       ],
@@ -35,21 +22,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_520638",
+      "oifma_id": "OIFMA_HOOD_939132",
       "name": "Severity",
       "description": "Indicates the severity of tracheomalacia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_520638.0",
+          "value_code": "OIFMA_HOOD_939132.0",
           "name": "Mild"
         },
         {
-          "value_code": "OIFMA_HOOD_520638.1",
+          "value_code": "OIFMA_HOOD_939132.1",
           "name": "Moderate"
         },
         {
-          "value_code": "OIFMA_HOOD_520638.2",
+          "value_code": "OIFMA_HOOD_939132.2",
           "name": "Severe"
         }
       ],
@@ -57,29 +44,29 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_629966",
+      "oifma_id": "OIFMA_HOOD_173672",
       "name": "Location",
       "description": "Indicates the location of tracheomalacia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_629966.0",
+          "value_code": "OIFMA_HOOD_173672.0",
           "name": "Trachea - Proximal"
         },
         {
-          "value_code": "OIFMA_HOOD_629966.1",
+          "value_code": "OIFMA_HOOD_173672.1",
           "name": "Trachea - Mid"
         },
         {
-          "value_code": "OIFMA_HOOD_629966.2",
+          "value_code": "OIFMA_HOOD_173672.2",
           "name": "Trachea - Distal"
         },
         {
-          "value_code": "OIFMA_HOOD_629966.3",
+          "value_code": "OIFMA_HOOD_173672.3",
           "name": "Main Bronchus - Right"
         },
         {
-          "value_code": "OIFMA_HOOD_629966.4",
+          "value_code": "OIFMA_HOOD_173672.4",
           "name": "Main Bronchus - Left"
         }
       ],
@@ -87,21 +74,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_435272",
+      "oifma_id": "OIFMA_HOOD_369174",
       "name": "Extent",
       "description": "Indicates the extent of tracheomalacia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_435272.0",
+          "value_code": "OIFMA_HOOD_369174.0",
           "name": "Focal"
         },
         {
-          "value_code": "OIFMA_HOOD_435272.1",
+          "value_code": "OIFMA_HOOD_369174.1",
           "name": "Segmental"
         },
         {
-          "value_code": "OIFMA_HOOD_435272.2",
+          "value_code": "OIFMA_HOOD_369174.2",
           "name": "Diffuse"
         }
       ],
@@ -109,17 +96,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_255861",
+      "oifma_id": "OIFMA_HOOD_043441",
       "name": "Airway Collapse",
       "description": "Indicates whether airway collapse is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_255861.0",
+          "value_code": "OIFMA_HOOD_043441.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_255861.1",
+          "value_code": "OIFMA_HOOD_043441.1",
           "name": "Absent"
         }
       ],
@@ -127,17 +114,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_199447",
+      "oifma_id": "OIFMA_HOOD_155828",
       "name": "Degree of Collapse",
       "description": "Indicates the degree of airway collapse.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_199447.0",
+          "value_code": "OIFMA_HOOD_155828.0",
           "name": "<50%"
         },
         {
-          "value_code": "OIFMA_HOOD_199447.1",
+          "value_code": "OIFMA_HOOD_155828.1",
           "name": ">50%"
         }
       ],
@@ -145,17 +132,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_603967",
+      "oifma_id": "OIFMA_HOOD_609004",
       "name": "Expiratory Air Trapping",
       "description": "Indicates whether expiratory air trapping is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_603967.0",
+          "value_code": "OIFMA_HOOD_609004.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_603967.1",
+          "value_code": "OIFMA_HOOD_609004.1",
           "name": "Absent"
         }
       ],
@@ -163,17 +150,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_359521",
+      "oifma_id": "OIFMA_HOOD_512375",
       "name": "Signs of Chronic Obstruction",
       "description": "Indicates whether signs of chronic obstruction are present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_359521.0",
+          "value_code": "OIFMA_HOOD_512375.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_359521.1",
+          "value_code": "OIFMA_HOOD_512375.1",
           "name": "Absent"
         }
       ],

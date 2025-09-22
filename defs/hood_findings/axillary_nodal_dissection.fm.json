@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_047271",
+  "oifm_id": "OIFM_HOOD_814695",
   "name": "Axillary Nodal Dissection",
   "description": "Presence of axillary nodal dissection and its characteristics",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_734856",
+      "oifma_id": "OIFMA_HOOD_231002",
       "name": "Presence of Axillary Nodal Dissection",
       "description": "Indicates whether the axillary nodal dissection is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_734856.0",
+          "value_code": "OIFMA_HOOD_231002.0",
           "name": "Present",
           "description": "Axillary nodal dissection is present"
         },
         {
-          "value_code": "OIFMA_HOOD_734856.1",
+          "value_code": "OIFMA_HOOD_231002.1",
           "name": "Absent",
           "description": "Axillary nodal dissection is absent"
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_008511",
+      "oifma_id": "OIFMA_HOOD_131771",
       "name": "Status",
       "description": "Indicates whether the axillary nodal dissection is new or unchanged",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_008511.0",
+          "value_code": "OIFMA_HOOD_131771.0",
           "name": "New",
           "description": "Axillary nodal dissection is new"
         },
         {
-          "value_code": "OIFMA_HOOD_008511.1",
+          "value_code": "OIFMA_HOOD_131771.1",
           "name": "Unchanged",
           "description": "Axillary nodal dissection is unchanged"
         }
@@ -57,23 +44,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_921475",
+      "oifma_id": "OIFMA_HOOD_065234",
       "name": "Side Finding",
       "description": "Indicates the side of the axillary nodal dissection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_921475.0",
+          "value_code": "OIFMA_HOOD_065234.0",
           "name": "Right",
           "description": "Axillary nodal dissection is on the right side"
         },
         {
-          "value_code": "OIFMA_HOOD_921475.1",
+          "value_code": "OIFMA_HOOD_065234.1",
           "name": "Left",
           "description": "Axillary nodal dissection is on the left side"
         },
         {
-          "value_code": "OIFMA_HOOD_921475.2",
+          "value_code": "OIFMA_HOOD_065234.2",
           "name": "Bilateral",
           "description": "Axillary nodal dissection is on both sides"
         }
@@ -82,18 +69,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_032026",
+      "oifma_id": "OIFMA_HOOD_614959",
       "name": "Extent of Dissection",
       "description": "Indicates the extent of the axillary nodal dissection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_032026.0",
+          "value_code": "OIFMA_HOOD_614959.0",
           "name": "Complete",
           "description": "Axillary nodal dissection is complete"
         },
         {
-          "value_code": "OIFMA_HOOD_032026.1",
+          "value_code": "OIFMA_HOOD_614959.1",
           "name": "Partial",
           "description": "Axillary nodal dissection is partial"
         }
@@ -102,18 +89,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_039207",
+      "oifma_id": "OIFMA_HOOD_715752",
       "name": "Surgical Clips Present",
       "description": "Indicates whether surgical clips are present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_039207.0",
+          "value_code": "OIFMA_HOOD_715752.0",
           "name": "Yes",
           "description": "Surgical clips are present"
         },
         {
-          "value_code": "OIFMA_HOOD_039207.1",
+          "value_code": "OIFMA_HOOD_715752.1",
           "name": "No",
           "description": "Surgical clips are absent"
         }
@@ -122,18 +109,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_988436",
+      "oifma_id": "OIFMA_HOOD_543471",
       "name": "Fluid collection",
       "description": "Indicates the presence of fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_988436.0",
+          "value_code": "OIFMA_HOOD_543471.0",
           "name": "Present",
           "description": "Fluid collection is present"
         },
         {
-          "value_code": "OIFMA_HOOD_988436.1",
+          "value_code": "OIFMA_HOOD_543471.1",
           "name": "Absent",
           "description": "Fluid collection is absent"
         }
@@ -142,18 +129,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_533959",
+      "oifma_id": "OIFMA_HOOD_704897",
       "name": "Breast Mass",
       "description": "Indicates the presence of a breast mass",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_533959.0",
+          "value_code": "OIFMA_HOOD_704897.0",
           "name": "Present",
           "description": "Breast mass is present"
         },
         {
-          "value_code": "OIFMA_HOOD_533959.1",
+          "value_code": "OIFMA_HOOD_704897.1",
           "name": "Absent",
           "description": "Breast mass is absent"
         }
@@ -162,18 +149,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_240142",
+      "oifma_id": "OIFMA_HOOD_062728",
       "name": "Breast Skin Thickening",
       "description": "Indicates the presence of breast skin thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_240142.0",
+          "value_code": "OIFMA_HOOD_062728.0",
           "name": "Present",
           "description": "Breast skin thickening is present"
         },
         {
-          "value_code": "OIFMA_HOOD_240142.1",
+          "value_code": "OIFMA_HOOD_062728.1",
           "name": "Absent",
           "description": "Breast skin thickening is absent"
         }
@@ -182,18 +169,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_693772",
+      "oifma_id": "OIFMA_HOOD_208613",
       "name": "Scar Tissue",
       "description": "Indicates the presence of scar tissue",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_693772.0",
+          "value_code": "OIFMA_HOOD_208613.0",
           "name": "Present",
           "description": "Scar tissue is present"
         },
         {
-          "value_code": "OIFMA_HOOD_693772.1",
+          "value_code": "OIFMA_HOOD_208613.1",
           "name": "Absent",
           "description": "Scar tissue is absent"
         }

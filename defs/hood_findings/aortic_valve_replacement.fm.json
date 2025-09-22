@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_021389",
+  "oifm_id": "OIFM_HOOD_104904",
   "name": "Aortic Valve Replacement",
   "description": "A finding indicating the presence or absence of an aortic valve replacement, along with its characteristics.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_050557",
+      "oifma_id": "OIFMA_HOOD_968588",
       "name": "Presence of Aortic Valve Replacement",
       "description": "Indication of whether an aortic valve replacement is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_050557.0",
+          "value_code": "OIFMA_HOOD_968588.0",
           "name": "Present",
           "description": "The finding indicates the presence of an aortic valve replacement."
         },
         {
-          "value_code": "OIFMA_HOOD_050557.1",
+          "value_code": "OIFMA_HOOD_968588.1",
           "name": "Absent",
           "description": "The finding indicates the absence of an aortic valve replacement."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_998449",
+      "oifma_id": "OIFMA_HOOD_768806",
       "name": "Status",
       "description": "The status of the aortic valve replacement.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_998449.0",
+          "value_code": "OIFMA_HOOD_768806.0",
           "name": "New placement",
           "description": "The aortic valve replacement has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_998449.1",
+          "value_code": "OIFMA_HOOD_768806.1",
           "name": "Unchanged",
           "description": "The aortic valve replacement has not changed since the previous examination."
         },
         {
-          "value_code": "OIFMA_HOOD_998449.2",
+          "value_code": "OIFMA_HOOD_768806.2",
           "name": "Complication",
           "description": "The aortic valve replacement is associated with a complication."
         },
         {
-          "value_code": "OIFMA_HOOD_998449.3",
+          "value_code": "OIFMA_HOOD_768806.3",
           "name": "Removed",
           "description": "The aortic valve replacement has been removed."
         }
@@ -67,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_807923",
+      "oifma_id": "OIFMA_HOOD_804970",
       "name": "Type Finding",
       "description": "The type of aortic valve replacement.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_807923.0",
+          "value_code": "OIFMA_HOOD_804970.0",
           "name": "Mechanical",
           "description": "The aortic valve replacement is mechanical."
         },
         {
-          "value_code": "OIFMA_HOOD_807923.1",
+          "value_code": "OIFMA_HOOD_804970.1",
           "name": "Biological",
           "description": "The aortic valve replacement is biological."
         },
         {
-          "value_code": "OIFMA_HOOD_807923.2",
+          "value_code": "OIFMA_HOOD_804970.2",
           "name": "TAVR",
           "description": "The aortic valve replacement utilizes a transcatheter aortic valve replacement method."
         }
@@ -92,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_866241",
+      "oifma_id": "OIFMA_HOOD_223118",
       "name": "Position",
       "description": "The position of the aortic valve replacement.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_866241.0",
+          "value_code": "OIFMA_HOOD_223118.0",
           "name": "Proper",
           "description": "The aortic valve replacement is properly positioned."
         },
         {
-          "value_code": "OIFMA_HOOD_866241.1",
+          "value_code": "OIFMA_HOOD_223118.1",
           "name": "Malpositioned",
           "description": "The aortic valve replacement is malpositioned."
         }
@@ -112,18 +99,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_337273",
+      "oifma_id": "OIFMA_HOOD_251871",
       "name": "Paravalvular Leak",
       "description": "Indication of whether a paravalvular leak is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_337273.0",
+          "value_code": "OIFMA_HOOD_251871.0",
           "name": "Present",
           "description": "A paravalvular leak is present."
         },
         {
-          "value_code": "OIFMA_HOOD_337273.1",
+          "value_code": "OIFMA_HOOD_251871.1",
           "name": "Absent",
           "description": "No paravalvular leak is present."
         }
@@ -132,18 +119,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_140489",
+      "oifma_id": "OIFMA_HOOD_776930",
       "name": "Valve Thrombosis",
       "description": "Indication of whether valve thrombosis is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_140489.0",
+          "value_code": "OIFMA_HOOD_776930.0",
           "name": "Present",
           "description": "Valve thrombosis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_140489.1",
+          "value_code": "OIFMA_HOOD_776930.1",
           "name": "Absent",
           "description": "No valve thrombosis is present."
         }

@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_420036",
+  "oifm_id": "OIFM_HOOD_461409",
   "name": "Pfo Closure Device",
   "description": "A closure device placed in the patent foramen ovale (PFO) to prevent the passage of blood between the atria.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_262524",
+      "oifma_id": "OIFMA_HOOD_921973",
       "name": "presence_of_device",
       "description": "Indicates whether a PFO closure device is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_262524.0",
+          "value_code": "OIFMA_HOOD_921973.0",
           "name": "Present",
           "description": "A PFO closure device is present."
         },
         {
-          "value_code": "OIFMA_HOOD_262524.1",
+          "value_code": "OIFMA_HOOD_921973.1",
           "name": "Absent",
           "description": "A PFO closure device is absent."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_156045",
+      "oifma_id": "OIFMA_HOOD_321870",
       "name": "device_status",
       "description": "The status of the PFO closure device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_156045.0",
+          "value_code": "OIFMA_HOOD_321870.0",
           "name": "New placement",
           "description": "A new PFO closure device has been placed."
         },
         {
-          "value_code": "OIFMA_HOOD_156045.1",
+          "value_code": "OIFMA_HOOD_321870.1",
           "name": "Unchanged",
           "description": "The PFO closure device is unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_156045.2",
+          "value_code": "OIFMA_HOOD_321870.2",
           "name": "Complication",
           "description": "There is a complication associated with the PFO closure device."
         },
         {
-          "value_code": "OIFMA_HOOD_156045.3",
+          "value_code": "OIFMA_HOOD_321870.3",
           "name": "Removed",
           "description": "The PFO closure device has been removed."
         }
@@ -67,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_610858",
+      "oifma_id": "OIFMA_HOOD_759026",
       "name": "device_type",
       "description": "The type of PFO closure device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_610858.0",
+          "value_code": "OIFMA_HOOD_759026.0",
           "name": "Amplatzer",
           "description": "The PFO closure device is of type Amplatzer."
         },
         {
-          "value_code": "OIFMA_HOOD_610858.1",
+          "value_code": "OIFMA_HOOD_759026.1",
           "name": "Gore HELEX",
           "description": "The PFO closure device is of type Gore HELEX."
         },
         {
-          "value_code": "OIFMA_HOOD_610858.2",
+          "value_code": "OIFMA_HOOD_759026.2",
           "name": "Other",
           "description": "The PFO closure device is of another type."
         }
@@ -92,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_521039",
+      "oifma_id": "OIFMA_HOOD_404464",
       "name": "associated_thrombus",
       "description": "Indicates the presence or absence of an associated thrombus.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_521039.0",
+          "value_code": "OIFMA_HOOD_404464.0",
           "name": "Present",
           "description": "An associated thrombus is present."
         },
         {
-          "value_code": "OIFMA_HOOD_521039.1",
+          "value_code": "OIFMA_HOOD_404464.1",
           "name": "Absent",
           "description": "An associated thrombus is absent."
         }

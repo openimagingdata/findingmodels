@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_637694",
+  "oifm_id": "OIFM_HOOD_453479",
   "name": "Bochdalek Hernia",
   "description": "Bochdalek Hernia is a congenital diaphragmatic hernia that allows abdominal contents to herniate into the chest cavity through a defect in the diaphragm.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_641309",
+      "oifma_id": "OIFMA_HOOD_938098",
       "name": "Presence of Bochdalek Hernia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_641309.0",
+          "value_code": "OIFMA_HOOD_938098.0",
           "name": "Yes"
         },
         {
-          "value_code": "OIFMA_HOOD_641309.1",
+          "value_code": "OIFMA_HOOD_938098.1",
           "name": "No"
         }
       ],
@@ -34,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_766086",
+      "oifma_id": "OIFMA_HOOD_174696",
       "name": "Side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_766086.0",
+          "value_code": "OIFMA_HOOD_174696.0",
           "name": "Left"
         },
         {
-          "value_code": "OIFMA_HOOD_766086.1",
+          "value_code": "OIFMA_HOOD_174696.1",
           "name": "Right"
         },
         {
-          "value_code": "OIFMA_HOOD_766086.2",
+          "value_code": "OIFMA_HOOD_174696.2",
           "name": "Bilateral"
         }
       ],
@@ -55,20 +42,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_409806",
+      "oifma_id": "OIFMA_HOOD_500770",
       "name": "Size Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_409806.0",
+          "value_code": "OIFMA_HOOD_500770.0",
           "name": "Small"
         },
         {
-          "value_code": "OIFMA_HOOD_409806.1",
+          "value_code": "OIFMA_HOOD_500770.1",
           "name": "Medium"
         },
         {
-          "value_code": "OIFMA_HOOD_409806.2",
+          "value_code": "OIFMA_HOOD_500770.2",
           "name": "Large"
         }
       ],
@@ -76,24 +63,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_996202",
+      "oifma_id": "OIFMA_HOOD_168901",
       "name": "Contents",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_996202.0",
+          "value_code": "OIFMA_HOOD_168901.0",
           "name": "Fat"
         },
         {
-          "value_code": "OIFMA_HOOD_996202.1",
+          "value_code": "OIFMA_HOOD_168901.1",
           "name": "Bowel"
         },
         {
-          "value_code": "OIFMA_HOOD_996202.2",
+          "value_code": "OIFMA_HOOD_168901.2",
           "name": "Both"
         },
         {
-          "value_code": "OIFMA_HOOD_996202.3",
+          "value_code": "OIFMA_HOOD_168901.3",
           "name": "Other"
         }
       ],
@@ -101,16 +88,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_380047",
+      "oifma_id": "OIFMA_HOOD_948041",
       "name": "Pulmonary Hypoplasia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_380047.0",
+          "value_code": "OIFMA_HOOD_948041.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_380047.1",
+          "value_code": "OIFMA_HOOD_948041.1",
           "name": "Absent"
         }
       ],
@@ -118,16 +105,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_531946",
+      "oifma_id": "OIFMA_HOOD_926740",
       "name": "Other Diaphragmatic Hernias",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_531946.0",
+          "value_code": "OIFMA_HOOD_926740.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_531946.1",
+          "value_code": "OIFMA_HOOD_926740.1",
           "name": "Absent"
         }
       ],

@@ -1,61 +1,48 @@
 {
-  "oifm_id": "OIFM_HOOD_477267",
+  "oifm_id": "OIFM_HOOD_029800",
   "name": "Aortic Measurements",
   "description": "Measurements and characteristics of the thoracic aorta",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_694025",
+      "oifma_id": "OIFMA_HOOD_319993",
       "name": "segment",
       "description": "The segment of the thoracic aorta",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_694025.0",
+          "value_code": "OIFMA_HOOD_319993.0",
           "name": "aortic root"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.1",
+          "value_code": "OIFMA_HOOD_319993.1",
           "name": "aortic annulus"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.2",
+          "value_code": "OIFMA_HOOD_319993.2",
           "name": "sinus of Valsalva"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.3",
+          "value_code": "OIFMA_HOOD_319993.3",
           "name": "sinotubular junction"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.4",
+          "value_code": "OIFMA_HOOD_319993.4",
           "name": "ascending aorta"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.5",
+          "value_code": "OIFMA_HOOD_319993.5",
           "name": "proximal arch"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.6",
+          "value_code": "OIFMA_HOOD_319993.6",
           "name": "distal arch"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.7",
+          "value_code": "OIFMA_HOOD_319993.7",
           "name": "descending thoracic aorta"
         },
         {
-          "value_code": "OIFMA_HOOD_694025.8",
+          "value_code": "OIFMA_HOOD_319993.8",
           "name": "diaphragmatic hiatus"
         }
       ],
@@ -63,7 +50,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_417415",
+      "oifma_id": "OIFMA_HOOD_604118",
       "name": "sac dimensions",
       "description": "Dimensions of the aortic sac",
       "type": "numeric",
@@ -71,7 +58,7 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_267497",
+      "oifma_id": "OIFMA_HOOD_676161",
       "name": "length",
       "description": "Length of the aortic sac",
       "type": "numeric",
@@ -79,7 +66,7 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_457444",
+      "oifma_id": "OIFMA_HOOD_605153",
       "name": "prior measurement",
       "description": "Measurement of the aortic sac from a prior examination",
       "type": "numeric",
@@ -87,7 +74,7 @@
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_443933",
+      "oifma_id": "OIFMA_HOOD_695107",
       "name": "luminal diameter",
       "description": "Diameter of the aortic sac if mural thrombus is present",
       "type": "numeric",
@@ -95,27 +82,27 @@
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_424660",
+      "oifma_id": "OIFMA_HOOD_008437",
       "name": "sac morphology",
       "description": "Morphology of the aortic sac",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_424660.0",
+          "value_code": "OIFMA_HOOD_008437.0",
           "name": "dilated",
           "description": "≥ 4.0 and < 5.0 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_424660.1",
+          "value_code": "OIFMA_HOOD_008437.1",
           "name": "aneurysm",
           "description": "≥ 5.0 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_424660.2",
+          "value_code": "OIFMA_HOOD_008437.2",
           "name": "fusiform"
         },
         {
-          "value_code": "OIFMA_HOOD_424660.3",
+          "value_code": "OIFMA_HOOD_008437.3",
           "name": "saccular"
         }
       ],
@@ -123,28 +110,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_223858",
+      "oifma_id": "OIFMA_HOOD_630091",
       "name": "characteristics of wall",
       "description": "Characteristics of the aortic wall",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_223858.0",
+          "value_code": "OIFMA_HOOD_630091.0",
           "name": "mural calcification",
           "description": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_223858.1",
+          "value_code": "OIFMA_HOOD_630091.1",
           "name": "mural calcification",
           "description": "absent"
         },
         {
-          "value_code": "OIFMA_HOOD_223858.2",
+          "value_code": "OIFMA_HOOD_630091.2",
           "name": "mural thrombus",
           "description": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_223858.3",
+          "value_code": "OIFMA_HOOD_630091.3",
           "name": "mural thrombus",
           "description": "absent"
         }
@@ -153,41 +140,41 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_202777",
+      "oifma_id": "OIFMA_HOOD_776373",
       "name": "related vessels",
       "description": "Related vessels involved",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_202777.0",
+          "value_code": "OIFMA_HOOD_776373.0",
           "name": "brachycephalic trunk"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.1",
+          "value_code": "OIFMA_HOOD_776373.1",
           "name": "right subclavian artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.2",
+          "value_code": "OIFMA_HOOD_776373.2",
           "name": "right common carotid artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.3",
+          "value_code": "OIFMA_HOOD_776373.3",
           "name": "left subclavian artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.4",
+          "value_code": "OIFMA_HOOD_776373.4",
           "name": "left common carotid artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.5",
+          "value_code": "OIFMA_HOOD_776373.5",
           "name": "right vertebral artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.6",
+          "value_code": "OIFMA_HOOD_776373.6",
           "name": "left vertebral artery"
         },
         {
-          "value_code": "OIFMA_HOOD_202777.7",
+          "value_code": "OIFMA_HOOD_776373.7",
           "name": "does not involve great vessels"
         }
       ],

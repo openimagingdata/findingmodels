@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_057142",
+  "oifm_id": "OIFM_HOOD_070301",
   "name": "Left Ventricular Assist Device Lvad",
   "description": "A left ventricular assist device (LVAD) is a mechanical pump that is used to support the function of the left ventricle of the heart.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_104136",
+      "oifma_id": "OIFMA_HOOD_656150",
       "name": "Presence of LVAD",
       "description": "Indicates whether an LVAD is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_104136.0",
+          "value_code": "OIFMA_HOOD_656150.0",
           "name": "Present",
           "description": "An LVAD is present"
         },
         {
-          "value_code": "OIFMA_HOOD_104136.1",
+          "value_code": "OIFMA_HOOD_656150.1",
           "name": "Absent",
           "description": "No LVAD is present"
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_604620",
+      "oifma_id": "OIFMA_HOOD_469556",
       "name": "Appropriate position",
       "description": "Indicates whether the LVAD is in an appropriate position",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_604620.0",
+          "value_code": "OIFMA_HOOD_469556.0",
           "name": "Yes",
           "description": "LVAD is in an appropriate position"
         },
         {
-          "value_code": "OIFMA_HOOD_604620.1",
+          "value_code": "OIFMA_HOOD_469556.1",
           "name": "No",
           "description": "LVAD is not in an appropriate position"
         }
@@ -57,18 +44,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_448749",
+      "oifma_id": "OIFMA_HOOD_300702",
       "name": "Location",
       "description": "Indicates the location of the LVAD",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_448749.0",
+          "value_code": "OIFMA_HOOD_300702.0",
           "name": "Intracorporeal",
           "description": "LVAD is located within the body"
         },
         {
-          "value_code": "OIFMA_HOOD_448749.1",
+          "value_code": "OIFMA_HOOD_300702.1",
           "name": "Extracorporeal",
           "description": "LVAD is located outside the body"
         }
@@ -77,18 +64,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_252871",
+      "oifma_id": "OIFMA_HOOD_311588",
       "name": "Outflow Conduit Location",
       "description": "Indicates the location of the outflow conduit of the LVAD",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_252871.0",
+          "value_code": "OIFMA_HOOD_311588.0",
           "name": "Ascending aorta",
           "description": "Outflow conduit is connected to the ascending aorta"
         },
         {
-          "value_code": "OIFMA_HOOD_252871.1",
+          "value_code": "OIFMA_HOOD_311588.1",
           "name": "Descending aorta",
           "description": "Outflow conduit is connected to the descending aorta"
         }

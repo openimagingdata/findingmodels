@@ -1,37 +1,24 @@
 {
-  "oifm_id": "OIFM_HOOD_154912",
+  "oifm_id": "OIFM_HOOD_807181",
   "name": "Mastectomy Breast Implant",
   "description": "Finding related to mastectomy and breast implant",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_424900",
+      "oifma_id": "OIFMA_HOOD_863008",
       "name": "mastectomy",
       "description": "Mastectomy type",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_424900.0",
+          "value_code": "OIFMA_HOOD_863008.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_424900.1",
+          "value_code": "OIFMA_HOOD_863008.1",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_HOOD_424900.2",
+          "value_code": "OIFMA_HOOD_863008.2",
           "name": "bilateral"
         }
       ],
@@ -39,21 +26,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_410963",
+      "oifma_id": "OIFMA_HOOD_127273",
       "name": "lumpectomy",
       "description": "Lumpectomy type",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_410963.0",
+          "value_code": "OIFMA_HOOD_127273.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_410963.1",
+          "value_code": "OIFMA_HOOD_127273.1",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_HOOD_410963.2",
+          "value_code": "OIFMA_HOOD_127273.2",
           "name": "bilateral"
         }
       ],
@@ -61,21 +48,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_346575",
+      "oifma_id": "OIFMA_HOOD_460383",
       "name": "implant presence",
       "description": "Presence of breast implant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_346575.0",
+          "value_code": "OIFMA_HOOD_460383.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_346575.1",
+          "value_code": "OIFMA_HOOD_460383.1",
           "name": "left breast"
         },
         {
-          "value_code": "OIFMA_HOOD_346575.2",
+          "value_code": "OIFMA_HOOD_460383.2",
           "name": "bilateral"
         }
       ],
@@ -83,17 +70,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_923347",
+      "oifma_id": "OIFMA_HOOD_820105",
       "name": "implant location",
       "description": "Location of breast implant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_923347.0",
+          "value_code": "OIFMA_HOOD_820105.0",
           "name": "preglandular"
         },
         {
-          "value_code": "OIFMA_HOOD_923347.1",
+          "value_code": "OIFMA_HOOD_820105.1",
           "name": "subpectoral"
         }
       ],
@@ -101,17 +88,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_048477",
+      "oifma_id": "OIFMA_HOOD_635583",
       "name": "implant material",
       "description": "Material of breast implant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_048477.0",
+          "value_code": "OIFMA_HOOD_635583.0",
           "name": "saline"
         },
         {
-          "value_code": "OIFMA_HOOD_048477.1",
+          "value_code": "OIFMA_HOOD_635583.1",
           "name": "silicone"
         }
       ],
@@ -119,43 +106,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_966112",
+      "oifma_id": "OIFMA_HOOD_257503",
       "name": "postoperative changes",
       "description": "Postoperative changes",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_966112.0",
+          "value_code": "OIFMA_HOOD_257503.0",
           "name": "postsurgical changes",
           "description": "Scarring"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.1",
+          "value_code": "OIFMA_HOOD_257503.1",
           "name": "flap reconstruction"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.2",
+          "value_code": "OIFMA_HOOD_257503.2",
           "name": "calcifications"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.3",
+          "value_code": "OIFMA_HOOD_257503.3",
           "name": "fat necrosis"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.4",
+          "value_code": "OIFMA_HOOD_257503.4",
           "name": "surgical clips"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.5",
+          "value_code": "OIFMA_HOOD_257503.5",
           "name": "axillary surgical clips",
           "description": "Lymph node dissection / axillary dissection / axillary nodal dissection"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.6",
+          "value_code": "OIFMA_HOOD_257503.6",
           "name": "skin thickening"
         },
         {
-          "value_code": "OIFMA_HOOD_966112.7",
+          "value_code": "OIFMA_HOOD_257503.7",
           "name": "seroma"
         }
       ],

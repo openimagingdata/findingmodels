@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_508652",
+  "oifm_id": "OIFM_HOOD_655491",
   "name": "Wedge Resection",
   "description": "A surgical procedure in which a small, wedge-shaped portion of lung tissue is removed.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_589198",
+      "oifma_id": "OIFMA_HOOD_089610",
       "name": "Presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_589198.0",
+          "value_code": "OIFMA_HOOD_089610.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_589198.1",
+          "value_code": "OIFMA_HOOD_089610.1",
           "name": "Absent"
         }
       ],
@@ -34,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_401909",
+      "oifma_id": "OIFMA_HOOD_548433",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_401909.0",
+          "value_code": "OIFMA_HOOD_548433.0",
           "name": "Post-operative changes observed"
         },
         {
-          "value_code": "OIFMA_HOOD_401909.1",
+          "value_code": "OIFMA_HOOD_548433.1",
           "name": "No post-operative changes"
         },
         {
-          "value_code": "OIFMA_HOOD_401909.2",
+          "value_code": "OIFMA_HOOD_548433.2",
           "name": "Healing"
         }
       ],
@@ -55,36 +42,36 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_684172",
+      "oifma_id": "OIFMA_HOOD_849275",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_684172.0",
+          "value_code": "OIFMA_HOOD_849275.0",
           "name": "Right upper lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.1",
+          "value_code": "OIFMA_HOOD_849275.1",
           "name": "Right middle lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.2",
+          "value_code": "OIFMA_HOOD_849275.2",
           "name": "Right lower lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.3",
+          "value_code": "OIFMA_HOOD_849275.3",
           "name": "Left upper lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.4",
+          "value_code": "OIFMA_HOOD_849275.4",
           "name": "Left lower lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.5",
+          "value_code": "OIFMA_HOOD_849275.5",
           "name": "Bilateral"
         },
         {
-          "value_code": "OIFMA_HOOD_684172.6",
+          "value_code": "OIFMA_HOOD_849275.6",
           "name": "Segmental"
         }
       ],
@@ -92,24 +79,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_331019",
+      "oifma_id": "OIFMA_HOOD_426101",
       "name": "Resection Margin",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_331019.0",
+          "value_code": "OIFMA_HOOD_426101.0",
           "name": "Clear"
         },
         {
-          "value_code": "OIFMA_HOOD_331019.1",
+          "value_code": "OIFMA_HOOD_426101.1",
           "name": "Involved"
         },
         {
-          "value_code": "OIFMA_HOOD_331019.2",
+          "value_code": "OIFMA_HOOD_426101.2",
           "name": "Not specified"
         },
         {
-          "value_code": "OIFMA_HOOD_331019.3",
+          "value_code": "OIFMA_HOOD_426101.3",
           "name": "Close"
         }
       ],
@@ -117,27 +104,27 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_852199",
+      "oifma_id": "OIFMA_HOOD_604755",
       "name": "Size of Resection",
       "type": "numeric",
       "unit": "cm",
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_777001",
+      "oifma_id": "OIFMA_HOOD_064288",
       "name": "Number of lesions resected",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_777001.0",
+          "value_code": "OIFMA_HOOD_064288.0",
           "name": "Single"
         },
         {
-          "value_code": "OIFMA_HOOD_777001.1",
+          "value_code": "OIFMA_HOOD_064288.1",
           "name": "Multiple"
         },
         {
-          "value_code": "OIFMA_HOOD_777001.2",
+          "value_code": "OIFMA_HOOD_064288.2",
           "name": "Extensive resection"
         }
       ],
@@ -145,16 +132,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_473541",
+      "oifma_id": "OIFMA_HOOD_158317",
       "name": "Completeness",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_473541.0",
+          "value_code": "OIFMA_HOOD_158317.0",
           "name": "Complete"
         },
         {
-          "value_code": "OIFMA_HOOD_473541.1",
+          "value_code": "OIFMA_HOOD_158317.1",
           "name": "Incomplete"
         }
       ],
@@ -162,16 +149,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_098779",
+      "oifma_id": "OIFMA_HOOD_960951",
       "name": "Pleural effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_098779.0",
+          "value_code": "OIFMA_HOOD_960951.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_098779.1",
+          "value_code": "OIFMA_HOOD_960951.1",
           "name": "Absent"
         }
       ],
@@ -179,16 +166,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_553324",
+      "oifma_id": "OIFMA_HOOD_820100",
       "name": "Pneumothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_553324.0",
+          "value_code": "OIFMA_HOOD_820100.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_553324.1",
+          "value_code": "OIFMA_HOOD_820100.1",
           "name": "Absent"
         }
       ],
@@ -196,16 +183,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_854240",
+      "oifma_id": "OIFMA_HOOD_297954",
       "name": "Atelectasis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_854240.0",
+          "value_code": "OIFMA_HOOD_297954.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_854240.1",
+          "value_code": "OIFMA_HOOD_297954.1",
           "name": "Absent"
         }
       ],
@@ -213,16 +200,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_380297",
+      "oifma_id": "OIFMA_HOOD_661064",
       "name": "Surgical clips",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_380297.0",
+          "value_code": "OIFMA_HOOD_661064.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_380297.1",
+          "value_code": "OIFMA_HOOD_661064.1",
           "name": "Absent"
         }
       ],
@@ -230,20 +217,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_044448",
+      "oifma_id": "OIFMA_HOOD_773350",
       "name": "Residual tumor",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_044448.0",
+          "value_code": "OIFMA_HOOD_773350.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_044448.1",
+          "value_code": "OIFMA_HOOD_773350.1",
           "name": "Absent"
         },
         {
-          "value_code": "OIFMA_HOOD_044448.2",
+          "value_code": "OIFMA_HOOD_773350.2",
           "name": "Suspected"
         }
       ],
@@ -251,16 +238,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_610904",
+      "oifma_id": "OIFMA_HOOD_144578",
       "name": "Scar tissue",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_610904.0",
+          "value_code": "OIFMA_HOOD_144578.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_610904.1",
+          "value_code": "OIFMA_HOOD_144578.1",
           "name": "Absent"
         }
       ],

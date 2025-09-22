@@ -1,44 +1,31 @@
 {
-  "oifm_id": "OIFM_HOOD_297019",
+  "oifm_id": "OIFM_HOOD_879525",
   "name": "Peripherally Inserted Central Catheter (Picc)",
   "description": "A type of central venous catheter that is inserted in the periphery and advanced centrally to a large vein near the heart.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_416506",
+      "oifma_id": "OIFMA_HOOD_799867",
       "name": "side Finding",
       "description": "The side of the body where the peripherally inserted central catheter is placed.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_416506.0",
+          "value_code": "OIFMA_HOOD_799867.0",
           "name": "Left upper extremity",
           "description": "PICC is placed in the left upper extremity."
         },
         {
-          "value_code": "OIFMA_HOOD_416506.1",
+          "value_code": "OIFMA_HOOD_799867.1",
           "name": "Right upper extremity",
           "description": "PICC is placed in the right upper extremity."
         },
         {
-          "value_code": "OIFMA_HOOD_416506.2",
+          "value_code": "OIFMA_HOOD_799867.2",
           "name": "Left lower extremity",
           "description": "PICC is placed in the left lower extremity."
         },
         {
-          "value_code": "OIFMA_HOOD_416506.3",
+          "value_code": "OIFMA_HOOD_799867.3",
           "name": "Right lower extremity",
           "description": "PICC is placed in the right lower extremity."
         }
@@ -47,43 +34,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_255950",
+      "oifma_id": "OIFMA_HOOD_987529",
       "name": "distal_tip_location",
       "description": "The location of the distal tip of the PICC.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_255950.0",
+          "value_code": "OIFMA_HOOD_987529.0",
           "name": "Subclavian vein",
           "description": "The distal tip of the PICC is in the subclavian vein."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.1",
+          "value_code": "OIFMA_HOOD_987529.1",
           "name": "Brachiocephalic vein",
           "description": "The distal tip of the PICC is in the brachiocephalic vein."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.2",
+          "value_code": "OIFMA_HOOD_987529.2",
           "name": "SVC",
           "description": "The distal tip of the PICC is in the superior vena cava (SVC)."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.3",
+          "value_code": "OIFMA_HOOD_987529.3",
           "name": "Superior cavoatrial junction",
           "description": "The distal tip of the PICC is at the superior cavoatrial junction."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.4",
+          "value_code": "OIFMA_HOOD_987529.4",
           "name": "Azygous vein",
           "description": "The distal tip of the PICC is in the azygous vein."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.5",
+          "value_code": "OIFMA_HOOD_987529.5",
           "name": "Inferior cavoatrial junction",
           "description": "The distal tip of the PICC is at the inferior cavoatrial junction."
         },
         {
-          "value_code": "OIFMA_HOOD_255950.6",
+          "value_code": "OIFMA_HOOD_987529.6",
           "name": "Internal jugular vein",
           "description": "The distal tip of the PICC is in the internal jugular vein."
         }
@@ -92,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_535500",
+      "oifma_id": "OIFMA_HOOD_131054",
       "name": "appropriate_location",
       "description": "Whether the placement of the PICC is appropriate.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_535500.0",
+          "value_code": "OIFMA_HOOD_131054.0",
           "name": "Yes",
           "description": "The placement of the PICC is appropriate."
         },
         {
-          "value_code": "OIFMA_HOOD_535500.1",
+          "value_code": "OIFMA_HOOD_131054.1",
           "name": "No",
           "description": "The placement of the PICC is not appropriate."
         }
@@ -112,33 +99,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_688477",
+      "oifma_id": "OIFMA_HOOD_480114",
       "name": "change_from_prior",
       "description": "Any change from the previous findings of the PICC.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_688477.0",
+          "value_code": "OIFMA_HOOD_480114.0",
           "name": "New placement",
           "description": "The PICC has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_688477.1",
+          "value_code": "OIFMA_HOOD_480114.1",
           "name": "Unchanged",
           "description": "The PICC is unchanged from previous findings."
         },
         {
-          "value_code": "OIFMA_HOOD_688477.2",
+          "value_code": "OIFMA_HOOD_480114.2",
           "name": "Retracted",
           "description": "The PICC has been retracted from its previous position."
         },
         {
-          "value_code": "OIFMA_HOOD_688477.3",
+          "value_code": "OIFMA_HOOD_480114.3",
           "name": "Migrated",
           "description": "The PICC has migrated from its initial placement."
         },
         {
-          "value_code": "OIFMA_HOOD_688477.4",
+          "value_code": "OIFMA_HOOD_480114.4",
           "name": "Removed",
           "description": "The PICC has been removed."
         }

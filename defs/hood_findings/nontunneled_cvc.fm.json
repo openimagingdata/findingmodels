@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_793366",
+  "oifm_id": "OIFM_HOOD_089588",
   "name": "Nontunneled Cvc",
   "description": "Non-tunneled Central Venous Catheter (CVC)",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_148842",
+      "oifma_id": "OIFMA_HOOD_889946",
       "name": "Presence of Non-tunneled Central Venous Catheter (CVC)",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_148842.0",
+          "value_code": "OIFMA_HOOD_889946.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_148842.1",
+          "value_code": "OIFMA_HOOD_889946.1",
           "name": "Absent"
         }
       ],
@@ -34,24 +21,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_177350",
+      "oifma_id": "OIFMA_HOOD_881137",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_177350.0",
+          "value_code": "OIFMA_HOOD_881137.0",
           "name": "New placement"
         },
         {
-          "value_code": "OIFMA_HOOD_177350.1",
+          "value_code": "OIFMA_HOOD_881137.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_177350.2",
+          "value_code": "OIFMA_HOOD_881137.2",
           "name": "Migrated"
         },
         {
-          "value_code": "OIFMA_HOOD_177350.3",
+          "value_code": "OIFMA_HOOD_881137.3",
           "name": "Removed"
         }
       ],
@@ -59,16 +46,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_032853",
+      "oifma_id": "OIFMA_HOOD_464627",
       "name": "Appropriate location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_032853.0",
+          "value_code": "OIFMA_HOOD_464627.0",
           "name": "Yes"
         },
         {
-          "value_code": "OIFMA_HOOD_032853.1",
+          "value_code": "OIFMA_HOOD_464627.1",
           "name": "No"
         }
       ],
@@ -76,20 +63,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_417802",
+      "oifma_id": "OIFMA_HOOD_671133",
       "name": "Side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_417802.0",
+          "value_code": "OIFMA_HOOD_671133.0",
           "name": "Left"
         },
         {
-          "value_code": "OIFMA_HOOD_417802.1",
+          "value_code": "OIFMA_HOOD_671133.1",
           "name": "Right"
         },
         {
-          "value_code": "OIFMA_HOOD_417802.2",
+          "value_code": "OIFMA_HOOD_671133.2",
           "name": "Unknown",
           "description": "inferior approach"
         }
@@ -98,24 +85,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_930900",
+      "oifma_id": "OIFMA_HOOD_076346",
       "name": "Number of Lumens",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_930900.0",
+          "value_code": "OIFMA_HOOD_076346.0",
           "name": "Single"
         },
         {
-          "value_code": "OIFMA_HOOD_930900.1",
+          "value_code": "OIFMA_HOOD_076346.1",
           "name": "Double"
         },
         {
-          "value_code": "OIFMA_HOOD_930900.2",
+          "value_code": "OIFMA_HOOD_076346.2",
           "name": "Triple"
         },
         {
-          "value_code": "OIFMA_HOOD_930900.3",
+          "value_code": "OIFMA_HOOD_076346.3",
           "name": "Quad"
         }
       ],
@@ -123,20 +110,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_142753",
+      "oifma_id": "OIFMA_HOOD_240695",
       "name": "Vein approach",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_142753.0",
+          "value_code": "OIFMA_HOOD_240695.0",
           "name": "Internal jugular"
         },
         {
-          "value_code": "OIFMA_HOOD_142753.1",
+          "value_code": "OIFMA_HOOD_240695.1",
           "name": "Subclavian"
         },
         {
-          "value_code": "OIFMA_HOOD_142753.2",
+          "value_code": "OIFMA_HOOD_240695.2",
           "name": "Femoral"
         }
       ],
@@ -144,20 +131,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_183616",
+      "oifma_id": "OIFMA_HOOD_204041",
       "name": "Course",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_183616.0",
+          "value_code": "OIFMA_HOOD_204041.0",
           "name": "Appropriate"
         },
         {
-          "value_code": "OIFMA_HOOD_183616.1",
+          "value_code": "OIFMA_HOOD_204041.1",
           "name": "Kinking"
         },
         {
-          "value_code": "OIFMA_HOOD_183616.2",
+          "value_code": "OIFMA_HOOD_204041.2",
           "name": "Coiling"
         }
       ],
@@ -165,40 +152,40 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_927495",
+      "oifma_id": "OIFMA_HOOD_403674",
       "name": "Distal tip location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_927495.0",
+          "value_code": "OIFMA_HOOD_403674.0",
           "name": "Subclavian vein"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.1",
+          "value_code": "OIFMA_HOOD_403674.1",
           "name": "Brachiocephalic vein"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.2",
+          "value_code": "OIFMA_HOOD_403674.2",
           "name": "SVC"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.3",
+          "value_code": "OIFMA_HOOD_403674.3",
           "name": "Superior cavoatrial junction"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.4",
+          "value_code": "OIFMA_HOOD_403674.4",
           "name": "Azygous vein"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.5",
+          "value_code": "OIFMA_HOOD_403674.5",
           "name": "Inferior cavoatrial junction"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.6",
+          "value_code": "OIFMA_HOOD_403674.6",
           "name": "Internal jugular vein"
         },
         {
-          "value_code": "OIFMA_HOOD_927495.7",
+          "value_code": "OIFMA_HOOD_403674.7",
           "name": "IVC"
         }
       ],
@@ -206,28 +193,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_522818",
+      "oifma_id": "OIFMA_HOOD_404774",
       "name": "Complications",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_522818.0",
+          "value_code": "OIFMA_HOOD_404774.0",
           "name": "None"
         },
         {
-          "value_code": "OIFMA_HOOD_522818.1",
+          "value_code": "OIFMA_HOOD_404774.1",
           "name": "Occlusion"
         },
         {
-          "value_code": "OIFMA_HOOD_522818.2",
+          "value_code": "OIFMA_HOOD_404774.2",
           "name": "Thrombosis (fibrin sheath)"
         },
         {
-          "value_code": "OIFMA_HOOD_522818.3",
+          "value_code": "OIFMA_HOOD_404774.3",
           "name": "Catheter fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_522818.4",
+          "value_code": "OIFMA_HOOD_404774.4",
           "name": "Tip Migration"
         }
       ],
@@ -235,16 +222,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_580605",
+      "oifma_id": "OIFMA_HOOD_969461",
       "name": "Hematoma",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_580605.0",
+          "value_code": "OIFMA_HOOD_969461.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_580605.1",
+          "value_code": "OIFMA_HOOD_969461.1",
           "name": "Absent"
         }
       ],
@@ -252,16 +239,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_767568",
+      "oifma_id": "OIFMA_HOOD_374924",
       "name": "Pneumothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_767568.0",
+          "value_code": "OIFMA_HOOD_374924.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_767568.1",
+          "value_code": "OIFMA_HOOD_374924.1",
           "name": "Absent"
         }
       ],
@@ -269,16 +256,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_029022",
+      "oifma_id": "OIFMA_HOOD_309741",
       "name": "Hemothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_029022.0",
+          "value_code": "OIFMA_HOOD_309741.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_029022.1",
+          "value_code": "OIFMA_HOOD_309741.1",
           "name": "Absent"
         }
       ],

@@ -7,27 +7,13 @@ from pathlib import Path
 from dotenv import load_dotenv
 from findingmodel import FindingModelFull
 from findingmodel.common import model_file_name
-from findingmodel.tools import create_info_from_name
+from findingmodel.tools import create_info_from_name, add_ids_to_model
 
 # Load environment variables from .env file
 load_dotenv()
 
 
 class HoodJsonAdapter:
-    @staticmethod
-    def _generate_model_id(filename: str) -> str:
-        import hashlib
-        hash_obj = hashlib.md5(filename.encode())
-        number = int(hash_obj.hexdigest()[:6], 16) % 999999
-        return f"OIFM_HOOD_{number:06d}"
-
-    @staticmethod
-    def _generate_attribute_id(filename: str, attribute_name: str, index: int) -> str:
-        import hashlib
-        combined = f"{filename}_{attribute_name}_{index}"
-        hash_obj = hashlib.md5(combined.encode())
-        number = int(hash_obj.hexdigest()[:6], 16) % 999999
-        return f"OIFMA_HOOD_{number:06d}"
 
     @staticmethod
     def _truncate_description(description: str, max_length: int = 500) -> str:
@@ -119,7 +105,7 @@ class HoodJsonAdapter:
                 "name": value["name"]
             }
             
-            # Handle value descriptions - use None for short descriptions like CDE converter
+            # Handle value descriptions - use None for short descriptions
             if "description" in value and value["description"] != value["name"]:
                 value_description = value["description"]
                 # Only include if description is meaningful (≥5 chars)
@@ -154,10 +140,8 @@ class HoodJsonAdapter:
         ]
 
     @staticmethod
-    async def adapt_hood_json(hood_data: Dict, filename: str) -> Dict:
-        """Adapt hood JSON format to FindingModel format."""
+    async def adapt_hood_json(hood_data: Dict, filename: str) -> FindingModelFull:
         finding_name = hood_data["finding_name"]
-        model_id = HoodJsonAdapter._generate_model_id(filename)
         
         # Expand short names using the same method as CDE converter
         expanded_finding_name = HoodJsonAdapter._expand_short_name(finding_name)
@@ -177,11 +161,16 @@ class HoodJsonAdapter:
         else:
             description = HoodJsonAdapter._truncate_description(description)
         
-        # Process attributes
-        attributes = []
+        # Create a basic finding model dict first
+        finding_model_dict = {
+            "name": expanded_finding_name.replace("_", " ").title(),
+            "description": description,
+            "attributes": [],
+            "contributors": HoodJsonAdapter._create_default_contributors()
+        }
+        
+        # Process attributes and add them to the dict
         for i, attribute in enumerate(hood_data.get("attributes", [])):
-            attribute_id = HoodJsonAdapter._generate_attribute_id(filename, attribute["name"], i)
-            
             # Expand short attribute names using the same method as CDE converter
             attr_name = HoodJsonAdapter._expand_short_name(attribute["name"])
             if attr_name != attribute["name"]:
@@ -195,9 +184,8 @@ class HoodJsonAdapter:
             else:
                 attr_description = HoodJsonAdapter._truncate_description(attr_description)
             
-            # Create base attribute
+            # Create base attribute dict
             adapted_attr = {
-                "oifma_id": attribute_id,
                 "name": attr_name,
                 "description": attr_description,
                 "type": attribute["type"],
@@ -207,7 +195,18 @@ class HoodJsonAdapter:
             # Handle choice attributes
             if attribute["type"] == "choice":
                 adapted_attr["max_selected"] = 1
-                adapted_attr["values"] = HoodJsonAdapter._add_value_codes(attribute["values"], attribute_id)
+                # Process values without IDs first
+                processed_values = []
+                for value in attribute["values"]:
+                    processed_value = {
+                        "name": value["name"]
+                    }
+                    if "description" in value and value["description"] != value["name"]:
+                        value_description = value["description"]
+                        if value_description and len(value_description) >= 5:
+                            processed_value["description"] = value_description
+                    processed_values.append(processed_value)
+                adapted_attr["values"] = processed_values
             
             # Handle numeric attributes
             elif attribute["type"] == "numeric":
@@ -215,21 +214,20 @@ class HoodJsonAdapter:
                 adapted_attr["maximum"] = attribute.get("maximum", 100)
                 adapted_attr["unit"] = attribute.get("unit", "unit")
             
-            attributes.append(adapted_attr)
+            finding_model_dict["attributes"].append(adapted_attr)
 
         # Add validation warnings
-        if not attributes:
+        if not finding_model_dict["attributes"]:
             print(f"  Warning: No attributes found in {filename}")
         
-        finding_model = {
-            "oifm_id": model_id,
-            "name": expanded_finding_name.replace("_", " ").title(),
-            "description": description,
-            "attributes": attributes,
-            "contributors": HoodJsonAdapter._create_default_contributors()
-        }
-
-        return finding_model
+        # Create FindingModelBase first, then add IDs using the built-in tool
+        from findingmodel import FindingModelBase
+        base_model = FindingModelBase(**finding_model_dict)
+        
+        # Use the built-in tool to add IDs
+        full_model = add_ids_to_model(base_model, source="HOOD")
+        
+        return full_model
 
     @staticmethod
     async def process_file(input_file: str, output_dir: str) -> bool:
@@ -248,9 +246,7 @@ class HoodJsonAdapter:
             
             filename = Path(input_file).name
             
-            finding_model_dict = await HoodJsonAdapter.adapt_hood_json(hood_data, filename)
-            
-            fm = FindingModelFull(**finding_model_dict)
+            fm = await HoodJsonAdapter.adapt_hood_json(hood_data, filename)
             output_file = Path(output_dir) / model_file_name(fm.name)
             
             output_file.parent.mkdir(parents=True, exist_ok=True)

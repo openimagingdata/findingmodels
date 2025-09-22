@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_249259",
+  "oifm_id": "OIFM_HOOD_641469",
   "name": "Mediastinal Fluid Collection",
   "description": "A collection of fluid in the mediastinum, which is the central compartment of the thoracic cavity.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_482469",
+      "oifma_id": "OIFMA_HOOD_348797",
       "name": "presence",
       "description": "Presence of mediastinal fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_482469.0",
+          "value_code": "OIFMA_HOOD_348797.0",
           "name": "yes",
           "description": "Mediastinal fluid collection is present"
         },
         {
-          "value_code": "OIFMA_HOOD_482469.1",
+          "value_code": "OIFMA_HOOD_348797.1",
           "name": "no",
           "description": "Mediastinal fluid collection is not present"
         }
@@ -37,23 +24,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_109392",
+      "oifma_id": "OIFMA_HOOD_521135",
       "name": "location",
       "description": "Location of the mediastinal fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_109392.0",
+          "value_code": "OIFMA_HOOD_521135.0",
           "name": "anterior",
           "description": "Mediastinal fluid collection is located in the anterior mediastinum"
         },
         {
-          "value_code": "OIFMA_HOOD_109392.1",
+          "value_code": "OIFMA_HOOD_521135.1",
           "name": "middle",
           "description": "Mediastinal fluid collection is located in the middle mediastinum"
         },
         {
-          "value_code": "OIFMA_HOOD_109392.2",
+          "value_code": "OIFMA_HOOD_521135.2",
           "name": "posterior",
           "description": "Mediastinal fluid collection is located in the posterior mediastinum"
         }
@@ -62,18 +49,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_698575",
+      "oifma_id": "OIFMA_HOOD_044946",
       "name": "extent",
       "description": "Extent of the mediastinal fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_698575.0",
+          "value_code": "OIFMA_HOOD_044946.0",
           "name": "localized",
           "description": "Mediastinal fluid collection is localized"
         },
         {
-          "value_code": "OIFMA_HOOD_698575.1",
+          "value_code": "OIFMA_HOOD_044946.1",
           "name": "diffuse",
           "description": "Mediastinal fluid collection is diffuse"
         }
@@ -82,23 +69,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_295629",
+      "oifma_id": "OIFMA_HOOD_699090",
       "name": "size Finding",
       "description": "Size of the mediastinal fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_295629.0",
+          "value_code": "OIFMA_HOOD_699090.0",
           "name": "small",
           "description": "Mediastinal fluid collection is small in size"
         },
         {
-          "value_code": "OIFMA_HOOD_295629.1",
+          "value_code": "OIFMA_HOOD_699090.1",
           "name": "medium",
           "description": "Mediastinal fluid collection is medium in size"
         },
         {
-          "value_code": "OIFMA_HOOD_295629.2",
+          "value_code": "OIFMA_HOOD_699090.2",
           "name": "large",
           "description": "Mediastinal fluid collection is large in size"
         }
@@ -107,23 +94,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_379179",
+      "oifma_id": "OIFMA_HOOD_603199",
       "name": "nature",
       "description": "Nature of the mediastinal fluid collection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_379179.0",
+          "value_code": "OIFMA_HOOD_603199.0",
           "name": "serous",
           "description": "Mediastinal fluid collection is serous in nature"
         },
         {
-          "value_code": "OIFMA_HOOD_379179.1",
+          "value_code": "OIFMA_HOOD_603199.1",
           "name": "hemorrhagic",
           "description": "Mediastinal fluid collection is hemorrhagic in nature"
         },
         {
-          "value_code": "OIFMA_HOOD_379179.2",
+          "value_code": "OIFMA_HOOD_603199.2",
           "name": "mixed",
           "description": "Mediastinal fluid collection is mixed in nature"
         }
@@ -132,18 +119,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_989113",
+      "oifma_id": "OIFMA_HOOD_902655",
       "name": "compression_adjacent_structures",
       "description": "Compression of adjacent structures",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_989113.0",
+          "value_code": "OIFMA_HOOD_902655.0",
           "name": "yes",
           "description": "Compression of adjacent structures is present"
         },
         {
-          "value_code": "OIFMA_HOOD_989113.1",
+          "value_code": "OIFMA_HOOD_902655.1",
           "name": "no",
           "description": "Compression of adjacent structures is not present"
         }
@@ -152,18 +139,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_495747",
+      "oifma_id": "OIFMA_HOOD_542577",
       "name": "infection",
       "description": "Signs of infection",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_495747.0",
+          "value_code": "OIFMA_HOOD_542577.0",
           "name": "yes",
           "description": "Signs of infection are present"
         },
         {
-          "value_code": "OIFMA_HOOD_495747.1",
+          "value_code": "OIFMA_HOOD_542577.1",
           "name": "no",
           "description": "Signs of infection are not present"
         }
@@ -172,18 +159,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_246234",
+      "oifma_id": "OIFMA_HOOD_908379",
       "name": "neoplasm",
       "description": "Evidence of neoplasm",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_246234.0",
+          "value_code": "OIFMA_HOOD_908379.0",
           "name": "yes",
           "description": "Evidence of neoplasm is present"
         },
         {
-          "value_code": "OIFMA_HOOD_246234.1",
+          "value_code": "OIFMA_HOOD_908379.1",
           "name": "no",
           "description": "Evidence of neoplasm is not present"
         }

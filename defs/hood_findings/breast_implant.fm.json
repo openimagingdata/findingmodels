@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_185918",
+  "oifm_id": "OIFM_HOOD_314538",
   "name": "Breast Implant",
   "description": "Presence and characteristics of breast implants",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_214332",
+      "oifma_id": "OIFMA_HOOD_038136",
       "name": "Presence of Breast Implant",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_214332.0",
+          "value_code": "OIFMA_HOOD_038136.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_214332.1",
+          "value_code": "OIFMA_HOOD_038136.1",
           "name": "Absent"
         }
       ],
@@ -34,24 +21,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_969747",
+      "oifma_id": "OIFMA_HOOD_226242",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_969747.0",
+          "value_code": "OIFMA_HOOD_226242.0",
           "name": "New"
         },
         {
-          "value_code": "OIFMA_HOOD_969747.1",
+          "value_code": "OIFMA_HOOD_226242.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_969747.2",
+          "value_code": "OIFMA_HOOD_226242.2",
           "name": "Complication"
         },
         {
-          "value_code": "OIFMA_HOOD_969747.3",
+          "value_code": "OIFMA_HOOD_226242.3",
           "name": "Removed"
         }
       ],
@@ -59,20 +46,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_665610",
+      "oifma_id": "OIFMA_HOOD_902727",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_665610.0",
+          "value_code": "OIFMA_HOOD_902727.0",
           "name": "Right breast"
         },
         {
-          "value_code": "OIFMA_HOOD_665610.1",
+          "value_code": "OIFMA_HOOD_902727.1",
           "name": "Left breast"
         },
         {
-          "value_code": "OIFMA_HOOD_665610.2",
+          "value_code": "OIFMA_HOOD_902727.2",
           "name": "Bilateral"
         }
       ],
@@ -80,16 +67,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_310785",
+      "oifma_id": "OIFMA_HOOD_301099",
       "name": "Implant Type",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_310785.0",
+          "value_code": "OIFMA_HOOD_301099.0",
           "name": "Saline"
         },
         {
-          "value_code": "OIFMA_HOOD_310785.1",
+          "value_code": "OIFMA_HOOD_301099.1",
           "name": "Silicone"
         }
       ],
@@ -97,16 +84,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_223758",
+      "oifma_id": "OIFMA_HOOD_527074",
       "name": "Position",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_223758.0",
+          "value_code": "OIFMA_HOOD_527074.0",
           "name": "Preglandular"
         },
         {
-          "value_code": "OIFMA_HOOD_223758.1",
+          "value_code": "OIFMA_HOOD_527074.1",
           "name": "Subpectoral"
         }
       ],
@@ -114,20 +101,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_496843",
+      "oifma_id": "OIFMA_HOOD_968758",
       "name": "Implant Rupture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_496843.0",
+          "value_code": "OIFMA_HOOD_968758.0",
           "name": "Intracapsular"
         },
         {
-          "value_code": "OIFMA_HOOD_496843.1",
+          "value_code": "OIFMA_HOOD_968758.1",
           "name": "Extracapsular"
         },
         {
-          "value_code": "OIFMA_HOOD_496843.2",
+          "value_code": "OIFMA_HOOD_968758.2",
           "name": "Absent"
         }
       ],
@@ -135,16 +122,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_487322",
+      "oifma_id": "OIFMA_HOOD_204763",
       "name": "Silicone Leakage",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_487322.0",
+          "value_code": "OIFMA_HOOD_204763.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_487322.1",
+          "value_code": "OIFMA_HOOD_204763.1",
           "name": "Absent"
         }
       ],
@@ -152,16 +139,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_748116",
+      "oifma_id": "OIFMA_HOOD_349604",
       "name": "Capsular Contracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_748116.0",
+          "value_code": "OIFMA_HOOD_349604.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_748116.1",
+          "value_code": "OIFMA_HOOD_349604.1",
           "name": "Absent"
         }
       ],
@@ -169,16 +156,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_604714",
+      "oifma_id": "OIFMA_HOOD_302997",
       "name": "Capsular Calcifications",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_604714.0",
+          "value_code": "OIFMA_HOOD_302997.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_604714.1",
+          "value_code": "OIFMA_HOOD_302997.1",
           "name": "Absent"
         }
       ],
@@ -186,16 +173,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_662924",
+      "oifma_id": "OIFMA_HOOD_075183",
       "name": "Axillary Lymphadenopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_662924.0",
+          "value_code": "OIFMA_HOOD_075183.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_662924.1",
+          "value_code": "OIFMA_HOOD_075183.1",
           "name": "Absent"
         }
       ],

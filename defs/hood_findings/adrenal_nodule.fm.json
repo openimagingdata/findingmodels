@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_113455",
+  "oifm_id": "OIFM_HOOD_101663",
   "name": "Adrenal Nodule",
-  "description": "A focal lesion in the adrenal gland that can be either benign or malignant, often detected incidentally on imaging studies such as CT or MRI.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
+  "description": "An adrenal nodule is a focal lesion of the adrenal gland that may be benign or malignant, often identified incidentally on imaging studies such as CT or MRI.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_339152",
+      "oifma_id": "OIFMA_HOOD_002251",
       "name": "presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_339152.0",
+          "value_code": "OIFMA_HOOD_002251.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_339152.1",
+          "value_code": "OIFMA_HOOD_002251.1",
           "name": "absent"
         }
       ],
@@ -34,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_202623",
+      "oifma_id": "OIFMA_HOOD_902380",
       "name": "status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_202623.0",
+          "value_code": "OIFMA_HOOD_902380.0",
           "name": "new"
         },
         {
-          "value_code": "OIFMA_HOOD_202623.1",
+          "value_code": "OIFMA_HOOD_902380.1",
           "name": "stable"
         },
         {
-          "value_code": "OIFMA_HOOD_202623.2",
+          "value_code": "OIFMA_HOOD_902380.2",
           "name": "enlarged"
         }
       ],
@@ -55,23 +42,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_697238",
+      "oifma_id": "OIFMA_HOOD_674608",
       "name": "size Finding",
       "type": "numeric",
       "unit": "mm",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_469386",
+      "oifma_id": "OIFMA_HOOD_187170",
       "name": "side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_469386.0",
+          "value_code": "OIFMA_HOOD_187170.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_469386.1",
+          "value_code": "OIFMA_HOOD_187170.1",
           "name": "left"
         }
       ],
@@ -79,31 +66,31 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_818089",
+      "oifma_id": "OIFMA_HOOD_832525",
       "name": "Hounsfield units (HU)",
       "description": "Hounsfield units (HU) at non-contrast CT",
       "type": "numeric",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_276859",
+      "oifma_id": "OIFMA_HOOD_458729",
       "name": "enhancement pattern",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_276859.0",
+          "value_code": "OIFMA_HOOD_458729.0",
           "name": "nonenhancing"
         },
         {
-          "value_code": "OIFMA_HOOD_276859.1",
+          "value_code": "OIFMA_HOOD_458729.1",
           "name": "enhancing"
         },
         {
-          "value_code": "OIFMA_HOOD_276859.2",
+          "value_code": "OIFMA_HOOD_458729.2",
           "name": "rapid wash-in and wash-out"
         },
         {
-          "value_code": "OIFMA_HOOD_276859.3",
+          "value_code": "OIFMA_HOOD_458729.3",
           "name": "delayed wash-out"
         }
       ],

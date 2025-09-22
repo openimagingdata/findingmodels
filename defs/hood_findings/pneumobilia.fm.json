@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_221526",
+  "oifm_id": "OIFM_HOOD_364563",
   "name": "Pneumobilia",
   "description": "The presence of air in the biliary ducts.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_600492",
+      "oifma_id": "OIFMA_HOOD_000635",
       "name": "Presence",
       "description": "Whether pneumobilia is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_600492.0",
+          "value_code": "OIFMA_HOOD_000635.0",
           "name": "Present",
           "description": "The finding is present."
         },
         {
-          "value_code": "OIFMA_HOOD_600492.1",
+          "value_code": "OIFMA_HOOD_000635.1",
           "name": "Absent",
           "description": "The finding is absent."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_468655",
+      "oifma_id": "OIFMA_HOOD_037742",
       "name": "Extent",
       "description": "The extent of pneumobilia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_468655.0",
+          "value_code": "OIFMA_HOOD_037742.0",
           "name": "Limited",
           "description": "Pneumobilia is limited in extent."
         },
         {
-          "value_code": "OIFMA_HOOD_468655.1",
+          "value_code": "OIFMA_HOOD_037742.1",
           "name": "Extensive",
           "description": "Pneumobilia is extensive."
         }
@@ -57,23 +44,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_801429",
+      "oifma_id": "OIFMA_HOOD_210251",
       "name": "Location",
       "description": "The location of pneumobilia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_801429.0",
+          "value_code": "OIFMA_HOOD_210251.0",
           "name": "Intrahepatic ducts",
           "description": "Pneumobilia is located in the intrahepatic ducts."
         },
         {
-          "value_code": "OIFMA_HOOD_801429.1",
+          "value_code": "OIFMA_HOOD_210251.1",
           "name": "Common bile duct",
           "description": "Pneumobilia is located in the common bile duct."
         },
         {
-          "value_code": "OIFMA_HOOD_801429.2",
+          "value_code": "OIFMA_HOOD_210251.2",
           "name": "Both",
           "description": "Pneumobilia is located in both the intrahepatic ducts and common bile duct."
         }
@@ -82,18 +69,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_017283",
+      "oifma_id": "OIFMA_HOOD_691378",
       "name": "Associated bile duct dilation",
       "description": "Whether there is associated bile duct dilation.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_017283.0",
+          "value_code": "OIFMA_HOOD_691378.0",
           "name": "Present",
           "description": "There is associated bile duct dilation."
         },
         {
-          "value_code": "OIFMA_HOOD_017283.1",
+          "value_code": "OIFMA_HOOD_691378.1",
           "name": "Absent",
           "description": "There is no associated bile duct dilation."
         }
@@ -102,18 +89,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_238431",
+      "oifma_id": "OIFMA_HOOD_184696",
       "name": "Cholecystitis",
       "description": "Whether cholecystitis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_238431.0",
+          "value_code": "OIFMA_HOOD_184696.0",
           "name": "Present",
           "description": "Cholecystitis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_238431.1",
+          "value_code": "OIFMA_HOOD_184696.1",
           "name": "Absent",
           "description": "Cholecystitis is absent."
         }
@@ -122,18 +109,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_263136",
+      "oifma_id": "OIFMA_HOOD_838954",
       "name": "Choledocholithiasis",
       "description": "Whether choledocholithiasis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_263136.0",
+          "value_code": "OIFMA_HOOD_838954.0",
           "name": "Present",
           "description": "Choledocholithiasis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_263136.1",
+          "value_code": "OIFMA_HOOD_838954.1",
           "name": "Absent",
           "description": "Choledocholithiasis is absent."
         }
@@ -142,18 +129,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_218346",
+      "oifma_id": "OIFMA_HOOD_434305",
       "name": "Biliary stent",
       "description": "Whether a biliary stent is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_218346.0",
+          "value_code": "OIFMA_HOOD_434305.0",
           "name": "Present",
           "description": "A biliary stent is present."
         },
         {
-          "value_code": "OIFMA_HOOD_218346.1",
+          "value_code": "OIFMA_HOOD_434305.1",
           "name": "Absent",
           "description": "A biliary stent is absent."
         }
@@ -162,18 +149,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_147325",
+      "oifma_id": "OIFMA_HOOD_968977",
       "name": "Acute pancreatitis",
       "description": "Whether acute pancreatitis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_147325.0",
+          "value_code": "OIFMA_HOOD_968977.0",
           "name": "Present",
           "description": "Acute pancreatitis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_147325.1",
+          "value_code": "OIFMA_HOOD_968977.1",
           "name": "Absent",
           "description": "Acute pancreatitis is absent."
         }
@@ -182,18 +169,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_767484",
+      "oifma_id": "OIFMA_HOOD_497673",
       "name": "Periportal edema",
       "description": "Whether periportal edema is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_767484.0",
+          "value_code": "OIFMA_HOOD_497673.0",
           "name": "Present",
           "description": "Periportal edema is present."
         },
         {
-          "value_code": "OIFMA_HOOD_767484.1",
+          "value_code": "OIFMA_HOOD_497673.1",
           "name": "Absent",
           "description": "Periportal edema is absent."
         }
@@ -202,18 +189,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_410571",
+      "oifma_id": "OIFMA_HOOD_815020",
       "name": "Portal vein gas",
       "description": "Whether portal vein gas is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_410571.0",
+          "value_code": "OIFMA_HOOD_815020.0",
           "name": "Present",
           "description": "Portal vein gas is present."
         },
         {
-          "value_code": "OIFMA_HOOD_410571.1",
+          "value_code": "OIFMA_HOOD_815020.1",
           "name": "Absent",
           "description": "Portal vein gas is absent."
         }

@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_838136",
+  "oifm_id": "OIFM_HOOD_449333",
   "name": "Coronary Stent",
   "description": "A coronary stent is a small mesh-like tube that is placed in a narrowed or blocked coronary artery to restore blood flow.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_012052",
+      "oifma_id": "OIFMA_HOOD_017587",
       "name": "Presence of Coronary Stent",
       "description": "Indicates whether a coronary stent is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_012052.0",
+          "value_code": "OIFMA_HOOD_017587.0",
           "name": "Present",
           "description": "A coronary stent is present."
         },
         {
-          "value_code": "OIFMA_HOOD_012052.1",
+          "value_code": "OIFMA_HOOD_017587.1",
           "name": "Absent",
           "description": "A coronary stent is not present."
         }
@@ -37,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_842285",
+      "oifma_id": "OIFMA_HOOD_026053",
       "name": "Status",
       "description": "Indicates the status of the coronary stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_842285.0",
+          "value_code": "OIFMA_HOOD_026053.0",
           "name": "New placement",
           "description": "The coronary stent has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_842285.1",
+          "value_code": "OIFMA_HOOD_026053.1",
           "name": "Unchanged",
           "description": "The coronary stent remains unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_842285.2",
+          "value_code": "OIFMA_HOOD_026053.2",
           "name": "Complication",
           "description": "There is a complication associated with the coronary stent."
         },
         {
-          "value_code": "OIFMA_HOOD_842285.3",
+          "value_code": "OIFMA_HOOD_026053.3",
           "name": "Removed",
           "description": "The coronary stent has been removed."
         }
@@ -67,38 +54,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_536223",
+      "oifma_id": "OIFMA_HOOD_428567",
       "name": "Location",
       "description": "Indicates the location of the coronary stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_536223.0",
+          "value_code": "OIFMA_HOOD_428567.0",
           "name": "Left coronary",
           "description": "The coronary stent is located in the left coronary artery."
         },
         {
-          "value_code": "OIFMA_HOOD_536223.1",
+          "value_code": "OIFMA_HOOD_428567.1",
           "name": "Left anterior descending (LAD)",
           "description": "The coronary stent is located in the left anterior descending artery."
         },
         {
-          "value_code": "OIFMA_HOOD_536223.2",
+          "value_code": "OIFMA_HOOD_428567.2",
           "name": "Left circumflex (LCx)",
           "description": "The coronary stent is located in the left circumflex artery."
         },
         {
-          "value_code": "OIFMA_HOOD_536223.3",
+          "value_code": "OIFMA_HOOD_428567.3",
           "name": "Left obtuse marginal (OM)",
           "description": "The coronary stent is located in the left obtuse marginal artery."
         },
         {
-          "value_code": "OIFMA_HOOD_536223.4",
+          "value_code": "OIFMA_HOOD_428567.4",
           "name": "Right coronary (RCA)",
           "description": "The coronary stent is located in the right coronary artery."
         },
         {
-          "value_code": "OIFMA_HOOD_536223.5",
+          "value_code": "OIFMA_HOOD_428567.5",
           "name": "Right acute marginal",
           "description": "The coronary stent is located in the right acute marginal artery."
         }
@@ -107,23 +94,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_352843",
+      "oifma_id": "OIFMA_HOOD_048715",
       "name": "Type Finding",
       "description": "Indicates the type of coronary stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_352843.0",
+          "value_code": "OIFMA_HOOD_048715.0",
           "name": "Bare-metal",
           "description": "A bare-metal coronary stent."
         },
         {
-          "value_code": "OIFMA_HOOD_352843.1",
+          "value_code": "OIFMA_HOOD_048715.1",
           "name": "Drug-eluting",
           "description": "A drug-eluting coronary stent."
         },
         {
-          "value_code": "OIFMA_HOOD_352843.2",
+          "value_code": "OIFMA_HOOD_048715.2",
           "name": "Bioresorbable",
           "description": "A bioresorbable coronary stent."
         }
@@ -132,18 +119,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_809908",
+      "oifma_id": "OIFMA_HOOD_555208",
       "name": "In-Stent Restenosis",
       "description": "Indicates whether there is restenosis (re-narrowing) of the stented artery.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_809908.0",
+          "value_code": "OIFMA_HOOD_555208.0",
           "name": "Present",
           "description": "There is in-stent restenosis."
         },
         {
-          "value_code": "OIFMA_HOOD_809908.1",
+          "value_code": "OIFMA_HOOD_555208.1",
           "name": "Absent",
           "description": "There is no in-stent restenosis."
         }
@@ -152,18 +139,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_063798",
+      "oifma_id": "OIFMA_HOOD_599753",
       "name": "Stent Thrombosis",
       "description": "Indicates whether there is thrombosis (clot formation) within the stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_063798.0",
+          "value_code": "OIFMA_HOOD_599753.0",
           "name": "Present",
           "description": "There is stent thrombosis."
         },
         {
-          "value_code": "OIFMA_HOOD_063798.1",
+          "value_code": "OIFMA_HOOD_599753.1",
           "name": "Absent",
           "description": "There is no stent thrombosis."
         }
@@ -172,18 +159,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_009828",
+      "oifma_id": "OIFMA_HOOD_145791",
       "name": "Stent Fracture",
       "description": "Indicates whether there is a fracture in the coronary stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_009828.0",
+          "value_code": "OIFMA_HOOD_145791.0",
           "name": "Present",
           "description": "There is a stent fracture."
         },
         {
-          "value_code": "OIFMA_HOOD_009828.1",
+          "value_code": "OIFMA_HOOD_145791.1",
           "name": "Absent",
           "description": "There is no stent fracture."
         }
@@ -192,18 +179,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_054267",
+      "oifma_id": "OIFMA_HOOD_778473",
       "name": "Peri-stent Leak",
       "description": "Indicates whether there is a leak around the coronary stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_054267.0",
+          "value_code": "OIFMA_HOOD_778473.0",
           "name": "Present",
           "description": "There is a peri-stent leak."
         },
         {
-          "value_code": "OIFMA_HOOD_054267.1",
+          "value_code": "OIFMA_HOOD_778473.1",
           "name": "Absent",
           "description": "There is no peri-stent leak."
         }
@@ -212,18 +199,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_347240",
+      "oifma_id": "OIFMA_HOOD_058718",
       "name": "Edge Dissection",
       "description": "Indicates whether there is a dissection (tear) at the edge of the stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_347240.0",
+          "value_code": "OIFMA_HOOD_058718.0",
           "name": "Present",
           "description": "There is an edge dissection."
         },
         {
-          "value_code": "OIFMA_HOOD_347240.1",
+          "value_code": "OIFMA_HOOD_058718.1",
           "name": "Absent",
           "description": "There is no edge dissection."
         }

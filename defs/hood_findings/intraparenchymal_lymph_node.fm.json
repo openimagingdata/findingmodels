@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_268836",
+  "oifm_id": "OIFM_HOOD_146294",
   "name": "Intraparenchymal Lymph Node",
   "description": "A lymph node located within the lung tissue.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_002314",
+      "oifma_id": "OIFMA_HOOD_010975",
       "name": "Presence",
       "description": "Indicates whether the intraparenchymal lymph node is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_002314.0",
+          "value_code": "OIFMA_HOOD_010975.0",
           "name": "Present",
           "description": "The intraparenchymal lymph node is present."
         },
         {
-          "value_code": "OIFMA_HOOD_002314.1",
+          "value_code": "OIFMA_HOOD_010975.1",
           "name": "Absent",
           "description": "The intraparenchymal lymph node is absent."
         }
@@ -37,38 +24,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_218130",
+      "oifma_id": "OIFMA_HOOD_217060",
       "name": "Status",
       "description": "The status of the intraparenchymal lymph node.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_218130.0",
+          "value_code": "OIFMA_HOOD_217060.0",
           "name": "Stable",
           "description": "The intraparenchymal lymph node is stable in size."
         },
         {
-          "value_code": "OIFMA_HOOD_218130.1",
+          "value_code": "OIFMA_HOOD_217060.1",
           "name": "New",
           "description": "A new intraparenchymal lymph node has appeared."
         },
         {
-          "value_code": "OIFMA_HOOD_218130.2",
+          "value_code": "OIFMA_HOOD_217060.2",
           "name": "Enlarged",
           "description": "The intraparenchymal lymph node has increased in size."
         },
         {
-          "value_code": "OIFMA_HOOD_218130.3",
+          "value_code": "OIFMA_HOOD_217060.3",
           "name": "Decreased in size",
           "description": "The intraparenchymal lymph node has decreased in size."
         },
         {
-          "value_code": "OIFMA_HOOD_218130.4",
+          "value_code": "OIFMA_HOOD_217060.4",
           "name": "Resolved",
           "description": "The intraparenchymal lymph node has disappeared."
         },
         {
-          "value_code": "OIFMA_HOOD_218130.5",
+          "value_code": "OIFMA_HOOD_217060.5",
           "name": "Unchanged",
           "description": "The size of the intraparenchymal lymph node has remained the same."
         }
@@ -77,23 +64,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_414886",
+      "oifma_id": "OIFMA_HOOD_079944",
       "name": "Distribution",
       "description": "The distribution pattern of the intraparenchymal lymph node.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_414886.0",
+          "value_code": "OIFMA_HOOD_079944.0",
           "name": "Solitary",
           "description": "There is a single intraparenchymal lymph node."
         },
         {
-          "value_code": "OIFMA_HOOD_414886.1",
+          "value_code": "OIFMA_HOOD_079944.1",
           "name": "Multiple",
           "description": "There are multiple intraparenchymal lymph nodes."
         },
         {
-          "value_code": "OIFMA_HOOD_414886.2",
+          "value_code": "OIFMA_HOOD_079944.2",
           "name": "Clustered",
           "description": "The intraparenchymal lymph nodes are clustered together."
         }
@@ -102,28 +89,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_446111",
+      "oifma_id": "OIFMA_HOOD_591153",
       "name": "Severity",
       "description": "The severity of the intraparenchymal lymph node. Not applicable (N/A) for this finding.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_446111.0",
+          "value_code": "OIFMA_HOOD_591153.0",
           "name": "N/A",
           "description": "Not applicable"
         },
         {
-          "value_code": "OIFMA_HOOD_446111.1",
+          "value_code": "OIFMA_HOOD_591153.1",
           "name": "Mild",
           "description": "Mild severity"
         },
         {
-          "value_code": "OIFMA_HOOD_446111.2",
+          "value_code": "OIFMA_HOOD_591153.2",
           "name": "Moderate",
           "description": "Moderate severity"
         },
         {
-          "value_code": "OIFMA_HOOD_446111.3",
+          "value_code": "OIFMA_HOOD_591153.3",
           "name": "Severe",
           "description": "Severe severity"
         }
@@ -132,41 +119,41 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_100057",
+      "oifma_id": "OIFMA_HOOD_306028",
       "name": "Location",
       "description": "The location of the intraparenchymal lymph node.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_100057.0",
+          "value_code": "OIFMA_HOOD_306028.0",
           "name": "Right upper lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.1",
+          "value_code": "OIFMA_HOOD_306028.1",
           "name": "Right middle lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.2",
+          "value_code": "OIFMA_HOOD_306028.2",
           "name": "Right lower lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.3",
+          "value_code": "OIFMA_HOOD_306028.3",
           "name": "Left upper lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.4",
+          "value_code": "OIFMA_HOOD_306028.4",
           "name": "Left lower lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.5",
+          "value_code": "OIFMA_HOOD_306028.5",
           "name": "Mediastinal"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.6",
+          "value_code": "OIFMA_HOOD_306028.6",
           "name": "Hilar"
         },
         {
-          "value_code": "OIFMA_HOOD_100057.7",
+          "value_code": "OIFMA_HOOD_306028.7",
           "name": "Subpleural"
         }
       ],
@@ -174,29 +161,29 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_977717",
+      "oifma_id": "OIFMA_HOOD_914075",
       "name": "Size Finding",
       "description": "The size of the intraparenchymal lymph node.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_977717.0",
+          "value_code": "OIFMA_HOOD_914075.0",
           "name": "<0.5 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_977717.1",
+          "value_code": "OIFMA_HOOD_914075.1",
           "name": "0.5-1 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_977717.2",
+          "value_code": "OIFMA_HOOD_914075.2",
           "name": "1-2 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_977717.3",
+          "value_code": "OIFMA_HOOD_914075.3",
           "name": ">2 cm"
         },
         {
-          "value_code": "OIFMA_HOOD_977717.4",
+          "value_code": "OIFMA_HOOD_914075.4",
           "name": "Not specified"
         }
       ],
@@ -204,33 +191,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_615883",
+      "oifma_id": "OIFMA_HOOD_564728",
       "name": "Associated Findings",
       "description": "Any other findings that are associated with the intraparenchymal lymph node.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_615883.0",
+          "value_code": "OIFMA_HOOD_564728.0",
           "name": "Pulmonary nodules"
         },
         {
-          "value_code": "OIFMA_HOOD_615883.1",
+          "value_code": "OIFMA_HOOD_564728.1",
           "name": "Pleural effusion"
         },
         {
-          "value_code": "OIFMA_HOOD_615883.2",
+          "value_code": "OIFMA_HOOD_564728.2",
           "name": "Airspace opacity"
         },
         {
-          "value_code": "OIFMA_HOOD_615883.3",
+          "value_code": "OIFMA_HOOD_564728.3",
           "name": "Ground-glass opacity"
         },
         {
-          "value_code": "OIFMA_HOOD_615883.4",
+          "value_code": "OIFMA_HOOD_564728.4",
           "name": "Fibrosis"
         },
         {
-          "value_code": "OIFMA_HOOD_615883.5",
+          "value_code": "OIFMA_HOOD_564728.5",
           "name": "Bronchiectasis"
         }
       ],

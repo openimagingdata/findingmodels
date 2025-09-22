@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_150837",
+  "oifm_id": "OIFM_HOOD_309350",
   "name": "Median Sternotomy",
   "description": "Surgical incision in the middle of the chest usually used for open-heart surgery.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_630219",
+      "oifma_id": "OIFMA_HOOD_315189",
       "name": "presence",
       "description": "Presence of median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_630219.0",
+          "value_code": "OIFMA_HOOD_315189.0",
           "name": "Present",
           "description": "Median sternotomy is present"
         },
         {
-          "value_code": "OIFMA_HOOD_630219.1",
+          "value_code": "OIFMA_HOOD_315189.1",
           "name": "Absent",
           "description": "Median sternotomy is absent"
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_134612",
+      "oifma_id": "OIFMA_HOOD_105077",
       "name": "status",
       "description": "Status of the median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_134612.0",
+          "value_code": "OIFMA_HOOD_105077.0",
           "name": "Post-operative changes observed",
           "description": "Changes in the median sternotomy related to the post-operative period"
         },
         {
-          "value_code": "OIFMA_HOOD_134612.1",
+          "value_code": "OIFMA_HOOD_105077.1",
           "name": "No post-operative changes",
           "description": "No changes in the median sternotomy related to the post-operative period"
         }
@@ -57,28 +44,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_057330",
+      "oifma_id": "OIFMA_HOOD_193822",
       "name": "healing_status",
       "description": "Healing status of the median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_057330.0",
+          "value_code": "OIFMA_HOOD_193822.0",
           "name": "Well-healed",
           "description": "Median sternotomy is well-healed"
         },
         {
-          "value_code": "OIFMA_HOOD_057330.1",
+          "value_code": "OIFMA_HOOD_193822.1",
           "name": "Evidence of dehiscence",
           "description": "Evidence of dehiscence in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_057330.2",
+          "value_code": "OIFMA_HOOD_193822.2",
           "name": "Signs of infection",
           "description": "Signs of infection in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_057330.3",
+          "value_code": "OIFMA_HOOD_193822.3",
           "name": "Non-union",
           "description": "Non-union of the median sternotomy"
         }
@@ -87,18 +74,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_167513",
+      "oifma_id": "OIFMA_HOOD_218544",
       "name": "associated_hardware",
       "description": "Presence of associated hardware in the median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_167513.0",
+          "value_code": "OIFMA_HOOD_218544.0",
           "name": "Present",
           "description": "Associated hardware is present in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_167513.1",
+          "value_code": "OIFMA_HOOD_218544.1",
           "name": "Absent",
           "description": "No associated hardware in the median sternotomy"
         }
@@ -107,28 +94,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_968881",
+      "oifma_id": "OIFMA_HOOD_257870",
       "name": "hardware_type",
       "description": "Type of associated hardware in the median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_968881.0",
+          "value_code": "OIFMA_HOOD_257870.0",
           "name": "Wires",
           "description": "Wire fixation devices in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_968881.1",
+          "value_code": "OIFMA_HOOD_257870.1",
           "name": "Plates",
           "description": "Plate fixation devices in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_968881.2",
+          "value_code": "OIFMA_HOOD_257870.2",
           "name": "Screws",
           "description": "Screw fixation devices in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_968881.3",
+          "value_code": "OIFMA_HOOD_257870.3",
           "name": "Other fixation devices",
           "description": "Other types of fixation devices in the median sternotomy"
         }
@@ -137,33 +124,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_029562",
+      "oifma_id": "OIFMA_HOOD_189971",
       "name": "complications",
       "description": "Complications associated with the median sternotomy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_029562.0",
+          "value_code": "OIFMA_HOOD_189971.0",
           "name": "None",
           "description": "No complications associated with the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_029562.1",
+          "value_code": "OIFMA_HOOD_189971.1",
           "name": "Mediastinal widening",
           "description": "Mediastinal widening related to the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_029562.2",
+          "value_code": "OIFMA_HOOD_189971.2",
           "name": "Hematoma",
           "description": "Hematoma in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_029562.3",
+          "value_code": "OIFMA_HOOD_189971.3",
           "name": "Abscess",
           "description": "Abscess in the median sternotomy"
         },
         {
-          "value_code": "OIFMA_HOOD_029562.4",
+          "value_code": "OIFMA_HOOD_189971.4",
           "name": "Seroma",
           "description": "Seroma in the median sternotomy"
         }
@@ -172,18 +159,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_196519",
+      "oifma_id": "OIFMA_HOOD_676976",
       "name": "pulmonary_effusion",
       "description": "Presence of pulmonary effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_196519.0",
+          "value_code": "OIFMA_HOOD_676976.0",
           "name": "Present",
           "description": "Pulmonary effusion is present"
         },
         {
-          "value_code": "OIFMA_HOOD_196519.1",
+          "value_code": "OIFMA_HOOD_676976.1",
           "name": "Absent",
           "description": "Pulmonary effusion is absent"
         }
@@ -192,18 +179,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_487727",
+      "oifma_id": "OIFMA_HOOD_470191",
       "name": "pulmonary_edema",
       "description": "Presence of pulmonary edema",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_487727.0",
+          "value_code": "OIFMA_HOOD_470191.0",
           "name": "Present",
           "description": "Pulmonary edema is present"
         },
         {
-          "value_code": "OIFMA_HOOD_487727.1",
+          "value_code": "OIFMA_HOOD_470191.1",
           "name": "Absent",
           "description": "Pulmonary edema is absent"
         }
@@ -212,18 +199,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_206289",
+      "oifma_id": "OIFMA_HOOD_745805",
       "name": "atelectasis",
       "description": "Presence of atelectasis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_206289.0",
+          "value_code": "OIFMA_HOOD_745805.0",
           "name": "Present",
           "description": "Atelectasis is present"
         },
         {
-          "value_code": "OIFMA_HOOD_206289.1",
+          "value_code": "OIFMA_HOOD_745805.1",
           "name": "Absent",
           "description": "Atelectasis is absent"
         }
@@ -232,18 +219,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_226357",
+      "oifma_id": "OIFMA_HOOD_214969",
       "name": "pneumothorax",
       "description": "Presence of pneumothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_226357.0",
+          "value_code": "OIFMA_HOOD_214969.0",
           "name": "Present",
           "description": "Pneumothorax is present"
         },
         {
-          "value_code": "OIFMA_HOOD_226357.1",
+          "value_code": "OIFMA_HOOD_214969.1",
           "name": "Absent",
           "description": "Pneumothorax is absent"
         }
@@ -252,18 +239,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_159174",
+      "oifma_id": "OIFMA_HOOD_211911",
       "name": "lymphadenopathy",
       "description": "Presence of lymphadenopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_159174.0",
+          "value_code": "OIFMA_HOOD_211911.0",
           "name": "Present",
           "description": "Lymphadenopathy is present"
         },
         {
-          "value_code": "OIFMA_HOOD_159174.1",
+          "value_code": "OIFMA_HOOD_211911.1",
           "name": "Absent",
           "description": "Lymphadenopathy is absent"
         }

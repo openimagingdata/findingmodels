@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_241203",
+  "oifm_id": "OIFM_HOOD_087222",
   "name": "Ecmo Cannula",
   "description": "Extracorporeal Membrane Oxygenation (ECMO) Cannula finding",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_352133",
+      "oifma_id": "OIFMA_HOOD_550599",
       "name": "Presence of ECMO Cannula",
       "description": "Whether the ECMO cannula is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_352133.0",
+          "value_code": "OIFMA_HOOD_550599.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_352133.1",
+          "value_code": "OIFMA_HOOD_550599.1",
           "name": "Absent"
         }
       ],
@@ -35,25 +22,25 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_611499",
+      "oifma_id": "OIFMA_HOOD_792553",
       "name": "Status",
       "description": "The status of the ECMO cannula",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_611499.0",
+          "value_code": "OIFMA_HOOD_792553.0",
           "name": "New placement"
         },
         {
-          "value_code": "OIFMA_HOOD_611499.1",
+          "value_code": "OIFMA_HOOD_792553.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_611499.2",
+          "value_code": "OIFMA_HOOD_792553.2",
           "name": "Migrated"
         },
         {
-          "value_code": "OIFMA_HOOD_611499.3",
+          "value_code": "OIFMA_HOOD_792553.3",
           "name": "Removed"
         }
       ],
@@ -61,17 +48,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_413798",
+      "oifma_id": "OIFMA_HOOD_465754",
       "name": "Cannulation Site",
       "description": "The site of cannulation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_413798.0",
+          "value_code": "OIFMA_HOOD_465754.0",
           "name": "Venous"
         },
         {
-          "value_code": "OIFMA_HOOD_413798.1",
+          "value_code": "OIFMA_HOOD_465754.1",
           "name": "Arterial"
         }
       ],
@@ -79,17 +66,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_471097",
+      "oifma_id": "OIFMA_HOOD_223243",
       "name": "Appropriate location",
       "description": "Whether the cannula placement is appropriate or not",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_471097.0",
+          "value_code": "OIFMA_HOOD_223243.0",
           "name": "Yes"
         },
         {
-          "value_code": "OIFMA_HOOD_471097.1",
+          "value_code": "OIFMA_HOOD_223243.1",
           "name": "No"
         }
       ],
@@ -97,21 +84,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_138063",
+      "oifma_id": "OIFMA_HOOD_875399",
       "name": "Side Finding",
       "description": "The side of the cannulation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_138063.0",
+          "value_code": "OIFMA_HOOD_875399.0",
           "name": "Left"
         },
         {
-          "value_code": "OIFMA_HOOD_138063.1",
+          "value_code": "OIFMA_HOOD_875399.1",
           "name": "Right"
         },
         {
-          "value_code": "OIFMA_HOOD_138063.2",
+          "value_code": "OIFMA_HOOD_875399.2",
           "name": "NA"
         }
       ],
@@ -119,25 +106,25 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_645098",
+      "oifma_id": "OIFMA_HOOD_533702",
       "name": "Vein approach (if venous)",
       "description": "The approach used for venous cannulation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_645098.0",
+          "value_code": "OIFMA_HOOD_533702.0",
           "name": "Internal jugular"
         },
         {
-          "value_code": "OIFMA_HOOD_645098.1",
+          "value_code": "OIFMA_HOOD_533702.1",
           "name": "External jugular"
         },
         {
-          "value_code": "OIFMA_HOOD_645098.2",
+          "value_code": "OIFMA_HOOD_533702.2",
           "name": "Subclavian"
         },
         {
-          "value_code": "OIFMA_HOOD_645098.3",
+          "value_code": "OIFMA_HOOD_533702.3",
           "name": "Femoral"
         }
       ],
@@ -145,21 +132,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_315440",
+      "oifma_id": "OIFMA_HOOD_747355",
       "name": "Artery approach (if arterial)",
       "description": "The approach used for arterial cannulation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_315440.0",
+          "value_code": "OIFMA_HOOD_747355.0",
           "name": "Femoral"
         },
         {
-          "value_code": "OIFMA_HOOD_315440.1",
+          "value_code": "OIFMA_HOOD_747355.1",
           "name": "Subclavian"
         },
         {
-          "value_code": "OIFMA_HOOD_315440.2",
+          "value_code": "OIFMA_HOOD_747355.2",
           "name": "Carotid"
         }
       ],
@@ -167,21 +154,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_351745",
+      "oifma_id": "OIFMA_HOOD_501142",
       "name": "Distal tip location (venous)",
       "description": "The location of the distal tip in venous cannulation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_351745.0",
+          "value_code": "OIFMA_HOOD_501142.0",
           "name": "Right atrium"
         },
         {
-          "value_code": "OIFMA_HOOD_351745.1",
+          "value_code": "OIFMA_HOOD_501142.1",
           "name": "SVC"
         },
         {
-          "value_code": "OIFMA_HOOD_351745.2",
+          "value_code": "OIFMA_HOOD_501142.2",
           "name": "IVC"
         }
       ],

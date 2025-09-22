@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_908612",
+  "oifm_id": "OIFM_HOOD_059750",
   "name": "Bronchial Stent",
   "description": "A bronchial stent is a medical device used to support the walls of the bronchial tubes and keep them open. It is typically used to treat airway obstructions or strictures.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_946913",
+      "oifma_id": "OIFMA_HOOD_247364",
       "name": "Presence of Bronchial Stent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_946913.0",
+          "value_code": "OIFMA_HOOD_247364.0",
           "name": "Present",
           "description": "The bronchial stent is present in the patient's airway."
         },
         {
-          "value_code": "OIFMA_HOOD_946913.1",
+          "value_code": "OIFMA_HOOD_247364.1",
           "name": "Absent",
           "description": "There is no bronchial stent present in the patient's airway."
         }
@@ -36,27 +23,27 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_261252",
+      "oifma_id": "OIFMA_HOOD_781423",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_261252.0",
+          "value_code": "OIFMA_HOOD_781423.0",
           "name": "New placement",
           "description": "The bronchial stent has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_261252.1",
+          "value_code": "OIFMA_HOOD_781423.1",
           "name": "Unchanged",
           "description": "The bronchial stent remains in the same position as before."
         },
         {
-          "value_code": "OIFMA_HOOD_261252.2",
+          "value_code": "OIFMA_HOOD_781423.2",
           "name": "Complication",
           "description": "The bronchial stent is causing complications."
         },
         {
-          "value_code": "OIFMA_HOOD_261252.3",
+          "value_code": "OIFMA_HOOD_781423.3",
           "name": "Removed",
           "description": "The bronchial stent has been removed from the patient's airway."
         }
@@ -65,22 +52,22 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_480953",
+      "oifma_id": "OIFMA_HOOD_789477",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_480953.0",
+          "value_code": "OIFMA_HOOD_789477.0",
           "name": "Right main bronchus",
           "description": "The bronchial stent is located in the right main bronchus."
         },
         {
-          "value_code": "OIFMA_HOOD_480953.1",
+          "value_code": "OIFMA_HOOD_789477.1",
           "name": "Left main bronchus",
           "description": "The bronchial stent is located in the left main bronchus."
         },
         {
-          "value_code": "OIFMA_HOOD_480953.2",
+          "value_code": "OIFMA_HOOD_789477.2",
           "name": "Lobar bronchus",
           "description": "The bronchial stent is located in a lobar bronchus (specific lobe to be specified separately)."
         }
@@ -89,22 +76,22 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_972023",
+      "oifma_id": "OIFMA_HOOD_064166",
       "name": "Side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_972023.0",
+          "value_code": "OIFMA_HOOD_064166.0",
           "name": "Right",
           "description": "The bronchial stent is located on the right side of the airway."
         },
         {
-          "value_code": "OIFMA_HOOD_972023.1",
+          "value_code": "OIFMA_HOOD_064166.1",
           "name": "Left",
           "description": "The bronchial stent is located on the left side of the airway."
         },
         {
-          "value_code": "OIFMA_HOOD_972023.2",
+          "value_code": "OIFMA_HOOD_064166.2",
           "name": "NA",
           "description": "The side of the bronchial stent is not applicable or specified."
         }
@@ -113,22 +100,22 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_284979",
+      "oifma_id": "OIFMA_HOOD_728369",
       "name": "Type Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_284979.0",
+          "value_code": "OIFMA_HOOD_728369.0",
           "name": "Fully covered",
           "description": "The bronchial stent is fully covered."
         },
         {
-          "value_code": "OIFMA_HOOD_284979.1",
+          "value_code": "OIFMA_HOOD_728369.1",
           "name": "Partially covered",
           "description": "The bronchial stent is partially covered."
         },
         {
-          "value_code": "OIFMA_HOOD_284979.2",
+          "value_code": "OIFMA_HOOD_728369.2",
           "name": "Uncovered",
           "description": "The bronchial stent is not covered."
         }
@@ -137,7 +124,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_308639",
+      "oifma_id": "OIFMA_HOOD_014660",
       "name": "Stent Length",
       "description": "The length of the bronchial stent.",
       "type": "numeric",
@@ -146,7 +133,7 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_621848",
+      "oifma_id": "OIFMA_HOOD_274164",
       "name": "Lumen Diameter",
       "description": "The diameter of the lumen of the bronchial stent.",
       "type": "numeric",
@@ -155,37 +142,37 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_304814",
+      "oifma_id": "OIFMA_HOOD_052491",
       "name": "Complication",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_304814.0",
+          "value_code": "OIFMA_HOOD_052491.0",
           "name": "None",
           "description": "There are no complications associated with the bronchial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_304814.1",
+          "value_code": "OIFMA_HOOD_052491.1",
           "name": "Mucosal erosion",
           "description": "The bronchial stent has caused erosion of the surrounding mucosal tissue."
         },
         {
-          "value_code": "OIFMA_HOOD_304814.2",
+          "value_code": "OIFMA_HOOD_052491.2",
           "name": "Perforation",
           "description": "The bronchial stent has caused a perforation in the airway."
         },
         {
-          "value_code": "OIFMA_HOOD_304814.3",
+          "value_code": "OIFMA_HOOD_052491.3",
           "name": "Migration",
           "description": "The bronchial stent has migrated from its original position."
         },
         {
-          "value_code": "OIFMA_HOOD_304814.4",
+          "value_code": "OIFMA_HOOD_052491.4",
           "name": "Stenosis",
           "description": "The bronchial stent has caused narrowing or constriction of the airway."
         },
         {
-          "value_code": "OIFMA_HOOD_304814.5",
+          "value_code": "OIFMA_HOOD_052491.5",
           "name": "Occlusion",
           "description": "The bronchial stent is causing a blockage in the airway."
         }

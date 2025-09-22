@@ -1,33 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_326104",
+  "oifm_id": "OIFM_HOOD_138159",
   "name": "Sternal Fracture",
   "description": "A fracture of the sternum.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_223215",
+      "oifma_id": "OIFMA_HOOD_244432",
       "name": "presence",
       "description": "Whether the sternal fracture is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_223215.0",
+          "value_code": "OIFMA_HOOD_244432.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_223215.1",
+          "value_code": "OIFMA_HOOD_244432.1",
           "name": "Absent"
         }
       ],
@@ -35,21 +22,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_843436",
+      "oifma_id": "OIFMA_HOOD_840037",
       "name": "status",
       "description": "The current status of the sternal fracture.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_843436.0",
+          "value_code": "OIFMA_HOOD_840037.0",
           "name": "Acute"
         },
         {
-          "value_code": "OIFMA_HOOD_843436.1",
+          "value_code": "OIFMA_HOOD_840037.1",
           "name": "Remote"
         },
         {
-          "value_code": "OIFMA_HOOD_843436.2",
+          "value_code": "OIFMA_HOOD_840037.2",
           "name": "Healing"
         }
       ],
@@ -57,21 +44,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_332772",
+      "oifma_id": "OIFMA_HOOD_447814",
       "name": "location",
       "description": "The location of the sternal fracture.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_332772.0",
+          "value_code": "OIFMA_HOOD_447814.0",
           "name": "Manubrium"
         },
         {
-          "value_code": "OIFMA_HOOD_332772.1",
+          "value_code": "OIFMA_HOOD_447814.1",
           "name": "Body"
         },
         {
-          "value_code": "OIFMA_HOOD_332772.2",
+          "value_code": "OIFMA_HOOD_447814.2",
           "name": "Xiphoid"
         }
       ],
@@ -79,21 +66,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_186192",
+      "oifma_id": "OIFMA_HOOD_790024",
       "name": "severity",
       "description": "The severity of the sternal fracture.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_186192.0",
+          "value_code": "OIFMA_HOOD_790024.0",
           "name": "Non-displaced"
         },
         {
-          "value_code": "OIFMA_HOOD_186192.1",
+          "value_code": "OIFMA_HOOD_790024.1",
           "name": "Minimally displaced"
         },
         {
-          "value_code": "OIFMA_HOOD_186192.2",
+          "value_code": "OIFMA_HOOD_790024.2",
           "name": "Displaced"
         }
       ],
@@ -101,21 +88,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_933650",
+      "oifma_id": "OIFMA_HOOD_816418",
       "name": "orientation",
       "description": "The orientation of the sternal fracture.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_933650.0",
+          "value_code": "OIFMA_HOOD_816418.0",
           "name": "Horizontal"
         },
         {
-          "value_code": "OIFMA_HOOD_933650.1",
+          "value_code": "OIFMA_HOOD_816418.1",
           "name": "Vertical"
         },
         {
-          "value_code": "OIFMA_HOOD_933650.2",
+          "value_code": "OIFMA_HOOD_816418.2",
           "name": "Oblique"
         }
       ],
@@ -123,17 +110,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_924660",
+      "oifma_id": "OIFMA_HOOD_355282",
       "name": "pulmonary_contusion",
       "description": "Whether there is a pulmonary contusion present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_924660.0",
+          "value_code": "OIFMA_HOOD_355282.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_924660.1",
+          "value_code": "OIFMA_HOOD_355282.1",
           "name": "Absent"
         }
       ],
@@ -141,17 +128,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_347905",
+      "oifma_id": "OIFMA_HOOD_977337",
       "name": "cardiac_injury",
       "description": "Whether there is a cardiac injury present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_347905.0",
+          "value_code": "OIFMA_HOOD_977337.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_347905.1",
+          "value_code": "OIFMA_HOOD_977337.1",
           "name": "Absent"
         }
       ],
@@ -159,17 +146,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_613418",
+      "oifma_id": "OIFMA_HOOD_249486",
       "name": "rib_fractures",
       "description": "Whether there are rib fractures present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_613418.0",
+          "value_code": "OIFMA_HOOD_249486.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_613418.1",
+          "value_code": "OIFMA_HOOD_249486.1",
           "name": "Absent"
         }
       ],
@@ -177,17 +164,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_697662",
+      "oifma_id": "OIFMA_HOOD_996297",
       "name": "soft_tissue_injury",
       "description": "Whether there is a soft tissue injury present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_697662.0",
+          "value_code": "OIFMA_HOOD_996297.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_697662.1",
+          "value_code": "OIFMA_HOOD_996297.1",
           "name": "Absent"
         }
       ],

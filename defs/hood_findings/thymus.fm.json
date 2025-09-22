@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_545209",
+  "oifm_id": "OIFM_HOOD_704566",
   "name": "Thymus",
-  "description": "The thymus is a bilobed organ located in the anterior mediastinum, essential for the development and maturation of T lymphocytes (T cells), playing a crucial role in the adaptive immune response.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
+  "description": "The thymus is a bilobed organ located in the anterior mediastinum, responsible for the maturation of T lymphocytes, integral to the adaptive immune system.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_865053",
+      "oifma_id": "OIFMA_HOOD_267386",
       "name": "Presence of Thymic Tissue",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_865053.0",
+          "value_code": "OIFMA_HOOD_267386.0",
           "name": "Yes"
         },
         {
-          "value_code": "OIFMA_HOOD_865053.1",
+          "value_code": "OIFMA_HOOD_267386.1",
           "name": "No"
         }
       ],
@@ -34,16 +21,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_101151",
+      "oifma_id": "OIFMA_HOOD_131298",
       "name": "Size Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_101151.0",
+          "value_code": "OIFMA_HOOD_131298.0",
           "name": "Normal"
         },
         {
-          "value_code": "OIFMA_HOOD_101151.1",
+          "value_code": "OIFMA_HOOD_131298.1",
           "name": "Enlarged"
         }
       ],
@@ -51,16 +38,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_307589",
+      "oifma_id": "OIFMA_HOOD_828123",
       "name": "Consistency",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_307589.0",
+          "value_code": "OIFMA_HOOD_828123.0",
           "name": "Homogeneous"
         },
         {
-          "value_code": "OIFMA_HOOD_307589.1",
+          "value_code": "OIFMA_HOOD_828123.1",
           "name": "Heterogeneous"
         }
       ],
@@ -68,16 +55,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_614396",
+      "oifma_id": "OIFMA_HOOD_669575",
       "name": "Calcifications",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_614396.0",
+          "value_code": "OIFMA_HOOD_669575.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_614396.1",
+          "value_code": "OIFMA_HOOD_669575.1",
           "name": "Absent"
         }
       ],
@@ -85,20 +72,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_728960",
+      "oifma_id": "OIFMA_HOOD_137020",
       "name": "Fatty Involution",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_728960.0",
+          "value_code": "OIFMA_HOOD_137020.0",
           "name": "Complete"
         },
         {
-          "value_code": "OIFMA_HOOD_728960.1",
+          "value_code": "OIFMA_HOOD_137020.1",
           "name": "Partial"
         },
         {
-          "value_code": "OIFMA_HOOD_728960.2",
+          "value_code": "OIFMA_HOOD_137020.2",
           "name": "Absent"
         }
       ],
@@ -106,16 +93,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_537792",
+      "oifma_id": "OIFMA_HOOD_243195",
       "name": "Cystic Changes",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_537792.0",
+          "value_code": "OIFMA_HOOD_243195.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_537792.1",
+          "value_code": "OIFMA_HOOD_243195.1",
           "name": "Absent"
         }
       ],
@@ -123,16 +110,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_775342",
+      "oifma_id": "OIFMA_HOOD_693032",
       "name": "Thymoma / Thymic Mass",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_775342.0",
+          "value_code": "OIFMA_HOOD_693032.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_775342.1",
+          "value_code": "OIFMA_HOOD_693032.1",
           "name": "Absent"
         }
       ],

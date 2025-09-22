@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_068104",
+  "oifm_id": "OIFM_HOOD_412925",
   "name": "Loop Recorder",
   "description": "A loop recorder is a small device that is implanted under the skin to monitor and record the electrical activity of the heart.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_621920",
+      "oifma_id": "OIFMA_HOOD_375203",
       "name": "Presence of Loop Recorder",
       "description": "Indicates whether a loop recorder is present or not",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_621920.0",
+          "value_code": "OIFMA_HOOD_375203.0",
           "name": "Present",
           "description": "A loop recorder is present"
         },
         {
-          "value_code": "OIFMA_HOOD_621920.1",
+          "value_code": "OIFMA_HOOD_375203.1",
           "name": "Absent",
           "description": "A loop recorder is absent"
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_142625",
+      "oifma_id": "OIFMA_HOOD_657878",
       "name": "Side Finding",
       "description": "Indicates the side where the loop recorder is located",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_142625.0",
+          "value_code": "OIFMA_HOOD_657878.0",
           "name": "Left",
           "description": "The loop recorder is located on the left side"
         },
         {
-          "value_code": "OIFMA_HOOD_142625.1",
+          "value_code": "OIFMA_HOOD_657878.1",
           "name": "Right",
           "description": "The loop recorder is located on the right side"
         }
@@ -57,23 +44,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_842355",
+      "oifma_id": "OIFMA_HOOD_081189",
       "name": "Location",
       "description": "Indicates the location of the loop recorder",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_842355.0",
+          "value_code": "OIFMA_HOOD_081189.0",
           "name": "Pre-pectoral",
           "description": "The loop recorder is located in the pre-pectoral region"
         },
         {
-          "value_code": "OIFMA_HOOD_842355.1",
+          "value_code": "OIFMA_HOOD_081189.1",
           "name": "Subcutaneous",
           "description": "The loop recorder is located subcutaneously"
         },
         {
-          "value_code": "OIFMA_HOOD_842355.2",
+          "value_code": "OIFMA_HOOD_081189.2",
           "name": "Other",
           "description": "The loop recorder is located in another location"
         }

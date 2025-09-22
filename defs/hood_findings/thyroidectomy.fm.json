@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_737348",
+  "oifm_id": "OIFM_HOOD_701219",
   "name": "Thyroidectomy",
   "description": "A surgical procedure to remove all or part of the thyroid gland.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_369892",
+      "oifma_id": "OIFMA_HOOD_429157",
       "name": "presence_of_surgical_changes",
       "description": "Indicates whether surgical changes are present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_369892.0",
+          "value_code": "OIFMA_HOOD_429157.0",
           "name": "present",
           "description": "Surgical changes are present."
         },
         {
-          "value_code": "OIFMA_HOOD_369892.1",
+          "value_code": "OIFMA_HOOD_429157.1",
           "name": "absent",
           "description": "Surgical changes are absent."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_503296",
+      "oifma_id": "OIFMA_HOOD_306712",
       "name": "status",
       "description": "Indicates the status of the finding.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_503296.0",
+          "value_code": "OIFMA_HOOD_306712.0",
           "name": "new",
           "description": "The finding is new."
         },
         {
-          "value_code": "OIFMA_HOOD_503296.1",
+          "value_code": "OIFMA_HOOD_306712.1",
           "name": "unchanged",
           "description": "The finding is unchanged."
         }
@@ -57,28 +44,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_426099",
+      "oifma_id": "OIFMA_HOOD_763393",
       "name": "extent_of_surgery",
       "description": "Indicates the extent of the thyroidectomy surgery.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_426099.0",
+          "value_code": "OIFMA_HOOD_763393.0",
           "name": "total thyroidectomy",
           "description": "The entire thyroid gland has been removed."
         },
         {
-          "value_code": "OIFMA_HOOD_426099.1",
+          "value_code": "OIFMA_HOOD_763393.1",
           "name": "partial thyroidectomy",
           "description": "Only a part of the thyroid gland has been removed."
         },
         {
-          "value_code": "OIFMA_HOOD_426099.2",
+          "value_code": "OIFMA_HOOD_763393.2",
           "name": "right hemithyroidectomy",
           "description": "The right half of the thyroid gland has been removed."
         },
         {
-          "value_code": "OIFMA_HOOD_426099.3",
+          "value_code": "OIFMA_HOOD_763393.3",
           "name": "left hemithyroidectomy",
           "description": "The left half of the thyroid gland has been removed."
         }
@@ -87,18 +74,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_725595",
+      "oifma_id": "OIFMA_HOOD_629932",
       "name": "postoperative_changes",
       "description": "Indicates whether postoperative changes are present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_725595.0",
+          "value_code": "OIFMA_HOOD_629932.0",
           "name": "present",
           "description": "Postoperative changes are present."
         },
         {
-          "value_code": "OIFMA_HOOD_725595.1",
+          "value_code": "OIFMA_HOOD_629932.1",
           "name": "absent",
           "description": "Postoperative changes are absent."
         }
@@ -107,18 +94,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_349374",
+      "oifma_id": "OIFMA_HOOD_481832",
       "name": "residual_soft_tissue",
       "description": "Indicates whether there is residual soft tissue present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_349374.0",
+          "value_code": "OIFMA_HOOD_481832.0",
           "name": "present",
           "description": "Residual soft tissue is present."
         },
         {
-          "value_code": "OIFMA_HOOD_349374.1",
+          "value_code": "OIFMA_HOOD_481832.1",
           "name": "absent",
           "description": "Residual soft tissue is absent."
         }
@@ -127,18 +114,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_075381",
+      "oifma_id": "OIFMA_HOOD_438649",
       "name": "cervical_lymphadenopathy",
       "description": "Indicates whether cervical lymphadenopathy is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_075381.0",
+          "value_code": "OIFMA_HOOD_438649.0",
           "name": "present",
           "description": "Cervical lymphadenopathy is present."
         },
         {
-          "value_code": "OIFMA_HOOD_075381.1",
+          "value_code": "OIFMA_HOOD_438649.1",
           "name": "absent",
           "description": "Cervical lymphadenopathy is absent."
         }
@@ -147,18 +134,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_585022",
+      "oifma_id": "OIFMA_HOOD_408867",
       "name": "supraclavicular_lymphadenopathy",
       "description": "Indicates whether supraclavicular lymphadenopathy is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_585022.0",
+          "value_code": "OIFMA_HOOD_408867.0",
           "name": "present",
           "description": "Supraclavicular lymphadenopathy is present."
         },
         {
-          "value_code": "OIFMA_HOOD_585022.1",
+          "value_code": "OIFMA_HOOD_408867.1",
           "name": "absent",
           "description": "Supraclavicular lymphadenopathy is absent."
         }
@@ -167,18 +154,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_707668",
+      "oifma_id": "OIFMA_HOOD_893560",
       "name": "mediastinal_lymphadenopathy",
       "description": "Indicates whether mediastinal lymphadenopathy is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_707668.0",
+          "value_code": "OIFMA_HOOD_893560.0",
           "name": "present",
           "description": "Mediastinal lymphadenopathy is present."
         },
         {
-          "value_code": "OIFMA_HOOD_707668.1",
+          "value_code": "OIFMA_HOOD_893560.1",
           "name": "absent",
           "description": "Mediastinal lymphadenopathy is absent."
         }

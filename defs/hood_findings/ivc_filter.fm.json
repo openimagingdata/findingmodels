@@ -1,32 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_592902",
+  "oifm_id": "OIFM_HOOD_264636",
   "name": "Ivc Filter",
   "description": "Presence of an IVC filter and its characteristics",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_084638",
+      "oifma_id": "OIFMA_HOOD_740141",
       "name": "Presence of IVC Filter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_084638.0",
+          "value_code": "OIFMA_HOOD_740141.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_084638.1",
+          "value_code": "OIFMA_HOOD_740141.1",
           "name": "Absent"
         }
       ],
@@ -34,24 +21,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_179592",
+      "oifma_id": "OIFMA_HOOD_968606",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_179592.0",
+          "value_code": "OIFMA_HOOD_968606.0",
           "name": "New placement"
         },
         {
-          "value_code": "OIFMA_HOOD_179592.1",
+          "value_code": "OIFMA_HOOD_968606.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_179592.2",
+          "value_code": "OIFMA_HOOD_968606.2",
           "name": "Complication"
         },
         {
-          "value_code": "OIFMA_HOOD_179592.3",
+          "value_code": "OIFMA_HOOD_968606.3",
           "name": "Removed"
         }
       ],
@@ -59,16 +46,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_804260",
+      "oifma_id": "OIFMA_HOOD_642316",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_804260.0",
+          "value_code": "OIFMA_HOOD_642316.0",
           "name": "Suprarenal"
         },
         {
-          "value_code": "OIFMA_HOOD_804260.1",
+          "value_code": "OIFMA_HOOD_642316.1",
           "name": "Infrarenal"
         }
       ],
@@ -76,16 +63,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_386964",
+      "oifma_id": "OIFMA_HOOD_997129",
       "name": "Type Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_386964.0",
+          "value_code": "OIFMA_HOOD_997129.0",
           "name": "Permanent"
         },
         {
-          "value_code": "OIFMA_HOOD_386964.1",
+          "value_code": "OIFMA_HOOD_997129.1",
           "name": "Retrievable"
         }
       ],
@@ -93,16 +80,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_945525",
+      "oifma_id": "OIFMA_HOOD_889259",
       "name": "Orientation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_945525.0",
+          "value_code": "OIFMA_HOOD_889259.0",
           "name": "Appropriate"
         },
         {
-          "value_code": "OIFMA_HOOD_945525.1",
+          "value_code": "OIFMA_HOOD_889259.1",
           "name": "Tilted"
         }
       ],
@@ -110,24 +97,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_699996",
+      "oifma_id": "OIFMA_HOOD_073836",
       "name": "Complication",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_699996.0",
+          "value_code": "OIFMA_HOOD_073836.0",
           "name": "None"
         },
         {
-          "value_code": "OIFMA_HOOD_699996.1",
+          "value_code": "OIFMA_HOOD_073836.1",
           "name": "Tine Penetration"
         },
         {
-          "value_code": "OIFMA_HOOD_699996.2",
+          "value_code": "OIFMA_HOOD_073836.2",
           "name": "Migration"
         },
         {
-          "value_code": "OIFMA_HOOD_699996.3",
+          "value_code": "OIFMA_HOOD_073836.3",
           "name": "Tilted"
         }
       ],
@@ -135,16 +122,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_619579",
+      "oifma_id": "OIFMA_HOOD_834013",
       "name": "Thrombosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_619579.0",
+          "value_code": "OIFMA_HOOD_834013.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_619579.1",
+          "value_code": "OIFMA_HOOD_834013.1",
           "name": "Absent"
         }
       ],

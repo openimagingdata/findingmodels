@@ -1,34 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_679477",
+  "oifm_id": "OIFM_HOOD_170963",
   "name": "Pulmonary Nodule",
   "description": "A solid or partially solid lesion in the lung parenchyma.",
-  "contributors": [
-    {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    }
-  ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_659579",
+      "oifma_id": "OIFMA_HOOD_786842",
       "name": "presence",
       "description": "Presence of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_659579.0",
+          "value_code": "OIFMA_HOOD_786842.0",
           "name": "present",
           "description": "The pulmonary nodule is present."
         },
         {
-          "value_code": "OIFMA_HOOD_659579.1",
+          "value_code": "OIFMA_HOOD_786842.1",
           "name": "absent",
           "description": "The pulmonary nodule is absent."
         }
@@ -37,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_960523",
+      "oifma_id": "OIFMA_HOOD_494603",
       "name": "number",
       "description": "Number of pulmonary nodules.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_960523.0",
+          "value_code": "OIFMA_HOOD_494603.0",
           "name": "single",
           "description": "There is a single pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_960523.1",
+          "value_code": "OIFMA_HOOD_494603.1",
           "name": "multiple",
           "description": "There are multiple pulmonary nodules."
         }
@@ -57,28 +44,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_096485",
+      "oifma_id": "OIFMA_HOOD_355706",
       "name": "status",
       "description": "Status of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_096485.0",
+          "value_code": "OIFMA_HOOD_355706.0",
           "name": "new",
           "description": "The pulmonary nodule is new."
         },
         {
-          "value_code": "OIFMA_HOOD_096485.1",
+          "value_code": "OIFMA_HOOD_355706.1",
           "name": "stable",
           "description": "The pulmonary nodule is stable."
         },
         {
-          "value_code": "OIFMA_HOOD_096485.2",
+          "value_code": "OIFMA_HOOD_355706.2",
           "name": "enlarging",
           "description": "The pulmonary nodule is enlarging."
         },
         {
-          "value_code": "OIFMA_HOOD_096485.3",
+          "value_code": "OIFMA_HOOD_355706.3",
           "name": "decreasing",
           "description": "The pulmonary nodule is decreasing in size."
         }
@@ -87,7 +74,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_266762",
+      "oifma_id": "OIFMA_HOOD_621593",
       "name": "size Finding",
       "description": "Size of the pulmonary nodule.",
       "type": "numeric",
@@ -97,18 +84,18 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_518234",
+      "oifma_id": "OIFMA_HOOD_014138",
       "name": "morphology",
       "description": "Morphology of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_518234.0",
+          "value_code": "OIFMA_HOOD_014138.0",
           "name": "solid",
           "description": "The pulmonary nodule is solid."
         },
         {
-          "value_code": "OIFMA_HOOD_518234.1",
+          "value_code": "OIFMA_HOOD_014138.1",
           "name": "subsolid",
           "description": "The pulmonary nodule is subsolid."
         }
@@ -117,23 +104,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_059233",
+      "oifma_id": "OIFMA_HOOD_159389",
       "name": "edges",
       "description": "Edges of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_059233.0",
+          "value_code": "OIFMA_HOOD_159389.0",
           "name": "smooth",
           "description": "The edges of the pulmonary nodule are smooth."
         },
         {
-          "value_code": "OIFMA_HOOD_059233.1",
+          "value_code": "OIFMA_HOOD_159389.1",
           "name": "lobulated",
           "description": "The edges of the pulmonary nodule are lobulated."
         },
         {
-          "value_code": "OIFMA_HOOD_059233.2",
+          "value_code": "OIFMA_HOOD_159389.2",
           "name": "spiculated",
           "description": "The edges of the pulmonary nodule are spiculated."
         }
@@ -142,38 +129,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_216713",
+      "oifma_id": "OIFMA_HOOD_385844",
       "name": "location",
       "description": "Location of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_216713.0",
+          "value_code": "OIFMA_HOOD_385844.0",
           "name": "right upper lobe",
           "description": "The pulmonary nodule is in the right upper lobe."
         },
         {
-          "value_code": "OIFMA_HOOD_216713.1",
+          "value_code": "OIFMA_HOOD_385844.1",
           "name": "right middle lobe",
           "description": "The pulmonary nodule is in the right middle lobe."
         },
         {
-          "value_code": "OIFMA_HOOD_216713.2",
+          "value_code": "OIFMA_HOOD_385844.2",
           "name": "right lower lobe",
           "description": "The pulmonary nodule is in the right lower lobe."
         },
         {
-          "value_code": "OIFMA_HOOD_216713.3",
+          "value_code": "OIFMA_HOOD_385844.3",
           "name": "left upper lobe",
           "description": "The pulmonary nodule is in the left upper lobe."
         },
         {
-          "value_code": "OIFMA_HOOD_216713.4",
+          "value_code": "OIFMA_HOOD_385844.4",
           "name": "left lower lobe",
           "description": "The pulmonary nodule is in the left lower lobe."
         },
         {
-          "value_code": "OIFMA_HOOD_216713.5",
+          "value_code": "OIFMA_HOOD_385844.5",
           "name": "bilateral",
           "description": "The pulmonary nodule is bilateral."
         }
@@ -182,38 +169,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_390074",
+      "oifma_id": "OIFMA_HOOD_178919",
       "name": "calcification",
       "description": "Calcification of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_390074.0",
+          "value_code": "OIFMA_HOOD_178919.0",
           "name": "present",
           "description": "Calcification is present in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_390074.1",
+          "value_code": "OIFMA_HOOD_178919.1",
           "name": "absent",
           "description": "Calcification is absent in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_390074.2",
+          "value_code": "OIFMA_HOOD_178919.2",
           "name": "central",
           "description": "Central calcification in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_390074.3",
+          "value_code": "OIFMA_HOOD_178919.3",
           "name": "diffuse",
           "description": "Diffuse calcification in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_390074.4",
+          "value_code": "OIFMA_HOOD_178919.4",
           "name": "laminated",
           "description": "Laminated calcification in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_390074.5",
+          "value_code": "OIFMA_HOOD_178919.5",
           "name": "popcorn",
           "description": "Popcorn calcification in the pulmonary nodule."
         }
@@ -222,18 +209,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_446821",
+      "oifma_id": "OIFMA_HOOD_257295",
       "name": "cavitation",
       "description": "Cavitation of the pulmonary nodule.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_446821.0",
+          "value_code": "OIFMA_HOOD_257295.0",
           "name": "present",
           "description": "Cavitation is present in the pulmonary nodule."
         },
         {
-          "value_code": "OIFMA_HOOD_446821.1",
+          "value_code": "OIFMA_HOOD_257295.1",
           "name": "absent",
           "description": "Cavitation is absent in the pulmonary nodule."
         }
@@ -242,18 +229,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_167733",
+      "oifma_id": "OIFMA_HOOD_594388",
       "name": "satellite_nodules",
       "description": "Presence of satellite nodules.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_167733.0",
+          "value_code": "OIFMA_HOOD_594388.0",
           "name": "present",
           "description": "Satellite nodules are present."
         },
         {
-          "value_code": "OIFMA_HOOD_167733.1",
+          "value_code": "OIFMA_HOOD_594388.1",
           "name": "absent",
           "description": "Satellite nodules are absent."
         }
@@ -262,18 +249,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_200501",
+      "oifma_id": "OIFMA_HOOD_039382",
       "name": "lymphadenopathy",
       "description": "Presence of lymphadenopathy.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_200501.0",
+          "value_code": "OIFMA_HOOD_039382.0",
           "name": "present",
           "description": "Lymphadenopathy is present."
         },
         {
-          "value_code": "OIFMA_HOOD_200501.1",
+          "value_code": "OIFMA_HOOD_039382.1",
           "name": "absent",
           "description": "Lymphadenopathy is absent."
         }
