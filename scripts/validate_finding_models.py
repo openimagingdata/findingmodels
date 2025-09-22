@@ -95,7 +95,7 @@ class FindingModelValidator:
 def main():
     """Main function to validate FindingModel outputs."""
     # Configuration
-    output_dir = "defs/new_findings"
+    output_dir = "defs/findings_from_cdes"
     schema_file = "schema/finding_model.schema.json"
     
     print("FindingModel Schema Validator")

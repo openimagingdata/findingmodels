@@ -1,6 +1,4 @@
 """
-Phase 1: Redundancy Detection Script
-
 This script:
 1. Loads existing hood_findings into MongoDB index
 2. Tests each new_finding for similarity using find_similar_models()
@@ -143,7 +141,7 @@ class RedundancyDetector:
         await self.setup_index()
         
         # Step 2: Analyze new findings
-        new_dir = Path("defs/new_findings")
+        new_dir = Path("defs/findings_from_cdes")
         new_files = list(new_dir.glob("*.fm.json"))
         self.stats['total_new_findings'] = len(new_files)
         

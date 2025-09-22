@@ -7,7 +7,7 @@ def investigate_duplicates():
     """Investigate which CDEs are generating duplicate filenames."""
     
     input_dir = "cdes/definitions"
-    output_dir = "defs/new_findings"
+    output_dir = "defs/findings_from_cdes"
     
     # Dictionary to track filename -> list of CDEs that generate it
     filename_to_cdes = defaultdict(list)

@@ -407,7 +407,7 @@ def main():
     """Main function to process CDE files."""
     # Hardcoded paths
     input_dir = "cdes/definitions"
-    output_dir = "defs/new_findings"
+    output_dir = "defs/findings_from_cdes"
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
