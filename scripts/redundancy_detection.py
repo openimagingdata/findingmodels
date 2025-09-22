@@ -2,8 +2,16 @@
 This script:
 1. Loads existing hood_findings, cde findgins into MongoDB index
 2. Tests each new finding for similarity using find_similar_models()
-3. Generates a comprehensive redundancy report
-4. Categorizes results for merge strategy
+    2a. The find_similar_models() function uses AI semantic analysis to compare findings based on:
+        Finding Name (e.g., "Pulmonary Nodule" vs "Lung Nodule")
+        Description (the detailed text description)
+        Synonyms (alternative names for the finding)
+        Does not compare attributes
+3. Generates a comprehensive redundancy report based on confidence interval
+    Exact Duplicates (0.9+ confidence)
+    Similar Findings (0.5-0.8 confidence)
+    Unique Findings (0.0 confidence)
+4. Categorizes results (see test_output) for merge strategy
 """
 
 import asyncio
