@@ -23,10 +23,10 @@ class RedundancyDetector:
         self.results = []
         self.stats = {
             'total_analyzed': 0,
-            'cde_vs_mongodb': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicates': 0, 'errors': 0},
-            'hood_vs_mongodb': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicates': 0, 'errors': 0},
-            'hood_vs_cde': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicates': 0, 'errors': 0},
-            'overall': {'unique': 0, 'similar': 0, 'exact_duplicate': 0, 'errors': 0}
+            'cde_vs_mongodb': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicate': 0, 'error': 0},
+            'hood_vs_mongodb': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicate': 0, 'error': 0},
+            'hood_vs_cde': {'total': 0, 'unique': 0, 'similar': 0, 'exact_duplicate': 0, 'error': 0},
+            'overall': {'unique': 0, 'similar': 0, 'exact_duplicate': 0, 'error': 0}
         }
     
     async def setup_index(self):
@@ -171,7 +171,7 @@ class RedundancyDetector:
         print(f"Analyzing {len(cdes_files)} CDE findings against existing database...")
         for i, file_path in enumerate(cdes_files, 1):
             print(f"  [{i:3d}/{len(cdes_files)}] Analyzing {file_path.name}...")
-            result = await self.analyze_new_finding(file_path, "CDE vs MongoDB")
+            result = await self.analyze_new_finding(file_path, "cde_vs_mongodb")
             self.results.append(result)
             self._update_stats(result)
         
@@ -184,7 +184,7 @@ class RedundancyDetector:
         print(f"Analyzing {len(hood_files)} hood findings against existing database...")
         for i, file_path in enumerate(hood_files, 1):
             print(f"  [{i:3d}/{len(hood_files)}] Analyzing {file_path.name}...")
-            result = await self.analyze_new_finding(file_path, "Hood vs MongoDB")
+            result = await self.analyze_new_finding(file_path, "hood_vs_mongodb")
             self.results.append(result)
             self._update_stats(result)
         
@@ -194,7 +194,7 @@ class RedundancyDetector:
         print(f"Analyzing {len(hood_files)} hood findings against {len(cdes_files)} CDE findings...")
         for i, file_path in enumerate(hood_files, 1):
             print(f"  [{i:3d}/{len(hood_files)}] Analyzing {file_path.name}...")
-            result = await self.analyze_new_finding(file_path, "Hood vs CDE")
+            result = await self.analyze_new_finding(file_path, "hood_vs_cde")
             self.results.append(result)
             self._update_stats(result)
         
@@ -268,9 +268,9 @@ class RedundancyDetector:
         summary_file = output_dir / "SUMMARY_REPORT.md"
         
         # Count findings by comparison type
-        cde_vs_mongodb = [r for r in self.results if r.get('comparison_type') == 'CDE vs MongoDB']
-        hood_vs_mongodb = [r for r in self.results if r.get('comparison_type') == 'Hood vs MongoDB']
-        hood_vs_cde = [r for r in self.results if r.get('comparison_type') == 'Hood vs CDE']
+        cde_vs_mongodb = [r for r in self.results if r.get('comparison_type') == 'cde_vs_mongodb']
+        hood_vs_mongodb = [r for r in self.results if r.get('comparison_type') == 'hood_vs_mongodb']
+        hood_vs_cde = [r for r in self.results if r.get('comparison_type') == 'hood_vs_cde']
         
         # Count by category for each comparison
         cde_unique = len([r for r in cde_vs_mongodb if r.get('category') == 'unique'])
@@ -376,7 +376,7 @@ class RedundancyDetector:
         print(f"  ✅ Unique Models: {overall['unique']} ({overall['unique']/total*100:.1f}%)")
         print(f"  🔄 Similar Models: {overall['similar']} ({overall['similar']/total*100:.1f}%)")
         print(f"  📋 Exact Duplicates: {overall['exact_duplicate']} ({overall['exact_duplicate']/total*100:.1f}%)")
-        print(f"  ❌ Errors: {overall['errors']} ({overall['errors']/total*100:.1f}%)")
+        print(f"  ❌ Errors: {overall.get('error', 0)} ({overall.get('error', 0)/total*100:.1f}%)")
         
         # Breakdown by comparison type
         print(f"\n📋 BREAKDOWN BY COMPARISON TYPE:")
@@ -388,7 +388,7 @@ class RedundancyDetector:
                 print(f"    ✅ Unique: {stats['unique']} ({stats['unique']/stats['total']*100:.1f}%)" if stats['total'] > 0 else "    ✅ Unique: 0")
                 print(f"    🔄 Similar: {stats['similar']} ({stats['similar']/stats['total']*100:.1f}%)" if stats['total'] > 0 else "    🔄 Similar: 0")
                 print(f"    📋 Duplicates: {stats['exact_duplicate']} ({stats['exact_duplicate']/stats['total']*100:.1f}%)" if stats['total'] > 0 else "    📋 Duplicates: 0")
-                print(f"    ❌ Errors: {stats['errors']} ({stats['errors']/stats['total']*100:.1f}%)" if stats['total'] > 0 else "    ❌ Errors: 0")
+                print(f"    ❌ Errors: {stats.get('error', 0)} ({stats.get('error', 0)/stats['total']*100:.1f}%)" if stats['total'] > 0 else "    ❌ Errors: 0")
         
         print(f"\n📊 NEXT STEPS:")
         print(f"  • {overall['unique']} models can be added as-is")
