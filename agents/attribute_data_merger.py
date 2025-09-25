@@ -47,6 +47,7 @@ model = OpenAIChatModel("gpt-4o-mini")
 class AttributeDataMerger:
     """Merges detailed attribute data from full finding models into MongoDB stubs"""
     
+    # Initialize the agent
     def __init__(self):
         self.agent = Agent(
             model=model,
@@ -55,7 +56,7 @@ class AttributeDataMerger:
 
             RULES:
             1. Find EXACT matches only (confidence 0.8+)
-            2. Match by: attribute_id (if both have it), then name+type
+            2. Match by: attribute_id (if both have it), name and description (if both have it).
             3. Return exact matches, unmatched attributes, and summary
             4. Be conservative - only match when 100% certain
 
@@ -78,6 +79,7 @@ class AttributeDataMerger:
             - reasoning: string"""
         )
     
+    # Merge stub and full attributes
     async def merge_attribute_data(self, stub_data: Dict[str, Any], full_data: Dict[str, Any]) -> AttributeDataMergeResult:
         """Merge detailed attribute data from full model into stub model"""
         
@@ -114,6 +116,7 @@ class AttributeDataMerger:
             print(f"    DEBUG: Error type: {type(e)}")
             raise
     
+    # Extract stub attributes - to be used in merge_attribute_data
     def _extract_stub_attributes(self, attributes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Extract attribute information from stub model"""
         stub_attrs = []
@@ -123,7 +126,7 @@ class AttributeDataMerger:
                 "attribute_id": attr.get('attribute_id', ''),
                 "name": attr.get('name', ''),
                 "type": attr.get('type', ''),
-                "description": attr.get('description', '') or '',
+                "description": attr.get('description', '') or None,
                 "required": attr.get('required', False),
                 "max_selected": attr.get('max_selected', 1)
             }
@@ -135,8 +138,8 @@ class AttributeDataMerger:
                     value_info = {
                         "value_code": value.get('value_code', ''),
                         "name": value.get('name', ''),
-                        "description": value.get('description', '') or '',
-                        "index_codes": value.get('index_codes', []) or []
+                        "description": value.get('description', '') or None,
+                        "index_codes": value.get('index_codes', []) or None
                     }
                     values.append(value_info)
                 stub_attr["values"] = values
@@ -154,6 +157,7 @@ class AttributeDataMerger:
         
         return stub_attrs
     
+    # Extract full attributes - to be used in merge_attribute_data
     def _extract_full_attributes(self, attributes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Extract attribute information from full model"""
         full_attrs = []
@@ -163,7 +167,7 @@ class AttributeDataMerger:
                 "oifma_id": attr.get('oifma_id', ''),
                 "name": attr.get('name', ''),
                 "type": attr.get('type', ''),
-                "description": attr.get('description', '') or '',
+                "description": attr.get('description', '') or None,
                 "required": attr.get('required', False),
                 "max_selected": attr.get('max_selected', 1)
             }
@@ -175,8 +179,8 @@ class AttributeDataMerger:
                     value_info = {
                         "value_code": value.get('value_code', ''),
                         "name": value.get('name', ''),
-                        "description": value.get('description', '') or '',
-                        "index_codes": value.get('index_codes', []) or []
+                        "description": value.get('description', '') or None,
+                        "index_codes": value.get('index_codes', []) or None
                     }
                     values.append(value_info)
                 full_attr["values"] = values
@@ -204,38 +208,43 @@ class AttributeDataMerger:
             merged_attr['attribute_id'] = stub_attr['attribute_id']
         
         # Merge values for choice attributes
-        if stub_attr.get('type') == 'choice' and 'values' in stub_attr and 'values' in full_attr:
+        if stub_attr.get('type') == 'choice':
             stub_values = stub_attr.get('values', [])
             full_values = full_attr.get('values', [])
             
-            # Create a set of existing value names for deduplication
-            existing_names = set()
-            existing_codes = set()
-            
-            # Start with full values (they have complete data)
-            merged_values = []
-            for value in full_values:
-                merged_values.append(value)
-                if value.get('name'):
-                    existing_names.add(value['name'].lower())
-                if value.get('value_code'):
-                    existing_codes.add(value['value_code'])
-            
-            # Add stub values that don't duplicate existing ones
-            for stub_value in stub_values:
-                stub_name = stub_value.get('name', '').lower()
-                stub_code = stub_value.get('value_code', '')
+            # If full attribute has values, use them as base
+            if full_values:
+                # Create a set of existing value names for deduplication
+                existing_names = set()
+                existing_codes = set()
                 
-                # Check if this value already exists (by name or code)
-                if (not stub_name or stub_name not in existing_names) and \
-                   (not stub_code or stub_code not in existing_codes):
-                    merged_values.append(stub_value)
-                    if stub_name:
-                        existing_names.add(stub_name)
-                    if stub_code:
-                        existing_codes.add(stub_code)
-            
-            merged_attr['values'] = merged_values
+                # Start with full values (they have complete data)
+                merged_values = []
+                for value in full_values:
+                    merged_values.append(value)
+                    if value.get('name'):
+                        existing_names.add(value['name'].lower())
+                    if value.get('value_code'):
+                        existing_codes.add(value['value_code'])
+                
+                # Add stub values that don't duplicate existing ones
+                for stub_value in stub_values:
+                    stub_name = stub_value.get('name', '').lower()
+                    stub_code = stub_value.get('value_code', '')
+                    
+                    # Check if this value already exists (by name or code)
+                    if (not stub_name or stub_name not in existing_names) and \
+                       (not stub_code or stub_code not in existing_codes):
+                        merged_values.append(stub_value)
+                        if stub_name:
+                            existing_names.add(stub_name)
+                        if stub_code:
+                            existing_codes.add(stub_code)
+                
+                merged_attr['values'] = merged_values
+            # If only stub has values, use them
+            elif stub_values:
+                merged_attr['values'] = stub_values
         
         # Merge numeric attributes (prefer full values, but keep stub if full doesn't have them)
         elif stub_attr.get('type') == 'numeric':

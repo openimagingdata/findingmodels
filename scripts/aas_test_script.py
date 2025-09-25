@@ -14,6 +14,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
 from findingmodel.index import Index
+from findingmodel import FindingModelFull
 from agents.attribute_data_merger import AttributeDataMerger
 
 
@@ -192,6 +193,71 @@ async def analyze_and_merge_attributes():
                 max_val = attr.get('max_value', 'N/A')
                 unit = attr.get('unit', '')
                 print(f"   Range: {min_val} - {max_val} {unit}")
+    
+    # Step 8: Validate the merged finding against FindingModelFull schema
+    print(f"\n" + "=" * 60)
+    print("VALIDATION AGAINST FINDING MODEL SCHEMA")
+    print("=" * 60)
+    
+    try:
+        # Create the complete merged finding model
+        merged_finding = {
+            "oifm_id": stub_data.get('oifm_id'),
+            "name": stub_data.get('name'),
+            "description": stub_data.get('description'),
+            "contributors": full_data.get('contributors', []),  # Use full data contributors (proper format)
+            "attributes": merged_attributes
+        }
+        
+        # Add any additional fields from the full data that might be missing. This may overwrite - want to fix?
+        if 'synonyms' in full_data and full_data['synonyms']:
+            merged_finding['synonyms'] = full_data['synonyms']
+        if 'tags' in full_data and full_data['tags']:
+            merged_finding['tags'] = full_data['tags']
+        if 'index_codes' in full_data and full_data['index_codes']:
+            merged_finding['index_codes'] = full_data['index_codes']
+        
+        print("Attempting to validate merged finding against FindingModelFull schema...")
+        
+        # Validate against FindingModelFull
+        validated_model = FindingModelFull(**merged_finding)
+        
+        print("✅ SUCCESS: Merged finding validates against FindingModelFull schema!")
+        print(f"Validated model name: {validated_model.name}")
+        print(f"Validated model OIFM ID: {validated_model.oifm_id}")
+        print(f"Validated attributes count: {len(validated_model.attributes)}")
+        
+        # Print the validated JSON
+        print(f"\n" + "=" * 60)
+        print("VALIDATED MERGED FINDING (JSON)")
+        print("=" * 60)
+        
+        # Convert to dict and print as JSON
+        validated_dict = validated_model.model_dump()
+        print(json.dumps(validated_dict, indent=2, default=str))
+        
+        print(f"\n✅ VALIDATION SUCCESSFUL - Merged finding is valid!")
+        
+    except Exception as validation_error:
+        print(f"❌ VALIDATION FAILED: {validation_error}")
+        print(f"Error type: {type(validation_error).__name__}")
+        
+        # Print the problematic merged finding for debugging
+        print(f"\n" + "=" * 60)
+        print("PROBLEMATIC MERGED FINDING (for debugging)")
+        print("=" * 60)
+        print(json.dumps(merged_finding, indent=2, default=str))
+        
+        # Print detailed validation error
+        if hasattr(validation_error, 'errors'):
+            print(f"\nDetailed validation errors:")
+            for error in validation_error.errors():
+                print(f"  - Field: {error.get('loc', 'Unknown')}")
+                print(f"    Error: {error.get('msg', 'Unknown error')}")
+                print(f"    Input: {error.get('input', 'N/A')}")
+                print()
+        
+        raise ValueError(f"Validation failed: {validation_error}")
     
     # Display summary
     print(f"\n" + "=" * 60)
