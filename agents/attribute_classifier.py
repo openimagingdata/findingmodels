@@ -18,7 +18,7 @@ from findingmodel import ChoiceAttributeIded, NumericAttributeIded
 load_dotenv()
 
 
-# Pydantic models for the agent
+# Pydantic model returned by the agent
 class AttributeClassification(BaseModel):
     """Output from attribute classifier"""
     classification: Literal["presence", "change_from_prior", "other"]
@@ -46,24 +46,18 @@ class AttributeClassifier:
 
             2. "change_from_prior" - Attributes that ask about changes over time compared to previous scans
             Examples: "change_from_prior", "progression", "interval_change", "stability", "Status"
-            Values examples: ["unchanged", "stable", "new", "resolved", "worsened"]
+            Values examples: ["unchanged", "stable", "increased", "decreased", "new", "resolved", "no prior"]
 
             3. "other" - All other attributes (size, location, characteristics, etc.)
-            Value Examples: "size", "location", "shape", "density", "enhancement", "Type Finding"
+            Value Examples: "size", "location", "shape", "density", "enhancement" "Morphology", "Type Finding", "Severity"
 
             Analyze the attribute name and values to determine the most appropriate classification.
+            Important:Presence will always have present, absent, unknown, or indeterminate as values.
+            Important: Change from prior will always have unchanged, stable, increased, decreased, new, resolved, or no prior as values.
             Consider both the attribute name and the actual values when making your decision.
             Provide a confidence score (0.0 to 1.0) and clear reasoning for your classification."""
         )
     
-    async def classify_test(self, name: str, attr_type: str, values: list[str]) -> AttributeClassification:
-        """Test method for simple attribute classification"""
-        # Convert to string for the agent
-        attribute_str = f"Attribute: {name}\nType: {attr_type}\nValues: {values}"
-        result = await self.agent.run(attribute_str)
-        
-        # Pydantic AI returns the structured output in the .output attribute
-        return result.output
     
     async def classify_attribute(self, attribute_json: Dict[str, Any]) -> AttributeClassification:
         """Classify an attribute JSON as presence, change_from_prior, or other"""
