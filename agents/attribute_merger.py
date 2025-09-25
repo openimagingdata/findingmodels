@@ -70,8 +70,25 @@ class AttributeMerger:
         
         # Extract information for the model
         existing_name = existing_validated.name
-        existing_values = [{"name": v.name, "description": getattr(v, 'description', '')} for v in existing_validated.values]
-        new_values = [{"name": v.name, "description": getattr(v, 'description', '')} for v in new_validated.values]
+        existing_values = []
+        for v in existing_validated.values:
+            value_info = {
+                "value_code": v.value_code,
+                "name": v.name,
+                "description": getattr(v, 'description', '') or '',
+                "index_codes": getattr(v, 'index_codes', []) or []
+            }
+            existing_values.append(value_info)
+        
+        new_values = []
+        for v in new_validated.values:
+            value_info = {
+                "value_code": v.value_code,
+                "name": v.name,
+                "description": getattr(v, 'description', '') or '',
+                "index_codes": getattr(v, 'index_codes', []) or []
+            }
+            new_values.append(value_info)
         
         # Create context for the model
         merge_context = f"""Existing Attribute:
