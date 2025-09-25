@@ -56,6 +56,7 @@ class RedundancyDetector:
         hood_loaded = 0
         for file_path in hood_files:
             try:
+                # Adds a FindingModelFull object to the search index
                 await self.index.add_or_update_entry_from_file(file_path)
                 hood_loaded += 1
                 if hood_loaded % 20 == 0:
