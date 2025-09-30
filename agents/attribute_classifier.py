@@ -28,7 +28,7 @@ class AttributeClassification(BaseModel):
 
 class AttributeComparison(BaseModel):
     """Output from attribute comparison agent"""
-    relationship: Literal["identical", "enhanced", "different"]
+    relationship: Literal["identical", "expanded", "different"]
     confidence: float
     reasoning: str
     merge_strategy: Optional[str] = Field(None, description="Strategy for merging if enhanced")
@@ -52,15 +52,24 @@ class ComparisonContext:
 # Initialize the OpenAI model
 model = OpenAIChatModel("gpt-4o-mini")
 
+system_medial_expert_prompt = """
+You are a medical imaging expert specializing in the attributes of findings that radiologist describe in medical imaging exams.
+
+We are working with a system for defining data models for these imaging findings. Each finding model consists of basic descriptive data and a set of attributes
+that represent the different descriptors used in clinical practice. In this system, there are two kinds of attributes: Numeric and Choice. 
+Choice represents a categorical descriptor with defined allowed values.
+
+ """
+
 
 def create_classification_agent() -> Agent[str, AttributeClassification]:
     """Create agent for classifying attributes as presence, change_from_prior, or other"""
     return Agent(
         model=model,
         output_type=AttributeClassification,
-        system_prompt="""You are a medical imaging expert specializing in finding model attributes.
+        system_prompt=f"""{system_medial_expert_prompt}
 
-Your task is to classify finding model attributes into three categories:
+Your task is to classify potential attribute definitions into three categories:
 
 1. "presence" - Attributes that ask whether something is present or absent
 Value examples: ["present", "absent", "unknown", "indeterminate"]
@@ -73,10 +82,10 @@ Values examples: ["unchanged", "stable", "increased", "decreased", "new", "resol
 Value Examples: "size", "location", "shape", "density", "enhancement" "Morphology", "Type Finding", "Severity"
 
 Analyze the attribute name and values to determine the most appropriate classification.
-Important:Presence will always have present, absent, unknown, or indeterminate as values.
-Important: Change from prior will always have unchanged, stable, increased, decreased, new, resolved, or no prior as values.
+Important:Presence will always have present and absent. Although not always using those words. 
+Important: Change from prior will usually have choices like "unchanged", "stable", "increased", "decreased", "new", "resolved", or "no prior" as values.
 Consider both the attribute name and the actual values when making your decision.
-Provide a confidence score (0.0 to 1.0) and clear reasoning for your classification."""
+Provide a confidence score (0.0 to 1.0) and clear and concise reasoning for your classification."""
     )
 
 
@@ -86,12 +95,12 @@ def create_comparison_agent() -> Agent[ComparisonContext, AttributeComparison]:
         model=model,
         output_type=AttributeComparison,
         deps_type=ComparisonContext,
-        system_prompt="""You are a medical imaging expert comparing two attributes of the same type.
+        system_prompt=f"""{system_medial_expert_prompt}
 
-Determine the relationship between the existing and new attributes:
+Your task is to determine the relationship between the existing attribute definitions and proposed new attributes for the same finding:
 
 1. "identical" - Same attribute, no action needed (same name, same values, same meaning)
-2. "enhanced" - Same concept but new one is more robust (more values, better descriptions, additional metadata)
+2. "expanded" - Same concept but new one is that has more values, better descriptions and/oradditional metadata.
 3. "different" - Completely different attribute that should be added separately
 
 Consider:
@@ -100,7 +109,7 @@ Consider:
 - Descriptions and metadata
 - Medical meaning and context
 
-For "enhanced" relationships, provide a merge strategy explaining how to combine them.
+For "expanded" relationships, provide a merge strategy explaining how to combine them.
 Provide confidence score (0.0 to 1.0) and clear reasoning."""
     )
 
@@ -112,12 +121,15 @@ def create_merger_agent() -> Agent[str, MergedAttribute]:
         output_type=MergedAttribute,
         system_prompt="""You are a medical imaging expert merging two enhanced attributes.
 
-Given two attributes that represent the same concept but one is more robust, create a merged attribute that:
+Given two attributes that represent the same concept but one is expanded, create a merged attribute that:
 - Preserves the best name and description
 - Combines all unique values from both attributes
 - Maintains proper value descriptions
 - Keeps the most comprehensive metadata
 - Ensures no information is lost
+- All of the values from the existing attribute must be presurved and must mantain their original code and meaning. 
+- New attributes added to existing attributes must get their own codes that follow the existing attribute code structure: based on the attribute ID with a decimal and unique index integer.
+(e.g. OIFMA_MGB_786842.0.1, OIFMA_MGB_786842.0.2, etc.)
 
 Return the complete merged attribute JSON and notes about what was combined."""
     )
