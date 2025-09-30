@@ -1,14 +1,14 @@
 """
-Attribute Classifier Agent
+Attribute Processing Agents
 
-This module contains the AttributeClassifier AI agent that determines if an attribute
-is "presence", "change_from_prior", or "other" based on its name, type, description, and values.
+This module contains AI agents for attribute classification, comparison, and merging.
 """
 
 import json
 import os
-from typing import Literal, Dict, Any, Union
-from pydantic import BaseModel
+from typing import Literal, Dict, Any, Union, Optional
+from dataclasses import dataclass
+from pydantic import BaseModel, Field
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 from dotenv import load_dotenv
@@ -18,7 +18,7 @@ from findingmodel import ChoiceAttributeIded, NumericAttributeIded
 load_dotenv()
 
 
-# Pydantic model returned by the agent
+# Pydantic models for agent outputs
 class AttributeClassification(BaseModel):
     """Output from attribute classifier"""
     classification: Literal["presence", "change_from_prior", "other"]
@@ -26,38 +26,108 @@ class AttributeClassification(BaseModel):
     reasoning: str
 
 
+class AttributeComparison(BaseModel):
+    """Output from attribute comparison agent"""
+    relationship: Literal["identical", "enhanced", "different"]
+    confidence: float
+    reasoning: str
+    merge_strategy: Optional[str] = Field(None, description="Strategy for merging if enhanced")
+
+
+class MergedAttribute(BaseModel):
+    """Output from attribute merger agent"""
+    merged_attribute: Dict[str, Any]
+    merge_notes: str
+
+
+# Context for comparison agent
+@dataclass
+class ComparisonContext:
+    existing_attribute: Dict[str, Any]
+    new_attribute: Dict[str, Any]
+    finding_name: str
+    attribute_type: str
+
+
 # Initialize the OpenAI model
 model = OpenAIChatModel("gpt-4o-mini")
+
+
+def create_classification_agent() -> Agent[str, AttributeClassification]:
+    """Create agent for classifying attributes as presence, change_from_prior, or other"""
+    return Agent(
+        model=model,
+        output_type=AttributeClassification,
+        system_prompt="""You are a medical imaging expert specializing in finding model attributes.
+
+Your task is to classify finding model attributes into three categories:
+
+1. "presence" - Attributes that ask whether something is present or absent
+Value examples: ["present", "absent", "unknown", "indeterminate"]
+
+2. "change_from_prior" - Attributes that ask about changes over time compared to previous scans
+Examples: "change_from_prior", "progression", "interval_change", "stability", "Status"
+Values examples: ["unchanged", "stable", "increased", "decreased", "new", "resolved", "no prior"]
+
+3. "other" - All other attributes (size, location, characteristics, etc.)
+Value Examples: "size", "location", "shape", "density", "enhancement" "Morphology", "Type Finding", "Severity"
+
+Analyze the attribute name and values to determine the most appropriate classification.
+Important:Presence will always have present, absent, unknown, or indeterminate as values.
+Important: Change from prior will always have unchanged, stable, increased, decreased, new, resolved, or no prior as values.
+Consider both the attribute name and the actual values when making your decision.
+Provide a confidence score (0.0 to 1.0) and clear reasoning for your classification."""
+    )
+
+
+def create_comparison_agent() -> Agent[ComparisonContext, AttributeComparison]:
+    """Create agent for comparing two attributes of the same type"""
+    return Agent(
+        model=model,
+        output_type=AttributeComparison,
+        deps_type=ComparisonContext,
+        system_prompt="""You are a medical imaging expert comparing two attributes of the same type.
+
+Determine the relationship between the existing and new attributes:
+
+1. "identical" - Same attribute, no action needed (same name, same values, same meaning)
+2. "enhanced" - Same concept but new one is more robust (more values, better descriptions, additional metadata)
+3. "different" - Completely different attribute that should be added separately
+
+Consider:
+- Attribute names (exact match vs semantic similarity)
+- Values (identical, subset, superset, or different)
+- Descriptions and metadata
+- Medical meaning and context
+
+For "enhanced" relationships, provide a merge strategy explaining how to combine them.
+Provide confidence score (0.0 to 1.0) and clear reasoning."""
+    )
+
+
+def create_merger_agent() -> Agent[str, MergedAttribute]:
+    """Create agent for merging enhanced attributes"""
+    return Agent(
+        model=model,
+        output_type=MergedAttribute,
+        system_prompt="""You are a medical imaging expert merging two enhanced attributes.
+
+Given two attributes that represent the same concept but one is more robust, create a merged attribute that:
+- Preserves the best name and description
+- Combines all unique values from both attributes
+- Maintains proper value descriptions
+- Keeps the most comprehensive metadata
+- Ensures no information is lost
+
+Return the complete merged attribute JSON and notes about what was combined."""
+    )
 
 
 class AttributeClassifier:
     """Classifies attributes as presence, change_from_prior, or other"""
     
     def __init__(self):
-        self.agent = Agent(
-            model=model,
-            output_type=AttributeClassification,
-            system_prompt="""You are a medical imaging expert specializing in finding model attributes.
-
-            Your task is to classify finding model attributes into three categories:
-
-            1. "presence" - Attributes that ask whether something is present or absent
-            Value examples: ["present", "absent", "unknown", "indeterminate"]
-
-            2. "change_from_prior" - Attributes that ask about changes over time compared to previous scans
-            Examples: "change_from_prior", "progression", "interval_change", "stability", "Status"
-            Values examples: ["unchanged", "stable", "increased", "decreased", "new", "resolved", "no prior"]
-
-            3. "other" - All other attributes (size, location, characteristics, etc.)
-            Value Examples: "size", "location", "shape", "density", "enhancement" "Morphology", "Type Finding", "Severity"
-
-            Analyze the attribute name and values to determine the most appropriate classification.
-            Important:Presence will always have present, absent, unknown, or indeterminate as values.
-            Important: Change from prior will always have unchanged, stable, increased, decreased, new, resolved, or no prior as values.
-            Consider both the attribute name and the actual values when making your decision.
-            Provide a confidence score (0.0 to 1.0) and clear reasoning for your classification."""
-        )
-    
+        self.agent = create_classification_agent()
     
     async def classify_attribute(self, attribute_json: Dict[str, Any]) -> AttributeClassification:
         """Classify an attribute JSON as presence, change_from_prior, or other"""
@@ -89,4 +159,59 @@ class AttributeClassifier:
         Values: {values}"""
         
         result = await self.agent.run(attribute_str)
+        return result.output
+
+
+class AttributeComparator:
+    """Compares two attributes to determine their relationship"""
+    
+    def __init__(self):
+        self.agent = create_comparison_agent()
+    
+    async def compare_attributes(
+        self, 
+        existing_attribute: Dict[str, Any], 
+        new_attribute: Dict[str, Any], 
+        finding_name: str, 
+        attribute_type: str
+    ) -> AttributeComparison:
+        """Compare two attributes and determine their relationship"""
+        context = ComparisonContext(
+            existing_attribute=existing_attribute,
+            new_attribute=new_attribute,
+            finding_name=finding_name,
+            attribute_type=attribute_type
+        )
+        
+        result = await self.agent.run(
+            f"Compare the existing and new {attribute_type} attributes for finding '{finding_name}'",
+            deps=context
+        )
+        return result.output
+
+
+class AttributeMerger:
+    """Merges enhanced attributes intelligently"""
+    
+    def __init__(self):
+        self.agent = create_merger_agent()
+    
+    async def merge_attributes(
+        self, 
+        existing_attribute: Dict[str, Any], 
+        new_attribute: Dict[str, Any], 
+        merge_strategy: str
+    ) -> MergedAttribute:
+        """Merge two enhanced attributes based on strategy"""
+        merge_instructions = f"""
+        Merge these attributes using strategy: {merge_strategy}
+        
+        Existing attribute:
+        {json.dumps(existing_attribute, indent=2)}
+        
+        New attribute:
+        {json.dumps(new_attribute, indent=2)}
+        """
+        
+        result = await self.agent.run(merge_instructions)
         return result.output
