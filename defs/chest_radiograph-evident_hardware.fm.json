@@ -1,0 +1,103 @@
+{
+  "oifm_id": "OIFM_MSFT_623632",
+  "name": "chest radiograph-evident hardware",
+  "description": "Chest radiograph-evident hardware refers to any medical device or implant within the thoracic cavity that is visible on a chest X-ray due to its radiopacity.",
+  "synonyms": [
+    "chest x-ray hardware",
+    "radiopaque chest implants",
+    "thoracic implants",
+    "radiopaque chest devices"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_701790",
+      "name": "presence",
+      "description": "Whether chest radiograph-evident hardware is visible on the imaging study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_701790.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.3",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

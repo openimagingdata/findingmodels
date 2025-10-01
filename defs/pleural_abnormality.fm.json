@@ -1,0 +1,106 @@
+{
+  "oifm_id": "OIFM_MSFT_213340",
+  "name": "pleural abnormality",
+  "description": "A pleural abnormality refers to any pathological change affecting the pleura, the tissue layers enveloping the lungs. These abnormalities may include pleural effusion, thickening, plaques, or pneumothorax, and can be indicative of various underlying conditions such as infection, malignancy, or autoimmune disease.",
+  "synonyms": [
+    "pleural disease",
+    "pleural condition",
+    "pleural lesion"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_182025",
+      "name": "presence",
+      "description": "Whether pleural abnormality is visible on the imaging study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_182025.0",
+          "name": "absent",
+          "description": "Pleural abnormality is not visible",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_182025.1",
+          "name": "present",
+          "description": "Pleural abnormality is clearly visible",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_182025.2",
+          "name": "indeterminate",
+          "description": "Presence of pleural abnormality cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_182025.3",
+          "name": "unknown",
+          "description": "Presence of pleural abnormality is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    }
+  ]
+}
