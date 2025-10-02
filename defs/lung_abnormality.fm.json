@@ -1,0 +1,107 @@
+{
+  "oifm_id": "OIFM_MSFT_737122",
+  "name": "lung abnormality",
+  "description": "Lung abnormalities refer to any changes or deviations from the normal structure or function of the lung tissue via chest xray. The following findings are included: generic opacity, tuberculosis, pneumonia/consolidation, nodules, atelectasis, fibrosis, lung mass, hernia, opaque hemithorax, edema, calcification.",
+  "synonyms": [
+    "lung lesion",
+    "pulmonary abnormality",
+    "lung pathology",
+    "airspace disease"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_392068",
+      "name": "presence",
+      "description": "Whether lung abnormalities are visible on the imaging study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_392068.0",
+          "name": "absent",
+          "description": "Lung abnormalities are not visible.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_392068.1",
+          "name": "present",
+          "description": "Lung abnormalities are clearly visible.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_392068.2",
+          "name": "indeterminate",
+          "description": "Presence of lung abnormalities cannot be determined.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_392068.3",
+          "name": "unknown",
+          "description": "Presence of lung abnormalities is unknown.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    }
+  ]
+}
