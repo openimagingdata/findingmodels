@@ -1,20 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_842958",
+  "oifm_id": "OIFM_MGB_142729",
   "name": "Pacemaker Aicd",
   "description": "A pacemaker or implantable cardioverter-defibrillator (AICD) device.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_538916",
+      "oifma_id": "OIFMA_MGB_593893",
       "name": "device_location",
       "description": "The location of the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_538916.0",
+          "value_code": "OIFMA_MGB_593893.0",
           "name": "ventral chest wall"
         },
         {
-          "value_code": "OIFMA_HOOD_538916.1",
+          "value_code": "OIFMA_MGB_593893.1",
           "name": "subcutaneous"
         }
       ],
@@ -22,17 +22,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_986777",
+      "oifma_id": "OIFMA_MGB_994208",
       "name": "side_directional_approach",
       "description": "The side/directional approach used for the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_986777.0",
+          "value_code": "OIFMA_MGB_994208.0",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_HOOD_986777.1",
+          "value_code": "OIFMA_MGB_994208.1",
           "name": "right"
         }
       ],
@@ -40,17 +40,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_495651",
+      "oifma_id": "OIFMA_MGB_685980",
       "name": "vascular_approach",
       "description": "The vascular approach used for the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_495651.0",
+          "value_code": "OIFMA_MGB_685980.0",
           "name": "subclavian vein"
         },
         {
-          "value_code": "OIFMA_HOOD_495651.1",
+          "value_code": "OIFMA_MGB_685980.1",
           "name": "axillary vein"
         }
       ],
@@ -58,21 +58,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_300613",
+      "oifma_id": "OIFMA_MGB_252494",
       "name": "device_type",
       "description": "The type of pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_300613.0",
+          "value_code": "OIFMA_MGB_252494.0",
           "name": "single chamber"
         },
         {
-          "value_code": "OIFMA_HOOD_300613.1",
+          "value_code": "OIFMA_MGB_252494.1",
           "name": "dual chamber"
         },
         {
-          "value_code": "OIFMA_HOOD_300613.2",
+          "value_code": "OIFMA_MGB_252494.2",
           "name": "biventricular"
         }
       ],
@@ -80,45 +80,45 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_036363",
+      "oifma_id": "OIFMA_MGB_956044",
       "name": "components",
       "description": "The components of the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_036363.0",
+          "value_code": "OIFMA_MGB_956044.0",
           "name": "generator"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.1",
+          "value_code": "OIFMA_MGB_956044.1",
           "name": "tie-down"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.2",
+          "value_code": "OIFMA_MGB_956044.2",
           "name": "lead"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.3",
+          "value_code": "OIFMA_MGB_956044.3",
           "name": "manufacturer logo"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.4",
+          "value_code": "OIFMA_MGB_956044.4",
           "name": "header"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.5",
+          "value_code": "OIFMA_MGB_956044.5",
           "name": "connector"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.6",
+          "value_code": "OIFMA_MGB_956044.6",
           "name": "shock coil"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.7",
+          "value_code": "OIFMA_MGB_956044.7",
           "name": "ring electrode"
         },
         {
-          "value_code": "OIFMA_HOOD_036363.8",
+          "value_code": "OIFMA_MGB_956044.8",
           "name": "tip electrode"
         }
       ],
@@ -126,33 +126,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_701564",
+      "oifma_id": "OIFMA_MGB_957404",
       "name": "lead_location",
       "description": "The location of the lead in the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_701564.0",
+          "value_code": "OIFMA_MGB_957404.0",
           "name": "superior vena cava"
         },
         {
-          "value_code": "OIFMA_HOOD_701564.1",
+          "value_code": "OIFMA_MGB_957404.1",
           "name": "right atrial appendage"
         },
         {
-          "value_code": "OIFMA_HOOD_701564.2",
+          "value_code": "OIFMA_MGB_957404.2",
           "name": "right atrium"
         },
         {
-          "value_code": "OIFMA_HOOD_701564.3",
+          "value_code": "OIFMA_MGB_957404.3",
           "name": "right ventricular apex"
         },
         {
-          "value_code": "OIFMA_HOOD_701564.4",
+          "value_code": "OIFMA_MGB_957404.4",
           "name": "interventricular septum"
         },
         {
-          "value_code": "OIFMA_HOOD_701564.5",
+          "value_code": "OIFMA_MGB_957404.5",
           "name": "coronary sinus"
         }
       ],
@@ -160,29 +160,29 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_707093",
+      "oifma_id": "OIFMA_MGB_958952",
       "name": "complication",
       "description": "Possible complications associated with the pacemaker/AICD device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_707093.0",
+          "value_code": "OIFMA_MGB_958952.0",
           "name": "fracture"
         },
         {
-          "value_code": "OIFMA_HOOD_707093.1",
+          "value_code": "OIFMA_MGB_958952.1",
           "name": "malposition"
         },
         {
-          "value_code": "OIFMA_HOOD_707093.2",
+          "value_code": "OIFMA_MGB_958952.2",
           "name": "disconnection"
         },
         {
-          "value_code": "OIFMA_HOOD_707093.3",
+          "value_code": "OIFMA_MGB_958952.3",
           "name": "migration"
         },
         {
-          "value_code": "OIFMA_HOOD_707093.4",
+          "value_code": "OIFMA_MGB_958952.4",
           "name": "abandoned"
         }
       ],

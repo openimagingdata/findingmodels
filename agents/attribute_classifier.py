@@ -100,7 +100,7 @@ def create_comparison_agent() -> Agent[ComparisonContext, AttributeComparison]:
 Your task is to determine the relationship between the existing attribute definitions and proposed new attributes for the same finding:
 
 1. "identical" - Same attribute, no action needed (same name, same values, same meaning)
-2. "expanded" - Same concept but new one is that has more values, better descriptions and/oradditional metadata.
+2. "expanded" - Same concept but new one has more values, better descriptions and/oradditional metadata.
 3. "different" - Completely different attribute that should be added separately
 
 Consider:
@@ -127,7 +127,7 @@ Given two attributes that represent the same concept but one is expanded, create
 - Maintains proper value descriptions
 - Keeps the most comprehensive metadata
 - Ensures no information is lost
-- All of the values from the existing attribute must be presurved and must mantain their original code and meaning. 
+- All of the values from the existing attribute must be preserved and must maintain their original code and meaning. 
 - New attributes added to existing attributes must get their own codes that follow the existing attribute code structure: based on the attribute ID with a decimal and unique index integer.
 (e.g. OIFMA_MGB_786842.0.1, OIFMA_MGB_786842.0.2, etc.)
 

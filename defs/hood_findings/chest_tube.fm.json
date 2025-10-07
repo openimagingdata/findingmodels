@@ -1,19 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_937087",
+  "oifm_id": "OIFM_MGB_930714",
   "name": "Chest Tube",
   "description": "A tube inserted into the chest to drain air or fluid",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_948019",
+      "oifma_id": "OIFMA_MGB_496581",
       "name": "presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_948019.0",
+          "value_code": "OIFMA_MGB_496581.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_948019.1",
+          "value_code": "OIFMA_MGB_496581.1",
           "name": "absent"
         }
       ],
@@ -21,28 +21,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_685740",
+      "oifma_id": "OIFMA_MGB_139652",
       "name": "status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_685740.0",
+          "value_code": "OIFMA_MGB_139652.0",
           "name": "new"
         },
         {
-          "value_code": "OIFMA_HOOD_685740.1",
+          "value_code": "OIFMA_MGB_139652.1",
           "name": "unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_685740.2",
+          "value_code": "OIFMA_MGB_139652.2",
           "name": "complication"
         },
         {
-          "value_code": "OIFMA_HOOD_685740.3",
+          "value_code": "OIFMA_MGB_139652.3",
           "name": "resolved"
         },
         {
-          "value_code": "OIFMA_HOOD_685740.4",
+          "value_code": "OIFMA_MGB_139652.4",
           "name": "removed"
         }
       ],
@@ -50,16 +50,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_790405",
+      "oifma_id": "OIFMA_MGB_158213",
       "name": "side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_790405.0",
+          "value_code": "OIFMA_MGB_158213.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_790405.1",
+          "value_code": "OIFMA_MGB_158213.1",
           "name": "left"
         }
       ],
@@ -67,32 +67,32 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_309704",
+      "oifma_id": "OIFMA_MGB_357564",
       "name": "location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_309704.0",
+          "value_code": "OIFMA_MGB_357564.0",
           "name": "apical"
         },
         {
-          "value_code": "OIFMA_HOOD_309704.1",
+          "value_code": "OIFMA_MGB_357564.1",
           "name": "basal"
         },
         {
-          "value_code": "OIFMA_HOOD_309704.2",
+          "value_code": "OIFMA_MGB_357564.2",
           "name": "anterior"
         },
         {
-          "value_code": "OIFMA_HOOD_309704.3",
+          "value_code": "OIFMA_MGB_357564.3",
           "name": "posterior"
         },
         {
-          "value_code": "OIFMA_HOOD_309704.4",
+          "value_code": "OIFMA_MGB_357564.4",
           "name": "medial"
         },
         {
-          "value_code": "OIFMA_HOOD_309704.5",
+          "value_code": "OIFMA_MGB_357564.5",
           "name": "lateral"
         }
       ],
@@ -100,20 +100,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_032330",
+      "oifma_id": "OIFMA_MGB_287267",
       "name": "current_tip_position",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_032330.0",
+          "value_code": "OIFMA_MGB_287267.0",
           "name": "pleural space"
         },
         {
-          "value_code": "OIFMA_HOOD_032330.1",
+          "value_code": "OIFMA_MGB_287267.1",
           "name": "intraparenchymal"
         },
         {
-          "value_code": "OIFMA_HOOD_032330.2",
+          "value_code": "OIFMA_MGB_287267.2",
           "name": "chest wall"
         }
       ],
@@ -121,20 +121,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_783791",
+      "oifma_id": "OIFMA_MGB_127356",
       "name": "previous_tip_position",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_783791.0",
+          "value_code": "OIFMA_MGB_127356.0",
           "name": "pleural space"
         },
         {
-          "value_code": "OIFMA_HOOD_783791.1",
+          "value_code": "OIFMA_MGB_127356.1",
           "name": "intraparenchymal"
         },
         {
-          "value_code": "OIFMA_HOOD_783791.2",
+          "value_code": "OIFMA_MGB_127356.2",
           "name": "chest wall"
         }
       ],
@@ -142,16 +142,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_380850",
+      "oifma_id": "OIFMA_MGB_516507",
       "name": "pneumothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_380850.0",
+          "value_code": "OIFMA_MGB_516507.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_380850.1",
+          "value_code": "OIFMA_MGB_516507.1",
           "name": "absent"
         }
       ],
@@ -159,16 +159,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_870153",
+      "oifma_id": "OIFMA_MGB_108943",
       "name": "pleural_effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_870153.0",
+          "value_code": "OIFMA_MGB_108943.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_870153.1",
+          "value_code": "OIFMA_MGB_108943.1",
           "name": "absent"
         }
       ],
@@ -176,16 +176,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_532924",
+      "oifma_id": "OIFMA_MGB_272941",
       "name": "hemothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_532924.0",
+          "value_code": "OIFMA_MGB_272941.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_532924.1",
+          "value_code": "OIFMA_MGB_272941.1",
           "name": "absent"
         }
       ],
@@ -193,16 +193,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_969298",
+      "oifma_id": "OIFMA_MGB_395025",
       "name": "rib_fracture",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_969298.0",
+          "value_code": "OIFMA_MGB_395025.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_969298.1",
+          "value_code": "OIFMA_MGB_395025.1",
           "name": "absent"
         }
       ],
@@ -210,16 +210,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_816184",
+      "oifma_id": "OIFMA_MGB_030101",
       "name": "pulmonary_bleb",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_816184.0",
+          "value_code": "OIFMA_MGB_030101.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_816184.1",
+          "value_code": "OIFMA_MGB_030101.1",
           "name": "absent"
         }
       ],

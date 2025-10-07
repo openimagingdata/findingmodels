@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_984230",
+  "oifm_id": "OIFM_MGB_764214",
   "name": "Sclerotic Lesion",
   "description": "A sclerotic lesion is a finding characterized by an area of increased bone density.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_487140",
+      "oifma_id": "OIFMA_MGB_107378",
       "name": "presence",
       "description": "Indicates whether the sclerotic lesion is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_487140.0",
+          "value_code": "OIFMA_MGB_107378.0",
           "name": "present",
           "description": "The sclerotic lesion is present."
         },
         {
-          "value_code": "OIFMA_HOOD_487140.1",
+          "value_code": "OIFMA_MGB_107378.1",
           "name": "absent",
           "description": "The sclerotic lesion is absent."
         }
@@ -24,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_971329",
+      "oifma_id": "OIFMA_MGB_743949",
       "name": "status",
       "description": "Indicates the status of the sclerotic lesion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_971329.0",
+          "value_code": "OIFMA_MGB_743949.0",
           "name": "stable",
           "description": "The sclerotic lesion is stable."
         },
         {
-          "value_code": "OIFMA_HOOD_971329.1",
+          "value_code": "OIFMA_MGB_743949.1",
           "name": "enlarging",
           "description": "The sclerotic lesion is enlarging."
         }
@@ -44,43 +44,43 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_891257",
+      "oifma_id": "OIFMA_MGB_893172",
       "name": "location",
       "description": "Indicates the location of the sclerotic lesion in the bone.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_891257.0",
+          "value_code": "OIFMA_MGB_893172.0",
           "name": "Not specified",
           "description": "The location of the sclerotic lesion is not specified."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.1",
+          "value_code": "OIFMA_MGB_893172.1",
           "name": "Frontal bone",
           "description": "The sclerotic lesion is located in the frontal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.2",
+          "value_code": "OIFMA_MGB_893172.2",
           "name": "Occipital bone",
           "description": "The sclerotic lesion is located in the occipital bone."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.3",
+          "value_code": "OIFMA_MGB_893172.3",
           "name": "Temporal bone",
           "description": "The sclerotic lesion is located in the temporal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.4",
+          "value_code": "OIFMA_MGB_893172.4",
           "name": "Parietal bone",
           "description": "The sclerotic lesion is located in the parietal bone."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.5",
+          "value_code": "OIFMA_MGB_893172.5",
           "name": "Maxilla",
           "description": "The sclerotic lesion is located in the maxilla."
         },
         {
-          "value_code": "OIFMA_HOOD_891257.6",
+          "value_code": "OIFMA_MGB_893172.6",
           "name": "Mandible",
           "description": "The sclerotic lesion is located in the mandible."
         }
@@ -89,7 +89,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_484794",
+      "oifma_id": "OIFMA_MGB_725716",
       "name": "density",
       "description": "Indicates the density of the sclerotic lesion.",
       "type": "numeric",

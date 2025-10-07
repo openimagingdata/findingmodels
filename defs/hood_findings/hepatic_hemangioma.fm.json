@@ -1,19 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_592877",
+  "oifm_id": "OIFM_MGB_397436",
   "name": "Hepatic Hemangioma",
-  "description": "A hepatic hemangioma is a benign vascular neoplasm of the liver characterized by a mass of blood vessels, usually asymptomatic and often discovered incidentally during imaging studies.",
+  "description": "A hepatic hemangioma is a benign vascular tumor of the liver, characterized by a mass of血 vessels that may present as hypoechoic lesions on ultrasound and retains contrast on imaging studies like CT or MRI.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_592295",
+      "oifma_id": "OIFMA_MGB_543225",
       "name": "Presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_592295.0",
+          "value_code": "OIFMA_MGB_543225.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_592295.1",
+          "value_code": "OIFMA_MGB_543225.1",
           "name": "Absent"
         }
       ],
@@ -21,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_131930",
+      "oifma_id": "OIFMA_MGB_789176",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_131930.0",
+          "value_code": "OIFMA_MGB_789176.0",
           "name": "Right hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_131930.1",
+          "value_code": "OIFMA_MGB_789176.1",
           "name": "Left hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_131930.2",
+          "value_code": "OIFMA_MGB_789176.2",
           "name": "Segment",
           "description": "Select segment"
         }
@@ -43,31 +43,31 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_515157",
+      "oifma_id": "OIFMA_MGB_526797",
       "name": "Size Finding",
       "type": "numeric",
       "unit": "cm",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_311408",
+      "oifma_id": "OIFMA_MGB_200980",
       "name": "Enhancement Pattern",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_311408.0",
+          "value_code": "OIFMA_MGB_200980.0",
           "name": "None"
         },
         {
-          "value_code": "OIFMA_HOOD_311408.1",
+          "value_code": "OIFMA_MGB_200980.1",
           "name": "Homogeneous"
         },
         {
-          "value_code": "OIFMA_HOOD_311408.2",
+          "value_code": "OIFMA_MGB_200980.2",
           "name": "Peripheral nodular"
         },
         {
-          "value_code": "OIFMA_HOOD_311408.3",
+          "value_code": "OIFMA_MGB_200980.3",
           "name": "Progressive centripetal"
         }
       ],
@@ -75,16 +75,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_361675",
+      "oifma_id": "OIFMA_MGB_646105",
       "name": "Number",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_361675.0",
+          "value_code": "OIFMA_MGB_646105.0",
           "name": "Single"
         },
         {
-          "value_code": "OIFMA_HOOD_361675.1",
+          "value_code": "OIFMA_MGB_646105.1",
           "name": "Multiple"
         }
       ],

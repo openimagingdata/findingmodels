@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Test script for the attribute classifier agents.
-This script tests all three agents with realistic medical attribute examples.
+This script tests the agents with real medical finding attributes.
 """
 
 import asyncio
@@ -20,226 +20,221 @@ from agents.attribute_classifier import (
     AttributeMerger
 )
 
-# Test data - real medical attributes from hood_findings
-TEST_ATTRIBUTES = {
-    "presence_attr": {
-        "oifma_id": "OIFMA_HOOD_354795",
-        "name": "Presence",
-        "type": "choice",
-        "description": "Presence of pneumothorax.",
-        "values": [
-            {"value_code": "OIFMA_HOOD_354795.0", "name": "Present"},
-            {"value_code": "OIFMA_HOOD_354795.1", "name": "Absent"}
-        ],
-        "required": True,
-        "max_selected": 1
-    },
-    "status_attr": {
-        "oifma_id": "OIFMA_HOOD_268428",
-        "name": "Status",
-        "type": "choice", 
-        "description": "Status of pneumothorax.",
-        "values": [
-            {"value_code": "OIFMA_HOOD_268428.0", "name": "Acute"},
-            {"value_code": "OIFMA_HOOD_268428.1", "name": "Chronic"},
-            {"value_code": "OIFMA_HOOD_268428.2", "name": "Resolving"},
-            {"value_code": "OIFMA_HOOD_268428.3", "name": "Newly identified"},
-            {"value_code": "OIFMA_HOOD_268428.4", "name": "Increased"},
-            {"value_code": "OIFMA_HOOD_268428.5", "name": "Decreased"},
-            {"value_code": "OIFMA_HOOD_268428.6", "name": "Resolved"},
-            {"value_code": "OIFMA_HOOD_268428.7", "name": "Persisting"}
-        ],
-        "required": True,
-        "max_selected": 1
-    },
-    "size_attr": {
-        "oifma_id": "OIFMA_HOOD_219837",
-        "name": "Size Finding",
-        "type": "choice",
-        "description": "Size of pneumothorax.",
-        "values": [
-            {"value_code": "OIFMA_HOOD_219837.0", "name": "Small (<20% lung volume)"},
-            {"value_code": "OIFMA_HOOD_219837.1", "name": "Medium (20-50% lung volume)"},
-            {"value_code": "OIFMA_HOOD_219837.2", "name": "Large (>50% lung volume)"},
-            {"value_code": "OIFMA_HOOD_219837.3", "name": "Tension"}
-        ],
-        "required": True,
-        "max_selected": 1
-    },
-    "numeric_attr": {
-        "oifma_id": "OIFMA_HOOD_621593",
-        "name": "size Finding",
-        "type": "numeric",
-        "description": "Size of the pulmonary nodule.",
-        "minimum": 0,
-        "maximum": 100,
-        "unit": "mm",
-        "required": True
-    },
-    "morphology_attr": {
-        "oifma_id": "OIFMA_HOOD_014138",
-        "name": "morphology",
-        "type": "choice",
-        "description": "Morphology of the pulmonary nodule.",
-        "values": [
-            {"value_code": "OIFMA_HOOD_014138.0", "name": "solid", "description": "The pulmonary nodule is solid."},
-            {"value_code": "OIFMA_HOOD_014138.1", "name": "subsolid", "description": "The pulmonary nodule is subsolid."}
-        ],
-        "required": True,
-        "max_selected": 1
-    },
-    "location_attr": {
-        "oifma_id": "OIFMA_HOOD_408638",
-        "name": "Location",
-        "type": "choice",
-        "description": "Location of pneumothorax.",
-        "values": [
-            {"value_code": "OIFMA_HOOD_408638.0", "name": "Right"},
-            {"value_code": "OIFMA_HOOD_408638.1", "name": "Left"},
-            {"value_code": "OIFMA_HOOD_408638.2", "name": "Bilateral"}
-        ],
-        "required": True,
-        "max_selected": 1
-    }
-}
+def load_finding_attributes(finding_path: Path):
+    """Load attributes from a finding model file"""
+    try:
+        with open(finding_path, 'r', encoding='utf-8') as f:
+            finding_data = json.load(f)
+        return finding_data.get('attributes', [])
+    except Exception as e:
+        print(f"[ERROR] Failed to load finding: {e}")
+        return []
 
-# Test cases for comparison
-COMPARISON_TEST_CASES = [
-    {
-        "name": "Identical presence attributes",
-        "existing": TEST_ATTRIBUTES["presence_attr"],
-        "new": TEST_ATTRIBUTES["presence_attr"],
-        "finding_name": "pneumothorax",
-        "attribute_type": "presence"
-    },
-    {
-        "name": "Enhanced presence attribute (more values)",
-        "existing": {
-            "oifma_id": "OIFMA_HOOD_786842",
-            "name": "presence",
-            "type": "choice",
-            "description": "Presence of the pulmonary nodule.",
-            "values": [
-                {"value_code": "OIFMA_HOOD_786842.0", "name": "present", "description": "The pulmonary nodule is present."},
-                {"value_code": "OIFMA_HOOD_786842.1", "name": "absent", "description": "The pulmonary nodule is absent."}
-            ],
-            "required": True,
-            "max_selected": 1
-        },
-        "new": TEST_ATTRIBUTES["presence_attr"],
-        "finding_name": "pneumothorax", 
-        "attribute_type": "presence"
-    },
-    {
-        "name": "Different attribute types",
-        "existing": TEST_ATTRIBUTES["presence_attr"],
-        "new": TEST_ATTRIBUTES["size_attr"],
-        "finding_name": "pneumothorax",
-        "attribute_type": "presence"
-    },
-    {
-        "name": "Status vs Presence comparison",
-        "existing": TEST_ATTRIBUTES["presence_attr"],
-        "new": TEST_ATTRIBUTES["status_attr"],
-        "finding_name": "pneumothorax",
-        "attribute_type": "presence"
-    }
-]
-
-async def test_classification_agent():
-    """Test the attribute classification agent"""
+async def test_classification():
+    """Test attribute classification with real finding data"""
     print("=" * 60)
-    print("TESTING CLASSIFICATION AGENT")
+    print("TESTING ATTRIBUTE CLASSIFICATION")
     print("=" * 60)
+    
+    finding_path = Path(__file__).parent.parent.parent / "defs" / "original_defs" / "abnormal_configuration_of_cerebral_ventricles.fm.json"
+    attributes = load_finding_attributes(finding_path)
+    
+    if not attributes:
+        print("[ERROR] No attributes found to test")
+        return
     
     classifier = AttributeClassifier()
     
-    for attr_name, attribute in TEST_ATTRIBUTES.items():
-        print(f"\nTesting {attr_name}:")
-        print(f"Attribute: {attribute['name']} ({attribute['type']})")
+    for i, attribute in enumerate(attributes, 1):
+        print(f"\n--- Attribute {i}: {attribute['name']} ---")
+        print(f"Type: {attribute['type']} | Values: {len(attribute.get('values', []))}")
         
         try:
             result = await classifier.classify_attribute(attribute)
-            print(f"[OK] Classification: {result.classification}")
-            print(f"[OK] Confidence: {result.confidence:.2f}")
-            print(f"[OK] Reasoning: {result.reasoning}")
+            print(f"✓ Classification: {result.classification} (confidence: {result.confidence:.2f})")
+            print(f"  Reasoning: {result.reasoning}")
         except Exception as e:
-            print(f"[ERROR] Error: {e}")
-        
+            print(f"✗ Error: {e}")
         print("-" * 40)
 
-async def test_comparison_agent():
-    """Test the attribute comparison agent"""
+
+async def test_comparison():
+    """Test attribute comparison with real finding data"""
     print("\n" + "=" * 60)
-    print("TESTING COMPARISON AGENT")
+    print("TESTING ATTRIBUTE COMPARISON")
     print("=" * 60)
+    
+    finding_path = Path(__file__).parent.parent.parent / "defs" / "original_defs" / "abnormal_configuration_of_cerebral_ventricles.fm.json"
+    attributes = load_finding_attributes(finding_path)
+    
+    if len(attributes) < 2:
+        print("[ERROR] Need at least 2 attributes for comparison test")
+        return
     
     comparator = AttributeComparator()
     
-    for test_case in COMPARISON_TEST_CASES:
-        print(f"\nTesting: {test_case['name']}")
-        print(f"Finding: {test_case['finding_name']}")
-        print(f"Attribute Type: {test_case['attribute_type']}")
-        
+    # Compare first two attributes
+    attr1, attr2 = attributes[0], attributes[1]
+    print(f"Comparing: '{attr1['name']}' vs '{attr2['name']}'")
+    
+    try:
+        result = await comparator.compare_attributes(
+            existing_attribute=attr1,
+            new_attribute=attr2,
+            finding_name="abnormal configuration of cerebral ventricles",
+            attribute_type="choice"
+        )
+        print(f"✓ Relationship: {result.relationship} (confidence: {result.confidence:.2f})")
+        print(f"  Reasoning: {result.reasoning}")
+        if result.merge_strategy:
+            print(f"  Merge Strategy: {result.merge_strategy}")
+    except Exception as e:
+        print(f"✗ Error: {e}")
+
+
+async def test_deterministic_comparisons():
+    """Deterministic comparison tests: identical, expanded, different on one choice attribute."""
+    print("\n" + "=" * 60)
+    print("DETERMINISTIC COMPARISON CASES")
+    print("=" * 60)
+
+    finding_path = Path(__file__).parent.parent.parent / "defs" / "original_defs" / "abnormal_configuration_of_cerebral_ventricles.fm.json"
+    attributes = load_finding_attributes(finding_path)
+
+    if not attributes:
+        print("[ERROR] No attributes found to test")
+        return
+
+    # Pick the 'presence' choice attribute as the base
+    base = next((a for a in attributes if a.get("type") == "choice" and a.get("name", "").lower() == "presence"), None)
+    if base is None:
+        print("[ERROR] Could not find 'presence' choice attribute in finding")
+        return
+
+    # Build scenarios
+    import copy
+    identical_attr = copy.deepcopy(base)
+
+    expanded_attr = copy.deepcopy(base)
+    # Add a new distinct value while preserving originals
+    new_index = len(expanded_attr.get("values", []))
+    expanded_attr.setdefault("values", []).append({
+        "value_code": f"{expanded_attr['oifma_id']}.{new_index}",
+        "name": "equivocal",
+        "description": "Equivocal/uncertain presence"
+    })
+
+    different_attr = {
+        "oifma_id": f"{base['oifma_id']}",
+        "name": "change from prior",  # Different concept (temporal)
+        "type": "choice",
+        "description": "Temporal change",
+        "values": [
+            {"value_code": f"{base['oifma_id']}.100", "name": "unchanged"},
+            {"value_code": f"{base['oifma_id']}.101", "name": "increased"},
+            {"value_code": f"{base['oifma_id']}.102", "name": "decreased"}
+        ],
+        "required": False,
+        "max_selected": 1
+    }
+
+    comparator = AttributeComparator()
+
+    async def run_case(case_name: str, existing_attr, new_attr, expected: str):
         try:
             result = await comparator.compare_attributes(
-                existing_attribute=test_case['existing'],
-                new_attribute=test_case['new'],
-                finding_name=test_case['finding_name'],
-                attribute_type=test_case['attribute_type']
+                existing_attribute=existing_attr,
+                new_attribute=new_attr,
+                finding_name="abnormal configuration of cerebral ventricles",
+                attribute_type="choice"
             )
-            print(f"[OK] Relationship: {result.relationship}")
-            print(f"[OK] Confidence: {result.confidence:.2f}")
-            print(f"[OK] Reasoning: {result.reasoning}")
-            if result.merge_strategy:
-                print(f"[OK] Merge Strategy: {result.merge_strategy}")
+            print(f"{case_name}: expected={expected}, got={result.relationship} (conf: {result.confidence:.2f})")
+            print(f"  Reasoning: {result.reasoning}")
         except Exception as e:
-            print(f"[ERROR] Error: {e}")
-        
-        print("-" * 40)
+            print(f"{case_name}: ✗ Error: {e}")
 
-async def test_merger_agent():
-    """Test the attribute merger agent"""
+    await run_case("IDENTICAL", base, identical_attr, expected="identical")
+    await run_case("EXPANDED", base, expanded_attr, expected="expanded")
+    await run_case("DIFFERENT", base, different_attr, expected="different")
+
+
+async def test_adrenal_nodule_cde_vs_hood():
+    """Compare HOOD adrenal nodule attributes against synthesized CDE attributes.
+
+    Scenarios on the 'presence' choice attribute:
+      - IDENTICAL: CDE presence mirrors HOOD presence (present/absent)
+      - EXPANDED: CDE presence adds an extra value while preserving originals
+      - DIFFERENT: CDE stability/temporal change attribute vs HOOD presence
+    """
     print("\n" + "=" * 60)
-    print("TESTING MERGER AGENT")
+    print("ADRENAL NODULE: CDE vs HOOD COMPARISONS")
     print("=" * 60)
-    
-    merger = AttributeMerger()
-    
-    # Test merging enhanced attributes
-    existing = {
-        "oifma_id": "OIFMA_HOOD_786842",
-        "name": "presence",
+
+    hood_path = Path(__file__).parent.parent.parent / "defs" / "hood_findings" / "adrenal_nodule.fm.json"
+    hood_attrs = load_finding_attributes(hood_path)
+
+    if not hood_attrs:
+        print("[ERROR] No HOOD attributes found to test")
+        return
+
+    # Base: HOOD 'presence'
+    base_presence = next((a for a in hood_attrs if a.get("type") == "choice" and a.get("name", "").lower() == "presence"), None)
+    if base_presence is None:
+        print("[ERROR] HOOD presence attribute not found")
+        return
+
+    # Build CDE variants (synthesized values since CDE listing does not include them here)
+    import copy
+    cde_identical = {
+        "oifma_id": "OIFMA_CDE_001987",
+        "name": "Presence",
         "type": "choice",
-        "description": "Presence of the pulmonary nodule.",
         "values": [
-            {"value_code": "OIFMA_HOOD_786842.0", "name": "present", "description": "The pulmonary nodule is present."},
-            {"value_code": "OIFMA_HOOD_786842.1", "name": "absent", "description": "The pulmonary nodule is absent."}
+            {"value_code": "OIFMA_CDE_001987.0", "name": "present"},
+            {"value_code": "OIFMA_CDE_001987.1", "name": "absent"}
         ],
         "required": True,
         "max_selected": 1
     }
-    
-    new = TEST_ATTRIBUTES["presence_attr"]
-    merge_strategy = "Combine all unique values from both attributes, keeping the most comprehensive description"
-    
-    print(f"\nMerging enhanced presence attributes:")
-    print(f"Existing: {len(existing['values'])} values")
-    print(f"New: {len(new['values'])} values")
-    print(f"Strategy: {merge_strategy}")
-    
-    try:
-        result = await merger.merge_attributes(existing, new, merge_strategy)
-        print(f"[OK] Merge completed successfully")
-        print(f"[OK] Merge notes: {result.merge_notes}")
-        print(f"[OK] Merged attribute keys: {list(result.merged_attribute.keys())}")
-        
-        # Pretty print the merged attribute
-        print("\nMerged attribute:")
-        print(json.dumps(result.merged_attribute, indent=2))
-        
-    except Exception as e:
-        print(f"[ERROR] Error: {e}")
+
+    cde_expanded = copy.deepcopy(cde_identical)
+    cde_expanded["values"].append({"value_code": "OIFMA_CDE_001987.2", "name": "indeterminate"})
+
+    cde_different = {
+        "oifma_id": "OIFMA_CDE_001988",
+        "name": "Stability, compared to priors",
+        "type": "choice",
+        "values": [
+            {"value_code": "OIFMA_CDE_001988.0", "name": "unchanged"},
+            {"value_code": "OIFMA_CDE_001988.1", "name": "increased"},
+            {"value_code": "OIFMA_CDE_001988.2", "name": "decreased"}
+        ],
+        "required": True,
+        "max_selected": 1
+    }
+
+    comparator = AttributeComparator()
+
+    async def run_case(case_name: str, new_attr, expected: str):
+        try:
+            result = await comparator.compare_attributes(
+                existing_attribute=base_presence,
+                new_attribute=new_attr,
+                finding_name="Adrenal Nodule",
+                attribute_type="choice"
+            )
+            print(f"{case_name}: expected={expected}, got={result.relationship} (conf: {result.confidence:.2f})")
+            print(f"  Reasoning: {result.reasoning}")
+            if result.merge_strategy:
+                print(f"  Merge Strategy: {result.merge_strategy}")
+        except Exception as e:
+            print(f"{case_name}: ✗ Error: {e}")
+
+    # Run deterministic cases
+    await run_case("IDENTICAL", cde_identical, expected="identical")
+    await run_case("EXPANDED", cde_expanded, expected="expanded")
+    await run_case("DIFFERENT", cde_different, expected="different")
+
 
 async def test_error_handling():
     """Test error handling with invalid inputs"""
@@ -277,9 +272,10 @@ async def main():
         print()
     
     try:
-        await test_classification_agent()
-        await test_comparison_agent() 
-        await test_merger_agent()
+        await test_classification()
+        await test_comparison()
+        await test_adrenal_nodule_cde_vs_hood()
+        await test_deterministic_comparisons()
         await test_error_handling()
         
         print("\n" + "=" * 60)

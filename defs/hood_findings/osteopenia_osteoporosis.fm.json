@@ -1,26 +1,26 @@
 {
-  "oifm_id": "OIFM_HOOD_011736",
+  "oifm_id": "OIFM_MGB_694528",
   "name": "Osteopenia Osteoporosis",
   "description": "Osteopenia and osteoporosis are two conditions characterized by low bone mineral density. Osteopenia refers to decreased bone mineral density that is not severe enough to be classified as osteoporosis. Osteoporosis is a more severe form of bone loss which can increase the risk of fractures.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_899707",
+      "oifma_id": "OIFMA_MGB_044583",
       "name": "presence",
       "description": "Indicates whether osteoporosis or osteopenia is present or if the mineral density is normal.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_899707.0",
+          "value_code": "OIFMA_MGB_044583.0",
           "name": "Osteoporosis present",
           "description": "Osteoporosis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_899707.1",
+          "value_code": "OIFMA_MGB_044583.1",
           "name": "Osteopenia present",
           "description": "Osteopenia is present."
         },
         {
-          "value_code": "OIFMA_HOOD_899707.2",
+          "value_code": "OIFMA_MGB_044583.2",
           "name": "Normal mineral density",
           "description": "Normal bone mineral density."
         }
@@ -29,40 +29,40 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_708858",
+      "oifma_id": "OIFMA_MGB_721251",
       "name": "L1 Hounsfield Unit (at 120 kVp) measurement",
       "description": "Measurement of Hounsfield units at the L1 region of the spine using a 120 kVp imaging protocol.",
       "type": "numeric",
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_258974",
+      "oifma_id": "OIFMA_MGB_750116",
       "name": "related entities",
       "description": "Common entities related to osteopenia and osteoporosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_258974.0",
+          "value_code": "OIFMA_MGB_750116.0",
           "name": "vertebral fracture",
           "description": "Fracture of a vertebral bone."
         },
         {
-          "value_code": "OIFMA_HOOD_258974.1",
+          "value_code": "OIFMA_MGB_750116.1",
           "name": "multilevel vertebral body height loss",
           "description": "Loss of height in multiple vertebral bodies."
         },
         {
-          "value_code": "OIFMA_HOOD_258974.2",
+          "value_code": "OIFMA_MGB_750116.2",
           "name": "cement augmentation of vertebral body",
           "description": "Use of cement augmentation to stabilize a vertebral body."
         },
         {
-          "value_code": "OIFMA_HOOD_258974.3",
+          "value_code": "OIFMA_MGB_750116.3",
           "name": "rib fracture",
           "description": "Fracture of a rib bone."
         },
         {
-          "value_code": "OIFMA_HOOD_258974.4",
+          "value_code": "OIFMA_MGB_750116.4",
           "name": "sacral fracture",
           "description": "Fracture of the sacrum bone."
         }

@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_186584",
+  "oifm_id": "OIFM_MGB_953008",
   "name": "Ventricular Shunt Catheter",
   "description": "A ventricular shunt catheter is a medical device used to divert cerebrospinal fluid from the ventricles of the brain to another location.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_671376",
+      "oifma_id": "OIFMA_MGB_417151",
       "name": "Presence of Ventricular Shunt Catheter",
       "description": "Indicates whether a ventricular shunt catheter is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_671376.0",
+          "value_code": "OIFMA_MGB_417151.0",
           "name": "Present",
           "description": "A ventricular shunt catheter is present."
         },
         {
-          "value_code": "OIFMA_HOOD_671376.1",
+          "value_code": "OIFMA_MGB_417151.1",
           "name": "Absent",
           "description": "A ventricular shunt catheter is absent."
         }
@@ -24,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_572264",
+      "oifma_id": "OIFMA_MGB_136436",
       "name": "Status",
       "description": "The status of the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_572264.0",
+          "value_code": "OIFMA_MGB_136436.0",
           "name": "New placement",
           "description": "The ventricular shunt catheter has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_572264.1",
+          "value_code": "OIFMA_MGB_136436.1",
           "name": "Unchanged",
           "description": "The ventricular shunt catheter remains unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_572264.2",
+          "value_code": "OIFMA_MGB_136436.2",
           "name": "Complication",
           "description": "There is a complication with the ventricular shunt catheter."
         },
         {
-          "value_code": "OIFMA_HOOD_572264.3",
+          "value_code": "OIFMA_MGB_136436.3",
           "name": "Removed",
           "description": "The ventricular shunt catheter has been removed."
         }
@@ -54,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_946789",
+      "oifma_id": "OIFMA_MGB_090590",
       "name": "Shunt Type",
       "description": "The type of ventricular shunt.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_946789.0",
+          "value_code": "OIFMA_MGB_090590.0",
           "name": "Ventriculoperitoneal (VP)",
           "description": "A ventriculoperitoneal shunt."
         },
         {
-          "value_code": "OIFMA_HOOD_946789.1",
+          "value_code": "OIFMA_MGB_090590.1",
           "name": "Ventriculoatrial (VA)",
           "description": "A ventriculoatrial shunt."
         },
         {
-          "value_code": "OIFMA_HOOD_946789.2",
+          "value_code": "OIFMA_MGB_090590.2",
           "name": "Ventriculopleural",
           "description": "A ventriculopleural shunt."
         }
@@ -79,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_146674",
+      "oifma_id": "OIFMA_MGB_888446",
       "name": "Appropriate location",
       "description": "Indicates whether the ventricular shunt catheter is in an appropriate location.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_146674.0",
+          "value_code": "OIFMA_MGB_888446.0",
           "name": "Yes",
           "description": "The ventricular shunt catheter is in an appropriate location."
         },
         {
-          "value_code": "OIFMA_HOOD_146674.1",
+          "value_code": "OIFMA_MGB_888446.1",
           "name": "No",
           "description": "The ventricular shunt catheter is not in an appropriate location."
         }
@@ -99,28 +99,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_122430",
+      "oifma_id": "OIFMA_MGB_203297",
       "name": "Proximal tip location",
       "description": "The location of the proximal tip of the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_122430.0",
+          "value_code": "OIFMA_MGB_203297.0",
           "name": "Right lateral ventricle",
           "description": "The proximal tip of the ventricular shunt catheter is in the right lateral ventricle."
         },
         {
-          "value_code": "OIFMA_HOOD_122430.1",
+          "value_code": "OIFMA_MGB_203297.1",
           "name": "Left lateral ventricle",
           "description": "The proximal tip of the ventricular shunt catheter is in the left lateral ventricle."
         },
         {
-          "value_code": "OIFMA_HOOD_122430.2",
+          "value_code": "OIFMA_MGB_203297.2",
           "name": "Third ventricle",
           "description": "The proximal tip of the ventricular shunt catheter is in the third ventricle."
         },
         {
-          "value_code": "OIFMA_HOOD_122430.3",
+          "value_code": "OIFMA_MGB_203297.3",
           "name": "Not identified",
           "description": "The location of the proximal tip of the ventricular shunt catheter is not identified."
         }
@@ -129,23 +129,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_200063",
+      "oifma_id": "OIFMA_MGB_994564",
       "name": "Distal tip location",
       "description": "The location of the distal tip of the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_200063.0",
+          "value_code": "OIFMA_MGB_994564.0",
           "name": "Peritoneal cavity",
           "description": "The distal tip of the ventricular shunt catheter is in the peritoneal cavity."
         },
         {
-          "value_code": "OIFMA_HOOD_200063.1",
+          "value_code": "OIFMA_MGB_994564.1",
           "name": "Right atrium",
           "description": "The distal tip of the ventricular shunt catheter is in the right atrium."
         },
         {
-          "value_code": "OIFMA_HOOD_200063.2",
+          "value_code": "OIFMA_MGB_994564.2",
           "name": "Pleural cavity",
           "description": "The distal tip of the ventricular shunt catheter is in the pleural cavity."
         }
@@ -154,18 +154,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_488073",
+      "oifma_id": "OIFMA_MGB_902699",
       "name": "Valve Type",
       "description": "The type of valve used in the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_488073.0",
+          "value_code": "OIFMA_MGB_902699.0",
           "name": "Programmable",
           "description": "A programmable valve is used."
         },
         {
-          "value_code": "OIFMA_HOOD_488073.1",
+          "value_code": "OIFMA_MGB_902699.1",
           "name": "Fixed pressure",
           "description": "A fixed pressure valve is used."
         }
@@ -174,18 +174,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_966281",
+      "oifma_id": "OIFMA_MGB_495806",
       "name": "Valve Setting (if programmable)",
       "description": "The setting of the programmable valve used in the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_966281.0",
+          "value_code": "OIFMA_MGB_495806.0",
           "name": "Specify setting",
           "description": "Specify the setting of the programmable valve."
         },
         {
-          "value_code": "OIFMA_HOOD_966281.1",
+          "value_code": "OIFMA_MGB_495806.1",
           "name": "Not applicable",
           "description": "A programmable valve is not applicable."
         }
@@ -194,23 +194,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_015625",
+      "oifma_id": "OIFMA_MGB_815523",
       "name": "Complications",
       "description": "Any complications associated with the ventricular shunt catheter.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_015625.0",
+          "value_code": "OIFMA_MGB_815523.0",
           "name": "None",
           "description": "No complications with the ventricular shunt catheter."
         },
         {
-          "value_code": "OIFMA_HOOD_015625.1",
+          "value_code": "OIFMA_MGB_815523.1",
           "name": "Catheter fracture",
           "description": "A catheter fracture is present."
         },
         {
-          "value_code": "OIFMA_HOOD_015625.2",
+          "value_code": "OIFMA_MGB_815523.2",
           "name": "Tip migration",
           "description": "Tip migration of the ventricular shunt catheter."
         }

@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_543748",
+  "oifm_id": "OIFM_MGB_135533",
   "name": "Hepatic Steatosis",
   "description": "Hepatic steatosis refers to the accumulation of fat in the liver.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_669885",
+      "oifma_id": "OIFMA_MGB_066578",
       "name": "Presence",
       "description": "The presence or absence of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_669885.0",
+          "value_code": "OIFMA_MGB_066578.0",
           "name": "Present",
           "description": "Hepatic steatosis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_669885.1",
+          "value_code": "OIFMA_MGB_066578.1",
           "name": "Absent",
           "description": "Hepatic steatosis is absent."
         }
@@ -24,23 +24,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_795423",
+      "oifma_id": "OIFMA_MGB_134529",
       "name": "Severity",
       "description": "The severity of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_795423.0",
+          "value_code": "OIFMA_MGB_134529.0",
           "name": "Mild",
           "description": "Mild hepatic steatosis."
         },
         {
-          "value_code": "OIFMA_HOOD_795423.1",
+          "value_code": "OIFMA_MGB_134529.1",
           "name": "Moderate",
           "description": "Moderate hepatic steatosis."
         },
         {
-          "value_code": "OIFMA_HOOD_795423.2",
+          "value_code": "OIFMA_MGB_134529.2",
           "name": "Severe",
           "description": "Severe hepatic steatosis."
         }
@@ -49,7 +49,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_188122",
+      "oifma_id": "OIFMA_MGB_545167",
       "name": "Density (noncontrast exam)",
       "description": "The density of hepatic steatosis on a noncontrast exam (in Hounsfield Units).",
       "type": "numeric",
@@ -57,18 +57,18 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_942815",
+      "oifma_id": "OIFMA_MGB_964882",
       "name": "Distribution",
       "description": "The distribution of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_942815.0",
+          "value_code": "OIFMA_MGB_964882.0",
           "name": "Diffuse",
           "description": "Hepatic steatosis is distributed diffusely."
         },
         {
-          "value_code": "OIFMA_HOOD_942815.1",
+          "value_code": "OIFMA_MGB_964882.1",
           "name": "Focal",
           "description": "Hepatic steatosis is distributed focally."
         }
@@ -77,28 +77,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_153633",
+      "oifma_id": "OIFMA_MGB_417528",
       "name": "Pattern",
       "description": "The pattern of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_153633.0",
+          "value_code": "OIFMA_MGB_417528.0",
           "name": "Homogeneous",
           "description": "Hepatic steatosis has a homogeneous pattern."
         },
         {
-          "value_code": "OIFMA_HOOD_153633.1",
+          "value_code": "OIFMA_MGB_417528.1",
           "name": "Heterogeneous",
           "description": "Hepatic steatosis has a heterogeneous pattern."
         },
         {
-          "value_code": "OIFMA_HOOD_153633.2",
+          "value_code": "OIFMA_MGB_417528.2",
           "name": "Patchy",
           "description": "Hepatic steatosis has a patchy pattern."
         },
         {
-          "value_code": "OIFMA_HOOD_153633.3",
+          "value_code": "OIFMA_MGB_417528.3",
           "name": "Geographic",
           "description": "Hepatic steatosis has a geographic pattern."
         }
@@ -107,18 +107,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_312928",
+      "oifma_id": "OIFMA_MGB_864414",
       "name": "Falciform ligament",
       "description": "The presence of focal fat infiltration or focal fat sparing in the falciform ligament.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_312928.0",
+          "value_code": "OIFMA_MGB_864414.0",
           "name": "Focal fat infiltration",
           "description": "Focal fat infiltration is present in the falciform ligament."
         },
         {
-          "value_code": "OIFMA_HOOD_312928.1",
+          "value_code": "OIFMA_MGB_864414.1",
           "name": "Focal fat sparing",
           "description": "Focal fat sparing is present in the falciform ligament."
         }
@@ -127,18 +127,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_012300",
+      "oifma_id": "OIFMA_MGB_467837",
       "name": "Hepatomegaly",
       "description": "The presence or absence of hepatomegaly.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_012300.0",
+          "value_code": "OIFMA_MGB_467837.0",
           "name": "Present",
           "description": "Hepatomegaly is present."
         },
         {
-          "value_code": "OIFMA_HOOD_012300.1",
+          "value_code": "OIFMA_MGB_467837.1",
           "name": "Absent",
           "description": "Hepatomegaly is absent."
         }
@@ -147,18 +147,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_641162",
+      "oifma_id": "OIFMA_MGB_271533",
       "name": "Focal Lesions",
       "description": "The presence or absence of focal lesions in the liver.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_641162.0",
+          "value_code": "OIFMA_MGB_271533.0",
           "name": "Present",
           "description": "Focal lesions are present in the liver."
         },
         {
-          "value_code": "OIFMA_HOOD_641162.1",
+          "value_code": "OIFMA_MGB_271533.1",
           "name": "Absent",
           "description": "Focal lesions are absent in the liver."
         }
@@ -167,18 +167,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_981991",
+      "oifma_id": "OIFMA_MGB_783153",
       "name": "Portal Vein Thrombosis",
       "description": "The presence or absence of portal vein thrombosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_981991.0",
+          "value_code": "OIFMA_MGB_783153.0",
           "name": "Present",
           "description": "Portal vein thrombosis is present."
         },
         {
-          "value_code": "OIFMA_HOOD_981991.1",
+          "value_code": "OIFMA_MGB_783153.1",
           "name": "Absent",
           "description": "Portal vein thrombosis is absent."
         }
@@ -187,18 +187,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_765825",
+      "oifma_id": "OIFMA_MGB_655544",
       "name": "Ascites",
       "description": "The presence or absence of ascites.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_765825.0",
+          "value_code": "OIFMA_MGB_655544.0",
           "name": "Present",
           "description": "Ascites is present."
         },
         {
-          "value_code": "OIFMA_HOOD_765825.1",
+          "value_code": "OIFMA_MGB_655544.1",
           "name": "Absent",
           "description": "Ascites is absent."
         }
@@ -207,18 +207,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_347434",
+      "oifma_id": "OIFMA_MGB_587185",
       "name": "Biliary Dilatation",
       "description": "The presence or absence of biliary dilatation.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_347434.0",
+          "value_code": "OIFMA_MGB_587185.0",
           "name": "Present",
           "description": "Biliary dilatation is present."
         },
         {
-          "value_code": "OIFMA_HOOD_347434.1",
+          "value_code": "OIFMA_MGB_587185.1",
           "name": "Absent",
           "description": "Biliary dilatation is absent."
         }

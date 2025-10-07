@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_029405",
+  "oifm_id": "OIFM_MGB_591195",
   "name": "Radiation Fibrosis",
   "description": "Radiation fibrosis is a condition characterized by fibrotic changes in the lung tissue due to radiation therapy.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_991353",
+      "oifma_id": "OIFMA_MGB_488396",
       "name": "presence",
       "description": "Presence of radiation fibrosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_991353.0",
+          "value_code": "OIFMA_MGB_488396.0",
           "name": "Present",
           "description": "Radiation fibrosis is present"
         },
         {
-          "value_code": "OIFMA_HOOD_991353.1",
+          "value_code": "OIFMA_MGB_488396.1",
           "name": "Absent",
           "description": "Radiation fibrosis is absent"
         }
@@ -24,33 +24,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_435345",
+      "oifma_id": "OIFMA_MGB_640738",
       "name": "status",
       "description": "Status of radiation fibrosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_435345.0",
+          "value_code": "OIFMA_MGB_640738.0",
           "name": "Stable",
           "description": "Radiation fibrosis is stable"
         },
         {
-          "value_code": "OIFMA_HOOD_435345.1",
+          "value_code": "OIFMA_MGB_640738.1",
           "name": "Progressive",
           "description": "Radiation fibrosis is progressive"
         },
         {
-          "value_code": "OIFMA_HOOD_435345.2",
+          "value_code": "OIFMA_MGB_640738.2",
           "name": "Regressive",
           "description": "Radiation fibrosis is regressive"
         },
         {
-          "value_code": "OIFMA_HOOD_435345.3",
+          "value_code": "OIFMA_MGB_640738.3",
           "name": "New development",
           "description": "Radiation fibrosis is a new development"
         },
         {
-          "value_code": "OIFMA_HOOD_435345.4",
+          "value_code": "OIFMA_MGB_640738.4",
           "name": "Unchanged over time",
           "description": "Radiation fibrosis remains unchanged over time"
         }
@@ -59,33 +59,33 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_033445",
+      "oifma_id": "OIFMA_MGB_181212",
       "name": "severity",
       "description": "Severity of radiation fibrosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_033445.0",
+          "value_code": "OIFMA_MGB_181212.0",
           "name": "Mild",
           "description": "Radiation fibrosis is mild"
         },
         {
-          "value_code": "OIFMA_HOOD_033445.1",
+          "value_code": "OIFMA_MGB_181212.1",
           "name": "Moderate",
           "description": "Radiation fibrosis is moderate"
         },
         {
-          "value_code": "OIFMA_HOOD_033445.2",
+          "value_code": "OIFMA_MGB_181212.2",
           "name": "Severe",
           "description": "Radiation fibrosis is severe"
         },
         {
-          "value_code": "OIFMA_HOOD_033445.3",
+          "value_code": "OIFMA_MGB_181212.3",
           "name": "Very Severe",
           "description": "Radiation fibrosis is very severe"
         },
         {
-          "value_code": "OIFMA_HOOD_033445.4",
+          "value_code": "OIFMA_MGB_181212.4",
           "name": "Extensive",
           "description": "Radiation fibrosis is extensive"
         }
@@ -94,28 +94,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_695534",
+      "oifma_id": "OIFMA_MGB_081401",
       "name": "distribution",
       "description": "Distribution of radiation fibrosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_695534.0",
+          "value_code": "OIFMA_MGB_081401.0",
           "name": "Localized",
           "description": "Radiation fibrosis is localized"
         },
         {
-          "value_code": "OIFMA_HOOD_695534.1",
+          "value_code": "OIFMA_MGB_081401.1",
           "name": "Diffuse",
           "description": "Radiation fibrosis is diffuse"
         },
         {
-          "value_code": "OIFMA_HOOD_695534.2",
+          "value_code": "OIFMA_MGB_081401.2",
           "name": "Peribronchovascular",
           "description": "Radiation fibrosis is peribronchovascular"
         },
         {
-          "value_code": "OIFMA_HOOD_695534.3",
+          "value_code": "OIFMA_MGB_081401.3",
           "name": "Segmental",
           "description": "Radiation fibrosis is segmental"
         }
@@ -124,38 +124,38 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_985805",
+      "oifma_id": "OIFMA_MGB_258733",
       "name": "location",
       "description": "Location of radiation fibrosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_985805.0",
+          "value_code": "OIFMA_MGB_258733.0",
           "name": "Right lung",
           "description": "Radiation fibrosis is located in the right lung"
         },
         {
-          "value_code": "OIFMA_HOOD_985805.1",
+          "value_code": "OIFMA_MGB_258733.1",
           "name": "Left lung",
           "description": "Radiation fibrosis is located in the left lung"
         },
         {
-          "value_code": "OIFMA_HOOD_985805.2",
+          "value_code": "OIFMA_MGB_258733.2",
           "name": "Bilateral",
           "description": "Radiation fibrosis is located bilaterally"
         },
         {
-          "value_code": "OIFMA_HOOD_985805.3",
+          "value_code": "OIFMA_MGB_258733.3",
           "name": "Specific lobe(s)",
           "description": "Radiation fibrosis is located in specific lobe(s)"
         },
         {
-          "value_code": "OIFMA_HOOD_985805.4",
+          "value_code": "OIFMA_MGB_258733.4",
           "name": "Mediastinal",
           "description": "Radiation fibrosis is located in the mediastinum"
         },
         {
-          "value_code": "OIFMA_HOOD_985805.5",
+          "value_code": "OIFMA_MGB_258733.5",
           "name": "Subpleural",
           "description": "Radiation fibrosis is located subpleurally"
         }
@@ -164,18 +164,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_003221",
+      "oifma_id": "OIFMA_MGB_977679",
       "name": "volume_loss",
       "description": "Presence of volume loss",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_003221.0",
+          "value_code": "OIFMA_MGB_977679.0",
           "name": "Present",
           "description": "Volume loss is present"
         },
         {
-          "value_code": "OIFMA_HOOD_003221.1",
+          "value_code": "OIFMA_MGB_977679.1",
           "name": "Absent",
           "description": "Volume loss is absent"
         }
@@ -184,18 +184,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_664330",
+      "oifma_id": "OIFMA_MGB_943977",
       "name": "pleural_thickening",
       "description": "Presence of pleural thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_664330.0",
+          "value_code": "OIFMA_MGB_943977.0",
           "name": "Present",
           "description": "Pleural thickening is present"
         },
         {
-          "value_code": "OIFMA_HOOD_664330.1",
+          "value_code": "OIFMA_MGB_943977.1",
           "name": "Absent",
           "description": "Pleural thickening is absent"
         }
@@ -204,18 +204,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_829764",
+      "oifma_id": "OIFMA_MGB_009748",
       "name": "bronchiectasis",
       "description": "Presence of bronchiectasis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_829764.0",
+          "value_code": "OIFMA_MGB_009748.0",
           "name": "Present",
           "description": "Bronchiectasis is present"
         },
         {
-          "value_code": "OIFMA_HOOD_829764.1",
+          "value_code": "OIFMA_MGB_009748.1",
           "name": "Absent",
           "description": "Bronchiectasis is absent"
         }
@@ -224,18 +224,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_355471",
+      "oifma_id": "OIFMA_MGB_806633",
       "name": "honeycombing",
       "description": "Presence of honeycombing",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_355471.0",
+          "value_code": "OIFMA_MGB_806633.0",
           "name": "Present",
           "description": "Honeycombing is present"
         },
         {
-          "value_code": "OIFMA_HOOD_355471.1",
+          "value_code": "OIFMA_MGB_806633.1",
           "name": "Absent",
           "description": "Honeycombing is absent"
         }
@@ -244,18 +244,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_160391",
+      "oifma_id": "OIFMA_MGB_749792",
       "name": "air_trapping",
       "description": "Presence of air trapping",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_160391.0",
+          "value_code": "OIFMA_MGB_749792.0",
           "name": "Present",
           "description": "Air trapping is present"
         },
         {
-          "value_code": "OIFMA_HOOD_160391.1",
+          "value_code": "OIFMA_MGB_749792.1",
           "name": "Absent",
           "description": "Air trapping is absent"
         }
@@ -264,18 +264,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_606207",
+      "oifma_id": "OIFMA_MGB_111022",
       "name": "ground_glass_opacities",
       "description": "Presence of ground-glass opacities",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_606207.0",
+          "value_code": "OIFMA_MGB_111022.0",
           "name": "Present",
           "description": "Ground-glass opacities are present"
         },
         {
-          "value_code": "OIFMA_HOOD_606207.1",
+          "value_code": "OIFMA_MGB_111022.1",
           "name": "Absent",
           "description": "Ground-glass opacities are absent"
         }

@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_468202",
+  "oifm_id": "OIFM_MGB_491145",
   "name": "Endobronchial Mass",
   "description": "A mass located within the bronchial airway.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_107471",
+      "oifma_id": "OIFMA_MGB_847448",
       "name": "Presence",
       "description": "Indicates whether the endobronchial mass is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_107471.0",
+          "value_code": "OIFMA_MGB_847448.0",
           "name": "Present",
           "description": "The endobronchial mass is present."
         },
         {
-          "value_code": "OIFMA_HOOD_107471.1",
+          "value_code": "OIFMA_MGB_847448.1",
           "name": "Absent",
           "description": "The endobronchial mass is absent."
         }
@@ -24,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_531295",
+      "oifma_id": "OIFMA_MGB_488545",
       "name": "Status",
       "description": "The status of the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_531295.0",
+          "value_code": "OIFMA_MGB_488545.0",
           "name": "New",
           "description": "The endobronchial mass is new."
         },
         {
-          "value_code": "OIFMA_HOOD_531295.1",
+          "value_code": "OIFMA_MGB_488545.1",
           "name": "Stable",
           "description": "The endobronchial mass is stable."
         },
         {
-          "value_code": "OIFMA_HOOD_531295.2",
+          "value_code": "OIFMA_MGB_488545.2",
           "name": "Increasing",
           "description": "The endobronchial mass is increasing in size."
         },
         {
-          "value_code": "OIFMA_HOOD_531295.3",
+          "value_code": "OIFMA_MGB_488545.3",
           "name": "Decreasing",
           "description": "The endobronchial mass is decreasing in size."
         }
@@ -54,18 +54,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_249311",
+      "oifma_id": "OIFMA_MGB_944130",
       "name": "Location",
       "description": "The location of the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_249311.0",
+          "value_code": "OIFMA_MGB_944130.0",
           "name": "Specify location",
           "description": "Specify the location of the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_HOOD_249311.1",
+          "value_code": "OIFMA_MGB_944130.1",
           "name": "None",
           "description": "No location specified for the endobronchial mass."
         }
@@ -74,7 +74,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_696958",
+      "oifma_id": "OIFMA_MGB_175901",
       "name": "Size Finding",
       "description": "The size of the endobronchial mass.",
       "type": "numeric",
@@ -82,23 +82,23 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_558439",
+      "oifma_id": "OIFMA_MGB_806922",
       "name": "Shape",
       "description": "The shape of the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_558439.0",
+          "value_code": "OIFMA_MGB_806922.0",
           "name": "Round",
           "description": "The endobronchial mass is round."
         },
         {
-          "value_code": "OIFMA_HOOD_558439.1",
+          "value_code": "OIFMA_MGB_806922.1",
           "name": "Irregular",
           "description": "The endobronchial mass is irregular."
         },
         {
-          "value_code": "OIFMA_HOOD_558439.2",
+          "value_code": "OIFMA_MGB_806922.2",
           "name": "Lobulated",
           "description": "The endobronchial mass is lobulated."
         }
@@ -107,18 +107,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_673173",
+      "oifma_id": "OIFMA_MGB_208688",
       "name": "Airway Obstruction",
       "description": "Indicates whether there is airway obstruction associated with the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_673173.0",
+          "value_code": "OIFMA_MGB_208688.0",
           "name": "Present",
           "description": "There is airway obstruction associated with the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_HOOD_673173.1",
+          "value_code": "OIFMA_MGB_208688.1",
           "name": "Absent",
           "description": "There is no airway obstruction associated with the endobronchial mass."
         }
@@ -127,18 +127,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_724694",
+      "oifma_id": "OIFMA_MGB_043235",
       "name": "Distal Atelectasis or Consolidation",
       "description": "Indicates whether there is distal atelectasis or consolidation associated with the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_724694.0",
+          "value_code": "OIFMA_MGB_043235.0",
           "name": "Present",
           "description": "There is distal atelectasis or consolidation associated with the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_HOOD_724694.1",
+          "value_code": "OIFMA_MGB_043235.1",
           "name": "Absent",
           "description": "There is no distal atelectasis or consolidation associated with the endobronchial mass."
         }
@@ -147,18 +147,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_118699",
+      "oifma_id": "OIFMA_MGB_873121",
       "name": "Lymphadenopathy",
       "description": "Indicates whether there is lymphadenopathy associated with the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_118699.0",
+          "value_code": "OIFMA_MGB_873121.0",
           "name": "Present",
           "description": "There is lymphadenopathy associated with the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_HOOD_118699.1",
+          "value_code": "OIFMA_MGB_873121.1",
           "name": "Absent",
           "description": "There is no lymphadenopathy associated with the endobronchial mass."
         }

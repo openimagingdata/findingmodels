@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_461409",
+  "oifm_id": "OIFM_MGB_626908",
   "name": "Pfo Closure Device",
   "description": "A closure device placed in the patent foramen ovale (PFO) to prevent the passage of blood between the atria.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_921973",
+      "oifma_id": "OIFMA_MGB_019033",
       "name": "presence_of_device",
       "description": "Indicates whether a PFO closure device is present or absent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_921973.0",
+          "value_code": "OIFMA_MGB_019033.0",
           "name": "Present",
           "description": "A PFO closure device is present."
         },
         {
-          "value_code": "OIFMA_HOOD_921973.1",
+          "value_code": "OIFMA_MGB_019033.1",
           "name": "Absent",
           "description": "A PFO closure device is absent."
         }
@@ -24,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_321870",
+      "oifma_id": "OIFMA_MGB_900747",
       "name": "device_status",
       "description": "The status of the PFO closure device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_321870.0",
+          "value_code": "OIFMA_MGB_900747.0",
           "name": "New placement",
           "description": "A new PFO closure device has been placed."
         },
         {
-          "value_code": "OIFMA_HOOD_321870.1",
+          "value_code": "OIFMA_MGB_900747.1",
           "name": "Unchanged",
           "description": "The PFO closure device is unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_321870.2",
+          "value_code": "OIFMA_MGB_900747.2",
           "name": "Complication",
           "description": "There is a complication associated with the PFO closure device."
         },
         {
-          "value_code": "OIFMA_HOOD_321870.3",
+          "value_code": "OIFMA_MGB_900747.3",
           "name": "Removed",
           "description": "The PFO closure device has been removed."
         }
@@ -54,23 +54,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_759026",
+      "oifma_id": "OIFMA_MGB_992488",
       "name": "device_type",
       "description": "The type of PFO closure device.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_759026.0",
+          "value_code": "OIFMA_MGB_992488.0",
           "name": "Amplatzer",
           "description": "The PFO closure device is of type Amplatzer."
         },
         {
-          "value_code": "OIFMA_HOOD_759026.1",
+          "value_code": "OIFMA_MGB_992488.1",
           "name": "Gore HELEX",
           "description": "The PFO closure device is of type Gore HELEX."
         },
         {
-          "value_code": "OIFMA_HOOD_759026.2",
+          "value_code": "OIFMA_MGB_992488.2",
           "name": "Other",
           "description": "The PFO closure device is of another type."
         }
@@ -79,18 +79,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_404464",
+      "oifma_id": "OIFMA_MGB_129335",
       "name": "associated_thrombus",
       "description": "Indicates the presence or absence of an associated thrombus.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_404464.0",
+          "value_code": "OIFMA_MGB_129335.0",
           "name": "Present",
           "description": "An associated thrombus is present."
         },
         {
-          "value_code": "OIFMA_HOOD_404464.1",
+          "value_code": "OIFMA_MGB_129335.1",
           "name": "Absent",
           "description": "An associated thrombus is absent."
         }

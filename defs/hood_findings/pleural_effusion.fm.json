@@ -1,24 +1,24 @@
 {
-  "oifm_id": "OIFM_HOOD_872769",
+  "oifm_id": "OIFM_MGB_548981",
   "name": "Pleural Effusion",
   "description": "An accumulation of fluid in the pleural cavity.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_936549",
+      "oifma_id": "OIFMA_MGB_137356",
       "name": "side Finding",
       "description": "The side of the pleural effusion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_936549.0",
+          "value_code": "OIFMA_MGB_137356.0",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_HOOD_936549.1",
+          "value_code": "OIFMA_MGB_137356.1",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_936549.2",
+          "value_code": "OIFMA_MGB_137356.2",
           "name": "bilateral"
         }
       ],
@@ -26,21 +26,21 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_800768",
+      "oifma_id": "OIFMA_MGB_861411",
       "name": "size Finding",
       "description": "The size of the pleural effusion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_800768.0",
+          "value_code": "OIFMA_MGB_861411.0",
           "name": "small"
         },
         {
-          "value_code": "OIFMA_HOOD_800768.1",
+          "value_code": "OIFMA_MGB_861411.1",
           "name": "moderate"
         },
         {
-          "value_code": "OIFMA_HOOD_800768.2",
+          "value_code": "OIFMA_MGB_861411.2",
           "name": "large"
         }
       ],
@@ -48,23 +48,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_409223",
+      "oifma_id": "OIFMA_MGB_366784",
       "name": "density",
       "description": "The density of the pleural effusion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_409223.0",
+          "value_code": "OIFMA_MGB_366784.0",
           "name": "fluid density",
           "description": "Synonym: simple"
         },
         {
-          "value_code": "OIFMA_HOOD_409223.1",
+          "value_code": "OIFMA_MGB_366784.1",
           "name": "intermediate density (>30 HU)",
           "description": "Synonym: complex"
         },
         {
-          "value_code": "OIFMA_HOOD_409223.2",
+          "value_code": "OIFMA_MGB_366784.2",
           "name": "hemothorax"
         }
       ],
@@ -72,17 +72,17 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_975830",
+      "oifma_id": "OIFMA_MGB_203320",
       "name": "chronicity",
       "description": "The chronicity of the pleural effusion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_975830.0",
+          "value_code": "OIFMA_MGB_203320.0",
           "name": "new"
         },
         {
-          "value_code": "OIFMA_HOOD_975830.1",
+          "value_code": "OIFMA_MGB_203320.1",
           "name": "chronic"
         }
       ],
@@ -90,31 +90,31 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_097529",
+      "oifma_id": "OIFMA_MGB_680593",
       "name": "associated_features",
       "description": "The associated features of the pleural effusion.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_097529.0",
+          "value_code": "OIFMA_MGB_680593.0",
           "name": "loculation"
         },
         {
-          "value_code": "OIFMA_HOOD_097529.1",
+          "value_code": "OIFMA_MGB_680593.1",
           "name": "pleural thickening",
           "description": "Parietal pleura, Visceral pleura\nSynonyms: soft tissue rind"
         },
         {
-          "value_code": "OIFMA_HOOD_097529.2",
+          "value_code": "OIFMA_MGB_680593.2",
           "name": "pleural enhancement"
         },
         {
-          "value_code": "OIFMA_HOOD_097529.3",
+          "value_code": "OIFMA_MGB_680593.3",
           "name": "presence of gas",
           "description": "Hydropneumothorax, Hemopneumothorax, Bronchopleural fistula"
         },
         {
-          "value_code": "OIFMA_HOOD_097529.4",
+          "value_code": "OIFMA_MGB_680593.4",
           "name": "atelectasis of the underlying lungs",
           "description": "Synonyms: passive atelectasis, relaxation atelectasis"
         }

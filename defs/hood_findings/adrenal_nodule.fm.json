@@ -1,19 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_101663",
+  "oifm_id": "OIFM_MGB_301173",
   "name": "Adrenal Nodule",
-  "description": "An adrenal nodule is a focal lesion of the adrenal gland that may be benign or malignant, often identified incidentally on imaging studies such as CT or MRI.",
+  "description": "An adrenal nodule is a discrete mass or lesion located within one of the adrenal glands, which may be benign or malignant and can vary in size and composition.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_002251",
+      "oifma_id": "OIFMA_MGB_981246",
       "name": "presence",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_002251.0",
+          "value_code": "OIFMA_MGB_981246.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_HOOD_002251.1",
+          "value_code": "OIFMA_MGB_981246.1",
           "name": "absent"
         }
       ],
@@ -21,20 +21,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_902380",
+      "oifma_id": "OIFMA_MGB_844168",
       "name": "status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_902380.0",
+          "value_code": "OIFMA_MGB_844168.0",
           "name": "new"
         },
         {
-          "value_code": "OIFMA_HOOD_902380.1",
+          "value_code": "OIFMA_MGB_844168.1",
           "name": "stable"
         },
         {
-          "value_code": "OIFMA_HOOD_902380.2",
+          "value_code": "OIFMA_MGB_844168.2",
           "name": "enlarged"
         }
       ],
@@ -42,23 +42,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_674608",
+      "oifma_id": "OIFMA_MGB_710856",
       "name": "size Finding",
       "type": "numeric",
       "unit": "mm",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_187170",
+      "oifma_id": "OIFMA_MGB_091086",
       "name": "side Finding",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_187170.0",
+          "value_code": "OIFMA_MGB_091086.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_HOOD_187170.1",
+          "value_code": "OIFMA_MGB_091086.1",
           "name": "left"
         }
       ],
@@ -66,31 +66,31 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_832525",
+      "oifma_id": "OIFMA_MGB_122050",
       "name": "Hounsfield units (HU)",
       "description": "Hounsfield units (HU) at non-contrast CT",
       "type": "numeric",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_458729",
+      "oifma_id": "OIFMA_MGB_942585",
       "name": "enhancement pattern",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_458729.0",
+          "value_code": "OIFMA_MGB_942585.0",
           "name": "nonenhancing"
         },
         {
-          "value_code": "OIFMA_HOOD_458729.1",
+          "value_code": "OIFMA_MGB_942585.1",
           "name": "enhancing"
         },
         {
-          "value_code": "OIFMA_HOOD_458729.2",
+          "value_code": "OIFMA_MGB_942585.2",
           "name": "rapid wash-in and wash-out"
         },
         {
-          "value_code": "OIFMA_HOOD_458729.3",
+          "value_code": "OIFMA_MGB_942585.3",
           "name": "delayed wash-out"
         }
       ],

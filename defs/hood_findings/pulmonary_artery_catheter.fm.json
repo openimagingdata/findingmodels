@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_995108",
+  "oifm_id": "OIFM_MGB_215673",
   "name": "Pulmonary Artery Catheter",
   "description": "A catheter used to measure pressures in the pulmonary arteries and heart chambers",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_305362",
+      "oifma_id": "OIFMA_MGB_371942",
       "name": "Presence of Pulmonary Artery Catheter",
       "description": "Indicates whether a pulmonary artery catheter is present or absent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_305362.0",
+          "value_code": "OIFMA_MGB_371942.0",
           "name": "Present",
           "description": "Pulmonary artery catheter is present"
         },
         {
-          "value_code": "OIFMA_HOOD_305362.1",
+          "value_code": "OIFMA_MGB_371942.1",
           "name": "Absent",
           "description": "Pulmonary artery catheter is absent"
         }
@@ -24,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_010053",
+      "oifma_id": "OIFMA_MGB_175392",
       "name": "Status",
       "description": "Indicates the status of the pulmonary artery catheter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_010053.0",
+          "value_code": "OIFMA_MGB_175392.0",
           "name": "New placement",
           "description": "The catheter has been newly inserted"
         },
         {
-          "value_code": "OIFMA_HOOD_010053.1",
+          "value_code": "OIFMA_MGB_175392.1",
           "name": "Unchanged",
           "description": "The catheter has not changed position or status"
         },
         {
-          "value_code": "OIFMA_HOOD_010053.2",
+          "value_code": "OIFMA_MGB_175392.2",
           "name": "Complication",
           "description": "There is a complication associated with the catheter"
         },
         {
-          "value_code": "OIFMA_HOOD_010053.3",
+          "value_code": "OIFMA_MGB_175392.3",
           "name": "Removed",
           "description": "The catheter has been removed"
         }
@@ -54,18 +54,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_015628",
+      "oifma_id": "OIFMA_MGB_521540",
       "name": "Appropriate location",
       "description": "Indicates whether the catheter is at the appropriate location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_015628.0",
+          "value_code": "OIFMA_MGB_521540.0",
           "name": "Yes",
           "description": "The catheter is at the appropriate location"
         },
         {
-          "value_code": "OIFMA_HOOD_015628.1",
+          "value_code": "OIFMA_MGB_521540.1",
           "name": "No",
           "description": "The catheter is not at the appropriate location"
         }
@@ -74,23 +74,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_751842",
+      "oifma_id": "OIFMA_MGB_147936",
       "name": "Insertion Site",
       "description": "Indicates the site of catheter insertion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_751842.0",
+          "value_code": "OIFMA_MGB_147936.0",
           "name": "Internal jugular",
           "description": "Catheter inserted through the internal jugular vein"
         },
         {
-          "value_code": "OIFMA_HOOD_751842.1",
+          "value_code": "OIFMA_MGB_147936.1",
           "name": "Subclavian",
           "description": "Catheter inserted through the subclavian vein"
         },
         {
-          "value_code": "OIFMA_HOOD_751842.2",
+          "value_code": "OIFMA_MGB_147936.2",
           "name": "Femoral",
           "description": "Catheter inserted through the femoral vein"
         }
@@ -99,23 +99,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_025925",
+      "oifma_id": "OIFMA_MGB_815201",
       "name": "Side Finding",
       "description": "Indicates the side of catheter placement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_025925.0",
+          "value_code": "OIFMA_MGB_815201.0",
           "name": "Left",
           "description": "Catheter placed on the left side"
         },
         {
-          "value_code": "OIFMA_HOOD_025925.1",
+          "value_code": "OIFMA_MGB_815201.1",
           "name": "Right",
           "description": "Catheter placed on the right side"
         },
         {
-          "value_code": "OIFMA_HOOD_025925.2",
+          "value_code": "OIFMA_MGB_815201.2",
           "name": "NA",
           "description": "Not applicable"
         }
@@ -124,23 +124,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_227269",
+      "oifma_id": "OIFMA_MGB_253295",
       "name": "Distal tip location",
       "description": "Indicates the location of the distal tip of the catheter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_227269.0",
+          "value_code": "OIFMA_MGB_253295.0",
           "name": "Main pulmonary artery",
           "description": "Distal tip of the catheter is in the main pulmonary artery"
         },
         {
-          "value_code": "OIFMA_HOOD_227269.1",
+          "value_code": "OIFMA_MGB_253295.1",
           "name": "Right pulmonary artery",
           "description": "Distal tip of the catheter is in the right pulmonary artery"
         },
         {
-          "value_code": "OIFMA_HOOD_227269.2",
+          "value_code": "OIFMA_MGB_253295.2",
           "name": "Left pulmonary artery",
           "description": "Distal tip of the catheter is in the left pulmonary artery"
         }
@@ -149,18 +149,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_023031",
+      "oifma_id": "OIFMA_MGB_937553",
       "name": "Balloon Inflation",
       "description": "Indicates whether the balloon of the catheter is inflated or not at the time of imaging",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_023031.0",
+          "value_code": "OIFMA_MGB_937553.0",
           "name": "Inflated",
           "description": "Balloon of the catheter is inflated"
         },
         {
-          "value_code": "OIFMA_HOOD_023031.1",
+          "value_code": "OIFMA_MGB_937553.1",
           "name": "Not inflated",
           "description": "Balloon of the catheter is not inflated"
         }

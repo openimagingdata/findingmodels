@@ -1,20 +1,20 @@
 {
-  "oifm_id": "OIFM_HOOD_813537",
+  "oifm_id": "OIFM_MGB_302817",
   "name": "Hepatic Cyst",
   "description": "A fluid-filled sac in the liver.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_778908",
+      "oifma_id": "OIFMA_MGB_214948",
       "name": "Multiplicity",
       "description": "The number of cysts present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_778908.0",
+          "value_code": "OIFMA_MGB_214948.0",
           "name": "Single"
         },
         {
-          "value_code": "OIFMA_HOOD_778908.1",
+          "value_code": "OIFMA_MGB_214948.1",
           "name": "Multiple"
         }
       ],
@@ -22,58 +22,58 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_312773",
+      "oifma_id": "OIFMA_MGB_647085",
       "name": "Location",
       "description": "The specific location of the cyst.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_312773.0",
+          "value_code": "OIFMA_MGB_647085.0",
           "name": "Hepatic (unspecified)",
           "description": "The cyst is located in the liver."
         },
         {
-          "value_code": "OIFMA_HOOD_312773.1",
+          "value_code": "OIFMA_MGB_647085.1",
           "name": "Left hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.2",
+          "value_code": "OIFMA_MGB_647085.2",
           "name": "Right hepatic lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.3",
+          "value_code": "OIFMA_MGB_647085.3",
           "name": "Hepatic segment 1"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.4",
+          "value_code": "OIFMA_MGB_647085.4",
           "name": "Hepatic segment 2"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.5",
+          "value_code": "OIFMA_MGB_647085.5",
           "name": "Hepatic segment 3"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.6",
+          "value_code": "OIFMA_MGB_647085.6",
           "name": "Hepatic segment 4a"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.7",
+          "value_code": "OIFMA_MGB_647085.7",
           "name": "Hepatic segment 4b"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.8",
+          "value_code": "OIFMA_MGB_647085.8",
           "name": "Hepatic segment 5"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.9",
+          "value_code": "OIFMA_MGB_647085.9",
           "name": "Hepatic segment 6"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.10",
+          "value_code": "OIFMA_MGB_647085.10",
           "name": "Hepatic segment 7"
         },
         {
-          "value_code": "OIFMA_HOOD_312773.11",
+          "value_code": "OIFMA_MGB_647085.11",
           "name": "Hepatic segment 8"
         }
       ],
@@ -81,7 +81,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_095167",
+      "oifma_id": "OIFMA_MGB_670022",
       "name": "Size of largest cyst",
       "description": "The size of the largest cyst in centimeters.",
       "type": "numeric",
@@ -89,22 +89,22 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_815990",
+      "oifma_id": "OIFMA_MGB_765947",
       "name": "Stability",
       "description": "The stability of the cyst.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_815990.0",
+          "value_code": "OIFMA_MGB_765947.0",
           "name": "Unchanged",
           "description": "The cyst has not changed in size."
         },
         {
-          "value_code": "OIFMA_HOOD_815990.1",
+          "value_code": "OIFMA_MGB_765947.1",
           "name": "Increased"
         },
         {
-          "value_code": "OIFMA_HOOD_815990.2",
+          "value_code": "OIFMA_MGB_765947.2",
           "name": "Decreased"
         }
       ],

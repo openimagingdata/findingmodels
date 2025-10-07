@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_683411",
+  "oifm_id": "OIFM_MGB_484038",
   "name": "Cholelithiasis",
   "description": "Cholelithiasis is the presence of gallstones in the gallbladder or bile ducts.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_464315",
+      "oifma_id": "OIFMA_MGB_990844",
       "name": "Presence",
       "description": "Indicates the presence or absence of cholelithiasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_464315.0",
+          "value_code": "OIFMA_MGB_990844.0",
           "name": "Present",
           "description": "The finding is present."
         },
         {
-          "value_code": "OIFMA_HOOD_464315.1",
+          "value_code": "OIFMA_MGB_990844.1",
           "name": "Absent",
           "description": "The finding is absent."
         }
@@ -24,18 +24,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_876962",
+      "oifma_id": "OIFMA_MGB_622808",
       "name": "Number of stones",
       "description": "Indicates the number of stones present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_876962.0",
+          "value_code": "OIFMA_MGB_622808.0",
           "name": "Single",
           "description": "A single stone is present."
         },
         {
-          "value_code": "OIFMA_HOOD_876962.1",
+          "value_code": "OIFMA_MGB_622808.1",
           "name": "Multiple",
           "description": "More than one stone is present."
         }
@@ -44,7 +44,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_346721",
+      "oifma_id": "OIFMA_MGB_923457",
       "name": "Stone size",
       "description": "Indicates the size of the stones.",
       "type": "numeric",
@@ -52,18 +52,18 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_244545",
+      "oifma_id": "OIFMA_MGB_711316",
       "name": "Location",
       "description": "Indicates the location of the stones.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_244545.0",
+          "value_code": "OIFMA_MGB_711316.0",
           "name": "Gallbladder lumen",
           "description": "The stones are located in the gallbladder lumen."
         },
         {
-          "value_code": "OIFMA_HOOD_244545.1",
+          "value_code": "OIFMA_MGB_711316.1",
           "name": "Bile ducts",
           "description": "The stones are located in the bile ducts."
         }
@@ -72,18 +72,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_310368",
+      "oifma_id": "OIFMA_MGB_681854",
       "name": "Gallbladder wall thickening",
       "description": "Indicates the presence or absence of gallbladder wall thickening.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_310368.0",
+          "value_code": "OIFMA_MGB_681854.0",
           "name": "Yes",
           "description": "Gallbladder wall thickening is present."
         },
         {
-          "value_code": "OIFMA_HOOD_310368.1",
+          "value_code": "OIFMA_MGB_681854.1",
           "name": "No",
           "description": "Gallbladder wall thickening is absent."
         }
@@ -92,18 +92,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_201722",
+      "oifma_id": "OIFMA_MGB_556748",
       "name": "Pericholecystic fluid",
       "description": "Indicates the presence or absence of pericholecystic fluid.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_201722.0",
+          "value_code": "OIFMA_MGB_556748.0",
           "name": "Yes",
           "description": "Pericholecystic fluid is present."
         },
         {
-          "value_code": "OIFMA_HOOD_201722.1",
+          "value_code": "OIFMA_MGB_556748.1",
           "name": "No",
           "description": "Pericholecystic fluid is absent."
         }
@@ -112,18 +112,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_058748",
+      "oifma_id": "OIFMA_MGB_309682",
       "name": "Biliary dilatation",
       "description": "Indicates the presence or absence of biliary dilatation.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_058748.0",
+          "value_code": "OIFMA_MGB_309682.0",
           "name": "Yes",
           "description": "Biliary dilatation is present."
         },
         {
-          "value_code": "OIFMA_HOOD_058748.1",
+          "value_code": "OIFMA_MGB_309682.1",
           "name": "No",
           "description": "Biliary dilatation is absent."
         }
@@ -132,18 +132,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_962348",
+      "oifma_id": "OIFMA_MGB_109442",
       "name": "Signs of acute cholecystitis",
       "description": "Indicates the presence or absence of signs of acute cholecystitis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_962348.0",
+          "value_code": "OIFMA_MGB_109442.0",
           "name": "Yes",
           "description": "Signs of acute cholecystitis are present."
         },
         {
-          "value_code": "OIFMA_HOOD_962348.1",
+          "value_code": "OIFMA_MGB_109442.1",
           "name": "No",
           "description": "Signs of acute cholecystitis are absent."
         }

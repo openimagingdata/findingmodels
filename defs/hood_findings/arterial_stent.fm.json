@@ -1,21 +1,21 @@
 {
-  "oifm_id": "OIFM_HOOD_916273",
+  "oifm_id": "OIFM_MGB_512163",
   "name": "Arterial Stent",
   "description": "An arterial stent is a tubular device inserted into an artery to improve blood flow.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_939172",
+      "oifma_id": "OIFMA_MGB_306295",
       "name": "Presence of Arterial Stent",
       "description": "Indicates whether an arterial stent is present in the patient.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_939172.0",
+          "value_code": "OIFMA_MGB_306295.0",
           "name": "Present",
           "description": "An arterial stent is present in the patient."
         },
         {
-          "value_code": "OIFMA_HOOD_939172.1",
+          "value_code": "OIFMA_MGB_306295.1",
           "name": "Absent",
           "description": "No arterial stent is present in the patient."
         }
@@ -24,28 +24,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_775545",
+      "oifma_id": "OIFMA_MGB_068740",
       "name": "Status",
       "description": "Indicates the status of the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_775545.0",
+          "value_code": "OIFMA_MGB_068740.0",
           "name": "New placement",
           "description": "The arterial stent has been newly placed."
         },
         {
-          "value_code": "OIFMA_HOOD_775545.1",
+          "value_code": "OIFMA_MGB_068740.1",
           "name": "Unchanged",
           "description": "The arterial stent remains unchanged."
         },
         {
-          "value_code": "OIFMA_HOOD_775545.2",
+          "value_code": "OIFMA_MGB_068740.2",
           "name": "Complication",
           "description": "The arterial stent has complications."
         },
         {
-          "value_code": "OIFMA_HOOD_775545.3",
+          "value_code": "OIFMA_MGB_068740.3",
           "name": "Removed",
           "description": "The arterial stent has been removed."
         }
@@ -54,28 +54,28 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_659381",
+      "oifma_id": "OIFMA_MGB_961798",
       "name": "Location",
       "description": "Indicates the location of the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_659381.0",
+          "value_code": "OIFMA_MGB_961798.0",
           "name": "Carotid artery",
           "description": "The arterial stent is located in the carotid artery."
         },
         {
-          "value_code": "OIFMA_HOOD_659381.1",
+          "value_code": "OIFMA_MGB_961798.1",
           "name": "Subclavian artery",
           "description": "The arterial stent is located in the subclavian artery."
         },
         {
-          "value_code": "OIFMA_HOOD_659381.2",
+          "value_code": "OIFMA_MGB_961798.2",
           "name": "Brachial artery",
           "description": "The arterial stent is located in the brachial artery."
         },
         {
-          "value_code": "OIFMA_HOOD_659381.3",
+          "value_code": "OIFMA_MGB_961798.3",
           "name": "Cephalic artery",
           "description": "The arterial stent is located in the cephalic artery."
         }
@@ -84,18 +84,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_317315",
+      "oifma_id": "OIFMA_MGB_409409",
       "name": "Side Finding",
       "description": "Indicates the side of the body where the arterial stent is located.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_317315.0",
+          "value_code": "OIFMA_MGB_409409.0",
           "name": "Left",
           "description": "The arterial stent is located on the left side of the body."
         },
         {
-          "value_code": "OIFMA_HOOD_317315.1",
+          "value_code": "OIFMA_MGB_409409.1",
           "name": "Right",
           "description": "The arterial stent is located on the right side of the body."
         }
@@ -104,7 +104,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_585965",
+      "oifma_id": "OIFMA_MGB_055452",
       "name": "Stent Length",
       "description": "The length of the arterial stent.",
       "type": "numeric",
@@ -113,7 +113,7 @@
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_046635",
+      "oifma_id": "OIFMA_MGB_665855",
       "name": "Stent Diameter",
       "description": "The diameter of the arterial stent.",
       "type": "numeric",
@@ -122,18 +122,18 @@
       "required": false
     },
     {
-      "oifma_id": "OIFMA_HOOD_976203",
+      "oifma_id": "OIFMA_MGB_816824",
       "name": "Intimal Hyperplasia",
       "description": "Indicates the presence or absence of intimal hyperplasia around the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_976203.0",
+          "value_code": "OIFMA_MGB_816824.0",
           "name": "Present",
           "description": "Intimal hyperplasia is present around the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_976203.1",
+          "value_code": "OIFMA_MGB_816824.1",
           "name": "Absent",
           "description": "No intimal hyperplasia is present around the arterial stent."
         }
@@ -142,18 +142,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_055672",
+      "oifma_id": "OIFMA_MGB_801187",
       "name": "In-Stent Restenosis",
       "description": "Indicates the presence or absence of in-stent restenosis in the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_055672.0",
+          "value_code": "OIFMA_MGB_801187.0",
           "name": "Present",
           "description": "In-stent restenosis is present in the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_055672.1",
+          "value_code": "OIFMA_MGB_801187.1",
           "name": "Absent",
           "description": "No in-stent restenosis is present in the arterial stent."
         }
@@ -162,18 +162,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_777831",
+      "oifma_id": "OIFMA_MGB_816300",
       "name": "Stent Fracture",
       "description": "Indicates the presence or absence of stent fracture in the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_777831.0",
+          "value_code": "OIFMA_MGB_816300.0",
           "name": "Present",
           "description": "Stent fracture is present in the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_777831.1",
+          "value_code": "OIFMA_MGB_816300.1",
           "name": "Absent",
           "description": "No stent fracture is present in the arterial stent."
         }
@@ -182,18 +182,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_111797",
+      "oifma_id": "OIFMA_MGB_694305",
       "name": "Stent Migration",
       "description": "Indicates the presence or absence of stent migration in the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_111797.0",
+          "value_code": "OIFMA_MGB_694305.0",
           "name": "Present",
           "description": "Stent migration is present in the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_111797.1",
+          "value_code": "OIFMA_MGB_694305.1",
           "name": "Absent",
           "description": "No stent migration is present in the arterial stent."
         }
@@ -202,18 +202,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_976814",
+      "oifma_id": "OIFMA_MGB_879167",
       "name": "Peri-stent Leak",
       "description": "Indicates the presence or absence of peri-stent leak in the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_976814.0",
+          "value_code": "OIFMA_MGB_879167.0",
           "name": "Present",
           "description": "Peri-stent leak is present in the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_976814.1",
+          "value_code": "OIFMA_MGB_879167.1",
           "name": "Absent",
           "description": "No peri-stent leak is present in the arterial stent."
         }
@@ -222,18 +222,18 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_718904",
+      "oifma_id": "OIFMA_MGB_989409",
       "name": "Thrombosis",
       "description": "Indicates the presence or absence of thrombosis in the arterial stent.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_718904.0",
+          "value_code": "OIFMA_MGB_989409.0",
           "name": "Present",
           "description": "Thrombosis is present in the arterial stent."
         },
         {
-          "value_code": "OIFMA_HOOD_718904.1",
+          "value_code": "OIFMA_MGB_989409.1",
           "name": "Absent",
           "description": "No thrombosis is present in the arterial stent."
         }

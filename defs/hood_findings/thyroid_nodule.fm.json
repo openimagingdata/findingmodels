@@ -1,19 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_572014",
+  "oifm_id": "OIFM_MGB_630959",
   "name": "Thyroid Nodule",
   "description": "A finding characterized by the presence of a nodule in the thyroid gland.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_922106",
+      "oifma_id": "OIFMA_MGB_504011",
       "name": "Presence of Thyroid Nodule",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_922106.0",
+          "value_code": "OIFMA_MGB_504011.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_922106.1",
+          "value_code": "OIFMA_MGB_504011.1",
           "name": "Absent"
         }
       ],
@@ -21,24 +21,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_587107",
+      "oifma_id": "OIFMA_MGB_106054",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_587107.0",
+          "value_code": "OIFMA_MGB_106054.0",
           "name": "New"
         },
         {
-          "value_code": "OIFMA_HOOD_587107.1",
+          "value_code": "OIFMA_MGB_106054.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_587107.2",
+          "value_code": "OIFMA_MGB_106054.2",
           "name": "Increased"
         },
         {
-          "value_code": "OIFMA_HOOD_587107.3",
+          "value_code": "OIFMA_MGB_106054.3",
           "name": "Decreased"
         }
       ],
@@ -46,20 +46,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_293734",
+      "oifma_id": "OIFMA_MGB_051250",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_293734.0",
+          "value_code": "OIFMA_MGB_051250.0",
           "name": "Right lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_293734.1",
+          "value_code": "OIFMA_MGB_051250.1",
           "name": "Left lobe"
         },
         {
-          "value_code": "OIFMA_HOOD_293734.2",
+          "value_code": "OIFMA_MGB_051250.2",
           "name": "Isthmus"
         }
       ],
@@ -67,7 +67,7 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_883734",
+      "oifma_id": "OIFMA_MGB_246453",
       "name": "Size (cm)",
       "type": "numeric",
       "minimum": 0,
@@ -76,20 +76,20 @@
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_203243",
+      "oifma_id": "OIFMA_MGB_633170",
       "name": "Composition",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_203243.0",
+          "value_code": "OIFMA_MGB_633170.0",
           "name": "Cystic"
         },
         {
-          "value_code": "OIFMA_HOOD_203243.1",
+          "value_code": "OIFMA_MGB_633170.1",
           "name": "Solid"
         },
         {
-          "value_code": "OIFMA_HOOD_203243.2",
+          "value_code": "OIFMA_MGB_633170.2",
           "name": "Mixed"
         }
       ],
@@ -97,16 +97,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_856294",
+      "oifma_id": "OIFMA_MGB_632421",
       "name": "Calcification",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_856294.0",
+          "value_code": "OIFMA_MGB_632421.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_856294.1",
+          "value_code": "OIFMA_MGB_632421.1",
           "name": "Absent"
         }
       ],
@@ -114,20 +114,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_422597",
+      "oifma_id": "OIFMA_MGB_109590",
       "name": "Margins",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_422597.0",
+          "value_code": "OIFMA_MGB_109590.0",
           "name": "Smooth"
         },
         {
-          "value_code": "OIFMA_HOOD_422597.1",
+          "value_code": "OIFMA_MGB_109590.1",
           "name": "Irregular"
         },
         {
-          "value_code": "OIFMA_HOOD_422597.2",
+          "value_code": "OIFMA_MGB_109590.2",
           "name": "Lobulated"
         }
       ],
@@ -135,16 +135,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_551042",
+      "oifma_id": "OIFMA_MGB_898316",
       "name": "Enhancement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_551042.0",
+          "value_code": "OIFMA_MGB_898316.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_551042.1",
+          "value_code": "OIFMA_MGB_898316.1",
           "name": "Absent"
         }
       ],
@@ -152,16 +152,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_072332",
+      "oifma_id": "OIFMA_MGB_921019",
       "name": "Prior Fine Needle Aspiration",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_072332.0",
+          "value_code": "OIFMA_MGB_921019.0",
           "name": "Yes"
         },
         {
-          "value_code": "OIFMA_HOOD_072332.1",
+          "value_code": "OIFMA_MGB_921019.1",
           "name": "No"
         }
       ],
@@ -169,16 +169,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_627823",
+      "oifma_id": "OIFMA_MGB_936918",
       "name": "Prior Fine Needle Aspiration Date",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_627823.0",
+          "value_code": "OIFMA_MGB_936918.0",
           "name": "Specify date"
         },
         {
-          "value_code": "OIFMA_HOOD_627823.1",
+          "value_code": "OIFMA_MGB_936918.1",
           "name": "Not specified"
         }
       ],
@@ -186,16 +186,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_516899",
+      "oifma_id": "OIFMA_MGB_622344",
       "name": "Invasion Into Adjacent Structures",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_516899.0",
+          "value_code": "OIFMA_MGB_622344.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_516899.1",
+          "value_code": "OIFMA_MGB_622344.1",
           "name": "Absent"
         }
       ],
@@ -203,16 +203,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_474583",
+      "oifma_id": "OIFMA_MGB_505912",
       "name": "Cervical Lymphadenopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_474583.0",
+          "value_code": "OIFMA_MGB_505912.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_474583.1",
+          "value_code": "OIFMA_MGB_505912.1",
           "name": "Absent"
         }
       ],
@@ -220,16 +220,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_665463",
+      "oifma_id": "OIFMA_MGB_053374",
       "name": "Thyroid Goiter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_665463.0",
+          "value_code": "OIFMA_MGB_053374.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_665463.1",
+          "value_code": "OIFMA_MGB_053374.1",
           "name": "Absent"
         }
       ],

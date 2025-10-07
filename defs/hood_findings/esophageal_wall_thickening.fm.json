@@ -1,19 +1,19 @@
 {
-  "oifm_id": "OIFM_HOOD_222037",
+  "oifm_id": "OIFM_MGB_684195",
   "name": "Esophageal Wall Thickening",
   "description": "The presence of thickening of the esophageal wall.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_HOOD_174395",
+      "oifma_id": "OIFMA_MGB_789920",
       "name": "Presence of Esophageal Wall Thickening",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_174395.0",
+          "value_code": "OIFMA_MGB_789920.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_174395.1",
+          "value_code": "OIFMA_MGB_789920.1",
           "name": "Absent"
         }
       ],
@@ -21,24 +21,24 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_365815",
+      "oifma_id": "OIFMA_MGB_482936",
       "name": "Status",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_365815.0",
+          "value_code": "OIFMA_MGB_482936.0",
           "name": "New"
         },
         {
-          "value_code": "OIFMA_HOOD_365815.1",
+          "value_code": "OIFMA_MGB_482936.1",
           "name": "Unchanged"
         },
         {
-          "value_code": "OIFMA_HOOD_365815.2",
+          "value_code": "OIFMA_MGB_482936.2",
           "name": "Increased"
         },
         {
-          "value_code": "OIFMA_HOOD_365815.3",
+          "value_code": "OIFMA_MGB_482936.3",
           "name": "Decreased"
         }
       ],
@@ -46,20 +46,20 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_930308",
+      "oifma_id": "OIFMA_MGB_647811",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_930308.0",
+          "value_code": "OIFMA_MGB_647811.0",
           "name": "Upper"
         },
         {
-          "value_code": "OIFMA_HOOD_930308.1",
+          "value_code": "OIFMA_MGB_647811.1",
           "name": "Middle"
         },
         {
-          "value_code": "OIFMA_HOOD_930308.2",
+          "value_code": "OIFMA_MGB_647811.2",
           "name": "Lower"
         }
       ],
@@ -67,16 +67,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_208597",
+      "oifma_id": "OIFMA_MGB_329932",
       "name": "Extent",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_208597.0",
+          "value_code": "OIFMA_MGB_329932.0",
           "name": "Focal"
         },
         {
-          "value_code": "OIFMA_HOOD_208597.1",
+          "value_code": "OIFMA_MGB_329932.1",
           "name": "Diffuse"
         }
       ],
@@ -84,23 +84,23 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_221450",
+      "oifma_id": "OIFMA_MGB_464831",
       "name": "Thickness",
       "type": "numeric",
       "unit": "mm",
       "required": true
     },
     {
-      "oifma_id": "OIFMA_HOOD_024104",
+      "oifma_id": "OIFMA_MGB_681088",
       "name": "Mucosal enhancement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_024104.0",
+          "value_code": "OIFMA_MGB_681088.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_024104.1",
+          "value_code": "OIFMA_MGB_681088.1",
           "name": "Absent"
         }
       ],
@@ -108,16 +108,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_719267",
+      "oifma_id": "OIFMA_MGB_845679",
       "name": "Mediastinal lymphadenopathy",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_719267.0",
+          "value_code": "OIFMA_MGB_845679.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_719267.1",
+          "value_code": "OIFMA_MGB_845679.1",
           "name": "Absent"
         }
       ],
@@ -125,16 +125,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_883607",
+      "oifma_id": "OIFMA_MGB_662715",
       "name": "Esophageal mass",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_883607.0",
+          "value_code": "OIFMA_MGB_662715.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_883607.1",
+          "value_code": "OIFMA_MGB_662715.1",
           "name": "Absent"
         }
       ],
@@ -142,16 +142,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_109383",
+      "oifma_id": "OIFMA_MGB_582581",
       "name": "Esophageal fluid",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_109383.0",
+          "value_code": "OIFMA_MGB_582581.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_109383.1",
+          "value_code": "OIFMA_MGB_582581.1",
           "name": "Absent"
         }
       ],
@@ -159,16 +159,16 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_HOOD_364358",
+      "oifma_id": "OIFMA_MGB_489446",
       "name": "Hiatal hernia",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_HOOD_364358.0",
+          "value_code": "OIFMA_MGB_489446.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_HOOD_364358.1",
+          "value_code": "OIFMA_MGB_489446.1",
           "name": "Absent"
         }
       ],
