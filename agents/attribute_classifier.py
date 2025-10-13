@@ -9,7 +9,7 @@ import os
 from typing import Literal, Dict, Any, Union, Optional
 from dataclasses import dataclass
 from pydantic import BaseModel, Field
-from pydantic_ai import Agent
+from pydantic_ai import Agent, ModelRetry
 from pydantic_ai.models.openai import OpenAIChatModel
 from dotenv import load_dotenv
 from findingmodel import ChoiceAttributeIded, NumericAttributeIded
@@ -97,20 +97,43 @@ def create_comparison_agent() -> Agent[ComparisonContext, AttributeComparison]:
         deps_type=ComparisonContext,
         system_prompt=f"""{system_medial_expert_prompt}
 
+You have access to a ComparisonContext with:
+- existing_attribute: The existing attribute to compare
+- new_attribute: The new attribute to compare  
+- finding_name: The name of the finding
+- attribute_type: The type of attributes
+
+CRITICAL: You must examine existing_attribute.values and new_attribute.values to compare the actual value sets.
+
 Your task is to determine the relationship between the existing attribute definitions and proposed new attributes for the same finding:
 
-1. "identical" - Same attribute, no action needed (same name, same values, same meaning)
-2. "expanded" - Same concept but new one has more values, better descriptions and/oradditional metadata.
+1. "identical" - EXACTLY the same attribute (same name, same values, same meaning). All values must match exactly.
+2. "expanded" - Same concept but new one has more values. The new attribute contains ALL the existing values PLUS additional ones. This is the most common case when comparing similar attributes.
 3. "different" - Completely different attribute that should be added separately
+
+CRITICAL RULES FOR CLASSIFICATION:
+- If the new attribute has ALL the existing values PLUS additional values → "expanded"
+- If the value sets are exactly identical → "identical" 
+- If the value sets are completely different → "different"
+- Your reasoning MUST match your classification choice
+
+MANDATORY ANALYSIS STEPS:
+1. List all values from existing_attribute.values by name
+2. List all values from new_attribute.values by name
+3. Check if new values contain ALL existing values plus extras → "expanded"
+4. Check if value sets are identical → "identical"
+5. Otherwise → "different"
 
 Consider:
 - Attribute names (exact match vs semantic similarity)
-- Values (identical, subset, superset, or different)
+- Value sets (must be explicitly compared by name)
 - Descriptions and metadata
 - Medical meaning and context
 
 For "expanded" relationships, provide a merge strategy explaining how to combine them.
-Provide confidence score (0.0 to 1.0) and clear reasoning."""
+Provide confidence score (0.0 to 1.0) and clear reasoning that includes the value comparison.
+
+IMPORTANT: Your classification must be consistent with your reasoning. If you say the new attribute has more values, classify as "expanded", not "identical"."""
     )
 
 
@@ -195,11 +218,39 @@ class AttributeComparator:
             attribute_type=attribute_type
         )
         
+        # Get the existing and new values for comparison
+        existing_values = [v.get('name') for v in existing_attribute.get('values', [])]
+        new_values = [v.get('name') for v in new_attribute.get('values', [])]
+        
         result = await self.agent.run(
-            f"Compare the existing and new {attribute_type} attributes for finding '{finding_name}'",
+            f"""Compare attributes for '{finding_name}':
+
+EXISTING:
+- Name: {existing_attribute.get('name')}
+- Values: {existing_values}
+
+NEW:
+- Name: {new_attribute.get('name')}
+- Values: {new_values}
+
+Decide: identical, expanded, or different. Ground your reasoning in the listed values.
+
+CRITICAL: 
+- If new values contain ALL existing values plus additional ones → "expanded"
+- If value sets are exactly the same → "identical"
+- If value sets are different → "different"
+- Your classification must match your reasoning!""",
             deps=context
         )
-        return result.output
+        
+        # Validate the result and provide feedback if inconsistent
+        output = result.output
+        if output.relationship == "identical" and len(new_values) > len(existing_values):
+            raise ModelRetry(f"Classification error: You classified as 'identical' but new attribute has {len(new_values)} values while existing has {len(existing_values)}. If new attribute contains all existing values plus additional ones, it should be classified as 'expanded'.")
+        elif output.relationship == "expanded" and not all(val in new_values for val in existing_values):
+            raise ModelRetry(f"Classification error: You classified as 'expanded' but not all existing values are present in new values. Existing: {existing_values}, New: {new_values}")
+        
+        return output
 
 
 class AttributeMerger:

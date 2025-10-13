@@ -109,6 +109,23 @@ async def test_adrenal_nodule_cde_vs_hood():
     print(f"CDE values: {[v['name'] for v in cde_presence.get('values', [])]}")
     print()
     
+    # Debug: Show full attribute structures
+    print("DEBUG - Full HOOD attribute:")
+    print(f"  Name: {hood_presence.get('name')}")
+    print(f"  Type: {hood_presence.get('type')}")
+    print(f"  Description: {hood_presence.get('description', 'None')}")
+    print(f"  Required: {hood_presence.get('required')}")
+    print(f"  Max selected: {hood_presence.get('max_selected')}")
+    print()
+    
+    print("DEBUG - Full CDE attribute:")
+    print(f"  Name: {cde_presence.get('name')}")
+    print(f"  Type: {cde_presence.get('type')}")
+    print(f"  Description: {cde_presence.get('description', 'None')}")
+    print(f"  Required: {cde_presence.get('required')}")
+    print(f"  Max selected: {cde_presence.get('max_selected')}")
+    print()
+    
     try:
         result = await comparator.compare_attributes(
             existing_attribute=hood_presence,
