@@ -71,8 +71,11 @@ def create_classification_agent() -> Agent[str, AttributeClassification]:
 
 Your task is to classify potential attribute definitions into three categories:
 
-1. "presence" - Attributes that ask whether something is present or absent
+1. "presence" - Attributes that ask whether the FINDING ITSELF is present or absent
 Value examples: ["present", "absent", "unknown", "indeterminate"]
+CRITICAL: Only classify as "presence" if asking about the finding itself being present/absent.
+DO NOT classify as "presence" if asking about features/characteristics of the finding.
+Examples: "adrenal nodule present" = presence, "microscopic fat" = other, "enhancement pattern" = other
 
 2. "change_from_prior" - Attributes that ask about changes over time compared to previous scans
 Examples: "change_from_prior", "progression", "interval_change", "stability", "Status"
@@ -142,8 +145,8 @@ def create_merger_agent() -> Agent[str, MergedAttribute]:
     return Agent(
         model=model,
         output_type=MergedAttribute,
-        system_prompt="""You are a medical imaging expert merging two enhanced attributes.
-
+        system_prompt=f"""{system_medial_expert_prompt}
+        
 Given two attributes that represent the same concept but one is expanded, create a merged attribute that:
 - Preserves the best name and description
 - Combines all unique values from both attributes
@@ -164,7 +167,7 @@ class AttributeClassifier:
     def __init__(self):
         self.agent = create_classification_agent()
     
-    async def classify_attribute(self, attribute_json: Dict[str, Any]) -> AttributeClassification:
+    async def classify_attribute(self, attribute_json: Dict[str, Any], finding_name: str = None) -> AttributeClassification:
         """Classify an attribute JSON as presence, change_from_prior, or other"""
         # Validate the JSON using Pydantic models
         try:
@@ -188,7 +191,8 @@ class AttributeClassifier:
         values = [{"name": v.name, "description": getattr(v, 'description', '')} for v in validated_attribute.values] if attr_type == "choice" else []
         
         # Create comprehensive context for the AI
-        attribute_str = f"""Attribute Name: {name}
+        finding_context = f"Finding: {finding_name}\n" if finding_name else ""
+        attribute_str = f"""{finding_context}Attribute Name: {name}
         Type: {attr_type}
         Description: {description}
         Values: {values}"""

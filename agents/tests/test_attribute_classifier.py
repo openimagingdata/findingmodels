@@ -53,7 +53,7 @@ async def test_adrenal_nodule_classification():
             print(f"\n[HOOD] Attribute {i}: {attribute['name']}")
             print(f"Type: {attribute['type']} | Values: {len(attribute.get('values', []))}")
             try:
-                result = await classifier.classify_attribute(attribute)
+                result = await classifier.classify_attribute(attribute, "Adrenal Nodule")
                 print(f"✓ Classification: {result.classification} (confidence: {result.confidence:.2f})")
                 print(f"  Reasoning: {result.reasoning}")
             except Exception as e:
@@ -69,7 +69,7 @@ async def test_adrenal_nodule_classification():
             print(f"\n[CDE] Attribute {i}: {attribute['name']}")
             print(f"Type: {attribute['type']} | Values: {len(attribute.get('values', []))}")
             try:
-                result = await classifier.classify_attribute(attribute)
+                result = await classifier.classify_attribute(attribute, "Adrenal Nodule")
                 print(f"✓ Classification: {result.classification} (confidence: {result.confidence:.2f})")
                 print(f"  Reasoning: {result.reasoning}")
             except Exception as e:
@@ -116,6 +116,7 @@ async def test_adrenal_nodule_cde_vs_hood():
     print(f"  Description: {hood_presence.get('description', 'None')}")
     print(f"  Required: {hood_presence.get('required')}")
     print(f"  Max selected: {hood_presence.get('max_selected')}")
+    print(f"  Values: {[v.get('name') for v in hood_presence.get('values', [])]}")
     print()
     
     print("DEBUG - Full CDE attribute:")
@@ -124,6 +125,7 @@ async def test_adrenal_nodule_cde_vs_hood():
     print(f"  Description: {cde_presence.get('description', 'None')}")
     print(f"  Required: {cde_presence.get('required')}")
     print(f"  Max selected: {cde_presence.get('max_selected')}")
+    print(f"  Values: {[v.get('name') for v in cde_presence.get('values', [])]}")
     print()
     
     try:
