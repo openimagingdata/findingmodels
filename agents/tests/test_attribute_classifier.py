@@ -130,8 +130,8 @@ async def test_adrenal_nodule_cde_vs_hood():
     
     try:
         result = await comparator.compare_attributes(
-            existing_attribute=hood_presence,
-            new_attribute=cde_presence,
+            existing_attribute=cde_presence,  # CDE is canonical/existing
+            new_attribute=hood_presence,      # HOOD is incoming/new
             finding_name="Adrenal Nodule",
             attribute_type="choice"
         )

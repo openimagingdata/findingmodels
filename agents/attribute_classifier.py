@@ -75,7 +75,22 @@ Your task is to classify potential attribute definitions into three categories:
 Value examples: ["present", "absent", "unknown", "indeterminate"]
 CRITICAL: Only classify as "presence" if asking about the finding itself being present/absent.
 DO NOT classify as "presence" if asking about features/characteristics of the finding.
-Examples: "adrenal nodule present" = presence, "microscopic fat" = other, "enhancement pattern" = other
+
+CORRECT "presence" examples:
+- "Presence" (with finding name in context)
+- "Presence of breast mass" (when asking if breast mass exists)
+- "adrenal nodule present" = presence
+
+INCORRECT - These should be "other", NOT "presence":
+- "Enhancement" (with present/absent values) = other (asking about feature of finding)
+- "Breast calcifications" (with present/absent values) = other (asking about feature, not finding itself)
+- "Skin thickening" (with present/absent values) = other (feature of finding)
+- "Nipple retraction" (with present/absent values) = other (feature of finding)
+- "Axillary lymphadenopathy" (with present/absent values) = other (separate finding/feature)
+- "Microscopic fat" (with present/absent values) = other (feature of finding)
+- "Enhancement pattern" = other (characteristic, not presence)
+
+KEY RULE: If the attribute name describes a FEATURE, CHARACTERISTIC, or RELATED FINDING (even if it has "present"/"absent" values), it is "other", NOT "presence".
 
 2. "change_from_prior" - Attributes that ask about changes over time compared to previous scans
 Examples: "change_from_prior", "progression", "interval_change", "stability", "Status"
