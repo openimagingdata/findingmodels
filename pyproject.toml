@@ -1,0 +1,22 @@
+[project]
+name = "findingmodels"
+version = "0.1.0"
+description = "Finding models are updatable data models defining open, standard semantic tags for imaging findings and their properties"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "findingmodel",
+    "jsonschema",
+    "pydantic-ai",
+    "python-dotenv",
+    "pre-commit",
+    "prettier>=0.0.7",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agents", "scripts"]
+

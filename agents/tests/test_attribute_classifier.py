@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Test script for the attribute classifier agents.
-This script tests the agents with real medical finding attributes.
-"""
-
 import asyncio
 import json
 import os
