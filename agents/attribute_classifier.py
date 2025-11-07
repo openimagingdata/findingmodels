@@ -26,6 +26,13 @@ class AttributeClassification(BaseModel):
     reasoning: str
 
 
+class AttributeNameSimilarity(BaseModel):
+    """Output from attribute name similarity agent"""
+    is_similar: bool
+    confidence: float
+    reasoning: str
+
+
 class AttributeComparison(BaseModel):
     """Output from attribute comparison agent"""
     relationship: Literal["identical", "expanded", "different"]
@@ -60,6 +67,38 @@ that represent the different descriptors used in clinical practice. In this syst
 Choice represents a categorical descriptor with defined allowed values.
 
  """
+
+
+def create_name_similarity_agent() -> Agent[str, AttributeNameSimilarity]:
+    """Create agent for checking if two attribute names are semantically similar"""
+    return Agent(
+        model=model,
+        output_type=AttributeNameSimilarity,
+        system_prompt=f"""{system_medial_expert_prompt}
+
+Your task is to determine if two attribute names are semantically similar (referring to the same concept).
+
+Examples of semantically similar attribute names:
+- "Plurality" and "number" (both refer to count/quantity: single vs multiple)
+- "Size" and "size Finding" (both refer to dimensions)
+- "Location" and "location" (same word, different case)
+- "Morphology" and "morphology" (same word, different case)
+- "Status" and "change from prior" (both refer to temporal changes)
+
+Examples of NOT semantically similar:
+- "Size" and "Location" (different concepts)
+- "Composition" and "Calcification" (different concepts)
+- "Presence" and "Size" (different concepts)
+
+Consider:
+- Medical terminology and synonyms
+- Case variations (should be considered similar)
+- Abbreviations and full forms
+- Related concepts (e.g., "number" and "plurality" both refer to count)
+
+Return True if the names refer to the same or very similar concepts, False otherwise.
+Provide a confidence score (0.0 to 1.0) and clear reasoning."""
+    )
 
 
 def create_classification_agent() -> Agent[str, AttributeClassification]:
@@ -131,16 +170,18 @@ Your task is to determine the relationship between the existing attribute defini
 
 CRITICAL RULES FOR CLASSIFICATION:
 - If the new attribute has ALL the existing values PLUS additional values → "expanded"
+- **SPECIAL CASE: If existing attribute has NO values (empty list) and new attribute has values, and names match (case-insensitive) → "expanded"** (new attribute adds values to empty existing)
 - If the value sets are exactly identical → "identical" 
 - If the value sets are completely different → "different"
 - Your reasoning MUST match your classification choice
 
 MANDATORY ANALYSIS STEPS:
-1. List all values from existing_attribute.values by name
+1. List all values from existing_attribute.values by name (may be empty!)
 2. List all values from new_attribute.values by name
-3. Check if new values contain ALL existing values plus extras → "expanded"
-4. Check if value sets are identical → "identical"
-5. Otherwise → "different"
+3. **If existing has no values and new has values and names match → "expanded"**
+4. Check if new values contain ALL existing values plus extras → "expanded"
+5. Check if value sets are identical → "identical"
+6. Otherwise → "different"
 
 Consider:
 - Attribute names (exact match vs semantic similarity)
@@ -176,6 +217,24 @@ Return the complete merged attribute JSON and notes about what was combined."""
     )
 
 
+class AttributeNameSimilarityChecker:
+    """Checks if two attribute names are semantically similar"""
+    
+    def __init__(self):
+        self.agent = create_name_similarity_agent()
+    
+    async def check_similarity(self, name1: str, name2: str, finding_name: str = None) -> AttributeNameSimilarity:
+        """Check if two attribute names are semantically similar"""
+        context = f"Finding: {finding_name}\n" if finding_name else ""
+        prompt = f"""{context}Attribute Name 1: {name1}
+Attribute Name 2: {name2}
+
+Are these two attribute names semantically similar (referring to the same concept)?"""
+        
+        result = await self.agent.run(prompt)
+        return result.output
+
+
 class AttributeClassifier:
     """Classifies attributes as presence, change_from_prior, or other"""
     
@@ -185,17 +244,37 @@ class AttributeClassifier:
     async def classify_attribute(self, attribute_json: Dict[str, Any], finding_name: str = None) -> AttributeClassification:
         """Classify an attribute JSON as presence, change_from_prior, or other"""
         # Validate the JSON using Pydantic models
+        attr_name = attribute_json.get('name', 'unknown')
+        attr_type = attribute_json.get('type', 'unknown')
+        
         try:
             # Try to parse as ChoiceAttributeIded first
             validated_attribute = ChoiceAttributeIded.model_validate(attribute_json)
-        except Exception:
+        except Exception as e1:
             try:
                 # If that fails, try NumericAttributeIded
                 validated_attribute = NumericAttributeIded.model_validate(attribute_json)
-            except Exception:
-                # If both fail, print and raise error
-                print("Failed validation")
-                raise ValueError("Attribute JSON failed Pydantic validation")
+            except Exception as e2:
+                # If both fail, print detailed error and raise
+                error_details = []
+                if attr_type == 'choice':
+                    values = attribute_json.get('values', [])
+                    if not values or len(values) < 2:
+                        error_details.append(f"choice attribute requires at least 2 values (has {len(values) if values else 0})")
+                    # Check for missing IDs - need oifma_id specifically for value code generation
+                    has_oifma_id = 'oifma_id' in attribute_json
+                    has_attribute_id = 'attribute_id' in attribute_json
+                    if not has_oifma_id and not has_attribute_id:
+                        error_details.append("missing oifma_id/attribute_id")
+                    elif has_attribute_id and not has_oifma_id:
+                        error_details.append("has attribute_id but missing oifma_id (needed for value code generation)")
+                    max_selected = attribute_json.get('max_selected', 1)
+                    if max_selected is not None and max_selected < 1:
+                        error_details.append(f"max_selected must be >= 1 (is {max_selected})")
+                
+                reason = "; ".join(error_details) if error_details else str(e1) or str(e2)
+                print(f"Failed validation at classification step for '{attr_name}': {reason}")
+                raise ValueError(f"Attribute JSON failed Pydantic validation: {reason}")
         
         # Extract validated information
         name = validated_attribute.name
@@ -241,20 +320,32 @@ class AttributeComparator:
         existing_values = [v.get('name') for v in existing_attribute.get('values', [])]
         new_values = [v.get('name') for v in new_attribute.get('values', [])]
         
+        # Check for special case: existing has no values
+        existing_empty = len(existing_values) == 0
+        new_has_values = len(new_values) > 0
+        names_match = existing_attribute.get('name', '').lower() == new_attribute.get('name', '').lower()
+        
+        special_case_note = ""
+        if existing_empty and new_has_values and names_match:
+            special_case_note = "\n\n⚠️ SPECIAL CASE: Existing attribute has NO values (empty), but new attribute has values and names match. This should be classified as 'expanded' (new attribute adds values to empty existing)."
+        
         result = await self.agent.run(
             f"""Compare attributes for '{finding_name}':
 
 EXISTING:
 - Name: {existing_attribute.get('name')}
-- Values: {existing_values}
+- Values: {existing_values if existing_values else '[EMPTY - no values]'}
 
 NEW:
 - Name: {new_attribute.get('name')}
 - Values: {new_values}
 
+{special_case_note}
+
 Decide: identical, expanded, or different. Ground your reasoning in the listed values.
 
 CRITICAL: 
+- **If existing has NO values and new has values and names match → "expanded"**
 - If new values contain ALL existing values plus additional ones → "expanded"
 - If value sets are exactly the same → "identical"
 - If value sets are different → "different"
