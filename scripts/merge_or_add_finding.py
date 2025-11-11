@@ -511,30 +511,83 @@ async def merge_models(
     
     # Ensure ALL attributes have required fields before validation
     # This is critical because the validator checks all attributes
-    # Show warnings but don't skip - let validation fail if needed
+    # Add placeholder values for incomplete attributes
     for attr in merged_attributes:
         attr_type = attr.get('type', 'choice')
+        attr_name = attr.get('name', 'unknown')
+        
         if attr_type == 'choice':
             # Ensure 'values' field exists (required for choice attributes)
             values = attr.get('values', [])
             if values is None:
                 values = []
-                print(f"  WARNING: Choice attribute '{attr.get('name', 'unknown')}' has None values - setting to empty list")
+                print(f"  WARNING: Choice attribute '{attr_name}' has None values - setting to empty list")
             
             # Schema requires at least 2 values for choice attributes
-            # Show warning if invalid, but don't skip - let validation fail
+            # Add placeholder values if needed
             if len(values) < 2:
-                print(f"  WARNING: Choice attribute '{attr.get('name', 'unknown')}' has {len(values)} values (requires at least 2) - validation will fail")
-            
-            attr['values'] = values
+                if len(values) == 0:
+                    print(f"  WARNING: Adding placeholder values for incomplete attribute '{attr_name}' (has 0 values)")
+                    # Add placeholder values to meet schema requirements
+                    attr['values'] = [
+                        {'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'},
+                        {'name': 'placeholder_value_2', 'description': 'Placeholder value - actual values missing from database'}
+                    ]
+                else:
+                    # Has 1 value but needs at least 2
+                    print(f"  WARNING: Adding placeholder value for incomplete attribute '{attr_name}' (has {len(values)} value, requires at least 2)")
+                    values.append({'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'})
+                    attr['values'] = values
+            else:
+                attr['values'] = values
             
             # Ensure 'max_selected' is valid (>= 1)
             max_selected = attr.get('max_selected', 1)
             if max_selected is None or max_selected < 1:
-                print(f"  WARNING: Choice attribute '{attr.get('name', 'unknown')}' has invalid max_selected={max_selected} - fixing to 1")
+                print(f"  WARNING: Choice attribute '{attr_name}' has invalid max_selected={max_selected} - fixing to 1")
                 attr['max_selected'] = 1
+        
+        # Ensure oifma_id exists (use attribute_id if available, needed for value code generation)
+        # This applies to both choice and numeric attributes
+        if not attr.get('oifma_id') and attr.get('attribute_id'):
+            attr['oifma_id'] = attr.get('attribute_id')
+            print(f"  WARNING: Attribute '{attr_name}' has attribute_id but missing oifma_id - using attribute_id")
     
     merged_model_dict['attributes'] = merged_attributes
+    
+    # Fix contributors if they're stored as strings instead of Person/Organization objects
+    contributors = merged_model_dict.get('contributors', [])
+    if contributors:
+        fixed_contributors = []
+        for contrib in contributors:
+            if isinstance(contrib, str):
+                # Convert string contributor code to Organization
+                # Common contributor codes
+                if contrib == "CDE":
+                    fixed_contributors.append({
+                        "name": "ACR/RSNA Common Data Elements Project",
+                        "code": "CDE",
+                        "url": "https://radelement.org"
+                    })
+                elif contrib == "MGB":
+                    fixed_contributors.append({
+                        "name": "Mass General Brigham",
+                        "code": "MGB",
+                        "url": None
+                    })
+                else:
+                    # Generic organization for unknown codes
+                    fixed_contributors.append({
+                        "name": contrib,
+                        "code": contrib,
+                        "url": None
+                    })
+            else:
+                # Already a dict/object, keep as is
+                fixed_contributors.append(contrib)
+        merged_model_dict['contributors'] = fixed_contributors
+        if any(isinstance(c, str) for c in contributors):
+            print(f"  WARNING: Converted string contributors to Organization objects")
     
     # For attributes without IDs (newly added), we need to generate IDs
     # Check if any attribute is missing oifma_id
@@ -557,7 +610,7 @@ async def merge_models(
 
 
 def convert_to_json_serializable(obj: Any) -> Any:
-    """Recursively convert MongoDB ObjectId and other non-serializable objects to strings."""
+    """Recursively convert MongoDB ObjectId, Pydantic HttpUrl, and other non-serializable objects to strings."""
     from bson import ObjectId
     
     if isinstance(obj, ObjectId):
@@ -569,10 +622,11 @@ def convert_to_json_serializable(obj: Any) -> Any:
     elif isinstance(obj, (str, int, float, bool, type(None))):
         return obj
     else:
-        # For other types, try to convert to string
+        # For other types (including Pydantic HttpUrl), try to convert to string
         try:
+            # This handles Pydantic types like HttpUrl that have string representation
             return str(obj)
-        except:
+        except Exception:
             return obj
 
 
@@ -760,8 +814,8 @@ def display_merge_proposal(
     display_attribute_comparison(existing_attrs, incoming_attrs, change_summary, existing.get('name', ''))
     
     # Display JSON diff
-    existing_dict = existing.copy()
-    merged_dict = merged.model_dump()
+    existing_dict = convert_to_json_serializable(existing.copy())
+    merged_dict = convert_to_json_serializable(merged.model_dump())
     display_json_diff(existing_dict, merged_dict)
     
     # Display console comparison

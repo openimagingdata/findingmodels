@@ -38,7 +38,7 @@ class AttributeComparison(BaseModel):
     relationship: Literal["identical", "expanded", "different"]
     confidence: float
     reasoning: str
-    merge_strategy: Optional[str] = Field(None, description="Strategy for merging if enhanced")
+    merge_strategy: Optional[str] = None  # Strategy for merging if enhanced
 
 
 class MergedAttribute(BaseModel):

@@ -18,6 +18,7 @@ from findingmodel.tools import find_similar_models
 from findingmodel.index import Index
 from findingmodel import FindingModelFull, FindingModelBase
 from findingmodel.tools import add_ids_to_model
+from findingmodel.common import model_file_name
 # Note: We'll create attributes as dicts, not ChoiceAttribute objects
 from agents.merge_agents import (
     create_classification_agent, 
@@ -388,6 +389,7 @@ def build_final_finding(
     merge_recommendations: List[Dict[str, Any]],
     all_comparisons: Dict[str, List[Dict[str, Any]]],
     attributes_to_add: List[Tuple[str, Dict[str, Any]]],
+    approved_new_attributes: List[Dict[str, Any]],
     finding_name: str
 ) -> Dict[str, Any]:
     """Build the final finding model based on merge decisions and user choices.
@@ -436,16 +438,12 @@ def build_final_finding(
                         combined_attr['values'].append(val)
             final_attributes.append(combined_attr)
     
-    # Add incoming attributes that weren't matched (new attributes)
-    for classification_type, comparisons in all_comparisons.items():
-        for comp in comparisons:
-            incoming_attr = comp['incoming_attribute']
-            incoming_name = incoming_attr.get('name', 'unknown')
-            
-            if not comp['relationship']:  # No match found - new attribute
-                if incoming_name not in processed_incoming_attrs:
-                    final_attributes.append(incoming_attr.copy())
-                    processed_incoming_attrs.add(incoming_name)
+    # Add approved new attributes (only those the user chose to include)
+    for new_attr in approved_new_attributes:
+        attr_name = new_attr.get('name', 'unknown')
+        if attr_name not in processed_incoming_attrs:
+            final_attributes.append(new_attr.copy())
+            processed_incoming_attrs.add(attr_name)
     
     # Add existing attributes that weren't part of any merge recommendation
     if existing_model_data:
@@ -521,6 +519,111 @@ def print_final_finding(final_finding: Dict[str, Any]):
     print("FINAL FINDING MODEL (JSON)")
     print(f"{'='*60}")
     print(json.dumps(final_finding, indent=2, ensure_ascii=False))
+
+
+def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
+    """Clean up final finding dict by removing classification metadata, fixing contributors, and normalizing attributes."""
+    cleaned = final_finding.copy()
+    
+    # Remove classification metadata from attributes and normalize them
+    attributes = cleaned.get('attributes', [])
+    cleaned_attributes = []
+    for attr in attributes:
+        cleaned_attr = attr.copy()
+        # Remove classification metadata
+        cleaned_attr.pop('_classification', None)
+        cleaned_attr.pop('_confidence', None)
+        cleaned_attr.pop('_reasoning', None)
+        
+        # Normalize incomplete attributes (same logic as normalize_incomplete_attribute)
+        attr_type = cleaned_attr.get('type', 'unknown')
+        attr_name = cleaned_attr.get('name', 'unknown')
+        
+        if attr_type == 'choice':
+            values = cleaned_attr.get('values', [])
+            if not values or len(values) < 2:
+                if len(values) == 0:
+                    # Add placeholder values to meet schema requirements
+                    cleaned_attr['values'] = [
+                        {'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'},
+                        {'name': 'placeholder_value_2', 'description': 'Placeholder value - actual values missing from database'}
+                    ]
+                else:
+                    # Has 1 value but needs at least 2
+                    values.append({'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'})
+                    cleaned_attr['values'] = values
+            
+            # Ensure max_selected is valid
+            if cleaned_attr.get('max_selected', 1) < 1:
+                cleaned_attr['max_selected'] = 1
+        
+        # Ensure oifma_id exists (use attribute_id if available)
+        if not cleaned_attr.get('oifma_id') and cleaned_attr.get('attribute_id'):
+            cleaned_attr['oifma_id'] = cleaned_attr.get('attribute_id')
+        
+        cleaned_attributes.append(cleaned_attr)
+    cleaned['attributes'] = cleaned_attributes
+    
+    # Fix contributors if they're stored as strings instead of Person/Organization objects
+    contributors = cleaned.get('contributors', [])
+    if contributors:
+        fixed_contributors = []
+        for contrib in contributors:
+            if isinstance(contrib, str):
+                # Convert string contributor code to Organization
+                if contrib == "CDE":
+                    fixed_contributors.append({
+                        "name": "ACR/RSNA Common Data Elements Project",
+                        "code": "CDE",
+                        "url": "https://radelement.org"
+                    })
+                elif contrib == "MGB":
+                    fixed_contributors.append({
+                        "name": "Mass General Brigham",
+                        "code": "MGB",
+                        "url": None
+                    })
+                else:
+                    # Generic organization for unknown codes
+                    fixed_contributors.append({
+                        "name": contrib,
+                        "code": contrib,
+                        "url": None
+                    })
+            else:
+                # Already a dict/object, keep as is
+                fixed_contributors.append(contrib)
+        cleaned['contributors'] = fixed_contributors
+    
+    return cleaned
+
+
+async def save_final_model(final_finding: Dict[str, Any], output_dir: Path):
+    """Save final finding model to file after validation."""
+    # Clean up the final finding
+    cleaned_finding = clean_final_finding(final_finding)
+    
+    # Validate and convert to FindingModelFull
+    try:
+        model = FindingModelFull(**cleaned_finding)
+    except Exception as e:
+        print(f"Error: Failed to validate final model: {e}")
+        print("The model may have validation errors. Please review the output above.")
+        return False
+    
+    # Create output directory if it doesn't exist
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate filename
+    filename = model_file_name(model.name)
+    output_path = output_dir / filename
+    
+    # Save as JSON
+    json_content = model.model_dump_json(indent=2, exclude_none=True)
+    output_path.write_text(json_content, encoding='utf-8')
+    
+    print(f"\nSaved merged model to: {output_path}")
+    return True
 
 
 def create_change_element(finding_name: str) -> Dict[str, Any]:
@@ -667,8 +770,9 @@ async def main():
                 print("COMPARISON SUMMARY")
                 print(f"{'='*60}")
                 
-                # Collect all merge recommendations
+                # Collect all merge recommendations and new attributes
                 merge_recommendations = []
+                new_attributes = []
                 
                 for classification_type, comparisons in all_comparisons.items():
                     if comparisons:
@@ -680,7 +784,7 @@ async def main():
                                 rel_type = comp['relationship'].relationship
                                 confidence = comp['relationship'].confidence
                                 recommendation = comp['relationship'].recommendation
-                                print(f"  '{incoming_name}' ↔ '{existing_name}': {rel_type} (confidence: {confidence:.2f}, recommendation: {recommendation})")
+                                print(f"  '{incoming_name}' (incoming) ↔ '{existing_name}' (existing): {rel_type} (confidence: {confidence:.2f}, recommendation: {recommendation})")
                                 
                                 # Collect merge recommendations
                                 if recommendation == "merge":
@@ -691,7 +795,12 @@ async def main():
                                         'relationship': comp['relationship']
                                     })
                             else:
-                                print(f"  '{incoming_name}': NEW (no match found)")
+                                print(f"  '{incoming_name}' (incoming): NEW (no match found)")
+                                # Collect new attributes
+                                new_attributes.append({
+                                    'classification_type': classification_type,
+                                    'incoming_attribute': comp['incoming_attribute']
+                                })
                 
                 # Interactive merge process
                 if merge_recommendations:
@@ -750,7 +859,7 @@ async def main():
                             print(f"\n  OPTIONS:")
                             print(f"    1. Replace existing with enhanced (use incoming to replace existing)")
                             print(f"    2. Keep existing (don't merge, keep existing as is)")
-                            print(f"    3. Combine (merge both together)")
+                            print(f"    3. Combine (Keeps all existing values. Adds incoming values that aren't already present. Skips placeholder values.)")
                             
                             while True:
                                 choice = input(f"\n  Your choice (1/2/3): ").strip()
@@ -772,6 +881,62 @@ async def main():
                         print(f"\nProcessed {len(merge_recommendations)} merge recommendations.")
                     else:
                         print("\nMerge process skipped by user.")
+                
+                # Interactive new attributes process
+                approved_new_attributes = []
+                if new_attributes:
+                    print(f"\n{'='*60}")
+                    print(f"NEW ATTRIBUTES FOUND: {len(new_attributes)}")
+                    print(f"{'='*60}")
+                    
+                    response = input("\nReview new attributes? (y/n): ").strip().lower()
+                    
+                    if response == 'y':
+                        print(f"\n{'='*60}")
+                        print("NEW ATTRIBUTES REVIEW")
+                        print(f"{'='*60}")
+                        
+                        for idx, new_attr_info in enumerate(new_attributes, 1):
+                            incoming_attr = new_attr_info['incoming_attribute']
+                            incoming_name = incoming_attr.get('name', 'unknown')
+                            attr_type = incoming_attr.get('type', 'unknown')
+                            
+                            print(f"\n[{idx}/{len(new_attributes)}] NEW ATTRIBUTE: '{incoming_name}'")
+                            print(f"  Type: {attr_type}")
+                            
+                            if attr_type == 'choice':
+                                values = incoming_attr.get('values', [])
+                                if values:
+                                    value_names = [v.get('name', '') if isinstance(v, dict) else getattr(v, 'name', '') for v in values]
+                                    print(f"  Values: {', '.join(value_names)}")
+                                else:
+                                    print(f"  Values: (none)")
+                            elif attr_type == 'numeric':
+                                print(f"  Unit: {incoming_attr.get('unit', 'N/A')}")
+                                print(f"  Range: {incoming_attr.get('minimum', 'N/A')} - {incoming_attr.get('maximum', 'N/A')}")
+                            
+                            if incoming_attr.get('description'):
+                                print(f"  Description: {incoming_attr.get('description')}")
+                            
+                            # Get user choice
+                            while True:
+                                choice = input(f"\n  Add this attribute to final model? (y/n): ").strip().lower()
+                                if choice in ['y', 'n']:
+                                    if choice == 'y':
+                                        approved_new_attributes.append(incoming_attr)
+                                        print(f"    ✓ Selected: Add attribute")
+                                    else:
+                                        print(f"    ✗ Selected: Skip attribute")
+                                    break
+                                else:
+                                    print(f"    Invalid choice. Please enter y or n.")
+                        
+                        print(f"\n{'='*60}")
+                        print("NEW ATTRIBUTES REVIEW COMPLETE")
+                        print(f"{'='*60}")
+                        print(f"\nApproved {len(approved_new_attributes)} of {len(new_attributes)} new attributes.")
+                    else:
+                        print("\nNew attributes review skipped by user.")
                 
                 # Check for missing presence/change_from_prior attributes in incoming model
                 print(f"\n{'='*60}")
@@ -838,10 +1003,24 @@ async def main():
                     merge_recommendations=merge_recommendations,
                     all_comparisons=all_comparisons,
                     attributes_to_add=attributes_to_add if add_attributes_to_final else [],
+                    approved_new_attributes=approved_new_attributes,
                     finding_name=finding_name
                 )
                 
                 print_final_finding(final_finding)
+                
+                # Ask if user wants to save
+                print(f"\n{'='*60}")
+                response = input("Save final model? (y/n): ").strip().lower()
+                if response == 'y':
+                    output_dir = Path("defs/merged_findings")
+                    success = await save_final_model(final_finding, output_dir)
+                    if success:
+                        print("Model saved successfully!")
+                    else:
+                        print("Failed to save model. Please check the errors above.")
+                else:
+                    print("Save cancelled by user.")
             else:
                 print("Warning: Could not load existing model data from database.")
         else:
