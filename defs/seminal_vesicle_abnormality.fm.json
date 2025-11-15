@@ -1,23 +1,28 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_452510",
+  "name": "seminal vesicle abnormality",
+  "description": "Seminal vesicle abnormality denotes any structural abnormality of the seminal vesicles, including congenital anomalies, cystic dilation, mass lesions, or calcifications. Radiologic evaluation should document size, morphology, symmetry, and any communication with the ejaculatory ducts, with attention to unilateral versus bilateral involvement and to associated findings such as ejaculatory duct obstruction.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "seminal vesicle abnormality",
+    "seminal vesicle pathology",
+    "seminal vesicle lesion",
+    "seminal vesicle anomaly",
+    "SV abnormality",
+    "seminal vesicle cyst",
+    "seminal vesicle mass",
+    "congenital seminal vesicle anomaly"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_439750",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of seminal vesicle abnormality",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_439750.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Seminal vesicle abnormality is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +37,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_439750.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Seminal vesicle abnormality is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +54,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_439750.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of seminal vesicle abnormality cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +71,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_439750.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of seminal vesicle abnormality is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +99,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_596669",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a seminal vesicle abnormality has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_596669.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Seminal vesicle abnormality is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +122,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_596669.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Seminal vesicle abnormality is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +139,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_596669.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Seminal vesicle abnormality is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +156,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_596669.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Seminal vesicle abnormality seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_596669.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Seminal vesicle abnormality has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +178,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_596669.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Seminal vesicle abnormality has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +195,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_596669.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Seminal vesicle abnormality is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +212,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_596669.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Seminal vesicle abnormality is smaller",
           "index_codes": [
             {
               "system": "RADLEX",

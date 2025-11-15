@@ -1,23 +1,26 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_456265",
+  "name": "chiari malformation",
+  "description": "chiari malformation is downward displacement of the cerebellar tonsils through the foramen magnum, potentially causing brainstem crowding and syringomyelia in some patients (original phrasing: 'chiari malformation'). MRI is the preferred modality to confirm the diagnosis and assess associated craniovertebral anomalies.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "chiari malformation",
+    "arnold-chiari malformation",
+    "chiari i malformation",
+    "chiari type i malformation",
+    "arnold chiari malformation",
+    "CM"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_987513",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of chiari malformation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_987513.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Chiari malformation is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +35,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_987513.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Chiari malformation is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_987513.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of chiari malformation cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_987513.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of chiari malformation is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +97,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_990692",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a chiari malformation has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_990692.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Chiari malformation is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +120,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_990692.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Chiari malformation is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_990692.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Chiari malformation is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +154,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_990692.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Chiari malformation seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_990692.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Chiari malformation has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +176,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_990692.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Chiari malformation has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_990692.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Chiari malformation is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_990692.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Chiari malformation is smaller",
           "index_codes": [
             {
               "system": "RADLEX",

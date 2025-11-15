@@ -1,16 +1,12 @@
-# Orbital mass—`OIFM_GMTS_008003`
+# Orbital mass—`OIFM_OIDM_208758`
 
-**Synonyms:** eye socket mass
+**Synonyms:** orbital mass, orbital lesion, orbital tumor
 
-**Tags:** ultrasound, CT, MR, US, orbit, mass, finding
-
-Abnormal growth within the eye socket area.
-
-**Codes:** GAMUTS 8003 orbital mass
+An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_360579`
+### Presence—`OIFMA_OIDM_667264`
 
 Presence or absence of orbital mass  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -25,7 +21,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of orbital mass is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_682281`
+### Change from prior—`OIFMA_OIDM_225316`
 
 Whether and how a orbital mass has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -46,9 +42,3 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Orbital mass is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
-
----
-
-**Contributors**
-
-- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)

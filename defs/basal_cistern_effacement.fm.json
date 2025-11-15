@@ -1,23 +1,26 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_267712",
+  "name": "basal cistern effacement",
+  "description": "Loss, narrowing, or obliteration of the cerebrospinal fluid–filled basal (perimesencephalic) cisterns on CT or MRI due to mass effect from edema, hemorrhage, or a space-occupying lesion. This finding commonly reflects elevated intracranial pressure and may indicate increased risk of transtentorial herniation; the original phrasing 'basal cistern effacement' is an example of this imaging appearance.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "effacement of basal cisterns",
+    "basilar cistern effacement",
+    "cisternal effacement",
+    "perimesencephalic cistern effacement",
+    "basal cistern obliteration",
+    "basal cistern effacement"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_208513",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of basal cistern effacement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_208513.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Basal cistern effacement is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +35,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_208513.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Basal cistern effacement is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_208513.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of basal cistern effacement cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_208513.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of basal cistern effacement is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +97,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_235697",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a basal cistern effacement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_235697.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Basal cistern effacement is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +120,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_235697.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Basal cistern effacement is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_235697.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Basal cistern effacement is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +154,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_235697.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Basal cistern effacement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_235697.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Basal cistern effacement has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +176,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_235697.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Basal cistern effacement has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_235697.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Basal cistern effacement is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_235697.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Basal cistern effacement is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
