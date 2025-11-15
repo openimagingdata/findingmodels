@@ -1,23 +1,26 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_023679",
+  "name": "abnormal intracranial enhancement",
+  "description": "Focal or diffuse increased enhancement within intracranial structures on contrast-enhanced CT or MRI indicating disruption of the blood–brain barrier or abnormal vascularity; common causes include neoplasm, infection/abscess, inflammation, subacute infarction, hemorrhage, and postoperative/iatrogenic change. The original phrasing 'abnormal intracranial enhancement' is an example of this finding.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "intracranial enhancement",
+    "intracranial contrast enhancement",
+    "abnormal contrast enhancement",
+    "enhancing intracranial lesion",
+    "abnormal brain enhancement",
+    "pathologic intracranial enhancement"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_767543",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of abnormal intracranial enhancement",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_767543.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Abnormal intracranial enhancement is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +35,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_767543.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Abnormal intracranial enhancement is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_767543.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of abnormal intracranial enhancement cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_767543.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of abnormal intracranial enhancement is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +97,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_474457",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a abnormal intracranial enhancement has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_474457.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Abnormal intracranial enhancement is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +120,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_474457.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Abnormal intracranial enhancement is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_474457.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Abnormal intracranial enhancement is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +154,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_474457.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Abnormal intracranial enhancement seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_474457.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Abnormal intracranial enhancement has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +176,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_474457.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Abnormal intracranial enhancement has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_474457.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Abnormal intracranial enhancement is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_474457.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Abnormal intracranial enhancement is smaller",
           "index_codes": [
             {
               "system": "RADLEX",

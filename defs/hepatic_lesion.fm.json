@@ -1,23 +1,25 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_160831",
+  "name": "hepatic lesion",
+  "description": "A hepatic lesion denotes a focal abnormality of the liver parenchyma detected on imaging. The finding encompasses a spectrum of etiologies from benign to malignant, and further characterization with dedicated liver imaging is often required to refine the diagnosis.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "hepatic lesion",
+    "liver lesion",
+    "focal liver lesion",
+    "hepatic mass",
+    "liver mass"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_522515",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of hepatic lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_522515.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Hepatic lesion is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +34,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_522515.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Hepatic lesion is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +51,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_522515.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of hepatic lesion cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +68,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_522515.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of hepatic lesion is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +96,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_224232",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a hepatic lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_224232.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Hepatic lesion is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +119,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_224232.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Hepatic lesion is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +136,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_224232.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Hepatic lesion is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +153,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_224232.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Hepatic lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_224232.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Hepatic lesion has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +175,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_224232.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Hepatic lesion has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +192,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_224232.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Hepatic lesion is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +209,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_224232.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Hepatic lesion is smaller",
           "index_codes": [
             {
               "system": "RADLEX",

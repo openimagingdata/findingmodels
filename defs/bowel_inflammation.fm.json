@@ -1,23 +1,25 @@
 {
-  "oifm_id": "OIFM_OIDM_208758",
-  "name": "orbital mass",
-  "description": "An orbital mass is a space-occupying lesion within the orbit that may arise from lacrimal gland, extraocular muscles, or other orbital tissues and can be benign or malignant; imaging features aid in characterization and differential diagnosis, with 'orbital mass' serving as the exemplar original phrasing.",
+  "oifm_id": "OIFM_OIDM_201175",
+  "name": "bowel inflammation",
+  "description": "Radiologic finding representing inflammation of the bowel; commonly demonstrated by bowel wall thickening with mural hyperenhancement and surrounding mesenteric stranding. This finding can be described as 'bowel inflammatory signs' and is seen in enteritis or colitis and may be accompanied by luminal dilation.",
   "synonyms": [
-    "orbital mass",
-    "orbital lesion",
-    "orbital tumor"
+    "bowel inflammatory signs",
+    "bowel wall thickening",
+    "bowel wall thickening with mural enhancement",
+    "enteritis signs",
+    "colitis signs"
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_667264",
+      "oifma_id": "OIFMA_OIDM_211627",
       "name": "presence",
-      "description": "Presence or absence of orbital mass",
+      "description": "Presence or absence of bowel inflammation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_667264.0",
+          "value_code": "OIFMA_OIDM_211627.0",
           "name": "absent",
-          "description": "Orbital mass is absent",
+          "description": "Bowel inflammation is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -32,9 +34,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.1",
+          "value_code": "OIFMA_OIDM_211627.1",
           "name": "present",
-          "description": "Orbital mass is present",
+          "description": "Bowel inflammation is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -49,9 +51,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.2",
+          "value_code": "OIFMA_OIDM_211627.2",
           "name": "indeterminate",
-          "description": "Presence of orbital mass cannot be determined",
+          "description": "Presence of bowel inflammation cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -66,9 +68,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_667264.3",
+          "value_code": "OIFMA_OIDM_211627.3",
           "name": "unknown",
-          "description": "Presence of orbital mass is unknown",
+          "description": "Presence of bowel inflammation is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -94,15 +96,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_225316",
+      "oifma_id": "OIFMA_OIDM_013566",
       "name": "change from prior",
-      "description": "Whether and how a orbital mass has changed over time",
+      "description": "Whether and how a bowel inflammation has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_225316.0",
+          "value_code": "OIFMA_OIDM_013566.0",
           "name": "unchanged",
-          "description": "Orbital mass is unchanged",
+          "description": "Bowel inflammation is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,9 +119,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.1",
+          "value_code": "OIFMA_OIDM_013566.1",
           "name": "stable",
-          "description": "Orbital mass is stable",
+          "description": "Bowel inflammation is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -134,9 +136,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.2",
+          "value_code": "OIFMA_OIDM_013566.2",
           "name": "new",
-          "description": "Orbital mass is new",
+          "description": "Bowel inflammation is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -151,14 +153,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.3",
+          "value_code": "OIFMA_OIDM_013566.3",
           "name": "resolved",
-          "description": "Orbital mass seen on a prior exam has resolved"
+          "description": "Bowel inflammation seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_225316.4",
+          "value_code": "OIFMA_OIDM_013566.4",
           "name": "increased",
-          "description": "Orbital mass has increased",
+          "description": "Bowel inflammation has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -173,9 +175,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.5",
+          "value_code": "OIFMA_OIDM_013566.5",
           "name": "decreased",
-          "description": "Orbital mass has decreased",
+          "description": "Bowel inflammation has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -190,9 +192,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.6",
+          "value_code": "OIFMA_OIDM_013566.6",
           "name": "larger",
-          "description": "Orbital mass is larger",
+          "description": "Bowel inflammation is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -207,9 +209,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_225316.7",
+          "value_code": "OIFMA_OIDM_013566.7",
           "name": "smaller",
-          "description": "Orbital mass is smaller",
+          "description": "Bowel inflammation is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
