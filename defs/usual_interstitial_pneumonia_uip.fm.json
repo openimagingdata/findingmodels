@@ -1,0 +1,262 @@
+{
+  "oifm_id": "OIFM_MGB_159131",
+  "name": "Usual Interstitial Pneumonia Uip",
+  "description": "Usual Interstitial Pneumonia (UIP) is a pattern of lung disease characterized by fibrosis and scarring of the lung tissue.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_770499",
+      "name": "Presence",
+      "description": "The presence or absence of UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_770499.0",
+          "name": "Present",
+          "description": "UIP is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_770499.1",
+          "name": "Absent",
+          "description": "UIP is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_043251",
+      "name": "Confidence",
+      "description": "The level of confidence in the presence of UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_043251.0",
+          "name": "Definite",
+          "description": "UIP is definitely present"
+        },
+        {
+          "value_code": "OIFMA_MGB_043251.1",
+          "name": "Possible",
+          "description": "UIP is possibly present"
+        },
+        {
+          "value_code": "OIFMA_MGB_043251.2",
+          "name": "Indeterminate",
+          "description": "UIP presence is indeterminate"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_553413",
+      "name": "Pattern",
+      "description": "The pattern of UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_553413.0",
+          "name": "UIP pattern",
+          "description": "The finding is consistent with UIP pattern"
+        },
+        {
+          "value_code": "OIFMA_MGB_553413.1",
+          "name": "Inconsistent with UIP pattern",
+          "description": "The finding is inconsistent with UIP pattern"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_164880",
+      "name": "Distribution",
+      "description": "The distribution of UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_164880.0",
+          "name": "Subpleural",
+          "description": "UIP is predominantly subpleural"
+        },
+        {
+          "value_code": "OIFMA_MGB_164880.1",
+          "name": "Basal",
+          "description": "UIP is predominantly basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_164880.2",
+          "name": "Diffuse",
+          "description": "UIP is diffusely distributed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_646039",
+      "name": "Severity",
+      "description": "The severity of UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_646039.0",
+          "name": "Mild",
+          "description": "UIP is mildly severe"
+        },
+        {
+          "value_code": "OIFMA_MGB_646039.1",
+          "name": "Moderate",
+          "description": "UIP is moderately severe"
+        },
+        {
+          "value_code": "OIFMA_MGB_646039.2",
+          "name": "Severe",
+          "description": "UIP is severely severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_876530",
+      "name": "Honeycombing",
+      "description": "The presence or absence of honeycombing in UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_876530.0",
+          "name": "Present",
+          "description": "Honeycombing is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_876530.1",
+          "name": "Absent",
+          "description": "Honeycombing is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_332615",
+      "name": "Reticulation",
+      "description": "The presence or absence of reticulation in UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_332615.0",
+          "name": "Present",
+          "description": "Reticulation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_332615.1",
+          "name": "Absent",
+          "description": "Reticulation is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_308866",
+      "name": "Traction bronchiectasis",
+      "description": "The presence or absence of traction bronchiectasis in UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_308866.0",
+          "name": "Present",
+          "description": "Traction bronchiectasis is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_308866.1",
+          "name": "Absent",
+          "description": "Traction bronchiectasis is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_340914",
+      "name": "Ground-glass opacities",
+      "description": "The presence or absence of ground-glass opacities associated with UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_340914.0",
+          "name": "Present",
+          "description": "Ground-glass opacities are present"
+        },
+        {
+          "value_code": "OIFMA_MGB_340914.1",
+          "name": "Absent",
+          "description": "Ground-glass opacities are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_866961",
+      "name": "Consolidation",
+      "description": "The presence or absence of consolidation associated with UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_866961.0",
+          "name": "Present",
+          "description": "Consolidation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_866961.1",
+          "name": "Absent",
+          "description": "Consolidation is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_453260",
+      "name": "Emphysema",
+      "description": "The presence or absence of emphysema associated with UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_453260.0",
+          "name": "Present",
+          "description": "Emphysema is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_453260.1",
+          "name": "Absent",
+          "description": "Emphysema is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_060197",
+      "name": "Pulmonary hypertension",
+      "description": "Suggestion of pulmonary hypertension associated with UIP",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_060197.0",
+          "name": "Suggested",
+          "description": "Pulmonary hypertension is suggested"
+        },
+        {
+          "value_code": "OIFMA_MGB_060197.1",
+          "name": "Not suggested",
+          "description": "Pulmonary hypertension is not suggested"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

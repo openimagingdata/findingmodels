@@ -1,0 +1,104 @@
+{
+  "oifm_id": "OIFM_MGB_665120",
+  "name": "Left Atrial Appendage Occlusion Device",
+  "description": "Presence of a left atrial appendage occlusion device",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_793143",
+      "name": "Presence of Left Atrial Appendage Occlusion Device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_793143.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_793143.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_100034",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_100034.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_100034.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_100034.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_100034.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_833496",
+      "name": "Device Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_833496.0",
+          "name": "Watchman"
+        },
+        {
+          "value_code": "OIFMA_MGB_833496.1",
+          "name": "Amplatzer Cardiac Plug"
+        },
+        {
+          "value_code": "OIFMA_MGB_833496.2",
+          "name": "Other"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_815643",
+      "name": "Appropriate position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_815643.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_815643.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_985688",
+      "name": "Device-Related Thrombus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_985688.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_985688.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

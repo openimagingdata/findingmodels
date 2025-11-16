@@ -1,0 +1,72 @@
+{
+  "oifm_id": "OIFM_MGB_093164",
+  "name": "Loop Recorder",
+  "description": "A loop recorder is a small device that is implanted under the skin to monitor and record the electrical activity of the heart.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_043428",
+      "name": "Presence of Loop Recorder",
+      "description": "Indicates whether a loop recorder is present or not",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_043428.0",
+          "name": "Present",
+          "description": "A loop recorder is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_043428.1",
+          "name": "Absent",
+          "description": "A loop recorder is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_143889",
+      "name": "Side Finding",
+      "description": "Indicates the side where the loop recorder is located",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_143889.0",
+          "name": "Left",
+          "description": "The loop recorder is located on the left side"
+        },
+        {
+          "value_code": "OIFMA_MGB_143889.1",
+          "name": "Right",
+          "description": "The loop recorder is located on the right side"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_987670",
+      "name": "Location",
+      "description": "Indicates the location of the loop recorder",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_987670.0",
+          "name": "Pre-pectoral",
+          "description": "The loop recorder is located in the pre-pectoral region"
+        },
+        {
+          "value_code": "OIFMA_MGB_987670.1",
+          "name": "Subcutaneous",
+          "description": "The loop recorder is located subcutaneously"
+        },
+        {
+          "value_code": "OIFMA_MGB_987670.2",
+          "name": "Other",
+          "description": "The loop recorder is located in another location"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

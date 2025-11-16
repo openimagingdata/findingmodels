@@ -1,0 +1,87 @@
+{
+  "oifm_id": "OIFM_MGB_064245",
+  "name": "Replaced Cardiac Valve",
+  "description": "A finding indicating the presence of a replaced cardiac valve.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_823819",
+      "name": "Aortic Valve",
+      "description": "The type of replacement valve used in the aortic position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_823819.0",
+          "name": "Bioprosthetic Valve",
+          "description": "A bioprosthetic valve used in the aortic position."
+        },
+        {
+          "value_code": "OIFMA_MGB_823819.1",
+          "name": "TAVR",
+          "description": "A TAVR procedure performed in the aortic position."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_029840",
+      "name": "Mitral Valve",
+      "description": "The presence or absence of a replacement valve in the mitral position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_029840.0",
+          "name": "Present",
+          "description": "A replacement valve is present in the mitral position."
+        },
+        {
+          "value_code": "OIFMA_MGB_029840.1",
+          "name": "Absent",
+          "description": "No replacement valve is present in the mitral position."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_554100",
+      "name": "Pulmonary Valve",
+      "description": "The presence or absence of a replacement valve in the pulmonary position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_554100.0",
+          "name": "Present",
+          "description": "A replacement valve is present in the pulmonary position."
+        },
+        {
+          "value_code": "OIFMA_MGB_554100.1",
+          "name": "Absent",
+          "description": "No replacement valve is present in the pulmonary position."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_126131",
+      "name": "Tricuspid Valve",
+      "description": "The presence or absence of a replacement valve in the tricuspid position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_126131.0",
+          "name": "Present",
+          "description": "A replacement valve is present in the tricuspid position."
+        },
+        {
+          "value_code": "OIFMA_MGB_126131.1",
+          "name": "Absent",
+          "description": "No replacement valve is present in the tricuspid position."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "oifm_id": "OIFM_MGB_311515",
+  "name": "Glenohumeral Joint",
+  "description": "The glenohumeral joint is the joint connecting the glenoid cavity of the scapula (shoulder blade) and the head of the humerus (upper arm bone).",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_175812",
+      "name": "Presence",
+      "description": "Indicates if the glenohumeral joint is normal or abnormal.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_175812.0",
+          "name": "Normal",
+          "description": "The glenohumeral joint is present and normal."
+        },
+        {
+          "value_code": "OIFMA_MGB_175812.1",
+          "name": "Abnormal",
+          "description": "The glenohumeral joint is present but abnormal."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_054307",
+      "name": "Status",
+      "description": "Indicates the stability of the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_054307.0",
+          "name": "Stable",
+          "description": "The glenohumeral joint is stable."
+        },
+        {
+          "value_code": "OIFMA_MGB_054307.1",
+          "name": "Progressing",
+          "description": "The glenohumeral joint is progressing."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_117971",
+      "name": "Articulation",
+      "description": "Describes the articulation of the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_117971.0",
+          "name": "Congruent",
+          "description": "The glenohumeral joint is congruent."
+        },
+        {
+          "value_code": "OIFMA_MGB_117971.1",
+          "name": "Subluxed",
+          "description": "The glenohumeral joint is subluxed."
+        },
+        {
+          "value_code": "OIFMA_MGB_117971.2",
+          "name": "Dislocated",
+          "description": "The glenohumeral joint is dislocated."
+        },
+        {
+          "value_code": "OIFMA_MGB_117971.3",
+          "name": "Posterior decentering",
+          "description": "The glenohumeral joint is posteriorly decentered."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_472175",
+      "name": "Degenerative changes",
+      "description": "Indicates the degree of degenerative changes in the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_472175.0",
+          "name": "Mild",
+          "description": "Mild degenerative changes in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_472175.1",
+          "name": "Moderate",
+          "description": "Moderate degenerative changes in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_472175.2",
+          "name": "Severe",
+          "description": "Severe degenerative changes in the glenohumeral joint."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_713552",
+      "name": "Bony Changes",
+      "description": "Describes the type of bony changes in the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_713552.0",
+          "name": "None",
+          "description": "No bony changes in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_713552.1",
+          "name": "Osteophytes",
+          "description": "Osteophytes in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_713552.2",
+          "name": "Sclerosis",
+          "description": "Sclerosis in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_713552.3",
+          "name": "Cystic changes",
+          "description": "Cystic changes in the glenohumeral joint."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_706506",
+      "name": "Joint Effusion",
+      "description": "Indicates the presence of joint effusion in the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_706506.0",
+          "name": "Absent",
+          "description": "No joint effusion in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_706506.1",
+          "name": "Present",
+          "description": "Joint effusion present in the glenohumeral joint."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_645173",
+      "name": "Density of the Effusion",
+      "description": "Describes the density of the joint effusion in the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_645173.0",
+          "name": "Serous (Clear)",
+          "description": "Serous (clear) joint effusion in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_645173.1",
+          "name": "Hemarthrosis",
+          "description": "Hemarthrosis joint effusion in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_645173.2",
+          "name": "Lipohemarthrosis",
+          "description": "Lipohemarthrosis joint effusion in the glenohumeral joint."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_207403",
+      "name": "Presence of Joint Bodies",
+      "description": "Indicates the presence of joint bodies in the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_207403.0",
+          "name": "Absent",
+          "description": "No joint bodies in the glenohumeral joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_207403.1",
+          "name": "Present",
+          "description": "Joint bodies present in the glenohumeral joint."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

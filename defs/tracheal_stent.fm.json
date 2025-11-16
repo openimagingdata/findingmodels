@@ -1,0 +1,155 @@
+{
+  "oifm_id": "OIFM_MGB_235469",
+  "name": "Tracheal Stent",
+  "description": "A stent placed in the trachea to maintain airway patency.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_477224",
+      "name": "Presence of Tracheal Stent",
+      "description": "Indicates whether a tracheal stent is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_477224.0",
+          "name": "Present",
+          "description": "A tracheal stent is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_477224.1",
+          "name": "Absent",
+          "description": "A tracheal stent is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_771820",
+      "name": "Status",
+      "description": "Indicates the status of the tracheal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_771820.0",
+          "name": "New placement",
+          "description": "The tracheal stent has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_771820.1",
+          "name": "Unchanged",
+          "description": "The tracheal stent remains unchanged."
+        },
+        {
+          "value_code": "OIFMA_MGB_771820.2",
+          "name": "Complication",
+          "description": "The tracheal stent has developed a complication."
+        },
+        {
+          "value_code": "OIFMA_MGB_771820.3",
+          "name": "Removed",
+          "description": "The tracheal stent has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_635164",
+      "name": "Location",
+      "description": "Indicates the location of the tracheal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_635164.0",
+          "name": "Proximal trachea",
+          "description": "The tracheal stent is located in the proximal trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_635164.1",
+          "name": "Mid trachea",
+          "description": "The tracheal stent is located in the mid trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_635164.2",
+          "name": "Distal trachea",
+          "description": "The tracheal stent is located in the distal trachea."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_295369",
+      "name": "Type Finding",
+      "description": "Indicates the type of the tracheal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_295369.0",
+          "name": "Fully covered",
+          "description": "The tracheal stent is fully covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_295369.1",
+          "name": "Partially covered",
+          "description": "The tracheal stent is partially covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_295369.2",
+          "name": "Uncovered",
+          "description": "The tracheal stent is uncovered."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_932721",
+      "name": "Stent Length",
+      "description": "Indicates the length of the tracheal stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_134911",
+      "name": "Stent Diameter",
+      "description": "Indicates the diameter of the tracheal stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_012221",
+      "name": "Complication",
+      "description": "Indicates any complication associated with the tracheal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_012221.0",
+          "name": "None",
+          "description": "No complication associated with the tracheal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_012221.1",
+          "name": "Mucosal erosion",
+          "description": "Mucosal erosion associated with the tracheal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_012221.2",
+          "name": "Perforation",
+          "description": "Perforation associated with the tracheal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_012221.3",
+          "name": "Migration",
+          "description": "Migration of the tracheal stent."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

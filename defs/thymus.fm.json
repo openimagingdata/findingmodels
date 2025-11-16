@@ -1,0 +1,130 @@
+{
+  "oifm_id": "OIFM_MGB_171613",
+  "name": "Thymus",
+  "description": "The thymus is a lymphoid organ located in the anterior mediastinum responsible for T-cell maturation and immune system development.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_559088",
+      "name": "Presence of Thymic Tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_559088.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_559088.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_262476",
+      "name": "Size Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_262476.0",
+          "name": "Normal"
+        },
+        {
+          "value_code": "OIFMA_MGB_262476.1",
+          "name": "Enlarged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_055346",
+      "name": "Consistency",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_055346.0",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_055346.1",
+          "name": "Heterogeneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_556192",
+      "name": "Calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_556192.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_556192.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_727415",
+      "name": "Fatty Involution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_727415.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_727415.1",
+          "name": "Partial"
+        },
+        {
+          "value_code": "OIFMA_MGB_727415.2",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_361654",
+      "name": "Cystic Changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_361654.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_361654.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_042030",
+      "name": "Thymoma / Thymic Mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_042030.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_042030.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "oifm_id": "OIFM_MGB_909251",
+  "name": "Neurostimulator Device",
+  "description": "Presence and characteristics of a neurostimulator device.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_602073",
+      "name": "Presence of Neurostimulator Device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_602073.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_602073.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_604551",
+      "name": "Status",
+      "description": "Current status of the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_604551.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_604551.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_604551.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_604551.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_726441",
+      "name": "Lead Location",
+      "description": "Location of the neurostimulator lead.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_726441.0",
+          "name": "Spinal canal"
+        },
+        {
+          "value_code": "OIFMA_MGB_726441.1",
+          "name": "Above FOV"
+        },
+        {
+          "value_code": "OIFMA_MGB_726441.2",
+          "name": "Below FOV"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_397879",
+      "name": "Appropriate position",
+      "description": "Whether the neurostimulator device is in an appropriate position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_397879.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_397879.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_484923",
+      "name": "Device Type",
+      "description": "Type of the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_484923.0",
+          "name": "Deep Brain Stimulator (DBS)"
+        },
+        {
+          "value_code": "OIFMA_MGB_484923.1",
+          "name": "Spinal Cord Stimulator (SCS)"
+        },
+        {
+          "value_code": "OIFMA_MGB_484923.2",
+          "name": "Vagus Nerve Stimulator (VNS)"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_116572",
+      "name": "Device/Battery Location",
+      "description": "Location of the neurostimulator device or battery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_116572.0",
+          "name": "Chest"
+        },
+        {
+          "value_code": "OIFMA_MGB_116572.1",
+          "name": "Abdomen"
+        },
+        {
+          "value_code": "OIFMA_MGB_116572.2",
+          "name": "Buttock"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_384215",
+      "name": "Fluid collection",
+      "description": "Presence of fluid collection associated with the neurostimulator device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_384215.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_384215.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

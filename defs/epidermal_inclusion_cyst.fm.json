@@ -1,0 +1,119 @@
+{
+  "oifm_id": "OIFM_MGB_603715",
+  "name": "Epidermal Inclusion Cyst",
+  "description": "Presence of an epidermal inclusion cyst",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_200613",
+      "name": "Presence of Epidermal Inclusion Cyst",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_200613.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_200613.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_255268",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_255268.0",
+          "name": "New"
+        },
+        {
+          "value_code": "OIFMA_MGB_255268.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_255268.2",
+          "name": "Increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_255268.3",
+          "name": "Decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_255268.4",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_181036",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_181036.0",
+          "name": "Specify location"
+        },
+        {
+          "value_code": "OIFMA_MGB_181036.1",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_300627",
+      "name": "Size (cm)",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_945906",
+      "name": "Morphology",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_945906.0",
+          "name": "Round"
+        },
+        {
+          "value_code": "OIFMA_MGB_945906.1",
+          "name": "Oval"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_911817",
+      "name": "Content",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_911817.0",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_911817.1",
+          "name": "Heterogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_911817.2",
+          "name": "Calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_911817.3",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "oifm_id": "OIFM_MGB_789280",
+  "name": "Gynecomastia",
+  "description": "Gynecomastia is the enlargement of breast tissue in males.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_127202",
+      "name": "presence",
+      "description": "Whether gynecomastia is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_127202.0",
+          "name": "present",
+          "description": "Gynecomastia is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_127202.1",
+          "name": "absent",
+          "description": "Gynecomastia is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_852256",
+      "name": "severity",
+      "description": "The severity of gynecomastia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_852256.0",
+          "name": "mild",
+          "description": "Mild gynecomastia."
+        },
+        {
+          "value_code": "OIFMA_MGB_852256.1",
+          "name": "moderate",
+          "description": "Moderate gynecomastia."
+        },
+        {
+          "value_code": "OIFMA_MGB_852256.2",
+          "name": "severe",
+          "description": "Severe gynecomastia."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_773480",
+      "name": "symmetry",
+      "description": "The symmetry of gynecomastia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_773480.0",
+          "name": "symmetric",
+          "description": "Symmetric gynecomastia."
+        },
+        {
+          "value_code": "OIFMA_MGB_773480.1",
+          "name": "asymmetric",
+          "description": "Asymmetric gynecomastia."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_420508",
+      "name": "side Finding",
+      "description": "The side of gynecomastia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_420508.0",
+          "name": "right",
+          "description": "Gynecomastia on the right side."
+        },
+        {
+          "value_code": "OIFMA_MGB_420508.1",
+          "name": "left",
+          "description": "Gynecomastia on the left side."
+        },
+        {
+          "value_code": "OIFMA_MGB_420508.2",
+          "name": "bilateral",
+          "description": "Gynecomastia on both sides."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "oifm_id": "OIFM_MGB_969524",
+  "name": "Sternal Fracture",
+  "description": "A fracture of the sternum.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_942829",
+      "name": "presence",
+      "description": "Whether the sternal fracture is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_942829.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_942829.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_090214",
+      "name": "status",
+      "description": "The current status of the sternal fracture.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_090214.0",
+          "name": "Acute"
+        },
+        {
+          "value_code": "OIFMA_MGB_090214.1",
+          "name": "Remote"
+        },
+        {
+          "value_code": "OIFMA_MGB_090214.2",
+          "name": "Healing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_855630",
+      "name": "location",
+      "description": "The location of the sternal fracture.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_855630.0",
+          "name": "Manubrium"
+        },
+        {
+          "value_code": "OIFMA_MGB_855630.1",
+          "name": "Body"
+        },
+        {
+          "value_code": "OIFMA_MGB_855630.2",
+          "name": "Xiphoid"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_500222",
+      "name": "severity",
+      "description": "The severity of the sternal fracture.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_500222.0",
+          "name": "Non-displaced"
+        },
+        {
+          "value_code": "OIFMA_MGB_500222.1",
+          "name": "Minimally displaced"
+        },
+        {
+          "value_code": "OIFMA_MGB_500222.2",
+          "name": "Displaced"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_422489",
+      "name": "orientation",
+      "description": "The orientation of the sternal fracture.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_422489.0",
+          "name": "Horizontal"
+        },
+        {
+          "value_code": "OIFMA_MGB_422489.1",
+          "name": "Vertical"
+        },
+        {
+          "value_code": "OIFMA_MGB_422489.2",
+          "name": "Oblique"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_519747",
+      "name": "pulmonary_contusion",
+      "description": "Whether there is a pulmonary contusion present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_519747.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_519747.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_073536",
+      "name": "cardiac_injury",
+      "description": "Whether there is a cardiac injury present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_073536.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_073536.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_538166",
+      "name": "rib_fractures",
+      "description": "Whether there are rib fractures present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_538166.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_538166.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_222601",
+      "name": "soft_tissue_injury",
+      "description": "Whether there is a soft tissue injury present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_222601.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_222601.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

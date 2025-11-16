@@ -1,0 +1,327 @@
+{
+  "oifm_id": "OIFM_MGB_650866",
+  "name": "Aortic Atherosclerosis",
+  "description": "Aortic atherosclerosis is characterized by the presence of plaque buildup in the aortic walls.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_731633",
+      "name": "presence",
+      "description": "Presence of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_731633.0",
+          "name": "Present",
+          "description": "Aortic atherosclerosis is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_731633.1",
+          "name": "Absent",
+          "description": "Aortic atherosclerosis is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_410104",
+      "name": "severity",
+      "description": "Severity of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_410104.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_410104.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_410104.2",
+          "name": "Severe"
+        },
+        {
+          "value_code": "OIFMA_MGB_410104.3",
+          "name": "Extensive"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_595999",
+      "name": "extent",
+      "description": "Extent of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_595999.0",
+          "name": "Focal"
+        },
+        {
+          "value_code": "OIFMA_MGB_595999.1",
+          "name": "Diffuse"
+        },
+        {
+          "value_code": "OIFMA_MGB_595999.2",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_595999.3",
+          "name": "Throughout the aorta"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_219176",
+      "name": "location",
+      "description": "Location of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_219176.0",
+          "name": "Ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_219176.1",
+          "name": "Aortic arch"
+        },
+        {
+          "value_code": "OIFMA_MGB_219176.2",
+          "name": "Descending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_219176.3",
+          "name": "Abdominal aorta"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_866598",
+      "name": "plaque_characteristics",
+      "description": "Plaque characteristics in aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_866598.0",
+          "name": "Calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_866598.1",
+          "name": "Non-calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_866598.2",
+          "name": "Mixed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_131479",
+      "name": "luminal_irregularities",
+      "description": "Presence of luminal irregularities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_131479.0",
+          "name": "Present",
+          "description": "Luminal irregularities are present in the aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_131479.1",
+          "name": "Absent",
+          "description": "No luminal irregularities are present in the aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_467503",
+      "name": "specific_features",
+      "description": "Specific features of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_467503.0",
+          "name": "Calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_467503.1",
+          "name": "Ulceration"
+        },
+        {
+          "value_code": "OIFMA_MGB_467503.2",
+          "name": "Plaque"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_040646",
+      "name": "wall_thickness",
+      "description": "Wall thickness in aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_040646.0",
+          "name": "Increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_040646.1",
+          "name": "Normal"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_785484",
+      "name": "aneurysmal_dilation",
+      "description": "Presence of aneurysmal dilation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_785484.0",
+          "name": "Present",
+          "description": "Aneurysmal dilation is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_785484.1",
+          "name": "Absent",
+          "description": "No aneurysmal dilation is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_254112",
+      "name": "intraluminal_thrombus",
+      "description": "Presence of intraluminal thrombus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_254112.0",
+          "name": "Present",
+          "description": "Intraluminal thrombus is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_254112.1",
+          "name": "Absent",
+          "description": "No intraluminal thrombus is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_379501",
+      "name": "periaortic_soft_tissue_involvement",
+      "description": "Presence of periaortic soft tissue involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_379501.0",
+          "name": "Present",
+          "description": "Periaortic soft tissue involvement is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_379501.1",
+          "name": "Absent",
+          "description": "No periaortic soft tissue involvement is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_797859",
+      "name": "vascular_stenosis",
+      "description": "Presence of vascular stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_797859.0",
+          "name": "Present",
+          "description": "Vascular stenosis is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_797859.1",
+          "name": "Absent",
+          "description": "No vascular stenosis is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_322084",
+      "name": "aortic_valve_calcification",
+      "description": "Presence of aortic valve calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_322084.0",
+          "name": "Present",
+          "description": "Aortic valve calcification is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_322084.1",
+          "name": "Absent",
+          "description": "No aortic valve calcification is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_798760",
+      "name": "coronary_artery_disease",
+      "description": "Presence of coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_798760.0",
+          "name": "Present",
+          "description": "Coronary artery disease is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_798760.1",
+          "name": "Absent",
+          "description": "No coronary artery disease is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_524548",
+      "name": "peripheral_vascular_disease",
+      "description": "Presence of peripheral vascular disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_524548.0",
+          "name": "Present",
+          "description": "Peripheral vascular disease is present in aortic atherosclerosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_524548.1",
+          "name": "Absent",
+          "description": "No peripheral vascular disease is present in aortic atherosclerosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

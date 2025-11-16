@@ -1,0 +1,177 @@
+{
+  "oifm_id": "OIFM_MGB_831139",
+  "name": "Thyroidectomy",
+  "description": "A surgical procedure to remove all or part of the thyroid gland.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_809081",
+      "name": "presence_of_surgical_changes",
+      "description": "Indicates whether surgical changes are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_809081.0",
+          "name": "present",
+          "description": "Surgical changes are present."
+        },
+        {
+          "value_code": "OIFMA_MGB_809081.1",
+          "name": "absent",
+          "description": "Surgical changes are absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_103705",
+      "name": "status",
+      "description": "Indicates the status of the finding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_103705.0",
+          "name": "new",
+          "description": "The finding is new."
+        },
+        {
+          "value_code": "OIFMA_MGB_103705.1",
+          "name": "unchanged",
+          "description": "The finding is unchanged."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_590895",
+      "name": "extent_of_surgery",
+      "description": "Indicates the extent of the thyroidectomy surgery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_590895.0",
+          "name": "total thyroidectomy",
+          "description": "The entire thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_590895.1",
+          "name": "partial thyroidectomy",
+          "description": "Only a part of the thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_590895.2",
+          "name": "right hemithyroidectomy",
+          "description": "The right half of the thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_590895.3",
+          "name": "left hemithyroidectomy",
+          "description": "The left half of the thyroid gland has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_645560",
+      "name": "postoperative_changes",
+      "description": "Indicates whether postoperative changes are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_645560.0",
+          "name": "present",
+          "description": "Postoperative changes are present."
+        },
+        {
+          "value_code": "OIFMA_MGB_645560.1",
+          "name": "absent",
+          "description": "Postoperative changes are absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_214151",
+      "name": "residual_soft_tissue",
+      "description": "Indicates whether there is residual soft tissue present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_214151.0",
+          "name": "present",
+          "description": "Residual soft tissue is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_214151.1",
+          "name": "absent",
+          "description": "Residual soft tissue is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_923939",
+      "name": "cervical_lymphadenopathy",
+      "description": "Indicates whether cervical lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_923939.0",
+          "name": "present",
+          "description": "Cervical lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_923939.1",
+          "name": "absent",
+          "description": "Cervical lymphadenopathy is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_026947",
+      "name": "supraclavicular_lymphadenopathy",
+      "description": "Indicates whether supraclavicular lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_026947.0",
+          "name": "present",
+          "description": "Supraclavicular lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_026947.1",
+          "name": "absent",
+          "description": "Supraclavicular lymphadenopathy is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_239894",
+      "name": "mediastinal_lymphadenopathy",
+      "description": "Indicates whether mediastinal lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_239894.0",
+          "name": "present",
+          "description": "Mediastinal lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_239894.1",
+          "name": "absent",
+          "description": "Mediastinal lymphadenopathy is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

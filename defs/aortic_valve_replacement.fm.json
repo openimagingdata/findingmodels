@@ -1,0 +1,142 @@
+{
+  "oifm_id": "OIFM_MGB_611597",
+  "name": "Aortic Valve Replacement",
+  "description": "A finding indicating the presence or absence of an aortic valve replacement, along with its characteristics.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_207346",
+      "name": "Presence of Aortic Valve Replacement",
+      "description": "Indication of whether an aortic valve replacement is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_207346.0",
+          "name": "Present",
+          "description": "The finding indicates the presence of an aortic valve replacement."
+        },
+        {
+          "value_code": "OIFMA_MGB_207346.1",
+          "name": "Absent",
+          "description": "The finding indicates the absence of an aortic valve replacement."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_246497",
+      "name": "Status",
+      "description": "The status of the aortic valve replacement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_246497.0",
+          "name": "New placement",
+          "description": "The aortic valve replacement has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_246497.1",
+          "name": "Unchanged",
+          "description": "The aortic valve replacement has not changed since the previous examination."
+        },
+        {
+          "value_code": "OIFMA_MGB_246497.2",
+          "name": "Complication",
+          "description": "The aortic valve replacement is associated with a complication."
+        },
+        {
+          "value_code": "OIFMA_MGB_246497.3",
+          "name": "Removed",
+          "description": "The aortic valve replacement has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_398152",
+      "name": "Type Finding",
+      "description": "The type of aortic valve replacement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_398152.0",
+          "name": "Mechanical",
+          "description": "The aortic valve replacement is mechanical."
+        },
+        {
+          "value_code": "OIFMA_MGB_398152.1",
+          "name": "Biological",
+          "description": "The aortic valve replacement is biological."
+        },
+        {
+          "value_code": "OIFMA_MGB_398152.2",
+          "name": "TAVR",
+          "description": "The aortic valve replacement utilizes a transcatheter aortic valve replacement method."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_760780",
+      "name": "Position",
+      "description": "The position of the aortic valve replacement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_760780.0",
+          "name": "Proper",
+          "description": "The aortic valve replacement is properly positioned."
+        },
+        {
+          "value_code": "OIFMA_MGB_760780.1",
+          "name": "Malpositioned",
+          "description": "The aortic valve replacement is malpositioned."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_622893",
+      "name": "Paravalvular Leak",
+      "description": "Indication of whether a paravalvular leak is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_622893.0",
+          "name": "Present",
+          "description": "A paravalvular leak is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_622893.1",
+          "name": "Absent",
+          "description": "No paravalvular leak is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_941403",
+      "name": "Valve Thrombosis",
+      "description": "Indication of whether valve thrombosis is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_941403.0",
+          "name": "Present",
+          "description": "Valve thrombosis is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_941403.1",
+          "name": "Absent",
+          "description": "No valve thrombosis is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

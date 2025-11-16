@@ -1,0 +1,182 @@
+{
+  "oifm_id": "OIFM_MGB_324313",
+  "name": "Mediastinal Fluid Collection",
+  "description": "A collection of fluid in the mediastinum, which is the central compartment of the thoracic cavity.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_470516",
+      "name": "presence",
+      "description": "Presence of mediastinal fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_470516.0",
+          "name": "yes",
+          "description": "Mediastinal fluid collection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_470516.1",
+          "name": "no",
+          "description": "Mediastinal fluid collection is not present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_728403",
+      "name": "location",
+      "description": "Location of the mediastinal fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_728403.0",
+          "name": "anterior",
+          "description": "Mediastinal fluid collection is located in the anterior mediastinum"
+        },
+        {
+          "value_code": "OIFMA_MGB_728403.1",
+          "name": "middle",
+          "description": "Mediastinal fluid collection is located in the middle mediastinum"
+        },
+        {
+          "value_code": "OIFMA_MGB_728403.2",
+          "name": "posterior",
+          "description": "Mediastinal fluid collection is located in the posterior mediastinum"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_755940",
+      "name": "extent",
+      "description": "Extent of the mediastinal fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_755940.0",
+          "name": "localized",
+          "description": "Mediastinal fluid collection is localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_755940.1",
+          "name": "diffuse",
+          "description": "Mediastinal fluid collection is diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_581210",
+      "name": "size Finding",
+      "description": "Size of the mediastinal fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_581210.0",
+          "name": "small",
+          "description": "Mediastinal fluid collection is small in size"
+        },
+        {
+          "value_code": "OIFMA_MGB_581210.1",
+          "name": "medium",
+          "description": "Mediastinal fluid collection is medium in size"
+        },
+        {
+          "value_code": "OIFMA_MGB_581210.2",
+          "name": "large",
+          "description": "Mediastinal fluid collection is large in size"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_690874",
+      "name": "nature",
+      "description": "Nature of the mediastinal fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_690874.0",
+          "name": "serous",
+          "description": "Mediastinal fluid collection is serous in nature"
+        },
+        {
+          "value_code": "OIFMA_MGB_690874.1",
+          "name": "hemorrhagic",
+          "description": "Mediastinal fluid collection is hemorrhagic in nature"
+        },
+        {
+          "value_code": "OIFMA_MGB_690874.2",
+          "name": "mixed",
+          "description": "Mediastinal fluid collection is mixed in nature"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_391218",
+      "name": "compression_adjacent_structures",
+      "description": "Compression of adjacent structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_391218.0",
+          "name": "yes",
+          "description": "Compression of adjacent structures is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_391218.1",
+          "name": "no",
+          "description": "Compression of adjacent structures is not present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_034589",
+      "name": "infection",
+      "description": "Signs of infection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_034589.0",
+          "name": "yes",
+          "description": "Signs of infection are present"
+        },
+        {
+          "value_code": "OIFMA_MGB_034589.1",
+          "name": "no",
+          "description": "Signs of infection are not present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_786215",
+      "name": "neoplasm",
+      "description": "Evidence of neoplasm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_786215.0",
+          "name": "yes",
+          "description": "Evidence of neoplasm is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_786215.1",
+          "name": "no",
+          "description": "Evidence of neoplasm is not present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

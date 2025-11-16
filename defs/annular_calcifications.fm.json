@@ -1,0 +1,138 @@
+{
+  "oifm_id": "OIFM_MGB_511606",
+  "name": "Annular Calcifications",
+  "description": "Presence of annular calcifications",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_728789",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_728789.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_728789.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_539276",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_539276.0",
+          "name": "Mitral valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_539276.1",
+          "name": "Aortic valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_539276.2",
+          "name": "Tricuspid valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_539276.3",
+          "name": "Pulmonary valve annulus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_124847",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_124847.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_124847.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_124847.2",
+          "name": "Severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_883085",
+      "name": "Cardiomegaly",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_883085.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_883085.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_505534",
+      "name": "Coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_505534.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_505534.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_933072",
+      "name": "Left atrial enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_933072.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_933072.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_259954",
+      "name": "Pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_259954.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_259954.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

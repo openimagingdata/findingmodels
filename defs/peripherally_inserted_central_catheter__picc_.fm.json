@@ -1,0 +1,137 @@
+{
+  "oifm_id": "OIFM_MGB_820557",
+  "name": "Peripherally Inserted Central Catheter (Picc)",
+  "description": "A type of central venous catheter that is inserted in the periphery and advanced centrally to a large vein near the heart.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_164211",
+      "name": "side Finding",
+      "description": "The side of the body where the peripherally inserted central catheter is placed.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_164211.0",
+          "name": "Left upper extremity",
+          "description": "PICC is placed in the left upper extremity."
+        },
+        {
+          "value_code": "OIFMA_MGB_164211.1",
+          "name": "Right upper extremity",
+          "description": "PICC is placed in the right upper extremity."
+        },
+        {
+          "value_code": "OIFMA_MGB_164211.2",
+          "name": "Left lower extremity",
+          "description": "PICC is placed in the left lower extremity."
+        },
+        {
+          "value_code": "OIFMA_MGB_164211.3",
+          "name": "Right lower extremity",
+          "description": "PICC is placed in the right lower extremity."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_211943",
+      "name": "distal_tip_location",
+      "description": "The location of the distal tip of the PICC.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_211943.0",
+          "name": "Subclavian vein",
+          "description": "The distal tip of the PICC is in the subclavian vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.1",
+          "name": "Brachiocephalic vein",
+          "description": "The distal tip of the PICC is in the brachiocephalic vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.2",
+          "name": "SVC",
+          "description": "The distal tip of the PICC is in the superior vena cava (SVC)."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.3",
+          "name": "Superior cavoatrial junction",
+          "description": "The distal tip of the PICC is at the superior cavoatrial junction."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.4",
+          "name": "Azygous vein",
+          "description": "The distal tip of the PICC is in the azygous vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.5",
+          "name": "Inferior cavoatrial junction",
+          "description": "The distal tip of the PICC is at the inferior cavoatrial junction."
+        },
+        {
+          "value_code": "OIFMA_MGB_211943.6",
+          "name": "Internal jugular vein",
+          "description": "The distal tip of the PICC is in the internal jugular vein."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_484700",
+      "name": "appropriate_location",
+      "description": "Whether the placement of the PICC is appropriate.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_484700.0",
+          "name": "Yes",
+          "description": "The placement of the PICC is appropriate."
+        },
+        {
+          "value_code": "OIFMA_MGB_484700.1",
+          "name": "No",
+          "description": "The placement of the PICC is not appropriate."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_865552",
+      "name": "change_from_prior",
+      "description": "Any change from the previous findings of the PICC.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_865552.0",
+          "name": "New placement",
+          "description": "The PICC has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_865552.1",
+          "name": "Unchanged",
+          "description": "The PICC is unchanged from previous findings."
+        },
+        {
+          "value_code": "OIFMA_MGB_865552.2",
+          "name": "Retracted",
+          "description": "The PICC has been retracted from its previous position."
+        },
+        {
+          "value_code": "OIFMA_MGB_865552.3",
+          "name": "Migrated",
+          "description": "The PICC has migrated from its initial placement."
+        },
+        {
+          "value_code": "OIFMA_MGB_865552.4",
+          "name": "Removed",
+          "description": "The PICC has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

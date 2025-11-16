@@ -1,0 +1,193 @@
+{
+  "oifm_id": "OIFM_MGB_654936",
+  "name": "Breast Implant",
+  "description": "Presence and characteristics of breast implants",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_445390",
+      "name": "Presence of Breast Implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_445390.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_445390.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_720456",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_720456.0",
+          "name": "New"
+        },
+        {
+          "value_code": "OIFMA_MGB_720456.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_720456.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_720456.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_523522",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_523522.0",
+          "name": "Right breast"
+        },
+        {
+          "value_code": "OIFMA_MGB_523522.1",
+          "name": "Left breast"
+        },
+        {
+          "value_code": "OIFMA_MGB_523522.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_818447",
+      "name": "Implant Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_818447.0",
+          "name": "Saline"
+        },
+        {
+          "value_code": "OIFMA_MGB_818447.1",
+          "name": "Silicone"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_919280",
+      "name": "Position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_919280.0",
+          "name": "Preglandular"
+        },
+        {
+          "value_code": "OIFMA_MGB_919280.1",
+          "name": "Subpectoral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_126997",
+      "name": "Implant Rupture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_126997.0",
+          "name": "Intracapsular"
+        },
+        {
+          "value_code": "OIFMA_MGB_126997.1",
+          "name": "Extracapsular"
+        },
+        {
+          "value_code": "OIFMA_MGB_126997.2",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_928111",
+      "name": "Silicone Leakage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_928111.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_928111.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_499904",
+      "name": "Capsular Contracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_499904.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_499904.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_152438",
+      "name": "Capsular Calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_152438.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_152438.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_096185",
+      "name": "Axillary Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_096185.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_096185.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

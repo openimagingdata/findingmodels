@@ -1,0 +1,158 @@
+{
+  "oifm_id": "OIFM_MGB_674048",
+  "name": "Esophageal Stent",
+  "description": "Esophageal stent is used to treat strictures or blockages in the esophagus.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_195520",
+      "name": "Presence of Esophageal Stent",
+      "description": "Whether an esophageal stent is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_195520.0",
+          "name": "Present",
+          "description": "An esophageal stent is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_195520.1",
+          "name": "Absent",
+          "description": "No esophageal stent is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_274123",
+      "name": "Status",
+      "description": "The status of the esophageal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_274123.0",
+          "name": "New placement",
+          "description": "The esophageal stent is newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_274123.1",
+          "name": "Unchanged",
+          "description": "The esophageal stent remains unchanged."
+        },
+        {
+          "value_code": "OIFMA_MGB_274123.2",
+          "name": "Complication",
+          "description": "There is a complication related to the esophageal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_274123.3",
+          "name": "Removed",
+          "description": "The esophageal stent has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_023647",
+      "name": "Location",
+      "description": "The location of the esophageal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_023647.0",
+          "name": "Upper esophagus",
+          "description": "The esophageal stent is located in the upper esophagus."
+        },
+        {
+          "value_code": "OIFMA_MGB_023647.1",
+          "name": "Mid esophagus",
+          "description": "The esophageal stent is located in the mid esophagus."
+        },
+        {
+          "value_code": "OIFMA_MGB_023647.2",
+          "name": "Lower esophagus",
+          "description": "The esophageal stent is located in the lower esophagus."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_774850",
+      "name": "Type Finding",
+      "description": "The type of esophageal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_774850.0",
+          "name": "Fully covered",
+          "description": "The esophageal stent is fully covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_774850.1",
+          "name": "Partially covered",
+          "description": "The esophageal stent is partially covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_774850.2",
+          "name": "Uncovered",
+          "description": "The esophageal stent is uncovered."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_450460",
+      "name": "Stent Length",
+      "description": "The length of the esophageal stent.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_012909",
+      "name": "Stent Diameter",
+      "description": "The diameter of the esophageal stent.",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_014946",
+      "name": "Complication",
+      "description": "The complication associated with the esophageal stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_014946.0",
+          "name": "None",
+          "description": "No complication is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_014946.1",
+          "name": "Mucosal erosion",
+          "description": "There is mucosal erosion related to the esophageal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_014946.2",
+          "name": "Perforation",
+          "description": "Perforation is observed related to the esophageal stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_014946.3",
+          "name": "Migration",
+          "description": "Migration of the esophageal stent is observed."
+        },
+        {
+          "value_code": "OIFMA_MGB_014946.4",
+          "name": "Impaction",
+          "description": "Impaction of the esophageal stent is observed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
