@@ -1,0 +1,392 @@
+{
+  "oifm_id": "OIFM_MGB_944849",
+  "name": "Rib Fracture",
+  "description": "Fracture of one or more ribs",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_080122",
+      "name": "Presence",
+      "description": "Whether a rib fracture is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_080122.0",
+          "name": "Present",
+          "description": "A rib fracture is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_080122.1",
+          "name": "Absent",
+          "description": "No rib fracture is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_017983",
+      "name": "Number of ribs involved",
+      "description": "The number of ribs involved in the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_017983.0",
+          "name": "Single",
+          "description": "Only one rib is involved"
+        },
+        {
+          "value_code": "OIFMA_MGB_017983.1",
+          "name": "Multiple",
+          "description": "Multiple ribs are involved"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_528039",
+      "name": "Location",
+      "description": "The location of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_528039.0",
+          "name": "Right: Upper",
+          "description": "Fracture is in the upper right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.1",
+          "name": "Right: Middle",
+          "description": "Fracture is in the middle right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.2",
+          "name": "Right: Lower",
+          "description": "Fracture is in the lower right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.3",
+          "name": "Left: Upper",
+          "description": "Fracture is in the upper left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.4",
+          "name": "Left: Middle",
+          "description": "Fracture is in the middle left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.5",
+          "name": "Left: Lower",
+          "description": "Fracture is in the lower left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_528039.6",
+          "name": "Bilateral",
+          "description": "Fracture is present in both right and left ribs"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_758180",
+      "name": "Specific ribs affected",
+      "description": "The specific ribs affected by the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_758180.0",
+          "name": "First",
+          "description": "Fracture involves the first rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.1",
+          "name": "Second",
+          "description": "Fracture involves the second rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.2",
+          "name": "Third",
+          "description": "Fracture involves the third rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.3",
+          "name": "Fourth",
+          "description": "Fracture involves the fourth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.4",
+          "name": "Fifth",
+          "description": "Fracture involves the fifth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.5",
+          "name": "Sixth",
+          "description": "Fracture involves the sixth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.6",
+          "name": "Seventh",
+          "description": "Fracture involves the seventh rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.7",
+          "name": "Eighth",
+          "description": "Fracture involves the eighth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.8",
+          "name": "Ninth",
+          "description": "Fracture involves the ninth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.9",
+          "name": "Tenth",
+          "description": "Fracture involves the tenth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.10",
+          "name": "Eleventh",
+          "description": "Fracture involves the eleventh rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_758180.11",
+          "name": "Twelfth",
+          "description": "Fracture involves the twelfth rib"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_211152",
+      "name": "Fracture type",
+      "description": "The type of rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_211152.0",
+          "name": "Displaced",
+          "description": "The fragments of the rib are separated from each other"
+        },
+        {
+          "value_code": "OIFMA_MGB_211152.1",
+          "name": "Non-displaced",
+          "description": "The fragments of the rib are still aligned"
+        },
+        {
+          "value_code": "OIFMA_MGB_211152.2",
+          "name": "Comminuted",
+          "description": "The rib is fractured into multiple pieces"
+        },
+        {
+          "value_code": "OIFMA_MGB_211152.3",
+          "name": "Buckle",
+          "description": "The rib is partially fractured and has a visible bend"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_580404",
+      "name": "Pneumothorax",
+      "description": "Presence or absence of pneumothorax associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_580404.0",
+          "name": "Present",
+          "description": "Pneumothorax is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_580404.1",
+          "name": "Absent",
+          "description": "No pneumothorax is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_469049",
+      "name": "Hemothorax",
+      "description": "Presence or absence of hemothorax associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_469049.0",
+          "name": "Present",
+          "description": "Hemothorax is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_469049.1",
+          "name": "Absent",
+          "description": "No hemothorax is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_803684",
+      "name": "Pulmonary contusion",
+      "description": "Presence or absence of pulmonary contusion associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_803684.0",
+          "name": "Present",
+          "description": "Pulmonary contusion is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_803684.1",
+          "name": "Absent",
+          "description": "No pulmonary contusion is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_576329",
+      "name": "Subcutaneous emphysema",
+      "description": "Presence or absence of subcutaneous emphysema associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_576329.0",
+          "name": "Present",
+          "description": "Subcutaneous emphysema is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_576329.1",
+          "name": "Absent",
+          "description": "No subcutaneous emphysema is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_676222",
+      "name": "Flail chest",
+      "description": "Presence or absence of flail chest associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_676222.0",
+          "name": "Present",
+          "description": "Flail chest is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_676222.1",
+          "name": "Absent",
+          "description": "No flail chest is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_710087",
+      "name": "Vertebral fracture",
+      "description": "Presence or absence of vertebral fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_710087.0",
+          "name": "Present",
+          "description": "Vertebral fracture is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_710087.1",
+          "name": "Absent",
+          "description": "No vertebral fracture is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_306037",
+      "name": "Sternal fracture",
+      "description": "Presence or absence of sternal fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_306037.0",
+          "name": "Present",
+          "description": "Sternal fracture is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_306037.1",
+          "name": "Absent",
+          "description": "No sternal fracture is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_359520",
+      "name": "Clavicular fracture",
+      "description": "Presence or absence of clavicular fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_359520.0",
+          "name": "Present",
+          "description": "Clavicular fracture is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_359520.1",
+          "name": "Absent",
+          "description": "No clavicular fracture is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_403512",
+      "name": "Evidence of healing",
+      "description": "Presence or absence of evidence of healing in the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_403512.0",
+          "name": "Present",
+          "description": "Evidence of healing is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_403512.1",
+          "name": "Absent",
+          "description": "No evidence of healing is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_403764",
+      "name": "Mechanism of Injury",
+      "description": "The mechanism of injury causing the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_403764.0",
+          "name": "Blunt trauma",
+          "description": "Rib fracture caused by blunt trauma"
+        },
+        {
+          "value_code": "OIFMA_MGB_403764.1",
+          "name": "Penetrating trauma",
+          "description": "Rib fracture caused by penetrating trauma"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

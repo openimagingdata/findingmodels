@@ -1,0 +1,235 @@
+{
+  "oifm_id": "OIFM_MGB_868841",
+  "name": "Breast Skin Thickening",
+  "description": "Thickening of the skin in the breast region.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_609064",
+      "name": "Presence of Breast Skin Thickening",
+      "description": "Whether the breast skin thickening is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_609064.0",
+          "name": "Present",
+          "description": "Breast skin thickening is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_609064.1",
+          "name": "Absent",
+          "description": "No breast skin thickening present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_005117",
+      "name": "Status",
+      "description": "The status of the breast skin thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_005117.0",
+          "name": "New",
+          "description": "The breast skin thickening is new."
+        },
+        {
+          "value_code": "OIFMA_MGB_005117.1",
+          "name": "Unchanged",
+          "description": "The breast skin thickening has not changed."
+        },
+        {
+          "value_code": "OIFMA_MGB_005117.2",
+          "name": "Increased",
+          "description": "The breast skin thickening has increased."
+        },
+        {
+          "value_code": "OIFMA_MGB_005117.3",
+          "name": "Decreased",
+          "description": "The breast skin thickening has decreased."
+        },
+        {
+          "value_code": "OIFMA_MGB_005117.4",
+          "name": "Resolved",
+          "description": "The breast skin thickening has resolved."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_415921",
+      "name": "Location",
+      "description": "The location of the breast skin thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_415921.0",
+          "name": "Right breast",
+          "description": "The breast skin thickening is in the right breast."
+        },
+        {
+          "value_code": "OIFMA_MGB_415921.1",
+          "name": "Left breast",
+          "description": "The breast skin thickening is in the left breast."
+        },
+        {
+          "value_code": "OIFMA_MGB_415921.2",
+          "name": "Bilateral",
+          "description": "The breast skin thickening is in both breasts."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_867213",
+      "name": "Extent",
+      "description": "The extent of the breast skin thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_867213.0",
+          "name": "Localized",
+          "description": "The breast skin thickening is localized."
+        },
+        {
+          "value_code": "OIFMA_MGB_867213.1",
+          "name": "Diffuse",
+          "description": "The breast skin thickening is diffuse."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_071771",
+      "name": "Thickness",
+      "description": "The thickness of the breast skin thickening.",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_846236",
+      "name": "Nipple retraction",
+      "description": "Whether nipple retraction is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_846236.0",
+          "name": "Present",
+          "description": "Nipple retraction is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_846236.1",
+          "name": "Absent",
+          "description": "Nipple retraction is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_204732",
+      "name": "Nipple inversion",
+      "description": "Whether nipple inversion is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_204732.0",
+          "name": "Present",
+          "description": "Nipple inversion is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_204732.1",
+          "name": "Absent",
+          "description": "Nipple inversion is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_739503",
+      "name": "Lymphedema",
+      "description": "Whether lymphedema is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_739503.0",
+          "name": "Present",
+          "description": "Lymphedema is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_739503.1",
+          "name": "Absent",
+          "description": "Lymphedema is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_233071",
+      "name": "Breast Mass",
+      "description": "Whether a breast mass is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_233071.0",
+          "name": "Present",
+          "description": "A breast mass is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_233071.1",
+          "name": "Absent",
+          "description": "No breast mass present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_398565",
+      "name": "Axillary Lymphadenopathy",
+      "description": "Whether axillary lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_398565.0",
+          "name": "Present",
+          "description": "Axillary lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_398565.1",
+          "name": "Absent",
+          "description": "No axillary lymphadenopathy present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_299761",
+      "name": "Breast Calcifications",
+      "description": "Whether breast calcifications are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_299761.0",
+          "name": "Present",
+          "description": "Breast calcifications are present."
+        },
+        {
+          "value_code": "OIFMA_MGB_299761.1",
+          "name": "Absent",
+          "description": "No breast calcifications present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

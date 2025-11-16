@@ -1,0 +1,142 @@
+{
+  "oifm_id": "OIFM_MGB_078804",
+  "name": "Saber Sheath Trachea",
+  "description": "A condition where the trachea appears narrowed and elongated, resembling a saber or a sheath.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_984145",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_984145.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_984145.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_721221",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_721221.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_721221.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_721221.2",
+          "name": "Severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_283615",
+      "name": "Coronal Diameter Reduction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_283615.0",
+          "name": "<50%"
+        },
+        {
+          "value_code": "OIFMA_MGB_283615.1",
+          "name": "50-75%"
+        },
+        {
+          "value_code": "OIFMA_MGB_283615.2",
+          "name": ">75%"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_401666",
+      "name": "Involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_401666.0",
+          "name": "Upper Trachea"
+        },
+        {
+          "value_code": "OIFMA_MGB_401666.1",
+          "name": "Mid Trachea"
+        },
+        {
+          "value_code": "OIFMA_MGB_401666.2",
+          "name": "Lower Trachea"
+        },
+        {
+          "value_code": "OIFMA_MGB_401666.3",
+          "name": "Entire Trachea"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_221900",
+      "name": "COPD Signs",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_221900.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_221900.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_097003",
+      "name": "Air Trapping",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_097003.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_097003.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_259229",
+      "name": "Bronchial Wall Thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_259229.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_259229.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

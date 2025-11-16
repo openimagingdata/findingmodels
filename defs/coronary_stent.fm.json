@@ -1,0 +1,222 @@
+{
+  "oifm_id": "OIFM_MGB_177589",
+  "name": "Coronary Stent",
+  "description": "A coronary stent is a small mesh-like tube that is placed in a narrowed or blocked coronary artery to restore blood flow.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_738634",
+      "name": "Presence of Coronary Stent",
+      "description": "Indicates whether a coronary stent is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_738634.0",
+          "name": "Present",
+          "description": "A coronary stent is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_738634.1",
+          "name": "Absent",
+          "description": "A coronary stent is not present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_825426",
+      "name": "Status",
+      "description": "Indicates the status of the coronary stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_825426.0",
+          "name": "New placement",
+          "description": "The coronary stent has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_825426.1",
+          "name": "Unchanged",
+          "description": "The coronary stent remains unchanged."
+        },
+        {
+          "value_code": "OIFMA_MGB_825426.2",
+          "name": "Complication",
+          "description": "There is a complication associated with the coronary stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_825426.3",
+          "name": "Removed",
+          "description": "The coronary stent has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_002313",
+      "name": "Location",
+      "description": "Indicates the location of the coronary stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_002313.0",
+          "name": "Left coronary",
+          "description": "The coronary stent is located in the left coronary artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_002313.1",
+          "name": "Left anterior descending (LAD)",
+          "description": "The coronary stent is located in the left anterior descending artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_002313.2",
+          "name": "Left circumflex (LCx)",
+          "description": "The coronary stent is located in the left circumflex artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_002313.3",
+          "name": "Left obtuse marginal (OM)",
+          "description": "The coronary stent is located in the left obtuse marginal artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_002313.4",
+          "name": "Right coronary (RCA)",
+          "description": "The coronary stent is located in the right coronary artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_002313.5",
+          "name": "Right acute marginal",
+          "description": "The coronary stent is located in the right acute marginal artery."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_091122",
+      "name": "Type Finding",
+      "description": "Indicates the type of coronary stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_091122.0",
+          "name": "Bare-metal",
+          "description": "A bare-metal coronary stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_091122.1",
+          "name": "Drug-eluting",
+          "description": "A drug-eluting coronary stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_091122.2",
+          "name": "Bioresorbable",
+          "description": "A bioresorbable coronary stent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_566594",
+      "name": "In-Stent Restenosis",
+      "description": "Indicates whether there is restenosis (re-narrowing) of the stented artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_566594.0",
+          "name": "Present",
+          "description": "There is in-stent restenosis."
+        },
+        {
+          "value_code": "OIFMA_MGB_566594.1",
+          "name": "Absent",
+          "description": "There is no in-stent restenosis."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_046127",
+      "name": "Stent Thrombosis",
+      "description": "Indicates whether there is thrombosis (clot formation) within the stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_046127.0",
+          "name": "Present",
+          "description": "There is stent thrombosis."
+        },
+        {
+          "value_code": "OIFMA_MGB_046127.1",
+          "name": "Absent",
+          "description": "There is no stent thrombosis."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_027875",
+      "name": "Stent Fracture",
+      "description": "Indicates whether there is a fracture in the coronary stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_027875.0",
+          "name": "Present",
+          "description": "There is a stent fracture."
+        },
+        {
+          "value_code": "OIFMA_MGB_027875.1",
+          "name": "Absent",
+          "description": "There is no stent fracture."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_701186",
+      "name": "Peri-stent Leak",
+      "description": "Indicates whether there is a leak around the coronary stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_701186.0",
+          "name": "Present",
+          "description": "There is a peri-stent leak."
+        },
+        {
+          "value_code": "OIFMA_MGB_701186.1",
+          "name": "Absent",
+          "description": "There is no peri-stent leak."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_820191",
+      "name": "Edge Dissection",
+      "description": "Indicates whether there is a dissection (tear) at the edge of the stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_820191.0",
+          "name": "Present",
+          "description": "There is an edge dissection."
+        },
+        {
+          "value_code": "OIFMA_MGB_820191.1",
+          "name": "Absent",
+          "description": "There is no edge dissection."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

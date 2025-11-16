@@ -1,0 +1,192 @@
+{
+  "oifm_id": "OIFM_MGB_095083",
+  "name": "Axillary Nodal Dissection",
+  "description": "Presence of axillary nodal dissection and its characteristics",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_387693",
+      "name": "Presence of Axillary Nodal Dissection",
+      "description": "Indicates whether the axillary nodal dissection is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_387693.0",
+          "name": "Present",
+          "description": "Axillary nodal dissection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_387693.1",
+          "name": "Absent",
+          "description": "Axillary nodal dissection is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_737895",
+      "name": "Status",
+      "description": "Indicates whether the axillary nodal dissection is new or unchanged",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_737895.0",
+          "name": "New",
+          "description": "Axillary nodal dissection is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_737895.1",
+          "name": "Unchanged",
+          "description": "Axillary nodal dissection is unchanged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_256171",
+      "name": "Side Finding",
+      "description": "Indicates the side of the axillary nodal dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_256171.0",
+          "name": "Right",
+          "description": "Axillary nodal dissection is on the right side"
+        },
+        {
+          "value_code": "OIFMA_MGB_256171.1",
+          "name": "Left",
+          "description": "Axillary nodal dissection is on the left side"
+        },
+        {
+          "value_code": "OIFMA_MGB_256171.2",
+          "name": "Bilateral",
+          "description": "Axillary nodal dissection is on both sides"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_970634",
+      "name": "Extent of Dissection",
+      "description": "Indicates the extent of the axillary nodal dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_970634.0",
+          "name": "Complete",
+          "description": "Axillary nodal dissection is complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_970634.1",
+          "name": "Partial",
+          "description": "Axillary nodal dissection is partial"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_843506",
+      "name": "Surgical Clips Present",
+      "description": "Indicates whether surgical clips are present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_843506.0",
+          "name": "Yes",
+          "description": "Surgical clips are present"
+        },
+        {
+          "value_code": "OIFMA_MGB_843506.1",
+          "name": "No",
+          "description": "Surgical clips are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_502719",
+      "name": "Fluid collection",
+      "description": "Indicates the presence of fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_502719.0",
+          "name": "Present",
+          "description": "Fluid collection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_502719.1",
+          "name": "Absent",
+          "description": "Fluid collection is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_211426",
+      "name": "Breast Mass",
+      "description": "Indicates the presence of a breast mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_211426.0",
+          "name": "Present",
+          "description": "Breast mass is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_211426.1",
+          "name": "Absent",
+          "description": "Breast mass is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_626403",
+      "name": "Breast Skin Thickening",
+      "description": "Indicates the presence of breast skin thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_626403.0",
+          "name": "Present",
+          "description": "Breast skin thickening is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_626403.1",
+          "name": "Absent",
+          "description": "Breast skin thickening is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_027972",
+      "name": "Scar Tissue",
+      "description": "Indicates the presence of scar tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_027972.0",
+          "name": "Present",
+          "description": "Scar tissue is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_027972.1",
+          "name": "Absent",
+          "description": "Scar tissue is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "oifm_id": "OIFM_MGB_253641",
+  "name": "Mastectomy Breast Implant",
+  "description": "Finding related to mastectomy and breast implant",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_930144",
+      "name": "mastectomy",
+      "description": "Mastectomy type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_930144.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_930144.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_930144.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_985043",
+      "name": "lumpectomy",
+      "description": "Lumpectomy type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_985043.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_985043.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_985043.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_885191",
+      "name": "implant presence",
+      "description": "Presence of breast implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_885191.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_885191.1",
+          "name": "left breast"
+        },
+        {
+          "value_code": "OIFMA_MGB_885191.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_001341",
+      "name": "implant location",
+      "description": "Location of breast implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_001341.0",
+          "name": "preglandular"
+        },
+        {
+          "value_code": "OIFMA_MGB_001341.1",
+          "name": "subpectoral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_551105",
+      "name": "implant material",
+      "description": "Material of breast implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_551105.0",
+          "name": "saline"
+        },
+        {
+          "value_code": "OIFMA_MGB_551105.1",
+          "name": "silicone"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_439726",
+      "name": "postoperative changes",
+      "description": "Postoperative changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_439726.0",
+          "name": "postsurgical changes",
+          "description": "Scarring"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.1",
+          "name": "flap reconstruction"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.2",
+          "name": "calcifications"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.3",
+          "name": "fat necrosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.4",
+          "name": "surgical clips"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.5",
+          "name": "axillary surgical clips",
+          "description": "Lymph node dissection / axillary dissection / axillary nodal dissection"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.6",
+          "name": "skin thickening"
+        },
+        {
+          "value_code": "OIFMA_MGB_439726.7",
+          "name": "seroma"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

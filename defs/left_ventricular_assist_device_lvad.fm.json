@@ -1,0 +1,87 @@
+{
+  "oifm_id": "OIFM_MGB_040444",
+  "name": "Left Ventricular Assist Device Lvad",
+  "description": "A left ventricular assist device (LVAD) is a mechanical pump that is used to support the function of the left ventricle of the heart.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_878134",
+      "name": "Presence of LVAD",
+      "description": "Indicates whether an LVAD is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_878134.0",
+          "name": "Present",
+          "description": "An LVAD is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_878134.1",
+          "name": "Absent",
+          "description": "No LVAD is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_029664",
+      "name": "Appropriate position",
+      "description": "Indicates whether the LVAD is in an appropriate position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_029664.0",
+          "name": "Yes",
+          "description": "LVAD is in an appropriate position"
+        },
+        {
+          "value_code": "OIFMA_MGB_029664.1",
+          "name": "No",
+          "description": "LVAD is not in an appropriate position"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_661950",
+      "name": "Location",
+      "description": "Indicates the location of the LVAD",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_661950.0",
+          "name": "Intracorporeal",
+          "description": "LVAD is located within the body"
+        },
+        {
+          "value_code": "OIFMA_MGB_661950.1",
+          "name": "Extracorporeal",
+          "description": "LVAD is located outside the body"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_023343",
+      "name": "Outflow Conduit Location",
+      "description": "Indicates the location of the outflow conduit of the LVAD",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_023343.0",
+          "name": "Ascending aorta",
+          "description": "Outflow conduit is connected to the ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_023343.1",
+          "name": "Descending aorta",
+          "description": "Outflow conduit is connected to the descending aorta"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "oifm_id": "OIFM_MGB_802796",
+  "name": "Median Sternotomy",
+  "description": "Surgical incision in the middle of the chest usually used for open-heart surgery.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_380711",
+      "name": "presence",
+      "description": "Presence of median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_380711.0",
+          "name": "Present",
+          "description": "Median sternotomy is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_380711.1",
+          "name": "Absent",
+          "description": "Median sternotomy is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_358305",
+      "name": "status",
+      "description": "Status of the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_358305.0",
+          "name": "Post-operative changes observed",
+          "description": "Changes in the median sternotomy related to the post-operative period"
+        },
+        {
+          "value_code": "OIFMA_MGB_358305.1",
+          "name": "No post-operative changes",
+          "description": "No changes in the median sternotomy related to the post-operative period"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_661132",
+      "name": "healing_status",
+      "description": "Healing status of the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_661132.0",
+          "name": "Well-healed",
+          "description": "Median sternotomy is well-healed"
+        },
+        {
+          "value_code": "OIFMA_MGB_661132.1",
+          "name": "Evidence of dehiscence",
+          "description": "Evidence of dehiscence in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_661132.2",
+          "name": "Signs of infection",
+          "description": "Signs of infection in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_661132.3",
+          "name": "Non-union",
+          "description": "Non-union of the median sternotomy"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_625246",
+      "name": "associated_hardware",
+      "description": "Presence of associated hardware in the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_625246.0",
+          "name": "Present",
+          "description": "Associated hardware is present in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_625246.1",
+          "name": "Absent",
+          "description": "No associated hardware in the median sternotomy"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_351433",
+      "name": "hardware_type",
+      "description": "Type of associated hardware in the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_351433.0",
+          "name": "Wires",
+          "description": "Wire fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_351433.1",
+          "name": "Plates",
+          "description": "Plate fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_351433.2",
+          "name": "Screws",
+          "description": "Screw fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_351433.3",
+          "name": "Other fixation devices",
+          "description": "Other types of fixation devices in the median sternotomy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_549535",
+      "name": "complications",
+      "description": "Complications associated with the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_549535.0",
+          "name": "None",
+          "description": "No complications associated with the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_549535.1",
+          "name": "Mediastinal widening",
+          "description": "Mediastinal widening related to the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_549535.2",
+          "name": "Hematoma",
+          "description": "Hematoma in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_549535.3",
+          "name": "Abscess",
+          "description": "Abscess in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_549535.4",
+          "name": "Seroma",
+          "description": "Seroma in the median sternotomy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_652466",
+      "name": "pulmonary_effusion",
+      "description": "Presence of pulmonary effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_652466.0",
+          "name": "Present",
+          "description": "Pulmonary effusion is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_652466.1",
+          "name": "Absent",
+          "description": "Pulmonary effusion is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_017587",
+      "name": "pulmonary_edema",
+      "description": "Presence of pulmonary edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_017587.0",
+          "name": "Present",
+          "description": "Pulmonary edema is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_017587.1",
+          "name": "Absent",
+          "description": "Pulmonary edema is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_972712",
+      "name": "atelectasis",
+      "description": "Presence of atelectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_972712.0",
+          "name": "Present",
+          "description": "Atelectasis is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_972712.1",
+          "name": "Absent",
+          "description": "Atelectasis is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_446004",
+      "name": "pneumothorax",
+      "description": "Presence of pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_446004.0",
+          "name": "Present",
+          "description": "Pneumothorax is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_446004.1",
+          "name": "Absent",
+          "description": "Pneumothorax is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_138097",
+      "name": "lymphadenopathy",
+      "description": "Presence of lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_138097.0",
+          "name": "Present",
+          "description": "Lymphadenopathy is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_138097.1",
+          "name": "Absent",
+          "description": "Lymphadenopathy is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

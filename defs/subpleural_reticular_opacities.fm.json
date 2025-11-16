@@ -1,0 +1,171 @@
+{
+  "oifm_id": "OIFM_MGB_239150",
+  "name": "Subpleural Reticular Opacities",
+  "description": "Presence of subpleural reticular opacities in the lungs",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_086082",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_086082.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_086082.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_178176",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_178176.0",
+          "name": "Stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_178176.1",
+          "name": "New"
+        },
+        {
+          "value_code": "OIFMA_MGB_178176.2",
+          "name": "Worsened"
+        },
+        {
+          "value_code": "OIFMA_MGB_178176.3",
+          "name": "Improved"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_313642",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_313642.0",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_313642.1",
+          "name": "Diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_835473",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_835473.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_835473.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_835473.2",
+          "name": "Severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_275853",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_275853.0",
+          "name": "Right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_275853.1",
+          "name": "Right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_275853.2",
+          "name": "Right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_275853.3",
+          "name": "Left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_275853.4",
+          "name": "Left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_275853.5",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_749405",
+      "name": "Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_749405.0",
+          "name": "Fine"
+        },
+        {
+          "value_code": "OIFMA_MGB_749405.1",
+          "name": "Coarse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_430283",
+      "name": "Association with pleural thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_430283.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_430283.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_110383",
+      "name": "Association with volume loss",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_110383.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_110383.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

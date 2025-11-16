@@ -1,0 +1,175 @@
+{
+  "oifm_id": "OIFM_MGB_774223",
+  "name": "Ipmn Finding",
+  "description": "Intraductal papillary mucinous neoplasm (IPMN) is a type of cystic lesion of the pancreas that is characterized by the presence of mucin-producing cells within the pancreatic ductal system.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_891471",
+      "name": "Presence",
+      "description": "Presence of IPMN in the pancreas.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_891471.0",
+          "name": "Present",
+          "description": "IPMN is present in the pancreas."
+        },
+        {
+          "value_code": "OIFMA_MGB_891471.1",
+          "name": "Absent",
+          "description": "IPMN is not present in the pancreas."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_367378",
+      "name": "Status",
+      "description": "Status of the IPMN.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_367378.0",
+          "name": "New suspected",
+          "description": "There is a new suspected IPMN."
+        },
+        {
+          "value_code": "OIFMA_MGB_367378.1",
+          "name": "Stable",
+          "description": "The IPMN is stable."
+        },
+        {
+          "value_code": "OIFMA_MGB_367378.2",
+          "name": "Enlarging",
+          "description": "The IPMN is enlarging."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_027518",
+      "name": "Type Finding",
+      "description": "Type of IPMN.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_027518.0",
+          "name": "Main duct",
+          "description": "IPMN is located in the main pancreatic duct."
+        },
+        {
+          "value_code": "OIFMA_MGB_027518.1",
+          "name": "Branch duct",
+          "description": "IPMN is located in a branch pancreatic duct."
+        },
+        {
+          "value_code": "OIFMA_MGB_027518.2",
+          "name": "Mixed",
+          "description": "IPMN is located in both main duct and branch ducts."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_394874",
+      "name": "Communication with Pancreatic Duct",
+      "description": "Presence of communication between the IPMN and the pancreatic duct.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_394874.0",
+          "name": "Present",
+          "description": "There is communication between the IPMN and the pancreatic duct."
+        },
+        {
+          "value_code": "OIFMA_MGB_394874.1",
+          "name": "Absent",
+          "description": "There is no communication between the IPMN and the pancreatic duct."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_614151",
+      "name": "Location in Pancreas",
+      "description": "Location of the IPMN within the pancreas.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_614151.0",
+          "name": "Uncinate",
+          "description": "IPMN is located in the uncinate process of the pancreas."
+        },
+        {
+          "value_code": "OIFMA_MGB_614151.1",
+          "name": "Head",
+          "description": "IPMN is located in the head of the pancreas."
+        },
+        {
+          "value_code": "OIFMA_MGB_614151.2",
+          "name": "Body",
+          "description": "IPMN is located in the body of the pancreas."
+        },
+        {
+          "value_code": "OIFMA_MGB_614151.3",
+          "name": "Tail",
+          "description": "IPMN is located in the tail of the pancreas."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_743876",
+      "name": "Size Finding",
+      "description": "Size of the IPMN in millimeters.",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_928982",
+      "name": "Number of Cysts",
+      "description": "Number of cysts associated with the IPMN.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_928982.0",
+          "name": "Single",
+          "description": "There is a single cyst associated with the IPMN."
+        },
+        {
+          "value_code": "OIFMA_MGB_928982.1",
+          "name": "Multiple",
+          "description": "There are multiple cysts associated with the IPMN."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_941257",
+      "name": "Main Pancreatic Ductal Dilation",
+      "description": "Presence of main pancreatic ductal dilation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_941257.0",
+          "name": "Present",
+          "description": "There is main pancreatic ductal dilation."
+        },
+        {
+          "value_code": "OIFMA_MGB_941257.1",
+          "name": "Absent",
+          "description": "There is no main pancreatic ductal dilation."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "oifm_id": "OIFM_MGB_269106",
+  "name": "Lipoma",
+  "description": "A lipoma is a benign tumor composed of fat cells. It is one of the most common benign tumors found in the body.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_909511",
+      "name": "Presence",
+      "description": "Whether the lipoma is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_909511.0",
+          "name": "Present",
+          "description": "The lipoma is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_909511.1",
+          "name": "Absent",
+          "description": "The lipoma is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_105456",
+      "name": "Status",
+      "description": "The status of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_105456.0",
+          "name": "Stable",
+          "description": "The lipoma is stable."
+        },
+        {
+          "value_code": "OIFMA_MGB_105456.1",
+          "name": "New",
+          "description": "The lipoma is new."
+        },
+        {
+          "value_code": "OIFMA_MGB_105456.2",
+          "name": "Increased",
+          "description": "The lipoma has increased in size."
+        },
+        {
+          "value_code": "OIFMA_MGB_105456.3",
+          "name": "Decreased",
+          "description": "The lipoma has decreased in size."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_053104",
+      "name": "Location",
+      "description": "The location of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_053104.0",
+          "name": "Lung: Right Upper Lobe",
+          "description": "The lipoma is located in the right upper lobe of the lung."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.1",
+          "name": "Lung: Right Middle Lobe",
+          "description": "The lipoma is located in the right middle lobe of the lung."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.2",
+          "name": "Lung: Right Lower Lobe",
+          "description": "The lipoma is located in the right lower lobe of the lung."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.3",
+          "name": "Lung: Left Upper Lobe",
+          "description": "The lipoma is located in the left upper lobe of the lung."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.4",
+          "name": "Lung: Left Lower Lobe",
+          "description": "The lipoma is located in the left lower lobe of the lung."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.5",
+          "name": "Mediastinum: Anterior",
+          "description": "The lipoma is located in the anterior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.6",
+          "name": "Mediastinum: Middle",
+          "description": "The lipoma is located in the middle mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.7",
+          "name": "Mediastinum: Posterior",
+          "description": "The lipoma is located in the posterior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.8",
+          "name": "Chest Wall",
+          "description": "The lipoma is located in the chest wall."
+        },
+        {
+          "value_code": "OIFMA_MGB_053104.9",
+          "name": "Other",
+          "description": "The lipoma is located in another area (Specify)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_658363",
+      "name": "Size Finding",
+      "description": "The size of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_658363.0",
+          "name": "Small (<1cm)",
+          "description": "The lipoma is small, less than 1cm in size."
+        },
+        {
+          "value_code": "OIFMA_MGB_658363.1",
+          "name": "Medium (1-3cm)",
+          "description": "The lipoma is medium-sized, between 1cm and 3cm in size."
+        },
+        {
+          "value_code": "OIFMA_MGB_658363.2",
+          "name": "Large (>3cm)",
+          "description": "The lipoma is large, greater than 3cm in size."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_097541",
+      "name": "Shape",
+      "description": "The shape of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_097541.0",
+          "name": "Round",
+          "description": "The lipoma has a round shape."
+        },
+        {
+          "value_code": "OIFMA_MGB_097541.1",
+          "name": "Oval",
+          "description": "The lipoma has an oval shape."
+        },
+        {
+          "value_code": "OIFMA_MGB_097541.2",
+          "name": "Irregular",
+          "description": "The lipoma has an irregular shape."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_764344",
+      "name": "Margin",
+      "description": "The margin of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_764344.0",
+          "name": "Well-defined",
+          "description": "The lipoma has a well-defined margin."
+        },
+        {
+          "value_code": "OIFMA_MGB_764344.1",
+          "name": "Poorly defined",
+          "description": "The lipoma has a poorly defined margin."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_736138",
+      "name": "Density",
+      "description": "The density of the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_736138.0",
+          "name": "Low (Fat-density)",
+          "description": "The lipoma has a low density, similar to fat."
+        },
+        {
+          "value_code": "OIFMA_MGB_736138.1",
+          "name": "Mixed",
+          "description": "The lipoma has a mixed density."
+        },
+        {
+          "value_code": "OIFMA_MGB_736138.2",
+          "name": "High",
+          "description": "The lipoma has a high density."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_442915",
+      "name": "Other Masses",
+      "description": "Whether there are other masses associated with the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_442915.0",
+          "name": "Present",
+          "description": "There are other masses present."
+        },
+        {
+          "value_code": "OIFMA_MGB_442915.1",
+          "name": "Absent",
+          "description": "There are no other masses present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_715986",
+      "name": "Calcifications",
+      "description": "Whether there are calcifications associated with the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_715986.0",
+          "name": "Present",
+          "description": "There are calcifications present."
+        },
+        {
+          "value_code": "OIFMA_MGB_715986.1",
+          "name": "Absent",
+          "description": "There are no calcifications present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_402710",
+      "name": "Signs of Infiltration",
+      "description": "Whether there are signs of infiltration associated with the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_402710.0",
+          "name": "Present",
+          "description": "There are signs of infiltration present."
+        },
+        {
+          "value_code": "OIFMA_MGB_402710.1",
+          "name": "Absent",
+          "description": "There are no signs of infiltration present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_341405",
+      "name": "Lymphadenopathy",
+      "description": "Whether there is lymphadenopathy associated with the lipoma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_341405.0",
+          "name": "Present",
+          "description": "There is lymphadenopathy present."
+        },
+        {
+          "value_code": "OIFMA_MGB_341405.1",
+          "name": "Absent",
+          "description": "There is no lymphadenopathy present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

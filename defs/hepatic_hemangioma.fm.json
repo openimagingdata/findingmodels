@@ -1,0 +1,95 @@
+{
+  "oifm_id": "OIFM_MGB_397436",
+  "name": "Hepatic Hemangioma",
+  "description": "A hepatic hemangioma is a benign vascular tumor of the liver, characterized by a mass of血 vessels that may present as hypoechoic lesions on ultrasound and retains contrast on imaging studies like CT or MRI.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_543225",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_543225.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_543225.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_789176",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_789176.0",
+          "name": "Right hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_789176.1",
+          "name": "Left hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_789176.2",
+          "name": "Segment",
+          "description": "Select segment"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_526797",
+      "name": "Size Finding",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_200980",
+      "name": "Enhancement Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_200980.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_MGB_200980.1",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_200980.2",
+          "name": "Peripheral nodular"
+        },
+        {
+          "value_code": "OIFMA_MGB_200980.3",
+          "name": "Progressive centripetal"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_646105",
+      "name": "Number",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_646105.0",
+          "name": "Single"
+        },
+        {
+          "value_code": "OIFMA_MGB_646105.1",
+          "name": "Multiple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

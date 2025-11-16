@@ -1,0 +1,287 @@
+{
+  "oifm_id": "OIFM_MGB_340276",
+  "name": "Lobectomy",
+  "description": "A surgical procedure to remove a lobe of the lung.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_085055",
+      "name": "Presence",
+      "description": "Presence or absence of lobectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_085055.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_085055.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_166878",
+      "name": "Status",
+      "description": "Status of lobectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_166878.0",
+          "name": "Post-operative changes observed"
+        },
+        {
+          "value_code": "OIFMA_MGB_166878.1",
+          "name": "No post-operative changes"
+        },
+        {
+          "value_code": "OIFMA_MGB_166878.2",
+          "name": "Healing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_029680",
+      "name": "Lobectomy Type",
+      "description": "Type of lobectomy performed",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_029680.0",
+          "name": "Right upper lobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.1",
+          "name": "Right middle lobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.2",
+          "name": "Right lower lobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.3",
+          "name": "Left upper lobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.4",
+          "name": "Left lower lobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.5",
+          "name": "Bilobectomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_029680.6",
+          "name": "Segmentectomy"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_081943",
+      "name": "Completeness",
+      "description": "Completeness of the lobectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_081943.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_081943.1",
+          "name": "Partial"
+        },
+        {
+          "value_code": "OIFMA_MGB_081943.2",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_350141",
+      "name": "Surgical Technique",
+      "description": "Surgical technique used for lobectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_350141.0",
+          "name": "VATS"
+        },
+        {
+          "value_code": "OIFMA_MGB_350141.1",
+          "name": "Open"
+        },
+        {
+          "value_code": "OIFMA_MGB_350141.2",
+          "name": "Robotic-assisted"
+        },
+        {
+          "value_code": "OIFMA_MGB_350141.3",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_293421",
+      "name": "Pleural effusion",
+      "description": "Presence or absence of pleural effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_293421.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_293421.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_293421.2",
+          "name": "Size and side specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_415462",
+      "name": "Pneumothorax",
+      "description": "Presence or absence of pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_415462.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_415462.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_415462.2",
+          "name": "Size and management specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_109522",
+      "name": "Atelectasis",
+      "description": "Presence or absence of atelectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_109522.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_109522.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_109522.2",
+          "name": "Extent and location specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_366330",
+      "name": "Surgical clips",
+      "description": "Presence or absence of surgical clips",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_366330.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_366330.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_366330.2",
+          "name": "Number specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_575854",
+      "name": "Residual lung",
+      "description": "Status of residual lung",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_575854.0",
+          "name": "Adequate expansion"
+        },
+        {
+          "value_code": "OIFMA_MGB_575854.1",
+          "name": "Incomplete expansion"
+        },
+        {
+          "value_code": "OIFMA_MGB_575854.2",
+          "name": "Volume loss"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_515757",
+      "name": "Scar tissue",
+      "description": "Presence or absence of scar tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_515757.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_515757.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_515757.2",
+          "name": "Extent specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_953364",
+      "name": "Pulmonary nodules",
+      "description": "Presence or absence of pulmonary nodules",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_953364.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_953364.1",
+          "name": "Absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_953364.2",
+          "name": "Characteristics specified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

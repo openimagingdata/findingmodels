@@ -1,0 +1,184 @@
+{
+  "oifm_id": "OIFM_MGB_692734",
+  "name": "Bronchial Stent",
+  "description": "A bronchial stent is a medical device used to support the walls of the bronchial tubes and keep them open. It is typically used to treat airway obstructions or strictures.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_487756",
+      "name": "Presence of Bronchial Stent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_487756.0",
+          "name": "Present",
+          "description": "The bronchial stent is present in the patient's airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_487756.1",
+          "name": "Absent",
+          "description": "There is no bronchial stent present in the patient's airway."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_712446",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_712446.0",
+          "name": "New placement",
+          "description": "The bronchial stent has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_712446.1",
+          "name": "Unchanged",
+          "description": "The bronchial stent remains in the same position as before."
+        },
+        {
+          "value_code": "OIFMA_MGB_712446.2",
+          "name": "Complication",
+          "description": "The bronchial stent is causing complications."
+        },
+        {
+          "value_code": "OIFMA_MGB_712446.3",
+          "name": "Removed",
+          "description": "The bronchial stent has been removed from the patient's airway."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_916297",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_916297.0",
+          "name": "Right main bronchus",
+          "description": "The bronchial stent is located in the right main bronchus."
+        },
+        {
+          "value_code": "OIFMA_MGB_916297.1",
+          "name": "Left main bronchus",
+          "description": "The bronchial stent is located in the left main bronchus."
+        },
+        {
+          "value_code": "OIFMA_MGB_916297.2",
+          "name": "Lobar bronchus",
+          "description": "The bronchial stent is located in a lobar bronchus (specific lobe to be specified separately)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_642956",
+      "name": "Side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_642956.0",
+          "name": "Right",
+          "description": "The bronchial stent is located on the right side of the airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_642956.1",
+          "name": "Left",
+          "description": "The bronchial stent is located on the left side of the airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_642956.2",
+          "name": "NA",
+          "description": "The side of the bronchial stent is not applicable or specified."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_973807",
+      "name": "Type Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_973807.0",
+          "name": "Fully covered",
+          "description": "The bronchial stent is fully covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_973807.1",
+          "name": "Partially covered",
+          "description": "The bronchial stent is partially covered."
+        },
+        {
+          "value_code": "OIFMA_MGB_973807.2",
+          "name": "Uncovered",
+          "description": "The bronchial stent is not covered."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_742884",
+      "name": "Stent Length",
+      "description": "The length of the bronchial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_262309",
+      "name": "Lumen Diameter",
+      "description": "The diameter of the lumen of the bronchial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_926357",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_926357.0",
+          "name": "None",
+          "description": "There are no complications associated with the bronchial stent."
+        },
+        {
+          "value_code": "OIFMA_MGB_926357.1",
+          "name": "Mucosal erosion",
+          "description": "The bronchial stent has caused erosion of the surrounding mucosal tissue."
+        },
+        {
+          "value_code": "OIFMA_MGB_926357.2",
+          "name": "Perforation",
+          "description": "The bronchial stent has caused a perforation in the airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_926357.3",
+          "name": "Migration",
+          "description": "The bronchial stent has migrated from its original position."
+        },
+        {
+          "value_code": "OIFMA_MGB_926357.4",
+          "name": "Stenosis",
+          "description": "The bronchial stent has caused narrowing or constriction of the airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_926357.5",
+          "name": "Occlusion",
+          "description": "The bronchial stent is causing a blockage in the airway."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

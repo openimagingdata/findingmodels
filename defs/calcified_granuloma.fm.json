@@ -1,0 +1,222 @@
+{
+  "oifm_id": "OIFM_MGB_314652",
+  "name": "Calcified Granuloma",
+  "description": "A calcified granuloma is a small, usually harmless nodule that forms in the lung tissue as a result of an infection or inflammation.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_809682",
+      "name": "presence",
+      "description": "The presence of a calcified granuloma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_809682.0",
+          "name": "present",
+          "description": "A calcified granuloma is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_809682.1",
+          "name": "absent",
+          "description": "A calcified granuloma is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_471743",
+      "name": "status",
+      "description": "The status of a calcified granuloma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_471743.0",
+          "name": "stable",
+          "description": "The calcified granuloma is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_471743.1",
+          "name": "new",
+          "description": "A new calcified granuloma has formed"
+        },
+        {
+          "value_code": "OIFMA_MGB_471743.2",
+          "name": "increasing in number",
+          "description": "The calcified granulomas are increasing in number"
+        },
+        {
+          "value_code": "OIFMA_MGB_471743.3",
+          "name": "decreasing in size",
+          "description": "The calcified granuloma is decreasing in size"
+        },
+        {
+          "value_code": "OIFMA_MGB_471743.4",
+          "name": "resolved",
+          "description": "The calcified granuloma has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_471743.5",
+          "name": "unchanged",
+          "description": "The calcified granuloma remains unchanged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_891731",
+      "name": "distribution",
+      "description": "The distribution of calcified granulomas",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_891731.0",
+          "name": "solitary",
+          "description": "A single calcified granuloma"
+        },
+        {
+          "value_code": "OIFMA_MGB_891731.1",
+          "name": "multiple",
+          "description": "Multiple calcified granulomas"
+        },
+        {
+          "value_code": "OIFMA_MGB_891731.2",
+          "name": "clustered",
+          "description": "Calcified granulomas clustered together"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_580833",
+      "name": "severity",
+      "description": "The severity of calcified granulomas",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_580833.0",
+          "name": "mild",
+          "description": "Mild calcified granulomas"
+        },
+        {
+          "value_code": "OIFMA_MGB_580833.1",
+          "name": "moderate",
+          "description": "Moderate calcified granulomas"
+        },
+        {
+          "value_code": "OIFMA_MGB_580833.2",
+          "name": "severe",
+          "description": "Severe calcified granulomas"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_432222",
+      "name": "location",
+      "description": "The location of calcified granulomas",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_432222.0",
+          "name": "right upper lobe",
+          "description": "Calcified granuloma in the right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_432222.1",
+          "name": "right middle lobe",
+          "description": "Calcified granuloma in the right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_432222.2",
+          "name": "right lower lobe",
+          "description": "Calcified granuloma in the right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_432222.3",
+          "name": "left upper lobe",
+          "description": "Calcified granuloma in the left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_432222.4",
+          "name": "left lower lobe",
+          "description": "Calcified granuloma in the left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_432222.5",
+          "name": "bilateral",
+          "description": "Calcified granuloma in both lungs"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_706320",
+      "name": "size Finding",
+      "description": "The size of calcified granulomas",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_706320.0",
+          "name": "<1 cm",
+          "description": "Calcified granuloma size less than 1 cm"
+        },
+        {
+          "value_code": "OIFMA_MGB_706320.1",
+          "name": "1-2 cm",
+          "description": "Calcified granuloma size between 1-2 cm"
+        },
+        {
+          "value_code": "OIFMA_MGB_706320.2",
+          "name": ">2 cm",
+          "description": "Calcified granuloma size greater than 2 cm"
+        },
+        {
+          "value_code": "OIFMA_MGB_706320.3",
+          "name": "not specified",
+          "description": "Calcified granuloma size not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_447307",
+      "name": "associated_findings",
+      "description": "The associated findings with calcified granulomas",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_447307.0",
+          "name": "emphysema",
+          "description": "Calcified granuloma associated with emphysema"
+        },
+        {
+          "value_code": "OIFMA_MGB_447307.1",
+          "name": "fibrosis",
+          "description": "Calcified granuloma associated with fibrosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_447307.2",
+          "name": "nodules",
+          "description": "Calcified granuloma associated with nodules"
+        },
+        {
+          "value_code": "OIFMA_MGB_447307.3",
+          "name": "pleural effusion",
+          "description": "Calcified granuloma associated with pleural effusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_447307.4",
+          "name": "lymphadenopathy",
+          "description": "Calcified granuloma associated with lymphadenopathy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

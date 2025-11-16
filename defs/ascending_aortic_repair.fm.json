@@ -1,0 +1,142 @@
+{
+  "oifm_id": "OIFM_MGB_873965",
+  "name": "Ascending Aortic Repair",
+  "description": "Repair of the ascending aorta",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_437614",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_437614.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_437614.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_718269",
+      "name": "Type of Repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_718269.0",
+          "name": "Graft"
+        },
+        {
+          "value_code": "OIFMA_MGB_718269.1",
+          "name": "Stent"
+        },
+        {
+          "value_code": "OIFMA_MGB_718269.2",
+          "name": "Valve replacement"
+        },
+        {
+          "value_code": "OIFMA_MGB_718269.3",
+          "name": "Valve-sparing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_408709",
+      "name": "Condition Treated",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_408709.0",
+          "name": "Aneurysm"
+        },
+        {
+          "value_code": "OIFMA_MGB_408709.1",
+          "name": "Dissection"
+        },
+        {
+          "value_code": "OIFMA_MGB_408709.2",
+          "name": "Both"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_453282",
+      "name": "Location of Repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_453282.0",
+          "name": "Ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_453282.1",
+          "name": "Aortic root"
+        },
+        {
+          "value_code": "OIFMA_MGB_453282.2",
+          "name": "Aortic arch"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_321524",
+      "name": "Aortic Dilation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_321524.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_321524.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_332204",
+      "name": "Residual Dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_332204.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_332204.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_577154",
+      "name": "Pericardial Effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_577154.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_577154.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

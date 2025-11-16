@@ -1,0 +1,235 @@
+{
+  "oifm_id": "OIFM_MGB_089921",
+  "name": "Mastectomy",
+  "description": "The removal of all or part of the breast as a treatment for breast cancer or as a preventative measure.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_144424",
+      "name": "Presence of Mastectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_144424.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_144424.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_938023",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_938023.0",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_938023.1",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_938023.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_246743",
+      "name": "Type of Mastectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_246743.0",
+          "name": "Total"
+        },
+        {
+          "value_code": "OIFMA_MGB_246743.1",
+          "name": "Partial"
+        },
+        {
+          "value_code": "OIFMA_MGB_246743.2",
+          "name": "Radical"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_190497",
+      "name": "Reconstruction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_190497.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_190497.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_074667",
+      "name": "Flap Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_074667.0",
+          "name": "TRAM flap"
+        },
+        {
+          "value_code": "OIFMA_MGB_074667.1",
+          "name": "DIEP flap"
+        },
+        {
+          "value_code": "OIFMA_MGB_074667.2",
+          "name": "SIEA flap"
+        },
+        {
+          "value_code": "OIFMA_MGB_074667.3",
+          "name": "Latissimus dorsi flap"
+        },
+        {
+          "value_code": "OIFMA_MGB_074667.4",
+          "name": "Gluteal flap"
+        },
+        {
+          "value_code": "OIFMA_MGB_074667.5",
+          "name": "TUG flap"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_794957",
+      "name": "Breast Implant",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_794957.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_794957.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_139260",
+      "name": "Breast Skin Thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_139260.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_139260.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_379846",
+      "name": "Scarring",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_379846.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_379846.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_278058",
+      "name": "Lymphedema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_278058.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_278058.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_896343",
+      "name": "Axillary Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_896343.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_896343.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_602296",
+      "name": "Fat necrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_602296.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_602296.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_759668",
+      "name": "Fluid collection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_759668.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_759668.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

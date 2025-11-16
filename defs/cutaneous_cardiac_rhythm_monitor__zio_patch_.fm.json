@@ -1,0 +1,247 @@
+{
+  "oifm_id": "OIFM_MGB_334694",
+  "name": "Cutaneous Cardiac Rhythm Monitor (Zio Patch)",
+  "description": "Cutaneous cardiac rhythm monitor used for continuous heart monitoring.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_131210",
+      "name": "Presence of ZIO Patch",
+      "description": "Indicates whether the ZIO Patch is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_131210.0",
+          "name": "Present",
+          "description": "The ZIO Patch is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_131210.1",
+          "name": "Absent",
+          "description": "The ZIO Patch is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_619302",
+      "name": "Status",
+      "description": "Indicates the status of the ZIO Patch",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_619302.0",
+          "name": "Functioning",
+          "description": "The ZIO Patch is functioning properly"
+        },
+        {
+          "value_code": "OIFMA_MGB_619302.1",
+          "name": "Malfunctioning",
+          "description": "The ZIO Patch is not functioning properly"
+        },
+        {
+          "value_code": "OIFMA_MGB_619302.2",
+          "name": "Removed",
+          "description": "The ZIO Patch has been removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_625298",
+      "name": "Location",
+      "description": "Indicates the location of the ZIO Patch on the body",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_625298.0",
+          "name": "Chest",
+          "description": "The ZIO Patch is located on the chest"
+        },
+        {
+          "value_code": "OIFMA_MGB_625298.1",
+          "name": "Abdomen",
+          "description": "The ZIO Patch is located on the abdomen"
+        },
+        {
+          "value_code": "OIFMA_MGB_625298.2",
+          "name": "Other",
+          "description": "The ZIO Patch is located on another area of the body"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_728490",
+      "name": "Side Finding",
+      "description": "Indicates the side of the body where the ZIO Patch is located",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_728490.0",
+          "name": "Left",
+          "description": "The ZIO Patch is located on the left side"
+        },
+        {
+          "value_code": "OIFMA_MGB_728490.1",
+          "name": "Right",
+          "description": "The ZIO Patch is located on the right side"
+        },
+        {
+          "value_code": "OIFMA_MGB_728490.2",
+          "name": "NA",
+          "description": "Not applicable"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_161121",
+      "name": "Orientation",
+      "description": "Indicates the orientation of the ZIO Patch on the body",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_161121.0",
+          "name": "Parallel to skin",
+          "description": "The ZIO Patch is parallel to the skin"
+        },
+        {
+          "value_code": "OIFMA_MGB_161121.1",
+          "name": "Perpendicular to skin",
+          "description": "The ZIO Patch is perpendicular to the skin"
+        },
+        {
+          "value_code": "OIFMA_MGB_161121.2",
+          "name": "Other",
+          "description": "The ZIO Patch is oriented in another way"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_371499",
+      "name": "Adherence",
+      "description": "Indicates the adherence of the ZIO Patch",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_371499.0",
+          "name": "Fully adherent",
+          "description": "The ZIO Patch is fully adherent to the skin"
+        },
+        {
+          "value_code": "OIFMA_MGB_371499.1",
+          "name": "Partially detached",
+          "description": "The ZIO Patch is partially detached from the skin"
+        },
+        {
+          "value_code": "OIFMA_MGB_371499.2",
+          "name": "Completely detached",
+          "description": "The ZIO Patch is completely detached from the skin"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_199519",
+      "name": "Skin Irritation",
+      "description": "Indicates the presence and severity of skin irritation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_199519.0",
+          "name": "None",
+          "description": "No skin irritation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_199519.1",
+          "name": "Mild",
+          "description": "Mild skin irritation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_199519.2",
+          "name": "Moderate",
+          "description": "Moderate skin irritation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_199519.3",
+          "name": "Severe",
+          "description": "Severe skin irritation is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_975873",
+      "name": "Infection",
+      "description": "Indicates the presence of infection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_975873.0",
+          "name": "Present",
+          "description": "Infection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_975873.1",
+          "name": "Absent",
+          "description": "No infection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_975873.2",
+          "name": "Suspected",
+          "description": "Infection is suspected"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_979491",
+      "name": "Hematoma",
+      "description": "Indicates the presence of a hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_979491.0",
+          "name": "Present",
+          "description": "Hematoma is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_979491.1",
+          "name": "Absent",
+          "description": "No hematoma is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_538804",
+      "name": "Evidence of Repeated Applications",
+      "description": "Indicates whether there is evidence of repeated applications of the ZIO Patch",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_538804.0",
+          "name": "Yes",
+          "description": "There is evidence of repeated applications"
+        },
+        {
+          "value_code": "OIFMA_MGB_538804.1",
+          "name": "No",
+          "description": "There is no evidence of repeated applications"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

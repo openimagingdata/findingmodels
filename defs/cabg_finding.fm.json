@@ -1,0 +1,172 @@
+{
+  "oifm_id": "OIFM_MGB_053057",
+  "name": "Cabg Finding",
+  "description": "Coronary Artery Bypass Graft",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_222198",
+      "name": "Presence",
+      "description": "Presence of CABG grafts",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_222198.0",
+          "name": "Present",
+          "description": "The CABG grafts are present"
+        },
+        {
+          "value_code": "OIFMA_MGB_222198.1",
+          "name": "Absent",
+          "description": "The CABG grafts are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_282189",
+      "name": "Number of Grafts",
+      "description": "Number of CABG grafts",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_282189.0",
+          "name": "Single",
+          "description": "There is a single CABG graft"
+        },
+        {
+          "value_code": "OIFMA_MGB_282189.1",
+          "name": "Multiple",
+          "description": "There are multiple CABG grafts"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_580144",
+      "name": "Type of Grafts",
+      "description": "Type of CABG grafts",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_580144.0",
+          "name": "Arterial",
+          "description": "Arterial grafts (LIMA, RIMA, Radial)"
+        },
+        {
+          "value_code": "OIFMA_MGB_580144.1",
+          "name": "Venous",
+          "description": "Venous grafts (Saphenous vein)"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_964995",
+      "name": "Location of Grafts",
+      "description": "Location of CABG grafts",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_964995.0",
+          "name": "LAD",
+          "description": "Left Anterior Descending artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_964995.1",
+          "name": "LCx",
+          "description": "Left Circumflex artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_964995.2",
+          "name": "RCA",
+          "description": "Right Coronary Artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_964995.3",
+          "name": "Intermediate",
+          "description": "Intermediate artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_964995.4",
+          "name": "Diagonal branches",
+          "description": "Diagonal branches of the coronary arteries"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_434416",
+      "name": "Graft Patency",
+      "description": "Patency of CABG grafts",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_434416.0",
+          "name": "Patent",
+          "description": "The CABG grafts are patent"
+        },
+        {
+          "value_code": "OIFMA_MGB_434416.1",
+          "name": "Occluded",
+          "description": "The CABG grafts are occluded"
+        },
+        {
+          "value_code": "OIFMA_MGB_434416.2",
+          "name": "Stenosed",
+          "description": "The CABG grafts are stenosed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_240615",
+      "name": "Native Coronary Artery Disease",
+      "description": "Presence of native coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_240615.0",
+          "name": "Present",
+          "description": "There is native coronary artery disease"
+        },
+        {
+          "value_code": "OIFMA_MGB_240615.1",
+          "name": "Absent",
+          "description": "There is no native coronary artery disease"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_245524",
+      "name": "Post-surgical Changes",
+      "description": "Post-surgical changes after CABG",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_245524.0",
+          "name": "Sternotomy wires",
+          "description": "Presence of sternotomy wires"
+        },
+        {
+          "value_code": "OIFMA_MGB_245524.1",
+          "name": "Pleural effusion",
+          "description": "Presence of pleural effusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_245524.2",
+          "name": "Pericardial effusion",
+          "description": "Presence of pericardial effusion"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

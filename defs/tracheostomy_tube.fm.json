@@ -1,0 +1,97 @@
+{
+  "oifm_id": "OIFM_MGB_132320",
+  "name": "Tracheostomy Tube",
+  "description": "A tube inserted into the trachea through a surgical incision in the neck, used to provide an airway for patients who cannot breathe on their own.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_025721",
+      "name": "presence",
+      "description": "Presence or absence of a tracheostomy tube in the patient.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_025721.0",
+          "name": "present",
+          "description": "A tracheostomy tube is present in the patient."
+        },
+        {
+          "value_code": "OIFMA_MGB_025721.1",
+          "name": "absent",
+          "description": "A tracheostomy tube is not present in the patient."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_047584",
+      "name": "tube_tip",
+      "description": "The location of the tip of the tracheostomy tube within the trachea.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_047584.0",
+          "name": "upper thoracic trachea",
+          "description": "The tip of the tracheostomy tube is located in the upper thoracic trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_047584.1",
+          "name": "midthoracic trachea",
+          "description": "The tip of the tracheostomy tube is located in the midthoracic trachea."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_254421",
+      "name": "tract",
+      "description": "The presence of soft tissue thickening around the tracheostomy tube insertion site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_254421.0",
+          "name": "soft tissue thickening",
+          "description": "There is soft tissue thickening around the tracheostomy tube insertion site."
+        },
+        {
+          "value_code": "OIFMA_MGB_254421.1",
+          "name": "no soft tissue thickening",
+          "description": "There is no soft tissue thickening around the tracheostomy tube insertion site."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_364846",
+      "name": "associated_findings",
+      "description": "Any associated findings related to the tracheostomy tube.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_364846.0",
+          "name": "aspiration",
+          "description": "Aspiration related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_364846.1",
+          "name": "tracheal mucus",
+          "description": "Presence of mucus in the trachea related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_364846.2",
+          "name": "bronchial mucus",
+          "description": "Presence of mucus in the bronchial tubes related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_364846.3",
+          "name": "bronchial mucus plugs",
+          "description": "Presence of mucus plugs in the bronchial tubes related to the tracheostomy tube."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
