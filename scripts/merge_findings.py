@@ -7,6 +7,7 @@ This script processes an INCOMING FM JSON file and searches the database for mat
 import asyncio
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Dict, Optional, Tuple, List, Any
@@ -106,9 +107,15 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
 
 
 async def get_existing_model_from_db(oifm_id: str, index: Index) -> Optional[Dict[str, Any]]:
-    """Load EXISTING model from MongoDB by oifm_id."""
-    data = await index.index_collection.find_one({"oifm_id": oifm_id})
-    return data
+    """Load EXISTING model from DuckDB index by oifm_id."""
+    try:
+        model = await index.get_full(oifm_id)
+        if model:
+            return model.model_dump(exclude_unset=False, exclude_none=False)
+        return None
+    except Exception as e:
+        print(f"Error loading model {oifm_id} from database: {e}")
+        return None
 
 
 async def classify_attribute(attr: Dict[str, Any], finding_name: str) -> AttributeClassification:
@@ -471,6 +478,26 @@ def build_final_finding(
     return final_finding
 
 
+def convert_to_json_serializable(obj: Any) -> Any:
+    """Recursively convert Pydantic HttpUrl and other non-serializable objects to strings."""
+    from pydantic import HttpUrl
+    
+    if isinstance(obj, HttpUrl):
+        return str(obj)
+    elif isinstance(obj, dict):
+        return {key: convert_to_json_serializable(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_to_json_serializable(item) for item in obj]
+    elif isinstance(obj, (str, int, float, bool, type(None))):
+        return obj
+    else:
+        # For other types, try to convert to string
+        try:
+            return str(obj)
+        except Exception:
+            return obj
+
+
 def print_final_finding(final_finding: Dict[str, Any]):
     """Print the final finding model in a readable format."""
     print(f"\nFinding Name: {final_finding.get('name', 'Unknown')}")
@@ -518,7 +545,9 @@ def print_final_finding(final_finding: Dict[str, Any]):
     print(f"\n{'='*60}")
     print("FINAL FINDING MODEL (JSON)")
     print(f"{'='*60}")
-    print(json.dumps(final_finding, indent=2, ensure_ascii=False))
+    # Convert HttpUrl objects to strings before JSON serialization
+    serializable_finding = convert_to_json_serializable(final_finding)
+    print(json.dumps(serializable_finding, indent=2, ensure_ascii=False))
 
 
 def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
@@ -657,6 +686,12 @@ async def main():
         type=str,
         help='Path to INCOMING FM JSON file'
     )
+    parser.add_argument(
+        '--db-path',
+        type=str,
+        default=None,
+        help='Path to DuckDB index file (or set DUCKDB_INDEX_PATH environment variable)'
+    )
     
     args = parser.parse_args()
     input_path = Path(args.input_file)
@@ -665,14 +700,26 @@ async def main():
         print(f"Error: Input file not found: {input_path}")
         sys.exit(1)
     
+    # Get database path from argument or environment variable
+    db_path = args.db_path or os.getenv("DUCKDB_INDEX_PATH")
+    if not db_path:
+        print("Error: Database path not specified.")
+        print("Please provide --db-path argument or set DUCKDB_INDEX_PATH environment variable.")
+        print("Example: python merge_findings.py input.json --db-path ../findingmodels_20251111.duckdb")
+        sys.exit(1)
+    
+    if not Path(db_path).exists():
+        print(f"Error: Database file not found: {db_path}")
+        sys.exit(1)
+    
     try:
-        # Initialize index
-        print("Initializing MongoDB index...")
+        # Initialize index with DuckDB file
+        print(f"Initializing DuckDB index from {db_path}...")
         try:
-            index = Index()
+            index = Index(db_path=db_path)
         except Exception as e:
-            print(f"Error: Failed to connect to MongoDB: {e}")
-            print("Please ensure MongoDB is running and accessible.")
+            print(f"Error: Failed to connect to DuckDB index: {e}")
+            print(f"Please ensure the database file exists and is accessible: {db_path}")
             sys.exit(1)
         
         # Load INCOMING model

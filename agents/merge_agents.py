@@ -162,7 +162,7 @@ OUTPUT REQUIREMENTS:
   * Any special considerations (e.g., placeholder values, incomplete data)
 - recommendation: **CRITICAL** - Must be "merge" or "no_merge":
   * "merge" if relationship is "enhanced" (incoming has all existing values plus more, OR incoming has real values and existing has only placeholders)
-  * "merge" if relationship is "identical" (same values)
+  * "no_merge" if relationship is "identical" (same values)
   * "merge" if semantically same attributes but one has real values and other has only placeholders (incomplete data case - incoming provides missing values)
   * "no_merge" for "subset" (existing has more real values, so no need to merge incoming)
   * "no_merge" for "different" or "no_similarities" (different attributes, UNLESS they are semantically similar and one has placeholders while other has real values - then use "enhanced" + "merge")
