@@ -133,19 +133,6 @@ RELATIONSHIP TYPES:
    - CRITICAL: Zero overlap in values
 
 IMPORTANT RULES:
-- **PLACEHOLDER VALUES**: If an attribute has placeholder values (e.g., "placeholder_value_1", "placeholder_value_2"), these indicate that the attribute definition exists but actual values are missing from the database. **CRITICAL**: Placeholder values are NOT real values and should be ignored when determining relationships.
-  
-  **SPECIAL CASE - Semantically Similar Attributes with Placeholders**:
-  - If attributes are semantically the same (refer to the same concept) AND:
-    - Existing has ONLY placeholders (no real values) AND incoming has real values → **"enhanced"** (incoming provides the missing real values)
-    - Existing has real values AND incoming has ONLY placeholders → **"subset"** (existing already has the real values)
-    - Both have ONLY placeholders → **"identical"** (both incomplete, but same structure)
-  
-  **CRITICAL RULE**: When one attribute has placeholders and the other has real values, and they are semantically the same:
-  - DO NOT classify as "no_similarities" just because placeholders don't match real values
-  - Classify as "enhanced" if incoming has real values and existing has placeholders
-  - Classify as "subset" if existing has real values and incoming has placeholders
-  - Placeholder values should be clearly identified in the shared_values, existing_only_values, and incoming_only_values lists, but they should NOT prevent "enhanced" classification when semantically similar
 - For numeric attributes, compare the ranges (min/max) and units
 - For choice attributes, compare the actual value names (case-insensitive)
 - Order of values does NOT matter
@@ -159,13 +146,11 @@ OUTPUT REQUIREMENTS:
   * Why you chose this specific relationship type
   * How the values compare (which values are shared, which are unique)
   * What makes this relationship "identical", "enhanced", "subset", "different", or "no_similarities"
-  * Any special considerations (e.g., placeholder values, incomplete data)
 - recommendation: **CRITICAL** - Must be "merge" or "no_merge":
-  * "merge" if relationship is "enhanced" (incoming has all existing values plus more, OR incoming has real values and existing has only placeholders)
+  * "merge" if relationship is "enhanced" (incoming has all existing values plus more)
   * "no_merge" if relationship is "identical" (same values)
-  * "merge" if semantically same attributes but one has real values and other has only placeholders (incomplete data case - incoming provides missing values)
-  * "no_merge" for "subset" (existing has more real values, so no need to merge incoming)
-  * "no_merge" for "different" or "no_similarities" (different attributes, UNLESS they are semantically similar and one has placeholders while other has real values - then use "enhanced" + "merge")
+  * "no_merge" for "subset" (existing has more values, so no need to merge incoming)
+  * "no_merge" for "different" or "no_similarities" (different attributes)
 - existing_values: List of all values from the existing attribute
 - incoming_values: List of all values from the incoming attribute
 - shared_values: List of values present in both attributes

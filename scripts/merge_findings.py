@@ -11,6 +11,7 @@ import os
 import sys
 from pathlib import Path
 from typing import Dict, Optional, Tuple, List, Any
+from datetime import datetime
 
 # Add project root to path
 sys.path.append(str(Path(__file__).parent.parent))
@@ -28,6 +29,24 @@ from agents.merge_agents import (
     AttributeRelationship
 )
 from agents.attribute_classifier import AttributeNameSimilarityChecker
+
+
+# Helper functions for attribute value extraction
+def extract_value_names(attr: Dict[str, Any]) -> List[str]:
+    """Extract value names from a choice attribute (handles both dict and object types)."""
+    values = attr.get('values', [])
+    value_names = []
+    for val in values:
+        if isinstance(val, dict):
+            value_names.append(val.get('name', ''))
+        else:
+            value_names.append(getattr(val, 'name', ''))
+    return value_names
+
+
+def extract_attr_name(attr: Dict[str, Any]) -> str:
+    """Extract attribute name (handles both dict and object types)."""
+    return attr.get('name', 'unknown') if isinstance(attr, dict) else getattr(attr, 'name', 'unknown')
 
 
 async def load_incoming_model(file_path: Path) -> FindingModelFull:
@@ -51,10 +70,10 @@ async def load_incoming_model(file_path: Path) -> FindingModelFull:
         raise ValueError(f"Failed to load INCOMING model from {file_path}: {e}")
 
 
-async def find_existing_model(incoming_model: FindingModelFull, index: Index) -> Tuple[Optional[Dict], Optional[str], Optional[float]]:
+async def find_existing_model(incoming_model: FindingModelFull, index: Index) -> Optional[Dict]:
     """Search for existing model in database.
     
-    Returns: (highest confidence match or None, recommendation string or None, confidence float or None)"""
+    Returns: highest confidence match dict or None"""
     finding_name = incoming_model.name
     description = incoming_model.description
     synonyms = getattr(incoming_model, 'synonyms', []) or []
@@ -69,7 +88,7 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
     
     # If recommendation is to create new, no match found
     if analysis.recommendation == "create_new":
-        return None, None, None
+        return None
     
     # If recommendation is to edit existing or review needed, get the highest confidence match
     if analysis.recommendation in ["edit_existing", "review_needed"]:
@@ -77,21 +96,12 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
             # Get the highest confidence match
             best_match = analysis.similar_models[0]
             
-            # Handle both dict and object types
+            # Convert to dict if it's an object
             if isinstance(best_match, dict):
-                match_data = {
-                    'oifm_id': best_match.get('oifm_id'),
-                    'name': best_match.get('name'),
-                    'slug_name': best_match.get('slug_name'),
-                    'filename': best_match.get('filename'),
-                    'description': best_match.get('description'),
-                    'synonyms': best_match.get('synonyms'),
-                    'tags': best_match.get('tags'),
-                    'contributors': best_match.get('contributors')
-                }
+                return best_match
             else:
-                # It's an object (IndexEntry)
-                match_data = {
+                # It's an object (IndexEntry) - convert to dict
+                return {
                     'oifm_id': best_match.oifm_id,
                     'name': best_match.name,
                     'slug_name': best_match.slug_name,
@@ -101,9 +111,8 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
                     'tags': best_match.tags,
                     'contributors': best_match.contributors
                 }
-            return match_data, analysis.recommendation, analysis.confidence
     
-    return None, None, None
+    return None
 
 
 async def get_existing_model_from_db(oifm_id: str, index: Index) -> Optional[Dict[str, Any]]:
@@ -123,18 +132,13 @@ async def classify_attribute(attr: Dict[str, Any], finding_name: str) -> Attribu
     classification_agent = create_classification_agent()
     
     # Prepare attribute info for classification
-    attr_name = attr.get('name', 'unknown')
+    attr_name = extract_attr_name(attr)
     attr_type = attr.get('type', 'unknown')
-    values = attr.get('values', [])
     
     # Extract value names if it's a choice attribute
     value_names = []
-    if attr_type == 'choice' and values:
-        for val in values:
-            if isinstance(val, dict):
-                value_names.append(val.get('name', ''))
-            else:
-                value_names.append(getattr(val, 'name', ''))
+    if attr_type == 'choice':
+        value_names = extract_value_names(attr)
     
     # Create prompt for classification
     prompt = f"""Attribute to classify:
@@ -151,8 +155,7 @@ async def classify_attribute(attr: Dict[str, Any], finding_name: str) -> Attribu
 
 async def classify_and_group_attributes(
     attributes: List[Dict[str, Any]], 
-    finding_name: str,
-    source: str
+    finding_name: str
 ) -> Dict[str, List[Dict[str, Any]]]:
     """Classify all attributes and group them by classification.
     
@@ -163,10 +166,7 @@ async def classify_and_group_attributes(
         'other': []
     }
     
-    print(f"\n  Classifying {len(attributes)} attributes from {source}...")
-    
     for attr in attributes:
-        attr_name = attr.get('name', 'unknown')
         try:
             classification = await classify_attribute(attr, finding_name)
             
@@ -178,9 +178,7 @@ async def classify_and_group_attributes(
             
             # Group by classification
             grouped[classification.classification].append(attr_with_classification)
-            print(f"    - '{attr_name}': {classification.classification} (confidence: {classification.confidence:.2f})")
         except Exception as e:
-            print(f"    - '{attr_name}': ERROR - {e}")
             # Add to 'other' as fallback
             attr_with_classification = attr.copy()
             attr_with_classification['_classification'] = 'other'
@@ -192,24 +190,12 @@ async def classify_and_group_attributes(
 
 
 def normalize_incomplete_attribute(attr: Dict[str, Any]) -> Dict[str, Any]:
-    """Normalize incomplete attributes by adding placeholder values if needed.
+    """Normalize attributes by ensuring basic requirements are met.
     
-    For choice attributes with 0 values, adds 2 placeholder values to meet schema requirements.
     Returns normalized attribute dict."""
     normalized = attr.copy()
-    attr_type = normalized.get('type', 'unknown')
-    attr_name = normalized.get('name', 'unknown')
     
-    if attr_type == 'choice':
-        values = normalized.get('values', [])
-        if not values or len(values) == 0:
-            # Add placeholder values
-            normalized['values'] = [
-                {'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'},
-                {'name': 'placeholder_value_2', 'description': 'Placeholder value - actual values missing from database'}
-            ]
-            print(f"    WARNING: Attribute '{attr_name}' has 0 values - adding placeholder values for comparison")
-        
+    if normalized.get('type') == 'choice':
         # Ensure max_selected is valid
         if normalized.get('max_selected', 1) < 1:
             normalized['max_selected'] = 1
@@ -217,7 +203,6 @@ def normalize_incomplete_attribute(attr: Dict[str, Any]) -> Dict[str, Any]:
     # Ensure oifma_id exists (use attribute_id if available)
     if not normalized.get('oifma_id') and normalized.get('attribute_id'):
         normalized['oifma_id'] = normalized.get('attribute_id')
-        print(f"    WARNING: Attribute '{attr_name}' has attribute_id but missing oifma_id - using attribute_id")
     
     return normalized
 
@@ -234,8 +219,6 @@ async def compare_attributes_within_group(
     relationship_agent = create_attribute_relationship_agent()
     comparisons = []
     
-    print(f"\n  Comparing {len(incoming_attrs)} incoming {classification_type} attributes against {len(existing_attrs)} existing {classification_type} attributes...")
-    
     # Normalize all attributes first
     normalized_incoming = [normalize_incomplete_attribute(attr) for attr in incoming_attrs]
     normalized_existing = [normalize_incomplete_attribute(attr) for attr in existing_attrs]
@@ -247,8 +230,6 @@ async def compare_attributes_within_group(
         best_relationship = None
         best_confidence = 0.0
         
-        print(f"    Comparing incoming '{incoming_name}'...")
-        
         for existing_attr in normalized_existing:
             existing_name = existing_attr.get('name', 'unknown')
             existing_type = existing_attr.get('type', 'unknown')
@@ -256,7 +237,6 @@ async def compare_attributes_within_group(
             
             # Skip if types don't match (choice vs numeric)
             if existing_type != incoming_type:
-                print(f"      SKIPPING '{existing_name}': Type mismatch (existing: {existing_type}, incoming: {incoming_type})")
                 continue
             
             # For "other" attributes only, check semantic name similarity first
@@ -269,35 +249,14 @@ async def compare_attributes_within_group(
                         finding_name
                     )
                     if not similarity.is_similar:
-                        print(f"      SKIPPING '{existing_name}': Names not semantically similar (confidence: {similarity.confidence:.2f}, reasoning: {similarity.reasoning[:80]}...)")
                         continue
-                    else:
-                        print(f"      Names semantically similar: '{existing_name}' ↔ '{incoming_name}' (confidence: {similarity.confidence:.2f})")
-                except Exception as e:
-                    print(f"      WARNING: Semantic similarity check failed for '{existing_name}': {e}")
+                except Exception:
                     # Continue with comparison anyway
+                    pass
             
             # Extract values for comparison
-            incoming_values = []
-            if incoming_attr.get('type') == 'choice':
-                for val in incoming_attr.get('values', []):
-                    if isinstance(val, dict):
-                        incoming_values.append(val.get('name', ''))
-                    else:
-                        incoming_values.append(getattr(val, 'name', ''))
-            
-            existing_values = []
-            if existing_attr.get('type') == 'choice':
-                for val in existing_attr.get('values', []):
-                    if isinstance(val, dict):
-                        existing_values.append(val.get('name', ''))
-                    else:
-                        existing_values.append(getattr(val, 'name', ''))
-            
-            # Check if one has values and other doesn't (for semantic match case)
-            existing_has_values = len(existing_values) > 0 and not all('placeholder' in v.lower() for v in existing_values)
-            incoming_has_values = len(incoming_values) > 0 and not all('placeholder' in v.lower() for v in incoming_values)
-            one_has_values_other_not = (existing_has_values and not incoming_has_values) or (incoming_has_values and not existing_has_values)
+            incoming_values = extract_value_names(incoming_attr) if incoming_attr.get('type') == 'choice' else []
+            existing_values = extract_value_names(existing_attr) if existing_attr.get('type') == 'choice' else []
             
             # Create prompt for relationship agent
             prompt = f"""Compare these two {classification_type} attributes:
@@ -305,36 +264,29 @@ async def compare_attributes_within_group(
 EXISTING Attribute:
 - Name: {existing_name}
 - Type: {existing_attr.get('type', 'unknown')}
-- Values: {', '.join(existing_values) if existing_values else 'None (incomplete)'}
+- Values: {', '.join(existing_values) if existing_values else 'None'}
 
 INCOMING Attribute:
 - Name: {incoming_name}
 - Type: {incoming_attr.get('type', 'unknown')}
-- Values: {', '.join(incoming_values) if incoming_values else 'None (incomplete)'}
+- Values: {', '.join(incoming_values) if incoming_values else 'None'}
 
 Finding: {finding_name}
 
-Determine the relationship between these attributes. Provide clear reasoning for your classification.
-
-IMPORTANT: If these attributes are semantically the same (refer to the same concept) but one has actual values and the other doesn't (or only has placeholders), recommend "merge" as the incoming can provide the missing values."""
+Determine the relationship between these attributes. Provide clear reasoning for your classification."""
             
             try:
                 result = await relationship_agent.run(prompt)
                 relationship = result.output
                 
-                # Print attribute details for debugging
-                print(f"\n      COMPARING:")
+                # Print comparison details
+                print(f"\n      Comparing:")
                 print(f"        EXISTING: {existing_name} ({existing_attr.get('type', 'unknown')})")
-                print(f"          Values: {', '.join(existing_values) if existing_values else 'None (incomplete)'}")
+                if existing_values:
+                    print(f"          Values: {', '.join(existing_values)}")
                 print(f"        INCOMING: {incoming_name} ({incoming_attr.get('type', 'unknown')})")
-                print(f"          Values: {', '.join(incoming_values) if incoming_values else 'None (incomplete)'}")
-                
-                # Track best match (highest confidence)
-                if relationship.confidence > best_confidence:
-                    best_confidence = relationship.confidence
-                    best_match = existing_attr
-                    best_relationship = relationship
-                
+                if incoming_values:
+                    print(f"          Values: {', '.join(incoming_values)}")
                 print(f"        RESULT: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
                 print(f"        RECOMMENDATION: {relationship.recommendation}")
                 print(f"        REASONING: {relationship.reasoning}")
@@ -348,27 +300,32 @@ IMPORTANT: If these attributes are semantically the same (refer to the same conc
                         print(f"          Existing only: {', '.join(relationship.existing_only_values)}")
                     if relationship.incoming_only_values:
                         print(f"          Incoming only: {', '.join(relationship.incoming_only_values)}")
-                print()
+                
+                # Track best match (highest confidence)
+                if relationship.confidence > best_confidence:
+                    best_confidence = relationship.confidence
+                    best_match = existing_attr
+                    best_relationship = relationship
             except Exception as e:
-                print(f"      vs '{existing_name}': ERROR - {e}")
+                print(f"      ERROR comparing '{existing_name}' vs '{incoming_name}': {e}")
+                pass
         
         if best_match and best_relationship:
+            print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match)}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
+            print(f"      Recommendation: {best_relationship.recommendation}")
             comparisons.append({
                 'incoming_attribute': incoming_attr,
                 'existing_attribute': best_match,
                 'relationship': best_relationship
             })
-            print(f"    ✓ Best match: '{best_match.get('name')}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
-            print(f"      Recommendation: {best_relationship.recommendation}")
-            print(f"      Reasoning: {best_relationship.reasoning}")
         else:
             # No match found - new attribute
+            print(f"\n    ✗ No match found for '{incoming_name}' - new attribute")
             comparisons.append({
                 'incoming_attribute': incoming_attr,
                 'existing_attribute': None,
                 'relationship': None
             })
-            print(f"    ✗ No match found - new attribute")
     
     return comparisons
 
@@ -394,12 +351,12 @@ def build_final_finding(
     existing_model_data: Dict[str, Any],
     incoming_model: FindingModelFull,
     merge_recommendations: List[Dict[str, Any]],
-    all_comparisons: Dict[str, List[Dict[str, Any]]],
     attributes_to_add: List[Tuple[str, Dict[str, Any]]],
-    approved_new_attributes: List[Dict[str, Any]],
-    finding_name: str
+    approved_new_attributes: List[Dict[str, Any]]
 ) -> Dict[str, Any]:
-    """Build the final finding model based on merge decisions and user choices.
+    """Build the final finding model based on automatic merge decisions.
+    
+    Merge strategy: Keep existing attribute, then add incoming values that don't already exist.
     
     Returns: Dictionary representing the final finding model."""
     # Start with existing model structure (if available) or incoming model
@@ -415,37 +372,28 @@ def build_final_finding(
     final_attributes = []
     processed_incoming_attrs = set()
     
-    # Process merge recommendations
+    # Process merge recommendations - automatically merge (keep existing + add new values)
     for merge_rec in merge_recommendations:
         incoming_attr = merge_rec['incoming_attribute']
         existing_attr = merge_rec['existing_attribute']
-        user_choice = merge_rec.get('user_choice', '2')  # Default to 'keep existing'
         incoming_name = incoming_attr.get('name', 'unknown')
         existing_name = existing_attr.get('name', 'unknown')
         
         processed_incoming_attrs.add(incoming_name)
         
-        if user_choice == '1':  # Replace existing with enhanced
-            # Use incoming attribute (it's enhanced)
-            final_attributes.append(incoming_attr.copy())
-        elif user_choice == '2':  # Keep existing
-            # Use existing attribute
-            final_attributes.append(existing_attr.copy())
-        elif user_choice == '3':  # Combine
-            # Merge both attributes - combine values
-            combined_attr = existing_attr.copy()
-            if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
-                existing_values = {v.get('name', '') if isinstance(v, dict) else getattr(v, 'name', '') 
-                                 for v in existing_attr.get('values', [])}
-                incoming_values = incoming_attr.get('values', [])
-                # Add incoming values that don't exist in existing
-                for val in incoming_values:
-                    val_name = val.get('name', '') if isinstance(val, dict) else getattr(val, 'name', '')
-                    if val_name not in existing_values and 'placeholder' not in val_name.lower():
-                        combined_attr['values'].append(val)
-            final_attributes.append(combined_attr)
+        # Automatic merge strategy: Keep existing, then add incoming values that don't exist
+        combined_attr = existing_attr.copy()
+        if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
+            existing_value_names = set(extract_value_names(existing_attr))
+            incoming_values = incoming_attr.get('values', [])
+            # Add incoming values that don't exist in existing
+            for val in incoming_values:
+                val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
+                if val_name not in existing_value_names:
+                    combined_attr['values'].append(val)
+        final_attributes.append(combined_attr)
     
-    # Add approved new attributes (only those the user chose to include)
+    # Add all new attributes (automatically approved)
     for new_attr in approved_new_attributes:
         attr_name = new_attr.get('name', 'unknown')
         if attr_name not in processed_incoming_attrs:
@@ -465,89 +413,13 @@ def build_final_finding(
             if not was_merged:
                 final_attributes.append(existing_attr.copy())
     
-    # Add new attributes (presence/change_from_prior) if user chose to add them
+    # Add new attributes (presence/change_from_prior) - automatically added
     for attr_name, attr_dict in attributes_to_add:
-        # Generate ID for the attribute if needed
-        if not attr_dict.get('oifma_id'):
-            # Will be generated later by add_ids_to_model
-            pass
         final_attributes.append(attr_dict.copy())
     
     final_finding['attributes'] = final_attributes
     
     return final_finding
-
-
-def convert_to_json_serializable(obj: Any) -> Any:
-    """Recursively convert Pydantic HttpUrl and other non-serializable objects to strings."""
-    from pydantic import HttpUrl
-    
-    if isinstance(obj, HttpUrl):
-        return str(obj)
-    elif isinstance(obj, dict):
-        return {key: convert_to_json_serializable(value) for key, value in obj.items()}
-    elif isinstance(obj, list):
-        return [convert_to_json_serializable(item) for item in obj]
-    elif isinstance(obj, (str, int, float, bool, type(None))):
-        return obj
-    else:
-        # For other types, try to convert to string
-        try:
-            return str(obj)
-        except Exception:
-            return obj
-
-
-def print_final_finding(final_finding: Dict[str, Any]):
-    """Print the final finding model in a readable format."""
-    print(f"\nFinding Name: {final_finding.get('name', 'Unknown')}")
-    if final_finding.get('oifm_id'):
-        print(f"ID: {final_finding.get('oifm_id')}")
-    if final_finding.get('description'):
-        print(f"Description: {final_finding.get('description')}")
-    
-    attributes = final_finding.get('attributes', [])
-    print(f"\nAttributes ({len(attributes)} total):")
-    
-    for idx, attr in enumerate(attributes, 1):
-        attr_name = attr.get('name', 'unknown')
-        attr_type = attr.get('type', 'unknown')
-        print(f"\n  [{idx}] {attr_name} ({attr_type})")
-        
-        if attr_type == 'choice':
-            values = attr.get('values', [])
-            if values:
-                print(f"      Values ({len(values)}):")
-                for val in values:
-                    val_name = val.get('name', '') if isinstance(val, dict) else getattr(val, 'name', '')
-                    val_desc = val.get('description', '') if isinstance(val, dict) else getattr(val, 'description', '')
-                    if val_desc:
-                        print(f"        - {val_name}: {val_desc}")
-                    else:
-                        print(f"        - {val_name}")
-            else:
-                print(f"      Values: (none)")
-            if attr.get('max_selected'):
-                print(f"      Max selected: {attr.get('max_selected')}")
-        
-        elif attr_type == 'numeric':
-            if attr.get('unit'):
-                print(f"      Unit: {attr.get('unit')}")
-            if attr.get('minimum') is not None or attr.get('maximum') is not None:
-                print(f"      Range: {attr.get('minimum', 'N/A')} - {attr.get('maximum', 'N/A')}")
-        
-        if attr.get('required') is not None:
-            print(f"      Required: {attr.get('required')}")
-        if attr.get('description'):
-            print(f"      Description: {attr.get('description')}")
-    
-    # Also print as JSON for easy copy/paste
-    print(f"\n{'='*60}")
-    print("FINAL FINDING MODEL (JSON)")
-    print(f"{'='*60}")
-    # Convert HttpUrl objects to strings before JSON serialization
-    serializable_finding = convert_to_json_serializable(final_finding)
-    print(json.dumps(serializable_finding, indent=2, ensure_ascii=False))
 
 
 def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
@@ -564,31 +436,8 @@ def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
         cleaned_attr.pop('_confidence', None)
         cleaned_attr.pop('_reasoning', None)
         
-        # Normalize incomplete attributes (same logic as normalize_incomplete_attribute)
-        attr_type = cleaned_attr.get('type', 'unknown')
-        attr_name = cleaned_attr.get('name', 'unknown')
-        
-        if attr_type == 'choice':
-            values = cleaned_attr.get('values', [])
-            if not values or len(values) < 2:
-                if len(values) == 0:
-                    # Add placeholder values to meet schema requirements
-                    cleaned_attr['values'] = [
-                        {'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'},
-                        {'name': 'placeholder_value_2', 'description': 'Placeholder value - actual values missing from database'}
-                    ]
-                else:
-                    # Has 1 value but needs at least 2
-                    values.append({'name': 'placeholder_value_1', 'description': 'Placeholder value - actual values missing from database'})
-                    cleaned_attr['values'] = values
-            
-            # Ensure max_selected is valid
-            if cleaned_attr.get('max_selected', 1) < 1:
-                cleaned_attr['max_selected'] = 1
-        
-        # Ensure oifma_id exists (use attribute_id if available)
-        if not cleaned_attr.get('oifma_id') and cleaned_attr.get('attribute_id'):
-            cleaned_attr['oifma_id'] = cleaned_attr.get('attribute_id')
+        # Normalize attributes using the same logic
+        cleaned_attr = normalize_incomplete_attribute(cleaned_attr)
         
         cleaned_attributes.append(cleaned_attr)
     cleaned['attributes'] = cleaned_attributes
@@ -627,6 +476,302 @@ def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
     return cleaned
 
 
+def print_merge_summary(
+    finding_name: str,
+    existing_match: Optional[Dict],
+    merge_recommendations: List[Dict[str, Any]],
+    new_attributes: List[Dict[str, Any]],
+    attributes_to_add: List[Tuple[str, Dict[str, Any]]]
+) -> None:
+    """Print a concise summary of all changes made and AI reasoning."""
+    print(f"\n{'='*80}")
+    print(f"MERGE SUMMARY: {finding_name}")
+    print(f"{'='*80}\n")
+    
+    if existing_match:
+        print(f"Existing Model: {existing_match.get('name', 'Unknown')} (ID: {existing_match.get('oifm_id', 'N/A')})")
+        print()
+    
+    # Merged attributes
+    if merge_recommendations:
+        print(f"MERGED ATTRIBUTES ({len(merge_recommendations)}):")
+        for idx, merge_rec in enumerate(merge_recommendations, 1):
+            incoming_attr = merge_rec['incoming_attribute']
+            existing_attr = merge_rec['existing_attribute']
+            relationship = merge_rec['relationship']
+            
+            incoming_name = incoming_attr.get('name', 'unknown')
+            existing_name = existing_attr.get('name', 'unknown')
+            
+            print(f"  {idx}. {existing_name} ← {incoming_name}")
+            print(f"     Relationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+            print(f"     Reasoning: {relationship.reasoning}")
+            
+            # Show values added
+            if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
+                existing_value_names = set(extract_value_names(existing_attr))
+                incoming_value_names = extract_value_names(incoming_attr)
+                added_values = [v for v in incoming_value_names if v not in existing_value_names]
+                if added_values:
+                    print(f"     Added values: {', '.join(added_values)}")
+            print()
+    else:
+        print("MERGED ATTRIBUTES: None\n")
+    
+    # New attributes
+    if new_attributes:
+        print(f"NEW ATTRIBUTES ADDED ({len(new_attributes)}):")
+        for idx, new_attr_info in enumerate(new_attributes, 1):
+            incoming_attr = new_attr_info['incoming_attribute']
+            attr_name = incoming_attr.get('name', 'unknown')
+            print(f"  {idx}. {attr_name}")
+            if incoming_attr.get('description'):
+                print(f"     Description: {incoming_attr.get('description')}")
+        print()
+    else:
+        print("NEW ATTRIBUTES ADDED: None\n")
+    
+    # Required attributes
+    if attributes_to_add:
+        print(f"REQUIRED ATTRIBUTES ADDED ({len(attributes_to_add)}):")
+        for attr_name, attr_dict in attributes_to_add:
+            print(f"  - {attr_dict.get('name', 'unknown')}")
+        print()
+    else:
+        print("REQUIRED ATTRIBUTES ADDED: None\n")
+    
+    # Summary
+    print(f"SUMMARY:")
+    print(f"  - Attributes merged: {len(merge_recommendations)}")
+    print(f"  - New attributes added: {len(new_attributes)}")
+    print(f"  - Required attributes added: {len(attributes_to_add)}")
+    print(f"\n{'='*80}\n")
+
+
+def format_attribute_for_report(attr: Dict[str, Any]) -> List[str]:
+    """Format an attribute for report display with all details."""
+    lines = []
+    attr_name = extract_attr_name(attr)
+    attr_type = attr.get('type', 'unknown')
+    
+    lines.append(f"- **Name:** {attr_name}")
+    lines.append(f"- **Type:** {attr_type}")
+    
+    if attr.get('description'):
+        lines.append(f"- **Description:** {attr.get('description')}")
+    
+    if attr_type == 'choice':
+        value_names = extract_value_names(attr)
+        if value_names:
+            lines.append(f"- **Values:** {', '.join(value_names)}")
+        else:
+            lines.append("- **Values:** None")
+        if attr.get('max_selected'):
+            lines.append(f"- **Max selected:** {attr.get('max_selected')}")
+    elif attr_type == 'numeric':
+        if attr.get('unit'):
+            lines.append(f"- **Unit:** {attr.get('unit')}")
+        if attr.get('minimum') is not None or attr.get('maximum') is not None:
+            lines.append(f"- **Range:** {attr.get('minimum', 'N/A')} - {attr.get('maximum', 'N/A')}")
+    
+    if attr.get('required') is not None:
+        lines.append(f"- **Required:** {attr.get('required')}")
+    
+    return lines
+
+
+def generate_merge_report(
+    finding_name: str,
+    existing_match: Optional[Dict],
+    existing_attrs: List[Dict[str, Any]],
+    incoming_attrs: List[Dict[str, Any]],
+    final_attrs: List[Dict[str, Any]],
+    merge_recommendations: List[Dict[str, Any]],
+    new_attributes: List[Dict[str, Any]],
+    attributes_to_add: List[Tuple[str, Dict[str, Any]]],
+    report_path: Path
+) -> None:
+    """Generate individual merge report for this finding.
+    
+    Creates a markdown report documenting all changes made during the merge process.
+    Each merge gets its own file.
+    """
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Build report
+    report_lines = []
+    report_lines.append(f"# Merge Report: {finding_name}")
+    report_lines.append(f"**Timestamp:** {timestamp}")
+    report_lines.append("")
+    
+    if existing_match:
+        report_lines.append(f"**Existing Model:** {existing_match.get('name', 'Unknown')} (ID: {existing_match.get('oifm_id', 'N/A')})")
+        report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # All Existing Attributes
+    report_lines.append(f"## Existing Attributes ({len(existing_attrs)})")
+    report_lines.append("")
+    if existing_attrs:
+        for idx, attr in enumerate(existing_attrs, 1):
+            report_lines.append(f"### {idx}. {extract_attr_name(attr)}")
+            report_lines.extend(format_attribute_for_report(attr))
+            report_lines.append("")
+    else:
+        report_lines.append("None")
+        report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # All Incoming Attributes
+    report_lines.append(f"## Incoming Attributes ({len(incoming_attrs)})")
+    report_lines.append("")
+    if incoming_attrs:
+        for idx, attr in enumerate(incoming_attrs, 1):
+            report_lines.append(f"### {idx}. {extract_attr_name(attr)}")
+            report_lines.extend(format_attribute_for_report(attr))
+            report_lines.append("")
+    else:
+        report_lines.append("None")
+        report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # Merge recommendations section
+    if merge_recommendations:
+        report_lines.append(f"### Merged Attributes ({len(merge_recommendations)})")
+        report_lines.append("")
+        for idx, merge_rec in enumerate(merge_recommendations, 1):
+            incoming_attr = merge_rec['incoming_attribute']
+            existing_attr = merge_rec['existing_attribute']
+            relationship = merge_rec['relationship']
+            
+            incoming_name = incoming_attr.get('name', 'unknown')
+            existing_name = existing_attr.get('name', 'unknown')
+            
+            report_lines.append(f"#### {idx}. {existing_name}")
+            report_lines.append(f"- **Relationship:** {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+            report_lines.append(f"- **Incoming attribute:** {incoming_name}")
+            report_lines.append("")
+            
+            # Show values
+            if existing_attr.get('type') == 'choice':
+                existing_value_names = extract_value_names(existing_attr)
+                incoming_value_names = extract_value_names(incoming_attr)
+                
+                # Determine which values were added
+                existing_set = set(existing_value_names)
+                incoming_set = set(incoming_value_names)
+                added_values = list(incoming_set - existing_set)
+                
+                report_lines.append(f"- **Existing values:** {', '.join(existing_value_names) if existing_value_names else 'None'}")
+                report_lines.append(f"- **Incoming values:** {', '.join(incoming_value_names) if incoming_value_names else 'None'}")
+                if added_values:
+                    report_lines.append(f"- **Added values:** {', '.join(added_values)}")
+                else:
+                    report_lines.append("- **Added values:** None (all values already existed)")
+            elif existing_attr.get('type') == 'numeric':
+                report_lines.append(f"- **Type:** Numeric")
+                if existing_attr.get('unit'):
+                    report_lines.append(f"- **Unit:** {existing_attr.get('unit')}")
+                if existing_attr.get('minimum') is not None or existing_attr.get('maximum') is not None:
+                    report_lines.append(f"- **Range:** {existing_attr.get('minimum', 'N/A')} - {existing_attr.get('maximum', 'N/A')}")
+            
+            report_lines.append("")
+    else:
+        report_lines.append("### Merged Attributes")
+        report_lines.append("None")
+        report_lines.append("")
+    
+    # New attributes section
+    if new_attributes:
+        report_lines.append(f"### New Attributes Added ({len(new_attributes)})")
+        report_lines.append("")
+        for idx, new_attr_info in enumerate(new_attributes, 1):
+            incoming_attr = new_attr_info['incoming_attribute']
+            attr_name = incoming_attr.get('name', 'unknown')
+            attr_type = incoming_attr.get('type', 'unknown')
+            
+            report_lines.append(f"#### {idx}. {attr_name}")
+            report_lines.append(f"- **Type:** {attr_type}")
+            
+            if attr_type == 'choice':
+                value_names = extract_value_names(incoming_attr)
+                if value_names:
+                    report_lines.append(f"- **Values:** {', '.join(value_names)}")
+                else:
+                    report_lines.append("- **Values:** None")
+            elif attr_type == 'numeric':
+                if incoming_attr.get('unit'):
+                    report_lines.append(f"- **Unit:** {incoming_attr.get('unit')}")
+                if incoming_attr.get('minimum') is not None or incoming_attr.get('maximum') is not None:
+                    report_lines.append(f"- **Range:** {incoming_attr.get('minimum', 'N/A')} - {incoming_attr.get('maximum', 'N/A')}")
+            
+            if incoming_attr.get('description'):
+                report_lines.append(f"- **Description:** {incoming_attr.get('description')}")
+            
+            report_lines.append("")
+    else:
+        report_lines.append("### New Attributes Added")
+        report_lines.append("None")
+        report_lines.append("")
+    
+    # Required attributes section
+    if attributes_to_add:
+        report_lines.append(f"### Required Attributes Added ({len(attributes_to_add)})")
+        report_lines.append("")
+        for attr_name, attr_dict in attributes_to_add:
+            report_lines.append(f"#### {attr_dict.get('name', 'unknown')}")
+            report_lines.append(f"- **Type:** {attr_dict.get('type', 'unknown')}")
+            if attr_dict.get('type') == 'choice':
+                values = attr_dict.get('values', [])
+                if values:
+                    value_names = [v.get('name', '') for v in values]
+                    report_lines.append(f"- **Values:** {', '.join(value_names)}")
+            report_lines.append("")
+    else:
+        report_lines.append("### Required Attributes Added")
+        report_lines.append("None")
+        report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # All Final Attributes
+    report_lines.append(f"## Final Attributes ({len(final_attrs)})")
+    report_lines.append("")
+    if final_attrs:
+        for idx, attr in enumerate(final_attrs, 1):
+            report_lines.append(f"### {idx}. {extract_attr_name(attr)}")
+            report_lines.extend(format_attribute_for_report(attr))
+            report_lines.append("")
+    else:
+        report_lines.append("None")
+        report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # Summary statistics
+    report_lines.append("## Summary")
+    report_lines.append("")
+    report_lines.append(f"- **Attributes merged:** {len(merge_recommendations)}")
+    report_lines.append(f"- **New attributes added:** {len(new_attributes)}")
+    report_lines.append(f"- **Required attributes added:** {len(attributes_to_add)}")
+    report_lines.append(f"- **Total existing attributes:** {len(existing_attrs)}")
+    report_lines.append(f"- **Total incoming attributes:** {len(incoming_attrs)}")
+    report_lines.append(f"- **Total final attributes:** {len(final_attrs)}")
+    report_lines.append("")
+    
+    # Write report to individual file
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text("\n".join(report_lines), encoding='utf-8')
+
+
 async def save_final_model(final_finding: Dict[str, Any], output_dir: Path):
     """Save final finding model to file after validation."""
     # Clean up the final finding
@@ -651,7 +796,6 @@ async def save_final_model(final_finding: Dict[str, Any], output_dir: Path):
     json_content = model.model_dump_json(indent=2, exclude_none=True)
     output_path.write_text(json_content, encoding='utf-8')
     
-    print(f"\nSaved merged model to: {output_path}")
     return True
 
 
@@ -714,7 +858,6 @@ async def main():
     
     try:
         # Initialize index with DuckDB file
-        print(f"Initializing DuckDB index from {db_path}...")
         try:
             index = Index(db_path=db_path)
         except Exception as e:
@@ -723,31 +866,29 @@ async def main():
             sys.exit(1)
         
         # Load INCOMING model
-        print(f"Loading INCOMING model from {input_path}...")
+        print("Loading incoming model...")
         incoming_model = await load_incoming_model(input_path)
-        print(f"Loaded model: {incoming_model.name} (ID: {incoming_model.oifm_id or 'none'})")
+        print(f"  ✓ Loaded: {incoming_model.name}")
         
         # Search for EXISTING model
-        print("Searching for EXISTING model...")
-        existing_match, recommendation, confidence = await find_existing_model(incoming_model, index)
+        print("Searching for existing model in database...")
+        existing_match = await find_existing_model(incoming_model, index)
+        if existing_match:
+            print(f"  ✓ Found match: {existing_match.get('name')} (ID: {existing_match.get('oifm_id')})")
+        else:
+            print("  ✓ No match found")
         
         if existing_match:
-            confidence_display = confidence if confidence is not None else 0.0
-            if recommendation == "review_needed":
-                print(f"REVIEW NEEDED: Found similar model match: {existing_match.get('name')} (confidence: {confidence_display:.2f})")
-                print("   This match requires manual review. Please verify it's the correct match before proceeding.")
-            else:
-                print(f"Found EXISTING model match: {existing_match.get('name')} (confidence: {confidence_display:.2f})")
-            print(f"   Match ID: {existing_match.get('oifm_id')}")
-            
             # Load EXISTING model from database
-            print(f"\nLoading EXISTING model from database...")
+            print("Loading existing model from database...")
             existing_model_data = await get_existing_model_from_db(existing_match.get('oifm_id'), index)
             
             if existing_model_data:
                 finding_name = incoming_model.name
+                print(f"  ✓ Loaded existing model data")
                 
                 # Get attributes from both models
+                print("Extracting attributes from models...")
                 incoming_attrs = []
                 for attr in incoming_model.attributes or []:
                     if isinstance(attr, dict):
@@ -756,82 +897,59 @@ async def main():
                         incoming_attrs.append(attr.model_dump(exclude_unset=False, exclude_none=False))
                 
                 existing_attrs = existing_model_data.get('attributes', [])
+                print(f"  ✓ Incoming: {len(incoming_attrs)} attributes")
+                print(f"  ✓ Existing: {len(existing_attrs)} attributes")
                 
                 # Classify and group incoming attributes
-                print(f"\n{'='*60}")
-                print("CLASSIFYING INCOMING ATTRIBUTES")
-                print(f"{'='*60}")
-                incoming_grouped = await classify_and_group_attributes(
-                    incoming_attrs, 
-                    finding_name,
-                    "INCOMING"
-                )
+                print("Classifying incoming attributes...")
+                incoming_grouped = await classify_and_group_attributes(incoming_attrs, finding_name)
+                print(f"  ✓ Classified {len(incoming_attrs)} attributes")
                 
                 # Classify and group existing attributes
-                print(f"\n{'='*60}")
-                print("CLASSIFYING EXISTING ATTRIBUTES")
-                print(f"{'='*60}")
-                existing_grouped = await classify_and_group_attributes(
-                    existing_attrs,
-                    finding_name,
-                    "EXISTING"
-                )
-                
-                # Display grouped results
-                print(f"\n{'='*60}")
-                print("ATTRIBUTE CLASSIFICATION SUMMARY")
-                print(f"{'='*60}")
-                
-                for classification_type in ['presence', 'change_from_prior', 'other']:
-                    print(f"\n{classification_type.upper()}:")
-                    print(f"  INCOMING: {len(incoming_grouped[classification_type])} attributes")
-                    for attr in incoming_grouped[classification_type]:
-                        print(f"    - {attr.get('name', 'unknown')}")
-                    
-                    print(f"  EXISTING: {len(existing_grouped[classification_type])} attributes")
-                    for attr in existing_grouped[classification_type]:
-                        print(f"    - {attr.get('name', 'unknown')}")
+                print("Classifying existing attributes...")
+                existing_grouped = await classify_and_group_attributes(existing_attrs, finding_name)
+                print(f"  ✓ Classified {len(existing_attrs)} attributes")
                 
                 # Compare attributes within each classification group
-                print(f"\n{'='*60}")
-                print("ATTRIBUTE RELATIONSHIP COMPARISON")
-                print(f"{'='*60}")
-                
+                print("Comparing attributes...")
                 all_comparisons = {}
                 for classification_type in ['presence', 'change_from_prior', 'other']:
-                    incoming_attrs = incoming_grouped[classification_type]
-                    existing_attrs = existing_grouped[classification_type]
+                    incoming_attrs_group = incoming_grouped[classification_type]
+                    existing_attrs_group = existing_grouped[classification_type]
                     
-                    if incoming_attrs or existing_attrs:
-                        print(f"\n{classification_type.upper()} ATTRIBUTES:")
+                    if incoming_attrs_group or existing_attrs_group:
+                        incoming_names = [extract_attr_name(attr) for attr in incoming_attrs_group]
+                        existing_names = [extract_attr_name(attr) for attr in existing_attrs_group]
+                        print(f"  Comparing {classification_type} attributes:")
+                        print(f"    Incoming: {', '.join(incoming_names) if incoming_names else 'None'}")
+                        print(f"    Existing: {', '.join(existing_names) if existing_names else 'None'}")
                         comparisons = await compare_attributes_within_group(
-                            incoming_attrs,
-                            existing_attrs,
+                            incoming_attrs_group,
+                            existing_attrs_group,
                             classification_type,
                             finding_name
                         )
                         all_comparisons[classification_type] = comparisons
-                
-                # Display final summary
-                print(f"\n{'='*60}")
-                print("COMPARISON SUMMARY")
-                print(f"{'='*60}")
+                        print(f"    ✓ Completed {classification_type} comparison ({len(comparisons)} comparisons)")
                 
                 # Collect all merge recommendations and new attributes
+                print("Collecting merge recommendations and new attributes...")
                 merge_recommendations = []
                 new_attributes = []
                 
                 for classification_type, comparisons in all_comparisons.items():
                     if comparisons:
-                        print(f"\n{classification_type.upper()}:")
+                        print(f"\n  {classification_type.upper()} Results:")
                         for comp in comparisons:
-                            incoming_name = comp['incoming_attribute'].get('name', 'unknown')
                             if comp['relationship']:
-                                existing_name = comp['existing_attribute'].get('name', 'unknown')
-                                rel_type = comp['relationship'].relationship
-                                confidence = comp['relationship'].confidence
                                 recommendation = comp['relationship'].recommendation
-                                print(f"  '{incoming_name}' (incoming) ↔ '{existing_name}' (existing): {rel_type} (confidence: {confidence:.2f}, recommendation: {recommendation})")
+                                incoming_attr_name = extract_attr_name(comp['incoming_attribute'])
+                                existing_attr_name = extract_attr_name(comp['existing_attribute'])
+                                relationship = comp['relationship']
+                                
+                                print(f"    '{incoming_attr_name}' (incoming) ↔ '{existing_attr_name}' (existing)")
+                                print(f"      Relationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+                                print(f"      Recommendation: {recommendation}")
                                 
                                 # Collect merge recommendations
                                 if recommendation == "merge":
@@ -842,154 +960,24 @@ async def main():
                                         'relationship': comp['relationship']
                                     })
                             else:
-                                print(f"  '{incoming_name}' (incoming): NEW (no match found)")
                                 # Collect new attributes
+                                incoming_attr_name = extract_attr_name(comp['incoming_attribute'])
+                                print(f"    '{incoming_attr_name}' (incoming): NEW (no match found)")
                                 new_attributes.append({
                                     'classification_type': classification_type,
                                     'incoming_attribute': comp['incoming_attribute']
                                 })
                 
-                # Interactive merge process
-                if merge_recommendations:
-                    print(f"\n{'='*60}")
-                    print(f"MERGE RECOMMENDATIONS FOUND: {len(merge_recommendations)}")
-                    print(f"{'='*60}")
-                    
-                    response = input("\nContinue to merge recommendations? (y/n): ").strip().lower()
-                    
-                    if response == 'y':
-                        print(f"\n{'='*60}")
-                        print("MERGE PROCESS")
-                        print(f"{'='*60}")
-                        
-                        for idx, merge_rec in enumerate(merge_recommendations, 1):
-                            incoming_attr = merge_rec['incoming_attribute']
-                            existing_attr = merge_rec['existing_attribute']
-                            relationship = merge_rec['relationship']
-                            
-                            incoming_name = incoming_attr.get('name', 'unknown')
-                            existing_name = existing_attr.get('name', 'unknown')
-                            
-                            print(f"\n[{idx}/{len(merge_recommendations)}] MERGE RECOMMENDATION:")
-                            print(f"  Relationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
-                            print(f"  Reasoning: {relationship.reasoning}")
-                            
-                            # Print existing attribute
-                            print(f"\n  EXISTING ATTRIBUTE: '{existing_name}'")
-                            print(f"    Type: {existing_attr.get('type', 'unknown')}")
-                            if existing_attr.get('type') == 'choice':
-                                values = existing_attr.get('values', [])
-                                if values:
-                                    value_names = [v.get('name', '') if isinstance(v, dict) else getattr(v, 'name', '') for v in values]
-                                    print(f"    Values: {', '.join(value_names)}")
-                                else:
-                                    print(f"    Values: (none)")
-                            elif existing_attr.get('type') == 'numeric':
-                                print(f"    Unit: {existing_attr.get('unit', 'N/A')}")
-                                print(f"    Range: {existing_attr.get('minimum', 'N/A')} - {existing_attr.get('maximum', 'N/A')}")
-                            
-                            # Print incoming attribute
-                            print(f"\n  INCOMING ATTRIBUTE: '{incoming_name}'")
-                            print(f"    Type: {incoming_attr.get('type', 'unknown')}")
-                            if incoming_attr.get('type') == 'choice':
-                                values = incoming_attr.get('values', [])
-                                if values:
-                                    value_names = [v.get('name', '') if isinstance(v, dict) else getattr(v, 'name', '') for v in values]
-                                    print(f"    Values: {', '.join(value_names)}")
-                                else:
-                                    print(f"    Values: (none)")
-                            elif incoming_attr.get('type') == 'numeric':
-                                print(f"    Unit: {incoming_attr.get('unit', 'N/A')}")
-                                print(f"    Range: {incoming_attr.get('minimum', 'N/A')} - {incoming_attr.get('maximum', 'N/A')}")
-                            
-                            # Get user choice
-                            print(f"\n  OPTIONS:")
-                            print(f"    1. Replace existing with enhanced (use incoming to replace existing)")
-                            print(f"    2. Keep existing (don't merge, keep existing as is)")
-                            print(f"    3. Combine (Keeps all existing values. Adds incoming values that aren't already present. Skips placeholder values.)")
-                            
-                            while True:
-                                choice = input(f"\n  Your choice (1/2/3): ").strip()
-                                if choice in ['1', '2', '3']:
-                                    merge_rec['user_choice'] = choice
-                                    if choice == '1':
-                                        print(f"    ✓ Selected: Replace existing with enhanced")
-                                    elif choice == '2':
-                                        print(f"    ✓ Selected: Keep existing")
-                                    elif choice == '3':
-                                        print(f"    ✓ Selected: Combine")
-                                    break
-                                else:
-                                    print(f"    Invalid choice. Please enter 1, 2, or 3.")
-                        
-                        print(f"\n{'='*60}")
-                        print("MERGE PROCESS COMPLETE")
-                        print(f"{'='*60}")
-                        print(f"\nProcessed {len(merge_recommendations)} merge recommendations.")
-                    else:
-                        print("\nMerge process skipped by user.")
+                print(f"  ✓ Found {len(merge_recommendations)} merge recommendations")
+                print(f"  ✓ Found {len(new_attributes)} new attributes")
                 
-                # Interactive new attributes process
+                # Automatic new attributes process - add all new attributes
                 approved_new_attributes = []
-                if new_attributes:
-                    print(f"\n{'='*60}")
-                    print(f"NEW ATTRIBUTES FOUND: {len(new_attributes)}")
-                    print(f"{'='*60}")
-                    
-                    response = input("\nReview new attributes? (y/n): ").strip().lower()
-                    
-                    if response == 'y':
-                        print(f"\n{'='*60}")
-                        print("NEW ATTRIBUTES REVIEW")
-                        print(f"{'='*60}")
-                        
-                        for idx, new_attr_info in enumerate(new_attributes, 1):
-                            incoming_attr = new_attr_info['incoming_attribute']
-                            incoming_name = incoming_attr.get('name', 'unknown')
-                            attr_type = incoming_attr.get('type', 'unknown')
-                            
-                            print(f"\n[{idx}/{len(new_attributes)}] NEW ATTRIBUTE: '{incoming_name}'")
-                            print(f"  Type: {attr_type}")
-                            
-                            if attr_type == 'choice':
-                                values = incoming_attr.get('values', [])
-                                if values:
-                                    value_names = [v.get('name', '') if isinstance(v, dict) else getattr(v, 'name', '') for v in values]
-                                    print(f"  Values: {', '.join(value_names)}")
-                                else:
-                                    print(f"  Values: (none)")
-                            elif attr_type == 'numeric':
-                                print(f"  Unit: {incoming_attr.get('unit', 'N/A')}")
-                                print(f"  Range: {incoming_attr.get('minimum', 'N/A')} - {incoming_attr.get('maximum', 'N/A')}")
-                            
-                            if incoming_attr.get('description'):
-                                print(f"  Description: {incoming_attr.get('description')}")
-                            
-                            # Get user choice
-                            while True:
-                                choice = input(f"\n  Add this attribute to final model? (y/n): ").strip().lower()
-                                if choice in ['y', 'n']:
-                                    if choice == 'y':
-                                        approved_new_attributes.append(incoming_attr)
-                                        print(f"    ✓ Selected: Add attribute")
-                                    else:
-                                        print(f"    ✗ Selected: Skip attribute")
-                                    break
-                                else:
-                                    print(f"    Invalid choice. Please enter y or n.")
-                        
-                        print(f"\n{'='*60}")
-                        print("NEW ATTRIBUTES REVIEW COMPLETE")
-                        print(f"{'='*60}")
-                        print(f"\nApproved {len(approved_new_attributes)} of {len(new_attributes)} new attributes.")
-                    else:
-                        print("\nNew attributes review skipped by user.")
+                for new_attr_info in new_attributes:
+                    approved_new_attributes.append(new_attr_info['incoming_attribute'])
                 
-                # Check for missing presence/change_from_prior attributes in incoming model
-                print(f"\n{'='*60}")
-                print("REQUIRED ATTRIBUTES CHECK")
-                print(f"{'='*60}")
-                
+                # Automatic check for missing presence/change_from_prior attributes
+                print("Checking for required attributes...")
                 incoming_has_presence = any(
                     attr.get('_classification') == 'presence' 
                     for attr_list in incoming_grouped.values() 
@@ -1002,72 +990,68 @@ async def main():
                 )
                 
                 attributes_to_add = []
-                add_attributes_to_final = False
                 
                 if not incoming_has_presence:
-                    print(f"\n  Missing 'presence' attribute in incoming model.")
-                    response = input("  Add 'presence' attribute? (y/n): ").strip().lower()
-                    if response == 'y':
-                        presence_attr = create_presence_element(finding_name)
-                        print(f"    ✓ Created presence attribute")
-                        attributes_to_add.append(('presence', presence_attr))
+                    print("  ✓ Adding presence attribute")
+                    presence_attr = create_presence_element(finding_name)
+                    attributes_to_add.append(('presence', presence_attr))
                 
                 if not incoming_has_change_from_prior:
-                    print(f"\n  Missing 'change from prior' attribute in incoming model.")
-                    response = input("  Add 'change from prior' attribute? (y/n): ").strip().lower()
-                    if response == 'y':
-                        change_attr = create_change_element(finding_name)
-                        print(f"    ✓ Created change from prior attribute")
-                        attributes_to_add.append(('change_from_prior', change_attr))
+                    print("  ✓ Adding change_from_prior attribute")
+                    change_attr = create_change_element(finding_name)
+                    attributes_to_add.append(('change_from_prior', change_attr))
                 
-                # Ask if user wants to add these to the final finding
-                if attributes_to_add:
-                    print(f"\n  Created {len(attributes_to_add)} attribute(s) to add:")
-                    for attr_name, attr in attributes_to_add:
-                        print(f"    - {attr_name}: {attr.get('name', 'unknown')}")
-                        if attr.get('type') == 'choice':
-                            values = attr.get('values', [])
-                            value_names = [v.get('name', '') for v in values]
-                            print(f"      Values: {', '.join(value_names)}")
-                    
-                    response = input(f"\n  Add these attributes to the final finding? (y/n): ").strip().lower()
-                    if response == 'y':
-                        add_attributes_to_final = True
-                        print(f"    ✓ Attributes will be added to final finding")
-                    else:
-                        print(f"    ✗ Attributes will NOT be added to final finding")
-                else:
-                    print(f"\n  All required attributes (presence, change_from_prior) are present.")
+                if not attributes_to_add:
+                    print("  ✓ All required attributes present")
                 
-                # Build and display the final finding
-                print(f"\n{'='*60}")
-                print("FINAL FINDING MODEL")
-                print(f"{'='*60}")
-                
+                # Build the final finding
+                print("Building final finding model...")
                 final_finding = build_final_finding(
                     existing_model_data=existing_model_data,
                     incoming_model=incoming_model,
                     merge_recommendations=merge_recommendations,
-                    all_comparisons=all_comparisons,
-                    attributes_to_add=attributes_to_add if add_attributes_to_final else [],
-                    approved_new_attributes=approved_new_attributes,
-                    finding_name=finding_name
+                    attributes_to_add=attributes_to_add,
+                    approved_new_attributes=approved_new_attributes
                 )
+                final_attrs = final_finding.get('attributes', [])
+                print(f"  ✓ Final model has {len(final_attrs)} attributes")
                 
-                print_final_finding(final_finding)
+                # Automatically save the final model
+                print("Saving final model...")
+                output_dir = Path("defs/merged_findings")
+                success = await save_final_model(final_finding, output_dir)
+                if not success:
+                    print("  ✗ Error: Failed to save model.")
+                    return
+                print("  ✓ Model saved successfully")
                 
-                # Ask if user wants to save
-                print(f"\n{'='*60}")
-                response = input("Save final model? (y/n): ").strip().lower()
-                if response == 'y':
-                    output_dir = Path("defs/merged_findings")
-                    success = await save_final_model(final_finding, output_dir)
-                    if success:
-                        print("Model saved successfully!")
-                    else:
-                        print("Failed to save model. Please check the errors above.")
-                else:
-                    print("Save cancelled by user.")
+                # Generate merge report (individual file per merge)
+                print("Generating merge report...")
+                # Create filename from finding name
+                safe_name = finding_name.lower().replace(' ', '_').replace('/', '_')
+                report_filename = f"merge_report_{safe_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+                report_path = Path("merge_reports") / report_filename
+                generate_merge_report(
+                    finding_name=finding_name,
+                    existing_match=existing_match,
+                    existing_attrs=existing_attrs,
+                    incoming_attrs=incoming_attrs,
+                    final_attrs=final_attrs,
+                    merge_recommendations=merge_recommendations,
+                    new_attributes=new_attributes,
+                    attributes_to_add=attributes_to_add,
+                    report_path=report_path
+                )
+                print(f"  ✓ Report saved to: {report_path}")
+                
+                # Print summary
+                print_merge_summary(
+                    finding_name=finding_name,
+                    existing_match=existing_match,
+                    merge_recommendations=merge_recommendations,
+                    new_attributes=new_attributes,
+                    attributes_to_add=attributes_to_add
+                )
             else:
                 print("Warning: Could not load existing model data from database.")
         else:
