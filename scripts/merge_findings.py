@@ -35,7 +35,9 @@ from merge_findings_helpers import (
     clean_final_finding,
     print_merge_summary,
     format_attribute_for_report,
-    generate_merge_report
+    generate_merge_report,
+    interactive_review_needs_review,
+    build_final_finding
 )
 
 
@@ -324,79 +326,6 @@ Determine the relationship between these attributes. Provide clear reasoning for
     return comparisons
 
 
-def build_final_finding(
-    existing_model_data: Dict[str, Any],
-    incoming_model: FindingModelFull,
-    merge_recommendations: List[Dict[str, Any]],
-    attributes_to_add: List[Tuple[str, Dict[str, Any]]],
-    approved_new_attributes: List[Dict[str, Any]]
-) -> Dict[str, Any]:
-    """Build the final finding model based on automatic merge decisions.
-    
-    Merge strategy: Keep existing attribute, then add incoming values that don't already exist.
-    
-    Returns: Dictionary representing the final finding model."""
-    # Start with existing model structure (if available) or incoming model
-    if existing_model_data:
-        final_finding = existing_model_data.copy()
-    else:
-        # Use incoming model as base
-        final_finding = incoming_model.model_dump(exclude_unset=False, exclude_none=False)
-    
-    # Collect all final attributes
-    final_attributes = []
-    processed_incoming_attrs = set()
-    
-    # Process merge recommendations - automatically merge (keep existing + add new values)
-    for merge_rec in merge_recommendations:
-        incoming_attr = merge_rec['incoming_attribute']
-        existing_attr = merge_rec['existing_attribute']
-        incoming_name = incoming_attr.get('name', 'unknown')
-        existing_name = existing_attr.get('name', 'unknown')
-        
-        processed_incoming_attrs.add(incoming_name)
-        
-        # Automatic merge strategy: Keep existing, then add incoming values that don't exist
-        combined_attr = existing_attr.copy()
-        if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
-            existing_value_names = set(extract_value_names(existing_attr))
-            incoming_values = incoming_attr.get('values', [])
-            # Add incoming values that don't exist in existing
-            for val in incoming_values:
-                val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
-                if val_name not in existing_value_names:
-                    combined_attr['values'].append(val)
-        final_attributes.append(combined_attr)
-    
-    # Add all new attributes (automatically approved)
-    for new_attr in approved_new_attributes:
-        attr_name = new_attr.get('name', 'unknown')
-        if attr_name not in processed_incoming_attrs:
-            final_attributes.append(new_attr.copy())
-            processed_incoming_attrs.add(attr_name)
-    
-    # Add existing attributes that weren't part of any merge recommendation
-    if existing_model_data:
-        existing_attrs = existing_model_data.get('attributes', [])
-        for existing_attr in existing_attrs:
-            existing_name = existing_attr.get('name', 'unknown')
-            # Check if this attribute was part of a merge recommendation
-            was_merged = any(
-                merge_rec['existing_attribute'].get('name', 'unknown') == existing_name
-                for merge_rec in merge_recommendations
-            )
-            if not was_merged:
-                final_attributes.append(existing_attr.copy())
-    
-    # Add new attributes (presence/change_from_prior) - automatically added
-    for attr_name, attr_dict in attributes_to_add:
-        final_attributes.append(attr_dict.copy())
-    
-    final_finding['attributes'] = final_attributes
-    
-    return final_finding
-
-
 async def save_final_model(final_finding: Dict[str, Any], output_dir: Path):
     """Save final finding model to file after validation."""
     # Clean up the final finding
@@ -643,6 +572,11 @@ async def main():
                 if not attributes_to_add:
                     print("  ✓ All required attributes present")
                 
+                # Interactive review of needs_review attributes
+                review_decisions = []
+                if needs_review_comparisons:
+                    review_decisions = interactive_review_needs_review(needs_review_comparisons)
+                
                 # Build the final finding
                 print("Building final finding model...")
                 final_finding = build_final_finding(
@@ -650,7 +584,8 @@ async def main():
                     incoming_model=incoming_model,
                     merge_recommendations=merge_recommendations,
                     attributes_to_add=attributes_to_add,
-                    approved_new_attributes=approved_new_attributes
+                    approved_new_attributes=approved_new_attributes,
+                    review_decisions=review_decisions
                 )
                 final_attrs = final_finding.get('attributes', [])
                 print(f"  ✓ Final model has {len(final_attrs)} attributes")
@@ -679,6 +614,7 @@ async def main():
                     merge_recommendations=merge_recommendations,
                     no_merge_comparisons=no_merge_comparisons,
                     needs_review_comparisons=needs_review_comparisons,
+                    review_decisions=review_decisions,
                     new_attributes=new_attributes,
                     attributes_to_add=attributes_to_add,
                     report_path=report_path

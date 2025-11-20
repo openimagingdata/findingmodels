@@ -9,6 +9,13 @@ from typing import Dict, Optional, Tuple, List, Any
 from pathlib import Path
 from datetime import datetime
 
+# Import FindingModelFull for type hints and runtime use
+try:
+    from findingmodel import FindingModelFull
+except ImportError:
+    # Fallback for type checking only
+    FindingModelFull = Any
+
 
 # Utility functions for attribute value extraction
 def extract_value_names(attr: Dict[str, Any]) -> List[str]:
@@ -84,6 +91,230 @@ def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
     cleaned['attributes'] = cleaned_attributes
     
     return cleaned
+
+
+def interactive_review_needs_review(
+    needs_review_comparisons: List[Dict[str, Any]]
+) -> List[Dict[str, Any]]:
+    """Interactive review of attributes needing review.
+    
+    Returns: List of review decisions with 'decision' field: 'keep_existing', 'add_new', or 'merge_values'
+    """
+    if not needs_review_comparisons:
+        return []
+    
+    print("\n" + "=" * 80)
+    print("ATTRIBUTES NEEDING REVIEW")
+    print("=" * 80)
+    print(f"\nFound {len(needs_review_comparisons)} attribute(s) requiring review.\n")
+    
+    review_decisions = []
+    
+    for idx, comp in enumerate(needs_review_comparisons, 1):
+        incoming_attr = comp['incoming_attribute']
+        existing_attr = comp['existing_attribute']
+        relationship = comp['relationship']
+        reason = comp.get('reason', '')
+        
+        incoming_name = extract_attr_name(incoming_attr)
+        existing_name = extract_attr_name(existing_attr)
+        
+        print(f"\n{'─' * 80}")
+        print(f"Review {idx}/{len(needs_review_comparisons)}")
+        print(f"{'─' * 80}")
+        print(f"\nEXISTING: {existing_name}")
+        if existing_attr.get('type') == 'choice':
+            existing_values = extract_value_names(existing_attr)
+            print(f"  Values: {', '.join(existing_values) if existing_values else 'None'}")
+        else:
+            print(f"  Type: {existing_attr.get('type', 'unknown')}")
+        
+        print(f"\nINCOMING: {incoming_name}")
+        if incoming_attr.get('type') == 'choice':
+            incoming_values = extract_value_names(incoming_attr)
+            print(f"  Values: {', '.join(incoming_values) if incoming_values else 'None'}")
+        else:
+            print(f"  Type: {incoming_attr.get('type', 'unknown')}")
+        
+        print(f"\nRelationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+        if reason:
+            print(f"Reason: {reason}")
+        
+        # Show value analysis
+        if relationship.shared_values or relationship.existing_only_values or relationship.incoming_only_values:
+            print("\nValue Analysis:")
+            if relationship.shared_values:
+                print(f"  Shared: {', '.join(relationship.shared_values)}")
+            if relationship.existing_only_values:
+                print(f"  Existing only: {', '.join(relationship.existing_only_values)}")
+            if relationship.incoming_only_values:
+                print(f"  Incoming only: {', '.join(relationship.incoming_only_values)}")
+        
+        print(f"\nAI Reasoning: {relationship.reasoning}")
+        
+        # Get user decision
+        while True:
+            print("\nDecision:")
+            print("  [k] Keep existing (don't add incoming)")
+            print("  [n] Add incoming as new attribute")
+            print("  [m] Merge values (add incoming values to existing)")
+            choice = input("  Enter choice (k/n/m): ").strip().lower()
+            
+            if choice == 'k':
+                decision = 'keep_existing'
+                print("  ✓ Decision: Keep existing")
+                break
+            elif choice == 'n':
+                decision = 'add_new'
+                print("  ✓ Decision: Add incoming as new attribute")
+                break
+            elif choice == 'm':
+                decision = 'merge_values'
+                print("  ✓ Decision: Merge values")
+                break
+            else:
+                print("  ✗ Invalid choice. Please enter 'k', 'n', or 'm'.")
+        
+        review_decisions.append({
+            'incoming_attribute': incoming_attr,
+            'existing_attribute': existing_attr,
+            'relationship': relationship,
+            'reason': reason,
+            'decision': decision
+        })
+    
+    print(f"\n{'─' * 80}")
+    print("Review complete!")
+    print(f"{'─' * 80}\n")
+    
+    return review_decisions
+
+
+def build_final_finding(
+    existing_model_data: Dict[str, Any],
+    incoming_model: FindingModelFull,
+    merge_recommendations: List[Dict[str, Any]],
+    attributes_to_add: List[Tuple[str, Dict[str, Any]]],
+    approved_new_attributes: List[Dict[str, Any]],
+    review_decisions: List[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    """Build the final finding model based on automatic merge decisions and review decisions.
+    
+    Merge strategy: Keep existing attribute, then add incoming values that don't already exist.
+    
+    Returns: Dictionary representing the final finding model."""
+    if review_decisions is None:
+        review_decisions = []
+    
+    # Start with existing model structure (if available) or incoming model
+    if existing_model_data:
+        final_finding = existing_model_data.copy()
+    else:
+        # Use incoming model as base
+        final_finding = incoming_model.model_dump(exclude_unset=False, exclude_none=False)
+    
+    # Collect all final attributes
+    final_attributes = []
+    processed_incoming_attrs = set()
+    processed_existing_attrs = set()
+    
+    # Process merge recommendations - automatically merge (keep existing + add new values)
+    for merge_rec in merge_recommendations:
+        incoming_attr = merge_rec['incoming_attribute']
+        existing_attr = merge_rec['existing_attribute']
+        incoming_name = incoming_attr.get('name', 'unknown')
+        existing_name = existing_attr.get('name', 'unknown')
+        
+        processed_incoming_attrs.add(incoming_name)
+        processed_existing_attrs.add(existing_name)
+        
+        # Automatic merge strategy: Keep existing, then add incoming values that don't exist
+        combined_attr = existing_attr.copy()
+        if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
+            existing_value_names = set(extract_value_names(existing_attr))
+            incoming_values = incoming_attr.get('values', [])
+            # Add incoming values that don't exist in existing
+            for val in incoming_values:
+                val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
+                if val_name not in existing_value_names:
+                    combined_attr['values'].append(val)
+        final_attributes.append(combined_attr)
+    
+    # Process review decisions
+    for review in review_decisions:
+        incoming_attr = review['incoming_attribute']
+        existing_attr = review['existing_attribute']
+        decision = review['decision']
+        incoming_name = incoming_attr.get('name', 'unknown')
+        existing_name = existing_attr.get('name', 'unknown')
+        
+        if decision == 'keep_existing':
+            # Keep existing, don't add incoming
+            processed_incoming_attrs.add(incoming_name)
+            processed_existing_attrs.add(existing_name)
+            # Existing will be added later if not already processed
+        elif decision == 'add_new':
+            # Add incoming as new attribute
+            processed_incoming_attrs.add(incoming_name)
+            final_attributes.append(incoming_attr.copy())
+        elif decision == 'merge_values':
+            # Merge values: keep existing, add incoming values
+            processed_incoming_attrs.add(incoming_name)
+            processed_existing_attrs.add(existing_name)
+            combined_attr = existing_attr.copy()
+            if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
+                existing_value_names = set(extract_value_names(existing_attr))
+                incoming_values = incoming_attr.get('values', [])
+                # Add incoming values that don't exist in existing
+                for val in incoming_values:
+                    val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
+                    if val_name not in existing_value_names:
+                        combined_attr['values'].append(val)
+            final_attributes.append(combined_attr)
+    
+    # Add all new attributes (automatically approved)
+    for new_attr in approved_new_attributes:
+        attr_name = new_attr.get('name', 'unknown')
+        if attr_name not in processed_incoming_attrs:
+            final_attributes.append(new_attr.copy())
+            processed_incoming_attrs.add(attr_name)
+    
+    # Add existing attributes that weren't part of any merge recommendation or review decision
+    if existing_model_data:
+        existing_attrs = existing_model_data.get('attributes', [])
+        for existing_attr in existing_attrs:
+            existing_name = existing_attr.get('name', 'unknown')
+            # Check if this attribute was part of a merge recommendation
+            was_merged = any(
+                merge_rec['existing_attribute'].get('name', 'unknown') == existing_name
+                for merge_rec in merge_recommendations
+            )
+            # Check if this attribute was part of a review decision
+            was_reviewed = any(
+                review['existing_attribute'].get('name', 'unknown') == existing_name
+                for review in review_decisions
+            )
+            if not was_merged and not was_reviewed:
+                final_attributes.append(existing_attr.copy())
+            elif was_reviewed:
+                # Check if it was kept (keep_existing) or merged (merge_values)
+                for review in review_decisions:
+                    if review['existing_attribute'].get('name', 'unknown') == existing_name:
+                        if review['decision'] == 'keep_existing':
+                            # Add existing attribute as-is
+                            if existing_name not in processed_existing_attrs:
+                                final_attributes.append(existing_attr.copy())
+                                processed_existing_attrs.add(existing_name)
+                        # If merge_values, it was already added above
+                        break
+    
+    # Add new attributes (presence/change_from_prior) - automatically added
+    for attr_name, attr_dict in attributes_to_add:
+        final_attributes.append(attr_dict.copy())
+    
+    final_finding['attributes'] = final_attributes
+    
+    return final_finding
 
 
 def print_merge_summary(
@@ -199,6 +430,7 @@ def generate_merge_report(
     merge_recommendations: List[Dict[str, Any]],
     no_merge_comparisons: List[Dict[str, Any]],
     needs_review_comparisons: List[Dict[str, Any]],
+    review_decisions: List[Dict[str, Any]] = None,
     new_attributes: List[Dict[str, Any]],
     attributes_to_add: List[Tuple[str, Dict[str, Any]]],
     report_path: Path
@@ -208,6 +440,9 @@ def generate_merge_report(
     Creates a markdown report documenting all changes made during the merge process.
     Each merge gets its own file.
     """
+    if review_decisions is None:
+        review_decisions = []
+    
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     # Build report
@@ -228,6 +463,18 @@ def generate_merge_report(
     report_lines.append("")
     report_lines.append(f"- **Attributes merged:** {len(merge_recommendations)}")
     report_lines.append(f"- **Attributes needing review:** {len(needs_review_comparisons)}")
+    if review_decisions:
+        report_lines.append(f"- **Review decisions made:** {len(review_decisions)}")
+        # Count decisions by type
+        keep_count = sum(1 for r in review_decisions if r.get('decision') == 'keep_existing')
+        add_count = sum(1 for r in review_decisions if r.get('decision') == 'add_new')
+        merge_count = sum(1 for r in review_decisions if r.get('decision') == 'merge_values')
+        if keep_count > 0:
+            report_lines.append(f"  - Keep existing: {keep_count}")
+        if add_count > 0:
+            report_lines.append(f"  - Add as new: {add_count}")
+        if merge_count > 0:
+            report_lines.append(f"  - Merge values: {merge_count}")
     report_lines.append(f"- **New attributes added:** {len(new_attributes)}")
     report_lines.append(f"- **Required attributes added:** {len(attributes_to_add)}")
     report_lines.append(f"- **Total existing attributes:** {len(existing_attrs)}")
@@ -242,8 +489,18 @@ def generate_merge_report(
     if needs_review_comparisons:
         report_lines.append(f"## ⚠️ Attributes Needing Review ({len(needs_review_comparisons)})")
         report_lines.append("")
-        report_lines.append("*These attributes were compared but require human review to determine if they should be merged or kept separate.*")
+        if review_decisions:
+            report_lines.append("*These attributes were reviewed and decisions were made.*")
+        else:
+            report_lines.append("*These attributes were compared but require human review to determine if they should be merged or kept separate.*")
         report_lines.append("")
+        
+        # Create a mapping of review decisions by incoming attribute name
+        decision_map = {}
+        for review in review_decisions:
+            incoming_name = extract_attr_name(review['incoming_attribute'])
+            decision_map[incoming_name] = review['decision']
+        
         for idx, comp in enumerate(needs_review_comparisons, 1):
             incoming_attr = comp['incoming_attribute']
             existing_attr = comp['existing_attribute']
@@ -258,6 +515,19 @@ def generate_merge_report(
             report_lines.append(f"- **Recommendation:** {relationship.recommendation}")
             if reason:
                 report_lines.append(f"- **Reason for review:** {reason}")
+            
+            # Show decision if made
+            if incoming_name in decision_map:
+                decision = decision_map[incoming_name]
+                decision_text = {
+                    'keep_existing': '✅ **Decision: Keep existing** (incoming attribute not added)',
+                    'add_new': '✅ **Decision: Add incoming as new attribute**',
+                    'merge_values': '✅ **Decision: Merge values** (incoming values added to existing)'
+                }.get(decision, f'Decision: {decision}')
+                report_lines.append(f"- {decision_text}")
+            else:
+                report_lines.append("- **Decision:** ⚠️ Not reviewed")
+            
             report_lines.append(f"- **AI Reasoning:** {relationship.reasoning}")
             report_lines.append("")
             
