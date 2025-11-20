@@ -430,10 +430,10 @@ def generate_merge_report(
     merge_recommendations: List[Dict[str, Any]],
     no_merge_comparisons: List[Dict[str, Any]],
     needs_review_comparisons: List[Dict[str, Any]],
-    review_decisions: List[Dict[str, Any]] = None,
     new_attributes: List[Dict[str, Any]],
     attributes_to_add: List[Tuple[str, Dict[str, Any]]],
-    report_path: Path
+    report_path: Path,
+    review_decisions: List[Dict[str, Any]] = None
 ) -> None:
     """Generate individual merge report for this finding.
     
