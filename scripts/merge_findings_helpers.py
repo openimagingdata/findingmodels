@@ -94,9 +94,15 @@ def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def interactive_review_needs_review(
-    needs_review_comparisons: List[Dict[str, Any]]
+    needs_review_comparisons: List[Dict[str, Any]],
+    auto_decision: Optional[str] = None
 ) -> List[Dict[str, Any]]:
     """Interactive review of attributes needing review.
+    
+    Args:
+        needs_review_comparisons: List of comparisons needing review
+        auto_decision: If provided ('keep_existing', 'add_new', or 'merge_values'), 
+                      automatically applies this decision to all reviews without prompting.
     
     Returns: List of review decisions with 'decision' field: 'keep_existing', 'add_new', or 'merge_values'
     """
@@ -107,6 +113,14 @@ def interactive_review_needs_review(
     print("ATTRIBUTES NEEDING REVIEW")
     print("=" * 80)
     print(f"\nFound {len(needs_review_comparisons)} attribute(s) requiring review.\n")
+    
+    if auto_decision:
+        decision_text = {
+            'keep_existing': 'Keep existing',
+            'add_new': 'Add incoming as new attribute',
+            'merge_values': 'Merge values'
+        }.get(auto_decision, auto_decision)
+        print(f"⚠ Auto-decision mode: {decision_text} for all reviews\n")
     
     review_decisions = []
     
@@ -152,28 +166,38 @@ def interactive_review_needs_review(
         
         print(f"\nAI Reasoning: {relationship.reasoning}")
         
-        # Get user decision
-        while True:
-            print("\nDecision:")
-            print("  [k] Keep existing (don't add incoming)")
-            print("  [n] Add incoming as new attribute")
-            print("  [m] Merge values (add incoming values to existing)")
-            choice = input("  Enter choice (k/n/m): ").strip().lower()
-            
-            if choice == 'k':
-                decision = 'keep_existing'
-                print("  ✓ Decision: Keep existing")
-                break
-            elif choice == 'n':
-                decision = 'add_new'
-                print("  ✓ Decision: Add incoming as new attribute")
-                break
-            elif choice == 'm':
-                decision = 'merge_values'
-                print("  ✓ Decision: Merge values")
-                break
-            else:
-                print("  ✗ Invalid choice. Please enter 'k', 'n', or 'm'.")
+        # Get user decision or use auto-decision
+        if auto_decision and auto_decision in ['keep_existing', 'add_new', 'merge_values']:
+            decision = auto_decision
+            decision_text = {
+                'keep_existing': 'Keep existing',
+                'add_new': 'Add incoming as new attribute',
+                'merge_values': 'Merge values'
+            }[decision]
+            print(f"\n  ✓ Auto-decision: {decision_text}")
+        else:
+            # Get user decision
+            while True:
+                print("\nDecision:")
+                print("  [k] Keep existing (don't add incoming)")
+                print("  [n] Add incoming as new attribute")
+                print("  [m] Merge values (add incoming values to existing)")
+                choice = input("  Enter choice (k/n/m): ").strip().lower()
+                
+                if choice == 'k':
+                    decision = 'keep_existing'
+                    print("  ✓ Decision: Keep existing")
+                    break
+                elif choice == 'n':
+                    decision = 'add_new'
+                    print("  ✓ Decision: Add incoming as new attribute")
+                    break
+                elif choice == 'm':
+                    decision = 'merge_values'
+                    print("  ✓ Decision: Merge values")
+                    break
+                else:
+                    print("  ✗ Invalid choice. Please enter 'k', 'n', or 'm'.")
         
         review_decisions.append({
             'incoming_attribute': incoming_attr,
@@ -251,8 +275,10 @@ def build_final_finding(
         if decision == 'keep_existing':
             # Keep existing, don't add incoming
             processed_incoming_attrs.add(incoming_name)
-            processed_existing_attrs.add(existing_name)
-            # Existing will be added later if not already processed
+            # Add existing attribute immediately
+            if existing_name not in processed_existing_attrs:
+                final_attributes.append(existing_attr.copy())
+                processed_existing_attrs.add(existing_name)
         elif decision == 'add_new':
             # Add incoming as new attribute
             processed_incoming_attrs.add(incoming_name)
@@ -297,15 +323,11 @@ def build_final_finding(
             if not was_merged and not was_reviewed:
                 final_attributes.append(existing_attr.copy())
             elif was_reviewed:
-                # Check if it was kept (keep_existing) or merged (merge_values)
+                # Check if it was merged (merge_values) - keep_existing was already added above
                 for review in review_decisions:
                     if review['existing_attribute'].get('name', 'unknown') == existing_name:
-                        if review['decision'] == 'keep_existing':
-                            # Add existing attribute as-is
-                            if existing_name not in processed_existing_attrs:
-                                final_attributes.append(existing_attr.copy())
-                                processed_existing_attrs.add(existing_name)
                         # If merge_values, it was already added above
+                        # If keep_existing, it was already added above
                         break
     
     # Add new attributes (presence/change_from_prior) - automatically added
@@ -462,20 +484,41 @@ def generate_merge_report(
     report_lines.append("## Summary")
     report_lines.append("")
     report_lines.append(f"- **Attributes merged:** {len(merge_recommendations)}")
+    if merge_recommendations:
+        for merge_rec in merge_recommendations:
+            existing_name = extract_attr_name(merge_rec['existing_attribute'])
+            incoming_name = extract_attr_name(merge_rec['incoming_attribute'])
+            report_lines.append(f"  - {existing_name} (merged with {incoming_name})")
     report_lines.append(f"- **Attributes needing review:** {len(needs_review_comparisons)}")
     if review_decisions:
         report_lines.append(f"- **Review decisions made:** {len(review_decisions)}")
-        # Count decisions by type
-        keep_count = sum(1 for r in review_decisions if r.get('decision') == 'keep_existing')
-        add_count = sum(1 for r in review_decisions if r.get('decision') == 'add_new')
-        merge_count = sum(1 for r in review_decisions if r.get('decision') == 'merge_values')
-        if keep_count > 0:
-            report_lines.append(f"  - Keep existing: {keep_count}")
-        if add_count > 0:
-            report_lines.append(f"  - Add as new: {add_count}")
-        if merge_count > 0:
-            report_lines.append(f"  - Merge values: {merge_count}")
+        # Count decisions by type and list attributes
+        keep_decisions = [r for r in review_decisions if r.get('decision') == 'keep_existing']
+        add_decisions = [r for r in review_decisions if r.get('decision') == 'add_new']
+        merge_decisions = [r for r in review_decisions if r.get('decision') == 'merge_values']
+        if keep_decisions:
+            report_lines.append(f"  - Keep existing: {len(keep_decisions)}")
+            for r in keep_decisions:
+                existing_name = extract_attr_name(r['existing_attribute'])
+                incoming_name = extract_attr_name(r['incoming_attribute'])
+                report_lines.append(f"    - {existing_name} (kept, {incoming_name} not added)")
+        if add_decisions:
+            report_lines.append(f"  - Add as new: {len(add_decisions)}")
+            for r in add_decisions:
+                incoming_name = extract_attr_name(r['incoming_attribute'])
+                report_lines.append(f"    - {incoming_name}")
+        if merge_decisions:
+            report_lines.append(f"  - Merge values: {len(merge_decisions)}")
+            for r in merge_decisions:
+                existing_name = extract_attr_name(r['existing_attribute'])
+                incoming_name = extract_attr_name(r['incoming_attribute'])
+                report_lines.append(f"    - {existing_name} (merged with {incoming_name})")
     report_lines.append(f"- **New attributes added:** {len(new_attributes)}")
+    if new_attributes:
+        for new_attr_info in new_attributes:
+            incoming_attr = new_attr_info['incoming_attribute']
+            attr_name = extract_attr_name(incoming_attr)
+            report_lines.append(f"  - {attr_name}")
     report_lines.append(f"- **Required attributes added:** {len(attributes_to_add)}")
     report_lines.append(f"- **Total existing attributes:** {len(existing_attrs)}")
     report_lines.append(f"- **Total incoming attributes:** {len(incoming_attrs)}")

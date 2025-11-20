@@ -17,9 +17,9 @@ from datetime import datetime
 # Add project root to path
 sys.path.append(str(Path(__file__).parent.parent))
 
-from findingmodel.tools import find_similar_models
+from findingmodel.tools import find_similar_models, add_ids_to_model
 from findingmodel.index import Index
-from findingmodel import FindingModelFull
+from findingmodel import FindingModelFull, FindingModelBase
 from findingmodel.common import model_file_name
 from agents.merge_agents import (
     create_classification_agent, 
@@ -364,6 +364,11 @@ async def main():
         help='Path to INCOMING FM JSON file'
     )
     parser.add_argument(
+        '--auto-keep-existing',
+        action='store_true',
+        help='Automatically choose "keep existing" for all review decisions (non-interactive mode)'
+    )
+    parser.add_argument(
         '--db-path',
         type=str,
         default=None,
@@ -545,6 +550,7 @@ async def main():
                     approved_new_attributes.append(new_attr_info['incoming_attribute'])
                 
                 # Automatic check for missing presence/change_from_prior attributes
+                # Check both incoming AND existing to avoid duplicates
                 print("Checking for required attributes...")
                 incoming_has_presence = any(
                     attr.get('_classification') == 'presence' 
@@ -557,14 +563,27 @@ async def main():
                     for attr in attr_list
                 )
                 
+                # Check if existing model has these required attributes
+                existing_has_presence = any(
+                    attr.get('_classification') == 'presence' 
+                    for attr_list in existing_grouped.values() 
+                    for attr in attr_list
+                )
+                existing_has_change_from_prior = any(
+                    attr.get('_classification') == 'change_from_prior' 
+                    for attr_list in existing_grouped.values() 
+                    for attr in attr_list
+                )
+                
                 attributes_to_add = []
                 
-                if not incoming_has_presence:
+                # Only add if neither incoming nor existing has it
+                if not incoming_has_presence and not existing_has_presence:
                     print("  ✓ Adding presence attribute")
                     presence_attr = create_presence_element(finding_name)
                     attributes_to_add.append(('presence', presence_attr))
                 
-                if not incoming_has_change_from_prior:
+                if not incoming_has_change_from_prior and not existing_has_change_from_prior:
                     print("  ✓ Adding change_from_prior attribute")
                     change_attr = create_change_element(finding_name)
                     attributes_to_add.append(('change_from_prior', change_attr))
@@ -575,7 +594,8 @@ async def main():
                 # Interactive review of needs_review attributes
                 review_decisions = []
                 if needs_review_comparisons:
-                    review_decisions = interactive_review_needs_review(needs_review_comparisons)
+                    auto_decision = 'keep_existing' if args.auto_keep_existing else None
+                    review_decisions = interactive_review_needs_review(needs_review_comparisons, auto_decision=auto_decision)
                 
                 # Build the final finding
                 print("Building final finding model...")
@@ -589,6 +609,30 @@ async def main():
                 )
                 final_attrs = final_finding.get('attributes', [])
                 print(f"  ✓ Final model has {len(final_attrs)} attributes")
+                
+                # Extract source from existing model's oifm_id (e.g., OIFM_CDE_000003 -> CDE)
+                # Pattern: OIFM_{SOURCE}_{NUMBER}
+                source = "MGB"  # Default fallback
+                if existing_model_data and 'oifm_id' in existing_model_data:
+                    oifm_id = existing_model_data['oifm_id']
+                    # Extract source from pattern OIFM_{SOURCE}_{NUMBER}
+                    parts = oifm_id.split('_')
+                    if len(parts) >= 3:
+                        source = parts[1]  # Get the SOURCE part
+                
+                # Add IDs to any attributes missing them using the existing model's source
+                print("Adding IDs to attributes missing them...")
+                try:
+                    # Convert to FindingModelBase to use add_ids_to_model
+                    base_model = FindingModelBase(**final_finding)
+                    # Add IDs to attributes that don't have them
+                    model_with_ids = add_ids_to_model(base_model, source=source)
+                    # Convert back to dict
+                    final_finding = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
+                    print(f"  ✓ Added IDs using source: {source}")
+                except Exception as e:
+                    print(f"  ⚠ Warning: Could not add IDs to attributes: {e}")
+                    print("  Continuing without adding IDs...")
                 
                 # Automatically save the final model
                 print("Saving final model...")
