@@ -1,0 +1,212 @@
+{
+  "oifm_id": "OIFM_GMTS_649508",
+  "name": "bronchial lesion",
+  "description": "An abnormality or mass involving a bronchus.",
+  "synonyms": [
+    "bronchial mass",
+    "endobronchial lesion"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "XR",
+    "bronchi",
+    "lung",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_591392",
+      "name": "presence",
+      "description": "Presence or absence of bronchial lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_591392.0",
+          "name": "absent",
+          "description": "Bronchial lesion is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_591392.1",
+          "name": "present",
+          "description": "Bronchial lesion is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_591392.2",
+          "name": "indeterminate",
+          "description": "Presence of bronchial lesion cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_591392.3",
+          "name": "unknown",
+          "description": "Presence of bronchial lesion is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_166211",
+      "name": "change from prior",
+      "description": "Whether and how a bronchial lesion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_166211.0",
+          "name": "unchanged",
+          "description": "Bronchial lesion is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.1",
+          "name": "stable",
+          "description": "Bronchial lesion is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.2",
+          "name": "new",
+          "description": "Bronchial lesion is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.3",
+          "name": "resolved",
+          "description": "Bronchial lesion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.4",
+          "name": "increased",
+          "description": "Bronchial lesion has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.5",
+          "name": "decreased",
+          "description": "Bronchial lesion has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.6",
+          "name": "larger",
+          "description": "Bronchial lesion is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_166211.7",
+          "name": "smaller",
+          "description": "Bronchial lesion is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_428970",
+      "name": "Presence",
+      "description": "Indicates whether the endobronchial mass is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_428970.0",
+          "name": "Present",
+          "description": "The endobronchial mass is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_428970.1",
+          "name": "Absent",
+          "description": "The endobronchial mass is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_414293",
+      "name": "Location",
+      "description": "The location of the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_414293.0",
+          "name": "Specify location",
+          "description": "Specify the location of the endobronchial mass."
+        },
+        {
+          "value_code": "OIFMA_GMTS_414293.1",
+          "name": "None",
+          "description": "No location specified for the endobronchial mass."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_010965",
+      "name": "Size Finding",
+      "description": "The size of the endobronchial mass.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_534470",
+      "name": "Shape",
+      "description": "The shape of the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_534470.0",
+          "name": "Round",
+          "description": "The endobronchial mass is round."
+        },
+        {
+          "value_code": "OIFMA_GMTS_534470.1",
+          "name": "Irregular",
+          "description": "The endobronchial mass is irregular."
+        },
+        {
+          "value_code": "OIFMA_GMTS_534470.2",
+          "name": "Lobulated",
+          "description": "The endobronchial mass is lobulated."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_575405",
+      "name": "Distal Atelectasis or Consolidation",
+      "description": "Indicates whether there is distal atelectasis or consolidation associated with the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_575405.0",
+          "name": "Present",
+          "description": "There is distal atelectasis or consolidation associated with the endobronchial mass."
+        },
+        {
+          "value_code": "OIFMA_GMTS_575405.1",
+          "name": "Absent",
+          "description": "There is no distal atelectasis or consolidation associated with the endobronchial mass."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_382135",
+      "name": "Lymphadenopathy",
+      "description": "Indicates whether there is lymphadenopathy associated with the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_382135.0",
+          "name": "Present",
+          "description": "There is lymphadenopathy associated with the endobronchial mass."
+        },
+        {
+          "value_code": "OIFMA_GMTS_382135.1",
+          "name": "Absent",
+          "description": "There is no lymphadenopathy associated with the endobronchial mass."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

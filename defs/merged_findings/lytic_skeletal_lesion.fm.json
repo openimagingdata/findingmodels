@@ -1,0 +1,289 @@
+{
+  "oifm_id": "OIFM_GMTS_916822",
+  "name": "lytic skeletal lesion",
+  "description": "Lytic lesion affecting any part of the skeleton.",
+  "synonyms": [
+    "Skeletal lytic lesion"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "CT",
+    "XR",
+    "bone",
+    "skeletal lesion",
+    "lytic lesion",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_885367",
+      "name": "change from prior",
+      "description": "Whether and how a lytic skeletal lesion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_885367.0",
+          "name": "unchanged",
+          "description": "Lytic skeletal lesion is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.1",
+          "name": "stable",
+          "description": "Lytic skeletal lesion is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.2",
+          "name": "new",
+          "description": "Lytic skeletal lesion is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.3",
+          "name": "resolved",
+          "description": "Lytic skeletal lesion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.4",
+          "name": "increased",
+          "description": "Lytic skeletal lesion has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.5",
+          "name": "decreased",
+          "description": "Lytic skeletal lesion has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.6",
+          "name": "larger",
+          "description": "Lytic skeletal lesion is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_885367.7",
+          "name": "smaller",
+          "description": "Lytic skeletal lesion is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_750044",
+      "name": "location",
+      "description": "Specifies the location of the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_750044.0",
+          "name": "select list for bones",
+          "description": "The location of the lytic lesion is selectable from a list of bones."
+        },
+        {
+          "value_code": "OIFMA_GMTS_750044.1",
+          "name": "other",
+          "description": "Location is specified in free text."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_765348",
+      "name": "size Finding",
+      "description": "Indicates the size of the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_765348.0",
+          "name": "small",
+          "description": "<1 cm"
+        },
+        {
+          "value_code": "OIFMA_GMTS_765348.1",
+          "name": "medium",
+          "description": "1-2 cm"
+        },
+        {
+          "value_code": "OIFMA_GMTS_765348.2",
+          "name": "large",
+          "description": ">2 cm"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_506173",
+      "name": "number",
+      "description": "Specifies the number of lytic lesions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_506173.0",
+          "name": "single",
+          "description": "There is a single lytic lesion."
+        },
+        {
+          "value_code": "OIFMA_GMTS_506173.1",
+          "name": "multiple",
+          "description": "There are multiple lytic lesions."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_573423",
+      "name": "margin",
+      "description": "Describes the margin of the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_573423.0",
+          "name": "well-defined",
+          "description": "The margin of the lytic lesion is well-defined."
+        },
+        {
+          "value_code": "OIFMA_GMTS_573423.1",
+          "name": "ill-defined",
+          "description": "The margin of the lytic lesion is ill-defined."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_888079",
+      "name": "density",
+      "description": "Indicates the density of the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_888079.0",
+          "name": "high",
+          "description": "The density of the lytic lesion is high."
+        },
+        {
+          "value_code": "OIFMA_GMTS_888079.1",
+          "name": "low",
+          "description": "The density of the lytic lesion is low."
+        },
+        {
+          "value_code": "OIFMA_GMTS_888079.2",
+          "name": "mixed",
+          "description": "The density of the lytic lesion is mixed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_330923",
+      "name": "extra-osseous extension",
+      "description": "Indicates whether there is extra-osseous extension of the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_330923.0",
+          "name": "present",
+          "description": "There is extra-osseous extension of the lytic lesion."
+        },
+        {
+          "value_code": "OIFMA_GMTS_330923.1",
+          "name": "absent",
+          "description": "There is no extra-osseous extension of the lytic lesion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_003066",
+      "name": "soft tissue component",
+      "description": "Specifies whether there is a soft tissue component associated with the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_003066.0",
+          "name": "yes",
+          "description": "There is a soft tissue component associated with the lytic lesion."
+        },
+        {
+          "value_code": "OIFMA_GMTS_003066.1",
+          "name": "no",
+          "description": "There is no soft tissue component associated with the lytic lesion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_805561",
+      "name": "pathologic fracture",
+      "description": "Indicates whether there is a pathologic fracture associated with the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_805561.0",
+          "name": "yes",
+          "description": "There is a pathologic fracture associated with the lytic lesion."
+        },
+        {
+          "value_code": "OIFMA_GMTS_805561.1",
+          "name": "no",
+          "description": "There is no pathologic fracture associated with the lytic lesion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_963781",
+      "name": "surrounding bone sclerosis",
+      "description": "Specifies whether there is surrounding bone sclerosis associated with the lytic lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_963781.0",
+          "name": "yes",
+          "description": "There is surrounding bone sclerosis associated with the lytic lesion."
+        },
+        {
+          "value_code": "OIFMA_GMTS_963781.1",
+          "name": "no",
+          "description": "There is no surrounding bone sclerosis associated with the lytic lesion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_891830",
+      "name": "presence",
+      "description": "Presence or absence of lytic skeletal lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_891830.0",
+          "name": "absent",
+          "description": "Lytic skeletal lesion is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_891830.1",
+          "name": "present",
+          "description": "Lytic skeletal lesion is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_891830.2",
+          "name": "indeterminate",
+          "description": "Presence of lytic skeletal lesion cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_891830.3",
+          "name": "unknown",
+          "description": "Presence of lytic skeletal lesion is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

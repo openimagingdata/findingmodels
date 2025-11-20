@@ -1,0 +1,274 @@
+{
+  "oifm_id": "OIFM_GMTS_782786",
+  "name": "thyroid lesion",
+  "description": "An abnormality or nodule within the thyroid gland.",
+  "synonyms": [
+    "thyroid nodule"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "CT",
+    "MR",
+    "thyroid",
+    "endocrine",
+    "neoplastic",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_209876",
+      "name": "presence",
+      "description": "Presence or absence of thyroid lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_209876.0",
+          "name": "absent",
+          "description": "Thyroid lesion is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_209876.1",
+          "name": "present",
+          "description": "Thyroid lesion is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_209876.2",
+          "name": "indeterminate",
+          "description": "Presence of thyroid lesion cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_209876.3",
+          "name": "unknown",
+          "description": "Presence of thyroid lesion is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_808342",
+      "name": "change from prior",
+      "description": "Whether and how a thyroid lesion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_808342.0",
+          "name": "unchanged",
+          "description": "Thyroid lesion is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.1",
+          "name": "stable",
+          "description": "Thyroid lesion is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.2",
+          "name": "new",
+          "description": "Thyroid lesion is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.3",
+          "name": "resolved",
+          "description": "Thyroid lesion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.4",
+          "name": "increased",
+          "description": "Thyroid lesion has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.5",
+          "name": "decreased",
+          "description": "Thyroid lesion has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.6",
+          "name": "larger",
+          "description": "Thyroid lesion is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_808342.7",
+          "name": "smaller",
+          "description": "Thyroid lesion is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_540940",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_540940.0",
+          "name": "Right lobe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_540940.1",
+          "name": "Left lobe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_540940.2",
+          "name": "Isthmus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_875578",
+      "name": "Size (cm)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_494734",
+      "name": "Composition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_494734.0",
+          "name": "Cystic"
+        },
+        {
+          "value_code": "OIFMA_GMTS_494734.1",
+          "name": "Solid"
+        },
+        {
+          "value_code": "OIFMA_GMTS_494734.2",
+          "name": "Mixed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_472886",
+      "name": "Calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_472886.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_472886.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_024867",
+      "name": "Margins",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_024867.0",
+          "name": "Smooth"
+        },
+        {
+          "value_code": "OIFMA_GMTS_024867.1",
+          "name": "Irregular"
+        },
+        {
+          "value_code": "OIFMA_GMTS_024867.2",
+          "name": "Lobulated"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_364009",
+      "name": "Enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_364009.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_364009.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_670911",
+      "name": "Prior Fine Needle Aspiration",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_670911.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_GMTS_670911.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_958020",
+      "name": "Prior Fine Needle Aspiration Date",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_958020.0",
+          "name": "Specify date"
+        },
+        {
+          "value_code": "OIFMA_GMTS_958020.1",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_575899",
+      "name": "Invasion Into Adjacent Structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_575899.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_575899.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_147076",
+      "name": "Cervical Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_147076.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_147076.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

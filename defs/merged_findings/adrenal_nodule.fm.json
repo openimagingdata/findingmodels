@@ -1,0 +1,270 @@
+{
+  "oifm_id": "OIFM_CDE_750557",
+  "name": "Adrenal Nodule",
+  "description": "Detection and characterization of an adrenal nodule.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_680262",
+      "name": "Stability, compared to priors",
+      "description": "Current lesion size, compared to previous imaging results.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_680262.0",
+          "name": "no priors",
+          "description": "No prior imaging was done"
+        },
+        {
+          "value_code": "OIFMA_CDE_680262.1",
+          "name": "stable for a year, or longer"
+        },
+        {
+          "value_code": "OIFMA_CDE_680262.2",
+          "name": "stable, priors less than year ago"
+        },
+        {
+          "value_code": "OIFMA_CDE_680262.3",
+          "name": "new"
+        },
+        {
+          "value_code": "OIFMA_CDE_680262.4",
+          "name": "enlarging"
+        },
+        {
+          "value_code": "OIFMA_CDE_680262.5",
+          "name": "indeterminate"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_999280",
+      "name": "size Finding",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_CDE_124891",
+      "name": "Hounsfield units (HU)",
+      "description": "Hounsfield units (HU) at non-contrast CT",
+      "type": "numeric",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_CDE_347250",
+      "name": "enhancement pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_347250.0",
+          "name": "nonenhancing"
+        },
+        {
+          "value_code": "OIFMA_CDE_347250.1",
+          "name": "enhancing"
+        },
+        {
+          "value_code": "OIFMA_CDE_347250.2",
+          "name": "rapid wash-in and wash-out"
+        },
+        {
+          "value_code": "OIFMA_CDE_347250.3",
+          "name": "delayed wash-out"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_869342",
+      "name": "Side",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_869342.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_869342.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_869342.2",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_860558",
+      "name": "Unenhanced attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained without IV contrast.",
+      "type": "numeric",
+      "minimum": -1024,
+      "maximum": 1024,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_091842",
+      "name": "Enhanced attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained during the portovenous phase of enhancement, 60-70s after IV contrast administration.",
+      "type": "numeric",
+      "minimum": -1024,
+      "maximum": 1024,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_948650",
+      "name": "Delayed attenuation",
+      "description": "Mean attenuation in Hounsfield units (HU) of the region of interest on CT images obtained 15 min after IV contrast administration.",
+      "type": "numeric",
+      "minimum": -1024,
+      "maximum": 1024,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_260432",
+      "name": "Microscopic fat",
+      "description": "The adrenal nodule contains macroscopic fat, as evidenced by at least one pixel attenuation value less than -10 HU.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_260432.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_260432.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_260432.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_260432.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_944206",
+      "name": "Lesion composition",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_944206.0",
+          "name": "uniformly cystic"
+        },
+        {
+          "value_code": "OIFMA_CDE_944206.1",
+          "name": "non-uniformly cystic"
+        },
+        {
+          "value_code": "OIFMA_CDE_944206.2",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_CDE_944206.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_944206.4",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_019046",
+      "name": "Lesion size",
+      "description": "The greatest linear dimension of the adrenal lesion.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_510188",
+      "name": "Presence",
+      "description": "Presence of adrenal nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_510188.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_510188.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_510188.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_510188.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_328418",
+      "name": "Benign features",
+      "description": "Benign imaging features include homogeneous, low density and smooth margins.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_328418.0",
+          "name": "macroscopic fat"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.1",
+          "name": "density less of equal to 10HU on unenhanced CT"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.2",
+          "name": "no enhancement or less than 20 HU change"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.3",
+          "name": "benign calcification",
+          "description": "Benign calcification (old hematoma or granuloma)"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.4",
+          "name": "decreased signal on CS-MRI"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.5",
+          "name": "previously characterized and stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.6",
+          "name": "no benign features"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.7",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_328418.8",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    }
+  ]
+}

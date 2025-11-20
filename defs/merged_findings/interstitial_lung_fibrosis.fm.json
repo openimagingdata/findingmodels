@@ -1,0 +1,358 @@
+{
+  "oifm_id": "OIFM_GMTS_529409",
+  "name": "interstitial lung fibrosis",
+  "description": "Thickening and scarring of the lung interstitium.",
+  "synonyms": [
+    "pulmonary fibrosis",
+    "interstitial fibrosis"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "CT",
+    "lung",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_908993",
+      "name": "presence",
+      "description": "Presence or absence of interstitial lung fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_908993.0",
+          "name": "absent",
+          "description": "Interstitial lung fibrosis is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_908993.1",
+          "name": "present",
+          "description": "Interstitial lung fibrosis is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_908993.2",
+          "name": "indeterminate",
+          "description": "Presence of interstitial lung fibrosis cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_908993.3",
+          "name": "unknown",
+          "description": "Presence of interstitial lung fibrosis is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_477726",
+      "name": "status",
+      "description": "Status of radiation fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_477726.0",
+          "name": "Stable",
+          "description": "Radiation fibrosis is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_477726.1",
+          "name": "Progressive",
+          "description": "Radiation fibrosis is progressive"
+        },
+        {
+          "value_code": "OIFMA_GMTS_477726.2",
+          "name": "Regressive",
+          "description": "Radiation fibrosis is regressive"
+        },
+        {
+          "value_code": "OIFMA_GMTS_477726.3",
+          "name": "New development",
+          "description": "Radiation fibrosis is a new development"
+        },
+        {
+          "value_code": "OIFMA_GMTS_477726.4",
+          "name": "Unchanged over time",
+          "description": "Radiation fibrosis remains unchanged over time"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_219955",
+      "name": "severity",
+      "description": "Severity of radiation fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_219955.0",
+          "name": "Mild",
+          "description": "Radiation fibrosis is mild"
+        },
+        {
+          "value_code": "OIFMA_GMTS_219955.1",
+          "name": "Moderate",
+          "description": "Radiation fibrosis is moderate"
+        },
+        {
+          "value_code": "OIFMA_GMTS_219955.2",
+          "name": "Severe",
+          "description": "Radiation fibrosis is severe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_219955.3",
+          "name": "Very Severe",
+          "description": "Radiation fibrosis is very severe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_219955.4",
+          "name": "Extensive",
+          "description": "Radiation fibrosis is extensive"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_377050",
+      "name": "distribution",
+      "description": "Distribution of radiation fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_377050.0",
+          "name": "Localized",
+          "description": "Radiation fibrosis is localized"
+        },
+        {
+          "value_code": "OIFMA_GMTS_377050.1",
+          "name": "Diffuse",
+          "description": "Radiation fibrosis is diffuse"
+        },
+        {
+          "value_code": "OIFMA_GMTS_377050.2",
+          "name": "Peribronchovascular",
+          "description": "Radiation fibrosis is peribronchovascular"
+        },
+        {
+          "value_code": "OIFMA_GMTS_377050.3",
+          "name": "Segmental",
+          "description": "Radiation fibrosis is segmental"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_867336",
+      "name": "location",
+      "description": "Location of radiation fibrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_867336.0",
+          "name": "Right lung",
+          "description": "Radiation fibrosis is located in the right lung"
+        },
+        {
+          "value_code": "OIFMA_GMTS_867336.1",
+          "name": "Left lung",
+          "description": "Radiation fibrosis is located in the left lung"
+        },
+        {
+          "value_code": "OIFMA_GMTS_867336.2",
+          "name": "Bilateral",
+          "description": "Radiation fibrosis is located bilaterally"
+        },
+        {
+          "value_code": "OIFMA_GMTS_867336.3",
+          "name": "Specific lobe(s)",
+          "description": "Radiation fibrosis is located in specific lobe(s)"
+        },
+        {
+          "value_code": "OIFMA_GMTS_867336.4",
+          "name": "Mediastinal",
+          "description": "Radiation fibrosis is located in the mediastinum"
+        },
+        {
+          "value_code": "OIFMA_GMTS_867336.5",
+          "name": "Subpleural",
+          "description": "Radiation fibrosis is located subpleurally"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_644770",
+      "name": "volume_loss",
+      "description": "Presence of volume loss",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_644770.0",
+          "name": "Present",
+          "description": "Volume loss is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_644770.1",
+          "name": "Absent",
+          "description": "Volume loss is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_524509",
+      "name": "pleural_thickening",
+      "description": "Presence of pleural thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_524509.0",
+          "name": "Present",
+          "description": "Pleural thickening is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_524509.1",
+          "name": "Absent",
+          "description": "Pleural thickening is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_101184",
+      "name": "bronchiectasis",
+      "description": "Presence of bronchiectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_101184.0",
+          "name": "Present",
+          "description": "Bronchiectasis is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_101184.1",
+          "name": "Absent",
+          "description": "Bronchiectasis is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_246034",
+      "name": "honeycombing",
+      "description": "Presence of honeycombing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_246034.0",
+          "name": "Present",
+          "description": "Honeycombing is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_246034.1",
+          "name": "Absent",
+          "description": "Honeycombing is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_698528",
+      "name": "air_trapping",
+      "description": "Presence of air trapping",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_698528.0",
+          "name": "Present",
+          "description": "Air trapping is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_698528.1",
+          "name": "Absent",
+          "description": "Air trapping is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_780046",
+      "name": "ground_glass_opacities",
+      "description": "Presence of ground-glass opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_780046.0",
+          "name": "Present",
+          "description": "Ground-glass opacities are present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_780046.1",
+          "name": "Absent",
+          "description": "Ground-glass opacities are absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_687679",
+      "name": "change from prior",
+      "description": "Whether and how a interstitial lung fibrosis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_687679.0",
+          "name": "unchanged",
+          "description": "Interstitial lung fibrosis is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.1",
+          "name": "stable",
+          "description": "Interstitial lung fibrosis is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.2",
+          "name": "new",
+          "description": "Interstitial lung fibrosis is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.3",
+          "name": "resolved",
+          "description": "Interstitial lung fibrosis seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.4",
+          "name": "increased",
+          "description": "Interstitial lung fibrosis has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.5",
+          "name": "decreased",
+          "description": "Interstitial lung fibrosis has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.6",
+          "name": "larger",
+          "description": "Interstitial lung fibrosis is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_687679.7",
+          "name": "smaller",
+          "description": "Interstitial lung fibrosis is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

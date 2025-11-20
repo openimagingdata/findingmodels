@@ -1,0 +1,228 @@
+{
+  "oifm_id": "OIFM_GMTS_834913",
+  "name": "gallstone",
+  "description": "Stone formation in the gallbladder or bile duct.",
+  "synonyms": [
+    "gallstones",
+    "cholelithiasis"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "CT",
+    "MR",
+    "biliary",
+    "stone",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_122160",
+      "name": "presence",
+      "description": "Presence or absence of gallstone",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_122160.0",
+          "name": "absent",
+          "description": "Gallstone is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_122160.1",
+          "name": "present",
+          "description": "Gallstone is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_122160.2",
+          "name": "indeterminate",
+          "description": "Presence of gallstone cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_122160.3",
+          "name": "unknown",
+          "description": "Presence of gallstone is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_105626",
+      "name": "Signs of acute cholecystitis",
+      "description": "Indicates the presence or absence of signs of acute cholecystitis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_105626.0",
+          "name": "Yes",
+          "description": "Signs of acute cholecystitis are present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_105626.1",
+          "name": "No",
+          "description": "Signs of acute cholecystitis are absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_971119",
+      "name": "Number of stones",
+      "description": "Indicates the number of stones present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_971119.0",
+          "name": "Single",
+          "description": "A single stone is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_971119.1",
+          "name": "Multiple",
+          "description": "More than one stone is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_371407",
+      "name": "Stone size",
+      "description": "Indicates the size of the stones.",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_681357",
+      "name": "Location",
+      "description": "Indicates the location of the stones.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_681357.0",
+          "name": "Gallbladder lumen",
+          "description": "The stones are located in the gallbladder lumen."
+        },
+        {
+          "value_code": "OIFMA_GMTS_681357.1",
+          "name": "Bile ducts",
+          "description": "The stones are located in the bile ducts."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_495099",
+      "name": "Gallbladder wall thickening",
+      "description": "Indicates the presence or absence of gallbladder wall thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_495099.0",
+          "name": "Yes",
+          "description": "Gallbladder wall thickening is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_495099.1",
+          "name": "No",
+          "description": "Gallbladder wall thickening is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_030460",
+      "name": "Pericholecystic fluid",
+      "description": "Indicates the presence or absence of pericholecystic fluid.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_030460.0",
+          "name": "Yes",
+          "description": "Pericholecystic fluid is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_030460.1",
+          "name": "No",
+          "description": "Pericholecystic fluid is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_816981",
+      "name": "Biliary dilatation",
+      "description": "Indicates the presence or absence of biliary dilatation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_816981.0",
+          "name": "Yes",
+          "description": "Biliary dilatation is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_816981.1",
+          "name": "No",
+          "description": "Biliary dilatation is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_660759",
+      "name": "change from prior",
+      "description": "Whether and how a gallstone has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_660759.0",
+          "name": "unchanged",
+          "description": "Gallstone is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.1",
+          "name": "stable",
+          "description": "Gallstone is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.2",
+          "name": "new",
+          "description": "Gallstone is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.3",
+          "name": "resolved",
+          "description": "Gallstone seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.4",
+          "name": "increased",
+          "description": "Gallstone has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.5",
+          "name": "decreased",
+          "description": "Gallstone has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.6",
+          "name": "larger",
+          "description": "Gallstone is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_660759.7",
+          "name": "smaller",
+          "description": "Gallstone is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

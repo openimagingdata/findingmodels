@@ -1,0 +1,249 @@
+{
+  "oifm_id": "OIFM_GMTS_973212",
+  "name": "shadowing mass in renal collecting system",
+  "description": "A mass in the renal collecting system that causes acoustic shadowing on ultrasound.",
+  "synonyms": [
+    "nephrolithiasis",
+    "renal stone"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "CT",
+    "urinary",
+    "urolithiasis",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_577743",
+      "name": "presence",
+      "description": "Presence or absence of shadowing mass in renal collecting system",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_577743.0",
+          "name": "absent",
+          "description": "Shadowing mass in renal collecting system is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_577743.1",
+          "name": "present",
+          "description": "Shadowing mass in renal collecting system is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_577743.2",
+          "name": "indeterminate",
+          "description": "Presence of shadowing mass in renal collecting system cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_577743.3",
+          "name": "unknown",
+          "description": "Presence of shadowing mass in renal collecting system is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_492859",
+      "name": "Number of Stones",
+      "description": "Number of kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_492859.0",
+          "name": "Single",
+          "description": "One kidney stone"
+        },
+        {
+          "value_code": "OIFMA_GMTS_492859.1",
+          "name": "Multiple",
+          "description": "Multiple kidney stones"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_683986",
+      "name": "Location",
+      "description": "Location of the kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_683986.0",
+          "name": "Right kidney",
+          "description": "Kidney stones in the right kidney"
+        },
+        {
+          "value_code": "OIFMA_GMTS_683986.1",
+          "name": "Left kidney",
+          "description": "Kidney stones in the left kidney"
+        },
+        {
+          "value_code": "OIFMA_GMTS_683986.2",
+          "name": "Both kidneys",
+          "description": "Kidney stones in both kidneys"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_246350",
+      "name": "Stone Size",
+      "description": "Size of the kidney stones",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_246350.0",
+          "name": "<5mm",
+          "description": "Kidney stones smaller than 5mm"
+        },
+        {
+          "value_code": "OIFMA_GMTS_246350.1",
+          "name": "5-10mm",
+          "description": "Kidney stones between 5mm and 10mm"
+        },
+        {
+          "value_code": "OIFMA_GMTS_246350.2",
+          "name": ">10mm",
+          "description": "Kidney stones larger than 10mm"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_163811",
+      "name": "Hydronephrosis",
+      "description": "Presence of hydronephrosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_163811.0",
+          "name": "Present",
+          "description": "Hydronephrosis is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_163811.1",
+          "name": "Absent",
+          "description": "Hydronephrosis is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_293523",
+      "name": "Hydroureter",
+      "description": "Presence of hydroureter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_293523.0",
+          "name": "Present",
+          "description": "Hydroureter is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_293523.1",
+          "name": "Absent",
+          "description": "Hydroureter is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_913203",
+      "name": "Perinephric Stranding",
+      "description": "Presence of perinephric stranding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_913203.0",
+          "name": "Present",
+          "description": "Perinephric stranding is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_913203.1",
+          "name": "Absent",
+          "description": "Perinephric stranding is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_216685",
+      "name": "Ureteral obstruction",
+      "description": "Presence of ureteral obstruction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_216685.0",
+          "name": "Present",
+          "description": "Ureteral obstruction is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_216685.1",
+          "name": "Absent",
+          "description": "Ureteral obstruction is absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_709957",
+      "name": "change from prior",
+      "description": "Whether and how a shadowing mass in renal collecting system has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_709957.0",
+          "name": "unchanged",
+          "description": "Shadowing mass in renal collecting system is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.1",
+          "name": "stable",
+          "description": "Shadowing mass in renal collecting system is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.2",
+          "name": "new",
+          "description": "Shadowing mass in renal collecting system is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.3",
+          "name": "resolved",
+          "description": "Shadowing mass in renal collecting system seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.4",
+          "name": "increased",
+          "description": "Shadowing mass in renal collecting system has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.5",
+          "name": "decreased",
+          "description": "Shadowing mass in renal collecting system has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.6",
+          "name": "larger",
+          "description": "Shadowing mass in renal collecting system is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_709957.7",
+          "name": "smaller",
+          "description": "Shadowing mass in renal collecting system is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

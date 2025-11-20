@@ -1,0 +1,321 @@
+{
+  "oifm_id": "OIFM_CDE_897667",
+  "name": "Emphysema",
+  "description": "Emphysema",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_063913",
+      "name": "Presence",
+      "description": "The presence or absence of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_063913.0",
+          "name": "Present",
+          "description": "Emphysema is present."
+        },
+        {
+          "value_code": "OIFMA_CDE_063913.1",
+          "name": "Absent",
+          "description": "Emphysema is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_366028",
+      "name": "Type Finding",
+      "description": "The type of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_366028.0",
+          "name": "Centrilobular",
+          "description": "Emphysema affects the central part of the lobule."
+        },
+        {
+          "value_code": "OIFMA_CDE_366028.1",
+          "name": "Panlobular",
+          "description": "Emphysema affects the entire lobule."
+        },
+        {
+          "value_code": "OIFMA_CDE_366028.2",
+          "name": "Paraseptal",
+          "description": "Emphysema affects the distal parts of the lobule."
+        },
+        {
+          "value_code": "OIFMA_CDE_366028.3",
+          "name": "Bullous",
+          "description": "Emphysema causes bullae (large air spaces) to form in the lung."
+        },
+        {
+          "value_code": "OIFMA_CDE_366028.4",
+          "name": "Irregular",
+          "description": "Emphysema has irregularly distributed areas of destruction."
+        },
+        {
+          "value_code": "OIFMA_CDE_366028.5",
+          "name": "Subpleural",
+          "description": "Emphysema is predominantly located near the pleura."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_183738",
+      "name": "Severity",
+      "description": "The severity of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_183738.0",
+          "name": "Mild",
+          "description": "Emphysema is mild."
+        },
+        {
+          "value_code": "OIFMA_CDE_183738.1",
+          "name": "Moderate",
+          "description": "Emphysema is moderate."
+        },
+        {
+          "value_code": "OIFMA_CDE_183738.2",
+          "name": "Severe",
+          "description": "Emphysema is severe."
+        },
+        {
+          "value_code": "OIFMA_CDE_183738.3",
+          "name": "Very Severe",
+          "description": "Emphysema is very severe."
+        },
+        {
+          "value_code": "OIFMA_CDE_183738.4",
+          "name": "Extensive",
+          "description": "Emphysema is extensive."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_475516",
+      "name": "Location",
+      "description": "The location of emphysema in the lungs.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_475516.0",
+          "name": "Upper Lobes",
+          "description": "Emphysema is located in the upper lobes of the lungs."
+        },
+        {
+          "value_code": "OIFMA_CDE_475516.1",
+          "name": "Lower Lobes",
+          "description": "Emphysema is located in the lower lobes of the lungs."
+        },
+        {
+          "value_code": "OIFMA_CDE_475516.2",
+          "name": "Diffuse",
+          "description": "Emphysema is distributed throughout the lungs."
+        },
+        {
+          "value_code": "OIFMA_CDE_475516.3",
+          "name": "Peribronchovascular",
+          "description": "Emphysema is located around the bronchovascular bundles."
+        },
+        {
+          "value_code": "OIFMA_CDE_475516.4",
+          "name": "Apex to Base",
+          "description": "Emphysema is distributed from the apex to the base of the lungs."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_824230",
+      "name": "Laterality",
+      "description": "The laterality of emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_824230.0",
+          "name": "Right",
+          "description": "Emphysema is localized to the right lung."
+        },
+        {
+          "value_code": "OIFMA_CDE_824230.1",
+          "name": "Left",
+          "description": "Emphysema is localized to the left lung."
+        },
+        {
+          "value_code": "OIFMA_CDE_824230.2",
+          "name": "Bilateral",
+          "description": "Emphysema is present in both lungs."
+        },
+        {
+          "value_code": "OIFMA_CDE_824230.3",
+          "name": "Predominant Side",
+          "description": "Emphysema is predominantly located on one side."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_446837",
+      "name": "Associated Findings",
+      "description": "The associated findings with emphysema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_446837.0",
+          "name": "Air trapping",
+          "description": "Emphysema is associated with air trapping."
+        },
+        {
+          "value_code": "OIFMA_CDE_446837.1",
+          "name": "Pulmonary nodules",
+          "description": "Emphysema is associated with pulmonary nodules."
+        },
+        {
+          "value_code": "OIFMA_CDE_446837.2",
+          "name": "Fibrosis",
+          "description": "Emphysema is associated with fibrosis."
+        },
+        {
+          "value_code": "OIFMA_CDE_446837.3",
+          "name": "Pleural abnormalities",
+          "description": "Emphysema is associated with pleural abnormalities."
+        },
+        {
+          "value_code": "OIFMA_CDE_446837.4",
+          "name": "Bronchiectasis",
+          "description": "Emphysema is associated with bronchiectasis."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_707792",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_707792.0",
+          "name": "right upper lobe (RUL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_707792.1",
+          "name": "right middle lobe (RML)"
+        },
+        {
+          "value_code": "OIFMA_CDE_707792.2",
+          "name": "right upper lobe and right middle lobe (RUL + RML)"
+        },
+        {
+          "value_code": "OIFMA_CDE_707792.3",
+          "name": "right lower lobe (RLL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_707792.4",
+          "name": "left upper lobe (LUL)"
+        },
+        {
+          "value_code": "OIFMA_CDE_707792.5",
+          "name": "left lower lobe (LLL)"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_006597",
+      "name": "Emphysema scale (% - 920HU)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_002682",
+      "name": "Emphysema scale (% - 950HU)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_149113",
+      "name": "Fissure completeness scale",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_999617",
+      "name": "Volume",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 3000,
+      "unit": "ml",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_578590",
+      "name": "change from prior",
+      "description": "Whether and how a Emphysema has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_578590.0",
+          "name": "unchanged",
+          "description": "Emphysema is unchanged"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.1",
+          "name": "stable",
+          "description": "Emphysema is stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.2",
+          "name": "new",
+          "description": "Emphysema is new"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.3",
+          "name": "resolved",
+          "description": "Emphysema seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.4",
+          "name": "increased",
+          "description": "Emphysema has increased"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.5",
+          "name": "decreased",
+          "description": "Emphysema has decreased"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.6",
+          "name": "larger",
+          "description": "Emphysema is larger"
+        },
+        {
+          "value_code": "OIFMA_CDE_578590.7",
+          "name": "smaller",
+          "description": "Emphysema is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

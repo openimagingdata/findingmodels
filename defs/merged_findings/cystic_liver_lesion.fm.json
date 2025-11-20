@@ -1,0 +1,184 @@
+{
+  "oifm_id": "OIFM_GMTS_227696",
+  "name": "cystic liver lesion",
+  "description": "Fluid-filled lesion within the liver tissue.",
+  "synonyms": [
+    "hepatic cyst"
+  ],
+  "tags": [
+    "ultrasound",
+    "US",
+    "CT",
+    "MR",
+    "hepatic",
+    "cystic",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_719344",
+      "name": "change from prior",
+      "description": "Whether and how a cystic liver lesion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_719344.0",
+          "name": "unchanged",
+          "description": "Cystic liver lesion is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.1",
+          "name": "stable",
+          "description": "Cystic liver lesion is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.2",
+          "name": "new",
+          "description": "Cystic liver lesion is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.3",
+          "name": "resolved",
+          "description": "Cystic liver lesion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.4",
+          "name": "increased",
+          "description": "Cystic liver lesion has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.5",
+          "name": "decreased",
+          "description": "Cystic liver lesion has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.6",
+          "name": "larger",
+          "description": "Cystic liver lesion is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_719344.7",
+          "name": "smaller",
+          "description": "Cystic liver lesion is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_365847",
+      "name": "Multiplicity",
+      "description": "The number of cysts present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_365847.0",
+          "name": "Single"
+        },
+        {
+          "value_code": "OIFMA_GMTS_365847.1",
+          "name": "Multiple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_876851",
+      "name": "Location",
+      "description": "The specific location of the cyst.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_876851.0",
+          "name": "Hepatic (unspecified)",
+          "description": "The cyst is located in the liver."
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.1",
+          "name": "Left hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.2",
+          "name": "Right hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.3",
+          "name": "Hepatic segment 1"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.4",
+          "name": "Hepatic segment 2"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.5",
+          "name": "Hepatic segment 3"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.6",
+          "name": "Hepatic segment 4a"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.7",
+          "name": "Hepatic segment 4b"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.8",
+          "name": "Hepatic segment 5"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.9",
+          "name": "Hepatic segment 6"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.10",
+          "name": "Hepatic segment 7"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876851.11",
+          "name": "Hepatic segment 8"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_312079",
+      "name": "Size of largest cyst",
+      "description": "The size of the largest cyst in centimeters.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_204929",
+      "name": "presence",
+      "description": "Presence or absence of cystic liver lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_204929.0",
+          "name": "absent",
+          "description": "Cystic liver lesion is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_204929.1",
+          "name": "present",
+          "description": "Cystic liver lesion is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_204929.2",
+          "name": "indeterminate",
+          "description": "Presence of cystic liver lesion cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_204929.3",
+          "name": "unknown",
+          "description": "Presence of cystic liver lesion is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

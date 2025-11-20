@@ -1,0 +1,236 @@
+{
+  "oifm_id": "OIFM_GMTS_675901",
+  "name": "diaphragmatic hernia",
+  "description": "An abnormal opening in the diaphragm allowing organs to move into the chest cavity.",
+  "tags": [
+    "abdomen",
+    "XR",
+    "CT",
+    "MR",
+    "diaphragm",
+    "congenital anomaly",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_718606",
+      "name": "Presence of Morgagni Hernia",
+      "description": "Whether a Morgagni Hernia is present or not",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_718606.0",
+          "name": "Yes",
+          "description": "Morgagni Hernia is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_718606.1",
+          "name": "No",
+          "description": "Morgagni Hernia is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_383791",
+      "name": "Side Finding",
+      "description": "The side of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_383791.0",
+          "name": "Left",
+          "description": "Morgagni Hernia is on the left side"
+        },
+        {
+          "value_code": "OIFMA_GMTS_383791.1",
+          "name": "Right",
+          "description": "Morgagni Hernia is on the right side"
+        },
+        {
+          "value_code": "OIFMA_GMTS_383791.2",
+          "name": "Bilateral",
+          "description": "Morgagni Hernia is on both sides"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_146288",
+      "name": "Size Finding",
+      "description": "The size of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_146288.0",
+          "name": "Small",
+          "description": "Morgagni Hernia is small in size"
+        },
+        {
+          "value_code": "OIFMA_GMTS_146288.1",
+          "name": "Medium",
+          "description": "Morgagni Hernia is medium in size"
+        },
+        {
+          "value_code": "OIFMA_GMTS_146288.2",
+          "name": "Large",
+          "description": "Morgagni Hernia is large in size"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_379035",
+      "name": "Contents",
+      "description": "The contents of the Morgagni Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_379035.0",
+          "name": "Fat",
+          "description": "Morgagni Hernia contains fat"
+        },
+        {
+          "value_code": "OIFMA_GMTS_379035.1",
+          "name": "Bowel",
+          "description": "Morgagni Hernia contains bowel"
+        },
+        {
+          "value_code": "OIFMA_GMTS_379035.2",
+          "name": "Both",
+          "description": "Morgagni Hernia contains both fat and bowel"
+        },
+        {
+          "value_code": "OIFMA_GMTS_379035.3",
+          "name": "Other",
+          "description": "Morgagni Hernia contains other contents"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_472221",
+      "name": "Cardiac or Mediastinal Displacement",
+      "description": "Whether there is associated cardiac or mediastinal displacement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_472221.0",
+          "name": "Present",
+          "description": "Associated cardiac or mediastinal displacement is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_472221.1",
+          "name": "Absent",
+          "description": "Associated cardiac or mediastinal displacement is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_272676",
+      "name": "Other Diaphragmatic Hernias",
+      "description": "Whether there are other diaphragmatic hernias present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_272676.0",
+          "name": "Present",
+          "description": "Other diaphragmatic hernias are present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_272676.1",
+          "name": "Absent",
+          "description": "Other diaphragmatic hernias are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_873304",
+      "name": "presence",
+      "description": "Presence or absence of diaphragmatic hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_873304.0",
+          "name": "absent",
+          "description": "Diaphragmatic hernia is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_873304.1",
+          "name": "present",
+          "description": "Diaphragmatic hernia is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_873304.2",
+          "name": "indeterminate",
+          "description": "Presence of diaphragmatic hernia cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_873304.3",
+          "name": "unknown",
+          "description": "Presence of diaphragmatic hernia is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_601866",
+      "name": "change from prior",
+      "description": "Whether and how a diaphragmatic hernia has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_601866.0",
+          "name": "unchanged",
+          "description": "Diaphragmatic hernia is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.1",
+          "name": "stable",
+          "description": "Diaphragmatic hernia is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.2",
+          "name": "new",
+          "description": "Diaphragmatic hernia is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.3",
+          "name": "resolved",
+          "description": "Diaphragmatic hernia seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.4",
+          "name": "increased",
+          "description": "Diaphragmatic hernia has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.5",
+          "name": "decreased",
+          "description": "Diaphragmatic hernia has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.6",
+          "name": "larger",
+          "description": "Diaphragmatic hernia is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_601866.7",
+          "name": "smaller",
+          "description": "Diaphragmatic hernia is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

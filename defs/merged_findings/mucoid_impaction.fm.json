@@ -1,0 +1,250 @@
+{
+  "oifm_id": "OIFM_GMTS_114943",
+  "name": "mucoid impaction",
+  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "synonyms": [
+    "bronchial mucoid impaction",
+    "mucoid impaction in a bronchus"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "CT",
+    "lung",
+    "airways",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_067038",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_067038.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_GMTS_067038.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_067038.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_GMTS_067038.3",
+          "name": "Removed"
+        },
+        {
+          "value_code": "OIFMA_GMTS_067038.4",
+          "name": "Resorbed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_304541",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_304541.0",
+          "name": "Main bronchus"
+        },
+        {
+          "value_code": "OIFMA_GMTS_304541.1",
+          "name": "Lobar bronchus"
+        },
+        {
+          "value_code": "OIFMA_GMTS_304541.2",
+          "name": "Segmental bronchus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_010245",
+      "name": "Side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_010245.0",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_GMTS_010245.1",
+          "name": "Left"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_543757",
+      "name": "Device Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_543757.0",
+          "name": "Bioresorbable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_543757.1",
+          "name": "Non-bioresorbable"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_203291",
+      "name": "Deployment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_203291.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_GMTS_203291.1",
+          "name": "Partial"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_726134",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_726134.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_GMTS_726134.1",
+          "name": "Mucosal erosion"
+        },
+        {
+          "value_code": "OIFMA_GMTS_726134.2",
+          "name": "Perforation"
+        },
+        {
+          "value_code": "OIFMA_GMTS_726134.3",
+          "name": "Migration"
+        },
+        {
+          "value_code": "OIFMA_GMTS_726134.4",
+          "name": "Stenosis"
+        },
+        {
+          "value_code": "OIFMA_GMTS_726134.5",
+          "name": "Occlusion"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_810860",
+      "name": "Airspace consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_810860.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_810860.1",
+          "name": "Absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_907237",
+      "name": "presence",
+      "description": "Presence or absence of mucoid impaction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_907237.0",
+          "name": "absent",
+          "description": "Mucoid impaction is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_907237.1",
+          "name": "present",
+          "description": "Mucoid impaction is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_907237.2",
+          "name": "indeterminate",
+          "description": "Presence of mucoid impaction cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_907237.3",
+          "name": "unknown",
+          "description": "Presence of mucoid impaction is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_769284",
+      "name": "change from prior",
+      "description": "Whether and how a mucoid impaction has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_769284.0",
+          "name": "unchanged",
+          "description": "Mucoid impaction is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.1",
+          "name": "stable",
+          "description": "Mucoid impaction is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.2",
+          "name": "new",
+          "description": "Mucoid impaction is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.3",
+          "name": "resolved",
+          "description": "Mucoid impaction seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.4",
+          "name": "increased",
+          "description": "Mucoid impaction has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.5",
+          "name": "decreased",
+          "description": "Mucoid impaction has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.6",
+          "name": "larger",
+          "description": "Mucoid impaction is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_769284.7",
+          "name": "smaller",
+          "description": "Mucoid impaction is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

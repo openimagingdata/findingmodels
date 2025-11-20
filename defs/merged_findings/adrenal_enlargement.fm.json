@@ -1,0 +1,179 @@
+{
+  "oifm_id": "OIFM_GMTS_080829",
+  "name": "adrenal enlargement",
+  "description": "Increase in size of the adrenal glands, may indicate hyperplasia or tumor.",
+  "synonyms": [
+    "large adrenal gland",
+    "Adrenal hypertrophy"
+  ],
+  "tags": [
+    "abdomen",
+    "CT",
+    "MR",
+    "adrenal",
+    "enlargement",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_347296",
+      "name": "laterality",
+      "description": "Laterality of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_347296.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_GMTS_347296.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_GMTS_347296.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_233788",
+      "name": "thickness",
+      "description": "Severity of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_233788.0",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_GMTS_233788.1",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_GMTS_233788.2",
+          "name": "severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_858136",
+      "name": "homogeneity",
+      "description": "Homogeneity of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_858136.0",
+          "name": "homogeneous"
+        },
+        {
+          "value_code": "OIFMA_GMTS_858136.1",
+          "name": "heterogeneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_533647",
+      "name": "lymphadenopathy",
+      "description": "Presence of lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_533647.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_533647.1",
+          "name": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_631137",
+      "name": "presence",
+      "description": "Presence or absence of adrenal enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_631137.0",
+          "name": "absent",
+          "description": "Adrenal enlargement is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_631137.1",
+          "name": "present",
+          "description": "Adrenal enlargement is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_631137.2",
+          "name": "indeterminate",
+          "description": "Presence of adrenal enlargement cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_631137.3",
+          "name": "unknown",
+          "description": "Presence of adrenal enlargement is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_956098",
+      "name": "change from prior",
+      "description": "Whether and how a adrenal enlargement has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_956098.0",
+          "name": "unchanged",
+          "description": "Adrenal enlargement is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.1",
+          "name": "stable",
+          "description": "Adrenal enlargement is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.2",
+          "name": "new",
+          "description": "Adrenal enlargement is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.3",
+          "name": "resolved",
+          "description": "Adrenal enlargement seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.4",
+          "name": "increased",
+          "description": "Adrenal enlargement has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.5",
+          "name": "decreased",
+          "description": "Adrenal enlargement has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.6",
+          "name": "larger",
+          "description": "Adrenal enlargement is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_956098.7",
+          "name": "smaller",
+          "description": "Adrenal enlargement is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

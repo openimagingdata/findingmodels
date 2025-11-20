@@ -1,0 +1,219 @@
+{
+  "oifm_id": "OIFM_GMTS_772474",
+  "name": "bronchiectasis",
+  "description": "Abnormal, irreversible dilatation of bronchi due to chronic inflammation or infection.",
+  "synonyms": [
+    "bronchial dilatation"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "XR",
+    "bronchi",
+    "lung",
+    "inflammatory process",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_526668",
+      "name": "Predominant Type(s)",
+      "description": "The predominant type(s) of bronchiectasis present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_526668.0",
+          "name": "Cylindrical",
+          "description": "Bronchiectasis with cylindrical-shaped dilated bronchi."
+        },
+        {
+          "value_code": "OIFMA_GMTS_526668.1",
+          "name": "Varicose",
+          "description": "Bronchiectasis with varicose-shaped dilated bronchi."
+        },
+        {
+          "value_code": "OIFMA_GMTS_526668.2",
+          "name": "Cystic",
+          "description": "Bronchiectasis with cystic-shaped dilated bronchi."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_155130",
+      "name": "Severity",
+      "description": "The severity of bronchiectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_155130.0",
+          "name": "Mild",
+          "description": "Mildly severe bronchiectasis."
+        },
+        {
+          "value_code": "OIFMA_GMTS_155130.1",
+          "name": "Moderate",
+          "description": "Moderately severe bronchiectasis."
+        },
+        {
+          "value_code": "OIFMA_GMTS_155130.2",
+          "name": "Severe",
+          "description": "Severely severe bronchiectasis."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_712371",
+      "name": "Regional predominance",
+      "description": "The regional predominance of bronchiectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_712371.0",
+          "name": "Apices",
+          "description": "Bronchiectasis predominantly affecting the apices of the lungs."
+        },
+        {
+          "value_code": "OIFMA_GMTS_712371.1",
+          "name": "Upper lung zone",
+          "description": "Bronchiectasis predominantly affecting the upper lung zone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_712371.2",
+          "name": "Middle lung zone",
+          "description": "Bronchiectasis predominantly affecting the middle lung zone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_712371.3",
+          "name": "Lower lung zone",
+          "description": "Bronchiectasis predominantly affecting the lower lung zone."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_636258",
+      "name": "Associated diagnoses",
+      "description": "Associated diagnoses related to bronchiectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_636258.0",
+          "name": "Immunodeficiency",
+          "description": "Bronchiectasis associated with immunodeficiency."
+        },
+        {
+          "value_code": "OIFMA_GMTS_636258.1",
+          "name": "Postinfective",
+          "description": "Bronchiectasis associated with postinfective causes."
+        },
+        {
+          "value_code": "OIFMA_GMTS_636258.2",
+          "name": "Allergic and autoimmune",
+          "description": "Bronchiectasis associated with allergic and autoimmune causes."
+        },
+        {
+          "value_code": "OIFMA_GMTS_636258.3",
+          "name": "Obstruction",
+          "description": "Bronchiectasis associated with obstruction causes."
+        },
+        {
+          "value_code": "OIFMA_GMTS_636258.4",
+          "name": "Congenital",
+          "description": "Bronchiectasis associated with congenital causes."
+        },
+        {
+          "value_code": "OIFMA_GMTS_636258.5",
+          "name": "Others",
+          "description": "Other associated diagnoses related to bronchiectasis."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_390429",
+      "name": "presence",
+      "description": "Presence or absence of bronchiectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_390429.0",
+          "name": "absent",
+          "description": "Bronchiectasis is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_390429.1",
+          "name": "present",
+          "description": "Bronchiectasis is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_390429.2",
+          "name": "indeterminate",
+          "description": "Presence of bronchiectasis cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_390429.3",
+          "name": "unknown",
+          "description": "Presence of bronchiectasis is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_667685",
+      "name": "change from prior",
+      "description": "Whether and how a bronchiectasis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_667685.0",
+          "name": "unchanged",
+          "description": "Bronchiectasis is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.1",
+          "name": "stable",
+          "description": "Bronchiectasis is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.2",
+          "name": "new",
+          "description": "Bronchiectasis is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.3",
+          "name": "resolved",
+          "description": "Bronchiectasis seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.4",
+          "name": "increased",
+          "description": "Bronchiectasis has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.5",
+          "name": "decreased",
+          "description": "Bronchiectasis has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.6",
+          "name": "larger",
+          "description": "Bronchiectasis is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_667685.7",
+          "name": "smaller",
+          "description": "Bronchiectasis is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

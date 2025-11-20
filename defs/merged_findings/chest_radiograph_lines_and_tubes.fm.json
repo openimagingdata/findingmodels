@@ -1,0 +1,425 @@
+{
+  "oifm_id": "OIFM_CDE_851660",
+  "name": "Chest Radiograph Lines and Tubes",
+  "description": "Chest Radiograph Lines and Tubes",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_653244",
+      "name": "Presence of tunneled CVC",
+      "description": "Indicates whether a tunneled CVC is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_653244.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_CDE_653244.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_452962",
+      "name": "Hematoma",
+      "description": "Indicates the presence or absence of a hematoma associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_452962.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_CDE_452962.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_438210",
+      "name": "Pneumothorax",
+      "description": "Indicates the presence or absence of a pneumothorax associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_438210.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_CDE_438210.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_334294",
+      "name": "Hemothorax",
+      "description": "Indicates the presence or absence of a hemothorax associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_334294.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_CDE_334294.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_528454",
+      "name": "Status",
+      "description": "Indicates the status of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_528454.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_CDE_528454.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_CDE_528454.2",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_CDE_528454.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_159834",
+      "name": "Appropriate location",
+      "description": "Indicates whether the tunneled CVC is in an appropriate location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_159834.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_159834.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_575078",
+      "name": "Side Finding",
+      "description": "Indicates the side of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_575078.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_CDE_575078.1",
+          "name": "Right"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_680658",
+      "name": "Number of Lumens",
+      "description": "Indicates the number of lumens in the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_680658.0",
+          "name": "Single"
+        },
+        {
+          "value_code": "OIFMA_CDE_680658.1",
+          "name": "Double"
+        },
+        {
+          "value_code": "OIFMA_CDE_680658.2",
+          "name": "Triple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_584480",
+      "name": "Vein approach",
+      "description": "Indicates the vein approach for the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_584480.0",
+          "name": "Internal jugular"
+        },
+        {
+          "value_code": "OIFMA_CDE_584480.1",
+          "name": "Subclavian"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_190824",
+      "name": "Course",
+      "description": "Indicates the course of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_190824.0",
+          "name": "Appropriate"
+        },
+        {
+          "value_code": "OIFMA_CDE_190824.1",
+          "name": "Kinking"
+        },
+        {
+          "value_code": "OIFMA_CDE_190824.2",
+          "name": "Coiling"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_635690",
+      "name": "Distal tip location",
+      "description": "Indicates the distal tip location of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_635690.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.2",
+          "name": "SVC (superior vena cava)"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.6",
+          "name": "Internal jugular vein"
+        },
+        {
+          "value_code": "OIFMA_CDE_635690.7",
+          "name": "IVC (inferior vena cava)"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_389245",
+      "name": "Complications",
+      "description": "Indicates the complications associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_389245.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_CDE_389245.1",
+          "name": "Occlusion"
+        },
+        {
+          "value_code": "OIFMA_CDE_389245.2",
+          "name": "Thrombosis (fibrin sheath)"
+        },
+        {
+          "value_code": "OIFMA_CDE_389245.3",
+          "name": "Catheter fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_389245.4",
+          "name": "Tip Migration"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_241570",
+      "name": "Endotracheal tube",
+      "description": "Presence and position of endotracheal tube on XRAY",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_241570.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_241570.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_241570.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_241570.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_241570.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_444608",
+      "name": "Central venous catheter",
+      "description": "Presence and position of central venous catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_444608.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_444608.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_444608.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_444608.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_444608.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_338341",
+      "name": "Pulmonary artery catheter",
+      "description": "Presence and position of pulmonary artery catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_338341.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_338341.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_338341.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_338341.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_338341.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_930415",
+      "name": "Nasogastric tube",
+      "description": "Presence and position of nasogastric tube",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_930415.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_930415.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_930415.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_930415.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_930415.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_262447",
+      "name": "Airway stent",
+      "description": "Presence and position of airway stent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_262447.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_262447.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_262447.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_262447.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_262447.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

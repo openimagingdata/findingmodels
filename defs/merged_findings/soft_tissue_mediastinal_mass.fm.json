@@ -1,0 +1,300 @@
+{
+  "oifm_id": "OIFM_GMTS_230540",
+  "name": "soft-tissue mediastinal mass",
+  "description": "Mass or lesion composed of soft tissue within the mediastinum.",
+  "synonyms": [
+    "mediastinal mass",
+    "mediastinal tumor"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "CT",
+    "MR",
+    "mediastinum",
+    "neoplastic process",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_459855",
+      "name": "Presence of Mediastinal Mass",
+      "description": "Indicates whether a mediastinal mass is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_459855.0",
+          "name": "Yes",
+          "description": "A mediastinal mass is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_459855.1",
+          "name": "No",
+          "description": "No mediastinal mass is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_340693",
+      "name": "Anatomical Location",
+      "description": "The anatomical location of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_340693.0",
+          "name": "Anterior Mediastinum",
+          "description": "The mass is located in the anterior mediastinum, which is in front of the heart and behind the sternum."
+        },
+        {
+          "value_code": "OIFMA_GMTS_340693.1",
+          "name": "Middle Mediastinum",
+          "description": "The mass is located in the middle mediastinum, which contains the heart and pericardium."
+        },
+        {
+          "value_code": "OIFMA_GMTS_340693.2",
+          "name": "Posterior Mediastinum",
+          "description": "The mass is located in the posterior mediastinum, which is behind the heart and in front of the spine."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_433159",
+      "name": "Size Finding",
+      "description": "The size of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_433159.0",
+          "name": "Small",
+          "description": "The mass is small in size."
+        },
+        {
+          "value_code": "OIFMA_GMTS_433159.1",
+          "name": "Medium",
+          "description": "The mass is medium in size."
+        },
+        {
+          "value_code": "OIFMA_GMTS_433159.2",
+          "name": "Large",
+          "description": "The mass is large in size."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_236790",
+      "name": "Density",
+      "description": "The density of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_236790.0",
+          "name": "Solid",
+          "description": "The mass has a solid consistency."
+        },
+        {
+          "value_code": "OIFMA_GMTS_236790.1",
+          "name": "Cystic",
+          "description": "The mass has a cystic consistency, containing fluid or air-filled spaces."
+        },
+        {
+          "value_code": "OIFMA_GMTS_236790.2",
+          "name": "Mixed",
+          "description": "The mass has a mixture of solid and cystic components."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_938125",
+      "name": "Borders",
+      "description": "The borders of the mediastinal mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_938125.0",
+          "name": "Well-defined",
+          "description": "The borders of the mass are well-defined."
+        },
+        {
+          "value_code": "OIFMA_GMTS_938125.1",
+          "name": "Poorly defined",
+          "description": "The borders of the mass are poorly defined."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_225348",
+      "name": "Effects on Surrounding Structures",
+      "description": "The effects of the mediastinal mass on the surrounding structures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_225348.0",
+          "name": "Compression",
+          "description": "The mass is compressing the surrounding structures."
+        },
+        {
+          "value_code": "OIFMA_GMTS_225348.1",
+          "name": "Displacement",
+          "description": "The mass is displacing the surrounding structures."
+        },
+        {
+          "value_code": "OIFMA_GMTS_225348.2",
+          "name": "None",
+          "description": "The mass is not causing any effects on the surrounding structures."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_002131",
+      "name": "Lymphadenopathy",
+      "description": "Indicates whether lymphadenopathy, or enlarged lymph nodes, is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_002131.0",
+          "name": "Present",
+          "description": "Lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_002131.1",
+          "name": "Absent",
+          "description": "No lymphadenopathy is present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_095854",
+      "name": "Calcifications",
+      "description": "Indicates whether calcifications are present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_095854.0",
+          "name": "Present",
+          "description": "Calcifications are present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_095854.1",
+          "name": "Absent",
+          "description": "No calcifications are present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_852153",
+      "name": "Signs of Invasion",
+      "description": "Indicates whether signs of invasion, such as infiltration into surrounding tissue, are present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_852153.0",
+          "name": "Present",
+          "description": "Signs of invasion are present."
+        },
+        {
+          "value_code": "OIFMA_GMTS_852153.1",
+          "name": "Absent",
+          "description": "No signs of invasion are present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_536413",
+      "name": "presence",
+      "description": "Presence or absence of soft-tissue mediastinal mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_536413.0",
+          "name": "absent",
+          "description": "Soft-tissue mediastinal mass is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_536413.1",
+          "name": "present",
+          "description": "Soft-tissue mediastinal mass is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_536413.2",
+          "name": "indeterminate",
+          "description": "Presence of soft-tissue mediastinal mass cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_536413.3",
+          "name": "unknown",
+          "description": "Presence of soft-tissue mediastinal mass is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_028985",
+      "name": "change from prior",
+      "description": "Whether and how a soft-tissue mediastinal mass has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_028985.0",
+          "name": "unchanged",
+          "description": "Soft-tissue mediastinal mass is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.1",
+          "name": "stable",
+          "description": "Soft-tissue mediastinal mass is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.2",
+          "name": "new",
+          "description": "Soft-tissue mediastinal mass is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.3",
+          "name": "resolved",
+          "description": "Soft-tissue mediastinal mass seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.4",
+          "name": "increased",
+          "description": "Soft-tissue mediastinal mass has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.5",
+          "name": "decreased",
+          "description": "Soft-tissue mediastinal mass has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.6",
+          "name": "larger",
+          "description": "Soft-tissue mediastinal mass is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_028985.7",
+          "name": "smaller",
+          "description": "Soft-tissue mediastinal mass is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

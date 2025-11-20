@@ -120,7 +120,7 @@ def interactive_review_needs_review(
             'add_new': 'Add incoming as new attribute',
             'merge_values': 'Merge values'
         }.get(auto_decision, auto_decision)
-        print(f"⚠ Auto-decision mode: {decision_text} for all reviews\n")
+        print(f"[WARN] Auto-decision mode: {decision_text} for all reviews\n")
     
     review_decisions = []
     
@@ -133,9 +133,9 @@ def interactive_review_needs_review(
         incoming_name = extract_attr_name(incoming_attr)
         existing_name = extract_attr_name(existing_attr)
         
-        print(f"\n{'─' * 80}")
+        print(f"\n{'-' * 80}")
         print(f"Review {idx}/{len(needs_review_comparisons)}")
-        print(f"{'─' * 80}")
+        print(f"{'-' * 80}")
         print(f"\nEXISTING: {existing_name}")
         if existing_attr.get('type') == 'choice':
             existing_values = extract_value_names(existing_attr)
@@ -174,7 +174,7 @@ def interactive_review_needs_review(
                 'add_new': 'Add incoming as new attribute',
                 'merge_values': 'Merge values'
             }[decision]
-            print(f"\n  ✓ Auto-decision: {decision_text}")
+            print(f"\n  [OK] Auto-decision: {decision_text}")
         else:
             # Get user decision
             while True:
@@ -186,18 +186,18 @@ def interactive_review_needs_review(
                 
                 if choice == 'k':
                     decision = 'keep_existing'
-                    print("  ✓ Decision: Keep existing")
+                    print("  [OK] Decision: Keep existing")
                     break
                 elif choice == 'n':
                     decision = 'add_new'
-                    print("  ✓ Decision: Add incoming as new attribute")
+                    print("  [OK] Decision: Add incoming as new attribute")
                     break
                 elif choice == 'm':
                     decision = 'merge_values'
-                    print("  ✓ Decision: Merge values")
+                    print("  [OK] Decision: Merge values")
                     break
                 else:
-                    print("  ✗ Invalid choice. Please enter 'k', 'n', or 'm'.")
+                    print("  [ERROR] Invalid choice. Please enter 'k', 'n', or 'm'.")
         
         review_decisions.append({
             'incoming_attribute': incoming_attr,
@@ -207,9 +207,9 @@ def interactive_review_needs_review(
             'decision': decision
         })
     
-    print(f"\n{'─' * 80}")
+    print(f"\n{'-' * 80}")
     print("Review complete!")
-    print(f"{'─' * 80}\n")
+    print(f"{'-' * 80}\n")
     
     return review_decisions
 
@@ -366,7 +366,7 @@ def print_merge_summary(
             incoming_name = incoming_attr.get('name', 'unknown')
             existing_name = existing_attr.get('name', 'unknown')
             
-            print(f"  {idx}. {existing_name} ← {incoming_name}")
+            print(f"  {idx}. {existing_name} <- {incoming_name}")
             print(f"     Relationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
             print(f"     Reasoning: {relationship.reasoning}")
             

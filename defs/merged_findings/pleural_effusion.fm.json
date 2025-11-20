@@ -1,0 +1,202 @@
+{
+  "oifm_id": "OIFM_CDE_643111",
+  "name": "Pleural Effusion",
+  "description": "Pleural Effusion",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_706075",
+      "name": "side Finding",
+      "description": "The side of the pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_706075.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_706075.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_706075.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_177407",
+      "name": "size Finding",
+      "description": "The size of the pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_177407.0",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_CDE_177407.1",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_CDE_177407.2",
+          "name": "large"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_424280",
+      "name": "density",
+      "description": "The density of the pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_424280.0",
+          "name": "fluid density",
+          "description": "Synonym: simple"
+        },
+        {
+          "value_code": "OIFMA_CDE_424280.1",
+          "name": "intermediate density (>30 HU)",
+          "description": "Synonym: complex"
+        },
+        {
+          "value_code": "OIFMA_CDE_424280.2",
+          "name": "hemothorax"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_074585",
+      "name": "chronicity",
+      "description": "The chronicity of the pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_074585.0",
+          "name": "new"
+        },
+        {
+          "value_code": "OIFMA_CDE_074585.1",
+          "name": "chronic"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_306922",
+      "name": "associated_features",
+      "description": "The associated features of the pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_306922.0",
+          "name": "loculation"
+        },
+        {
+          "value_code": "OIFMA_CDE_306922.1",
+          "name": "pleural thickening",
+          "description": "Parietal pleura, Visceral pleura\nSynonyms: soft tissue rind"
+        },
+        {
+          "value_code": "OIFMA_CDE_306922.2",
+          "name": "pleural enhancement"
+        },
+        {
+          "value_code": "OIFMA_CDE_306922.3",
+          "name": "presence of gas",
+          "description": "Hydropneumothorax, Hemopneumothorax, Bronchopleural fistula"
+        },
+        {
+          "value_code": "OIFMA_CDE_306922.4",
+          "name": "atelectasis of the underlying lungs",
+          "description": "Synonyms: passive atelectasis, relaxation atelectasis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_579625",
+      "name": "Presence",
+      "description": "Is pleural effusion present?",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_579625.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_579625.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_579625.2",
+          "name": "indeterminant"
+        },
+        {
+          "value_code": "OIFMA_CDE_579625.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_702567",
+      "name": "change from prior",
+      "description": "Whether and how a Pleural Effusion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_702567.0",
+          "name": "unchanged",
+          "description": "Pleural effusion is unchanged"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.1",
+          "name": "stable",
+          "description": "Pleural effusion is stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.2",
+          "name": "new",
+          "description": "Pleural effusion is new"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.3",
+          "name": "resolved",
+          "description": "Pleural effusion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.4",
+          "name": "increased",
+          "description": "Pleural effusion has increased"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.5",
+          "name": "decreased",
+          "description": "Pleural effusion has decreased"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.6",
+          "name": "larger",
+          "description": "Pleural effusion is larger"
+        },
+        {
+          "value_code": "OIFMA_CDE_702567.7",
+          "name": "smaller",
+          "description": "Pleural effusion is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

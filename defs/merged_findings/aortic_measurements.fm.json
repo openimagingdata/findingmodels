@@ -1,0 +1,669 @@
+{
+  "oifm_id": "OIFM_CDE_661227",
+  "name": "Aortic Measurements",
+  "description": "Aortic Measurements",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_250104",
+      "name": "segment",
+      "description": "The segment of the thoracic aorta",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_250104.0",
+          "name": "aortic root"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.1",
+          "name": "aortic annulus"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.2",
+          "name": "sinus of Valsalva"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.3",
+          "name": "sinotubular junction"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.4",
+          "name": "ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.5",
+          "name": "proximal arch"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.6",
+          "name": "distal arch"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.7",
+          "name": "descending thoracic aorta"
+        },
+        {
+          "value_code": "OIFMA_CDE_250104.8",
+          "name": "diaphragmatic hiatus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_985744",
+      "name": "luminal diameter",
+      "description": "Diameter of the aortic sac if mural thrombus is present",
+      "type": "numeric",
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_983496",
+      "name": "sac morphology",
+      "description": "Morphology of the aortic sac",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_983496.0",
+          "name": "dilated",
+          "description": "≥ 4.0 and < 5.0 cm"
+        },
+        {
+          "value_code": "OIFMA_CDE_983496.1",
+          "name": "aneurysm",
+          "description": "≥ 5.0 cm"
+        },
+        {
+          "value_code": "OIFMA_CDE_983496.2",
+          "name": "fusiform"
+        },
+        {
+          "value_code": "OIFMA_CDE_983496.3",
+          "name": "saccular"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_497291",
+      "name": "characteristics of wall",
+      "description": "Characteristics of the aortic wall",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_497291.0",
+          "name": "mural calcification",
+          "description": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_497291.1",
+          "name": "mural calcification",
+          "description": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_497291.2",
+          "name": "mural thrombus",
+          "description": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_497291.3",
+          "name": "mural thrombus",
+          "description": "absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_074059",
+      "name": "related vessels",
+      "description": "Related vessels involved",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_074059.0",
+          "name": "brachycephalic trunk"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.1",
+          "name": "right subclavian artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.2",
+          "name": "right common carotid artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.3",
+          "name": "left subclavian artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.4",
+          "name": "left common carotid artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.5",
+          "name": "right vertebral artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.6",
+          "name": "left vertebral artery"
+        },
+        {
+          "value_code": "OIFMA_CDE_074059.7",
+          "name": "does not involve great vessels"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_016666",
+      "name": "Aortic root measurement 1",
+      "description": "Aortic root first measurement ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_172086",
+      "name": "Aortic root measurement 2",
+      "description": "Aortic root second measurement ",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_918098",
+      "name": "Aortic root plane of measurement",
+      "description": "Plane of measurement for aortic root",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_918098.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_918098.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_918098.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_918098.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_439037",
+      "name": "Sinotubular junction measurement 1",
+      "description": "Sinotubular junction measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_359864",
+      "name": "Sinotubular junction measurement 2",
+      "description": "Sinotubular junction measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_014521",
+      "name": "Sinotubular junction plane of measurement",
+      "description": "Sinotubular junction plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_014521.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_014521.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_014521.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_014521.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_413680",
+      "name": "Ascending aorta measurement 1",
+      "description": "Ascending aorta measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_524074",
+      "name": "Ascending aorta measurement 2",
+      "description": "Ascending aorta measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_379173",
+      "name": "Ascending aorta plane of measurement",
+      "description": "Ascending aorta plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_379173.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_379173.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_379173.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_379173.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_327513",
+      "name": "Aortic arch measurement 1",
+      "description": "Aortic arch measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_864576",
+      "name": "Aortic arch measurement 2",
+      "description": "Aortic arch measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_678810",
+      "name": "Aortic arch plane of measurement",
+      "description": "Aortic arch plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_678810.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_678810.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_678810.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_678810.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_422883",
+      "name": "Descending thoracic aorta measurement 1",
+      "description": "Descending thoracic aorta measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_041373",
+      "name": "Descending thoracic aorta measurement 2",
+      "description": "Descending thoracic aorta measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_705151",
+      "name": "Descending thoracic aorta plane of measurement",
+      "description": "Descending thoracic aorta plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_705151.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_705151.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_705151.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_705151.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_096424",
+      "name": "Diaphragmatic aorta measurement 1",
+      "description": "Diaphragmatic aorta measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_354954",
+      "name": "Diaphragmatic aorta measurement 2",
+      "description": "Diaphragmatic aorta measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_993692",
+      "name": "Diaphragmatic aorta plane of measurement",
+      "description": "Diaphragmatic aorta plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_993692.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_993692.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_993692.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_993692.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_670575",
+      "name": "Suprarenal abdominal aorta measurement 1",
+      "description": "Suprarenal abdominal aorta measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_868867",
+      "name": "Suprarenal abdominal aorta measurement 2",
+      "description": "Suprarenal abdominal aorta measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_694083",
+      "name": "Suprarenal abdominal aorta plane of measurement",
+      "description": "Suprarenal abdominal aorta plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_694083.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_694083.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_694083.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_694083.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_215200",
+      "name": "Infrarenal abdominal  aorta measurement 1",
+      "description": "Infrarenal abdominal  aorta measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_674214",
+      "name": "Infrarenal abdominal  aorta measurement 2",
+      "description": "Infrarenal abdominal  aorta measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_600457",
+      "name": "Infrarenal abdominal aorta plane of measurement",
+      "description": "Infrarenal abdominal aorta plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_600457.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_600457.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_600457.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_600457.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_866984",
+      "name": "Growth of abdominal aortic aneurysm (greater than 5 mm in 6 months)",
+      "description": "Growth of abdominal aortic aneurysm (greater than 5 mm in 6 months)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_866984.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_CDE_866984.1",
+          "name": "no"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_936763",
+      "name": "Right common illiac artery measurement 1",
+      "description": "Right common illiac artery measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_936402",
+      "name": "Right common illiac artery measurement 2",
+      "description": "Right common illiac artery measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_081636",
+      "name": "Right common illiac artery plane of measurement",
+      "description": "Right common illiac artery plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_081636.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_081636.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_081636.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_081636.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_575724",
+      "name": "Left common illiac artery measurement 1",
+      "description": "Left common illiac artery measurement 1",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_105281",
+      "name": "Left common illiac artery measurement 2",
+      "description": "Left common illiac artery measurement 2",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_922492",
+      "name": "Left common illiac artery plane of measurement",
+      "description": "Left common illiac artery plane of measurement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_922492.0",
+          "name": "axial"
+        },
+        {
+          "value_code": "OIFMA_CDE_922492.1",
+          "name": "perpendicular"
+        },
+        {
+          "value_code": "OIFMA_CDE_922492.2",
+          "name": "sagittal"
+        },
+        {
+          "value_code": "OIFMA_CDE_922492.3",
+          "name": "coronal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_011282",
+      "name": "presence",
+      "description": "Presence or absence of Aortic Measurements",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_011282.0",
+          "name": "absent",
+          "description": "Aortic measurements is absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_011282.1",
+          "name": "present",
+          "description": "Aortic measurements is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_011282.2",
+          "name": "indeterminate",
+          "description": "Presence of Aortic Measurements cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_CDE_011282.3",
+          "name": "unknown",
+          "description": "Presence of Aortic Measurements is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

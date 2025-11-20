@@ -1,0 +1,301 @@
+{
+  "oifm_id": "OIFM_MSFT_650815",
+  "name": "pulmonary embolism",
+  "description": "Blockage of an artery in the lungs by a substance that has moved from elsewhere in the body through the bloodstream.",
+  "synonyms": [
+    "pulmonary artery thromboembolism",
+    "PE",
+    "pulmonary artery embolism",
+    "pulmonary artery thrombosis",
+    "pulmonary thromboembolism"
+  ],
+  "tags": [
+    "vascular",
+    "CT",
+    "XR",
+    "US",
+    "pulmonary artery",
+    "embolism",
+    "diagnosis"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_083718",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary embolism",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_083718.0",
+          "name": "absent",
+          "description": "Pulmonary embolism is absent"
+        },
+        {
+          "value_code": "OIFMA_MSFT_083718.1",
+          "name": "present",
+          "description": "Pulmonary embolism is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_083718.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary embolism cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MSFT_083718.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary embolism is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_408619",
+      "name": "Pulmonary hypertension",
+      "description": "Indicates the presence or absence of pulmonary hypertension associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_408619.0",
+          "name": "Yes",
+          "description": "Pulmonary hypertension is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_408619.1",
+          "name": "No",
+          "description": "Pulmonary hypertension is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_584465",
+      "name": "Pulmonary artery aneurysm",
+      "description": "Indicates the presence or absence of pulmonary artery aneurysm associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_584465.0",
+          "name": "Yes",
+          "description": "Pulmonary artery aneurysm is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_584465.1",
+          "name": "No",
+          "description": "Pulmonary artery aneurysm is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_661364",
+      "name": "Pulmonary hemorrhage",
+      "description": "Indicates the presence or absence of pulmonary hemorrhage associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_661364.0",
+          "name": "Yes",
+          "description": "Pulmonary hemorrhage is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_661364.1",
+          "name": "No",
+          "description": "Pulmonary hemorrhage is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_912699",
+      "name": "Stage",
+      "description": "Indicates the stage of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_912699.0",
+          "name": "Acute",
+          "description": "Acute stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MSFT_912699.1",
+          "name": "Chronic",
+          "description": "Chronic stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MSFT_912699.2",
+          "name": "Subacute",
+          "description": "Subacute stage of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_730015",
+      "name": "Location",
+      "description": "Indicates the location of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_730015.0",
+          "name": "Central",
+          "description": "Main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MSFT_730015.1",
+          "name": "Right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MSFT_730015.2",
+          "name": "Left pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MSFT_730015.3",
+          "name": "Lobar",
+          "description": "Lobar branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MSFT_730015.4",
+          "name": "Segmental",
+          "description": "Segmental branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MSFT_730015.5",
+          "name": "Subsegmental",
+          "description": "Subsegmental branch of the pulmonary artery"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_354643",
+      "name": "Number",
+      "description": "Indicates the number of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_354643.0",
+          "name": "Single",
+          "description": "A single pulmonary embolus"
+        },
+        {
+          "value_code": "OIFMA_MSFT_354643.1",
+          "name": "Multiple",
+          "description": "Multiple pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_653972",
+      "name": "Burden",
+      "description": "Indicates the burden of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_653972.0",
+          "name": "Low",
+          "description": "Low burden of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MSFT_653972.1",
+          "name": "Moderate",
+          "description": "Moderate burden of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MSFT_653972.2",
+          "name": "High",
+          "description": "High burden of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_868908",
+      "name": "Right heart strain",
+      "description": "Indicates the presence or absence of right heart strain associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_868908.0",
+          "name": "Yes",
+          "description": "Right heart strain is present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_868908.1",
+          "name": "No",
+          "description": "Right heart strain is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_529108",
+      "name": "change from prior",
+      "description": "Whether and how a pulmonary embolism has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_529108.0",
+          "name": "unchanged",
+          "description": "Pulmonary embolism is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.1",
+          "name": "stable",
+          "description": "Pulmonary embolism is stable"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.2",
+          "name": "increased",
+          "description": "Pulmonary embolism has increased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.3",
+          "name": "decreased",
+          "description": "Pulmonary embolism has decreased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.4",
+          "name": "new",
+          "description": "Pulmonary embolism is new"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.5",
+          "name": "resolved",
+          "description": "Pulmonary embolism seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.6",
+          "name": "increased",
+          "description": "Pulmonary embolism has increased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.7",
+          "name": "decreased",
+          "description": "Pulmonary embolism has decreased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.8",
+          "name": "larger",
+          "description": "Pulmonary embolism is larger"
+        },
+        {
+          "value_code": "OIFMA_MSFT_529108.9",
+          "name": "smaller",
+          "description": "Pulmonary embolism is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

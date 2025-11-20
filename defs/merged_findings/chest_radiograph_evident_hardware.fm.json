@@ -1,0 +1,275 @@
+{
+  "oifm_id": "OIFM_MSFT_230655",
+  "name": "chest radiograph-evident hardware",
+  "description": "Chest radiograph-evident hardware refers to any medical device or implant within the thoracic cavity that is visible on a chest X-ray due to its radiopacity.",
+  "synonyms": [
+    "chest x-ray hardware",
+    "radiopaque chest implants",
+    "thoracic implants",
+    "radiopaque chest devices"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_234138",
+      "name": "device_location",
+      "description": "The location of the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_234138.0",
+          "name": "ventral chest wall"
+        },
+        {
+          "value_code": "OIFMA_MSFT_234138.1",
+          "name": "subcutaneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_625934",
+      "name": "side_directional_approach",
+      "description": "The side/directional approach used for the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_625934.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MSFT_625934.1",
+          "name": "right"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_999703",
+      "name": "vascular_approach",
+      "description": "The vascular approach used for the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_999703.0",
+          "name": "subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_MSFT_999703.1",
+          "name": "axillary vein"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_117850",
+      "name": "device_type",
+      "description": "The type of pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_117850.0",
+          "name": "single chamber"
+        },
+        {
+          "value_code": "OIFMA_MSFT_117850.1",
+          "name": "dual chamber"
+        },
+        {
+          "value_code": "OIFMA_MSFT_117850.2",
+          "name": "biventricular"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_869383",
+      "name": "components",
+      "description": "The components of the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_869383.0",
+          "name": "generator"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.1",
+          "name": "tie-down"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.2",
+          "name": "lead"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.3",
+          "name": "manufacturer logo"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.4",
+          "name": "header"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.5",
+          "name": "connector"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.6",
+          "name": "shock coil"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.7",
+          "name": "ring electrode"
+        },
+        {
+          "value_code": "OIFMA_MSFT_869383.8",
+          "name": "tip electrode"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_228445",
+      "name": "lead_location",
+      "description": "The location of the lead in the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_228445.0",
+          "name": "superior vena cava"
+        },
+        {
+          "value_code": "OIFMA_MSFT_228445.1",
+          "name": "right atrial appendage"
+        },
+        {
+          "value_code": "OIFMA_MSFT_228445.2",
+          "name": "right atrium"
+        },
+        {
+          "value_code": "OIFMA_MSFT_228445.3",
+          "name": "right ventricular apex"
+        },
+        {
+          "value_code": "OIFMA_MSFT_228445.4",
+          "name": "interventricular septum"
+        },
+        {
+          "value_code": "OIFMA_MSFT_228445.5",
+          "name": "coronary sinus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_961529",
+      "name": "complication",
+      "description": "Possible complications associated with the pacemaker/AICD device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_961529.0",
+          "name": "fracture"
+        },
+        {
+          "value_code": "OIFMA_MSFT_961529.1",
+          "name": "malposition"
+        },
+        {
+          "value_code": "OIFMA_MSFT_961529.2",
+          "name": "disconnection"
+        },
+        {
+          "value_code": "OIFMA_MSFT_961529.3",
+          "name": "migration"
+        },
+        {
+          "value_code": "OIFMA_MSFT_961529.4",
+          "name": "abandoned"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_865205",
+      "name": "presence",
+      "description": "Whether chest radiograph-evident hardware is visible on the imaging study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_865205.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MSFT_865205.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MSFT_865205.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MSFT_865205.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_952048",
+      "name": "change from prior",
+      "description": "Whether and how a Pacemaker Aicd has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_952048.0",
+          "name": "unchanged",
+          "description": "Pacemaker aicd is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.1",
+          "name": "stable",
+          "description": "Pacemaker aicd is stable"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.2",
+          "name": "new",
+          "description": "Pacemaker aicd is new"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.3",
+          "name": "resolved",
+          "description": "Pacemaker aicd seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.4",
+          "name": "increased",
+          "description": "Pacemaker aicd has increased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.5",
+          "name": "decreased",
+          "description": "Pacemaker aicd has decreased"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.6",
+          "name": "larger",
+          "description": "Pacemaker aicd is larger"
+        },
+        {
+          "value_code": "OIFMA_MSFT_952048.7",
+          "name": "smaller",
+          "description": "Pacemaker aicd is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

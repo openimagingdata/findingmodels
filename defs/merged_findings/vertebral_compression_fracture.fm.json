@@ -1,0 +1,482 @@
+{
+  "oifm_id": "OIFM_CDE_548092",
+  "name": "Vertebral Compression Fracture",
+  "description": "Vertebral Compression Fracture Detection",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_416290",
+      "name": "acuity",
+      "description": "The acuity of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_416290.0",
+          "name": "acute",
+          "description": "Recently occurred compression fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_416290.1",
+          "name": "chronic",
+          "description": "Long-standing compression fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_416290.2",
+          "name": "subacute",
+          "description": "Compression fracture in the healing phase"
+        },
+        {
+          "value_code": "OIFMA_CDE_416290.3",
+          "name": "healing",
+          "description": "Compression fracture in the process of healing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_934050",
+      "name": "location",
+      "description": "The location of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_934050.0",
+          "name": "thoracic",
+          "description": "Compression fracture in the thoracic region"
+        },
+        {
+          "value_code": "OIFMA_CDE_934050.1",
+          "name": "lumbar",
+          "description": "Compression fracture in the lumbar region"
+        },
+        {
+          "value_code": "OIFMA_CDE_934050.2",
+          "name": "cervical",
+          "description": "Compression fracture in the cervical region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_077794",
+      "name": "number_of_vertebrae_affected",
+      "description": "The number of vertebrae affected by the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_077794.0",
+          "name": "single",
+          "description": "Compression fracture only affecting a single vertebra"
+        },
+        {
+          "value_code": "OIFMA_CDE_077794.1",
+          "name": "multiple",
+          "description": "Compression fracture affecting multiple vertebrae"
+        },
+        {
+          "value_code": "OIFMA_CDE_077794.2",
+          "name": "diffuse_involvement",
+          "description": "Compression fracture with diffuse involvement of vertebrae"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_028481",
+      "name": "severity",
+      "description": "The severity of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_028481.0",
+          "name": "mild",
+          "description": "Mild compression fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_028481.1",
+          "name": "moderate",
+          "description": "Moderate compression fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_028481.2",
+          "name": "severe",
+          "description": "Severe compression fracture"
+        },
+        {
+          "value_code": "OIFMA_CDE_028481.3",
+          "name": "collapse",
+          "description": "Compression fracture with collapse of the affected vertebra"
+        },
+        {
+          "value_code": "OIFMA_CDE_028481.4",
+          "name": "complete_destruction",
+          "description": "Compression fracture with complete destruction of the affected vertebra"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_038542",
+      "name": "morphology",
+      "description": "The morphology of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_038542.0",
+          "name": "wedge-shaped",
+          "description": "Compression fracture with a wedge-shaped appearance"
+        },
+        {
+          "value_code": "OIFMA_CDE_038542.1",
+          "name": "biconcave",
+          "description": "Compression fracture with a biconcave appearance"
+        },
+        {
+          "value_code": "OIFMA_CDE_038542.2",
+          "name": "crush",
+          "description": "Compression fracture with a crush appearance"
+        },
+        {
+          "value_code": "OIFMA_CDE_038542.3",
+          "name": "endplate_involvement",
+          "description": "Compression fracture with endplate involvement"
+        },
+        {
+          "value_code": "OIFMA_CDE_038542.4",
+          "name": "cortical_disruption",
+          "description": "Compression fracture with cortical disruption"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_027658",
+      "name": "bone_marrow_edema",
+      "description": "Indicates whether bone marrow edema is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_027658.0",
+          "name": "present",
+          "description": "Bone marrow edema is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_027658.1",
+          "name": "absent",
+          "description": "No bone marrow edema is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_219283",
+      "name": "adjacent_disc_involvement",
+      "description": "Indicates whether adjacent disc involvement is present, absent, or shows degenerative changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_219283.0",
+          "name": "present",
+          "description": "Adjacent disc involvement is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_219283.1",
+          "name": "absent",
+          "description": "No adjacent disc involvement is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_219283.2",
+          "name": "degenerative_changes",
+          "description": "Adjacent disc involvement shows degenerative changes"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_402918",
+      "name": "soft_tissue_swelling",
+      "description": "Indicates whether soft tissue swelling is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_402918.0",
+          "name": "present",
+          "description": "Soft tissue swelling is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_402918.1",
+          "name": "absent",
+          "description": "No soft tissue swelling is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_152679",
+      "name": "canal_compromise",
+      "description": "Indicates whether canal compromise is present, absent, or shows stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_152679.0",
+          "name": "present",
+          "description": "Canal compromise is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_152679.1",
+          "name": "absent",
+          "description": "No canal compromise is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_152679.2",
+          "name": "stenosis",
+          "description": "Canal compromise shows stenosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_321367",
+      "name": "neurological_compromise",
+      "description": "Indicates whether neurological compromise is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_321367.0",
+          "name": "present",
+          "description": "Neurological compromise is present"
+        },
+        {
+          "value_code": "OIFMA_CDE_321367.1",
+          "name": "absent",
+          "description": "No neurological compromise is present"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_954632",
+      "name": "Presence",
+      "description": "Acute or chronic compression, wedge, distraction or translated\nfractures. Typically seen on lateral view. Usually chronicity cannot be reliably assessed so this is not differentiated. \nFor compression or wedge fractures, there should be more than 20% loss in anterior height or central height as measured to the nearest normal vertebra or posterior vertebral body height (whichever is larger).  ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_954632.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_954632.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_954632.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_954632.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_711659",
+      "name": "Vertebrae",
+      "description": "List all affected vertebrae, multichoice",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_711659.0",
+          "name": "C1"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.1",
+          "name": "C2"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.2",
+          "name": "C3"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.3",
+          "name": "C4"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.4",
+          "name": "C5"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.5",
+          "name": "C6"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.6",
+          "name": "C7"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.7",
+          "name": "C8"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.8",
+          "name": "T1"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.9",
+          "name": "T2"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.10",
+          "name": "T3"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.11",
+          "name": "T4"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.12",
+          "name": "T5"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.13",
+          "name": "T6"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.14",
+          "name": "T7"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.15",
+          "name": "T8"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.16",
+          "name": "T9"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.17",
+          "name": "T10"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.18",
+          "name": "T11"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.19",
+          "name": "T12"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.20",
+          "name": "L1"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.21",
+          "name": "L2"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.22",
+          "name": "L3"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.23",
+          "name": "L4"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.24",
+          "name": "L5"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.25",
+          "name": "S1"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.26",
+          "name": "S2"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.27",
+          "name": "S3"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.28",
+          "name": "S4"
+        },
+        {
+          "value_code": "OIFMA_CDE_711659.29",
+          "name": "S5"
+        }
+      ],
+      "required": false,
+      "max_selected": 30
+    },
+    {
+      "oifma_id": "OIFMA_CDE_832507",
+      "name": "Degree of compression",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "degree",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_499648",
+      "name": "change from prior",
+      "description": "Whether and how a Compression Fracture has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_499648.0",
+          "name": "unchanged",
+          "description": "Compression fracture is unchanged"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.1",
+          "name": "stable",
+          "description": "Compression fracture is stable"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.2",
+          "name": "new",
+          "description": "Compression fracture is new"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.3",
+          "name": "resolved",
+          "description": "Compression fracture seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.4",
+          "name": "increased",
+          "description": "Compression fracture has increased"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.5",
+          "name": "decreased",
+          "description": "Compression fracture has decreased"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.6",
+          "name": "larger",
+          "description": "Compression fracture is larger"
+        },
+        {
+          "value_code": "OIFMA_CDE_499648.7",
+          "name": "smaller",
+          "description": "Compression fracture is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

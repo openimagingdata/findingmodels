@@ -1,0 +1,153 @@
+{
+  "oifm_id": "OIFM_GMTS_973947",
+  "name": "multiple osteosclerotic bone lesions",
+  "description": "Presence of several sclerotic areas within bones.",
+  "synonyms": [
+    "sclerotic bone lesions"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "XR",
+    "CT",
+    "MR",
+    "skeletal",
+    "neoplastic",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_115346",
+      "name": "change from prior",
+      "description": "Whether and how a multiple osteosclerotic bone lesions has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_115346.0",
+          "name": "unchanged",
+          "description": "Multiple osteosclerotic bone lesions is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.1",
+          "name": "stable",
+          "description": "Multiple osteosclerotic bone lesions is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.2",
+          "name": "new",
+          "description": "Multiple osteosclerotic bone lesions is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.3",
+          "name": "resolved",
+          "description": "Multiple osteosclerotic bone lesions seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.4",
+          "name": "increased",
+          "description": "Multiple osteosclerotic bone lesions has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.5",
+          "name": "decreased",
+          "description": "Multiple osteosclerotic bone lesions has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.6",
+          "name": "larger",
+          "description": "Multiple osteosclerotic bone lesions is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_115346.7",
+          "name": "smaller",
+          "description": "Multiple osteosclerotic bone lesions is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_792756",
+      "name": "location",
+      "description": "Indicates the location of the sclerotic lesion in the bone.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_792756.0",
+          "name": "Not specified",
+          "description": "The location of the sclerotic lesion is not specified."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.1",
+          "name": "Frontal bone",
+          "description": "The sclerotic lesion is located in the frontal bone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.2",
+          "name": "Occipital bone",
+          "description": "The sclerotic lesion is located in the occipital bone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.3",
+          "name": "Temporal bone",
+          "description": "The sclerotic lesion is located in the temporal bone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.4",
+          "name": "Parietal bone",
+          "description": "The sclerotic lesion is located in the parietal bone."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.5",
+          "name": "Maxilla",
+          "description": "The sclerotic lesion is located in the maxilla."
+        },
+        {
+          "value_code": "OIFMA_GMTS_792756.6",
+          "name": "Mandible",
+          "description": "The sclerotic lesion is located in the mandible."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_804473",
+      "name": "density",
+      "description": "Indicates the density of the sclerotic lesion.",
+      "type": "numeric",
+      "minimum": 1000,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_176758",
+      "name": "presence",
+      "description": "Presence or absence of multiple osteosclerotic bone lesions",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_176758.0",
+          "name": "absent",
+          "description": "Multiple osteosclerotic bone lesions is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_176758.1",
+          "name": "present",
+          "description": "Multiple osteosclerotic bone lesions is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_176758.2",
+          "name": "indeterminate",
+          "description": "Presence of multiple osteosclerotic bone lesions cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_176758.3",
+          "name": "unknown",
+          "description": "Presence of multiple osteosclerotic bone lesions is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "oifm_id": "OIFM_GMTS_665645",
+  "name": "esophageal wall thickening",
+  "description": "Increase in the thickness of the esophageal wall, often indicative of inflammation or tumor.",
+  "synonyms": [
+    "thickened esophagus"
+  ],
+  "tags": [
+    "abdomen",
+    "CT",
+    "MR",
+    "esophagus",
+    "inflammatory",
+    "neoplastic",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_GMTS_598968",
+      "name": "change from prior",
+      "description": "Whether and how a esophageal wall thickening has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_598968.0",
+          "name": "unchanged",
+          "description": "Esophageal wall thickening is unchanged"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.1",
+          "name": "stable",
+          "description": "Esophageal wall thickening is stable"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.2",
+          "name": "new",
+          "description": "Esophageal wall thickening is new"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.3",
+          "name": "resolved",
+          "description": "Esophageal wall thickening seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.4",
+          "name": "increased",
+          "description": "Esophageal wall thickening has increased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.5",
+          "name": "decreased",
+          "description": "Esophageal wall thickening has decreased"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.6",
+          "name": "larger",
+          "description": "Esophageal wall thickening is larger"
+        },
+        {
+          "value_code": "OIFMA_GMTS_598968.7",
+          "name": "smaller",
+          "description": "Esophageal wall thickening is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_523634",
+      "name": "Presence of Esophageal Wall Thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_523634.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_523634.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_496711",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_496711.0",
+          "name": "Upper"
+        },
+        {
+          "value_code": "OIFMA_GMTS_496711.1",
+          "name": "Middle"
+        },
+        {
+          "value_code": "OIFMA_GMTS_496711.2",
+          "name": "Lower"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_876733",
+      "name": "Extent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_876733.0",
+          "name": "Focal"
+        },
+        {
+          "value_code": "OIFMA_GMTS_876733.1",
+          "name": "Diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_965890",
+      "name": "Thickness",
+      "type": "numeric",
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_556377",
+      "name": "Mucosal enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_556377.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_556377.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_550653",
+      "name": "Mediastinal lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_550653.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_550653.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_695139",
+      "name": "Esophageal mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_695139.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_695139.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_065892",
+      "name": "Esophageal fluid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_065892.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_065892.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_706886",
+      "name": "Hiatal hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_706886.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_706886.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_GMTS_224802",
+      "name": "presence",
+      "description": "Presence or absence of esophageal wall thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_GMTS_224802.0",
+          "name": "absent",
+          "description": "Esophageal wall thickening is absent"
+        },
+        {
+          "value_code": "OIFMA_GMTS_224802.1",
+          "name": "present",
+          "description": "Esophageal wall thickening is present"
+        },
+        {
+          "value_code": "OIFMA_GMTS_224802.2",
+          "name": "indeterminate",
+          "description": "Presence of esophageal wall thickening cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_GMTS_224802.3",
+          "name": "unknown",
+          "description": "Presence of esophageal wall thickening is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

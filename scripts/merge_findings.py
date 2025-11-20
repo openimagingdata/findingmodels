@@ -134,7 +134,11 @@ async def classify_and_group_attributes(
         'other': []
     }
     
-    for attr in attributes:
+    total_attrs = len(attributes)
+    for idx, attr in enumerate(attributes, 1):
+        attr_name = extract_attr_name(attr)
+        if total_attrs > 1:
+            print(f"    Classifying attribute {idx}/{total_attrs}: {attr_name}...", end='\r', flush=True)
         try:
             classification = await classify_attribute(attr, finding_name)
             
@@ -146,6 +150,8 @@ async def classify_and_group_attributes(
             
             # Group by classification
             grouped[classification.classification].append(attr_with_classification)
+            if total_attrs > 1:
+                print(f"    Classifying attribute {idx}/{total_attrs}: {attr_name}... [OK]")
         except Exception as e:
             # Add to 'other' as fallback
             attr_with_classification = attr.copy()
@@ -153,7 +159,11 @@ async def classify_and_group_attributes(
             attr_with_classification['_confidence'] = 0.0
             attr_with_classification['_reasoning'] = f"Classification failed: {e}"
             grouped['other'].append(attr_with_classification)
+            if total_attrs > 1:
+                print(f"    Classifying attribute {idx}/{total_attrs}: {attr_name}... [ERROR]")
     
+    if total_attrs > 1:
+        print()  # New line after progress indicators
     return grouped
 
 
@@ -175,14 +185,20 @@ async def compare_attributes_within_group(
     comparisons = []
     
     # Compare each incoming attribute with each existing attribute
-    for incoming_attr in incoming_attrs:
+    total_incoming = len(incoming_attrs)
+    total_existing = len(existing_attrs)
+    
+    for incoming_idx, incoming_attr in enumerate(incoming_attrs, 1):
         incoming_name = incoming_attr.get('name', 'unknown')
         all_relationships = []  # Store all comparisons for this incoming attribute
         
-        for existing_attr in existing_attrs:
+        for existing_idx, existing_attr in enumerate(existing_attrs, 1):
             existing_name = existing_attr.get('name', 'unknown')
             existing_type = existing_attr.get('type', 'unknown')
             incoming_type = incoming_attr.get('type', 'unknown')
+            
+            # Show progress for each comparison
+            print(f"    Comparing: '{incoming_name}' (incoming {incoming_idx}/{total_incoming}) <-> '{existing_name}' (existing {existing_idx}/{total_existing})...", end='\r', flush=True)
             
             # Skip if types don't match (choice vs numeric)
             if existing_type != incoming_type:
@@ -213,8 +229,9 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 result = await relationship_agent.run(prompt)
                 relationship = result.output
                 
-                # Print comparison details with separator
-                print(f"\n      {'─' * 60}")
+                # Clear the progress line and print comparison details with separator
+                print()  # New line after progress indicator
+                print(f"\n      {'-' * 60}")
                 print(f"      Comparing:")
                 print(f"        EXISTING: {existing_name} ({existing_attr.get('type', 'unknown')})")
                 if existing_values:
@@ -235,7 +252,7 @@ Determine the relationship between these attributes. Provide clear reasoning for
                         print(f"          Existing only: {', '.join(relationship.existing_only_values)}")
                     if relationship.incoming_only_values:
                         print(f"          Incoming only: {', '.join(relationship.incoming_only_values)}")
-                print(f"      {'─' * 60}")
+                print(f"      {'-' * 60}")
                 
                 # Store all relationships for prioritization
                 all_relationships.append({
@@ -263,7 +280,7 @@ Determine the relationship between these attributes. Provide clear reasoning for
             if enhanced_matches:
                 best_match = max(enhanced_matches, key=lambda x: x['relationship'].confidence)
                 best_relationship = best_match['relationship']
-                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - MERGE")
+                print(f"\n    [OK] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - MERGE")
             
             # 2. Check for "subset" or "identical"
             elif any(r['relationship'].relationship in ['subset', 'identical'] for r in all_relationships):
@@ -273,7 +290,7 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 ]
                 best_match = max(subset_identical_matches, key=lambda x: x['relationship'].confidence)
                 best_relationship = best_match['relationship']
-                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - KEEP EXISTING")
+                print(f"\n    [OK] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - KEEP EXISTING")
             
             # 3. Check for "needs_review"
             elif any(r['relationship'].relationship == 'needs_review' for r in all_relationships):
@@ -283,7 +300,7 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 ]
                 best_match = max(needs_review_matches, key=lambda x: x['relationship'].confidence)
                 best_relationship = best_match['relationship']
-                print(f"\n    ⚠ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - NEEDS REVIEW")
+                print(f"\n    [WARN] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - NEEDS REVIEW")
             
             # 4. Check for "enhanced" below threshold (treat as needs_review)
             elif any(r['relationship'].relationship == 'enhanced' for r in all_relationships):
@@ -294,18 +311,21 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 best_match = max(enhanced_low_conf, key=lambda x: x['relationship'].confidence)
                 # Override relationship type to needs_review for low confidence enhanced
                 best_relationship = best_match['relationship']
-                print(f"\n    ⚠ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - enhanced (confidence: {best_relationship.confidence:.2f} < {ENHANCED_CONFIDENCE_THRESHOLD}) - NEEDS REVIEW (low confidence)")
+                print(f"\n    [WARN] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - enhanced (confidence: {best_relationship.confidence:.2f} < {ENHANCED_CONFIDENCE_THRESHOLD}) - NEEDS REVIEW (low confidence)")
             
             # 5. All are "no_similarities" - will be added as new
             elif all(r['relationship'].relationship == 'no_similarities' for r in all_relationships):
-                print(f"\n    ✗ All comparisons for '{incoming_name}' are 'no_similarities' - NEW ATTRIBUTE")
+                print(f"\n    [ERROR] All comparisons for '{incoming_name}' are 'no_similarities' - NEW ATTRIBUTE")
                 best_match = None
                 best_relationship = None
             else:
                 # Fallback: use highest confidence
                 best_match = max(all_relationships, key=lambda x: x['relationship'].confidence)
                 best_relationship = best_match['relationship']
-                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
+                print(f"\n    [OK] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
+        
+        if total_incoming > 1:
+            print(f"    Comparing incoming attribute {incoming_idx}/{total_incoming}: {incoming_name}... [OK]")
         
         print()  # Extra blank line for separation
         
@@ -406,15 +426,15 @@ async def main():
         # Load INCOMING model
         print("Loading incoming model...")
         incoming_model = await load_incoming_model(input_path)
-        print(f"  ✓ Loaded: {incoming_model.name}")
+        print(f"  [OK] Loaded: {incoming_model.name}")
         
         # Search for EXISTING model
         print("Searching for existing model in database...")
         existing_match = await find_existing_model(incoming_model, index)
         if existing_match:
-            print(f"  ✓ Found match: {existing_match.get('name')} (ID: {existing_match.get('oifm_id')})")
+            print(f"  [OK] Found match: {existing_match.get('name')} (ID: {existing_match.get('oifm_id')})")
         else:
-            print("  ✓ No match found")
+            print("  [OK] No match found")
         
         if existing_match:
             # Load EXISTING model from database
@@ -423,7 +443,7 @@ async def main():
             
             if existing_model_data:
                 finding_name = incoming_model.name
-                print(f"  ✓ Loaded existing model data")
+                print(f"  [OK] Loaded existing model data")
                 
                 # Get attributes from both models
                 print("Extracting attributes from models...")
@@ -435,18 +455,18 @@ async def main():
                         incoming_attrs.append(attr.model_dump(exclude_unset=False, exclude_none=False))
                 
                 existing_attrs = existing_model_data.get('attributes', [])
-                print(f"  ✓ Incoming: {len(incoming_attrs)} attributes")
-                print(f"  ✓ Existing: {len(existing_attrs)} attributes")
+                print(f"  [OK] Incoming: {len(incoming_attrs)} attributes")
+                print(f"  [OK] Existing: {len(existing_attrs)} attributes")
                 
                 # Classify and group incoming attributes
                 print("Classifying incoming attributes...")
                 incoming_grouped = await classify_and_group_attributes(incoming_attrs, finding_name)
-                print(f"  ✓ Classified {len(incoming_attrs)} attributes")
+                print(f"  [OK] Classified {len(incoming_attrs)} attributes")
                 
                 # Classify and group existing attributes
                 print("Classifying existing attributes...")
                 existing_grouped = await classify_and_group_attributes(existing_attrs, finding_name)
-                print(f"  ✓ Classified {len(existing_attrs)} attributes")
+                print(f"  [OK] Classified {len(existing_attrs)} attributes")
                 
                 # Compare attributes within each classification group
                 print("Comparing attributes...")
@@ -468,7 +488,7 @@ async def main():
                             finding_name
                         )
                         all_comparisons[classification_type] = comparisons
-                        print(f"    ✓ Completed {classification_type} comparison ({len(comparisons)} comparisons)")
+                        print(f"    [OK] Completed {classification_type} comparison ({len(comparisons)} comparisons)")
                 
                 # Collect all merge recommendations, no_merge comparisons, needs_review, and new attributes
                 print("Collecting merge recommendations and new attributes...")
@@ -490,7 +510,7 @@ async def main():
                                 incoming_attr_name = extract_attr_name(comp['incoming_attribute'])
                                 existing_attr_name = extract_attr_name(comp['existing_attribute'])
                                 
-                                print(f"    '{incoming_attr_name}' (incoming) ↔ '{existing_attr_name}' (existing)")
+                                print(f"    '{incoming_attr_name}' (incoming) <-> '{existing_attr_name}' (existing)")
                                 print(f"      Relationship: {relationship_type} (confidence: {relationship.confidence:.2f})")
                                 print(f"      Recommendation: {relationship.recommendation}")
                                 
@@ -540,9 +560,9 @@ async def main():
                                     'incoming_attribute': comp['incoming_attribute']
                                 })
                 
-                print(f"  ✓ Found {len(merge_recommendations)} merge recommendations")
-                print(f"  ✓ Found {len(needs_review_comparisons)} attributes needing review")
-                print(f"  ✓ Found {len(new_attributes)} new attributes")
+                print(f"  [OK] Found {len(merge_recommendations)} merge recommendations")
+                print(f"  [OK] Found {len(needs_review_comparisons)} attributes needing review")
+                print(f"  [OK] Found {len(new_attributes)} new attributes")
                 
                 # Automatic new attributes process - add all new attributes
                 approved_new_attributes = []
@@ -579,17 +599,17 @@ async def main():
                 
                 # Only add if neither incoming nor existing has it
                 if not incoming_has_presence and not existing_has_presence:
-                    print("  ✓ Adding presence attribute")
+                    print("  [OK] Adding presence attribute")
                     presence_attr = create_presence_element(finding_name)
                     attributes_to_add.append(('presence', presence_attr))
                 
                 if not incoming_has_change_from_prior and not existing_has_change_from_prior:
-                    print("  ✓ Adding change_from_prior attribute")
+                    print("  [OK] Adding change_from_prior attribute")
                     change_attr = create_change_element(finding_name)
                     attributes_to_add.append(('change_from_prior', change_attr))
                 
                 if not attributes_to_add:
-                    print("  ✓ All required attributes present")
+                    print("  [OK] All required attributes present")
                 
                 # Interactive review of needs_review attributes
                 review_decisions = []
@@ -608,7 +628,7 @@ async def main():
                     review_decisions=review_decisions
                 )
                 final_attrs = final_finding.get('attributes', [])
-                print(f"  ✓ Final model has {len(final_attrs)} attributes")
+                print(f"  [OK] Final model has {len(final_attrs)} attributes")
                 
                 # Extract source from existing model's oifm_id (e.g., OIFM_CDE_000003 -> CDE)
                 # Pattern: OIFM_{SOURCE}_{NUMBER}
@@ -629,9 +649,9 @@ async def main():
                     model_with_ids = add_ids_to_model(base_model, source=source)
                     # Convert back to dict
                     final_finding = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
-                    print(f"  ✓ Added IDs using source: {source}")
+                    print(f"  [OK] Added IDs using source: {source}")
                 except Exception as e:
-                    print(f"  ⚠ Warning: Could not add IDs to attributes: {e}")
+                    print(f"  [WARN] Warning: Could not add IDs to attributes: {e}")
                     print("  Continuing without adding IDs...")
                 
                 # Automatically save the final model
@@ -639,9 +659,9 @@ async def main():
                 output_dir = Path("defs/merged_findings")
                 success = await save_final_model(final_finding, output_dir)
                 if not success:
-                    print("  ✗ Error: Failed to save model.")
+                    print("  [ERROR] Error: Failed to save model.")
                     return
-                print("  ✓ Model saved successfully")
+                print("  [OK] Model saved successfully")
                 
                 # Generate merge report (individual file per merge)
                 print("Generating merge report...")
@@ -663,7 +683,7 @@ async def main():
                     attributes_to_add=attributes_to_add,
                     report_path=report_path
                 )
-                print(f"  ✓ Report saved to: {report_path}")
+                print(f"  [OK] Report saved to: {report_path}")
                 
                 # Print summary
                 print_merge_summary(
