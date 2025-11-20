@@ -197,6 +197,8 @@ def generate_merge_report(
     incoming_attrs: List[Dict[str, Any]],
     final_attrs: List[Dict[str, Any]],
     merge_recommendations: List[Dict[str, Any]],
+    no_merge_comparisons: List[Dict[str, Any]],
+    needs_review_comparisons: List[Dict[str, Any]],
     new_attributes: List[Dict[str, Any]],
     attributes_to_add: List[Tuple[str, Dict[str, Any]]],
     report_path: Path
@@ -220,6 +222,56 @@ def generate_merge_report(
     
     report_lines.append("---")
     report_lines.append("")
+    
+    # Summary statistics (moved to top)
+    report_lines.append("## Summary")
+    report_lines.append("")
+    report_lines.append(f"- **Attributes merged:** {len(merge_recommendations)}")
+    report_lines.append(f"- **Attributes needing review:** {len(needs_review_comparisons)}")
+    report_lines.append(f"- **New attributes added:** {len(new_attributes)}")
+    report_lines.append(f"- **Required attributes added:** {len(attributes_to_add)}")
+    report_lines.append(f"- **Total existing attributes:** {len(existing_attrs)}")
+    report_lines.append(f"- **Total incoming attributes:** {len(incoming_attrs)}")
+    report_lines.append(f"- **Total final attributes:** {len(final_attrs)}")
+    report_lines.append("")
+    
+    report_lines.append("---")
+    report_lines.append("")
+    
+    # Needs Review section (at the top, right after summary)
+    if needs_review_comparisons:
+        report_lines.append(f"## ⚠️ Attributes Needing Review ({len(needs_review_comparisons)})")
+        report_lines.append("")
+        report_lines.append("*These attributes were compared but require human review to determine if they should be merged or kept separate.*")
+        report_lines.append("")
+        for idx, comp in enumerate(needs_review_comparisons, 1):
+            incoming_attr = comp['incoming_attribute']
+            existing_attr = comp['existing_attribute']
+            relationship = comp['relationship']
+            reason = comp.get('reason', '')
+            
+            incoming_name = incoming_attr.get('name', 'unknown')
+            existing_name = existing_attr.get('name', 'unknown')
+            
+            report_lines.append(f"### {idx}. {existing_name} vs {incoming_name}")
+            report_lines.append(f"- **Relationship:** {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+            report_lines.append(f"- **Recommendation:** {relationship.recommendation}")
+            if reason:
+                report_lines.append(f"- **Reason for review:** {reason}")
+            report_lines.append(f"- **AI Reasoning:** {relationship.reasoning}")
+            report_lines.append("")
+            
+            # Show value analysis if available
+            if relationship.shared_values or relationship.existing_only_values or relationship.incoming_only_values:
+                if relationship.shared_values:
+                    report_lines.append(f"- **Shared values:** {', '.join(relationship.shared_values)}")
+                if relationship.existing_only_values:
+                    report_lines.append(f"- **Existing only values:** {', '.join(relationship.existing_only_values)}")
+                if relationship.incoming_only_values:
+                    report_lines.append(f"- **Incoming only values:** {', '.join(relationship.incoming_only_values)}")
+                report_lines.append("")
+        report_lines.append("---")
+        report_lines.append("")
     
     # All Existing Attributes
     report_lines.append(f"## Existing Attributes ({len(existing_attrs)})")
@@ -266,6 +318,7 @@ def generate_merge_report(
             report_lines.append(f"#### {idx}. {existing_name}")
             report_lines.append(f"- **Relationship:** {relationship.relationship} (confidence: {relationship.confidence:.2f})")
             report_lines.append(f"- **Incoming attribute:** {incoming_name}")
+            report_lines.append(f"- **AI Reasoning:** {relationship.reasoning}")
             report_lines.append("")
             
             # Show values
@@ -294,6 +347,40 @@ def generate_merge_report(
             report_lines.append("")
     else:
         report_lines.append("### Merged Attributes")
+        report_lines.append("None")
+        report_lines.append("")
+    
+    # Comparisons made but not merged (for verification)
+    if no_merge_comparisons:
+        report_lines.append(f"### Comparisons Made (Not Merged) ({len(no_merge_comparisons)})")
+        report_lines.append("")
+        report_lines.append("*These attributes were compared but not merged. Review to verify they should remain separate.*")
+        report_lines.append("")
+        for idx, comp in enumerate(no_merge_comparisons, 1):
+            incoming_attr = comp['incoming_attribute']
+            existing_attr = comp['existing_attribute']
+            relationship = comp['relationship']
+            
+            incoming_name = incoming_attr.get('name', 'unknown')
+            existing_name = existing_attr.get('name', 'unknown')
+            
+            report_lines.append(f"#### {idx}. {existing_name} vs {incoming_name}")
+            report_lines.append(f"- **Relationship:** {relationship.relationship} (confidence: {relationship.confidence:.2f})")
+            report_lines.append(f"- **Recommendation:** {relationship.recommendation}")
+            report_lines.append(f"- **AI Reasoning:** {relationship.reasoning}")
+            report_lines.append("")
+            
+            # Show value analysis if available
+            if relationship.shared_values or relationship.existing_only_values or relationship.incoming_only_values:
+                if relationship.shared_values:
+                    report_lines.append(f"- **Shared values:** {', '.join(relationship.shared_values)}")
+                if relationship.existing_only_values:
+                    report_lines.append(f"- **Existing only values:** {', '.join(relationship.existing_only_values)}")
+                if relationship.incoming_only_values:
+                    report_lines.append(f"- **Incoming only values:** {', '.join(relationship.incoming_only_values)}")
+                report_lines.append("")
+    else:
+        report_lines.append("### Comparisons Made (Not Merged)")
         report_lines.append("None")
         report_lines.append("")
     
@@ -364,17 +451,6 @@ def generate_merge_report(
         report_lines.append("")
     
     report_lines.append("---")
-    report_lines.append("")
-    
-    # Summary statistics
-    report_lines.append("## Summary")
-    report_lines.append("")
-    report_lines.append(f"- **Attributes merged:** {len(merge_recommendations)}")
-    report_lines.append(f"- **New attributes added:** {len(new_attributes)}")
-    report_lines.append(f"- **Required attributes added:** {len(attributes_to_add)}")
-    report_lines.append(f"- **Total existing attributes:** {len(existing_attrs)}")
-    report_lines.append(f"- **Total incoming attributes:** {len(incoming_attrs)}")
-    report_lines.append(f"- **Total final attributes:** {len(final_attrs)}")
     report_lines.append("")
     
     # Write report to individual file

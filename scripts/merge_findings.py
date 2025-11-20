@@ -27,7 +27,6 @@ from agents.merge_agents import (
     create_attribute_relationship_agent,
     AttributeRelationship
 )
-from agents.attribute_classifier import AttributeNameSimilarityChecker
 from merge_findings_helpers import (
     extract_value_names,
     extract_attr_name,
@@ -164,16 +163,19 @@ async def compare_attributes_within_group(
 ) -> List[Dict[str, Any]]:
     """Compare attributes within the same classification group using the relationship agent.
     
+    Uses relationship type prioritization:
+    1. enhanced (with confidence >= 0.7) > subset/identical > needs_review > no_similarities
+    2. Only add as new if ALL comparisons are no_similarities
+    
     Returns: List of comparison results with relationship information."""
     relationship_agent = create_attribute_relationship_agent()
+    ENHANCED_CONFIDENCE_THRESHOLD = 0.7
     comparisons = []
     
     # Compare each incoming attribute with each existing attribute
     for incoming_attr in incoming_attrs:
         incoming_name = incoming_attr.get('name', 'unknown')
-        best_match = None
-        best_relationship = None
-        best_confidence = 0.0
+        all_relationships = []  # Store all comparisons for this incoming attribute
         
         for existing_attr in existing_attrs:
             existing_name = existing_attr.get('name', 'unknown')
@@ -183,21 +185,6 @@ async def compare_attributes_within_group(
             # Skip if types don't match (choice vs numeric)
             if existing_type != incoming_type:
                 continue
-            
-            # For "other" attributes only, check semantic name similarity first
-            if classification_type == 'other':
-                name_checker = AttributeNameSimilarityChecker()
-                try:
-                    similarity = await name_checker.check_similarity(
-                        existing_name,
-                        incoming_name,
-                        finding_name
-                    )
-                    if not similarity.is_similar:
-                        continue
-                except Exception:
-                    # Continue with comparison anyway
-                    pass
             
             # Extract values for comparison
             incoming_values = extract_value_names(incoming_attr) if incoming_attr.get('type') == 'choice' else []
@@ -224,8 +211,9 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 result = await relationship_agent.run(prompt)
                 relationship = result.output
                 
-                # Print comparison details
-                print(f"\n      Comparing:")
+                # Print comparison details with separator
+                print(f"\n      {'─' * 60}")
+                print(f"      Comparing:")
                 print(f"        EXISTING: {existing_name} ({existing_attr.get('type', 'unknown')})")
                 if existing_values:
                     print(f"          Values: {', '.join(existing_values)}")
@@ -245,27 +233,88 @@ Determine the relationship between these attributes. Provide clear reasoning for
                         print(f"          Existing only: {', '.join(relationship.existing_only_values)}")
                     if relationship.incoming_only_values:
                         print(f"          Incoming only: {', '.join(relationship.incoming_only_values)}")
+                print(f"      {'─' * 60}")
                 
-                # Track best match (highest confidence)
-                if relationship.confidence > best_confidence:
-                    best_confidence = relationship.confidence
-                    best_match = existing_attr
-                    best_relationship = relationship
+                # Store all relationships for prioritization
+                all_relationships.append({
+                    'existing_attribute': existing_attr,
+                    'relationship': relationship
+                })
             except Exception as e:
                 print(f"      ERROR comparing '{existing_name}' vs '{incoming_name}': {e}")
                 pass
         
+        # Prioritize relationship types (not just confidence)
+        best_match = None
+        best_relationship = None
+        
+        if all_relationships:
+            # Priority order: enhanced (with threshold) > subset/identical > needs_review > no_similarities
+            # Within each type, use highest confidence
+            
+            # 1. Check for "enhanced" with confidence >= threshold
+            enhanced_matches = [
+                r for r in all_relationships 
+                if r['relationship'].relationship == 'enhanced' 
+                and r['relationship'].confidence >= ENHANCED_CONFIDENCE_THRESHOLD
+            ]
+            if enhanced_matches:
+                best_match = max(enhanced_matches, key=lambda x: x['relationship'].confidence)
+                best_relationship = best_match['relationship']
+                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - MERGE")
+            
+            # 2. Check for "subset" or "identical"
+            elif any(r['relationship'].relationship in ['subset', 'identical'] for r in all_relationships):
+                subset_identical_matches = [
+                    r for r in all_relationships 
+                    if r['relationship'].relationship in ['subset', 'identical']
+                ]
+                best_match = max(subset_identical_matches, key=lambda x: x['relationship'].confidence)
+                best_relationship = best_match['relationship']
+                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - KEEP EXISTING")
+            
+            # 3. Check for "needs_review"
+            elif any(r['relationship'].relationship == 'needs_review' for r in all_relationships):
+                needs_review_matches = [
+                    r for r in all_relationships 
+                    if r['relationship'].relationship == 'needs_review'
+                ]
+                best_match = max(needs_review_matches, key=lambda x: x['relationship'].confidence)
+                best_relationship = best_match['relationship']
+                print(f"\n    ⚠ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f}) - NEEDS REVIEW")
+            
+            # 4. Check for "enhanced" below threshold (treat as needs_review)
+            elif any(r['relationship'].relationship == 'enhanced' for r in all_relationships):
+                enhanced_low_conf = [
+                    r for r in all_relationships 
+                    if r['relationship'].relationship == 'enhanced'
+                ]
+                best_match = max(enhanced_low_conf, key=lambda x: x['relationship'].confidence)
+                # Override relationship type to needs_review for low confidence enhanced
+                best_relationship = best_match['relationship']
+                print(f"\n    ⚠ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - enhanced (confidence: {best_relationship.confidence:.2f} < {ENHANCED_CONFIDENCE_THRESHOLD}) - NEEDS REVIEW (low confidence)")
+            
+            # 5. All are "no_similarities" - will be added as new
+            elif all(r['relationship'].relationship == 'no_similarities' for r in all_relationships):
+                print(f"\n    ✗ All comparisons for '{incoming_name}' are 'no_similarities' - NEW ATTRIBUTE")
+                best_match = None
+                best_relationship = None
+            else:
+                # Fallback: use highest confidence
+                best_match = max(all_relationships, key=lambda x: x['relationship'].confidence)
+                best_relationship = best_match['relationship']
+                print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
+        
+        print()  # Extra blank line for separation
+        
         if best_match and best_relationship:
-            print(f"\n    ✓ Best match for '{incoming_name}': '{extract_attr_name(best_match)}' - {best_relationship.relationship} (confidence: {best_relationship.confidence:.2f})")
-            print(f"      Recommendation: {best_relationship.recommendation}")
             comparisons.append({
                 'incoming_attribute': incoming_attr,
-                'existing_attribute': best_match,
+                'existing_attribute': best_match['existing_attribute'],
                 'relationship': best_relationship
             })
         else:
-            # No match found - new attribute
-            print(f"\n    ✗ No match found for '{incoming_name}' - new attribute")
+            # No match found or all no_similarities - new attribute
             comparisons.append({
                 'incoming_attribute': incoming_attr,
                 'existing_attribute': None,
@@ -487,41 +536,78 @@ async def main():
                         all_comparisons[classification_type] = comparisons
                         print(f"    ✓ Completed {classification_type} comparison ({len(comparisons)} comparisons)")
                 
-                # Collect all merge recommendations and new attributes
+                # Collect all merge recommendations, no_merge comparisons, needs_review, and new attributes
                 print("Collecting merge recommendations and new attributes...")
                 merge_recommendations = []
+                no_merge_comparisons = []
+                needs_review_comparisons = []
                 new_attributes = []
+                ENHANCED_CONFIDENCE_THRESHOLD = 0.7
                 
                 for classification_type, comparisons in all_comparisons.items():
                     if comparisons:
-                        print(f"\n  {classification_type.upper()} Results:")
+                        print(f"\n  {'=' * 70}")
+                        print(f"  {classification_type.upper()} Results:")
+                        print(f"  {'=' * 70}")
                         for comp in comparisons:
                             if comp['relationship']:
-                                recommendation = comp['relationship'].recommendation
+                                relationship = comp['relationship']
+                                relationship_type = relationship.relationship
                                 incoming_attr_name = extract_attr_name(comp['incoming_attribute'])
                                 existing_attr_name = extract_attr_name(comp['existing_attribute'])
-                                relationship = comp['relationship']
                                 
                                 print(f"    '{incoming_attr_name}' (incoming) ↔ '{existing_attr_name}' (existing)")
-                                print(f"      Relationship: {relationship.relationship} (confidence: {relationship.confidence:.2f})")
-                                print(f"      Recommendation: {recommendation}")
+                                print(f"      Relationship: {relationship_type} (confidence: {relationship.confidence:.2f})")
+                                print(f"      Recommendation: {relationship.recommendation}")
                                 
-                                # Collect merge recommendations
-                                if recommendation == "merge":
-                                    merge_recommendations.append({
+                                # Categorize based on relationship type
+                                if relationship_type == 'enhanced':
+                                    # Enhanced with confidence >= threshold -> merge
+                                    if relationship.confidence >= ENHANCED_CONFIDENCE_THRESHOLD:
+                                        merge_recommendations.append({
+                                            'incoming_attribute': comp['incoming_attribute'],
+                                            'existing_attribute': comp['existing_attribute'],
+                                            'relationship': comp['relationship']
+                                        })
+                                    else:
+                                        # Enhanced below threshold -> needs review
+                                        needs_review_comparisons.append({
+                                            'incoming_attribute': comp['incoming_attribute'],
+                                            'existing_attribute': comp['existing_attribute'],
+                                            'relationship': comp['relationship'],
+                                            'reason': f'Enhanced relationship but confidence ({relationship.confidence:.2f}) below threshold ({ENHANCED_CONFIDENCE_THRESHOLD})'
+                                        })
+                                elif relationship_type in ['subset', 'identical']:
+                                    # Keep existing - no merge needed
+                                    no_merge_comparisons.append({
                                         'incoming_attribute': comp['incoming_attribute'],
                                         'existing_attribute': comp['existing_attribute'],
                                         'relationship': comp['relationship']
                                     })
+                                elif relationship_type == 'needs_review':
+                                    # Flag for human review
+                                    needs_review_comparisons.append({
+                                        'incoming_attribute': comp['incoming_attribute'],
+                                        'existing_attribute': comp['existing_attribute'],
+                                        'relationship': comp['relationship'],
+                                        'reason': 'Attributes have shared values but each has unique values'
+                                    })
+                                elif relationship_type == 'no_similarities':
+                                    # This shouldn't happen here since no_similarities should result in relationship=None
+                                    # But handle it just in case
+                                    new_attributes.append({
+                                        'incoming_attribute': comp['incoming_attribute']
+                                    })
                             else:
-                                # Collect new attributes
+                                # No relationship found - all comparisons were no_similarities -> new attribute
                                 incoming_attr_name = extract_attr_name(comp['incoming_attribute'])
-                                print(f"    '{incoming_attr_name}' (incoming): NEW (no match found)")
+                                print(f"    '{incoming_attr_name}' (incoming): NEW (all comparisons were no_similarities)")
                                 new_attributes.append({
                                     'incoming_attribute': comp['incoming_attribute']
                                 })
                 
                 print(f"  ✓ Found {len(merge_recommendations)} merge recommendations")
+                print(f"  ✓ Found {len(needs_review_comparisons)} attributes needing review")
                 print(f"  ✓ Found {len(new_attributes)} new attributes")
                 
                 # Automatic new attributes process - add all new attributes
@@ -591,6 +677,8 @@ async def main():
                     incoming_attrs=incoming_attrs,
                     final_attrs=final_attrs,
                     merge_recommendations=merge_recommendations,
+                    no_merge_comparisons=no_merge_comparisons,
+                    needs_review_comparisons=needs_review_comparisons,
                     new_attributes=new_attributes,
                     attributes_to_add=attributes_to_add,
                     report_path=report_path

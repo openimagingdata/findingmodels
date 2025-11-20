@@ -39,7 +39,7 @@ class AttributeClassification(BaseModel):
 
 class AttributeRelationship(BaseModel):
     """Output from attribute relationship classifier"""
-    relationship: Literal["identical", "enhanced", "subset", "different", "no_similarities"]
+    relationship: Literal["identical", "enhanced", "subset", "needs_review", "no_similarities"]
     confidence: float
     reasoning: str
     recommendation: Literal["merge", "no_merge"] = Field(description="Recommendation: merge if incoming is enhanced or if semantically same but with different values")
@@ -106,26 +106,43 @@ Your task is to classify the relationship between two attributes (EXISTING and I
 
 The attributes will be provided with their names, types, and values. You need to determine how the INCOMING attribute relates to the EXISTING attribute.
 
+DECISION TREE - Follow this order when classifying:
+
+1. Check if ALL values from one attribute are contained in the other:
+   - If ALL incoming values are in existing AND existing has more → "subset"
+   - If ALL existing values are in incoming AND incoming has more → "enhanced"
+   - If ALL values match exactly → "identical"
+   
+2. If not all values are contained, check for overlap:
+   - If there are shared values AND each has unique values → "needs_review"
+   - If there are NO shared values → "no_similarities"
+
 RELATIONSHIP TYPES:
 
 1. "identical" - Both attributes have exactly the same values (order doesn't matter)
    - Example: Existing: ["present", "absent"], Incoming: ["present", "absent"] → identical
    - Example: Existing: ["solid", "subsolid"], Incoming: ["solid", "subsolid"] → identical
+   - CRITICAL: Every value in existing must be in incoming, AND every value in incoming must be in existing
 
 2. "enhanced" - INCOMING has ALL the values from EXISTING plus additional values
    - Example: Existing: ["present", "absent"], Incoming: ["present", "absent", "unknown", "indeterminate"] → enhanced
    - Example: Existing: ["smooth", "lobulated"], Incoming: ["smooth", "lobulated", "spiculated", "ill-defined"] → enhanced
-   - CRITICAL: All existing values must be present in incoming, AND incoming must have at least one additional value
+   - CRITICAL: ALL existing values must be present in incoming, AND incoming must have at least one additional value
+   - If even one existing value is missing from incoming, this is NOT "enhanced"
 
 3. "subset" - EXISTING has ALL the values from INCOMING plus additional values
    - Example: Existing: ["present", "absent", "unknown", "indeterminate"], Incoming: ["present", "absent"] → subset
-   - Example: Existing: ["smooth", "lobulated", "spiculated", "ill-defined"], Incoming: ["smooth", "lobulated"] → subset
-   - CRITICAL: All incoming values must be present in existing, AND existing must have at least one additional value
+   - Example: Existing: ["left", "right", "unknown"], Incoming: ["left", "right"] → subset
+   - CRITICAL: ALL incoming values must be present in existing, AND existing must have at least one additional value
+   - If even one incoming value is missing from existing, this is NOT "subset"
+   - IMPORTANT: If incoming has NO unique values (all its values are in existing), this MUST be "subset", NOT "different"
 
-4. "different" - There are some shared values, but each attribute has unique values not in the other
-   - Example: Existing: ["present", "absent", "unknown"], Incoming: ["present", "absent", "indeterminate"] → different
-   - Example: Existing: ["smooth", "lobulated", "spiculated"], Incoming: ["smooth", "lobulated", "ill-defined"] → different
-   - CRITICAL: Must have at least one shared value AND at least one value unique to each attribute
+4. "needs_review" - There are some shared values, but each attribute has unique values not in the other
+   - Example: Existing: ["present", "absent", "unknown"], Incoming: ["present", "absent", "indeterminate"] → needs_review
+   - Example: Existing: ["smooth", "lobulated", "spiculated"], Incoming: ["smooth", "lobulated", "ill-defined"] → needs_review
+   - CRITICAL: Must have at least one shared value AND at least one value unique to EACH attribute
+   - If incoming has NO unique values (all incoming values are in existing), this is "subset", NOT "needs_review"
+   - If existing has NO unique values (all existing values are in incoming), this is "enhanced", NOT "needs_review"
 
 5. "no_similarities" - No shared values at all (completely different value sets)
    - Example: Existing: ["present", "absent"], Incoming: ["solid", "subsolid"] → no_similarities
@@ -138,6 +155,8 @@ IMPORTANT RULES:
 - Order of values does NOT matter
 - Case differences in value names should be normalized (treat as same)
 - Be precise: "enhanced" and "subset" require ALL values from one to be in the other
+- ALWAYS check for "subset" or "enhanced" FIRST before considering "needs_review"
+- If one attribute has no unique values (all its values are in the other), it cannot be "needs_review"
 
 OUTPUT REQUIREMENTS:
 - relationship: One of the five relationship types above
@@ -145,12 +164,14 @@ OUTPUT REQUIREMENTS:
 - reasoning: **CRITICAL** - Provide a clear, detailed explanation of:
   * Why you chose this specific relationship type
   * How the values compare (which values are shared, which are unique)
-  * What makes this relationship "identical", "enhanced", "subset", "different", or "no_similarities"
+  * Explicitly state: "All incoming values are in existing" or "Some incoming values are not in existing"
+  * Explicitly state: "Incoming has unique values: [list]" or "Incoming has no unique values"
+  * What makes this relationship "identical", "enhanced", "subset", "needs_review", or "no_similarities"
 - recommendation: **CRITICAL** - Must be "merge" or "no_merge":
   * "merge" if relationship is "enhanced" (incoming has all existing values plus more)
   * "no_merge" if relationship is "identical" (same values)
   * "no_merge" for "subset" (existing has more values, so no need to merge incoming)
-  * "no_merge" for "different" or "no_similarities" (different attributes)
+  * "no_merge" for "needs_review" or "no_similarities" (requires human review or different attributes)
 - existing_values: List of all values from the existing attribute
 - incoming_values: List of all values from the incoming attribute
 - shared_values: List of values present in both attributes
