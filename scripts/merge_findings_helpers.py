@@ -8,6 +8,7 @@ used by the merge_findings CLI tool.
 from typing import Dict, Optional, Tuple, List, Any
 from pathlib import Path
 from datetime import datetime
+import copy
 
 # Import FindingModelFull for type hints and runtime use
 try:
@@ -73,8 +74,79 @@ def create_change_element(finding_name: str) -> Dict[str, Any]:
     }
 
 
+def preserve_existing_ids(final_finding: Dict[str, Any], source: str) -> Dict[str, Any]:
+    """Preserve existing IDs and only add IDs to attributes/values that are missing them.
+    
+    Args:
+        final_finding: The finding model dict
+        source: Source code for generating new IDs (e.g., 'GMTS', 'CDE', 'MGB')
+    
+    Returns:
+        Updated finding model dict with preserved IDs
+    """
+    from findingmodel import FindingModelFull
+    from findingmodel.tools import add_ids_to_model
+    
+    # Create a map of existing attribute IDs by name
+    existing_attr_id_map = {}
+    existing_value_code_map = {}  # key: (attr_name, value_name) -> value_code
+    
+    for attr in final_finding.get('attributes', []):
+        attr_name = attr.get('name', '')
+        attr_id = attr.get('oifma_id')
+        if attr_name and attr_id:
+            existing_attr_id_map[attr_name] = attr_id
+        
+        # Map value codes
+        for val in attr.get('values', []):
+            val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+            val_name = val_dict.get('name', '')
+            val_code = val_dict.get('value_code')
+            if attr_name and val_name and val_code:
+                existing_value_code_map[(attr_name, val_name)] = val_code
+    
+    # Use add_ids_to_model to add missing IDs - use FindingModelFull to preserve all metadata
+    try:
+        full_model = FindingModelFull(**final_finding)
+        model_with_ids = add_ids_to_model(full_model, source=source)
+        updated_finding = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
+    except Exception as e:
+        # If add_ids_to_model fails, return original
+        print(f"  [WARN] Could not add IDs: {e}")
+        return final_finding
+    
+    # Restore preserved IDs (FindingModelFull should preserve metadata, but we still need to restore IDs)
+    for attr_idx, attr in enumerate(updated_finding.get('attributes', [])):
+        attr_name = attr.get('name', '')
+        # Restore attribute ID if it existed
+        if attr_name in existing_attr_id_map:
+            attr['oifma_id'] = existing_attr_id_map[attr_name]
+        
+        # Restore value codes
+        updated_values = []
+        for val in attr.get('values', []):
+            val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+            val_name = val_dict.get('name', '')
+            key = (attr_name, val_name)
+            if key in existing_value_code_map:
+                val_dict['value_code'] = existing_value_code_map[key]
+            updated_values.append(val_dict)
+        attr['values'] = updated_values
+        updated_finding['attributes'][attr_idx] = attr
+    
+    # Preserve original oifm_id if it exists
+    original_oifm_id = final_finding.get('oifm_id')
+    if original_oifm_id:
+        updated_finding['oifm_id'] = original_oifm_id
+    
+    return updated_finding
+
+
 def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
-    """Clean up final finding dict by removing classification metadata."""
+    """Clean up final finding dict by removing classification metadata.
+    
+    Preserves all other metadata including index_codes, oifma_id, value_code, etc.
+    """
     cleaned = final_finding.copy()
     
     # Remove classification metadata from attributes
@@ -82,10 +154,24 @@ def clean_final_finding(final_finding: Dict[str, Any]) -> Dict[str, Any]:
     cleaned_attributes = []
     for attr in attributes:
         cleaned_attr = attr.copy()
-        # Remove classification metadata
+        # Remove classification metadata only
         cleaned_attr.pop('_classification', None)
         cleaned_attr.pop('_confidence', None)
         cleaned_attr.pop('_reasoning', None)
+        
+        # Preserve all other metadata including index_codes, oifma_id, etc.
+        # Clean values if they exist
+        if 'values' in cleaned_attr:
+            cleaned_values = []
+            for val in cleaned_attr['values']:
+                val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+                # Remove classification metadata from values too
+                val_dict.pop('_classification', None)
+                val_dict.pop('_confidence', None)
+                val_dict.pop('_reasoning', None)
+                # Preserve index_codes and value_code
+                cleaned_values.append(val_dict)
+            cleaned_attr['values'] = cleaned_values
         
         cleaned_attributes.append(cleaned_attr)
     cleaned['attributes'] = cleaned_attributes
@@ -232,7 +318,19 @@ def build_final_finding(
     
     # Start with existing model structure (if available) or incoming model
     if existing_model_data:
-        final_finding = existing_model_data.copy()
+        # Deep copy to preserve all metadata
+        final_finding = copy.deepcopy(existing_model_data)
+        # Explicitly preserve all top-level metadata fields
+        # These will be preserved even if attributes are modified
+        preserved_metadata = {
+            'oifm_id': existing_model_data.get('oifm_id'),
+            'contributors': existing_model_data.get('contributors'),
+            'index_codes': existing_model_data.get('index_codes'),
+            'tags': existing_model_data.get('tags'),
+            'synonyms': existing_model_data.get('synonyms'),
+        }
+        # Store for later restoration after attribute processing
+        final_finding['_preserved_metadata'] = preserved_metadata
     else:
         # Use incoming model as base
         final_finding = incoming_model.model_dump(exclude_unset=False, exclude_none=False)
@@ -254,14 +352,43 @@ def build_final_finding(
         
         # Automatic merge strategy: Keep existing, then add incoming values that don't exist
         combined_attr = existing_attr.copy()
+        # Preserve existing attribute metadata (oifma_id, index_codes)
         if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
             existing_value_names = set(extract_value_names(existing_attr))
             incoming_values = incoming_attr.get('values', [])
+            # Create a map of existing values by name to preserve their index_codes
+            existing_value_map = {}
+            for val in existing_attr.get('values', []):
+                val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+                val_name = val_dict.get('name', '')
+                if val_name:
+                    existing_value_map[val_name] = val_dict
+            
             # Add incoming values that don't exist in existing
             for val in incoming_values:
-                val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
+                val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+                val_name = val_dict.get('name', '')
                 if val_name not in existing_value_names:
-                    combined_attr['values'].append(val)
+                    # If we have an existing value with same name, preserve its index_codes
+                    if val_name in existing_value_map:
+                        existing_val = existing_value_map[val_name]
+                        # Merge index_codes if both have them
+                        if existing_val.get('index_codes') and val_dict.get('index_codes'):
+                            # Combine index_codes, avoiding duplicates
+                            existing_codes = existing_val.get('index_codes', [])
+                            incoming_codes = val_dict.get('index_codes', [])
+                            # Create a set of code strings to avoid duplicates
+                            code_set = set()
+                            merged_codes = []
+                            for code in existing_codes + incoming_codes:
+                                code_str = f"{code.get('system', '')}:{code.get('code', '')}"
+                                if code_str not in code_set:
+                                    code_set.add(code_str)
+                                    merged_codes.append(code)
+                            val_dict['index_codes'] = merged_codes
+                        elif existing_val.get('index_codes'):
+                            val_dict['index_codes'] = existing_val.get('index_codes')
+                    combined_attr['values'].append(val_dict)
         final_attributes.append(combined_attr)
     
     # Process review decisions
@@ -291,11 +418,39 @@ def build_final_finding(
             if existing_attr.get('type') == 'choice' and incoming_attr.get('type') == 'choice':
                 existing_value_names = set(extract_value_names(existing_attr))
                 incoming_values = incoming_attr.get('values', [])
+                # Create a map of existing values by name to preserve their index_codes
+                existing_value_map = {}
+                for val in existing_attr.get('values', []):
+                    val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+                    val_name = val_dict.get('name', '')
+                    if val_name:
+                        existing_value_map[val_name] = val_dict
+                
                 # Add incoming values that don't exist in existing
                 for val in incoming_values:
-                    val_name = extract_attr_name(val) if isinstance(val, dict) else getattr(val, 'name', '')
+                    val_dict = val if isinstance(val, dict) else val.model_dump(exclude_unset=False, exclude_none=False)
+                    val_name = val_dict.get('name', '')
                     if val_name not in existing_value_names:
-                        combined_attr['values'].append(val)
+                        # If we have an existing value with same name, preserve its index_codes
+                        if val_name in existing_value_map:
+                            existing_val = existing_value_map[val_name]
+                            # Merge index_codes if both have them
+                            if existing_val.get('index_codes') and val_dict.get('index_codes'):
+                                # Combine index_codes, avoiding duplicates
+                                existing_codes = existing_val.get('index_codes', [])
+                                incoming_codes = val_dict.get('index_codes', [])
+                                # Create a set of code strings to avoid duplicates
+                                code_set = set()
+                                merged_codes = []
+                                for code in existing_codes + incoming_codes:
+                                    code_str = f"{code.get('system', '')}:{code.get('code', '')}"
+                                    if code_str not in code_set:
+                                        code_set.add(code_str)
+                                        merged_codes.append(code)
+                                val_dict['index_codes'] = merged_codes
+                            elif existing_val.get('index_codes'):
+                                val_dict['index_codes'] = existing_val.get('index_codes')
+                        combined_attr['values'].append(val_dict)
             final_attributes.append(combined_attr)
     
     # Add all new attributes (automatically approved)
@@ -335,6 +490,14 @@ def build_final_finding(
         final_attributes.append(attr_dict.copy())
     
     final_finding['attributes'] = final_attributes
+    
+    # Restore preserved metadata if it was stored
+    if '_preserved_metadata' in final_finding:
+        preserved = final_finding.pop('_preserved_metadata')
+        # Always restore metadata fields from existing (they should take precedence)
+        for key, value in preserved.items():
+            if value is not None:
+                final_finding[key] = value
     
     return final_finding
 
@@ -419,6 +582,11 @@ def format_attribute_for_report(attr: Dict[str, Any]) -> List[str]:
     
     lines.append(f"- **Name:** {attr_name}")
     lines.append(f"- **Type:** {attr_type}")
+    
+    # Add classification if available (added by classification agent)
+    classification = attr.get('_classification')
+    if classification:
+        lines.append(f"- **Classification:** {classification}")
     
     if attr.get('description'):
         lines.append(f"- **Description:** {attr.get('description')}")

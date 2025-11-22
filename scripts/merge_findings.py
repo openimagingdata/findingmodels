@@ -37,8 +37,25 @@ from merge_findings_helpers import (
     format_attribute_for_report,
     generate_merge_report,
     interactive_review_needs_review,
-    build_final_finding
+    build_final_finding,
+    preserve_existing_ids
 )
+
+
+def has_standard_presence_values(attr: Dict[str, Any]) -> bool:
+    """Check if an attribute has the standard presence values."""
+    standard_values = {"absent", "present", "indeterminate", "unknown"}
+    attr_values = set(extract_value_names(attr))
+    return standard_values.issubset(attr_values)
+
+
+def has_standard_change_from_prior_values(attr: Dict[str, Any]) -> bool:
+    """Check if an attribute has the standard change_from_prior values."""
+    standard_values = {"unchanged", "stable", "new", "resolved", "increased", "decreased", "larger", "smaller"}
+    attr_values = set(extract_value_names(attr))
+    # Check if it has at least the core values (not necessarily all)
+    core_values = {"unchanged", "stable", "new", "resolved", "increased", "decreased"}
+    return core_values.issubset(attr_values) or standard_values.issubset(attr_values)
 
 
 async def load_incoming_model(file_path: Path) -> FindingModelFull:
@@ -184,6 +201,52 @@ async def compare_attributes_within_group(
     ENHANCED_CONFIDENCE_THRESHOLD = 0.7
     comparisons = []
     
+    # EARLY EXIT: For presence/change_from_prior, if existing has standard values, skip comparison
+    if classification_type in ['presence', 'change_from_prior'] and existing_attrs:
+        # Check if any existing attribute has standard values
+        has_standard = False
+        standard_existing_attr = None
+        
+        for existing_attr in existing_attrs:
+            if classification_type == 'presence':
+                if has_standard_presence_values(existing_attr):
+                    has_standard = True
+                    standard_existing_attr = existing_attr
+                    break
+            elif classification_type == 'change_from_prior':
+                if has_standard_change_from_prior_values(existing_attr):
+                    has_standard = True
+                    standard_existing_attr = existing_attr
+                    break
+        
+        if has_standard and standard_existing_attr:
+            # Skip all comparisons - keep existing, discard all incoming
+            standard_attr_name = extract_attr_name(standard_existing_attr)
+            print(f"\n    [INFO] Existing '{standard_attr_name}' has standard {classification_type} values - KEEP EXISTING, DISCARD ALL INCOMING")
+            
+            for incoming_attr in incoming_attrs:
+                incoming_name = extract_attr_name(incoming_attr)
+                # Create a "subset" relationship to indicate keep existing
+                best_relationship = AttributeRelationship(
+                    relationship="subset",
+                    confidence=1.0,
+                    reasoning=f"Existing attribute has standard {classification_type} values. Incoming attribute '{incoming_name}' will be discarded.",
+                    recommendation="no_merge",
+                    existing_values=extract_value_names(standard_existing_attr),
+                    incoming_values=extract_value_names(incoming_attr),
+                    shared_values=[],
+                    existing_only_values=extract_value_names(standard_existing_attr),
+                    incoming_only_values=extract_value_names(incoming_attr)
+                )
+                comparisons.append({
+                    'incoming_attribute': incoming_attr,
+                    'existing_attribute': standard_existing_attr,
+                    'relationship': best_relationship
+                })
+                print(f"      Discarding incoming '{incoming_name}' (standard structure preferred)")
+            
+            return comparisons  # Early return - no API calls needed!
+    
     # Compare each incoming attribute with each existing attribute
     total_incoming = len(incoming_attrs)
     total_existing = len(existing_attrs)
@@ -313,11 +376,30 @@ Determine the relationship between these attributes. Provide clear reasoning for
                 best_relationship = best_match['relationship']
                 print(f"\n    [WARN] Best match for '{incoming_name}': '{extract_attr_name(best_match['existing_attribute'])}' - enhanced (confidence: {best_relationship.confidence:.2f} < {ENHANCED_CONFIDENCE_THRESHOLD}) - NEEDS REVIEW (low confidence)")
             
-            # 5. All are "no_similarities" - will be added as new
+            # 5. All are "no_similarities"
             elif all(r['relationship'].relationship == 'no_similarities' for r in all_relationships):
-                print(f"\n    [ERROR] All comparisons for '{incoming_name}' are 'no_similarities' - NEW ATTRIBUTE")
-                best_match = None
-                best_relationship = None
+                # For presence/change_from_prior: if we get here, existing doesn't have standard values (caught earlier)
+                # Flag for review so human can decide
+                if classification_type in ['presence', 'change_from_prior'] and existing_attrs:
+                    print(f"\n    [WARN] All comparisons for '{incoming_name}' are 'no_similarities', and existing {classification_type} attribute does not have standard values - NEEDS REVIEW")
+                    # Use the first existing attribute for review
+                    best_match = {'existing_attribute': existing_attrs[0]}
+                    best_relationship = AttributeRelationship(
+                        relationship="needs_review",
+                        confidence=0.5,
+                        reasoning=f"Both attributes are {classification_type} but have no_similarities. Existing does not have standard values. Requires human review.",
+                        recommendation="no_merge",
+                        existing_values=extract_value_names(existing_attrs[0]),
+                        incoming_values=extract_value_names(incoming_attr),
+                        shared_values=[],
+                        existing_only_values=extract_value_names(existing_attrs[0]),
+                        incoming_only_values=extract_value_names(incoming_attr)
+                    )
+                else:
+                    # Not presence/change_from_prior, or no existing attributes - add as new
+                    print(f"\n    [ERROR] All comparisons for '{incoming_name}' are 'no_similarities' - NEW ATTRIBUTE")
+                    best_match = None
+                    best_relationship = None
             else:
                 # Fallback: use highest confidence
                 best_match = max(all_relationships, key=lambda x: x['relationship'].confidence)
@@ -571,42 +653,71 @@ async def main():
                 
                 # Automatic check for missing presence/change_from_prior attributes
                 # Check both incoming AND existing to avoid duplicates
+                # Use the classification metadata from the classification agent
                 print("Checking for required attributes...")
+                
+                # Check incoming attributes using classification metadata
                 incoming_has_presence = any(
-                    attr.get('_classification') == 'presence' 
+                    attr.get('_classification') == 'presence'
                     for attr_list in incoming_grouped.values() 
                     for attr in attr_list
                 )
                 incoming_has_change_from_prior = any(
-                    attr.get('_classification') == 'change_from_prior' 
+                    attr.get('_classification') == 'change_from_prior'
                     for attr_list in incoming_grouped.values() 
                     for attr in attr_list
                 )
                 
                 # Check if existing model has these required attributes
                 existing_has_presence = any(
-                    attr.get('_classification') == 'presence' 
+                    attr.get('_classification') == 'presence'
                     for attr_list in existing_grouped.values() 
                     for attr in attr_list
                 )
                 existing_has_change_from_prior = any(
-                    attr.get('_classification') == 'change_from_prior' 
+                    attr.get('_classification') == 'change_from_prior'
                     for attr_list in existing_grouped.values() 
                     for attr in attr_list
                 )
                 
                 attributes_to_add = []
                 
-                # Only add if neither incoming nor existing has it
-                if not incoming_has_presence and not existing_has_presence:
+                # Check final attributes list to ensure we don't add duplicates
+                # Use the classified attributes which have _classification metadata from the agent
+                # Collect all attributes that will be in the final model (from classified groups)
+                final_attrs_to_check = []
+                # Add all existing classified attributes
+                for attr_list in existing_grouped.values():
+                    final_attrs_to_check.extend(attr_list)
+                # Add all incoming classified attributes that will be added
+                for attr_list in incoming_grouped.values():
+                    final_attrs_to_check.extend(attr_list)
+                
+                # Check if presence/change_from_prior already exists in final attributes
+                # Use classification metadata from the classification agent
+                has_presence_in_final = any(
+                    attr.get('_classification') == 'presence'
+                    for attr in final_attrs_to_check
+                )
+                has_change_in_final = any(
+                    attr.get('_classification') == 'change_from_prior'
+                    for attr in final_attrs_to_check
+                )
+                
+                # Only add if neither incoming nor existing has it, AND it's not already in final attributes
+                if not incoming_has_presence and not existing_has_presence and not has_presence_in_final:
                     print("  [OK] Adding presence attribute")
                     presence_attr = create_presence_element(finding_name)
                     attributes_to_add.append(('presence', presence_attr))
+                elif (incoming_has_presence or existing_has_presence or has_presence_in_final):
+                    print("  [OK] Presence attribute already exists, skipping")
                 
-                if not incoming_has_change_from_prior and not existing_has_change_from_prior:
+                if not incoming_has_change_from_prior and not existing_has_change_from_prior and not has_change_in_final:
                     print("  [OK] Adding change_from_prior attribute")
                     change_attr = create_change_element(finding_name)
                     attributes_to_add.append(('change_from_prior', change_attr))
+                elif (incoming_has_change_from_prior or existing_has_change_from_prior or has_change_in_final):
+                    print("  [OK] Change from prior attribute already exists, skipping")
                 
                 if not attributes_to_add:
                     print("  [OK] All required attributes present")
@@ -641,18 +752,10 @@ async def main():
                         source = parts[1]  # Get the SOURCE part
                 
                 # Add IDs to any attributes missing them using the existing model's source
+                # Preserve existing IDs from both existing and incoming models
                 print("Adding IDs to attributes missing them...")
-                try:
-                    # Convert to FindingModelBase to use add_ids_to_model
-                    base_model = FindingModelBase(**final_finding)
-                    # Add IDs to attributes that don't have them
-                    model_with_ids = add_ids_to_model(base_model, source=source)
-                    # Convert back to dict
-                    final_finding = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
-                    print(f"  [OK] Added IDs using source: {source}")
-                except Exception as e:
-                    print(f"  [WARN] Warning: Could not add IDs to attributes: {e}")
-                    print("  Continuing without adding IDs...")
+                final_finding = preserve_existing_ids(final_finding, source=source)
+                print(f"  [OK] Preserved existing IDs and added missing ones using source: {source}")
                 
                 # Automatically save the final model
                 print("Saving final model...")
@@ -665,6 +768,16 @@ async def main():
                 
                 # Generate merge report (individual file per merge)
                 print("Generating merge report...")
+                # Reconstruct full classified attribute lists from grouped dictionaries
+                # This preserves the _classification metadata added by the agent
+                existing_attrs_classified = []
+                for classification_type in ['presence', 'change_from_prior', 'other']:
+                    existing_attrs_classified.extend(existing_grouped[classification_type])
+                
+                incoming_attrs_classified = []
+                for classification_type in ['presence', 'change_from_prior', 'other']:
+                    incoming_attrs_classified.extend(incoming_grouped[classification_type])
+                
                 # Create filename from finding name
                 safe_name = finding_name.lower().replace(' ', '_').replace('/', '_')
                 report_filename = f"merge_report_{safe_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
@@ -672,8 +785,8 @@ async def main():
                 generate_merge_report(
                     finding_name=finding_name,
                     existing_match=existing_match,
-                    existing_attrs=existing_attrs,
-                    incoming_attrs=incoming_attrs,
+                    existing_attrs=existing_attrs_classified,
+                    incoming_attrs=incoming_attrs_classified,
                     final_attrs=final_attrs,
                     merge_recommendations=merge_recommendations,
                     no_merge_comparisons=no_merge_comparisons,
