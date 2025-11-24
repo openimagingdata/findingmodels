@@ -38,6 +38,8 @@ from merge_findings_helpers import (
     generate_merge_report,
     interactive_review_needs_review,
     build_final_finding,
+    ensure_hood_contributor,
+    reorder_attributes,
     preserve_existing_ids
 )
 
@@ -740,6 +742,16 @@ async def main():
                 )
                 final_attrs = final_finding.get('attributes', [])
                 print(f"  [OK] Final model has {len(final_attrs)} attributes")
+                
+                # Ensure Michael Hood is included as a contributor
+                print("Ensuring Michael Hood is included as contributor...")
+                final_finding = ensure_hood_contributor(final_finding)
+                print("  [OK] Contributor added")
+                
+                # Reorder attributes: presence and change from prior at the top
+                print("Reordering attributes (presence and change from prior first)...")
+                final_finding = reorder_attributes(final_finding)
+                print("  [OK] Attributes reordered")
                 
                 # Extract source from existing model's oifm_id (e.g., OIFM_CDE_000003 -> CDE)
                 # Pattern: OIFM_{SOURCE}_{NUMBER}

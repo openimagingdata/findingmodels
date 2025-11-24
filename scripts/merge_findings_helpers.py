@@ -53,6 +53,72 @@ def create_presence_element(finding_name: str) -> Dict[str, Any]:
     }
 
 
+def ensure_hood_contributor(final_finding: Dict[str, Any]) -> Dict[str, Any]:
+    """Ensure C. Michael Hood is included as a contributor in the final finding.
+    
+    Args:
+        final_finding: The finding model dict
+        
+    Returns:
+        Updated finding model dict with Hood contributor added if not present
+    """
+    hood_contributor = {
+        "github_username": "hoodcm",
+        "email": "chood@mgh.harvard.edu",
+        "name": "C. Michael Hood, MD",
+        "organization_code": "MGB"
+    }
+    
+    contributors = final_finding.get('contributors', [])
+    if not contributors:
+        contributors = []
+    
+    # Check if Hood is already in contributors
+    hood_present = any(
+        contrib.get('name') == 'C. Michael Hood, MD' or 
+        contrib.get('github_username') == 'hoodcm'
+        for contrib in contributors
+    )
+    
+    if not hood_present:
+        contributors.append(hood_contributor)
+        final_finding['contributors'] = contributors
+    
+    return final_finding
+
+
+def reorder_attributes(final_finding: Dict[str, Any]) -> Dict[str, Any]:
+    """Reorder attributes so 'presence' and 'change from prior' are at the top.
+    
+    Args:
+        final_finding: The finding model dict
+        
+    Returns:
+        Updated finding model dict with reordered attributes
+    """
+    attributes = final_finding.get('attributes', [])
+    if not attributes:
+        return final_finding
+    
+    # Separate attributes into priority and others
+    priority_attrs = []
+    other_attrs = []
+    
+    for attr in attributes:
+        attr_name = attr.get('name', '').lower()
+        if attr_name == 'presence':
+            priority_attrs.insert(0, attr)  # presence first
+        elif attr_name == 'change from prior':
+            priority_attrs.append(attr)  # change from prior second
+        else:
+            other_attrs.append(attr)
+    
+    # Reorder: presence, change from prior, then all others
+    final_finding['attributes'] = priority_attrs + other_attrs
+    
+    return final_finding
+
+
 def create_change_element(finding_name: str) -> Dict[str, Any]:
     """Create a change from prior attribute for a finding."""
     return {
