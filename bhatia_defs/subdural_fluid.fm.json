@@ -1,0 +1,244 @@
+{
+  "oifm_id": "OIFM_OIDM_895306",
+  "name": "subdural fluid",
+  "description": "Fluid collection in the subdural space, commonly CSF-like, representing subdural effusion or hygroma. Typically characterized by its presence and comparison with prior imaging.",
+  "synonyms": ["fluid in subdural space"],
+  "tags": ["brain", "intracranial", "extra-axial", "fluid", "neuro"],
+  "anatomic_locations": null,
+  "contributors": null,
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_434048",
+      "name": "presence",
+      "description": "Whether subdural fluid is visible on the current study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_434048.0",
+          "name": "absent",
+          "description": "subdural fluid is not visible",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_434048.1",
+          "name": "present",
+          "description": "subdural fluid is clearly visible",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_434048.2",
+          "name": "indeterminate",
+          "description": "cannot determine whether subdural fluid is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_434048.3",
+          "name": "unknown",
+          "description": "presence of subdural fluid is unknown (e.g., limited study)",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_647684",
+      "name": "change from prior",
+      "description": "How the subdural fluid has changed compared to prior imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_647684.0",
+          "name": "unchanged",
+          "description": "no change compared with prior imaging",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.1",
+          "name": "stable",
+          "description": "appearance is stable compared with prior imaging",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.2",
+          "name": "new",
+          "description": "new subdural fluid not seen on prior imaging",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.3",
+          "name": "resolved",
+          "description": "subdural fluid seen on prior exam has resolved",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.4",
+          "name": "increased",
+          "description": "subdural fluid has increased in extent or volume",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.5",
+          "name": "decreased",
+          "description": "subdural fluid has decreased in extent or volume",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.6",
+          "name": "larger",
+          "description": "subdural fluid is larger compared with prior",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_647684.7",
+          "name": "smaller",
+          "description": "subdural fluid is smaller compared with prior",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "index_codes": null
+}

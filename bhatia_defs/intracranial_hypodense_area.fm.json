@@ -1,0 +1,870 @@
+{
+  "oifm_id": "OIFM_OIDM_178692",
+  "name": "intracranial hypodense area",
+  "description": "Regions of decreased attenuation within the intracranial contents on CT imaging; may reflect edema, acute or chronic ischemia with encephalomalacia, or chronic gliosis. Correlate with MRI and clinical context for etiology and acuity.",
+  "synonyms": [
+    "intracranial hypodensity",
+    "intracranial hypodensity",
+    "intracranial hypodense region",
+    "low attenuation within intracranial contents",
+    "low attenuation intracranial region",
+    "hypodense region of brain",
+    "hypodense area in brain"
+  ],
+  "tags": ["brain", "ct", "intracranial", "hypodensity", "head ct"],
+  "anatomic_locations": null,
+  "contributors": null,
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_449727",
+      "name": "presence",
+      "description": "Whether intracranial hypodensity is visible on the current CT.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_449727.0",
+          "name": "absent",
+          "description": "Intracranial hypodensity is not visible.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_449727.1",
+          "name": "present",
+          "description": "Intracranial hypodensity is clearly visible.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_449727.2",
+          "name": "indeterminate",
+          "description": "Presence cannot be determined due to image quality or confounding factors.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_449727.3",
+          "name": "unknown",
+          "description": "Presence is unknown (insufficient information).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_094285",
+      "name": "change from prior",
+      "description": "Comparison of the hypodense region to prior imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_094285.0",
+          "name": "unchanged",
+          "description": "No measurable change compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.1",
+          "name": "stable",
+          "description": "Stable appearance compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.2",
+          "name": "new",
+          "description": "New hypodensity not present on prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.3",
+          "name": "resolved",
+          "description": "Previously seen hypodensity has resolved.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.4",
+          "name": "increased",
+          "description": "Hypodensity has increased compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.5",
+          "name": "decreased",
+          "description": "Hypodensity has decreased compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.6",
+          "name": "larger",
+          "description": "Hypodensity is larger in size compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.7",
+          "name": "smaller",
+          "description": "Hypodensity is smaller in size compared to prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_094285.8",
+          "name": "indeterminate",
+          "description": "Change cannot be reliably assessed.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_105558",
+      "name": "location",
+      "description": "Anatomic location(s) of the hypodense region within the intracranial contents.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_105558.0",
+          "name": "supratentorial",
+          "description": "Located above the tentorium.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.1",
+          "name": "infratentorial",
+          "description": "Located below the tentorium.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.2",
+          "name": "frontal lobe",
+          "description": "Located in the frontal lobe.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.3",
+          "name": "parietal lobe",
+          "description": "Located in the parietal lobe.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.4",
+          "name": "temporal lobe",
+          "description": "Located in the temporal lobe.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.5",
+          "name": "occipital lobe",
+          "description": "Located in the occipital lobe.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.6",
+          "name": "deep gray nuclei",
+          "description": "Involving basal ganglia or thalamus.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.7",
+          "name": "periventricular",
+          "description": "Adjacent to the ventricles.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.8",
+          "name": "cortical",
+          "description": "Primarily cortical.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.9",
+          "name": "subcortical",
+          "description": "Primarily subcortical white matter.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.10",
+          "name": "brainstem",
+          "description": "Involving midbrain, pons, or medulla.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.11",
+          "name": "cerebellum",
+          "description": "Involving the cerebellum.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.12",
+          "name": "diffuse",
+          "description": "Widespread or diffuse involvement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_105558.13",
+          "name": "multifocal",
+          "description": "Multiple discrete regions.",
+          "index_codes": null
+        }
+      ],
+      "required": false,
+      "max_selected": 5,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_589157",
+      "name": "distribution",
+      "description": "Pattern of involvement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_589157.0",
+          "name": "focal",
+          "description": "Single localized focus.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_589157.1",
+          "name": "multifocal",
+          "description": "Multiple discrete foci.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_589157.2",
+          "name": "diffuse",
+          "description": "Widespread involvement without discrete focus.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_589157.3",
+          "name": "confluent",
+          "description": "Coalescent areas forming a larger region.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_589157.4",
+          "name": "patchy",
+          "description": "Scattered patchy involvement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_589157.5",
+          "name": "watershed",
+          "description": "Watershed or borderzone distribution.",
+          "index_codes": null
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_154885",
+      "name": "size",
+      "description": "Largest single dimension of the hypodense region measured on imaging.",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 30,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246115007",
+          "display": "Size (attribute)"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5772",
+          "display": "size descriptor"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_381176",
+      "name": "number",
+      "description": "Count of discrete hypodense foci when multifocal.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 100,
+      "unit": "count",
+      "required": false,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_369844",
+      "name": "attenuation",
+      "description": "Degree of hypoattenuation relative to normal brain or CSF.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_369844.0",
+          "name": "mild",
+          "description": "Slightly lower attenuation than normal brain.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_369844.1",
+          "name": "moderate",
+          "description": "Clearly lower attenuation but not csf-like.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_369844.2",
+          "name": "marked",
+          "description": "Markedly low attenuation, approaching csf density.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_369844.3",
+          "name": "csf like",
+          "description": "Attenuation similar to cerebrospinal fluid.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_369844.4",
+          "name": "indeterminate",
+          "description": "Cannot reliably grade attenuation.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_204847",
+      "name": "mass effect",
+      "description": "Degree of mass effect caused by the hypodense region.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_204847.0",
+          "name": "none",
+          "description": "No mass effect.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_204847.1",
+          "name": "minimal",
+          "description": "Minimal local compression or effacement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_204847.2",
+          "name": "moderate",
+          "description": "Moderate mass effect with some shift or ventricle effacement.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_204847.3",
+          "name": "severe",
+          "description": "Marked mass effect with midline shift or herniation risk.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_204847.4",
+          "name": "indeterminate",
+          "description": "Cannot assess mass effect.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_294718",
+      "name": "midline shift",
+      "description": "Measured midline shift at the septum pellucidum or other standard landmark.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 50,
+      "unit": "mm",
+      "required": false,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_461535",
+      "name": "associated hemorrhage",
+      "description": "Presence and type of hemorrhage associated with the hypodense region.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_461535.0",
+          "name": "none",
+          "description": "No hemorrhage identified.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.1",
+          "name": "petechial",
+          "description": "Small petechial hemorrhages.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.2",
+          "name": "intraparenchymal",
+          "description": "Intraparenchymal hematoma.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.3",
+          "name": "subarachnoid",
+          "description": "Subarachnoid hemorrhage.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.4",
+          "name": "subdural",
+          "description": "Subdural hemorrhage.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.5",
+          "name": "epidural",
+          "description": "Epidural hemorrhage.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_461535.6",
+          "name": "indeterminate",
+          "description": "Hemorrhage presence/type cannot be determined.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_506777",
+      "name": "suggested etiology",
+      "description": "Most likely cause(s) of the hypodensity based on imaging appearance and available history.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_506777.0",
+          "name": "edema",
+          "description": "Vasogenic or interstitial edema.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.1",
+          "name": "acute ischemia",
+          "description": "Acute infarct or ischemia.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.2",
+          "name": "chronic ischemic change",
+          "description": "Chronic infarct or encephalomalacia.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.3",
+          "name": "chronic gliosis",
+          "description": "Chronic gliotic change.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.4",
+          "name": "tumor related",
+          "description": "Tumor-associated hypodensity (infiltrative or necrotic).",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.5",
+          "name": "demyelination",
+          "description": "Demyelinating disease such as multiple sclerosis.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.6",
+          "name": "infection",
+          "description": "Infectious or inflammatory process.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.7",
+          "name": "postoperative change",
+          "description": "Postsurgical encephalomalacia or change.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.8",
+          "name": "other",
+          "description": "Other or unspecified cause.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_506777.9",
+          "name": "indeterminate",
+          "description": "Etiology cannot be determined from available data.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 2,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_084526",
+      "name": "acuity",
+      "description": "Estimated timing of the process producing the hypodensity.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_084526.0",
+          "name": "acute",
+          "description": "Findings most consistent with an acute process.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_084526.1",
+          "name": "subacute",
+          "description": "Findings most consistent with a subacute process.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_084526.2",
+          "name": "chronic",
+          "description": "Chronic change without acute features.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_084526.3",
+          "name": "chronic encephalomalacia",
+          "description": "Long-standing encephalomalacic change.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_084526.4",
+          "name": "indeterminate",
+          "description": "Acuity cannot be estimated.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_635343",
+      "name": "contrast enhancement",
+      "description": "Enhancement pattern if contrast-enhanced imaging is available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_635343.0",
+          "name": "none",
+          "description": "No abnormal enhancement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_635343.1",
+          "name": "ring",
+          "description": "Ring or rim enhancement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_635343.2",
+          "name": "nodular",
+          "description": "Nodular or mass-like enhancement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_635343.3",
+          "name": "patchy",
+          "description": "Patchy or heterogeneous enhancement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_635343.4",
+          "name": "diffuse",
+          "description": "Diffuse enhancement.",
+          "index_codes": null
+        },
+        {
+          "value_code": "OIFMA_OIDM_635343.5",
+          "name": "indeterminate",
+          "description": "Enhancement cannot be assessed.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": null
+    }
+  ],
+  "index_codes": null
+}
