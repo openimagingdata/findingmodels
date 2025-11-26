@@ -1,0 +1,349 @@
+{
+  "oifm_id": "OIFM_MSFT_623632",
+  "name": "chest radiograph-evident hardware",
+  "description": "Chest radiograph-evident hardware refers to any medical device or implant within the thoracic cavity that is visible on a chest X-ray due to its radiopacity.",
+  "synonyms": [
+    "chest x-ray hardware",
+    "radiopaque chest implants",
+    "thoracic implants",
+    "radiopaque chest devices"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_701790",
+      "name": "presence",
+      "description": "Whether chest radiograph-evident hardware is visible on the imaging study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_701790.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_701790.3",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_643968",
+      "name": "Status",
+      "description": "Indicates the status of the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_643968.0",
+          "name": "New placement",
+          "description": "The tunneled port catheter is newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_643968.1",
+          "name": "Unchanged",
+          "description": "The tunneled port catheter is unchanged."
+        },
+        {
+          "value_code": "OIFMA_MGB_643968.2",
+          "name": "Migrated",
+          "description": "The tunneled port catheter has migrated from its original placement."
+        },
+        {
+          "value_code": "OIFMA_MGB_643968.3",
+          "name": "Removed",
+          "description": "The tunneled port catheter has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_614278",
+      "name": "Appropriate location",
+      "description": "Indicates whether the tunneled port catheter is in an appropriate location.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_614278.0",
+          "name": "Yes",
+          "description": "The tunneled port catheter is in an appropriate location."
+        },
+        {
+          "value_code": "OIFMA_MGB_614278.1",
+          "name": "No",
+          "description": "The tunneled port catheter is not in an appropriate location."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_616329",
+      "name": "Side Finding",
+      "description": "Indicates the side of the body where the tunneled port catheter is located.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_616329.0",
+          "name": "Left",
+          "description": "The tunneled port catheter is on the left side of the body."
+        },
+        {
+          "value_code": "OIFMA_MGB_616329.1",
+          "name": "Right",
+          "description": "The tunneled port catheter is on the right side of the body."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_059070",
+      "name": "Number of Lumens",
+      "description": "Indicates the number of lumens (channels) in the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_059070.0",
+          "name": "Single",
+          "description": "The tunneled port catheter has a single lumen."
+        },
+        {
+          "value_code": "OIFMA_MGB_059070.1",
+          "name": "Double",
+          "description": "The tunneled port catheter has two lumens."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_344043",
+      "name": "Vein approach",
+      "description": "Indicates the vein approach used for inserting the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_344043.0",
+          "name": "Internal jugular",
+          "description": "The tunneled port catheter was inserted through the internal jugular vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_344043.1",
+          "name": "Subclavian",
+          "description": "The tunneled port catheter was inserted through the subclavian vein."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_285796",
+      "name": "Course",
+      "description": "Indicates the course of the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_285796.0",
+          "name": "Appropriate",
+          "description": "The tunneled port catheter has an appropriate course."
+        },
+        {
+          "value_code": "OIFMA_MGB_285796.1",
+          "name": "Kinking",
+          "description": "The tunneled port catheter is kinking."
+        },
+        {
+          "value_code": "OIFMA_MGB_285796.2",
+          "name": "Coiling",
+          "description": "The tunneled port catheter is coiling."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_798014",
+      "name": "Distal tip location",
+      "description": "Indicates the location of the distal tip of the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_798014.0",
+          "name": "Subclavian vein",
+          "description": "The distal tip of the tunneled port catheter is in the subclavian vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.1",
+          "name": "Brachiocephalic vein",
+          "description": "The distal tip of the tunneled port catheter is in the brachiocephalic vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.2",
+          "name": "SVC",
+          "description": "The distal tip of the tunneled port catheter is in the superior vena cava (SVC)."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.3",
+          "name": "Superior cavoatrial junction",
+          "description": "The distal tip of the tunneled port catheter is in the superior cavoatrial junction."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.4",
+          "name": "Azygous vein",
+          "description": "The distal tip of the tunneled port catheter is in the azygous vein."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.5",
+          "name": "Inferior cavoatrial junction",
+          "description": "The distal tip of the tunneled port catheter is in the inferior cavoatrial junction."
+        },
+        {
+          "value_code": "OIFMA_MGB_798014.6",
+          "name": "Internal jugular vein",
+          "description": "The distal tip of the tunneled port catheter is in the internal jugular vein."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_352488",
+      "name": "Port location",
+      "description": "Indicates the location of the port of the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_352488.0",
+          "name": "Pectoral",
+          "description": "The port of the tunneled port catheter is in the pectoral area."
+        },
+        {
+          "value_code": "OIFMA_MGB_352488.1",
+          "name": "Abdominal",
+          "description": "The port of the tunneled port catheter is in the abdominal area."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_895799",
+      "name": "Complications",
+      "description": "Indicates the complications associated with the tunneled port catheter.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_895799.0",
+          "name": "None",
+          "description": "There are no complications associated with the tunneled port catheter."
+        },
+        {
+          "value_code": "OIFMA_MGB_895799.1",
+          "name": "Occlusion",
+          "description": "There is occlusion (blockage) in the tunneled port catheter."
+        },
+        {
+          "value_code": "OIFMA_MGB_895799.2",
+          "name": "Catheter fracture",
+          "description": "The tunneled port catheter has fractured."
+        },
+        {
+          "value_code": "OIFMA_MGB_895799.3",
+          "name": "Port displacement",
+          "description": "The port of the tunneled port catheter has displaced."
+        },
+        {
+          "value_code": "OIFMA_MGB_895799.4",
+          "name": "Thrombosis (fibrin sheath)",
+          "description": "There is a thrombosis (fibrin sheath) in the tunneled port catheter."
+        },
+        {
+          "value_code": "OIFMA_MGB_895799.5",
+          "name": "Tip migration",
+          "description": "The distal tip of the tunneled port catheter has migrated."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

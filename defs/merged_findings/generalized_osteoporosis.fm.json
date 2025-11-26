@@ -1,18 +1,18 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_010762",
+  "name": "generalized osteoporosis",
+  "description": "Reduction in bone density throughout the skeleton, leading to fragile bones.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "osteopenia"
   ],
   "tags": [
-    "chest",
+    "musculoskeletal",
     "XR",
     "CT",
-    "lung",
-    "airways",
-    "finding"
+    "MR",
+    "bone",
+    "density",
+    "diagnosis"
   ],
   "contributors": [
     {
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_280445",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of generalized osteoporosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_280445.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Generalized osteoporosis is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_280445.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Generalized osteoporosis is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_280445.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of generalized osteoporosis cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_280445.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of generalized osteoporosis is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_196897",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a generalized osteoporosis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_196897.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Generalized osteoporosis is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_196897.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Generalized osteoporosis is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_196897.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Generalized osteoporosis is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_196897.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Generalized osteoporosis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_196897.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Generalized osteoporosis has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_196897.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Generalized osteoporosis has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_196897.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Generalized osteoporosis is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_196897.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Generalized osteoporosis is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,122 +260,42 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
-      "name": "Location",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
-        },
-        {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
-        },
-        {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
+      "oifma_id": "OIFMA_MGB_721251",
+      "name": "L1 Hounsfield Unit (at 120 kVp) measurement",
+      "description": "Measurement of Hounsfield units at the L1 region of the spine using a 120 kVp imaging protocol.",
+      "type": "numeric",
+      "required": false
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_750116",
+      "name": "related entities",
+      "description": "Common entities related to osteopenia and osteoporosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_750116.0",
+          "name": "vertebral fracture",
+          "description": "Fracture of a vertebral bone."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_750116.1",
+          "name": "multilevel vertebral body height loss",
+          "description": "Loss of height in multiple vertebral bodies."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_750116.2",
+          "name": "cement augmentation of vertebral body",
+          "description": "Use of cement augmentation to stabilize a vertebral body."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
+          "value_code": "OIFMA_MGB_750116.3",
+          "name": "rib fracture",
+          "description": "Fracture of a rib bone."
         },
         {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
+          "value_code": "OIFMA_MGB_750116.4",
+          "name": "sacral fracture",
+          "description": "Fracture of the sacrum bone."
         }
       ],
       "required": false,
@@ -385,8 +305,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "10762",
+      "display": "generalized osteoporosis"
     }
   ]
 }

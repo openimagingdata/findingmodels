@@ -1,17 +1,14 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
-  "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
-  ],
+  "oifm_id": "OIFM_GMTS_010984",
+  "name": "solitary osteosclerotic bone lesion",
+  "description": "A single bone lesion characterized by increased bone density.",
   "tags": [
-    "chest",
-    "XR",
+    "musculoskeletal",
     "CT",
-    "lung",
-    "airways",
+    "XR",
+    "MR",
+    "bone",
+    "sclerotic",
     "finding"
   ],
   "contributors": [
@@ -29,15 +26,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_121978",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of solitary osteosclerotic bone lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_121978.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Solitary osteosclerotic bone lesion is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +49,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_121978.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Solitary osteosclerotic bone lesion is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +66,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_121978.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of solitary osteosclerotic bone lesion cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +83,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_121978.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of solitary osteosclerotic bone lesion is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +111,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_246190",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a solitary osteosclerotic bone lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_246190.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Solitary osteosclerotic bone lesion is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +134,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_246190.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Solitary osteosclerotic bone lesion is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +151,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_246190.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Solitary osteosclerotic bone lesion is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +168,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_246190.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Solitary osteosclerotic bone lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_246190.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Solitary osteosclerotic bone lesion has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +190,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_246190.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Solitary osteosclerotic bone lesion has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +207,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_246190.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Solitary osteosclerotic bone lesion is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +224,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_246190.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Solitary osteosclerotic bone lesion is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +257,65 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
-      "name": "Location",
+      "oifma_id": "OIFMA_MGB_893172",
+      "name": "location",
+      "description": "Indicates the location of the sclerotic lesion in the bone.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_893172.0",
+          "name": "Not specified",
+          "description": "The location of the sclerotic lesion is not specified."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_893172.1",
+          "name": "Frontal bone",
+          "description": "The sclerotic lesion is located in the frontal bone."
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_893172.2",
+          "name": "Occipital bone",
+          "description": "The sclerotic lesion is located in the occipital bone."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_893172.3",
+          "name": "Temporal bone",
+          "description": "The sclerotic lesion is located in the temporal bone."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_893172.4",
+          "name": "Parietal bone",
+          "description": "The sclerotic lesion is located in the parietal bone."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
+          "value_code": "OIFMA_MGB_893172.5",
+          "name": "Maxilla",
+          "description": "The sclerotic lesion is located in the maxilla."
         },
         {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
+          "value_code": "OIFMA_MGB_893172.6",
+          "name": "Mandible",
+          "description": "The sclerotic lesion is located in the mandible."
         }
       ],
       "required": false,
       "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_725716",
+      "name": "density",
+      "description": "Indicates the density of the sclerotic lesion.",
+      "type": "numeric",
+      "minimum": 1000,
+      "unit": "HU",
+      "required": false
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "10984",
+      "display": "solitary osteosclerotic bone lesion"
     }
   ]
 }

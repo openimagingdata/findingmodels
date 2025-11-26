@@ -1,17 +1,16 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_005685",
+  "name": "gas in gallbladder or biliary tract",
+  "description": "Presence of gas suggesting infection or abnormal communication.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "pneumobilia"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
+    "US",
     "CT",
-    "lung",
-    "airways",
+    "biliary",
+    "infection",
     "finding"
   ],
   "contributors": [
@@ -29,15 +28,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_394686",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of gas in gallbladder or biliary tract",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_394686.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Gas in gallbladder or biliary tract is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +51,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_394686.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Gas in gallbladder or biliary tract is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +68,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_394686.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of gas in gallbladder or biliary tract cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +85,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_394686.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of gas in gallbladder or biliary tract is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +113,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_714028",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a gas in gallbladder or biliary tract has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_714028.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Gas in gallbladder or biliary tract is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +136,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_714028.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Gas in gallbladder or biliary tract is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +153,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_714028.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Gas in gallbladder or biliary tract is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +170,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_714028.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Gas in gallbladder or biliary tract seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_714028.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Gas in gallbladder or biliary tract has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +192,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_714028.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Gas in gallbladder or biliary tract has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +209,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_714028.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Gas in gallbladder or biliary tract is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +226,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_714028.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Gas in gallbladder or biliary tract is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +259,196 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_241663",
+      "name": "Extent",
+      "description": "The extent of pneumobilia.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_241663.0",
+          "name": "Limited",
+          "description": "Pneumobilia is limited in extent."
+        },
+        {
+          "value_code": "OIFMA_MGB_241663.1",
+          "name": "Extensive",
+          "description": "Pneumobilia is extensive."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_791961",
       "name": "Location",
+      "description": "The location of pneumobilia.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_791961.0",
+          "name": "Intrahepatic ducts",
+          "description": "Pneumobilia is located in the intrahepatic ducts."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_791961.1",
+          "name": "Common bile duct",
+          "description": "Pneumobilia is located in the common bile duct."
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_791961.2",
+          "name": "Both",
+          "description": "Pneumobilia is located in both the intrahepatic ducts and common bile duct."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_281144",
+      "name": "Associated bile duct dilation",
+      "description": "Whether there is associated bile duct dilation.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_281144.0",
+          "name": "Present",
+          "description": "There is associated bile duct dilation."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_281144.1",
+          "name": "Absent",
+          "description": "There is no associated bile duct dilation."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_145467",
+      "name": "Cholecystitis",
+      "description": "Whether cholecystitis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_145467.0",
+          "name": "Present",
+          "description": "Cholecystitis is present."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
+          "value_code": "OIFMA_MGB_145467.1",
+          "name": "Absent",
+          "description": "Cholecystitis is absent."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
+      "oifma_id": "OIFMA_MGB_128079",
+      "name": "Choledocholithiasis",
+      "description": "Whether choledocholithiasis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_128079.0",
+          "name": "Present",
+          "description": "Choledocholithiasis is present."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
+          "value_code": "OIFMA_MGB_128079.1",
+          "name": "Absent",
+          "description": "Choledocholithiasis is absent."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
+      "oifma_id": "OIFMA_MGB_329580",
+      "name": "Biliary stent",
+      "description": "Whether a biliary stent is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
+          "value_code": "OIFMA_MGB_329580.0",
+          "name": "Present",
+          "description": "A biliary stent is present."
         },
         {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
+          "value_code": "OIFMA_MGB_329580.1",
+          "name": "Absent",
+          "description": "A biliary stent is absent."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
+      "oifma_id": "OIFMA_MGB_161216",
+      "name": "Acute pancreatitis",
+      "description": "Whether acute pancreatitis is present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
+          "value_code": "OIFMA_MGB_161216.0",
+          "name": "Present",
+          "description": "Acute pancreatitis is present."
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
+          "value_code": "OIFMA_MGB_161216.1",
+          "name": "Absent",
+          "description": "Acute pancreatitis is absent."
         }
       ],
-      "required": false,
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_337990",
+      "name": "Periportal edema",
+      "description": "Whether periportal edema is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_337990.0",
+          "name": "Present",
+          "description": "Periportal edema is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_337990.1",
+          "name": "Absent",
+          "description": "Periportal edema is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_094526",
+      "name": "Portal vein gas",
+      "description": "Whether portal vein gas is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_094526.0",
+          "name": "Present",
+          "description": "Portal vein gas is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_094526.1",
+          "name": "Absent",
+          "description": "Portal vein gas is absent."
+        }
+      ],
+      "required": true,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "5685",
+      "display": "gas in gallbladder or biliary tract"
     }
   ]
 }

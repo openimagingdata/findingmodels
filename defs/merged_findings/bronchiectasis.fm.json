@@ -1,18 +1,18 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_013943",
+  "name": "bronchiectasis",
+  "description": "Abnormal, irreversible dilatation of bronchi due to chronic inflammation or infection.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "bronchial dilatation"
   ],
   "tags": [
     "chest",
-    "XR",
     "CT",
+    "XR",
+    "bronchi",
     "lung",
-    "airways",
-    "finding"
+    "inflammatory process",
+    "diagnosis"
   ],
   "contributors": [
     {
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_968806",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of bronchiectasis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_968806.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Bronchiectasis is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_968806.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Bronchiectasis is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_968806.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of bronchiectasis cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_968806.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of bronchiectasis is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_584562",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a bronchiectasis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_584562.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Bronchiectasis is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_584562.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Bronchiectasis is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_584562.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Bronchiectasis is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_584562.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Bronchiectasis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_584562.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Bronchiectasis has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_584562.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Bronchiectasis has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_584562.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Bronchiectasis is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_584562.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Bronchiectasis is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +260,131 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
-      "name": "Location",
+      "oifma_id": "OIFMA_MGB_095348",
+      "name": "Predominant Type(s)",
+      "description": "The predominant type(s) of bronchiectasis present.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_095348.0",
+          "name": "Cylindrical",
+          "description": "Bronchiectasis with cylindrical-shaped dilated bronchi."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_095348.1",
+          "name": "Varicose",
+          "description": "Bronchiectasis with varicose-shaped dilated bronchi."
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_095348.2",
+          "name": "Cystic",
+          "description": "Bronchiectasis with cystic-shaped dilated bronchi."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_149440",
+      "name": "Severity",
+      "description": "The severity of bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_149440.0",
+          "name": "Mild",
+          "description": "Mildly severe bronchiectasis."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_149440.1",
+          "name": "Moderate",
+          "description": "Moderately severe bronchiectasis."
+        },
+        {
+          "value_code": "OIFMA_MGB_149440.2",
+          "name": "Severe",
+          "description": "Severely severe bronchiectasis."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_910475",
+      "name": "Regional predominance",
+      "description": "The regional predominance of bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_910475.0",
+          "name": "Apices",
+          "description": "Bronchiectasis predominantly affecting the apices of the lungs."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
+          "value_code": "OIFMA_MGB_910475.1",
+          "name": "Upper lung zone",
+          "description": "Bronchiectasis predominantly affecting the upper lung zone."
+        },
+        {
+          "value_code": "OIFMA_MGB_910475.2",
+          "name": "Middle lung zone",
+          "description": "Bronchiectasis predominantly affecting the middle lung zone."
+        },
+        {
+          "value_code": "OIFMA_MGB_910475.3",
+          "name": "Lower lung zone",
+          "description": "Bronchiectasis predominantly affecting the lower lung zone."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
+      "oifma_id": "OIFMA_MGB_341428",
+      "name": "Associated diagnoses",
+      "description": "Associated diagnoses related to bronchiectasis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_341428.0",
+          "name": "Immunodeficiency",
+          "description": "Bronchiectasis associated with immunodeficiency."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
+          "value_code": "OIFMA_MGB_341428.1",
+          "name": "Postinfective",
+          "description": "Bronchiectasis associated with postinfective causes."
+        },
+        {
+          "value_code": "OIFMA_MGB_341428.2",
+          "name": "Allergic and autoimmune",
+          "description": "Bronchiectasis associated with allergic and autoimmune causes."
+        },
+        {
+          "value_code": "OIFMA_MGB_341428.3",
+          "name": "Obstruction",
+          "description": "Bronchiectasis associated with obstruction causes."
+        },
+        {
+          "value_code": "OIFMA_MGB_341428.4",
+          "name": "Congenital",
+          "description": "Bronchiectasis associated with congenital causes."
+        },
+        {
+          "value_code": "OIFMA_MGB_341428.5",
+          "name": "Others",
+          "description": "Other associated diagnoses related to bronchiectasis."
         }
       ],
       "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
-        }
-      ],
-      "required": false,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "13943",
+      "display": "bronchiectasis"
     }
   ]
 }

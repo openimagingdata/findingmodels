@@ -1,17 +1,17 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_013910",
+  "name": "large main pulmonary artery",
+  "description": "Enlargement of the main pulmonary artery visible on imaging.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "pulmonary artery enlargement"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "lung",
-    "airways",
+    "XR",
+    "MR",
+    "pulmonary",
+    "vascular",
     "finding"
   ],
   "contributors": [
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_510084",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of large main pulmonary artery",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_510084.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Large main pulmonary artery is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_510084.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Large main pulmonary artery is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_510084.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of large main pulmonary artery cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_510084.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of large main pulmonary artery is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_902595",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a large main pulmonary artery has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_902595.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Large main pulmonary artery is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_902595.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Large main pulmonary artery is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_902595.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Large main pulmonary artery is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_902595.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Large main pulmonary artery seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_902595.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Large main pulmonary artery has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_902595.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Large main pulmonary artery has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_902595.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Large main pulmonary artery is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_902595.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Large main pulmonary artery is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,121 +260,62 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_276283",
+      "name": "Diameter",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_667784",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_667784.0",
+          "name": "Main pulmonary artery"
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_667784.1",
+          "name": "Right pulmonary artery"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_667784.2",
+          "name": "Left pulmonary artery"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_987625",
+      "name": "Pulmonary Hypertension",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_987625.0",
+          "name": "Suspected"
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_987625.1",
+          "name": "Confirmed"
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_930378",
+      "name": "Right Heart Strain",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
-        },
-        {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
+          "value_code": "OIFMA_MGB_930378.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
+          "value_code": "OIFMA_MGB_930378.1",
           "name": "Absent"
         }
       ],
@@ -385,8 +326,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "13910",
+      "display": "large main pulmonary artery"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_015312",
+  "name": "bronchial lesion",
+  "description": "An abnormality or mass involving a bronchus.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "bronchial mass",
+    "endobronchial lesion"
   ],
   "tags": [
     "chest",
-    "XR",
     "CT",
+    "XR",
+    "bronchi",
     "lung",
-    "airways",
     "finding"
   ],
   "contributors": [
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_367739",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of bronchial lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_367739.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Bronchial lesion is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_367739.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Bronchial lesion is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_367739.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of bronchial lesion cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_367739.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of bronchial lesion is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_273679",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a bronchial lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_273679.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Bronchial lesion is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_273679.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Bronchial lesion is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_273679.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Bronchial lesion is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_273679.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Bronchial lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_273679.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Bronchial lesion has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_273679.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Bronchial lesion has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_273679.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Bronchial lesion is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_273679.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Bronchial lesion is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,122 +260,93 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_944130",
       "name": "Location",
+      "description": "The location of the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_944130.0",
+          "name": "Specify location",
+          "description": "Specify the location of the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
-        },
-        {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_944130.1",
+          "name": "None",
+          "description": "No location specified for the endobronchial mass."
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_175901",
+      "name": "Size Finding",
+      "description": "The size of the endobronchial mass.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_806922",
+      "name": "Shape",
+      "description": "The shape of the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_806922.0",
+          "name": "Round",
+          "description": "The endobronchial mass is round."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_806922.1",
+          "name": "Irregular",
+          "description": "The endobronchial mass is irregular."
+        },
+        {
+          "value_code": "OIFMA_MGB_806922.2",
+          "name": "Lobulated",
+          "description": "The endobronchial mass is lobulated."
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_043235",
+      "name": "Distal Atelectasis or Consolidation",
+      "description": "Indicates whether there is distal atelectasis or consolidation associated with the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_043235.0",
+          "name": "Present",
+          "description": "There is distal atelectasis or consolidation associated with the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
+          "value_code": "OIFMA_MGB_043235.1",
+          "name": "Absent",
+          "description": "There is no distal atelectasis or consolidation associated with the endobronchial mass."
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
+      "oifma_id": "OIFMA_MGB_873121",
+      "name": "Lymphadenopathy",
+      "description": "Indicates whether there is lymphadenopathy associated with the endobronchial mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_873121.0",
+          "name": "Present",
+          "description": "There is lymphadenopathy associated with the endobronchial mass."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
+          "value_code": "OIFMA_MGB_873121.1",
+          "name": "Absent",
+          "description": "There is no lymphadenopathy associated with the endobronchial mass."
         }
       ],
       "required": false,
@@ -385,8 +356,8 @@
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "15312",
+      "display": "bronchial lesion"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_005486",
+  "name": "cystic liver lesion",
+  "description": "Fluid-filled lesion within the liver tissue.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "hepatic cyst"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
+    "US",
     "CT",
-    "lung",
-    "airways",
+    "MR",
+    "hepatic",
+    "cystic",
     "finding"
   ],
   "contributors": [
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_621574",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of cystic liver lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_621574.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Cystic liver lesion is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_621574.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Cystic liver lesion is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_621574.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of cystic liver lesion cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_621574.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of cystic liver lesion is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_803937",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a cystic liver lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_803937.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Cystic liver lesion is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_803937.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Cystic liver lesion is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_803937.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Cystic liver lesion is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_803937.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Cystic liver lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_803937.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Cystic liver lesion has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_803937.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Cystic liver lesion has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_803937.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Cystic liver lesion is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_803937.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Cystic liver lesion is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +260,96 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_214948",
+      "name": "Multiplicity",
+      "description": "The number of cysts present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_214948.0",
+          "name": "Single"
+        },
+        {
+          "value_code": "OIFMA_MGB_214948.1",
+          "name": "Multiple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_647085",
       "name": "Location",
+      "description": "The specific location of the cyst.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_647085.0",
+          "name": "Hepatic (unspecified)",
+          "description": "The cyst is located in the liver."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_647085.1",
+          "name": "Left hepatic lobe"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_647085.2",
+          "name": "Right hepatic lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.3",
+          "name": "Hepatic segment 1"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.4",
+          "name": "Hepatic segment 2"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.5",
+          "name": "Hepatic segment 3"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.6",
+          "name": "Hepatic segment 4a"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.7",
+          "name": "Hepatic segment 4b"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.8",
+          "name": "Hepatic segment 5"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.9",
+          "name": "Hepatic segment 6"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.10",
+          "name": "Hepatic segment 7"
+        },
+        {
+          "value_code": "OIFMA_MGB_647085.11",
+          "name": "Hepatic segment 8"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
-        },
-        {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
-        },
-        {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
-        }
-      ],
-      "required": false,
-      "max_selected": 1
+      "oifma_id": "OIFMA_MGB_670022",
+      "name": "Size of largest cyst",
+      "description": "The size of the largest cyst in centimeters.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "5486",
+      "display": "cystic liver lesion"
     }
   ]
 }

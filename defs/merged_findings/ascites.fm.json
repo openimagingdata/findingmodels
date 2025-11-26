@@ -1,17 +1,16 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_000480",
+  "name": "ascites",
+  "description": "Accumulation of fluid in the peritoneal cavity.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "peritoneal effusion"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "lung",
-    "airways",
+    "US",
+    "abdominal",
+    "fluid collection",
     "finding"
   ],
   "contributors": [
@@ -29,15 +28,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_064549",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of ascites",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_064549.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Ascites is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +51,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_064549.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Ascites is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +68,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_064549.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of ascites cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +85,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_064549.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of ascites is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +113,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_223728",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a ascites has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_223728.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Ascites is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +136,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_223728.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Ascites is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +153,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_223728.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Ascites is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +170,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_223728.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Ascites seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_223728.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Ascites has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +192,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_223728.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Ascites has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +209,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_223728.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Ascites is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +226,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_223728.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Ascites is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +259,78 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_398706",
+      "name": "Volume",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_398706.0",
+          "name": "Small"
+        },
+        {
+          "value_code": "OIFMA_MGB_398706.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_398706.2",
+          "name": "Large"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_085126",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_085126.0",
+          "name": "Upper abdominal"
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_085126.1",
+          "name": "Perihepatic"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_085126.2",
+          "name": "Perisplenic"
+        },
+        {
+          "value_code": "OIFMA_MGB_085126.3",
+          "name": "Morrison's pouch"
+        },
+        {
+          "value_code": "OIFMA_MGB_085126.4",
+          "name": "Subphrenic"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_341034",
+      "name": "Attenuation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_341034.0",
+          "name": "Simple"
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_341034.1",
+          "name": "Complex"
         }
       ],
       "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
-        },
-        {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
-        },
-        {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
-        }
-      ],
-      "required": false,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "480",
+      "display": "ascites"
     }
   ]
 }

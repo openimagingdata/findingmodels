@@ -1,17 +1,18 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_009272",
+  "name": "thyroid lesion",
+  "description": "An abnormality or nodule within the thyroid gland.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "thyroid nodule"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
+    "US",
     "CT",
-    "lung",
-    "airways",
+    "MR",
+    "thyroid",
+    "endocrine",
+    "neoplastic",
     "finding"
   ],
   "contributors": [
@@ -29,15 +30,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_902236",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of thyroid lesion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_902236.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Thyroid lesion is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +53,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_902236.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Thyroid lesion is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +70,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_902236.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of thyroid lesion cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +87,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_902236.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of thyroid lesion is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +115,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_734881",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a thyroid lesion has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_734881.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Thyroid lesion is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +138,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_734881.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Thyroid lesion is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +155,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_734881.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Thyroid lesion is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +172,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_734881.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Thyroid lesion seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_734881.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Thyroid lesion has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +194,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_734881.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Thyroid lesion has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +211,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_734881.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Thyroid lesion is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +228,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_734881.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Thyroid lesion is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +261,185 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_051250",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_051250.0",
+          "name": "Right lobe"
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_051250.1",
+          "name": "Left lobe"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_051250.2",
+          "name": "Isthmus"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_246453",
+      "name": "Size (cm)",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_633170",
+      "name": "Composition",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_633170.0",
+          "name": "Cystic"
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_633170.1",
+          "name": "Solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_633170.2",
+          "name": "Mixed"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_632421",
+      "name": "Calcification",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
-        },
-        {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
+          "value_code": "OIFMA_MGB_632421.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
+          "value_code": "OIFMA_MGB_632421.1",
           "name": "Absent"
         }
       ],
-      "required": false,
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_109590",
+      "name": "Margins",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_109590.0",
+          "name": "Smooth"
+        },
+        {
+          "value_code": "OIFMA_MGB_109590.1",
+          "name": "Irregular"
+        },
+        {
+          "value_code": "OIFMA_MGB_109590.2",
+          "name": "Lobulated"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_898316",
+      "name": "Enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_898316.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_898316.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_921019",
+      "name": "Prior Fine Needle Aspiration",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_921019.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_921019.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_936918",
+      "name": "Prior Fine Needle Aspiration Date",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_936918.0",
+          "name": "Specify date"
+        },
+        {
+          "value_code": "OIFMA_MGB_936918.1",
+          "name": "Not specified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_622344",
+      "name": "Invasion Into Adjacent Structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_622344.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_622344.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_505912",
+      "name": "Cervical Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_505912.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_505912.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "9272",
+      "display": "thyroid lesion"
     }
   ]
 }

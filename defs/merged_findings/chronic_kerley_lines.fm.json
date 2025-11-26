@@ -1,17 +1,17 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_014427",
+  "name": "chronic kerley lines",
+  "description": "Persistent, fine linear lung opacities indicative of interstitial edema or fibrosis.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "chronic septal lines",
+    "persistent Kerley B lines"
   ],
   "tags": [
     "chest",
     "XR",
     "CT",
     "lung",
-    "airways",
+    "interstitial",
     "finding"
   ],
   "contributors": [
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_480719",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of chronic kerley lines",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_480719.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Chronic kerley lines is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_480719.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Chronic kerley lines is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_480719.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of chronic kerley lines cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_480719.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of chronic kerley lines is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_880200",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a chronic kerley lines has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_880200.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Chronic kerley lines is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_880200.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Chronic kerley lines is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_880200.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Chronic kerley lines is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_880200.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Chronic kerley lines seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_880200.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Chronic kerley lines has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_880200.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Chronic kerley lines has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_880200.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Chronic kerley lines is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_880200.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Chronic kerley lines is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +260,238 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
+      "oifma_id": "OIFMA_MGB_844534",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_844534.0",
+          "name": "Mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_844534.1",
+          "name": "Moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_844534.2",
+          "name": "Severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_575562",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_575562.0",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_575562.1",
+          "name": "Diffuse"
+        },
+        {
+          "value_code": "OIFMA_MGB_575562.2",
+          "name": "Bilateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_575562.3",
+          "name": "Patchy"
+        },
+        {
+          "value_code": "OIFMA_MGB_575562.4",
+          "name": "Throughout the lungs"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_290175",
       "name": "Location",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_290175.0",
+          "name": "Bilateral"
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_290175.1",
+          "name": "Unilateral"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_290175.2",
+          "name": "Periphery"
+        },
+        {
+          "value_code": "OIFMA_MGB_290175.3",
+          "name": "Central"
+        },
+        {
+          "value_code": "OIFMA_MGB_290175.4",
+          "name": "Specific lobes or segments"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_031942",
+      "name": "Pattern",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_031942.0",
+          "name": "Smooth"
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_031942.1",
+          "name": "Nodular"
+        },
+        {
+          "value_code": "OIFMA_MGB_031942.2",
+          "name": "Irregular"
+        },
+        {
+          "value_code": "OIFMA_MGB_031942.3",
+          "name": "Kerley lines"
+        },
+        {
+          "value_code": "OIFMA_MGB_031942.4",
+          "name": "Reticular patterns"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_699729",
+      "name": "Pleural effusion",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
-        },
-        {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
+          "value_code": "OIFMA_MGB_699729.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
+          "value_code": "OIFMA_MGB_699729.1",
           "name": "Absent"
         }
       ],
-      "required": false,
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_885880",
+      "name": "Ground-glass opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_885880.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_885880.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_312730",
+      "name": "Honeycombing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_312730.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_312730.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_667004",
+      "name": "Consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_667004.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_667004.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_999826",
+      "name": "Pulmonary edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_999826.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_999826.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_550651",
+      "name": "Lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_550651.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_550651.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_358104",
+      "name": "Pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_358104.0",
+          "name": "Indicated by other findings"
+        },
+        {
+          "value_code": "OIFMA_MGB_358104.1",
+          "name": "Not indicated"
+        }
+      ],
+      "required": true,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "14427",
+      "display": "chronic Kerley lines"
     }
   ]
 }

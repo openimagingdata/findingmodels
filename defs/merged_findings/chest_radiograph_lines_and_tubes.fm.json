@@ -1,0 +1,289 @@
+{
+  "oifm_id": "OIFM_CDE_000237",
+  "name": "Chest Radiograph Lines and Tubes",
+  "description": "Chest Radiograph Lines and Tubes",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_552243",
+      "name": "Change from prior",
+      "description": "Any change in the PICC placement from the prior study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_552243.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_552243.1",
+          "name": "Unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_552243.2",
+          "name": "Retracted"
+        },
+        {
+          "value_code": "OIFMA_MGB_552243.3",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_MGB_552243.4",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_367460",
+      "name": "Side Finding",
+      "description": "The side of the body where the PICC is inserted",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_367460.0",
+          "name": "Left upper extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_367460.1",
+          "name": "Right upper extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_367460.2",
+          "name": "Left lower extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_367460.3",
+          "name": "Right lower extremity"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_384417",
+      "name": "Distal tip location",
+      "description": "The location of the distal tip of the PICC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_384417.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.2",
+          "name": "SVC"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_384417.6",
+          "name": "Internal jugular vein"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_158284",
+      "name": "Appropriate location",
+      "description": "Whether the location of the PICC is appropriate",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_158284.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_158284.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001530",
+      "name": "Endotracheal tube",
+      "description": "Presence and position of endotracheal tube on XRAY",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001530.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001530.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001531",
+      "name": "Central venous catheter",
+      "description": "Presence and position of central venous catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001531.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001531.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001532",
+      "name": "Pulmonary artery catheter",
+      "description": "Presence and position of pulmonary artery catheter",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001532.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001532.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001533",
+      "name": "Nasogastric tube",
+      "description": "Presence and position of nasogastric tube",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001533.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001533.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001534",
+      "name": "Airway stent",
+      "description": "Presence and position of airway stent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001534.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.1",
+          "name": "adequately positioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.2",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.3",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001534.4",
+          "name": "suboptimally positioned"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES237",
+      "display": "chest radiograph lines and tubes"
+    }
+  ]
+}

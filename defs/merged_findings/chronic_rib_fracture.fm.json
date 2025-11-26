@@ -1,0 +1,313 @@
+{
+  "oifm_id": "OIFM_CDE_000261",
+  "name": "Chronic Rib Fracture",
+  "description": "Chronic Rib Fracture",
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001684",
+      "name": "Side",
+      "description": "Rib fracture laterality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001684.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_CDE_001684.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_CDE_001684.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_903625",
+      "name": "Status",
+      "description": "Status of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_903625.0",
+          "name": "Subacute",
+          "description": "Rib fracture in the subacute stage"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.1",
+          "name": "Healing",
+          "description": "Rib fracture in the healing stage"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.2",
+          "name": "Remote",
+          "description": "Remote rib fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.3",
+          "name": "Healed",
+          "description": "Healed rib fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.4",
+          "name": "Chronic",
+          "description": "Chronic rib fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.5",
+          "name": "Old",
+          "description": "Old rib fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_903625.6",
+          "name": "Old healed",
+          "description": "Old healed rib fracture"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_180200",
+      "name": "Multiplicity",
+      "description": "Multiplicity of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_180200.0",
+          "name": "Single",
+          "description": "A single rib fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_180200.1",
+          "name": "Multiple",
+          "description": "Multiple rib fractures"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_819406",
+      "name": "Level",
+      "description": "Level of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_819406.0",
+          "name": "First",
+          "description": "Rib fracture at the first level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.1",
+          "name": "Second",
+          "description": "Rib fracture at the second level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.2",
+          "name": "Third",
+          "description": "Rib fracture at the third level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.3",
+          "name": "Fourth",
+          "description": "Rib fracture at the fourth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.4",
+          "name": "Fifth",
+          "description": "Rib fracture at the fifth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.5",
+          "name": "Sixth",
+          "description": "Rib fracture at the sixth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.6",
+          "name": "Seventh",
+          "description": "Rib fracture at the seventh level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.7",
+          "name": "Eighth",
+          "description": "Rib fracture at the eighth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.8",
+          "name": "Ninth",
+          "description": "Rib fracture at the ninth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.9",
+          "name": "Tenth",
+          "description": "Rib fracture at the tenth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.10",
+          "name": "Eleventh",
+          "description": "Rib fracture at the eleventh level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.11",
+          "name": "Twelfth",
+          "description": "Rib fracture at the twelfth level"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.12",
+          "name": "Upper",
+          "description": "Rib fracture in the upper region"
+        },
+        {
+          "value_code": "OIFMA_MGB_819406.13",
+          "name": "Lower",
+          "description": "Rib fracture in the lower region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_232969",
+      "name": "Location",
+      "description": "Location of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_232969.0",
+          "name": "Anterior",
+          "description": "Rib fracture located in the anterior region"
+        },
+        {
+          "value_code": "OIFMA_MGB_232969.1",
+          "name": "Posterior",
+          "description": "Rib fracture located in the posterior region"
+        },
+        {
+          "value_code": "OIFMA_MGB_232969.2",
+          "name": "Lateral",
+          "description": "Rib fracture located in the lateral region"
+        },
+        {
+          "value_code": "OIFMA_MGB_232969.3",
+          "name": "Anterolateral",
+          "description": "Rib fracture located in the anterolateral region"
+        },
+        {
+          "value_code": "OIFMA_MGB_232969.4",
+          "name": "Posterolateral",
+          "description": "Rib fracture located in the posterolateral region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001683",
+      "name": "Fracture",
+      "description": "Cortical breach of a rib with surrounding callus formation or union. ",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001683.0",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.1",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_CDE_001683.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001685",
+      "name": "Ribs",
+      "description": "Describe number(s) of rib(s) affected",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001685.0",
+          "name": "1"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.1",
+          "name": "2"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.2",
+          "name": "3"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.3",
+          "name": "4"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.4",
+          "name": "5"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.5",
+          "name": "6"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.6",
+          "name": "7"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.7",
+          "name": "8"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.8",
+          "name": "9"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.9",
+          "name": "10"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.10",
+          "name": "11"
+        },
+        {
+          "value_code": "OIFMA_CDE_001685.11",
+          "name": "12"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES261",
+      "display": "chronic rib fracture"
+    }
+  ]
+}

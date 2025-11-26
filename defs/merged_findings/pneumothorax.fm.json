@@ -1,17 +1,17 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_023339",
+  "name": "pneumothorax",
+  "description": "Presence of gas or air in the pleural space.",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "collapsed lung",
+    "air in pleural space"
   ],
   "tags": [
     "chest",
     "XR",
     "CT",
+    "pleura",
     "lung",
-    "airways",
     "finding"
   ],
   "contributors": [
@@ -29,15 +29,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_471330",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of pneumothorax",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_471330.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Pneumothorax is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_471330.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Pneumothorax is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_471330.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of pneumothorax cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_471330.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of pneumothorax is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_018079",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a pneumothorax has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_018079.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Pneumothorax is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_018079.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Pneumothorax is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_018079.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Pneumothorax is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +171,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_018079.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Pneumothorax seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_018079.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Pneumothorax has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +193,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_018079.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Pneumothorax has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +210,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_018079.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Pneumothorax is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +227,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_018079.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Pneumothorax is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +260,211 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
-      "name": "Location",
+      "oifma_id": "OIFMA_MGB_200612",
+      "name": "Size Finding",
+      "description": "Size of pneumothorax.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_200612.0",
+          "name": "Small (<20% lung volume)"
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_200612.1",
+          "name": "Medium (20-50% lung volume)"
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_200612.2",
+          "name": "Large (>50% lung volume)"
+        },
+        {
+          "value_code": "OIFMA_MGB_200612.3",
+          "name": "Tension"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_785825",
+      "name": "Location",
+      "description": "Location of pneumothorax.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
+          "value_code": "OIFMA_MGB_785825.0",
           "name": "Right"
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
+          "value_code": "OIFMA_MGB_785825.1",
           "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_785825.2",
+          "name": "Bilateral"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_266861",
+      "name": "Distribution",
+      "description": "Distribution of pneumothorax.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_266861.0",
+          "name": "Apical"
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
+          "value_code": "OIFMA_MGB_266861.1",
+          "name": "Basilar"
+        },
+        {
+          "value_code": "OIFMA_MGB_266861.2",
+          "name": "Diffuse"
+        },
+        {
+          "value_code": "OIFMA_MGB_266861.3",
+          "name": "Localized"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
+      "oifma_id": "OIFMA_MGB_377328",
+      "name": "Subcutaneous emphysema",
+      "description": "Presence of subcutaneous emphysema.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
-        },
-        {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
-        }
-      ],
-      "required": true,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_559150.0",
+          "value_code": "OIFMA_MGB_377328.0",
           "name": "Present"
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
+          "value_code": "OIFMA_MGB_377328.1",
           "name": "Absent"
         }
       ],
-      "required": false,
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_781366",
+      "name": "Rib fractures",
+      "description": "Presence of rib fractures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_781366.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_781366.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_697518",
+      "name": "Pleural effusion",
+      "description": "Presence of pleural effusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_697518.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_697518.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_143924",
+      "name": "Lung collapse",
+      "description": "Presence of lung collapse.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_143924.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_143924.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_116722",
+      "name": "Pleural adhesions",
+      "description": "Presence of pleural adhesions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_116722.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_116722.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_166960",
+      "name": "Mediastinal shift",
+      "description": "Presence of mediastinal shift.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_166960.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_166960.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_287330",
+      "name": "Herniation",
+      "description": "Presence of herniation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_287330.0",
+          "name": "Present"
+        },
+        {
+          "value_code": "OIFMA_MGB_287330.1",
+          "name": "Absent"
+        }
+      ],
+      "required": true,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "23339",
+      "display": "pneumothorax"
     }
   ]
 }

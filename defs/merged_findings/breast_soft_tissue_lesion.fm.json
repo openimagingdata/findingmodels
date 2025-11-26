@@ -1,0 +1,401 @@
+{
+  "oifm_id": "OIFM_MSFT_255181",
+  "name": "breast soft tissue lesion",
+  "description": "A breast soft tissue lesion refers to any abnormal growth or mass within the soft tissue of the breast, which may include various entities such as cysts, fibromas, or malignant tumors, typically identified through imaging modalities like mammography or ultrasound.",
+  "synonyms": [
+    "Breast Mass",
+    "Mammary Soft Tissue Lesion"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_113477",
+      "name": "presence",
+      "description": "Presence or absence of breast soft tissue lesion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_113477.0",
+          "name": "absent",
+          "description": "Breast soft tissue lesion is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.1",
+          "name": "present",
+          "description": "Breast soft tissue lesion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.2",
+          "name": "indeterminate",
+          "description": "Presence of breast soft tissue lesion cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MSFT_113477.3",
+          "name": "unknown",
+          "description": "Presence of breast soft tissue lesion is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_948086",
+      "name": "Status",
+      "description": "Status of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_948086.0",
+          "name": "New",
+          "description": "A newly identified breast mass."
+        },
+        {
+          "value_code": "OIFMA_MGB_948086.1",
+          "name": "Unchanged",
+          "description": "A breast mass that has not changed in size or appearance."
+        },
+        {
+          "value_code": "OIFMA_MGB_948086.2",
+          "name": "Enlarging",
+          "description": "A breast mass that is increasing in size or appearance."
+        },
+        {
+          "value_code": "OIFMA_MGB_948086.3",
+          "name": "Decreased",
+          "description": "A breast mass that is decreasing in size or appearance."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_299365",
+      "name": "Quadrant",
+      "description": "Quadrant of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_299365.0",
+          "name": "Upper outer",
+          "description": "The breast mass is located in the upper outer quadrant."
+        },
+        {
+          "value_code": "OIFMA_MGB_299365.1",
+          "name": "Upper inner",
+          "description": "The breast mass is located in the upper inner quadrant."
+        },
+        {
+          "value_code": "OIFMA_MGB_299365.2",
+          "name": "Lower outer",
+          "description": "The breast mass is located in the lower outer quadrant."
+        },
+        {
+          "value_code": "OIFMA_MGB_299365.3",
+          "name": "Lower inner",
+          "description": "The breast mass is located in the lower inner quadrant."
+        },
+        {
+          "value_code": "OIFMA_MGB_299365.4",
+          "name": "Central",
+          "description": "The breast mass is located in the central quadrant."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_223853",
+      "name": "Size Finding",
+      "description": "Size of the breast mass.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_020277",
+      "name": "Shape",
+      "description": "Shape of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_020277.0",
+          "name": "Round",
+          "description": "The breast mass has a round shape."
+        },
+        {
+          "value_code": "OIFMA_MGB_020277.1",
+          "name": "Oval",
+          "description": "The breast mass has an oval shape."
+        },
+        {
+          "value_code": "OIFMA_MGB_020277.2",
+          "name": "Irregular",
+          "description": "The breast mass has an irregular shape."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_282155",
+      "name": "Margin",
+      "description": "Margin of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_282155.0",
+          "name": "Circumscribed",
+          "description": "The margin of the breast mass is circumscribed."
+        },
+        {
+          "value_code": "OIFMA_MGB_282155.1",
+          "name": "Indistinct",
+          "description": "The margin of the breast mass is indistinct."
+        },
+        {
+          "value_code": "OIFMA_MGB_282155.2",
+          "name": "Spiculated",
+          "description": "The margin of the breast mass is spiculated."
+        },
+        {
+          "value_code": "OIFMA_MGB_282155.3",
+          "name": "Microlobulated",
+          "description": "The margin of the breast mass is microlobulated."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_971570",
+      "name": "Density",
+      "description": "Density of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_971570.0",
+          "name": "Low",
+          "description": "The density of the breast mass is low."
+        },
+        {
+          "value_code": "OIFMA_MGB_971570.1",
+          "name": "Iso",
+          "description": "The density of the breast mass is iso."
+        },
+        {
+          "value_code": "OIFMA_MGB_971570.2",
+          "name": "High",
+          "description": "The density of the breast mass is high."
+        },
+        {
+          "value_code": "OIFMA_MGB_971570.3",
+          "name": "Fat-containing",
+          "description": "The density of the breast mass is fat-containing."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_904342",
+      "name": "Enhancement",
+      "description": "Enhancement of the breast mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_904342.0",
+          "name": "Present",
+          "description": "Enhancement is present in the breast mass."
+        },
+        {
+          "value_code": "OIFMA_MGB_904342.1",
+          "name": "Absent",
+          "description": "Enhancement is absent in the breast mass."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_821347",
+      "name": "Breast calcifications",
+      "description": "Presence of breast calcifications.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_821347.0",
+          "name": "Present",
+          "description": "Breast calcifications are present."
+        },
+        {
+          "value_code": "OIFMA_MGB_821347.1",
+          "name": "Absent",
+          "description": "No breast calcifications are present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_360076",
+      "name": "Skin thickening",
+      "description": "Presence of skin thickening.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_360076.0",
+          "name": "Present",
+          "description": "Skin thickening is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_360076.1",
+          "name": "Absent",
+          "description": "No skin thickening is present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_886201",
+      "name": "Nipple retraction",
+      "description": "Presence of nipple retraction.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_886201.0",
+          "name": "Present",
+          "description": "Nipple retraction is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_886201.1",
+          "name": "Absent",
+          "description": "No nipple retraction is present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_510602",
+      "name": "Axillary lymphadenopathy",
+      "description": "Presence of axillary lymphadenopathy.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_510602.0",
+          "name": "Present",
+          "description": "Axillary lymphadenopathy is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_510602.1",
+          "name": "Absent",
+          "description": "No axillary lymphadenopathy is present."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_742224",
+      "name": "location",
+      "description": "Specifies the location of the breast soft tissue lesion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MSFT_742224.0",
+          "name": "right breast",
+          "description": "Lesion located in the right breast."
+        },
+        {
+          "value_code": "OIFMA_MSFT_742224.1",
+          "name": "left breast",
+          "description": "Lesion located in the left breast."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

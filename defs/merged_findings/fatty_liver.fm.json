@@ -1,18 +1,20 @@
 {
-  "oifm_id": "OIFM_GMTS_015330",
-  "name": "mucoid impaction",
-  "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+  "oifm_id": "OIFM_GMTS_022461",
+  "name": "fatty liver",
+  "description": "Accumulation of excess fat in liver cells",
   "synonyms": [
-    "bronchial mucoid impaction",
-    "mucoid impaction in a bronchus"
+    "fatty infiltration of liver",
+    "fatty change in liver",
+    "hepatic steatosis"
   ],
   "tags": [
-    "chest",
-    "XR",
+    "ultrasound",
     "CT",
-    "lung",
-    "airways",
-    "finding"
+    "US",
+    "MR",
+    "liver",
+    "metabolic",
+    "diagnosis"
   ],
   "contributors": [
     {
@@ -29,15 +31,15 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_GMTS_935393",
+      "oifma_id": "OIFMA_GMTS_652230",
       "name": "presence",
-      "description": "Presence or absence of mucoid impaction",
+      "description": "Presence or absence of fatty liver",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_935393.0",
+          "value_code": "OIFMA_GMTS_652230.0",
           "name": "absent",
-          "description": "Mucoid impaction is absent",
+          "description": "Fatty liver is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -52,9 +54,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.1",
+          "value_code": "OIFMA_GMTS_652230.1",
           "name": "present",
-          "description": "Mucoid impaction is present",
+          "description": "Fatty liver is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -69,9 +71,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.2",
+          "value_code": "OIFMA_GMTS_652230.2",
           "name": "indeterminate",
-          "description": "Presence of mucoid impaction cannot be determined",
+          "description": "Presence of fatty liver cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -86,9 +88,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_935393.3",
+          "value_code": "OIFMA_GMTS_652230.3",
           "name": "unknown",
-          "description": "Presence of mucoid impaction is unknown",
+          "description": "Presence of fatty liver is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -114,15 +116,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_GMTS_495589",
+      "oifma_id": "OIFMA_GMTS_446735",
       "name": "change from prior",
-      "description": "Whether and how a mucoid impaction has changed over time",
+      "description": "Whether and how a fatty liver has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_GMTS_495589.0",
+          "value_code": "OIFMA_GMTS_446735.0",
           "name": "unchanged",
-          "description": "Mucoid impaction is unchanged",
+          "description": "Fatty liver is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -137,9 +139,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.1",
+          "value_code": "OIFMA_GMTS_446735.1",
           "name": "stable",
-          "description": "Mucoid impaction is stable",
+          "description": "Fatty liver is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -154,9 +156,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.2",
+          "value_code": "OIFMA_GMTS_446735.2",
           "name": "new",
-          "description": "Mucoid impaction is new",
+          "description": "Fatty liver is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -171,14 +173,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.3",
+          "value_code": "OIFMA_GMTS_446735.3",
           "name": "resolved",
-          "description": "Mucoid impaction seen on a prior exam has resolved"
+          "description": "Fatty liver seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_GMTS_495589.4",
+          "value_code": "OIFMA_GMTS_446735.4",
           "name": "increased",
-          "description": "Mucoid impaction has increased",
+          "description": "Fatty liver has increased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -193,9 +195,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.5",
+          "value_code": "OIFMA_GMTS_446735.5",
           "name": "decreased",
-          "description": "Mucoid impaction has decreased",
+          "description": "Fatty liver has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -210,9 +212,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.6",
+          "value_code": "OIFMA_GMTS_446735.6",
           "name": "larger",
-          "description": "Mucoid impaction is larger",
+          "description": "Fatty liver is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -227,9 +229,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_495589.7",
+          "value_code": "OIFMA_GMTS_446735.7",
           "name": "smaller",
-          "description": "Mucoid impaction is smaller",
+          "description": "Fatty liver is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -260,133 +262,154 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_592046",
-      "name": "Location",
+      "oifma_id": "OIFMA_MGB_134529",
+      "name": "Severity",
+      "description": "The severity of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_592046.0",
-          "name": "Main bronchus"
+          "value_code": "OIFMA_MGB_134529.0",
+          "name": "Mild",
+          "description": "Mild hepatic steatosis."
         },
         {
-          "value_code": "OIFMA_MGB_592046.1",
-          "name": "Lobar bronchus"
+          "value_code": "OIFMA_MGB_134529.1",
+          "name": "Moderate",
+          "description": "Moderate hepatic steatosis."
         },
         {
-          "value_code": "OIFMA_MGB_592046.2",
-          "name": "Segmental bronchus"
+          "value_code": "OIFMA_MGB_134529.2",
+          "name": "Severe",
+          "description": "Severe hepatic steatosis."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_734664",
-      "name": "Side Finding",
+      "oifma_id": "OIFMA_MGB_545167",
+      "name": "Density (noncontrast exam)",
+      "description": "The density of hepatic steatosis on a noncontrast exam (in Hounsfield Units).",
+      "type": "numeric",
+      "unit": "HU",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_964882",
+      "name": "Distribution",
+      "description": "The distribution of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_734664.0",
-          "name": "Right"
+          "value_code": "OIFMA_MGB_964882.0",
+          "name": "Diffuse",
+          "description": "Hepatic steatosis is distributed diffusely."
         },
         {
-          "value_code": "OIFMA_MGB_734664.1",
-          "name": "Left"
+          "value_code": "OIFMA_MGB_964882.1",
+          "name": "Focal",
+          "description": "Hepatic steatosis is distributed focally."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_297247",
-      "name": "Device Type",
+      "oifma_id": "OIFMA_MGB_417528",
+      "name": "Pattern",
+      "description": "The pattern of hepatic steatosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_297247.0",
-          "name": "Bioresorbable"
+          "value_code": "OIFMA_MGB_417528.0",
+          "name": "Homogeneous",
+          "description": "Hepatic steatosis has a homogeneous pattern."
         },
         {
-          "value_code": "OIFMA_MGB_297247.1",
-          "name": "Non-bioresorbable"
+          "value_code": "OIFMA_MGB_417528.1",
+          "name": "Heterogeneous",
+          "description": "Hepatic steatosis has a heterogeneous pattern."
+        },
+        {
+          "value_code": "OIFMA_MGB_417528.2",
+          "name": "Patchy",
+          "description": "Hepatic steatosis has a patchy pattern."
+        },
+        {
+          "value_code": "OIFMA_MGB_417528.3",
+          "name": "Geographic",
+          "description": "Hepatic steatosis has a geographic pattern."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_857724",
-      "name": "Deployment",
+      "oifma_id": "OIFMA_MGB_864414",
+      "name": "Falciform ligament",
+      "description": "The presence of focal fat infiltration or focal fat sparing in the falciform ligament.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_857724.0",
-          "name": "Complete"
+          "value_code": "OIFMA_MGB_864414.0",
+          "name": "Focal fat infiltration",
+          "description": "Focal fat infiltration is present in the falciform ligament."
         },
         {
-          "value_code": "OIFMA_MGB_857724.1",
-          "name": "Partial"
+          "value_code": "OIFMA_MGB_864414.1",
+          "name": "Focal fat sparing",
+          "description": "Focal fat sparing is present in the falciform ligament."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_481167",
-      "name": "Complication",
+      "oifma_id": "OIFMA_MGB_783153",
+      "name": "Portal Vein Thrombosis",
+      "description": "The presence or absence of portal vein thrombosis.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_481167.0",
-          "name": "None"
+          "value_code": "OIFMA_MGB_783153.0",
+          "name": "Present",
+          "description": "Portal vein thrombosis is present."
         },
         {
-          "value_code": "OIFMA_MGB_481167.1",
-          "name": "Mucosal erosion"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.2",
-          "name": "Perforation"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.3",
-          "name": "Migration"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.4",
-          "name": "Stenosis"
-        },
-        {
-          "value_code": "OIFMA_MGB_481167.5",
-          "name": "Occlusion"
+          "value_code": "OIFMA_MGB_783153.1",
+          "name": "Absent",
+          "description": "Portal vein thrombosis is absent."
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_559150",
-      "name": "Airspace consolidation",
+      "oifma_id": "OIFMA_MGB_587185",
+      "name": "Biliary Dilatation",
+      "description": "The presence or absence of biliary dilatation.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_559150.0",
-          "name": "Present"
+          "value_code": "OIFMA_MGB_587185.0",
+          "name": "Present",
+          "description": "Biliary dilatation is present."
         },
         {
-          "value_code": "OIFMA_MGB_559150.1",
-          "name": "Absent"
+          "value_code": "OIFMA_MGB_587185.1",
+          "name": "Absent",
+          "description": "Biliary dilatation is absent."
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1
     }
   ],
   "index_codes": [
     {
       "system": "GAMUTS",
-      "code": "15330",
-      "display": "mucoid impaction"
+      "code": "22461",
+      "display": "fatty liver"
     }
   ]
 }
