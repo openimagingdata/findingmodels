@@ -1,0 +1,254 @@
+{
+  "oifm_id": "OIFM_OIDM_962320",
+  "name": "soft tissue swelling",
+  "description": "Localized or diffuse soft tissue swelling is a non-specific radiologic finding that may reflect edema, inflammation, contusion, or hemorrhage. Correlate with clinical history and examination for possible underlying fracture or other soft-tissue injury.",
+  "synonyms": [
+    "soft tissue swelling",
+    "soft-tissue swelling",
+    "soft tissue edema",
+    "edematous soft tissues",
+    "subcutaneous edema"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_124658",
+      "name": "presence",
+      "description": "Presence or absence of soft tissue swelling",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_124658.0",
+          "name": "absent",
+          "description": "Soft tissue swelling is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_124658.1",
+          "name": "present",
+          "description": "Soft tissue swelling is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_124658.2",
+          "name": "indeterminate",
+          "description": "Presence of soft tissue swelling cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_124658.3",
+          "name": "unknown",
+          "description": "Presence of soft tissue swelling is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_460838",
+      "name": "change from prior",
+      "description": "Whether and how a soft tissue swelling has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_460838.0",
+          "name": "unchanged",
+          "description": "Soft tissue swelling is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.1",
+          "name": "stable",
+          "description": "Soft tissue swelling is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.2",
+          "name": "new",
+          "description": "Soft tissue swelling is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.3",
+          "name": "resolved",
+          "description": "Soft tissue swelling seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.4",
+          "name": "increased",
+          "description": "Soft tissue swelling has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.5",
+          "name": "decreased",
+          "description": "Soft tissue swelling has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.6",
+          "name": "larger",
+          "description": "Soft tissue swelling is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_460838.7",
+          "name": "smaller",
+          "description": "Soft tissue swelling is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "NKBhatia",
+      "email": "NKBhatia@users.noreply.github.com",
+      "name": "Neil Bhatia, MD",
+      "organization_code": "OIDM",
+      "url": "https://github.com/NKBhatia"
+    }
+  ]
+}
