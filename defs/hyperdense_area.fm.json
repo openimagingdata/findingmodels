@@ -15,7 +15,6 @@
     "imaging appearance",
     "radiology finding"
   ],
-  "anatomic_locations": null,
   "contributors": [
     {
       "github_username": "NKBhatia",
@@ -171,8 +170,7 @@
         {
           "value_code": "OIFMA_OIDM_329062.3",
           "name": "resolved",
-          "description": "Previously seen hyperdensity is no longer present.",
-          "index_codes": null
+          "description": "Previously seen hyperdensity is no longer present."
         },
         {
           "value_code": "OIFMA_OIDM_329062.4",
@@ -266,8 +264,7 @@
       "minimum": -1000,
       "maximum": 5000,
       "unit": "HU",
-      "required": false,
-      "index_codes": null
+      "required": false
     },
     {
       "oifma_id": "OIFMA_OIDM_875194",
@@ -277,8 +274,7 @@
       "minimum": 0.1,
       "maximum": 50,
       "unit": "cm",
-      "required": false,
-      "index_codes": null
+      "required": false
     },
     {
       "oifma_id": "OIFMA_OIDM_224599",
@@ -289,44 +285,37 @@
         {
           "value_code": "OIFMA_OIDM_224599.0",
           "name": "calcification",
-          "description": "Dystrophic or metastatic calcification.",
-          "index_codes": null
+          "description": "Dystrophic or metastatic calcification."
         },
         {
           "value_code": "OIFMA_OIDM_224599.1",
           "name": "acute hemorrhage",
-          "description": "Blood products producing high attenuation consistent with acute/early hemorrhage.",
-          "index_codes": null
+          "description": "Blood products producing high attenuation consistent with acute/early hemorrhage."
         },
         {
           "value_code": "OIFMA_OIDM_224599.2",
           "name": "iodinated contrast",
-          "description": "Residual or intravascular/extra-vascular iodinated contrast material.",
-          "index_codes": null
+          "description": "Residual or intravascular/extra-vascular iodinated contrast material."
         },
         {
           "value_code": "OIFMA_OIDM_224599.3",
           "name": "surgical material",
-          "description": "Staples, packing, or other expected postoperative material.",
-          "index_codes": null
+          "description": "Staples, packing, or other expected postoperative material."
         },
         {
           "value_code": "OIFMA_OIDM_224599.4",
           "name": "metallic foreign body",
-          "description": "Metal object or implant causing very high attenuation and possible streak artifact.",
-          "index_codes": null
+          "description": "Metal object or implant causing very high attenuation and possible streak artifact."
         },
         {
           "value_code": "OIFMA_OIDM_224599.5",
           "name": "beam hardening artifact",
-          "description": "Apparent hyperdensity due to CT artifact rather than true high-density material.",
-          "index_codes": null
+          "description": "Apparent hyperdensity due to CT artifact rather than true high-density material."
         },
         {
           "value_code": "OIFMA_OIDM_224599.6",
           "name": "other",
-          "description": "Other or unspecified high-density material.",
-          "index_codes": null
+          "description": "Other or unspecified high-density material."
         },
         {
           "value_code": "OIFMA_OIDM_224599.7",
@@ -347,8 +336,7 @@
         }
       ],
       "required": false,
-      "max_selected": 1,
-      "index_codes": null
+      "max_selected": 1
     },
     {
       "oifma_id": "OIFMA_OIDM_426956",
@@ -359,26 +347,21 @@
         {
           "value_code": "OIFMA_OIDM_426956.0",
           "name": "focal",
-          "description": "Single localized area of hyperdensity.",
-          "index_codes": null
+          "description": "Single localized area of hyperdensity."
         },
         {
           "value_code": "OIFMA_OIDM_426956.1",
           "name": "multifocal",
-          "description": "Multiple discrete areas of hyperdensity.",
-          "index_codes": null
+          "description": "Multiple discrete areas of hyperdensity."
         },
         {
           "value_code": "OIFMA_OIDM_426956.2",
           "name": "diffuse",
-          "description": "Widespread or confluent hyperdensity.",
-          "index_codes": null
+          "description": "Widespread or confluent hyperdensity."
         }
       ],
       "required": false,
-      "max_selected": 1,
-      "index_codes": null
+      "max_selected": 1
     }
-  ],
-  "index_codes": null
+  ]
 }

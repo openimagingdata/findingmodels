@@ -13,7 +13,6 @@
     "stenosis",
     "hemodynamics"
   ],
-  "anatomic_locations": null,
   "contributors": [
     {
       "github_username": "NKBhatia",
@@ -169,8 +168,7 @@
         {
           "value_code": "OIFMA_OIDM_560388.3",
           "name": "resolved",
-          "description": "Previously seen stenosis is no longer present.",
-          "index_codes": null
+          "description": "Previously seen stenosis is no longer present."
         },
         {
           "value_code": "OIFMA_OIDM_560388.4",
@@ -264,8 +262,7 @@
       "minimum": 0,
       "maximum": 100,
       "unit": "percent",
-      "required": false,
-      "index_codes": null
+      "required": false
     },
     {
       "oifma_id": "OIFMA_OIDM_750180",
@@ -344,20 +341,17 @@
         {
           "value_code": "OIFMA_OIDM_891579.0",
           "name": "not hemodynamically significant",
-          "description": "Unlikely to be flow-limiting based on imaging or flow data.",
-          "index_codes": null
+          "description": "Unlikely to be flow-limiting based on imaging or flow data."
         },
         {
           "value_code": "OIFMA_OIDM_891579.1",
           "name": "hemodynamically significant",
-          "description": "Likely flow-limiting or associated with downstream ischemia.",
-          "index_codes": null
+          "description": "Likely flow-limiting or associated with downstream ischemia."
         },
         {
           "value_code": "OIFMA_OIDM_891579.2",
           "name": "possibly significant",
-          "description": "Features suggest possible hemodynamic significance but not definitive.",
-          "index_codes": null
+          "description": "Features suggest possible hemodynamic significance but not definitive."
         },
         {
           "value_code": "OIFMA_OIDM_891579.3",
@@ -395,8 +389,7 @@
         }
       ],
       "required": false,
-      "max_selected": 1,
-      "index_codes": null
+      "max_selected": 1
     },
     {
       "oifma_id": "OIFMA_OIDM_511302",
@@ -406,122 +399,83 @@
       "values": [
         {
           "value_code": "OIFMA_OIDM_511302.0",
-          "name": "internal carotid artery",
-          "description": null,
-          "index_codes": null
+          "name": "internal carotid artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.1",
-          "name": "common carotid artery",
-          "description": null,
-          "index_codes": null
+          "name": "common carotid artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.2",
-          "name": "external carotid artery",
-          "description": null,
-          "index_codes": null
+          "name": "external carotid artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.3",
-          "name": "vertebral artery",
-          "description": null,
-          "index_codes": null
+          "name": "vertebral artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.4",
-          "name": "subclavian artery",
-          "description": null,
-          "index_codes": null
+          "name": "subclavian artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.5",
-          "name": "axillary artery",
-          "description": null,
-          "index_codes": null
+          "name": "axillary artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.6",
-          "name": "brachial artery",
-          "description": null,
-          "index_codes": null
+          "name": "brachial artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.7",
-          "name": "renal artery",
-          "description": null,
-          "index_codes": null
+          "name": "renal artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.8",
-          "name": "superior mesenteric artery",
-          "description": null,
-          "index_codes": null
+          "name": "superior mesenteric artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.9",
-          "name": "celiac artery",
-          "description": null,
-          "index_codes": null
+          "name": "celiac artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.10",
-          "name": "coronary artery",
-          "description": null,
-          "index_codes": null
+          "name": "coronary artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.11",
-          "name": "abdominal aorta",
-          "description": null,
-          "index_codes": null
+          "name": "abdominal aorta"
         },
         {
           "value_code": "OIFMA_OIDM_511302.12",
-          "name": "thoracic aorta",
-          "description": null,
-          "index_codes": null
+          "name": "thoracic aorta"
         },
         {
           "value_code": "OIFMA_OIDM_511302.13",
-          "name": "iliac artery",
-          "description": null,
-          "index_codes": null
+          "name": "iliac artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.14",
-          "name": "femoral artery",
-          "description": null,
-          "index_codes": null
+          "name": "femoral artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.15",
-          "name": "popliteal artery",
-          "description": null,
-          "index_codes": null
+          "name": "popliteal artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.16",
-          "name": "tibial artery",
-          "description": null,
-          "index_codes": null
+          "name": "tibial artery"
         },
         {
           "value_code": "OIFMA_OIDM_511302.17",
-          "name": "peripheral artery unspecified",
-          "description": null,
-          "index_codes": null
+          "name": "peripheral artery unspecified"
         },
         {
           "value_code": "OIFMA_OIDM_511302.18",
-          "name": "other",
-          "description": null,
-          "index_codes": null
+          "name": "other"
         },
         {
           "value_code": "OIFMA_OIDM_511302.19",
           "name": "unknown",
-          "description": null,
           "index_codes": [
             {
               "system": "RADLEX",
@@ -559,8 +513,7 @@
       "minimum": 0,
       "maximum": 200,
       "unit": "mm",
-      "required": false,
-      "index_codes": null
+      "required": false
     },
     {
       "oifma_id": "OIFMA_OIDM_560221",
@@ -570,26 +523,19 @@
       "values": [
         {
           "value_code": "OIFMA_OIDM_560221.0",
-          "name": "left",
-          "description": null,
-          "index_codes": null
+          "name": "left"
         },
         {
           "value_code": "OIFMA_OIDM_560221.1",
-          "name": "right",
-          "description": null,
-          "index_codes": null
+          "name": "right"
         },
         {
           "value_code": "OIFMA_OIDM_560221.2",
-          "name": "bilateral",
-          "description": null,
-          "index_codes": null
+          "name": "bilateral"
         },
         {
           "value_code": "OIFMA_OIDM_560221.3",
           "name": "unknown",
-          "description": null,
           "index_codes": [
             {
               "system": "RADLEX",
@@ -605,9 +551,7 @@
         }
       ],
       "required": false,
-      "max_selected": 1,
-      "index_codes": null
+      "max_selected": 1
     }
-  ],
-  "index_codes": null
+  ]
 }
