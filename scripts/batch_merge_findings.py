@@ -27,11 +27,16 @@ def get_finding_name_from_file(file_path: Path) -> str:
 
 
 def is_already_merged(finding_name: str, merged_dir: Path) -> bool:
-    """Check if finding is already in merged_findings directory."""
+    """Check if finding is already in merged_findings directory.
+    
+    Checks both:
+    1. If a file exists with matching finding name
+    2. If a merge report exists for this finding (in case it was merged into a different finding)
+    """
     if not merged_dir.exists():
         return False
     
-    # Look for files with matching finding name
+    # Check 1: Look for files with matching finding name
     for file_path in merged_dir.glob("*.fm.json"):
         try:
             merged_name = get_finding_name_from_file(file_path)
@@ -39,6 +44,18 @@ def is_already_merged(finding_name: str, merged_dir: Path) -> bool:
                 return True
         except Exception:
             continue
+    
+    # Check 2: Look for existing merge reports for this finding
+    # Merge reports are named: merge_report_{safe_name}_{timestamp}.md
+    # where safe_name is finding_name.lower().replace(' ', '_').replace('/', '_')
+    safe_name = finding_name.lower().replace(' ', '_').replace('/', '_')
+    report_dir = Path("merge_reports")
+    if report_dir.exists():
+        # Check if any merge report exists for this finding (ignore timestamp)
+        pattern = f"merge_report_{safe_name}_*.md"
+        existing_reports = list(report_dir.glob(pattern))
+        if existing_reports:
+            return True
     
     return False
 
