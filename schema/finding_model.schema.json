@@ -75,6 +75,23 @@
           ],
           "default": null,
           "title": "Index Codes"
+        },
+        "synonyms": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Other terms that might be used to describe this attribute in a radiology report",
+          "title": "Synonyms"
         }
       },
       "required": [
@@ -127,6 +144,23 @@
           ],
           "default": null,
           "title": "Index Codes"
+        },
+        "synonyms": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Other terms that might be used to describe this value in a radiology report",
+          "title": "Synonyms"
         }
       },
       "required": [
@@ -171,6 +205,70 @@
         "code"
       ],
       "title": "IndexCode",
+      "type": "object"
+    },
+    "Location": {
+      "description": "Anatomic location where a finding could occur, expressed as a subset of possible nodes in the anatomic location set",
+      "properties": {
+        "region": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Anatomic region (e.g., chest, abdomen, head)",
+          "title": "Region"
+        },
+        "structure_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Type of anatomic structure (e.g., organ, vessel, bone)",
+          "title": "Structure Type"
+        },
+        "specific_location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Specific anatomic location name (e.g., right upper lobe, left ventricle)",
+          "title": "Specific Location"
+        },
+        "index_codes": {
+          "anyOf": [
+            {
+              "default": null,
+              "description": "References to concepts in standard ontologies (e.g., SNOMED, RadLex) for anatomic locations",
+              "items": {
+                "$ref": "#/$defs/IndexCode"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Index Codes"
+        }
+      },
+      "title": "Location",
       "type": "object"
     },
     "NumericAttributeIded": {
@@ -278,6 +376,23 @@
           ],
           "default": null,
           "title": "Index Codes"
+        },
+        "synonyms": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Other terms that might be used to describe this attribute in a radiology report",
+          "title": "Synonyms"
         }
       },
       "required": [
@@ -496,6 +611,91 @@
       ],
       "default": null,
       "title": "Index Codes"
+    },
+    "locations": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Location"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Anatomic locations where this finding could occur, expressed as a subset of possible nodes in the anatomic location set",
+      "title": "Locations"
+    },
+    "modalities": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Imaging modalities that can show this finding (e.g., CT, MRI, X-ray, ultrasound)",
+      "title": "Modalities"
+    },
+    "life_stages": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Life stages where this finding is relevant (e.g., infant, child, adult, elderly)",
+      "title": "Life Stages"
+    },
+    "sex_phenotypes": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Sex phenotypes where this finding is relevant (e.g., male, female, both)",
+      "title": "Sex Phenotypes"
+    },
+    "examples": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Example cases or references for this finding (may be stored in separate repository)",
+      "title": "Examples"
     }
   },
   "required": [

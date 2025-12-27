@@ -14,9 +14,6 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple, List, Any
 from datetime import datetime
 
-# Add project root to path
-sys.path.append(str(Path(__file__).parent.parent))
-
 from findingmodel.tools import find_similar_models, add_ids_to_model
 from findingmodel.index import Index
 from findingmodel import FindingModelFull, FindingModelBase
@@ -27,7 +24,7 @@ from agents.merge_agents import (
     create_attribute_relationship_agent,
     AttributeRelationship
 )
-from merge_findings_helpers import (
+from scripts.merge_findings_helpers import (
     extract_value_names,
     extract_attr_name,
     create_presence_element,
