@@ -11,7 +11,7 @@ import asyncio
 import logging
 import os
 from pathlib import Path
-from typing import Tuple
+from typing import Tuple, Optional, Dict, List
 
 from dotenv import load_dotenv
 from findingmodel import FindingModelFull
@@ -40,7 +40,7 @@ async def process_single_file(
     file_path: Path,
     index: Index,
     output_dir: Path
-) -> Tuple[bool, str]:
+) -> Tuple[bool, str, Optional[Dict], Optional[Dict]]:
     """Process a single definition file.
     
     Args:
@@ -75,14 +75,15 @@ async def process_single_file(
             logger.info("No match found, creating new model")
             final_model = incoming_model
         
-        # Ensure required attributes
-        final_model = await ensure_required_attributes(final_model)
+        # Ensure required attributes (returns tuple: model, tracking_info)
+        final_model, tracking_info = await ensure_required_attributes(final_model)
+        finding_name = final_model.name  # Store finding name for tracking
         
         # Apply formatting guidelines
         final_model = await apply_formatting_guidelines(final_model)
         
-        # Extract sub-findings (returns list: [main_model, sub_finding_1, ...])
-        all_models = await extract_sub_findings(final_model)
+        # Extract sub-findings (returns tuple: (list of models, tracking_info))
+        all_models, sub_finding_tracking_info = await extract_sub_findings(final_model)
         
         # Save all models (main + any sub-findings)
         saved_count = 0
@@ -99,22 +100,245 @@ async def process_single_file(
         if saved_count > 1:
             logger.info(f"Extracted {saved_count - 1} sub-finding(s) from {filename}")
         
-        return True, f"Successfully processed {filename}" + (f" (extracted {saved_count - 1} sub-finding(s))" if saved_count > 1 else "")
+        return True, f"Successfully processed {filename}" + (f" (extracted {saved_count - 1} sub-finding(s))" if saved_count > 1 else ""), tracking_info, sub_finding_tracking_info
         
     except Exception as e:
         error_msg = f"Error processing {file_path.name}: {str(e)}"
         logger.error(error_msg)
         import traceback
         traceback.print_exc()
-        return False, error_msg
+        return False, error_msg, None, None
 
 
-async def process_hood_directory(input_dir: str, output_dir: str):
+def generate_attribute_report(
+    attribute_tracking: List[Tuple[str, str, Optional[Dict]]],
+    input_dir: str,
+    output_dir: str
+) -> Path:
+    """Generate a markdown report for attribute standardization.
+    
+    Args:
+        attribute_tracking: List of (filename, finding_name, tracking_info) tuples
+        input_dir: Input directory path
+        output_dir: Output directory path
+        
+    Returns:
+        Path to the generated report file
+    """
+    from datetime import datetime
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_path = Path(output_dir) / f"processing_report_{timestamp}.md"
+    
+    # Calculate statistics
+    total_files = len(attribute_tracking)
+    files_with_renamed = sum(1 for _, _, info in attribute_tracking 
+                             if info and (info.get('presence', {}).get('action') in ['renamed', 'classification_used'] or
+                                         info.get('change_from_prior', {}).get('action') in ['renamed', 'classification_used']))
+    files_with_added = sum(1 for _, _, info in attribute_tracking 
+                          if info and (info.get('presence', {}).get('action') == 'added' or
+                                      info.get('change_from_prior', {}).get('action') == 'added'))
+    
+    # Presence statistics
+    presence_exact = sum(1 for _, _, info in attribute_tracking 
+                        if info and info.get('presence', {}).get('action') == 'exact_match')
+    presence_renamed_heuristic = sum(1 for _, _, info in attribute_tracking 
+                                    if info and info.get('presence', {}).get('action') == 'renamed')
+    presence_renamed_classification = sum(1 for _, _, info in attribute_tracking 
+                                         if info and info.get('presence', {}).get('action') == 'classification_used')
+    presence_added = sum(1 for _, _, info in attribute_tracking 
+                        if info and info.get('presence', {}).get('action') == 'added')
+    
+    # Change from prior statistics
+    change_exact = sum(1 for _, _, info in attribute_tracking 
+                      if info and info.get('change_from_prior', {}).get('action') == 'exact_match')
+    change_renamed_heuristic = sum(1 for _, _, info in attribute_tracking 
+                                   if info and info.get('change_from_prior', {}).get('action') == 'renamed')
+    change_renamed_classification = sum(1 for _, _, info in attribute_tracking 
+                                       if info and info.get('change_from_prior', {}).get('action') == 'classification_used')
+    change_added = sum(1 for _, _, info in attribute_tracking 
+                      if info and info.get('change_from_prior', {}).get('action') == 'added')
+    
+    # Build markdown content
+    lines = [
+        "# Hood Definition Processing Report - Attribute Standardization",
+        "",
+        f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"**Input Directory:** {input_dir}",
+        f"**Output Directory:** {output_dir}",
+        "",
+        "## Summary Statistics",
+        "",
+        f"- **Total files processed:** {total_files}",
+        f"- **Files with renamed attributes:** {files_with_renamed}",
+        f"- **Files with added attributes:** {files_with_added}",
+        "",
+        "### Presence Attributes",
+        f"- **Exact match (kept as-is):** {presence_exact}",
+        f"- **Renamed (heuristic):** {presence_renamed_heuristic}",
+        f"- **Renamed (classification agent):** {presence_renamed_classification}",
+        f"- **Added (not found):** {presence_added}",
+        "",
+        "### Change from Prior Attributes",
+        f"- **Exact match (kept as-is):** {change_exact}",
+        f"- **Renamed (heuristic):** {change_renamed_heuristic}",
+        f"- **Renamed (classification agent):** {change_renamed_classification}",
+        f"- **Added (not found):** {change_added}",
+        "",
+        "## Per-Finding Details",
+        "",
+    ]
+    
+    # Add per-finding details
+    for filename, finding_name, tracking_info in sorted(attribute_tracking, key=lambda x: x[1].lower()):
+        if not tracking_info:
+            continue
+        
+        lines.append(f"### {finding_name} (`{filename}`)")
+        
+        # Presence info
+        presence_info = tracking_info.get('presence', {})
+        presence_action = presence_info.get('action', 'unknown')
+        presence_original = presence_info.get('original_name')
+        
+        if presence_action == 'exact_match':
+            lines.append(f"- **Presence:** exact match (kept as-is)")
+        elif presence_action in ['renamed', 'classification_used']:
+            action_label = 'renamed (heuristic)' if presence_action == 'renamed' else 'renamed (classification agent)'
+            lines.append(f"- **Presence:** {action_label} - Original: `{presence_original}`")
+        elif presence_action == 'added':
+            lines.append(f"- **Presence:** added (not found)")
+        else:
+            lines.append(f"- **Presence:** {presence_action}")
+        
+        # Change from prior info
+        change_info = tracking_info.get('change_from_prior', {})
+        change_action = change_info.get('action', 'unknown')
+        change_original = change_info.get('original_name')
+        
+        if change_action == 'exact_match':
+            lines.append(f"- **Change from prior:** exact match (kept as-is)")
+        elif change_action in ['renamed', 'classification_used']:
+            action_label = 'renamed (heuristic)' if change_action == 'renamed' else 'renamed (classification agent)'
+            lines.append(f"- **Change from prior:** {action_label} - Original: `{change_original}`")
+        elif change_action == 'added':
+            lines.append(f"- **Change from prior:** added (not found)")
+        else:
+            lines.append(f"- **Change from prior:** {change_action}")
+        
+        lines.append("")
+    
+    # Write report
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text('\n'.join(lines), encoding='utf-8')
+    
+    return report_path
+
+
+def generate_sub_finding_report(
+    sub_finding_tracking: List[Tuple[str, str, Optional[Dict]]],
+    input_dir: str,
+    output_dir: str
+) -> Path:
+    """Generate markdown report for sub-finding extractions and presence additions.
+    
+    Args:
+        sub_finding_tracking: List of (filename, finding_name, tracking_info) tuples
+        input_dir: Input directory path
+        output_dir: Output directory path
+        
+    Returns:
+        Path to the generated report file
+    """
+    from datetime import datetime
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_path = Path(output_dir) / f"sub_finding_report_{timestamp}.md"
+    
+    # Calculate statistics
+    total_files = len(sub_finding_tracking)
+    files_with_extractions = sum(1 for _, _, info in sub_finding_tracking 
+                                 if info and info.get('extracted'))
+    files_with_kept = sum(1 for _, _, info in sub_finding_tracking 
+                         if info and info.get('kept_with_presence'))
+    total_extracted = sum(len(info.get('extracted', [])) for _, _, info in sub_finding_tracking if info)
+    total_kept = sum(len(info.get('kept_with_presence', [])) for _, _, info in sub_finding_tracking if info)
+    
+    # Build markdown content
+    lines = [
+        "# Sub-Finding Extraction Report",
+        "",
+        f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"**Input Directory:** {input_dir}",
+        f"**Output Directory:** {output_dir}",
+        "",
+        "## Summary Statistics",
+        "",
+        f"- **Total files processed:** {total_files}",
+        f"- **Files with extractions:** {files_with_extractions}",
+        f"- **Files with kept components:** {files_with_kept}",
+        f"- **Total components extracted:** {total_extracted}",
+        f"- **Total components kept with presence:** {total_kept}",
+        "",
+        "## Per-Finding Details",
+        "",
+    ]
+    
+    # Add per-finding details
+    for filename, finding_name, tracking_info in sorted(sub_finding_tracking, key=lambda x: x[1].lower()):
+        if not tracking_info:
+            continue
+        
+        lines.append(f"### {finding_name} (`{filename}`)")
+        
+        # Extracted components
+        extracted = tracking_info.get('extracted', [])
+        if extracted:
+            lines.append("- **Extracted Components:**")
+            for comp in extracted:
+                comp_name = comp.get('component_name', 'unknown')
+                new_name = comp.get('new_finding_name', 'unknown')
+                attrs_moved = comp.get('attributes_moved', [])
+                presence_kept = comp.get('presence_attribute_kept')
+                lines.append(f"  - **{comp_name}**: Created separate finding `{new_name}`")
+                if attrs_moved:
+                    lines.append(f"    - Moved attributes: {', '.join(attrs_moved)}")
+                if presence_kept:
+                    lines.append(f"    - Kept in main: `{presence_kept}` (pointer/reference)")
+        
+        # Kept components
+        kept = tracking_info.get('kept_with_presence', [])
+        if kept:
+            lines.append("- **Kept Components:**")
+            for comp in kept:
+                comp_name = comp.get('component_name', 'unknown')
+                action = comp.get('presence_attribute_action', 'unknown')
+                presence_name = comp.get('presence_attribute_name', 'unknown')
+                if action == 'already_exists':
+                    lines.append(f"  - **{comp_name}**: `{presence_name}` attribute already exists")
+                elif action == 'added':
+                    lines.append(f"  - **{comp_name}**: Added `{presence_name}` attribute")
+        
+        # No components found
+        if tracking_info.get('no_components_found'):
+            lines.append("- No components found")
+        
+        lines.append("")
+    
+    # Write report
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.write_text('\n'.join(lines), encoding='utf-8')
+    
+    return report_path
+
+
+async def process_hood_directory(input_dir: str, output_dir: str, limit: Optional[int] = None):
     """Process all definition files in the hood_CT_chest directory.
     
     Args:
         input_dir: Input directory path
         output_dir: Output directory path
+        limit: Optional limit on number of files to process (for testing)
     """
     input_path = Path(input_dir)
     output_path = Path(output_dir)
@@ -129,6 +353,11 @@ async def process_hood_directory(input_dir: str, output_dir: str):
         f for f in all_files
         if should_process_file(f, all_files)
     ]
+    
+    # Apply limit if specified (for testing)
+    if limit is not None:
+        files_to_process = files_to_process[:limit]
+        logger.info(f"Limited to processing first {limit} files (testing mode)")
     
     # Track skipped files
     skipped_files = [
@@ -145,10 +374,12 @@ async def process_hood_directory(input_dir: str, output_dir: str):
     logger.info("=" * 60)
     
     # Setup database index
-    index = Index()
     if os.getenv("DUCKDB_INDEX_PATH"):
         db_path = os.getenv("DUCKDB_INDEX_PATH")
         logger.info(f"Using database index at: {db_path}")
+        index = Index(db_path=db_path)
+    else:
+        index = Index()
     await index.setup()
     
     # Process files
@@ -156,14 +387,50 @@ async def process_hood_directory(input_dir: str, output_dir: str):
     failed_count = 0
     results = []
     
+    attribute_tracking: List[Tuple[str, str, Optional[Dict]]] = []  # (filename, finding_name, tracking_info)
+    sub_finding_tracking: List[Tuple[str, str, Optional[Dict]]] = []  # (filename, finding_name, tracking_info)
+    
     for file_path in files_to_process:
-        success, message = await process_single_file(file_path, index, output_path)
+        success, message, tracking_info, sub_finding_info = await process_single_file(file_path, index, output_path)
         results.append((file_path.name, success, message))
         
         if success:
             successful_count += 1
+            # Collect attribute tracking info if available
+            if tracking_info:
+                # Get finding name from tracking_info (it's stored in both presence and change_from_prior)
+                finding_name = tracking_info.get('presence', {}).get('finding_name') or tracking_info.get('change_from_prior', {}).get('finding_name', 'unknown')
+                attribute_tracking.append((file_path.name, finding_name, tracking_info))
+            # Collect sub-finding tracking info if available
+            if sub_finding_info:
+                finding_name = sub_finding_info.get('finding_name', 'unknown')
+                sub_finding_tracking.append((file_path.name, finding_name, sub_finding_info))
         else:
             failed_count += 1
+    
+    # Generate attribute report
+    if attribute_tracking:
+        report_path = generate_attribute_report(attribute_tracking, input_dir, str(output_path))
+        logger.info(f"\nAttribute standardization report saved to: {report_path}")
+    
+    # Generate sub-finding report
+    if sub_finding_tracking:
+        sub_report_path = generate_sub_finding_report(sub_finding_tracking, input_dir, str(output_path))
+        logger.info(f"Sub-finding extraction report saved to: {sub_report_path}")
+    
+    # Calculate attribute statistics for console summary
+    presence_renamed = sum(1 for _, _, info in attribute_tracking 
+                          if info and info.get('presence', {}).get('action') in ['renamed', 'classification_used'])
+    presence_added = sum(1 for _, _, info in attribute_tracking 
+                        if info and info.get('presence', {}).get('action') == 'added')
+    change_renamed = sum(1 for _, _, info in attribute_tracking 
+                        if info and info.get('change_from_prior', {}).get('action') in ['renamed', 'classification_used'])
+    change_added = sum(1 for _, _, info in attribute_tracking 
+                      if info and info.get('change_from_prior', {}).get('action') == 'added')
+    
+    # Calculate sub-finding statistics for console summary
+    total_extracted = sum(len(info.get('extracted', [])) for _, _, info in sub_finding_tracking if info)
+    total_kept = sum(len(info.get('kept_with_presence', [])) for _, _, info in sub_finding_tracking if info)
     
     # Print summary
     logger.info("\n" + "=" * 60)
@@ -175,6 +442,14 @@ async def process_hood_directory(input_dir: str, output_dir: str):
     logger.info(f"Successfully processed: {successful_count}")
     logger.info(f"Failed: {failed_count}")
     logger.info(f"Success rate: {(successful_count/len(files_to_process)*100):.1f}%" if files_to_process else "N/A")
+    logger.info("")
+    logger.info("Attribute Standardization:")
+    logger.info(f"  Presence attributes: {presence_renamed} renamed, {presence_added} added")
+    logger.info(f"  Change from prior attributes: {change_renamed} renamed, {change_added} added")
+    logger.info("")
+    logger.info("Sub-Finding Extraction:")
+    logger.info(f"  Components extracted: {total_extracted}")
+    logger.info(f"  Components kept with presence: {total_kept}")
     logger.info("=" * 60)
     logger.info("Processing complete!")
 
@@ -202,8 +477,14 @@ async def main():
     )
     parser.add_argument(
         '--output-dir',
-        default='defs/hood_findings',
-        help='Output directory for generated models (default: defs/hood_findings)'
+        default='defs/hood_final_models',
+        help='Output directory for generated models (default: defs/hood_final_models)'
+    )
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=None,
+        help='Limit the number of files to process (for testing). Example: --limit 10'
     )
     
     args = parser.parse_args()
@@ -218,11 +499,14 @@ async def main():
     
     input_dir = args.input_dir
     output_dir = args.output_dir
+    limit = args.limit
     
     logger.info(f"Importing Hood definitions from {input_dir}")
     logger.info(f"Output directory: {output_dir}")
+    if limit:
+        logger.info(f"Processing limited to {limit} files (testing mode)")
     
-    await process_hood_directory(input_dir, output_dir)
+    await process_hood_directory(input_dir, output_dir, limit=limit)
 
 
 if __name__ == "__main__":

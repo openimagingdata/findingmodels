@@ -48,11 +48,12 @@ class EponymMinimization(BaseModel):
 
 class SubFindingExtraction(BaseModel):
     """Output from sub-finding extraction agent"""
-    should_extract: bool = Field(description="True if sub-findings should be extracted from this model")
-    sub_findings: List[dict] = Field(default_factory=list, description="List of sub-finding definitions, each with 'name', 'description', and 'attributes'")
-    main_model_attributes: List[str] = Field(default_factory=list, description="List of attribute names to keep in main model (others go to sub-findings)")
+    should_extract: bool = Field(description="True if any components should be extracted or kept with presence")
+    extracted_components: List[dict] = Field(default_factory=list, description="Components to extract as separate findings (have unique attributes). Each dict has 'name', 'description', and 'attributes' (list of attribute names)")
+    kept_components: List[dict] = Field(default_factory=list, description="Components to keep in main finding but add presence attribute (no unique attributes). Each dict has 'name' and 'description'")
+    main_model_attributes: List[str] = Field(default_factory=list, description="List of attribute names to keep in main model")
     confidence: float = Field(description="Confidence score (0.0 to 1.0)")
-    reasoning: str = Field(description="Explanation of why sub-findings should or shouldn't be extracted, and which attributes belong where")
+    reasoning: str = Field(description="Explanation of why components should or shouldn't be extracted, and which attributes belong where")
 
 
 def create_acronym_expansion_agent() -> Agent[str, AcronymExpansion]:
@@ -141,35 +142,50 @@ def create_sub_finding_extraction_agent() -> Agent[str, SubFindingExtraction]:
         output_type=SubFindingExtraction,
         system_prompt=f"""{system_medical_expert_prompt}
 
-Your task is to identify if a finding model contains attributes that represent detailed sub-findings that should be extracted as separate models.
+Your task is to identify components/subcomponents within a finding model and determine whether they should be extracted as separate findings or kept in the main finding with a presence attribute.
 
-RULES:
-1. Analyze the finding model's attributes to identify sub-finding candidates
-2. Sub-findings are detailed variations of a finding that have their own distinct properties
-3. Example: "solid component of mixed pulmonary nodule" should be separate from "pulmonary nodule"
-4. Attributes that suggest sub-findings: morphology, type, subtype, component, variant, classification
+DECISION CRITERIA:
+
+FOR EACH potential component/subcomponent:
+  1. Identify component-specific attributes (e.g., "[component] size", "[component] density", "[component] morphology")
+  2. Check if attributes ONLY apply to that component (not to main finding)
+  3. Identify if "presence of [component]" attribute already exists
+  
+  IF component has unique attributes (size, density, morphology, etc.):
+    → EXTRACT unique attributes to separate finding
+    → KEEP "presence of [component]" in main finding (it's a pointer/reference)
+    → Remove only component-specific attributes, NOT the presence attribute
+  ELSE (component has no unique attributes):
+    → KEEP everything as-is
+    → Check if "presence of [component]" exists
+      - If exists → leave it (no duplicate)
+      - If doesn't exist → add "presence of [component]" attribute
+
+CRITICAL RULE: "presence of [component]" is NOT a unique attribute - it's a pointer/reference that should always be kept in the main finding, even when extracting component-specific attributes.
 
 EXAMPLES:
-- "pulmonary nodule" with "morphology" attribute (solid, subsolid, mixed) → could extract "solid pulmonary nodule", "subsolid pulmonary nodule"
-- "pleural effusion" with simple attributes (size, side) → should NOT extract (these are characteristics, not sub-findings)
 
-CRITERIA FOR EXTRACTION:
-- Attribute has multiple values that could represent distinct findings
-- Attribute name suggests sub-finding (morphology, type, subtype, component, variant)
-- Each value has distinct clinical significance
-- Values represent entities that could be described independently
+Ground Glass Nodule Example:
+- Main finding: "ground glass nodule"
+- Attributes: "presence" (of nodule), "size" (overall), "presence of solid component", "solid component size"
+- Decision:
+  - "solid component size" → Extract (unique attribute) → Create "solid component of ground glass nodule" finding
+  - "presence of solid component" → Keep in main (pointer/reference)
+  - Result: Main keeps: presence, size, "presence of solid component"
+  - Result: New finding created: "solid component of ground glass nodule" with: presence, "solid component size"
 
-CRITERIA AGAINST EXTRACTION:
-- Attributes are simple characteristics (size, location, presence)
-- Values are gradations of the same thing (small, medium, large)
-- Values are descriptive modifiers, not distinct entities
+KEY RULES:
+- Look for attribute names containing component names (e.g., "solid component size")
+- Check attribute descriptions to see if they mention "only applies to [component]"
+- "presence of [component]" is NOT a unique attribute - it's a pointer/reference
+- If component has unique attributes (size, density, etc.) → extract those, but keep presence attribute
+- If component has no unique attributes → keep everything, add presence if missing
 
-IMPORTANT:
-- Be conservative: only extract if sub-findings are clearly distinct entities
-- Consider clinical practice: would radiologists describe these as separate findings?
-- If extracting, specify which attributes belong to which sub-finding
-- Main model should retain core attributes (presence, change from prior, etc.)
+OUTPUT FORMAT:
+- extracted_components: List of components with unique attributes to extract. Each should have 'name', 'description', and 'attributes' (list of unique attribute names, NOT including "presence of [component]")
+- kept_components: List of components without unique attributes. Each should have 'name' and 'description'
+- main_model_attributes: List of all attribute names to keep in main model (including "presence of [component]" attributes)
 
-Provide whether extraction should occur, list of sub-findings (if any), which attributes to keep in main model, confidence, and reasoning."""
+Provide whether extraction should occur, list of extracted/kept components, which attributes to keep in main model, confidence, and reasoning."""
     )
 

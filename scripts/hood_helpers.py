@@ -11,8 +11,9 @@ This module contains all utility functions organized by responsibility:
 
 import json
 import logging
+import re
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 
 from findingmodel import FindingModelFull, FindingModelBase, FindingInfo
 from findingmodel.index import Index
@@ -28,7 +29,8 @@ from scripts.merge_findings import (
     find_existing_model,
     get_existing_model_from_db,
     classify_and_group_attributes,
-    compare_attributes_within_group
+    compare_attributes_within_group,
+    classify_attribute
 )
 from scripts.merge_findings_helpers import (
     create_presence_element,
@@ -36,7 +38,9 @@ from scripts.merge_findings_helpers import (
     build_final_finding,
     ensure_hood_contributor,
     reorder_attributes,
-    preserve_existing_ids
+    preserve_existing_ids,
+    extract_attr_name,
+    extract_value_names
 )
 from agents.specificity_agents import create_specificity_check_agent
 from agents.formatting_agents import (
@@ -185,52 +189,324 @@ async def generate_new_model(
         raise ValueError(f"Unsupported file type: {file_type}")
 
 
-async def ensure_required_attributes(model: FindingModelFull) -> FindingModelFull:
+def is_about_main_finding(
+    attr_description: str, 
+    finding_name: str,
+    attr_name: str
+) -> bool:
+    """Verify attribute is about main finding, not sub-feature.
+    
+    Args:
+        attr_description: The attribute's description text
+        finding_name: The name of the main finding
+        attr_name: The attribute's name
+        
+    Returns:
+        True if attribute is about the main finding, False if it's about a sub-feature
+    """
+    desc_lower = attr_description.lower()
+    name_lower = finding_name.lower()
+    attr_name_lower = attr_name.lower()
+    
+    # Must contain finding name or generic "finding" reference
+    has_finding_reference = (
+        name_lower in desc_lower or
+        'finding' in desc_lower or
+        f'the {name_lower}' in desc_lower
+    )
+    
+    if not has_finding_reference:
+        return False
+    
+    # Reject if clearly about sub-feature
+    # Patterns that indicate sub-features (unless finding name is also present)
+    sub_feature_patterns = [
+        r'presence of (calcification|enhancement|thickening|mass|nodule|lesion)',
+        r'change in (enhancement|pattern|characteristic)',
+        r'within the (finding|nodule|mass)',
+        r'component of',
+        r'feature of',
+    ]
+    
+    # But allow if finding name is in the pattern (e.g., "presence of nodule" when finding is "nodule")
+    for pattern in sub_feature_patterns:
+        if re.search(pattern, desc_lower) and name_lower not in desc_lower:
+            return False
+    
+    # Additional check: reject if description mentions specific sub-features
+    # but doesn't clearly reference the main finding
+    sub_feature_indicators = [
+        'calcification', 'enhancement', 'associated', 'within', 
+        'component', 'feature', 'characteristic', 'pattern',
+    ]
+    
+    # If description contains sub-feature indicators but doesn't contain finding name,
+    # it's likely about a sub-feature
+    has_sub_feature_indicator = any(
+        indicator in desc_lower and finding_name not in desc_lower
+        for indicator in sub_feature_indicators
+    )
+    
+    if has_sub_feature_indicator:
+        return False
+    
+    return True
+
+
+async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingModelFull, Dict]:
     """Ensure presence and change_from_prior attributes exist.
+    
+    Uses hybrid detection: exact match → heuristic → classification agent.
+    Verifies attributes are about the main finding, not sub-features.
     
     Args:
         model: The finding model
         
     Returns:
-        Model with required attributes added if missing
+        Tuple of (model with required attributes, tracking_info dict)
     """
     # Convert to dict for easier manipulation
     model_dict = model.model_dump(exclude_unset=False, exclude_none=False)
     attributes = model_dict.get('attributes', [])
+    finding_name = model.name
     
-    # Check for presence attribute
-    has_presence = any(
-        attr.get('name', '').lower() == 'presence'
-        for attr in attributes
-    )
+    # Tracking info for reporting
+    tracking_info = {
+        'presence': {'action': None, 'original_name': None, 'finding_name': finding_name},
+        'change_from_prior': {'action': None, 'original_name': None, 'finding_name': finding_name}
+    }
     
-    # Check for change_from_prior attribute
-    has_change = any(
-        attr.get('name', '').lower() == 'change from prior'
-        for attr in attributes
-    )
+    # Standard value sets for detection
+    standard_presence_values = {"present", "absent", "indeterminate", "unknown"}
+    standard_change_values = {"unchanged", "stable", "new", "resolved", "increased", "decreased", "larger", "smaller"}
     
-    # Add missing attributes
-    if not has_presence:
-        presence_attr = create_presence_element(model.name)
+    # Sub-feature indicators for description verification
+    sub_feature_indicators = [
+        'calcification', 'enhancement', 'associated', 'within', 
+        'component', 'feature', 'characteristic', 'pattern',
+        'subcutaneous', 'pleural', 'pulmonary'
+    ]
+    
+    # ========================================================================
+    # PRESENCE ATTRIBUTE DETECTION
+    # ========================================================================
+    found_presence = False
+    presence_attr_index = None
+    
+    # Step 1: Check for exact match
+    for i, attr in enumerate(attributes):
+        if extract_attr_name(attr).lower() == 'presence':
+            found_presence = True
+            presence_attr_index = i
+            tracking_info['presence'] = {
+                'action': 'exact_match',
+                'original_name': 'presence',
+                'finding_name': finding_name
+            }
+            logger.debug(f"Found exact match for presence attribute")
+            break
+    
+    # Step 2: Heuristic detection (if no exact match)
+    if not found_presence:
+        for i, attr in enumerate(attributes):
+            attr_name = extract_attr_name(attr)
+            attr_name_lower = attr_name.lower()
+            
+            # Heuristic: name contains "presence" AND values match standard presence values
+            if 'presence' in attr_name_lower:
+                attr_values = set(extract_value_names(attr))
+                
+                # Check if values match standard presence values (at least 2 must match)
+                matching_values = standard_presence_values.intersection(attr_values)
+                if len(matching_values) >= 2:
+                    # CRITICAL: Verify it's about the main finding, not a sub-feature
+                    description = attr.get('description', '')
+                    
+                    if is_about_main_finding(description, finding_name, attr_name):
+                        # Valid presence attribute - rename it
+                        original_name = attr_name
+                        attr['name'] = 'presence'
+                        found_presence = True
+                        presence_attr_index = i
+                        tracking_info['presence'] = {
+                            'action': 'renamed',
+                            'original_name': original_name,
+                            'finding_name': finding_name
+                        }
+                        logger.info(f"Renamed presence attribute: '{original_name}' → 'presence'")
+                        break
+    
+    # Step 3: Classification agent fallback (if still not found)
+    if not found_presence:
+        for i, attr in enumerate(attributes):
+            try:
+                classification = await classify_attribute(attr, finding_name)
+                
+                if classification.classification == 'presence':
+                    # CRITICAL: Verify description before accepting
+                    description = attr.get('description', '')
+                    attr_name = extract_attr_name(attr)
+                    
+                    if is_about_main_finding(description, finding_name, attr_name):
+                        # Valid presence attribute - rename it
+                        original_name = attr_name
+                        attr['name'] = 'presence'
+                        found_presence = True
+                        presence_attr_index = i
+                        tracking_info['presence'] = {
+                            'action': 'classification_used',
+                            'original_name': original_name,
+                            'finding_name': finding_name
+                        }
+                        logger.info(f"Renamed presence attribute (via classification): '{original_name}' → 'presence'")
+                        break
+            except Exception as e:
+                logger.warning(f"Error classifying attribute for presence detection: {e}")
+                continue
+    
+    # Step 4: Add if not found
+    if not found_presence:
+        presence_attr = create_presence_element(finding_name)
         attributes.insert(0, presence_attr)
+        tracking_info['presence'] = {
+            'action': 'added',
+            'original_name': None,
+            'finding_name': finding_name
+        }
         logger.info("Added presence attribute")
     
-    if not has_change:
-        change_attr = create_change_element(model.name)
+    # ========================================================================
+    # CHANGE FROM PRIOR ATTRIBUTE DETECTION
+    # ========================================================================
+    found_change = False
+    change_attr_index = None
+    
+    # Step 1: Check for exact match
+    for i, attr in enumerate(attributes):
+        if extract_attr_name(attr).lower() == 'change from prior':
+            found_change = True
+            change_attr_index = i
+            tracking_info['change_from_prior'] = {
+                'action': 'exact_match',
+                'original_name': 'change from prior',
+                'finding_name': finding_name
+            }
+            logger.debug(f"Found exact match for change from prior attribute")
+            break
+    
+    # Step 2: Heuristic detection (if no exact match)
+    if not found_change:
+        for i, attr in enumerate(attributes):
+            attr_name = extract_attr_name(attr)
+            attr_name_lower = attr_name.lower()
+            
+            # Heuristic: name contains change-related terms AND values match standard change values
+            change_keywords = ['change', 'prior', 'interval', 'progression', 'stability', 'status']
+            if any(keyword in attr_name_lower for keyword in change_keywords):
+                attr_values = set(extract_value_names(attr))
+                
+                # Check if values match standard change values (at least 2 must match)
+                matching_values = standard_change_values.intersection(attr_values)
+                if len(matching_values) >= 2:
+                    # CRITICAL: Verify it's about the main finding
+                    description = attr.get('description', '')
+                    
+                    # For change attributes, also check for time-related phrases
+                    finding_name_lower = finding_name.lower()
+                    is_about_main_finding_check = (
+                        finding_name_lower in description.lower() or
+                        'finding' in description.lower() or
+                        'changed over time' in description.lower() or
+                        'compared to prior' in description.lower() or
+                        'interval change' in description.lower()
+                    )
+                    
+                    if is_about_main_finding_check:
+                        # Additional check: reject if clearly about sub-feature
+                        desc_lower = description.lower()
+                        is_sub_feature = any(
+                            indicator in desc_lower and finding_name_lower not in desc_lower
+                            for indicator in sub_feature_indicators
+                        )
+                        
+                        if not is_sub_feature:
+                            # Valid change attribute - rename it
+                            original_name = attr_name
+                            attr['name'] = 'change from prior'
+                            found_change = True
+                            change_attr_index = i
+                            tracking_info['change_from_prior'] = {
+                                'action': 'renamed',
+                                'original_name': original_name,
+                                'finding_name': finding_name
+                            }
+                            logger.info(f"Renamed change from prior attribute: '{original_name}' → 'change from prior'")
+                            break
+    
+    # Step 3: Classification agent fallback (if still not found)
+    if not found_change:
+        for i, attr in enumerate(attributes):
+            try:
+                classification = await classify_attribute(attr, finding_name)
+                
+                if classification.classification == 'change_from_prior':
+                    # CRITICAL: Verify description before accepting
+                    description = attr.get('description', '')
+                    attr_name = extract_attr_name(attr)
+                    
+                    if is_about_main_finding(description, finding_name, attr_name):
+                        # Valid change attribute - rename it
+                        original_name = attr_name
+                        attr['name'] = 'change from prior'
+                        found_change = True
+                        change_attr_index = i
+                        tracking_info['change_from_prior'] = {
+                            'action': 'classification_used',
+                            'original_name': original_name,
+                            'finding_name': finding_name
+                        }
+                        logger.info(f"Renamed change from prior attribute (via classification): '{original_name}' → 'change from prior'")
+                        break
+            except Exception as e:
+                logger.warning(f"Error classifying attribute for change detection: {e}")
+                continue
+    
+    # Step 4: Add if not found
+    if not found_change:
+        change_attr = create_change_element(finding_name)
         # Insert after presence if it exists, otherwise at beginning
-        insert_pos = 1 if has_presence else 0
+        insert_pos = 1 if found_presence else 0
         attributes.insert(insert_pos, change_attr)
+        tracking_info['change_from_prior'] = {
+            'action': 'added',
+            'original_name': None,
+            'finding_name': finding_name
+        }
         logger.info("Added change_from_prior attribute")
     
-    model_dict['attributes'] = attributes
+    # Remove any duplicate presence/change attributes (keep only the first one we found/added)
+    # This handles cases where both the original and a renamed version exist
+    seen_names = set()
+    filtered_attributes = []
+    for attr in attributes:
+        attr_name_lower = extract_attr_name(attr).lower()
+        if attr_name_lower in ['presence', 'change from prior']:
+            if attr_name_lower not in seen_names:
+                seen_names.add(attr_name_lower)
+                filtered_attributes.append(attr)
+            else:
+                logger.warning(f"Removed duplicate attribute: {extract_attr_name(attr)}")
+        else:
+            filtered_attributes.append(attr)
+    
+    model_dict['attributes'] = filtered_attributes
     
     # Convert back to FindingModelBase, then add IDs, then to FindingModelFull
     base_model = FindingModelBase(**model_dict)
     full_model = add_ids_to_model(base_model, source="MGB")
     
     # Recreate model with IDs
-    return FindingModelFull(**full_model.model_dump())
+    return (FindingModelFull(**full_model.model_dump()), tracking_info)
 
 
 # ============================================================================
@@ -782,27 +1058,81 @@ Detect any eponyms, replace with descriptive terms if appropriate, and keep orig
     return FindingModelFull(**model_dict)
 
 
-async def extract_sub_findings(model: FindingModelFull) -> List[FindingModelFull]:
+def create_component_presence_element(component_name: str, main_finding_name: str) -> Dict[str, Any]:
+    """Create a presence attribute for a component within a main finding.
+    
+    Example: "presence of solid component" for ground glass nodule
+    This attribute serves as a pointer/reference to the component finding.
+    
+    Args:
+        component_name: Name of the component (e.g., "solid component")
+        main_finding_name: Name of the main finding (e.g., "ground glass nodule")
+        
+    Returns:
+        Dictionary representing the presence attribute
+    """
+    return {
+        "name": f"presence of {component_name}",
+        "description": f"Whether a {component_name} is present within the {main_finding_name}",
+        "type": "choice",
+        "required": False,
+        "max_selected": 1,
+        "values": [
+            {"name": "present", "description": f"{component_name.capitalize()} is present"},
+            {"name": "absent", "description": f"No {component_name} identified"},
+            {"name": "indeterminate", "description": f"Presence of {component_name} cannot be determined"},
+            {"name": "unknown", "description": f"Presence of {component_name} is unknown"}
+        ]
+    }
+
+
+def has_component_presence_attribute(attributes: List[Dict], component_name: str) -> bool:
+    """Check if 'presence of [component]' attribute already exists.
+    
+    Args:
+        attributes: List of attribute dictionaries
+        component_name: Name of the component (e.g., "solid component")
+        
+    Returns:
+        True if "presence of [component]" attribute exists
+    """
+    presence_name = f"presence of {component_name}".lower()
+    return any(
+        extract_attr_name(attr).lower() == presence_name
+        for attr in attributes
+    )
+
+
+async def extract_sub_findings(model: FindingModelFull) -> Tuple[List[FindingModelFull], Dict]:
     """Extract detailed sub-findings as separate models.
     
-    Rule: If something looks like a detailed sub-finding with multiple
-    properties, extract it as a separate finding.
+    Implements component extraction logic:
+    - Components with unique attributes → extract to separate finding, keep "presence of [component]" in main
+    - Components without unique attributes → keep in main, add "presence of [component]" if missing
     
-    Example: "solid component of mixed pulmonary nodule" should be separate
-    from "pulmonary nodule".
+    Example: "solid component of ground glass nodule" with "solid component size" → extract size to new finding,
+    keep "presence of solid component" in main as pointer.
     
     Args:
         model: The finding model to process
         
     Returns:
-        List of finding models (original + extracted sub-findings)
+        Tuple of (list of finding models, tracking_info dict)
     """
     model_dict = model.model_dump(exclude_unset=False, exclude_none=False)
     finding_name = model_dict.get('name', '')
     attributes = model_dict.get('attributes', [])
     
+    # Initialize tracking info
+    tracking_info = {
+        'finding_name': finding_name,
+        'extracted': [],
+        'kept_with_presence': [],
+        'no_components_found': False
+    }
+    
     try:
-        # Use LLM agent to determine if sub-findings should be extracted
+        # Use LLM agent to determine if components should be extracted or kept
         agent = create_sub_finding_extraction_agent()
         
         # Prepare model information for the agent
@@ -817,80 +1147,130 @@ async def extract_sub_findings(model: FindingModelFull) -> List[FindingModelFull
                 attr_info['values'] = [v.get('name', '') for v in attr.get('values', [])]
             attributes_summary.append(attr_info)
         
-        prompt = f"""Analyze this finding model to determine if sub-findings should be extracted:
+        prompt = f"""Analyze this finding model to determine if components should be extracted or kept with presence:
 
 Finding Name: "{finding_name}"
 Description: "{model_dict.get('description', '')}"
 Attributes: {json.dumps(attributes_summary, indent=2)}
 
-Determine if any attributes represent detailed sub-findings that should be extracted as separate models."""
+Determine if any components/subcomponents should be extracted as separate findings or kept with presence attributes."""
         
         result = await agent.run(prompt)
         extraction_result = result.output
         
-        # If no extraction needed, return original model
-        if not extraction_result.should_extract or not extraction_result.sub_findings:
-            logger.debug(f"No sub-findings to extract for '{finding_name}'")
-            return [model]
+        # If no extraction or kept components, return original model
+        if not extraction_result.should_extract or (not extraction_result.extracted_components and not extraction_result.kept_components):
+            logger.debug(f"No components to extract or keep for '{finding_name}'")
+            tracking_info['no_components_found'] = True
+            return ([model], tracking_info)
         
-        logger.info(f"Extracting {len(extraction_result.sub_findings)} sub-finding(s) from '{finding_name}': {extraction_result.reasoning}")
-        
-        # Step 1: Create mapping of attribute names to full attribute objects
+        # Create mapping of attribute names to full attribute objects
         attr_name_to_obj = {}
         for attr in attributes:
-            attr_name = attr.get('name', '').lower()
+            attr_name = extract_attr_name(attr).lower()
             attr_name_to_obj[attr_name] = attr
         
-        # Step 2: Create sub-finding models
         sub_finding_models = []
-        for sub_finding_def in extraction_result.sub_findings:
-            sub_finding_name = sub_finding_def.get('name', '').lower()
-            sub_finding_description = sub_finding_def.get('description', '')
-            sub_finding_attr_names = sub_finding_def.get('attributes', [])
-            
-            # Collect attributes for this sub-finding
-            sub_finding_attributes = []
-            for attr_name in sub_finding_attr_names:
-                attr_name_lower = attr_name.lower()
-                if attr_name_lower in attr_name_to_obj:
-                    # Deep copy the attribute to avoid modifying original
-                    attr_copy = json.loads(json.dumps(attr_name_to_obj[attr_name_lower]))
-                    sub_finding_attributes.append(attr_copy)
-                else:
-                    logger.warning(f"Attribute '{attr_name}' not found in original model for sub-finding '{sub_finding_name}'")
-            
-            # Create sub-finding model dict
-            sub_finding_dict = {
-                'name': sub_finding_name,
-                'description': sub_finding_description,
-                'attributes': sub_finding_attributes,
-                'contributors': model_dict.get('contributors', []),
-                'index_codes': model_dict.get('index_codes'),
-                'tags': model_dict.get('tags'),
-                'synonyms': model_dict.get('synonyms')
-            }
-            
-            # Convert to FindingModelBase, add IDs, then to FindingModelFull
-            try:
-                base_model = FindingModelBase(**sub_finding_dict)
-                model_with_ids = add_ids_to_model(base_model, source="MGB")
-                sub_finding_model = FindingModelFull(**model_with_ids.model_dump())
-                
-                # Ensure required attributes (presence, change_from_prior)
-                sub_finding_model = await ensure_required_attributes(sub_finding_model)
-                
-                sub_finding_models.append(sub_finding_model)
-                logger.info(f"Created sub-finding: '{sub_finding_name}' with {len(sub_finding_attributes)} attributes")
-            except Exception as e:
-                logger.error(f"Error creating sub-finding '{sub_finding_name}': {e}")
-                continue
+        attributes_to_remove = set()  # Track attributes to remove from main
         
-        # Step 3: Modify main model - keep only attributes in main_model_attributes
-        main_attr_names_lower = {name.lower() for name in extraction_result.main_model_attributes}
+        # Process extracted components
+        for component_def in extraction_result.extracted_components:
+            component_name = component_def.get('name', '').lower()
+            component_description = component_def.get('description', '')
+            component_attr_names = component_def.get('attributes', [])  # Unique attributes only
+            
+            # Find presence attribute name for this component
+            presence_attr_name = f"presence of {component_name}".lower()
+            presence_attr_kept = None
+            
+            # Collect unique attributes for this component (excluding presence)
+            component_attributes = []
+            for attr_name in component_attr_names:
+                attr_name_lower = attr_name.lower()
+                # Skip presence attributes - they stay in main
+                if presence_attr_name in attr_name_lower or attr_name_lower == presence_attr_name:
+                    continue
+                if attr_name_lower in attr_name_to_obj:
+                    attr_copy = json.loads(json.dumps(attr_name_to_obj[attr_name_lower]))
+                    component_attributes.append(attr_copy)
+                    attributes_to_remove.add(attr_name_lower)
+                else:
+                    logger.warning(f"Attribute '{attr_name}' not found for component '{component_name}'")
+            
+            # Check if presence attribute exists and should be kept
+            if presence_attr_name in attr_name_to_obj:
+                presence_attr_kept = presence_attr_name
+                logger.debug(f"Keeping '{presence_attr_name}' in main finding as pointer")
+            
+            # Create sub-finding model
+            if component_attributes:
+                sub_finding_name = f"{component_name} of {finding_name}".lower()
+                sub_finding_dict = {
+                    'name': sub_finding_name,
+                    'description': component_description or f"{component_name.capitalize()} within {finding_name}",
+                    'attributes': component_attributes,
+                    'contributors': model_dict.get('contributors', []),
+                    'index_codes': model_dict.get('index_codes'),
+                    'tags': model_dict.get('tags'),
+                    'synonyms': model_dict.get('synonyms')
+                }
+                
+                try:
+                    base_model = FindingModelBase(**sub_finding_dict)
+                    model_with_ids = add_ids_to_model(base_model, source="MGB")
+                    sub_finding_model = FindingModelFull(**model_with_ids.model_dump())
+                    
+                    # Ensure required attributes
+                    sub_finding_model, _ = await ensure_required_attributes(sub_finding_model)
+                    
+                    sub_finding_models.append(sub_finding_model)
+                    logger.info(f"Created extracted component: '{sub_finding_name}' with {len(component_attributes)} attributes")
+                    
+                    tracking_info['extracted'].append({
+                        'component_name': component_name,
+                        'attributes_moved': [attr.get('name', '') for attr in component_attributes],
+                        'presence_attribute_kept': presence_attr_kept,
+                        'new_finding_name': sub_finding_name
+                    })
+                except Exception as e:
+                    logger.error(f"Error creating extracted component '{component_name}': {e}")
+                    continue
+        
+        # Process kept components (add presence if missing)
+        for component_def in extraction_result.kept_components:
+            component_name = component_def.get('name', '').lower()
+            presence_attr_name = f"presence of {component_name}".lower()
+            
+            # Check if presence attribute already exists
+            if has_component_presence_attribute(attributes, component_name):
+                logger.debug(f"Presence attribute '{presence_attr_name}' already exists for '{component_name}'")
+                tracking_info['kept_with_presence'].append({
+                    'component_name': component_name,
+                    'presence_attribute_action': 'already_exists',
+                    'presence_attribute_name': presence_attr_name
+                })
+            else:
+                # Add presence attribute
+                presence_attr = create_component_presence_element(component_name, finding_name)
+                attributes.append(presence_attr)
+                logger.info(f"Added presence attribute '{presence_attr_name}' for kept component '{component_name}'")
+                tracking_info['kept_with_presence'].append({
+                    'component_name': component_name,
+                    'presence_attribute_action': 'added',
+                    'presence_attribute_name': presence_attr_name
+                })
+        
+        # Modify main model - remove extracted attributes but keep presence attributes
         main_model_attributes = []
         for attr in attributes:
-            attr_name_lower = attr.get('name', '').lower()
-            if attr_name_lower in main_attr_names_lower:
+            attr_name_lower = extract_attr_name(attr).lower()
+            # Keep attribute if:
+            # 1. It's in main_model_attributes list from agent, OR
+            # 2. It's a presence attribute (pointer/reference), OR
+            # 3. It's not in the attributes_to_remove set
+            if (attr_name_lower in {name.lower() for name in extraction_result.main_model_attributes} or
+                'presence of' in attr_name_lower or
+                attr_name_lower not in attributes_to_remove):
                 main_model_attributes.append(attr)
         
         # Update main model dict
@@ -903,20 +1283,24 @@ Determine if any attributes represent detailed sub-findings that should be extra
             model_with_ids = add_ids_to_model(base_model, source="MGB")
             modified_main_model = FindingModelFull(**model_with_ids.model_dump())
             
-            logger.info(f"Modified main model '{finding_name}': kept {len(main_model_attributes)} attributes, removed {len(attributes) - len(main_model_attributes)} component-specific attributes")
+            # Ensure required attributes
+            modified_main_model, _ = await ensure_required_attributes(modified_main_model)
+            
+            removed_count = len(attributes) - len(main_model_attributes)
+            logger.info(f"Modified main model '{finding_name}': kept {len(main_model_attributes)} attributes, removed {removed_count} component-specific attributes")
         except Exception as e:
             logger.error(f"Error modifying main model: {e}, returning original")
-            return [model]
+            return ([model], tracking_info)
         
-        # Step 4: Return list with modified main model and all sub-findings
-        return [modified_main_model] + sub_finding_models
+        # Return list with modified main model and all sub-findings
+        return ([modified_main_model] + sub_finding_models, tracking_info)
         
     except Exception as e:
         logger.warning(f"Error in sub-finding extraction for '{finding_name}': {e}, returning original model")
         import traceback
         traceback.print_exc()
         # Fallback: return original model
-        return [model]
+        return ([model], tracking_info)
 
 
 def _flag_location_attributes(model: FindingModelFull) -> List[str]:
