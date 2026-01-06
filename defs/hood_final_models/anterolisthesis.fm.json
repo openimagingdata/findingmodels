@@ -1,0 +1,355 @@
+{
+  "oifm_id": "OIFM_MGB_751078",
+  "name": "anterolisthesis",
+  "description": "Anterior displacement (forward slippage) of one vertebral body relative to the one below; characterized by presence, temporal status, anatomic location, grade or percent translation, involved levels, and associated findings such as foraminal narrowing and disc degeneration.",
+  "synonyms": [
+    "anterior translation",
+    "forward slippage",
+    "anterior displacement"
+  ],
+  "tags": [
+    "spine",
+    "spondylolisthesis",
+    "translation"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_426230",
+      "name": "presence",
+      "description": "Whether anterolisthesis is identified on the study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_426230.0",
+          "name": "present",
+          "description": "anterolisthesis is seen"
+        },
+        {
+          "value_code": "OIFMA_MGB_426230.1",
+          "name": "absent",
+          "description": "no anterolisthesis identified"
+        },
+        {
+          "value_code": "OIFMA_MGB_426230.2",
+          "name": "indeterminate",
+          "description": "Presence of anterolisthesis cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_426230.3",
+          "name": "unknown",
+          "description": "Presence of anterolisthesis is unknown"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_823631",
+      "name": "change from prior",
+      "description": "Whether and how a anterolisthesis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_823631.0",
+          "name": "unchanged",
+          "description": "Anterolisthesis is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.1",
+          "name": "stable",
+          "description": "Anterolisthesis is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.2",
+          "name": "increased",
+          "description": "Anterolisthesis has increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.3",
+          "name": "decreased",
+          "description": "Anterolisthesis has decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.4",
+          "name": "new",
+          "description": "Anterolisthesis is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.5",
+          "name": "resolved",
+          "description": "Anterolisthesis seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_823631.6",
+          "name": "no prior",
+          "description": "No prior exam available for comparison of anterolisthesis"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_093067",
+      "name": "status",
+      "description": "Temporal change compared with prior study when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_093067.0",
+          "name": "new"
+        },
+        {
+          "value_code": "OIFMA_MGB_093067.1",
+          "name": "unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_093067.2",
+          "name": "increased"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_219290",
+      "name": "location",
+      "description": "Spinal region(s) involved.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_219290.0",
+          "name": "cervical"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.1",
+          "name": "thoracic"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.2",
+          "name": "lumbar"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.3",
+          "name": "cervicothoracic"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.4",
+          "name": "thoracolumbar"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.5",
+          "name": "lumbosacral"
+        },
+        {
+          "value_code": "OIFMA_MGB_219290.6",
+          "name": "multilevel"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_413284",
+      "name": "grade",
+      "description": "Categorical grade of anterior translation based on percentage of vertebral body width.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_413284.0",
+          "name": "grade i (1-25%)",
+          "description": "mild slip"
+        },
+        {
+          "value_code": "OIFMA_MGB_413284.1",
+          "name": "grade ii (26-50%)",
+          "description": "moderate slip"
+        },
+        {
+          "value_code": "OIFMA_MGB_413284.2",
+          "name": "grade iii (51-75%)",
+          "description": "marked slip"
+        },
+        {
+          "value_code": "OIFMA_MGB_413284.3",
+          "name": "grade iv (76-100%)",
+          "description": "severe slip"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_378145",
+      "name": "percent translation",
+      "description": "Measured anterior translation as percentage of the vertebral body width.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 200,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_114617",
+      "name": "affected vertebrae",
+      "description": "Specific vertebral level(s) involved. Select one or more levels.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_114617.0",
+          "name": "c1"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.1",
+          "name": "c2"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.2",
+          "name": "c3"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.3",
+          "name": "c4"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.4",
+          "name": "c5"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.5",
+          "name": "c6"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.6",
+          "name": "c7"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.7",
+          "name": "t1"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.8",
+          "name": "t2"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.9",
+          "name": "t3"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.10",
+          "name": "t4"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.11",
+          "name": "t5"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.12",
+          "name": "t6"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.13",
+          "name": "t7"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.14",
+          "name": "t8"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.15",
+          "name": "t9"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.16",
+          "name": "t10"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.17",
+          "name": "t11"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.18",
+          "name": "t12"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.19",
+          "name": "l1"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.20",
+          "name": "l2"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.21",
+          "name": "l3"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.22",
+          "name": "l4"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.23",
+          "name": "l5"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.24",
+          "name": "s1"
+        },
+        {
+          "value_code": "OIFMA_MGB_114617.25",
+          "name": "other"
+        }
+      ],
+      "required": false,
+      "max_selected": 10
+    },
+    {
+      "oifma_id": "OIFMA_MGB_331461",
+      "name": "neural foraminal narrowing",
+      "description": "Narrowing of the neural foramen at the level of translation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_331461.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_331461.1",
+          "name": "absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_300094",
+      "name": "disc degeneration",
+      "description": "Imaging evidence of disc degeneration at the involved level(s).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_300094.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_300094.1",
+          "name": "absent"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

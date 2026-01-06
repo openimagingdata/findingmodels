@@ -1,0 +1,212 @@
+{
+  "oifm_id": "OIFM_MGB_504717",
+  "name": "airway mucus plugging",
+  "description": "Mucus plugging in the airways.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_318871",
+      "name": "presence",
+      "description": "Presence of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_318871.0",
+          "name": "present",
+          "description": "Mucus plugging is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_318871.1",
+          "name": "absent",
+          "description": "Mucus plugging is absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_318871.2",
+          "name": "indeterminate",
+          "description": "Presence of Airway Mucus Plugging cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_318871.3",
+          "name": "unknown",
+          "description": "Presence of Airway Mucus Plugging is unknown"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_885140",
+      "name": "change from prior",
+      "description": "Whether and how a Airway Mucus Plugging has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_885140.0",
+          "name": "unchanged",
+          "description": "Airway mucus plugging is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.1",
+          "name": "stable",
+          "description": "Airway mucus plugging is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.2",
+          "name": "increased",
+          "description": "Airway mucus plugging has increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.3",
+          "name": "decreased",
+          "description": "Airway mucus plugging has decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.4",
+          "name": "new",
+          "description": "Airway mucus plugging is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.5",
+          "name": "resolved",
+          "description": "Airway mucus plugging seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_885140.6",
+          "name": "no prior",
+          "description": "No prior exam available for comparison of Airway Mucus Plugging"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_251552",
+      "name": "location",
+      "description": "Location of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_251552.0",
+          "name": "central airways",
+          "description": "Mucus plugging in the central airways"
+        },
+        {
+          "value_code": "OIFMA_MGB_251552.1",
+          "name": "segmental bronchi",
+          "description": "Mucus plugging in the segmental bronchi"
+        },
+        {
+          "value_code": "OIFMA_MGB_251552.2",
+          "name": "subsegmental bronchi",
+          "description": "Mucus plugging in the subsegmental bronchi"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_332390",
+      "name": "extent",
+      "description": "Extent of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_332390.0",
+          "name": "focal",
+          "description": "Mucus plugging is focal"
+        },
+        {
+          "value_code": "OIFMA_MGB_332390.1",
+          "name": "multifocal",
+          "description": "Mucus plugging is multifocal"
+        },
+        {
+          "value_code": "OIFMA_MGB_332390.2",
+          "name": "diffuse",
+          "description": "Mucus plugging is diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_449410",
+      "name": "airway wall thickening",
+      "description": "Presence of airway wall thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_449410.0",
+          "name": "present",
+          "description": "Airway wall thickening is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_449410.1",
+          "name": "absent",
+          "description": "Airway wall thickening is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_846525",
+      "name": "bronchiectasis",
+      "description": "Presence of bronchiectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_846525.0",
+          "name": "present",
+          "description": "Bronchiectasis is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_846525.1",
+          "name": "absent",
+          "description": "Bronchiectasis is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_752582",
+      "name": "consolidation",
+      "description": "Presence of consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_752582.0",
+          "name": "present",
+          "description": "Consolidation is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_752582.1",
+          "name": "absent",
+          "description": "Consolidation is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_006536",
+      "name": "ground glass opacities",
+      "description": "Presence of ground glass opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_006536.0",
+          "name": "present",
+          "description": "Ground glass opacities are present"
+        },
+        {
+          "value_code": "OIFMA_MGB_006536.1",
+          "name": "absent",
+          "description": "Ground glass opacities are absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

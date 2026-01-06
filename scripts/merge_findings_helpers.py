@@ -53,6 +53,108 @@ def create_presence_element(finding_name: str) -> Dict[str, Any]:
     }
 
 
+def ensure_standard_presence_values(attr: Dict[str, Any], finding_name: str) -> Dict[str, Any]:
+    """Ensure a presence attribute has all standard values.
+    
+    Args:
+        attr: The presence attribute dictionary
+        finding_name: Name of the finding (for generating descriptions)
+        
+    Returns:
+        Updated attribute dictionary with all standard values
+    """
+    standard_values = ["absent", "present", "indeterminate", "unknown"]
+    
+    # Get existing values
+    existing_values = attr.get('values', [])
+    existing_value_names = {v.get('name', '').lower() if isinstance(v, dict) else getattr(v, 'name', '').lower() 
+                           for v in existing_values}
+    
+    # Create mapping of existing value names to full value dicts
+    value_map = {}
+    for val in existing_values:
+        if isinstance(val, dict):
+            val_name = val.get('name', '').lower()
+        else:
+            val_name = getattr(val, 'name', '').lower()
+        value_map[val_name] = val
+    
+    # Add missing standard values
+    for std_val in standard_values:
+        if std_val not in existing_value_names:
+            # Create new value with appropriate description
+            descriptions = {
+                "absent": f"{finding_name.capitalize()} is absent",
+                "present": f"{finding_name.capitalize()} is present",
+                "indeterminate": f"Presence of {finding_name} cannot be determined",
+                "unknown": f"Presence of {finding_name} is unknown"
+            }
+            new_value = {
+                "name": std_val,
+                "description": descriptions.get(std_val, f"{std_val.capitalize()} value for {finding_name}")
+            }
+            existing_values.append(new_value)
+    
+    # Update attribute with all values
+    attr['values'] = existing_values
+    return attr
+
+
+def ensure_standard_change_values(attr: Dict[str, Any], finding_name: str) -> Dict[str, Any]:
+    """Ensure a change from prior attribute has all standard values.
+    
+    Args:
+        attr: The change from prior attribute dictionary
+        finding_name: Name of the finding (for generating descriptions)
+        
+    Returns:
+        Updated attribute dictionary with all standard values
+    """
+    standard_values = ["unchanged", "stable", "increased", "decreased", "new", "resolved", "no prior"]
+    
+    # Get existing values
+    existing_values = attr.get('values', [])
+    existing_value_names = {v.get('name', '').lower() if isinstance(v, dict) else getattr(v, 'name', '').lower() 
+                           for v in existing_values}
+    
+    # Remove non-standard values (larger, smaller)
+    filtered_values = []
+    for val in existing_values:
+        if isinstance(val, dict):
+            val_name = val.get('name', '').lower()
+        else:
+            val_name = getattr(val, 'name', '').lower()
+        if val_name not in ['larger', 'smaller']:
+            filtered_values.append(val)
+    
+    existing_values = filtered_values
+    existing_value_names = {v.get('name', '').lower() if isinstance(v, dict) else getattr(v, 'name', '').lower() 
+                           for v in existing_values}
+    
+    # Add missing standard values
+    for std_val in standard_values:
+        if std_val not in existing_value_names:
+            # Create new value with appropriate description
+            descriptions = {
+                "unchanged": f"{finding_name.capitalize()} is unchanged",
+                "stable": f"{finding_name.capitalize()} is stable",
+                "increased": f"{finding_name.capitalize()} has increased",
+                "decreased": f"{finding_name.capitalize()} has decreased",
+                "new": f"{finding_name.capitalize()} is new",
+                "resolved": f"{finding_name.capitalize()} seen on a prior exam has resolved",
+                "no prior": f"No prior exam available for comparison of {finding_name}"
+            }
+            new_value = {
+                "name": std_val,
+                "description": descriptions.get(std_val, f"{std_val.capitalize()} value for {finding_name}")
+            }
+            existing_values.append(new_value)
+    
+    # Update attribute with all values
+    attr['values'] = existing_values
+    return attr
+
+
 def ensure_hood_contributor(final_finding: Dict[str, Any]) -> Dict[str, Any]:
     """Ensure C. Michael Hood is included as a contributor in the final finding.
     
@@ -130,12 +232,11 @@ def create_change_element(finding_name: str) -> Dict[str, Any]:
         "values": [
             {"name": "unchanged", "description": f"{finding_name.capitalize()} is unchanged"},
             {"name": "stable", "description": f"{finding_name.capitalize()} is stable"},
-            {"name": "new", "description": f"{finding_name.capitalize()} is new"},
-            {"name": "resolved", "description": f"{finding_name.capitalize()} seen on a prior exam has resolved"},
             {"name": "increased", "description": f"{finding_name.capitalize()} has increased"},
             {"name": "decreased", "description": f"{finding_name.capitalize()} has decreased"},
-            {"name": "larger", "description": f"{finding_name.capitalize()} is larger"},
-            {"name": "smaller", "description": f"{finding_name.capitalize()} is smaller"},
+            {"name": "new", "description": f"{finding_name.capitalize()} is new"},
+            {"name": "resolved", "description": f"{finding_name.capitalize()} seen on a prior exam has resolved"},
+            {"name": "no prior", "description": f"No prior exam available for comparison of {finding_name}"},
         ],
     }
 

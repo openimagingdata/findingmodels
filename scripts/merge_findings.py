@@ -8,11 +8,14 @@ Helper functions and reporting utilities are in merge_findings_helpers.py.
 import asyncio
 import argparse
 import json
+import logging
 import os
 import sys
 from pathlib import Path
 from typing import Dict, Optional, Tuple, List, Any
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 from findingmodel.tools import find_similar_models, add_ids_to_model
 from findingmodel.index import Index
@@ -85,6 +88,15 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
         index=index
     )
     
+    # Log analysis results
+    similar_count = len(analysis.similar_models) if analysis.similar_models else 0
+    logger.info(f"Similarity search for '{finding_name}': found {similar_count} similar model(s), recommendation='{analysis.recommendation}'")
+    
+    if similar_count > 0:
+        # Show top matches in debug mode
+        top_matches = [m.get('name', 'unknown') for m in analysis.similar_models[:3]]
+        logger.debug(f"Top similar models: {', '.join(top_matches)}")
+    
     # If recommendation is to create new, no match found
     if analysis.recommendation == "create_new":
         return None
@@ -94,6 +106,8 @@ async def find_existing_model(incoming_model: FindingModelFull, index: Index) ->
         if analysis.similar_models and len(analysis.similar_models) > 0:
             # Get the highest confidence match (should already be a dict)
             best_match = analysis.similar_models[0]
+            if analysis.recommendation == "review_needed":
+                logger.debug(f"Recommendation is 'review_needed' - proceeding with best match")
             return best_match
     
     return None

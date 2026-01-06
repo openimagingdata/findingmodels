@@ -35,6 +35,8 @@ from scripts.merge_findings import (
 from scripts.merge_findings_helpers import (
     create_presence_element,
     create_change_element,
+    ensure_standard_presence_values,
+    ensure_standard_change_values,
     build_final_finding,
     ensure_hood_contributor,
     reorder_attributes,
@@ -135,12 +137,40 @@ async def load_definition(file_path: Path) -> Tuple[Optional[Dict], Optional[str
 # MODEL GENERATION AND VALIDATION
 # ============================================================================
 
+def extract_expected_attributes_from_markdown(markdown_content: str) -> List[str]:
+    """Extract expected attribute names from markdown content.
+    
+    Parses markdown to find attribute definitions in the format:
+    - **Attribute Name**: ...
+    
+    Args:
+        markdown_content: The markdown content to parse
+        
+    Returns:
+        List of expected attribute names (normalized to lowercase)
+    """
+    expected_attrs = []
+    
+    # Pattern to match bold text followed by colon (attribute definitions)
+    # Matches: **Attribute Name**: or **Attribute Name**:
+    pattern = r'\*\*([^*]+)\*\*\s*:'
+    
+    matches = re.findall(pattern, markdown_content)
+    for match in matches:
+        attr_name = match.strip().lower()
+        # Skip common non-attribute patterns
+        if attr_name not in ['identification', 'characteristics', 'associated findings', 'description']:
+            expected_attrs.append(attr_name)
+    
+    return expected_attrs
+
+
 async def generate_new_model(
     file_path: Path,
     data: Optional[Dict],
     markdown_content: Optional[str],
     file_type: str
-) -> FindingModelFull:
+) -> Tuple[FindingModelFull, List[str]]:
     """Generate a new finding model from MD or JSON.
     
     Args:
@@ -150,15 +180,21 @@ async def generate_new_model(
         file_type: "json" or "md"
         
     Returns:
-        Generated FindingModelFull
+        Tuple of (Generated FindingModelFull, list of missing attribute names)
     """
+    missing_attributes = []
+    
     if file_type == "json":
         # Use HoodJsonAdapter
         filename = file_path.name
         model = await HoodJsonAdapter.adapt_hood_json(data, filename)
-        return model
+        # For JSON, we don't track missing attributes (would need to parse JSON structure)
+        return model, missing_attributes
     
     elif file_type == "md":
+        # Extract expected attributes from markdown before processing
+        expected_attrs = extract_expected_attributes_from_markdown(markdown_content)
+        
         # Extract finding name from filename
         filename = file_path.stem
         finding_name = filename.replace('-', ' ').replace('_', ' ').title()
@@ -175,6 +211,40 @@ async def generate_new_model(
             markdown_text=markdown_content
         )
         
+        # Extract actual attribute names from generated model
+        actual_attrs = {extract_attr_name(attr).lower() for attr in model.attributes}
+        
+        # Find missing attributes (normalize expected to handle variations)
+        # Normalize expected attributes (remove "presence of", "signs of", etc. for comparison)
+        expected_normalized = set()
+        for exp_attr in expected_attrs:
+            # Remove common prefixes that might be normalized
+            normalized = exp_attr
+            for prefix in ['presence of ', 'signs of ', 'other ']:
+                if normalized.startswith(prefix):
+                    normalized = normalized[len(prefix):].strip()
+            expected_normalized.add(normalized)
+        
+        # Check which expected attributes are missing
+        for exp_attr in expected_attrs:
+            # Try exact match first
+            if exp_attr not in actual_attrs:
+                # Try normalized match
+                normalized = exp_attr
+                for prefix in ['presence of ', 'signs of ', 'other ']:
+                    if normalized.startswith(prefix):
+                        normalized = normalized[len(prefix):].strip()
+                
+                # Check if any actual attribute contains the normalized name
+                found = False
+                for actual_attr in actual_attrs:
+                    if normalized in actual_attr or actual_attr in normalized:
+                        found = True
+                        break
+                
+                if not found:
+                    missing_attributes.append(exp_attr)
+        
         # Add IDs and codes
         full_model = add_ids_to_model(model, source="MGB")
         add_standard_codes_to_model(full_model)
@@ -182,8 +252,21 @@ async def generate_new_model(
         # Add contributors
         full_model.contributors = MarkdownToFindingModelAdapter._create_default_contributors()
         
+        # Preserve metadata fields before conversion (use explicit parameters like other functions)
+        full_model_dict = full_model.model_dump(exclude_unset=False, exclude_none=False)
+        preserved_index_codes = full_model_dict.get('index_codes')
+        preserved_locations = full_model_dict.get('locations')
+        
         # Convert to FindingModelFull
-        return FindingModelFull(**full_model.model_dump())
+        result_model = FindingModelFull(**full_model_dict)
+        
+        # Restore preserved fields if they exist
+        if preserved_index_codes:
+            result_model.index_codes = preserved_index_codes
+        if preserved_locations:
+            result_model.locations = preserved_locations
+        
+        return result_model, missing_attributes
     
     else:
         raise ValueError(f"Unsupported file type: {file_type}")
@@ -278,7 +361,7 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
     
     # Standard value sets for detection
     standard_presence_values = {"present", "absent", "indeterminate", "unknown"}
-    standard_change_values = {"unchanged", "stable", "new", "resolved", "increased", "decreased", "larger", "smaller"}
+    standard_change_values = {"unchanged", "stable", "increased", "decreased", "new", "resolved", "no prior"}
     
     # Sub-feature indicators for description verification
     sub_feature_indicators = [
@@ -298,6 +381,8 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
         if extract_attr_name(attr).lower() == 'presence':
             found_presence = True
             presence_attr_index = i
+            # Ensure all standard values are present
+            attributes[i] = ensure_standard_presence_values(attr, finding_name)
             tracking_info['presence'] = {
                 'action': 'exact_match',
                 'original_name': 'presence',
@@ -326,6 +411,9 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
                         # Valid presence attribute - rename it
                         original_name = attr_name
                         attr['name'] = 'presence'
+                        # Ensure all standard values are present
+                        attr = ensure_standard_presence_values(attr, finding_name)
+                        attributes[i] = attr
                         found_presence = True
                         presence_attr_index = i
                         tracking_info['presence'] = {
@@ -351,6 +439,9 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
                         # Valid presence attribute - rename it
                         original_name = attr_name
                         attr['name'] = 'presence'
+                        # Ensure all standard values are present
+                        attr = ensure_standard_presence_values(attr, finding_name)
+                        attributes[i] = attr
                         found_presence = True
                         presence_attr_index = i
                         tracking_info['presence'] = {
@@ -386,6 +477,8 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
         if extract_attr_name(attr).lower() == 'change from prior':
             found_change = True
             change_attr_index = i
+            # Ensure all standard values are present
+            attributes[i] = ensure_standard_change_values(attr, finding_name)
             tracking_info['change_from_prior'] = {
                 'action': 'exact_match',
                 'original_name': 'change from prior',
@@ -433,6 +526,9 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
                             # Valid change attribute - rename it
                             original_name = attr_name
                             attr['name'] = 'change from prior'
+                            # Ensure all standard values are present
+                            attr = ensure_standard_change_values(attr, finding_name)
+                            attributes[i] = attr
                             found_change = True
                             change_attr_index = i
                             tracking_info['change_from_prior'] = {
@@ -458,6 +554,9 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
                         # Valid change attribute - rename it
                         original_name = attr_name
                         attr['name'] = 'change from prior'
+                        # Ensure all standard values are present
+                        attr = ensure_standard_change_values(attr, finding_name)
+                        attributes[i] = attr
                         found_change = True
                         change_attr_index = i
                         tracking_info['change_from_prior'] = {
@@ -501,12 +600,26 @@ async def ensure_required_attributes(model: FindingModelFull) -> Tuple[FindingMo
     
     model_dict['attributes'] = filtered_attributes
     
+    # Preserve metadata fields before conversion
+    preserved_contributors = model_dict.get('contributors', [])
+    preserved_index_codes = model_dict.get('index_codes')
+    preserved_locations = model_dict.get('locations')
+    
     # Convert back to FindingModelBase, then add IDs, then to FindingModelFull
     base_model = FindingModelBase(**model_dict)
     full_model = add_ids_to_model(base_model, source="MGB")
     
-    # Recreate model with IDs
-    return (FindingModelFull(**full_model.model_dump()), tracking_info)
+    # Restore preserved metadata fields
+    full_model_dict = full_model.model_dump(exclude_unset=False, exclude_none=False)
+    if preserved_contributors:
+        full_model_dict['contributors'] = preserved_contributors
+    if preserved_index_codes:
+        full_model_dict['index_codes'] = preserved_index_codes
+    if preserved_locations:
+        full_model_dict['locations'] = preserved_locations
+    
+    # Recreate model with IDs and preserved metadata
+    return (FindingModelFull(**full_model_dict), tracking_info)
 
 
 # ============================================================================
@@ -583,16 +696,18 @@ async def find_existing_model_with_specificity_check(
     Returns:
         Match dict if found and not too general, None otherwise
     """
+    incoming_name = incoming_model.name
+    
     # First, find potential matches
     match = await find_existing_model(incoming_model, index)
     
     if match is None:
         return None
     
-    # Check if the match is too general (bidirectional check)
-    incoming_name = incoming_model.name
     existing_name = match.get('name', '')
+    logger.info(f"Found potential match: '{existing_name}' (ID: {match.get('oifm_id', 'N/A')}), checking specificity...")
     
+    # Check if the match is too general (bidirectional check)
     # Check if existing is too general for incoming
     if await is_match_too_general(incoming_name, existing_name):
         logger.info(f"Rejected match '{existing_name}' as too general for '{incoming_name}'")
@@ -603,6 +718,7 @@ async def find_existing_model_with_specificity_check(
         logger.info(f"Rejected match: incoming '{incoming_name}' is too general for existing '{existing_name}'")
         return None
     
+    logger.info(f"Match accepted: '{existing_name}' is appropriate for '{incoming_name}'")
     return match
 
 
@@ -780,7 +896,7 @@ async def merge_with_existing(
     incoming_model: FindingModelFull,
     existing_match: Dict,
     index: Index
-) -> FindingModelFull:
+) -> Tuple[FindingModelFull, Dict]:
     """Merge incoming model with existing model.
     
     Args:
@@ -789,7 +905,7 @@ async def merge_with_existing(
         index: Database index
         
     Returns:
-        Merged FindingModelFull
+        Tuple of (Merged FindingModelFull, merge_details dict)
     """
     # Load existing model from database
     existing_model_data = await get_existing_model_from_db(
@@ -859,6 +975,30 @@ async def merge_with_existing(
     attributes_to_add = merge_prep['attributes_to_add']
     review_decisions = merge_prep['review_decisions']
     
+    # Build merge details for reporting
+    merge_details = {
+        'attributes_merged': len(merge_recommendations),
+        'attributes_added': len(approved_new_attributes),
+        'attributes_created': len(attributes_to_add),
+        'merge_recommendations': [
+            {
+                'incoming_name': extract_attr_name(mr.get('incoming_attribute', {})),
+                'existing_name': extract_attr_name(mr.get('existing_attribute', {})),
+                'relationship': (
+                    mr.get('relationship').relationship 
+                    if hasattr(mr.get('relationship'), 'relationship') 
+                    else (mr.get('relationship', {}).get('relationship', 'unknown') if isinstance(mr.get('relationship'), dict) else 'unknown')
+                )
+            }
+            for mr in merge_recommendations
+        ],
+        'new_attributes': [
+            extract_attr_name(attr)
+            for attr in approved_new_attributes
+        ],
+        'created_attributes': [name for name, _ in attributes_to_add]
+    }
+    
     # Build final finding
     final_finding = build_final_finding(
         existing_model_data=existing_model_data,
@@ -879,7 +1019,7 @@ async def merge_with_existing(
     final_finding = preserve_existing_ids(final_finding, source="MGB")
     
     # Convert back to FindingModelFull
-    return FindingModelFull(**final_finding)
+    return (FindingModelFull(**final_finding), merge_details)
 
 
 # ============================================================================
@@ -937,68 +1077,6 @@ Detect all medical acronyms, expand them to full terms, and identify compact for
     except Exception as e:
         logger.warning(f"Error in acronym expansion for '{original_name}': {e}, keeping original name")
         # Fallback: return model unchanged
-    
-    # Recreate model
-    return FindingModelFull(**model_dict)
-
-
-def transform_location_attributes(model: FindingModelFull) -> FindingModelFull:
-    """Transform location attributes to anatomic location subsets.
-    
-    Rule: Location should be expressed as where the finding could occur
-    (subset of anatomic location nodes), not as separate attributes.
-    
-    Args:
-        model: The finding model to process
-        
-    Returns:
-        Model with location attributes transformed
-    """
-    model_dict = model.model_dump(exclude_unset=False, exclude_none=False)
-    attributes = model_dict.get('attributes', [])
-    
-    # Identify and remove location attributes
-    # Location should not be a separate attribute per the requirements
-    filtered_attributes = []
-    for attr in attributes:
-        attr_name = attr.get('name', '').lower()
-        # Remove attributes with "location" or "anatomical location" in name
-        if 'location' not in attr_name and 'anatomical location' not in attr_name:
-            filtered_attributes.append(attr)
-    
-    model_dict['attributes'] = filtered_attributes
-    
-    # Note: Location information is implicit in the finding name
-    # (e.g., "pulmonary nodule" implies lung location)
-    # If explicit anatomic location subset representation is needed,
-    # it would require schema extension or index_codes mapping
-    
-    # Recreate model
-    return FindingModelFull(**model_dict)
-
-
-def remove_associated_findings(model: FindingModelFull) -> FindingModelFull:
-    """Remove associated findings attributes.
-    
-    Rule: Avoid "associated findings" attributes; ensure definitions exist
-    for associated items separately.
-    
-    Args:
-        model: The finding model to process
-        
-    Returns:
-        Model with associated findings attributes removed
-    """
-    model_dict = model.model_dump(exclude_unset=False, exclude_none=False)
-    attributes = model_dict.get('attributes', [])
-    
-    # Filter out attributes with "associated" in name (case-insensitive)
-    filtered_attributes = [
-        attr for attr in attributes
-        if 'associated' not in attr.get('name', '').lower()
-    ]
-    
-    model_dict['attributes'] = filtered_attributes
     
     # Recreate model
     return FindingModelFull(**model_dict)
@@ -1211,14 +1289,30 @@ Determine if any components/subcomponents should be extracted as separate findin
                     'attributes': component_attributes,
                     'contributors': model_dict.get('contributors', []),
                     'index_codes': model_dict.get('index_codes'),
+                    'locations': model_dict.get('locations'),
                     'tags': model_dict.get('tags'),
                     'synonyms': model_dict.get('synonyms')
                 }
                 
                 try:
+                    # Preserve metadata fields before conversion
+                    preserved_contributors = sub_finding_dict.get('contributors', [])
+                    preserved_index_codes = sub_finding_dict.get('index_codes')
+                    preserved_locations = sub_finding_dict.get('locations')
+                    
                     base_model = FindingModelBase(**sub_finding_dict)
                     model_with_ids = add_ids_to_model(base_model, source="MGB")
-                    sub_finding_model = FindingModelFull(**model_with_ids.model_dump())
+                    
+                    # Restore preserved metadata fields
+                    model_dict = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
+                    if preserved_contributors:
+                        model_dict['contributors'] = preserved_contributors
+                    if preserved_index_codes:
+                        model_dict['index_codes'] = preserved_index_codes
+                    if preserved_locations:
+                        model_dict['locations'] = preserved_locations
+                    
+                    sub_finding_model = FindingModelFull(**model_dict)
                     
                     # Ensure required attributes
                     sub_finding_model, _ = await ensure_required_attributes(sub_finding_model)
@@ -1279,9 +1373,24 @@ Determine if any components/subcomponents should be extracted as separate findin
         
         # Convert back to FindingModelFull
         try:
+            # Preserve metadata fields from original model before conversion
+            preserved_contributors = modified_main_dict.get('contributors', [])
+            preserved_index_codes = modified_main_dict.get('index_codes')
+            preserved_locations = modified_main_dict.get('locations')
+            
             base_model = FindingModelBase(**modified_main_dict)
             model_with_ids = add_ids_to_model(base_model, source="MGB")
-            modified_main_model = FindingModelFull(**model_with_ids.model_dump())
+            
+            # Restore preserved metadata fields
+            model_dict_result = model_with_ids.model_dump(exclude_unset=False, exclude_none=False)
+            if preserved_contributors:
+                model_dict_result['contributors'] = preserved_contributors
+            if preserved_index_codes:
+                model_dict_result['index_codes'] = preserved_index_codes
+            if preserved_locations:
+                model_dict_result['locations'] = preserved_locations
+            
+            modified_main_model = FindingModelFull(**model_dict_result)
             
             # Ensure required attributes
             modified_main_model, _ = await ensure_required_attributes(modified_main_model)
@@ -1292,8 +1401,15 @@ Determine if any components/subcomponents should be extracted as separate findin
             logger.error(f"Error modifying main model: {e}, returning original")
             return ([model], tracking_info)
         
-        # Return list with modified main model and all sub-findings
-        return ([modified_main_model] + sub_finding_models, tracking_info)
+        # Log extracted sub-findings but don't return them (logging only, not creating files)
+        if sub_finding_models:
+            logger.info(f"Would extract {len(sub_finding_models)} sub-finding(s) from '{finding_name}' (logging only, not creating files)")
+            for sub_model in sub_finding_models:
+                attr_names = [extract_attr_name(attr) for attr in sub_model.attributes]
+                logger.info(f"  - Would create: '{sub_model.name}' with attributes: {', '.join(attr_names)}")
+        
+        # Return only the main model (sub-findings are logged but not created)
+        return ([modified_main_model], tracking_info)
         
     except Exception as e:
         logger.warning(f"Error in sub-finding extraction for '{finding_name}': {e}, returning original model")
@@ -1303,34 +1419,13 @@ Determine if any components/subcomponents should be extracted as separate findin
         return ([model], tracking_info)
 
 
-def _flag_location_attributes(model: FindingModelFull) -> List[str]:
-    """Extract location attribute names for flagging.
-    
-    Args:
-        model: The finding model to check
-        
-    Returns:
-        List of location attribute names found
-    """
-    model_dict = model.model_dump(exclude_unset=False, exclude_none=False)
-    attributes = model_dict.get('attributes', [])
-    location_attrs = []
-    for attr in attributes:
-        attr_name = attr.get('name', '').lower()
-        if 'location' in attr_name or 'anatomical location' in attr_name:
-            location_attrs.append(attr_name)
-    return location_attrs
-
-
 async def apply_formatting_guidelines(model: FindingModelFull) -> FindingModelFull:
     """Apply formatting guidelines to the model.
     
     Rules:
     1. Lowercase: Convert model name, attribute names, and values to lowercase (except descriptions)
-    2. Remove associated findings attributes
-    3. Expand acronyms and add synonyms
-    4. Transform location attributes to anatomic location subsets
-    5. Minimize eponyms
+    2. Expand acronyms and add synonyms
+    3. Minimize eponyms
     
     Args:
         model: The finding model
@@ -1359,22 +1454,11 @@ async def apply_formatting_guidelines(model: FindingModelFull) -> FindingModelFu
     # Recreate model for helper functions
     model = FindingModelFull(**model_dict)
     
-    # 2. Remove associated findings (clean up first) - simple rule-based
-    model = remove_associated_findings(model)
-    
-    # 3. Expand acronyms and add synonyms - uses LLM agent
+    # 2. Expand acronyms and add synonyms - uses LLM agent
     model = await expand_acronyms_and_add_synonyms(model)
     
-    # 4. Transform location attributes - simple rule-based
-    model = transform_location_attributes(model)
-    
-    # 5. Minimize eponyms - uses LLM agent
+    # 3. Minimize eponyms - uses LLM agent
     model = await minimize_eponyms(model)
-    
-    # Flag location attributes for review (until transformation is fully implemented)
-    location_attrs = _flag_location_attributes(model)
-    if location_attrs:
-        logger.info(f"Location attributes flagged for review: {', '.join(location_attrs)}")
     
     return model
 

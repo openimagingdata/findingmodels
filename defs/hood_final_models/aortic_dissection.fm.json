@@ -1,0 +1,350 @@
+{
+  "oifm_id": "OIFM_MGB_617348",
+  "name": "aortic dissection",
+  "description": "Aortic dissection is a critical condition characterized by the separation of the aortic wall layers due to an intimal tear, resulting in an intramural hematoma and potential rupture; it often presents with severe, acute chest or back pain and may lead to life-threatening complications.",
+  "synonyms": [
+    "aortic rupture",
+    "dissecting aneurysm"
+  ],
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_648641",
+      "name": "presence",
+      "description": "Presence or absence of aortic dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_648641.0",
+          "name": "absent",
+          "description": "Aortic dissection is absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_648641.1",
+          "name": "present",
+          "description": "Aortic dissection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_648641.2",
+          "name": "indeterminate",
+          "description": "Presence of aortic dissection cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_648641.3",
+          "name": "unknown",
+          "description": "Presence of aortic dissection is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_792388",
+      "name": "change from prior",
+      "description": "Whether and how a aortic dissection has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_792388.0",
+          "name": "unchanged",
+          "description": "Aortic dissection is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.1",
+          "name": "stable",
+          "description": "Aortic dissection is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.2",
+          "name": "increased",
+          "description": "Aortic dissection has increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.3",
+          "name": "decreased",
+          "description": "Aortic dissection has decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.4",
+          "name": "new",
+          "description": "Aortic dissection is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.5",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.6",
+          "name": "resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.7",
+          "name": "removed"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.8",
+          "name": "unspecified"
+        },
+        {
+          "value_code": "OIFMA_MGB_792388.9",
+          "name": "no prior",
+          "description": "No prior exam available for comparison of aortic dissection"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_728042",
+      "name": "type",
+      "description": "classification of dissection by the Stanford system",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_728042.0",
+          "name": "stanford type a",
+          "description": "involves ascending aorta (may extend to arch and/or descending aorta)"
+        },
+        {
+          "value_code": "OIFMA_MGB_728042.1",
+          "name": "stanford type b",
+          "description": "involves descending aorta distal to left subclavian artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_728042.2",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_297091",
+      "name": "extent",
+      "description": "anatomic segments of the aorta involved by the dissection; multiple selections allowed",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_297091.0",
+          "name": "ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.1",
+          "name": "aortic arch"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.2",
+          "name": "descending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.3",
+          "name": "thoracoabdominal aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.4",
+          "name": "abdominal aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.5",
+          "name": "involves branch vessels"
+        },
+        {
+          "value_code": "OIFMA_MGB_297091.6",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 7
+    },
+    {
+      "oifma_id": "OIFMA_MGB_360153",
+      "name": "branch vessels involved",
+      "description": "specific branch vessels involved by extension of the dissection or causing malperfusion; multiple selections allowed",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_360153.0",
+          "name": "brachiocephalic artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.1",
+          "name": "left common carotid artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.2",
+          "name": "left subclavian artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.3",
+          "name": "coronary arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.4",
+          "name": "renal arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.5",
+          "name": "mesenteric arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.6",
+          "name": "iliac arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.7",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_360153.8",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 9
+    },
+    {
+      "oifma_id": "OIFMA_MGB_345313",
+      "name": "entry tear size",
+      "description": "maximum dimension of the primary entry tear when measurable",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_751595",
+      "name": "intimal flap",
+      "description": "visualization of an intimal flap separating true and false lumens",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_751595.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_751595.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_751595.2",
+          "name": "indeterminate"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_567966",
+      "name": "pericardial effusion",
+      "description": "presence of fluid in the pericardial space which may indicate tamponade if large",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_567966.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_567966.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_567966.2",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_103397",
+      "name": "complication type",
+      "description": "specific complication(s) related to the dissection; multiple selections allowed",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_103397.0",
+          "name": "cardiac tamponade"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.1",
+          "name": "aortic rupture"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.2",
+          "name": "branch vessel malperfusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.3",
+          "name": "stroke"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.4",
+          "name": "acute limb ischemia"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.5",
+          "name": "aortic valve regurgitation"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.6",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.7",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_103397.8",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_MGB_653976",
+      "name": "presence of aortic dissection",
+      "description": "Whether a aortic dissection is present within the aortic dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_653976.0",
+          "name": "present",
+          "description": "Aortic dissection is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_653976.1",
+          "name": "absent",
+          "description": "No aortic dissection identified"
+        },
+        {
+          "value_code": "OIFMA_MGB_653976.2",
+          "name": "indeterminate",
+          "description": "Presence of aortic dissection cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_653976.3",
+          "name": "unknown",
+          "description": "Presence of aortic dissection is unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

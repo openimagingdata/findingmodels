@@ -1,0 +1,193 @@
+{
+  "oifm_id": "OIFM_MGB_033488",
+  "name": "annular calcifications",
+  "description": "Presence of annular calcifications",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_453271",
+      "name": "presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_453271.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_453271.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_453271.2",
+          "name": "indeterminate",
+          "description": "Presence of Annular Calcifications cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_453271.3",
+          "name": "unknown",
+          "description": "Presence of Annular Calcifications is unknown"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_310293",
+      "name": "change from prior",
+      "description": "Whether and how a Annular Calcifications has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_310293.0",
+          "name": "unchanged",
+          "description": "Annular calcifications is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.1",
+          "name": "stable",
+          "description": "Annular calcifications is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.2",
+          "name": "increased",
+          "description": "Annular calcifications has increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.3",
+          "name": "decreased",
+          "description": "Annular calcifications has decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.4",
+          "name": "new",
+          "description": "Annular calcifications is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.5",
+          "name": "resolved",
+          "description": "Annular calcifications seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_310293.6",
+          "name": "no prior",
+          "description": "No prior exam available for comparison of Annular Calcifications"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_413394",
+      "name": "location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_413394.0",
+          "name": "mitral valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_413394.1",
+          "name": "aortic valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_413394.2",
+          "name": "tricuspid valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_413394.3",
+          "name": "pulmonary valve annulus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_195828",
+      "name": "severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_195828.0",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_195828.1",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_195828.2",
+          "name": "severe"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_190395",
+      "name": "cardiomegaly",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_190395.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_190395.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_680459",
+      "name": "coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_680459.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_680459.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_829477",
+      "name": "left atrial enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_829477.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_829477.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_359226",
+      "name": "pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_359226.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_359226.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "oifm_id": "OIFM_MGB_255415",
+  "name": "acromioclavicular joint degenerative changes",
+  "description": "Degenerative (osteoarthritic) changes affecting the acromioclavicular (AC) joint characterized by joint space narrowing, osteophyte formation, subchondral sclerosis, cysts, and related features visualized on shoulder imaging.",
+  "synonyms": [
+    "ac joint degenerative changes",
+    "ac joint osteoarthritis",
+    "ac joint arthrosis",
+    "ac joint degenerative disease"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "shoulder",
+    "degenerative",
+    "acromioclavicular joint",
+    "osteoarthritis"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_444598",
+      "name": "presence",
+      "description": "Whether degenerative changes are identified at the acromioclavicular joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_444598.0",
+          "name": "present",
+          "description": "Degenerative features are seen at the ac joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_444598.1",
+          "name": "absent",
+          "description": "No degenerative features identified at the ac joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_444598.2",
+          "name": "indeterminate",
+          "description": "Presence of acromioclavicular joint degenerative changes cannot be determined"
+        },
+        {
+          "value_code": "OIFMA_MGB_444598.3",
+          "name": "unknown",
+          "description": "Presence of acromioclavicular joint degenerative changes is unknown"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_426010",
+      "name": "change from prior",
+      "description": "Whether and how a acromioclavicular joint degenerative changes has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_426010.0",
+          "name": "unchanged",
+          "description": "Acromioclavicular joint degenerative changes is unchanged"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.1",
+          "name": "stable",
+          "description": "Acromioclavicular joint degenerative changes is stable"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.2",
+          "name": "increased",
+          "description": "Acromioclavicular joint degenerative changes has increased"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.3",
+          "name": "decreased",
+          "description": "Acromioclavicular joint degenerative changes has decreased"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.4",
+          "name": "new",
+          "description": "Acromioclavicular joint degenerative changes is new"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.5",
+          "name": "resolved",
+          "description": "Acromioclavicular joint degenerative changes seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_426010.6",
+          "name": "no prior",
+          "description": "No prior exam available for comparison of acromioclavicular joint degenerative changes"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_079732",
+      "name": "status",
+      "description": "Temporal comparison of the degenerative changes relative to prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_079732.0",
+          "name": "new",
+          "description": "Findings not present on prior exam or newly apparent."
+        },
+        {
+          "value_code": "OIFMA_MGB_079732.1",
+          "name": "unchanged",
+          "description": "No appreciable change compared with prior imaging."
+        },
+        {
+          "value_code": "OIFMA_MGB_079732.2",
+          "name": "increased",
+          "description": "Findings have progressed compared with prior imaging."
+        },
+        {
+          "value_code": "OIFMA_MGB_079732.3",
+          "name": "resolved",
+          "description": "Findings present previously are no longer seen."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_358787",
+      "name": "severity",
+      "description": "Overall degree of degenerative change at the ac joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_358787.0",
+          "name": "mild",
+          "description": "Minimal degenerative change, often early or asymptomatic."
+        },
+        {
+          "value_code": "OIFMA_MGB_358787.1",
+          "name": "moderate",
+          "description": "Clear degenerative change with moderate joint alteration."
+        },
+        {
+          "value_code": "OIFMA_MGB_358787.2",
+          "name": "severe",
+          "description": "Marked degenerative change with severe joint alteration."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_334279",
+      "name": "joint space narrowing",
+      "description": "Radiographic narrowing of the acromioclavicular joint space.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_334279.0",
+          "name": "present",
+          "description": "Reduced joint space compared with expected normal."
+        },
+        {
+          "value_code": "OIFMA_MGB_334279.1",
+          "name": "absent",
+          "description": "No appreciable joint space narrowing."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_476560",
+      "name": "osteophyte formation",
+      "description": "Presence of marginal bony spurs at the acromioclavicular joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_476560.0",
+          "name": "present",
+          "description": "Osteophytes visualized at the joint margins."
+        },
+        {
+          "value_code": "OIFMA_MGB_476560.1",
+          "name": "absent",
+          "description": "No osteophytes identified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_080690",
+      "name": "subchondral sclerosis",
+      "description": "Increased subchondral bone density beneath the articular surface.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_080690.0",
+          "name": "present",
+          "description": "Subchondral sclerosis is visible beneath the joint surface."
+        },
+        {
+          "value_code": "OIFMA_MGB_080690.1",
+          "name": "absent",
+          "description": "No subchondral sclerosis identified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_277947",
+      "name": "subchondral cysts",
+      "description": "Rounded subchondral lucencies that may reflect cystic degeneration.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_277947.0",
+          "name": "present",
+          "description": "Subchondral cysts identified adjacent to the joint."
+        },
+        {
+          "value_code": "OIFMA_MGB_277947.1",
+          "name": "absent",
+          "description": "No subchondral cysts identified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_411967",
+      "name": "capsular thickening",
+      "description": "Thickening of the joint capsule surrounding the acromioclavicular joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_411967.0",
+          "name": "present",
+          "description": "Capsular thickening or fibrosis is observed."
+        },
+        {
+          "value_code": "OIFMA_MGB_411967.1",
+          "name": "absent",
+          "description": "No capsular thickening identified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_197182",
+      "name": "distal clavicle osteolysis",
+      "description": "Resorptive change or loss of bone at the distal clavicle.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_197182.0",
+          "name": "present",
+          "description": "Osteolytic resorption of the distal clavicle is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_197182.1",
+          "name": "absent",
+          "description": "No distal clavicle osteolysis identified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

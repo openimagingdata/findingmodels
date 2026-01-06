@@ -40,7 +40,7 @@ async def process_single_file(
     file_path: Path,
     index: Index,
     output_dir: Path
-) -> Tuple[bool, str, Optional[Dict], Optional[Dict]]:
+) -> Tuple[bool, str, Optional[Dict], Optional[Dict], Optional[Dict], Optional[List[str]]]:
     """Process a single definition file.
     
     Args:
@@ -49,7 +49,7 @@ async def process_single_file(
         output_dir: Output directory for generated models
         
     Returns:
-        Tuple of (success, message)
+        Tuple of (success, message, tracking_info, sub_finding_tracking_info, merge_tracking_info, missing_attributes)
     """
     try:
         filename = file_path.name
@@ -58,9 +58,20 @@ async def process_single_file(
         # Load definition - returns (data, markdown_content, file_type)
         data, markdown_content, file_type = await load_definition(file_path)
         
-        # Generate model from definition: generated FindingModelFull
-        incoming_model = await generate_new_model(file_path, data, markdown_content, file_type)
+        # Generate model from definition: returns (FindingModelFull, missing_attributes)
+        incoming_model, missing_attributes = await generate_new_model(file_path, data, markdown_content, file_type)
         logger.info(f"Generated model: {incoming_model.name}")
+        if missing_attributes:
+            logger.info(f"Missing attributes from source: {', '.join(missing_attributes)}")
+        
+        # Track merge/match information
+        merge_tracking_info = {
+            'finding_name': incoming_model.name,
+            'match_found': False,
+            'result': 'created_new',
+            'existing_match': None,
+            'merge_details': None
+        }
         
         # Search for existing model with specificity check to reject too-general matches.
         # Specificity check uses LLM agent that determines if the existing model is too general compared to the incoming model.
@@ -68,12 +79,21 @@ async def process_single_file(
         
         if existing_match:
             logger.info(f"Found existing model: {existing_match.get('name')} ({existing_match.get('oifm_id')})")
-            # Merge with existing
-            final_model = await merge_with_existing(incoming_model, existing_match, index)
+            merge_tracking_info['match_found'] = True
+            merge_tracking_info['existing_match'] = {
+                'name': existing_match.get('name'),
+                'oifm_id': existing_match.get('oifm_id')
+            }
+            
+            # Merge with existing - now returns tuple (model, merge_details)
+            final_model, merge_details = await merge_with_existing(incoming_model, existing_match, index)
+            merge_tracking_info['result'] = 'merged'
+            merge_tracking_info['merge_details'] = merge_details
             logger.info("Merged with existing model")
         else:
             logger.info("No match found, creating new model")
             final_model = incoming_model
+            merge_tracking_info['result'] = 'created_new'
         
         # Ensure required attributes (returns tuple: model, tracking_info)
         final_model, tracking_info = await ensure_required_attributes(final_model)
@@ -83,42 +103,51 @@ async def process_single_file(
         final_model = await apply_formatting_guidelines(final_model)
         
         # Extract sub-findings (returns tuple: (list of models, tracking_info))
+        # Note: sub-findings are identified and logged but not saved as separate files
         all_models, sub_finding_tracking_info = await extract_sub_findings(final_model)
         
-        # Save all models (main + any sub-findings)
-        saved_count = 0
-        for model in all_models:
-            output_file = output_dir / model_file_name(model.name)
-            output_file.parent.mkdir(parents=True, exist_ok=True)
-            output_file.write_text(
-                model.model_dump_json(indent=2, exclude_none=True),
-                encoding='utf-8'
-            )
-            saved_count += 1
-            logger.info(f"Saved to {output_file.name}")
+        # Save only the main model (first in list)
+        main_model = all_models[0]
+        output_file = output_dir / model_file_name(main_model.name)
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        output_file.write_text(
+            main_model.model_dump_json(indent=2, exclude_none=True),
+            encoding='utf-8'
+        )
+        logger.info(f"Saved to {output_file.name}")
         
-        if saved_count > 1:
-            logger.info(f"Extracted {saved_count - 1} sub-finding(s) from {filename}")
+        # Log sub-findings that would be extracted (but aren't being saved)
+        # Count from tracking info since sub-findings aren't returned in all_models
+        extracted_count = len(sub_finding_tracking_info.get('extracted', [])) if sub_finding_tracking_info else 0
+        kept_count = len(sub_finding_tracking_info.get('kept_with_presence', [])) if sub_finding_tracking_info else 0
+        total_sub_findings = extracted_count + kept_count
         
-        return True, f"Successfully processed {filename}" + (f" (extracted {saved_count - 1} sub-finding(s))" if saved_count > 1 else ""), tracking_info, sub_finding_tracking_info
+        if total_sub_findings > 0:
+            logger.info(f"Identified {total_sub_findings} sub-finding(s) for extraction (logged only, not saved)")
+        
+        return True, f"Successfully processed {filename}" + (f" (identified {total_sub_findings} sub-finding(s) for extraction)" if total_sub_findings > 0 else ""), tracking_info, sub_finding_tracking_info, merge_tracking_info, missing_attributes
         
     except Exception as e:
         error_msg = f"Error processing {file_path.name}: {str(e)}"
         logger.error(error_msg)
         import traceback
         traceback.print_exc()
-        return False, error_msg, None, None
+        return False, error_msg, None, None, None, None
 
 
 def generate_attribute_report(
     attribute_tracking: List[Tuple[str, str, Optional[Dict]]],
+    merge_tracking: List[Tuple[str, str, Optional[Dict]]],
+    missing_attributes_tracking: List[Tuple[str, str, List[str]]],
     input_dir: str,
     output_dir: str
 ) -> Path:
-    """Generate a markdown report for attribute standardization.
+    """Generate a markdown report for attribute standardization and merge information.
     
     Args:
         attribute_tracking: List of (filename, finding_name, tracking_info) tuples
+        merge_tracking: List of (filename, finding_name, merge_tracking_info) tuples
+        missing_attributes_tracking: List of (filename, finding_name, missing_attrs) tuples
         input_dir: Input directory path
         output_dir: Output directory path
         
@@ -130,6 +159,14 @@ def generate_attribute_report(
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     report_path = Path(output_dir) / f"processing_report_{timestamp}.md"
     
+    # Create lookup dict for merge tracking (use filename as key for better matching)
+    merge_lookup = {}
+    for filename, finding_name, info in merge_tracking:
+        if info:
+            # Store by both filename and finding_name for flexibility
+            merge_lookup[filename] = info
+            merge_lookup[finding_name.lower()] = info
+    
     # Calculate statistics
     total_files = len(attribute_tracking)
     files_with_renamed = sum(1 for _, _, info in attribute_tracking 
@@ -138,6 +175,11 @@ def generate_attribute_report(
     files_with_added = sum(1 for _, _, info in attribute_tracking 
                           if info and (info.get('presence', {}).get('action') == 'added' or
                                       info.get('change_from_prior', {}).get('action') == 'added'))
+    
+    # Merge statistics
+    matches_found = sum(1 for _, _, info in merge_tracking if info and info.get('match_found'))
+    merged_count = sum(1 for _, _, info in merge_tracking if info and info.get('result') == 'merged')
+    created_new_count = sum(1 for _, _, info in merge_tracking if info and info.get('result') == 'created_new')
     
     # Presence statistics
     presence_exact = sum(1 for _, _, info in attribute_tracking 
@@ -170,6 +212,9 @@ def generate_attribute_report(
         "## Summary Statistics",
         "",
         f"- **Total files processed:** {total_files}",
+        f"- **Matches found in database:** {matches_found}",
+        f"- **Merged with existing:** {merged_count}",
+        f"- **Created new:** {created_new_count}",
         f"- **Files with renamed attributes:** {files_with_renamed}",
         f"- **Files with added attributes:** {files_with_added}",
         "",
@@ -185,18 +230,60 @@ def generate_attribute_report(
         f"- **Renamed (classification agent):** {change_renamed_classification}",
         f"- **Added (not found):** {change_added}",
         "",
+    ]
+    
+    # Missing attributes statistics
+    files_with_missing = len(missing_attributes_tracking)
+    total_missing = sum(len(missing_attrs) for _, _, missing_attrs in missing_attributes_tracking)
+    if files_with_missing > 0:
+        lines.extend([
+            "### Missing Attributes from Source",
+            f"- **Files with missing attributes:** {files_with_missing}",
+            f"- **Total missing attributes:** {total_missing}",
+            "",
+        ])
+    
+    lines.extend([
         "## Per-Finding Details",
         "",
-    ]
+    ])
     
     # Add per-finding details
     for filename, finding_name, tracking_info in sorted(attribute_tracking, key=lambda x: x[1].lower()):
-        if not tracking_info:
-            continue
-        
         lines.append(f"### {finding_name} (`{filename}`)")
         
+        # Merge/match information
+        merge_info = merge_lookup.get(filename) or merge_lookup.get(finding_name.lower())
+        if merge_info:
+            if merge_info.get('match_found'):
+                existing = merge_info.get('existing_match', {})
+                lines.append(f"- **Database match:** Found - `{existing.get('name', 'unknown')}` (ID: {existing.get('oifm_id', 'N/A')})")
+                if merge_info.get('result') == 'merged':
+                    lines.append(f"- **Result:** Merged with existing model")
+                    merge_details = merge_info.get('merge_details', {})
+                    if merge_details:
+                        lines.append(f"  - Attributes merged: {merge_details.get('attributes_merged', 0)}")
+                        lines.append(f"  - Attributes added: {merge_details.get('attributes_added', 0)}")
+                        lines.append(f"  - Attributes created: {merge_details.get('attributes_created', 0)}")
+                        if merge_details.get('merge_recommendations'):
+                            lines.append("  - Merged attributes:")
+                            for mr in merge_details['merge_recommendations']:
+                                lines.append(f"    - `{mr.get('existing_name')}` ← `{mr.get('incoming_name')}` ({mr.get('relationship')})")
+                        if merge_details.get('new_attributes'):
+                            lines.append(f"  - New attributes added: {', '.join([f'`{n}`' for n in merge_details['new_attributes']])}")
+                else:
+                    lines.append(f"- **Result:** {merge_info.get('result', 'unknown')}")
+            else:
+                lines.append(f"- **Database match:** Not found")
+                lines.append(f"- **Result:** Created new model")
+        else:
+            lines.append(f"- **Database match:** Unknown")
+            lines.append(f"- **Result:** Unknown")
+        
         # Presence info
+        if not tracking_info:
+            lines.append("")
+            continue
         presence_info = tracking_info.get('presence', {})
         presence_action = presence_info.get('action', 'unknown')
         presence_original = presence_info.get('original_name')
@@ -226,7 +313,29 @@ def generate_attribute_report(
         else:
             lines.append(f"- **Change from prior:** {change_action}")
         
+        # Missing attributes info
+        missing_attrs_for_file = [missing_attrs for fn, _, missing_attrs in missing_attributes_tracking if fn == filename]
+        if missing_attrs_for_file and missing_attrs_for_file[0]:
+            lines.append(f"- **Missing attributes from source:** {', '.join(f'`{attr}`' for attr in missing_attrs_for_file[0])}")
+        
         lines.append("")
+    
+    # Add separate section for missing attributes if any
+    if missing_attributes_tracking:
+        lines.extend([
+            "",
+            "## Missing Attributes from Source",
+            "",
+            "The following attributes were found in the source markdown but were not extracted into the final model:",
+            "",
+        ])
+        
+        for filename, finding_name, missing_attrs in sorted(missing_attributes_tracking, key=lambda x: x[1].lower()):
+            if missing_attrs:
+                lines.append(f"### {finding_name} (`{filename}`)")
+                for attr in missing_attrs:
+                    lines.append(f"- `{attr}`")
+                lines.append("")
     
     # Write report
     report_path.parent.mkdir(parents=True, exist_ok=True)
@@ -389,9 +498,11 @@ async def process_hood_directory(input_dir: str, output_dir: str, limit: Optiona
     
     attribute_tracking: List[Tuple[str, str, Optional[Dict]]] = []  # (filename, finding_name, tracking_info)
     sub_finding_tracking: List[Tuple[str, str, Optional[Dict]]] = []  # (filename, finding_name, tracking_info)
+    merge_tracking: List[Tuple[str, str, Optional[Dict]]] = []  # (filename, finding_name, merge_tracking_info)
+    missing_attributes_tracking: List[Tuple[str, str, List[str]]] = []  # (filename, finding_name, missing_attrs)
     
     for file_path in files_to_process:
-        success, message, tracking_info, sub_finding_info = await process_single_file(file_path, index, output_path)
+        success, message, tracking_info, sub_finding_info, merge_tracking_info, missing_attrs = await process_single_file(file_path, index, output_path)
         results.append((file_path.name, success, message))
         
         if success:
@@ -405,12 +516,22 @@ async def process_hood_directory(input_dir: str, output_dir: str, limit: Optiona
             if sub_finding_info:
                 finding_name = sub_finding_info.get('finding_name', 'unknown')
                 sub_finding_tracking.append((file_path.name, finding_name, sub_finding_info))
+            # Collect merge tracking info if available
+            if merge_tracking_info:
+                finding_name = merge_tracking_info.get('finding_name', 'unknown')
+                merge_tracking.append((file_path.name, finding_name, merge_tracking_info))
+            # Collect missing attributes if available
+            if missing_attrs:
+                finding_name = tracking_info.get('presence', {}).get('finding_name') if tracking_info else 'unknown'
+                if not finding_name or finding_name == 'unknown':
+                    finding_name = merge_tracking_info.get('finding_name', 'unknown') if merge_tracking_info else 'unknown'
+                missing_attributes_tracking.append((file_path.name, finding_name, missing_attrs))
         else:
             failed_count += 1
     
-    # Generate attribute report
+    # Generate attribute report (now includes merge info and missing attributes)
     if attribute_tracking:
-        report_path = generate_attribute_report(attribute_tracking, input_dir, str(output_path))
+        report_path = generate_attribute_report(attribute_tracking, merge_tracking, missing_attributes_tracking, input_dir, str(output_path))
         logger.info(f"\nAttribute standardization report saved to: {report_path}")
     
     # Generate sub-finding report
@@ -496,6 +617,12 @@ async def main():
         format='%(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
+    
+    # Suppress noisy HTTP client debug logs
+    logging.getLogger("httpcore").setLevel(logging.WARNING)
+    logging.getLogger("httpx").setLevel(logging.WARNING)
+    logging.getLogger("httpcore.http11").setLevel(logging.WARNING)
+    logging.getLogger("httpcore.connection").setLevel(logging.WARNING)
     
     input_dir = args.input_dir
     output_dir = args.output_dir
