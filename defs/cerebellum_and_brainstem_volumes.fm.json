@@ -1,0 +1,31 @@
+{
+  "oifm_id": "OIFM_MSFT_325173",
+  "name": "cerebellum and brainstem volumes",
+  "description": "Quantitative assessment of cerebellar hemispheres and brainstem.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_317323",
+      "name": "cerebellum volume (left)",
+      "description": "Volume of left cerebellar hemisphere, clinically relevant for posterior fossa integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_807221",
+      "name": "cerebellum volume (right)",
+      "description": "Volume of right cerebellar hemisphere, clinically relevant for posterior fossa integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_778204",
+      "name": "brainstem volume",
+      "description": "Volume of brainstem, clinically relevant for neurodegenerative and demyelinating disorders.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false
+    }
+  ]
+}

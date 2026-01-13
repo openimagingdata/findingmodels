@@ -1,0 +1,63 @@
+{
+  "oifm_id": "OIFM_MSFT_868775",
+  "name": "hippocampal asymmetry metrics",
+  "description": "Quantitative assessment of hippocampal asymmetry index for seizure and sclerosis evaluation.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_968280",
+      "name": "left hippocampus volume",
+      "description": "Absolute volume of the left hippocampus.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_374497",
+      "name": "right hippocampus volume",
+      "description": "Absolute volume of the right hippocampus.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_046102",
+      "name": "left % of ICV",
+      "description": "Percentage of intracranial volume occupied by the left hippocampus.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_764956",
+      "name": "right % of ICV",
+      "description": "Percentage of intracranial volume occupied by the right hippocampus.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_339416",
+      "name": "left normative percentile",
+      "description": "Age- and sex-adjusted normative percentile for left hippocampus volume.",
+      "type": "numeric",
+      "unit": "percentile",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_080645",
+      "name": "right normative percentile",
+      "description": "Age- and sex-adjusted normative percentile for right hippocampus volume.",
+      "type": "numeric",
+      "unit": "percentile",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_928711",
+      "name": "left-right asymmetry index",
+      "description": "Percentage difference between left and right hippocampal volumes divided by their mean.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    }
+  ]
+}
