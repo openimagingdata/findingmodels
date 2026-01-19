@@ -1,71 +1,129 @@
 {
-  "oifm_id": "OIFM_MSFT_594425",
+  "oifm_id": "OIFM_MSFT_679815",
   "name": "temporal lobe region volumes",
   "description": "Quantitative assessment of temporal lobe subregions for neurodegenerative and seizure disorder evaluation.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_334020",
+      "oifma_id": "OIFMA_MSFT_670413",
       "name": "temporal lobe volume (left)",
       "description": "Volume of left temporal lobe, clinically relevant for memory and language functions.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13865"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_684940",
+      "oifma_id": "OIFMA_MSFT_890284",
       "name": "temporal lobe volume (right)",
       "description": "Volume of right temporal lobe, clinically relevant for memory and language functions.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13864"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_950571",
+      "oifma_id": "OIFMA_MSFT_100349",
       "name": "hippocampus volume (left)",
       "description": "Volume of left hippocampus, clinically relevant for memory and seizure disorders.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26567"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_313444",
+      "oifma_id": "OIFMA_MSFT_952407",
       "name": "hippocampus volume (right)",
       "description": "Volume of right hippocampus, clinically relevant for memory and seizure disorders.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26566"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_463470",
+      "oifma_id": "OIFMA_MSFT_249448",
       "name": "entorhinal cortex volume (left)",
       "description": "Volume of left entorhinal cortex, clinically relevant for early Alzheimer's disease detection.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26411"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_743751",
+      "oifma_id": "OIFMA_MSFT_693534",
       "name": "entorhinal cortex volume (right)",
       "description": "Volume of right entorhinal cortex, clinically relevant for early Alzheimer's disease detection.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26410"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_254130",
+      "oifma_id": "OIFMA_MSFT_909116",
       "name": "parahippocampal gyrus volume (left)",
       "description": "Volume of left parahippocampal gyrus, clinically relevant for memory processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13956"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_584776",
+      "oifma_id": "OIFMA_MSFT_671331",
       "name": "parahippocampal gyrus volume (right)",
       "description": "Volume of right parahippocampal gyrus, clinically relevant for memory processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13955"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6476"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "78277001"
     }
   ]
 }

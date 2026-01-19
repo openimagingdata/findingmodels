@@ -1,71 +1,129 @@
 {
-  "oifm_id": "OIFM_MSFT_047481",
+  "oifm_id": "OIFM_MSFT_590521",
   "name": "deep gray nuclei volumes",
   "description": "Quantitative assessment of basal ganglia and thalamic structures.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_750559",
+      "oifma_id": "OIFMA_MSFT_952286",
       "name": "caudate volume (left)",
       "description": "Volume of left caudate nucleus.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21020"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_791808",
+      "oifma_id": "OIFMA_MSFT_147524",
       "name": "caudate volume (right)",
       "description": "Volume of right caudate nucleus.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21019"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_352254",
+      "oifma_id": "OIFMA_MSFT_286076",
       "name": "putamen volume (left)",
       "description": "Volume of left putamen.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21015"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_033635",
+      "oifma_id": "OIFMA_MSFT_291000",
       "name": "putamen volume (right)",
       "description": "Volume of right putamen.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21014"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_668861",
+      "oifma_id": "OIFMA_MSFT_501745",
       "name": "pallidum volume (left)",
       "description": "Volume of left pallidum.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21018"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_684847",
+      "oifma_id": "OIFMA_MSFT_592090",
       "name": "pallidum volume (right)",
       "description": "Volume of right pallidum.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID21017"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_970484",
+      "oifma_id": "OIFMA_MSFT_318234",
       "name": "thalamus volume (left)",
       "description": "Volume of left thalamus.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13496"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_302044",
+      "oifma_id": "OIFMA_MSFT_939766",
       "name": "thalamus volume (right)",
       "description": "Volume of right thalamus.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13495"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6537"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "32610002"
     }
   ]
 }

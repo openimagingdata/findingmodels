@@ -1,71 +1,129 @@
 {
-  "oifm_id": "OIFM_MSFT_543987",
+  "oifm_id": "OIFM_MSFT_762114",
   "name": "parietal lobe region volumes",
   "description": "Quantitative assessment of parietal lobe subregions for neurodegenerative and cognitive disorder evaluation.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_656618",
+      "oifma_id": "OIFMA_MSFT_645822",
       "name": "parietal lobe volume (left)",
       "description": "Volume of left parietal lobe, clinically relevant for visuospatial and sensory processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13867"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_594799",
+      "oifma_id": "OIFMA_MSFT_014247",
       "name": "parietal lobe volume (right)",
       "description": "Volume of right parietal lobe, clinically relevant for visuospatial and sensory processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13866"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_906812",
+      "oifma_id": "OIFMA_MSFT_830311",
       "name": "primary sensory cortex volume (left)",
       "description": "Volume of left primary sensory cortex, clinically relevant for somatosensory function.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26413"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_521705",
+      "oifma_id": "OIFMA_MSFT_231355",
       "name": "primary sensory cortex volume (right)",
       "description": "Volume of right primary sensory cortex, clinically relevant for somatosensory function.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26412"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_571005",
+      "oifma_id": "OIFMA_MSFT_513703",
       "name": "superior parietal lobule volume (left)",
       "description": "Volume of left superior parietal lobule, clinically relevant for spatial orientation and attention.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14110"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_914934",
+      "oifma_id": "OIFMA_MSFT_142563",
       "name": "superior parietal lobule volume (right)",
       "description": "Volume of right superior parietal lobule, clinically relevant for spatial orientation and attention.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14109"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_850400",
+      "oifma_id": "OIFMA_MSFT_308782",
       "name": "supramarginal gyrus volume (left)",
       "description": "Volume of left supramarginal gyrus, clinically relevant for language and phonological processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13930"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_539944",
+      "oifma_id": "OIFMA_MSFT_182059",
       "name": "supramarginal gyrus volume (right)",
       "description": "Volume of right supramarginal gyrus, clinically relevant for language and phonological processing.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13929"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6493"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "16630005"
     }
   ]
 }

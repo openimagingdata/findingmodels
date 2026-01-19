@@ -1,47 +1,91 @@
 {
-  "oifm_id": "OIFM_MSFT_254806",
+  "oifm_id": "OIFM_MSFT_792744",
   "name": "ventricular system volumes",
   "description": "Quantitative assessment of ventricular system volumes for hydrocephalus and atrophy evaluation.",
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_751236",
+      "oifma_id": "OIFMA_MSFT_052112",
       "name": "superior lateral ventricles volume (left)",
       "description": "Volume of left superior lateral ventricle.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13789"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_535948",
+      "oifma_id": "OIFMA_MSFT_563707",
       "name": "superior lateral ventricles volume (right)",
       "description": "Volume of right superior lateral ventricle.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13788"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_538325",
+      "oifma_id": "OIFMA_MSFT_002443",
       "name": "inferior lateral ventricles volume (left)",
       "description": "Volume of left inferior lateral ventricle.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13789"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_823501",
+      "oifma_id": "OIFMA_MSFT_116789",
       "name": "inferior lateral ventricles volume (right)",
       "description": "Volume of right inferior lateral ventricle.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13788"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_554468",
+      "oifma_id": "OIFMA_MSFT_057315",
       "name": "third ventricle volume",
       "description": "Volume of third ventricle.",
       "type": "numeric",
       "unit": "cm^3",
-      "required": false
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID7137"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "49841001"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID7123"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "35764002"
     }
   ]
 }
