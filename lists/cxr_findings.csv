@@ -1,0 +1,325 @@
+﻿id,name,category,parent_id,synonyms,actionability
+FID0010,Air bronchograms,lung,,,incidental
+FID0020,Airspace opacity,lung,,"Air space opacity,Patchy opacity,Infiltrate,Hazy opacity,Lobar opacity",conditional
+FID0030,Airspace opacities,lung,,"Airspace disease,Infiltrates",conditional
+FID0040,Airway abnormality,lung,,,conditional
+FID0060,Pulmonary scarring,lung,,Scarring,incidental
+FID0070,Architectural distortion,lung,,,conditional
+FID0080,Aspiration,lung,,,significant
+FID0090,Atelectasis,lung,,"Linear atelectasis,Plate-like atelectasis,Discoid atelectasis,Collapse,Lung collapse",conditional
+FID0100,Azygos fissure,lung,,,incidental
+FID0110,Azygos lobe,lung,,,incidental
+FID0120,Accessory fissure,lung,,,incidental
+FID0130,Reticular opacities,lung,,"Reticular opacity,Interstitial opacities,Diffuse reticular opacities,Diffuse interstitial opacities",conditional
+FID0140,Batwing perihilar opacities,lung,,,significant
+FID0150,Thickening of bronchial wall,lung,,"Peribronchial cuffing,Bronchial wall thickening",incidental
+FID0160,Bronchiectasis,lung,,,incidental
+FID0170,Calcified nodule,lung,,Calcified granuloma,incidental
+FID0180,Cavitary lesion,lung,,"Cavitation,Cavitating mass,Cavitary lucency",significant
+FID0190,Airspace consolidation,lung,FID0020,Consolidation,conditional
+FID0210,Diffuse hazy opacities,lung,,,conditional
+FID0220,Diffuse increased lung attenuation,lung,,,conditional
+FID0230,Diffuse increased lung lucency,lung,,,incidental
+FID0250,Diffuse nodular opacities,lung,,Miliary pattern,significant
+FID0260,Elevation of hemidiaphragm,lung,,Elevated hemidiaphragm,conditional
+FID0265,Depression of hemidiaphragm,lung,,Depressed hemidiaphragm,conditional
+FID0270,Emphysema,lung,,"Emphysematous changes,Bullous emphysema,Bullous disease",incidental
+FID0275,Bulla,lung,,Cystic space,incidental
+FID0280,Engorgement of pulmonary vasculature,lung,FID0305,"Pulmonary vascular congestion,Pulmonary venous congestion,Pulmonary venous hypertension",conditional
+FID0290,Cephalization of pulmonary vasculature,lung,FID0305,,conditional
+FID0300,Indistinct pulmonary vasculature,lung,FID0305,,incidental
+FID0305,Pulmonary vascular abnormality,lung,,"Abnormal pulmonary vasculature,Pulmonary vascular abnormality,Pulmonary vascularity abnormality,Pulmonary vasculature abnormality",conditional
+FID0310,Eventration of hemidiaphragm,lung,,,incidental
+FID0315,Diaphragmatic abnormality,lung,,Diaphragm abnormality,conditional
+FID0320,Thickening of fissure,lung,,,incidental
+FID0330,Flattening of hemidiaphragm,lung,,,incidental
+FID0360,Pulmonary calcification,lung,,,incidental
+FID0370,Hyperinflation of lungs,lung,,"Hyperexpanded lungs,Hyperinflated lungs",incidental
+FID0380,Interstitial pulmonary edema,lung,FID0600,"Kerley A lines,Kerley B lines,Pulmonary interstitial edema",significant
+FID0390,Thickening of interstitium,lung,,"Interstitial thickening,Interstitial prominence",conditional
+FID0420,Linear opacity,lung,,"Bandlike opacity,Linear opacities",incidental
+FID0440,Lobectomy,lung,,,incidental
+FID0450,Low lung volumes,lung,,"Hypoventilation,Poor inspiratory volume,Decreased lung volumes",incidental
+FID0460,Lung abnormality,lung,,,conditional
+FID0465,Osseous lucency,osseous,,,conditional
+FID0470,Lung lucency,lung,,,conditional
+FID0475,Mass,lung,,,significant
+FID0480,Mucoid impaction,lung,,Finger-in-glove opacity,conditional
+FID0485,Bronchial occlusion,lung,,"Cutoff,Endobronchial obstruction,Mucus plugging,Bronchial cutoff sign",significant
+FID0490,Pulmonary nodule,lung,,Lung nodule,conditional
+FID0500,Lung transplant,lung,,,incidental
+FID0520,Pulmonary nodules,lung,,Lung nodules,conditional
+FID0530,Nipple shadow,lung,,,incidental
+FID0550,Pneumonectomy,lung,,,incidental
+FID0560,Pneumonia,lung,,Pneumonitis,significant
+FID0570,Post-resection volume loss,lung,,,incidental
+FID0590,Pulmonary contusion,lung,,,significant
+FID0595,Pulmonary laceration,lung,,"Pneumatocele,Traumatic pneumatocele",significant
+FID0600,Pulmonary edema,lung,,Edema,significant
+FID0605,Alveolar pulmonary edema,lung,FID0600,,significant
+FID0610,Pulmonary fibrosis,lung,,"Fibrotic change,Confluent fibrosis",incidental
+FID0620,Pulmonary oligemia,lung,,,conditional
+FID0640,Reduction of lung markings,lung,,,incidental
+FID0650,Reticulonodular opacity,lung,,,conditional
+FID0660,Surgical staple line in lung,lung,,,incidental
+FID0670,Calcification of trachea,lung,,,incidental
+FID0680,Deviation of trachea,lung,,Tracheal deviation,conditional
+FID0690,Diverticulum of trachea,lung,,,incidental
+FID0710,Obstruction of trachea,lung,,,critical
+FID0720,Stenosis of trachea,lung,,Tracheal narrowing,significant
+FID0730,Tracheomegaly,lung,,,incidental
+FID0750,Volume loss,lung,,,conditional
+FID0760,Wedge resection,lung,,,incidental
+FID0770,Cystic fibrosis,lung,,,incidental
+FID0780,Air-fluid level,lung,,,conditional
+FID1000,Blunting of costophrenic angle,pleura,,Blunted costophrenic angle,incidental
+FID1010,Calcified pleural plaques,pleura,,"Pleural plaque,Pleural plaques",incidental
+FID1030,Pleural abnormality,pleura,,Pleural density,conditional
+FID1040,Pleural effusion,pleura,,"Hydrothorax,Hepatic hydrothorax,Pleural fluid,Effusions",conditional
+FID1060,Thickening of pleura,pleura,,"Pleural scarring,Pleural thickening",incidental
+FID1065,Apical pleuroparenchymal scarring,pleura,,"Biapical thickening,Biapical scarring",incidental
+FID1070,Pneumothorax,pleura,,,significant
+FID1075,Tension pneumothorax,pleura,FID1070,,critical
+FID1080,Pleural nodule,pleura,,,significant
+FID1085,Pleural nodules,pleura,,Pleural nodularity,significant
+FID1100,Abnormal aortic contour,mediastinal,,,conditional
+FID1110,Abnormal aortopulmonary window contour,mediastinal,,Loss of aortopulmonary window concavity,conditional
+FID1120,Abnormal hilar contour,mediastinal,,Hilar abnormality,conditional
+FID1130,Abnormal mediastinal contour,mediastinal,,,conditional
+FID1140,Abnormal pulmonary artery contour,mediastinal,,,conditional
+FID1150,Calcification of aorta,mediastinal,,Atherosclerotic calcification,incidental
+FID1160,Dilation of aorta,mediastinal,,Aortic dilation,conditional
+FID1170,Aneurysm of aorta,mediastinal,,Aneurysmal dilatation of the aortic arch,significant
+FID1180,Bulging of the aortic arch,mediastinal,,,conditional
+FID1190,Cardiac abnormality,mediastinal,,,conditional
+FID1195,Heart transplant,mediastinal,,,incidental
+FID1200,Cardiomegaly,mediastinal,,Enlarged cardiac silhouette,conditional
+FID1210,Dextrocardia,mediastinal,,,incidental
+FID1220,Double density sign,mediastinal,,,incidental
+FID1230,Enlargement of aortic knob,mediastinal,,,incidental
+FID1240,Enlargement of left atrium,mediastinal,FID1200,,conditional
+FID1250,Enlargement of left ventricle,mediastinal,FID1200,,conditional
+FID1260,Enlargement of right atrium,mediastinal,FID1200,,conditional
+FID1270,Enlargement of right ventricle,mediastinal,FID1200,,conditional
+FID1280,Globular cardiac silhouette,mediastinal,,,conditional
+FID1290,Hiatal hernia,mediastinal,,Hiatus hernia,incidental
+FID1300,Enlargement of hilum,mediastinal,,"Hilar fullness,Perihilar fullness",conditional
+FID1310,Lymphadenopathy of hilum,mediastinal,,,significant
+FID1330,Mediastinal abnormality,mediastinal,,,conditional
+FID1340,Mediastinal fat pad,mediastinal,,,incidental
+FID1360,Lymphadenopathy of mediastinum,mediastinal,,Mediastinal lymphadenopathy,significant
+FID1370,Mediastinal shift,mediastinal,,,significant
+FID1380,Calcification of mitral annulus,mediastinal,,,incidental
+FID1390,Calcification of pericardium,mediastinal,,,incidental
+FID1400,Pericardial effusion,mediastinal,,,conditional
+FID1405,Pericardial cyst,mediastinal,,,incidental
+FID1410,Pericardial fat pad,mediastinal,,,incidental
+FID1420,Pneumomediastinum,mediastinal,,,significant
+FID1430,Pneumopericardium,mediastinal,,,critical
+FID1440,Enlargement of pulmonary artery,mediastinal,,Prominent pulmonary artery segment,conditional
+FID1450,Splaying of carina,mediastinal,,,conditional
+FID1460,Stable cardiac silhouette,mediastinal,,Unchanged cardiac silhouette,incidental
+FID1470,Fullness of superior mediastinum,mediastinal,,,conditional
+FID1480,Tortuosity of aorta,mediastinal,,"Aortic tortuosity,Tortuous aorta",incidental
+FID1490,Unfolding of aorta,mediastinal,,"Ectatic aorta,Unfolded aorta",incidental
+FID1500,Widening of cardiomediastinal silhouette,mediastinal,,"Widened mediastinum,Mediastinal enlargement",conditional
+FID1510,Amelia,osseous,,Phocomelia,incidental
+FID1520,Bifid rib,osseous,,,incidental
+FID1530,Bone island,osseous,,,incidental
+FID1540,Osseous lesion,osseous,,Bone lesion,conditional
+FID1550,Bridging rib,osseous,,Fused rib,incidental
+FID1560,Cervical rib,osseous,,,incidental
+FID1575,Costochondral calcification,osseous,,,incidental
+FID1585,Fracture,osseous,,Rib fracture,conditional
+FID1600,Compression fracture,osseous,FID1585,Vertebral compression deformity,conditional
+FID1605,Compression fractures,osseous,FID1585,"Multiple compression fractures,Multiple compression deformities,Vertebral compression deformities",conditional
+FID1610,Costal fusion,osseous,,,incidental
+FID1615,Degenerative changes,osseous,,,incidental
+FID1630,DISH,osseous,,Diffuse idiopathic skeletal hyperostosis,incidental
+FID1640,Disc space narrowing,osseous,,,incidental
+FID1650,Kyphosis,osseous,,"Exaggerated kyphosis,Thoracic kyphosis,Increased thoracic kyphosis",incidental
+FID1660,Fibro-osseous lesion,osseous,FID1540,,conditional
+FID1670,Osseous metastasis,osseous,,,significant
+FID1675,Osseous metastases,osseous,,,significant
+FID1690,Generalized osteosclerosis,osseous,,,conditional
+FID1710,Hemivertebra,osseous,,,incidental
+FID1750,Intrathoracic rib,osseous,,,incidental
+FID1770,Malunion,osseous,,,incidental
+FID1780,Nonunion,osseous,,,conditional
+FID1790,Osseous abnormality,osseous,,"Skeletal abnormality,Bony abnormality,Musculoskeletal abnormality",conditional
+FID1795,Sclerosis,osseous,,Rib sclerosis,incidental
+FID1800,Sclerotic osseous lesion,osseous,FID1540,"Osteoblastic lesion,Sclerotic lesion",conditional
+FID1810,Lytic osseous lesion,osseous,FID1540,"Osteolytic lesion,Lytic rib lesion,Destructive rib lesion",significant
+FID1820,Osteopenia,osseous,,Generalized osteopenia,incidental
+FID1830,Osteophyte formation,osseous,,Spinal osteophytes,incidental
+FID1840,Pectus carinatum,osseous,,,incidental
+FID1850,Pectus excavatum,osseous,,,incidental
+FID1860,Postsurgical changes of VATS,osseous,,,incidental
+FID1920,Rib notching,osseous,,,conditional
+FID1930,Rib resection,osseous,,,incidental
+FID1950,Rosary ribs,osseous,,,incidental
+FID1980,Scoliosis,osseous,,Levoconvex curvature,incidental
+FID1990,Shoulder dislocation,osseous,,Humeral head dislocation,significant
+FID2010,Sprengel deformity,osseous,,Elevated scapula,incidental
+FID2040,Thoracic vertebra plana,osseous,,,conditional
+FID2050,Height loss of vertebral body,osseous,,Vertebral body height loss,conditional
+FID2080,Wedging of vertebral body,osseous,,,conditional
+FID2090,Vertebral endplate irregularity,osseous,,Thoracic vertebral endplate irregularity,incidental
+FID2110,Upper limb amputation,osseous,,,incidental
+FID2120,Vanishing ribs,osseous,,Rib osteolysis,significant
+FID2130,Osseous deformity,osseous,,"Clavicle deformity,Humeral head deformity,Rib deformity,Scapular deformity,Sternal deformity",incidental
+FID2140,Osseous erosion,osseous,,"Clavicle erosion,Humeral head erosion",conditional
+FID2150,Osseous destruction,osseous,,Rib destruction,significant
+FID2200,Breast implant,soft_tissue,,,incidental
+FID2210,Calcified axillary nodes,soft_tissue,,,incidental
+FID2220,Calcified breast implant,soft_tissue,,,incidental
+FID2230,Calcified neck nodes,soft_tissue,,,incidental
+FID2240,Mastectomy,soft_tissue,,,incidental
+FID2250,Metallic foreign body,soft_tissue,,,conditional
+FID2260,Soft tissue abnormality,soft_tissue,,,conditional
+FID2270,Soft tissue calcification,soft_tissue,,Calcified soft tissue density,incidental
+FID2290,Soft tissue swelling,soft_tissue,,,incidental
+FID2300,Subcutaneous emphysema,soft_tissue,,"Subcutaneous gas,Soft tissue gas",conditional
+FID2310,Surgical clip,soft_tissue,,,incidental
+FID2320,Calcific tendinosis,soft_tissue,,Calcific tendinitis,incidental
+FID2330,Thyroid enlargement,soft_tissue,,Goiter,conditional
+FID2335,Thyroid nodule,soft_tissue,,,conditional
+FID2400,Abnormal anterior junction line,stripes_lines,,,incidental
+FID2410,Abnormal azygoesophageal line,stripes_lines,,,incidental
+FID2420,Abnormal left paraspinal line,stripes_lines,,,incidental
+FID2430,Abnormal left paratracheal stripe,stripes_lines,,,incidental
+FID2440,Abnormal posterior junction line,stripes_lines,,,incidental
+FID2450,Abnormal right paraspinal line,stripes_lines,,,incidental
+FID2460,Abnormal right paratracheal stripe,stripes_lines,,,incidental
+FID2500,Distension of bowel,abdomen,,Gas distended bowel,incidental
+FID2505,Dilation of bowel,abdomen,,Dilated bowel,significant
+FID2510,Distension of stomach,abdomen,,Gaseous distention of the stomach,incidental
+FID2520,Gallstones,abdomen,,,incidental
+FID2530,Hepatomegaly,abdomen,,Enlarged liver,conditional
+FID2540,Kidney stone,abdomen,,,incidental
+FID2550,Calcification of liver,abdomen,,,incidental
+FID2560,Pneumatosis,abdomen,,,significant
+FID2570,Pneumobilia,abdomen,,,incidental
+FID2580,Pneumoperitoneum,abdomen,,"Free abdominal gas,Free air,Free intraperitoneal gas",critical
+FID2590,Calcification of spleen,abdomen,,,incidental
+FID2600,Splenomegaly,abdomen,,Enlarged spleen,conditional
+FID2605,Abdominal clips,devices,,,incidental
+FID2610,Airway stent,devices,,,conditional
+FID2620,Anterior cervical fusion device,devices,,,incidental
+FID2630,Aortic stent,devices,,Endovascular aortic repair,conditional
+FID2640,Axillary clips,devices,,,incidental
+FID2650,Biceps tenodesis anchor,devices,,,incidental
+FID2660,Biliary stent,devices,,,conditional
+FID2670,Breast clips,devices,,,incidental
+FID2680,Cardiac patch monitor,devices,,,incidental
+FID2690,Cardiac valve replacement,devices,,"Prosthetic heart valve,Prosthetic valve",conditional
+FID2700,Central venous catheter,devices,,,conditional
+FID2710,Chest tube,devices,,"Intercostal drain,Thoracostomy tube,Pigtail chest tube,Pigtail catheter,Pleural drain,Pleural tube",conditional
+FID2720,Cholecystectomy clips,devices,,,incidental
+FID2730,Clamshell sternotomy,devices,,Clamshell sternotomy wires,incidental
+FID2740,Clavicle fixation,devices,,,incidental
+FID2750,Coronary stent,devices,,,conditional
+FID2760,Double balloon esophageal catheter,devices,,,conditional
+FID2770,ECMO catheter,devices,,,conditional
+FID2780,Endotracheal tube,devices,,,conditional
+FID2790,Enteric tube,devices,,"Nasogastric tube,Gastric tube,NG tube",conditional
+FID2800,Epicardial pacing wires,devices,,"Epicardial pacer wires,Temporary epicardial wires",conditional
+FID2810,Epidural catheter,devices,,,conditional
+FID2820,Esophageal tamponade tube,devices,,"Sengstaken-Blakemore tube,Minnesota tube",conditional
+FID2830,Esophagectomy with gastric pull-up,devices,,,incidental
+FID2840,Gastric band,devices,,,conditional
+FID2850,Gastrostomy tube,devices,,,conditional
+FID2860,ICD,devices,,"Implantable cardioverter defibrillator,Transvenous pacemaker",conditional
+FID2870,ICD leads,devices,,,conditional
+FID2880,Impella device,devices,,,conditional
+FID2890,Inferior vena cava filter,devices,,IVC filter,conditional
+FID2900,Intra-aortic balloon pump,devices,,,conditional
+FID2910,Intravascular line,devices,,,conditional
+FID2920,Leadless pacemaker,devices,,"Leadless cardiac pacemaker,Micra",conditional
+FID2930,Left ventricular assist device,devices,,LVAD,conditional
+FID2940,Loop recorder,devices,,,incidental
+FID2950,Lung sutures,devices,,,incidental
+FID2960,Mediastinal drain,devices,,"Jackson-Pratt drain,JP drain,Blake tube",conditional
+FID2970,Mediastinal clips,devices,,"Hilar clips,CABG clips",incidental
+FID2980,Metallic markers,devices,,,incidental
+FID2990,Mitral annuloplasty ring,devices,,,conditional
+FID3000,Monitoring leads,devices,,"EKG leads,ECG leads,Telemetry leads",incidental
+FID3010,Neck clips,devices,,,incidental
+FID3020,Nuss bar,devices,,,incidental
+FID3030,Pacemaker,devices,,"Dual chamber pacemaker,Single chamber pacemaker,Cardiac pacemaker",conditional
+FID3040,Pacer leads,devices,,,conditional
+FID3050,Pericardial drain,devices,,,conditional
+FID3060,Peripherally inserted central catheter,devices,,PICC,conditional
+FID3070,PFO closure device,devices,,,conditional
+FID3080,Port catheter,devices,,"Chest port,Portacath,Port-a-cath,Implanted port",conditional
+FID3090,Pulmonary arterial catheter,devices,,Swan-Ganz catheter,conditional
+FID3100,Retained surgical foreign body,devices,,,significant
+FID3110,Reverse total shoulder arthroplasty,devices,,,incidental
+FID3120,Cerclage wire,devices,,"Rib cerclage wires,Cerclage wires",incidental
+FID3130,Rib fixation,devices,,Chest wall fixation,incidental
+FID3140,Rotator cuff anchor,devices,,,incidental
+FID3150,Shoulder fixation,devices,,,incidental
+FID3160,Shoulder replacement,devices,,Total shoulder arthroplasty,incidental
+FID3170,Spinal catheter,devices,,,conditional
+FID3180,Spinal fixation,devices,,Stabilization rods,incidental
+FID3190,Spinal fusion,devices,,,incidental
+FID3200,Sternal sutures,devices,,,incidental
+FID3210,Sternotomy wires,devices,,"Sternal wires,Median sternotomy wires",incidental
+FID3220,Subclavian stent,devices,,,conditional
+FID3230,Superior vena cava stent,devices,,SVC stent,conditional
+FID3240,Surgical clips,devices,,,incidental
+FID3250,Suture anchors in humeral head,devices,,,incidental
+FID3260,TAVR,devices,,"Transcatheter aortic valve replacement,TAVI",conditional
+FID3270,Temporary pacer wire,devices,,,conditional
+FID3280,Thyroid bed clips,devices,,,incidental
+FID3290,Tracheostomy tube,devices,,,conditional
+FID3300,Ventricular shunt,devices,,,conditional
+FID3310,Esophageal stent,devices,,,conditional
+FID3320,Aortic valve replacement,devices,,"Prosthetic aortic valve,Mechanical aortic valve,Bioprosthetic aortic valve,Aortic valve prosthesis",conditional
+FID3330,Mitral valve replacement,devices,,"Prosthetic mitral valve,Mechanical mitral valve,Bioprosthetic mitral valve",conditional
+FID3340,Feeding tube,devices,FID2790,"Dobhoff tube,Nasoenteric tube,NJ tube,Nasojejunal tube,GJ tube,Gastrojejunostomy tube",conditional
+FID3350,Median sternotomy,devices,,Sternotomy,incidental
+FID3360,Thoracotomy,devices,,"Lateral thoracotomy,Posterolateral thoracotomy",incidental
+FID3370,Vertebroplasty,devices,,,incidental
+FID3375,Vertebroplasties,devices,,,incidental
+FID3380,Mitral valve clip,devices,,MitraClip,conditional
+FID3390,Left atrial appendage ligation,devices,,AtriClip,incidental
+FID3400,Hemodialysis catheter,devices,,"Dialysis catheter,HD catheter",conditional
+FID3410,Esophageal probe,devices,,"Esophageal monitoring device,Esophageal temperature probe",conditional
+FID3420,CABG,devices,,Coronary artery bypass graft,incidental
+FID3430,Support device,devices,,"Support lines and tubes,Support device,Support devices",conditional
+FID3440,Tunneled catheter,devices,,"Tunneled central catheter,Tunneled line",conditional
+FID3450,Introducer sheath,devices,,Vascular sheath,conditional
+FID3460,Vascular stent,devices,,,conditional
+FID3600,AP projection,technique,,Anteroposterior projection,incidental
+FID3610,Clipped costophrenic angles,technique,,,incidental
+FID3620,Clipped lateral soft tissues,technique,,,incidental
+FID3630,Clipped lung apices,technique,,,incidental
+FID3640,Grid artifact,technique,,,incidental
+FID3650,Image marker absent,technique,,,incidental
+FID3660,Image marker incorrect,technique,,,incidental
+FID3670,Improper centering,technique,,,incidental
+FID3680,Lateral projection,technique,,,incidental
+FID3690,Lungs incompletely imaged,technique,,,incidental
+FID3700,Motion artifact,technique,,,incidental
+FID3710,Oblique projection,technique,,,incidental
+FID3720,Obscured by external object,technique,,,incidental
+FID3730,Obscured by laterality marker,technique,,,incidental
+FID3740,Obscured by medical device,technique,,,incidental
+FID3750,Obscured by chin,technique,,,incidental
+FID3760,Overpenetrated,technique,,Overexposed,incidental
+FID3770,PA projection,technique,,Posteroanterior projection,incidental
+FID3780,Portable projection,technique,,,incidental
+FID3790,Rotated,technique,,Rotated image,incidental
+FID3795,Lordotic positioning,technique,,"Lordotic projection,Lordotic view",incidental
+FID3800,Semi-erect projection,technique,,,incidental
+FID3810,Supine projection,technique,,,incidental
+FID3820,Underpenetrated,technique,,Underexposed,incidental
+FID3840,Upright projection,technique,,,incidental
+FID3850,Obscuration of hemidiaphragm,lung,,,conditional
+FID3860,Calcification of hilar lymph node,mediastinal,,,incidental
+FID3870,Resection of clavicle,osseous,,,incidental
+FID3880,Pectus excavatum repair,devices,,,incidental
+FID3890,Sternal fixation,devices,,,incidental
+FID3900,Tricuspid annuloplasty ring,devices,,,conditional
+FID3910,Widening of rib interspaces,osseous,,,incidental
