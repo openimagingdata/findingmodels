@@ -18,7 +18,7 @@ from findingmodel import FindingModelFull
 from findingmodel.common import model_file_name
 from findingmodel.index import Index
 
-from scripts.hood_helpers import (
+from findingmodels.hood import (
     should_process_file,
     load_definition,
     generate_new_model,

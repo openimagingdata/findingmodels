@@ -5,7 +5,7 @@ from typing import Dict, List
 from pathlib import Path
 
 from dotenv import load_dotenv
-from findingmodel import FindingModelFull
+from findingmodel import FindingModelFull, FindingModelBase
 from findingmodel.common import model_file_name
 from findingmodel.tools import create_info_from_name, add_ids_to_model
 
@@ -314,4 +314,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main()) 
+    asyncio.run(main())
