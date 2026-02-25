@@ -30,17 +30,17 @@ The main entry point is `hood_to_final_finding.py`. It takes Hood CT Chest defin
 
 **Data flow:**
 - **Input**: `hood_CT_chest` definitions from [CDEStaging](https://github.com/openimagingdata/CDEStaging/tree/main/definitions/hood_CT_chest)
-- **Existing models**: DuckDB index built from `original_defs`, `findings_from_cdes`, and `merged_findings`
+- **Existing models**: DuckDB index (path from `DUCKDB_INDEX_PATH` or `--db-path`). The index is supplied externally; this repo does not contain the code that populates it.
 - **Output**:
-  - `defs/hood_final_models/` — direct output from the Hood pipeline
-  - `defs/merged_findings/` — output from batch merging `hood_findings`
+  - `defs/hood_final_models/` — direct output from `hood_to_final_finding.py`
+  - `defs/merged_findings/` — output from `batch_merge_findings.py` (a separate pipeline; see below)
 
 **Scripts:**
 - `scripts/hood_to_final_finding.py` — Main pipeline (CDEStaging → hood_final_models)
 - `scripts/hood_json_adapter.py` — Converts JSON definitions → hood_findings
 - `scripts/markdown_to_finding_model_adapter.py` — Converts Markdown definitions → hood_findings
 - `scripts/merge_findings.py` — CLI for merging one incoming model with existing
-- `scripts/batch_merge_findings.py` — Batch merge of hood_findings → merged_findings
+- `scripts/batch_merge_findings.py` — **Different pipeline**: takes already-converted `hood_findings` (.fm.json), merges each with the DuckDB index, outputs to `merged_findings`. Does not read from CDEStaging.
 
 **AI agents** (pydantic-ai, GPT-4o-mini):
 - Attribute classifier (presence / change_from_prior / other)
@@ -97,11 +97,11 @@ hood_to_final_finding.py
 |-------------|--------|-------|
 | **Save sub-findings as separate files** | Not done | Currently identified and logged only |
 | **Association between main and sub-findings** | Future | Design TBD |
-| Attribute name synonyms in schema | Partial | Need to verify findingmodel support |
-| Value synonyms in schema | Partial | Need to verify findingmodel support |
-| Locations (feasible regions, structure types) | Partial | `locations` exists; alignment with spec unclear |
-| Modalities, life stages, sex phenotypes | Unclear | Need to verify schema and usage |
-| Examples (maybe separate repo) | Not started | Decision pending |
+| Attribute name synonyms | Schema supports | `ChoiceAttributeIded`, `NumericAttributeIded` have `synonyms`; pipeline may not populate |
+| Value synonyms | Schema supports | `ChoiceValueIded` has `synonyms`; pipeline may not populate |
+| Locations (region, structure_type, specific_location) | Schema supports | Root model has `locations` array; matches spec ("subset of nodes in anatomic location set") |
+| Modalities, life stages, sex phenotypes | Schema supports | Root model has all three; pipeline may not populate |
+| Examples | Schema supports | Root model has `examples`; schema notes "may be stored in separate repository" |
 | Skip/resume (e.g. `--skip-existing`) | Not done | Re-run overwrites output |
 | LLM retry on transient failures | Not done | ModelRetry imported but unused |
 
@@ -210,11 +210,13 @@ When modifying or extending the project, ensure:
 | Hood logic (load, generate, merge, format, sub-findings) | `scripts/hood_helpers.py` |
 | Merge helpers (presence, change, reorder, contributors) | `scripts/merge_findings_helpers.py` |
 | Merge CLI, find_existing, classify | `scripts/merge_findings.py` |
+| Batch merge (separate pipeline) | `scripts/batch_merge_findings.py` |
 | Attribute/relationship agents | `agents/merge_agents.py` |
 | Specificity agent | `agents/specificity_agents.py` |
 | Formatting agents | `agents/formatting_agents.py` |
 | JSON adapter | `scripts/hood_json_adapter.py` |
 | Markdown adapter | `scripts/markdown_to_finding_model_adapter.py` |
+| Finding model schema | `schema/finding_model.schema.json` |
 
 ---
 
@@ -223,4 +225,4 @@ When modifying or extending the project, ensure:
 - How to represent associations between main finding and extracted sub-findings
 - Where to store examples (same repo vs separate)
 - Whether `needs_review` comparisons should have interactive or configurable review
-- Schema support for attribute/value synonyms, modalities, life stages, sex phenotypes
+- Whether the Hood pipeline should populate schema fields (synonyms, locations, modalities, life_stages, sex_phenotypes, examples)
