@@ -35,50 +35,37 @@ The main entry point is `hood_to_final_finding.py`. It takes Hood CT Chest defin
   - `defs/hood_final_models/` — direct output from `hood_to_final_finding.py`
   - `defs/merged_findings/` — output from `batch_merge_findings.py` (a separate pipeline; see below)
 
-**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, generators, matchers, mergers, formatters, adapters) lives in `findingmodels/hood/`.
+**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, adapters) lives in `findingmodels/hood/`. Processing is handled by `agents/hood_agent.py`.
 
 **Scripts:**
 - `scripts/hood_to_final_finding.py` — Main pipeline (CDEStaging → hood_final_models)
 - `scripts/merge_findings.py` — CLI for merging one incoming model with existing
 - `scripts/batch_merge_findings.py` — **Different pipeline**: takes already-converted `hood_findings` (.fm.json), merges each with the DuckDB index, outputs to `merged_findings`. Does not read from CDEStaging.
 
-**AI agents** (pydantic-ai, GPT-4o-mini):
-- Attribute classifier (presence / change_from_prior / other)
-- Attribute relationship classifier (identical, enhanced, subset, needs_review, no_similarities)
-- Specificity checker (reject too-general matches)
-- Acronym expansion, eponym minimization, sub-finding extraction
+**AI agents** (pydantic-ai, GPT-5.2, single agent with tools):
+- Single `hood_agent` with tools: search, get_model, create_from_markdown, adapt_hood_json, add_ids, add_standard_codes
+- Agent handles: specificity check, merge strategy, formatting (lowercase, acronyms, eponyms), attribute classification
 
 ---
 
 ## Part 2: How the Main Pipeline Works
 
-`hood_to_final_finding.py` imports only from `findingmodels.hood`. All Hood logic lives in the library package:
+`hood_to_final_finding.py` loads definitions via `findingmodels.hood` and delegates processing to the single Hood agent:
 
 ```
 hood_to_final_finding.py
     └── findingmodels.hood
             ├── loaders              (file I/O, should_process_file, load_definition)
-            ├── generators           (generate_new_model, ensure_required_attributes)
-            ├── matchers             (find_existing_model_with_specificity_check)
-            ├── mergers              (merge_with_existing)
-            ├── formatters           (apply_formatting_guidelines)
-            ├── subfindings          (extract_sub_findings)
-            ├── hood_json_adapter    (JSON definitions → models)
-            ├── markdown_to_finding_model_adapter  (Markdown → models)
-            │
-            ├── scripts/merge_findings        (find existing, classify, compare)
-            │       └── agents/merge_agents   (classification, relationship)
-            ├── scripts/merge_findings_helpers  (build final finding, reorder, etc.)
-            ├── agents/specificity_agents     (reject general matches)
-            └── agents/formatting_agents       (acronyms, eponyms, sub-findings)
+            └── hood_json_adapter    (used by agent for JSON definitions)
+    └── agents/hood_agent            (single agent with pydantic-ai tools)
+            └── Tools: search_finding_models, get_full_model, create_from_markdown,
+                       adapt_hood_json, add_ids_to_finding_model, add_standard_codes
 ```
 
 **In plain terms:**
-- The main script talks only to `findingmodels.hood`.
-- Hood uses the JSON/Markdown adapters (in `findingmodels.hood`) to generate models from definitions.
-- It uses `merge_findings` (and its agents) to find matches and merge attributes.
-- It uses `merge_findings_helpers` for building and ordering the final model.
-- It uses `specificity_agents` and `formatting_agents` for validation and formatting.
+- The main script loads definitions via `findingmodels.hood.loaders`.
+- The Hood agent receives the content and uses its tools to search, match, merge, format, and produce the final model.
+- `merge_findings.py` uses the same agent for incoming .fm.json files.
 
 ---
 
@@ -88,15 +75,15 @@ hood_to_final_finding.py
 
 | Requirement | Status | Where in Code | Notes |
 |-------------|--------|---------------|-------|
-| Hood = incoming, existing DB = reference | Done | `findingmodels.hood.mergers.merge_with_existing`, `find_existing_model` | Hood definitions are merged into existing models, not the other way around |
-| Specificity check (reject general matches) | Done | `findingmodels.hood.matchers.find_existing_model_with_specificity_check` | Prevents matching e.g. "tunneled catheter" to "detectable hardware" |
-| Presence and change_from_prior at top | Done | `merge_findings_helpers.reorder_attributes` | These attributes appear first in the attribute list |
-| Hood contributor (MGB) in merged models | Done | `merge_findings_helpers.ensure_hood_contributor` | MGB contributor added to merged output |
-| Presence with yes/no: keep existing if it has standard values | Done | `findingmodels.hood.generators.ensure_required_attributes`, `merge_findings_helpers.ensure_standard_presence_values` | Incoming [yes, no] discarded when existing has [absent, present, indeterminate, unknown] |
-| Lowercase, acronym expansion, eponym minimization | Done | `findingmodels.hood.formatters.apply_formatting_guidelines` | Names formatted per spec; acronyms expanded, eponyms minimized |
-| Full merge strategy (enhanced, identical, subset, etc.) | Done | `merge_agents`, `merge_findings.compare_attributes_within_group` | All five relationship types supported |
-| Sub-finding identification via LLM | Done | `findingmodels.hood.subfindings.extract_sub_findings`, `formatting_agents` | Components identified; models created but not yet saved to disk |
-| Pipeline: lookup → generate or merge → ensure presence/change | Done | `hood_to_final_finding.process_single_file`, `findingmodels.hood` | End-to-end flow from CDEStaging to output |
+| Hood = incoming, existing DB = reference | Done | `agents.hood_agent` (merge via tools) | Hood definitions are merged into existing models, not the other way around |
+| Specificity check (reject general matches) | Done | `agents.hood_agent` (system prompt + tools) | Prevents matching e.g. "tunneled catheter" to "detectable hardware" |
+| Presence and change_from_prior at top | Done | `agents.hood_agent` (system prompt) | Agent applies ordering per spec |
+| Hood contributor (MGB) in merged models | Done | `agents.hood_agent` (system prompt) | MGB contributor added to merged output |
+| Presence with yes/no: keep existing if it has standard values | Done | `agents.hood_agent` (system prompt + merge logic) | Incoming [yes, no] discarded when existing has standard values |
+| Lowercase, acronym expansion, eponym minimization | Done | `agents.hood_agent` (system prompt) | Names formatted per spec |
+| Full merge strategy (enhanced, identical, subset, etc.) | Done | `agents.hood_agent` (system prompt + tools) | All five relationship types supported |
+| Sub-finding identification via LLM | Pending | Agent can be extended | Components identified; models not yet saved to disk |
+| Pipeline: lookup → generate or merge → ensure presence/change | Done | `hood_to_final_finding.process_single_file`, `agents.hood_agent` | End-to-end flow from CDEStaging to output |
 
 ### What Still Needs to Be Accomplished
 
@@ -209,16 +196,15 @@ When modifying or extending the project, ensure:
 | Concern | File(s) |
 |---------|---------|
 | Main Hood pipeline (CLI) | `scripts/hood_to_final_finding.py` |
-| Hood library (load, generate, merge, format, sub-findings) | `findingmodels/hood/` |
-| Merge helpers (presence, change, reorder, contributors) | `scripts/merge_findings_helpers.py` |
-| Merge CLI, find_existing, classify | `scripts/merge_findings.py` |
+| Hood agent (single agent with tools) | `agents/hood_agent.py` |
+| Hood library (loaders, adapters) | `findingmodels/hood/` |
+| Merge CLI | `scripts/merge_findings.py` |
 | Batch merge (separate pipeline) | `scripts/batch_merge_findings.py` |
-| Attribute/relationship agents | `agents/merge_agents.py` |
-| Specificity agent | `agents/specificity_agents.py` |
-| Formatting agents | `agents/formatting_agents.py` |
+| Merge helpers (legacy; used for reference) | `scripts/merge_findings_helpers.py` |
 | JSON adapter | `findingmodels/hood/hood_json_adapter.py` |
 | Markdown adapter | `findingmodels/hood/markdown_to_finding_model_adapter.py` |
 | Finding model schema | `schema/finding_model.schema.json` |
+| Dependencies | `findingmodel>=0.6.0,<1.0`, `pydantic-ai` |
 
 ---
 

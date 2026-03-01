@@ -1,18 +1,16 @@
 import asyncio
 import json
 import os
-from typing import List
 from pathlib import Path
+from typing import List
 
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
 from dotenv import load_dotenv
 from findingmodel import FindingModelFull, FindingInfo
 from findingmodel.common import model_file_name
 from findingmodel.contributor import Person, Organization
-from findingmodel.tools import (
-    create_model_from_markdown,
-    add_ids_to_model,
-    add_standard_codes_to_model
-)
+from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
+from findingmodel_ai.authoring import create_model_from_markdown
 
 load_dotenv()
 

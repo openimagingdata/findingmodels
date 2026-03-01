@@ -20,9 +20,9 @@ from pathlib import Path
 from typing import Dict, List, Any
 from datetime import datetime
 
-from findingmodel.tools import find_similar_models
-from findingmodel.index import Index
-from findingmodel import FindingModelFull
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
+from findingmodel import FindingModelFull, Index
+from findingmodel_ai.search import find_similar_models
 
 
 class RedundancyDetector:

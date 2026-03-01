@@ -3,31 +3,23 @@ Import Hood CT Chest definitions from CDEStaging repository.
 
 This script processes Markdown and JSON definitions from the hood_CT_chest directory,
 matches them with existing models in the database, and either generates new models
-or merges with existing ones.
+or merges with existing ones. Uses a single GPT-5.2 agent with tools (Option B).
 """
 
 import argparse
 import asyncio
+import json
 import logging
 import os
 from pathlib import Path
 from typing import Tuple, Optional, Dict, List
 
 from dotenv import load_dotenv
-from findingmodel import FindingModelFull
+from findingmodel import FindingModelFull, Index
 from findingmodel.common import model_file_name
-from findingmodel.index import Index
 
-from findingmodels.hood import (
-    should_process_file,
-    load_definition,
-    generate_new_model,
-    ensure_required_attributes,
-    find_existing_model_with_specificity_check,
-    merge_with_existing,
-    apply_formatting_guidelines,
-    extract_sub_findings
-)
+from agents.hood_agent import create_hood_agent, AgentContext
+from findingmodels.hood import should_process_file, load_definition
 
 # Load environment variables
 load_dotenv()
@@ -35,79 +27,66 @@ load_dotenv()
 # Logger setup
 logger = logging.getLogger(__name__)
 
+# Create agent once (lazy on first use)
+_hood_agent = None
+
+
+def _get_agent():
+    global _hood_agent
+    if _hood_agent is None:
+        _hood_agent = create_hood_agent()
+    return _hood_agent
+
 
 async def process_single_file(
     file_path: Path,
     index: Index,
     output_dir: Path
 ) -> Tuple[bool, str, Optional[Dict], Optional[Dict], Optional[Dict], Optional[List[str]]]:
-    """Process a single definition file.
-    
+    """Process a single definition file using the Hood agent.
+
     Args:
         file_path: Path to the definition file
-        index: Database index
+        index: Database index (must be set up via await index.setup())
         output_dir: Output directory for generated models
-        
+
     Returns:
         Tuple of (success, message, tracking_info, sub_finding_tracking_info, merge_tracking_info, missing_attributes)
     """
     try:
         filename = file_path.name
         logger.info(f"\nProcessing {filename}...")
-        
+
         # Load definition - returns (data, markdown_content, file_type)
         data, markdown_content, file_type = await load_definition(file_path)
-        
-        # Generate model from definition: returns (FindingModelFull, missing_attributes)
-        incoming_model, missing_attributes = await generate_new_model(file_path, data, markdown_content, file_type)
-        logger.info(f"Generated model: {incoming_model.name}")
-        if missing_attributes:
-            logger.info(f"Missing attributes from source: {', '.join(missing_attributes)}")
-        
-        # Track merge/match information
-        merge_tracking_info = {
-            'finding_name': incoming_model.name,
-            'match_found': False,
-            'result': 'created_new',
-            'existing_match': None,
-            'merge_details': None
-        }
-        
-        # Search for existing model with specificity check to reject too-general matches.
-        # Specificity check uses LLM agent that determines if the existing model is too general compared to the incoming model.
-        existing_match = await find_existing_model_with_specificity_check(incoming_model, index)
-        
-        if existing_match:
-            logger.info(f"Found existing model: {existing_match.get('name')} ({existing_match.get('oifm_id')})")
-            merge_tracking_info['match_found'] = True
-            merge_tracking_info['existing_match'] = {
-                'name': existing_match.get('name'),
-                'oifm_id': existing_match.get('oifm_id')
-            }
-            
-            # Merge with existing - now returns tuple (model, merge_details)
-            final_model, merge_details = await merge_with_existing(incoming_model, existing_match, index)
-            merge_tracking_info['result'] = 'merged'
-            merge_tracking_info['merge_details'] = merge_details
-            logger.info("Merged with existing model")
+
+        # Build content for agent
+        if file_type == "json":
+            content = json.dumps(data, indent=2, ensure_ascii=False)
         else:
-            logger.info("No match found, creating new model")
-            final_model = incoming_model
-            merge_tracking_info['result'] = 'created_new'
-        
-        # Ensure required attributes (returns tuple: model, tracking_info)
-        final_model, tracking_info = await ensure_required_attributes(final_model)
-        finding_name = final_model.name  # Store finding name for tracking
-        
-        # Apply formatting guidelines
-        final_model = await apply_formatting_guidelines(final_model)
-        
-        # Extract sub-findings (returns tuple: (list of models, tracking_info))
-        # Note: sub-findings are identified and logged but not saved as separate files
-        all_models, sub_finding_tracking_info = await extract_sub_findings(final_model)
-        
-        # Save only the main model (first in list)
-        main_model = all_models[0]
+            content = markdown_content or ""
+
+        user_message = f"""Process this finding definition.
+File: {filename}
+File type: {file_type}
+
+Content:
+{content}"""
+
+        agent = _get_agent()
+        ctx = AgentContext(index=index)
+        result = await agent.run(user_message, deps=ctx)
+
+        proc_result = result.output
+        final_model_dict = proc_result.final_model
+        match_used = proc_result.match_used
+        merge_summary = proc_result.merge_summary
+
+        # Validate and save
+        main_model = FindingModelFull.model_validate(final_model_dict)
+        finding_name = main_model.name
+        logger.info(f"Agent produced model: {finding_name}")
+
         output_file = output_dir / model_file_name(main_model.name)
         output_file.parent.mkdir(parents=True, exist_ok=True)
         output_file.write_text(
@@ -115,18 +94,24 @@ async def process_single_file(
             encoding='utf-8'
         )
         logger.info(f"Saved to {output_file.name}")
-        
-        # Log sub-findings that would be extracted (but aren't being saved)
-        # Count from tracking info since sub-findings aren't returned in all_models
-        extracted_count = len(sub_finding_tracking_info.get('extracted', [])) if sub_finding_tracking_info else 0
-        kept_count = len(sub_finding_tracking_info.get('kept_with_presence', [])) if sub_finding_tracking_info else 0
-        total_sub_findings = extracted_count + kept_count
-        
-        if total_sub_findings > 0:
-            logger.info(f"Identified {total_sub_findings} sub-finding(s) for extraction (logged only, not saved)")
-        
-        return True, f"Successfully processed {filename}" + (f" (identified {total_sub_findings} sub-finding(s) for extraction)" if total_sub_findings > 0 else ""), tracking_info, sub_finding_tracking_info, merge_tracking_info, missing_attributes
-        
+
+        # Build tracking for reports (compatible with existing report generators)
+        tracking_info = {
+            'finding_name': finding_name,
+            'presence': {'finding_name': finding_name},
+            'change_from_prior': {'finding_name': finding_name},
+        }
+        sub_finding_tracking_info = {'finding_name': finding_name}
+        merge_tracking_info = {
+            'finding_name': finding_name,
+            'match_found': match_used is not None,
+            'result': 'merged' if match_used else 'created_new',
+            'existing_match': {'oifm_id': match_used} if match_used else None,
+            'merge_details': merge_summary,
+        }
+
+        return True, f"Successfully processed {filename}", tracking_info, sub_finding_tracking_info, merge_tracking_info, []
+
     except Exception as e:
         error_msg = f"Error processing {file_path.name}: {str(e)}"
         logger.error(error_msg)
@@ -482,14 +467,13 @@ async def process_hood_directory(input_dir: str, output_dir: str, limit: Optiona
         logger.info(f"Skipped files (JSON priority): {[f.name for f in skipped_files]}")
     logger.info("=" * 60)
     
-    # Setup database index
+    # Setup database index (findingmodel 1.x uses DUCKDB_INDEX_PATH or FINDINGMODEL_DB_PATH)
     if os.getenv("DUCKDB_INDEX_PATH"):
         db_path = os.getenv("DUCKDB_INDEX_PATH")
         logger.info(f"Using database index at: {db_path}")
         index = Index(db_path=db_path)
     else:
         index = Index()
-    await index.setup()
     
     # Process files
     successful_count = 0

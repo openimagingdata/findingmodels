@@ -15,6 +15,24 @@ wheels = [
 ]
 
 [[package]]
+name = "anatomic-locations"
+version = "0.2.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "asyncer" },
+    { name = "click" },
+    { name = "duckdb" },
+    { name = "loguru" },
+    { name = "oidm-common" },
+    { name = "pydantic-settings" },
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1d/45/503d07e696bcb1af2f344b2f0e4c3671d33f701b11dac12d44654fb9f3ea/anatomic_locations-0.2.4.tar.gz", hash = "sha256:104892965c2ded79e443a4c1129de01c99ecc3cfa132eb7dd4a75d00201a3ad7", size = 20526, upload-time = "2026-03-01T10:09:38.325Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c2/86/4dab3332f9ae3c8a5dbfa98e2864a22977db7412bf3c49f3631b6ae51ef2/anatomic_locations-0.2.4-py3-none-any.whl", hash = "sha256:7823850dd8a77745743d6762fd360f729193eb2ea3e4cd6acc7a44ceed5cefd5", size = 24057, upload-time = "2026-03-01T10:09:37.365Z" },
+]
+
+[[package]]
 name = "annotated-types"
 version = "0.7.0"
 source = { registry = "https://pypi.org/simple" }
@@ -72,6 +90,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/4a/e7/82da0a03e7ba5141f05cce0d302e6eed121ae055e0456ca228bf693984bc/asttokens-3.0.0.tar.gz", hash = "sha256:0dcd8baa8d62b0c1d118b399b2ddba3c4aff271d0d7a9e0d4c1681c79035bbc7", size = 61978, upload-time = "2024-11-30T04:30:14.439Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/25/8a/c46dcc25341b5bce5472c718902eb3d38600a903b14fa6aeecef3f21a46f/asttokens-3.0.0-py3-none-any.whl", hash = "sha256:e3078351a059199dd5138cb1c706e6430c05eff2ff136af5eb4790f9d28932e2", size = 26918, upload-time = "2024-11-30T04:30:10.946Z" },
+]
+
+[[package]]
+name = "asyncer"
+version = "0.0.12"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "sniffio" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/33/3a/e3d6919a41328f837a1c73ac057a8be35276c350046a79af588c536bd0fc/asyncer-0.0.12.tar.gz", hash = "sha256:4ceaa472bf40f3778caa3bd7f7dfcbafec0a948a9688e3c90a1796469ebe5e19", size = 17909, upload-time = "2025-12-26T12:05:10.248Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/54/f6/ebdca24b43151ed2a7dcf98bab4b61fdfc50dbd7224b9b4de195099fa65e/asyncer-0.0.12-py3-none-any.whl", hash = "sha256:2eb8bb255bdecf04a81df2d47cf168401df1f65a5f62e1bccc1f86ba375c9913", size = 9320, upload-time = "2025-12-26T12:05:08.848Z" },
 ]
 
 [[package]]
@@ -566,28 +597,45 @@ wheels = [
 
 [[package]]
 name = "findingmodel"
-version = "0.6.0"
+version = "1.0.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "duckdb" },
-    { name = "httpx" },
     { name = "jinja2" },
     { name = "loguru" },
     { name = "mcp" },
-    { name = "openai" },
-    { name = "platformdirs" },
-    { name = "pooch" },
-    { name = "prompt-toolkit" },
+    { name = "oidm-common" },
     { name = "pydantic", extra = ["email"] },
-    { name = "pydantic-ai-slim", extra = ["anthropic", "openai", "tavily"] },
+    { name = "pydantic-settings" },
+    { name = "rich" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d6/7d/83560b5f93000cbcea8902ecc6061d1fd20dd504dfdbe0c9268913f5d74a/findingmodel-1.0.3.tar.gz", hash = "sha256:56f6a2272d70d8fab41d9fd0141c1abdd4a6d23c8a0d51a60838be37263c1614", size = 27540, upload-time = "2026-03-01T10:11:05.569Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/ad/87d031ab4371b176f0a5dedf87ba68d25e45bf11772ae1dbd19cdaeb7e2a/findingmodel-1.0.3-py3-none-any.whl", hash = "sha256:e914611cb52295ee0ed7175775729003c1839d3a567041b27db4fd9cac9617b9", size = 34757, upload-time = "2026-03-01T10:11:04.49Z" },
+]
+
+[[package]]
+name = "findingmodel-ai"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anatomic-locations" },
+    { name = "click" },
+    { name = "findingmodel" },
+    { name = "httpx" },
+    { name = "jinja2" },
+    { name = "loguru" },
+    { name = "oidm-common" },
+    { name = "pydantic", extra = ["email"] },
+    { name = "pydantic-ai-slim", extra = ["anthropic", "google", "openai", "tavily"] },
     { name = "pydantic-settings" },
     { name = "rich" },
     { name = "tavily-python" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/bf/4e73dec34e02407888e143f340e46364c7ded695d9033ffa0c3b11958871/findingmodel-0.6.0.tar.gz", hash = "sha256:c48571ac0a582907f4cc9e0c22e6626b1bac1220294c68c3b0a43d9730954267", size = 104269, upload-time = "2025-11-09T20:42:47.517Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/65/9a48dfff8a54cd6a4e8a331fd31709bef5564ec1ae6c82c5fc246d008f28/findingmodel_ai-0.2.1.tar.gz", hash = "sha256:787ae2302d96a6b13a9333433bc4402154098324fe7ed468461f102c22b0078c", size = 56210, upload-time = "2026-02-03T14:45:52.929Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/61/c9/09cc1a390a5c5dce0e1270c550665c5e1762df9b73d3814bbc5d26621553/findingmodel-0.6.0-py3-none-any.whl", hash = "sha256:69dd2125b6e57d90ddfb8a8145e9c529b5f94345b8acdcad275662d66f201237", size = 112230, upload-time = "2025-11-09T20:42:46.502Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/a1/15adb332c9682d7c121541d50a18161066d976c74f70cfd565540b1d83c7/findingmodel_ai-0.2.1-py3-none-any.whl", hash = "sha256:835c1840619d088f4dd932dd2a1158bf99fb46ebb2853dc278eb4c1144f01ef8", size = 68643, upload-time = "2026-02-03T14:45:53.959Z" },
 ]
 
 [[package]]
@@ -596,6 +644,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "findingmodel" },
+    { name = "findingmodel-ai" },
     { name = "jsonschema" },
     { name = "pre-commit" },
     { name = "prettier" },
@@ -610,7 +659,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "findingmodel", specifier = ">=0.6.0" },
+    { name = "findingmodel", specifier = ">=1.0.3" },
+    { name = "findingmodel-ai", specifier = ">=0.2.1" },
     { name = "jsonschema" },
     { name = "pre-commit" },
     { name = "prettier", specifier = ">=0.0.7" },
@@ -1264,6 +1314,24 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/43/16/fc88b08840de0e0a72a2f9d8c6bae36be573e475a6326ae854bcc549fc45/nodeenv-1.9.1.tar.gz", hash = "sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f", size = 47437, upload-time = "2024-06-04T18:44:11.171Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/1d/1b658dbd2b9fa9c4c9f32accbfc0205d532c8c6194dc0f2a4c0428e7128a/nodeenv-1.9.1-py2.py3-none-any.whl", hash = "sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9", size = 22314, upload-time = "2024-06-04T18:44:08.352Z" },
+]
+
+[[package]]
+name = "oidm-common"
+version = "0.2.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "asyncer" },
+    { name = "duckdb" },
+    { name = "httpx" },
+    { name = "loguru" },
+    { name = "platformdirs" },
+    { name = "pooch" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/bd/1b/1898b5f94543424d851512075b0d1e5ae0c5d8180f70e1fd3baffffddfcf/oidm_common-0.2.5.tar.gz", hash = "sha256:8a33788155bb5d83b5774fe8b46395868a3202258bbea04eca76d0f0bb227b03", size = 14064, upload-time = "2026-03-01T10:09:03.755Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/3b/b1b6537844c649272ade5ce3e61ee69e4c0fbb3253b5e3028b0eaa5a45a8/oidm_common-0.2.5-py3-none-any.whl", hash = "sha256:561f38f6ca54047b25d841c6db90bab83dd67f78455c8ef448462a243546c1d4", size = 20947, upload-time = "2026-03-01T10:09:02.662Z" },
 ]
 
 [[package]]

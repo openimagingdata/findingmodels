@@ -1,126 +1,105 @@
 {
-  "oifm_id": "OIFM_MGB_693063",
+  "oifm_id": "OIFM_MGB_464733",
   "name": "aberrant subclavian artery",
-  "description": "Congenital variant in which a subclavian artery arises abnormally from the aortic arch or its branches, often coursing posterior to the esophagus; described by side of origin, course, compression effects, atherosclerosis, aneurysmal dilation, and other arterial anomalies.",
+  "description": "An aortic arch branching anomaly in which one or both subclavian arteries arise anomalously (commonly arteria lusoria), typically coursing posterior to the esophagus or anterior to the trachea and potentially causing compressive symptoms or aneurysmal dilation.",
   "synonyms": [
-    "aberrant subclavian",
     "arteria lusoria",
-    "lusorian artery",
-    "aberrant right subclavian",
-    "aberrant left subclavian"
-  ],
-  "tags": [
-    "vascular",
-    "thoracic",
-    "congenital",
-    "arterial anomaly"
+    "aberrant right subclavian artery",
+    "aberrant left subclavian artery",
+    "aberrant subclavian artery (arteria lusoria)",
+    "arsa"
   ],
   "contributors": [
     {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM",
-      "url": "https://openimagingdata.org/"
-    },
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
+      "name": "mass general brigham",
+      "code": "MGB"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MGB_508149",
+      "oifma_id": "OIFMA_MGB_035419",
       "name": "presence",
-      "description": "whether an aberrant subclavian artery is present",
+      "description": "Presence of aberrant subclavian artery.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_508149.0",
-          "name": "present"
-        },
-        {
-          "value_code": "OIFMA_MGB_508149.1",
+          "value_code": "OIFMA_MGB_035419.0",
           "name": "absent"
         },
         {
-          "value_code": "OIFMA_MGB_508149.2",
-          "name": "unknown"
+          "value_code": "OIFMA_MGB_035419.1",
+          "name": "present"
         },
         {
-          "value_code": "OIFMA_MGB_508149.3",
-          "name": "indeterminate",
-          "description": "Presence of aberrant subclavian artery cannot be determined"
+          "value_code": "OIFMA_MGB_035419.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MGB_035419.3",
+          "name": "unknown"
         }
       ],
       "required": true,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_365519",
-      "name": "change from prior",
-      "description": "Whether and how a aberrant subclavian artery has changed over time",
+      "oifma_id": "OIFMA_MGB_945808",
+      "name": "change_from_prior",
+      "description": "Change compared with prior imaging.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_365519.0",
-          "name": "unchanged",
-          "description": "Aberrant subclavian artery is unchanged"
+          "value_code": "OIFMA_MGB_945808.0",
+          "name": "unchanged"
         },
         {
-          "value_code": "OIFMA_MGB_365519.1",
-          "name": "stable",
-          "description": "Aberrant subclavian artery is stable"
+          "value_code": "OIFMA_MGB_945808.1",
+          "name": "stable"
         },
         {
-          "value_code": "OIFMA_MGB_365519.2",
-          "name": "increased",
-          "description": "Aberrant subclavian artery has increased"
+          "value_code": "OIFMA_MGB_945808.2",
+          "name": "increased"
         },
         {
-          "value_code": "OIFMA_MGB_365519.3",
-          "name": "decreased",
-          "description": "Aberrant subclavian artery has decreased"
+          "value_code": "OIFMA_MGB_945808.3",
+          "name": "decreased"
         },
         {
-          "value_code": "OIFMA_MGB_365519.4",
-          "name": "new",
-          "description": "Aberrant subclavian artery is new"
+          "value_code": "OIFMA_MGB_945808.4",
+          "name": "new"
         },
         {
-          "value_code": "OIFMA_MGB_365519.5",
-          "name": "resolved",
-          "description": "Aberrant subclavian artery seen on a prior exam has resolved"
+          "value_code": "OIFMA_MGB_945808.5",
+          "name": "resolved"
         },
         {
-          "value_code": "OIFMA_MGB_365519.6",
-          "name": "no prior",
-          "description": "No prior exam available for comparison of aberrant subclavian artery"
+          "value_code": "OIFMA_MGB_945808.6",
+          "name": "no prior"
         }
       ],
       "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_272379",
+      "oifma_id": "OIFMA_MGB_285784",
       "name": "side of origin",
-      "description": "side from which the aberrant subclavian artery arises",
+      "description": "Side from which the aberrant subclavian artery originates.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_272379.0",
+          "value_code": "OIFMA_MGB_285784.0",
           "name": "right"
         },
         {
-          "value_code": "OIFMA_MGB_272379.1",
+          "value_code": "OIFMA_MGB_285784.1",
           "name": "left"
         },
         {
-          "value_code": "OIFMA_MGB_272379.2",
+          "value_code": "OIFMA_MGB_285784.2",
           "name": "bilateral"
         },
         {
-          "value_code": "OIFMA_MGB_272379.3",
+          "value_code": "OIFMA_MGB_285784.3",
           "name": "unknown"
         }
       ],
@@ -128,33 +107,29 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_339522",
+      "oifma_id": "OIFMA_MGB_800321",
       "name": "course",
-      "description": "anatomic course of the aberrant subclavian artery relative to the trachea and esophagus",
+      "description": "Anatomic course of the aberrant subclavian artery relative to the trachea and esophagus.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_339522.0",
+          "value_code": "OIFMA_MGB_800321.0",
           "name": "retroesophageal"
         },
         {
-          "value_code": "OIFMA_MGB_339522.1",
+          "value_code": "OIFMA_MGB_800321.1",
           "name": "pretracheal"
         },
         {
-          "value_code": "OIFMA_MGB_339522.2",
-          "name": "retropharyngeal"
+          "value_code": "OIFMA_MGB_800321.2",
+          "name": "retrotracheal"
         },
         {
-          "value_code": "OIFMA_MGB_339522.3",
-          "name": "anterior to trachea"
-        },
-        {
-          "value_code": "OIFMA_MGB_339522.4",
+          "value_code": "OIFMA_MGB_800321.3",
           "name": "other"
         },
         {
-          "value_code": "OIFMA_MGB_339522.5",
+          "value_code": "OIFMA_MGB_800321.4",
           "name": "unknown"
         }
       ],
@@ -162,81 +137,25 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_209522",
-      "name": "compression",
-      "description": "structures compressed by the aberrant vessel",
+      "oifma_id": "OIFMA_MGB_665674",
+      "name": "esophageal compression",
+      "description": "Compression of the esophagus attributable to the aberrant vessel.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_209522.0",
-          "name": "none"
-        },
-        {
-          "value_code": "OIFMA_MGB_209522.1",
-          "name": "esophagus"
-        },
-        {
-          "value_code": "OIFMA_MGB_209522.2",
-          "name": "trachea"
-        },
-        {
-          "value_code": "OIFMA_MGB_209522.3",
-          "name": "both esophagus and trachea"
-        },
-        {
-          "value_code": "OIFMA_MGB_209522.4",
-          "name": "unknown"
-        }
-      ],
-      "required": false,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_309075",
-      "name": "atherosclerosis status",
-      "description": "degree of atherosclerotic change in the aberrant subclavian artery",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_309075.0",
-          "name": "none"
-        },
-        {
-          "value_code": "OIFMA_MGB_309075.1",
-          "name": "mild"
-        },
-        {
-          "value_code": "OIFMA_MGB_309075.2",
-          "name": "moderate"
-        },
-        {
-          "value_code": "OIFMA_MGB_309075.3",
-          "name": "severe"
-        },
-        {
-          "value_code": "OIFMA_MGB_309075.4",
-          "name": "unknown"
-        }
-      ],
-      "required": false,
-      "max_selected": 1
-    },
-    {
-      "oifma_id": "OIFMA_MGB_147158",
-      "name": "aneurysm present",
-      "description": "presence of aneurysmal dilation of the aberrant subclavian artery",
-      "type": "choice",
-      "values": [
-        {
-          "value_code": "OIFMA_MGB_147158.0",
+          "value_code": "OIFMA_MGB_665674.0",
           "name": "present"
         },
         {
-          "value_code": "OIFMA_MGB_147158.1",
+          "value_code": "OIFMA_MGB_665674.1",
           "name": "absent"
         },
         {
-          "value_code": "OIFMA_MGB_147158.2",
+          "value_code": "OIFMA_MGB_665674.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MGB_665674.3",
           "name": "unknown"
         }
       ],
@@ -244,52 +163,148 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_211464",
-      "name": "aneurysm size",
-      "description": "maximum diameter of any aneurysmal dilation of the aberrant subclavian artery",
-      "type": "numeric",
-      "minimum": 1,
-      "maximum": 200,
-      "unit": "mm",
-      "required": false
-    },
-    {
-      "oifma_id": "OIFMA_MGB_790200",
-      "name": "other arterial anomalies",
-      "description": "other congenital or acquired arterial anomalies identified in the chest",
+      "oifma_id": "OIFMA_MGB_422618",
+      "name": "tracheal compression",
+      "description": "Compression of the trachea attributable to the aberrant vessel.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_790200.0",
+          "value_code": "OIFMA_MGB_422618.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_422618.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_422618.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MGB_422618.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_608333",
+      "name": "atherosclerosis",
+      "description": "Imaging evidence of atherosclerotic disease in the aberrant subclavian artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_608333.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_608333.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_608333.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MGB_608333.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_833757",
+      "name": "atherosclerosis severity",
+      "description": "Degree of atherosclerotic change when present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_833757.0",
+          "name": "mild"
+        },
+        {
+          "value_code": "OIFMA_MGB_833757.1",
+          "name": "moderate"
+        },
+        {
+          "value_code": "OIFMA_MGB_833757.2",
+          "name": "severe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_652462",
+      "name": "aneurysmal dilation",
+      "description": "Whether the aberrant subclavian artery demonstrates aneurysmal enlargement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_652462.0",
+          "name": "present"
+        },
+        {
+          "value_code": "OIFMA_MGB_652462.1",
+          "name": "absent"
+        },
+        {
+          "value_code": "OIFMA_MGB_652462.2",
+          "name": "indeterminate"
+        },
+        {
+          "value_code": "OIFMA_MGB_652462.3",
+          "name": "unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_794342",
+      "name": "aneurysm diameter",
+      "description": "Maximum outer diameter of the aneurysmal segment when present.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 20,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_413692",
+      "name": "associated arterial anomalies",
+      "description": "Other aortic arch or great vessel anomalies present in association with the aberrant subclavian artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_413692.0",
           "name": "none"
         },
         {
-          "value_code": "OIFMA_MGB_790200.1",
-          "name": "bicarotid trunk"
+          "value_code": "OIFMA_MGB_413692.1",
+          "name": "bovine arch"
         },
         {
-          "value_code": "OIFMA_MGB_790200.2",
-          "name": "right aortic arch"
+          "value_code": "OIFMA_MGB_413692.2",
+          "name": "common origin of carotid arteries"
         },
         {
-          "value_code": "OIFMA_MGB_790200.3",
+          "value_code": "OIFMA_MGB_413692.3",
           "name": "double aortic arch"
         },
         {
-          "value_code": "OIFMA_MGB_790200.4",
-          "name": "coarctation of aorta"
+          "value_code": "OIFMA_MGB_413692.4",
+          "name": "right aortic arch"
         },
         {
-          "value_code": "OIFMA_MGB_790200.5",
-          "name": "branching variation"
-        },
-        {
-          "value_code": "OIFMA_MGB_790200.6",
+          "value_code": "OIFMA_MGB_413692.5",
           "name": "other"
         },
         {
-          "value_code": "OIFMA_MGB_790200.7",
-          "name": "unknown"
+          "value_code": "OIFMA_MGB_413692.6",
+          "name": "unspecified"
         }
       ],
       "required": false,

@@ -1,13 +1,15 @@
 import asyncio
 import json
 import os
-from typing import Dict, List
 from pathlib import Path
+from typing import Dict, List
 
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
 from dotenv import load_dotenv
 from findingmodel import FindingModelFull, FindingModelBase
 from findingmodel.common import model_file_name
-from findingmodel.tools import create_info_from_name, add_ids_to_model
+from findingmodel.tools import add_ids_to_model
+from findingmodel_ai.authoring import create_info_from_name
 
 # Load environment variables from .env file
 load_dotenv()

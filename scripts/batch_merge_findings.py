@@ -154,7 +154,7 @@ def generate_batch_summary_report(
     return report_path
 
 
-async def merge_finding(input_file: Path, db_path: Path) -> Dict[str, Any]:
+async def merge_finding(input_file: Path, db_path: Path, output_dir: Path) -> Dict[str, Any]:
     """Run merge_findings.py on a single finding file.
     
     Returns:
@@ -168,7 +168,7 @@ async def merge_finding(input_file: Path, db_path: Path) -> Dict[str, Any]:
         str(script_path),
         str(input_file),
         "--db-path", str(db_path),
-        "--auto-keep-existing"
+        "--output-dir", str(output_dir),
     ]
     
     try:
@@ -313,7 +313,7 @@ async def main():
             continue
         
         # Process the finding
-        result = await merge_finding(finding_file, db_path)
+        result = await merge_finding(finding_file, db_path, merged_findings_dir)
         if result['success']:
             processed_list.append({
                 'name': finding_name,

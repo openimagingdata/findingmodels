@@ -1,9 +1,12 @@
 import asyncio
 from pathlib import Path
 
-from loguru import logger
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
+from findingmodel import create_model_stub_from_info
 from findingmodel.common import model_file_name
-from findingmodel.tools import create_info_from_name, create_model_stub_from_info, add_ids_to_model, add_standard_codes_to_model
+from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
+from findingmodel_ai.authoring import create_info_from_name
+from loguru import logger
 
 FINDING_NAMES = [
     # "abnormal intracranial enhancement",

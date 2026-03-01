@@ -3,8 +3,9 @@ import os
 from pathlib import Path
 import sys
 
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
 from findingmodel import FindingModelFull
-from findingmodel.tools import find_similar_models
+from findingmodel_ai.search import find_similar_models
 
 async def main() -> None:
     if os.getenv("DUCKDB_INDEX_PATH"):
