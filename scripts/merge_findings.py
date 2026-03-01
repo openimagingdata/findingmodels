@@ -41,7 +41,7 @@ async def main():
     parser.add_argument(
         "--output-dir",
         type=str,
-        default="defs/merged_findings",
+        default="defs/single_agent_output",
         help="Output directory for merged model",
     )
 

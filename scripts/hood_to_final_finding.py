@@ -584,8 +584,8 @@ async def main():
     )
     parser.add_argument(
         '--output-dir',
-        default='defs/hood_final_models',
-        help='Output directory for generated models (default: defs/hood_final_models)'
+        default='defs/single_agent_output',
+        help='Output directory for generated models (default: defs/single_agent_output)'
     )
     parser.add_argument(
         '--limit',
