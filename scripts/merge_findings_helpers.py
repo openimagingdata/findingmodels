@@ -156,36 +156,47 @@ def ensure_standard_change_values(attr: Dict[str, Any], finding_name: str) -> Di
 
 
 def ensure_hood_contributor(final_finding: Dict[str, Any]) -> Dict[str, Any]:
-    """Ensure C. Michael Hood is included as a contributor in the final finding.
-    
+    """Ensure C. Michael Hood (Person) and MGB Organization are included as contributors.
+
     Args:
         final_finding: The finding model dict
-        
+
     Returns:
-        Updated finding model dict with Hood contributor added if not present
+        Updated finding model dict with Hood contributor and MGB org added if not present
     """
-    hood_contributor = {
+    hood_person = {
         "github_username": "hoodcm",
         "email": "chood@mgh.harvard.edu",
         "name": "C. Michael Hood, MD",
         "organization_code": "MGB"
     }
-    
+    mgb_org = {"name": "Massachusetts General Brigham", "code": "MGB"}
+
     contributors = final_finding.get('contributors', [])
     if not contributors:
         contributors = []
-    
-    # Check if Hood is already in contributors
+
+    # Check if Hood (Person) is already in contributors
     hood_present = any(
-        contrib.get('name') == 'C. Michael Hood, MD' or 
+        contrib.get('name') == 'C. Michael Hood, MD' or
         contrib.get('github_username') == 'hoodcm'
         for contrib in contributors
     )
-    
+    # Check if MGB Organization is present (exact format)
+    mgb_org_present = any(
+        contrib.get('code') == 'MGB' and
+        contrib.get('name') == 'Massachusetts General Brigham'
+        for contrib in contributors
+    )
+
     if not hood_present:
-        contributors.append(hood_contributor)
+        contributors.append(hood_person)
+    if not mgb_org_present:
+        contributors.append(mgb_org)
+
+    if not hood_present or not mgb_org_present:
         final_finding['contributors'] = contributors
-    
+
     return final_finding
 
 

@@ -17,6 +17,7 @@ from findingmodel import FindingModelFull, Index
 from findingmodel.common import model_file_name
 
 from agents.hood_agent import create_hood_agent, AgentContext
+from findingmodels.hood.normalize_output import normalize_for_validation
 
 logger = logging.getLogger(__name__)
 
@@ -95,7 +96,8 @@ Content:
         else:
             print("  [OK] No match found - using incoming model with IDs/codes applied")
 
-        # Validate and save
+        # Normalize and validate
+        final_model_dict = normalize_for_validation(final_model_dict)
         main_model = FindingModelFull.model_validate(final_model_dict)
         output_dir = Path(args.output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)

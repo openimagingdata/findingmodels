@@ -20,6 +20,7 @@ from findingmodel.common import model_file_name
 
 from agents.hood_agent import create_hood_agent, AgentContext
 from findingmodels.hood import should_process_file, load_definition
+from findingmodels.hood.normalize_output import normalize_for_validation
 
 # Load environment variables
 load_dotenv()
@@ -82,7 +83,8 @@ Content:
         match_used = proc_result.match_used
         merge_summary = proc_result.merge_summary
 
-        # Validate and save
+        # Normalize and validate
+        final_model_dict = normalize_for_validation(final_model_dict)
         main_model = FindingModelFull.model_validate(final_model_dict)
         finding_name = main_model.name
         logger.info(f"Agent produced model: {finding_name}")

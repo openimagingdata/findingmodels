@@ -16,6 +16,7 @@ from dotenv import load_dotenv
 from findingmodel import FindingModelFull, FindingModelBase, Index
 from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
 from findingmodel_ai.authoring import create_info_from_name, create_model_from_markdown
+from findingmodel_ai.search import find_anatomic_locations
 from pydantic import BaseModel, Field
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIChatModel
@@ -197,6 +198,33 @@ async def add_standard_codes(ctx: RunContext[AgentContext], model_json: str) -> 
         return json.dumps({"error": str(e)})
 
 
+async def find_anatomic_locations_tool(
+    ctx: RunContext[AgentContext],
+    finding_name: str,
+    description: str | None = None,
+) -> str:
+    """
+    Find anatomic locations for a finding using ontology search.
+    Returns JSON with anatomic_locations in IndexCode format (system, code, display).
+    Call this to populate anatomic_locations before returning the final model.
+    """
+    try:
+        result = await find_anatomic_locations(
+            finding_name=finding_name,
+            description=description,
+        )
+        locations = []
+        for loc in [result.primary_location] + result.alternate_locations:
+            if loc.concept_id != "NO_RESULTS":
+                index_code = loc.as_index_code().model_dump()
+                locations.append(index_code)
+        return json.dumps(
+            {"anatomic_locations": locations if locations else None, "reasoning": result.reasoning}
+        )
+    except Exception as e:
+        return json.dumps({"anatomic_locations": None, "reasoning": str(e), "error": str(e)})
+
+
 # --- System prompt (Part 4 + Part 7 rules) ---
 
 SYSTEM_PROMPT = """You are a medical imaging expert processing finding model definitions for radiology reports.
@@ -221,15 +249,17 @@ Your task: Given an incoming definition (Markdown or Hood JSON), produce a final
 
 5. **Apply add_ids_to_finding_model** and **add_standard_codes** to the final model.
 
-6. **Apply naming rules:** lowercase for names, attribute names, and values; expand acronyms (add compact forms as synonyms); minimize eponyms (prefer descriptive terms, keep eponym as synonym).
+6. **Call find_anatomic_locations**(finding_name, description) to get anatomic locations in IndexCode format. Set anatomic_locations from the result. If the result is empty or NO_RESULTS, set anatomic_locations to null. Never use {"name": "..."} for anatomic_locations; use {"system", "code", "display"} from the tool.
 
-7. **Return ProcessingResult** with final_model (the complete dict), match_used (oifm_id or null), and merge_summary.
+7. **Apply naming rules:** lowercase for names, attribute names, and values; expand acronyms (add compact forms as synonyms); minimize eponyms (prefer descriptive terms, keep eponym as synonym).
+
+8. **Return ProcessingResult** with final_model (the complete dict), match_used (oifm_id or null), and merge_summary.
 
 ## Merge Strategy (Part 7)
 
 - Hood = incoming. Existing DB = reference.
 - Attribute order: presence and change_from_prior must be first.
-- Hood contributor (MGB) must be in contributors.
+- Hood contributor (MGB) must be in contributors. For MGB organization, use exactly: {"name": "Massachusetts General Brigham", "code": "MGB"}. Never use "mgb" as name.
 - Attribute relationships:
   - **enhanced** (incoming has all existing + more): merge, add new values
   - **identical**: no merge
@@ -262,6 +292,7 @@ def create_hood_agent() -> Agent[AgentContext, ProcessingResult]:
             adapt_hood_json,
             add_ids_to_finding_model,
             add_standard_codes,
+            find_anatomic_locations_tool,
         ],
         system_prompt=SYSTEM_PROMPT,
     )

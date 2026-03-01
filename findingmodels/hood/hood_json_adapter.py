@@ -126,6 +126,10 @@ class HoodJsonAdapter:
         }
 
     @staticmethod
+    def _create_mgb_organization() -> Dict:
+        return {"name": "Massachusetts General Brigham", "code": "MGB"}
+
+    @staticmethod
     def _create_person() -> Dict:
         return {
             "github_username": "hoodcm",
@@ -138,6 +142,7 @@ class HoodJsonAdapter:
     def _create_default_contributors() -> List[Dict]:
         return [
             HoodJsonAdapter._create_oidm_organization(),
+            HoodJsonAdapter._create_mgb_organization(),
             HoodJsonAdapter._create_person()
         ]
 
