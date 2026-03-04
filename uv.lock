@@ -597,7 +597,7 @@ wheels = [
 
 [[package]]
 name = "findingmodel"
-version = "1.0.3"
+version = "1.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -610,9 +610,9 @@ dependencies = [
     { name = "pydantic-settings" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d6/7d/83560b5f93000cbcea8902ecc6061d1fd20dd504dfdbe0c9268913f5d74a/findingmodel-1.0.3.tar.gz", hash = "sha256:56f6a2272d70d8fab41d9fd0141c1abdd4a6d23c8a0d51a60838be37263c1614", size = 27540, upload-time = "2026-03-01T10:11:05.569Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/64/f9d11b5282334f409c5c8de0740b4fb183a7a05a422faa9186854104ff42/findingmodel-1.0.4.tar.gz", hash = "sha256:e822915649bff6cefd01e6e91347907771b2bf871e37ad5579db8284e3df47b9", size = 29571, upload-time = "2026-03-04T21:06:45.076Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/40/ad/87d031ab4371b176f0a5dedf87ba68d25e45bf11772ae1dbd19cdaeb7e2a/findingmodel-1.0.3-py3-none-any.whl", hash = "sha256:e914611cb52295ee0ed7175775729003c1839d3a567041b27db4fd9cac9617b9", size = 34757, upload-time = "2026-03-01T10:11:04.49Z" },
+    { url = "https://files.pythonhosted.org/packages/b2/d1/370861691ad123606e95bc0f88ab82fc47492f247a4a6a6216cc467883c8/findingmodel-1.0.4-py3-none-any.whl", hash = "sha256:127f3e7b1a82dbbe6b0f92a080be67fc5d866dcd077eba1b7f0474518c4d1df1", size = 36714, upload-time = "2026-03-04T21:06:44.037Z" },
 ]
 
 [[package]]
@@ -646,6 +646,7 @@ dependencies = [
     { name = "findingmodel" },
     { name = "findingmodel-ai" },
     { name = "jsonschema" },
+    { name = "logfire" },
     { name = "pre-commit" },
     { name = "prettier" },
     { name = "pydantic-ai" },
@@ -662,6 +663,7 @@ requires-dist = [
     { name = "findingmodel", specifier = ">=1.0.3" },
     { name = "findingmodel-ai", specifier = ">=0.2.1" },
     { name = "jsonschema" },
+    { name = "logfire", specifier = ">=4.14.2" },
     { name = "pre-commit" },
     { name = "prettier", specifier = ">=0.0.7" },
     { name = "pydantic-ai" },
@@ -1318,10 +1320,11 @@ wheels = [
 
 [[package]]
 name = "oidm-common"
-version = "0.2.5"
+version = "0.2.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asyncer" },
+    { name = "diskcache" },
     { name = "duckdb" },
     { name = "httpx" },
     { name = "loguru" },
@@ -1329,9 +1332,9 @@ dependencies = [
     { name = "pooch" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/bd/1b/1898b5f94543424d851512075b0d1e5ae0c5d8180f70e1fd3baffffddfcf/oidm_common-0.2.5.tar.gz", hash = "sha256:8a33788155bb5d83b5774fe8b46395868a3202258bbea04eca76d0f0bb227b03", size = 14064, upload-time = "2026-03-01T10:09:03.755Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e8/0d/643f8e1bf02ccbcd7990e57ef0a1d0bc2cff67dbfd96f586ca877d0031ce/oidm_common-0.2.7.tar.gz", hash = "sha256:94ca362ad78e5eb59233bb6dc5f346163a07338dfefded4fff905ba05d67e2cd", size = 17635, upload-time = "2026-03-04T21:06:38.933Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/14/3b/b1b6537844c649272ade5ce3e61ee69e4c0fbb3253b5e3028b0eaa5a45a8/oidm_common-0.2.5-py3-none-any.whl", hash = "sha256:561f38f6ca54047b25d841c6db90bab83dd67f78455c8ef448462a243546c1d4", size = 20947, upload-time = "2026-03-01T10:09:02.662Z" },
+    { url = "https://files.pythonhosted.org/packages/ac/17/97eef5158d1401fcadba13dcc1dbdb7291d3d113d2761de75644ef773a18/oidm_common-0.2.7-py3-none-any.whl", hash = "sha256:f179027f2a360c5eba310e3a74aeebc4f9f72b6ac1d493555869c824d0c4b735", size = 24284, upload-time = "2026-03-04T21:06:40.245Z" },
 ]
 
 [[package]]
