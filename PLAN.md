@@ -13,6 +13,50 @@ The current `agents/hood_agent.py` is a single monolithic pydantic-ai agent with
 
 ---
 
+## Multi-Agent Pipeline — Current Status
+
+*Last updated: 2025-02-25*
+
+**Summary:** The multi-agent pipeline is implemented and working. Smoke tests pass. Several follow-up items remain.
+
+### Accomplished
+
+- **Phases 1–3 complete:** All three agents (merge, create, review), pipeline orchestrator, and `hood_to_final_finding_multiagent.py` script are implemented.
+- **Output fix:** `anatomic_locations` and `contributors` now appear correctly in the final `.fm.json` output.
+- **Smoke test passes:** `uv run python scripts/hood_to_final_finding_multiagent.py --limit 1` runs successfully.
+- **Pydantic-AI practices:** Prompts loaded from `prompts/*.md`, decorator-based tools, structured outputs, `ModelRetry` for errors.
+- **Output comparison:** See `output_analysis_multiagent/aberrant_subclavian_artery_comparison.md` for single-agent vs multi-agent diff.
+
+### Remaining / Follow-up
+
+| Item | Priority | Notes |
+|------|----------|-------|
+| Create agent extracts fewer attributes than single-agent | P1 | Multi-agent: 4 attributes vs single-agent: 8 for aberrant subclavian artery. Consider strengthening `prompts/create_agent.md`. |
+| Logfire warning | P2 | Add `logfire.configure()` or set `LOGFIRE_IGNORE_NO_CONFIG=1` to suppress. |
+| Validator doesn't accept output dir | P3 | `validator.py` uses hardcoded `defs/`; plan assumed `validator.py defs/pipeline_multiagent_output/` would work. |
+| Sub-findings schema | P4 | Format not fully defined; report generation works with current structure. |
+| HoodJsonAdapter for JSON inputs | P5 | Plan says add if Create agent struggles; only markdown tested so far. |
+| Batch test (--limit 5) | — | Not yet run. |
+
+### Key Files
+
+- `scripts/hood_to_final_finding_multiagent.py` — CLI entry point (default output: `defs/pipeline_multiagent_output`)
+- `findingmodels/pipeline.py` — Orchestrator
+- `agents/merge_agent.py`, `create_agent.py`, `review_agent.py` — Three agents
+- `output_analysis_multiagent/FIXES_NEEDED.md` — Detailed fix list
+
+### For Reviewers
+
+To run the multi-agent pipeline:
+
+```bash
+uv run python scripts/hood_to_final_finding_multiagent.py --limit 1
+```
+
+Requires `OPENAI_API_KEY` and `DUCKDB_INDEX_PATH` in `.env`. Output: `defs/pipeline_multiagent_output/`.
+
+---
+
 ## Architecture
 
 ```

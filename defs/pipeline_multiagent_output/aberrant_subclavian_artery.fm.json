@@ -1,0 +1,307 @@
+{
+  "oifm_id": "OIFM_MGB_174876",
+  "name": "aberrant subclavian artery",
+  "description": "Congenital aortic arch branching anomaly in which a subclavian artery arises abnormally from the aortic arch (or brachiocephalic/innominate artery) and follows an atypical course, often posterior to the esophagus (retroesophageal). This variant may be incidental or associated with compressive symptoms or aneurysmal change.",
+  "synonyms": [
+    "arteria lusoria",
+    "aberrant right subclavian artery",
+    "aberrant left subclavian artery",
+    "arteria lusoria syndrome"
+  ],
+  "tags": [
+    "ct",
+    "chest",
+    "vascular",
+    "aortic arch",
+    "congenital anomaly",
+    "subclavian artery"
+  ],
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID480",
+      "display": "aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID13183",
+      "display": "arterial system"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID789",
+      "display": "anterior spinal artery"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Massachusetts General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_490495",
+      "name": "presence",
+      "description": "Presence or absence of an aberrant subclavian artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_490495.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_490495.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_490495.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_490495.3",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_499220",
+      "name": "change_from_prior",
+      "description": "Change in appearance compared with a prior study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_499220.0",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.1",
+          "name": "stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.4",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.5",
+          "name": "resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_499220.6",
+          "name": "no prior"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_879854",
+      "name": "side_of_origin",
+      "description": "Laterality of the aberrant subclavian artery (i.e., which subclavian artery has aberrant origin).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_879854.0",
+          "name": "right",
+          "description": "Aberrant right subclavian artery (classic arteria lusoria pattern)."
+        },
+        {
+          "value_code": "OIFMA_MGB_879854.1",
+          "name": "left",
+          "description": "Aberrant left subclavian artery (usually with right-sided aortic arch)."
+        },
+        {
+          "value_code": "OIFMA_MGB_879854.2",
+          "name": "unknown",
+          "description": "Laterality cannot be determined.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_100373",
+      "name": "course",
+      "description": "Predominant course of the aberrant subclavian artery relative to the trachea and esophagus.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_100373.0",
+          "name": "retroesophageal",
+          "description": "Posterior to the esophagus."
+        },
+        {
+          "value_code": "OIFMA_MGB_100373.1",
+          "name": "intertracheoesophageal",
+          "description": "Between the trachea and esophagus."
+        },
+        {
+          "value_code": "OIFMA_MGB_100373.2",
+          "name": "pretracheal",
+          "description": "Anterior to the trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_100373.3",
+          "name": "other",
+          "description": "Any other course or not otherwise specified."
+        },
+        {
+          "value_code": "OIFMA_MGB_100373.4",
+          "name": "unknown",
+          "description": "Course cannot be determined.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
