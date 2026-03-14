@@ -12,7 +12,7 @@ from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.exceptions import ModelRetry
 
-MODEL = OpenAIChatModel("gpt-5.2")
+MODEL = OpenAIChatModel("gpt-5.4")
 
 PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 
@@ -38,7 +38,7 @@ merge_agent = Agent(
     deps_type=MergeContext,
     output_type=MergeResult,
     instructions=(PROMPTS_DIR / "merge_agent.md").read_text(encoding="utf-8"),
-    model_settings=OpenAIChatModelSettings(openai_reasoning_effort="high"),
+    model_settings=OpenAIChatModelSettings(openai_reasoning_effort="medium"),
     retries=3,
 )
 

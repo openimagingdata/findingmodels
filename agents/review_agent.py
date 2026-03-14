@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from pydantic_ai import Agent
 from pydantic_ai.models.openai import OpenAIChatModel
 
-MODEL = OpenAIChatModel("gpt-5.2")
+MODEL = OpenAIChatModel("gpt-5.4")
 
 PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
 
