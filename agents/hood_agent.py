@@ -57,6 +57,10 @@ class ProcessingResult(BaseModel):
         default="",
         description="Brief summary of merge decisions if a match was used",
     )
+    sub_findings: list[str] = Field(
+        default_factory=list,
+        description="Names of distinct sub-findings that should be separate models (e.g. atherosclerosis, aneurysm)",
+    )
 
 
 # --- Tools ---
@@ -257,7 +261,16 @@ Your task: Given an incoming definition (Markdown or Hood JSON), produce a final
 
 7. **Apply naming rules:** lowercase for names, attribute names, and values; expand acronyms (add compact forms as synonyms); minimize eponyms (prefer descriptive terms, keep eponym as synonym).
 
-8. **Return ProcessingResult** with final_model (the complete dict), match_used (oifm_id or null), and merge_summary.
+8. **Return ProcessingResult** with final_model (the complete dict), match_used (oifm_id or null), merge_summary, and sub_findings.
+
+## Sub-Findings
+
+- **Attribute** = property of the main finding (size, shape, edges, morphology, etc.)
+- **Sub-finding** = distinct associated finding or sub-component that could be its own finding model
+- Apply this principle to any finding where a distinct associated finding or sub-component is present
+- **Examples by domain:** sub-components (solid/ground glass/cystic in mixed nodule); vascular (aneurysm, atherosclerosis, stenosis, thrombosis, dissection, occlusion); hernias (incarceration, strangulation); pulmonary (pulmonary artery aneurysm in emboli context). These are illustrative examples; apply the same logic to any similar case.
+- **Return sub_findings** in ProcessingResult — list the names of sub-findings identified. Do NOT add them as attributes to the main model.
+- **Use exact attribute names** for sub_findings: list the attribute names exactly as they appear in the model (e.g. "atherosclerosis", "aneurysm", "aneurysm size"). Do not use conceptual variants (e.g. "aneurysmal dilation" when the attribute is "aneurysm"). This ensures attributes are correctly removed from the main model.
 
 ## Merge Strategy (Part 7)
 

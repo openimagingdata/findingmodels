@@ -15,12 +15,15 @@ from pathlib import Path
 from typing import Tuple, Optional, Dict, List
 
 from dotenv import load_dotenv
-from findingmodel import FindingModelFull, Index
+import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
+from findingmodel import FindingModelFull, Index, create_model_stub_from_info
 from findingmodel.common import model_file_name
+from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
+from findingmodel_ai.authoring import create_info_from_name
 
 from agents.hood_agent import create_hood_agent, AgentContext
 from findingmodels.hood import should_process_file, load_definition
-from findingmodels.hood.normalize_output import normalize_for_validation
+from findingmodels.hood.normalize_output import normalize_for_validation, strip_sub_finding_attributes
 
 # Load environment variables
 load_dotenv()
@@ -39,10 +42,73 @@ def _get_agent():
     return _hood_agent
 
 
+def _sub_finding_result(
+    created: list[Path],
+    skipped_exists: list[str],
+    skipped_error: list[tuple[str, str]],
+    status_by_name: dict[str, str],
+    error_by_name: dict[str, str],
+) -> dict:
+    """Result of generate_sub_finding_models for report tracking."""
+    return {
+        "created": [str(p) for p in created],
+        "skipped_exists": skipped_exists,
+        "skipped_error": skipped_error,
+        "status_by_name": status_by_name,
+        "error_by_name": error_by_name,
+    }
+
+
+async def generate_sub_finding_models(
+    sub_findings: list[str],
+    parent_name: str,
+    output_dir: Path,
+) -> dict:
+    """Create stub .fm.json files for sub-findings. Returns dict with created, skipped_exists, skipped_error, status_by_name."""
+    created_paths: list[Path] = []
+    skipped_exists: list[str] = []
+    skipped_error: list[tuple[str, str]] = []
+    status_by_name: dict[str, str] = {}
+    error_by_name: dict[str, str] = {}
+    seen = set()
+    for name in sub_findings:
+        name_lower = name.lower().strip()
+        if not name_lower or name_lower in seen:
+            continue
+        seen.add(name_lower)
+        try:
+            info = await create_info_from_name(name)
+            base_stub = create_model_stub_from_info(info)
+            tags = list(base_stub.tags or []) + [f"sub_finding_of:{parent_name}"]
+            stub = base_stub.model_copy(update={"tags": tags})
+            full = add_ids_to_model(stub, source="MGB")
+            add_standard_codes_to_model(full)
+            out_path = output_dir / model_file_name(full.name)
+            if out_path.exists():
+                logger.debug(f"Sub-finding model already exists, skipping: {out_path.name}")
+                skipped_exists.append(name)
+                status_by_name[name] = "skipped_exists"
+                continue
+            output_dir.mkdir(parents=True, exist_ok=True)
+            out_path.write_text(full.model_dump_json(indent=2, exclude_none=True), encoding="utf-8")
+            created_paths.append(out_path)
+            status_by_name[name] = "created"
+            logger.info(f"Created sub-finding model: {out_path.name}")
+        except Exception as e:
+            logger.warning(f"Failed to create sub-finding model for '{name}': {e}")
+            skipped_error.append((name, str(e)))
+            status_by_name[name] = "skipped_error"
+            error_by_name[name] = str(e)
+    return _sub_finding_result(
+        created_paths, skipped_exists, skipped_error, status_by_name, error_by_name
+    )
+
+
 async def process_single_file(
     file_path: Path,
     index: Index,
-    output_dir: Path
+    output_dir: Path,
+    create_sub_finding_models: bool = True,
 ) -> Tuple[bool, str, Optional[Dict], Optional[Dict], Optional[Dict], Optional[List[str]]]:
     """Process a single definition file using the Hood agent.
 
@@ -85,6 +151,8 @@ Content:
 
         # Normalize and validate
         final_model_dict = normalize_for_validation(final_model_dict)
+        if proc_result.sub_findings:
+            final_model_dict = strip_sub_finding_attributes(final_model_dict, proc_result.sub_findings)
         main_model = FindingModelFull.model_validate(final_model_dict)
         finding_name = main_model.name
         logger.info(f"Agent produced model: {finding_name}")
@@ -103,7 +171,23 @@ Content:
             'presence': {'finding_name': finding_name},
             'change_from_prior': {'finding_name': finding_name},
         }
-        sub_finding_tracking_info = {'finding_name': finding_name}
+        sub_finding_tracking_info: Dict = {'finding_name': finding_name}
+        if proc_result.sub_findings:
+            sub_finding_tracking_info["extracted"] = [
+                {"component_name": s, "new_finding_name": s, "attributes_moved": [], "presence_attribute_kept": None}
+                for s in proc_result.sub_findings
+            ]
+            if create_sub_finding_models:
+                sf_result = await generate_sub_finding_models(
+                    proc_result.sub_findings, finding_name, output_dir
+                )
+                sub_finding_tracking_info["files_created"] = sf_result["created"]
+                sub_finding_tracking_info["skipped_exists"] = sf_result["skipped_exists"]
+                sub_finding_tracking_info["skipped_error"] = sf_result["skipped_error"]
+                sub_finding_tracking_info["status_by_name"] = sf_result["status_by_name"]
+                sub_finding_tracking_info["error_by_name"] = sf_result["error_by_name"]
+        else:
+            sub_finding_tracking_info["no_components_found"] = True
         merge_tracking_info = {
             'finding_name': finding_name,
             'match_found': match_used is not None,
@@ -428,13 +512,19 @@ def generate_sub_finding_report(
     return report_path
 
 
-async def process_hood_directory(input_dir: str, output_dir: str, limit: Optional[int] = None):
+async def process_hood_directory(
+    input_dir: str,
+    output_dir: str,
+    limit: Optional[int] = None,
+    create_sub_finding_models: bool = True,
+):
     """Process all definition files in the hood_CT_chest directory.
-    
+
     Args:
         input_dir: Input directory path
         output_dir: Output directory path
         limit: Optional limit on number of files to process (for testing)
+        create_sub_finding_models: If True, create separate .fm.json files for sub-findings
     """
     input_path = Path(input_dir)
     output_path = Path(output_dir)
@@ -593,6 +683,11 @@ async def main():
         default=None,
         help='Limit the number of files to process (for testing). Example: --limit 10'
     )
+    parser.add_argument(
+        '--no-sub-finding-models',
+        action='store_true',
+        help='Do not create separate .fm.json files for sub-findings (still strips attributes from main model)'
+    )
     
     args = parser.parse_args()
     
@@ -613,13 +708,14 @@ async def main():
     input_dir = args.input_dir
     output_dir = args.output_dir
     limit = args.limit
+    create_sub_finding_models = not args.no_sub_finding_models
     
     logger.info(f"Importing Hood definitions from {input_dir}")
     logger.info(f"Output directory: {output_dir}")
     if limit:
         logger.info(f"Processing limited to {limit} files (testing mode)")
     
-    await process_hood_directory(input_dir, output_dir, limit=limit)
+    await process_hood_directory(input_dir, output_dir, limit=limit, create_sub_finding_models=create_sub_finding_models)
 
 
 if __name__ == "__main__":

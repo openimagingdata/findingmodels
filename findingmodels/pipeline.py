@@ -25,7 +25,7 @@ from agents.create_agent import create_agent
 from agents.merge_agent import MergeContext, merge_agent
 from agents.review_agent import review_agent
 from findingmodels.hood import load_definition
-from findingmodels.hood.normalize_output import normalize_for_validation
+from findingmodels.hood.normalize_output import normalize_for_validation, strip_sub_finding_attributes
 
 
 @dataclass
@@ -229,6 +229,9 @@ async def process_finding(
             model_dict = review.output.reviewed_model
             sub_findings.extend(review.output.sub_findings)
             changes.extend(review.output.changes_made)
+
+        if sub_findings:
+            model_dict = strip_sub_finding_attributes(model_dict, sub_findings)
 
         with logfire.span("finalize"):
             final = finalize_model(model_dict, locations, source="MGB")

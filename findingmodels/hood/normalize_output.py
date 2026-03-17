@@ -1,7 +1,39 @@
 """Normalize hood output before FindingModelFull validation."""
 
+import logging
 import re
 from typing import Any
+
+logger = logging.getLogger(__name__)
+
+
+def strip_sub_finding_attributes(model_dict: dict[str, Any], sub_findings: list[str]) -> dict[str, Any]:
+    """Remove attributes from the main model that correspond to sub-findings.
+
+    For each sub_finding name (e.g. 'atherosclerosis', 'aneurysm'):
+    - Remove attribute with matching name (case-insensitive)
+    - Remove attributes whose name starts with sub_finding + ' ' (e.g. 'aneurysm size')
+    """
+    if not sub_findings:
+        return model_dict
+    attrs = model_dict.get("attributes") or []
+    if not attrs:
+        return model_dict
+    to_remove = {sf.lower().strip() for sf in sub_findings if sf and str(sf).strip()}
+    kept = []
+    removed_names = []
+    for a in attrs:
+        name = (a.get("name") or "").lower()
+        if name in to_remove:
+            removed_names.append(name)
+            continue
+        if any(name.startswith(f"{sf} ") for sf in to_remove):
+            removed_names.append(name)
+            continue
+        kept.append(a)
+    if removed_names:
+        logger.info("Stripped sub-finding attributes from main model: %s", removed_names)
+    return {**model_dict, "attributes": kept}
 
 
 def normalize_for_validation(model_dict: dict[str, Any]) -> dict[str, Any]:
