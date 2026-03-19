@@ -1,4 +1,4 @@
-"""Hood pipeline: load definitions. Processing is handled by hood_agent."""
+"""Hood pipeline: load definitions. Processing is handled by single_agent."""
 
 from findingmodels.hood.loaders import (
     should_process_file,

@@ -475,11 +475,11 @@ import findingmodels.compat  # noqa: F401 - patch for findingmodel-ai
 
 ---
 
-### Chunk 5: Update `scripts/hood_to_final_finding.py`
+### Chunk 5: Update `scripts/single_agent_pipeline.py`
 
 **Depends on**: Chunk 4
 
-**File**: `scripts/hood_to_final_finding.py` (modify in place)
+**File**: `scripts/single_agent_pipeline.py` (modify in place)
 
 **Changes**:
 1. Replace `from agents.hood_agent import create_hood_agent, AgentContext` with `from findingmodels.pipeline import process_finding, ProcessingResult`
@@ -522,7 +522,7 @@ async def process_single_file(
         return False, f"Error processing {file_path.name}: {e}", None, None, None, None
 ```
 
-**Verification**: `uv run python scripts/hood_to_final_finding.py --limit 1` should process one file end-to-end.
+**Verification**: `uv run python scripts/single_agent_pipeline.py --limit 1` should process one file end-to-end.
 
 ---
 
@@ -532,7 +532,7 @@ async def process_single_file(
 
 **File**: Delete `agents/hood_agent.py`
 
-**Verification**: `uv run python scripts/hood_to_final_finding.py --limit 1` still works after deletion.
+**Verification**: `uv run python scripts/single_agent_pipeline.py --limit 1` still works after deletion.
 
 ---
 
@@ -606,9 +606,9 @@ class FindingInfo(BaseModel):
 
 | Agent | Model | Reasoning Effort | Rationale |
 |---|---|---|---|
-| Merge Agent | gpt-5.2 | **high** | Multi-step attribute comparison, relationship classification, specificity judgment, deduplication logic |
-| Create Agent | gpt-5.2 | **medium** | Structured transformation with clinical judgment for descriptions, naming, sub-finding detection |
-| Review Agent | gpt-5.2 | **none** (default) | Checklist-based verification — lowercase check, standard values check, pattern matching |
+| Merge Agent | gpt-5.4 | **high** | Multi-step attribute comparison, relationship classification, specificity judgment, deduplication logic |
+| Create Agent | gpt-5.4 | **medium** | Structured transformation with clinical judgment for descriptions, naming, sub-finding detection |
+| Review Agent | gpt-5.4 | **none** (default) | Checklist-based verification — lowercase check, standard values check, pattern matching |
 | Library: `find_similar_models` | Controlled by library | `search_model_tier="small"`, `analysis_model_tier="base"` | Library defaults |
 | Library: `find_anatomic_locations` | Controlled by library | `model_tier="small"` | Library defaults |
 | Library: `create_info_from_name` | Controlled by library | `model_tier="small"` | Library defaults |
@@ -628,9 +628,9 @@ GPT-5.2 defaults to reasoning effort `none`. We must explicitly set `high` for m
 
 ## Verification Plan
 
-1. **Smoke test**: `uv run python scripts/hood_to_final_finding.py --limit 1`
+1. **Smoke test**: `uv run python scripts/single_agent_pipeline.py --limit 1`
 2. **Compare output**: Diff `defs/single_agent_output/aberrant_subclavian_artery.fm.json` before/after — should have same structure (oifm_id, name, attributes with presence+change_from_prior first, anatomic_locations, contributors)
 3. **Logfire traces**: Verify spans: `process_finding` > `parse_input`, `search_parallel`, `agent_run`, `review`, `finalize`
 4. **Validate output**: `uv run python scripts/validator.py defs/single_agent_output/`
-5. **Batch test**: `uv run python scripts/hood_to_final_finding.py --limit 5` — check processing report
+5. **Batch test**: `uv run python scripts/single_agent_pipeline.py --limit 5` — check processing report
 6. **Sub-findings**: Verify sub_findings lists in ProcessingResult are populated where appropriate

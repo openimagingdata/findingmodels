@@ -16,7 +16,7 @@ from pathlib import Path
 from findingmodel import FindingModelFull, Index
 from findingmodel.common import model_file_name
 
-from agents.hood_agent import create_hood_agent, AgentContext
+from agents.single_agent import create_single_agent, AgentContext
 from findingmodels.hood.normalize_output import normalize_for_validation
 
 logger = logging.getLogger(__name__)
@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 async def main():
     """Main CLI function."""
     parser = argparse.ArgumentParser(
-        description="Merge incoming finding model with database using Hood agent (GPT-5.2)"
+        description="Merge incoming finding model with database using Hood agent (GPT-5.4)"
     )
     parser.add_argument(
         "input_file",
@@ -83,7 +83,7 @@ Content:
 
         # Run agent
         print("Running Hood agent...")
-        agent = create_hood_agent()
+        agent = create_single_agent()
         ctx = AgentContext(index=index)
         result = await agent.run(user_message, deps=ctx)
 

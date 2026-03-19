@@ -1,9 +1,9 @@
 """
-Hood Definition Processor Agent (Option B: Single agent with tools).
+Single Agent (Option B: Single agent with tools).
 
 Processes incoming Markdown or JSON finding definitions, searches for similar models,
 merges when appropriate, and produces final FindingModelFull output.
-Uses GPT-5.2 with pydantic-ai tools.
+Uses GPT-5.4 with pydantic-ai tools.
 """
 
 import json
@@ -24,6 +24,8 @@ from pydantic_ai.models.openai import OpenAIChatModel
 
 from findingmodels.hood.hood_json_adapter import HoodJsonAdapter
 
+from agents.prompts import load_single_agent_instructions
+
 load_dotenv()
 
 logfire.configure(send_to_logfire='if-token-present')
@@ -31,8 +33,8 @@ logfire.instrument_pydantic_ai()
 
 logger = logging.getLogger(__name__)
 
-# GPT-5.2 model
-MODEL = OpenAIChatModel("gpt-5.2")
+# GPT-5.4 model (aligned with merge/create/review agents)
+MODEL = OpenAIChatModel("gpt-5.4")
 
 
 @dataclass
@@ -44,7 +46,7 @@ class AgentContext:
 
 
 class ProcessingResult(BaseModel):
-    """Structured output from the Hood agent."""
+    """Structured output from the single agent."""
 
     final_model: Dict[str, Any] = Field(
         description="The final FindingModelFull as a JSON-serializable dict, ready to save"
@@ -63,9 +65,20 @@ class ProcessingResult(BaseModel):
     )
 
 
+# --- Agent (created first so tools can be registered via decorator) ---
+
+single_agent = Agent(
+    model=MODEL,
+    deps_type=AgentContext,
+    output_type=ProcessingResult,
+    system_prompt=load_single_agent_instructions(),
+)
+
+
 # --- Tools ---
 
 
+@single_agent.tool
 async def search_finding_models(
     ctx: RunContext[AgentContext], query: str, limit: int = 10
 ) -> str:
@@ -97,6 +110,7 @@ async def search_finding_models(
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def get_full_model(ctx: RunContext[AgentContext], oifm_id: str) -> str:
     """
     Retrieve a full finding model by OIFM ID.
@@ -114,6 +128,7 @@ async def get_full_model(ctx: RunContext[AgentContext], oifm_id: str) -> str:
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def create_from_markdown(
     ctx: RunContext[AgentContext],
     finding_name: str,
@@ -140,6 +155,7 @@ async def create_from_markdown(
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def adapt_hood_json(
     ctx: RunContext[AgentContext],
     json_content: str,
@@ -163,6 +179,7 @@ async def adapt_hood_json(
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def add_ids_to_finding_model(
     ctx: RunContext[AgentContext],
     model_json: str,
@@ -188,6 +205,7 @@ async def add_ids_to_finding_model(
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def add_standard_codes(ctx: RunContext[AgentContext], model_json: str) -> str:
     """
     Add standard RadLex/SNOMED index codes to a finding model.
@@ -206,6 +224,7 @@ async def add_standard_codes(ctx: RunContext[AgentContext], model_json: str) -> 
         return json.dumps({"error": str(e)})
 
 
+@single_agent.tool
 async def find_anatomic_locations_tool(
     ctx: RunContext[AgentContext],
     finding_name: str,
@@ -233,83 +252,6 @@ async def find_anatomic_locations_tool(
         return json.dumps({"anatomic_locations": None, "reasoning": str(e), "error": str(e)})
 
 
-# --- System prompt (Part 4 + Part 7 rules) ---
-
-SYSTEM_PROMPT = """You are a medical imaging expert processing finding model definitions for radiology reports.
-
-Your task: Given an incoming definition (Markdown or Hood JSON), produce a final FindingModelFull ready to save.
-
-## Workflow
-
-1. **Parse the input** using the appropriate approach:
-   - If content is already a complete FindingModelFull JSON (has oifm_id or name, attributes, etc.): use it directly as the incoming model. Do NOT call create_from_markdown or adapt_hood_json.
-   - For Markdown: use create_from_markdown(finding_name, markdown_content)
-   - For Hood JSON (has finding_name, attributes in Hood format): use adapt_hood_json(json_content, filename)
-
-2. **Search for similar models** using search_finding_models(query, limit). Use the finding name and key terms.
-
-3. **Decide match vs create new:**
-   - If a search result is an exact or near-exact match AND not too general: use get_full_model(oifm_id), then merge incoming with existing per the merge strategy below.
-   - If the existing term is too general (e.g. "detectable hardware" when incoming is "tunneled catheter"): reject the match, create new.
-   - If no suitable match: use the model from step 1 as the base.
-
-4. **Ensure presence and change_from_prior** exist and are first in the attribute list. Standard presence values: [absent, present, indeterminate, unknown]. Standard change values: [unchanged, stable, increased, decreased, new, resolved, no prior]. If incoming has [yes, no] and existing has standard values, keep existing.
-
-5. **Apply add_ids_to_finding_model** and **add_standard_codes** to the final model.
-
-6. **Call find_anatomic_locations**(finding_name, description) to get anatomic locations in IndexCode format. Set anatomic_locations from the result. If the result is empty or NO_RESULTS, set anatomic_locations to null. Never use {"name": "..."} for anatomic_locations; use {"system", "code", "display"} from the tool.
-
-7. **Apply naming rules:** lowercase for names, attribute names, and values; expand acronyms (add compact forms as synonyms); minimize eponyms (prefer descriptive terms, keep eponym as synonym).
-
-8. **Return ProcessingResult** with final_model (the complete dict), match_used (oifm_id or null), merge_summary, and sub_findings.
-
-## Sub-Findings
-
-- **Attribute** = property of the main finding (size, shape, edges, morphology, etc.)
-- **Sub-finding** = distinct associated finding or sub-component that could be its own finding model
-- Apply this principle to any finding where a distinct associated finding or sub-component is present
-- **Examples by domain:** sub-components (solid/ground glass/cystic in mixed nodule); vascular (aneurysm, atherosclerosis, stenosis, thrombosis, dissection, occlusion); hernias (incarceration, strangulation); pulmonary (pulmonary artery aneurysm in emboli context). These are illustrative examples; apply the same logic to any similar case.
-- **Return sub_findings** in ProcessingResult — list the names of sub-findings identified. Do NOT add them as attributes to the main model.
-- **Use exact attribute names** for sub_findings: list the attribute names exactly as they appear in the model (e.g. "atherosclerosis", "aneurysm", "aneurysm size"). Do not use conceptual variants (e.g. "aneurysmal dilation" when the attribute is "aneurysm"). This ensures attributes are correctly removed from the main model.
-
-## Merge Strategy (Part 7)
-
-- Hood = incoming. Existing DB = reference.
-- Attribute order: presence and change_from_prior must be first.
-- Hood contributor (MGB) must be in contributors. For MGB organization, use exactly: {"name": "Massachusetts General Brigham", "code": "MGB"}. Never use "mgb" as name.
-- Attribute relationships:
-  - **enhanced** (incoming has all existing + more): merge, add new values
-  - **identical**: no merge
-  - **subset** (existing has all incoming + more): no merge
-  - **needs_review**: auto-merge for now
-  - **no_similarities**: add as new attribute, unless both are presence/change_from_prior
-
-## Naming & Formatting (Part 4)
-
-- Lowercase: model name, attribute names, values. Descriptions may use normal casing.
-- Eponyms: minimize; prefer descriptive terms; keep eponym as synonym.
-- Acronyms: spell out in names; add compact forms as synonyms.
-- Location: use anatomic nodes in model-level locations; do NOT add separate Location attribute.
-- Associated findings: do NOT add; use separate findings instead.
-"""
-
-
-# --- Agent ---
-
-def create_hood_agent() -> Agent[AgentContext, ProcessingResult]:
-    """Create the Hood definition processor agent with tools."""
-    return Agent(
-        model=MODEL,
-        deps_type=AgentContext,
-        output_type=ProcessingResult,
-        tools=[
-            search_finding_models,
-            get_full_model,
-            create_from_markdown,
-            adapt_hood_json,
-            add_ids_to_finding_model,
-            add_standard_codes,
-            find_anatomic_locations_tool,
-        ],
-        system_prompt=SYSTEM_PROMPT,
-    )
+def create_single_agent() -> Agent[AgentContext, ProcessingResult]:
+    """Return the single definition processor agent (tools registered via decorators)."""
+    return single_agent

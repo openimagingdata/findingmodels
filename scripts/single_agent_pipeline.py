@@ -1,9 +1,11 @@
 """
-Import Hood CT Chest definitions from CDEStaging repository.
+Single-agent Hood pipeline: CDEStaging definitions → final finding models.
 
-This script processes Markdown and JSON definitions from the hood_CT_chest directory,
+CLI entry: ``scripts/single_agent_pipeline.py`` (formerly ``hood_to_final_finding.py``).
+
+Processes Markdown and JSON definitions from the hood_CT_chest directory,
 matches them with existing models in the database, and either generates new models
-or merges with existing ones. Uses a single GPT-5.2 agent with tools (Option B).
+or merges with existing ones. Uses a single GPT-5.4 agent with tools (Option B).
 """
 
 import argparse
@@ -21,7 +23,7 @@ from findingmodel.common import model_file_name
 from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
 from findingmodel_ai.authoring import create_info_from_name
 
-from agents.hood_agent import create_hood_agent, AgentContext
+from agents.single_agent import create_single_agent, AgentContext
 from findingmodels.hood import should_process_file, load_definition
 from findingmodels.hood.normalize_output import normalize_for_validation, strip_sub_finding_attributes
 
@@ -32,14 +34,14 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 # Create agent once (lazy on first use)
-_hood_agent = None
+_single_agent = None
 
 
 def _get_agent():
-    global _hood_agent
-    if _hood_agent is None:
-        _hood_agent = create_hood_agent()
-    return _hood_agent
+    global _single_agent
+    if _single_agent is None:
+        _single_agent = create_single_agent()
+    return _single_agent
 
 
 def _sub_finding_result(

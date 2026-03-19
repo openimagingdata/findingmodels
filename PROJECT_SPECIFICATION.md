@@ -26,38 +26,38 @@
 
 ### What We Have
 
-The main entry point is `hood_to_final_finding.py`. It takes Hood CT Chest definitions (Markdown and JSON) from CDEStaging, looks them up in a DuckDB index of existing finding models, and either creates new models or merges incoming definitions with existing ones.
+The main entry point is `single_agent_pipeline.py`. It takes Hood CT Chest definitions (Markdown and JSON) from CDEStaging, looks them up in a DuckDB index of existing finding models, and either creates new models or merges incoming definitions with existing ones.
 
 **Data flow:**
 - **Input**: `hood_CT_chest` definitions from [CDEStaging](https://github.com/openimagingdata/CDEStaging/tree/main/definitions/hood_CT_chest)
 - **Existing models**: DuckDB index (path from `DUCKDB_INDEX_PATH` or `--db-path`). The index is supplied externally; this repo does not contain the code that populates it.
 - **Output**:
-  - `defs/hood_final_models/` — direct output from `hood_to_final_finding.py`
+  - `defs/hood_final_models/` — direct output from `single_agent_pipeline.py`
   - `defs/merged_findings/` — output from `batch_merge_findings.py` (a separate pipeline; see below)
 
-**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, adapters) lives in `findingmodels/hood/`. Processing is handled by `agents/hood_agent.py`.
+**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, adapters) lives in `findingmodels/hood/`. Processing is handled by `agents/single_agent.py`.
 
 **Scripts:**
-- `scripts/hood_to_final_finding.py` — Main pipeline (CDEStaging → hood_final_models)
+- `scripts/single_agent_pipeline.py` — Main single-agent pipeline (CDEStaging → output). `scripts/hood_to_final_finding.py` is a thin shim that runs the same script.
 - `scripts/merge_findings.py` — CLI for merging one incoming model with existing
 - `scripts/batch_merge_findings.py` — **Different pipeline**: takes already-converted `hood_findings` (.fm.json), merges each with the DuckDB index, outputs to `merged_findings`. Does not read from CDEStaging.
 
-**AI agents** (pydantic-ai, GPT-5.2, single agent with tools):
-- Single `hood_agent` with tools: search, get_model, create_from_markdown, adapt_hood_json, add_ids, add_standard_codes
+**AI agents** (pydantic-ai, GPT-5.4, single agent with tools):
+- Single `single_agent` with tools: search, get_model, create_from_markdown, adapt_hood_json, add_ids, add_standard_codes
 - Agent handles: specificity check, merge strategy, formatting (lowercase, acronyms, eponyms), attribute classification
 
 ---
 
 ## Part 2: How the Main Pipeline Works
 
-`hood_to_final_finding.py` loads definitions via `findingmodels.hood` and delegates processing to the single Hood agent:
+`single_agent_pipeline.py` loads definitions via `findingmodels.hood` and delegates processing to the single Hood agent:
 
 ```
-hood_to_final_finding.py
+single_agent_pipeline.py
     └── findingmodels.hood
             ├── loaders              (file I/O, should_process_file, load_definition)
             └── hood_json_adapter    (used by agent for JSON definitions)
-    └── agents/hood_agent            (single agent with pydantic-ai tools)
+    └── agents/single_agent            (single agent with pydantic-ai tools)
             └── Tools: search_finding_models, get_full_model, create_from_markdown,
                        adapt_hood_json, add_ids_to_finding_model, add_standard_codes
 ```
@@ -75,15 +75,15 @@ hood_to_final_finding.py
 
 | Requirement | Status | Where in Code | Notes |
 |-------------|--------|---------------|-------|
-| Hood = incoming, existing DB = reference | Done | `agents.hood_agent` (merge via tools) | Hood definitions are merged into existing models, not the other way around |
-| Specificity check (reject general matches) | Done | `agents.hood_agent` (system prompt + tools) | Prevents matching e.g. "tunneled catheter" to "detectable hardware" |
-| Presence and change_from_prior at top | Done | `agents.hood_agent` (system prompt) | Agent applies ordering per spec |
-| Hood contributor (MGB) in merged models | Done | `agents.hood_agent` (system prompt) | MGB contributor added to merged output |
-| Presence with yes/no: keep existing if it has standard values | Done | `agents.hood_agent` (system prompt + merge logic) | Incoming [yes, no] discarded when existing has standard values |
-| Lowercase, acronym expansion, eponym minimization | Done | `agents.hood_agent` (system prompt) | Names formatted per spec |
-| Full merge strategy (enhanced, identical, subset, etc.) | Done | `agents.hood_agent` (system prompt + tools) | All five relationship types supported |
+| Hood = incoming, existing DB = reference | Done | `agents.single_agent` (merge via tools) | Hood definitions are merged into existing models, not the other way around |
+| Specificity check (reject general matches) | Done | `agents.single_agent` (system prompt + tools) | Prevents matching e.g. "tunneled catheter" to "detectable hardware" |
+| Presence and change_from_prior at top | Done | `agents.single_agent` (system prompt) | Agent applies ordering per spec |
+| Hood contributor (MGB) in merged models | Done | `agents.single_agent` (system prompt) | MGB contributor added to merged output |
+| Presence with yes/no: keep existing if it has standard values | Done | `agents.single_agent` (system prompt + merge logic) | Incoming [yes, no] discarded when existing has standard values |
+| Lowercase, acronym expansion, eponym minimization | Done | `agents.single_agent` (system prompt) | Names formatted per spec |
+| Full merge strategy (enhanced, identical, subset, etc.) | Done | `agents.single_agent` (system prompt + tools) | All five relationship types supported |
 | Sub-finding identification via LLM | Pending | Agent can be extended | Components identified; models not yet saved to disk |
-| Pipeline: lookup → generate or merge → ensure presence/change | Done | `hood_to_final_finding.process_single_file`, `agents.hood_agent` | End-to-end flow from CDEStaging to output |
+| Pipeline: lookup → generate or merge → ensure presence/change | Done | `single_agent_pipeline.process_single_file`, `agents.single_agent` | End-to-end flow from CDEStaging to output |
 
 ### What Still Needs to Be Accomplished
 
@@ -195,8 +195,8 @@ When modifying or extending the project, ensure:
 
 | Concern | File(s) |
 |---------|---------|
-| Main Hood pipeline (CLI) | `scripts/hood_to_final_finding.py` |
-| Hood agent (single agent with tools) | `agents/hood_agent.py` |
+| Main Hood pipeline (CLI) | `scripts/single_agent_pipeline.py` |
+| Hood agent (single agent with tools) | `agents/single_agent.py` |
 | Hood library (loaders, adapters) | `findingmodels/hood/` |
 | Merge CLI | `scripts/merge_findings.py` |
 | Batch merge (separate pipeline) | `scripts/batch_merge_findings.py` |
