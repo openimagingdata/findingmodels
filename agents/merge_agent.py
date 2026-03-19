@@ -3,7 +3,6 @@ Merge agent for combining incoming finding definitions with existing database mo
 """
 
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Any, Dict
 
 from findingmodel import Index
@@ -12,9 +11,9 @@ from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.exceptions import ModelRetry
 
-MODEL = OpenAIChatModel("gpt-5.4")
+from agents.prompts import load_instructions
 
-PROMPTS_DIR = Path(__file__).resolve().parent.parent / "prompts"
+MODEL = OpenAIChatModel("gpt-5.4")
 
 
 class MergeResult(BaseModel):
@@ -37,7 +36,7 @@ merge_agent = Agent(
     model=MODEL,
     deps_type=MergeContext,
     output_type=MergeResult,
-    instructions=(PROMPTS_DIR / "merge_agent.md").read_text(encoding="utf-8"),
+    instructions=load_instructions("merge_agent"),
     model_settings=OpenAIChatModelSettings(openai_reasoning_effort="medium"),
     retries=3,
 )
