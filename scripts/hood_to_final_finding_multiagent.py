@@ -59,10 +59,10 @@ async def process_single_file(
         }
 
         sub_finding_tracking_info: Dict = {"finding_name": finding_name}
-        if proc_result.sub_findings:
+        if proc_result.findings_to_create:
             sub_finding_tracking_info["extracted"] = [
                 {"component_name": s, "new_finding_name": s, "attributes_moved": [], "presence_attribute_kept": None}
-                for s in proc_result.sub_findings
+                for s in proc_result.findings_to_create
             ]
         else:
             sub_finding_tracking_info["no_components_found"] = True

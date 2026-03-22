@@ -59,9 +59,9 @@ class ProcessingResult(BaseModel):
         default="",
         description="Brief summary of merge decisions if a match was used",
     )
-    sub_findings: list[str] = Field(
+    findings_to_create: list[str] = Field(
         default_factory=list,
-        description="Names of distinct sub-findings that should be separate models (e.g. atherosclerosis, aneurysm)",
+        description="Names of findings that need their own models — associated findings, components, or compound finding splits",
     )
 
 

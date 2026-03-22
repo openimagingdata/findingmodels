@@ -17,7 +17,7 @@ class CreateResult(BaseModel):
     """Structured output from the create agent."""
 
     model: Dict[str, Any]
-    sub_findings: list[str]
+    findings_to_create: list[str]
     naming_decisions: list[str]
 
 

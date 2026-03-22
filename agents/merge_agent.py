@@ -11,7 +11,7 @@ from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
 from pydantic_ai.exceptions import ModelRetry
 
-from agents.prompts import load_instructions
+from agents.prompts import CONTRIBUTORS_BLOCK, load_instructions
 
 MODEL = OpenAIChatModel("gpt-5.4")
 
@@ -22,7 +22,7 @@ class MergeResult(BaseModel):
     merged_model: Dict[str, Any]
     target_oifm_id: str
     changes_made: list[str]
-    sub_findings: list[str]
+    findings_to_create: list[str]
 
 
 @dataclass
@@ -36,7 +36,7 @@ merge_agent = Agent(
     model=MODEL,
     deps_type=MergeContext,
     output_type=MergeResult,
-    instructions=load_instructions("merge_agent"),
+    instructions=load_instructions("merge_agent", contributors=CONTRIBUTORS_BLOCK),
     model_settings=OpenAIChatModelSettings(openai_reasoning_effort="medium"),
     retries=3,
 )

@@ -62,18 +62,18 @@ def _sub_finding_result(
 
 
 async def generate_sub_finding_models(
-    sub_findings: list[str],
+    findings_to_create: list[str],
     parent_name: str,
     output_dir: Path,
 ) -> dict:
-    """Create stub .fm.json files for sub-findings. Returns dict with created, skipped_exists, skipped_error, status_by_name."""
+    """Create stub .fm.json files for findings flagged for extraction. Returns dict with created, skipped_exists, skipped_error, status_by_name."""
     created_paths: list[Path] = []
     skipped_exists: list[str] = []
     skipped_error: list[tuple[str, str]] = []
     status_by_name: dict[str, str] = {}
     error_by_name: dict[str, str] = {}
     seen = set()
-    for name in sub_findings:
+    for name in findings_to_create:
         name_lower = name.lower().strip()
         if not name_lower or name_lower in seen:
             continue
@@ -153,8 +153,8 @@ Content:
 
         # Normalize and validate
         final_model_dict = normalize_for_validation(final_model_dict)
-        if proc_result.sub_findings:
-            final_model_dict = strip_sub_finding_attributes(final_model_dict, proc_result.sub_findings)
+        if proc_result.findings_to_create:
+            final_model_dict = strip_sub_finding_attributes(final_model_dict, proc_result.findings_to_create)
         main_model = FindingModelFull.model_validate(final_model_dict)
         finding_name = main_model.name
         logger.info(f"Agent produced model: {finding_name}")
@@ -174,14 +174,14 @@ Content:
             'change_from_prior': {'finding_name': finding_name},
         }
         sub_finding_tracking_info: Dict = {'finding_name': finding_name}
-        if proc_result.sub_findings:
+        if proc_result.findings_to_create:
             sub_finding_tracking_info["extracted"] = [
                 {"component_name": s, "new_finding_name": s, "attributes_moved": [], "presence_attribute_kept": None}
-                for s in proc_result.sub_findings
+                for s in proc_result.findings_to_create
             ]
             if create_sub_finding_models:
                 sf_result = await generate_sub_finding_models(
-                    proc_result.sub_findings, finding_name, output_dir
+                    proc_result.findings_to_create, finding_name, output_dir
                 )
                 sub_finding_tracking_info["files_created"] = sf_result["created"]
                 sub_finding_tracking_info["skipped_exists"] = sf_result["skipped_exists"]

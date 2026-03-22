@@ -7,19 +7,19 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 
-def strip_sub_finding_attributes(model_dict: dict[str, Any], sub_findings: list[str]) -> dict[str, Any]:
-    """Remove attributes from the main model that correspond to sub-findings.
+def strip_sub_finding_attributes(model_dict: dict[str, Any], findings_to_create: list[str]) -> dict[str, Any]:
+    """Remove attributes from the main model that correspond to findings flagged for extraction.
 
-    For each sub_finding name (e.g. 'atherosclerosis', 'aneurysm'):
+    For each finding name (e.g. 'atherosclerosis', 'aneurysm'):
     - Remove attribute with matching name (case-insensitive)
-    - Remove attributes whose name starts with sub_finding + ' ' (e.g. 'aneurysm size')
+    - Remove attributes whose name starts with finding + ' ' (e.g. 'aneurysm size')
     """
-    if not sub_findings:
+    if not findings_to_create:
         return model_dict
     attrs = model_dict.get("attributes") or []
     if not attrs:
         return model_dict
-    to_remove = {sf.lower().strip() for sf in sub_findings if sf and str(sf).strip()}
+    to_remove = {sf.lower().strip() for sf in findings_to_create if sf and str(sf).strip()}
     kept = []
     removed_names = []
     for a in attrs:

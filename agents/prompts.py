@@ -54,14 +54,50 @@ def load_single_agent_instructions() -> str:
 
     return "\n\n".join(parts)
 
+# Contributor blocks for merge agent template substitution.
+CONTRIBUTORS_BLOCK = """\
+```json
+{"name": "Massachusetts General Brigham", "code": "MGB"}
+```
 
-def load_instructions(agent_name: str) -> str:
-    """Load agent instructions with shared naming rules appended.
+```json
+{
+  "github_username": "hoodcm",
+  "email": "chood@mgh.harvard.edu",
+  "name": "C. Michael Hood, MD",
+  "organization_code": "MGB"
+}
+```"""
 
-    Reads ``prompts/{agent_name}.md``, strips any YAML frontmatter,
-    and appends ``prompts/naming_rules.md``.
+
+def _strip_frontmatter(text: str) -> str:
+    return _FRONTMATTER_RE.sub("", text).strip()
+
+
+def _load(name: str) -> str:
+    return _strip_frontmatter(
+        (PROMPTS_DIR / name).read_text(encoding="utf-8")
+    )
+
+
+def load_instructions(agent_name: str, **template_vars: str) -> str:
+    """Load agent instructions with shared reference docs appended.
+
+    Reads ``prompts/{agent_name}.md`` (stripping YAML frontmatter),
+    then appends ``prompts/overview_compact.md`` and ``prompts/conventions.md``
+    so the agent has full context for the cross-file references in its prompt.
+
+    Any ``template_vars`` are substituted via str.replace (e.g.,
+    ``contributors=CONTRIBUTORS_BLOCK`` replaces ``{contributors}``
+    in the prompt text).
     """
-    raw = (PROMPTS_DIR / f"{agent_name}.md").read_text(encoding="utf-8")
-    body = _FRONTMATTER_RE.sub("", raw)
-    shared = (PROMPTS_DIR / "naming_rules.md").read_text(encoding="utf-8")
-    return f"{body.strip()}\n\n---\n\n{shared.strip()}\n"
+    body = _load(f"{agent_name}.md")
+    overview = _load("overview_compact.md")
+    conventions = _load("conventions.md")
+
+    composed = f"{body}\n\n---\n\n{overview}\n\n---\n\n{conventions}\n"
+
+    for key, value in template_vars.items():
+        composed = composed.replace(f"{{{key}}}", value)
+
+    return composed

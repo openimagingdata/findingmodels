@@ -19,7 +19,7 @@ class ReviewResult(BaseModel):
     reviewed_model: Dict[str, Any]
     changes_made: list[str]
     quality_warnings: list[str]
-    sub_findings: list[str]
+    findings_to_create: list[str]
 
 
 review_agent = Agent(

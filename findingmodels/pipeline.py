@@ -46,7 +46,7 @@ class ProcessingResult(BaseModel):
     final_model: dict[str, Any]
     match_used: str | None
     merge_summary: str
-    sub_findings: list[str]
+    findings_to_create: list[str]
     changes_made: list[str]
     quality_warnings: list[str]
 
@@ -215,23 +215,23 @@ async def process_finding(
                 )
                 model_dict = result.output.merged_model
                 match_used = result.output.target_oifm_id or None
-                sub_findings = list(result.output.sub_findings)
+                findings_to_create = list(result.output.findings_to_create)
                 changes = list(result.output.changes_made)
             else:
                 result = await create_agent.run(format_create_prompt(finding))
                 model_dict = result.output.model
                 match_used = None
-                sub_findings = list(result.output.sub_findings)
+                findings_to_create = list(result.output.findings_to_create)
                 changes = list(result.output.naming_decisions)
 
         with logfire.span("review"):
             review = await review_agent.run(format_review_prompt(model_dict, locations))
             model_dict = review.output.reviewed_model
-            sub_findings.extend(review.output.sub_findings)
+            findings_to_create.extend(review.output.findings_to_create)
             changes.extend(review.output.changes_made)
 
-        if sub_findings:
-            model_dict = strip_sub_finding_attributes(model_dict, sub_findings)
+        if findings_to_create:
+            model_dict = strip_sub_finding_attributes(model_dict, findings_to_create)
 
         with logfire.span("finalize"):
             final = finalize_model(model_dict, locations, source="MGB")
@@ -247,7 +247,7 @@ async def process_finding(
             final_model=final.model_dump(exclude_none=True),
             match_used=match_used or None,
             merge_summary="; ".join(changes),
-            sub_findings=sub_findings,
+            findings_to_create=findings_to_create,
             changes_made=changes,
             quality_warnings=review.output.quality_warnings,
         )
