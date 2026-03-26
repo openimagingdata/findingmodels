@@ -6,11 +6,11 @@ from typing import Any, Dict
 
 from pydantic import BaseModel
 from pydantic_ai import Agent
-from pydantic_ai.models.openai import OpenAIChatModel
+from pydantic_ai.models.openai import OpenAIResponsesModel
 
 from agents.prompts import load_instructions
 
-MODEL = OpenAIChatModel("gpt-5.4")
+MODEL = OpenAIResponsesModel("gpt-5.4")
 
 
 class ReviewResult(BaseModel):

@@ -8,12 +8,12 @@ from typing import Any, Dict
 from findingmodel import Index
 from pydantic import BaseModel
 from pydantic_ai import Agent, RunContext
-from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
+from pydantic_ai.models.openai import OpenAIResponsesModel, OpenAIResponsesModelSettings
 from pydantic_ai.exceptions import ModelRetry
 
 from agents.prompts import CONTRIBUTORS_BLOCK, load_instructions
 
-MODEL = OpenAIChatModel("gpt-5.4")
+MODEL = OpenAIResponsesModel("gpt-5.4")
 
 
 class MergeResult(BaseModel):
@@ -37,7 +37,7 @@ merge_agent = Agent(
     deps_type=MergeContext,
     output_type=MergeResult,
     instructions=load_instructions("merge_agent", contributors=CONTRIBUTORS_BLOCK),
-    model_settings=OpenAIChatModelSettings(openai_reasoning_effort="medium"),
+    model_settings=OpenAIResponsesModelSettings(openai_reasoning_effort="medium"),
     retries=3,
 )
 

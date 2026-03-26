@@ -19,7 +19,7 @@ from findingmodel_ai.authoring import create_info_from_name, create_model_from_m
 from findingmodel_ai.search import find_anatomic_locations
 from pydantic import BaseModel, Field
 from pydantic_ai import Agent, RunContext
-from pydantic_ai.models.openai import OpenAIChatModel
+from pydantic_ai.models.openai import OpenAIResponsesModel
 
 from findingmodels.hood.hood_json_adapter import HoodJsonAdapter
 
@@ -30,7 +30,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 # GPT-5.4 model (aligned with merge/create/review agents)
-MODEL = OpenAIChatModel("gpt-5.4")
+MODEL = OpenAIResponsesModel("gpt-5.4")
 
 
 @dataclass

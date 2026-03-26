@@ -6,11 +6,11 @@ from typing import Any, Dict
 
 from pydantic import BaseModel
 from pydantic_ai import Agent
-from pydantic_ai.models.openai import OpenAIChatModel, OpenAIChatModelSettings
+from pydantic_ai.models.openai import OpenAIResponsesModel, OpenAIResponsesModelSettings
 
 from agents.prompts import load_instructions
 
-MODEL = OpenAIChatModel("gpt-5.4")
+MODEL = OpenAIResponsesModel("gpt-5.4")
 
 
 class CreateResult(BaseModel):
@@ -25,6 +25,6 @@ create_agent = Agent(
     model=MODEL,
     output_type=CreateResult,
     instructions=load_instructions("create_agent"),
-    model_settings=OpenAIChatModelSettings(openai_reasoning_effort="low"),
+    model_settings=OpenAIResponsesModelSettings(openai_reasoning_effort="low"),
     retries=3,
 )
