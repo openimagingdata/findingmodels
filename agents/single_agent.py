@@ -11,7 +11,6 @@ import logging
 from dataclasses import dataclass
 from typing import Any, Dict
 
-import logfire
 import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
 from dotenv import load_dotenv
 from findingmodel import FindingModelFull, FindingModelBase, Index
@@ -27,9 +26,6 @@ from findingmodels.hood.hood_json_adapter import HoodJsonAdapter
 from agents.prompts import load_single_agent_instructions
 
 load_dotenv()
-
-logfire.configure(send_to_logfire='if-token-present')
-logfire.instrument_pydantic_ai()
 
 logger = logging.getLogger(__name__)
 

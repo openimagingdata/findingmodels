@@ -11,7 +11,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-import logfire
 from findingmodel import FindingModelBase, FindingModelFull, Index
 from findingmodel.common import model_file_name
 from findingmodel.contributor import Organization
@@ -186,68 +185,62 @@ async def process_finding(
     output_dir: Path,
 ) -> ProcessingResult:
     """Process a single finding definition through the pipeline."""
-    with logfire.span("process_finding", file=file_path.name):
-        with logfire.span("parse_input"):
-            finding = await parse_input(file_path)
+    finding = await parse_input(file_path)
 
-        with logfire.span("search_parallel"):
-            similar, location_result = await asyncio.gather(
-                find_similar_models(
-                    finding.name,
-                    finding.description,
-                    finding.synonyms,
-                    index=index,
-                ),
-                find_anatomic_locations(finding.name, finding.description),
-            )
+    similar, location_result = await asyncio.gather(
+        find_similar_models(
+            finding.name,
+            finding.description,
+            finding.synonyms,
+            index=index,
+        ),
+        find_anatomic_locations(finding.name, finding.description),
+    )
 
-        locations = []
-        for loc in [location_result.primary_location] + location_result.alternate_locations:
-            if loc.concept_id != "NO_RESULTS":
-                locations.append(loc.as_index_code().model_dump())
-        locations = locations or None
+    locations = []
+    for loc in [location_result.primary_location] + location_result.alternate_locations:
+        if loc.concept_id != "NO_RESULTS":
+            locations.append(loc.as_index_code().model_dump())
+    locations = locations or None
 
-        with logfire.span("agent_run", branch=similar.recommendation):
-            if similar.recommendation == "edit_existing" and similar.confidence >= 0.7:
-                result = await merge_agent.run(
-                    format_merge_prompt(finding, similar.similar_models),
-                    deps=MergeContext(index=index),
-                )
-                model_dict = result.output.merged_model
-                match_used = result.output.target_oifm_id or None
-                findings_to_create = list(result.output.findings_to_create)
-                changes = list(result.output.changes_made)
-            else:
-                result = await create_agent.run(format_create_prompt(finding))
-                model_dict = result.output.model
-                match_used = None
-                findings_to_create = list(result.output.findings_to_create)
-                changes = list(result.output.naming_decisions)
-
-        with logfire.span("review"):
-            review = await review_agent.run(format_review_prompt(model_dict, locations))
-            model_dict = review.output.reviewed_model
-            findings_to_create.extend(review.output.findings_to_create)
-            changes.extend(review.output.changes_made)
-
-        if findings_to_create:
-            model_dict = strip_sub_finding_attributes(model_dict, findings_to_create)
-
-        with logfire.span("finalize"):
-            final = finalize_model(model_dict, locations, source="MGB")
-
-        output_file = output_dir / model_file_name(final.name)
-        output_file.parent.mkdir(parents=True, exist_ok=True)
-        output_file.write_text(
-            final.model_dump_json(indent=2, exclude_none=True),
-            encoding="utf-8",
+    if similar.recommendation == "edit_existing" and similar.confidence >= 0.7:
+        result = await merge_agent.run(
+            format_merge_prompt(finding, similar.similar_models),
+            deps=MergeContext(index=index),
         )
+        model_dict = result.output.merged_model
+        match_used = result.output.target_oifm_id or None
+        findings_to_create = list(result.output.findings_to_create)
+        changes = list(result.output.changes_made)
+    else:
+        result = await create_agent.run(format_create_prompt(finding))
+        model_dict = result.output.model
+        match_used = None
+        findings_to_create = list(result.output.findings_to_create)
+        changes = list(result.output.naming_decisions)
 
-        return ProcessingResult(
-            final_model=final.model_dump(exclude_none=True),
-            match_used=match_used or None,
-            merge_summary="; ".join(changes),
-            findings_to_create=findings_to_create,
-            changes_made=changes,
-            quality_warnings=review.output.quality_warnings,
-        )
+    review = await review_agent.run(format_review_prompt(model_dict, locations))
+    model_dict = review.output.reviewed_model
+    findings_to_create.extend(review.output.findings_to_create)
+    changes.extend(review.output.changes_made)
+
+    if findings_to_create:
+        model_dict = strip_sub_finding_attributes(model_dict, findings_to_create)
+
+    final = finalize_model(model_dict, locations, source="MGB")
+
+    output_file = output_dir / model_file_name(final.name)
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(
+        final.model_dump_json(indent=2, exclude_none=True),
+        encoding="utf-8",
+    )
+
+    return ProcessingResult(
+        final_model=final.model_dump(exclude_none=True),
+        match_used=match_used or None,
+        merge_summary="; ".join(changes),
+        findings_to_create=findings_to_create,
+        changes_made=changes,
+        quality_warnings=review.output.quality_warnings,
+    )
