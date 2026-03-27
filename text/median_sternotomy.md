@@ -1,5 +1,7 @@
 # Median sternotomy—`OIFM_MGB_802796`
 
+**Synonyms:** sternotomy
+
 Surgical incision in the middle of the chest usually used for open-heart surgery.
 
 ## Attributes

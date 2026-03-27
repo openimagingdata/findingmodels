@@ -1,5 +1,7 @@
 # Narrow intervertebral disk space—`OIFM_GMTS_010108`
 
+**Synonyms:** disc space narrowing
+
 **Tags:** neuro, XR, CT, spinal, degenerative, finding
 
 Reduced space between vertebral disks, often indicating degeneration.

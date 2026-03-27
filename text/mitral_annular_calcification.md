@@ -1,6 +1,6 @@
 # Mitral annular calcification—`OIFM_OIDM_159498`
 
-**Synonyms:** MAC, mitral annulus calcification, calcification of the mitral annulus
+**Synonyms:** MAC, mitral annulus calcification, calcification of the mitral annulus, calcification of mitral annulus
 
 Mitral annular calcification is degenerative calcification of the fibrous ring (annulus) of the mitral valve, commonly seen in older patients. It may be incidental on imaging and can be associated with reduced annular compliance and mild mitral valve dysfunction.
 

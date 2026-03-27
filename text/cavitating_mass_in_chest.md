@@ -1,5 +1,7 @@
 # Cavitating mass in chest—`OIFM_CDE_000263`
 
+**Synonyms:** cavitary lesion, cavitation, cavitary lucency
+
 Radiography Chest Cavitating Mass
 
 **Codes:** RADELEMENT RDES263 cavitating mass in chest

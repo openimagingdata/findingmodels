@@ -1,6 +1,6 @@
 # Pleural abnormality—`OIFM_MSFT_213340`
 
-**Synonyms:** pleural disease, pleural condition, pleural lesion
+**Synonyms:** pleural disease, pleural condition
 
 A pleural abnormality refers to any pathological change affecting the pleura, the tissue layers enveloping the lungs. These abnormalities may include pleural effusion, thickening, plaques, or pneumothorax, and can be indicative of various underlying conditions such as infection, malignancy, or autoimmune disease.
 

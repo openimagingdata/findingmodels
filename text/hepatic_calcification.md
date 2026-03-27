@@ -1,6 +1,6 @@
 # Hepatic calcification—`OIFM_GMTS_022452`
 
-**Synonyms:** liver calcification
+**Synonyms:** liver calcification, calcification of liver
 
 **Tags:** ultrasound, CT, XR, liver, calcification, finding
 

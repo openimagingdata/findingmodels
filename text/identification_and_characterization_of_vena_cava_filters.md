@@ -1,5 +1,7 @@
 # Identification and characterization of vena cava filters—`OIFM_CDE_000104`
 
+**Synonyms:** inferior vena cava filter, IVC filter
+
 Identification and Characterization of Vena Cava Filters
 
 **Codes:** RADELEMENT RDES104 identification and characterization of vena cava filters; RADLEX RID480 aorta

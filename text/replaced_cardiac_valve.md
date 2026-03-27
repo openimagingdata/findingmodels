@@ -1,5 +1,7 @@
 # Replaced cardiac valve—`OIFM_MGB_064245`
 
+**Synonyms:** cardiac valve replacement, prosthetic heart valve
+
 A finding indicating the presence of a replaced cardiac valve.
 
 ## Attributes

@@ -1,0 +1,201 @@
+{
+  "oifm_id": "OIFM_OIDM_133070",
+  "name": "pulmonary hyperinflation",
+  "description": "Increased lung volume on chest radiograph, manifesting as flattened diaphragms, increased AP diameter, widened intercostal spaces, and increased retrosternal clear space. Commonly seen in COPD and asthma.",
+  "synonyms": [
+    "hyperinflated lungs",
+    "hyperinflation of lungs",
+    "lung hyperinflation",
+    "overinflation",
+    "hyperexpanded lungs",
+    "hyperinflation"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_708805",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary hyperinflation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_708805.0",
+          "name": "absent",
+          "description": "Pulmonary hyperinflation is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_708805.1",
+          "name": "present",
+          "description": "Pulmonary hyperinflation is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_708805.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary hyperinflation cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_708805.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary hyperinflation is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_278172",
+      "name": "change from prior",
+      "description": "Whether and how pulmonary hyperinflation has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_278172.0",
+          "name": "unchanged",
+          "description": "Pulmonary hyperinflation is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_278172.1",
+          "name": "stable",
+          "description": "Pulmonary hyperinflation is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_278172.2",
+          "name": "new",
+          "description": "Pulmonary hyperinflation is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_278172.3",
+          "name": "resolved",
+          "description": "Pulmonary hyperinflation seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_278172.4",
+          "name": "worsened",
+          "description": "Pulmonary hyperinflation has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_278172.5",
+          "name": "improved",
+          "description": "Pulmonary hyperinflation has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

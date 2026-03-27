@@ -1,6 +1,6 @@
 # Mucoid impaction—`OIFM_GMTS_015330`
 
-**Synonyms:** bronchial mucoid impaction, mucoid impaction in a bronchus
+**Synonyms:** bronchial mucoid impaction, mucoid impaction in a bronchus, finger-in-glove opacity
 
 **Tags:** chest, XR, CT, lung, airways, finding
 

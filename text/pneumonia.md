@@ -1,5 +1,7 @@
 # Pneumonia—`OIFM_CDE_000076`
 
+**Synonyms:** pneumonitis
+
 This module describes the Common Data elements and Macros for Pneumonia
 
 **Codes:** RADELEMENT RDES76 pneumonia; RADLEX RID1301 lung

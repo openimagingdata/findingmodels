@@ -1,0 +1,197 @@
+{
+  "oifm_id": "OIFM_OIDM_218019",
+  "name": "pulmonary architectural distortion",
+  "description": "Distortion of normal lung architecture on chest radiograph, manifesting as abnormal displacement of bronchi, vessels, fissures, or septa, often due to fibrosis, prior surgery, or mass effect.",
+  "synonyms": [
+    "lung architectural distortion",
+    "architectural distortion"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_581366",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary architectural distortion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_581366.0",
+          "name": "absent",
+          "description": "Architectural distortion is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_581366.1",
+          "name": "present",
+          "description": "Architectural distortion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_581366.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary architectural distortion cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_581366.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary architectural distortion is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_158667",
+      "name": "change from prior",
+      "description": "Whether and how pulmonary architectural distortion has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_158667.0",
+          "name": "unchanged",
+          "description": "Architectural distortion is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_158667.1",
+          "name": "stable",
+          "description": "Architectural distortion is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_158667.2",
+          "name": "new",
+          "description": "Architectural distortion is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_158667.3",
+          "name": "resolved",
+          "description": "Architectural distortion seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_158667.4",
+          "name": "worsened",
+          "description": "Architectural distortion has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_158667.5",
+          "name": "improved",
+          "description": "Architectural distortion has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,14 +1,14 @@
-# Right ventricular enlargement—`OIFM_GMTS_013623`
+# Right ventricular enlargement—`OIFM_OIDM_197053`
 
-**Tags:** ultrasound, CT, MR, US, cardiac, diagnosis
+**Synonyms:** enlargement of right ventricle, RV enlargement, enlarged right ventricle
 
-Enlargement of the right ventricle, often due to pulmonary hypertension or valvular disease.
+**Tags:** chest, XR, finding
 
-**Codes:** GAMUTS 13623 right ventricular enlargement
+Enlargement of the right ventricle visible on chest radiograph, manifesting as filling of the retrosternal space on lateral view or lateral displacement of the cardiac apex.
 
 ## Attributes
 
-### Presence—`OIFMA_GMTS_207079`
+### Presence—`OIFMA_OIDM_269552`
 
 Presence or absence of right ventricular enlargement  
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
@@ -23,7 +23,7 @@ _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
 - **unknown**: Presence of right ventricular enlargement is unknown  
 _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
-### Change from prior—`OIFMA_GMTS_113729`
+### Change from prior—`OIFMA_OIDM_211459`
 
 Whether and how a right ventricular enlargement has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
@@ -49,4 +49,4 @@ _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 
 **Contributors**
 
-- [Radiology Gamuts Ontology](https://gamuts.net/) (GMTS)
+- C. Michael Hood, MD (MGB) — [Email](mailto:chood@mgh.harvard.edu)

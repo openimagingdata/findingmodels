@@ -34,11 +34,5 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Diffuse idiopathic skeletal hyperostosis is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Diffuse idiopathic skeletal hyperostosis seen on a prior exam has resolved  
-- **increased**: Diffuse idiopathic skeletal hyperostosis has increased  
-_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
-- **decreased**: Diffuse idiopathic skeletal hyperostosis has decreased  
-_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
-- **larger**: Diffuse idiopathic skeletal hyperostosis is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Diffuse idiopathic skeletal hyperostosis is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+- **worsened**: Diffuse idiopathic skeletal hyperostosis has worsened  
+- **improved**: Diffuse idiopathic skeletal hyperostosis has improved

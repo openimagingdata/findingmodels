@@ -1,6 +1,6 @@
 # Cardiomegaly—`OIFM_GMTS_022537`
 
-**Synonyms:** enlarged heart
+**Synonyms:** enlarged heart, enlarged cardiac silhouette
 
 **Tags:** ultrasound, CT, XR, heart, enlargement, finding
 

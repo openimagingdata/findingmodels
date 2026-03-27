@@ -1,0 +1,201 @@
+{
+  "oifm_id": "OIFM_OIDM_233741",
+  "name": "bat-wing opacities",
+  "description": "Symmetric bilateral perihilar opacities radiating outward from the hila in a butterfly or bat-wing configuration, typically seen on chest radiograph.",
+  "synonyms": [
+    "batwing perihilar opacities",
+    "butterfly opacities",
+    "bat wing opacities",
+    "perihilar bat-wing pattern",
+    "batwing opacities"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "lung"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_922803",
+      "name": "presence",
+      "description": "Presence or absence of bat-wing opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_922803.0",
+          "name": "absent",
+          "description": "Bat-wing opacities are absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_922803.1",
+          "name": "present",
+          "description": "Bat-wing opacities are present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_922803.2",
+          "name": "indeterminate",
+          "description": "Presence of bat-wing opacities cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_922803.3",
+          "name": "unknown",
+          "description": "Presence of bat-wing opacities is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_419426",
+      "name": "change from prior",
+      "description": "Whether and how bat-wing opacities have changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_419426.0",
+          "name": "unchanged",
+          "description": "Bat-wing opacities are unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_419426.1",
+          "name": "stable",
+          "description": "Bat-wing opacities are stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_419426.2",
+          "name": "new",
+          "description": "Bat-wing opacities are new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_419426.3",
+          "name": "resolved",
+          "description": "Bat-wing opacities seen on a prior exam have resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_419426.4",
+          "name": "worsened",
+          "description": "Bat-wing opacities have worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_419426.5",
+          "name": "improved",
+          "description": "Bat-wing opacities have improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

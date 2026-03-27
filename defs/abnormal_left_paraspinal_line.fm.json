@@ -1,0 +1,207 @@
+{
+  "oifm_id": "OIFM_OIDM_568158",
+  "name": "abnormal left paraspinal line",
+  "description": "Displacement or widening of the left paraspinal line on chest radiograph, which may indicate aortic pathology, vertebral body fracture, lymphadenopathy, or paraspinal mass.",
+  "synonyms": [
+    "left paraspinal line abnormality",
+    "widened left paraspinal stripe"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_366358",
+      "name": "presence",
+      "description": "Presence or absence of abnormal left paraspinal line",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_366358.0",
+          "name": "absent",
+          "description": "Paraspinal line abnormality is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_366358.1",
+          "name": "present",
+          "description": "Paraspinal line abnormality is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_366358.2",
+          "name": "indeterminate",
+          "description": "Presence of abnormal left paraspinal line cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_366358.3",
+          "name": "unknown",
+          "description": "Presence of abnormal left paraspinal line is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_174903",
+      "name": "change from prior",
+      "description": "Whether and how abnormal left paraspinal line has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_174903.0",
+          "name": "unchanged",
+          "description": "Paraspinal line abnormality is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.1",
+          "name": "stable",
+          "description": "Paraspinal line abnormality is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.2",
+          "name": "new",
+          "description": "Paraspinal line abnormality is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.3",
+          "name": "resolved",
+          "description": "Paraspinal line abnormality seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.4",
+          "name": "worsened",
+          "description": "Abnormal left paraspinal line has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.5",
+          "name": "improved",
+          "description": "Abnormal left paraspinal line has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.6",
+          "name": "increased",
+          "description": "Abnormal left paraspinal line has increased"
+        },
+        {
+          "value_code": "OIFMA_OIDM_174903.7",
+          "name": "decreased",
+          "description": "Abnormal left paraspinal line has decreased"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

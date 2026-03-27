@@ -1,5 +1,7 @@
 # Cutaneous cardiac rhythm monitor (zio patch)—`OIFM_MGB_334694`
 
+**Synonyms:** cardiac patch monitor
+
 Cutaneous cardiac rhythm monitor used for continuous heart monitoring.
 
 ## Attributes

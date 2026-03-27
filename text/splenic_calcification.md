@@ -1,6 +1,6 @@
 # Splenic calcification—`OIFM_GMTS_022455`
 
-**Synonyms:** calcification of spleen, Calcium in spleen, Splenic calcified deposits
+**Synonyms:** calcification of spleen, Calcium in spleen, Splenic calcified deposits, spleen calcification
 
 **Tags:** ultrasound, CT, XR, spleen, calcification, finding
 

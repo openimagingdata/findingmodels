@@ -1,0 +1,200 @@
+{
+  "oifm_id": "OIFM_OIDM_271088",
+  "name": "tracheal obstruction",
+  "description": "Narrowing or blockage of the tracheal lumen due to intrinsic or extrinsic causes, resulting in impaired airflow.",
+  "synonyms": [
+    "obstruction of trachea",
+    "tracheal occlusion",
+    "tracheal blockage"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "trachea",
+    "airway"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_881993",
+      "name": "presence",
+      "description": "Presence or absence of tracheal obstruction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_881993.0",
+          "name": "absent",
+          "description": "Tracheal obstruction is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_881993.1",
+          "name": "present",
+          "description": "Tracheal obstruction is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_881993.2",
+          "name": "indeterminate",
+          "description": "Presence of tracheal obstruction cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_881993.3",
+          "name": "unknown",
+          "description": "Presence of tracheal obstruction is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_542845",
+      "name": "change from prior",
+      "description": "Whether and how a tracheal obstruction has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_542845.0",
+          "name": "unchanged",
+          "description": "Tracheal obstruction is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_542845.1",
+          "name": "stable",
+          "description": "Tracheal obstruction is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_542845.2",
+          "name": "new",
+          "description": "Tracheal obstruction is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_542845.3",
+          "name": "resolved",
+          "description": "Tracheal obstruction seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_542845.4",
+          "name": "worsened",
+          "description": "Tracheal obstruction has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_542845.5",
+          "name": "improved",
+          "description": "Tracheal obstruction has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

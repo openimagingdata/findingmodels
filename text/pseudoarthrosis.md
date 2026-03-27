@@ -1,5 +1,7 @@
 # Pseudoarthrosis—`OIFM_GMTS_011722`
 
+**Synonyms:** nonunion
+
 **Tags:** musculoskeletal, CT, XR, MR, musculoskeletal, fracture, diagnosis
 
 False joint resulting from non-union of a fracture

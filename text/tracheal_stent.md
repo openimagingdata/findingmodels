@@ -1,5 +1,7 @@
 # Tracheal stent—`OIFM_MGB_235469`
 
+**Synonyms:** airway stent
+
 A stent placed in the trachea to maintain airway patency.
 
 ## Attributes

@@ -1,0 +1,198 @@
+{
+  "oifm_id": "OIFM_OIDM_716965",
+  "name": "flattening of hemidiaphragm",
+  "description": "Loss of the normal dome shape of a hemidiaphragm, appearing flat or inverted on chest radiograph, typically indicating hyperinflation or increased intrathoracic pressure.",
+  "synonyms": [
+    "flattened hemidiaphragm",
+    "flat hemidiaphragm",
+    "diaphragmatic flattening"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_672909",
+      "name": "presence",
+      "description": "Presence or absence of flattening of hemidiaphragm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_672909.0",
+          "name": "absent",
+          "description": "Diaphragm flattening is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_672909.1",
+          "name": "present",
+          "description": "Diaphragm flattening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_672909.2",
+          "name": "indeterminate",
+          "description": "Presence of flattening of hemidiaphragm cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_672909.3",
+          "name": "unknown",
+          "description": "Presence of flattening of hemidiaphragm is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_091027",
+      "name": "change from prior",
+      "description": "Whether and how a flattening of hemidiaphragm has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_091027.0",
+          "name": "unchanged",
+          "description": "Diaphragm flattening is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_091027.1",
+          "name": "stable",
+          "description": "Diaphragm flattening is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_091027.2",
+          "name": "new",
+          "description": "Diaphragm flattening is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_091027.3",
+          "name": "resolved",
+          "description": "Diaphragm flattening seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_091027.4",
+          "name": "worsened",
+          "description": "Flattening of hemidiaphragm has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_091027.5",
+          "name": "improved",
+          "description": "Flattening of hemidiaphragm has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

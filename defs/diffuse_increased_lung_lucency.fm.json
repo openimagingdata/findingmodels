@@ -1,0 +1,198 @@
+{
+  "oifm_id": "OIFM_OIDM_914730",
+  "name": "diffuse increased lung lucency",
+  "description": "Generalized increase in lung radiolucency (decreased density) on chest radiograph, commonly seen in emphysema or air trapping.",
+  "synonyms": [
+    "bilateral hyperlucent lungs",
+    "diffuse hyperinflation",
+    "increased lung lucency"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_321933",
+      "name": "presence",
+      "description": "Presence or absence of diffuse increased lung lucency",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_321933.0",
+          "name": "absent",
+          "description": "Diffuse lung lucency is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321933.1",
+          "name": "present",
+          "description": "Diffuse lung lucency is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321933.2",
+          "name": "indeterminate",
+          "description": "Presence of diffuse increased lung lucency cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321933.3",
+          "name": "unknown",
+          "description": "Presence of diffuse increased lung lucency is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_269268",
+      "name": "change from prior",
+      "description": "Whether and how a diffuse increased lung lucency has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_269268.0",
+          "name": "unchanged",
+          "description": "Diffuse lung lucency is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_269268.1",
+          "name": "stable",
+          "description": "Diffuse lung lucency is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_269268.2",
+          "name": "new",
+          "description": "Diffuse lung lucency is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_269268.3",
+          "name": "resolved",
+          "description": "Diffuse lung lucency seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_269268.4",
+          "name": "worsened",
+          "description": "Diffuse increased lung lucency has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_269268.5",
+          "name": "improved",
+          "description": "Diffuse increased lung lucency has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

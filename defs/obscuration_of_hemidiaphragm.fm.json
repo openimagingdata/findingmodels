@@ -1,0 +1,198 @@
+{
+  "oifm_id": "OIFM_OIDM_769251",
+  "name": "obscuration of hemidiaphragm",
+  "description": "Loss of visualization of the hemidiaphragm silhouette, typically due to adjacent pulmonary opacity or pleural fluid.",
+  "synonyms": [
+    "obscured hemidiaphragm",
+    "loss of hemidiaphragm silhouette"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "diaphragm"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_248572",
+      "name": "presence",
+      "description": "Presence or absence of obscuration of hemidiaphragm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_248572.0",
+          "name": "absent",
+          "description": "Obscuration of hemidiaphragm is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_248572.1",
+          "name": "present",
+          "description": "Obscuration of hemidiaphragm is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_248572.2",
+          "name": "indeterminate",
+          "description": "Presence of obscuration of hemidiaphragm cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_248572.3",
+          "name": "unknown",
+          "description": "Presence of obscuration of hemidiaphragm is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_849460",
+      "name": "change from prior",
+      "description": "Whether and how obscuration of hemidiaphragm has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_849460.0",
+          "name": "unchanged",
+          "description": "Obscuration of hemidiaphragm is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_849460.1",
+          "name": "stable",
+          "description": "Obscuration of hemidiaphragm is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_849460.2",
+          "name": "new",
+          "description": "Obscuration of hemidiaphragm is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_849460.3",
+          "name": "resolved",
+          "description": "Obscuration of hemidiaphragm seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_849460.4",
+          "name": "worsened",
+          "description": "Obscuration of hemidiaphragm has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_849460.5",
+          "name": "improved",
+          "description": "Obscuration of hemidiaphragm has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

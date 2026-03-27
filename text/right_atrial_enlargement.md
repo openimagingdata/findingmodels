@@ -1,5 +1,7 @@
 # Right atrial enlargement—`OIFM_GMTS_013602`
 
+**Synonyms:** enlargement of right atrium
+
 **Tags:** ultrasound, CT, MR, US, cardiac, diagnosis
 
 Enlargement of the right atrium often due to increased pressure or volume load.

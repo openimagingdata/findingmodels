@@ -1,6 +1,6 @@
 # Pulmonary edema—`OIFM_GMTS_014286`
 
-**Synonyms:** lung edema, alveolar edema, interstitial edema
+**Synonyms:** lung edema, alveolar edema, interstitial edema, fluid overload
 
 **Tags:** chest, XR, CT, lung, inflammatory process (non-infectious), diagnosis
 

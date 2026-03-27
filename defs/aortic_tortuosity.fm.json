@@ -1,0 +1,201 @@
+{
+  "oifm_id": "OIFM_OIDM_517028",
+  "name": "aortic tortuosity",
+  "description": "Increased tortuosity or winding course of the aorta on chest radiograph, commonly seen with aging, hypertension, and atherosclerosis.",
+  "synonyms": [
+    "tortuosity of aorta",
+    "tortuous aorta",
+    "aortic elongation",
+    "unfolding of aorta",
+    "unfolded aorta",
+    "aortic unfolding"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_215669",
+      "name": "presence",
+      "description": "Presence or absence of aortic tortuosity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_215669.0",
+          "name": "absent",
+          "description": "Aortic tortuosity is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_215669.1",
+          "name": "present",
+          "description": "Aortic tortuosity is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_215669.2",
+          "name": "indeterminate",
+          "description": "Presence of aortic tortuosity cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_215669.3",
+          "name": "unknown",
+          "description": "Presence of aortic tortuosity is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_048970",
+      "name": "change from prior",
+      "description": "Whether and how aortic tortuosity has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_048970.0",
+          "name": "unchanged",
+          "description": "Aortic tortuosity is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_048970.1",
+          "name": "stable",
+          "description": "Aortic tortuosity is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_048970.2",
+          "name": "new",
+          "description": "Aortic tortuosity is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_048970.3",
+          "name": "resolved",
+          "description": "Aortic tortuosity seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_048970.4",
+          "name": "worsened",
+          "description": "Aortic tortuosity has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_048970.5",
+          "name": "improved",
+          "description": "Aortic tortuosity has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

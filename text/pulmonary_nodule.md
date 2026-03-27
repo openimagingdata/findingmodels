@@ -1,5 +1,7 @@
 # Pulmonary nodule—`OIFM_CDE_000195`
 
+**Synonyms:** lung nodule, pulmonary nodules, lung nodules
+
 Pulmonary Nodule
 
 **Codes:** RADELEMENT RDES195 pulmonary nodule

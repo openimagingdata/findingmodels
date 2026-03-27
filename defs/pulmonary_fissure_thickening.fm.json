@@ -1,0 +1,200 @@
+{
+  "oifm_id": "OIFM_OIDM_166982",
+  "name": "pulmonary fissure thickening",
+  "description": "Increased width or visibility of the pulmonary fissures on chest radiograph, often indicating fluid in the fissure (subpleural effusion) or pleural disease.",
+  "synonyms": [
+    "thickening of fissure",
+    "thickened fissure",
+    "fissural thickening",
+    "interlobar fissure thickening",
+    "fissure thickening"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_435417",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary fissure thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_435417.0",
+          "name": "absent",
+          "description": "Fissure thickening is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_435417.1",
+          "name": "present",
+          "description": "Fissure thickening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_435417.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary fissure thickening cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_435417.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary fissure thickening is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_540234",
+      "name": "change from prior",
+      "description": "Whether and how a pulmonary fissure thickening has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_540234.0",
+          "name": "unchanged",
+          "description": "Fissure thickening is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_540234.1",
+          "name": "stable",
+          "description": "Fissure thickening is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_540234.2",
+          "name": "new",
+          "description": "Fissure thickening is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_540234.3",
+          "name": "resolved",
+          "description": "Fissure thickening seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_540234.4",
+          "name": "worsened",
+          "description": "Fissure thickening has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_540234.5",
+          "name": "improved",
+          "description": "Fissure thickening has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

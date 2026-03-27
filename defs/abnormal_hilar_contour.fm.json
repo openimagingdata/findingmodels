@@ -1,0 +1,199 @@
+{
+  "oifm_id": "OIFM_OIDM_604376",
+  "name": "abnormal hilar contour",
+  "description": "Abnormal size, shape, or density of the pulmonary hila on chest radiograph, which may indicate lymphadenopathy, vascular abnormality, or mass.",
+  "synonyms": [
+    "hilar abnormality",
+    "abnormal hilum",
+    "hilar contour abnormality",
+    "abnormal hila"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_252290",
+      "name": "presence",
+      "description": "Presence or absence of abnormal hilar contour",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_252290.0",
+          "name": "absent",
+          "description": "Abnormal hilar contour is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_252290.1",
+          "name": "present",
+          "description": "Abnormal hilar contour is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_252290.2",
+          "name": "indeterminate",
+          "description": "Presence of abnormal hilar contour cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_252290.3",
+          "name": "unknown",
+          "description": "Presence of abnormal hilar contour is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_894344",
+      "name": "change from prior",
+      "description": "Whether and how abnormal hilar contour has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_894344.0",
+          "name": "unchanged",
+          "description": "Abnormal hilar contour is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894344.1",
+          "name": "stable",
+          "description": "Abnormal hilar contour is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894344.2",
+          "name": "new",
+          "description": "Abnormal hilar contour is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894344.3",
+          "name": "resolved",
+          "description": "Abnormal hilar contour seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_894344.4",
+          "name": "worsened",
+          "description": "Abnormal hilar contour has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_894344.5",
+          "name": "improved",
+          "description": "Abnormal hilar contour has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

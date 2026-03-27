@@ -1,5 +1,7 @@
 # Pleural thickening—`OIFM_GMTS_015999`
 
+**Synonyms:** thickening of pleura, pleural scarring
+
 **Tags:** ultrasound, CT, XR, MR, thoracic, thickening, finding
 
 Increase in thickness of the pleural lining
