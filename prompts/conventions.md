@@ -13,6 +13,27 @@ All names (finding, attribute, value, synonym, tag) follow these rules:
 - **Minimize eponyms** — prefer descriptive terms; keep eponym as synonym. ("Bochdalek hernia" → name: `"posterior diaphragmatic hernia"`, synonym: `"Bochdalek hernia"`) Use clinical judgment — some eponyms ARE the standard term.
 - **No brand names** as canonical names — use generic/descriptive term; keep brand as synonym. ("Impella device" → name: `"percutaneous ventricular assist device"`, synonym: `"Impella"`)
 
+### Self-Describing Names
+
+A finding name should be understandable on its own — someone scanning a list of 2,000 models should be able to tell what each one is about without reading the description. Include enough anatomic or organ-system context to make the name self-describing.
+
+- "linear opacity" → `"pulmonary linear opacity"` — immediately clear what you're talking about
+- "interstitial thickening" → `"pulmonary interstitial thickening"`
+- "architectural distortion" → `"pulmonary architectural distortion"`
+- "fissure thickening" → `"pulmonary fissure thickening"`
+- "mass" → `"pulmonary mass"`, `"mediastinal mass"`, `"renal mass"`, etc.
+- "lucency" → `"pulmonary lucency"`, `"osseous lucent lesion"`, etc.
+- "hyperinflation" → `"pulmonary hyperinflation"`
+- "sclerosis" → `"osteosclerosis"`
+
+The unscoped short form (e.g., "linear opacity", "mass") should be kept as a synonym so it still matches in report text where the context makes the anatomy clear.
+
+Findings that are inherently self-describing don't need additional context — "cardiomegaly", "pneumothorax", "pleural effusion" already communicate what they are.
+
+Note: this is about **readability**, not just disambiguation. Even if "cephalization" technically only refers to pulmonary vasculature, "cephalization of pulmonary vasculature" is immediately clear while "cephalization" requires domain knowledge to parse.
+
+Some findings are appropriately broad without anatomic scoping — "fracture", "osseous abnormality", "soft tissue abnormality" are general-purpose findings where anatomy is captured as an attribute, not in the name.
+
 ### Name Conciseness
 
 Finding names should be the **shortest unambiguous clinical term** for the observation. Qualifiers, context, and associated findings belong in attributes, tags, or the description — not in the name.
@@ -64,15 +85,18 @@ Every synonym must mean the **exact same thing at the same level of specificity*
 - **Different procedure**: "kyphoplasty" ≠ "vertebroplasty" — both involve cement injection into vertebrae, but kyphoplasty includes balloon inflation; they are distinct procedures
 - **Component vs whole**: "Kerley B lines" ≠ "interstitial thickening" — Kerley B lines are one manifestation of interstitial thickening, not the whole thing
 - **Structure vs state**: "cardiomegaly" ≠ "cardiac silhouette abnormality" — cardiomegaly is a specific state (enlarged); the abnormality category is broader
+- **Device subtypes**: "nasogastric tube" ≠ "enteric tube" — NG tube is a specific type of enteric tube; similarly "mechanical mitral valve" ≠ "mitral valve replacement" (subtype of prosthesis)
+- **Too general for the finding**: "annuloplasty ring" ≠ "mitral annuloplasty ring" — the generic term could refer to tricuspid or other annuloplasty rings too
+- **Different anatomic location**: "CABG clips" ≠ "mediastinal clips" — CABG clips are a specific use case in a specific surgical context; "rib cerclage wires" ≠ "cerclage wire" — scoped to ribs when the finding is general
 
 ### What To Do With Subtypes
 
 When you encounter a potential subtype (e.g., "linear atelectasis" relative to "atelectasis"), decide whether it's an **attribute value** on the parent or a **separate finding model**:
 
-- **Attribute value**: If the subtype would be described with the same set of attributes as the parent, it's just a type/morphology value. "Linear atelectasis", "plate-like atelectasis", "round atelectasis" → add a `"morphology"` attribute on the atelectasis model with these as values. They all get described the same way (location, extent, change from prior).
-- **Separate finding model**: If the subtype requires a different kind of description — different attributes, different properties to characterize — it warrants its own model. "Tension pneumothorax" needs its own model because describing it requires attributes that regular pneumothorax doesn't have (mediastinal shift, hemidiaphragm depression, hemodynamic compromise). The description is structurally different, not just clinically different.
+- **Attribute value**: If the subtype is the same observation with a qualifier, it's a type/morphology value on the parent. "Linear atelectasis", "plate-like atelectasis", "round atelectasis" → add a `"morphology"` attribute on the atelectasis model with these as values. They're all atelectasis, just with different shapes.
+- **Separate finding model**: If the subtype is a fundamentally distinct observation that a radiologist would recognize as a different entity, it warrants its own model. "Tension pneumothorax" isn't "pneumothorax, type: tension" — it's a distinct clinical entity with its own urgency, specific signs (mediastinal shift, hemidiaphragm depression), and management implications.
 
-The question: **"Would you describe this subtype with different attributes than the parent?"** If it needs its own unique set of properties to characterize it, it's a separate finding. If it's described the same way as the parent (just with a type label), it's an attribute value.
+The question: **"Is this a fundamentally distinct observation, or the same observation with a qualifier?"** If a radiologist would recognize this as a distinct entity requiring its own characterization — not just the parent finding with a label attached — it warrants its own model. A practical signal: you'd need different attributes to describe it.
 
 ### Collision Detection
 
