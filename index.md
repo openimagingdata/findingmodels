@@ -1,6 +1,6 @@
 # Finding Model Index
 
-2370 entries
+2371 entries
 
 | ID | Name | Synonyms | Tags | Contributors | Attributes |
 |----|------|----------|------|--------------|------------|
@@ -392,8 +392,8 @@
 | OIFM_GMTS_025562 | cherubic facies<br/>[Text](text/cherubic_facies.md) [JSON](defs/cherubic_facies.fm.json) | cherubism | neuro, CT, XR, face, congenital anomaly, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_CDE_000114 | Chest Fluid Status on Xray<br/>[Text](text/chest_fluid_status_on_xray.md) [JSON](defs/chest_fluid_status_on_xray.fm.json) |  |  | ACR/RSNA Common Data Elements Project | Presence, Airspace edema, Pleural effusions, Pulmonary vascular cephalization, Perivascular cuffing, Peribronchial cuffing, Interstitial edema, Excess fluid volume |
 | OIFM_GMTS_016091 | chest malformation<br/>[Text](text/chest_malformation.md) [JSON](defs/chest_malformation.fm.json) | thoracic malformation, chest wall anomaly | chest, XR, CT, chest wall, congenital anomaly, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
-| OIFM_MSFT_623632 | chest radiograph-evident hardware<br/>[Text](text/chest_radiograph_evident_hardware.md) [JSON](defs/chest_radiograph_evident_hardware.fm.json) | chest x-ray hardware, radiopaque chest implants, thoracic implants, radiopaque chest devices |  | Heather Chase | presence |
 | OIFM_CDE_000225 | Chest Radiograph Airspace Opacities<br/>[Text](text/chest_radiograph_airspace_opacities.md) [JSON](defs/chest_radiograph_airspace_opacities.fm.json) | airspace opacity, air space opacity, infiltrate, infiltrates, hazy opacity, lobar opacity, airspace disease |  | ACR/RSNA Common Data Elements Project | Presence, Distribution |
+| OIFM_MSFT_623632 | chest radiograph-evident hardware<br/>[Text](text/chest_radiograph_evident_hardware.md) [JSON](defs/chest_radiograph_evident_hardware.fm.json) | chest x-ray hardware, radiopaque chest implants, thoracic implants, radiopaque chest devices |  | Heather Chase | presence |
 | OIFM_CDE_000237 | Chest Radiograph Lines and Tubes<br/>[Text](text/chest_radiograph_lines_and_tubes.md) [JSON](defs/chest_radiograph_lines_and_tubes.fm.json) |  |  | ACR/RSNA Common Data Elements Project | Endotracheal tube, Central venous catheter, Pulmonary artery catheter, Nasogastric tube, Airway stent |
 | OIFM_CDE_000227 | Chest Radiograph Pulmonary Nodules<br/>[Text](text/chest_radiograph_pulmonary_nodules.md) [JSON](defs/chest_radiograph_pulmonary_nodules.fm.json) |  |  | ACR/RSNA Common Data Elements Project | Presence |
 | OIFM_OIDM_302188 | chest tube<br/>[Text](text/chest_tube.md) [JSON](defs/chest_tube.fm.json) | intercostal drain, thoracostomy tube, pleural drain, pleural tube | chest, XR, device, finding | C. Michael Hood, MD, Open Imaging Data Model | presence, change from prior |
@@ -2334,6 +2334,7 @@
 | OIFM_GMTS_009423 | vocal cord asymmetry<br/>[Text](text/vocal_cord_asymmetry.md) [JSON](defs/vocal_cord_asymmetry.fm.json) |  | head_neck, CT, MR, US, larynx, vocal cord, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_009427 | vocal cord paralysis or paresis<br/>[Text](text/vocal_cord_paralysis_or_paresis.md) [JSON](defs/vocal_cord_paralysis_or_paresis.fm.json) |  | head_neck, CT, MR, US, larynx, vocal cord, neurological, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_OIDM_071216 | volume loss<br/>[Text](text/volume_loss.md) [JSON](defs/volume_loss.fm.json) | pulmonary volume loss, lung volume loss | chest, XR, finding | C. Michael Hood, MD | presence, change from prior |
+| OIFM_MSFT_339375 | Volumetric Breast Density<br/>[Text](text/volumetric_breast_density.md) [JSON](defs/volumetric_breast_density.fm.json) | Volumetric Density, VBD |  | Heather Chase | percentage |
 | OIFM_GMTS_015530 | water-attenuation mediastinal lesion<br/>[Text](text/water_attenuation_mediastinal_lesion.md) [JSON](defs/water_attenuation_mediastinal_lesion.fm.json) | hypodense mediastinal lesion | chest, CT, mediastinum, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_030710 | wavy ribs<br/>[Text](text/wavy_ribs.md) [JSON](defs/wavy_ribs.fm.json) | undulating ribs, twisted ribs | musculoskeletal, XR, CT, thoracic, congenital anomaly, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_MGB_893730 | Wedge Resection<br/>[Text](text/wedge_resection.md) [JSON](defs/wedge_resection.fm.json) |  |  |  | Presence, Status, Location, Resection Margin, Size of Resection, Number of lesions resected, Completeness, Pleural effusion, Pneumothorax, Atelectasis, Surgical clips, Residual tumor, Scar tissue |
