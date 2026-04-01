@@ -1,0 +1,100 @@
+{
+  "oifm_id": "OIFM_MSFT_439377",
+  "name": "cingulate cortex volumes",
+  "description": "Quantitative assessment of anterior and posterior cingulate regions.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_710490",
+      "name": "cingulate volume (total)",
+      "description": "Combined volume of left and right cingulate cortex, clinically relevant for global cingulate integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6510"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "25221002"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_047491",
+      "name": "anterior cingulate gyrus volume (left)",
+      "description": "Volume of left anterior cingulate gyrus, clinically relevant for executive function and mood regulation.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14046"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_073121",
+      "name": "anterior cingulate gyrus volume (right)",
+      "description": "Volume of right anterior cingulate gyrus, clinically relevant for executive function and mood regulation.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14045"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_552179",
+      "name": "posterior cingulate gyrus volume (left)",
+      "description": "Volume of left posterior cingulate gyrus, clinically relevant for memory and attention networks.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14049"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_251744",
+      "name": "posterior cingulate gyrus volume (right)",
+      "description": "Volume of right posterior cingulate gyrus, clinically relevant for memory and attention networks.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID14048"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6510"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "25221002"
+    }
+  ]
+}

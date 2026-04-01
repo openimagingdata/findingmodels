@@ -1,0 +1,94 @@
+{
+  "oifm_id": "OIFM_MSFT_883211",
+  "name": "hippocampal asymmetry metrics",
+  "description": "Quantitative assessment of hippocampal asymmetry index for seizure and sclerosis evaluation.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_730458",
+      "name": "left hippocampus volume",
+      "description": "Absolute volume of the left hippocampus.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": true,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26567"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_851880",
+      "name": "right hippocampus volume",
+      "description": "Absolute volume of the right hippocampus.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": true,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26566"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_515639",
+      "name": "left % of ICV",
+      "description": "Percentage of intracranial volume occupied by the left hippocampus.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_152106",
+      "name": "right % of ICV",
+      "description": "Percentage of intracranial volume occupied by the right hippocampus.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_134181",
+      "name": "left normative percentile",
+      "description": "Age- and sex-adjusted normative percentile for left hippocampus volume.",
+      "type": "numeric",
+      "unit": "percentile",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_209286",
+      "name": "right normative percentile",
+      "description": "Age- and sex-adjusted normative percentile for right hippocampus volume.",
+      "type": "numeric",
+      "unit": "percentile",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_045242",
+      "name": "left-right asymmetry index",
+      "description": "Percentage difference between left and right hippocampal volumes divided by their mean.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6529"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "5366008"
+    }
+  ]
+}

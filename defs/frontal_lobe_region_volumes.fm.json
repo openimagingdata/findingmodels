@@ -1,0 +1,222 @@
+{
+  "oifm_id": "OIFM_MSFT_934730",
+  "name": "frontal lobe region volumes",
+  "description": "Quantitative assessment of frontal lobe subregions for executive function and behavioral regulation.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_825247",
+      "name": "frontal lobe volume (left)",
+      "description": "Volume of left frontal lobe, clinically relevant for executive and motor functions.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13863"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_268295",
+      "name": "frontal lobe volume (right)",
+      "description": "Volume of right frontal lobe, clinically relevant for executive and motor functions.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13862"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_390070",
+      "name": "primary motor cortex volume (left)",
+      "description": "Volume of left primary motor cortex, clinically relevant for voluntary movement control.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26371"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_245851",
+      "name": "primary motor cortex volume (right)",
+      "description": "Volume of right primary motor cortex, clinically relevant for voluntary movement control.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID26370"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_016824",
+      "name": "superior frontal gyrus volume (left)",
+      "description": "Volume of left superior frontal gyrus, clinically relevant for attention and working memory.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13903"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_024079",
+      "name": "superior frontal gyrus volume (right)",
+      "description": "Volume of right superior frontal gyrus, clinically relevant for attention and working memory.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13902"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_206199",
+      "name": "middle frontal gyrus volume (left)",
+      "description": "Volume of left middle frontal gyrus, clinically relevant for planning and decision-making.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13908"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_591182",
+      "name": "middle frontal gyrus volume (right)",
+      "description": "Volume of right middle frontal gyrus, clinically relevant for planning and decision-making.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13907"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_112062",
+      "name": "inferior frontal gyrus volume (left)",
+      "description": "Volume of left inferior frontal gyrus, clinically relevant for language and speech production.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6979"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_162692",
+      "name": "inferior frontal gyrus volume (right)",
+      "description": "Volume of right inferior frontal gyrus, clinically relevant for language and speech production.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13909"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_224529",
+      "name": "lateral orbitofrontal gyrus volume (left)",
+      "description": "Volume of left lateral orbitofrontal gyrus, clinically relevant for emotional regulation.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13924"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_096244",
+      "name": "lateral orbitofrontal gyrus volume (right)",
+      "description": "Volume of right lateral orbitofrontal gyrus, clinically relevant for emotional regulation.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13923"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_488389",
+      "name": "medial orbitofrontal gyrus volume (left)",
+      "description": "Volume of left medial orbitofrontal gyrus, clinically relevant for decision-making and reward processing.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13921"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_235051",
+      "name": "medial orbitofrontal gyrus volume (right)",
+      "description": "Volume of right medial orbitofrontal gyrus, clinically relevant for decision-making and reward processing.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13920"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6440"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "83251001"
+    }
+  ]
+}
