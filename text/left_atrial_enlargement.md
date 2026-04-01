@@ -1,6 +1,6 @@
 # Left atrial enlargement—`OIFM_GMTS_003695`
 
-**Synonyms:** LA enlargement, LAE, left atrial hypertrophy
+**Synonyms:** LA enlargement, LAE, enlargement of left atrium
 
 **Tags:** ultrasound, CT, XR, MR, US, cardiac, finding
 

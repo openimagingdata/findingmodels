@@ -1,5 +1,7 @@
 # Aortic valve replacement—`OIFM_MGB_611597`
 
+**Synonyms:** prosthetic aortic valve, mechanical aortic valve, bioprosthetic aortic valve, aortic valve prosthesis
+
 A finding indicating the presence or absence of an aortic valve replacement, along with its characteristics.
 
 ## Attributes

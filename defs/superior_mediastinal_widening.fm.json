@@ -1,0 +1,209 @@
+{
+  "oifm_id": "OIFM_OIDM_606606",
+  "name": "superior mediastinal widening",
+  "description": "Widening or increased opacity of the superior mediastinum on chest radiograph, which may indicate lymphadenopathy, vascular abnormality, or mass.",
+  "synonyms": [
+    "fullness of superior mediastinum",
+    "prominent superior mediastinum",
+    "superior mediastinal fullness"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "mediastinum"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_455151",
+      "name": "presence",
+      "description": "Presence or absence of superior mediastinal widening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_455151.0",
+          "name": "absent",
+          "description": "Superior mediastinal widening is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455151.1",
+          "name": "present",
+          "description": "Superior mediastinal widening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455151.2",
+          "name": "indeterminate",
+          "description": "Presence of superior mediastinal widening cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455151.3",
+          "name": "unknown",
+          "description": "Presence of superior mediastinal widening is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_381850",
+      "name": "change from prior",
+      "description": "Whether and how superior mediastinal widening has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_381850.0",
+          "name": "unchanged",
+          "description": "Superior mediastinal widening is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.1",
+          "name": "stable",
+          "description": "Superior mediastinal widening is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.2",
+          "name": "new",
+          "description": "Superior mediastinal widening is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.3",
+          "name": "resolved",
+          "description": "Superior mediastinal widening seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.4",
+          "name": "worsened",
+          "description": "Superior mediastinal widening has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.5",
+          "name": "improved",
+          "description": "Superior mediastinal widening has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.6",
+          "name": "larger",
+          "description": "Superior mediastinal widening is larger"
+        },
+        {
+          "value_code": "OIFMA_OIDM_381850.7",
+          "name": "smaller",
+          "description": "Superior mediastinal widening is smaller"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

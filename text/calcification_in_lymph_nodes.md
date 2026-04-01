@@ -1,5 +1,7 @@
 # Calcification in lymph nodes—`OIFM_GMTS_013012`
 
+**Synonyms:** calcification of hilar lymph node, calcified neck nodes, calcified neck lymph nodes
+
 **Tags:** musculoskeletal, CT, XR, MR, lymphatic, inflammatory, infection, finding
 
 Presence of calcium in lymph nodes, commonly seen in granulomatous diseases.

@@ -1,5 +1,7 @@
 # Peripherally inserted central catheter (picc)—`OIFM_MGB_820557`
 
+**Synonyms:** PICC line
+
 A type of central venous catheter that is inserted in the periphery and advanced centrally to a large vein near the heart.
 
 ## Attributes

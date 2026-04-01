@@ -1,0 +1,189 @@
+{
+  "oifm_id": "OIFM_OIDM_483201",
+  "name": "diaphragmatic eventration",
+  "description": "Abnormal elevation of a portion or all of a hemidiaphragm due to congenital absence or thinning of diaphragmatic muscle, resulting in a thin membranous sheet replacing normal muscle.",
+  "synonyms": [
+    "eventration of hemidiaphragm",
+    "eventration of the diaphragm",
+    "diaphragm eventration"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "diaphragm"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_847920",
+      "name": "presence",
+      "description": "Presence or absence of diaphragmatic eventration",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_847920.0",
+          "name": "absent",
+          "description": "Diaphragmatic eventration is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_847920.1",
+          "name": "present",
+          "description": "Diaphragmatic eventration is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_847920.2",
+          "name": "indeterminate",
+          "description": "Presence of diaphragmatic eventration cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_847920.3",
+          "name": "unknown",
+          "description": "Presence of diaphragmatic eventration is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_736259",
+      "name": "change from prior",
+      "description": "Whether and how a diaphragmatic eventration has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_736259.0",
+          "name": "unchanged",
+          "description": "Diaphragmatic eventration is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_736259.1",
+          "name": "stable",
+          "description": "Diaphragmatic eventration is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_736259.2",
+          "name": "new",
+          "description": "Diaphragmatic eventration is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_736259.3",
+          "name": "resolved",
+          "description": "Diaphragmatic eventration seen on a prior exam has resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

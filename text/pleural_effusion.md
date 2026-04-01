@@ -1,5 +1,7 @@
 # Pleural effusion—`OIFM_CDE_000254`
 
+**Synonyms:** hydrothorax, pleural fluid
+
 Pleural Effusion
 
 **Codes:** RADELEMENT RDES254 pleural effusion

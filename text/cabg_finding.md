@@ -1,5 +1,7 @@
 # Cabg finding—`OIFM_MGB_053057`
 
+**Synonyms:** coronary artery bypass graft
+
 Coronary Artery Bypass Graft
 
 ## Attributes

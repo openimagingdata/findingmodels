@@ -1,6 +1,6 @@
 # Tracheal displacement—`OIFM_GMTS_015404`
 
-**Synonyms:** displacement of trachea, tracheal shift, displaced trachea
+**Synonyms:** displacement of trachea, tracheal shift, displaced trachea, tracheal deviation, deviation of trachea
 
 **Tags:** chest, XR, CT, airway, finding
 

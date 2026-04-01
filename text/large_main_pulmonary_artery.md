@@ -1,6 +1,6 @@
 # Large main pulmonary artery—`OIFM_GMTS_013910`
 
-**Synonyms:** pulmonary artery enlargement
+**Synonyms:** pulmonary artery enlargement, enlargement of pulmonary artery, prominent pulmonary artery segment
 
 **Tags:** ultrasound, CT, XR, MR, pulmonary, vascular, finding
 

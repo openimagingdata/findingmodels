@@ -1,0 +1,198 @@
+{
+  "oifm_id": "OIFM_OIDM_113221",
+  "name": "pulmonary vascular abnormality",
+  "description": "Any abnormal appearance of the pulmonary vasculature on chest radiograph, encompassing vascular enlargement, redistribution, diminished vessels, or other abnormal patterns.",
+  "synonyms": [
+    "abnormal pulmonary vasculature",
+    "pulmonary vascularity abnormality",
+    "pulmonary vasculature abnormality"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_103787",
+      "name": "presence",
+      "description": "Presence or absence of pulmonary vascular abnormality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_103787.0",
+          "name": "absent",
+          "description": "Pulmonary vascular abnormality is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103787.1",
+          "name": "present",
+          "description": "Pulmonary vascular abnormality is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103787.2",
+          "name": "indeterminate",
+          "description": "Presence of pulmonary vascular abnormality cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103787.3",
+          "name": "unknown",
+          "description": "Presence of pulmonary vascular abnormality is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_894140",
+      "name": "change from prior",
+      "description": "Whether and how a pulmonary vascular abnormality has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_894140.0",
+          "name": "unchanged",
+          "description": "Pulmonary vascular abnormality is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894140.1",
+          "name": "stable",
+          "description": "Pulmonary vascular abnormality is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894140.2",
+          "name": "new",
+          "description": "Pulmonary vascular abnormality is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_894140.3",
+          "name": "resolved",
+          "description": "Pulmonary vascular abnormality seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_894140.4",
+          "name": "worsened",
+          "description": "Pulmonary vascular abnormality has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_894140.5",
+          "name": "improved",
+          "description": "Pulmonary vascular abnormality has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

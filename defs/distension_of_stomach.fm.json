@@ -1,0 +1,203 @@
+{
+  "oifm_id": "OIFM_OIDM_044908",
+  "name": "distension of stomach",
+  "description": "Abnormal gaseous distension of the stomach visible on chest radiograph.",
+  "synonyms": [
+    "gaseous distention of the stomach",
+    "gastric distension",
+    "dilated stomach"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "abdomen",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_858842",
+      "name": "presence",
+      "description": "Presence or absence of distension of stomach",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_858842.0",
+          "name": "absent",
+          "description": "Distension of stomach is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_858842.1",
+          "name": "present",
+          "description": "Distension of stomach is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_858842.2",
+          "name": "indeterminate",
+          "description": "Presence of distension of stomach cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_858842.3",
+          "name": "unknown",
+          "description": "Presence of distension of stomach is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_709115",
+      "name": "change from prior",
+      "description": "Whether and how a distension of stomach has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_709115.0",
+          "name": "unchanged",
+          "description": "Distension of stomach is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_709115.1",
+          "name": "stable",
+          "description": "Distension of stomach is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_709115.2",
+          "name": "new",
+          "description": "Distension of stomach is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_709115.3",
+          "name": "resolved",
+          "description": "Distension of stomach seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_709115.4",
+          "name": "worsened",
+          "description": "Distension of stomach has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_709115.5",
+          "name": "improved",
+          "description": "Distension of stomach has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Interstitial lung fibrosis—`OIFM_GMTS_014491`
 
-**Synonyms:** pulmonary fibrosis, interstitial fibrosis
+**Synonyms:** pulmonary fibrosis, interstitial fibrosis, fibrotic change, confluent fibrosis
 
 **Tags:** chest, XR, CT, lung, finding
 

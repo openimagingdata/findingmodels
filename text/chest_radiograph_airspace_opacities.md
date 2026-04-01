@@ -1,5 +1,7 @@
 # Chest radiograph airspace opacities—`OIFM_CDE_000225`
 
+**Synonyms:** airspace opacity, air space opacity, infiltrate, infiltrates, hazy opacity, lobar opacity, airspace disease
+
 Chest Radiograph Airspace Opacities
 
 **Codes:** RADELEMENT RDES225 chest radiograph airspace opacities

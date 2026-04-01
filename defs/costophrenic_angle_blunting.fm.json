@@ -1,0 +1,208 @@
+{
+  "oifm_id": "OIFM_OIDM_600445",
+  "name": "costophrenic angle blunting",
+  "description": "Loss of the normal sharp angle between the diaphragm and chest wall on chest radiograph, typically indicating a small pleural effusion or pleural thickening.",
+  "synonyms": [
+    "blunted costophrenic angle",
+    "blunting of costophrenic angle",
+    "costophrenic blunting"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_455651",
+      "name": "presence",
+      "description": "Presence or absence of costophrenic angle blunting",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_455651.0",
+          "name": "absent",
+          "description": "Costophrenic angle blunting is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455651.1",
+          "name": "present",
+          "description": "Costophrenic angle blunting is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455651.2",
+          "name": "indeterminate",
+          "description": "Presence of costophrenic angle blunting cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_455651.3",
+          "name": "unknown",
+          "description": "Presence of costophrenic angle blunting is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_785205",
+      "name": "change from prior",
+      "description": "Whether and how costophrenic angle blunting has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_785205.0",
+          "name": "unchanged",
+          "description": "Costophrenic angle blunting is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.1",
+          "name": "stable",
+          "description": "Costophrenic angle blunting is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.2",
+          "name": "new",
+          "description": "Costophrenic angle blunting is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.3",
+          "name": "resolved",
+          "description": "Costophrenic angle blunting seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.4",
+          "name": "worsened",
+          "description": "Costophrenic angle blunting has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.5",
+          "name": "improved",
+          "description": "Costophrenic angle blunting has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.6",
+          "name": "increased",
+          "description": "Costophrenic angle blunting has increased"
+        },
+        {
+          "value_code": "OIFMA_OIDM_785205.7",
+          "name": "decreased",
+          "description": "Costophrenic angle blunting has decreased"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

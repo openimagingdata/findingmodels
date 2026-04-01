@@ -1,0 +1,105 @@
+{
+  "oifm_id": "OIFM_CDE_000286",
+  "name": "emphysema quantification",
+  "description": "Quantitative CT assessment of emphysema severity, including density-based emphysema scoring and lobar volume measurements.",
+  "synonyms": [
+    "CT emphysema scoring",
+    "emphysema CT quantification"
+  ],
+  "contributors": [
+    {
+      "name": "ACR/RSNA Common Data Elements Project",
+      "code": "CDE",
+      "url": "https://radelement.org/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_CDE_001951",
+      "name": "location",
+      "description": "Anatomic lobe assessed for emphysema quantification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_CDE_001951.0",
+          "name": "right upper lobe (RUL)",
+          "description": ""
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.1",
+          "name": "right middle lobe (RML)",
+          "description": ""
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.2",
+          "name": "right upper lobe and right middle lobe (RUL + RML)",
+          "description": ""
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.3",
+          "name": "right lower lobe (RLL)",
+          "description": ""
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.4",
+          "name": "left upper lobe (LUL)",
+          "description": ""
+        },
+        {
+          "value_code": "OIFMA_CDE_001951.5",
+          "name": "left lower lobe (LLL)",
+          "description": ""
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001952",
+      "name": "emphysema scale (% - 920HU)",
+      "description": "Percentage of lung parenchyma below -920 Hounsfield units",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001953",
+      "name": "emphysema scale (% - 950HU)",
+      "description": "Percentage of lung parenchyma below -950 Hounsfield units",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001954",
+      "name": "fissure completeness scale",
+      "description": "Percentage of fissure completeness on CT",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_CDE_001955",
+      "name": "volume",
+      "description": "Lobar or lung volume measurement in milliliters",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 3000,
+      "unit": "ml",
+      "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADELEMENT",
+      "code": "RDES286",
+      "display": "emphysema"
+    }
+  ]
+}

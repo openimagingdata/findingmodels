@@ -1,0 +1,197 @@
+{
+  "oifm_id": "OIFM_OIDM_392989",
+  "name": "abnormal right paratracheal stripe",
+  "description": "Widening of the right paratracheal stripe beyond 4 mm on chest radiograph, which may indicate lymphadenopathy, tracheal pathology, or mediastinal mass.",
+  "synonyms": [
+    "right paratracheal stripe abnormality",
+    "widened right paratracheal stripe"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_846748",
+      "name": "presence",
+      "description": "Presence or absence of abnormal right paratracheal stripe",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_846748.0",
+          "name": "absent",
+          "description": "Paratracheal stripe is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_846748.1",
+          "name": "present",
+          "description": "Paratracheal stripe is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_846748.2",
+          "name": "indeterminate",
+          "description": "Presence of abnormal right paratracheal stripe cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_846748.3",
+          "name": "unknown",
+          "description": "Presence of abnormal right paratracheal stripe is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_033491",
+      "name": "change from prior",
+      "description": "Whether and how abnormal right paratracheal stripe has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_033491.0",
+          "name": "unchanged",
+          "description": "Paratracheal stripe is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_033491.1",
+          "name": "stable",
+          "description": "Paratracheal stripe is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_033491.2",
+          "name": "new",
+          "description": "Paratracheal stripe is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_033491.3",
+          "name": "resolved",
+          "description": "Paratracheal stripe seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_033491.4",
+          "name": "worsened",
+          "description": "Abnormal right paratracheal stripe has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_033491.5",
+          "name": "improved",
+          "description": "Abnormal right paratracheal stripe has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

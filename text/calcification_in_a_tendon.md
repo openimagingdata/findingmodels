@@ -1,5 +1,7 @@
 # Calcification in a tendon—`OIFM_GMTS_031526`
 
+**Synonyms:** calcific tendinosis, calcific tendinitis
+
 **Tags:** musculoskeletal, XR, CT, MR, skeletal, degenerative, tendon, finding
 
 Calcium deposition within a tendon, often due to chronic tendinopathy.

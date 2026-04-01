@@ -1,0 +1,197 @@
+{
+  "oifm_id": "OIFM_OIDM_449436",
+  "name": "airway abnormality",
+  "description": "Any abnormal finding involving the tracheobronchial tree on chest radiograph, including tracheal or bronchial narrowing, deviation, dilation, or irregularity.",
+  "synonyms": [
+    "tracheobronchial abnormality",
+    "airway abnormalities"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_755528",
+      "name": "presence",
+      "description": "Presence or absence of airway abnormality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_755528.0",
+          "name": "absent",
+          "description": "Airway abnormality is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_755528.1",
+          "name": "present",
+          "description": "Airway abnormality is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_755528.2",
+          "name": "indeterminate",
+          "description": "Presence of airway abnormality cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_755528.3",
+          "name": "unknown",
+          "description": "Presence of airway abnormality is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_078495",
+      "name": "change from prior",
+      "description": "Whether and how airway abnormality has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_078495.0",
+          "name": "unchanged",
+          "description": "Airway abnormality is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_078495.1",
+          "name": "stable",
+          "description": "Airway abnormality is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_078495.2",
+          "name": "new",
+          "description": "Airway abnormality is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_078495.3",
+          "name": "resolved",
+          "description": "Airway abnormality seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_078495.4",
+          "name": "worsened",
+          "description": "Airway abnormality has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_078495.5",
+          "name": "improved",
+          "description": "Airway abnormality has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

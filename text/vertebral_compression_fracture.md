@@ -1,6 +1,10 @@
 # Vertebral compression fracture—`OIFM_CDE_000230`
 
-Vertebral Compression Fracture Detection
+**Synonyms:** compression fracture, vertebral compression deformity
+
+**Tags:** chest, XR, osseous, finding
+
+Loss of vertebral body height due to axial loading, appearing as wedging or endplate depression on radiograph.
 
 **Codes:** RADELEMENT RDES230 vertebral compression fracture
 
@@ -13,45 +17,59 @@ fractures. Typically seen on lateral view. Usually chronicity cannot be reliably
 For compression or wedge fractures, there should be more than 20% loss in anterior height or central height as measured to the nearest normal vertebra or posterior vertebral body height (whichever is larger).    
 *(Select one)*
 
-- **absent**  
-- **present**  
-- **indeterminate**  
-- **unknown**  
+- **absent**: Vertebral compression fracture is absent  
+- **present**: Vertebral compression fracture is present  
+- **indeterminate**: Presence of vertebral compression fracture cannot be determined  
+- **unknown**: Presence of vertebral compression fracture is unknown  
+
+### Change from prior—`OIFMA_CDE_396587`
+
+Whether and how vertebral compression fracture has changed over time  
+*(Select one)*
+
+- **unchanged**: Vertebral compression fracture is unchanged  
+- **stable**: Vertebral compression fracture is stable  
+- **new**: Vertebral compression fracture is new  
+- **resolved**: Vertebral compression fracture seen on a prior exam has resolved  
+- **worsened**: Vertebral compression fracture has worsened  
+- **improved**: Vertebral compression fracture has improved  
+- **increased**: Vertebral compression fracture has increased  
+- **decreased**: Vertebral compression fracture has decreased  
 
 ### Vertebrae—`OIFMA_CDE_001472`
 
 List all affected vertebrae, multichoice  
 *(Select up to 30)*
-- **C1**  
-- **C2**  
-- **C3**  
-- **C4**  
-- **C5**  
-- **C6**  
-- **C7**  
-- **C8**  
-- **T1**  
-- **T2**  
-- **T3**  
-- **T4**  
-- **T5**  
-- **T6**  
-- **T7**  
-- **T8**  
-- **T9**  
-- **T10**  
-- **T11**  
-- **T12**  
-- **L1**  
-- **L2**  
-- **L3**  
-- **L4**  
-- **L5**  
-- **S1**  
-- **S2**  
-- **S3**  
-- **S4**  
-- **S5**  
+- **c1**  
+- **c2**  
+- **c3**  
+- **c4**  
+- **c5**  
+- **c6**  
+- **c7**  
+- **c8**  
+- **t1**  
+- **t2**  
+- **t3**  
+- **t4**  
+- **t5**  
+- **t6**  
+- **t7**  
+- **t8**  
+- **t9**  
+- **t10**  
+- **t11**  
+- **t12**  
+- **l1**  
+- **l2**  
+- **l3**  
+- **l4**  
+- **l5**  
+- **s1**  
+- **s2**  
+- **s3**  
+- **s4**  
+- **s5**  
 
 ### Degree of compression—`OIFMA_CDE_002004`
 
@@ -64,3 +82,5 @@ Unit: degree
 **Contributors**
 
 - [ACR/RSNA Common Data Elements Project](https://radelement.org/) (CDE)
+- Open Imaging Data Model (OIDM)
+- C. Michael Hood, MD (MGB) — [Email](mailto:chood@mgh.harvard.edu)

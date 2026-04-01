@@ -1,0 +1,199 @@
+{
+  "oifm_id": "OIFM_OIDM_432021",
+  "name": "depressed hemidiaphragm",
+  "description": "Inferior displacement of a hemidiaphragm below its normal position, typically caused by hyperinflation, large pleural effusion, or tension pneumothorax.",
+  "synonyms": [
+    "depression of hemidiaphragm",
+    "inferiorly displaced hemidiaphragm",
+    "depressed diaphragm"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding",
+    "diaphragm"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_782495",
+      "name": "presence",
+      "description": "Presence or absence of depressed hemidiaphragm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_782495.0",
+          "name": "absent",
+          "description": "Depressed hemidiaphragm is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_782495.1",
+          "name": "present",
+          "description": "Depressed hemidiaphragm is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_782495.2",
+          "name": "indeterminate",
+          "description": "Presence of depressed hemidiaphragm cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_782495.3",
+          "name": "unknown",
+          "description": "Presence of depressed hemidiaphragm is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_056161",
+      "name": "change from prior",
+      "description": "Whether and how a depressed hemidiaphragm has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_056161.0",
+          "name": "unchanged",
+          "description": "Depressed hemidiaphragm is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_056161.1",
+          "name": "stable",
+          "description": "Depressed hemidiaphragm is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_056161.2",
+          "name": "new",
+          "description": "Depressed hemidiaphragm is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_056161.3",
+          "name": "resolved",
+          "description": "Depressed hemidiaphragm seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_056161.4",
+          "name": "worsened",
+          "description": "Depressed hemidiaphragm has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_056161.5",
+          "name": "improved",
+          "description": "Depressed hemidiaphragm has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

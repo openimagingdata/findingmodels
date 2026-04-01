@@ -1,6 +1,6 @@
 # Pneumatosis intestinalis—`OIFM_GMTS_002850`
 
-**Synonyms:** gas in bowel wall
+**Synonyms:** gas in bowel wall, pneumatosis
 
 **Tags:** ultrasound, CT, XR, gastrointestinal, gas, finding
 

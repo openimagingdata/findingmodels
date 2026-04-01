@@ -23,7 +23,7 @@ _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
 ### Change from prior—`OIFMA_OIDM_957580`
 
-Whether and how a intracranial mass has changed over time  
+Whether and how intracranial mass has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
 *(Select one)*
 

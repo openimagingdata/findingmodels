@@ -1,6 +1,6 @@
 # Left ventricular enlargement—`OIFM_GMTS_013685`
 
-**Synonyms:** left ventricular hypertrophy
+**Synonyms:** enlargement of left ventricle
 
 **Tags:** ultrasound, CT, MR, US, cardiac, finding
 

@@ -1,6 +1,6 @@
 # Widespread osteosclerosis—`OIFM_GMTS_011018`
 
-**Synonyms:** bone sclerosis
+**Synonyms:** bone sclerosis, generalized osteosclerosis
 
 **Tags:** musculoskeletal, XR, CT, MR, skeletal, metabolic, finding
 

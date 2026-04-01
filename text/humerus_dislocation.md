@@ -1,5 +1,7 @@
 # Humerus dislocation—`OIFM_CDE_000229`
 
+**Synonyms:** shoulder dislocation
+
 Humerus Dislocation
 
 **Codes:** RADELEMENT RDES229 humerus dislocation

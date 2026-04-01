@@ -1,5 +1,7 @@
 # Pericardial calcification—`OIFM_GMTS_013823`
 
+**Synonyms:** calcification of pericardium
+
 **Tags:** ultrasound, CT, XR, heart, calcification, finding
 
 Calcification of the pericardium.

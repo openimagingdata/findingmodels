@@ -1,6 +1,6 @@
 # Aortic aneurysm—`OIFM_GMTS_014057`
 
-**Synonyms:** aortic dilatation, aneurysm of aorta
+**Synonyms:** aortic dilatation, aneurysm of aorta, aneurysmal dilatation of the aortic arch
 
 **Tags:** ultrasound, CT, XR, MR, vascular, aorta, degenerative, diagnosis
 

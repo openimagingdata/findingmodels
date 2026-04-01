@@ -1,0 +1,325 @@
+﻿id,name,category,parent_id,synonyms,actionability,oifm_id
+FID0010,Air bronchograms,lung,,,incidental,
+FID0020,Airspace opacity,lung,,"Air space opacity,Patchy opacity,Infiltrate,Hazy opacity,Lobar opacity",conditional,OIFM_CDE_000225
+FID0030,Airspace opacities,lung,,"Airspace disease,Infiltrates",conditional,OIFM_CDE_000225
+FID0040,Airway abnormality,lung,,,conditional,OIFM_OIDM_449436
+FID0060,Pulmonary scarring,lung,,Scarring,incidental,OIFM_OIDM_745898
+FID0070,Architectural distortion,lung,,,conditional,OIFM_OIDM_218019
+FID0080,Aspiration,lung,,,significant,OIFM_OIDM_556992
+FID0090,Atelectasis,lung,,"Linear atelectasis,Plate-like atelectasis,Discoid atelectasis,Collapse,Lung collapse",conditional,OIFM_OIDM_041735
+FID0100,Azygos fissure,lung,,,incidental,OIFM_OIDM_149725
+FID0110,Azygos lobe,lung,,,incidental,OIFM_OIDM_934275
+FID0120,Accessory fissure,lung,,,incidental,OIFM_OIDM_114833
+FID0130,Reticular opacities,lung,,"Reticular opacity,Interstitial opacities,Diffuse reticular opacities,Diffuse interstitial opacities",conditional,OIFM_OIDM_525484
+FID0140,Batwing perihilar opacities,lung,,,significant,OIFM_OIDM_233741
+FID0150,Thickening of bronchial wall,lung,,"Peribronchial cuffing,Bronchial wall thickening",incidental,OIFM_OIDM_961282
+FID0160,Bronchiectasis,lung,,,incidental,OIFM_GMTS_013943
+FID0170,Calcified nodule,lung,,Calcified granuloma,incidental,OIFM_OIDM_543357
+FID0180,Cavitary lesion,lung,,"Cavitation,Cavitating mass,Cavitary lucency",significant,OIFM_CDE_000263
+FID0190,Airspace consolidation,lung,FID0020,Consolidation,conditional,OIFM_OIDM_628702
+FID0210,Diffuse hazy opacities,lung,,,conditional,OIFM_OIDM_923053
+FID0220,Diffuse increased lung attenuation,lung,,,conditional,OIFM_OIDM_420478
+FID0230,Diffuse increased lung lucency,lung,,,incidental,OIFM_OIDM_914730
+FID0250,Diffuse nodular opacities,lung,,Miliary pattern,significant,OIFM_OIDM_204573
+FID0260,Elevation of hemidiaphragm,lung,,Elevated hemidiaphragm,conditional,OIFM_OIDM_770950
+FID0265,Depression of hemidiaphragm,lung,,Depressed hemidiaphragm,conditional,OIFM_OIDM_432021
+FID0270,Emphysema,lung,,"Emphysematous changes,Bullous emphysema,Bullous disease",incidental,OIFM_OIDM_002082
+FID0275,Bulla,lung,,Cystic space,incidental,OIFM_OIDM_072940
+FID0280,Engorgement of pulmonary vasculature,lung,FID0305,"Pulmonary vascular congestion,Pulmonary venous congestion,Pulmonary venous hypertension",conditional,OIFM_OIDM_545430
+FID0290,Cephalization of pulmonary vasculature,lung,FID0305,,conditional,OIFM_OIDM_125002
+FID0300,Indistinct pulmonary vasculature,lung,FID0305,,incidental,OIFM_OIDM_565475
+FID0305,Pulmonary vascular abnormality,lung,,"Abnormal pulmonary vasculature,Pulmonary vascular abnormality,Pulmonary vascularity abnormality,Pulmonary vasculature abnormality",conditional,OIFM_OIDM_113221
+FID0310,Eventration of hemidiaphragm,lung,,,incidental,OIFM_OIDM_483201
+FID0315,Diaphragmatic abnormality,lung,,Diaphragm abnormality,conditional,OIFM_OIDM_705569
+FID0320,Thickening of fissure,lung,,,incidental,OIFM_OIDM_166982
+FID0330,Flattening of hemidiaphragm,lung,,,incidental,OIFM_OIDM_716965
+FID0360,Pulmonary calcification,lung,,,incidental,OIFM_OIDM_013283
+FID0370,Hyperinflation of lungs,lung,,"Hyperexpanded lungs,Hyperinflated lungs",incidental,OIFM_OIDM_133070
+FID0380,Interstitial pulmonary edema,lung,FID0600,"Kerley A lines,Kerley B lines,Pulmonary interstitial edema",significant,OIFM_OIDM_651696
+FID0390,Thickening of interstitium,lung,,"Interstitial thickening,Interstitial prominence",conditional,OIFM_OIDM_342073
+FID0420,Linear opacity,lung,,"Bandlike opacity,Linear opacities",incidental,OIFM_OIDM_062845
+FID0440,Lobectomy,lung,,,incidental,OIFM_MGB_340276
+FID0450,Low lung volumes,lung,,"Hypoventilation,Poor inspiratory volume,Decreased lung volumes",incidental,OIFM_OIDM_378230
+FID0460,Lung abnormality,lung,,,conditional,OIFM_MSFT_737122
+FID0465,Osseous lucency,osseous,,,conditional,OIFM_OIDM_289551
+FID0470,Lung lucency,lung,,,conditional,OIFM_OIDM_413818
+FID0475,Mass,lung,,,significant,OIFM_OIDM_135648
+FID0480,Mucoid impaction,lung,,Finger-in-glove opacity,conditional,OIFM_GMTS_015330
+FID0485,Bronchial occlusion,lung,,"Cutoff,Endobronchial obstruction,Mucus plugging,Bronchial cutoff sign",significant,OIFM_OIDM_131660
+FID0490,Pulmonary nodule,lung,,Lung nodule,conditional,OIFM_CDE_000195
+FID0500,Lung transplant,lung,,,incidental,OIFM_OIDM_192483
+FID0520,Pulmonary nodules,lung,,Lung nodules,conditional,OIFM_CDE_000195
+FID0530,Nipple shadow,lung,,,incidental,OIFM_OIDM_424230
+FID0550,Pneumonectomy,lung,,,incidental,OIFM_OIDM_206173
+FID0560,Pneumonia,lung,,Pneumonitis,significant,OIFM_CDE_000076
+FID0570,Post-resection volume loss,lung,,,incidental,OIFM_OIDM_392629
+FID0590,Pulmonary contusion,lung,,,significant,OIFM_OIDM_582211
+FID0595,Pulmonary laceration,lung,,"Pneumatocele,Traumatic pneumatocele",significant,OIFM_OIDM_580164
+FID0600,Pulmonary edema,lung,,Edema,significant,OIFM_GMTS_014286
+FID0605,Alveolar pulmonary edema,lung,FID0600,,significant,OIFM_OIDM_350759
+FID0610,Pulmonary fibrosis,lung,,"Fibrotic change,Confluent fibrosis",incidental,OIFM_GMTS_014491
+FID0620,Pulmonary oligemia,lung,,,conditional,OIFM_OIDM_229145
+FID0640,Reduction of lung markings,lung,,,incidental,OIFM_OIDM_791224
+FID0650,Reticulonodular opacity,lung,,,conditional,OIFM_OIDM_855377
+FID0660,Surgical staple line in lung,lung,,,incidental,OIFM_OIDM_446102
+FID0670,Calcification of trachea,lung,,,incidental,OIFM_OIDM_861352
+FID0680,Deviation of trachea,lung,,Tracheal deviation,conditional,OIFM_GMTS_015404
+FID0690,Diverticulum of trachea,lung,,,incidental,OIFM_OIDM_554402
+FID0710,Obstruction of trachea,lung,,,critical,OIFM_OIDM_271088
+FID0720,Stenosis of trachea,lung,,Tracheal narrowing,significant,OIFM_OIDM_620490
+FID0730,Tracheomegaly,lung,,,incidental,OIFM_GMTS_015383
+FID0750,Volume loss,lung,,,conditional,OIFM_OIDM_071216
+FID0760,Wedge resection,lung,,,incidental,OIFM_MGB_893730
+FID0770,Cystic fibrosis,lung,,,incidental,OIFM_OIDM_296060
+FID0780,Air-fluid level,lung,,,conditional,
+FID1000,Blunting of costophrenic angle,pleura,,Blunted costophrenic angle,incidental,OIFM_OIDM_600445
+FID1010,Calcified pleural plaques,pleura,,"Pleural plaque,Pleural plaques",incidental,OIFM_OIDM_062542
+FID1030,Pleural abnormality,pleura,,Pleural density,conditional,OIFM_MSFT_213340
+FID1040,Pleural effusion,pleura,,"Hydrothorax,Hepatic hydrothorax,Pleural fluid,Effusions",conditional,OIFM_CDE_000254
+FID1060,Thickening of pleura,pleura,,"Pleural scarring,Pleural thickening",incidental,OIFM_GMTS_015999
+FID1065,Apical pleuroparenchymal scarring,pleura,,"Biapical thickening,Biapical scarring",incidental,OIFM_OIDM_412273
+FID1070,Pneumothorax,pleura,,,significant,OIFM_GMTS_023339
+FID1075,Tension pneumothorax,pleura,FID1070,,critical,OIFM_OIDM_440635
+FID1080,Pleural nodule,pleura,,,significant,OIFM_OIDM_621745
+FID1085,Pleural nodules,pleura,,Pleural nodularity,significant,OIFM_OIDM_621745
+FID1100,Abnormal aortic contour,mediastinal,,,conditional,OIFM_OIDM_402414
+FID1110,Abnormal aortopulmonary window contour,mediastinal,,Loss of aortopulmonary window concavity,conditional,OIFM_OIDM_929337
+FID1120,Abnormal hilar contour,mediastinal,,Hilar abnormality,conditional,OIFM_OIDM_604376
+FID1130,Abnormal mediastinal contour,mediastinal,,,conditional,OIFM_OIDM_103158
+FID1140,Abnormal pulmonary artery contour,mediastinal,,,conditional,OIFM_OIDM_792655
+FID1150,Calcification of aorta,mediastinal,,Atherosclerotic calcification,incidental,OIFM_OIDM_847217
+FID1160,Dilation of aorta,mediastinal,,Aortic dilation,conditional,OIFM_OIDM_787784
+FID1170,Aneurysm of aorta,mediastinal,,Aneurysmal dilatation of the aortic arch,significant,OIFM_GMTS_014057
+FID1180,Bulging of the aortic arch,mediastinal,,,conditional,OIFM_OIDM_176546
+FID1190,Cardiac abnormality,mediastinal,,,conditional,OIFM_MSFT_247688
+FID1195,Heart transplant,mediastinal,,,incidental,OIFM_OIDM_314679
+FID1200,Cardiomegaly,mediastinal,,Enlarged cardiac silhouette,conditional,OIFM_GMTS_022537
+FID1210,Dextrocardia,mediastinal,,,incidental,OIFM_GMTS_013596
+FID1220,Double density sign,mediastinal,,,incidental,
+FID1230,Enlargement of aortic knob,mediastinal,,,incidental,OIFM_OIDM_176546
+FID1240,Enlargement of left atrium,mediastinal,FID1200,,conditional,OIFM_GMTS_003695
+FID1250,Enlargement of left ventricle,mediastinal,FID1200,,conditional,OIFM_GMTS_013685
+FID1260,Enlargement of right atrium,mediastinal,FID1200,,conditional,OIFM_GMTS_013602
+FID1270,Enlargement of right ventricle,mediastinal,FID1200,,conditional,OIFM_OIDM_197053
+FID1280,Globular cardiac silhouette,mediastinal,,,conditional,OIFM_OIDM_840763
+FID1290,Hiatal hernia,mediastinal,,Hiatus hernia,incidental,OIFM_OIDM_907498
+FID1300,Enlargement of hilum,mediastinal,,"Hilar fullness,Perihilar fullness",conditional,OIFM_OIDM_958698
+FID1310,Lymphadenopathy of hilum,mediastinal,,,significant,OIFM_GMTS_015734
+FID1330,Mediastinal abnormality,mediastinal,,,conditional,OIFM_OIDM_645628
+FID1340,Mediastinal fat pad,mediastinal,,,incidental,OIFM_OIDM_803542
+FID1360,Lymphadenopathy of mediastinum,mediastinal,,Mediastinal lymphadenopathy,significant,OIFM_GMTS_015734
+FID1370,Mediastinal shift,mediastinal,,,significant,OIFM_GMTS_015800
+FID1380,Calcification of mitral annulus,mediastinal,,,incidental,OIFM_OIDM_159498
+FID1390,Calcification of pericardium,mediastinal,,,incidental,OIFM_GMTS_013823
+FID1400,Pericardial effusion,mediastinal,,,conditional,OIFM_GMTS_003706
+FID1405,Pericardial cyst,mediastinal,,,incidental,OIFM_OIDM_660228
+FID1410,Pericardial fat pad,mediastinal,,,incidental,OIFM_OIDM_803542
+FID1420,Pneumomediastinum,mediastinal,,,significant,OIFM_GMTS_023340
+FID1430,Pneumopericardium,mediastinal,,,critical,OIFM_GMTS_013851
+FID1440,Enlargement of pulmonary artery,mediastinal,,Prominent pulmonary artery segment,conditional,OIFM_GMTS_013910
+FID1450,Splaying of carina,mediastinal,,,conditional,OIFM_OIDM_443674
+FID1460,Stable cardiac silhouette,mediastinal,,Unchanged cardiac silhouette,incidental,
+FID1470,Fullness of superior mediastinum,mediastinal,,,conditional,OIFM_OIDM_606606
+FID1480,Tortuosity of aorta,mediastinal,,"Aortic tortuosity,Tortuous aorta",incidental,OIFM_OIDM_517028
+FID1490,Unfolding of aorta,mediastinal,,"Ectatic aorta,Unfolded aorta",incidental,OIFM_OIDM_517028
+FID1500,Widening of cardiomediastinal silhouette,mediastinal,,"Widened mediastinum,Mediastinal enlargement",conditional,OIFM_OIDM_698793
+FID1510,Amelia,osseous,,Phocomelia,incidental,OIFM_OIDM_190386
+FID1520,Bifid rib,osseous,,,incidental,OIFM_OIDM_824797
+FID1530,Bone island,osseous,,,incidental,OIFM_OIDM_029466
+FID1540,Osseous lesion,osseous,,Bone lesion,conditional,OIFM_OIDM_335347
+FID1550,Bridging rib,osseous,,Fused rib,incidental,OIFM_OIDM_447509
+FID1560,Cervical rib,osseous,,,incidental,OIFM_CDE_000101
+FID1575,Costochondral calcification,osseous,,,incidental,OIFM_OIDM_246433
+FID1585,Fracture,osseous,,Rib fracture,conditional,OIFM_OIDM_739317
+FID1600,Compression fracture,osseous,FID1585,Vertebral compression deformity,conditional,OIFM_CDE_000230
+FID1605,Compression fractures,osseous,FID1585,"Multiple compression fractures,Multiple compression deformities,Vertebral compression deformities",conditional,OIFM_CDE_000230
+FID1610,Costal fusion,osseous,,,incidental,OIFM_OIDM_168287
+FID1615,Degenerative changes,osseous,,,incidental,OIFM_OIDM_675673
+FID1630,DISH,osseous,,Diffuse idiopathic skeletal hyperostosis,incidental,OIFM_OIDM_990401
+FID1640,Disc space narrowing,osseous,,,incidental,OIFM_GMTS_010108
+FID1650,Kyphosis,osseous,,"Exaggerated kyphosis,Thoracic kyphosis,Increased thoracic kyphosis",incidental,OIFM_OIDM_894376
+FID1660,Fibro-osseous lesion,osseous,FID1540,,conditional,OIFM_OIDM_755431
+FID1670,Osseous metastasis,osseous,,,significant,OIFM_OIDM_897300
+FID1675,Osseous metastases,osseous,,,significant,OIFM_OIDM_897300
+FID1690,Generalized osteosclerosis,osseous,,,conditional,OIFM_GMTS_011018
+FID1710,Hemivertebra,osseous,,,incidental,OIFM_OIDM_246218
+FID1750,Intrathoracic rib,osseous,,,incidental,OIFM_OIDM_034511
+FID1770,Malunion,osseous,,,incidental,OIFM_OIDM_995145
+FID1780,Nonunion,osseous,,,conditional,OIFM_GMTS_011722
+FID1790,Osseous abnormality,osseous,,"Skeletal abnormality,Bony abnormality,Musculoskeletal abnormality",conditional,OIFM_OIDM_164927
+FID1795,Sclerosis,osseous,,Rib sclerosis,incidental,OIFM_OIDM_974883
+FID1800,Sclerotic osseous lesion,osseous,FID1540,"Osteoblastic lesion,Sclerotic lesion",conditional,OIFM_OIDM_056609
+FID1810,Lytic osseous lesion,osseous,FID1540,"Osteolytic lesion,Lytic rib lesion,Destructive rib lesion",significant,OIFM_OIDM_432373
+FID1820,Osteopenia,osseous,,Generalized osteopenia,incidental,OIFM_OIDM_356771
+FID1830,Osteophyte formation,osseous,,Spinal osteophytes,incidental,OIFM_OIDM_827630
+FID1840,Pectus carinatum,osseous,,,incidental,OIFM_GMTS_012667
+FID1850,Pectus excavatum,osseous,,,incidental,OIFM_GMTS_012672
+FID1860,Postsurgical changes of VATS,osseous,,,incidental,OIFM_OIDM_558317
+FID1920,Rib notching,osseous,,,conditional,OIFM_GMTS_025726
+FID1930,Rib resection,osseous,,,incidental,OIFM_OIDM_157681
+FID1950,Rosary ribs,osseous,,,incidental,OIFM_OIDM_922259
+FID1980,Scoliosis,osseous,,Levoconvex curvature,incidental,OIFM_CDE_000051
+FID1990,Shoulder dislocation,osseous,,Humeral head dislocation,significant,OIFM_CDE_000229
+FID2010,Sprengel deformity,osseous,,Elevated scapula,incidental,OIFM_OIDM_910349
+FID2040,Thoracic vertebra plana,osseous,,,conditional,OIFM_OIDM_028997
+FID2050,Height loss of vertebral body,osseous,,Vertebral body height loss,conditional,OIFM_OIDM_098341
+FID2080,Wedging of vertebral body,osseous,,,conditional,OIFM_OIDM_767171
+FID2090,Vertebral endplate irregularity,osseous,,Thoracic vertebral endplate irregularity,incidental,OIFM_OIDM_731302
+FID2110,Upper limb amputation,osseous,,,incidental,OIFM_OIDM_740952
+FID2120,Vanishing ribs,osseous,,Rib osteolysis,significant,OIFM_OIDM_507348
+FID2130,Osseous deformity,osseous,,"Clavicle deformity,Humeral head deformity,Rib deformity,Scapular deformity,Sternal deformity",incidental,OIFM_OIDM_069610
+FID2140,Osseous erosion,osseous,,"Clavicle erosion,Humeral head erosion",conditional,OIFM_OIDM_868754
+FID2150,Osseous destruction,osseous,,Rib destruction,significant,OIFM_OIDM_124621
+FID2200,Breast implant,soft_tissue,,,incidental,OIFM_MGB_654936
+FID2210,Calcified axillary nodes,soft_tissue,,,incidental,OIFM_OIDM_444636
+FID2220,Calcified breast implant,soft_tissue,,,incidental,OIFM_OIDM_713410
+FID2230,Calcified neck nodes,soft_tissue,,,incidental,OIFM_GMTS_013012
+FID2240,Mastectomy,soft_tissue,,,incidental,OIFM_MGB_089921
+FID2250,Metallic foreign body,soft_tissue,,,conditional,OIFM_OIDM_618992
+FID2260,Soft tissue abnormality,soft_tissue,,,conditional,OIFM_OIDM_221920
+FID2270,Soft tissue calcification,soft_tissue,,Calcified soft tissue density,incidental,OIFM_GMTS_025786
+FID2290,Soft tissue swelling,soft_tissue,,,incidental,OIFM_OIDM_696759
+FID2300,Subcutaneous emphysema,soft_tissue,,"Subcutaneous gas,Soft tissue gas",conditional,OIFM_OIDM_755361
+FID2310,Surgical clip,soft_tissue,,,incidental,OIFM_OIDM_271146
+FID2320,Calcific tendinosis,soft_tissue,,Calcific tendinitis,incidental,OIFM_GMTS_031526
+FID2330,Thyroid enlargement,soft_tissue,,Goiter,conditional,OIFM_GMTS_022573
+FID2335,Thyroid nodule,soft_tissue,,,conditional,OIFM_GMTS_009272
+FID2400,Abnormal anterior junction line,stripes_lines,,,incidental,OIFM_OIDM_778636
+FID2410,Abnormal azygoesophageal line,stripes_lines,,,incidental,OIFM_GMTS_015654
+FID2420,Abnormal left paraspinal line,stripes_lines,,,incidental,OIFM_OIDM_568158
+FID2430,Abnormal left paratracheal stripe,stripes_lines,,,incidental,OIFM_OIDM_820347
+FID2440,Abnormal posterior junction line,stripes_lines,,,incidental,OIFM_OIDM_544987
+FID2450,Abnormal right paraspinal line,stripes_lines,,,incidental,OIFM_OIDM_980101
+FID2460,Abnormal right paratracheal stripe,stripes_lines,,,incidental,OIFM_OIDM_392989
+FID2500,Distension of bowel,abdomen,,Gas distended bowel,incidental,OIFM_OIDM_814608
+FID2505,Dilation of bowel,abdomen,,Dilated bowel,significant,OIFM_OIDM_814608
+FID2510,Distension of stomach,abdomen,,Gaseous distention of the stomach,incidental,OIFM_OIDM_044908
+FID2520,Gallstones,abdomen,,,incidental,OIFM_GMTS_022482
+FID2530,Hepatomegaly,abdomen,,Enlarged liver,conditional,OIFM_GMTS_001845
+FID2540,Kidney stone,abdomen,,,incidental,OIFM_OIDM_319506
+FID2550,Calcification of liver,abdomen,,,incidental,OIFM_GMTS_022452
+FID2560,Pneumatosis,abdomen,,,significant,OIFM_GMTS_002850
+FID2570,Pneumobilia,abdomen,,,incidental,OIFM_OIDM_541862
+FID2580,Pneumoperitoneum,abdomen,,"Free abdominal gas,Free air,Free intraperitoneal gas",critical,OIFM_CDE_000228
+FID2590,Calcification of spleen,abdomen,,,incidental,OIFM_GMTS_022455
+FID2600,Splenomegaly,abdomen,,Enlarged spleen,conditional,OIFM_GMTS_003565
+FID2605,Abdominal clips,devices,,,incidental,OIFM_OIDM_371000
+FID2610,Airway stent,devices,,,conditional,OIFM_MGB_235469
+FID2620,Anterior cervical fusion device,devices,,,incidental,OIFM_OIDM_202275
+FID2630,Aortic stent,devices,,Endovascular aortic repair,conditional,OIFM_OIDM_705624
+FID2640,Axillary clips,devices,,,incidental,OIFM_OIDM_863516
+FID2650,Biceps tenodesis anchor,devices,,,incidental,OIFM_OIDM_694181
+FID2660,Biliary stent,devices,,,conditional,OIFM_OIDM_576191
+FID2670,Breast clips,devices,,,incidental,OIFM_OIDM_703734
+FID2680,Cardiac patch monitor,devices,,,incidental,OIFM_MGB_334694
+FID2690,Cardiac valve replacement,devices,,"Prosthetic heart valve,Prosthetic valve",conditional,OIFM_MGB_064245
+FID2700,Central venous catheter,devices,,,conditional,OIFM_MGB_820557
+FID2710,Chest tube,devices,,"Intercostal drain,Thoracostomy tube,Pigtail chest tube,Pigtail catheter,Pleural drain,Pleural tube",conditional,OIFM_OIDM_302188
+FID2720,Cholecystectomy clips,devices,,,incidental,OIFM_OIDM_893328
+FID2730,Clamshell sternotomy,devices,,Clamshell sternotomy wires,incidental,OIFM_OIDM_143698
+FID2740,Clavicle fixation,devices,,,incidental,OIFM_OIDM_395313
+FID2750,Coronary stent,devices,,,conditional,OIFM_MGB_177589
+FID2760,Double balloon esophageal catheter,devices,,,conditional,OIFM_OIDM_840109
+FID2770,ECMO catheter,devices,,,conditional,OIFM_OIDM_049031
+FID2780,Endotracheal tube,devices,,,conditional,OIFM_CDE_000179
+FID2790,Enteric tube,devices,,"Nasogastric tube,Gastric tube,NG tube",conditional,OIFM_OIDM_590312
+FID2800,Epicardial pacing wires,devices,,"Epicardial pacer wires,Temporary epicardial wires",conditional,OIFM_OIDM_810572
+FID2810,Epidural catheter,devices,,,conditional,OIFM_OIDM_418732
+FID2820,Esophageal tamponade tube,devices,,"Sengstaken-Blakemore tube,Minnesota tube",conditional,OIFM_OIDM_074497
+FID2830,Esophagectomy with gastric pull-up,devices,,,incidental,OIFM_OIDM_768022
+FID2840,Gastric band,devices,,,conditional,OIFM_OIDM_537627
+FID2850,Gastrostomy tube,devices,,,conditional,OIFM_OIDM_766756
+FID2860,ICD,devices,,"Implantable cardioverter defibrillator,Transvenous pacemaker",conditional,OIFM_OIDM_758142
+FID2870,ICD leads,devices,,,conditional,OIFM_OIDM_068732
+FID2880,Impella device,devices,,,conditional,OIFM_OIDM_478241
+FID2890,Inferior vena cava filter,devices,,IVC filter,conditional,OIFM_CDE_000104
+FID2900,Intra-aortic balloon pump,devices,,,conditional,OIFM_OIDM_507795
+FID2910,Intravascular line,devices,,,conditional,OIFM_OIDM_255569
+FID2920,Leadless pacemaker,devices,,"Leadless cardiac pacemaker,Micra",conditional,OIFM_OIDM_732956
+FID2930,Left ventricular assist device,devices,,LVAD,conditional,OIFM_MGB_040444
+FID2940,Loop recorder,devices,,,incidental,OIFM_MGB_093164
+FID2950,Lung sutures,devices,,,incidental,OIFM_OIDM_983675
+FID2960,Mediastinal drain,devices,,"Jackson-Pratt drain,JP drain,Blake tube",conditional,OIFM_OIDM_176434
+FID2970,Mediastinal clips,devices,,"Hilar clips,CABG clips",incidental,OIFM_OIDM_337490
+FID2980,Metallic markers,devices,,,incidental,OIFM_OIDM_775370
+FID2990,Mitral annuloplasty ring,devices,,,conditional,OIFM_OIDM_996503
+FID3000,Monitoring leads,devices,,"EKG leads,ECG leads,Telemetry leads",incidental,OIFM_OIDM_681215
+FID3010,Neck clips,devices,,,incidental,OIFM_OIDM_204713
+FID3020,Nuss bar,devices,,,incidental,OIFM_OIDM_001683
+FID3030,Pacemaker,devices,,"Dual chamber pacemaker,Single chamber pacemaker,Cardiac pacemaker",conditional,OIFM_OIDM_976496
+FID3040,Pacer leads,devices,,,conditional,OIFM_OIDM_069974
+FID3050,Pericardial drain,devices,,,conditional,OIFM_OIDM_921697
+FID3060,Peripherally inserted central catheter,devices,,PICC,conditional,OIFM_MGB_820557
+FID3070,PFO closure device,devices,,,conditional,OIFM_MGB_626908
+FID3080,Port catheter,devices,,"Chest port,Portacath,Port-a-cath,Implanted port",conditional,OIFM_OIDM_617602
+FID3090,Pulmonary arterial catheter,devices,,Swan-Ganz catheter,conditional,OIFM_OIDM_957925
+FID3100,Retained surgical foreign body,devices,,,significant,OIFM_OIDM_779090
+FID3110,Reverse total shoulder arthroplasty,devices,,,incidental,OIFM_OIDM_732793
+FID3120,Cerclage wire,devices,,"Rib cerclage wires,Cerclage wires",incidental,OIFM_OIDM_178622
+FID3130,Rib fixation,devices,,Chest wall fixation,incidental,OIFM_OIDM_751224
+FID3140,Rotator cuff anchor,devices,,,incidental,OIFM_OIDM_864239
+FID3150,Shoulder fixation,devices,,,incidental,OIFM_OIDM_000115
+FID3160,Shoulder replacement,devices,,Total shoulder arthroplasty,incidental,OIFM_OIDM_466205
+FID3170,Spinal catheter,devices,,,conditional,OIFM_OIDM_103101
+FID3180,Spinal fixation,devices,,Stabilization rods,incidental,OIFM_OIDM_055031
+FID3190,Spinal fusion,devices,,,incidental,OIFM_OIDM_016925
+FID3200,Sternal sutures,devices,,,incidental,OIFM_OIDM_951264
+FID3210,Sternotomy wires,devices,,"Sternal wires,Median sternotomy wires",incidental,OIFM_OIDM_951264
+FID3220,Subclavian stent,devices,,,conditional,OIFM_OIDM_916361
+FID3230,Superior vena cava stent,devices,,SVC stent,conditional,OIFM_OIDM_914310
+FID3240,Surgical clips,devices,,,incidental,OIFM_OIDM_271146
+FID3250,Suture anchors in humeral head,devices,,,incidental,OIFM_OIDM_864239
+FID3260,TAVR,devices,,"Transcatheter aortic valve replacement,TAVI",conditional,OIFM_OIDM_852879
+FID3270,Temporary pacer wire,devices,,,conditional,OIFM_OIDM_609239
+FID3280,Thyroid bed clips,devices,,,incidental,OIFM_OIDM_078506
+FID3290,Tracheostomy tube,devices,,,conditional,OIFM_MGB_132320
+FID3300,Ventricular shunt,devices,,,conditional,OIFM_OIDM_193529
+FID3310,Esophageal stent,devices,,,conditional,OIFM_MGB_674048
+FID3320,Aortic valve replacement,devices,,"Prosthetic aortic valve,Mechanical aortic valve,Bioprosthetic aortic valve,Aortic valve prosthesis",conditional,OIFM_MGB_611597
+FID3330,Mitral valve replacement,devices,,"Prosthetic mitral valve,Mechanical mitral valve,Bioprosthetic mitral valve",conditional,OIFM_OIDM_188608
+FID3340,Feeding tube,devices,FID2790,"Dobhoff tube,Nasoenteric tube,NJ tube,Nasojejunal tube,GJ tube,Gastrojejunostomy tube",conditional,OIFM_OIDM_185348
+FID3350,Median sternotomy,devices,,Sternotomy,incidental,OIFM_MGB_802796
+FID3360,Thoracotomy,devices,,"Lateral thoracotomy,Posterolateral thoracotomy",incidental,OIFM_OIDM_783133
+FID3370,Vertebroplasty,devices,,,incidental,OIFM_OIDM_929353
+FID3375,Vertebroplasties,devices,,,incidental,OIFM_OIDM_929353
+FID3380,Mitral valve clip,devices,,MitraClip,conditional,OIFM_OIDM_417935
+FID3390,Left atrial appendage ligation,devices,,AtriClip,incidental,OIFM_MGB_665120
+FID3400,Hemodialysis catheter,devices,,"Dialysis catheter,HD catheter",conditional,OIFM_OIDM_988832
+FID3410,Esophageal probe,devices,,"Esophageal monitoring device,Esophageal temperature probe",conditional,OIFM_OIDM_054124
+FID3420,CABG,devices,,Coronary artery bypass graft,incidental,OIFM_MGB_053057
+FID3430,Support device,devices,,"Support lines and tubes,Support device,Support devices",conditional,
+FID3440,Tunneled catheter,devices,,"Tunneled central catheter,Tunneled line",conditional,OIFM_OIDM_628961
+FID3450,Introducer sheath,devices,,Vascular sheath,conditional,OIFM_OIDM_105430
+FID3460,Vascular stent,devices,,,conditional,OIFM_OIDM_053884
+FID3600,AP projection,technique,,Anteroposterior projection,incidental
+FID3610,Clipped costophrenic angles,technique,,,incidental,OIFM_OIDM_646786
+FID3620,Clipped lateral soft tissues,technique,,,incidental,OIFM_OIDM_193174
+FID3630,Clipped lung apices,technique,,,incidental,OIFM_OIDM_515194
+FID3640,Grid artifact,technique,,,incidental,OIFM_OIDM_629839
+FID3650,Image marker absent,technique,,,incidental,OIFM_OIDM_240202
+FID3660,Image marker incorrect,technique,,,incidental,OIFM_OIDM_295036
+FID3670,Improper centering,technique,,,incidental,OIFM_OIDM_906530
+FID3680,Lateral projection,technique,,,incidental
+FID3690,Lungs incompletely imaged,technique,,,incidental,OIFM_OIDM_318181
+FID3700,Motion artifact,technique,,,incidental,OIFM_OIDM_659997
+FID3710,Oblique projection,technique,,,incidental
+FID3720,Obscured by external object,technique,,,incidental,OIFM_OIDM_126712
+FID3730,Obscured by laterality marker,technique,,,incidental,OIFM_OIDM_224143
+FID3740,Obscured by medical device,technique,,,incidental,OIFM_OIDM_709467
+FID3750,Obscured by chin,technique,,,incidental,OIFM_OIDM_793808
+FID3760,Overpenetrated,technique,,Overexposed,incidental,OIFM_OIDM_308623
+FID3770,PA projection,technique,,Posteroanterior projection,incidental
+FID3780,Portable projection,technique,,,incidental
+FID3790,Rotated,technique,,Rotated image,incidental,OIFM_OIDM_367264
+FID3795,Lordotic positioning,technique,,"Lordotic projection,Lordotic view",incidental
+FID3800,Semi-erect projection,technique,,,incidental
+FID3810,Supine projection,technique,,,incidental
+FID3820,Underpenetrated,technique,,Underexposed,incidental,OIFM_OIDM_119826
+FID3840,Upright projection,technique,,,incidental
+FID3850,Obscuration of hemidiaphragm,lung,,,conditional,OIFM_OIDM_769251
+FID3860,Calcification of hilar lymph node,mediastinal,,,incidental,OIFM_GMTS_013012
+FID3870,Resection of clavicle,osseous,,,incidental,OIFM_OIDM_739684
+FID3880,Pectus excavatum repair,devices,,,incidental,OIFM_OIDM_654237
+FID3890,Sternal fixation,devices,,,incidental,OIFM_OIDM_058048
+FID3900,Tricuspid annuloplasty ring,devices,,,conditional,OIFM_OIDM_122239
+FID3910,Widening of rib interspaces,osseous,,,incidental,OIFM_OIDM_594364

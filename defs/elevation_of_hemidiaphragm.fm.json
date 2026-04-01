@@ -1,0 +1,199 @@
+{
+  "oifm_id": "OIFM_OIDM_770950",
+  "name": "elevation of hemidiaphragm",
+  "description": "Abnormal superior positioning of one hemidiaphragm on chest radiograph, which may indicate phrenic nerve palsy, subpulmonic effusion, hepatomegaly, or abdominal process.",
+  "synonyms": [
+    "elevated hemidiaphragm",
+    "hemidiaphragm elevation",
+    "raised hemidiaphragm",
+    "elevated diaphragm"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_546414",
+      "name": "presence",
+      "description": "Presence or absence of elevation of hemidiaphragm",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_546414.0",
+          "name": "absent",
+          "description": "Diaphragm elevation is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_546414.1",
+          "name": "present",
+          "description": "Diaphragm elevation is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_546414.2",
+          "name": "indeterminate",
+          "description": "Presence of elevation of hemidiaphragm cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_546414.3",
+          "name": "unknown",
+          "description": "Presence of elevation of hemidiaphragm is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_614463",
+      "name": "change from prior",
+      "description": "Whether and how elevation of hemidiaphragm has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_614463.0",
+          "name": "unchanged",
+          "description": "Diaphragm elevation is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_614463.1",
+          "name": "stable",
+          "description": "Diaphragm elevation is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_614463.2",
+          "name": "new",
+          "description": "Diaphragm elevation is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_614463.3",
+          "name": "resolved",
+          "description": "Diaphragm elevation seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_614463.4",
+          "name": "worsened",
+          "description": "Elevation of hemidiaphragm has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_614463.5",
+          "name": "improved",
+          "description": "Elevation of hemidiaphragm has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

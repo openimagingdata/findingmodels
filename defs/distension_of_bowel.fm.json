@@ -1,0 +1,206 @@
+{
+  "oifm_id": "OIFM_OIDM_814608",
+  "name": "distension of bowel",
+  "description": "Abnormal gaseous distension or dilation of bowel loops visible on chest radiograph, which may indicate ileus or obstruction.",
+  "synonyms": [
+    "gas distended bowel",
+    "dilated bowel loops",
+    "bowel distension",
+    "dilated bowel",
+    "bowel dilation",
+    "dilation of bowel"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "abdomen",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_006390",
+      "name": "presence",
+      "description": "Presence or absence of distension of bowel",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_006390.0",
+          "name": "absent",
+          "description": "Distension of bowel is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_006390.1",
+          "name": "present",
+          "description": "Distension of bowel is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_006390.2",
+          "name": "indeterminate",
+          "description": "Presence of distension of bowel cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_006390.3",
+          "name": "unknown",
+          "description": "Presence of distension of bowel is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_321278",
+      "name": "change from prior",
+      "description": "Whether and how a distension of bowel has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_321278.0",
+          "name": "unchanged",
+          "description": "Distension of bowel is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321278.1",
+          "name": "stable",
+          "description": "Distension of bowel is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321278.2",
+          "name": "new",
+          "description": "Distension of bowel is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_321278.3",
+          "name": "resolved",
+          "description": "Distension of bowel seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_321278.4",
+          "name": "worsened",
+          "description": "Distension of bowel has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_321278.5",
+          "name": "improved",
+          "description": "Distension of bowel has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

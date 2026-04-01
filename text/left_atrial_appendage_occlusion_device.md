@@ -1,5 +1,7 @@
 # Left atrial appendage occlusion device—`OIFM_MGB_665120`
 
+**Synonyms:** left atrial appendage ligation, AtriClip
+
 Presence of a left atrial appendage occlusion device
 
 ## Attributes

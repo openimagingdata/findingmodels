@@ -1,0 +1,222 @@
+{
+  "oifm_id": "OIFM_OIDM_543357",
+  "name": "calcified pulmonary nodule",
+  "description": "A pulmonary nodule containing visible calcification on chest radiograph, most commonly representing a calcified granuloma from prior granulomatous infection.",
+  "synonyms": [
+    "calcified granuloma",
+    "calcified lung nodule",
+    "calcified nodule"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_527591",
+      "name": "presence",
+      "description": "Presence or absence of calcified pulmonary nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_527591.0",
+          "name": "absent",
+          "description": "Calcified nodule is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_527591.1",
+          "name": "present",
+          "description": "Calcified nodule is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_527591.2",
+          "name": "indeterminate",
+          "description": "Presence of calcified pulmonary nodule cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_527591.3",
+          "name": "unknown",
+          "description": "Presence of calcified pulmonary nodule is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_909984",
+      "name": "change from prior",
+      "description": "Whether and how a calcified pulmonary nodule has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_909984.0",
+          "name": "unchanged",
+          "description": "Calcified nodule is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_909984.1",
+          "name": "stable",
+          "description": "Calcified nodule is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_909984.2",
+          "name": "new",
+          "description": "Calcified nodule is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_909984.3",
+          "name": "resolved",
+          "description": "Calcified nodule seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_909984.4",
+          "name": "larger",
+          "description": "Calcified nodule is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_909984.5",
+          "name": "smaller",
+          "description": "Calcified nodule is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

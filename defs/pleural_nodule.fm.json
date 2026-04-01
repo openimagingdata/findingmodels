@@ -1,0 +1,221 @@
+{
+  "oifm_id": "OIFM_OIDM_621745",
+  "name": "pleural nodule",
+  "description": "A discrete, rounded soft tissue density along the pleural surface on chest radiograph, which may represent mesothelioma, metastasis, or benign pleural lesion.",
+  "synonyms": [
+    "pleural nodules",
+    "pleural-based nodule"
+  ],
+  "tags": [
+    "chest",
+    "XR",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_409291",
+      "name": "presence",
+      "description": "Presence or absence of pleural nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_409291.0",
+          "name": "absent",
+          "description": "Pleural nodule is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_409291.1",
+          "name": "present",
+          "description": "Pleural nodule is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_409291.2",
+          "name": "indeterminate",
+          "description": "Presence of pleural nodule cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_409291.3",
+          "name": "unknown",
+          "description": "Presence of pleural nodule is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_396572",
+      "name": "change from prior",
+      "description": "Whether and how a pleural nodule has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_396572.0",
+          "name": "unchanged",
+          "description": "Pleural nodule is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_396572.1",
+          "name": "stable",
+          "description": "Pleural nodule is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_396572.2",
+          "name": "new",
+          "description": "Pleural nodule is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_396572.3",
+          "name": "resolved",
+          "description": "Pleural nodule seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_396572.4",
+          "name": "larger",
+          "description": "Pleural nodule is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_396572.5",
+          "name": "smaller",
+          "description": "Pleural nodule is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

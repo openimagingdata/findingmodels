@@ -1,6 +1,6 @@
 # Degenerative change of the thoracic spine—`OIFM_OIDM_675673`
 
-**Synonyms:** thoracic spine degenerative change, degenerative changes of the thoracic spine, thoracic spondylosis, thoracic spondylotic changes, thoracic osteoarthritis, thoracic facet arthropathy, thoracic spine degenerative changes
+**Synonyms:** thoracic spine degenerative change, degenerative changes of the thoracic spine, thoracic spondylosis, thoracic spondylotic changes, thoracic osteoarthritis, thoracic facet arthropathy, thoracic spine degenerative changes, degenerative changes
 
 Degenerative change of the thoracic spine, reflecting age-related spondylosis with multilevel degenerative alterations of the thoracic intervertebral discs and facet joints; this description corresponds to the original term 'thoracic spine degenerative changes' as an example context.
 
