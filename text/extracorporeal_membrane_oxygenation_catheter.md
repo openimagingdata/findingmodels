@@ -14,9 +14,9 @@ Presence or absence of extracorporeal membrane oxygenation catheter
 **Codes**: SNOMED 705057003 Presence (property) (qualifier value)  
 *(Select one)*
 
-- **absent**: Ecmo catheter is absent  
+- **absent**: ECMO catheter is absent  
 _RADLEX RID28473 absent; SNOMED 2667000 Absent (qualifier value)_
-- **present**: Ecmo catheter is present  
+- **present**: ECMO catheter is present  
 _RADLEX RID28472 present; SNOMED 52101004 Present (qualifier value)_
 - **indeterminate**: Presence of extracorporeal membrane oxygenation catheter cannot be determined  
 _RADLEX RID39110 indeterminate; SNOMED 82334004 Indeterminate (qualifier value)_
@@ -29,13 +29,13 @@ Whether and how extracorporeal membrane oxygenation catheter has changed over ti
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
 *(Select one)*
 
-- **unchanged**: Ecmo catheter is unchanged  
+- **unchanged**: ECMO catheter is unchanged  
 _RADLEX RID39268 unchanged; SNOMED 260388006 No status change (qualifier value)_
-- **stable**: Ecmo catheter is stable  
+- **stable**: ECMO catheter is stable  
 _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
-- **new**: Ecmo catheter is new  
+- **new**: ECMO catheter is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
-- **resolved**: Ecmo catheter seen on a prior exam has resolved  
+- **resolved**: ECMO catheter seen on a prior exam has resolved  
 
 ---
 

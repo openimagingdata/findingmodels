@@ -1,6 +1,6 @@
 # Abnormal azygoesophageal recess—`OIFM_GMTS_015654`
 
-**Synonyms:** abnormal azygoesophageal interface, abnormal azygoesophageal line, azygus recess abnormality
+**Synonyms:** abnormal azygoesophageal interface, abnormal azygoesophageal line, azygos recess abnormality
 
 **Tags:** chest, XR, CT, mediastinum, finding
 
