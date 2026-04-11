@@ -1,0 +1,80 @@
+{
+  "oifm_id": "OIFM_MSFT_103477",
+  "name": "cerebellum and brainstem volumes",
+  "description": "Quantitative assessment of cerebellar hemispheres and brainstem.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_106190",
+      "name": "cerebellum volume (left)",
+      "description": "Volume of left cerebellar hemisphere, clinically relevant for posterior fossa integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18314"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_910942",
+      "name": "cerebellum volume (right)",
+      "description": "Volume of right cerebellar hemisphere, clinically relevant for posterior fossa integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18313"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_945551",
+      "name": "brainstem volume",
+      "description": "Volume of brainstem, clinically relevant for neurodegenerative and demyelinating disorders.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6677"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "15926001"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6815"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "113305005"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID6677"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "15926001"
+    }
+  ]
+}

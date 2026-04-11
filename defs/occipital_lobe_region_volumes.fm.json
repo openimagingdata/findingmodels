@@ -1,0 +1,110 @@
+{
+  "oifm_id": "OIFM_MSFT_254781",
+  "name": "occipital lobe region volumes",
+  "description": "Quantitative assessment of occipital lobe subregions for visual processing and neurodegenerative disease evaluation.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_542162",
+      "name": "occipital lobe volume (left)",
+      "description": "Volume of left occipital lobe, clinically relevant for visual processing and cortical integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13869"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_468133",
+      "name": "occipital lobe volume (right)",
+      "description": "Volume of right occipital lobe, clinically relevant for visual processing and cortical integrity.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13868"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_263797",
+      "name": "medial occipital volume (left)",
+      "description": "Volume of left medial occipital region, clinically relevant for primary visual cortex assessment.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18307"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_995329",
+      "name": "medial occipital volume (right)",
+      "description": "Volume of right medial occipital region, clinically relevant for primary visual cortex assessment.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18306"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_140393",
+      "name": "lateral occipital volume (left)",
+      "description": "Volume of left lateral occipital region, clinically relevant for higher-order visual processing.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13938"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_207229",
+      "name": "lateral occipital volume (right)",
+      "description": "Volume of right lateral occipital region, clinically relevant for higher-order visual processing.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID13937"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6502"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "31065004"
+    }
+  ]
+}

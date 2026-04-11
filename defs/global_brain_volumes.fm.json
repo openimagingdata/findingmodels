@@ -1,0 +1,170 @@
+{
+  "oifm_id": "OIFM_MSFT_838896",
+  "name": "global brain volumes",
+  "description": "Quantitative assessment of global brain tissue compartments for evaluation of neurodegeneration, traumatic brain injury, and other conditions affecting overall brain volume.",
+  "contributors": [
+    {
+      "github_username": "HeatherChase",
+      "email": "heatherchase@microsoft.com",
+      "name": "Heather Chase",
+      "organization_code": "MSFT",
+      "url": "https://www.linkedin.com/in/heatherwalkerchase/"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MSFT_036606",
+      "name": "whole brain volume",
+      "description": "Absolute volume of the entire brain, clinically relevant for global atrophy assessment.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": true,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "12738006"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_399051",
+      "name": "whole brain % of ICV",
+      "description": "Percentage of intracranial volume occupied by the whole brain, used to normalize for head size.",
+      "type": "numeric",
+      "unit": "%",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "12738006"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_814138",
+      "name": "whole brain normative percentile",
+      "description": "Age- and sex-adjusted percentile for whole brain volume, clinically relevant for detecting global atrophy.",
+      "type": "numeric",
+      "unit": "percentile",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "12738006"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_448120",
+      "name": "forebrain parenchyma volume (left)",
+      "description": "Volume of left forebrain parenchyma, important for cortical and subcortical integrity assessment.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "12738006"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_082896",
+      "name": "forebrain parenchyma volume (right)",
+      "description": "Volume of right forebrain parenchyma, clinically relevant for asymmetry and focal atrophy.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID6434"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "12738006"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_638157",
+      "name": "cortical gray matter volume",
+      "description": "Total cortical gray matter volume, clinically relevant for neurodegenerative disease monitoring.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID15691"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "40146001"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_867890",
+      "name": "cerebral white matter volume",
+      "description": "Total cerebral white matter volume, clinically relevant for demyelinating disorders and global atrophy.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18161"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "68523003"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MSFT_361367",
+      "name": "cerebral white matter hypointensities volume",
+      "description": "Volume of hypointense white matter regions, clinically relevant for small vessel disease and demyelination.",
+      "type": "numeric",
+      "unit": "cm^3",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID18161"
+        },
+        {
+          "system": "SNOMEDCT",
+          "code": "68523003"
+        }
+      ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID6434"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "12738006"
+    }
+  ]
+}
