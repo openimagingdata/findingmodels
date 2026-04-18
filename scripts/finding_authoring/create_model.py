@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "findingmodel",
+# ]
+# ///
 """Create finding model stubs directly, bypassing AI name normalization.
 
 This script calls the findingmodel library functions directly to create
@@ -7,7 +13,7 @@ name normalization step that `make-stub-model` uses (which can rename
 findings unexpectedly).
 
 Usage (single model):
-    uv run .claude/skills/new-finding/scripts/create_model.py \
+    uv run scripts/finding_authoring/create_model.py \
         --name "pneumothorax" \
         --description "Air in the pleural space." \
         --synonyms "air leak" "collapsed lung" \
@@ -17,7 +23,7 @@ Usage (single model):
         --output defs/pneumothorax.fm.json
 
 Usage (batch via JSON on stdin):
-    uv run .claude/skills/new-finding/scripts/create_model.py --batch << 'EOF'
+    uv run scripts/finding_authoring/create_model.py --batch << 'EOF'
     {
         "source": "OIDM",
         "contributor": "hoodcm",
@@ -81,6 +87,9 @@ CONTRIBUTORS = {
         "url": "https://gamuts.net/",
     },
     "CDE": {"name": "ACR/RSNA Common Data Elements Project", "code": "CDE"},
+    "MGB": {"name": "Mass General Brigham", "code": "MGB"},
+    "MSFT": {"name": "Microsoft", "code": "MSFT"},
+    "RSNA": {"name": "Radiological Society of North America", "code": "RSNA"},
 }
 
 

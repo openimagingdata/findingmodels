@@ -5,13 +5,13 @@ Performs mechanical quality checks on .fm.json files and reports issues.
 Can auto-fix some issues with --fix flag.
 
 Usage (single file):
-    uv run .claude/skills/new-finding/scripts/review_model.py defs/pneumothorax.fm.json
+    uv run scripts/finding_authoring/review_model.py defs/pneumothorax.fm.json
 
 Usage (all models):
-    uv run .claude/skills/new-finding/scripts/review_model.py defs/*.fm.json
+    uv run scripts/finding_authoring/review_model.py defs/*.fm.json
 
 Usage (auto-fix what's possible):
-    uv run .claude/skills/new-finding/scripts/review_model.py --fix defs/pneumothorax.fm.json
+    uv run scripts/finding_authoring/review_model.py --fix defs/pneumothorax.fm.json
 
 Output: JSON array of issues per file. Exit code 0 if no issues, 1 if issues found.
 """

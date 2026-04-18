@@ -6,14 +6,14 @@ updates the specified column in the CSV. Uses Python's csv module to properly
 handle quoted fields containing commas.
 
 Usage (mapping as argument):
-    uv run .claude/skills/new-finding/scripts/update_csv.py \
+    uv run scripts/finding_authoring/update_csv.py \
         lists/cxr_findings.csv \
         --id-column 0 \
         --oifm-column 6 \
         --mapping 'FID0010=OIFM_OIDM_207240,FID0011=OIFM_OIDM_449436'
 
 Usage (mapping from fix_stub.py output, with a name-to-id lookup):
-    uv run .claude/skills/new-finding/scripts/update_csv.py \
+    uv run scripts/finding_authoring/update_csv.py \
         lists/cxr_findings.csv \
         --id-column 0 \
         --oifm-column 6 \
@@ -21,7 +21,7 @@ Usage (mapping from fix_stub.py output, with a name-to-id lookup):
 
 Usage (mapping JSON from stdin):
     echo '{"FID0010": "OIFM_OIDM_207240"}' | \
-    uv run .claude/skills/new-finding/scripts/update_csv.py \
+    uv run scripts/finding_authoring/update_csv.py \
         lists/cxr_findings.csv \
         --id-column 0 \
         --oifm-column 6 \
