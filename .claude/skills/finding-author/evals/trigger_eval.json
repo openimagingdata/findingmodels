@@ -1,0 +1,23 @@
+[
+  {"query": "Do we already have a finding model for cerebral microbleeds? If not, please add one.", "should_trigger": true},
+  {"query": "I'd like to add a synonym for pleural effusion — radiologists sometimes write 'fluid in the pleural space'. Can you update that model?", "should_trigger": true},
+  {"query": "Please create a new finding model for cavum septum pellucidum — anatomic variant, head CT context.", "should_trigger": true},
+  {"query": "Does defs/ have anything for intracranial aneurysm? If yes, let me view it; if no, create it.", "should_trigger": true},
+  {"query": "Let's draft a finding model for medial meniscus tear. It should have presence, change from prior, and a morphology attribute.", "should_trigger": true},
+  {"query": "Add 'CMB' and 'microhemorrhage' as synonyms to the cerebral microbleeds model if that finding exists.", "should_trigger": true},
+  {"query": "Check whether we have 'nephrolithiasis' as a finding model. I think it's there under a different name.", "should_trigger": true},
+  {"query": "I want to create a model for pneumocephalus. It'll share a contributor and source with the rest of this session.", "should_trigger": true},
+  {"query": "Can you fix the description on the existing subdural hematoma model — the current one is unclear. Also add 'SDH' as a synonym.", "should_trigger": true},
+  {"query": "Does the library include a finding for mass effect? If it's there, what does it look like; if not, draft one.", "should_trigger": true},
+
+  {"query": "Process this whole CSV of findings — lists/headct_findings.csv — and create stubs for anything not already in the library.", "should_trigger": false},
+  {"query": "Review all the fracture finding models in defs/ and flag anything whose change-from-prior values look wrong.", "should_trigger": false},
+  {"query": "Audit defs/*_hemorrhage.fm.json for naming and synonym issues.", "should_trigger": false},
+  {"query": "What's the best way to write a description for a radiology finding?", "should_trigger": false},
+  {"query": "Run the validator script on the defs/ directory.", "should_trigger": false},
+  {"query": "Write me a Python function to parse a DICOM header.", "should_trigger": false},
+  {"query": "I have a directory of markdown stubs describing 20 new findings. Please create models for all of them.", "should_trigger": false},
+  {"query": "Generate a summary of all recent commits to the main branch.", "should_trigger": false},
+  {"query": "Explain the difference between SNOMED and RadLex coding.", "should_trigger": false},
+  {"query": "Walk through every finding model tagged 'brain' and tell me what needs improvement.", "should_trigger": false}
+]

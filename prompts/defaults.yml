@@ -1,0 +1,77 @@
+# Session defaults for finding-model authoring.
+#
+# This file mirrors the CONTRIBUTORS dictionary hard-coded in
+# scripts/finding_authoring/create_model.py (and fix_stub.py). When you
+# add or remove an entry here, make the matching edit in those scripts
+# as a single atomic change.
+#
+# See prompts/fragments/session_defaults.md for how this file is used
+# during a session.
+
+contributors:
+  people:
+    hoodcm:
+      github_username: hoodcm
+      name: "C. Michael Hood, MD"
+      email: chood@mgh.harvard.edu
+      organization_code: MGB
+    HeatherChase:
+      github_username: HeatherChase
+      name: "Heather Chase"
+      organization_code: MSFT
+    radngandhi:
+      github_username: radngandhi
+      name: "Namita Gandhi, MD"
+      organization_code: RSNA
+    talkasab:
+      github_username: talkasab
+      name: "Tarik Alkasab, MD, PhD"
+      email: talkasab@partners.org
+      organization_code: MGB
+
+  organizations:
+    OIDM:
+      name: "Open Imaging Data Model"
+      code: OIDM
+    GMTS:
+      name: "Radiology Gamuts Ontology"
+      code: GMTS
+      url: "https://gamuts.net/"
+    CDE:
+      name: "ACR/RSNA Common Data Elements Project"
+      code: CDE
+    MGB:
+      name: "Mass General Brigham"
+      code: MGB
+    MSFT:
+      name: "Microsoft"
+      code: MSFT
+    RSNA:
+      name: "Radiological Society of North America"
+      code: RSNA
+
+# Source codes that can be used as the source for OIFM IDs.
+sources:
+  OIDM:
+    description: "Open Imaging Data Model — default source for in-house authored models."
+  CDE:
+    description: "ACR/RSNA Common Data Elements Project."
+  GMTS:
+    description: "Radiology Gamuts Ontology."
+
+# Suggested tag sets by campaign context. The skill asks the user to
+# confirm or override at session start. These are starting points, not
+# required values.
+tag_defaults:
+  - name: chest-xr
+    tags: ["chest", "XR", "finding"]
+  - name: chest-ct
+    tags: ["chest", "CT", "finding"]
+  - name: head-ct
+    tags: ["head", "CT", "finding"]
+  - name: brain-mri
+    tags: ["brain", "MRI", "finding"]
+  - name: knee-mri
+    tags: ["knee", "MRI", "finding"]
+  - name: abdomen-ct
+    tags: ["abdomen", "CT", "finding"]

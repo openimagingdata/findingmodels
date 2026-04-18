@@ -1,0 +1,23 @@
+[
+  {"query": "Process this whole CSV of findings — lists/headct_findings.csv — and create stubs for anything not already in the library.", "should_trigger": true},
+  {"query": "I have a directory of markdown stubs describing 20 new knee MRI findings. Please create models for all of them and then we'll review.", "should_trigger": true},
+  {"query": "Here's a list of 15 abdominal ultrasound findings. Please batch-create models with my usual source and contributors.", "should_trigger": true},
+  {"query": "Can you batch-ingest the findings in /tmp/new_brain_mri_findings.csv? Row ID column is 'FID', OIFM column doesn't exist yet.", "should_trigger": true},
+  {"query": "I need you to work through this list of pediatric chest radiograph findings and build out stubs for each one.", "should_trigger": true},
+  {"query": "Bulk-create finding models for the 12 rows in this spreadsheet; after creation, I want to review them in the TUI before anything is finalized.", "should_trigger": true},
+  {"query": "Take each file in ./draft_findings/ (markdown, one finding per file) and turn it into a proper fm.json model.", "should_trigger": true},
+  {"query": "Go through headct_findings.csv, triage existing matches vs new, and create models for everything that doesn't exist yet.", "should_trigger": true},
+  {"query": "I'm pasting 8 cardiac MRI findings below — please create models for all of them and write OIFM IDs back to the CSV.", "should_trigger": true},
+  {"query": "Process this directory of Hood-format JSON finding descriptions and generate models. Wait — scratch the Hood format, here they are as markdown instead.", "should_trigger": true},
+
+  {"query": "Do we already have a finding model for cerebral microbleeds? If not, please add one.", "should_trigger": false},
+  {"query": "Add 'SDH' as a synonym to the subdural hematoma model.", "should_trigger": false},
+  {"query": "Review all the fracture finding models in defs/ and flag anything whose change-from-prior values look wrong.", "should_trigger": false},
+  {"query": "Audit defs/*_hemorrhage.fm.json for naming and synonym issues.", "should_trigger": false},
+  {"query": "Check whether we have 'nephrolithiasis' as a finding model.", "should_trigger": false},
+  {"query": "Can you fix the description on the existing subdural hematoma model?", "should_trigger": false},
+  {"query": "Run the validator script on the defs/ directory and report any failures.", "should_trigger": false},
+  {"query": "Walk through every finding model tagged 'brain' and tell me what needs improvement.", "should_trigger": false},
+  {"query": "Explain how SNOMED index codes work in this project.", "should_trigger": false},
+  {"query": "Write me a script to generate a summary of all models by organ system.", "should_trigger": false}
+]

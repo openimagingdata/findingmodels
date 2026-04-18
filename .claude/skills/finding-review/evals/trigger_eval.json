@@ -1,0 +1,23 @@
+[
+  {"query": "Review all the fracture finding models in defs/ and flag anything whose change-from-prior values look wrong.", "should_trigger": true},
+  {"query": "Audit defs/*_hemorrhage.fm.json for naming issues, suspect synonyms, and unnecessary direction-of-change pairs.", "should_trigger": true},
+  {"query": "Walk through every finding model tagged 'brain' and tell me what needs improvement.", "should_trigger": true},
+  {"query": "Please look at defs/subdural_hematoma.fm.json, defs/epidural_hematoma.fm.json, and defs/subarachnoid_hemorrhage.fm.json and clean them up.", "should_trigger": true},
+  {"query": "I want to do a quality pass over the knee MRI finding models — can you walk through them with me via the TUI?", "should_trigger": true},
+  {"query": "Audit the existing cardiac finding models for naming conventions and missing synonyms.", "should_trigger": true},
+  {"query": "Check all files matching defs/*_device.fm.json for inappropriate direction-of-change values. Devices shouldn't 'worsen' or get 'larger'.", "should_trigger": true},
+  {"query": "Run a cleanup pass over defs/ — specifically the pulmonary nodule models. Look for component attributes that should be extracted into their own models.", "should_trigger": true},
+  {"query": "Review defs/pneumocephalus.fm.json and defs/tension_pneumocephalus.fm.json — I want to make sure they aren't duplicating each other improperly.", "should_trigger": true},
+  {"query": "Go through all existing brain volumetry models in defs/ and propose improvements to their descriptions and synonyms.", "should_trigger": true},
+
+  {"query": "Do we already have a finding model for cerebral microbleeds? If not, please add one.", "should_trigger": false},
+  {"query": "Process this CSV of 20 new head CT findings and create models for anything not already in the library.", "should_trigger": false},
+  {"query": "Add 'SDH' as a synonym to the subdural hematoma model.", "should_trigger": false},
+  {"query": "I want to create a new finding model for pneumocephalus.", "should_trigger": false},
+  {"query": "Here's a directory of markdown stubs — please batch-create finding models for all of them.", "should_trigger": false},
+  {"query": "Run scripts/validator.py and tell me if any models fail validation.", "should_trigger": false},
+  {"query": "Write a Python tool to count how many finding models exist per tag.", "should_trigger": false},
+  {"query": "Explain how the OIFM ID format works.", "should_trigger": false},
+  {"query": "Check whether the pleural effusion model exists in the library.", "should_trigger": false},
+  {"query": "Help me write a commit message for my latest changes to defs/.", "should_trigger": false}
+]
