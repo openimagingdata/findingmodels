@@ -50,4 +50,8 @@ The `change from prior` attribute description should read naturally:
 
 ## What the create script does, and what review must catch
 
-`create_model.py` auto-generates both attributes with a default value set. It does **not** know which direction-of-change pairs are clinically appropriate for this specific finding — it may over-include. The quality-review step is responsible for **winnowing inappropriate pairs** and fixing description grammar. Do not expect the script to get direction-of-change right on its own.
+`create_model.py` emits the **minimum set** (`unchanged, stable, new, resolved`) by default. Opt in to direction pairs at create time via `--cfp-pairs <csv>` (single model) or the `cfp_pairs` key (batch entry). Pick pairs per the rules above: `larger-smaller` for measurable lesions, `increased-decreased` for quantities/extent, `worsened-improved` for condition/process findings. Anatomic variants, devices, and fracture/postsurgical findings usually need no pairs.
+
+The script also drops the awkward leading article from the `change from prior` description (`"Whether and how a X has changed"` → `"Whether and how X has changed"`).
+
+The quality-review step **confirms** the pair choice — catching cases where the creator picked the wrong pair for the clinical entity. If the attribute already exists and direction pairs need to be added or removed after the fact, use `scripts/finding_authoring/modify_change_from_prior.py` (see `mechanical_lint.md`).

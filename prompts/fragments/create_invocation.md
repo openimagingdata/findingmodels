@@ -25,10 +25,21 @@ uv run --env-file .env scripts/finding_authoring/create_model.py \
     --tags <tag1> <tag2> <tag3> \
     --source <source_code> \
     --contributor <person_key> <org_key> \
+    --cfp-pairs larger-smaller \
     --output defs/<filename>.fm.json
 ```
 
 Output: `filepath|name|oifm_id` on one line on success.
+
+### `--cfp-pairs`: direction-of-change values on `change from prior`
+
+By default the script emits only the **minimum set** (`unchanged, stable, new, resolved`). Opt in to direction pairs via `--cfp-pairs <csv>`. Valid pair keys:
+
+- `larger-smaller` — masses, effusions, discrete lesions with measurable size
+- `increased-decreased` — quantities, density, extent
+- `worsened-improved` — conditions, disease states, chronic processes
+
+Combine as needed: `--cfp-pairs larger-smaller,worsened-improved`. Omit entirely for findings where no direction is clinically natural (anatomic variants, devices, congenital structures). See `presence_and_change.md` for per-finding guidance.
 
 To determine the filename ahead of time:
 
@@ -44,6 +55,7 @@ uv run --env-file .env scripts/finding_authoring/create_model.py --batch << 'EOF
     "source": "<source_code>",
     "contributors": ["<person_key>", "<org_key>"],
     "tags": ["<tag1>", "<tag2>", "<tag3>"],
+    "cfp_pairs": "larger-smaller",
     "models": [
         {
             "name": "finding one",
@@ -52,7 +64,13 @@ uv run --env-file .env scripts/finding_authoring/create_model.py --batch << 'EOF
         },
         {
             "name": "finding two",
-            "description": "Description of finding two."
+            "description": "Description of finding two.",
+            "cfp_pairs": "worsened-improved"
+        },
+        {
+            "name": "finding three",
+            "description": "An anatomic variant; no direction pairs.",
+            "cfp_pairs": ""
         }
     ]
 }
@@ -61,7 +79,7 @@ EOF
 
 Output: one `filepath|name|oifm_id` line per successfully created model. Errors are printed to stderr as `ERROR creating '<name>': <reason>`.
 
-Per-model overrides: each entry in `models` may set its own `tags` or `output` to override the batch-level defaults.
+Per-model overrides: each entry in `models` may set its own `tags`, `output`, or `cfp_pairs` to override the batch-level defaults. Set `cfp_pairs: ""` to force the minimum set on a single model when the batch-level default adds pairs.
 
 ## What the script does NOT do
 
