@@ -33,7 +33,7 @@ Guidance (include all that apply):
 Some categories of finding get the minimum set only (`unchanged`, `stable`, `new`, `resolved`) with no direction pairs:
 
 - **Devices / hardware** — a pacemaker doesn't get "larger" or "worsened"
-- **Congenital variants** — they don't change
+- **Congenital variants** — default to no direction pairs (typically fixed). **But** include direction pairs (usually `increased`/`decreased`) if the variant's severity is commonly reported as changing after trauma or corrective surgery. Example: `nasal septal deviation` can worsen post-trauma or improve post-septoplasty.
 - **Postsurgical states** — they're permanent
 - **Technique / quality observations** — per-image, not longitudinal
 

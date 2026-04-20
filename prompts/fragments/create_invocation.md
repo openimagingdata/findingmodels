@@ -33,7 +33,7 @@ Output: `filepath|name|oifm_id` on one line on success.
 To determine the filename ahead of time:
 
 ```bash
-uv run --env-file .env --with findingmodel python -c "from findingmodel.common import model_file_name; print(model_file_name('<finding name>'))"
+uv run --env-file .env --with findingmodel --with openai python -c "from findingmodel.common import model_file_name; print(model_file_name('<finding name>'))"
 ```
 
 ## Batch (JSON on stdin)

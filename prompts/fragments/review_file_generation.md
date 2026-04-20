@@ -36,6 +36,8 @@ If a changed model looks fine, write `**Assessment:** Looks reasonable as writte
 
 Write plain markdown to the requested review file path. No code fences wrapping the whole file. No JSON.
 
+**Critical formatting rule:** each `**Field:**` line in the metadata block must end with **two trailing spaces** (markdown hard line break), otherwise `MarkdownViewer` renders all five fields as one unreadable paragraph. The trailing spaces are invisible in the source but essential for the TUI. Separate paragraphs (QUESTION / ISSUE / Assessment / Response) use blank lines instead.
+
 ```
 # Review: <label>
 
@@ -44,23 +46,31 @@ Write plain markdown to the requested review file path. No code fences wrapping 
 ---
 
 ### <finding name>
-**Source file:** <relative path>
-**ID:** <oifm_id or `none assigned`>
-**Description:** <description or `missing`>
-**Synonyms:** <comma-separated or `none listed`>
-**Change from prior:** <comma-separated values or `missing`>
+
+**Source file:** `defs/<file>.fm.json`  ← two trailing spaces
+**ID:** `<oifm_id>`  ← two trailing spaces
+**Description:** <description>  ← two trailing spaces
+**Synonyms:** <comma-separated or `(none)`>  ← two trailing spaces
+**Change from prior:** <comma-separated values>
+
 **QUESTION:** <specific question for reviewer>
+
 **ISSUE 1:** <specific issue>
-**ISSUE 2:** <specific issue, if applicable>
+
 **Suggested fix:** <short proposal if useful>
 
-**Response:**
+**Response:** 
 
 ---
 
 ### <next finding>
 ...
 ```
+
+Notes on the example:
+- The `← two trailing spaces` annotations are for illustration only; the actual file just has two spaces at line-end (not the arrow).
+- The last metadata line (`**Change from prior:**`) does NOT need trailing spaces because a blank line follows it — that already terminates the paragraph.
+- Code-formatting (backticks) on paths and IDs makes the TUI render more readable.
 
 ## Required structure (for `review_summaries.py` compatibility)
 

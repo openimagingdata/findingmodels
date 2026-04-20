@@ -26,7 +26,15 @@ A finding name should be understandable on its own — someone scanning a list o
 - "lucency" → `pulmonary lucency`, `osseous lucent lesion`
 - "sclerosis" → `osteosclerosis`
 
-Keep the unscoped short form as a synonym so report text like "mass in the right upper lobe" still matches. Findings that are inherently self-describing don't need scoping: `cardiomegaly`, `pneumothorax`, `pleural effusion`.
+**The scope anchor must name specific anatomy, not a generic tissue-type modifier.** "Parenchymal" alone is ambiguous (applies to lung, liver, renal, brain parenchyma) — use `brain parenchymal ...`, `pulmonary parenchymal ...`, etc. Same trap: "cortical" (brain vs renal vs osseous), "stromal", "medullary".
+
+### When to keep the unscoped short form as a synonym
+
+Keep the short form **only if it's anatomically distinctive on its own** — unambiguous even without the scope prefix. `cardiomegaly`, `pneumothorax`, `pleural effusion` stay as synonyms (or *are* the canonical name) because no one writes "cardiomegaly" meaning anything other than an enlarged heart.
+
+**Drop** the short form if it's a generic imaging descriptor that applies across body regions — `hypoattenuation`, `hypodensity`, `enhancement`, `calcification`, `lucency`, `sclerosis`. These fail `synonym_rules.md`'s same-meaning-same-specificity test: "hypoattenuation" in a body CT can mean the finding in brain, liver, or bone — context doesn't reliably disambiguate at the NLP layer.
+
+Borderline terms (e.g., `mass`, `lesion`) require a judgment call per model: does the short form mean this exact finding in every report context where the model might be consulted? If not, drop it.
 
 Some findings are appropriately broad without anatomic scoping — `fracture`, `osseous abnormality` — where anatomy is captured as an attribute rather than baked into the name.
 

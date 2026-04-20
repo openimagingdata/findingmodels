@@ -52,6 +52,37 @@ uv run --env-file .env scripts/finding_authoring/add_change_from_prior.py \
 
 `--pairs` is comma-separated: `larger-smaller`, `increased-decreased`, `worsened-improved`. Omit for the minimum set (`unchanged, stable, new, resolved`). The helper allocates exactly one new `oifma_id` and leaves all existing IDs untouched — do **not** hand-build attributes or use `findingmodel.tools.add_ids_to_model`, which strips and regenerates IDs when the model is loaded as a base class.
 
+### Winnowing or extending an existing change-from-prior
+
+When the attribute exists but quality review wants to drop/add specific direction values (the common "winnow after create_model.py" pattern), use:
+
+```bash
+# Drop inappropriate pairs
+uv run --env-file .env scripts/finding_authoring/modify_change_from_prior.py \
+    defs/<file>.fm.json --remove larger,smaller
+
+# Add missing pairs
+uv run --env-file .env scripts/finding_authoring/modify_change_from_prior.py \
+    defs/<file>.fm.json --add worsened,improved
+
+# Both in one call
+uv run --env-file .env scripts/finding_authoring/modify_change_from_prior.py \
+    defs/<file>.fm.json --remove increased,decreased --add worsened,improved
+```
+
+Core values (`unchanged`, `stable`, `new`, `resolved`) cannot be removed. Existing `value_code`s are preserved for values that remain; new values get fresh codes beyond the highest currently used. Idempotent — adding a value already present is a no-op.
+
+### Renaming a finding model
+
+When quality review decides the canonical name should change (e.g., scope-anchor fix like `parenchymal hypoattenuation` → `brain parenchymal hypoattenuation`), use:
+
+```bash
+uv run --env-file .env scripts/finding_authoring/rename_model.py \
+    defs/<old_file>.fm.json --new-name "new canonical name"
+```
+
+This renames the file on disk, updates the `name` field, and updates every attribute/value description that embeds the old name. Preserves `oifm_id`, all `oifma_id`s, and all `value_code`s.
+
 ## Using it in flow
 
 - **Authoring flow.** Run without `--fix` after `create_model.py` to see ERRORs and WARNINGs. Fix ERRORs (or re-run with `--fix`). Pass REVIEWs to the quality-review sub-agent.

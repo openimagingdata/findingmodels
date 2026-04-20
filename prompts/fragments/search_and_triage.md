@@ -15,7 +15,7 @@ Pick targets that cover the ways a radiologist might have named this finding whe
 ## Run the searches
 
 ```bash
-uv run --env-file .env --with findingmodel findingmodel search "<target>" --limit 5
+uv run --env-file .env --with findingmodel --with openai findingmodel search "<target>" --limit 5
 ```
 
 For bulk triage in a batch flow, use `--limit 1` or `--limit 2` per target to keep output compact. For single-finding authoring, `--limit 5` on each of 2-3 targets is fine.
@@ -50,7 +50,7 @@ See `synonym_rules.md` for the full list.
 ## Determining the file path for an existing model
 
 ```bash
-uv run --env-file .env --with findingmodel python -c "from findingmodel.common import model_file_name; print(model_file_name('<finding name>'))"
+uv run --env-file .env --with findingmodel --with openai python -c "from findingmodel.common import model_file_name; print(model_file_name('<finding name>'))"
 ```
 
 The function returns the snake-cased stem; the file is at `defs/<stem>.fm.json`. Confirm with `ls defs/<stem>.fm.json` before editing.

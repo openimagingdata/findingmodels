@@ -49,4 +49,18 @@ A synonym should belong to exactly one finding model. Before adding a synonym, r
 - **Already on a different model that means something different** — the term is ambiguous. Do NOT add it. Leave it off both models and flag the ambiguity.
 - **Not found elsewhere** — safe to add.
 
-The unscoped short form of a self-describing name (e.g., `mass` as a synonym on `pulmonary mass`) is the most common collision hazard — scope the check accordingly.
+The unscoped short form of a self-describing name (e.g., `mass` as a synonym on `pulmonary mass`) is the most common collision hazard — scope the check accordingly. See `naming.md` for when to keep vs drop the short form.
+
+## Pre-emptive cross-body-region check
+
+Even when the corpus doesn't currently contain a colliding model, consider whether the term is canonically used for a **different finding in another body region or specialty**. If yes, don't add it as a synonym — the future colliding model is predictable, and the cross-body ambiguity fails the same-meaning-same-specificity test regardless of current corpus state.
+
+Common traps:
+
+- `follicular cyst` — ovarian follicular cyst (gynecology) vs dentigerous cyst (dental)
+- `cavernous hemangioma` — true vascular tumor in orbit/liver vs common misnomer for cerebral cavernous malformation
+- `adenoma` — pituitary, adrenal, thyroid, and colonic adenomas are all distinct findings
+- `carcinoid` — appendiceal, pulmonary, ileal
+- `nodule` — pulmonary, thyroid, adrenal, hepatic — rarely works as a bare synonym
+
+When a term is an established canonical or near-canonical name for a different finding in another region, drop it.
