@@ -23,13 +23,6 @@ from pathlib import Path
 
 STANDARD_PRESENCE_VALUES = {"absent", "present", "indeterminate", "unknown"}
 STANDARD_CHANGE_VALUES = {"unchanged", "stable", "new", "resolved"}
-DIRECTION_PAIRS = [
-    ("larger", "smaller"),
-    ("increased", "decreased"),
-    ("worsened", "improved"),
-    ("wider", "narrower"),
-    ("higher", "lower"),
-]
 
 
 def check_underscores(name: str, context: str) -> str | None:
@@ -170,14 +163,6 @@ def review_model(filepath: str, fix: bool = False) -> list[dict]:
             missing = STANDARD_CHANGE_VALUES - value_names
             if missing:
                 add("warning", f"Change from prior missing standard values: {sorted(missing)}")
-
-            # Check for at least one direction pair
-            has_direction = any(
-                a in value_names and b in value_names
-                for a, b in DIRECTION_PAIRS
-            )
-            if not has_direction:
-                add("warning", "Change from prior has no direction-of-change pair (e.g., larger/smaller, increased/decreased)")
 
     # Check all attributes for naming issues
     for i, attr in enumerate(attributes):

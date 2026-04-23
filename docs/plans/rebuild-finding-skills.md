@@ -237,6 +237,7 @@ Move `create_model.py`, `fix_stub.py`, `review_model.py`, `update_csv.py` from `
 
 1. **External-reference grep first.** Before moving, grep the repo for any reference to `.claude/skills/new-finding/scripts/` outside the skill folder itself. Anything found outside the folder must be updated in the same commit as the move, or the reference silently breaks.
 2. **Fix the CONTRIBUTORS dict gap.** `create_model.py` and `fix_stub.py` each contain a `CONTRIBUTORS` dict missing entries for `MGB`, `MSFT`, and `RSNA` — organization codes referenced as `organization_code` on the person entries. `prompts/defaults.yml` now lists all of them. Add matching entries to both scripts (sync the two dicts) so a user invoking `--contributor talkasab MGB` does not fail.
+3. **Drop the no-direction-pair WARNING in `review_model.py`.** `create_model.py` now emits the minimum-set `change from prior` by default per `presence_and_change.md`, but `review_model.py` still warned on every model without a direction pair. Delete the check (and the `DIRECTION_PAIRS` constant it referenced); pair-appropriateness is a quality-review judgment, not a mechanical lint check.
 
 **Phase 5 — skills.**
 Write `finding-author/SKILL.md`, `finding-batch/SKILL.md`, `finding-review/SKILL.md`. User reviews.
