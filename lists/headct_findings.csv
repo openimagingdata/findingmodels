@@ -1,0 +1,491 @@
+id,name,category,parent_id,synonyms,finding_type
+HID0200,brain_parenchymal_abnormality,brain_parenchyma,,,
+HID0205,hypoattenuation,brain_parenchyma,HID0200,"hypodensity, low attenuation, decreased attenuation",observation
+HID0210,hyperattenuation,brain_parenchyma,HID0200,"hyperdensity, high attenuation, increased attenuation",observation
+HID0250,early_infarct_sign,brain_parenchyma,HID0200,,observation
+HID0255,insular_ribbon_sign,brain_parenchyma,HID0250,loss of insular ribbon,observation
+HID0260,gray_white_matter_indistinction,brain_parenchyma,HID0200,"loss of gray-white differentiation, loss of gray-white junction",observation
+HID0300,mass_effect,brain_parenchyma,HID0200,,observation
+HID0305,midline_shift,brain_parenchyma,HID0300,midline deviation,observation
+HID0310,sulcal_effacement,brain_parenchyma,HID0300,"effaced sulci, sulcal crowding",observation
+HID0315,effacement_of_basal_cisterns,brain_parenchyma,HID0300,compressed cisterns,observation
+HID0320,ventricular_effacement,brain_parenchyma,HID0300,"compressed ventricles, third ventricle narrowing, cerebral aqueduct narrowing, narrowing of the third ventricle and cerebral aqueduct, narrowing of the cerebral aqueduct",observation
+HID0350,herniation,brain_parenchyma,HID0300,"brain herniation, cerebral herniation",observation
+HID0355,subfalcine_herniation,brain_parenchyma,HID0350,subfalcine shift,observation
+HID0400,descending_transtentorial_herniation,brain_parenchyma,HID0350,"descending transtentorial hernia, DTH",observation
+HID0450,uncal_herniation,brain_parenchyma,HID0400,,observation
+HID0455,medialization_of_uncus,brain_parenchyma,HID0450,"uncal medialization, uncal displacement",observation
+HID0460,central_transtentorial_herniation,brain_parenchyma,HID0400,central herniation,observation
+HID0465,ascending_transtentorial_herniation,brain_parenchyma,HID0350,"upward transtentorial herniation, upward herniation, ascending transtentorial hernia",observation
+HID0470,cerebellar_tonsillar_herniation,brain_parenchyma,HID0350,"tonsillar herniation, foramen magnum herniation",observation
+HID0475,transalar_herniation,brain_parenchyma,HID0350,"transalar hernia, sphenoid wing herniation",observation
+HID0480,extracranial_herniation,brain_parenchyma,HID0350,"transcalvarial herniation, external herniation, transdural herniation, transcranial herniation",observation
+HID0500,intra_axial_lesion,brain_parenchyma,HID0200,"brain lesion, intraparenchymal lesion, brain mass, intraparenchymal mass",observation
+HID0505,intra_axial_cyst,brain_parenchyma,HID0500,"brain cyst, parenchymal cyst",observation
+HID0550,cerebral_atrophy,brain_parenchyma,HID0200,"brain atrophy, brain volume loss, cerebral volume loss",observation
+HID0555,generalized_atrophy,brain_parenchyma,HID0550,"diffuse cerebral atrophy, global atrophy, diffuse brain atrophy, generalized cerebral atrophy, prominent ventricles and sulci, the ventricles and sulci are prominent, enlarged ventricles and sulci, prominent ventricles and cortical sulci",observation
+HID0560,focal_atrophy,brain_parenchyma,HID0550,"regional atrophy, focal volume loss",observation
+HID0565,enlarged_perivascular_space,brain_parenchyma,HID0200,"dilated Virchow-Robin space, prominent perivascular space, dilated perivascular space, enlarged perivascular spaces",observation
+HID0570,parenchymal_calcification,brain_parenchyma,HID0200,"brain parenchymal calcification, focal brain calcification",observation
+HID0580,thalamic_fusion,brain_parenchyma,HID0200,"fused thalami, thalamic non-separation",observation
+HID0585,cerebral_hemispheric_fusion,brain_parenchyma,HID0200,"hemispheric fusion, hemispheric non-separation, midline hemispheric fusion, frontal lobe fusion",observation
+HID0600,abnormal_enhancement,brain_parenchyma,HID0200,"abnormal contrast uptake, pathologic enhancement",observation
+HID0605,ring_enhancement,brain_parenchyma,HID0600,rim enhancement,observation
+HID0650,cerebral_edema,brain_parenchyma,HID0200,brain edema,diagnosis
+HID0655,vasogenic_edema,brain_parenchyma,HID0650,,diagnosis
+HID0660,cytotoxic_edema,brain_parenchyma,HID0650,cellular edema,diagnosis
+HID0665,transependymal_edema,brain_parenchyma,HID0650,"interstitial edema, periventricular edema",diagnosis
+HID0700,encephalomalacia,brain_parenchyma,HID0200,,diagnosis
+HID0705,cystic_encephalomalacia,brain_parenchyma,HID0700,,diagnosis
+HID0710,gliosis,brain_parenchyma,HID0200,reactive gliosis,diagnosis
+HID0750,ischemic_disease,brain_parenchyma,HID0200,,diagnosis
+HID0800,infarct,brain_parenchyma,HID0750,"cerebral infarct, cerebral infarction",diagnosis
+HID0850,hemorrhagic_transformation,brain_parenchyma,HID0800,hemorrhagic conversion,diagnosis
+HID0855,hemorrhagic_infarct,brain_parenchyma,HID0850,,diagnosis
+HID0860,lacunar_infarct,brain_parenchyma,HID0800,lacune,diagnosis
+HID0900,territorial_infarct,brain_parenchyma,HID0800,"territorial infarction, large vascular territory infarct, large vessel territory infarct, major vascular territory infarct",diagnosis
+HID0905,middle_cerebral_artery_territory_infarct,brain_parenchyma,HID0900,"MCA territory infarct, MCA infarct, middle cerebral artery infarct",diagnosis
+HID0910,posterior_cerebral_artery_territory_infarct,brain_parenchyma,HID0900,"PCA territory infarct, PCA infarct, posterior cerebral artery infarct",diagnosis
+HID0915,anterior_cerebral_artery_territory_infarct,brain_parenchyma,HID0900,"ACA territory infarct, ACA infarct, anterior cerebral artery infarct",diagnosis
+HID0920,posterior_inferior_cerebellar_artery_territory_infarct,brain_parenchyma,HID0900,"PICA territory infarct, PICA infarct, posterior inferior cerebellar artery infarct",diagnosis
+HID0925,anterior_inferior_cerebellar_artery_territory_infarct,brain_parenchyma,HID0900,"AICA territory infarct, AICA infarct, anterior inferior cerebellar artery infarct",diagnosis
+HID0930,superior_cerebellar_artery_territory_infarct,brain_parenchyma,HID0900,"SCA territory infarct, SCA infarct, superior cerebellar artery infarct",diagnosis
+HID0935,striatocapsular_infarct,brain_parenchyma,HID0800,"striatocapsular infarction, basal ganglionic capsular infarct",diagnosis
+HID0950,brainstem_infarct,brain_parenchyma,HID0800,"brainstem infarction, brain stem infarct",diagnosis
+HID0955,pontine_infarct,brain_parenchyma,HID0950,"pontine infarction, pons infarct",diagnosis
+HID1000,medullary_infarct,brain_parenchyma,HID0950,medullary infarction,diagnosis
+HID1005,lateral_medullary_infarct,brain_parenchyma,HID1000,,diagnosis
+HID1010,medial_medullary_infarct,brain_parenchyma,HID1000,,diagnosis
+HID1015,midbrain_infarct,brain_parenchyma,HID0950,"midbrain infarction, mesencephalic infarct",diagnosis
+HID1020,watershed_infarct,brain_parenchyma,HID0800,"border zone infarct, hemodynamic infarct",diagnosis
+HID1025,venous_infarct,brain_parenchyma,HID0800,venous infarction,diagnosis
+HID1030,small_vessel_ischemic_disease,brain_parenchyma,HID0750,"SVID, small vessel disease, chronic microvascular ischemic changes",diagnosis
+HID1035,hypoxic_ischemic_encephalopathy,brain_parenchyma,HID0750,"HIE, anoxic brain injury, hypoxic brain injury",diagnosis
+HID1050,intracranial_hemorrhage,brain_parenchyma,HID0200,"ICH, intracranial bleeding",diagnosis
+HID1055,parenchymal_hematoma,brain_parenchyma,HID1050,"intraparenchymal hemorrhage, IPH, intracerebral hemorrhage, brain hemorrhage",diagnosis
+HID1057,catheter_tract_hemorrhage,brain_parenchyma,HID1055,"catheter tract hematoma, tract hemorrhage, tract hematoma, EVD tract hemorrhage, ventriculostomy tract hemorrhage",diagnosis
+HID1060,cerebral_contusion,brain_parenchyma,HID0200,"brain contusion, hemorrhagic contusion",diagnosis
+HID1100,cerebral_infection,brain_parenchyma,HID0200,,diagnosis
+HID1105,cerebritis,brain_parenchyma,HID1100,,diagnosis
+HID1110,cerebral_abscess,brain_parenchyma,HID1100,brain abscess,diagnosis
+HID1150,encephalitis,brain_parenchyma,HID1100,,diagnosis
+HID1200,viral_encephalitis,brain_parenchyma,HID1150,,diagnosis
+HID1205,herpes_simplex_encephalitis,brain_parenchyma,HID1200,"herpes encephalitis, HSV encephalitis",diagnosis
+HID1210,neurocysticercosis,brain_parenchyma,HID1100,NCC,diagnosis
+HID1250,brain_neoplasm,brain_parenchyma,HID0200,brain tumor,diagnosis
+HID1255,brain_metastasis,brain_parenchyma,HID1250,"cerebral metastasis, brain met",diagnosis
+HID1300,glioma,brain_parenchyma,HID1250,glial neoplasm,diagnosis
+HID1305,astrocytoma,brain_parenchyma,HID1300,,diagnosis
+HID1310,oligodendroglioma,brain_parenchyma,HID1300,,diagnosis
+HID1315,glioblastoma,brain_parenchyma,HID1300,"GBM, glioblastoma multiforme",diagnosis
+HID1350,pineal_parenchymal_tumor,brain_parenchyma,HID1250,,diagnosis
+HID1355,pineoblastoma,brain_parenchyma,HID1350,,diagnosis
+HID1360,pineocytoma,brain_parenchyma,HID1350,,diagnosis
+HID1365,pineal_parenchymal_tumor_of_intermediate_differentiation,brain_parenchyma,HID1350,PPTID,diagnosis
+HID1370,diffuse_axonal_injury,brain_parenchyma,HID0200,"DAI, shear injury, diffuse traumatic axonal injury",diagnosis
+HID1680,congenital_brain_malformation,brain_parenchyma,HID0200,congenital brain anomaly,diagnosis
+HID1685,posterior_fossa_malformation,brain_parenchyma,HID1680,,diagnosis
+HID1400,chiari_malformation,brain_parenchyma,HID1685,,diagnosis
+HID1405,chiari_i_malformation,brain_parenchyma,HID1400,"Chiari I, Chiari 1, Chiari malformation type I, Chiari malformation type 1",diagnosis
+HID1410,chiari_ii_malformation,brain_parenchyma,HID1400,"Chiari II, Chiari 2, Chiari malformation type II, Chiari malformation type 2, Arnold-Chiari malformation",diagnosis
+HID1415,chiari_iii_malformation,brain_parenchyma,HID1400,"Chiari III, Chiari 3, Chiari malformation type III, Chiari malformation type 3",diagnosis
+HID1690,dandy_walker_malformation,brain_parenchyma,HID1685,"Dandy-Walker, DWM, Dandy-Walker syndrome, classic Dandy-Walker",diagnosis
+HID1450,corpus_callosum_dysgenesis,brain_parenchyma,HID1680,callosal dysgenesis,diagnosis
+HID1455,agenesis_of_corpus_callosum,brain_parenchyma,HID1450,callosal agenesis,diagnosis
+HID1460,partial_agenesis_of_corpus_callosum,brain_parenchyma,HID1450,"callosal hypogenesis, corpus callosum hypogenesis",diagnosis
+HID1695,holoprosencephaly,brain_parenchyma,HID1680,"HPE, prosencephalic malformation, holoprosencephaly spectrum",diagnosis
+HID1696,alobar_holoprosencephaly,brain_parenchyma,HID1695,alobar HPE,diagnosis
+HID1697,semilobar_holoprosencephaly,brain_parenchyma,HID1695,semilobar HPE,diagnosis
+HID1698,lobar_holoprosencephaly,brain_parenchyma,HID1695,lobar HPE,diagnosis
+HID1500,malformation_of_cortical_development,brain_parenchyma,HID1680,"MCD, cortical malformation",diagnosis
+HID1550,heterotopia,brain_parenchyma,HID1500,gray matter heterotopia,diagnosis
+HID1555,nodular_heterotopia,brain_parenchyma,HID1550,,diagnosis
+HID1560,subependymal_heterotopia,brain_parenchyma,HID1550,periventricular heterotopia,diagnosis
+HID1600,lissencephaly,brain_parenchyma,HID1500,"smooth brain, lissencephaly spectrum",diagnosis
+HID1605,agyria,brain_parenchyma,HID1600,,diagnosis
+HID1610,pachygyria,brain_parenchyma,HID1600,,diagnosis
+HID1615,band_heterotopia,brain_parenchyma,HID1600,"subcortical band heterotopia, double cortex",diagnosis
+HID1620,polymicrogyria,brain_parenchyma,HID1500,PMG,diagnosis
+HID1625,focal_cortical_dysplasia,brain_parenchyma,HID1500,FCD,diagnosis
+HID1700,schizencephaly,brain_parenchyma,HID1500,,diagnosis
+HID1702,cephalocele,brain_parenchyma,HID1680,"encephalocele, meningocele, meningoencephalocele, cranial meningocele, cranium bifidum",diagnosis
+HID1630,posterior_reversible_encephalopathy_syndrome,brain_parenchyma,HID0200,"PRES, reversible posterior leukoencephalopathy syndrome, RPLS",diagnosis
+HID1635,pineal_cyst,brain_parenchyma,HID0200,pineal region cyst,observation
+HID1640,pineal_lesion,brain_parenchyma,HID0200,"pineal mass, pineal region mass, pineal region lesion",observation
+HID1645,ependymoma,brain_parenchyma,HID1250,ependymal tumor,diagnosis
+HID1650,medulloblastoma,brain_parenchyma,HID1250,,diagnosis
+HID1655,primary_cns_lymphoma,brain_parenchyma,HID1250,"PCNSL, CNS lymphoma, primary brain lymphoma, cerebral lymphoma",diagnosis
+HID1660,pilocytic_astrocytoma,brain_parenchyma,HID1305,"JPA, juvenile pilocytic astrocytoma, cystic cerebellar astrocytoma",diagnosis
+HID1665,subependymal_giant_cell_astrocytoma,brain_parenchyma,HID1305,SEGA,diagnosis
+HID1670,hemangioblastoma,brain_parenchyma,HID1250,cerebellar hemangioblastoma,diagnosis
+HID1675,intracranial_germ_cell_tumor,brain_parenchyma,HID1250,"germinoma, intracranial germinoma, CNS germ cell tumor",diagnosis
+HID1705,neurosarcoidosis,brain_parenchyma,HID0200,"CNS sarcoidosis, cerebral sarcoidosis, sarcoidosis brain",diagnosis
+HID1710,osmotic_demyelination_syndrome,brain_parenchyma,HID0200,"ODS, central pontine myelinolysis, CPM, extrapontine myelinolysis",diagnosis
+HID1800,brain_parenchymal_anatomic_variant,brain_parenchyma,,,
+HID1805,cerebellar_tonsillar_ectopia,brain_parenchyma,HID1800,"tonsillar ectopia, low-lying cerebellar tonsils, cerebellar tonsil descent, cerebellar ectopia, tonsillar descent",observation
+HID2000,brain_parenchymal_postsurgical_change,brain_parenchyma,,,
+HID2005,resection_cavity,brain_parenchyma,HID2000,"surgical cavity, post-resection cavity, postoperative cavity",observation
+HID2200,sellar_abnormality,sella_turcica,,,
+HID2250,sellar_mass,sella_turcica,HID2200,"suprasellar mass, intrasellar mass, sellar and suprasellar mass",
+HID2300,pituitary_adenoma,sella_turcica,HID2250,pituitary tumor,diagnosis
+HID2305,pituitary_macroadenoma,sella_turcica,HID2300,macroadenoma,diagnosis
+HID2310,expanded_sella,sella_turcica,HID2200,"enlarged sella, expanded sella turcica, sella enlargement, enlarged pituitary fossa, expanded pituitary fossa, ballooned sella",observation
+HID2315,sellar_calcification,sella_turcica,HID2200,"calcification in sella, sellar region calcification",observation
+HID2350,empty_sella,sella_turcica,HID2200,"empty pituitary fossa, CSF-filled sella",diagnosis
+HID2355,partially_empty_sella,sella_turcica,HID2350,partial empty sella,diagnosis
+HID2360,pituitary_hemorrhage,sella_turcica,HID2200,sellar hemorrhage,diagnosis
+HID2365,pituitary_apoplexy,sella_turcica,HID2200,,diagnosis
+HID2370,craniopharyngioma,sella_turcica,HID2200,,diagnosis
+HID2375,rathke_cleft_cyst,sella_turcica,HID2200,Rathke pouch cyst,diagnosis
+HID2400,sellar_postsurgical_change,sella_turcica,,,
+HID2405,transsphenoidal_surgery,sella_turcica,HID2400,"post transsphenoidal resection, transsphenoidal approach changes, endoscopic endonasal surgery, endoscopic transsphenoidal surgery",observation
+HID2600,extra_axial_abnormality,extra_axial,,,
+HID2650,extra_axial_collection,extra_axial,HID2600,"extra-axial fluid, extra-axial fluid collection",observation
+HID2653,subdural_collection,extra_axial,HID2650,"subdural fluid collection, subdural fluid, subdural fluid accumulation",observation
+HID2655,subdural_hygroma,extra_axial,HID2653,"subdural CSF collection, low-attenuation subdural fluid, low-density subdural fluid, low-attenuation subdural collection, CSF-density subdural collection",observation
+HID2660,extra_axial_csf_collection,extra_axial,HID2650,,observation
+HID2665,prominent_extra_axial_spaces,extra_axial,HID2650,enlarged subarachnoid spaces,observation
+HID2700,extra_axial_cyst,extra_axial,HID2600,,
+HID2705,arachnoid_cyst,extra_axial,HID2700,,diagnosis
+HID2710,epidermoid_cyst,extra_axial,HID2700,"epidermoid, epidermoid tumor",diagnosis
+HID2715,dermoid_cyst,extra_axial,HID2700,"intracranial dermoid, dermoid tumor",diagnosis
+HID2720,intracranial_lipoma,extra_axial,HID2600,"meningeal lipoma, lipomatous hamartoma",diagnosis
+HID2725,intracranial_fat,extra_axial,HID2600,"macroscopic intracranial fat, macroscopic midline fat, extra-axial fat, fat density intracranial",observation
+HID2750,extra_axial_lesion,extra_axial,HID2600,"extra-axial mass, extra-axial lesion",observation
+HID2755,dural_based_lesion,extra_axial,HID2750,"dural-based mass, dural mass",observation
+HID2760,cerebellopontine_angle_lesion,extra_axial,HID2750,"CPA lesion, CPA mass",observation
+HID2765,dural_thickening,extra_axial,HID2600,pachymeningeal thickening,observation
+HID2770,dural_enhancement,extra_axial,HID2600,"pachymeningeal enhancement, dural contrast uptake",observation
+HID2775,leptomeningeal_enhancement,extra_axial,HID2600,"pial enhancement, pia-arachnoid enhancement",observation
+HID2800,pneumocephalus,extra_axial,HID2600,"intracranial air, pneumocranium",observation
+HID2805,tension_pneumocephalus,extra_axial,HID2800,tension pneumocranium,observation
+HID2845,extra_axial_calcification,extra_axial,HID2600,,observation
+HID2850,dural_calcification,extra_axial,HID2845,,observation
+HID2855,falcine_calcification,extra_axial,HID2850,"falx calcification, calcified falx",observation
+HID2860,tentorial_calcification,extra_axial,HID2850,calcified tentorium,observation
+HID2865,falcine_dysgenesis,extra_axial,HID2600,"absent falx, partial falx, absent falx cerebri, falcine hypoplasia, absent interhemispheric fissure, partial interhemispheric fissure",observation
+HID2900,extra_axial_hemorrhage,extra_axial,HID2600,"extra-axial blood, extra-axial hematoma",diagnosis
+HID2950,subdural_hemorrhage,extra_axial,HID2900,"subdural hematoma, SDH",diagnosis
+HID2955,acute_subdural_hemorrhage,extra_axial,HID2950,"acute SDH, acute subdural hematoma",diagnosis
+HID2960,subacute_subdural_hemorrhage,extra_axial,HID2950,"subacute SDH, subacute subdural hematoma",diagnosis
+HID2965,chronic_subdural_hemorrhage,extra_axial,HID2950,"chronic SDH, chronic subdural hematoma",diagnosis
+HID3000,subarachnoid_hemorrhage,extra_axial,HID2900,"SAH, subarachnoid blood",diagnosis
+HID3005,perimesencephalic_subarachnoid_hemorrhage,extra_axial,HID3000,"perimesencephalic SAH, pnSAH",diagnosis
+HID3010,epidural_hemorrhage,extra_axial,HID2900,"epidural hematoma, EDH",diagnosis
+HID3050,extra_axial_neoplasm,extra_axial,HID2600,,diagnosis
+HID3055,meningioma,extra_axial,HID3050,,diagnosis
+HID3060,vestibular_schwannoma,extra_axial,HID3050,"acoustic neuroma, acoustic schwannoma, CN VIII schwannoma",diagnosis
+HID3065,leptomeningeal_metastasis,extra_axial,HID3050,"leptomeningeal carcinomatosis, carcinomatous meningitis, meningeal carcinomatosis",diagnosis
+HID3100,extra_axial_infection,extra_axial,HID2600,,diagnosis
+HID3105,meningitis,extra_axial,HID3100,,diagnosis
+HID3110,subdural_empyema,extra_axial,HID3100,infected subdural collection,diagnosis
+HID3200,extra_axial_anatomic_variant,extra_axial,,,
+HID3205,arachnoid_granulation,extra_axial,HID3200,Pacchionian granulation,observation
+HID3210,mega_cisterna_magna,extra_axial,HID3200,"enlarged cisterna magna, prominent cisterna magna, megacisterna magna",observation
+HID3400,extra_axial_postsurgical_change,extra_axial,,,
+HID3405,duraplasty,extra_axial,HID3400,"dural graft, dural repair, dural patch",observation
+HID3600,ventricular_abnormality,ventricular,,,
+HID3650,ventriculomegaly,ventricular,HID3600,"enlarged ventricles, dilated ventricles",observation
+HID3655,ex_vacuo_ventricular_dilation,ventricular,HID3650,"ex vacuo dilatation, compensatory ventriculomegaly, passive ventricular enlargement",observation
+HID3660,small_ventricular_caliber,ventricular,HID3600,"small ventricles, slit ventricles, slit-like ventricles",observation
+HID3665,monoventricle,ventricular,HID3600,"single midline ventricle, single ventricular cavity, holoventricle",observation
+HID3670,ventricular_horn_hypoplasia,ventricular,HID3600,"rudimentary ventricular horn, rudimentary temporal horn, rudimentary occipital horn, underdeveloped ventricular horn",observation
+HID3700,ventricular_entrapment,ventricular,HID3600,"trapped ventricle, isolated ventricle",observation
+HID3705,temporal_horn_entrapment,ventricular,HID3700,trapped temporal horn,observation
+HID3710,intraventricular_debris,ventricular,HID3600,"ventricular debris, intraventricular sediment",observation
+HID3750,intraventricular_mass,ventricular,HID3600,,observation
+HID3755,colloid_cyst,ventricular,HID3750,,observation
+HID3760,subependymal_nodule,ventricular,HID3600,,observation
+HID3765,choroid_plexus_cyst,ventricular,HID3600,,observation
+HID3800,hydrocephalus,ventricular,HID3600,,diagnosis
+HID3805,obstructive_hydrocephalus,ventricular,HID3800,"non-communicating hydrocephalus, intraventricular obstructive hydrocephalus",diagnosis
+HID3810,communicating_hydrocephalus,ventricular,HID3800,extraventricular obstructive hydrocephalus,diagnosis
+HID3815,normal_pressure_hydrocephalus,ventricular,HID3800,NPH,diagnosis
+HID3820,intraventricular_hemorrhage,ventricular,HID3600,"IVH, ventricular hemorrhage, intraventricular blood products",diagnosis
+HID3825,ventriculitis,ventricular,HID3600,"pyocephalus, ventricular infection, ependymitis",diagnosis
+HID3850,intraventricular_neoplasm,ventricular,HID3600,,diagnosis
+HID3855,choroid_plexus_papilloma,ventricular,HID3850,CPP,diagnosis
+HID3860,choroid_plexus_carcinoma,ventricular,HID3850,CPCa,diagnosis
+HID4000,ventricular_anatomic_variant,ventricular,,,
+HID4005,cavum_septum_pellucidum,ventricular,HID4000,"CSP, cavum septi pellucidi, fifth ventricle",observation
+HID4010,cavum_vergae,ventricular,HID4000,"sixth ventricle, cavum psalterii",observation
+HID4015,cavum_velum_interpositum,ventricular,HID4000,"CVI, cavum veli interpositi",observation
+HID4200,ventricular_postsurgical_change,ventricular,,,
+HID4205,ventriculostomy,ventricular,HID4200,"EVD, external ventricular drain, shunted ventricles",observation
+HID4400,vascular_abnormality,vasculature,,,
+HID4405,hyperdense_artery_sign,vasculature,HID4400,"dense vessel sign, dot sign",observation
+HID4410,dense_sinus_sign,vasculature,HID4400,hyperdense sinus,observation
+HID4415,empty_delta_sign,vasculature,HID4400,empty triangle sign,observation
+HID4420,cord_sign,vasculature,HID4400,hyperdense cortical vein,observation
+HID4425,intracranial_vascular_calcification,vasculature,HID4400,arterial wall calcification,observation
+HID4430,active_contrast_extravasation,vasculature,HID4400,"spot sign, contrast blush, active extravasation",observation
+HID4435,intracranial_arterial_stenosis,vasculature,HID4400,intracranial arterial narrowing,observation
+HID4450,large_vessel_occlusion,vasculature,HID4400,LVO,observation
+HID4455,middle_cerebral_artery_occlusion,vasculature,HID4450,MCA occlusion,observation
+HID4460,internal_carotid_artery_occlusion,vasculature,HID4450,"ICA occlusion, carotid occlusion",observation
+HID4465,basilar_artery_occlusion,vasculature,HID4450,"BAO, basilar occlusion",observation
+HID4470,intracranial_dolichoectasia,vasculature,HID4400,dolichoectasia,observation
+HID4500,intracranial_aneurysm,vasculature,HID4400,cerebral aneurysm,diagnosis
+HID4505,saccular_aneurysm,vasculature,HID4500,berry aneurysm,diagnosis
+HID4510,fusiform_aneurysm,vasculature,HID4500,,diagnosis
+HID4550,cerebral_venous_thrombosis,vasculature,HID4400,CVT,diagnosis
+HID4555,dural_venous_sinus_thrombosis,vasculature,HID4550,CVST,diagnosis
+HID4560,cortical_vein_thrombosis,vasculature,HID4550,,diagnosis
+HID4600,intracranial_vascular_malformation,vasculature,HID4400,vascular malformation,diagnosis
+HID4605,arteriovenous_malformation,vasculature,HID4600,"AVM, cerebral AVM, pial AVM",diagnosis
+HID4610,cavernous_malformation,vasculature,HID4600,"cavernoma, cavernous hemangioma, cavernous angioma",diagnosis
+HID4615,dural_arteriovenous_fistula,vasculature,HID4400,"DAVF, dural AVF, dural fistula",diagnosis
+HID4620,intracranial_arterial_dissection,vasculature,HID4400,intracranial dissection,diagnosis
+HID4625,vasospasm,vasculature,HID4400,"cerebral vasospasm, arterial vasospasm",diagnosis
+HID4630,moyamoya,vasculature,HID4400,"moyamoya disease, moyamoya syndrome",diagnosis
+HID4635,carotid_cavernous_fistula,vasculature,HID4400,"CCF, carotid cavernous fistula, CC fistula",diagnosis
+HID4640,vein_of_galen_malformation,vasculature,HID4600,"VGAM, vein of Galen aneurysmal malformation, vein of Galen aneurysmal dilatation",diagnosis
+HID4645,cerebral_amyloid_angiopathy,vasculature,HID4400,"CAA, amyloid angiopathy",diagnosis
+HID4800,vascular_anatomic_variant,vasculature,,,
+HID4805,developmental_venous_anomaly,vasculature,HID4800,"DVA, venous angioma, medullary venous malformation",diagnosis
+HID4810,fetal_origin_posterior_cerebral_artery,vasculature,HID4800,"fetal PCA, fetal type PCA",observation
+HID4815,hypoplastic_artery_segment,vasculature,HID4800,,observation
+HID4820,absent_artery_segment,vasculature,HID4800,aplastic artery segment,observation
+HID4825,persistent_trigeminal_artery,vasculature,HID4800,"PTA, persistent primitive trigeminal artery",observation
+HID4830,arterial_fenestration,vasculature,HID4800,,observation
+HID4835,arterial_infundibulum,vasculature,HID4800,"infundibular dilation, vascular infundibulum",observation
+HID4840,venous_prominence,vasculature,HID4800,"prominent vein, prominent cerebral vein, prominent cortical vein",observation
+HID5000,osseous_abnormality,osseous,,,
+HID5050,fracture,osseous,HID5000,cranial fracture,observation
+HID5100,calvarial_fracture,osseous,HID5050,calvarial discontinuity,observation
+HID5105,depressed_fracture,osseous,HID5100,"depressed skull fracture, depressed calvarial fracture",observation
+HID5150,skull_base_fracture,osseous,HID5050,basilar skull fracture,observation
+HID5155,cribriform_plate_fracture,osseous,HID5150,cribriform fracture,observation
+HID5160,clivus_fracture,osseous,HID5150,clival fracture,observation
+HID5165,orbital_roof_fracture,osseous,HID5150,,observation
+HID5170,optic_canal_fracture,osseous,HID5150,,observation
+HID5200,facial_bone_fracture,osseous,HID5050,midface fracture,observation
+HID5250,orbital_fracture,osseous,HID5200,orbital wall fracture,observation
+HID5255,orbital_blowout_fracture,osseous,HID5250,"blowout fracture, orbital floor fracture, orbital floor blowout",observation
+HID5260,medial_orbital_wall_fracture,osseous,HID5250,lamina papyracea fracture,observation
+HID5265,nasal_fracture,osseous,HID5200,nasal bone fracture,observation
+HID5270,zygomatic_fracture,osseous,HID5200,"zygomatic arch fracture, malar fracture",observation
+HID5275,zygomaticomaxillary_complex_fracture,osseous,HID5200,"ZMC fracture, tripod fracture, trimalar fracture",observation
+HID5280,maxillary_fracture,osseous,HID5200,maxillary wall fracture,observation
+HID5285,le_fort_fracture,osseous,HID5200,Le Fort fracture,observation
+HID5290,naso_orbito_ethmoid_fracture,osseous,HID5200,NOE fracture,observation
+HID5300,temporal_bone_fracture,osseous,HID5050,"petrous bone fracture, petrous temporal fracture",observation
+HID5305,otic_capsule_fracture,osseous,HID5300,"labyrinthine fracture, cochlear fracture, otic capsule-violating fracture",observation
+HID5310,carotid_canal_fracture,osseous,HID5300,fracture involving carotid canal,observation
+HID5315,cervical_spine_fracture,osseous,HID5050,C-spine fracture,observation
+HID5320,sutural_diastasis,osseous,HID5000,"diastatic suture, widened suture, suture widening, diastatic fracture, diastatic skull fracture",observation
+HID5350,skull_lesion,osseous,HID5000,calvarial lesion,observation
+HID5355,benign_calvarial_lesion,osseous,HID5350,benign skull lesion,observation
+HID5360,calvarial_thickening,osseous,HID5000,"skull thickening, calvarial hyperostosis, diploic space thickening",observation
+HID5365,calvarial_osteopenia,osseous,HID5000,"skull osteopenia, calvarial demineralization, thinned calvarium",observation
+HID5370,osseous_remodeling,osseous,HID5000,"bony remodeling, bone contour remodeling, osseous contour remodeling",observation
+HID5400,osseous_neoplasm,osseous,HID5000,,diagnosis
+HID5405,calvarial_osteoma,osseous,HID5400,skull osteoma,diagnosis
+HID5410,calvarial_metastasis,osseous,HID5400,skull metastasis,diagnosis
+HID5415,intraosseous_hemangioma,osseous,HID5400,calvarial hemangioma,diagnosis
+HID5420,intradiploic_lipoma,osseous,HID5400,diploic lipoma,diagnosis
+HID5425,multiple_myeloma,osseous,HID5400,myeloma,diagnosis
+HID5430,plasmacytoma,osseous,HID5400,solitary bone plasmacytoma,diagnosis
+HID5435,langerhans_cell_histiocytosis,osseous,HID5400,"LCH, eosinophilic granuloma, histiocytosis X",diagnosis
+HID5440,skull_osteomyelitis,osseous,HID5000,"calvarial osteomyelitis, cranial osteomyelitis",diagnosis
+HID5445,fibrous_dysplasia,osseous,HID5000,fibrous dysplasia skull,diagnosis
+HID5450,paget_disease_of_skull,osseous,HID5000,"Paget skull, Paget disease calvarium",diagnosis
+HID5455,hyperostosis_frontalis_interna,osseous,HID5000,"HFI, frontal hyperostosis",diagnosis
+HID5460,craniosynostosis,osseous,HID5000,"premature suture fusion, craniostenosis, fused suture",diagnosis
+HID5500,degenerative_changes,osseous,HID5000,degenerative disease,diagnosis
+HID5505,cervical_spine_degenerative_changes,osseous,HID5500,"cervical spondylosis, C-spine DJD",diagnosis
+HID5600,osseous_postsurgical_change,osseous,,,
+HID5650,calvarial_surgery,osseous,HID5600,"prior cranial surgery, calvarial surgical change",observation
+HID5655,craniotomy,osseous,HID5650,"craniotomy defect, craniotomy flap, post craniotomy",observation
+HID5700,craniectomy,osseous,HID5650,"decompressive craniectomy, bone flap absent",observation
+HID5705,hemicraniectomy,osseous,HID5700,hemicranectomy,observation
+HID5710,cranioplasty,osseous,HID5650,"cranioplasty mesh, cranioplasty plate, skull reconstruction",observation
+HID5715,burr_hole,osseous,HID5650,"burr hole defect, twist drill hole",observation
+HID5720,cervical_spine_fusion,osseous,HID5600,"cervical fixation, cervical spine instrumentation",observation
+HID5725,open_reduction_internal_fixation,osseous,HID5600,"ORIF, open reduction and internal fixation, internal fixation, rigid fixation, plate and screw fixation, facial bone ORIF, maxillary ORIF, mandibular ORIF",observation
+HID5730,occipitocervical_fusion,osseous,HID5600,"OCF, occiput-to-cervical fusion, occipital-cervical fusion, occipital plate fixation",observation
+HID5800,osseous_anatomic_variant,osseous,,,
+HID5805,wormian_bone,osseous,HID5800,"sutural bone, wormian bones",observation
+HID5810,persistent_metopic_suture,osseous,HID5800,unfused frontal suture,observation
+HID5815,enlarged_parietal_foramen,osseous,HID5800,biparietal foramina,observation
+HID6000,dental_abnormality,dental,,,
+HID6005,periapical_lucency,dental,HID6000,periapical radiolucency,observation
+HID6010,dental_caries,dental,HID6000,"tooth decay, carious tooth, cavitated tooth",observation
+HID6015,impacted_tooth,dental,HID6000,"unerupted tooth, embedded tooth, impacted molar",observation
+HID6020,retained_root,dental,HID6000,"retained root fragment, residual root, root remnant",observation
+HID6025,missing_tooth,dental,HID6000,"absent tooth, missing teeth, edentulous, partially edentulous",observation
+HID6030,periodontal_bone_loss,dental,HID6000,"alveolar bone loss, alveolar bone resorption",observation
+HID6035,apical_periodontitis,dental,HID6000,"periapical infection, dental infection, dentoalveolar infection, dental abscess, dentoalveolar abscess",diagnosis
+HID6040,dentigerous_cyst,dental,HID6000,follicular cyst,diagnosis
+HID6045,periodontitis,dental,HID6000,"periodontal disease, chronic periodontitis",diagnosis
+HID6050,oroantral_fistula,dental,HID6000,"OAF, oro-antral fistula, odontogenic sinus fistula, dental-sinus fistula",diagnosis
+HID6055,oroantral_communication,dental,HID6000,"OAC, oro-antral communication, post-extraction oroantral defect",diagnosis
+HID6200,dental_anatomic_variant,dental,,,
+HID6205,supernumerary_tooth,dental,HID6200,"mesiodens, extra tooth, accessory tooth",observation
+HID6400,dental_postsurgical_change,dental,,,
+HID6405,dental_extraction,dental,HID6400,"tooth extraction, prior dental extraction",observation
+HID6410,dental_restoration,dental,HID6400,"dental filling, dental hardware, dental prosthesis",observation
+HID6415,dental_implant,dental,HID6400,"osseointegrated dental implant, dental post",observation
+HID6600,orbital_abnormality,orbit,,,
+HID6605,orbital_fat_stranding,orbit,HID6600,"retrobulbar fat stranding, intraorbital fat stranding",observation
+HID6610,proptosis,orbit,HID6600,"exophthalmos, globe protrusion, globe displacement anterior",observation
+HID6615,enophthalmos,orbit,HID6600,"posterior globe displacement, sunken globe",observation
+HID6620,extraocular_muscle_enlargement,orbit,HID6600,"extraocular muscle thickening, enlarged extraocular muscles, enlarged extraocular muscle",observation
+HID6625,extraocular_muscle_entrapment,orbit,HID6600,"muscle incarceration, entrapped muscle",observation
+HID6630,optic_nerve_sheath_enlargement,orbit,HID6600,"optic nerve sheath dilation, optic nerve sheath distension, optic nerve sheath prominence",observation
+HID6635,optic_nerve_enlargement,orbit,HID6600,"optic nerve thickening, enlarged optic nerve",observation
+HID6640,superior_ophthalmic_vein_dilation,orbit,HID6600,"dilated SOV, enlarged superior ophthalmic vein",observation
+HID6650,orbital_lesion,orbit,HID6600,"orbital mass, retrobulbar mass, retrobulbar lesion, intraorbital mass, intraorbital lesion",observation
+HID6655,lacrimal_gland_lesion,orbit,HID6650,"lacrimal gland mass, lacrimal fossa mass, lacrimal fossa lesion",observation
+HID6660,intraocular_lesion,orbit,HID6600,"intraocular mass, globe mass, globe lesion",observation
+HID6665,orbital_emphysema,orbit,HID6600,"intraorbital air, orbital air",observation
+HID6670,orbital_fat_herniation,orbit,HID6600,orbital fat prolapse,observation
+HID6675,globe_rupture,orbit,HID6600,"open globe, ruptured globe, open globe injury, globe disruption",observation
+HID6680,globe_calcification,orbit,HID6600,"calcified globe, calcified lens, lens calcification",observation
+HID6685,lens_dislocation,orbit,HID6600,"lens subluxation, dislocated lens, ectopia lentis, displaced lens",observation
+HID6690,traumatic_cataract,orbit,HID6600,"hypodense lens, lens swelling, lens edema",observation
+HID6695,retinal_detachment,orbit,HID6600,detached retina,observation
+HID6700,choroidal_detachment,orbit,HID6600,"choroidal effusion, suprachoroidal fluid",observation
+HID6750,orbital_hemorrhage,orbit,HID6600,,diagnosis
+HID6800,retrobulbar_hemorrhage,orbit,HID6750,"retro-ocular hemorrhage, retrobulbar hematoma",diagnosis
+HID6805,intraconal_hemorrhage,orbit,HID6800,intraconal hematoma,diagnosis
+HID6810,extraconal_hemorrhage,orbit,HID6800,extraconal hematoma,diagnosis
+HID6815,subperiosteal_hemorrhage,orbit,HID6750,subperiosteal orbital hematoma,diagnosis
+HID6850,intraocular_hemorrhage,orbit,HID6750,intraocular blood products,diagnosis
+HID6855,hyphema,orbit,HID6850,anterior chamber hemorrhage,diagnosis
+HID6860,vitreous_hemorrhage,orbit,HID6850,"vitreous blood, intravitreal hemorrhage",diagnosis
+HID6865,subretinal_hemorrhage,orbit,HID6850,subretinal blood,diagnosis
+HID6870,choroidal_hemorrhage,orbit,HID6850,"suprachoroidal hemorrhage, hemorrhagic choroidal detachment",diagnosis
+HID6900,orbital_inflammation,orbit,HID6600,orbital inflammatory disease,diagnosis
+HID6905,preseptal_cellulitis,orbit,HID6900,periorbital cellulitis,diagnosis
+HID6910,orbital_cellulitis,orbit,HID6900,"postseptal cellulitis, orbital phlegmon",diagnosis
+HID6950,orbital_abscess,orbit,HID6900,orbital abscess collection,diagnosis
+HID6955,subperiosteal_abscess,orbit,HID6950,orbital subperiosteal abscess,diagnosis
+HID6960,idiopathic_orbital_inflammation,orbit,HID6900,"orbital pseudotumor, non-specific orbital inflammation",diagnosis
+HID6965,dacryoadenitis,orbit,HID6900,lacrimal gland inflammation,diagnosis
+HID6970,thyroid_eye_disease,orbit,HID6900,"Graves orbitopathy, thyroid orbitopathy, thyroid-associated orbitopathy",diagnosis
+HID6975,orbital_myositis,orbit,HID6900,"extraocular muscle myositis, orbital muscle inflammation",diagnosis
+HID6980,posterior_scleritis,orbit,HID6900,posterior scleral inflammation,diagnosis
+HID6985,orbital_cavernous_venous_malformation,orbit,HID6600,"orbital cavernous hemangioma, cavernous hemangioma orbit, orbital hemangioma, orbital venous malformation, cavernous venous malformation orbit",diagnosis
+HID6990,orbital_dermoid,orbit,HID6600,"orbital dermoid cyst, dermoid cyst orbit",diagnosis
+HID7000,orbital_neoplasm,orbit,HID6600,,diagnosis
+HID7005,orbital_lymphoma,orbit,HID7000,ocular adnexal lymphoma,diagnosis
+HID7010,orbital_metastasis,orbit,HID7000,orbital metastatic disease,diagnosis
+HID7015,retinoblastoma,orbit,HID7000,,diagnosis
+HID7020,phthisis_bulbi,orbit,HID6600,"phthisical globe, end-stage globe",diagnosis
+HID7025,superior_ophthalmic_vein_thrombosis,orbit,HID6600,SOV thrombosis,diagnosis
+HID7200,orbital_postsurgical_change,orbit,,,
+HID7205,lens_implant,orbit,HID7200,"intraocular lens, IOL, pseudophakia",observation
+HID7210,prosthetic_globe,orbit,HID7200,"ocular prosthesis, artificial eye, prosthetic eye",observation
+HID7215,intraocular_silicone,orbit,HID7200,"silicone oil in globe, intraocular silicone oil, vitreous silicone",observation
+HID7400,soft_tissue_abnormality,soft_tissue,,,
+HID7405,soft_tissue_swelling,soft_tissue,HID7400,,observation
+HID7410,soft_tissue_edema,soft_tissue,HID7400,,diagnosis
+HID7450,soft_tissue_hematoma,soft_tissue,HID7400,,diagnosis
+HID7455,subgaleal_hematoma,soft_tissue,HID7450,subgaleal hemorrhage,diagnosis
+HID7460,cephalohematoma,soft_tissue,HID7450,"cephalhematoma, subperiosteal hematoma",diagnosis
+HID7500,soft_tissue_lesion,soft_tissue,HID7400,,
+HID7505,soft_tissue_epidermal_inclusion_cyst,soft_tissue,HID7500,"sebaceous cyst, epidermal inclusion cyst, epidermoid inclusion cyst, infundibular cyst, scalp cyst",diagnosis
+HID7510,soft_tissue_lipoma,soft_tissue,HID7500,,diagnosis
+HID7515,soft_tissue_dermoid_cyst,soft_tissue,HID7500,,diagnosis
+HID7550,soft_tissue_calcification,soft_tissue,HID7400,,observation
+HID7555,tonsillolith,soft_tissue,HID7550,"tonsillar calcification, tonsil stone, tonsillar concretion, palatine tonsil calcification",observation
+HID7560,subcutaneous_emphysema,soft_tissue,HID7400,"subcutaneous air, soft tissue gas, soft tissue emphysema",observation
+HID7600,sinonasal_abnormality,sinonasal,,,
+HID7605,sinus_mucosal_thickening,sinonasal,HID7600,mucosal thickening,observation
+HID7610,sinus_opacification,sinonasal,HID7600,opacified sinus,observation
+HID7615,sinus_air_fluid_level,sinonasal,HID7600,"air-fluid level in sinus, layering sinus fluid",observation
+HID7620,hyperattenuating_sinus_contents,sinonasal,HID7600,"hyperdense sinus contents, inspissated secretions, desiccated secretions",observation
+HID7625,sinus_wall_thickening,sinonasal,HID7600,"sinus wall sclerosis, sclerotic sinus walls",observation
+HID7630,sinus_wall_erosion,sinonasal,HID7600,"sinus wall destruction, bony erosion sinus",observation
+HID7635,sinus_expansion,sinonasal,HID7600,expanded sinus,observation
+HID7640,perisinus_fat_stranding,sinonasal,HID7600,"periantral fat infiltration, periantral fat stranding, extrasinus fat infiltration",observation
+HID7645,sinus_retention_cyst,sinonasal,HID7600,"mucous retention cyst, mucus retention cyst, sinus mucosal cyst",observation
+HID7648,sinus_polyp,sinonasal,HID7600,"solitary sinus polyp, paranasal sinus polyp, solitary sinonasal polyp, sinonasal polyp, mucosal polyp sinus",observation
+HID7649,antrochoanal_polyp,sinonasal,HID7648,"maxillary antrochoanal polyp, ACP, Killian polyp, maxillary choanal polyp",observation
+HID7650,sinonasal_polyposis,sinonasal,HID7600,"nasal polyposis, polypoid mucosal disease",observation
+HID7655,sinonasal_lesion,sinonasal,HID7600,"sinonasal mass, nasal mass, nasal cavity mass, nasal lesion",observation
+HID7660,nasal_septal_perforation,sinonasal,HID7600,septal perforation,observation
+HID7665,hemosinus,sinonasal,HID7600,"sinus hemorrhage, blood in sinus",diagnosis
+HID7700,paranasal_sinusitis,sinonasal,HID7600,"sinusitis, inflammatory sinus disease",diagnosis
+HID7705,maxillary_sinusitis,sinonasal,HID7700,,diagnosis
+HID7710,ethmoid_sinusitis,sinonasal,HID7700,,diagnosis
+HID7715,frontal_sinusitis,sinonasal,HID7700,,diagnosis
+HID7720,sphenoid_sinusitis,sinonasal,HID7700,,diagnosis
+HID7750,fungal_sinusitis,sinonasal,HID7600,fungal sinus disease,diagnosis
+HID7755,allergic_fungal_sinusitis,sinonasal,HID7750,AFS,diagnosis
+HID7760,sinus_fungal_ball,sinonasal,HID7750,sinus mycetoma,diagnosis
+HID7765,invasive_fungal_sinusitis,sinonasal,HID7750,aggressive fungal sinusitis,diagnosis
+HID7800,sinus_mucocele,sinonasal,HID7600,,diagnosis
+HID7805,mucopyocele,sinonasal,HID7800,infected mucocele,diagnosis
+HID7850,sinonasal_neoplasm,sinonasal,HID7600,,diagnosis
+HID7855,inverted_papilloma,sinonasal,HID7850,inverting papilloma,diagnosis
+HID7860,esthesioneuroblastoma,sinonasal,HID7850,olfactory neuroblastoma,diagnosis
+HID7865,sinonasal_carcinoma,sinonasal,HID7850,nasal cavity carcinoma,diagnosis
+HID8000,sinonasal_anatomic_variant,sinonasal,,,
+HID8005,nasal_septal_deviation,sinonasal,HID8000,"deviated nasal septum, DNS, septal deviation",observation
+HID8010,nasal_septal_spur,sinonasal,HID8000,"septal spur, bony nasal spur",observation
+HID8015,concha_bullosa,sinonasal,HID8000,"pneumatized middle turbinate, aerated concha",observation
+HID8020,non_pneumatized_sinus,sinonasal,HID8000,"sinus aplasia, sinus hypoplasia",observation
+HID8025,sinus_wall_dehiscence,sinonasal,HID8000,sinus wall defect,observation
+HID8030,haller_cell,sinonasal,HID8000,"infraorbital ethmoid cell, infraorbital cell",observation
+HID8035,onodi_cell,sinonasal,HID8000,sphenoethmoid cell,observation
+HID8200,sinonasal_postsurgical_change,sinonasal,,,
+HID8250,sinonasal_surgery,sinonasal,HID8200,"post FESS, functional endoscopic sinus surgery, sinus surgery",observation
+HID8255,ethmoidectomy,sinonasal,HID8250,,observation
+HID8400,temporal_bone_abnormality,temporal_bone,,,
+HID8405,mastoid_opacification,temporal_bone,HID8400,"mastoid air cell opacification, opacified mastoid",observation
+HID8406,mastoid_fluid,temporal_bone,HID8405,"mastoid effusion, fluid in mastoid air cells, mastoid air cell fluid",observation
+HID8410,hypopneumatized_mastoid,temporal_bone,HID8400,"sclerotic mastoid, underpneumatized mastoid, poorly pneumatized mastoid, mastoid sclerosis",observation
+HID8415,middle_ear_opacification,temporal_bone,HID8400,opacified middle ear,observation
+HID8416,middle_ear_fluid,temporal_bone,HID8415,"middle ear effusion, tympanic cavity fluid, middle ear fluid collection",observation
+HID8420,external_auditory_canal_opacification,temporal_bone,HID8400,"EAC soft tissue, ear canal opacification",observation
+HID8425,ossicular_disruption,temporal_bone,HID8400,"ossicular dislocation, ossicular chain disruption",observation
+HID8430,petrous_apex_lesion,temporal_bone,HID8400,petrous apex mass,observation
+HID8435,temporal_bone_erosion,temporal_bone,HID8400,temporal bone destruction,observation
+HID8450,mastoiditis,temporal_bone,HID8400,,diagnosis
+HID8455,coalescent_mastoiditis,temporal_bone,HID8450,coalescent mastoid disease,diagnosis
+HID8460,otitis_media,temporal_bone,HID8400,middle ear infection,diagnosis
+HID8465,cholesteatoma,temporal_bone,HID8400,,diagnosis
+HID8470,cholesterol_granuloma,temporal_bone,HID8400,cholesterol cyst petrous,diagnosis
+HID8600,temporal_bone_postsurgical_change,temporal_bone,,,
+HID8650,mastoidectomy,temporal_bone,HID8600,"post mastoidectomy, mastoidectomy defect",observation
+HID8655,canal_wall_down_mastoidectomy,temporal_bone,HID8650,"open cavity mastoidectomy, radical mastoidectomy, modified radical mastoidectomy",observation
+HID8660,canal_wall_up_mastoidectomy,temporal_bone,HID8650,"intact canal wall mastoidectomy, closed mastoidectomy",observation
+HID8800,hardware,extrinsic,,implanted device,
+HID8805,vascular_clip,extrinsic,HID8800,"aneurysm clip, surgical clips intracranial, cerebrovascular clips",observation
+HID8810,aneurysm_coil,extrinsic,HID8800,"endovascular coil, embolization coil",observation
+HID8815,intrasaccular_flow_disruptor,extrinsic,HID8800,"WEB device, WEB embolization device, Woven EndoBridge, Contour Neurovascular System, intrasaccular flow disruptor",observation
+HID8820,brachytherapy_seed,extrinsic,HID8800,"brachytherapy seeds, radioactive seed, radioactive seeds, I-125 seed, Cs-131 seed, GammaTile, permanent brachytherapy implant",observation
+HID8825,plate,extrinsic,HID8800,"bone plate, surgical plate, miniplate, osteosynthesis plate, plate and screw construct",observation
+HID8830,screw,extrinsic,HID8800,"bone screw, cortical screw, surgical screw, fixation screw",observation
+HID8835,mesh,extrinsic,HID8800,"surgical mesh, titanium mesh, cranial mesh, cranioplasty mesh, mesh plate",observation
+HID8840,spinal_fusion_hardware,extrinsic,HID8800,"pedicle screws, pedicle screws and rods, spinal instrumentation, spinal construct, cervical fixation rods, occipital plate",observation
+HID8850,intracranial_stent,extrinsic,HID8800,intracranial vascular stent,observation
+HID8855,flow_diverter,extrinsic,HID8850,"Pipeline device, PED, FRED device, flow diversion device",observation
+HID8860,bypass_graft,extrinsic,HID8800,"STA-MCA bypass, EC-IC bypass, extracranial-intracranial bypass, cerebral bypass graft",observation
+HID8865,deep_brain_stimulation_electrode,extrinsic,HID8800,"DBS electrode, DBS lead, deep brain stimulator",observation
+HID8870,intracranial_pressure_monitor,extrinsic,HID8800,"ICP monitor, ICP bolt, Camino bolt, ICP probe",observation
+HID8875,ventricular_catheter,extrinsic,HID8800,"ventriculostomy catheter, EVD catheter, external ventricular drain catheter, VP shunt catheter, shunt catheter, CSF shunt catheter",observation
+HID8885,ventricular_access_reservoir,extrinsic,HID8800,"Ommaya reservoir, Rickham reservoir, subcutaneous CSF reservoir",observation
+HID8890,hardware_abnormality,extrinsic,,"hardware complication, hardware-related complication",
+HID8895,hardware_failure,extrinsic,HID8890,"broken hardware, fractured hardware, hardware fracture, hardware breakage",observation
+HID8900,hardware_loosening,extrinsic,HID8890,"component loosening, implant loosening, prosthetic loosening",diagnosis
+HID8905,hardware_migration,extrinsic,HID8890,"component migration, implant migration, hardware displacement, hardware backout, screw backout",observation
+HID8910,perihardware_lucency,extrinsic,HID8890,"lucency around hardware, peri-implant lucency, periprosthetic lucency, peri-hardware lucency",observation
+HID9000,support_apparatus,extrinsic,,lines and tubes,
+HID9005,endotracheal_tube,extrinsic,HID9000,"ETT, ET tube, orotracheal tube, nasotracheal tube",observation
+HID9010,nasogastric_tube,extrinsic,HID9000,"NG tube, nasoenteric tube, Dobhoff tube, orogastric tube, OG tube",observation
+HID9015,subdural_drain,extrinsic,HID9000,"subdural catheter, subdural evacuating port system, SEPS drain",observation
+HID9200,foreign_body,extrinsic,,"foreign material, foreign object",
+HID9205,intracranial_foreign_body,extrinsic,HID9200,intracranial FB,observation
+HID9250,orbital_foreign_body,extrinsic,HID9200,"intraorbital foreign body, orbital FB",observation
+HID9255,intraocular_foreign_body,extrinsic,HID9250,IOFB,observation
+HID9260,facial_foreign_body,extrinsic,HID9200,facial soft tissue foreign body,observation
+HID9400,artifact,artifact,,,
+HID9405,metallic_artifact,artifact,HID9400,"metal artifact, hardware artifact, beam hardening from metal",observation
+HID9410,motion_artifact,artifact,HID9400,"movement artifact, patient motion, motion degradation",observation
+HID9415,beam_hardening_artifact,artifact,HID9400,"posterior fossa artifact, Hounsfield bar artifact, petrous bone artifact",observation
+HID9420,volume_averaging_artifact,artifact,HID9400,"partial volume effect, partial volume artifact, partial volume averaging",observation
+HID9425,suboptimal_contrast_timing,artifact,HID9400,"poor bolus timing, suboptimal bolus, mistimed contrast bolus",observation
+HID9430,retained_contrast,artifact,HID9400,"residual contrast from prior study, contrast staining, retained iodinated contrast",observation
