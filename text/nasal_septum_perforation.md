@@ -1,8 +1,8 @@
 # Nasal septum perforation—`OIFM_GMTS_008390`
 
-**Synonyms:** nasal septal perforation, septal perforation
+**Synonyms:** nasal septal perforation
 
-**Tags:** head neck, CT, MR, nose, anatomical variation, finding
+**Tags:** head neck, CT, MR, nose
 
 A defect or hole in the nasal septum.
 
@@ -38,10 +38,6 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Nasal septum perforation is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Nasal septum perforation seen on a prior exam has resolved  
-- **increased**: Nasal septum perforation has increased  
-_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
-- **decreased**: Nasal septum perforation has decreased  
-_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **larger**: Nasal septum perforation is larger  
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Nasal septum perforation is smaller  

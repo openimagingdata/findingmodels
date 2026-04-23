@@ -2,7 +2,7 @@
 
 **Synonyms:** CVT, intracranial venous thrombosis
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Thrombosis of the intracranial venous system, encompassing the dural venous sinuses and/or cortical veins. On CT, suggestive findings include a hyperdense vessel sign on unenhanced imaging and the empty delta sign on contrast-enhanced imaging.
 
@@ -40,8 +40,6 @@ _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 _RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
 - **decreased**: Cerebral venous thrombosis has decreased  
 _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
-- **worsened**: Cerebral venous thrombosis has worsened  
-- **improved**: Cerebral venous thrombosis has improved  
 
 ---
 

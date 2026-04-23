@@ -2,7 +2,7 @@
 
 **Synonyms:** intraocular blood products, intraocular blood, hemorrhage within the globe
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Blood products within the globe, which may involve the anterior chamber (hyphema), vitreous, or subretinal space. On CT, appears as hyperdense material within the ocular compartments, often in the setting of trauma.
 
@@ -42,6 +42,10 @@ _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Intraocular hemorrhage has worsened  
 - **improved**: Intraocular hemorrhage has improved  
+- **increased**: Intraocular hemorrhage has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Intraocular hemorrhage has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

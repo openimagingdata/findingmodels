@@ -2,7 +2,7 @@
 
 **Synonyms:** NCC, CNS cysticercosis
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Parenchymal, subarachnoid, intraventricular, or spinal infection by Taenia solium larvae, appearing on head CT as cystic lesions that evolve through vesicular, colloidal, granular-nodular, and calcified nodular stages. Typically manifests as small cysts with or without a mural scolex, ring-enhancing lesions with surrounding edema, or punctate calcifications depending on stage.
 
@@ -36,12 +36,12 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Neurocysticercosis is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Neurocysticercosis seen on a prior exam has resolved  
-- **larger**: Neurocysticercosis is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Neurocysticercosis is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Neurocysticercosis has worsened  
 - **improved**: Neurocysticercosis has improved  
+- **increased**: Neurocysticercosis has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Neurocysticercosis has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

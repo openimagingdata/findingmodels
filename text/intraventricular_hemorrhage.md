@@ -1,8 +1,8 @@
 # Intraventricular hemorrhage—`OIFM_OIDM_050265`
 
-**Synonyms:** IVH, ventricular hemorrhage
+**Synonyms:** IVH
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Blood within the ventricular system of the brain, seen on CT as hyperdense material layering in the dependent portions of the ventricles (commonly the occipital horns) or as cast-like opacification filling the ventricles. Most often results from extension of intraparenchymal hemorrhage, aneurysm or AVM rupture, or trauma.
 

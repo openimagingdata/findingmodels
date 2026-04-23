@@ -2,7 +2,7 @@
 
 **Synonyms:** pontine infarction, pons infarct, pons infarction
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Ischemic infarction involving the pons, typically appearing as a focal area of hypoattenuation on CT. CT sensitivity for acute pontine infarcts is limited due to posterior fossa beam-hardening artifact, and MRI is often required for confirmation.
 
@@ -36,12 +36,12 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Pontine infarct is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Pontine infarct seen on a prior exam has resolved  
-- **larger**: Pontine infarct is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Pontine infarct is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Pontine infarct has worsened  
 - **improved**: Pontine infarct has improved  
+- **increased**: Pontine infarct has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Pontine infarct has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Synonyms:** midline deviation, shift of midline structures
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Lateral displacement of normally midline intracranial structures (such as the septum pellucidum, third ventricle, or falx) across the anatomic midline, typically quantified in millimeters on axial imaging. It is a key sign of asymmetric mass effect and often reflects underlying hemispheric pathology such as hemorrhage, infarct, edema, or mass.
 
@@ -36,12 +36,12 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Midline shift is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Midline shift seen on a prior exam has resolved  
-- **larger**: Midline shift is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Midline shift is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Midline shift has worsened  
 - **improved**: Midline shift has improved  
+- **increased**: Midline shift has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Midline shift has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

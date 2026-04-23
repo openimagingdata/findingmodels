@@ -2,7 +2,7 @@
 
 **Synonyms:** HIE, anoxic brain injury, hypoxic brain injury, hypoxic-ischemic brain injury, global hypoxic-ischemic injury
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Diffuse brain injury resulting from global hypoxia and/or ischemia, characterized on CT by loss of gray-white matter differentiation, cerebral edema, basal ganglia hypoattenuation, and in severe cases the reversal sign.
 
@@ -36,10 +36,6 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Hypoxic-ischemic encephalopathy is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Hypoxic-ischemic encephalopathy seen on a prior exam has resolved  
-- **increased**: Hypoxic-ischemic encephalopathy has increased  
-_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
-- **decreased**: Hypoxic-ischemic encephalopathy has decreased  
-_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **worsened**: Hypoxic-ischemic encephalopathy has worsened  
 - **improved**: Hypoxic-ischemic encephalopathy has improved  
 

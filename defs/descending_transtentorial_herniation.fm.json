@@ -3,13 +3,11 @@
   "name": "descending transtentorial herniation",
   "description": "Inferior displacement of the medial temporal lobe (uncus and parahippocampal gyrus) and/or diencephalon through the tentorial incisura, typically due to supratentorial mass effect. Secondary findings include effacement of the suprasellar and perimesencephalic cisterns, midbrain compression, and possible posterior cerebral artery territory infarction.",
   "synonyms": [
-    "descending transtentorial hernia",
-    "DTH"
+    "descending transtentorial hernia"
   ],
   "tags": [
     "head",
-    "CT",
-    "finding"
+    "CT"
   ],
   "contributors": [
     {
@@ -99,7 +97,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -214,40 +212,6 @@
           "value_code": "OIFMA_OIDM_245422.7",
           "name": "improved",
           "description": "Descending transtentorial herniation has improved"
-        },
-        {
-          "value_code": "OIFMA_OIDM_245422.8",
-          "name": "larger",
-          "description": "Descending transtentorial herniation is larger",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_OIDM_245422.9",
-          "name": "smaller",
-          "description": "Descending transtentorial herniation is smaller",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
-            }
-          ]
         }
       ],
       "required": false,

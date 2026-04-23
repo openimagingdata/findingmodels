@@ -1,8 +1,6 @@
 # Apical periodontitis—`OIFM_OIDM_248519`
 
-**Synonyms:** periapical infection
-
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Inflammation or infection of the periapical tissues at the root of a tooth, typically secondary to pulpal necrosis. On head CT, seen as a periapical lucency at the tooth root, sometimes with surrounding sclerosis or an adjacent abscess collection and soft-tissue swelling.
 
@@ -42,6 +40,10 @@ _RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
 _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **worsened**: Apical periodontitis has worsened  
 - **improved**: Apical periodontitis has improved  
+- **larger**: Apical periodontitis is larger  
+_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
+- **smaller**: Apical periodontitis is smaller  
+_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 
 ---
 

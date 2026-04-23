@@ -2,7 +2,7 @@
 
 **Synonyms:** deviated nasal septum
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Lateral displacement or curvature of the bony and/or cartilaginous nasal septum away from midline. A common sinonasal anatomic variant that is often clinically insignificant but may contribute to nasal obstruction or predispose to sinusitis.
 
@@ -40,6 +40,8 @@ _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 _RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
 - **decreased**: Nasal septal deviation has decreased  
 _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
+- **worsened**: Nasal septal deviation has worsened  
+- **improved**: Nasal septal deviation has improved  
 
 ---
 

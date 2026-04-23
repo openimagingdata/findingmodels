@@ -1,6 +1,6 @@
 {
   "oifm_id": "OIFM_GMTS_025584",
-  "name": "large sella turcica",
+  "name": "sella turcica enlargement",
   "description": "Increased size of the sella turcica, the bony cavity in the skull.",
   "synonyms": [
     "enlarged sella turcica",
@@ -10,7 +10,8 @@
     "sella enlargement",
     "enlarged pituitary fossa",
     "expanded pituitary fossa",
-    "ballooned sella"
+    "ballooned sella",
+    "large sella turcica"
   ],
   "tags": [
     "head neck",
@@ -18,8 +19,7 @@
     "MR",
     "skull",
     "pituitary fossa",
-    "endocrine",
-    "finding"
+    "endocrine"
   ],
   "contributors": [
     {
@@ -32,13 +32,13 @@
     {
       "oifma_id": "OIFMA_GMTS_760524",
       "name": "presence",
-      "description": "Presence or absence of large sella turcica",
+      "description": "Presence or absence of sella turcica enlargement",
       "type": "choice",
       "values": [
         {
           "value_code": "OIFMA_GMTS_760524.0",
           "name": "absent",
-          "description": "Large sella turcica is absent",
+          "description": "Sella turcica enlargement is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -55,7 +55,7 @@
         {
           "value_code": "OIFMA_GMTS_760524.1",
           "name": "present",
-          "description": "Large sella turcica is present",
+          "description": "Sella turcica enlargement is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -72,7 +72,7 @@
         {
           "value_code": "OIFMA_GMTS_760524.2",
           "name": "indeterminate",
-          "description": "Presence of large sella turcica cannot be determined",
+          "description": "Presence of sella turcica enlargement cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -89,7 +89,7 @@
         {
           "value_code": "OIFMA_GMTS_760524.3",
           "name": "unknown",
-          "description": "Presence of large sella turcica is unknown",
+          "description": "Presence of sella turcica enlargement is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -104,7 +104,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -117,13 +117,13 @@
     {
       "oifma_id": "OIFMA_GMTS_711053",
       "name": "change from prior",
-      "description": "Whether and how a large sella turcica has changed over time",
+      "description": "Whether and how a sella turcica enlargement has changed over time",
       "type": "choice",
       "values": [
         {
           "value_code": "OIFMA_GMTS_711053.0",
           "name": "unchanged",
-          "description": "Large sella turcica is unchanged",
+          "description": "Sella turcica enlargement is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -140,7 +140,7 @@
         {
           "value_code": "OIFMA_GMTS_711053.1",
           "name": "stable",
-          "description": "Large sella turcica is stable",
+          "description": "Sella turcica enlargement is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -157,7 +157,7 @@
         {
           "value_code": "OIFMA_GMTS_711053.2",
           "name": "new",
-          "description": "Large sella turcica is new",
+          "description": "Sella turcica enlargement is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -174,46 +174,12 @@
         {
           "value_code": "OIFMA_GMTS_711053.3",
           "name": "resolved",
-          "description": "Large sella turcica seen on a prior exam has resolved"
+          "description": "Sella turcica enlargement seen on a prior exam has resolved"
         },
         {
           "value_code": "OIFMA_GMTS_711053.4",
-          "name": "increased",
-          "description": "Large sella turcica has increased",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID36043",
-              "display": "increased"
-            },
-            {
-              "system": "SNOMED",
-              "code": "35105006",
-              "display": "Increased (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_711053.5",
-          "name": "decreased",
-          "description": "Large sella turcica has decreased",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID36044",
-              "display": "decreased"
-            },
-            {
-              "system": "SNOMED",
-              "code": "1250004",
-              "display": "Decreased (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_711053.6",
           "name": "larger",
-          "description": "Large sella turcica is larger",
+          "description": "Sella turcica enlargement is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -228,9 +194,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_GMTS_711053.7",
+          "value_code": "OIFMA_GMTS_711053.5",
           "name": "smaller",
-          "description": "Large sella turcica is smaller",
+          "description": "Sella turcica enlargement is smaller",
           "index_codes": [
             {
               "system": "RADLEX",

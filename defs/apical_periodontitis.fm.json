@@ -2,13 +2,9 @@
   "oifm_id": "OIFM_OIDM_248519",
   "name": "apical periodontitis",
   "description": "Inflammation or infection of the periapical tissues at the root of a tooth, typically secondary to pulpal necrosis. On head CT, seen as a periapical lucency at the tooth root, sometimes with surrounding sclerosis or an adjacent abscess collection and soft-tissue swelling.",
-  "synonyms": [
-    "periapical infection"
-  ],
   "tags": [
     "head",
-    "CT",
-    "finding"
+    "CT"
   ],
   "contributors": [
     {
@@ -98,7 +94,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -213,6 +209,40 @@
           "value_code": "OIFMA_OIDM_565321.7",
           "name": "improved",
           "description": "Apical periodontitis has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_565321.8",
+          "name": "larger",
+          "description": "Apical periodontitis is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_565321.9",
+          "name": "smaller",
+          "description": "Apical periodontitis is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
         }
       ],
       "required": false,

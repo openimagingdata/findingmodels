@@ -2,7 +2,7 @@
 
 **Synonyms:** sinusitis, inflammatory sinus disease, rhinosinusitis
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Mucosal thickening, fluid, or opacification within one or more paranasal sinuses reflecting acute or chronic inflammation. On CT, findings range from mild mucoperiosteal thickening to air-fluid levels and complete sinus opacification, sometimes with associated osseous remodeling or sclerosis in chronic disease.
 

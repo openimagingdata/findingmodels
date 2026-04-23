@@ -1,8 +1,8 @@
 # Primary central nervous system lymphoma—`OIFM_OIDM_516995`
 
-**Synonyms:** PCNSL, primary CNS lymphoma, primary brain lymphoma
+**Synonyms:** PCNSL, primary CNS lymphoma
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Non-Hodgkin lymphoma confined to the brain, spinal cord, leptomeninges, or eyes, typically appearing on CT as one or more hyperdense, homogeneously enhancing masses in periventricular or deep gray matter locations with surrounding vasogenic edema. Lesions are often solitary in immunocompetent patients and multifocal in immunocompromised patients, and necrosis is uncommon except in the setting of HIV.
 
@@ -42,6 +42,10 @@ _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Primary central nervous system lymphoma has worsened  
 - **improved**: Primary central nervous system lymphoma has improved  
+- **increased**: Primary central nervous system lymphoma has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Primary central nervous system lymphoma has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

@@ -1,6 +1,8 @@
 # Dentigerous cyst—`OIFM_OIDM_217343`
 
-**Tags:** head, CT, finding
+**Synonyms:** pericoronal cyst
+
+**Tags:** head, CT
 
 Odontogenic cyst appearing as a well-circumscribed unilocular lucency surrounding the crown of an unerupted or impacted tooth, most commonly a mandibular third molar, with attachment at the cementoenamel junction.
 
