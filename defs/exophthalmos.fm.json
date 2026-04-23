@@ -98,7 +98,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -111,7 +111,7 @@
     {
       "oifma_id": "OIFMA_GMTS_660597",
       "name": "change from prior",
-      "description": "Whether and how a exophthalmos has changed over time",
+      "description": "Whether and how exophthalmos has changed over time",
       "type": "choice",
       "values": [
         {
@@ -201,40 +201,6 @@
               "system": "SNOMED",
               "code": "1250004",
               "display": "Decreased (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_660597.6",
-          "name": "larger",
-          "description": "Exophthalmos is larger",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_GMTS_660597.7",
-          "name": "smaller",
-          "description": "Exophthalmos is smaller",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
             }
           ]
         }

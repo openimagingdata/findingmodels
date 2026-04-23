@@ -7,8 +7,7 @@
   ],
   "tags": [
     "head",
-    "CT",
-    "finding"
+    "CT"
   ],
   "contributors": [
     {
@@ -98,7 +97,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -203,6 +202,16 @@
               "display": "Decreased (qualifier value)"
             }
           ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_483777.6",
+          "name": "worsened",
+          "description": "Nasal septal deviation has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_483777.7",
+          "name": "improved",
+          "description": "Nasal septal deviation has improved"
         }
       ],
       "required": false,

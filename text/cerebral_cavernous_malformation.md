@@ -1,8 +1,8 @@
 # Cerebral cavernous malformation—`OIFM_OIDM_224625`
 
-**Synonyms:** cavernoma, cavernous angioma
+**Synonyms:** cavernoma
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 A cluster of dilated, thin-walled low-flow vascular channels without intervening brain parenchyma, typically appearing on head CT as a subtle focal hyperdense lesion reflecting calcification or prior hemorrhage, or as an occult finding. MRI (especially GRE/SWI sequences) is substantially more sensitive for detection and characterization.
 
@@ -40,6 +40,10 @@ _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Cerebral cavernous malformation is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+- **increased**: Cerebral cavernous malformation has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Cerebral cavernous malformation has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

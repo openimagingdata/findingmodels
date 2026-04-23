@@ -2,7 +2,7 @@
 
 **Synonyms:** watershed infarct, border zone infarct, borderzone infarct, watershed stroke
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Ischemic infarction occurring in the vascular border zones between major cerebral arterial territories, typically resulting from systemic hypoperfusion or hemodynamic compromise. On CT, these appear as hypoattenuating regions in the internal or cortical watershed zones, often bilateral.
 
@@ -36,12 +36,12 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Cerebral watershed infarct is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Cerebral watershed infarct seen on a prior exam has resolved  
-- **larger**: Cerebral watershed infarct is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Cerebral watershed infarct is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Cerebral watershed infarct has worsened  
 - **improved**: Cerebral watershed infarct has improved  
+- **increased**: Cerebral watershed infarct has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Cerebral watershed infarct has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

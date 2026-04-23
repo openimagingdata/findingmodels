@@ -8,8 +8,7 @@
   ],
   "tags": [
     "head",
-    "CT",
-    "finding"
+    "CT"
   ],
   "contributors": [
     {
@@ -99,7 +98,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -204,16 +203,6 @@
               "display": "Decreased (qualifier value)"
             }
           ]
-        },
-        {
-          "value_code": "OIFMA_OIDM_799764.6",
-          "name": "worsened",
-          "description": "Cerebral venous thrombosis has worsened"
-        },
-        {
-          "value_code": "OIFMA_OIDM_799764.7",
-          "name": "improved",
-          "description": "Cerebral venous thrombosis has improved"
         }
       ],
       "required": false,

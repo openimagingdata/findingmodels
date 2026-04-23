@@ -2,7 +2,7 @@
 
 **Synonyms:** DAI, shear injury, diffuse traumatic axonal injury
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Traumatic shear injury to cerebral axons from rotational acceleration-deceleration forces, manifesting on CT as punctate hemorrhages at the gray-white matter junction, corpus callosum, and dorsal brainstem. CT findings are often subtle or absent; MRI is more sensitive.
 
@@ -36,10 +36,6 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Diffuse axonal injury is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Diffuse axonal injury seen on a prior exam has resolved  
-- **increased**: Diffuse axonal injury has increased  
-_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
-- **decreased**: Diffuse axonal injury has decreased  
-_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **worsened**: Diffuse axonal injury has worsened  
 - **improved**: Diffuse axonal injury has improved  
 

@@ -2,7 +2,7 @@
 
 **Synonyms:** blowout fracture
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Fracture of the orbital floor or medial wall resulting from blunt trauma that transmits pressure through the globe, typically with herniation of orbital fat or muscle into the adjacent paranasal sinus and associated sinus opacification from hemorrhage.
 
@@ -36,8 +36,6 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Orbital blowout fracture is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Orbital blowout fracture seen on a prior exam has resolved  
-- **worsened**: Orbital blowout fracture has worsened  
-- **improved**: Orbital blowout fracture has improved  
 
 ---
 

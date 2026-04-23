@@ -1,8 +1,8 @@
 # Brain parenchymal hypoattenuation—`OIFM_OIDM_865853`
 
-**Synonyms:** parenchymal hypodensity, low attenuation, decreased attenuation, low density, decreased density
+**Synonyms:** brain parenchymal hypodensity
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Decreased CT attenuation of the brain parenchyma relative to expected normal tissue, appearing darker than surrounding structures. It is a nonspecific imaging observation seen in a range of pathologies including acute or chronic ischemia, edema, demyelination, gliosis, and neoplasm.
 

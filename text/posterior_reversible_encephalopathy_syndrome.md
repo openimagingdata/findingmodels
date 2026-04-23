@@ -2,7 +2,7 @@
 
 **Synonyms:** PRES, reversible posterior leukoencephalopathy syndrome, RPLS
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 A clinicoradiologic syndrome characterized by typically symmetric, bilateral vasogenic edema predominantly involving the parietal and occipital lobes (often in a posterior circulation distribution), manifesting on head CT as cortical and subcortical hypoattenuation. Commonly associated with acute hypertension, eclampsia, or immunosuppressive therapy, and usually reversible with treatment of the underlying cause.
 

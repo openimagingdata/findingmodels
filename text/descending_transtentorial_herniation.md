@@ -1,8 +1,8 @@
 # Descending transtentorial herniation—`OIFM_OIDM_441726`
 
-**Synonyms:** descending transtentorial hernia, DTH
+**Synonyms:** descending transtentorial hernia
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Inferior displacement of the medial temporal lobe (uncus and parahippocampal gyrus) and/or diencephalon through the tentorial incisura, typically due to supratentorial mass effect. Secondary findings include effacement of the suprasellar and perimesencephalic cisterns, midbrain compression, and possible posterior cerebral artery territory infarction.
 
@@ -42,10 +42,6 @@ _RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
 _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 - **worsened**: Descending transtentorial herniation has worsened  
 - **improved**: Descending transtentorial herniation has improved  
-- **larger**: Descending transtentorial herniation is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Descending transtentorial herniation is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 
 ---
 

@@ -27,7 +27,7 @@ _RADLEX RID5655 unknown; SNOMED 261665006 Unknown (qualifier value)_
 
 ### Change from prior—`OIFMA_GMTS_318600`
 
-Whether and how a craniosynostosis has changed over time  
+Whether and how craniosynostosis has changed over time  
 **Codes**: RADLEX RID49896 change; SNOMED 263703002 Changed status (qualifier value)  
 *(Select one)*
 
@@ -38,14 +38,6 @@ _RADLEX RID5734 stable; SNOMED 58158008 Stable (qualifier value)_
 - **new**: Craniosynostosis is new  
 _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 - **resolved**: Craniosynostosis seen on a prior exam has resolved  
-- **increased**: Craniosynostosis has increased  
-_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
-- **decreased**: Craniosynostosis has decreased  
-_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
-- **larger**: Craniosynostosis is larger  
-_RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
-- **smaller**: Craniosynostosis is smaller  
-_RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 
 ---
 

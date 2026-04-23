@@ -2,7 +2,7 @@
 
 **Synonyms:** SDH, subdural hemorrhage
 
-A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.
+A collection of blood in the subdural space, between the dura mater and arachnoid membrane, typically appearing as a crescent-shaped extra-axial collection on CT. Acute hematomas are hyperdense, subacute isodense, and chronic hypodense relative to brain parenchyma.
 
 ## Attributes
 
@@ -40,6 +40,10 @@ _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
 - **worsened**: Subdural hematoma has worsened  
 - **improved**: Subdural hematoma has improved  
+- **increased**: Subdural hematoma has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Subdural hematoma has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

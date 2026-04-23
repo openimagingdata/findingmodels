@@ -1,6 +1,6 @@
 # Meningioma—`OIFM_OIDM_738859`
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 A typically benign, dural-based extra-axial neoplasm that on head CT appears as a well-circumscribed slightly hyperdense or isodense mass, often with calcification, homogeneous intense enhancement, and adjacent hyperostosis. It is the most common extra-axial intracranial tumor.
 
@@ -38,6 +38,12 @@ _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Meningioma is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+- **worsened**: Meningioma has worsened  
+- **improved**: Meningioma has improved  
+- **increased**: Meningioma has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Meningioma has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Synonyms:** intracranial epidermoid, intracranial epidermoid tumor, intracranial pearly tumor
 
-**Tags:** head, CT, finding
+**Tags:** head, CT
 
 Congenital extra-axial inclusion cyst lined by stratified squamous epithelium and filled with desquamated keratin debris, most often arising in the cerebellopontine angle or parasellar cisterns. On CT it typically appears as a well-defined, lobulated, nonenhancing extra-axial mass that follows cerebrospinal fluid attenuation and insinuates around adjacent vessels and nerves.
 
@@ -40,6 +40,10 @@ _RADLEX RID5720 new; SNOMED 7147002 New (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Intracranial epidermoid cyst is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+- **increased**: Intracranial epidermoid cyst has increased  
+_RADLEX RID36043 increased; SNOMED 35105006 Increased (qualifier value)_
+- **decreased**: Intracranial epidermoid cyst has decreased  
+_RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 
 ---
 

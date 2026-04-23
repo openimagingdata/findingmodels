@@ -10,8 +10,7 @@
   ],
   "tags": [
     "head",
-    "CT",
-    "finding"
+    "CT"
   ],
   "contributors": [
     {
@@ -101,7 +100,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -175,47 +174,47 @@
         },
         {
           "value_code": "OIFMA_OIDM_911275.4",
-          "name": "larger",
-          "description": "Cerebral watershed infarct is larger",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_OIDM_911275.5",
-          "name": "smaller",
-          "description": "Cerebral watershed infarct is smaller",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_OIDM_911275.6",
           "name": "worsened",
           "description": "Cerebral watershed infarct has worsened"
         },
         {
-          "value_code": "OIFMA_OIDM_911275.7",
+          "value_code": "OIFMA_OIDM_911275.5",
           "name": "improved",
           "description": "Cerebral watershed infarct has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_911275.6",
+          "name": "increased",
+          "description": "Cerebral watershed infarct has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_911275.7",
+          "name": "decreased",
+          "description": "Cerebral watershed infarct has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
         }
       ],
       "required": false,

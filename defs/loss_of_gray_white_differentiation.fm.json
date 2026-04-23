@@ -1,9 +1,8 @@
 {
   "oifm_id": "OIFM_OIDM_786838",
   "name": "loss of gray-white differentiation",
-  "description": "Loss of gray-white differentiation is a radiologic sign in which the distinction between the cortical gray matter and the underlying white matter is diminished, most commonly reflecting cerebral edema or acute ischemia. It is detectable on CT or MRI and can indicate early brain injury.",
+  "description": "Diminished distinction between cortical gray matter and underlying white matter on CT or MRI, most commonly reflecting cerebral edema or acute ischemia. A marker of early or evolving brain injury.",
   "synonyms": [
-    "lgwd",
     "loss of gray-white matter differentiation",
     "gray-white matter indistinction"
   ],
@@ -95,7 +94,7 @@
           ]
         }
       ],
-      "required": false,
+      "required": true,
       "max_selected": 1,
       "index_codes": [
         {
@@ -108,7 +107,7 @@
     {
       "oifma_id": "OIFMA_OIDM_335118",
       "name": "change from prior",
-      "description": "Whether and how a loss of gray-white differentiation has changed over time",
+      "description": "Whether and how loss of gray-white differentiation has changed over time",
       "type": "choice",
       "values": [
         {
@@ -203,37 +202,13 @@
         },
         {
           "value_code": "OIFMA_OIDM_335118.6",
-          "name": "larger",
-          "description": "Loss of gray-white differentiation is larger",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
-            }
-          ]
+          "name": "worsened",
+          "description": "Loss of gray-white differentiation has worsened"
         },
         {
           "value_code": "OIFMA_OIDM_335118.7",
-          "name": "smaller",
-          "description": "Loss of gray-white differentiation is smaller",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
-            },
-            {
-              "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
-            }
-          ]
+          "name": "improved",
+          "description": "Loss of gray-white differentiation has improved"
         }
       ],
       "required": false,
