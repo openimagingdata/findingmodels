@@ -1,33 +1,39 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_224625",
+  "name": "cerebral cavernous malformation",
+  "description": "A cluster of dilated, thin-walled low-flow vascular channels without intervening brain parenchyma, typically appearing on head CT as a subtle focal hyperdense lesion reflecting calcification or prior hemorrhage, or as an occult finding. MRI (especially GRE/SWI sequences) is substantially more sensitive for detection and characterization.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "cavernoma",
+    "cavernous angioma"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_608136",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of cerebral cavernous malformation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_608136.0",
           "name": "absent",
+          "description": "Cerebral cavernous malformation is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +48,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_608136.1",
           "name": "present",
+          "description": "Cerebral cavernous malformation is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +65,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_608136.2",
           "name": "indeterminate",
+          "description": "Presence of cerebral cavernous malformation cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +82,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_608136.3",
           "name": "unknown",
+          "description": "Presence of cerebral cavernous malformation is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +99,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +110,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_223275",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how cerebral cavernous malformation has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_223275.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Cerebral cavernous malformation is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +133,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_223275.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Cerebral cavernous malformation is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +150,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_223275.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Cerebral cavernous malformation is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +167,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_223275.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Cerebral cavernous malformation seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_223275.4",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Cerebral cavernous malformation is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +189,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_223275.5",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Cerebral cavernous malformation is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -195,16 +204,6 @@
               "display": "Lesser (qualifier value)"
             }
           ]
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.6",
-          "name": "worsened",
-          "description": "Subdural hematoma has worsened"
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.7",
-          "name": "improved",
-          "description": "Subdural hematoma has improved"
         }
       ],
       "required": false,

@@ -1,33 +1,35 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
-  "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+  "oifm_id": "OIFM_OIDM_738859",
+  "name": "meningioma",
+  "description": "A typically benign, dural-based extra-axial neoplasm that on head CT appears as a well-circumscribed slightly hyperdense or isodense mass, often with calcification, homogeneous intense enhancement, and adjacent hyperostosis. It is the most common extra-axial intracranial tumor.",
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_451758",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of meningioma",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_451758.0",
           "name": "absent",
+          "description": "Meningioma is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +44,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_451758.1",
           "name": "present",
+          "description": "Meningioma is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +61,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_451758.2",
           "name": "indeterminate",
+          "description": "Presence of meningioma cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +78,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_451758.3",
           "name": "unknown",
+          "description": "Presence of meningioma is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +95,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +106,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_511195",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how meningioma has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_511195.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Meningioma is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +129,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_511195.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Meningioma is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +146,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_511195.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Meningioma is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +163,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_511195.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Meningioma seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_511195.4",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Meningioma is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +185,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_511195.5",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Meningioma is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -195,16 +200,6 @@
               "display": "Lesser (qualifier value)"
             }
           ]
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.6",
-          "name": "worsened",
-          "description": "Subdural hematoma has worsened"
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.7",
-          "name": "improved",
-          "description": "Subdural hematoma has improved"
         }
       ],
       "required": false,

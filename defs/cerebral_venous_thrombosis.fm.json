@@ -1,33 +1,39 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_945136",
+  "name": "cerebral venous thrombosis",
+  "description": "Thrombosis of the intracranial venous system, encompassing the dural venous sinuses and/or cortical veins. On CT, suggestive findings include a hyperdense vessel sign on unenhanced imaging and the empty delta sign on contrast-enhanced imaging.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "CVT",
+    "intracranial venous thrombosis"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_588481",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of cerebral venous thrombosis",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_588481.0",
           "name": "absent",
+          "description": "Cerebral venous thrombosis is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +48,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_588481.1",
           "name": "present",
+          "description": "Cerebral venous thrombosis is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +65,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_588481.2",
           "name": "indeterminate",
+          "description": "Presence of cerebral venous thrombosis cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +82,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_588481.3",
           "name": "unknown",
+          "description": "Presence of cerebral venous thrombosis is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +99,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +110,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_799764",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how cerebral venous thrombosis has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_799764.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Cerebral venous thrombosis is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +133,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_799764.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Cerebral venous thrombosis is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +150,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_799764.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Cerebral venous thrombosis is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,53 +167,53 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_799764.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Cerebral venous thrombosis seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
-          "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "value_code": "OIFMA_OIDM_799764.4",
+          "name": "increased",
+          "description": "Cerebral venous thrombosis has increased",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID5791",
-              "display": "enlarged"
+              "code": "RID36043",
+              "display": "increased"
             },
             {
               "system": "SNOMED",
-              "code": "263768009",
-              "display": "Greater (qualifier value)"
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
             }
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
-          "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "value_code": "OIFMA_OIDM_799764.5",
+          "name": "decreased",
+          "description": "Cerebral venous thrombosis has decreased",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID38669",
-              "display": "diminished"
+              "code": "RID36044",
+              "display": "decreased"
             },
             {
               "system": "SNOMED",
-              "code": "263796003",
-              "display": "Lesser (qualifier value)"
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
             }
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.6",
+          "value_code": "OIFMA_OIDM_799764.6",
           "name": "worsened",
-          "description": "Subdural hematoma has worsened"
+          "description": "Cerebral venous thrombosis has worsened"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.7",
+          "value_code": "OIFMA_OIDM_799764.7",
           "name": "improved",
-          "description": "Subdural hematoma has improved"
+          "description": "Cerebral venous thrombosis has improved"
         }
       ],
       "required": false,

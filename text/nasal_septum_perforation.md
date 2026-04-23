@@ -1,6 +1,8 @@
 # Nasal septum perforation—`OIFM_GMTS_008390`
 
-**Tags:** head_neck, CT, MR, nose, anatomical variation, finding
+**Synonyms:** nasal septal perforation, septal perforation
+
+**Tags:** head neck, CT, MR, nose, anatomical variation, finding
 
 A defect or hole in the nasal septum.
 

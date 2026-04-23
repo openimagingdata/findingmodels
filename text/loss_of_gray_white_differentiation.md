@@ -1,6 +1,6 @@
 # Loss of gray-white differentiation—`OIFM_OIDM_786838`
 
-**Synonyms:** loss of gray-white differentiation, lgwd, loss of gray-white matter differentiation
+**Synonyms:** lgwd, loss of gray-white matter differentiation, gray-white matter indistinction
 
 Loss of gray-white differentiation is a radiologic sign in which the distinction between the cortical gray matter and the underlying white matter is diminished, most commonly reflecting cerebral edema or acute ischemia. It is detectable on CT or MRI and can indicate early brain injury.
 
@@ -42,3 +42,10 @@ _RADLEX RID36044 decreased; SNOMED 1250004 Decreased (qualifier value)_
 _RADLEX RID5791 enlarged; SNOMED 263768009 Greater (qualifier value)_
 - **smaller**: Loss of gray-white differentiation is smaller  
 _RADLEX RID38669 diminished; SNOMED 263796003 Lesser (qualifier value)_
+
+---
+
+**Contributors**
+
+- C. Michael Hood, MD (MGB) — [Email](mailto:chood@mgh.harvard.edu)
+- Open Imaging Data Model (OIDM)

@@ -1,5 +1,7 @@
 # Craniosynostosis—`OIFM_GMTS_006368`
 
+**Synonyms:** premature suture fusion
+
 **Tags:** ultrasound, CT, XR, MR, cranial, congenital anomaly, diagnosis
 
 Premature fusion of one or more cranial sutures.

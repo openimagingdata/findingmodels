@@ -1,8 +1,8 @@
 # Exophthalmos—`OIFM_GMTS_024505`
 
-**Synonyms:** proptosis
+**Synonyms:** proptosis, globe protrusion
 
-**Tags:** head_neck, CT, MR, orbit, endocrine, inflammatory, diagnosis
+**Tags:** head neck, CT, MR, orbit, endocrine, inflammatory, diagnosis
 
 Protrusion of the eyeball from the orbit
 
