@@ -1,33 +1,39 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_441726",
+  "name": "descending transtentorial herniation",
+  "description": "Inferior displacement of the medial temporal lobe (uncus and parahippocampal gyrus) and/or diencephalon through the tentorial incisura, typically due to supratentorial mass effect. Secondary findings include effacement of the suprasellar and perimesencephalic cisterns, midbrain compression, and possible posterior cerebral artery territory infarction.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "descending transtentorial hernia",
+    "DTH"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_244806",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of descending transtentorial herniation",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_244806.0",
           "name": "absent",
+          "description": "Descending transtentorial herniation is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +48,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_244806.1",
           "name": "present",
+          "description": "Descending transtentorial herniation is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +65,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_244806.2",
           "name": "indeterminate",
+          "description": "Presence of descending transtentorial herniation cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +82,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_244806.3",
           "name": "unknown",
+          "description": "Presence of descending transtentorial herniation is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +99,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +110,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_245422",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how descending transtentorial herniation has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_245422.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Descending transtentorial herniation is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +133,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_245422.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Descending transtentorial herniation is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +150,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_245422.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Descending transtentorial herniation is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +167,58 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_245422.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Descending transtentorial herniation seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_245422.4",
+          "name": "increased",
+          "description": "Descending transtentorial herniation has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_245422.5",
+          "name": "decreased",
+          "description": "Descending transtentorial herniation has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_245422.6",
+          "name": "worsened",
+          "description": "Descending transtentorial herniation has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_245422.7",
+          "name": "improved",
+          "description": "Descending transtentorial herniation has improved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_245422.8",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Descending transtentorial herniation is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +233,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_245422.9",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Descending transtentorial herniation is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -195,16 +248,6 @@
               "display": "Lesser (qualifier value)"
             }
           ]
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.6",
-          "name": "worsened",
-          "description": "Subdural hematoma has worsened"
-        },
-        {
-          "value_code": "OIFMA_MSFT_455956.7",
-          "name": "improved",
-          "description": "Subdural hematoma has improved"
         }
       ],
       "required": false,

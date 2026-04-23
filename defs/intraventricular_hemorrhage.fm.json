@@ -1,33 +1,39 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_050265",
+  "name": "intraventricular hemorrhage",
+  "description": "Blood within the ventricular system of the brain, seen on CT as hyperdense material layering in the dependent portions of the ventricles (commonly the occipital horns) or as cast-like opacification filling the ventricles. Most often results from extension of intraparenchymal hemorrhage, aneurysm or AVM rupture, or trauma.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "IVH",
+    "ventricular hemorrhage"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_751757",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of intraventricular hemorrhage",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_751757.0",
           "name": "absent",
+          "description": "Intraventricular hemorrhage is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +48,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_751757.1",
           "name": "present",
+          "description": "Intraventricular hemorrhage is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +65,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_751757.2",
           "name": "indeterminate",
+          "description": "Presence of intraventricular hemorrhage cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +82,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_751757.3",
           "name": "unknown",
+          "description": "Presence of intraventricular hemorrhage is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +99,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +110,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_433428",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how intraventricular hemorrhage has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_433428.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Intraventricular hemorrhage is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +133,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_433428.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Intraventricular hemorrhage is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +150,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_433428.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Intraventricular hemorrhage is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +167,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_433428.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Intraventricular hemorrhage seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_433428.4",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Intraventricular hemorrhage is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +189,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_433428.5",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Intraventricular hemorrhage is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -197,14 +206,48 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.6",
-          "name": "worsened",
-          "description": "Subdural hematoma has worsened"
+          "value_code": "OIFMA_OIDM_433428.6",
+          "name": "increased",
+          "description": "Intraventricular hemorrhage has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.7",
+          "value_code": "OIFMA_OIDM_433428.7",
+          "name": "decreased",
+          "description": "Intraventricular hemorrhage has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_433428.8",
+          "name": "worsened",
+          "description": "Intraventricular hemorrhage has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_433428.9",
           "name": "improved",
-          "description": "Subdural hematoma has improved"
+          "description": "Intraventricular hemorrhage has improved"
         }
       ],
       "required": false,

@@ -1,8 +1,8 @@
 # Large sella turcica—`OIFM_GMTS_025584`
 
-**Synonyms:** Enlarged sella turcica
+**Synonyms:** enlarged sella turcica, expanded sella, expanded sella turcica, enlarged sella, sella enlargement, enlarged pituitary fossa, expanded pituitary fossa, ballooned sella
 
-**Tags:** head_neck, CT, MR, skull, pituitary fossa, endocrine, finding
+**Tags:** head neck, CT, MR, skull, pituitary fossa, endocrine, finding
 
 Increased size of the sella turcica, the bony cavity in the skull.
 

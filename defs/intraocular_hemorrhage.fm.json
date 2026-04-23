@@ -1,33 +1,40 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_535373",
+  "name": "intraocular hemorrhage",
+  "description": "Blood products within the globe, which may involve the anterior chamber (hyphema), vitreous, or subretinal space. On CT, appears as hyperdense material within the ocular compartments, often in the setting of trauma.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "intraocular blood products",
+    "intraocular blood",
+    "hemorrhage within the globe"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_278813",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of intraocular hemorrhage",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_278813.0",
           "name": "absent",
+          "description": "Intraocular hemorrhage is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +49,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_278813.1",
           "name": "present",
+          "description": "Intraocular hemorrhage is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +66,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_278813.2",
           "name": "indeterminate",
+          "description": "Presence of intraocular hemorrhage cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +83,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_278813.3",
           "name": "unknown",
+          "description": "Presence of intraocular hemorrhage is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +100,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +111,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_137459",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how intraocular hemorrhage has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_137459.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Intraocular hemorrhage is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +134,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_137459.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Intraocular hemorrhage is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +151,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_137459.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Intraocular hemorrhage is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +168,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_137459.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Intraocular hemorrhage seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_137459.4",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Intraocular hemorrhage is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +190,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_137459.5",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Intraocular hemorrhage is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -197,14 +207,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.6",
+          "value_code": "OIFMA_OIDM_137459.6",
           "name": "worsened",
-          "description": "Subdural hematoma has worsened"
+          "description": "Intraocular hemorrhage has worsened"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.7",
+          "value_code": "OIFMA_OIDM_137459.7",
           "name": "improved",
-          "description": "Subdural hematoma has improved"
+          "description": "Intraocular hemorrhage has improved"
         }
       ],
       "required": false,

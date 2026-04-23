@@ -1,33 +1,40 @@
 {
-  "oifm_id": "OIFM_MSFT_767776",
-  "name": "subdural hematoma",
-  "description": "A subdural hematoma (SDH) is a collection of blood outside of the brain that puts pressure on the brain. It can occur after head injury, leading to various neurological symptoms.",
+  "oifm_id": "OIFM_OIDM_516995",
+  "name": "primary central nervous system lymphoma",
+  "description": "Non-Hodgkin lymphoma confined to the brain, spinal cord, leptomeninges, or eyes, typically appearing on CT as one or more hyperdense, homogeneously enhancing masses in periventricular or deep gray matter locations with surrounding vasogenic edema. Lesions are often solitary in immunocompetent patients and multifocal in immunocompromised patients, and necrosis is uncommon except in the setting of HIV.",
   "synonyms": [
-    "SDH",
-    "subdural hemorrhage"
+    "PCNSL",
+    "primary CNS lymphoma",
+    "primary brain lymphoma"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
   ],
   "contributors": [
     {
-      "github_username": "HeatherChase",
-      "email": "heatherchase@microsoft.com",
-      "name": "Heather Chase",
-      "organization_code": "MSFT"
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
     },
     {
-      "name": "Microsoft",
-      "code": "MSFT"
+      "name": "Open Imaging Data Model",
+      "code": "OIDM"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MSFT_437618",
+      "oifma_id": "OIFMA_OIDM_708674",
       "name": "presence",
-      "description": "This attribute describes whether the subdural hematoma is present, absent, or in an unconfirmed state.",
+      "description": "Presence or absence of primary central nervous system lymphoma",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_437618.0",
+          "value_code": "OIFMA_OIDM_708674.0",
           "name": "absent",
+          "description": "Primary central nervous system lymphoma is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -42,8 +49,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.1",
+          "value_code": "OIFMA_OIDM_708674.1",
           "name": "present",
+          "description": "Primary central nervous system lymphoma is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -58,8 +66,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.2",
+          "value_code": "OIFMA_OIDM_708674.2",
           "name": "indeterminate",
+          "description": "Presence of primary central nervous system lymphoma cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -74,8 +83,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_437618.3",
+          "value_code": "OIFMA_OIDM_708674.3",
           "name": "unknown",
+          "description": "Presence of primary central nervous system lymphoma is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -90,7 +100,7 @@
           ]
         }
       ],
-      "required": true,
+      "required": false,
       "max_selected": 1,
       "index_codes": [
         {
@@ -101,15 +111,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MSFT_455956",
+      "oifma_id": "OIFMA_OIDM_531172",
       "name": "change from prior",
-      "description": "Whether and how subdural hematoma has changed over time",
+      "description": "Whether and how primary central nervous system lymphoma has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MSFT_455956.0",
+          "value_code": "OIFMA_OIDM_531172.0",
           "name": "unchanged",
-          "description": "Subdural hematoma is unchanged",
+          "description": "Primary central nervous system lymphoma is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -124,9 +134,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.1",
+          "value_code": "OIFMA_OIDM_531172.1",
           "name": "stable",
-          "description": "Subdural hematoma is stable",
+          "description": "Primary central nervous system lymphoma is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -141,9 +151,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.2",
+          "value_code": "OIFMA_OIDM_531172.2",
           "name": "new",
-          "description": "Subdural hematoma is new",
+          "description": "Primary central nervous system lymphoma is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -158,14 +168,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.3",
+          "value_code": "OIFMA_OIDM_531172.3",
           "name": "resolved",
-          "description": "Subdural hematoma seen on a prior exam has resolved"
+          "description": "Primary central nervous system lymphoma seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.4",
+          "value_code": "OIFMA_OIDM_531172.4",
           "name": "larger",
-          "description": "Subdural hematoma is larger",
+          "description": "Primary central nervous system lymphoma is larger",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -180,9 +190,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.5",
+          "value_code": "OIFMA_OIDM_531172.5",
           "name": "smaller",
-          "description": "Subdural hematoma is smaller",
+          "description": "Primary central nervous system lymphoma is smaller",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -197,14 +207,14 @@
           ]
         },
         {
-          "value_code": "OIFMA_MSFT_455956.6",
+          "value_code": "OIFMA_OIDM_531172.6",
           "name": "worsened",
-          "description": "Subdural hematoma has worsened"
+          "description": "Primary central nervous system lymphoma has worsened"
         },
         {
-          "value_code": "OIFMA_MSFT_455956.7",
+          "value_code": "OIFMA_OIDM_531172.7",
           "name": "improved",
-          "description": "Subdural hematoma has improved"
+          "description": "Primary central nervous system lymphoma has improved"
         }
       ],
       "required": false,
