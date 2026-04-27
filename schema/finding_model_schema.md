@@ -39,6 +39,51 @@ This schema describes radiology findings, their attributes, and how they are str
   *Type: array of strings*  
   Tags for categorizing the finding.
 
+- **body_regions**:
+  *Type: array of `BodyRegion` enum values*
+  Broad anatomic body regions where the finding applies. Valid values are `head`, `neck`, `chest`,
+  `breast`, `abdomen`, `pelvis`, `spine`, `upper_extremity`, `lower_extremity`, and `whole_body`.
+
+- **subspecialties**:
+  *Type: array of `Subspecialty` enum values*
+  RSNA-aligned specialty content codes relevant to the finding. Include every applicable retained
+  code such as `NR`, `CH`, `GI`, `GU`, `MK`, `PD`, `ER`, `VA`, `OI`, or `SQ`.
+
+- **etiologies**:
+  *Type: array of `EtiologyCode` enum values*
+  Reasonable etiologic categories for the finding, such as infectious/inflammatory, neoplastic,
+  traumatic, vascular, degenerative, congenital/developmental, iatrogenic, idiopathic, or
+  normal-variant categories.
+
+- **entity_type**:
+  *Type: `EntityType` enum value*
+  The kind of modeled concept: finding, diagnosis, grouping, measurement, assessment,
+  recommendation, or technique issue.
+
+- **applicable_modalities**:
+  *Type: array of `Modality` enum values*
+  Imaging modalities where the finding can reasonably be assessed. Valid values are `XR`, `CT`,
+  `MR`, `US`, `PET`, `NM`, `MG`, `RF`, and `DSA`.
+
+- **expected_time_course**:
+  *Type: `ExpectedTimeCourse` object*
+  Expected temporal behavior, including optional duration (`hours`, `days`, `weeks`, `months`,
+  `years`, or `permanent`) and optional modifiers such as progressive, evolving, resolving,
+  intermittent, fluctuating, recurrent, or stable.
+
+- **age_profile**:
+  *Type: `AgeProfile` object*
+  Age applicability profile. `applicability` is either `all_ages` or a list of applicable age stages;
+  `more_common_in` can identify stages where the finding is especially common.
+
+- **sex_specificity**:
+  *Type: `SexSpecificity` enum value*
+  Whether the finding is male-specific, female-specific, or sex-neutral.
+
+- **anatomic_locations**:
+  *Type: array of `IndexCode` objects*
+  Ontology-coded anatomic locations relevant to the finding.
+
 - **contributors**:  
   *Type: array of `Person` or `Organization` objects*  
   Users or organizations who contributed.
@@ -98,6 +143,10 @@ Links to standard ontology codes (e.g., SNOMED, RadLex).
 - **system**: Name of the system (e.g., "SNOMED").
 - **code**: Code in the system.
 - **display**: Optional display name.
+
+On canonical `index_codes`, codes should be exact or clinically substitutable matches for the full
+model concept. Merely related, broader, narrower, or temporally qualified codes belong in enrichment
+review artifacts, not in the canonical model JSON.
 
 ### `Person`
 

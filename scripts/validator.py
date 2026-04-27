@@ -1,13 +1,16 @@
 # /// script
-# requires-python = ">=3.13"
+# requires-python = ">=3.11"
 # dependencies = [
 #     "findingmodel",
+#     "oidm-common",
 # ]
+# [tool.uv.sources]
+# findingmodel = { path = "../.metadata-runs/wheelhouse/current/findingmodel-1.0.4-py3-none-any.whl" }
+# "oidm-common" = { path = "../.metadata-runs/wheelhouse/current/oidm_common-0.2.7-py3-none-any.whl" }
 # ///
 
 import json
 from findingmodel import FindingModelFull
-from findingmodel.common import model_file_name, normalize_name
 from findingmodel.contributor import Person, Organization
 from pathlib import Path
 
@@ -17,6 +20,26 @@ DEFS_DIR = Path(__file__).parent.parent / "defs"
 TEXT_DIR = Path(__file__).parent.parent / "text"
 INDEX_MARKDOWN_FILE = Path(__file__).parent.parent / "index.md"
 IDS_FILE = Path(__file__).parent.parent / "ids.json"
+REQUIRED_METADATA_FIELDS = {
+    "body_regions",
+    "subspecialties",
+    "etiologies",
+    "entity_type",
+    "applicable_modalities",
+    "expected_time_course",
+    "age_profile",
+    "sex_specificity",
+    "anatomic_locations",
+}
+
+
+def require_metadata_aware_package() -> None:
+    missing = sorted(REQUIRED_METADATA_FIELDS - set(FindingModelFull.model_fields))
+    if missing:
+        raise RuntimeError(
+            "scripts/validator.py must run with the metadata-aware findingmodel package. "
+            f"Missing model fields: {', '.join(missing)}"
+        )
 
 def write_finding_model(model: FindingModelFull, filename: str | Path | None) -> None:
     """
@@ -26,7 +49,7 @@ def write_finding_model(model: FindingModelFull, filename: str | Path | None) ->
         model (FindingModelFull): The finding model instance to write.
     """
     if filename is None:
-        filename = DEFS_DIR / model_file_name(model.name)
+        raise ValueError("write_finding_model requires the existing .fm.json filename to avoid renaming source files.")
     elif isinstance(filename, str):
         if not filename.endswith(".fm.json"):
             filename += ".fm.json"
@@ -53,7 +76,7 @@ def write_markdown(model: FindingModelFull, filename: str | Path | None = None) 
         filename (str | Path | None): The output filename. If None, defaults to the model name.
     """
     if filename is None:
-        filename = TEXT_DIR / f"{normalize_name(model.name)}.md"
+        raise ValueError("write_markdown requires the .fm.json-derived markdown filename to avoid slug drift.")
     elif isinstance(filename, str):
         if not filename.endswith(".md"):
             filename += ".md"
@@ -70,9 +93,9 @@ def write_markdown(model: FindingModelFull, filename: str | Path | None = None) 
         return
     filename.write_text(markdown, encoding="utf-8")
 
-def markdown_table_row(model: FindingModelFull) -> str:
+def markdown_table_row(model: FindingModelFull, json_path: Path) -> str:
     cells: list[str] = []
-    json_filename = model_file_name(model.name)
+    json_filename = json_path.name
     md_filename = json_filename.replace(".fm.json", ".md")
 
     entry_name_with_links = (
@@ -99,6 +122,7 @@ def main() -> list[str]:
     """
     Main function to load all finding models from the defs directory and write their markdown representations.
     """
+    require_metadata_aware_package()
     TEXT_DIR.mkdir(parents=True, exist_ok=True)
 
     errors = []
@@ -125,11 +149,11 @@ def main() -> list[str]:
             attribute_ids[attr.oifma_id] = (json_path.name, attr.name)
 
         # Write the model to JSON and markdown files
-        write_markdown(model)
+        write_markdown(model, filename=json_path.with_suffix("").with_suffix(".md").name)
         write_finding_model(model, filename=json_path)
         
         # Append the markdown table row for the index
-        table_rows.append(markdown_table_row(model))
+        table_rows.append(markdown_table_row(model, json_path))
     
     # If there are validation errors, print them
     if errors:
@@ -182,4 +206,3 @@ if __name__ == "__main__":
             # Don't fail the pre-commit hook if git add fails
     
     print("Validation completed successfully.")
-

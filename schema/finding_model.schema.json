@@ -1,5 +1,79 @@
 {
   "$defs": {
+    "AgeProfile": {
+      "description": "Age applicability profile for a finding model.",
+      "properties": {
+        "applicability": {
+          "anyOf": [
+            {
+              "const": "all_ages",
+              "type": "string"
+            },
+            {
+              "items": {
+                "$ref": "#/$defs/AgeStage"
+              },
+              "type": "array"
+            }
+          ],
+          "description": "Either 'all_ages' or a list of applicable age stages.",
+          "title": "Applicability"
+        },
+        "more_common_in": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/AgeStage"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Age stages where this finding is more commonly seen.",
+          "title": "More Common In"
+        }
+      },
+      "required": [
+        "applicability"
+      ],
+      "title": "AgeProfile",
+      "type": "object"
+    },
+    "AgeStage": {
+      "description": "Disjoint, MeSH-derived age bins for faceting.",
+      "enum": [
+        "newborn",
+        "infant",
+        "preschool_child",
+        "child",
+        "adolescent",
+        "young_adult",
+        "adult",
+        "middle_aged",
+        "aged"
+      ],
+      "title": "AgeStage",
+      "type": "string"
+    },
+    "BodyRegion": {
+      "enum": [
+        "head",
+        "neck",
+        "chest",
+        "breast",
+        "abdomen",
+        "pelvis",
+        "spine",
+        "upper_extremity",
+        "lower_extremity",
+        "whole_body"
+      ],
+      "title": "BodyRegion",
+      "type": "string"
+    },
     "ChoiceAttributeIded": {
       "description": "An attribute of a radiology finding where the radiologist would choose from a list of options. For example,\nthe severity of a finding (mild, moderate, or severe), or the shape of a finding (round, oval, or\nirregular). For attributes which can have multiple values from a series of choices, max_selected can be set to\"\na value greater than 1 or \"all\".",
       "properties": {
@@ -61,7 +135,6 @@
         "index_codes": {
           "anyOf": [
             {
-              "default": null,
               "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
               "items": {
                 "$ref": "#/$defs/IndexCode"
@@ -113,7 +186,6 @@
         "index_codes": {
           "anyOf": [
             {
-              "default": null,
               "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
               "items": {
                 "$ref": "#/$defs/IndexCode"
@@ -136,8 +208,90 @@
       "title": "ChoiceValueIded",
       "type": "object"
     },
+    "EntityType": {
+      "enum": [
+        "finding",
+        "diagnosis",
+        "grouping",
+        "measurement",
+        "assessment",
+        "recommendation",
+        "technique_issue"
+      ],
+      "title": "EntityType",
+      "type": "string"
+    },
+    "EtiologyCode": {
+      "enum": [
+        "inflammatory",
+        "inflammatory:infectious",
+        "neoplastic:benign",
+        "neoplastic:malignant",
+        "neoplastic:metastatic",
+        "neoplastic:potential",
+        "traumatic:acute",
+        "traumatic:sequela",
+        "vascular:ischemic",
+        "vascular:hemorrhagic",
+        "vascular:thrombotic",
+        "vascular:aneurysmal",
+        "degenerative",
+        "metabolic",
+        "congenital",
+        "developmental",
+        "autoimmune",
+        "toxic",
+        "mechanical",
+        "iatrogenic:post-operative",
+        "iatrogenic:post-radiation",
+        "iatrogenic:device",
+        "iatrogenic:medication-related",
+        "idiopathic",
+        "normal-variant"
+      ],
+      "title": "EtiologyCode",
+      "type": "string"
+    },
+    "ExpectedDuration": {
+      "description": "Upper bound on how long the finding typically remains visible on imaging.",
+      "enum": [
+        "hours",
+        "days",
+        "weeks",
+        "months",
+        "years",
+        "permanent"
+      ],
+      "title": "ExpectedDuration",
+      "type": "string"
+    },
+    "ExpectedTimeCourse": {
+      "description": "Expected temporal behavior of a finding on imaging.",
+      "properties": {
+        "duration": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ExpectedDuration"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "modifiers": {
+          "items": {
+            "$ref": "#/$defs/TimeCourseModifier"
+          },
+          "title": "Modifiers",
+          "type": "array"
+        }
+      },
+      "title": "ExpectedTimeCourse",
+      "type": "object"
+    },
     "IndexCode": {
-      "description": "Code representing an entry in a standard ontology, e.g., SNOMED or RadLex, which can be applied\nto a finding or attribute. This is used to standardize the representation of findings and attributes\nacross different systems and to facilitate interoperability between different systems.",
+      "description": "Simple ontology identifier: system, code, and optional display name.\n\nIndexCode is a plain identifier object \u2014 it carries no relationship semantics (e.g., broader,\nnarrower, related). When used on canonical FindingModel.index_codes, each code must be an exact\nmatch or clinically substitutable near-equivalent for the full model concept. Merely related,\nbroader, narrower, or temporally qualified codes belong in the enrichment review artifact, not\non the canonical model. If relationship-bearing ontology links are needed in the future, use a\nseparate typed wrapper rather than overloading IndexCode.",
       "properties": {
         "system": {
           "description": "The system that the code is from, e.g., SNOMED or RadLex.",
@@ -147,7 +301,7 @@
         },
         "code": {
           "description": "The code representing the entry in the standard ontology.",
-          "minLength": 3,
+          "minLength": 2,
           "title": "Code",
           "type": "string"
         },
@@ -172,6 +326,21 @@
       ],
       "title": "IndexCode",
       "type": "object"
+    },
+    "Modality": {
+      "enum": [
+        "XR",
+        "CT",
+        "MR",
+        "US",
+        "PET",
+        "NM",
+        "MG",
+        "RF",
+        "DSA"
+      ],
+      "title": "Modality",
+      "type": "string"
     },
     "NumericAttributeIded": {
       "description": "An attribute of a radiology finding where the radiologist would choose a number from a range. For example, the\nsize of a finding might be up to 10 cm or the number of findings might be between 1 and 10.",
@@ -264,7 +433,6 @@
         "index_codes": {
           "anyOf": [
             {
-              "default": null,
               "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
               "items": {
                 "$ref": "#/$defs/IndexCode"
@@ -376,6 +544,53 @@
       ],
       "title": "Person",
       "type": "object"
+    },
+    "SexSpecificity": {
+      "enum": [
+        "male-specific",
+        "female-specific",
+        "sex-neutral"
+      ],
+      "title": "SexSpecificity",
+      "type": "string"
+    },
+    "Subspecialty": {
+      "description": "RSNA-aligned specialty content codes retained for finding-model metadata.",
+      "enum": [
+        "BR",
+        "CA",
+        "CH",
+        "ER",
+        "GI",
+        "GU",
+        "HN",
+        "IR",
+        "MI",
+        "MK",
+        "NM",
+        "NR",
+        "OB",
+        "OI",
+        "PD",
+        "SQ",
+        "VA"
+      ],
+      "title": "Subspecialty",
+      "type": "string"
+    },
+    "TimeCourseModifier": {
+      "description": "Behavioral pattern of the finding over time.",
+      "enum": [
+        "progressive",
+        "stable",
+        "evolving",
+        "resolving",
+        "intermittent",
+        "fluctuating",
+        "recurrent"
+      ],
+      "title": "TimeCourseModifier",
+      "type": "string"
     }
   },
   "description": "The definition of a radiology finding what the finding is such as might be included in a textbook\nalong with definitions of the relevant attributes that a radiologist might use to characterize the finding in a\nradiology report.",
@@ -432,6 +647,127 @@
       "description": "Tags that might be used to categorize the finding among other findings",
       "title": "Tags"
     },
+    "body_regions": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/BodyRegion"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Body Regions"
+    },
+    "subspecialties": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Subspecialty"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subspecialties"
+    },
+    "etiologies": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/EtiologyCode"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Etiologies"
+    },
+    "entity_type": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EntityType"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "applicable_modalities": {
+      "anyOf": [
+        {
+          "items": {
+            "$ref": "#/$defs/Modality"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Applicable Modalities"
+    },
+    "expected_time_course": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ExpectedTimeCourse"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "age_profile": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AgeProfile"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "sex_specificity": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SexSpecificity"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "anatomic_locations": {
+      "anyOf": [
+        {
+          "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
+          "items": {
+            "$ref": "#/$defs/IndexCode"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Anatomic Locations"
+    },
     "contributors": {
       "anyOf": [
         {
@@ -482,7 +818,6 @@
     "index_codes": {
       "anyOf": [
         {
-          "default": null,
           "description": "References to concepts in standad ontologies to facilitate interoperability between systems.",
           "items": {
             "$ref": "#/$defs/IndexCode"
