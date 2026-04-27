@@ -91,3 +91,9 @@ cython_debug/
 
 # Per-batch review artifacts (TUI review files); local-only
 reviews/
+
+# Metadata enrichment run artifacts and local wheelhouse
+.metadata-runs/
+
+# Local browser-inspection artifacts
+.playwright-cli/
