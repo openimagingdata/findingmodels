@@ -117,7 +117,6 @@ The validator can automatically stage generated files when used with `--with-git
 ## Branch Strategy
 
 - Main branch: `main`
-- Current branch: `load_cde_fms` (migrating CDE-based definitions)
 - Create pull requests to merge into `main`
 
 ## Common Ontologies
