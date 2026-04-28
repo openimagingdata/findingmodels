@@ -35,7 +35,7 @@ Hood JSON and other legacy inputs are not supported.
 - **Directory**: list the files, confirm they're the ones to process.
 - **Pasted list**: confirm the names back to the user, one per line.
 
-Produce an in-memory list of incoming findings, each tagged with its source row ID (for CSVs) or source file path.
+Produce an in-memory list of incoming findings, each tagged with its source row ID (for CSVs) or source file path. For CSV input, preserve the actual source row fields needed for review — at minimum the row ID, incoming name, category/type columns if present, parent ID if present, synonyms if present, description if present, and any existing OIFM/status columns. This original-source information must be carried through to the review file for both newly created models and existing-model matches.
 
 ## Step 2 — Triage pass (main skill, whole batch visible)
 
@@ -47,7 +47,7 @@ Load `prompts/fragments/search_and_triage.md`. For each incoming finding, genera
 
 Look for cross-row duplicates in the incoming list and surface them to the user before drafting.
 
-Present a triage table and get user decisions on ambiguous rows.
+Present a triage table and get user decisions on ambiguous rows. Keep the direct-match decisions in the batch state; they are not done until the user has reviewed them in the TUI alongside any new models.
 
 ## Step 3 — Draft pass (fan-out, sub-agents, parallel groups of 5)
 
@@ -81,6 +81,14 @@ Fan out in parallel groups of 5.
 
 Apply the sub-agents' suggested fixes with Edit. Then, inline in the main skill (no sub-agent), load `prompts/fragments/review_file_generation.md` and write `reviews/review_<label>_<n>.md` files, splitting into groups of ~8-10 entries.
 
+The review files MUST include every incoming finding decision, not only newly created models:
+
+- **New model entries** — show the created model path, OIFM ID, description, synonyms, change-from-prior values, and the exact source input that produced it.
+- **Existing-match entries** — show the matched model path, OIFM ID, description, synonyms, change-from-prior values if present, and the exact source input that was mapped to it.
+- **Ambiguous or skipped entries** — show the exact source input, the candidate model(s) or skip reason, and the user-facing question or decision needed.
+
+For CSV sources, every entry MUST include the actual CSV row information used for the decision, including the row ID and incoming finding name. Include relevant columns verbatim (for example category, parent ID, synonyms, and finding type) so the reviewer can compare the source row against the proposed model or match without opening the CSV.
+
 ## Step 8 — TUI handoff
 
 Load `prompts/fragments/tui_handoff.md`. Tell the user how to launch the TUI. Wait for them to come back. The TUI step is **mandatory** for this skill.
@@ -95,6 +103,6 @@ Load `prompts/fragments/csv_writeback.md`. Inspect the CSV, decide columns with 
 
 ## Stop conditions
 
-- All created findings have passed quality review, TUI sign-off, and (for CSV-sourced batches) the OIFM IDs are written back.
+- All created findings and existing-model match decisions have passed TUI sign-off, all created findings have passed quality review, and (for CSV-sourced batches) the OIFM IDs are written back.
 
 Report: count created, count already-existing (referenced by OIFM IDs), count synonyms added, count remaining unprocessed. Do **not** commit without explicit user permission.

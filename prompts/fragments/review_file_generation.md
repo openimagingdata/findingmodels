@@ -22,6 +22,18 @@ For each changed file, produce one `###` entry with:
 
 Keep each entry short — typically 8-15 lines total. The TUI is for quick scanning, not re-review.
 
+## Batch decision entries
+
+For batch authoring from a CSV or other tracked source, the review file must cover the whole batch decision set, not only files that were newly created:
+
+- Include newly created models.
+- Include incoming rows/items that were mapped to existing models.
+- Include ambiguous, skipped, or deferred rows/items if they remain in the batch.
+
+Every entry must show the original source information used for the decision. For CSV input, include the actual row values the reviewer needs to compare against the proposed model or match: row ID, incoming name, category/type columns if present, parent ID if present, synonyms if present, description if present, and any existing OIFM/status columns if present. Do not force the reviewer to open the CSV to understand what was mapped.
+
+For existing-model matches, use the matched model's actual values from disk (path, OIFM ID, description, synonyms, and `change from prior` values if present), then add a clear review prompt asking the user to confirm or reject the mapping.
+
 ## What to flag
 
 - A naming or scope choice that still needs confirmation
