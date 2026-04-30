@@ -16,7 +16,7 @@
 
 **Assessment:** Looks reasonable as written; confirm acceptable.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
 
@@ -32,7 +32,7 @@
 
 **Assessment:** Looks reasonable as written; confirm acceptable.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **QUESTION:** The source CSV included `subperiosteal hematoma`; I scoped this to `subperiosteal scalp hematoma` and `subperiosteal scalp hemorrhage` to avoid cross-body ambiguity. Confirm this narrower synonym choice.
 
-**Response:** 
+**Response:** don't fabricate narrower synonyms — "subperiosteal scalp hematoma" is not a term radiologists use. drop `subperiosteal hematoma` entirely due to cross-body collision with long bone subperiosteal hematomas. keep `cephalhematoma` as the synonym. remove `subperiosteal scalp hematoma` and `subperiosteal scalp hemorrhage` from the model.
 
 ---
 
@@ -64,7 +64,7 @@
 
 **QUESTION:** Confirm that `tonsillar calcification` and `palatine tonsil calcification` should map to `tonsillolith`, rather than remaining as broader calcification language.
 
-**Response:** 
+**Response:** confirmed — when a radiologist writes "tonsillar calcification" on a head CT, they mean a tonsillolith. same entity, same specificity. keep both as synonyms.
 
 ---
 
@@ -80,7 +80,7 @@
 
 **Assessment:** Direct match at the same broad level. Confirm this row should map to this existing model.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
 
@@ -96,7 +96,7 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
 
@@ -112,7 +112,7 @@
 
 **QUESTION:** `soft tissue edema` is already a synonym on `soft tissue swelling`. Confirm that the CSV row should map to the swelling model rather than requiring a separate edema model.
 
-**Response:** 
+**Response:** confirmed — edema is already a synonym on the swelling model. map the CSV row there, no separate model needed.
 
 ---
 
@@ -128,7 +128,7 @@
 
 **QUESTION:** `soft tissue lesion` is already a synonym on `soft tissue mass`. Confirm that lesion and mass are equivalent enough here for CSV mapping.
 
-**Response:** 
+**Response:** confirmed — lesion is already a synonym on the mass model. map the CSV row there.
 
 ---
 
@@ -144,7 +144,7 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** 
+**Response:** correct match. map the CSV row as-is. legacy casing (sentence case → lowercase) and missing change from prior are metadata cleanup — not taxonomy questions. fix separately.
 
 ---
 
@@ -160,7 +160,7 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** 
+**Response:** correct match. map as-is. legacy casing and missing change from prior are metadata cleanup — fix separately.
 
 ---
 
@@ -176,7 +176,7 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing CDE model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** 
+**Response:** correct match. map as-is. legacy casing and missing change from prior are metadata cleanup — fix separately.
 
 ---
 
@@ -192,7 +192,7 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
 
@@ -208,6 +208,6 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** 
+**Response:** confirmed.
 
 ---
