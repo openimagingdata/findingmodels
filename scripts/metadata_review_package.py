@@ -53,6 +53,10 @@ def repo_path(path: Path) -> Path:
     return path if path.is_absolute() else (ROOT / path).resolve()
 
 
+def default_data_dir(output_dir: Path) -> Path:
+    return output_dir.parent / f"{output_dir.name}-data"
+
+
 def summarize_attributes(attributes: list[dict[str, Any]] | None) -> list[str]:
     summaries = []
     for attr in attributes or []:
@@ -97,23 +101,34 @@ def review_item(source_path: Path, run_dir: Path) -> dict[str, Any]:
     audit = read_json(audit_path) if audit_path.exists() else {}
     warnings = [str(w) for w in review.get("warnings", [])]
     warnings += [f"Audit {flag.get('severity', 'flag')}: {flag.get('message', flag)}" for flag in audit.get("flags", [])]
+    field_confidence = review.get("field_confidence", {})
+    non_high_confidence = {
+        field: confidence
+        for field, confidence in field_confidence.items()
+        if str(confidence).lower() != "high"
+    }
     sections = []
     if warnings:
         sections.append({"title": "Run warnings", "kind": "list", "value": warnings})
-    sections += [
-        {"title": "Field confidence", "kind": "json", "value": review.get("field_confidence", {}), "collapsed": True},
-        {
-            "title": "Run details",
+    if non_high_confidence:
+        sections.append({
+            "title": "Non-high field confidence",
             "kind": "json",
+            "value": non_high_confidence,
             "collapsed": True,
-            "value": {k: review[k] for k in ("assignment_timestamp", "model_used", "assignment_mode", "logfire_trace_id", "timings") if k in review},
-        },
-    ]
+        })
+    sections.append({
+        "title": "Run details",
+        "kind": "json",
+        "collapsed": True,
+        "value": {k: review[k] for k in ("assignment_timestamp", "model_used", "assignment_mode", "logfire_trace_id", "timings") if k in review},
+    })
     return {
         "id": item_id,
         "file_name": source_path.name,
         "path": rel(source_path),
         "title": model.get("name") or item_id.replace("_", " "),
+        "field_confidence": field_confidence,
         **{field: model.get(field) for field in FIELDS},
         "synonyms": model.get("synonyms") or [],
         "body_regions": model.get("body_regions") or [],
@@ -131,6 +146,23 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN_DIR)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
+    parser.add_argument(
+        "--embed-data",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "Embed review data directly in index.html so it can be shared as a single file. "
+            "Use --no-embed-data to load review-data.json from the same directory instead."
+        ),
+    )
+    parser.add_argument(
+        "--data-dir",
+        type=Path,
+        help=(
+            "Directory for the preserved review-data.json when using embedded mode. "
+            "Defaults to a sibling of --output-dir, e.g. review-current-data."
+        ),
+    )
     parser.add_argument("paths", nargs="*", type=Path)
     args = parser.parse_args()
     args.run_dir = repo_path(args.run_dir)
@@ -149,11 +181,26 @@ def main() -> int:
     }
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    (args.output_dir / "review-data.json").write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    html = TEMPLATE.read_text(encoding="utf-8").replace("__DATASET_JSON__", json.dumps(data)).replace("__PAGE_TITLE__", data["title"])
+    data_dir = repo_path(args.data_dir) if args.data_dir else default_data_dir(args.output_dir)
+    data_path = data_dir / "review-data.json"
+    if args.embed_data:
+        (args.output_dir / "review-data.json").unlink(missing_ok=True)
+        data_dir.mkdir(parents=True, exist_ok=True)
+        data_path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    else:
+        data_path = args.output_dir / "review-data.json"
+        data_path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    bootstrap_json = json.dumps(data) if args.embed_data else "null"
+    html = (
+        TEMPLATE.read_text(encoding="utf-8")
+        .replace("__DATASET_BOOTSTRAP__", bootstrap_json)
+        .replace("__PAGE_TITLE__", data["title"])
+    )
     html_path = args.output_dir / "index.html"
     html_path.write_text(html, encoding="utf-8")
-    print(f"Open review app: {html_path.resolve()}")
+    mode = "embedded single-file" if args.embed_data else "external review-data.json"
+    print(f"Open review app: {html_path.resolve()} ({mode})")
+    print(f"Review data JSON: {data_path.resolve()}")
     return 0
 
 

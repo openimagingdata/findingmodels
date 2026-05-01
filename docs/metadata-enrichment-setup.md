@@ -43,6 +43,13 @@ BIONTOLOGY_API_KEY=...
 
 Set `LOGFIRE_TOKEN` as well when running with `--logfire`.
 
+For sandboxed local runs, keep DuckDB extension/cache writes inside ignored run artifacts by
+prefixing live commands with:
+
+```bash
+env HOME=/Users/talkasab/repos/findingmodels-metadata/.metadata-runs/home XDG_CACHE_HOME=/Users/talkasab/.cache
+```
+
 ## Smoke Commands
 
 Run these from this repository after the wheelhouse is populated.
@@ -56,12 +63,18 @@ uv run scripts/metadata_select_pilot.py --defs-dir defs --target-count 5 --outpu
 ```
 
 ```bash
-uv run --env-file .env scripts/metadata_assign_batch.py --dry-run --logfire --run-dir .metadata-runs/smoke-enrichment --ontology-cache .metadata-runs/smoke-ontology-cache.duckdb --concurrency 3 defs/abdominal_abscess.fm.json defs/aortic_dissection.fm.json defs/adrenal_nodule.fm.json
+env HOME=/Users/talkasab/repos/findingmodels-metadata/.metadata-runs/home XDG_CACHE_HOME=/Users/talkasab/.cache uv run --env-file .env scripts/metadata_assign_batch.py --dry-run --logfire --run-dir .metadata-runs/smoke-enrichment --ontology-cache .metadata-runs/smoke-ontology-cache.duckdb --concurrency 3 defs/abdominal_abscess.fm.json defs/aortic_dissection.fm.json defs/adrenal_nodule.fm.json
 ```
 
 ```bash
 uv run --env-file .env scripts/metadata_review_package.py --run-dir .metadata-runs/smoke-enrichment
 ```
+
+By default, the generated `index.html` embeds the review dataset so the HTML file can be shared and
+opened directly without a local server. In this mode, `review-current/` contains only `index.html` as
+the active handoff artifact, and the preserved review JSON is written to the sibling
+`review-current-data/review-data.json`. Use `--no-embed-data` only when you want `index.html` to load
+an adjacent `review-data.json` file instead.
 
 Open:
 
@@ -74,3 +87,7 @@ Open:
 For the real pilot, select about 150 files, run enrichment with concurrency `3`, generate the review
 app at `.metadata-runs/review-current/index.html`, complete human review there, and ingest the
 downloaded review JSON with `scripts/metadata_ingest_review.py`.
+
+If local wheel files are rebuilt without changing package versions, force `uv run` to reinstall them
+with `--reinstall-package findingmodel --reinstall-package findingmodel-ai --reinstall-package
+oidm-common --reinstall-package oidm-maintenance --reinstall-package anatomic-locations`.

@@ -27,6 +27,8 @@
     --success-soft: #e8f6ee;
     --warning: #9a6700;
     --warning-soft: #fff4d8;
+    --danger: #b42318;
+    --danger-soft: #fff1f0;
     --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
     --sidebar-width: 320px;
     --radius: 16px;
@@ -78,47 +80,82 @@
   }
 
   .counts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
   }
 
   .pill {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    gap: 5px;
     border: 1px solid var(--border);
     background: white;
-    border-radius: 999px;
-    padding: 4px 9px;
-    font-size: 12px;
+    border-radius: 10px;
+    padding: 7px 6px;
+    font-size: 15px;
+    font-weight: 800;
     color: var(--muted);
+    min-width: 0;
   }
 
-  .pill strong { color: var(--text); }
-
-  .reviewer-box label {
-    display: block;
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 5px;
+  .pill-icon {
+    font-size: 13px;
+    line-height: 1;
+    color: var(--muted-2);
   }
 
-  .reviewer-box input,
+  .pill strong {
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .identity-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 10px;
+    padding: 8px 9px;
+  }
+
+  .identity-main {
+    min-width: 0;
+    display: grid;
+    gap: 2px;
+  }
+
+  .identity-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+  }
+
+  .identity-value {
+    min-width: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+
+  .identity-change {
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
   textarea,
   button {
     font: inherit;
   }
 
-  .reviewer-box input {
-    width: 100%;
-    padding: 9px 11px;
-    border: 1px solid var(--border-strong);
-    border-radius: 10px;
-    background: white;
-  }
-
-  .reviewer-box input:focus,
+  input:focus,
   textarea:focus,
   button:focus {
     outline: 2px solid rgba(37, 99, 235, 0.18);
@@ -440,6 +477,20 @@
 
   .dense-row:first-child { border-top: 0; }
 
+  .dense-row.attention-medium,
+  .fact-card.attention-medium {
+    background: #fffaf0;
+    border-color: #efcf98;
+  }
+
+  .dense-row.attention-low,
+  .fact-card.attention-low,
+  .dense-row.attention-missing,
+  .fact-card.attention-missing {
+    background: var(--danger-soft);
+    border-color: #f2b8b5;
+  }
+
   .dense-label {
     font-size: 12px;
     font-weight: 700;
@@ -452,6 +503,32 @@
     line-height: 1.45;
     color: var(--text);
     word-break: break-word;
+  }
+
+  .attention-note {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 6px;
+    border-radius: 999px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.2;
+    border: 1px solid var(--border);
+  }
+
+  .attention-note.medium {
+    color: #7a5300;
+    background: var(--warning-soft);
+    border-color: #efcf98;
+  }
+
+  .attention-note.low,
+  .attention-note.missing {
+    color: var(--danger);
+    background: #fff7f7;
+    border-color: #f2b8b5;
   }
 
   .fact-grid {
@@ -597,6 +674,63 @@
     color: var(--muted);
   }
 
+  .identity-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: none;
+    place-items: center;
+    padding: 20px;
+    background: rgba(15, 23, 42, 0.42);
+  }
+
+  .identity-overlay.show {
+    display: grid;
+  }
+
+  .identity-dialog {
+    width: min(480px, 100%);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 22px 70px rgba(15, 23, 42, 0.28);
+    padding: 18px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .identity-dialog h2 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .identity-dialog p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  .identity-dialog input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    font: inherit;
+  }
+
+  .identity-error {
+    min-height: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--danger);
+  }
+
+  .identity-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   @media (max-width: 1180px) {
     .message-body {
       grid-template-columns: 1fr;
@@ -649,10 +783,12 @@
       <div class="eyebrow">Review queue</div>
       <h1 class="sidebar-title" id="datasetTitle"></h1>
       <div class="counts" id="counts"></div>
-      <div class="reviewer-box">
-        <label for="reviewerInput">Reviewer identifier</label>
-        <input id="reviewerInput" type="text" placeholder="name, email, or GitHub username">
-        <div class="helper">Saved only in this browser unless you download and send the JSON file.</div>
+      <div class="identity-bar">
+        <div class="identity-main">
+          <div class="identity-label">Reviewer</div>
+          <div class="identity-value" id="identityValue"></div>
+        </div>
+        <button type="button" class="identity-change" id="changeIdentityBtn">Change</button>
       </div>
     </div>
     <div class="list" id="itemList"></div>
@@ -682,21 +818,39 @@
   </main>
 </div>
 
+<div class="identity-overlay" id="identityOverlay" role="dialog" aria-modal="true" aria-labelledby="identityTitle">
+  <div class="identity-dialog">
+    <h2 id="identityTitle">Reviewer identity</h2>
+    <p>Enter your name, email, or GitHub username before starting review.</p>
+    <input id="identityInput" type="text" autocomplete="name" placeholder="name, email, or GitHub username">
+    <div class="identity-error" id="identityError" aria-live="polite"></div>
+    <div class="identity-dialog-actions">
+      <button type="button" class="primary" id="saveIdentityBtn">Start review</button>
+    </div>
+  </div>
+</div>
+
 <script>
 (() => {
-  const DATASET = __DATASET_JSON__;
-  const STORAGE_KEY = `finding-model-review:${DATASET.id}`;
+  let DATASET = __DATASET_BOOTSTRAP__;
+  let STORAGE_KEY = '';
 
   const state = {
     currentIndex: 0,
     reviewerId: '',
     responses: {},
+    identityPromptOpen: false,
   };
 
   const elements = {
     datasetTitle: document.getElementById('datasetTitle'),
     counts: document.getElementById('counts'),
-    reviewerInput: document.getElementById('reviewerInput'),
+    identityValue: document.getElementById('identityValue'),
+    changeIdentityBtn: document.getElementById('changeIdentityBtn'),
+    identityOverlay: document.getElementById('identityOverlay'),
+    identityInput: document.getElementById('identityInput'),
+    identityError: document.getElementById('identityError'),
+    saveIdentityBtn: document.getElementById('saveIdentityBtn'),
     itemList: document.getElementById('itemList'),
     toolbarTitle: document.getElementById('toolbarTitle'),
     toolbarSubtitle: document.getElementById('toolbarSubtitle'),
@@ -707,18 +861,35 @@
 
   init();
 
-  function init() {
+  async function init() {
+    try {
+      DATASET = DATASET || await loadExternalDataset();
+    } catch (err) {
+      elements.message.innerHTML = '<div class="message-body"><div class="empty-note">Could not load review data. Regenerate with embedded data or serve this directory over HTTP with review-data.json beside index.html.</div></div>';
+      console.error('Could not load review data', err);
+      return;
+    }
+    STORAGE_KEY = `finding-model-review:${DATASET.id}`;
     elements.datasetTitle.textContent = DATASET.title;
     loadState();
-    elements.reviewerInput.value = state.reviewerId || '';
-    elements.reviewerInput.addEventListener('input', () => {
-      state.reviewerId = elements.reviewerInput.value;
-      persistState();
-      updateDownloadAvailability();
+    elements.changeIdentityBtn.addEventListener('click', () => showIdentityPrompt({ allowCancel: true }));
+    elements.saveIdentityBtn.addEventListener('click', saveIdentityFromPrompt);
+    elements.identityInput.addEventListener('keydown', event => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        saveIdentityFromPrompt();
+      }
     });
     elements.downloadBtn.addEventListener('click', downloadJson);
     document.addEventListener('keydown', handleGlobalKeydown);
     render();
+    if (!hasReviewerId()) showIdentityPrompt({ allowCancel: false });
+  }
+
+  async function loadExternalDataset() {
+    const response = await fetch('review-data.json');
+    if (!response.ok) throw new Error(`review-data.json request failed with status ${response.status}`);
+    return response.json();
   }
 
   function loadState() {
@@ -837,10 +1008,12 @@
   function renderSummary() {
     const s = summary();
     elements.counts.innerHTML = `
-      <span class="pill"><strong>${s.remaining}</strong> remaining</span>
-      <span class="pill"><strong>${s.approved}</strong> approved</span>
-      <span class="pill"><strong>${s.feedback}</strong> feedback</span>
+      <span class="pill" title="Remaining" aria-label="${s.remaining} remaining"><span class="pill-icon">○</span><strong>${s.remaining}</strong></span>
+      <span class="pill" title="Approved" aria-label="${s.approved} approved"><span class="pill-icon">✓</span><strong>${s.approved}</strong></span>
+      <span class="pill" title="Feedback" aria-label="${s.feedback} feedback"><span class="pill-icon">⚠</span><strong>${s.feedback}</strong></span>
+      <span class="pill" title="Drafts" aria-label="${s.drafts} drafts"><span class="pill-icon">✎</span><strong>${s.drafts}</strong></span>
     `;
+    elements.identityValue.textContent = state.reviewerId || 'Not set';
     elements.completionBanner.classList.toggle('show', s.complete);
     const current = getItem(state.currentIndex);
     elements.toolbarTitle.textContent = current ? (current.title || current.file_name) : DATASET.title;
@@ -908,24 +1081,24 @@
           : '<span class="status-chip pending">Pending</span>';
 
     const quickFacts = [
-      renderFactCard('Entity type', renderTextValue(item.entity_type)),
-      renderFactCard('Body region', renderListValue(item.body_regions), true),
-      renderFactCard('Modalities', renderListValue(item.applicable_modalities), true),
-      renderFactCard('Subspecialties', renderListValue(item.subspecialties), true),
+      renderFactCard(item, 'entity_type', 'Entity type', renderTextValue(item.entity_type)),
+      renderFactCard(item, 'body_regions', 'Body region', renderListValue(item.body_regions), true),
+      renderFactCard(item, 'applicable_modalities', 'Modalities', renderListValue(item.applicable_modalities), true),
+      renderFactCard(item, 'subspecialties', 'Subspecialties', renderListValue(item.subspecialties), true),
     ].filter(Boolean).join('');
 
     const overviewRows = [
-      renderDenseRow('Path', renderPlainText(item.path)),
-      renderDenseRow('Synonyms', renderListValue(item.synonyms)),
-      renderDenseRow('Etiologies', renderListValue(item.etiologies)),
-      renderDenseRow('Sex specificity', renderTextValue(item.sex_specificity)),
-      renderDenseRow('Age profile', renderStructuredSummary(item.age_profile)),
-      renderDenseRow('Expected time course', renderStructuredSummary(item.expected_time_course)),
+      renderDenseRow(item, 'path', 'Path', renderPlainText(item.path), { required: false }),
+      renderDenseRow(item, 'synonyms', 'Synonyms', renderListValue(item.synonyms), { required: false }),
+      renderDenseRow(item, 'etiologies', 'Etiologies', renderListValue(item.etiologies), { required: false }),
+      renderDenseRow(item, 'sex_specificity', 'Sex specificity', renderTextValue(item.sex_specificity), { required: true }),
+      renderDenseRow(item, 'age_profile', 'Age profile', renderStructuredSummary(item.age_profile), { required: true }),
+      renderDenseRow(item, 'expected_time_course', 'Expected time course', renderStructuredSummary(item.expected_time_course), { required: true }),
     ].filter(Boolean).join('');
 
     const codingRows = [
-      renderDenseRow('Index codes', renderCodeCollection(item.index_codes)),
-      renderDenseRow('Anatomic locations', renderCodeCollection(item.anatomic_locations)),
+      renderDenseRow(item, 'index_codes', 'Index codes', renderCodeCollection(item.index_codes), { required: true }),
+      renderDenseRow(item, 'anatomic_locations', 'Anatomic locations', renderCodeCollection(item.anatomic_locations), { required: true }),
     ].filter(Boolean).join('');
 
     const attrs = (item.attributes || []).length
@@ -1025,12 +1198,52 @@
     return `<div class="plain-list">${arr.map(v => escapeHtml(prettifyToken(String(v)))).join(', ')}</div>`;
   }
 
-  function renderFactCard(label, value, compact = false) {
-    if (!value) return '';
+  function confidenceForField(item, field) {
+    const confidence = item.field_confidence || {};
+    const aliases = {
+      index_codes: ['index_codes', 'ontology_decisions'],
+      anatomic_locations: ['anatomic_locations', 'anatomic_decisions'],
+    };
+    const keys = [field, ...(aliases[field] || [])];
+    for (const key of keys) {
+      const value = confidence[key];
+      if (value && String(value).toLowerCase() !== 'high') return String(value).toLowerCase();
+    }
+    return '';
+  }
+
+  function isMissingValue(value) {
+    if (value === null || value === undefined || value === '' || value === 'None') return true;
+    if (Array.isArray(value)) return value.filter(v => !isMissingValue(v)).length === 0;
+    if (typeof value === 'object') return Object.keys(value).length === 0;
+    return false;
+  }
+
+  function attentionForField(item, field, options = {}) {
+    if (options.required && isMissingValue(item[field])) return 'missing';
+    return confidenceForField(item, field);
+  }
+
+  function attentionNote(kind) {
+    if (!kind) return '';
+    if (kind === 'missing') return '<div class="attention-note missing">Potentially missing</div>';
+    if (kind === 'low') return '<div class="attention-note low">Lower confidence</div>';
+    if (kind === 'medium') return '<div class="attention-note medium">Medium confidence</div>';
+    return '';
+  }
+
+  function emptyValueHtml() {
+    return '<span style="color: var(--muted-2);">No value provided</span>';
+  }
+
+  function renderFactCard(item, field, label, value, compact = false) {
+    const attention = attentionForField(item, field, { required: true });
+    const displayValue = value || emptyValueHtml();
     return `
-      <div class="fact-card">
+      <div class="fact-card ${attention ? `attention-${attention}` : ''}">
         <div class="fact-label">${escapeHtml(label)}</div>
-        <div class="fact-value ${compact ? 'fact-value-compact' : ''}">${value}</div>
+        <div class="fact-value ${compact ? 'fact-value-compact' : ''}">${displayValue}</div>
+        ${attentionNote(attention)}
       </div>
     `;
   }
@@ -1047,6 +1260,34 @@
     return Boolean((state.reviewerId || '').trim());
   }
 
+  function showIdentityPrompt({ allowCancel = false } = {}) {
+    state.identityPromptOpen = true;
+    elements.identityInput.value = state.reviewerId || '';
+    elements.identityError.textContent = allowCancel ? '' : 'Reviewer identity is required to start.';
+    elements.identityOverlay.classList.add('show');
+    elements.identityInput.focus();
+    elements.identityInput.select();
+  }
+
+  function hideIdentityPrompt() {
+    state.identityPromptOpen = false;
+    elements.identityOverlay.classList.remove('show');
+    elements.identityError.textContent = '';
+  }
+
+  function saveIdentityFromPrompt() {
+    const value = (elements.identityInput.value || '').trim();
+    if (!value) {
+      elements.identityError.textContent = 'Enter a reviewer identifier.';
+      elements.identityInput.focus();
+      return;
+    }
+    state.reviewerId = value;
+    persistState();
+    hideIdentityPrompt();
+    renderSummary();
+  }
+
   function updateDownloadAvailability() {
     const ready = hasReviewerId();
     elements.downloadBtn.disabled = !ready;
@@ -1055,12 +1296,14 @@
       : 'Enter reviewer identifier to enable download';
   }
 
-  function renderDenseRow(label, valueHtml) {
-    if (!valueHtml) return '';
+  function renderDenseRow(item, field, label, valueHtml, options = {}) {
+    const attention = attentionForField(item, field, options);
+    if (!valueHtml && !attention) return '';
+    const displayValue = valueHtml || emptyValueHtml();
     return `
-      <div class="dense-row">
+      <div class="dense-row ${attention ? `attention-${attention}` : ''}">
         <div class="dense-label">${escapeHtml(label)}</div>
-        <div class="dense-value">${valueHtml}</div>
+        <div class="dense-value">${displayValue}${attentionNote(attention)}</div>
       </div>
     `;
   }
@@ -1180,6 +1423,10 @@
   }
 
   function approveCurrent() {
+    if (!hasReviewerId()) {
+      showIdentityPrompt({ allowCancel: false });
+      return;
+    }
     const item = getItem(state.currentIndex);
     if (!item) return;
     const response = getResponse(item.id);
@@ -1192,6 +1439,10 @@
   }
 
   function submitFeedback() {
+    if (!hasReviewerId()) {
+      showIdentityPrompt({ allowCancel: false });
+      return;
+    }
     const item = getItem(state.currentIndex);
     if (!item) return;
     const response = getResponse(item.id);
@@ -1264,7 +1515,7 @@
 
   function downloadJson() {
     if (!hasReviewerId()) {
-      elements.reviewerInput.focus();
+      showIdentityPrompt({ allowCancel: false });
       return;
     }
     const s = summary();
@@ -1309,6 +1560,7 @@
   }
 
   function handleGlobalKeydown(event) {
+    if (state.identityPromptOpen) return;
     const target = event.target;
     const inEditable = target && (
       target.tagName === 'TEXTAREA' ||
