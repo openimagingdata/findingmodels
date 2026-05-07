@@ -1,0 +1,200 @@
+{
+  "oifm_id": "OIFM_OIDM_559938",
+  "name": "normal pressure hydrocephalus",
+  "description": "A syndrome of gait disturbance, cognitive decline, and urinary incontinence with ventriculomegaly and normal opening pressure on lumbar puncture.",
+  "synonyms": [
+    "NPH"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_363439",
+      "name": "presence",
+      "description": "Presence or absence of normal pressure hydrocephalus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_363439.0",
+          "name": "absent",
+          "description": "Normal pressure hydrocephalus is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_363439.1",
+          "name": "present",
+          "description": "Normal pressure hydrocephalus is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_363439.2",
+          "name": "indeterminate",
+          "description": "Presence of normal pressure hydrocephalus cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_363439.3",
+          "name": "unknown",
+          "description": "Presence of normal pressure hydrocephalus is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_972496",
+      "name": "change from prior",
+      "description": "Whether and how normal pressure hydrocephalus has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_972496.0",
+          "name": "unchanged",
+          "description": "Normal pressure hydrocephalus is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_972496.1",
+          "name": "stable",
+          "description": "Normal pressure hydrocephalus is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_972496.2",
+          "name": "new",
+          "description": "Normal pressure hydrocephalus is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_972496.3",
+          "name": "resolved",
+          "description": "Normal pressure hydrocephalus seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_972496.4",
+          "name": "worsened",
+          "description": "Normal pressure hydrocephalus has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_972496.5",
+          "name": "improved",
+          "description": "Normal pressure hydrocephalus has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ]
+}
