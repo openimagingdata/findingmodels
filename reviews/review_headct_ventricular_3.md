@@ -2,6 +2,8 @@
 
 8 models to review. For each, check name, description, synonyms, and direction-of-change values. Add your response below each entry.
 
+---
+
 ### ventricular abnormality
 
 **Source file:** `defs/ventricular_abnormality.fm.json`  
