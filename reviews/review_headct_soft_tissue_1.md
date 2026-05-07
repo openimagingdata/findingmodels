@@ -41,7 +41,7 @@
 **Source file:** `defs/cephalohematoma.fm.json`  
 **ID:** `OIFM_OIDM_401242`  
 **Description:** A subperiosteal blood collection along the calvarium, usually confined by cranial sutures and seen as a focal extracranial scalp hematoma.  
-**Synonyms:** cephalhematoma, subperiosteal scalp hematoma, subperiosteal scalp hemorrhage  
+**Synonyms:** cephalhematoma  
 **Change from prior:** unchanged, stable, new, resolved, increased, decreased, larger, smaller
 
 **Source CSV:** `id=HID7460`; `name=cephalohematoma`; `category=soft_tissue`; `parent_id=HID7450`; `synonyms=cephalhematoma, subperiosteal hematoma`; `finding_type=diagnosis`
