@@ -2,6 +2,8 @@
 
 10 models to review. For each, check name, description, synonyms, and direction-of-change values. Add your response below each entry.
 
+---
+
 ### cavum septum pellucidum
 
 **Source file:** `defs/cavum_septum_pellucidum.fm.json`  

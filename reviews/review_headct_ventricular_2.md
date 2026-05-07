@@ -2,6 +2,8 @@
 
 10 models to review. For each, check name, description, synonyms, and direction-of-change values. Add your response below each entry.
 
+---
+
 ### intraventricular debris
 
 **Source file:** `defs/intraventricular_debris.fm.json`  
@@ -30,7 +32,7 @@
 **CSV source:** id=HID3820, category=ventricular, parent_id=HID3600, finding_type=diagnosis
 **CSV synonyms:** IVH, ventricular hemorrhage, intraventricular blood products
 
-**Assessment:** Matched to existing model. Please confirm this mapping is correct.
+**Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `IVH` — verify these are standard abbreviations.
 
 **Response:**
@@ -115,7 +117,7 @@
 **CSV source:** id=HID3805, category=ventricular, parent_id=HID3800, finding_type=diagnosis
 **CSV synonyms:** non-communicating hydrocephalus, intraventricular obstructive hydrocephalus
 
-**Assessment:** Matched to existing model. Please confirm this mapping is correct.
+**Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
 **Response:**
 
