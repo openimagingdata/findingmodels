@@ -1,6 +1,6 @@
 # Finding Model Index
 
-2403 entries
+2407 entries
 
 | ID | Name | Synonyms | Tags | Contributors | Attributes |
 |----|------|----------|------|--------------|------------|
@@ -367,6 +367,7 @@
 | OIFM_OIDM_205545 | central venous catheter<br/>[Text](text/central_venous_catheter.md) [JSON](defs/central_venous_catheter.fm.json) | central line, central venous line, CVC | chest, XR, device, finding | C. Michael Hood, MD, Open Imaging Data Model | presence, change from prior |
 | OIFM_GMTS_014589 | centrilobular small lung nodules<br/>[Text](text/centrilobular_small_lung_nodules.md) [JSON](defs/centrilobular_small_lung_nodules.fm.json) | centrilobular nodularity, small centrilobular nodules | chest, CT, lung, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_OIDM_125002 | cephalization of pulmonary vasculature<br/>[Text](text/cephalization_of_pulmonary_vasculature.md) [JSON](defs/cephalization_of_pulmonary_vasculature.fm.json) | pulmonary vascular redistribution, upper lobe pulmonary venous distension, vascular redistribution, cephalization | chest, XR, finding | C. Michael Hood, MD | presence, change from prior |
+| OIFM_OIDM_401242 | cephalohematoma<br/>[Text](text/cephalohematoma.md) [JSON](defs/cephalohematoma.fm.json) | cephalhematoma | head, CT, finding | C. Michael Hood, MD, Mass General Brigham | presence, change from prior |
 | OIFM_OIDM_178622 | cerclage wire<br/>[Text](text/cerclage_wire.md) [JSON](defs/cerclage_wire.fm.json) | cerclage wires | chest, XR, device, finding | C. Michael Hood, MD, Open Imaging Data Model | presence, change from prior |
 | OIFM_GMTS_025615 | cerebellar dysgenesis<br/>[Text](text/cerebellar_dysgenesis.md) [JSON](defs/cerebellar_dysgenesis.fm.json) |  | neuro, CT, MR, cerebellum, congenital anomaly, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_007393 | cerebellar lesion<br/>[Text](text/cerebellar_lesion.md) [JSON](defs/cerebellar_lesion.fm.json) |  | neuro, CT, MR, cerebellum, finding | Radiology Gamuts Ontology | presence, change from prior |
@@ -2013,6 +2014,7 @@
 | OIFM_OIDM_221920 | soft tissue abnormality<br/>[Text](text/soft_tissue_abnormality.md) [JSON](defs/soft_tissue_abnormality.fm.json) |  | chest, XR, soft tissue, finding | C. Michael Hood, MD, Open Imaging Data Model | presence, change from prior |
 | OIFM_GMTS_025786 | soft-tissue calcification<br/>[Text](text/soft_tissue_calcification.md) [JSON](defs/soft_tissue_calcification.fm.json) | tissue calcification, dystrophic calcification | musculoskeletal, XR, CT, soft tissue, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_013194 | soft-tissue gas<br/>[Text](text/soft_tissue_gas.md) [JSON](defs/soft_tissue_gas.fm.json) | subcutaneous emphysema | musculoskeletal, CT, XR, soft tissue, emergency, finding | Radiology Gamuts Ontology | presence, change from prior |
+| OIFM_OIDM_251841 | soft tissue hematoma<br/>[Text](text/soft_tissue_hematoma.md) [JSON](defs/soft_tissue_hematoma.fm.json) | soft-tissue hematoma, soft tissue blood collection | head, CT, finding | C. Michael Hood, MD, Mass General Brigham | presence, change from prior |
 | OIFM_GMTS_008295 | soft tissue in the middle ear<br/>[Text](text/soft_tissue_in_the_middle_ear.md) [JSON](defs/soft_tissue_in_the_middle_ear.fm.json) | middle ear effusion, middle ear mass | head_neck, CT, MR, ear, inflammatory, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_OIDM_299401 | soft tissue mass<br/>[Text](text/soft_tissue_mass.md) [JSON](defs/soft_tissue_mass.fm.json) | soft-tissue mass, soft tissue lesion, soft-tissue lesion, STM |  |  | presence, change from prior |
 | OIFM_GMTS_013033 | soft-tissue mass with adjacent bone erosion<br/>[Text](text/soft_tissue_mass_with_adjacent_bone_erosion.md) [JSON](defs/soft_tissue_mass_with_adjacent_bone_erosion.fm.json) | soft-tissue tumor with bone involvement | musculoskeletal, CT, MR, neoplastic, soft tissue, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
@@ -2110,6 +2112,7 @@
 | OIFM_MSFT_767776 | subdural hematoma<br/>[Text](text/subdural_hematoma.md) [JSON](defs/subdural_hematoma.fm.json) | SDH, subdural hemorrhage |  | Heather Chase, Microsoft | presence, change from prior |
 | OIFM_GMTS_018250 | subependymal signal void<br/>[Text](text/subependymal_signal_void.md) [JSON](defs/subependymal_signal_void.fm.json) |  | neuro, MR, brain, vascular, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_018003 | subependymal tumor spread<br/>[Text](text/subependymal_tumor_spread.md) [JSON](defs/subependymal_tumor_spread.fm.json) |  | neuro, CT, MR, brain, neoplastic, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
+| OIFM_OIDM_185082 | subgaleal hematoma<br/>[Text](text/subgaleal_hematoma.md) [JSON](defs/subgaleal_hematoma.fm.json) | subgaleal hemorrhage, subaponeurotic hematoma, subaponeurotic hemorrhage | head, CT, finding | C. Michael Hood, MD, Mass General Brigham | presence, change from prior |
 | OIFM_GMTS_009438 | subglottic tracheal narrowing<br/>[Text](text/subglottic_tracheal_narrowing.md) [JSON](defs/subglottic_tracheal_narrowing.fm.json) | tracheal narrowing | head_neck, CT, XR, airway, inflammatory, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_009198 | sublingual space lesion<br/>[Text](text/sublingual_space_lesion.md) [JSON](defs/sublingual_space_lesion.fm.json) | sublingual mass | head_neck, CT, MR, US, oral cavity, neoplastic, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_009188 | submandibular space lesion<br/>[Text](text/submandibular_space_lesion.md) [JSON](defs/submandibular_space_lesion.fm.json) | submandibular mass | head_neck, CT, MR, US, neck, salivary gland, neoplastic, finding | Radiology Gamuts Ontology | presence, change from prior |
@@ -2239,6 +2242,7 @@
 | OIFM_GMTS_031281 | tibial hypoplasia<br/>[Text](text/tibial_hypoplasia.md) [JSON](defs/tibial_hypoplasia.fm.json) |  | musculoskeletal, XR, CT, tibia, skeletal dysplasia, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_012333 | tibiotalar tilt<br/>[Text](text/tibiotalar_tilt.md) [JSON](defs/tibiotalar_tilt.fm.json) |  | musculoskeletal, XR, CT, MR, ankle, ligamentous injury, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_025572 | tongue abnormality<br/>[Text](text/tongue_abnormality.md) [JSON](defs/tongue_abnormality.fm.json) |  | head_neck, MR, CT, US, tongue, congenital anomaly, miscellaneous, finding | Radiology Gamuts Ontology | presence, change from prior |
+| OIFM_OIDM_661237 | tonsillolith<br/>[Text](text/tonsillolith.md) [JSON](defs/tonsillolith.fm.json) | tonsillar calcification, tonsil stone, tonsillar concretion, palatine tonsil calcification | head, CT, finding | C. Michael Hood, MD, Mass General Brigham | presence, change from prior |
 | OIFM_GMTS_010222 | tortuous myelographic filling defect<br/>[Text](text/tortuous_myelographic_filling_defect.md) [JSON](defs/tortuous_myelographic_filling_defect.fm.json) |  | neuro, XR, spine, myelographic, finding | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_000974 | toxic megacolon<br/>[Text](text/toxic_megacolon.md) [JSON](defs/toxic_megacolon.fm.json) |  | abdomen, CT, XR, colonic, inflammatory, diagnosis | Radiology Gamuts Ontology | presence, change from prior |
 | OIFM_GMTS_022612 | tracheal agenesis<br/>[Text](text/tracheal_agenesis.md) [JSON](defs/tracheal_agenesis.fm.json) | agenesis of trachea | pediatric, US, CT, airway, congenital anomaly, diagnosis | Radiology Gamuts Ontology | presence, change from prior |

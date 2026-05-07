@@ -1,4 +1,4 @@
-id,name,category,parent_id,synonyms,finding_type
+id,name,category,parent_id,synonyms,finding_type,oifm_id
 HID0200,brain_parenchymal_abnormality,brain_parenchyma,,,
 HID0205,hypoattenuation,brain_parenchyma,HID0200,"hypodensity, low attenuation, decreased attenuation",observation
 HID0210,hyperattenuation,brain_parenchyma,HID0200,"hyperdensity, high attenuation, increased attenuation",observation
@@ -378,19 +378,19 @@ HID7200,orbital_postsurgical_change,orbit,,,
 HID7205,lens_implant,orbit,HID7200,"intraocular lens, IOL, pseudophakia",observation
 HID7210,prosthetic_globe,orbit,HID7200,"ocular prosthesis, artificial eye, prosthetic eye",observation
 HID7215,intraocular_silicone,orbit,HID7200,"silicone oil in globe, intraocular silicone oil, vitreous silicone",observation
-HID7400,soft_tissue_abnormality,soft_tissue,,,
-HID7405,soft_tissue_swelling,soft_tissue,HID7400,,observation
-HID7410,soft_tissue_edema,soft_tissue,HID7400,,diagnosis
-HID7450,soft_tissue_hematoma,soft_tissue,HID7400,,diagnosis
-HID7455,subgaleal_hematoma,soft_tissue,HID7450,subgaleal hemorrhage,diagnosis
-HID7460,cephalohematoma,soft_tissue,HID7450,"cephalhematoma, subperiosteal hematoma",diagnosis
-HID7500,soft_tissue_lesion,soft_tissue,HID7400,,
-HID7505,soft_tissue_epidermal_inclusion_cyst,soft_tissue,HID7500,"sebaceous cyst, epidermal inclusion cyst, epidermoid inclusion cyst, infundibular cyst, scalp cyst",diagnosis
-HID7510,soft_tissue_lipoma,soft_tissue,HID7500,,diagnosis
-HID7515,soft_tissue_dermoid_cyst,soft_tissue,HID7500,,diagnosis
-HID7550,soft_tissue_calcification,soft_tissue,HID7400,,observation
-HID7555,tonsillolith,soft_tissue,HID7550,"tonsillar calcification, tonsil stone, tonsillar concretion, palatine tonsil calcification",observation
-HID7560,subcutaneous_emphysema,soft_tissue,HID7400,"subcutaneous air, soft tissue gas, soft tissue emphysema",observation
+HID7400,soft_tissue_abnormality,soft_tissue,,,,OIFM_OIDM_221920
+HID7405,soft_tissue_swelling,soft_tissue,HID7400,,observation,OIFM_OIDM_696759
+HID7410,soft_tissue_edema,soft_tissue,HID7400,,diagnosis,OIFM_OIDM_696759
+HID7450,soft_tissue_hematoma,soft_tissue,HID7400,,diagnosis,OIFM_OIDM_251841
+HID7455,subgaleal_hematoma,soft_tissue,HID7450,subgaleal hemorrhage,diagnosis,OIFM_OIDM_185082
+HID7460,cephalohematoma,soft_tissue,HID7450,"cephalhematoma, subperiosteal hematoma",diagnosis,OIFM_OIDM_401242
+HID7500,soft_tissue_lesion,soft_tissue,HID7400,,,OIFM_OIDM_299401
+HID7505,soft_tissue_epidermal_inclusion_cyst,soft_tissue,HID7500,"sebaceous cyst, epidermal inclusion cyst, epidermoid inclusion cyst, infundibular cyst, scalp cyst",diagnosis,OIFM_MGB_603715
+HID7510,soft_tissue_lipoma,soft_tissue,HID7500,,diagnosis,OIFM_MGB_269106
+HID7515,soft_tissue_dermoid_cyst,soft_tissue,HID7500,,diagnosis,OIFM_CDE_000216
+HID7550,soft_tissue_calcification,soft_tissue,HID7400,,observation,OIFM_GMTS_025786
+HID7555,tonsillolith,soft_tissue,HID7550,"tonsillar calcification, tonsil stone, tonsillar concretion, palatine tonsil calcification",observation,OIFM_OIDM_661237
+HID7560,subcutaneous_emphysema,soft_tissue,HID7400,"subcutaneous air, soft tissue gas, soft tissue emphysema",observation,OIFM_OIDM_755361
 HID7600,sinonasal_abnormality,sinonasal,,,
 HID7605,sinus_mucosal_thickening,sinonasal,HID7600,mucosal thickening,observation
 HID7610,sinus_opacification,sinonasal,HID7600,opacified sinus,observation
