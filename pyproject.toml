@@ -1,0 +1,23 @@
+[project]
+name = "findingmodels"
+version = "0.1.0"
+description = "Finding models are updatable data models defining open, standard semantic tags for imaging findings and their properties"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema",
+    "pydantic-ai",
+    "python-dotenv",
+    "pre-commit",
+    "prettier>=0.0.7",
+    "findingmodel>=1.0.3",
+    "findingmodel-ai>=0.2.1",
+]
+
+[tool.uv]
+managed = true
+
+[dependency-groups]
+dev = [
+    "ipython>=9.6.0",
+]
