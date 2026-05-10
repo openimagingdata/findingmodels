@@ -16,7 +16,7 @@
 
 **Assessment:** Newly created broad parent model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -32,7 +32,7 @@
 
 **QUESTION:** Existing CDE model appears to match the CSV concept, but has legacy casing and sparse metadata. Confirm mapping as-is, or request cleanup/renaming toward CSV terminology.
 
-**Response:** 
+**Response:** mapping ok. rename `Sella Mass` → `sellar mass` (CSV form, standard adjectival phrasing); missing change from prior is separate metadata cleanup. don't add CSV synonyms `suprasellar mass` or `intrasellar mass` — site-specific anatomy that should be post-coordinated or listed as new terms. don't add `sellar and suprasellar mass`.
 
 ---
 
@@ -48,7 +48,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `pituitary tumor` — too broad; encompasses pituitary carcinoma, metastases, and other sellar neoplasms. leave synonyms blank.
 
 ---
 
@@ -64,7 +64,7 @@
 
 **Assessment:** Newly created subtype model. Confirm that separate model is preferred over only modeling this as adenoma size/type.
 
-**Response:** 
+**Response:** keep as separate subtype. macroadenoma is hard-thresholded at 10 mm with distinct management (surgical vs medical) and is heavily lexicalized — parallels compression fracture and lacunar infarct as origin-defining subtypes. recommend a sibling `pituitary microadenoma` child if not already present, since the pair is how the entity is named in practice.
 
 ---
 
@@ -80,7 +80,7 @@
 
 **QUESTION:** Existing match is GAMUTS-derived. Because CSV terminology is preferred, confirm whether to map as-is, rename/normalize the model toward `expanded sella`, or create a new OIDM model.
 
-**Response:** 
+**Response:** ok — rename was already done in headcts batch 2 (`large_sella_turcica` → `sella_turcica_enlargement`) and CSV synonyms are already in the list. map as-is.
 
 ---
 
@@ -96,7 +96,7 @@
 
 **Assessment:** Newly created model using CSV terminology. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -112,7 +112,7 @@
 
 **Assessment:** Mechanical review noted uppercase `CSF`; this is an acronym and appears justified. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -128,7 +128,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok — lexicalized variant with distinct imaging pattern, parallels the macroadenoma/microadenoma case.
 
 ---
 
@@ -144,7 +144,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -160,7 +160,7 @@
 
 **Assessment:** Newly created diagnosis model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -176,7 +176,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -192,7 +192,7 @@
 
 **Assessment:** Mechanical review noted uppercase `Rathke`; this is a proper name and appears justified. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -208,7 +208,7 @@
 
 **Assessment:** Newly created broad parent model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -224,7 +224,7 @@
 
 **Assessment:** Newly created postsurgical model. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `endoscopic endonasal surgery` — too broad; the endonasal endoscopic approach is also used for sinus disease and non-sellar skull base targets. keep `endoscopic transsphenoidal surgery` (correctly scoped).
 
 ---
 
@@ -240,7 +240,7 @@
 
 **Assessment:** Newly created broad parent model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -256,7 +256,7 @@
 
 **QUESTION:** Existing match is GAMUTS-derived. Because CSV terminology is preferred, confirm whether to map as-is, rename/normalize toward `periapical lucency`, or create a new OIDM model.
 
-**Response:** 
+**Response:** rename `periapical radiolucency in jaw` → `periapical lucency`. current GAMUTS name embeds anatomy that's already implied by `periapical` and isn't standard radiology phrasing — same pattern as `large_sella_turcica` → `sella_turcica_enlargement`. add `periapical radiolucency` as a synonym.
 
 ---
 
@@ -272,7 +272,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -288,7 +288,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `impacted molar` — site-specific subtype; which tooth is impacted should be post-coordinated as anatomic site rather than baked into a synonym. keep `unerupted tooth` and `embedded tooth`.
 
 ---
 
@@ -304,7 +304,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -320,7 +320,7 @@
 
 **Assessment:** Newly created using CSV terminology instead of GAMUTS `anodontia or hypodontia`, since the CSV term is broader/report-oriented. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `edentulous` and `partially edentulous` — not equivalents; they refer to specific patterns (complete vs partial loss of all teeth) and should be a separate sibling diagnosis model `edentulism` if needed. keep `absent tooth` and `missing teeth` (just plural form).
 
 ---
 
@@ -336,7 +336,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -352,7 +352,12 @@
 
 **QUESTION:** Existing OIDM model matches. Confirm mapping and whether any CSV synonyms should be added later; some may be broader than apical periodontitis.
 
-**Response:** 
+**Response:** mapping ok. on face/head CT there is an imaging distinction we should preserve: apical periodontitis = periapical lucency at the root apex without soft-tissue component, whereas periapical abscess = the same lucency plus cortical disruption, adjacent soft-tissue swelling, and sometimes a rim-enhancing fluid collection.
+
+recommend splitting:
+- create a child diagnosis model `periapical abscess` for the acute suppurative form, with synonyms `dentoalveolar abscess`, `acute apical abscess`, `periapical infection`. `dental abscess` is colloquially the same in radiology reports
+- tighten the existing apical_periodontitis description to remove "adjacent abscess collection"
+- drop `dental infection` and `dentoalveolar infection` — both umbrella terms that encompass pulpitis, periodontitis, pericoronitis, osteomyelitis, and dental-source cellulitis.
 
 ---
 
@@ -368,7 +373,7 @@
 
 **QUESTION:** Existing OIDM model matches, but CSV synonym `follicular cyst` is potentially ambiguous across body regions. Confirm mapping as-is and whether to leave `follicular cyst` out.
 
-**Response:** 
+**Response:** mapping ok; leave `follicular cyst` out — collides with ovarian follicular cyst (already adjudicated in headcts batch 1).
 
 ---
 
@@ -384,7 +389,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `chronic periodontitis` — chronicity is an attribute, not part of the entity. keep `periodontal disease`.
 
 ---
 
@@ -400,7 +405,7 @@
 
 **Assessment:** Mechanical review noted uppercase `OAF`; this is an acronym and appears justified. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -416,7 +421,7 @@
 
 **Assessment:** Mechanical review noted uppercase `OAC`; this is an acronym and appears justified. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -432,7 +437,7 @@
 
 **Assessment:** Newly created broad parent model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -448,7 +453,7 @@
 
 **Assessment:** Newly created using CSV terminology instead of GAMUTS `hyperdontia`. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `mesiodens` — site-specific subtype (specifically a midline supernumerary tooth between the central incisors). recommend `mesiodens` as a child entry instead, since it's lexicalized and tracked separately. keep `extra tooth` and `accessory tooth`.
 
 ---
 
@@ -464,7 +469,7 @@
 
 **Assessment:** Newly created broad parent model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -480,7 +485,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---
 
@@ -496,7 +501,7 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** drop `dental hardware` and `dental prosthesis` — both too broad. hardware encompasses orthodontic appliances and implants (a separate model here); prosthesis encompasses removable dentures and bridges, a different category. keep `dental filling`. orthodontic hardware and removable prostheses warrant separate sibling models if needed.
 
 ---
 
@@ -512,6 +517,6 @@
 
 **Assessment:** Newly created model. Confirm acceptable.
 
-**Response:** 
+**Response:** ok
 
 ---

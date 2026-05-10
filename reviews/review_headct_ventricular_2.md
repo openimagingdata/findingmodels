@@ -17,7 +17,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `ventricular debris` — cross-body collision with cardiac ventricle. keep `intraventricular sediment`.
 
 ---
 
@@ -35,7 +35,7 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `IVH` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** ok. add `intraventricular blood products` as synonym — true equivalent radiology phrasing.
 
 ---
 
@@ -51,7 +51,14 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** map CSV row to existing `intraventricular_lesion` (OIFM_GMTS_007340); retire the newly created `intraventricular_mass.fm.json`. per the soft_tissue_lesion precedent: lesion is the neutral generic term, mass implies size threshold.
+
+mistakes to fix on the existing intraventricular_lesion model:
+- flip finding_type to neutral — this is a morphologic-grouping intermediate parent (children include intraventricular_neoplasm and choroid_plexus_cyst), parallels sellar_mass and extra_axial_cyst.
+- drop synonym `Ventricular mass` — cross-body collision with cardiac.
+- drop synonym `Cerebral ventricle lesion` — awkward phrasing, not used.
+- add `intraventricular mass` as synonym.
+- description is sparse ("Abnormal mass located within the ventricular system of the brain."). rewrite to: "A space-occupying lesion within the cerebral ventricular system, encompassing neoplastic, cystic, and inflammatory etiologies."
 
 ---
 
@@ -67,7 +74,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** add synonym `intraventricular tumor` — true equivalent. otherwise ok.
 
 ---
 
@@ -84,7 +91,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `single ventricular cavity` — cross-body collision with cardiac single ventricle (Fontan, HLHS). keep `single midline ventricle` (midline qualifier disambiguates) and `holoventricle`.
 
 ---
 
@@ -102,7 +109,7 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `NPH` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -119,7 +126,9 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** mapping ok. add CSV synonyms `non-communicating hydrocephalus` and `intraventricular obstructive hydrocephalus` — true equivalents.
+
+description fix: rewrite "Accumulation of cerebrospinal fluid in the ventricles due to blockage." → "Hydrocephalus due to obstruction of CSF flow within the ventricular system, such as at the foramen of Monro, aqueduct of Sylvius, or fourth ventricular outflow."
 
 ---
 
@@ -136,7 +145,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -152,7 +161,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -169,6 +178,6 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok — lexicalized site-specific subtype with distinct clinical context, parallels macroadenoma/partially_empty_sella precedents.
 
 ---

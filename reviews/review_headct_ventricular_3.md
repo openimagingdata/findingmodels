@@ -16,7 +16,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok with description tweak: rewrite "Any deviation from normal appearance of the cerebral ventricles on head CT." → "Any deviation from normal appearance of the cerebral ventricles." this catch-all is shared between CT and MRI.
 
 ---
 
@@ -32,7 +32,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -49,7 +49,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -66,7 +66,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `rudimentary temporal horn` and `rudimentary occipital horn` — site-specific synonyms embedding the specific horn; which horn should be post-coordinated as anatomic_site. keep `rudimentary ventricular horn` and `underdeveloped ventricular horn`.
 
 ---
 
@@ -82,7 +82,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -99,7 +99,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `ventricular infection` — cross-body collision with cardiac. keep `pyocephalus` and `ependymitis`.
 
 ---
 
@@ -116,7 +116,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -134,6 +134,12 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `EVD` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** rename canonical `ventriculostomy` → `external_ventricular_drain`. EVD is the entity actually being described; ventriculostomy is a broader procedure term that also covers endoscopic third ventriculostomy (a completely different operation — fenestration of third ventricle floor, not external drainage).
+
+after rename:
+- keep `EVD` and `ventriculostomy` as synonyms (abbreviation and colloquial equivalent)
+- drop `external ventricular drain` from synonyms (now the canonical name)
+- drop `shunted ventricles` — wrong entity; refers to permanent VP/VA shunts, not external drains.
+- recommend `endoscopic_third_ventriculostomy` as a separate sibling entry if needed for extraction.
 
 ---
