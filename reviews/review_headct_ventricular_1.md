@@ -18,7 +18,7 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `CSP` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** drop `fifth ventricle` — misnomer; CSP is not part of the ventricular system. keep `CSP` and `cavum septi pellucidi`.
 
 ---
 
@@ -36,7 +36,7 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `CVI` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** drop `CVI` — collides with chronic venous insufficiency and cerebral vascular insufficiency. keep `cavum veli interpositi`.
 
 ---
 
@@ -53,7 +53,9 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `sixth ventricle` — same misnomer as fifth ventricle on CSP; not part of the ventricular system. keep `cavum psalterii`.
+
+description fix: rewrite "A normal variant posterior extension of the cavum septum pellucidum into the region of the corpus callosum splenium." → "A normal variant posterior extension of the cavum septum pellucidum, beneath the splenium of the corpus callosum."
 
 ---
 
@@ -70,7 +72,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** drop `CPCa` — not a commonly dictated abbreviation; loose collision with CPC.
 
 ---
 
@@ -86,7 +88,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -104,7 +106,7 @@
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 **NOTE:** Capitalized acronyms as synonyms: `CPP` — verify these are standard abbreviations.
 
-**Response:**
+**Response:** drop `CPP` — collides with cerebral perfusion pressure.
 
 ---
 
@@ -120,7 +122,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -137,7 +139,11 @@
 
 **Assessment:** Matched to existing model. Please confirm this mapping is correct.
 
-**Response:**
+**Response:** mapping ok.
+
+drop existing synonym `non-obstructive hydrocephalus` — legacy term; technically inaccurate since communicating hydrocephalus is obstructive at the arachnoid villi. add CSV synonym `extraventricular obstructive hydrocephalus` — true equivalent in modern phrasing.
+
+description fix: rewrite "Hydrocephalus where CSF flow is obstructed post the ventricles." → "Hydrocephalus due to impaired CSF resorption or flow obstruction distal to the ventricular system, typically at the arachnoid granulations."
 
 ---
 
@@ -154,7 +160,7 @@
 
 **Assessment:** New model created from CSV. Please confirm name, description, and synonyms are appropriate.
 
-**Response:**
+**Response:** ok
 
 ---
 
@@ -170,6 +176,10 @@
 
 **Assessment:** Matched to existing model. Please confirm this mapping is correct.
 
-**Response:**
+**Response:** mapping ok.
+
+drop synonym `fetal ventriculomegaly` — distinct prenatal observation that may or may not progress to hydrocephalus; different diagnostic commitment. keep `hydrocephaly`.
+
+description fix: rewrite "Accumulation of cerebrospinal fluid in the brain ventricles leading to increased pressure." → "Abnormal accumulation of cerebrospinal fluid causing dilation of the ventricular system." (the "increased pressure" phrasing is wrong for NPH.)
 
 ---

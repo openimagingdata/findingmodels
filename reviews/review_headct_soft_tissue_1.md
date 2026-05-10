@@ -16,7 +16,8 @@
 
 **Assessment:** Looks reasonable as written; confirm acceptable.
 
-**Response:** confirmed.
+**Response:** ok with one tweak: drop `soft tissue blood collection` — descriptive phrasing, not standard reporting language.
+
 
 ---
 
@@ -32,7 +33,7 @@
 
 **Assessment:** Looks reasonable as written; confirm acceptable.
 
-**Response:** confirmed.
+**Response:** ok
 
 ---
 
@@ -48,7 +49,7 @@
 
 **QUESTION:** The source CSV included `subperiosteal hematoma`; I scoped this to `subperiosteal scalp hematoma` and `subperiosteal scalp hemorrhage` to avoid cross-body ambiguity. Confirm this narrower synonym choice.
 
-**Response:** don't fabricate narrower synonyms — "subperiosteal scalp hematoma" is not a term radiologists use. drop `subperiosteal hematoma` entirely due to cross-body collision with long bone subperiosteal hematomas. keep `cephalhematoma` as the synonym. remove `subperiosteal scalp hematoma` and `subperiosteal scalp hemorrhage` from the model.
+**Response:** drop `subperiosteal hematoma` from synonyms — cross-body collision with long-bone subperiosteal hematomas. don't fabricate `subperiosteal scalp hematoma` or `subperiosteal scalp hemorrhage` — not terms radiologists use. keep only `cephalhematoma` (spelling variant); remove the fabricated narrower variants from the model.
 
 ---
 
@@ -64,7 +65,7 @@
 
 **QUESTION:** Confirm that `tonsillar calcification` and `palatine tonsil calcification` should map to `tonsillolith`, rather than remaining as broader calcification language.
 
-**Response:** confirmed — when a radiologist writes "tonsillar calcification" on a head CT, they mean a tonsillolith. same entity, same specificity. keep both as synonyms.
+**Response:** ok with one tweak: drop `palatine tonsil calcification` — embeds anatomy redundantly since tonsilloliths are essentially always palatine. keep `tonsillar calcification`, `tonsil stone`, and `tonsillar concretion`.
 
 ---
 
@@ -80,7 +81,11 @@
 
 **Assessment:** Direct match at the same broad level. Confirm this row should map to this existing model.
 
-**Response:** confirmed.
+**Response:** mapping ok — and intentionally so. keep this as a single shared rollup serving both CXR and head CT (and any other modality with a soft tissue category). soft tissue is a uniform tissue substrate; per the cross-modality-observations principle, non-organ-specific catch-alls should not be duplicated per modality.
+
+mistake to fix: the current description ("Nonspecific abnormality of the soft tissues visible on chest radiograph.") scopes the model to one modality. rewrite to: "Nonspecific abnormality of the soft tissues — skin, subcutaneous fat, fascia, or muscle — visible on imaging."
+
+the same modality-stripping logic generalizes to other non-organ-specific rollups (osseous, vascular, lymph node, foreign body); organ-specific catch-alls (sellar, dental, brain parenchymal) stay scoped.
 
 ---
 
@@ -96,7 +101,9 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** confirmed.
+**Response:** mapping ok. but remove `soft tissue edema` from this model's synonyms — edema commits to a fluid mechanism, while swelling is the generic observation that can also come from hemorrhage, mass, or inflammation. edema gets its own diagnosis model (see next entry).
+
+mistake to fix: description ends "...on radiograph" but this is a shared cross-modality model. rewrite to: "Increased volume or density of soft tissues, suggesting edema, hematoma, or mass effect on imaging."
 
 ---
 
@@ -112,7 +119,7 @@
 
 **QUESTION:** `soft tissue edema` is already a synonym on `soft tissue swelling`. Confirm that the CSV row should map to the swelling model rather than requiring a separate edema model.
 
-**Response:** confirmed — edema is already a synonym on the swelling model. map the CSV row there, no separate model needed.
+**Response:** do not map to `soft_tissue_swelling`. swelling is the generic observation; edema commits to a fluid mechanism and is distinguishable from swelling-from-hemorrhage or swelling-from-mass by imaging pattern or clinical context. create a new `soft_tissue_edema` model with finding_type=diagnosis as a child of `soft_tissue_swelling`. remove `soft tissue edema` from the swelling model's synonym list.
 
 ---
 
@@ -128,7 +135,7 @@
 
 **QUESTION:** `soft tissue lesion` is already a synonym on `soft tissue mass`. Confirm that lesion and mass are equivalent enough here for CSV mapping.
 
-**Response:** confirmed — lesion is already a synonym on the mass model. map the CSV row there.
+**Response:** mapping ok, but rename the canonical: `soft_tissue_mass` → `soft_tissue_lesion`. mass implies a lesion above a certain size threshold; lesion is the neutral term for a generic observation entry. demote `soft-tissue mass` and `soft tissue mass` to synonyms; delete `STM` as a standard abbreviation. update the description to swap "mass" for "lesion". 
 
 ---
 
@@ -144,7 +151,18 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** correct match. map the CSV row as-is. legacy casing (sentence case → lowercase) and missing change from prior are metadata cleanup — not taxonomy questions. fix separately.
+**Response:** mapping ok. rename `Epidermal Inclusion Cyst` → `epidermal inclusion cyst` (lowercase, matches house style).
+
+mistakes to fix on the existing model:
+- description is sparse ("Presence of an epidermal inclusion cyst"). rewrite to: "A benign cystic lesion lined by stratified squamous epithelium and filled with keratinaceous debris, arising in the skin or subcutaneous tissue."
+- missing `change from prior` attribute. add the standard set: unchanged, stable, new, resolved, increased, decreased, larger, smaller.
+
+add these CSV synonyms:
+- `epidermoid inclusion cyst` — naming variant for the same entity.
+- `infundibular cyst` — histologic name (cyst of follicular infundibulum) for the same entity.
+- `sebaceous cyst` — colloquial misnomer but radiologists routinely use it for EIC; accept despite the cross-body looseness.
+
+leave out `scalp cyst` — site-specific, embeds anatomy.
 
 ---
 
@@ -160,7 +178,7 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** correct match. map as-is. legacy casing and missing change from prior are metadata cleanup — fix separately.
+**Response:** mapping ok. rename `Lipoma` → `lipoma` (lowercase, matches house style). also add the missing `change from prior` attribute with the standard set: unchanged, stable, new, resolved, increased, decreased, larger, smaller.
 
 ---
 
@@ -176,7 +194,11 @@
 
 **QUESTION:** This appears to be the correct existing concept, but the existing CDE model uses legacy casing and lacks a `change from prior` attribute. Confirm whether to map the CSV row as-is, or whether this model should be cleaned up in this batch.
 
-**Response:** correct match. map as-is. legacy casing and missing change from prior are metadata cleanup — fix separately.
+**Response:** mapping ok. rename `Dermoid Cyst` → `dermoid cyst` (lowercase, matches house style).
+
+mistakes to fix on the existing model:
+- description is sparse ("Dermoid Cyst detection on CT"). rewrite to: "A benign cystic lesion containing ectodermal elements such as skin, hair follicles, sebaceous glands, or fat, often with internal fat or calcification visible on imaging."
+- missing `change from prior` attribute. add the standard set: unchanged, stable, new, resolved, increased, decreased, larger, smaller.
 
 ---
 
@@ -192,7 +214,7 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** confirmed.
+**Response:** mapping ok. rename `soft-tissue calcification` → `soft tissue calcification` (drop the hyphen for consistency with the rest of the soft tissue family — `soft tissue hematoma`, `soft tissue lesion`, `soft tissue swelling`, etc.). drop `dystrophic calcification` from the existing synonym list — commits to a specific mechanism (calcification in damaged tissue), subtype masquerading as synonym. keep `tissue calcification`.
 
 ---
 
@@ -208,6 +230,8 @@
 
 **Assessment:** Direct match. Confirm this row should map to this existing model.
 
-**Response:** confirmed.
+**Response:** mapping ok. add CSV synonyms `subcutaneous air` and `soft tissue emphysema` (`soft tissue gas` already present).
+
+mistake to fix: description ends "...on chest radiograph" but this is a shared cross-modality model. rewrite to: "Gas within the subcutaneous soft tissues, appearing as lucent streaks or low-attenuation foci on imaging."
 
 ---
