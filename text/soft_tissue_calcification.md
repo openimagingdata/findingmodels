@@ -1,6 +1,6 @@
 # Soft-tissue calcification—`OIFM_GMTS_025786`
 
-**Synonyms:** tissue calcification, dystrophic calcification
+**Synonyms:** soft tissue calcification, tissue calcification, dystrophic calcification
 
 **Tags:** musculoskeletal, XR, CT, soft tissue, finding
 

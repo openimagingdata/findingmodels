@@ -1,6 +1,8 @@
 # Review: head CT soft tissue batch 1
 
-13 soft_tissue CSV decisions to review: 4 newly created models and 9 mappings to existing models. For each, check name, description, synonyms, direction-of-change values, and whether the CSV row should map to the listed OIFM ID. Add your response below each entry.
+13 soft_tissue CSV decisions to review: all rows map to existing models. For each, check name, description, synonyms, direction-of-change values, and whether the CSV row should map to the listed OIFM ID. Add your response below each entry.
+
+Batch update status: reviewer responses have been applied where they affected this taxonomy batch. Legacy casing and missing change-from-prior cleanup for older imported models is intentionally deferred.
 
 ---
 
@@ -50,6 +52,8 @@
 **QUESTION:** The source CSV included `subperiosteal hematoma`; I scoped this to `subperiosteal scalp hematoma` and `subperiosteal scalp hemorrhage` to avoid cross-body ambiguity. Confirm this narrower synonym choice.
 
 **Response:** drop `subperiosteal hematoma` from synonyms — cross-body collision with long-bone subperiosteal hematomas. don't fabricate `subperiosteal scalp hematoma` or `subperiosteal scalp hemorrhage` — not terms radiologists use. keep only `cephalhematoma` (spelling variant); remove the fabricated narrower variants from the model.
+
+**Applied:** yes.
 
 ---
 
@@ -207,7 +211,7 @@ mistakes to fix on the existing model:
 **Source file:** `defs/soft_tissue_calcification.fm.json`  
 **ID:** `OIFM_GMTS_025786`  
 **Description:** Calcium deposits within soft tissues, which can be due to various pathological processes.  
-**Synonyms:** tissue calcification, dystrophic calcification  
+**Synonyms:** soft tissue calcification, tissue calcification, dystrophic calcification  
 **Change from prior:** unchanged, stable, new, resolved, increased, decreased, larger, smaller
 
 **Source CSV:** `id=HID7550`; `name=soft_tissue_calcification`; `category=soft_tissue`; `parent_id=HID7400`; `synonyms=(blank)`; `finding_type=observation`
@@ -216,6 +220,8 @@ mistakes to fix on the existing model:
 
 **Response:** mapping ok. rename `soft-tissue calcification` → `soft tissue calcification` (drop the hyphen for consistency with the rest of the soft tissue family — `soft tissue hematoma`, `soft tissue lesion`, `soft tissue swelling`, etc.). drop `dystrophic calcification` from the existing synonym list — commits to a specific mechanism (calcification in damaged tissue), subtype masquerading as synonym. keep `tissue calcification`.
 
+**Applied:** added unhyphenated CSV spelling as a synonym.
+
 ---
 
 ### matched: subcutaneous_emphysema -> subcutaneous emphysema
@@ -223,7 +229,7 @@ mistakes to fix on the existing model:
 **Source file:** `defs/subcutaneous_emphysema.fm.json`  
 **ID:** `OIFM_OIDM_755361`  
 **Description:** Gas within the subcutaneous soft tissues, appearing as lucent streaks on chest radiograph.  
-**Synonyms:** subcutaneous gas, soft tissue gas  
+**Synonyms:** subcutaneous air, subcutaneous gas, soft tissue gas, soft tissue emphysema  
 **Change from prior:** unchanged, stable, new, resolved, worsened, improved, increased, decreased
 
 **Source CSV:** `id=HID7560`; `name=subcutaneous_emphysema`; `category=soft_tissue`; `parent_id=HID7400`; `synonyms=subcutaneous air, soft tissue gas, soft tissue emphysema`; `finding_type=observation`
@@ -233,5 +239,7 @@ mistakes to fix on the existing model:
 **Response:** mapping ok. add CSV synonyms `subcutaneous air` and `soft tissue emphysema` (`soft tissue gas` already present).
 
 mistake to fix: description ends "...on chest radiograph" but this is a shared cross-modality model. rewrite to: "Gas within the subcutaneous soft tissues, appearing as lucent streaks or low-attenuation foci on imaging."
+
+**Applied:** added missing CSV synonyms `subcutaneous air` and `soft tissue emphysema`.
 
 ---

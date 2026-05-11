@@ -1,6 +1,6 @@
 # Subcutaneous emphysema—`OIFM_OIDM_755361`
 
-**Synonyms:** subcutaneous gas, soft tissue gas
+**Synonyms:** subcutaneous air, subcutaneous gas, soft tissue gas, soft tissue emphysema
 
 **Tags:** chest, XR, soft tissue, finding
 
