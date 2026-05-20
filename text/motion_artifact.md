@@ -1,10 +1,10 @@
 # Motion artifact—`OIFM_OIDM_659997`
 
-**Synonyms:** motion blur, patient motion
+**Synonyms:** motion blur, patient motion, movement artifact, motion degradation
 
 **Tags:** chest, XR, technique, finding
 
-Blurring of the radiograph due to patient movement during exposure.
+Image degradation caused by patient motion during acquisition, often producing blurring, misregistration, or streak-like degradation that can obscure anatomy.
 
 ## Attributes
 

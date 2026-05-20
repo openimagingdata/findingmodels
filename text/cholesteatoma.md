@@ -1,6 +1,6 @@
 # Cholesteatoma—`OIFM_GMTS_008301`
 
-**Tags:** head_neck, CT, MR, ear, middle ear, mass, diagnosis
+**Tags:** head neck, CT, MR, ear, middle ear, mass, diagnosis
 
 An abnormal growth of squamous epithelium in the middle ear and/or mastoid process.
 

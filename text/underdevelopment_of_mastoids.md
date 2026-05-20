@@ -1,8 +1,8 @@
 # Underdevelopment of mastoids—`OIFM_GMTS_008328`
 
-**Synonyms:** mastoid hypoplasia
+**Synonyms:** mastoid hypoplasia, hypopneumatized mastoid, sclerotic mastoid, underpneumatized mastoid, poorly pneumatized mastoid, mastoid sclerosis
 
-**Tags:** head_neck, CT, MR, mastoid, congenital anomaly, finding
+**Tags:** head neck, CT, MR, mastoid, congenital anomaly, finding
 
 Hypoplasia of the mastoid air cells on one or both sides.
 

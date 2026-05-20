@@ -7,6 +7,18 @@
     "CT",
     "finding"
   ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_OIDM_108563",
@@ -156,7 +168,7 @@
           "description": "Intraventricular neoplasm seen on a prior exam has resolved"
         },
         {
-          "value_code": "OIFMA_OIDM_313650.6",
+          "value_code": "OIFMA_OIDM_313650.4",
           "name": "larger",
           "description": "Intraventricular neoplasm is larger",
           "index_codes": [
@@ -173,7 +185,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_313650.7",
+          "value_code": "OIFMA_OIDM_313650.5",
           "name": "smaller",
           "description": "Intraventricular neoplasm is smaller",
           "index_codes": [
@@ -204,18 +216,6 @@
           "display": "Changed status (qualifier value)"
         }
       ]
-    }
-  ],
-  "contributors": [
-    {
-      "github_username": "hoodcm",
-      "email": "chood@mgh.harvard.edu",
-      "name": "C. Michael Hood, MD",
-      "organization_code": "MGB"
-    },
-    {
-      "name": "Mass General Brigham",
-      "code": "MGB"
     }
   ]
 }

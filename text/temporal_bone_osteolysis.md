@@ -1,8 +1,8 @@
 # Temporal bone osteolysis—`OIFM_GMTS_008274`
 
-**Synonyms:** temporal bone lysis
+**Synonyms:** temporal bone lysis, temporal bone erosion, temporal bone destruction
 
-**Tags:** head_neck, CT, MR, temporal bone, destructive, finding
+**Tags:** head neck, CT, MR, temporal bone, destructive, finding
 
 Destruction of the temporal bone usually due to infection or neoplasm.
 

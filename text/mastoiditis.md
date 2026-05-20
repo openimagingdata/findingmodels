@@ -1,6 +1,6 @@
 # Mastoiditis—`OIFM_GMTS_008323`
 
-**Tags:** head_neck, CT, MR, mastoid, inflammatory, diagnosis
+**Tags:** head neck, CT, MR, mastoid, inflammatory, diagnosis
 
 Inflammation of the mastoid process.
 

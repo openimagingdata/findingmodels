@@ -1,8 +1,8 @@
 # Soft tissue in the middle ear—`OIFM_GMTS_008295`
 
-**Synonyms:** middle ear effusion, middle ear mass
+**Synonyms:** middle ear effusion, middle ear mass, opacified middle ear, tympanic cavity fluid, middle ear fluid collection
 
-**Tags:** head_neck, CT, MR, ear, inflammatory, finding
+**Tags:** head neck, CT, MR, ear, inflammatory, finding
 
 Presence of soft tissue density in the tympanic cavity, possibly indicating fluid or mass.
 
