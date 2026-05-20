@@ -1,5 +1,7 @@
 # Pachymeningeal enhancement—`OIFM_GMTS_018361`
 
+**Synonyms:** dural enhancement, dural contrast uptake
+
 **Tags:** neuro, MR, CT, neuro, pachymeningeal, enhancement, finding
 
 Contrast enhancement of the dura mater.

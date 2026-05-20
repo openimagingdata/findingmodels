@@ -1,5 +1,7 @@
 # Pneumocephalus—`OIFM_GMTS_007502`
 
+**Synonyms:** intracranial air, pneumocranium
+
 **Tags:** neuro, CT, XR, air, intracranial, finding
 
 Presence of air within the cranial cavity.

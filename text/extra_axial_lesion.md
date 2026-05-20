@@ -1,6 +1,6 @@
 # Extra-axial lesion—`OIFM_GMTS_007296`
 
-**Synonyms:** extracerebral lesion
+**Synonyms:** extracerebral lesion, extra-axial mass
 
 **Tags:** neuro, CT, MR, intracranial, neoplasm, hemorrhage, finding
 

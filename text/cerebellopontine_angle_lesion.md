@@ -1,5 +1,7 @@
 # Cerebellopontine angle lesion—`OIFM_GMTS_007408`
 
+**Synonyms:** CPA lesion, CPA mass
+
 **Tags:** neuro, CT, MR, brain, cerebellopontine angle, finding
 
 Abnormal area or mass located at the cerebellopontine angle.

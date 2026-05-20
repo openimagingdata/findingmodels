@@ -1,6 +1,6 @@
 # Intracranial fat—`OIFM_GMTS_007500`
 
-**Synonyms:** Fat in brain, Cranial fat
+**Synonyms:** fat in brain, cranial fat, macroscopic intracranial fat, macroscopic midline fat, extra-axial fat, fat density intracranial
 
 **Tags:** neuro, CT, MR, brain, metabolic, abnormal deposition, finding
 

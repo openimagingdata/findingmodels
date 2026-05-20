@@ -1,6 +1,6 @@
 # Intracranial epidermoid cyst—`OIFM_OIDM_224166`
 
-**Synonyms:** intracranial epidermoid, intracranial epidermoid tumor, intracranial pearly tumor
+**Synonyms:** intracranial epidermoid, intracranial epidermoid tumor, epidermoid, epidermoid tumor, intracranial pearly tumor
 
 **Tags:** head, CT
 

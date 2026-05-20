@@ -1,6 +1,6 @@
 # Meningeal metastasis—`OIFM_GMTS_025476`
 
-**Synonyms:** leptomeningeal carcinomatosis, metastasis to the meninges
+**Synonyms:** leptomeningeal carcinomatosis, metastasis to the meninges, leptomeningeal metastasis, carcinomatous meningitis, meningeal carcinomatosis
 
 **Tags:** neuro, MR, CT, meninges, neoplastic, metastasis, diagnosis
 

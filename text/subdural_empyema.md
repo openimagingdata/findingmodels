@@ -1,6 +1,6 @@
 # Subdural empyema—`OIFM_GMTS_007457`
 
-**Synonyms:** subdural abscess
+**Synonyms:** subdural abscess, infected subdural collection
 
 **Tags:** neuro, CT, MR, subdural space, infection, diagnosis
 
