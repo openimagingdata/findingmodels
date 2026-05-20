@@ -1,10 +1,10 @@
 # Spinal fixation hardware—`OIFM_OIDM_055031`
 
-**Synonyms:** spinal instrumentation, spinal fixation
+**Synonyms:** spinal instrumentation, spinal fixation, spinal fusion hardware, pedicle screws, pedicle screws and rods, spinal construct, cervical fixation rods, occipital plate
 
 **Tags:** chest, XR, device, finding
 
-Orthopedic hardware securing the spine, visible as rods, screws, and plates on radiograph.
+Orthopedic hardware securing or fusing the spine, visible as rods, screws, plates, or other spinal instrumentation on imaging.
 
 ## Attributes
 

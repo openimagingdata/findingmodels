@@ -1,21 +1,18 @@
 {
-  "oifm_id": "OIFM_OIDM_055031",
-  "name": "spinal fixation hardware",
-  "description": "Orthopedic hardware securing or fusing the spine, visible as rods, screws, plates, or other spinal instrumentation on imaging.",
+  "oifm_id": "OIFM_OIDM_222669",
+  "name": "ventricular catheter",
+  "description": "Catheter with tip in or near the cerebral ventricular system, including ventriculostomy, external ventricular drain, or cerebrospinal fluid shunt catheter components.",
   "synonyms": [
-    "spinal instrumentation",
-    "spinal fixation",
-    "spinal fusion hardware",
-    "pedicle screws",
-    "pedicle screws and rods",
-    "spinal construct",
-    "cervical fixation rods",
-    "occipital plate"
+    "ventriculostomy catheter",
+    "EVD catheter",
+    "external ventricular drain catheter",
+    "VP shunt catheter",
+    "shunt catheter",
+    "CSF shunt catheter"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "device",
+    "head",
+    "CT",
     "finding"
   ],
   "contributors": [
@@ -26,21 +23,21 @@
       "organization_code": "MGB"
     },
     {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM"
+      "name": "Mass General Brigham",
+      "code": "MGB"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_120142",
+      "oifma_id": "OIFMA_OIDM_908513",
       "name": "presence",
-      "description": "Presence or absence of spinal fixation hardware",
+      "description": "Presence or absence of ventricular catheter",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_120142.0",
+          "value_code": "OIFMA_OIDM_908513.0",
           "name": "absent",
-          "description": "Spinal fixation hardware is absent",
+          "description": "Ventricular catheter is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -55,9 +52,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.1",
+          "value_code": "OIFMA_OIDM_908513.1",
           "name": "present",
-          "description": "Spinal fixation hardware is present",
+          "description": "Ventricular catheter is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -72,9 +69,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.2",
+          "value_code": "OIFMA_OIDM_908513.2",
           "name": "indeterminate",
-          "description": "Presence of spinal fixation hardware cannot be determined",
+          "description": "Presence of ventricular catheter cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -89,9 +86,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.3",
+          "value_code": "OIFMA_OIDM_908513.3",
           "name": "unknown",
-          "description": "Presence of spinal fixation hardware is unknown",
+          "description": "Presence of ventricular catheter is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,15 +114,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_405021",
+      "oifma_id": "OIFMA_OIDM_392140",
       "name": "change from prior",
-      "description": "Whether and how spinal fixation hardware has changed over time",
+      "description": "Whether and how ventricular catheter has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_405021.0",
+          "value_code": "OIFMA_OIDM_392140.0",
           "name": "unchanged",
-          "description": "Spinal fixation hardware is unchanged",
+          "description": "Ventricular catheter is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -140,9 +137,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.1",
+          "value_code": "OIFMA_OIDM_392140.1",
           "name": "stable",
-          "description": "Spinal fixation hardware is stable",
+          "description": "Ventricular catheter is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -157,9 +154,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.2",
+          "value_code": "OIFMA_OIDM_392140.2",
           "name": "new",
-          "description": "Spinal fixation hardware is new",
+          "description": "Ventricular catheter is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -174,9 +171,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.3",
+          "value_code": "OIFMA_OIDM_392140.3",
           "name": "resolved",
-          "description": "Spinal fixation hardware seen on a prior exam has resolved"
+          "description": "Ventricular catheter seen on a prior exam has resolved"
         }
       ],
       "required": false,

@@ -1,21 +1,19 @@
 {
-  "oifm_id": "OIFM_OIDM_055031",
-  "name": "spinal fixation hardware",
-  "description": "Orthopedic hardware securing or fusing the spine, visible as rods, screws, plates, or other spinal instrumentation on imaging.",
+  "oifm_id": "OIFM_OIDM_090347",
+  "name": "brachytherapy seed",
+  "description": "Small implanted radioactive seed or tile used for local brachytherapy, visible as radiopaque material in or near a treatment bed.",
   "synonyms": [
-    "spinal instrumentation",
-    "spinal fixation",
-    "spinal fusion hardware",
-    "pedicle screws",
-    "pedicle screws and rods",
-    "spinal construct",
-    "cervical fixation rods",
-    "occipital plate"
+    "brachytherapy seeds",
+    "radioactive seed",
+    "radioactive seeds",
+    "I-125 seed",
+    "Cs-131 seed",
+    "GammaTile",
+    "permanent brachytherapy implant"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "device",
+    "head",
+    "CT",
     "finding"
   ],
   "contributors": [
@@ -26,21 +24,21 @@
       "organization_code": "MGB"
     },
     {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM"
+      "name": "Mass General Brigham",
+      "code": "MGB"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_120142",
+      "oifma_id": "OIFMA_OIDM_354182",
       "name": "presence",
-      "description": "Presence or absence of spinal fixation hardware",
+      "description": "Presence or absence of brachytherapy seed",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_120142.0",
+          "value_code": "OIFMA_OIDM_354182.0",
           "name": "absent",
-          "description": "Spinal fixation hardware is absent",
+          "description": "Brachytherapy seed is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -55,9 +53,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.1",
+          "value_code": "OIFMA_OIDM_354182.1",
           "name": "present",
-          "description": "Spinal fixation hardware is present",
+          "description": "Brachytherapy seed is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -72,9 +70,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.2",
+          "value_code": "OIFMA_OIDM_354182.2",
           "name": "indeterminate",
-          "description": "Presence of spinal fixation hardware cannot be determined",
+          "description": "Presence of brachytherapy seed cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -89,9 +87,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.3",
+          "value_code": "OIFMA_OIDM_354182.3",
           "name": "unknown",
-          "description": "Presence of spinal fixation hardware is unknown",
+          "description": "Presence of brachytherapy seed is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,15 +115,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_405021",
+      "oifma_id": "OIFMA_OIDM_358816",
       "name": "change from prior",
-      "description": "Whether and how spinal fixation hardware has changed over time",
+      "description": "Whether and how brachytherapy seed has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_405021.0",
+          "value_code": "OIFMA_OIDM_358816.0",
           "name": "unchanged",
-          "description": "Spinal fixation hardware is unchanged",
+          "description": "Brachytherapy seed is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -140,9 +138,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.1",
+          "value_code": "OIFMA_OIDM_358816.1",
           "name": "stable",
-          "description": "Spinal fixation hardware is stable",
+          "description": "Brachytherapy seed is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -157,9 +155,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.2",
+          "value_code": "OIFMA_OIDM_358816.2",
           "name": "new",
-          "description": "Spinal fixation hardware is new",
+          "description": "Brachytherapy seed is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -174,9 +172,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.3",
+          "value_code": "OIFMA_OIDM_358816.3",
           "name": "resolved",
-          "description": "Spinal fixation hardware seen on a prior exam has resolved"
+          "description": "Brachytherapy seed seen on a prior exam has resolved"
         }
       ],
       "required": false,

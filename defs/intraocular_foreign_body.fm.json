@@ -1,21 +1,13 @@
 {
-  "oifm_id": "OIFM_OIDM_055031",
-  "name": "spinal fixation hardware",
-  "description": "Orthopedic hardware securing or fusing the spine, visible as rods, screws, plates, or other spinal instrumentation on imaging.",
+  "oifm_id": "OIFM_OIDM_133479",
+  "name": "intraocular foreign body",
+  "description": "Foreign body located within the globe.",
   "synonyms": [
-    "spinal instrumentation",
-    "spinal fixation",
-    "spinal fusion hardware",
-    "pedicle screws",
-    "pedicle screws and rods",
-    "spinal construct",
-    "cervical fixation rods",
-    "occipital plate"
+    "IOFB"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "device",
+    "head",
+    "CT",
     "finding"
   ],
   "contributors": [
@@ -26,21 +18,21 @@
       "organization_code": "MGB"
     },
     {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM"
+      "name": "Mass General Brigham",
+      "code": "MGB"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_120142",
+      "oifma_id": "OIFMA_OIDM_283243",
       "name": "presence",
-      "description": "Presence or absence of spinal fixation hardware",
+      "description": "Presence or absence of intraocular foreign body",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_120142.0",
+          "value_code": "OIFMA_OIDM_283243.0",
           "name": "absent",
-          "description": "Spinal fixation hardware is absent",
+          "description": "Intraocular foreign body is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -55,9 +47,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.1",
+          "value_code": "OIFMA_OIDM_283243.1",
           "name": "present",
-          "description": "Spinal fixation hardware is present",
+          "description": "Intraocular foreign body is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -72,9 +64,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.2",
+          "value_code": "OIFMA_OIDM_283243.2",
           "name": "indeterminate",
-          "description": "Presence of spinal fixation hardware cannot be determined",
+          "description": "Presence of intraocular foreign body cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -89,9 +81,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.3",
+          "value_code": "OIFMA_OIDM_283243.3",
           "name": "unknown",
-          "description": "Presence of spinal fixation hardware is unknown",
+          "description": "Presence of intraocular foreign body is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,15 +109,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_405021",
+      "oifma_id": "OIFMA_OIDM_591313",
       "name": "change from prior",
-      "description": "Whether and how spinal fixation hardware has changed over time",
+      "description": "Whether and how intraocular foreign body has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_405021.0",
+          "value_code": "OIFMA_OIDM_591313.0",
           "name": "unchanged",
-          "description": "Spinal fixation hardware is unchanged",
+          "description": "Intraocular foreign body is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -140,9 +132,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.1",
+          "value_code": "OIFMA_OIDM_591313.1",
           "name": "stable",
-          "description": "Spinal fixation hardware is stable",
+          "description": "Intraocular foreign body is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -157,9 +149,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.2",
+          "value_code": "OIFMA_OIDM_591313.2",
           "name": "new",
-          "description": "Spinal fixation hardware is new",
+          "description": "Intraocular foreign body is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -174,9 +166,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.3",
+          "value_code": "OIFMA_OIDM_591313.3",
           "name": "resolved",
-          "description": "Spinal fixation hardware seen on a prior exam has resolved"
+          "description": "Intraocular foreign body seen on a prior exam has resolved"
         }
       ],
       "required": false,

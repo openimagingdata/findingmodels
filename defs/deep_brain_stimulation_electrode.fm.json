@@ -1,21 +1,15 @@
 {
-  "oifm_id": "OIFM_OIDM_055031",
-  "name": "spinal fixation hardware",
-  "description": "Orthopedic hardware securing or fusing the spine, visible as rods, screws, plates, or other spinal instrumentation on imaging.",
+  "oifm_id": "OIFM_OIDM_879159",
+  "name": "deep brain stimulation electrode",
+  "description": "Implanted electrode or lead placed in the brain for deep brain stimulation, typically connected to a neurostimulator system.",
   "synonyms": [
-    "spinal instrumentation",
-    "spinal fixation",
-    "spinal fusion hardware",
-    "pedicle screws",
-    "pedicle screws and rods",
-    "spinal construct",
-    "cervical fixation rods",
-    "occipital plate"
+    "DBS electrode",
+    "DBS lead",
+    "deep brain stimulator"
   ],
   "tags": [
-    "chest",
-    "XR",
-    "device",
+    "head",
+    "CT",
     "finding"
   ],
   "contributors": [
@@ -26,21 +20,21 @@
       "organization_code": "MGB"
     },
     {
-      "name": "Open Imaging Data Model",
-      "code": "OIDM"
+      "name": "Mass General Brigham",
+      "code": "MGB"
     }
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_OIDM_120142",
+      "oifma_id": "OIFMA_OIDM_059077",
       "name": "presence",
-      "description": "Presence or absence of spinal fixation hardware",
+      "description": "Presence or absence of deep brain stimulation electrode",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_120142.0",
+          "value_code": "OIFMA_OIDM_059077.0",
           "name": "absent",
-          "description": "Spinal fixation hardware is absent",
+          "description": "Deep brain stimulation electrode is absent",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -55,9 +49,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.1",
+          "value_code": "OIFMA_OIDM_059077.1",
           "name": "present",
-          "description": "Spinal fixation hardware is present",
+          "description": "Deep brain stimulation electrode is present",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -72,9 +66,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.2",
+          "value_code": "OIFMA_OIDM_059077.2",
           "name": "indeterminate",
-          "description": "Presence of spinal fixation hardware cannot be determined",
+          "description": "Presence of deep brain stimulation electrode cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -89,9 +83,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_120142.3",
+          "value_code": "OIFMA_OIDM_059077.3",
           "name": "unknown",
-          "description": "Presence of spinal fixation hardware is unknown",
+          "description": "Presence of deep brain stimulation electrode is unknown",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -117,15 +111,15 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_OIDM_405021",
+      "oifma_id": "OIFMA_OIDM_758412",
       "name": "change from prior",
-      "description": "Whether and how spinal fixation hardware has changed over time",
+      "description": "Whether and how deep brain stimulation electrode has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_OIDM_405021.0",
+          "value_code": "OIFMA_OIDM_758412.0",
           "name": "unchanged",
-          "description": "Spinal fixation hardware is unchanged",
+          "description": "Deep brain stimulation electrode is unchanged",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -140,9 +134,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.1",
+          "value_code": "OIFMA_OIDM_758412.1",
           "name": "stable",
-          "description": "Spinal fixation hardware is stable",
+          "description": "Deep brain stimulation electrode is stable",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -157,9 +151,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.2",
+          "value_code": "OIFMA_OIDM_758412.2",
           "name": "new",
-          "description": "Spinal fixation hardware is new",
+          "description": "Deep brain stimulation electrode is new",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -174,9 +168,9 @@
           ]
         },
         {
-          "value_code": "OIFMA_OIDM_405021.3",
+          "value_code": "OIFMA_OIDM_758412.3",
           "name": "resolved",
-          "description": "Spinal fixation hardware seen on a prior exam has resolved"
+          "description": "Deep brain stimulation electrode seen on a prior exam has resolved"
         }
       ],
       "required": false,
