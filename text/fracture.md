@@ -1,10 +1,10 @@
 # Fracture—`OIFM_OIDM_739317`
 
-**Synonyms:** bone fracture
+**Synonyms:** bone fracture, cranial fracture
 
 **Tags:** chest, XR, osseous, finding
 
-Disruption of cortical bone continuity identified on radiograph.
+Disruption of cortical bone continuity identified on imaging.
 
 ## Attributes
 

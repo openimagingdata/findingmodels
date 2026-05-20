@@ -1,6 +1,6 @@
 # Wormian bones—`OIFM_GMTS_025593`
 
-**Synonyms:** multiple sutural bones, sutural bones, intrasutural bones
+**Synonyms:** wormian bone, multiple sutural bones, sutural bones, intrasutural bones
 
 **Tags:** musculoskeletal, CT, XR, skull, congenital anomaly, pediatric, finding
 

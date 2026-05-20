@@ -4,7 +4,7 @@
 
 **Tags:** chest, XR, osseous, finding
 
-Nonspecific abnormality of bone identified on radiograph.
+Nonspecific abnormality of bone identified on imaging.
 
 ## Attributes
 

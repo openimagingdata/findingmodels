@@ -1,6 +1,6 @@
 # Cervical spine fusion—`OIFM_GMTS_009764`
 
-**Synonyms:** fusion of cervical spine, cervical fusion, cervical vertebral fusion
+**Synonyms:** fusion of cervical spine, cervical fusion, cervical vertebral fusion, cervical fixation, cervical spine instrumentation
 
 **Tags:** neuro, XR, CT, MR, cervical spine, postop, finding
 

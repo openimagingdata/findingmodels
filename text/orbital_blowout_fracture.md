@@ -1,6 +1,6 @@
 # Orbital blowout fracture—`OIFM_OIDM_070294`
 
-**Synonyms:** blowout fracture
+**Synonyms:** blowout fracture, orbital floor fracture, orbital floor blowout
 
 **Tags:** head, CT
 
