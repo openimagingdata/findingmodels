@@ -2,7 +2,17 @@
 
 MTA-scale for Medial Temporal Lobe Atrophy (Scheltens Classification)
 
-**Codes:** RADELEMENT RDES151 mta-scale for medial temporal lobe atrophy (scheltens classification)
+**Codes:** radelement RDES151 mta-scale for medial temporal lobe atrophy
+
+**Entity Type:** measurement
+
+**Body Regions:** head
+
+**Modalities:** MR
+
+**Subspecialties:** NR
+
+**Age Profile:** all ages; more common in: aged
 
 ## Attributes
 

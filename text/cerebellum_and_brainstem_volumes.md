@@ -2,7 +2,7 @@
 
 Quantitative assessment of cerebellar hemispheres and brainstem.
 
-**Codes:** RADLEX RID6815; SNOMEDCT 113305005; RADLEX RID6677; SNOMEDCT 15926001
+**Codes:** RADLEX RID6815 cerebellum; SNOMEDCT 113305005 Cerebellar structure; RADLEX RID6677 brainstem; SNOMEDCT 15926001 Brainstem structure
 
 ## Attributes
 

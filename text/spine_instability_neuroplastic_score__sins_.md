@@ -2,7 +2,19 @@
 
 This module describes the Common Data elements and Macros for Spine Instability Neoplastic Score (SINS)
 
-**Codes:** RADELEMENT RDES21 spine instability neuroplastic score (sins); RADLEX RID7741 spine
+**Codes:** radelement RDES21 spine instability neuroplastic score
+
+**Entity Type:** assessment
+
+**Body Regions:** spine
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, NR, OI
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

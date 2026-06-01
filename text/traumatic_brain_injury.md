@@ -2,7 +2,23 @@
 
 A subset of data elements from the National Institute for Neurological Disorders and Stroke (NINDS). The data elements are related to the reporting template for imaging of traumatic brain injury.
 
-**Codes:** RADELEMENT RDES272 traumatic brain injury
+**Codes:** LOINC LA27864-0 Traumatic brain injury; SNOMEDCT 127295002 Traumatic brain injury; LOINC MTHU020811 Traumatic brain injury; LOINC LP75785-3 Traumatic brain injury; LOINC LA17401-3 Traumatic brain injury; radelement RDES272 traumatic brain injury
+
+**Entity Type:** diagnosis
+
+**Body Regions:** head
+
+**Modalities:** CT, MR, XR
+
+**Subspecialties:** NR, ER
+
+**Etiologies:** traumatic:acute
+
+**Time Course:** duration: days; modifiers: evolving, resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

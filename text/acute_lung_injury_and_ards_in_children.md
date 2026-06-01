@@ -2,11 +2,25 @@
 
 **Synonyms:** pediatric ARDS, pediatric acute lung injury
 
-**Tags:** pediatric, CT, XR, lung, injury, pediatric, respiratory, diagnosis
-
 Injury to the lungs in children leading to acute respiratory distress.
 
-**Codes:** GAMUTS 14342 acute lung injury and ARDS in children
+**Codes:** LOINC LA20566-8 Acute lung injury/Acute respiratory distress syndrome; SNOMEDCT 67782005 Acute respiratory distress syndrome; LOINC LA28203-0 Acute respiratory distress syndrome; GAMUTS 14342 acute lung injury and ARDS in children
+
+**Entity Type:** diagnosis
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH, PD, ER
+
+**Etiologies:** inflammatory, inflammatory:infectious, toxic
+
+**Time Course:** duration: days; modifiers: progressive, evolving
+
+**Age Profile:** applicable: newborn, infant, preschool_child, child, adolescent; more common in: preschool_child, child
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

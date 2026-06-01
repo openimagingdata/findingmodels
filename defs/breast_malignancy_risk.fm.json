@@ -7,6 +7,35 @@
     "Case Score",
     "Breast cancer risk assessment"
   ],
+  "body_regions": [
+    "breast"
+  ],
+  "subspecialties": [
+    "BR"
+  ],
+  "entity_type": "assessment",
+  "applicable_modalities": [
+    "MG"
+  ],
+  "age_profile": {
+    "applicability": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ],
+    "more_common_in": [
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "female-specific",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29895",
+      "display": "female breast"
+    }
+  ],
   "contributors": [
     {
       "github_username": "HeatherChase",
@@ -26,6 +55,13 @@
       "maximum": 100,
       "unit": "percent",
       "required": true
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID36027",
+      "display": "BI-RADS assessment"
     }
   ]
 }

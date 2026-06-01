@@ -8,6 +8,18 @@ Disease process involving both lower lobes of the lungs.
 
 **Codes:** GAMUTS 14957 bilateral basilar lung disease
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_910747`

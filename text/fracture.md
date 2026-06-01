@@ -2,9 +2,25 @@
 
 **Synonyms:** bone fracture
 
-**Tags:** chest, XR, osseous, finding
-
 Disruption of cortical bone continuity identified on radiograph.
+
+**Codes:** SNOMEDCT 125605004 Fracture of bone
+
+**Entity Type:** diagnosis
+
+**Body Regions:** whole_body
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, ER
+
+**Etiologies:** traumatic:acute, traumatic:sequela
+
+**Time Course:** duration: months; modifiers: evolving, resolving, stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

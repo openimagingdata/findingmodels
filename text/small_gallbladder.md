@@ -6,7 +6,23 @@
 
 Decreased gallbladder size that may indicate pathology such as a contracted state.
 
-**Codes:** GAMUTS 5285 small gallbladder
+**Codes:** SNOMEDCT 300345006 Small gallbladder; SNOMEDCT 482008 Gallbladder contraction; GAMUTS 5285 small gallbladder
+
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** US, CT
+
+**Subspecialties:** GI
+
+**Etiologies:** normal-variant, mechanical
+
+**Time Course:** duration: days; modifiers: intermittent
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

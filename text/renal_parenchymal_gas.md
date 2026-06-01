@@ -8,6 +8,22 @@ Presence of gas within the renal parenchyma usually indicating infection.
 
 **Codes:** GAMUTS 16821 renal parenchymal gas
 
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** CT, US
+
+**Subspecialties:** GU, ER
+
+**Etiologies:** inflammatory:infectious
+
+**Time Course:** duration: days; modifiers: evolving, progressive
+
+**Age Profile:** all ages; more common in: adult, middle_aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_746326`

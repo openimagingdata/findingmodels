@@ -2,7 +2,7 @@
 
 Quantitative assessment of ventricular system volumes for hydrocephalus and atrophy evaluation.
 
-**Codes:** RADLEX RID7123; SNOMEDCT 35764002
+**Codes:** RADLEX RID7123 cerebral ventricle; SNOMEDCT 35764002 Brain ventricle structure
 
 ## Attributes
 

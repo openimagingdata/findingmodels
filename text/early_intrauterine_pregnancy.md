@@ -2,11 +2,25 @@
 
 **Synonyms:** early pregnancy
 
-**Tags:** ultrasound, US, gestational, finding
-
 Initial stages of a pregnancy inside the uterus
 
 **Codes:** GAMUTS 19190 early intrauterine pregnancy
+
+**Entity Type:** finding
+
+**Body Regions:** pelvis
+
+**Modalities:** US
+
+**Subspecialties:** OB
+
+**Etiologies:** normal-variant
+
+**Time Course:** duration: months; modifiers: progressive, evolving
+
+**Age Profile:** applicable: young_adult, adult; more common in: young_adult, adult
+
+**Sex Specificity:** female-specific
 
 ## Attributes
 

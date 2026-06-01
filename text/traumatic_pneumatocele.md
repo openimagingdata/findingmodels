@@ -2,9 +2,25 @@
 
 **Synonyms:** traumatic lung cyst, post-traumatic pneumatocele
 
-**Tags:** chest, XR, finding
-
 A thin-walled, air-filled cystic space within the lung parenchyma resulting from traumatic disruption, typically seen adjacent to or within areas of pulmonary contusion.
+
+**Codes:** RADLEX RID28522 pneumatocele
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH, ER
+
+**Etiologies:** traumatic:acute
+
+**Time Course:** duration: weeks; modifiers: resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

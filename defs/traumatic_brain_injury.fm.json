@@ -2,6 +2,40 @@
   "oifm_id": "OIFM_CDE_000272",
   "name": "Traumatic Brain Injury",
   "description": "A subset of data elements from the National Institute for Neurological Disorders and Stroke (NINDS). The data elements are related to the reporting template for imaging of traumatic brain injury.",
+  "body_regions": [
+    "head"
+  ],
+  "subspecialties": [
+    "NR",
+    "ER"
+  ],
+  "etiologies": [
+    "traumatic:acute"
+  ],
+  "entity_type": "diagnosis",
+  "applicable_modalities": [
+    "CT",
+    "MR",
+    "XR"
+  ],
+  "expected_time_course": {
+    "duration": "days",
+    "modifiers": [
+      "evolving",
+      "resolving"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID6434",
+      "display": "brain"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -1089,7 +1123,32 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "LOINC",
+      "code": "LA27864-0",
+      "display": "Traumatic brain injury"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "127295002",
+      "display": "Traumatic brain injury"
+    },
+    {
+      "system": "LOINC",
+      "code": "MTHU020811",
+      "display": "Traumatic brain injury"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP75785-3",
+      "display": "Traumatic brain injury"
+    },
+    {
+      "system": "LOINC",
+      "code": "LA17401-3",
+      "display": "Traumatic brain injury"
+    },
+    {
+      "system": "radelement",
       "code": "RDES272",
       "display": "traumatic brain injury"
     }

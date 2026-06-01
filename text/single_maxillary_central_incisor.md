@@ -8,6 +8,22 @@ Presence of one central incisor in the maxillary dental arch instead of two.
 
 **Codes:** GAMUTS 25598 single maxillary central incisor
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** XR, CT
+
+**Subspecialties:** HN, PD
+
+**Etiologies:** congenital, developmental
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: newborn, infant, preschool_child, child, adolescent
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_799613`

@@ -6,6 +6,24 @@
 
 Self-contained pacemaker implanted directly in the cardiac chamber without transvenous leads, visible as a small capsule.
 
+**Codes:** SNOMEDCT 1204291003 Leadless implantable cardiac pacemaker
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CA, CH
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: adult, aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_979934`

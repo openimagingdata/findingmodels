@@ -4,6 +4,20 @@
 
 Loss, narrowing, or obliteration of the cerebrospinal fluid–filled basal (perimesencephalic) cisterns on CT or MRI due to mass effect from edema, hemorrhage, or a space-occupying lesion. This finding commonly reflects elevated intracranial pressure and may indicate increased risk of transtentorial herniation; the original phrasing 'basal cistern effacement' is an example of this imaging appearance.
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** CT, MR
+
+**Subspecialties:** NR, ER
+
+**Time Course:** duration: hours; modifiers: progressive, evolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_208513`

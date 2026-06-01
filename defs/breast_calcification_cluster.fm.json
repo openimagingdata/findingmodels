@@ -5,9 +5,37 @@
   "synonyms": [
     "breast calcifications"
   ],
-  "tags": [
-    "breast",
-    "calcification"
+  "body_regions": [
+    "breast"
+  ],
+  "subspecialties": [
+    "BR"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "MG"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29895",
+      "display": "female breast"
+    }
   ],
   "contributors": [
     {
@@ -123,6 +151,18 @@
       "description": "Number of breast calcifications in cluster identified.",
       "type": "numeric",
       "required": false
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "129769006",
+      "display": "Calcification cluster"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "697944008",
+      "display": "Mammographic calcification of breast"
     }
   ]
 }

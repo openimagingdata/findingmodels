@@ -5,6 +5,39 @@
   "synonyms": [
     "pneumonitis"
   ],
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH"
+  ],
+  "etiologies": [
+    "inflammatory:infectious",
+    "inflammatory"
+  ],
+  "entity_type": "diagnosis",
+  "applicable_modalities": [
+    "XR",
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "weeks",
+    "modifiers": [
+      "evolving",
+      "resolving"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1301",
+      "display": "lung"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -204,14 +237,24 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
-      "code": "RDES76",
-      "display": "pneumonia"
+      "system": "SNOMEDCT",
+      "code": "233604007",
+      "display": "Pneumonia"
     },
     {
       "system": "RADLEX",
-      "code": "RID1301",
-      "display": "lung"
+      "code": "RID5350",
+      "display": "pneumonia"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP75396-9",
+      "display": "Pneumonia"
+    },
+    {
+      "system": "radelement",
+      "code": "RDES76",
+      "display": "pneumonia"
     }
   ]
 }

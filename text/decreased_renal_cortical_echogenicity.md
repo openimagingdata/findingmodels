@@ -8,6 +8,18 @@ Reduction in the brightness of kidney cortex on ultrasound, potentially indicati
 
 **Codes:** GAMUTS 17002 decreased renal cortical echogenicity
 
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** US
+
+**Subspecialties:** GU
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_278025`

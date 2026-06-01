@@ -8,6 +8,22 @@ Tumor located below the tentorium cerebelli, common in pediatric brain tumors.
 
 **Codes:** GAMUTS 6940 infratentorial intracranial tumor in a child
 
+**Entity Type:** diagnosis
+
+**Body Regions:** head
+
+**Modalities:** CT, MR
+
+**Subspecialties:** NR, PD, OI
+
+**Etiologies:** neoplastic:malignant, neoplastic:benign, neoplastic:potential
+
+**Time Course:** duration: months; modifiers: progressive
+
+**Age Profile:** applicable: child; more common in: child
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_697529`

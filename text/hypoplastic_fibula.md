@@ -6,7 +6,23 @@
 
 Underdevelopment or incomplete formation of the fibula bone.
 
-**Codes:** GAMUTS 31823 hypoplastic fibula
+**Codes:** SNOMEDCT 93256009 Congenital hypoplasia of fibula; GAMUTS 31823 hypoplastic fibula
+
+**Entity Type:** finding
+
+**Body Regions:** lower_extremity
+
+**Modalities:** XR, CT
+
+**Subspecialties:** MK, PD
+
+**Etiologies:** congenital, developmental
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: newborn, infant, child, adolescent
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

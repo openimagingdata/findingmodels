@@ -2,11 +2,25 @@
 
 **Synonyms:** elevated renal transplant RI
 
-**Tags:** ultrasound, US, CT, renal, transplant, finding
-
 Elevation of the resistance index in a transplanted kidney, suggesting possible complications.
 
 **Codes:** GAMUTS 17041 increased resistance index of renal transplant
+
+**Entity Type:** measurement
+
+**Body Regions:** abdomen
+
+**Modalities:** US
+
+**Subspecialties:** GU
+
+**Etiologies:** vascular:thrombotic, vascular:ischemic, iatrogenic:post-operative
+
+**Time Course:** duration: days; modifiers: progressive, stable
+
+**Age Profile:** all ages; more common in: adult, middle_aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

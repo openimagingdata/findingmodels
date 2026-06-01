@@ -2,11 +2,25 @@
 
 **Synonyms:** radiolucent kidney stone
 
-**Tags:** abdomen, CT, US, urinary system, stone, finding
-
 A kidney stone that does not appear on standard radiography but may be seen on ultrasound or CT.
 
-**Codes:** GAMUTS 20557 radiolucent urinary calculus
+**Codes:** SNOMEDCT 304543009 Radiolucent calculus of urinary tract; GAMUTS 20557 radiolucent urinary calculus
+
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** CT, US
+
+**Subspecialties:** GU, ER
+
+**Etiologies:** metabolic
+
+**Time Course:** duration: months; modifiers: intermittent
+
+**Age Profile:** all ages; more common in: adult, middle_aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

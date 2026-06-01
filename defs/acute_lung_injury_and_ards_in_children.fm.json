@@ -6,15 +6,51 @@
     "pediatric ARDS",
     "pediatric acute lung injury"
   ],
-  "tags": [
-    "pediatric",
-    "CT",
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH",
+    "PD",
+    "ER"
+  ],
+  "etiologies": [
+    "inflammatory",
+    "inflammatory:infectious",
+    "toxic"
+  ],
+  "entity_type": "diagnosis",
+  "applicable_modalities": [
     "XR",
-    "lung",
-    "injury",
-    "pediatric",
-    "respiratory",
-    "diagnosis"
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "days",
+    "modifiers": [
+      "progressive",
+      "evolving"
+    ]
+  },
+  "age_profile": {
+    "applicability": [
+      "newborn",
+      "infant",
+      "preschool_child",
+      "child",
+      "adolescent"
+    ],
+    "more_common_in": [
+      "preschool_child",
+      "child"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1301",
+      "display": "lung"
+    }
   ],
   "contributors": [
     {
@@ -257,6 +293,21 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "LOINC",
+      "code": "LA20566-8",
+      "display": "Acute lung injury/Acute respiratory distress syndrome"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "67782005",
+      "display": "Acute respiratory distress syndrome"
+    },
+    {
+      "system": "LOINC",
+      "code": "LA28203-0",
+      "display": "Acute respiratory distress syndrome"
+    },
     {
       "system": "GAMUTS",
       "code": "14342",

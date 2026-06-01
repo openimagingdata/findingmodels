@@ -4,7 +4,23 @@
 
 This module describes the Common Data elements and Macros for Pneumonia
 
-**Codes:** RADELEMENT RDES76 pneumonia; RADLEX RID1301 lung
+**Codes:** SNOMEDCT 233604007 Pneumonia; RADLEX RID5350 pneumonia; LOINC LP75396-9 Pneumonia; radelement RDES76 pneumonia
+
+**Entity Type:** diagnosis
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Etiologies:** inflammatory:infectious, inflammatory
+
+**Time Course:** duration: weeks; modifiers: evolving, resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

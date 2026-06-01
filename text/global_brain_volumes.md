@@ -2,7 +2,7 @@
 
 Quantitative assessment of global brain tissue compartments for evaluation of neurodegeneration, traumatic brain injury, and other conditions affecting overall brain volume.
 
-**Codes:** RADLEX RID6434; SNOMEDCT 12738006
+**Codes:** RADLEX RID6434 brain; SNOMEDCT 12738006 Brain structure
 
 ## Attributes
 

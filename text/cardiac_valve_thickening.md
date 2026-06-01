@@ -8,6 +8,22 @@ Thickening of the cardiac valves, often associated with stenosis or valvular dis
 
 **Codes:** GAMUTS 22535 cardiac valve thickening
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** US, CT, MR
+
+**Subspecialties:** CA
+
+**Etiologies:** degenerative, inflammatory
+
+**Time Course:** duration: years; modifiers: progressive
+
+**Age Profile:** all ages; more common in: adult, aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_567165`

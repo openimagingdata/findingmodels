@@ -13,6 +13,37 @@
     "device",
     "finding"
   ],
+  "body_regions": [
+    "abdomen"
+  ],
+  "subspecialties": [
+    "GI"
+  ],
+  "etiologies": [
+    "iatrogenic:device"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID114",
+      "display": "stomach"
+    }
+  ],
   "contributors": [
     {
       "github_username": "hoodcm",
@@ -188,6 +219,28 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "470571004",
+      "display": "Gastrostomy tube"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP7260-5",
+      "display": "Gastrostomy tube"
+    },
+    {
+      "system": "LOINC",
+      "code": "MTHU001078",
+      "display": "Gastrostomy tube"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP263817-1",
+      "display": "Gastrostomy tube"
     }
   ]
 }

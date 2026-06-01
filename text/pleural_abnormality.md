@@ -4,6 +4,18 @@
 
 A pleural abnormality refers to any pathological change affecting the pleura, the tissue layers enveloping the lungs. These abnormalities may include pleural effusion, thickening, plaques, or pneumothorax, and can be indicative of various underlying conditions such as infection, malignancy, or autoimmune disease.
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT, US
+
+**Subspecialties:** CH
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_MSFT_182025`

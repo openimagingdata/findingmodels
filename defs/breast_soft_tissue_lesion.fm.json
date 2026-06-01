@@ -6,6 +6,40 @@
     "Breast Mass",
     "Mammary Soft Tissue Lesion"
   ],
+  "body_regions": [
+    "breast"
+  ],
+  "subspecialties": [
+    "BR"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "MG",
+    "US",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "years",
+    "modifiers": [
+      "progressive"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29895",
+      "display": "female breast"
+    }
+  ],
   "contributors": [
     {
       "github_username": "HeatherChase",
@@ -132,6 +166,18 @@
           "display": "Anatomic location (property) (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "290073004",
+      "display": "Lesion of breast"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID39055",
+      "display": "breast mass"
     }
   ]
 }

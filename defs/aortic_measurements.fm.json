@@ -2,6 +2,47 @@
   "oifm_id": "OIFM_CDE_000264",
   "name": "Aortic Measurements",
   "description": "Aortic Measurements",
+  "body_regions": [
+    "chest",
+    "abdomen"
+  ],
+  "subspecialties": [
+    "CA",
+    "CH",
+    "VA"
+  ],
+  "entity_type": "measurement",
+  "applicable_modalities": [
+    "CT",
+    "MR",
+    "US"
+  ],
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID480",
+      "display": "aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID879",
+      "display": "thoracic aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID905",
+      "display": "abdominal aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID580",
+      "display": "ascending aorta"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -491,7 +532,12 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "SNOMEDCT",
+      "code": "302287000",
+      "display": "Aortic diameter"
+    },
+    {
+      "system": "radelement",
       "code": "RDES264",
       "display": "aortic measurements"
     }

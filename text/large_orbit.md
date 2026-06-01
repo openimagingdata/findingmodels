@@ -6,7 +6,23 @@
 
 An orbit that is larger than normal.
 
-**Codes:** GAMUTS 25555 large orbit
+**Codes:** SNOMEDCT 80096003 Enlargement of orbit; GAMUTS 25555 large orbit
+
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** HN
+
+**Etiologies:** congenital
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: child, adolescent
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

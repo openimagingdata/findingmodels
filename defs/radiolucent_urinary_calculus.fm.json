@@ -5,13 +5,56 @@
   "synonyms": [
     "radiolucent kidney stone"
   ],
-  "tags": [
-    "abdomen",
+  "body_regions": [
+    "abdomen"
+  ],
+  "subspecialties": [
+    "GU",
+    "ER"
+  ],
+  "etiologies": [
+    "metabolic"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
     "CT",
-    "US",
-    "urinary system",
-    "stone",
-    "finding"
+    "US"
+  ],
+  "expected_time_course": {
+    "duration": "months",
+    "modifiers": [
+      "intermittent"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID205",
+      "display": "kidney"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID228",
+      "display": "renal pelvis"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID229",
+      "display": "ureter"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID225",
+      "display": "calyx of renal collecting system"
+    }
   ],
   "contributors": [
     {
@@ -254,6 +297,11 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "304543009",
+      "display": "Radiolucent calculus of urinary tract"
+    },
     {
       "system": "GAMUTS",
       "code": "20557",

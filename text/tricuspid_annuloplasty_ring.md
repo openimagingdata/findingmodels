@@ -6,6 +6,24 @@
 
 Prosthetic ring implanted around the tricuspid valve annulus for valve repair.
 
+**Codes:** SNOMEDCT 1259843002 Tricuspid annuloplasty ring
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CA, CH
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_759453`

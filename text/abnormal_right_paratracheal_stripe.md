@@ -2,9 +2,23 @@
 
 **Synonyms:** right paratracheal stripe abnormality, widened right paratracheal stripe
 
-**Tags:** chest, XR, finding
-
 Widening of the right paratracheal stripe beyond 4 mm on chest radiograph, which may indicate lymphadenopathy, tracheal pathology, or mediastinal mass.
+
+**Codes:** RADLEX RID1449 right paratracheal stripe
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR
+
+**Subspecialties:** CH
+
+**Etiologies:** inflammatory:infectious, neoplastic:malignant
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

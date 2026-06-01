@@ -6,10 +6,30 @@
     "right paratracheal stripe abnormality",
     "widened right paratracheal stripe"
   ],
-  "tags": [
-    "chest",
-    "XR",
-    "finding"
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH"
+  ],
+  "etiologies": [
+    "inflammatory:infectious",
+    "neoplastic:malignant"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR"
+  ],
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1384",
+      "display": "mediastinum"
+    }
   ],
   "contributors": [
     {
@@ -192,6 +212,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID1449",
+      "display": "right paratracheal stripe"
     }
   ]
 }

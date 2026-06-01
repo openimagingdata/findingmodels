@@ -15,6 +15,45 @@
     "skeletal",
     "diagnosis"
   ],
+  "body_regions": [
+    "lower_extremity"
+  ],
+  "subspecialties": [
+    "MK",
+    "PD"
+  ],
+  "etiologies": [
+    "congenital",
+    "developmental"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "newborn",
+      "infant",
+      "child",
+      "adolescent"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID2871",
+      "display": "fibula"
+    }
+  ],
   "contributors": [
     {
       "name": "Radiology Gamuts Ontology",
@@ -256,6 +295,11 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "93256009",
+      "display": "Congenital hypoplasia of fibula"
+    },
     {
       "system": "GAMUTS",
       "code": "31823",

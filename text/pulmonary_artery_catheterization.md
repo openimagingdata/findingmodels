@@ -1,10 +1,24 @@
 # Pulmonary artery catheterization—`OIFM_GMTS_030927`
 
-**Tags:** vascular, CT, XR, US, pulmonary artery, procedure, finding
-
 Insertion of a catheter into the pulmonary artery for diagnostic purposes.
 
-**Codes:** GAMUTS 30927 pulmonary artery catheterization
+**Codes:** SNOMEDCT 65677008 Pulmonary catheterization with Swan-Ganz catheter; RADLEX RID49768 Swan-Ganz catheter placement; GAMUTS 30927 pulmonary artery catheterization
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: weeks; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

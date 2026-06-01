@@ -12,6 +12,38 @@
     "hepatobiliary",
     "finding"
   ],
+  "body_regions": [
+    "abdomen"
+  ],
+  "subspecialties": [
+    "GI"
+  ],
+  "etiologies": [
+    "normal-variant",
+    "mechanical"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "US",
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "days",
+    "modifiers": [
+      "intermittent"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID187",
+      "display": "gallbladder"
+    }
+  ],
   "contributors": [
     {
       "name": "Radiology Gamuts Ontology",
@@ -253,6 +285,16 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "300345006",
+      "display": "Small gallbladder"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "482008",
+      "display": "Gallbladder contraction"
+    },
     {
       "system": "GAMUTS",
       "code": "5285",

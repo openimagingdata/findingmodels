@@ -13,6 +13,42 @@
     "device",
     "finding"
   ],
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CA",
+    "CH"
+  ],
+  "etiologies": [
+    "iatrogenic:device"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1385",
+      "display": "heart"
+    }
+  ],
   "contributors": [
     {
       "github_username": "hoodcm",
@@ -188,6 +224,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "1204291003",
+      "display": "Leadless implantable cardiac pacemaker"
     }
   ]
 }

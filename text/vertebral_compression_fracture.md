@@ -6,7 +6,23 @@
 
 Loss of vertebral body height due to axial loading, appearing as wedging or endplate depression on radiograph.
 
-**Codes:** RADELEMENT RDES230 vertebral compression fracture
+**Codes:** SNOMEDCT 42942008 Compression fracture of vertebral column; radelement RDES230 vertebral compression fracture
+
+**Entity Type:** diagnosis
+
+**Body Regions:** spine
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, NR
+
+**Etiologies:** traumatic:acute, traumatic:sequela
+
+**Time Course:** duration: years; modifiers: stable, progressive
+
+**Age Profile:** all ages; more common in: aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

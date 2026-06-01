@@ -6,6 +6,22 @@ Prominent grooves on the inner table of the skull, indicate expanded venous chan
 
 **Codes:** GAMUTS 6763 large vascular grooves of skull
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** CT, XR
+
+**Subspecialties:** NR, PD
+
+**Etiologies:** normal-variant, developmental
+
+**Time Course:** duration: years; modifiers: stable
+
+**Age Profile:** applicable: newborn, infant, preschool_child, child, adolescent; more common in: child, adolescent
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_874127`

@@ -8,6 +8,22 @@ A tear through the full thickness of the wall of an artery.
 
 **Codes:** GAMUTS 22516 arterial rupture
 
+**Entity Type:** diagnosis
+
+**Body Regions:** whole_body
+
+**Modalities:** CT, MR, US
+
+**Subspecialties:** VA, ER
+
+**Etiologies:** traumatic:acute, vascular:aneurysmal
+
+**Time Course:** duration: hours; modifiers: progressive
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_006635`

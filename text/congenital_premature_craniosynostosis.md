@@ -6,6 +6,22 @@ Premature fusion of one or more cranial sutures, affecting skull shape.
 
 **Codes:** GAMUTS 6081 congenital premature craniosynostosis
 
+**Entity Type:** diagnosis
+
+**Body Regions:** head
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** NR, PD
+
+**Etiologies:** congenital, developmental
+
+**Time Course:** duration: permanent; modifiers: progressive
+
+**Age Profile:** applicable: newborn, infant, preschool_child, child; more common in: newborn, infant
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_129737`

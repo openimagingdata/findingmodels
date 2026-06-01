@@ -8,6 +8,22 @@ Metastatic liver lesion with increased blood supply.
 
 **Codes:** GAMUTS 4819 hypervascular liver metastasis
 
+**Entity Type:** diagnosis
+
+**Body Regions:** abdomen
+
+**Modalities:** CT, MR
+
+**Subspecialties:** GI, OI
+
+**Etiologies:** neoplastic:malignant, neoplastic:metastatic
+
+**Time Course:** duration: months; modifiers: progressive
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_397491`

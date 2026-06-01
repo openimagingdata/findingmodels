@@ -2,14 +2,36 @@
   "oifm_id": "OIFM_GMTS_030927",
   "name": "pulmonary artery catheterization",
   "description": "Insertion of a catheter into the pulmonary artery for diagnostic purposes.",
-  "tags": [
-    "vascular",
-    "CT",
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH"
+  ],
+  "etiologies": [
+    "iatrogenic:device"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
     "XR",
-    "US",
-    "pulmonary artery",
-    "procedure",
-    "finding"
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "weeks",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID974",
+      "display": "pulmonary artery"
+    }
   ],
   "contributors": [
     {
@@ -252,6 +274,16 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "65677008",
+      "display": "Pulmonary catheterization with Swan-Ganz catheter"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID49768",
+      "display": "Swan-Ganz catheter placement"
+    },
     {
       "system": "GAMUTS",
       "code": "30927",

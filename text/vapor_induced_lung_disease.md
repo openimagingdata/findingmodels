@@ -6,7 +6,23 @@
 
 Lung injury or abnormality secondary to inhalation of vaporized substances.
 
-**Codes:** GAMUTS 15125 vapor-induced lung disease
+**Codes:** SNOMEDCT 846630009 Pneumonitis caused by vapor; GAMUTS 15125 vapor-induced lung disease
+
+**Entity Type:** diagnosis
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH, ER
+
+**Etiologies:** inflammatory
+
+**Time Course:** duration: weeks; modifiers: resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

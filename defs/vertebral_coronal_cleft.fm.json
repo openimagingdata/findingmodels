@@ -2,13 +2,44 @@
   "oifm_id": "OIFM_GMTS_025712",
   "name": "vertebral coronal cleft",
   "description": "Presence of a cleft or split in the coronal plane of a vertebra.",
-  "tags": [
-    "neuro",
-    "MR",
+  "body_regions": [
+    "spine"
+  ],
+  "subspecialties": [
+    "MK",
+    "NR",
+    "PD"
+  ],
+  "etiologies": [
+    "congenital"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
     "CT",
-    "spine",
-    "congenital anomaly",
-    "finding"
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "newborn",
+      "infant",
+      "child"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29154",
+      "display": "vertebra"
+    }
   ],
   "contributors": [
     {
@@ -251,6 +282,11 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "840483000",
+      "display": "Congenital coronal cleft of vertebra"
+    },
     {
       "system": "GAMUTS",
       "code": "25712",

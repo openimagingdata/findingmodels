@@ -1,10 +1,24 @@
 # Focal shadowing pancreatic lesion—`OIFM_GMTS_004878`
 
-**Tags:** ultrasound, US, CT, MR, pancreas, mass, finding
-
 Local area of shadowing in the pancreas, suggestive of a mass.
 
 **Codes:** GAMUTS 4878 focal shadowing pancreatic lesion
+
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** US, CT, MR
+
+**Subspecialties:** GI
+
+**Etiologies:** neoplastic:potential
+
+**Time Course:** duration: months; modifiers: stable, progressive
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

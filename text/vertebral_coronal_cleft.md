@@ -1,10 +1,24 @@
 # Vertebral coronal cleft—`OIFM_GMTS_025712`
 
-**Tags:** neuro, MR, CT, spine, congenital anomaly, finding
-
 Presence of a cleft or split in the coronal plane of a vertebra.
 
-**Codes:** GAMUTS 25712 vertebral coronal cleft
+**Codes:** SNOMEDCT 840483000 Congenital coronal cleft of vertebra; GAMUTS 25712 vertebral coronal cleft
+
+**Entity Type:** finding
+
+**Body Regions:** spine
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, NR, PD
+
+**Etiologies:** congenital
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: newborn, infant, child
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

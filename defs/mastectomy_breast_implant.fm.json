@@ -2,6 +2,43 @@
   "oifm_id": "OIFM_MGB_253641",
   "name": "Mastectomy Breast Implant",
   "description": "Finding related to mastectomy and breast implant",
+  "body_regions": [
+    "breast"
+  ],
+  "subspecialties": [
+    "BR"
+  ],
+  "etiologies": [
+    "iatrogenic:post-operative"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "MG",
+    "MR",
+    "US"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "female-specific",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29895",
+      "display": "female breast"
+    }
+  ],
   "attributes": [
     {
       "oifma_id": "OIFMA_MGB_930144",
@@ -148,6 +185,18 @@
       ],
       "required": false,
       "max_selected": 1
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "2282003",
+      "display": "Breast implant"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID34710",
+      "display": "breast implant"
     }
   ]
 }

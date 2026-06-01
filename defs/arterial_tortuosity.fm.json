@@ -7,14 +7,34 @@
     "artery twisting",
     "tortuous arteries"
   ],
-  "tags": [
-    "ultrasound",
-    "CT",
-    "MR",
+  "body_regions": [
+    "whole_body"
+  ],
+  "subspecialties": [
+    "VA"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
     "US",
-    "vascular",
-    "congenital anomaly",
-    "finding"
+    "CT",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID13183",
+      "display": "arterial system"
+    }
   ],
   "contributors": [
     {
@@ -257,6 +277,11 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "460885001",
+      "display": "Tortuosity of systemic artery"
+    },
     {
       "system": "GAMUTS",
       "code": "22518",

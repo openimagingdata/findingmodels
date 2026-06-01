@@ -8,6 +8,20 @@ Multiple dark lesions within the spleen on MR imaging.
 
 **Codes:** GAMUTS 5290 multiple splenic hypointensities
 
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** MR
+
+**Subspecialties:** GI, OI
+
+**Etiologies:** inflammatory:infectious, neoplastic:malignant, neoplastic:metastatic
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_883046`

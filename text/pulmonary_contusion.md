@@ -6,6 +6,24 @@
 
 Hemorrhage and edema within the lung parenchyma resulting from blunt thoracic trauma, appearing as non-segmental airspace opacity.
 
+**Codes:** SNOMEDCT 262784001 Contusion of lung
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** CH, ER
+
+**Etiologies:** traumatic:acute
+
+**Time Course:** duration: weeks; modifiers: resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_619335`

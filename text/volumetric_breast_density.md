@@ -4,6 +4,20 @@
 
 A quantitative measurement of fibroglandular tissue volume relative to total breast volume on mammography, used to assess breast cancer risk and imaging sensitivity.
 
+**Codes:** SNOMEDCT 129793001 Mammographic breast density
+
+**Entity Type:** measurement
+
+**Body Regions:** breast
+
+**Modalities:** MG
+
+**Subspecialties:** BR
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** female-specific
+
 ## Attributes
 
 ### Percentage—`OIFMA_MSFT_632232`

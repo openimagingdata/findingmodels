@@ -1,10 +1,22 @@
 # Fetal chest mass—`OIFM_GMTS_019061`
 
-**Tags:** ultrasound, US, MR, chest, mass, finding
-
 An abnormal growth located in the fetal thoracic region.
 
 **Codes:** GAMUTS 19061 fetal chest mass
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** US, MR
+
+**Subspecialties:** OB, CH, PD
+
+**Etiologies:** congenital, developmental, neoplastic:benign, neoplastic:malignant
+
+**Time Course:** duration: months; modifiers: progressive
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

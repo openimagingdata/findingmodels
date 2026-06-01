@@ -6,6 +6,22 @@
 
 Surgical clips identified in the abdomen on radiograph, indicating prior abdominal surgery.
 
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** XR
+
+**Subspecialties:** GI
+
+**Etiologies:** iatrogenic:post-operative
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_346578`

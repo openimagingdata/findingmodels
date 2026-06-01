@@ -2,7 +2,7 @@
 
 Quantitative assessment of basal ganglia and thalamic structures.
 
-**Codes:** RADLEX RID6537; SNOMEDCT 32610002
+**Codes:** RADLEX RID6537 set of basal ganglia; SNOMEDCT 32610002 Structure of basal nucleus
 
 ## Attributes
 

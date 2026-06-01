@@ -8,6 +8,18 @@ A straight or slightly curved linear opacity seen within the lung on imaging.
 
 **Codes:** GAMUTS 15001 long linear lung shadow
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_211298`

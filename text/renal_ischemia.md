@@ -8,6 +8,22 @@ Decreased blood flow to the kidney causing functional impairment.
 
 **Codes:** GAMUTS 16879 renal ischemia
 
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** CT, MR
+
+**Subspecialties:** GU
+
+**Etiologies:** vascular:ischemic
+
+**Time Course:** duration: days; modifiers: evolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_749093`

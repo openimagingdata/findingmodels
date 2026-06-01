@@ -4,6 +4,22 @@
 
 A breast soft tissue lesion refers to any abnormal growth or mass within the soft tissue of the breast, which may include various entities such as cysts, fibromas, or malignant tumors, typically identified through imaging modalities like mammography or ultrasound.
 
+**Codes:** SNOMEDCT 290073004 Lesion of breast; RADLEX RID39055 breast mass
+
+**Entity Type:** finding
+
+**Body Regions:** breast
+
+**Modalities:** MG, US, MR
+
+**Subspecialties:** BR
+
+**Time Course:** duration: years; modifiers: progressive
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_MSFT_113477`

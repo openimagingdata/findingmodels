@@ -8,6 +8,18 @@ Increased size of the hilar structures on one side, often due to adenopathy or v
 
 **Codes:** GAMUTS 15764 unilateral hilar enlargement
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_052331`

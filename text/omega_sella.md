@@ -8,6 +8,22 @@ An omega-shaped enlarged sella turcica.
 
 **Codes:** GAMUTS 6558 omega sella
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** CT, MR
+
+**Subspecialties:** NR
+
+**Etiologies:** normal-variant
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_161274`

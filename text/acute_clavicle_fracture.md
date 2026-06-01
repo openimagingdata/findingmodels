@@ -2,7 +2,23 @@
 
 Acute Clavicle Fracture Detection
 
-**Codes:** RADELEMENT RDES231 acute clavicle fracture
+**Codes:** SNOMEDCT 58150001 Fracture of clavicle; radelement RDES231 acute clavicle fracture
+
+**Entity Type:** diagnosis
+
+**Body Regions:** upper_extremity
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, ER
+
+**Etiologies:** traumatic:acute
+
+**Time Course:** duration: months; modifiers: evolving, resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

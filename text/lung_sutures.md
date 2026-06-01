@@ -6,6 +6,24 @@
 
 Surgical suture material within the lung parenchyma, typically from prior pulmonary resection.
 
+**Codes:** SNOMEDCT 82651004 Suture of lung
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_935112`

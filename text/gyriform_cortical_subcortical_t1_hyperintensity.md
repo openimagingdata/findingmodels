@@ -6,6 +6,18 @@ MRI finding of gyriform hyperintensity on T1-weighted images in brain
 
 **Codes:** GAMUTS 7175 gyriform cortical/subcortical T1 hyperintensity
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** MR
+
+**Subspecialties:** NR
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_582590`

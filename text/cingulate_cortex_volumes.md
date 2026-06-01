@@ -2,7 +2,7 @@
 
 Quantitative assessment of anterior and posterior cingulate regions.
 
-**Codes:** RADLEX RID6510; SNOMEDCT 25221002
+**Codes:** RADLEX RID6510 cingulate gyrus; SNOMEDCT 25221002 Structure of cingulate gyrus
 
 ## Attributes
 

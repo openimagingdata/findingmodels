@@ -2,9 +2,23 @@
 
 **Synonyms:** breast calcifications
 
-**Tags:** breast, calcification
-
 Breast calcification clusters are typically a sign of benign changes in breast tissue but can sometimes indicate malignancy.
+
+**Codes:** SNOMEDCT 129769006 Calcification cluster; SNOMEDCT 697944008 Mammographic calcification of breast
+
+**Entity Type:** finding
+
+**Body Regions:** breast
+
+**Modalities:** MG
+
+**Subspecialties:** BR
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

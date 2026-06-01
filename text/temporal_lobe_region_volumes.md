@@ -2,7 +2,7 @@
 
 Quantitative assessment of temporal lobe subregions for neurodegenerative and seizure disorder evaluation.
 
-**Codes:** RADLEX RID6476; SNOMEDCT 78277001
+**Codes:** RADLEX RID6476 temporal lobe; SNOMEDCT 78277001 Temporal lobe structure
 
 ## Attributes
 

@@ -2,7 +2,21 @@
 
 Cervical Spine Subaxial AO Injury Classification on CT
 
-**Codes:** RADELEMENT RDES279 ao spine subaxial cervical spine injury classification
+**Codes:** radelement RDES279 ao spine subaxial cervical spine injury classification
+
+**Entity Type:** grouping
+
+**Body Regions:** spine
+
+**Modalities:** CT
+
+**Subspecialties:** MK, NR, ER
+
+**Etiologies:** traumatic:acute
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

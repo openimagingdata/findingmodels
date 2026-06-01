@@ -6,6 +6,32 @@
     "Volumetric Density",
     "VBD"
   ],
+  "body_regions": [
+    "breast"
+  ],
+  "subspecialties": [
+    "BR"
+  ],
+  "entity_type": "measurement",
+  "applicable_modalities": [
+    "MG"
+  ],
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "female-specific",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID29895",
+      "display": "female breast"
+    }
+  ],
   "contributors": [
     {
       "github_username": "HeatherChase",
@@ -25,6 +51,13 @@
       "maximum": 100,
       "unit": "%",
       "required": true
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "129793001",
+      "display": "Mammographic breast density"
     }
   ]
 }

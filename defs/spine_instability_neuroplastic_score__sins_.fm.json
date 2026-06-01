@@ -2,6 +2,36 @@
   "oifm_id": "OIFM_CDE_000021",
   "name": "Spine Instability Neuroplastic Score (SINS)",
   "description": "This module describes the Common Data elements and Macros for Spine Instability Neoplastic Score (SINS)",
+  "body_regions": [
+    "spine"
+  ],
+  "subspecialties": [
+    "MK",
+    "NR",
+    "OI"
+  ],
+  "entity_type": "assessment",
+  "applicable_modalities": [
+    "XR",
+    "CT",
+    "MR"
+  ],
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID7741",
+      "display": "spine"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -279,14 +309,9 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "radelement",
       "code": "RDES21",
-      "display": "spine instability neuroplastic score (sins)"
-    },
-    {
-      "system": "RADLEX",
-      "code": "RID7741",
-      "display": "spine"
+      "display": "spine instability neuroplastic score"
     }
   ]
 }

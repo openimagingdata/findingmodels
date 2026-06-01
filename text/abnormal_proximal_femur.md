@@ -6,6 +6,18 @@ Any deviation from the normal anatomy or pathology of the proximal femur.
 
 **Codes:** GAMUTS 12448 abnormal proximal femur
 
+**Entity Type:** finding
+
+**Body Regions:** lower_extremity
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_435718`

@@ -2,7 +2,19 @@
 
 Aortic Measurements
 
-**Codes:** RADELEMENT RDES264 aortic measurements
+**Codes:** SNOMEDCT 302287000 Aortic diameter; radelement RDES264 aortic measurements
+
+**Entity Type:** measurement
+
+**Body Regions:** chest, abdomen
+
+**Modalities:** CT, MR, US
+
+**Subspecialties:** CA, CH, VA
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

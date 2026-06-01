@@ -6,6 +6,18 @@ Abnormal growth or lesion in the chest wall of a child.
 
 **Codes:** GAMUTS 16074 pediatric chest wall lesion
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT, MR, US
+
+**Subspecialties:** CH, PD
+
+**Age Profile:** all ages; more common in: child
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_249982`

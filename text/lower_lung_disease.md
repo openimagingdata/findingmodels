@@ -8,6 +8,18 @@ Disease predominantly affecting the lower lobes or zones of the lungs.
 
 **Codes:** GAMUTS 14573 lower lung disease
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_974627`

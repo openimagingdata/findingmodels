@@ -2,7 +2,7 @@
 
 Quantitative assessment of occipital lobe subregions for visual processing and neurodegenerative disease evaluation.
 
-**Codes:** RADLEX RID6502; SNOMEDCT 31065004
+**Codes:** RADLEX RID6502 occipital lobe; SNOMEDCT 31065004 Occipital lobe structure
 
 ## Attributes
 

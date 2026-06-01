@@ -2,13 +2,38 @@
   "oifm_id": "OIFM_GMTS_019061",
   "name": "fetal chest mass",
   "description": "An abnormal growth located in the fetal thoracic region.",
-  "tags": [
-    "ultrasound",
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "OB",
+    "CH",
+    "PD"
+  ],
+  "etiologies": [
+    "congenital",
+    "developmental",
+    "neoplastic:benign",
+    "neoplastic:malignant"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
     "US",
-    "MR",
-    "chest",
-    "mass",
-    "finding"
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "months",
+    "modifiers": [
+      "progressive"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1243",
+      "display": "thorax"
+    }
   ],
   "contributors": [
     {

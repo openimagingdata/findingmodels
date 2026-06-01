@@ -4,7 +4,23 @@
 
 Distal phalanx of the thumb that is both short and thin
 
-**Codes:** GAMUTS 11806 short thin distal phalanx of thumb
+**Codes:** SNOMEDCT 897340006 Abnormally short distal phalanx of thumb; GAMUTS 11806 short thin distal phalanx of thumb
+
+**Entity Type:** finding
+
+**Body Regions:** upper_extremity
+
+**Modalities:** XR, CT
+
+**Subspecialties:** MK
+
+**Etiologies:** congenital, developmental, normal-variant
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

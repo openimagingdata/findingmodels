@@ -6,6 +6,14 @@ An anomaly or irregularity at the junction between the sternum body and manubriu
 
 **Codes:** GAMUTS 31046 abnormal sternomanubrial synchondrosis
 
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT, MR
+
+**Subspecialties:** MK, CH
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_578497`

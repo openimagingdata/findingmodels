@@ -2,11 +2,25 @@
 
 **Synonyms:** esophageal air
 
-**Tags:** abdomen, CT, XR, gastrointestinal, anatomical, finding
-
 Presence of air within the esophagus
 
 **Codes:** GAMUTS 056 air in esophagus
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** GI
+
+**Etiologies:** normal-variant
+
+**Time Course:** duration: hours; modifiers: intermittent
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

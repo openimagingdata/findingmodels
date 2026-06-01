@@ -11,6 +11,39 @@
     "finding",
     "lung"
   ],
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH",
+    "ER"
+  ],
+  "etiologies": [
+    "traumatic:acute"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
+    "CT",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "weeks",
+    "modifiers": [
+      "resolving"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1301",
+      "display": "lung"
+    }
+  ],
   "contributors": [
     {
       "github_username": "hoodcm",
@@ -212,6 +245,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "262784001",
+      "display": "Contusion of lung"
     }
   ]
 }

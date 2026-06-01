@@ -2,7 +2,7 @@
 
 Quantitative assessment of parietal lobe subregions for neurodegenerative and cognitive disorder evaluation.
 
-**Codes:** RADLEX RID6493; SNOMEDCT 16630005
+**Codes:** RADLEX RID6493 parietal lobe; SNOMEDCT 16630005 Parietal lobe structure
 
 ## Attributes
 

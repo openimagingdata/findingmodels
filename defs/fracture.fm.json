@@ -5,11 +5,41 @@
   "synonyms": [
     "bone fracture"
   ],
-  "tags": [
-    "chest",
+  "body_regions": [
+    "whole_body"
+  ],
+  "subspecialties": [
+    "MK",
+    "ER"
+  ],
+  "etiologies": [
+    "traumatic:acute",
+    "traumatic:sequela"
+  ],
+  "entity_type": "diagnosis",
+  "applicable_modalities": [
     "XR",
-    "osseous",
-    "finding"
+    "CT",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "months",
+    "modifiers": [
+      "evolving",
+      "resolving",
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID13209",
+      "display": "musculoskeletal system"
+    }
   ],
   "contributors": [
     {
@@ -254,6 +284,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "125605004",
+      "display": "Fracture of bone"
     }
   ]
 }

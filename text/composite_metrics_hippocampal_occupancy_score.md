@@ -2,7 +2,7 @@
 
 Composite metric assessing hippocampal occupancy accounting for ventricle expansion.
 
-**Codes:** RADLEX RID6529; SNOMEDCT 5366008
+**Codes:** RADLEX RID6529 hippocampus; SNOMEDCT 5366008 Hippocampal structure
 
 ## Attributes
 

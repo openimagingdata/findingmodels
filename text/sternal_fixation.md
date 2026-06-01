@@ -6,6 +6,24 @@
 
 Orthopedic hardware securing a sternal fracture or osteotomy.
 
+**Codes:** SNOMEDCT 464674007 Sternal fixation system
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH, MK
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_482476`

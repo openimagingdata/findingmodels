@@ -6,6 +6,22 @@ Reduced blood flow to the brain due to an external lesion.
 
 **Codes:** GAMUTS 7748 brain ischemia secondary to extracranial lesion
 
+**Entity Type:** diagnosis
+
+**Body Regions:** head
+
+**Modalities:** CT, MR
+
+**Subspecialties:** NR, VA
+
+**Etiologies:** vascular:ischemic
+
+**Time Course:** duration: days; modifiers: evolving, resolving
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_532673`

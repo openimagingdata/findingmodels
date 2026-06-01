@@ -4,6 +4,20 @@
 
 Estimates of the likelihood of malignancy based on mammography features.
 
+**Codes:** RADLEX RID36027 BI-RADS assessment
+
+**Entity Type:** assessment
+
+**Body Regions:** breast
+
+**Modalities:** MG
+
+**Subspecialties:** BR
+
+**Age Profile:** applicable: adult, middle_aged, aged; more common in: middle_aged, aged
+
+**Sex Specificity:** female-specific
+
 ## Attributes
 
 ### Case score—`OIFMA_MSFT_825588`

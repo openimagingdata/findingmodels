@@ -6,6 +6,24 @@
 
 Feeding tube placed directly through the abdominal wall into the stomach.
 
+**Codes:** SNOMEDCT 470571004 Gastrostomy tube; LOINC LP7260-5 Gastrostomy tube; LOINC MTHU001078 Gastrostomy tube; LOINC LP263817-1 Gastrostomy tube
+
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** XR, CT
+
+**Subspecialties:** GI
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_336624`

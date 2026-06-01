@@ -12,6 +12,37 @@
     "osseous",
     "finding"
   ],
+  "body_regions": [
+    "spine"
+  ],
+  "subspecialties": [
+    "MK",
+    "NR"
+  ],
+  "etiologies": [
+    "traumatic:acute",
+    "traumatic:sequela"
+  ],
+  "entity_type": "diagnosis",
+  "applicable_modalities": [
+    "XR",
+    "CT",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "years",
+    "modifiers": [
+      "stable",
+      "progressive"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -252,7 +283,12 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "SNOMEDCT",
+      "code": "42942008",
+      "display": "Compression fracture of vertebral column"
+    },
+    {
+      "system": "radelement",
       "code": "RDES230",
       "display": "vertebral compression fracture"
     }

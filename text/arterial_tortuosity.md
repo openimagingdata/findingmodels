@@ -2,11 +2,23 @@
 
 **Synonyms:** elongated arteries, artery twisting, tortuous arteries
 
-**Tags:** ultrasound, CT, MR, US, vascular, congenital anomaly, finding
-
 Marked twisting or winding of an artery.
 
-**Codes:** GAMUTS 22518 arterial tortuosity
+**Codes:** SNOMEDCT 460885001 Tortuosity of systemic artery; GAMUTS 22518 arterial tortuosity
+
+**Entity Type:** finding
+
+**Body Regions:** whole_body
+
+**Modalities:** US, CT, MR
+
+**Subspecialties:** VA
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

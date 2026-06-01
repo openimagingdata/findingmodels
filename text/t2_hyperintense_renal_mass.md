@@ -2,11 +2,23 @@
 
 **Synonyms:** high T2 renal mass, T2-bright renal mass
 
-**Tags:** abdomen, MR, kidney, mass, finding
-
 Renal mass with high T2 signal on MRI.
 
 **Codes:** GAMUTS 18863 T2-hyperintense renal mass
+
+**Entity Type:** finding
+
+**Body Regions:** abdomen
+
+**Modalities:** MR
+
+**Subspecialties:** GU
+
+**Time Course:** duration: months; modifiers: progressive
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

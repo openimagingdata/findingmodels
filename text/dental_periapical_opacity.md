@@ -8,6 +8,18 @@ Increased radiodensity around the apex of a tooth
 
 **Codes:** GAMUTS 9078 dental periapical opacity
 
+**Entity Type:** finding
+
+**Body Regions:** head
+
+**Modalities:** XR, CT
+
+**Subspecialties:** HN
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_954400`

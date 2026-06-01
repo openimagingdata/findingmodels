@@ -8,6 +8,18 @@ Widening of the space in front of the vertebrae in adults.
 
 **Codes:** GAMUTS 9320 increased prevertebral space in an adult
 
+**Entity Type:** finding
+
+**Body Regions:** neck
+
+**Modalities:** XR, CT
+
+**Subspecialties:** HN
+
+**Age Profile:** applicable: adult; more common in: adult
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_GMTS_684991`

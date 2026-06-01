@@ -6,6 +6,24 @@
 
 Endovascular stent graft within the aorta, visible as metallic mesh on radiograph.
 
+**Codes:** SNOMEDCT 705641004 Aortic stent; LOINC LP34000-7 Aortic stent; LOINC MTHU017062 Aortic stent
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR, CT
+
+**Subspecialties:** CH, VA
+
+**Etiologies:** iatrogenic:device
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
+
 ## Attributes
 
 ### Presence—`OIFMA_OIDM_836740`

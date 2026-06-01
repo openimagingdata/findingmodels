@@ -2,7 +2,7 @@
 
 Quantitative assessment of frontal lobe subregions for executive function and behavioral regulation.
 
-**Codes:** RADLEX RID6440; SNOMEDCT 83251001
+**Codes:** RADLEX RID6440 frontal lobe; SNOMEDCT 83251001 Frontal lobe structure
 
 ## Attributes
 

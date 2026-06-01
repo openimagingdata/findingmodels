@@ -2,7 +2,23 @@
 
 Pfirrmann Spine Disc Degeneration Classification on MR
 
-**Codes:** RADELEMENT RDES281 pfirrmann spine disc degeneration classification
+**Codes:** radelement RDES281 pfirrmann spine disc degeneration classification
+
+**Entity Type:** assessment
+
+**Body Regions:** spine
+
+**Modalities:** MR
+
+**Subspecialties:** MK, NR
+
+**Etiologies:** degenerative
+
+**Time Course:** duration: years; modifiers: progressive
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

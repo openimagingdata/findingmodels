@@ -6,10 +6,37 @@
     "traumatic lung cyst",
     "post-traumatic pneumatocele"
   ],
-  "tags": [
-    "chest",
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH",
+    "ER"
+  ],
+  "etiologies": [
+    "traumatic:acute"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
     "XR",
-    "finding"
+    "CT"
+  ],
+  "expected_time_course": {
+    "duration": "weeks",
+    "modifiers": [
+      "resolving"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1301",
+      "display": "lung"
+    }
   ],
   "contributors": [
     {
@@ -254,6 +281,13 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID28522",
+      "display": "pneumatocele"
     }
   ]
 }

@@ -15,6 +15,42 @@
     "structural",
     "finding"
   ],
+  "body_regions": [
+    "head"
+  ],
+  "subspecialties": [
+    "HN"
+  ],
+  "etiologies": [
+    "congenital"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR",
+    "CT",
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "permanent",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "child",
+      "adolescent"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID9573",
+      "display": "orbit"
+    }
+  ],
   "contributors": [
     {
       "name": "Radiology Gamuts Ontology",
@@ -256,6 +292,11 @@
     }
   ],
   "index_codes": [
+    {
+      "system": "SNOMEDCT",
+      "code": "80096003",
+      "display": "Enlargement of orbit"
+    },
     {
       "system": "GAMUTS",
       "code": "25555",

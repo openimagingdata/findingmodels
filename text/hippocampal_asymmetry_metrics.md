@@ -2,7 +2,7 @@
 
 Quantitative assessment of hippocampal asymmetry index for seizure and sclerosis evaluation.
 
-**Codes:** RADLEX RID6529; SNOMEDCT 5366008
+**Codes:** RADLEX RID6529 hippocampus; SNOMEDCT 5366008 Hippocampal structure
 
 ## Attributes
 

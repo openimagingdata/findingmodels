@@ -2,9 +2,23 @@
 
 **Synonyms:** tunneled central catheter, tunneled line, Hickman catheter
 
-**Tags:** chest, XR, device, finding
-
 Central venous catheter with a subcutaneous tunnel, visible as a radiopaque line with cuff.
+
+**Codes:** RADLEX RID50337 tunneled catheter; LOINC LP263838-7 Tunneled catheter; RADLEX RID50533 tunneled central venous catheter; SNOMEDCT 445085009 Tunneled central venous catheter; LOINC LP267466-3 Tunneled central venous catheter
+
+**Entity Type:** finding
+
+**Body Regions:** chest
+
+**Modalities:** XR
+
+**Subspecialties:** CH
+
+**Time Course:** duration: months; modifiers: stable
+
+**Age Profile:** all ages
+
+**Sex Specificity:** sex-neutral
 
 ## Attributes
 

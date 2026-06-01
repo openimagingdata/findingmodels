@@ -2,6 +2,29 @@
   "oifm_id": "OIFM_CDE_000151",
   "name": "MTA-Scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
   "description": "MTA-scale for Medial Temporal Lobe Atrophy (Scheltens Classification)",
+  "body_regions": [
+    "head"
+  ],
+  "subspecialties": [
+    "NR"
+  ],
+  "entity_type": "measurement",
+  "applicable_modalities": [
+    "MR"
+  ],
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "aged"
+    ]
+  },
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID6476",
+      "display": "temporal lobe"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -56,9 +79,9 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "radelement",
       "code": "RDES151",
-      "display": "mta-scale for medial temporal lobe atrophy (scheltens classification)"
+      "display": "mta-scale for medial temporal lobe atrophy"
     }
   ]
 }

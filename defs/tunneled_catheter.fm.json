@@ -7,11 +7,32 @@
     "tunneled line",
     "Hickman catheter"
   ],
-  "tags": [
-    "chest",
-    "XR",
-    "device",
-    "finding"
+  "body_regions": [
+    "chest"
+  ],
+  "subspecialties": [
+    "CH"
+  ],
+  "entity_type": "finding",
+  "applicable_modalities": [
+    "XR"
+  ],
+  "expected_time_course": {
+    "duration": "months",
+    "modifiers": [
+      "stable"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages"
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1243",
+      "display": "thorax"
+    }
   ],
   "contributors": [
     {
@@ -188,6 +209,33 @@
           "display": "Changed status (qualifier value)"
         }
       ]
+    }
+  ],
+  "index_codes": [
+    {
+      "system": "RADLEX",
+      "code": "RID50337",
+      "display": "tunneled catheter"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP263838-7",
+      "display": "Tunneled catheter"
+    },
+    {
+      "system": "RADLEX",
+      "code": "RID50533",
+      "display": "tunneled central venous catheter"
+    },
+    {
+      "system": "SNOMEDCT",
+      "code": "445085009",
+      "display": "Tunneled central venous catheter"
+    },
+    {
+      "system": "LOINC",
+      "code": "LP267466-3",
+      "display": "Tunneled central venous catheter"
     }
   ]
 }

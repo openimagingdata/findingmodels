@@ -2,6 +2,24 @@
 
 Finding related to mastectomy and breast implant
 
+**Codes:** SNOMEDCT 2282003 Breast implant; RADLEX RID34710 breast implant
+
+**Entity Type:** finding
+
+**Body Regions:** breast
+
+**Modalities:** MG, MR, US
+
+**Subspecialties:** BR
+
+**Etiologies:** iatrogenic:post-operative
+
+**Time Course:** duration: permanent; modifiers: stable
+
+**Age Profile:** all ages; more common in: adult, middle_aged, aged
+
+**Sex Specificity:** female-specific
+
 ## Attributes
 
 ### Mastectomy—`OIFMA_MGB_930144`

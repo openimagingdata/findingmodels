@@ -2,6 +2,42 @@
   "oifm_id": "OIFM_CDE_000281",
   "name": "Pfirrmann Spine Disc Degeneration Classification",
   "description": "Pfirrmann Spine Disc Degeneration Classification on MR",
+  "body_regions": [
+    "spine"
+  ],
+  "subspecialties": [
+    "MK",
+    "NR"
+  ],
+  "etiologies": [
+    "degenerative"
+  ],
+  "entity_type": "assessment",
+  "applicable_modalities": [
+    "MR"
+  ],
+  "expected_time_course": {
+    "duration": "years",
+    "modifiers": [
+      "progressive"
+    ]
+  },
+  "age_profile": {
+    "applicability": "all_ages",
+    "more_common_in": [
+      "adult",
+      "middle_aged",
+      "aged"
+    ]
+  },
+  "sex_specificity": "sex-neutral",
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID7741",
+      "display": "spine"
+    }
+  ],
   "contributors": [
     {
       "name": "ACR/RSNA Common Data Elements Project",
@@ -48,7 +84,7 @@
   ],
   "index_codes": [
     {
-      "system": "RADELEMENT",
+      "system": "radelement",
       "code": "RDES281",
       "display": "pfirrmann spine disc degeneration classification"
     }
