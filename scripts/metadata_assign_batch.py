@@ -23,6 +23,8 @@ import asyncio
 import json
 import traceback
 from datetime import UTC, datetime
+import findingmodel
+import findingmodel_ai
 from pathlib import Path
 from time import perf_counter
 from typing import Any
@@ -30,6 +32,7 @@ from typing import Any
 from findingmodel import FindingModelFull
 from findingmodel_ai.metadata import assign_metadata, audit_enrichment
 from findingmodel_ai.observability import ensure_logfire_configured
+from anatomic_locations import AnatomicLocationIndex
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RUN_DIR = REPO_ROOT / ".metadata-runs" / "enrichment"
@@ -59,6 +62,8 @@ def artifact_stem(path: Path) -> str:
 
 
 def is_transient_error(exc: Exception) -> bool:
+    if isinstance(exc, TimeoutError):
+        return False
     text = repr(exc).lower()
     transient_terms = (
         "timeout",
@@ -79,13 +84,64 @@ def is_transient_error(exc: Exception) -> bool:
     return any(term in text for term in transient_terms)
 
 
-async def assign_and_audit(model: FindingModelFull, *, ontology_cache: Path) -> tuple[Any, Any]:
-    result = await assign_metadata(model, ontology_cache=ontology_cache)
-    audit = await audit_enrichment(result.model, ontology_cache=ontology_cache)
+async def assign_and_audit(
+    model: FindingModelFull,
+    *,
+    ontology_cache: Path,
+    anatomic_index: AnatomicLocationIndex,
+    anatomic_index_lock: asyncio.Lock,
+    include_llm_audit: bool,
+) -> tuple[Any, Any]:
+    result = await assign_metadata(
+        model,
+        ontology_cache=ontology_cache,
+        anatomic_index=anatomic_index,
+        anatomic_index_lock=anatomic_index_lock,
+    )
+    audit = await audit_enrichment(
+        result.model,
+        ontology_cache=ontology_cache,
+        anatomic_index=anatomic_index,
+        anatomic_index_lock=anatomic_index_lock,
+        include_llm=include_llm_audit,
+    )
     return result, audit
 
 
-async def process_file(path: Path, args: argparse.Namespace, semaphore: asyncio.Semaphore) -> dict[str, Any]:
+async def assign_and_audit_with_timeout(
+    model: FindingModelFull,
+    *,
+    ontology_cache: Path,
+    anatomic_index: AnatomicLocationIndex,
+    anatomic_index_lock: asyncio.Lock,
+    include_llm_audit: bool,
+    timeout_seconds: float | None,
+) -> tuple[Any, Any]:
+    if timeout_seconds is None or timeout_seconds <= 0:
+        return await assign_and_audit(
+            model,
+            ontology_cache=ontology_cache,
+            anatomic_index=anatomic_index,
+            anatomic_index_lock=anatomic_index_lock,
+            include_llm_audit=include_llm_audit,
+        )
+    async with asyncio.timeout(timeout_seconds):
+        return await assign_and_audit(
+            model,
+            ontology_cache=ontology_cache,
+            anatomic_index=anatomic_index,
+            anatomic_index_lock=anatomic_index_lock,
+            include_llm_audit=include_llm_audit,
+        )
+
+
+async def process_file(
+    path: Path,
+    args: argparse.Namespace,
+    semaphore: asyncio.Semaphore,
+    anatomic_index: AnatomicLocationIndex,
+    anatomic_index_lock: asyncio.Lock,
+) -> dict[str, Any]:
     async with semaphore:
         start = perf_counter()
         stem = artifact_stem(path)
@@ -100,6 +156,7 @@ async def process_file(path: Path, args: argparse.Namespace, semaphore: asyncio.
         review_dir.mkdir(parents=True, exist_ok=True)
         before_after_dir.mkdir(parents=True, exist_ok=True)
         audit_dir.mkdir(parents=True, exist_ok=True)
+        print(f"started: {status['path']}", flush=True)
 
         try:
             if args.skip_completed and (review_dir / f"{stem}.metadata-review.json").exists():
@@ -110,7 +167,14 @@ async def process_file(path: Path, args: argparse.Namespace, semaphore: asyncio.
             retries = 0
             while True:
                 try:
-                    result, audit = await assign_and_audit(model, ontology_cache=args.ontology_cache)
+                    result, audit = await assign_and_audit_with_timeout(
+                        model,
+                        ontology_cache=args.ontology_cache,
+                        anatomic_index=anatomic_index,
+                        anatomic_index_lock=anatomic_index_lock,
+                        include_llm_audit=not args.audit_deterministic_only,
+                        timeout_seconds=args.record_timeout_seconds,
+                    )
                     break
                 except Exception as exc:
                     if retries >= args.retries or not is_transient_error(exc):
@@ -151,14 +215,18 @@ async def run(args: argparse.Namespace) -> int:
     semaphore = asyncio.Semaphore(args.concurrency)
     status_path = args.run_dir / "status.jsonl"
     failures = 0
-    with status_path.open("a", encoding="utf-8") as status_file:
-        for coro in asyncio.as_completed([process_file(path, args, semaphore) for path in paths]):
-            status = await coro
-            if status["status"] == "failed":
-                failures += 1
-            status_file.write(json.dumps(status, sort_keys=True) + "\n")
-            status_file.flush()
-            print(f"{status['status']}: {status['path']}")
+    anatomic_index_lock = asyncio.Lock()
+    async with AnatomicLocationIndex() as anatomic_index:
+        with status_path.open("a", encoding="utf-8") as status_file:
+            for coro in asyncio.as_completed(
+                [process_file(path, args, semaphore, anatomic_index, anatomic_index_lock) for path in paths]
+            ):
+                status = await coro
+                if status["status"] == "failed":
+                    failures += 1
+                status_file.write(json.dumps(status, sort_keys=True) + "\n")
+                status_file.flush()
+                print(f"{status['status']}: {status['path']}")
     print(f"Processed {len(paths)} files; failures={failures}; status={relative(status_path)}")
     return 1 if failures else 0
 
@@ -171,10 +239,29 @@ def main() -> int:
     parser.add_argument("--ontology-cache", type=Path, default=DEFAULT_ONTOLOGY_CACHE)
     parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--retries", type=int, default=1, help="Whole-file retries for transient assignment/audit failures.")
+    parser.add_argument(
+        "--record-timeout-seconds",
+        type=float,
+        default=90,
+        help="Fail an individual record if assignment plus audit exceeds this many seconds. Use 0 to disable.",
+    )
     parser.add_argument("--skip-completed", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Write artifacts but do not update source .fm.json files.")
     parser.add_argument("--logfire", action="store_true", help="Opt in to Logfire instrumentation for this run.")
+    parser.add_argument(
+        "--audit-deterministic-only",
+        action="store_true",
+        help="Skip the LLM auditor pass and write only deterministic audit flags.",
+    )
+    parser.add_argument("--debug-runtime", action="store_true", help="Print imported package paths and exit.")
     args = parser.parse_args()
+    if args.debug_runtime:
+        print(f"findingmodel: {findingmodel.__file__}")
+        print(f"findingmodel_ai: {findingmodel_ai.__file__}")
+        print("FindingModelFull fields:")
+        for field_name in sorted(FindingModelFull.model_fields):
+            print(f"- {field_name}")
+        return 0
     return asyncio.run(run(args))
 
 

@@ -1,6 +1,9 @@
 # Metadata Enrichment Phase 5 Pilot Run
 
-Status: Human Review Complete; Phase 5 Recovery Required
+> Superseded for active execution by `/Users/talkasab/repos/findingmodel-metadata/docs/plans/metadata-enrichment-current-readiness-2026-05-24.md`. Keep this file as historical evidence only; pull any still-useful decisions into the tool-repo active plan, review evidence register, or a stable reference doc before acting on them.
+
+
+Status: Superseded for active execution; retained as historical evidence
 
 ## Goal
 
@@ -79,11 +82,42 @@ work in the coordinated package plan is complete.
 Current gate status as of 2026-05-01:
 
 - Pilot review is complete and ingested.
-- Phase 6 remains blocked because 104 pilot items have actionable feedback and the pilot surfaced
-  systematic tool issues around expected time course, anatomic location selection, age/sex
-  specificity, ontology/index-code quality, confidence output, and auditor coverage.
-- Full-corpus enrichment must wait for package/tool hardening, pilot feedback resolution, and a
-  targeted rerun through the HTML review app.
+- A tracked resolution worksheet now exists at
+  `docs/plans/metadata-enrichment-phase-5-feedback-resolution-2026-05-01.md`.
+- Phase 6 remains blocked until the Phase 5 gate is explicitly closed in tracked documentation. The
+  pilot feedback rows now have fixed, deferred-with-rationale, or not-applicable-with-rationale
+  dispositions, and the deterministic pilot audit reports zero flags.
+- Full-corpus enrichment must wait for explicit Phase 5 gate closure.
+- Phase 5 recovery targeted rerun has started:
+  - `.metadata-runs/phase5-targeted-rerun-hardened-v3/status.jsonl` completed 30 targeted items
+    after deterministic anatomy exact-match expansion and single-item recovery for
+    `early_intrauterine_pregnancy`.
+  - `.metadata-runs/phase5-targeted-review-hardened-v3/index.html` contains the complete 30-item v3
+    review app.
+- The recovery gate source work is complete for Phase 5: confidence warnings are fixed in the
+  targeted review data, the resolved targeted review app has been regenerated from the corrected
+  source records, and final gate closure should be documented before Phase 6.
+- The v3 targeted review export had 21 approved items and 9 feedback items. The v3 outputs were
+  accepted into `defs/`, the 9 feedback items were corrected, and matching Markdown was regenerated
+  for all 30 targeted items.
+- A broader source patch pass applied the remaining unambiguous pilot feedback. The 150 pilot JSON
+  records and their generated Markdown now validate, and the resolution worksheet records fixed,
+  deferred-with-rationale, or not-applicable-with-rationale status for every pilot feedback row.
+- The deterministic package auditor was rerun over the 150 pilot records using
+  `.metadata-runs/phase5-recovery-ontology-cache.duckdb` with `scripts/metadata_audit.py
+  --deterministic-only` and reports zero flags in
+  `.metadata-runs/phase5-pilot-deterministic-audit/audit_summary.json`.
+- A tracked feedback-to-tooling coverage matrix now exists at
+  `docs/plans/metadata-enrichment-feedback-tooling-coverage-2026-05-05.md`. The current matrix shows
+  that many reviewed records are corrected in source but still need clean-input tool evidence before
+  a larger corpus run should be recommended.
+- A 73-record clean-input dry run using the hardened tool completed successfully but did not
+  reproduce enough reviewed corrections from clean inputs. The analysis is tracked at
+  `docs/plans/metadata-enrichment-clean-input-rerun-analysis-2026-05-05.md`; it found 76 reviewed
+  field mismatches across 58 of the 73 records, mostly expected time course and anatomy selection.
+  The larger corpus run remains blocked by this tooling-coverage gap.
+- Current post-feedback targeted review app:
+  `.metadata-runs/phase5-targeted-review-resolved-v1/index.html`.
 
 ## Execution Notes
 
@@ -112,6 +146,9 @@ Current gate status as of 2026-05-01:
   `.metadata-runs/review-exports/talkasab-mgh-harvard-edu-metadata-enrichment-review-responses.json`.
 - Review ingestion summary was written to `.metadata-runs/pilot-review-ingest.json`.
 - Human review is complete: 150 total, 150 done, 46 approved, 104 feedback, 0 drafts, 0 remaining.
+- `pilot-review-ingest.json` contains 105 actionable notes because
+  `mta_scale_for_medial_temporal_lobe_atrophy__scheltens_classification_` was approved with a
+  non-empty reviewer comment.
 - Feedback themes requiring tool changes before full-corpus enrichment:
   - expected time course was the dominant issue;
   - anatomic location selection missed obvious anatomy or selected overly specific/wrong anatomy;
@@ -120,7 +157,7 @@ Current gate status as of 2026-05-01:
     modality-specific codes on multi-modality findings, and inappropriate classification codes;
   - confidence output used invalid keys such as `ontology_decisions` and `anatomic_decisions`.
 
-## Next Step
+## Superseded Next Step
 
 Carry out Phase 5 recovery before Phase 6:
 
@@ -140,6 +177,8 @@ Carry out Phase 5 recovery before Phase 6:
 
 - Completed: Make potentially missing values visible in the main review surface instead of letting empty fields
   disappear, especially `anatomic_locations`.
+- Completed: Keep the optional `etiologies` row visible even when blank, so reviewers can distinguish
+  an intentionally empty etiology field from a missing display row.
 - Completed: Use field confidence as a reviewer attention signal only when confidence is below high; do not add
   visible high-confidence labels to every field.
 - Regenerated `.metadata-runs/review-current/index.html` after these review-surface changes.

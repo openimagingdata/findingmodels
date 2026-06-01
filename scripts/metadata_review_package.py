@@ -23,6 +23,12 @@ FIELDS = (
     "age_profile",
     "expected_time_course",
 )
+TRIAGE_CATEGORIES = {
+    "proposed_accept",
+    "proposed_skip",
+    "needs_attention",
+    "suspected_tool_problem",
+}
 
 
 def read_json(path: Path) -> Any:
@@ -57,6 +63,35 @@ def default_data_dir(output_dir: Path) -> Path:
     return output_dir.parent / f"{output_dir.name}-data"
 
 
+def load_review_decisions(path: Path | None) -> dict[str, dict[str, Any]]:
+    if path is None:
+        return {}
+    payload = read_json(repo_path(path))
+    records = payload.get("records") if isinstance(payload, dict) else payload
+    if not isinstance(records, list):
+        raise ValueError("Review decisions must be a JSON object with records[] or a records list")
+
+    decisions: dict[str, dict[str, Any]] = {}
+    for row in records:
+        if not isinstance(row, dict):
+            raise ValueError("Every review decision must be an object")
+        stem = str(row.get("id") or row.get("stem") or Path(str(row.get("path") or "")).name.removesuffix(".fm.json"))
+        if not stem:
+            raise ValueError(f"Review decision is missing id/path: {row}")
+        category = str(row.get("triage_category") or "")
+        if category not in TRIAGE_CATEGORIES:
+            raise ValueError(f"Invalid triage_category for {stem}: {category!r}")
+        decisions[stem] = {
+            "triage_category": category,
+            "recommended_human_action": row.get("recommended_human_action") or "",
+            "reason": row.get("reason") or "",
+            "field_flags": row.get("field_flags") or [],
+            "evidence": row.get("evidence") or [],
+            "reviewer_notes": row.get("reviewer_notes") or "",
+        }
+    return decisions
+
+
 def summarize_attributes(attributes: list[dict[str, Any]] | None) -> list[str]:
     summaries = []
     for attr in attributes or []:
@@ -88,7 +123,56 @@ def review_id(items: list[dict[str, Any]], run_dir: Path) -> str:
     return hashlib.sha1(json.dumps(payload, sort_keys=True).encode()).hexdigest()[:12]
 
 
-def review_item(source_path: Path, run_dir: Path) -> dict[str, Any]:
+def add_review_decision(item: dict[str, Any], decisions: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    decision = decisions.get(item["id"])
+    if not decision:
+        return item
+    item["triage_category"] = decision["triage_category"]
+    item["recommended_human_action"] = decision["recommended_human_action"]
+    item["triage_reason"] = decision["reason"]
+    item["field_flags"] = decision["field_flags"]
+    item["triage_evidence"] = decision["evidence"]
+    item["triage_notes"] = decision["reviewer_notes"]
+    item["extra_sections"].insert(
+        0,
+        {
+            "title": "Subagent triage",
+            "kind": "json",
+            "collapsed": False,
+            "value": decision,
+        },
+    )
+    return item
+
+
+def source_review_item(source_path: Path, decisions: dict[str, dict[str, Any]]) -> dict[str, Any]:
+    item_id = source_path.name.removesuffix(".fm.json")
+    model = read_json(source_path)
+    return add_review_decision({
+        "id": item_id,
+        "file_name": source_path.name,
+        "path": rel(source_path),
+        "title": model.get("name") or item_id.replace("_", " "),
+        "field_confidence": {},
+        **{field: model.get(field) for field in FIELDS},
+        "synonyms": model.get("synonyms") or [],
+        "body_regions": model.get("body_regions") or [],
+        "subspecialties": model.get("subspecialties") or [],
+        "applicable_modalities": model.get("applicable_modalities") or [],
+        "etiologies": model.get("etiologies") or [],
+        "index_codes": [code_summary(c) for c in model.get("index_codes") or []],
+        "anatomic_locations": [code_summary(c) for c in model.get("anatomic_locations") or []],
+        "attributes": summarize_attributes(model.get("attributes")),
+        "extra_sections": [{
+            "title": "Source review details",
+            "kind": "json",
+            "collapsed": True,
+            "value": {"source": "current source JSON", "run_warnings": []},
+        }],
+    }, decisions)
+
+
+def review_item(source_path: Path, run_dir: Path, decisions: dict[str, dict[str, Any]]) -> dict[str, Any]:
     item_id = source_path.name.removesuffix(".fm.json")
     enriched_path = run_dir / "before-after" / f"{item_id}.after.json"
     review_path = run_dir / "reviews" / f"{item_id}.metadata-review.json"
@@ -123,7 +207,7 @@ def review_item(source_path: Path, run_dir: Path) -> dict[str, Any]:
         "collapsed": True,
         "value": {k: review[k] for k in ("assignment_timestamp", "model_used", "assignment_mode", "logfire_trace_id", "timings") if k in review},
     })
-    return {
+    return add_review_decision({
         "id": item_id,
         "file_name": source_path.name,
         "path": rel(source_path),
@@ -139,7 +223,7 @@ def review_item(source_path: Path, run_dir: Path) -> dict[str, Any]:
         "anatomic_locations": [code_summary(c) for c in model.get("anatomic_locations") or []],
         "attributes": summarize_attributes(model.get("attributes")),
         "extra_sections": sections,
-    }
+    }, decisions)
 
 
 def main() -> int:
@@ -163,22 +247,40 @@ def main() -> int:
             "Defaults to a sibling of --output-dir, e.g. review-current-data."
         ),
     )
+    parser.add_argument(
+        "--source-only",
+        action="store_true",
+        help="Build the review app directly from current source JSON paths instead of run outputs.",
+    )
+    parser.add_argument(
+        "--review-decisions",
+        type=Path,
+        help="Optional subagent triage JSON to display as category tabs and per-item review context.",
+    )
     parser.add_argument("paths", nargs="*", type=Path)
     args = parser.parse_args()
     args.run_dir = repo_path(args.run_dir)
     args.output_dir = repo_path(args.output_dir)
 
-    paths = args.paths or successful_paths(args.run_dir)
+    paths = args.paths or ([] if args.source_only else successful_paths(args.run_dir))
     if not paths:
+        if args.source_only:
+            raise SystemExit("No source paths were provided for --source-only review packaging")
         raise SystemExit(f"No completed enrichment results found in {rel(args.run_dir)}")
 
-    items = [review_item((ROOT / path).resolve(), args.run_dir) for path in paths]
+    decisions = load_review_decisions(args.review_decisions)
+    if args.source_only:
+        items = [source_review_item((ROOT / path).resolve(), decisions) for path in paths]
+    else:
+        items = [review_item((ROOT / path).resolve(), args.run_dir, decisions) for path in paths]
     data = {
         "id": review_id(items, args.run_dir),
         "title": "Metadata Enrichment Review",
         "intro": ["Review each enriched finding model.", "Approve items with no changes needed. Leave feedback when corrections are needed."],
         "items": items,
     }
+    if args.review_decisions is not None:
+        data["review_decisions"] = rel(repo_path(args.review_decisions))
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     data_dir = repo_path(args.data_dir) if args.data_dir else default_data_dir(args.output_dir)

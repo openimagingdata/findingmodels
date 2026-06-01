@@ -1,0 +1,538 @@
+{
+  "version": "regression-floor-v1",
+  "created_at": "2026-05-05",
+  "source": "reviewed canonical defs in current working tree",
+  "pet_molecular_gap": "No reviewed PET/molecular-imaging pilot case was available in the coverage matrix; add one before relying on this as a complete floor.",
+  "records": [
+    {
+      "item": "breast_calcification_cluster",
+      "name": "breast calcification cluster",
+      "guards": "time-course permanent calcification",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "breast"
+        ],
+        "subspecialties": [
+          "BR"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "MG"
+        ],
+        "expected_time_course": {
+          "duration": "permanent",
+          "modifiers": [
+            "stable"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages",
+          "more_common_in": [
+            "adult",
+            "middle_aged",
+            "aged"
+          ]
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID29895",
+            "display": "female breast"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "SNOMEDCT",
+            "code": "129769006",
+            "display": "Calcification cluster"
+          }
+        ]
+      }
+    },
+    {
+      "item": "aortic_measurements",
+      "name": "Aortic Measurements",
+      "guards": "measurement anatomy scope and no intrinsic time course",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "chest",
+          "abdomen"
+        ],
+        "subspecialties": [
+          "CA",
+          "CH",
+          "VA"
+        ],
+        "entity_type": "measurement",
+        "applicable_modalities": [
+          "CT",
+          "MR",
+          "US"
+        ],
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID480",
+            "display": "aorta"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "SNOMEDCT",
+            "code": "302287000",
+            "display": "Aortic diameter"
+          },
+          {
+            "system": "radelement",
+            "code": "RDES264",
+            "display": "aortic measurements"
+          }
+        ]
+      }
+    },
+    {
+    "item": "tunneled_catheter",
+    "name": "tunneled catheter",
+    "guards": "device dwell time and anterior chest-wall placement",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "chest"
+        ],
+        "subspecialties": [
+          "CH"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "XR"
+        ],
+        "expected_time_course": {
+          "duration": "months",
+          "modifiers": [
+            "stable"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+    "anatomic_locations": [
+      {
+        "system": "ANATOMICLOCATIONS",
+        "code": "RID29859",
+        "display": "anterior chest wall"
+      }
+    ],
+        "index_codes": [
+          {
+            "system": "RADLEX",
+            "code": "RID50337",
+            "display": "tunneled catheter"
+          },
+          {
+            "system": "LOINC",
+            "code": "LP263838-7",
+            "display": "Tunneled catheter"
+          },
+          {
+            "system": "RADLEX",
+            "code": "RID50533",
+            "display": "tunneled central venous catheter"
+          },
+          {
+            "system": "SNOMEDCT",
+            "code": "445085009",
+            "display": "Tunneled central venous catheter"
+          },
+          {
+            "system": "LOINC",
+            "code": "LP267466-3",
+            "display": "Tunneled central venous catheter"
+          }
+        ]
+      }
+    },
+    {
+      "item": "arterial_tortuosity",
+      "name": "arterial tortuosity",
+      "guards": "broad whole-body vascular finding and permanent time course",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "whole_body"
+        ],
+        "subspecialties": [
+          "VA"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "US",
+          "CT",
+          "MR"
+        ],
+        "expected_time_course": {
+          "duration": "permanent",
+          "modifiers": [
+            "stable"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID13183",
+            "display": "arterial system"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "SNOMEDCT",
+            "code": "460885001",
+            "display": "Tortuosity of systemic artery"
+          },
+          {
+            "system": "GAMUTS",
+            "code": "22518",
+            "display": "arterial tortuosity"
+          }
+        ]
+      }
+    },
+    {
+    "item": "radiolucent_urinary_calculus",
+    "name": "radiolucent urinary calculus",
+    "guards": "ontology exactness and urinary-tract anatomy/etiology",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "abdomen"
+        ],
+        "subspecialties": [
+          "GU",
+          "ER"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "CT",
+          "US"
+        ],
+        "expected_time_course": {
+          "duration": "months",
+          "modifiers": [
+            "intermittent"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages",
+          "more_common_in": [
+            "adult",
+            "middle_aged"
+          ]
+        },
+        "sex_specificity": "sex-neutral",
+    "anatomic_locations": [
+      {
+        "system": "ANATOMICLOCATIONS",
+        "code": "RID204",
+        "display": "urinary tract"
+      }
+    ],
+        "index_codes": [
+          {
+            "system": "SNOMEDCT",
+            "code": "304543009",
+            "display": "Radiolucent calculus of urinary tract"
+          },
+          {
+            "system": "GAMUTS",
+            "code": "20557",
+            "display": "radiolucent urinary calculus"
+          }
+        ],
+        "etiologies": [
+          "metabolic"
+        ]
+      }
+    },
+    {
+      "item": "acute_lung_injury_and_ards_in_children",
+      "name": "acute lung injury and ards in children",
+      "guards": "pediatric age and acute chest disease",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "chest"
+        ],
+        "subspecialties": [
+          "CH",
+          "PD",
+          "ER"
+        ],
+        "entity_type": "diagnosis",
+        "applicable_modalities": [
+          "XR",
+          "CT"
+        ],
+        "expected_time_course": {
+          "duration": "days",
+          "modifiers": [
+            "progressive",
+            "evolving"
+          ]
+        },
+        "age_profile": {
+          "applicability": [
+            "newborn",
+            "infant",
+            "preschool_child",
+            "child",
+            "adolescent"
+          ],
+          "more_common_in": [
+            "preschool_child",
+            "child"
+          ]
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID1301",
+            "display": "lung"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "LOINC",
+            "code": "LA20566-8",
+            "display": "Acute lung injury/Acute respiratory distress syndrome"
+          },
+          {
+            "system": "SNOMEDCT",
+            "code": "67782005",
+            "display": "Acute respiratory distress syndrome"
+          },
+          {
+            "system": "LOINC",
+            "code": "LA28203-0",
+            "display": "Acute respiratory distress syndrome"
+          },
+          {
+            "system": "GAMUTS",
+            "code": "14342",
+            "display": "acute lung injury and ARDS in children"
+          }
+        ],
+        "etiologies": [
+          "inflammatory",
+          "inflammatory:infectious",
+          "toxic"
+        ]
+      }
+    },
+    {
+      "item": "early_intrauterine_pregnancy",
+      "name": "early intrauterine pregnancy",
+      "guards": "female-specific pregnancy and pelvic/OB scope",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "pelvis"
+        ],
+        "subspecialties": [
+          "OB"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "US"
+        ],
+        "expected_time_course": {
+          "duration": "months",
+          "modifiers": [
+            "progressive",
+            "evolving"
+          ]
+        },
+        "age_profile": {
+          "applicability": [
+            "young_adult",
+            "adult"
+          ],
+          "more_common_in": [
+            "young_adult",
+            "adult"
+          ]
+        },
+        "sex_specificity": "female-specific",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID302",
+            "display": "uterus"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "GAMUTS",
+            "code": "19190",
+            "display": "early intrauterine pregnancy"
+          }
+        ],
+        "etiologies": [
+          "normal-variant"
+        ]
+      }
+    },
+    {
+      "item": "air_in_esophagus",
+      "name": "air in esophagus",
+      "guards": "age-neutral all-ages anatomy case",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "chest"
+        ],
+        "subspecialties": [
+          "GI"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "XR",
+          "CT"
+        ],
+        "expected_time_course": {
+          "duration": "hours",
+          "modifiers": [
+            "intermittent"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID95",
+            "display": "esophagus"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "GAMUTS",
+            "code": "056",
+            "display": "air in esophagus"
+          }
+        ],
+        "etiologies": [
+          "normal-variant"
+        ]
+      }
+    },
+    {
+      "item": "focal_shadowing_pancreatic_lesion",
+      "name": "focal shadowing pancreatic lesion",
+      "guards": "modality-specific US descriptor with abdominal lesion scope",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "abdomen"
+        ],
+        "subspecialties": [
+          "GI"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "US",
+          "CT",
+          "MR"
+        ],
+        "expected_time_course": {
+          "duration": "months",
+          "modifiers": [
+            "stable",
+            "progressive"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID170",
+            "display": "pancreas"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "GAMUTS",
+            "code": "4878",
+            "display": "focal shadowing pancreatic lesion"
+          }
+        ],
+        "etiologies": [
+          "neoplastic:potential"
+        ]
+      }
+    },
+    {
+      "item": "traumatic_pneumatocele",
+      "name": "traumatic pneumatocele",
+      "guards": "traumatic etiology and acute/resolving lung finding",
+      "evidence_status": "targeted rerun evidence exists",
+      "expected": {
+        "body_regions": [
+          "chest"
+        ],
+        "subspecialties": [
+          "CH",
+          "ER"
+        ],
+        "entity_type": "finding",
+        "applicable_modalities": [
+          "XR",
+          "CT"
+        ],
+        "expected_time_course": {
+          "duration": "weeks",
+          "modifiers": [
+            "resolving"
+          ]
+        },
+        "age_profile": {
+          "applicability": "all_ages"
+        },
+        "sex_specificity": "sex-neutral",
+        "anatomic_locations": [
+          {
+            "system": "ANATOMICLOCATIONS",
+            "code": "RID1301",
+            "display": "lung"
+          }
+        ],
+        "index_codes": [
+          {
+            "system": "RADLEX",
+            "code": "RID28522",
+            "display": "pneumatocele"
+          }
+        ],
+        "etiologies": [
+          "traumatic:acute"
+        ]
+      }
+    }
+  ]
+}

@@ -40,10 +40,17 @@ def artifact_stem(path: Path) -> str:
     return path.name.removesuffix(".fm.json")
 
 
-async def audit_file(path: Path, *, ontology_cache: Path, output_dir: Path, semaphore: asyncio.Semaphore) -> dict[str, object]:
+async def audit_file(
+    path: Path,
+    *,
+    ontology_cache: Path,
+    output_dir: Path,
+    semaphore: asyncio.Semaphore,
+    include_llm: bool,
+) -> dict[str, object]:
     async with semaphore:
         model = FindingModelFull.model_validate_json(path.read_text(encoding="utf-8"))
-        result = await audit_enrichment(model, ontology_cache=ontology_cache)
+        result = await audit_enrichment(model, ontology_cache=ontology_cache, include_llm=include_llm)
         output_dir.mkdir(parents=True, exist_ok=True)
         out_path = output_dir / f"{artifact_stem(path)}.audit.json"
         out_path.write_text(result.model_dump_json(indent=2) + "\n", encoding="utf-8")
@@ -60,7 +67,13 @@ async def run(args: argparse.Namespace) -> int:
     semaphore = asyncio.Semaphore(args.concurrency)
     summaries = await asyncio.gather(
         *[
-            audit_file(path.resolve(), ontology_cache=args.ontology_cache, output_dir=args.output_dir, semaphore=semaphore)
+            audit_file(
+                path.resolve(),
+                ontology_cache=args.ontology_cache,
+                output_dir=args.output_dir,
+                semaphore=semaphore,
+                include_llm=not args.deterministic_only,
+            )
             for path in paths
         ]
     )
@@ -76,6 +89,11 @@ def main() -> int:
     parser.add_argument("--ontology-cache", type=Path, default=DEFAULT_ONTOLOGY_CACHE)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--concurrency", type=int, default=3)
+    parser.add_argument(
+        "--deterministic-only",
+        action="store_true",
+        help="Run only deterministic package checks and skip the LLM auditor pass.",
+    )
     parser.add_argument("--all", action="store_true", help="Audit every defs/*.fm.json file.")
     return asyncio.run(run(parser.parse_args()))
 

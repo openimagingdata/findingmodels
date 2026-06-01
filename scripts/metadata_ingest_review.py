@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DONE_STATUSES = {"approved", "feedback"}
+DONE_STATUSES = {"approved", "feedback", "skipped"}
 
 
 def display_path(path: Path) -> str:
@@ -27,7 +27,14 @@ def normalize_review_tool_export(data: dict[str, Any]) -> list[dict[str, Any]]:
     items: list[dict[str, Any]] = []
     for response in data.get("responses") or []:
         status = str(response.get("status") or "missing")
-        normalized_status = "accepted" if status == "approved" else ("feedback" if status == "feedback" else "unfinished")
+        if status == "approved":
+            normalized_status = "accepted"
+        elif status == "feedback":
+            normalized_status = "feedback"
+        elif status == "skipped":
+            normalized_status = "skipped"
+        else:
+            normalized_status = "unfinished"
         items.append(
             {
                 "item_id": response.get("item_id"),
@@ -47,6 +54,16 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("review_json", type=Path)
     parser.add_argument("--output", type=Path, default=REPO_ROOT / ".metadata-runs" / "review-fix-list.json")
+    parser.add_argument(
+        "--approved-list-output",
+        type=Path,
+        help="Optional text file containing paths approved for dry-run artifact promotion.",
+    )
+    parser.add_argument(
+        "--skip-list-output",
+        type=Path,
+        help="Optional text file containing paths explicitly skipped by reviewers.",
+    )
     args = parser.parse_args()
 
     data: dict[str, Any] = json.loads(args.review_json.read_text(encoding="utf-8"))
@@ -82,6 +99,14 @@ def main() -> int:
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    if args.approved_list_output is not None:
+        approved = [item["path"] for item in items if item["normalized_status"] == "accepted" and item["path"]]
+        args.approved_list_output.parent.mkdir(parents=True, exist_ok=True)
+        args.approved_list_output.write_text("\n".join(approved) + ("\n" if approved else ""), encoding="utf-8")
+    if args.skip_list_output is not None:
+        skipped = [item["path"] for item in items if item["normalized_status"] == "skipped" and item["path"]]
+        args.skip_list_output.parent.mkdir(parents=True, exist_ok=True)
+        args.skip_list_output.write_text("\n".join(skipped) + ("\n" if skipped else ""), encoding="utf-8")
     print(f"Wrote review ingestion summary to {display_path(args.output)}")
     return 1 if output["blocks_progression"] else 0
 

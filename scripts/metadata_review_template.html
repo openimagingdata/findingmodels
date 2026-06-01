@@ -81,7 +81,7 @@
 
   .counts {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 5px;
   }
 
@@ -120,6 +120,26 @@
     background: white;
     border-radius: 10px;
     padding: 8px 9px;
+  }
+
+  .category-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .category-tab {
+    padding: 7px 6px;
+    border-radius: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  .category-tab.active {
+    background: var(--text);
+    color: white;
+    border-color: var(--text);
   }
 
   .identity-main {
@@ -211,6 +231,12 @@
     border-color: #efcf96;
   }
 
+  .list-item.done-skipped {
+    background: #f2f4f7;
+    border-color: #cbd5e1;
+    opacity: 0.72;
+  }
+
   .list-row {
     display: grid;
     grid-template-columns: 8px minmax(0, 1fr);
@@ -228,6 +254,7 @@
 
   .status-approved .status-dot { background: var(--success); }
   .status-feedback .status-dot { background: var(--warning); }
+  .status-skipped .status-dot { background: var(--muted-2); }
   .status-draft .status-dot { background: var(--accent); }
 
   .item-title {
@@ -407,6 +434,7 @@
   .status-indicator.approved { background: var(--success); }
   .status-indicator.feedback,
   .status-indicator.draft { background: #c78310; }
+  .status-indicator.skipped { background: var(--muted-2); }
   .status-indicator.pending { background: #a5b1c2; }
 
   .message-body {
@@ -646,6 +674,7 @@
 
   .status-chip.approved { background: var(--success-soft); border-color: #b8dfc8; color: var(--success); }
   .status-chip.feedback { background: var(--warning-soft); border-color: #efcf98; color: var(--warning); }
+  .status-chip.skipped { background: #f2f4f7; border-color: #cbd5e1; color: var(--muted); }
   .status-chip.pending { color: var(--muted); }
   .status-chip.draft { background: var(--accent-soft); border-color: #c8d8ff; color: var(--accent); }
 
@@ -790,6 +819,7 @@
         </div>
         <button type="button" class="identity-change" id="changeIdentityBtn">Change</button>
       </div>
+      <div class="category-tabs" id="categoryTabs"></div>
     </div>
     <div class="list" id="itemList"></div>
   </aside>
@@ -813,7 +843,7 @@
         <strong>All items are reviewed.</strong> Download the JSON file and send it back.
       </div>
       <article class="message" id="message"></article>
-      <div class="footer-note">Shortcuts: A approve, F focus or send feedback, J next, K previous. Enter in feedback sends and moves on. Shift+Enter adds a new line.</div>
+      <div class="footer-note">Shortcuts: A approve, S skip, F focus or send feedback, J next, K previous. Enter in feedback sends and moves on. Shift+Enter adds a new line.</div>
     </div>
   </main>
 </div>
@@ -840,6 +870,7 @@
     reviewerId: '',
     responses: {},
     identityPromptOpen: false,
+    categoryFilter: 'all',
   };
 
   const elements = {
@@ -851,6 +882,7 @@
     identityInput: document.getElementById('identityInput'),
     identityError: document.getElementById('identityError'),
     saveIdentityBtn: document.getElementById('saveIdentityBtn'),
+    categoryTabs: document.getElementById('categoryTabs'),
     itemList: document.getElementById('itemList'),
     toolbarTitle: document.getElementById('toolbarTitle'),
     toolbarSubtitle: document.getElementById('toolbarSubtitle'),
@@ -900,6 +932,7 @@
       state.currentIndex = Number.isInteger(saved.currentIndex) ? saved.currentIndex : 0;
       state.reviewerId = saved.reviewerId || '';
       state.responses = saved.responses || {};
+      state.categoryFilter = saved.categoryFilter || 'all';
     } catch (err) {
       console.warn('Could not load saved state', err);
     }
@@ -910,6 +943,7 @@
       currentIndex: state.currentIndex,
       reviewerId: state.reviewerId,
       responses: state.responses,
+      categoryFilter: state.categoryFilter,
     }));
   }
 
@@ -956,7 +990,7 @@
   }
 
   function isDone(response) {
-    return response.status === 'approved' || response.status === 'feedback';
+    return response.status === 'approved' || response.status === 'feedback' || response.status === 'skipped';
   }
 
   function hasDraft(response) {
@@ -966,6 +1000,7 @@
   function statusClass(response) {
     if (response.status === 'approved') return 'status-approved done-approved';
     if (response.status === 'feedback') return 'status-feedback done-feedback';
+    if (response.status === 'skipped') return 'status-skipped done-skipped';
     if (hasDraft(response)) return 'status-draft';
     return '';
   }
@@ -973,19 +1008,22 @@
   function summary() {
     let approved = 0;
     let feedback = 0;
+    let skipped = 0;
     let drafts = 0;
     DATASET.items.forEach(item => {
       const response = getResponse(item.id);
       if (response.status === 'approved') approved += 1;
       else if (response.status === 'feedback') feedback += 1;
+      else if (response.status === 'skipped') skipped += 1;
       else if (hasDraft(response)) drafts += 1;
     });
     const total = DATASET.items.length;
-    const done = approved + feedback;
+    const done = approved + feedback + skipped;
     return {
       total,
       approved,
       feedback,
+      skipped,
       drafts,
       done,
       remaining: total - done,
@@ -1001,6 +1039,7 @@
   function render() {
     clampIndex();
     renderSummary();
+    renderCategoryTabs();
     renderList();
     renderMessage();
   }
@@ -1010,7 +1049,8 @@
     elements.counts.innerHTML = `
       <span class="pill" title="Remaining" aria-label="${s.remaining} remaining"><span class="pill-icon">○</span><strong>${s.remaining}</strong></span>
       <span class="pill" title="Approved" aria-label="${s.approved} approved"><span class="pill-icon">✓</span><strong>${s.approved}</strong></span>
-      <span class="pill" title="Feedback" aria-label="${s.feedback} feedback"><span class="pill-icon">⚠</span><strong>${s.feedback}</strong></span>
+      <span class="pill" title="Feedback" aria-label="${s.feedback} feedback"><span class="pill-icon">!</span><strong>${s.feedback}</strong></span>
+      <span class="pill" title="Skipped" aria-label="${s.skipped} skipped"><span class="pill-icon">−</span><strong>${s.skipped}</strong></span>
       <span class="pill" title="Drafts" aria-label="${s.drafts} drafts"><span class="pill-icon">✎</span><strong>${s.drafts}</strong></span>
     `;
     elements.identityValue.textContent = state.reviewerId || 'Not set';
@@ -1021,10 +1061,65 @@
     updateDownloadAvailability();
   }
 
+  function triageLabel(value) {
+    const labels = {
+      all: 'All',
+      proposed_accept: 'Proposed accept',
+      proposed_skip: 'Proposed skip',
+      needs_attention: 'Needs attention',
+      suspected_tool_problem: 'Tool problem',
+      uncategorized: 'Uncategorized',
+    };
+    return labels[value] || prettifyToken(value);
+  }
+
+  function itemTriageCategory(item) {
+    return item.triage_category || 'uncategorized';
+  }
+
+  function visibleItemIndexes() {
+    const filter = state.categoryFilter || 'all';
+    const indexes = [];
+    DATASET.items.forEach((item, index) => {
+      if (filter === 'all' || itemTriageCategory(item) === filter) indexes.push(index);
+    });
+    return indexes;
+  }
+
+  function renderCategoryTabs() {
+    const counts = { all: DATASET.items.length };
+    DATASET.items.forEach(item => {
+      const category = itemTriageCategory(item);
+      counts[category] = (counts[category] || 0) + 1;
+    });
+    const categories = ['all', 'proposed_accept', 'proposed_skip', 'needs_attention', 'suspected_tool_problem', 'uncategorized']
+      .filter(category => counts[category]);
+    elements.categoryTabs.innerHTML = categories.map(category => `
+      <button type="button" class="category-tab ${state.categoryFilter === category ? 'active' : ''}" data-category="${escapeHtml(category)}">
+        ${escapeHtml(triageLabel(category))} (${counts[category]})
+      </button>
+    `).join('');
+    elements.categoryTabs.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', () => {
+        state.categoryFilter = button.dataset.category || 'all';
+        const indexes = visibleItemIndexes();
+        if (!indexes.includes(state.currentIndex)) state.currentIndex = indexes[0] ?? 0;
+        persistState();
+        render();
+      });
+    });
+  }
+
   function renderList() {
     const currentId = getItem(state.currentIndex)?.id;
     elements.itemList.innerHTML = '';
-    DATASET.items.forEach((item, index) => {
+    const indexes = visibleItemIndexes();
+    if (!indexes.length) {
+      elements.itemList.innerHTML = '<div class="empty-note">No items in this category.</div>';
+      return;
+    }
+    indexes.forEach(index => {
+      const item = DATASET.items[index];
       const response = getResponse(item.id);
       const el = document.createElement('button');
       el.type = 'button';
@@ -1049,6 +1144,7 @@
 
   function renderMiniMeta(item) {
     const bits = [];
+    if (item.triage_category) bits.push(escapeHtml(triageLabel(item.triage_category)));
     if (item.entity_type) bits.push(escapeHtml(prettifyToken(item.entity_type)));
     const regions = asArray(item.body_regions);
     if (regions.length) bits.push(escapeHtml(regions.slice(0, 2).map(prettifyToken).join(', ')));
@@ -1069,16 +1165,20 @@
       ? 'approved'
       : response.status === 'feedback'
         ? 'feedback'
-        : hasDraft(response)
-          ? 'draft'
-          : 'pending';
+        : response.status === 'skipped'
+          ? 'skipped'
+          : hasDraft(response)
+            ? 'draft'
+            : 'pending';
     const reviewStatus = response.status === 'approved'
       ? '<span class="status-chip approved">Approved</span>'
       : response.status === 'feedback'
         ? '<span class="status-chip feedback">Feedback sent</span>'
-        : hasDraft(response)
-          ? '<span class="status-chip draft">Draft comment</span>'
-          : '<span class="status-chip pending">Pending</span>';
+        : response.status === 'skipped'
+          ? '<span class="status-chip skipped">Skipped</span>'
+          : hasDraft(response)
+            ? '<span class="status-chip draft">Draft comment</span>'
+            : '<span class="status-chip pending">Pending</span>';
 
     const quickFacts = [
       renderFactCard(item, 'entity_type', 'Entity type', renderTextValue(item.entity_type)),
@@ -1090,7 +1190,7 @@
     const overviewRows = [
       renderDenseRow(item, 'path', 'Path', renderPlainText(item.path), { required: false }),
       renderDenseRow(item, 'synonyms', 'Synonyms', renderListValue(item.synonyms), { required: false }),
-      renderDenseRow(item, 'etiologies', 'Etiologies', renderListValue(item.etiologies), { required: false }),
+      renderDenseRow(item, 'etiologies', 'Etiologies', renderListValue(item.etiologies), { showWhenEmpty: true }),
       renderDenseRow(item, 'sex_specificity', 'Sex specificity', renderTextValue(item.sex_specificity), { required: true }),
       renderDenseRow(item, 'age_profile', 'Age profile', renderStructuredSummary(item.age_profile), { required: true }),
       renderDenseRow(item, 'expected_time_course', 'Expected time course', renderStructuredSummary(item.expected_time_course), { required: true }),
@@ -1105,6 +1205,7 @@
       ? `<div class="section"><div class="section-title">Attributes</div>${renderAttributesTable(item.attributes)}</div>`
       : '';
     const extraSections = renderExtraSections(item.extra_sections || []);
+    const triagePanel = renderTriagePanel(item);
 
     elements.message.innerHTML = `
       <header class="message-header">
@@ -1116,6 +1217,7 @@
       <div class="message-body">
         <div class="details-column">
           ${quickFacts ? `<div class="section"><div class="section-title">Quick facts</div><div class="fact-grid">${quickFacts}</div></div>` : ''}
+          ${triagePanel}
           ${item.description ? `<div class="section"><div class="section-title">Description</div><div class="description">${escapeHtml(item.description)}</div></div>` : ''}
           ${overviewRows ? `<div class="section"><div class="section-title">Overview</div><div class="dense-block">${overviewRows}</div></div>` : ''}
           ${codingRows ? `<div class="section"><div class="section-title">Coding</div><div class="dense-block">${codingRows}</div></div>` : ''}
@@ -1136,10 +1238,11 @@
               <button type="button" id="clearBtn">Clear</button>
               <div class="review-actions-right">
                 <button type="button" class="warning ${prefersFeedback ? 'is-default' : ''}" id="feedbackBtnInner">Feedback</button>
+                <button type="button" id="skipBtnInner">Skip</button>
                 <button type="button" class="success ${prefersFeedback ? '' : 'is-default'}" id="approveBtnInner">Approve</button>
               </div>
             </div>
-            <div class="hint">Reviewed means approved or marked for feedback. Enter sends feedback and moves to the next pending item. Shift+Enter adds a new line.</div>
+            <div class="hint">Reviewed means approved, skipped, or marked for feedback. Enter sends feedback and moves to the next pending item. Shift+Enter adds a new line.</div>
           </div>
         </aside>
       </div>
@@ -1171,6 +1274,7 @@
 
     document.getElementById('approveBtnInner').addEventListener('click', approveCurrent);
     document.getElementById('feedbackBtnInner').addEventListener('click', submitFeedback);
+    document.getElementById('skipBtnInner').addEventListener('click', skipCurrent);
     document.getElementById('clearBtn').addEventListener('click', () => {
       const currentResponse = getResponse(item.id);
       currentResponse.comment = '';
@@ -1233,7 +1337,37 @@
   }
 
   function emptyValueHtml() {
-    return '<span style="color: var(--muted-2);">No value provided</span>';
+    return '<span style="color: var(--muted-2);">&mdash;</span>';
+  }
+
+  function renderTriagePanel(item) {
+    if (!item.triage_category && !item.triage_reason && !(item.field_flags || []).length) return '';
+    const rows = [
+      ['Category', triageLabel(item.triage_category || 'uncategorized')],
+      ['Suggested action', item.recommended_human_action ? prettifyToken(item.recommended_human_action) : ''],
+      ['Field flags', asArray(item.field_flags).map(prettifyToken).join(', ')],
+      ['Reason', item.triage_reason || ''],
+    ].filter(([, value]) => value);
+    const evidence = asArray(item.triage_evidence).filter(Boolean);
+    return `
+      <div class="section">
+        <div class="section-title">Subagent triage</div>
+        <div class="dense-block">
+          ${rows.map(([label, value]) => `
+            <div class="dense-row">
+              <div class="dense-label">${escapeHtml(label)}</div>
+              <div class="dense-value">${escapeHtml(value)}</div>
+            </div>
+          `).join('')}
+          ${evidence.length ? `
+            <div class="dense-row">
+              <div class="dense-label">Evidence</div>
+              <div class="dense-value">${evidence.map(item => `<div>${escapeHtml(item)}</div>`).join('')}</div>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
   }
 
   function renderFactCard(item, field, label, value, compact = false) {
@@ -1298,7 +1432,7 @@
 
   function renderDenseRow(item, field, label, valueHtml, options = {}) {
     const attention = attentionForField(item, field, options);
-    if (!valueHtml && !attention) return '';
+    if (!valueHtml && !attention && !options.showWhenEmpty) return '';
     const displayValue = valueHtml || emptyValueHtml();
     return `
       <div class="dense-row ${attention ? `attention-${attention}` : ''}">
@@ -1460,6 +1594,22 @@
     moveToNextPendingOrStay();
   }
 
+  function skipCurrent() {
+    if (!hasReviewerId()) {
+      showIdentityPrompt({ allowCancel: false });
+      return;
+    }
+    const item = getItem(state.currentIndex);
+    if (!item) return;
+    const response = getResponse(item.id);
+    const now = new Date().toISOString();
+    if (!response.firstReviewedAt) response.firstReviewedAt = now;
+    response.status = 'skipped';
+    response.updatedAt = now;
+    persistState();
+    moveToNextPendingOrStay();
+  }
+
   function focusCommentBox() {
     const box = document.getElementById('commentBox');
     if (!box) return;
@@ -1480,7 +1630,8 @@
   }
 
   function findNextPendingIndex(startIndex = 0) {
-    for (let i = startIndex; i < DATASET.items.length; i += 1) {
+    for (const i of visibleItemIndexes()) {
+      if (i < startIndex) continue;
       if (!isDone(getResponse(DATASET.items[i].id))) return i;
     }
     return -1;
@@ -1490,24 +1641,32 @@
     const nextIndex = findNextPendingIndex(state.currentIndex + 1);
     if (nextIndex !== -1) {
       state.currentIndex = nextIndex;
-    } else if (state.currentIndex < DATASET.items.length - 1) {
-      state.currentIndex += 1;
+    } else {
+      const indexes = visibleItemIndexes();
+      const currentVisible = indexes.indexOf(state.currentIndex);
+      if (currentVisible !== -1 && currentVisible < indexes.length - 1) {
+        state.currentIndex = indexes[currentVisible + 1];
+      }
     }
     persistState();
     render();
   }
 
   function goPrev() {
-    if (state.currentIndex > 0) {
-      state.currentIndex -= 1;
+    const indexes = visibleItemIndexes();
+    const currentVisible = indexes.indexOf(state.currentIndex);
+    if (currentVisible > 0) {
+      state.currentIndex = indexes[currentVisible - 1];
       persistState();
       render();
     }
   }
 
   function goNext() {
-    if (state.currentIndex < DATASET.items.length - 1) {
-      state.currentIndex += 1;
+    const indexes = visibleItemIndexes();
+    const currentVisible = indexes.indexOf(state.currentIndex);
+    if (currentVisible !== -1 && currentVisible < indexes.length - 1) {
+      state.currentIndex = indexes[currentVisible + 1];
       persistState();
       render();
     }
@@ -1540,6 +1699,8 @@
           title: item.title || item.file_name,
           status: response.status,
           comment: response.comment || '',
+          triage_category: item.triage_category || '',
+          field_flags: item.field_flags || [],
           first_reviewed_at: response.firstReviewedAt || null,
           updated_at: response.updatedAt || null,
         };
@@ -1574,6 +1735,11 @@
     if (key === 'a') {
       event.preventDefault();
       approveCurrent();
+      return;
+    }
+    if (key === 's') {
+      event.preventDefault();
+      skipCurrent();
       return;
     }
     if (key === 'j') {

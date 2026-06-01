@@ -91,3 +91,54 @@ downloaded review JSON with `scripts/metadata_ingest_review.py`.
 If local wheel files are rebuilt without changing package versions, force `uv run` to reinstall them
 with `--reinstall-package findingmodel --reinstall-package findingmodel-ai --reinstall-package
 oidm-common --reinstall-package oidm-maintenance --reinstall-package anatomic-locations`.
+
+## Phase 5 Recovery Notes
+
+The Phase 5 recovery version of `scripts/metadata_assign_batch.py` opens one shared
+`AnatomicLocationIndex` and passes it to both assignment and audit. After rebuilding local wheels
+from `../findingmodel-metadata`, rerun commands with the same `--reinstall-package` options above so
+the script uses the hardened confidence, anatomic-candidate, and auditor behavior.
+
+The current Phase 5 recovery artifacts are local under `.metadata-runs/`. The latest complete
+30-item targeted dry run after deterministic anatomy exact-match expansion is
+`.metadata-runs/phase5-targeted-rerun-hardened-v3/`, with review app
+`.metadata-runs/phase5-targeted-review-hardened-v3/index.html`. After human feedback was applied to
+the source records, the current source-derived targeted review app is
+`.metadata-runs/phase5-targeted-review-resolved-v1/index.html`, with preserved review data in
+`.metadata-runs/phase5-targeted-review-resolved-v1-data/review-data.json`.
+
+The Phase 5 deterministic audit uses `scripts/metadata_audit.py --deterministic-only` with the
+merged recovery ontology cache at `.metadata-runs/phase5-recovery-ontology-cache.duckdb`, which
+combines pilot evidence with accepted v3 targeted evidence. The latest pilot audit summary is
+`.metadata-runs/phase5-pilot-deterministic-audit/audit_summary.json`.
+
+Running `scripts/metadata_audit.py` without `--deterministic-only` also includes the LLM auditor
+triage pass. Treat those flags as review signal, not as the deterministic gate result.
+
+Use `scripts/metadata_review_package.py --source-only` only when reviewing current source JSON
+directly rather than completed run outputs. Phase 6 remains blocked until the Phase 5 gate is
+explicitly closed in tracked documentation.
+
+## Approved Output Application
+
+Reviewed metadata must be applied through the approved-output command, not by trusting generated
+source diffs directly.
+
+```bash
+uv run scripts/metadata_apply_approved_outputs.py \
+  --approved-outputs ../findingmodel-metadata/packages/findingmodel-ai/evals/fixtures/metadata_review_approved_outputs.json \
+  --report-dir .metadata-runs/approved-output-apply \
+  --write
+```
+
+The command writes `apply-report.json` plus per-record `before-after/*.before.json` and
+`before-after/*.after.json` artifacts under the report directory. It verifies review-package and
+reviewed-payload hashes before accepting approved records, and records before/after/source hashes in
+the report. Items not present in the approved-output fixture are refused; this is how feedback and
+unreviewed records stay out of the approved writeback path.
+
+After applying approved outputs, regenerate derived text and the index:
+
+```bash
+uv run scripts/validator.py
+```
