@@ -1,0 +1,235 @@
+{
+  "oifm_id": "OIFM_OIDM_832683",
+  "name": "retrobulbar hemorrhage",
+  "description": "Diagnosis of retrobulbar hemorrhage, as recognized on head CT or related orbital imaging.",
+  "synonyms": [
+    "retro-ocular hemorrhage",
+    "retrobulbar hematoma"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_214196",
+      "name": "presence",
+      "description": "Presence or absence of retrobulbar hemorrhage",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_214196.0",
+          "name": "absent",
+          "description": "Retrobulbar hemorrhage is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_214196.1",
+          "name": "present",
+          "description": "Retrobulbar hemorrhage is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_214196.2",
+          "name": "indeterminate",
+          "description": "Presence of retrobulbar hemorrhage cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_214196.3",
+          "name": "unknown",
+          "description": "Presence of retrobulbar hemorrhage is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_316889",
+      "name": "change from prior",
+      "description": "Whether and how retrobulbar hemorrhage has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_316889.0",
+          "name": "unchanged",
+          "description": "Retrobulbar hemorrhage is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.1",
+          "name": "stable",
+          "description": "Retrobulbar hemorrhage is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.2",
+          "name": "new",
+          "description": "Retrobulbar hemorrhage is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.3",
+          "name": "resolved",
+          "description": "Retrobulbar hemorrhage seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.4",
+          "name": "larger",
+          "description": "Retrobulbar hemorrhage is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.5",
+          "name": "smaller",
+          "description": "Retrobulbar hemorrhage is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.6",
+          "name": "worsened",
+          "description": "Retrobulbar hemorrhage has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_316889.7",
+          "name": "improved",
+          "description": "Retrobulbar hemorrhage has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}
