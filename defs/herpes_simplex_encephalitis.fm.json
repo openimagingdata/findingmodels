@@ -1,0 +1,235 @@
+{
+  "oifm_id": "OIFM_OIDM_633793",
+  "name": "herpes simplex encephalitis",
+  "description": "Diagnosis of herpes simplex encephalitis, as recognized on head CT or related neuroimaging.",
+  "synonyms": [
+    "herpes encephalitis",
+    "HSV encephalitis"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_866864",
+      "name": "presence",
+      "description": "Presence or absence of herpes simplex encephalitis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_866864.0",
+          "name": "absent",
+          "description": "Herpes simplex encephalitis is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_866864.1",
+          "name": "present",
+          "description": "Herpes simplex encephalitis is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_866864.2",
+          "name": "indeterminate",
+          "description": "Presence of herpes simplex encephalitis cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_866864.3",
+          "name": "unknown",
+          "description": "Presence of herpes simplex encephalitis is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_817675",
+      "name": "change from prior",
+      "description": "Whether and how herpes simplex encephalitis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_817675.0",
+          "name": "unchanged",
+          "description": "Herpes simplex encephalitis is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.1",
+          "name": "stable",
+          "description": "Herpes simplex encephalitis is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.2",
+          "name": "new",
+          "description": "Herpes simplex encephalitis is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.3",
+          "name": "resolved",
+          "description": "Herpes simplex encephalitis seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.4",
+          "name": "larger",
+          "description": "Herpes simplex encephalitis is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.5",
+          "name": "smaller",
+          "description": "Herpes simplex encephalitis is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.6",
+          "name": "worsened",
+          "description": "Herpes simplex encephalitis has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_817675.7",
+          "name": "improved",
+          "description": "Herpes simplex encephalitis has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

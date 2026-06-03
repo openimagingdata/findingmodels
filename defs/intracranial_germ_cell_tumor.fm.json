@@ -1,0 +1,236 @@
+{
+  "oifm_id": "OIFM_OIDM_108949",
+  "name": "intracranial germ cell tumor",
+  "description": "Diagnosis of intracranial germ cell tumor, as recognized on head CT or related neuroimaging.",
+  "synonyms": [
+    "germinoma",
+    "intracranial germinoma",
+    "CNS germ cell tumor"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_103334",
+      "name": "presence",
+      "description": "Presence or absence of intracranial germ cell tumor",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_103334.0",
+          "name": "absent",
+          "description": "Intracranial germ cell tumor is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103334.1",
+          "name": "present",
+          "description": "Intracranial germ cell tumor is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103334.2",
+          "name": "indeterminate",
+          "description": "Presence of intracranial germ cell tumor cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_103334.3",
+          "name": "unknown",
+          "description": "Presence of intracranial germ cell tumor is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_146772",
+      "name": "change from prior",
+      "description": "Whether and how intracranial germ cell tumor has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_146772.0",
+          "name": "unchanged",
+          "description": "Intracranial germ cell tumor is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.1",
+          "name": "stable",
+          "description": "Intracranial germ cell tumor is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.2",
+          "name": "new",
+          "description": "Intracranial germ cell tumor is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.3",
+          "name": "resolved",
+          "description": "Intracranial germ cell tumor seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.4",
+          "name": "larger",
+          "description": "Intracranial germ cell tumor is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.5",
+          "name": "smaller",
+          "description": "Intracranial germ cell tumor is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.6",
+          "name": "worsened",
+          "description": "Intracranial germ cell tumor has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_146772.7",
+          "name": "improved",
+          "description": "Intracranial germ cell tumor has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}
