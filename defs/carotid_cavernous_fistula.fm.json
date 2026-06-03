@@ -1,0 +1,235 @@
+{
+  "oifm_id": "OIFM_OIDM_651223",
+  "name": "carotid cavernous fistula",
+  "description": "Diagnosis of carotid cavernous fistula, as recognized on head CT, CTA, or related neurovascular imaging.",
+  "synonyms": [
+    "CCF",
+    "CC fistula"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_785382",
+      "name": "presence",
+      "description": "Presence or absence of carotid cavernous fistula",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_785382.0",
+          "name": "absent",
+          "description": "Carotid cavernous fistula is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785382.1",
+          "name": "present",
+          "description": "Carotid cavernous fistula is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785382.2",
+          "name": "indeterminate",
+          "description": "Presence of carotid cavernous fistula cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_785382.3",
+          "name": "unknown",
+          "description": "Presence of carotid cavernous fistula is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_533462",
+      "name": "change from prior",
+      "description": "Whether and how carotid cavernous fistula has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_533462.0",
+          "name": "unchanged",
+          "description": "Carotid cavernous fistula is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.1",
+          "name": "stable",
+          "description": "Carotid cavernous fistula is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.2",
+          "name": "new",
+          "description": "Carotid cavernous fistula is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.3",
+          "name": "resolved",
+          "description": "Carotid cavernous fistula seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.4",
+          "name": "larger",
+          "description": "Carotid cavernous fistula is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.5",
+          "name": "smaller",
+          "description": "Carotid cavernous fistula is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.6",
+          "name": "worsened",
+          "description": "Carotid cavernous fistula has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_533462.7",
+          "name": "improved",
+          "description": "Carotid cavernous fistula has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "oifm_id": "OIFM_OIDM_951059",
+  "name": "dural arteriovenous fistula",
+  "description": "Diagnosis of dural arteriovenous fistula, as recognized on head CT, CTA, or related neurovascular imaging.",
+  "synonyms": [
+    "DAVF",
+    "dural AVF",
+    "dural fistula"
+  ],
+  "tags": [
+    "head",
+    "CT",
+    "finding"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    },
+    {
+      "name": "Mass General Brigham",
+      "code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_OIDM_962799",
+      "name": "presence",
+      "description": "Presence or absence of dural arteriovenous fistula",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_962799.0",
+          "name": "absent",
+          "description": "Dural arteriovenous fistula is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_962799.1",
+          "name": "present",
+          "description": "Dural arteriovenous fistula is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_962799.2",
+          "name": "indeterminate",
+          "description": "Presence of dural arteriovenous fistula cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_962799.3",
+          "name": "unknown",
+          "description": "Presence of dural arteriovenous fistula is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_OIDM_810497",
+      "name": "change from prior",
+      "description": "Whether and how dural arteriovenous fistula has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_OIDM_810497.0",
+          "name": "unchanged",
+          "description": "Dural arteriovenous fistula is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.1",
+          "name": "stable",
+          "description": "Dural arteriovenous fistula is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.2",
+          "name": "new",
+          "description": "Dural arteriovenous fistula is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.3",
+          "name": "resolved",
+          "description": "Dural arteriovenous fistula seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.4",
+          "name": "larger",
+          "description": "Dural arteriovenous fistula is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.5",
+          "name": "smaller",
+          "description": "Dural arteriovenous fistula is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.6",
+          "name": "worsened",
+          "description": "Dural arteriovenous fistula has worsened"
+        },
+        {
+          "value_code": "OIFMA_OIDM_810497.7",
+          "name": "improved",
+          "description": "Dural arteriovenous fistula has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}
