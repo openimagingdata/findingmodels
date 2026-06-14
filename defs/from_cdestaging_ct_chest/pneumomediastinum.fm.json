@@ -1,0 +1,189 @@
+{
+  "oifm_id": "OIFM_MGB_844272",
+  "name": "Pneumomediastinum",
+  "description": "Presence of air in the mediastinum.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_464501",
+      "name": "Presence of Pneumomediastinum",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_464501.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_464501.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_013381",
+      "name": "Extent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_013381.0",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_013381.1",
+          "name": "Extensive"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_373444",
+      "name": "Associated Injuries",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_373444.0",
+          "name": "Tracheal Injury"
+        },
+        {
+          "value_code": "OIFMA_MGB_373444.1",
+          "name": "Bronchial Injury"
+        },
+        {
+          "value_code": "OIFMA_MGB_373444.2",
+          "name": "Esophageal Injury"
+        },
+        {
+          "value_code": "OIFMA_MGB_373444.3",
+          "name": "None"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_149130",
+      "name": "Subcutaneous Emphysema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_149130.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_149130.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_213012",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_213012.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_213012.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_097818",
+      "name": "Other Air Leaks",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_097818.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_097818.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

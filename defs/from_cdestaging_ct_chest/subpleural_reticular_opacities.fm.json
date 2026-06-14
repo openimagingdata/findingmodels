@@ -1,0 +1,281 @@
+{
+  "oifm_id": "OIFM_MGB_329699",
+  "name": "Subpleural Reticular Opacities",
+  "description": "Presence of subpleural reticular opacities in the lungs",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_718921",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_718921.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_718921.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_086496",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_086496.0",
+          "name": "Stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_086496.1",
+          "name": "New",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_086496.2",
+          "name": "Worsened"
+        },
+        {
+          "value_code": "OIFMA_MGB_086496.3",
+          "name": "Improved"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_703693",
+      "name": "Distribution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_703693.0",
+          "name": "Localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_703693.1",
+          "name": "Diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_909734",
+      "name": "Severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_909734.0",
+          "name": "Mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_909734.1",
+          "name": "Moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_909734.2",
+          "name": "Severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_636896",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_636896.0",
+          "name": "Right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_636896.1",
+          "name": "Right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_636896.2",
+          "name": "Right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_636896.3",
+          "name": "Left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_636896.4",
+          "name": "Left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_636896.5",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_522180",
+      "name": "Pattern",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_522180.0",
+          "name": "Fine"
+        },
+        {
+          "value_code": "OIFMA_MGB_522180.1",
+          "name": "Coarse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_538411",
+      "name": "Association with pleural thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_538411.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_538411.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_241662",
+      "name": "Association with volume loss",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_241662.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_241662.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

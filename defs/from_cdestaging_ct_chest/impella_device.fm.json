@@ -1,0 +1,410 @@
+{
+  "oifm_id": "OIFM_MGB_476425",
+  "name": "impella device",
+  "description": "Percutaneous microaxial ventricular assist device (Impella) seen on imaging; includes identification, positioning, integrity, migration, and associated complications such as effusion or thrombus.",
+  "synonyms": [
+    "impella catheter",
+    "impella pump",
+    "percutaneous ventricular assist device",
+    "pvad",
+    "impella device/catheter"
+  ],
+  "tags": [
+    "cardiac device",
+    "mechanical circulatory support",
+    "ventricular assist device",
+    "cardiac imaging"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_161713",
+      "name": "impella presence",
+      "description": "Whether an impella device is seen on the study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_161713.0",
+          "name": "present",
+          "description": "Impella device visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_161713.1",
+          "name": "absent",
+          "description": "No impella device visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_234442",
+      "name": "device status",
+      "description": "Clinical/radiologic status of the device compared with prior studies or at the time of examination.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_234442.0",
+          "name": "new",
+          "description": "Device newly placed since prior imaging or first documented on this study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_234442.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_234442.2",
+          "name": "complication",
+          "description": "Imaging findings suggest device-related complication (e.g., malposition, migration, compromised integrity)."
+        },
+        {
+          "value_code": "OIFMA_MGB_234442.3",
+          "name": "removed",
+          "description": "Device has been removed prior to or during the study."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_496425",
+      "name": "device location",
+      "description": "Anatomic chamber or location of the impella tip/inflow portion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_496425.0",
+          "name": "left ventricle",
+          "description": "Inflow portion within the left ventricular cavity."
+        },
+        {
+          "value_code": "OIFMA_MGB_496425.1",
+          "name": "right ventricle",
+          "description": "Inflow portion within the right ventricular cavity."
+        },
+        {
+          "value_code": "OIFMA_MGB_496425.2",
+          "name": "other",
+          "description": "Location other than left or right ventricle (specify in free text)."
+        },
+        {
+          "value_code": "OIFMA_MGB_496425.3",
+          "name": "uncertain",
+          "description": "Location not clearly determinable on the study."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_717478",
+      "name": "inflow cannula position",
+      "description": "Position adequacy of the inflow/cannula portion within the ventricle.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_717478.0",
+          "name": "adequate",
+          "description": "Inflow cannula positioned appropriately within the ventricle."
+        },
+        {
+          "value_code": "OIFMA_MGB_717478.1",
+          "name": "inadequate",
+          "description": "Inflow cannula malpositioned or not optimally within the ventricle."
+        },
+        {
+          "value_code": "OIFMA_MGB_717478.2",
+          "name": "uncertain",
+          "description": "Position cannot be reliably assessed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_515247",
+      "name": "outflow cannula position",
+      "description": "Anatomic location of the outflow portion of the device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_515247.0",
+          "name": "aorta",
+          "description": "Outflow positioned within the aorta (expected for typical left-sided impella)."
+        },
+        {
+          "value_code": "OIFMA_MGB_515247.1",
+          "name": "pulmonary artery",
+          "description": "Outflow positioned within the pulmonary artery (atypical/right-sided configuration)."
+        },
+        {
+          "value_code": "OIFMA_MGB_515247.2",
+          "name": "other",
+          "description": "Outflow in another location or not clearly visualized."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_007842",
+      "name": "device integrity",
+      "description": "Visual assessment of the physical integrity of the device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_007842.0",
+          "name": "intact",
+          "description": "No visible disruption or break in device components."
+        },
+        {
+          "value_code": "OIFMA_MGB_007842.1",
+          "name": "compromised",
+          "description": "Evidence suggesting device fracture, discontinuity, or other integrity concerns."
+        },
+        {
+          "value_code": "OIFMA_MGB_007842.2",
+          "name": "uncertain",
+          "description": "Integrity cannot be reliably assessed on the study."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_616680",
+      "name": "device migration",
+      "description": "Radiographic evidence that the device has migrated from its expected position.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_616680.0",
+          "name": "present",
+          "description": "Device migration identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_616680.1",
+          "name": "absent",
+          "description": "No migration identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_616680.2",
+          "name": "unknown",
+          "description": "Migration cannot be assessed.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_021238",
+      "name": "pericardial effusion",
+      "description": "Presence of fluid in the pericardial space which can be related to device placement/complication.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_021238.0",
+          "name": "present",
+          "description": "Pericardial effusion visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_021238.1",
+          "name": "absent",
+          "description": "No pericardial effusion visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_021238.2",
+          "name": "size small",
+          "description": "Small effusion."
+        },
+        {
+          "value_code": "OIFMA_MGB_021238.3",
+          "name": "size moderate",
+          "description": "Moderate effusion."
+        },
+        {
+          "value_code": "OIFMA_MGB_021238.4",
+          "name": "size large",
+          "description": "Large effusion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_809137",
+      "name": "thrombus formation",
+      "description": "Thrombus associated with the device or within cardiac chambers.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_809137.0",
+          "name": "present",
+          "description": "Thrombus identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_809137.1",
+          "name": "absent",
+          "description": "No thrombus identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_809137.2",
+          "name": "attached to device",
+          "description": "Thrombus seen adherent to the device components."
+        },
+        {
+          "value_code": "OIFMA_MGB_809137.3",
+          "name": "uncertain",
+          "description": "Thrombus cannot be reliably assessed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "oifm_id": "OIFM_MGB_889405",
+  "name": "glenohumeral joint effusion",
+  "description": "Excess fluid within the glenohumeral (shoulder) joint space detectable on MRI, ultrasound, or radiographs; characterized by presence, temporal status, volume, location, peripheral enhancement, and related pathology.",
+  "synonyms": [
+    "shoulder effusion",
+    "glenohumeral effusion",
+    "intra-articular shoulder fluid"
+  ],
+  "tags": [
+    "musculoskeletal",
+    "shoulder",
+    "effusion",
+    "glenohumeral",
+    "mri",
+    "ultrasound"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_647976",
+      "name": "effusion presence",
+      "description": "Whether excess fluid is identified within the glenohumeral joint.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_647976.0",
+          "name": "present",
+          "description": "Fluid identified within the joint space.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_647976.1",
+          "name": "absent",
+          "description": "No fluid identified within the joint space.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_143396",
+      "name": "effusion status",
+      "description": "Temporal or interval change status compared with prior exam when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_143396.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_143396.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_143396.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_143396.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_143396.4",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_143396.5",
+          "name": "resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_311947",
+      "name": "effusion volume",
+      "description": "Radiologist estimate of effusion volume or size.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_311947.0",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_MGB_311947.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_311947.2",
+          "name": "large"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_344832",
+      "name": "effusion location",
+      "description": "Anatomic compartment(s) involved by the fluid collection.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_344832.0",
+          "name": "intra-articular"
+        },
+        {
+          "value_code": "OIFMA_MGB_344832.1",
+          "name": "subacromial"
+        },
+        {
+          "value_code": "OIFMA_MGB_344832.2",
+          "name": "subdeltoid"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_752673",
+      "name": "peripheral enhancement",
+      "description": "Contrast enhancement around the effusion suggesting synovitis, infected or hemorrhagic component.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_752673.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_752673.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_794061",
+      "name": "synovitis",
+      "description": "Presence of synovial inflammation or hypertrophy.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_794061.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_794061.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_587179",
+      "name": "rotator cuff tear",
+      "description": "Associated tear of the rotator cuff tendons.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_587179.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_587179.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_589658",
+      "name": "labral tear",
+      "description": "Associated glenoid labrum tear.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_589658.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_589658.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

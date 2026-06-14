@@ -1,0 +1,379 @@
+{
+  "oifm_id": "OIFM_MGB_368738",
+  "name": "leadless pacemaker",
+  "description": "A leadless intracardiac pacemaker visualized on imaging, including its presence, position, integrity, and associated complications such as pericardial effusion. Attributes capture device identification, anatomic localization, attachment and structural status, migration, and related pericardial fluid.",
+  "synonyms": [
+    "leadless cardiac pacemaker",
+    "micra pacemaker",
+    "leadless pacemaker device"
+  ],
+  "tags": [
+    "cardiac device",
+    "pacemaker",
+    "device",
+    "implant"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_509063",
+      "name": "pacemaker presence",
+      "description": "whether a leadless pacemaker is visualized on the exam",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_509063.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_509063.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_127323",
+      "name": "device status",
+      "description": "temporal or complication status of the pacemaker compared with prior studies",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_127323.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_127323.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_127323.2",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_127323.3",
+          "name": "removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_584153",
+      "name": "device location",
+      "description": "anatomic chamber location of the device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_584153.0",
+          "name": "right ventricle"
+        },
+        {
+          "value_code": "OIFMA_MGB_584153.1",
+          "name": "right atrium"
+        },
+        {
+          "value_code": "OIFMA_MGB_584153.2",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_584153.3",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_946890",
+      "name": "device position",
+      "description": "position of the device within the cardiac chamber",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_946890.0",
+          "name": "apex"
+        },
+        {
+          "value_code": "OIFMA_MGB_946890.1",
+          "name": "mid-cavity"
+        },
+        {
+          "value_code": "OIFMA_MGB_946890.2",
+          "name": "outflow tract"
+        },
+        {
+          "value_code": "OIFMA_MGB_946890.3",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_946890.4",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_208937",
+      "name": "attachment status",
+      "description": "status of device anchoring to myocardium",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_208937.0",
+          "name": "intact"
+        },
+        {
+          "value_code": "OIFMA_MGB_208937.1",
+          "name": "dislodged"
+        },
+        {
+          "value_code": "OIFMA_MGB_208937.2",
+          "name": "uncertain"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_535325",
+      "name": "device integrity",
+      "description": "structural integrity of the device",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_535325.0",
+          "name": "intact"
+        },
+        {
+          "value_code": "OIFMA_MGB_535325.1",
+          "name": "compromised"
+        },
+        {
+          "value_code": "OIFMA_MGB_535325.2",
+          "name": "fragmented"
+        },
+        {
+          "value_code": "OIFMA_MGB_535325.3",
+          "name": "uncertain"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_233924",
+      "name": "device migration",
+      "description": "evidence of migration from expected implantation site",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_233924.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_233924.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_233924.2",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_573523",
+      "name": "pericardial effusion",
+      "description": "presence and relative size of pericardial fluid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_573523.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_573523.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_573523.2",
+          "name": "trace"
+        },
+        {
+          "value_code": "OIFMA_MGB_573523.3",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_MGB_573523.4",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_573523.5",
+          "name": "large"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

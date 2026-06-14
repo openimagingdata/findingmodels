@@ -1,0 +1,613 @@
+{
+  "oifm_id": "OIFM_MGB_834557",
+  "name": "papillary muscle calcification",
+  "description": "Calcific deposition within one or more papillary muscles of the heart, typically identified on chest radiography, CT, or cardiac MRI. Characterized by presence, temporal status, anatomic location, and extent, with several commonly associated cardiac findings.",
+  "synonyms": [
+    "pap muscle calcification",
+    "papillary muscle calcium",
+    "papillary muscle calcified focus"
+  ],
+  "tags": [
+    "cardiac",
+    "calcification",
+    "imaging finding",
+    "cardiac imaging",
+    "ventricle"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_401856",
+      "name": "calcification presence",
+      "description": "Whether papillary muscle calcification is seen.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_401856.0",
+          "name": "present",
+          "description": "Calcification identified within papillary muscle(s).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_401856.1",
+          "name": "absent",
+          "description": "No papillary muscle calcification identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_401856.2",
+          "name": "indeterminate",
+          "description": "Uncertain due to image quality or limited coverage.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_784806",
+      "name": "status",
+      "description": "Temporal comparison with prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_784806.0",
+          "name": "new",
+          "description": "Not present on prior study; newly identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_784806.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_784806.2",
+          "name": "increased",
+          "description": "Apparent increase in extent or conspicuity compared with prior.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_784806.3",
+          "name": "decreased",
+          "description": "Apparent decrease compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_784806.4",
+          "name": "resolved",
+          "description": "Previously seen calcification no longer identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_784806.5",
+          "name": "no prior",
+          "description": "No prior imaging available for comparison."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_291241",
+      "name": "location",
+      "description": "Anatomic ventricular location of the papillary muscle calcification.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_291241.0",
+          "name": "left ventricle",
+          "description": "Located in papillary muscle(s) of the left ventricle."
+        },
+        {
+          "value_code": "OIFMA_MGB_291241.1",
+          "name": "right ventricle",
+          "description": "Located in papillary muscle(s) of the right ventricle."
+        },
+        {
+          "value_code": "OIFMA_MGB_291241.2",
+          "name": "both ventricles",
+          "description": "Present in papillary muscles of both ventricles."
+        },
+        {
+          "value_code": "OIFMA_MGB_291241.3",
+          "name": "unspecified",
+          "description": "Location not specified or not well visualized."
+        }
+      ],
+      "required": false,
+      "max_selected": 2,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_530978",
+      "name": "extent",
+      "description": "Degree of involvement within the papillary muscle(s).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_530978.0",
+          "name": "focal",
+          "description": "Small, localized calcific focus."
+        },
+        {
+          "value_code": "OIFMA_MGB_530978.1",
+          "name": "diffuse",
+          "description": "Widespread calcification throughout the papillary muscle."
+        },
+        {
+          "value_code": "OIFMA_MGB_530978.2",
+          "name": "multifocal",
+          "description": "Multiple separate foci of calcification."
+        },
+        {
+          "value_code": "OIFMA_MGB_530978.3",
+          "name": "indeterminate",
+          "description": "Extent cannot be reliably determined.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_265247",
+      "name": "left ventricular hypertrophy",
+      "description": "Imaging evidence of increased left ventricular wall thickness.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_265247.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_265247.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_265247.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_337360",
+      "name": "dilated cardiomyopathy",
+      "description": "Imaging evidence of a dilated and poorly contractile left ventricle.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_337360.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_337360.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_337360.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_344485",
+      "name": "mitral valve abnormality",
+      "description": "Presence of mitral valve structural or functional abnormality.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_344485.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_344485.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_344485.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_664749",
+      "name": "left ventricular enlargement",
+      "description": "Imaging evidence of left ventricular chamber enlargement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_664749.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_664749.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_664749.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_148140",
+      "name": "myocardial scarring",
+      "description": "Imaging evidence suggesting myocardial scar (e.g., focal thinning or late enhancement on MRI).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_148140.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_148140.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_148140.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_481060",
+      "name": "coronary artery calcification",
+      "description": "Presence of calcification within the coronary arteries.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_481060.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_481060.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_481060.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

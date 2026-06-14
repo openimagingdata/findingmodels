@@ -1,0 +1,437 @@
+{
+  "oifm_id": "OIFM_MGB_581846",
+  "name": "Arterial Stent",
+  "description": "An arterial stent is a tubular device inserted into an artery to improve blood flow.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_222578",
+      "name": "Presence of Arterial Stent",
+      "description": "Indicates whether an arterial stent is present in the patient.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_222578.0",
+          "name": "Present",
+          "description": "An arterial stent is present in the patient.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_222578.1",
+          "name": "Absent",
+          "description": "No arterial stent is present in the patient.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_844772",
+      "name": "Status",
+      "description": "Indicates the status of the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_844772.0",
+          "name": "New placement",
+          "description": "The arterial stent has been newly placed."
+        },
+        {
+          "value_code": "OIFMA_MGB_844772.1",
+          "name": "Unchanged",
+          "description": "The arterial stent remains unchanged.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_844772.2",
+          "name": "Complication",
+          "description": "The arterial stent has complications."
+        },
+        {
+          "value_code": "OIFMA_MGB_844772.3",
+          "name": "Removed",
+          "description": "The arterial stent has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_357315",
+      "name": "Location",
+      "description": "Indicates the location of the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_357315.0",
+          "name": "Carotid artery",
+          "description": "The arterial stent is located in the carotid artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_357315.1",
+          "name": "Subclavian artery",
+          "description": "The arterial stent is located in the subclavian artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_357315.2",
+          "name": "Brachial artery",
+          "description": "The arterial stent is located in the brachial artery."
+        },
+        {
+          "value_code": "OIFMA_MGB_357315.3",
+          "name": "Cephalic artery",
+          "description": "The arterial stent is located in the cephalic artery."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_016464",
+      "name": "Side Finding",
+      "description": "Indicates the side of the body where the arterial stent is located.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_016464.0",
+          "name": "Left",
+          "description": "The arterial stent is located on the left side of the body."
+        },
+        {
+          "value_code": "OIFMA_MGB_016464.1",
+          "name": "Right",
+          "description": "The arterial stent is located on the right side of the body."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_712870",
+      "name": "Stent Length",
+      "description": "The length of the arterial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_632003",
+      "name": "Stent Diameter",
+      "description": "The diameter of the arterial stent.",
+      "type": "numeric",
+      "minimum": 0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_174334",
+      "name": "Intimal Hyperplasia",
+      "description": "Indicates the presence or absence of intimal hyperplasia around the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_174334.0",
+          "name": "Present",
+          "description": "Intimal hyperplasia is present around the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_174334.1",
+          "name": "Absent",
+          "description": "No intimal hyperplasia is present around the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_700286",
+      "name": "In-Stent Restenosis",
+      "description": "Indicates the presence or absence of in-stent restenosis in the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_700286.0",
+          "name": "Present",
+          "description": "In-stent restenosis is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_700286.1",
+          "name": "Absent",
+          "description": "No in-stent restenosis is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_147563",
+      "name": "Stent Fracture",
+      "description": "Indicates the presence or absence of stent fracture in the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_147563.0",
+          "name": "Present",
+          "description": "Stent fracture is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_147563.1",
+          "name": "Absent",
+          "description": "No stent fracture is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_752416",
+      "name": "Stent Migration",
+      "description": "Indicates the presence or absence of stent migration in the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_752416.0",
+          "name": "Present",
+          "description": "Stent migration is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_752416.1",
+          "name": "Absent",
+          "description": "No stent migration is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_453420",
+      "name": "Peri-stent Leak",
+      "description": "Indicates the presence or absence of peri-stent leak in the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_453420.0",
+          "name": "Present",
+          "description": "Peri-stent leak is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_453420.1",
+          "name": "Absent",
+          "description": "No peri-stent leak is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_202984",
+      "name": "Thrombosis",
+      "description": "Indicates the presence or absence of thrombosis in the arterial stent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_202984.0",
+          "name": "Present",
+          "description": "Thrombosis is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_202984.1",
+          "name": "Absent",
+          "description": "No thrombosis is present in the arterial stent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

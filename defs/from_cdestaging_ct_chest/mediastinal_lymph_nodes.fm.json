@@ -1,0 +1,269 @@
+{
+  "oifm_id": "OIFM_MGB_411801",
+  "name": "Mediastinal Lymph Nodes",
+  "description": "Enlarged lymph nodes in the mediastinum.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_942140",
+      "name": "Presence of Enlarged Mediastinal Lymph Nodes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_942140.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_942140.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_952220",
+      "name": "IASLC Lymph Node Stations",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_952220.0",
+          "name": "1: Low Cervical, Supraclavicular, and Stellate Lymph Nodes"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.1",
+          "name": "2R: Upper Paratracheal Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.2",
+          "name": "2L: Upper Paratracheal Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.3",
+          "name": "3A: Prevascular"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.4",
+          "name": "3P: Retrotracheal"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.5",
+          "name": "4R: Lower Paratracheal Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.6",
+          "name": "4L: Lower Paratracheal Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.7",
+          "name": "5: Subaortic (Aortopulmonary Window)"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.8",
+          "name": "6: Para-Aortic (Ascending Aorta or Phrenic)"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.9",
+          "name": "7: Subcarinal"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.10",
+          "name": "8: Paraesophageal (Below Carina)"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.11",
+          "name": "9: Pulmonary Ligament"
+        },
+        {
+          "value_code": "OIFMA_MGB_952220.12",
+          "name": "10: Hilar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_697993",
+      "name": "Station Involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_697993.0",
+          "name": "Low Cervical, Supraclavicular, and Stellate Lymph Nodes"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.1",
+          "name": "Upper Paratracheal Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.2",
+          "name": "Upper Paratracheal Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.3",
+          "name": "Prevascular"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.4",
+          "name": "Retrotracheal"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.5",
+          "name": "Lower Paratracheal Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.6",
+          "name": "Lower Paratracheal Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.7",
+          "name": "Subaortic (Aortopulmonary Window)"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.8",
+          "name": "Para-Aortic (Ascending Aorta or Phrenic)"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.9",
+          "name": "Subcarinal"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.10",
+          "name": "Paraesophageal (Below Carina)"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.11",
+          "name": "Pulmonary Ligament"
+        },
+        {
+          "value_code": "OIFMA_MGB_697993.12",
+          "name": "Hilar"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_764175",
+      "name": "Short-Axis Diameter",
+      "type": "numeric",
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_421261",
+      "name": "Shape",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_421261.0",
+          "name": "Round"
+        },
+        {
+          "value_code": "OIFMA_MGB_421261.1",
+          "name": "Oval"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_338497",
+      "name": "Density",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_338497.0",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_338497.1",
+          "name": "Heterogeneous"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_600422",
+      "name": "Evidence of Metastasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_600422.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_600422.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_824886",
+      "name": "Involvement of Adjacent Structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_824886.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_824886.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

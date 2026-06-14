@@ -1,0 +1,81 @@
+{
+  "oifm_id": "OIFM_MGB_381757",
+  "name": "patent foramen ovale pfo",
+  "description": "An opening between the atria at the foramen ovale that remains patent after birth, which may allow interatrial shunting. Described as present or absent on imaging or echocardiography.",
+  "synonyms": [
+    "pfo",
+    "patent foramen ovale"
+  ],
+  "tags": [
+    "cardiac",
+    "interatrial septum",
+    "congenital",
+    "shunt"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_525532",
+      "name": "presence",
+      "description": "whether a patent foramen ovale is identified on the study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_525532.0",
+          "name": "present",
+          "description": "pfo visualized or confirmed",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_525532.1",
+          "name": "absent",
+          "description": "no pfo identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

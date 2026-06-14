@@ -26,7 +26,7 @@
 
 ### What We Have
 
-The main entry point is `single_agent_pipeline.py`. It takes Hood CT Chest definitions (Markdown and JSON) from CDEStaging, looks them up in a DuckDB index of existing finding models, and either creates new models or merges incoming definitions with existing ones.
+The main entry point is `single_agent_pipeline.py`. It takes CDEStaging CT chest definitions (Markdown and JSON) from CDEStaging, looks them up in a DuckDB index of existing finding models, and either creates new models or merges incoming definitions with existing ones.
 
 **Data flow:**
 - **Input**: `hood_CT_chest` definitions from [CDEStaging](https://github.com/openimagingdata/CDEStaging/tree/main/definitions/hood_CT_chest)
@@ -35,36 +35,37 @@ The main entry point is `single_agent_pipeline.py`. It takes Hood CT Chest defin
   - `defs/hood_final_models/` — direct output from `single_agent_pipeline.py`
   - `defs/merged_findings/` — output from `batch_merge_findings.py` (a separate pipeline; see below)
 
-**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, adapters) lives in `findingmodels/hood/`. Processing is handled by `agents/single_agent.py`.
+**Layout:** Scripts in `scripts/` are CLI entry points. Library code (loaders, adapters) lives in `findingmodels/cdestaging_ct_chest/`. Processing is handled by `agents/single_agent.py`.
 
 **Scripts:**
-- `scripts/single_agent_pipeline.py` — Main single-agent pipeline (CDEStaging → output). `scripts/hood_to_final_finding.py` is a thin shim that runs the same script.
+- `scripts/cdestaging_ct_chest_to_finding_model.py` — Convert-only batch pipeline (CDEStaging → validated `.fm.json` + batch report)
+- `scripts/single_agent_pipeline.py` — Single-agent pipeline with DuckDB search/merge (CDEStaging → output)
 - `scripts/merge_findings.py` — CLI for merging one incoming model with existing
-- `scripts/batch_merge_findings.py` — **Different pipeline**: takes already-converted `hood_findings` (.fm.json), merges each with the DuckDB index, outputs to `merged_findings`. Does not read from CDEStaging.
+- `scripts/batch_merge_findings.py` — **Different pipeline**: takes already-converted `.fm.json`, merges each with the DuckDB index, outputs to `merged_findings`. Does not read from CDEStaging.
 
 **AI agents** (pydantic-ai, GPT-5.4, single agent with tools):
-- Single `single_agent` with tools: search, get_model, create_from_markdown, adapt_hood_json, add_ids, add_standard_codes
+- Single `single_agent` with tools: search, get_model, create_from_markdown, adapt_cdestaging_ct_chest_json, add_ids, add_standard_codes
 - Agent handles: specificity check, merge strategy, formatting (lowercase, acronyms, eponyms), attribute classification
 
 ---
 
 ## Part 2: How the Main Pipeline Works
 
-`single_agent_pipeline.py` loads definitions via `findingmodels.hood` and delegates processing to the single Hood agent:
+`single_agent_pipeline.py` loads definitions via `findingmodels.cdestaging_ct_chest` and delegates processing to the single agent:
 
 ```
 single_agent_pipeline.py
-    └── findingmodels.hood
+    └── findingmodels.cdestaging_ct_chest
             ├── loaders              (file I/O, should_process_file, load_definition)
-            └── hood_json_adapter    (used by agent for JSON definitions)
+            └── json_adapter         (used by agent for JSON definitions)
     └── agents/single_agent            (single agent with pydantic-ai tools)
             └── Tools: search_finding_models, get_full_model, create_from_markdown,
-                       adapt_hood_json, add_ids_to_finding_model, add_standard_codes
+                       adapt_cdestaging_ct_chest_json, add_ids_to_finding_model, add_standard_codes
 ```
 
 **In plain terms:**
-- The main script loads definitions via `findingmodels.hood.loaders`.
-- The Hood agent receives the content and uses its tools to search, match, merge, format, and produce the final model.
+- The main script loads definitions via `findingmodels.cdestaging_ct_chest.loaders`.
+- The agent receives the content and uses its tools to search, match, merge, format, and produce the final model.
 - `merge_findings.py` uses the same agent for incoming .fm.json files.
 
 ---
@@ -195,14 +196,15 @@ When modifying or extending the project, ensure:
 
 | Concern | File(s) |
 |---------|---------|
-| Main Hood pipeline (CLI) | `scripts/single_agent_pipeline.py` |
-| Hood agent (single agent with tools) | `agents/single_agent.py` |
-| Hood library (loaders, adapters) | `findingmodels/hood/` |
+| Main CDEStaging CT chest pipeline (CLI) | `scripts/single_agent_pipeline.py` |
+| Convert-only batch (CLI) | `scripts/cdestaging_ct_chest_to_finding_model.py` |
+| Single agent (with tools) | `agents/single_agent.py` |
+| CDEStaging CT chest library | `findingmodels/cdestaging_ct_chest/` |
 | Merge CLI | `scripts/merge_findings.py` |
 | Batch merge (separate pipeline) | `scripts/batch_merge_findings.py` |
 | Merge helpers (legacy; used for reference) | `scripts/merge_findings_helpers.py` |
-| JSON adapter | `findingmodels/hood/hood_json_adapter.py` |
-| Markdown adapter | `findingmodels/hood/markdown_to_finding_model_adapter.py` |
+| JSON adapter | `findingmodels/cdestaging_ct_chest/json_adapter.py` |
+| Markdown adapter | `findingmodels/cdestaging_ct_chest/markdown_adapter.py` |
 | Finding model schema | `schema/finding_model.schema.json` |
 | Dependencies | `findingmodel>=0.6.0,<1.0`, `pydantic-ai` |
 

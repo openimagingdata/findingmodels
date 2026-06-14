@@ -1,0 +1,381 @@
+{
+  "oifm_id": "OIFM_MGB_034292",
+  "name": "subendocardial fatty metaplasia",
+  "description": "Localized or diffuse replacement of subendocardial myocardium with adipose tissue, typically identified on cardiac CT as low-attenuation subendocardial regions and often associated with prior myocardial infarction.",
+  "synonyms": [
+    "fatty metaplasia of myocardium",
+    "subendocardial fat deposition",
+    "myocardial fatty metaplasia"
+  ],
+  "tags": [
+    "cardiac",
+    "myocardium",
+    "fatty metaplasia",
+    "subendocardial",
+    "ct"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_131589",
+      "name": "presence",
+      "description": "whether subendocardial fatty metaplasia is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_131589.0",
+          "name": "present",
+          "description": "finding identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_131589.1",
+          "name": "absent",
+          "description": "finding not identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_848097",
+      "name": "status",
+      "description": "interval status compared to prior exam when available",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_848097.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_848097.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_341148",
+      "name": "chamber",
+      "description": "cardiac chamber involved",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_341148.0",
+          "name": "left ventricle"
+        },
+        {
+          "value_code": "OIFMA_MGB_341148.1",
+          "name": "right ventricle"
+        },
+        {
+          "value_code": "OIFMA_MGB_341148.2",
+          "name": "both"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_972533",
+      "name": "location",
+      "description": "wall location(s) within the involved chamber",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_972533.0",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_972533.1",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_972533.2",
+          "name": "lateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_972533.3",
+          "name": "septal"
+        }
+      ],
+      "required": false,
+      "max_selected": 4,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_638422",
+      "name": "extent",
+      "description": "degree of involvement within the region",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_638422.0",
+          "name": "localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_638422.1",
+          "name": "diffuse"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_077217",
+      "name": "ct attenuation",
+      "description": "measured attenuation within the fatty metaplasia region",
+      "type": "numeric",
+      "minimum": -200,
+      "maximum": 100,
+      "unit": "HU",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_367575",
+      "name": "myocardial infarction history",
+      "description": "known history of myocardial infarction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_367575.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_367575.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_002734",
+      "name": "ventricular wall motion abnormality",
+      "description": "associated regional wall motion abnormality",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_002734.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_002734.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_527094",
+      "name": "coronary artery disease",
+      "description": "presence of known coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_527094.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_527094.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_886220",
+      "name": "cardiac chamber enlargement",
+      "description": "concomitant chamber enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_886220.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_886220.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

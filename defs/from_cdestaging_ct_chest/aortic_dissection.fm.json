@@ -1,0 +1,462 @@
+{
+  "oifm_id": "OIFM_MGB_554286",
+  "name": "aortic dissection",
+  "description": "A tear in the aortic intima creating a false lumen separated from the true lumen; may be acute or chronic and can involve variable aortic segments and branch vessels. Key report attributes include presence and status, anatomic type and extent, size of the entry tear, intimal flap status, and associated findings such as pericardial or pleural effusion and mediastinal hematoma.",
+  "synonyms": [
+    "dissection of aorta",
+    "aortic intimal tear",
+    "aortic false lumen"
+  ],
+  "tags": [
+    "vascular",
+    "cardiovascular",
+    "emergency",
+    "thoracic"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_995796",
+      "name": "presence",
+      "description": "Whether an aortic dissection is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_995796.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_995796.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_705518",
+      "name": "status",
+      "description": "Temporal or change status of the dissection compared with prior",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_705518.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.4",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.5",
+          "name": "resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_705518.6",
+          "name": "removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_354612",
+      "name": "type",
+      "description": "Anatomic classification by Stanford system",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_354612.0",
+          "name": "stanford type a"
+        },
+        {
+          "value_code": "OIFMA_MGB_354612.1",
+          "name": "stanford type b"
+        },
+        {
+          "value_code": "OIFMA_MGB_354612.2",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_289040",
+      "name": "extent",
+      "description": "Aortic segments involved (multiple selections allowed)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_289040.0",
+          "name": "ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_289040.1",
+          "name": "aortic root"
+        },
+        {
+          "value_code": "OIFMA_MGB_289040.2",
+          "name": "aortic arch"
+        },
+        {
+          "value_code": "OIFMA_MGB_289040.3",
+          "name": "descending thoracic aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_289040.4",
+          "name": "abdominal aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_289040.5",
+          "name": "involves branch vessels (specify)"
+        }
+      ],
+      "required": false,
+      "max_selected": 6
+    },
+    {
+      "oifma_id": "OIFMA_MGB_730822",
+      "name": "branch vessel involvement",
+      "description": "Specific branch vessels involved by the dissection (select all that apply or specify other)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_730822.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.1",
+          "name": "coronary arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.2",
+          "name": "brachiocephalic artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.3",
+          "name": "left common carotid artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.4",
+          "name": "left subclavian artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.5",
+          "name": "renal arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.6",
+          "name": "mesenteric/visceral arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.7",
+          "name": "iliac arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_730822.8",
+          "name": "other (specify)"
+        }
+      ],
+      "required": false,
+      "max_selected": 5
+    },
+    {
+      "oifma_id": "OIFMA_MGB_538230",
+      "name": "entry tear size",
+      "description": "Maximum diameter of the primary entry tear",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 150,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_914026",
+      "name": "intimal flap",
+      "description": "Presence of an intimal flap separating true and false lumens",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_914026.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_914026.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_914026.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_243901",
+      "name": "pericardial effusion",
+      "description": "Pericardial fluid adjacent to the heart",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_243901.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_243901.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_217072",
+      "name": "mediastinal hematoma",
+      "description": "Hematoma within the mediastinum related to the dissection or rupture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_217072.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_217072.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_862468",
+      "name": "pleural effusion",
+      "description": "Pleural fluid collection adjacent to the lungs",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_862468.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_862468.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

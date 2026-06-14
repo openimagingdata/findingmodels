@@ -1,0 +1,128 @@
+{
+  "oifm_id": "OIFM_MGB_986954",
+  "name": "Tracheostomy Tube",
+  "description": "A tube inserted into the trachea through a surgical incision in the neck, used to provide an airway for patients who cannot breathe on their own.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_009404",
+      "name": "presence",
+      "description": "Presence or absence of a tracheostomy tube in the patient.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_009404.0",
+          "name": "present",
+          "description": "A tracheostomy tube is present in the patient.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_009404.1",
+          "name": "absent",
+          "description": "A tracheostomy tube is not present in the patient.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_967284",
+      "name": "tube_tip",
+      "description": "The location of the tip of the tracheostomy tube within the trachea.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_967284.0",
+          "name": "upper thoracic trachea",
+          "description": "The tip of the tracheostomy tube is located in the upper thoracic trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_967284.1",
+          "name": "midthoracic trachea",
+          "description": "The tip of the tracheostomy tube is located in the midthoracic trachea."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_157449",
+      "name": "tract",
+      "description": "The presence of soft tissue thickening around the tracheostomy tube insertion site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_157449.0",
+          "name": "soft tissue thickening",
+          "description": "There is soft tissue thickening around the tracheostomy tube insertion site."
+        },
+        {
+          "value_code": "OIFMA_MGB_157449.1",
+          "name": "no soft tissue thickening",
+          "description": "There is no soft tissue thickening around the tracheostomy tube insertion site."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_441098",
+      "name": "associated_findings",
+      "description": "Any associated findings related to the tracheostomy tube.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_441098.0",
+          "name": "aspiration",
+          "description": "Aspiration related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_441098.1",
+          "name": "tracheal mucus",
+          "description": "Presence of mucus in the trachea related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_441098.2",
+          "name": "bronchial mucus",
+          "description": "Presence of mucus in the bronchial tubes related to the tracheostomy tube."
+        },
+        {
+          "value_code": "OIFMA_MGB_441098.3",
+          "name": "bronchial mucus plugs",
+          "description": "Presence of mucus plugs in the bronchial tubes related to the tracheostomy tube."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "oifm_id": "OIFM_MGB_875417",
+  "name": "orif ribs",
+  "description": "Open reduction internal fixation (ORIF) involving rib plating or fixation hardware. Describes presence, status, location, hardware position and integrity, and associated rib fractures.",
+  "synonyms": [
+    "rib plating",
+    "rib fixation",
+    "open reduction internal fixation ribs",
+    "orif rib fixation"
+  ],
+  "tags": [
+    "thorax",
+    "orthopedic",
+    "postoperative",
+    "chest wall"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_199388",
+      "name": "implant presence",
+      "description": "Whether ORIF hardware is visible on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_199388.0",
+          "name": "present",
+          "description": "Hardware consistent with ORIF is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_199388.1",
+          "name": "absent",
+          "description": "No ORIF hardware identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_199388.2",
+          "name": "indeterminate",
+          "description": "Hardware visibility is limited or unclear (eg, poor scan coverage or artifact).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_258453",
+      "name": "implant status",
+      "description": "Temporal or clinical status of the ORIF compared with prior imaging or clinical notes.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_258453.0",
+          "name": "new",
+          "description": "Not seen on prior imaging or documented as recently placed.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_258453.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_258453.2",
+          "name": "complication",
+          "description": "Findings suggest a complication (eg, infection, loosening, malposition, failure)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_046079",
+      "name": "laterality",
+      "description": "Side of the chest wall involved.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_046079.0",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_046079.1",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_046079.2",
+          "name": "bilateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_046079.3",
+          "name": "midline"
+        },
+        {
+          "value_code": "OIFMA_MGB_046079.4",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_335586",
+      "name": "ribs affected",
+      "description": "Number of ribs with ORIF hardware or fixation.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 12,
+      "unit": "ribs",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_481766",
+      "name": "hardware position",
+      "description": "Assessment of the position of fixation hardware relative to expected placement.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_481766.0",
+          "name": "properly positioned"
+        },
+        {
+          "value_code": "OIFMA_MGB_481766.1",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_MGB_481766.2",
+          "name": "partially malpositioned"
+        },
+        {
+          "value_code": "OIFMA_MGB_481766.3",
+          "name": "unable to assess"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_969551",
+      "name": "hardware failure",
+      "description": "Evidence of mechanical failure of the fixation devices.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_969551.0",
+          "name": "present",
+          "description": "Breakage, disengagement, pullout, or other mechanical failure identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_969551.1",
+          "name": "absent",
+          "description": "No mechanical failure identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_969551.2",
+          "name": "suspected",
+          "description": "Findings suspicious but not conclusive for failure."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_521314",
+      "name": "associated rib fracture",
+      "description": "Presence and healing status of rib fractures adjacent to ORIF hardware.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_521314.0",
+          "name": "present",
+          "description": "Acute or subacute fracture identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_521314.1",
+          "name": "absent",
+          "description": "No fracture identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_521314.2",
+          "name": "healed",
+          "description": "Fracture healed or healed-appearing callus."
+        },
+        {
+          "value_code": "OIFMA_MGB_521314.3",
+          "name": "nonunion",
+          "description": "Persistent fracture gap or nonunion suspected."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

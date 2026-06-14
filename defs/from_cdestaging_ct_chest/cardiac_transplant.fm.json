@@ -1,0 +1,254 @@
+{
+  "oifm_id": "OIFM_MGB_199209",
+  "name": "cardiac transplant",
+  "description": "Findings related to a cardiac (heart) transplant including presence, status, and common associated findings such as effusions or mediastinal lymphadenopathy.",
+  "synonyms": [
+    "cardiac allograft",
+    "heart transplant"
+  ],
+  "tags": [
+    "cardiac",
+    "transplant",
+    "surgical"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_036203",
+      "name": "cardiac transplant",
+      "description": "Whether a cardiac transplant is present on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_036203.0",
+          "name": "present",
+          "description": "Cardiac transplant/allograft is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_036203.1",
+          "name": "absent",
+          "description": "No cardiac transplant/allograft identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_280875",
+      "name": "transplant status",
+      "description": "Temporal or clinical status of the transplant compared with prior studies or clinical course.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_280875.0",
+          "name": "new",
+          "description": "Recent transplant or newly identified on this exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_280875.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_280875.2",
+          "name": "complication",
+          "description": "Findings suggestive of transplant-related complication (e.g., rejection, infection, anastomotic issue)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_785264",
+      "name": "pericardial effusion",
+      "description": "Presence of fluid in the pericardial sac.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_785264.0",
+          "name": "present",
+          "description": "Pericardial fluid identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_785264.1",
+          "name": "absent",
+          "description": "No pericardial fluid identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_145716",
+      "name": "pleural effusion",
+      "description": "Presence of pleural fluid in the thoracic cavity.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_145716.0",
+          "name": "present",
+          "description": "Pleural fluid identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_145716.1",
+          "name": "absent",
+          "description": "No pleural fluid identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_524400",
+      "name": "mediastinal lymphadenopathy",
+      "description": "Enlargement of mediastinal lymph nodes.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_524400.0",
+          "name": "present",
+          "description": "Mediastinal lymph nodes enlarged.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_524400.1",
+          "name": "absent",
+          "description": "No mediastinal lymphadenopathy.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

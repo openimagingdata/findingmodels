@@ -35,7 +35,7 @@ def load_single_agent_instructions() -> str:
     # 2. Create rules (when parsing)
     create_raw = (PROMPTS_DIR / "create_agent.md").read_text(encoding="utf-8")
     create_body = _strip_frontmatter(_strip_output_section(create_raw))
-    parts.append(f"---\n\n## When Parsing (create_from_markdown / adapt_hood_json)\n\n{create_body}")
+    parts.append(f"---\n\n## When Parsing (create_from_markdown / adapt_cdestaging_ct_chest_json)\n\n{create_body}")
 
     # 3. Merge rules (when merging)
     merge_raw = (PROMPTS_DIR / "merge_agent.md").read_text(encoding="utf-8")

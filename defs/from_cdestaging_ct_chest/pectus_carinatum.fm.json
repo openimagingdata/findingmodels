@@ -1,0 +1,255 @@
+{
+  "oifm_id": "OIFM_MGB_646490",
+  "name": "pectus carinatum",
+  "description": "Anterior protrusion deformity of the chest wall in which the sternum and adjacent cartilages are displaced anteriorly. Typically described by presence, temporal status, severity, and any associated mediastinal mass effect.",
+  "synonyms": [
+    "pigeon chest",
+    "chest wall protrusion",
+    "anterior chest wall deformity"
+  ],
+  "tags": [
+    "chest",
+    "thoracic",
+    "congenital",
+    "chest wall"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_867524",
+      "name": "presence",
+      "description": "Whether pectus carinatum is visualized on the exam.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_867524.0",
+          "name": "present",
+          "description": "Finding is identified on the current exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_867524.1",
+          "name": "absent",
+          "description": "Finding is not identified on the current exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_568136",
+      "name": "status",
+      "description": "Change compared with prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_568136.0",
+          "name": "new",
+          "description": "Not seen on prior comparison.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_568136.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_568136.2",
+          "name": "increased",
+          "description": "Greater prominence or extent compared with prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_414332",
+      "name": "severity",
+      "description": "Estimated degree of chest wall protrusion.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_414332.0",
+          "name": "mild",
+          "description": "Minimal anterior protrusion, unlikely to cause physiologic compromise.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414332.1",
+          "name": "moderate",
+          "description": "Clearly visible protrusion with possible cosmetic or minor functional effect.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414332.2",
+          "name": "severe",
+          "description": "Marked protrusion that may have cosmetic and/or physiological impact.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_146073",
+      "name": "mediastinal mass effect",
+      "description": "Whether the deformity produces impingement or shift of mediastinal structures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_146073.0",
+          "name": "present",
+          "description": "Imaging shows displacement or compression of mediastinal structures.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_146073.1",
+          "name": "absent",
+          "description": "No evidence of mediastinal displacement or compression.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

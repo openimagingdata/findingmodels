@@ -1,0 +1,183 @@
+{
+  "oifm_id": "OIFM_MGB_821276",
+  "name": "Mediastinal Fat Stranding",
+  "description": "Mediastinal fat stranding refers to increased attenuation of mediastinal fat compared to normal fat.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_980309",
+      "name": "presence",
+      "description": "Presence of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_980309.0",
+          "name": "Yes",
+          "description": "Mediastinal fat stranding is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_980309.1",
+          "name": "No",
+          "description": "Mediastinal fat stranding is not present."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_969638",
+      "name": "location",
+      "description": "Location of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_969638.0",
+          "name": "Anterior",
+          "description": "Mediastinal fat stranding is located in the anterior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_969638.1",
+          "name": "Middle",
+          "description": "Mediastinal fat stranding is located in the middle mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_969638.2",
+          "name": "Superior",
+          "description": "Mediastinal fat stranding is located in the superior mediastinum."
+        },
+        {
+          "value_code": "OIFMA_MGB_969638.3",
+          "name": "Posterior",
+          "description": "Mediastinal fat stranding is located in the posterior mediastinum."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_721596",
+      "name": "extent",
+      "description": "Extent of mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_721596.0",
+          "name": "Localized",
+          "description": "Mediastinal fat stranding is localized."
+        },
+        {
+          "value_code": "OIFMA_MGB_721596.1",
+          "name": "Diffuse",
+          "description": "Mediastinal fat stranding is diffuse."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_186284",
+      "name": "density",
+      "description": "Attenuation of mediastinal fat relative to normal fat.",
+      "type": "numeric",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_052931",
+      "name": "associated_findings",
+      "description": "Associated findings with mediastinal fat stranding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_052931.0",
+          "name": "Lymphadenopathy",
+          "description": "Presence of lymphadenopathy."
+        },
+        {
+          "value_code": "OIFMA_MGB_052931.1",
+          "name": "Fluid collections",
+          "description": "Presence of fluid collections."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_836756",
+      "name": "implications",
+      "description": "Potential implications or associated conditions.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_836756.0",
+          "name": "Inflammation",
+          "description": "Inflammation is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_MGB_836756.1",
+          "name": "Infection",
+          "description": "Infection is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_MGB_836756.2",
+          "name": "Trauma",
+          "description": "Trauma is a potential implication or associated condition."
+        },
+        {
+          "value_code": "OIFMA_MGB_836756.3",
+          "name": "Postoperative changes",
+          "description": "Postoperative changes are a potential implication or associated condition."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_723570",
+      "name": "imaging_features",
+      "description": "Imaging features suggestive of etiology.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_723570.0",
+          "name": "Radiation therapy",
+          "description": "Radiation therapy is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_MGB_723570.1",
+          "name": "Infection",
+          "description": "Infection is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_MGB_723570.2",
+          "name": "Trauma",
+          "description": "Trauma is a potential etiology."
+        },
+        {
+          "value_code": "OIFMA_MGB_723570.3",
+          "name": "Postoperative changes",
+          "description": "Postoperative changes are a potential etiology."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

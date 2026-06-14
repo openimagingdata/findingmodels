@@ -1,0 +1,173 @@
+{
+  "oifm_id": "OIFM_MGB_083671",
+  "name": "Bochdalek Hernia",
+  "description": "Bochdalek Hernia is a congenital diaphragmatic hernia that allows abdominal contents to herniate into the chest cavity through a defect in the diaphragm.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_087718",
+      "name": "Presence of Bochdalek Hernia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_087718.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_087718.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_891168",
+      "name": "Side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_891168.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_891168.1",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_891168.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_484888",
+      "name": "Size Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_484888.0",
+          "name": "Small"
+        },
+        {
+          "value_code": "OIFMA_MGB_484888.1",
+          "name": "Medium"
+        },
+        {
+          "value_code": "OIFMA_MGB_484888.2",
+          "name": "Large"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_788510",
+      "name": "Contents",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_788510.0",
+          "name": "Fat"
+        },
+        {
+          "value_code": "OIFMA_MGB_788510.1",
+          "name": "Bowel"
+        },
+        {
+          "value_code": "OIFMA_MGB_788510.2",
+          "name": "Both"
+        },
+        {
+          "value_code": "OIFMA_MGB_788510.3",
+          "name": "Other"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_134132",
+      "name": "Pulmonary Hypoplasia",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_134132.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_134132.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_082317",
+      "name": "Other Diaphragmatic Hernias",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_082317.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_082317.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

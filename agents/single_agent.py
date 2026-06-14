@@ -21,7 +21,7 @@ from pydantic import BaseModel, Field
 from pydantic_ai import Agent, RunContext
 from pydantic_ai.models.openai import OpenAIResponsesModel
 
-from findingmodels.hood.hood_json_adapter import HoodJsonAdapter
+from findingmodels.cdestaging_ct_chest.json_adapter import CDEStagingCtChestJsonAdapter
 
 from agents.prompts import load_single_agent_instructions
 
@@ -152,24 +152,26 @@ async def create_from_markdown(
 
 
 @single_agent.tool
-async def adapt_hood_json(
+async def adapt_cdestaging_ct_chest_json(
     ctx: RunContext[AgentContext],
     json_content: str,
     filename: str,
 ) -> str:
     """
-    Convert Hood JSON definition to FindingModelFull.
+    Convert CDEStaging CT chest JSON definition to FindingModelFull.
 
     Args:
-        json_content: Raw JSON string of the Hood definition
+        json_content: Raw JSON string of the CDEStaging CT chest definition
         filename: Original filename (e.g. pulmonary_nodule.json)
 
     Returns:
         JSON string of the adapted FindingModelFull
     """
     try:
-        hood_data = json.loads(json_content)
-        model = await HoodJsonAdapter.adapt_hood_json(hood_data, filename)
+        json_data = json.loads(json_content)
+        model = await CDEStagingCtChestJsonAdapter.adapt_cdestaging_ct_chest_json(
+            json_data, filename
+        )
         return model.model_dump_json(indent=2, exclude_none=False)
     except Exception as e:
         return json.dumps({"error": str(e)})

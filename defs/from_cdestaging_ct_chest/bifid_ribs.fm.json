@@ -1,0 +1,181 @@
+{
+  "oifm_id": "OIFM_MGB_397940",
+  "name": "bifid ribs",
+  "description": "Congenital or developmental splitting of one or more ribs creating a bifurcated or forked appearance of the rib(s) on imaging. Typically an incidental osseous variant seen on chest radiographs or CT.",
+  "synonyms": [
+    "split ribs",
+    "rib bifurcation",
+    "bifurcated ribs"
+  ],
+  "tags": [
+    "skeletal",
+    "thorax",
+    "congenital",
+    "osseous variant"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_254086",
+      "name": "presence",
+      "description": "Whether bifid rib(s) are identified on the examination.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_254086.0",
+          "name": "present",
+          "description": "Bifid rib(s) identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_254086.1",
+          "name": "absent",
+          "description": "No bifid ribs identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_262463",
+      "name": "status",
+      "description": "Interval change compared with prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_262463.0",
+          "name": "new",
+          "description": "Not present on prior comparison; new finding.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_262463.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior examination.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_119929",
+      "name": "rib location",
+      "description": "Side and distribution of ribs involved.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_119929.0",
+          "name": "right",
+          "description": "Right hemithorax ribs involved."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.1",
+          "name": "left",
+          "description": "Left hemithorax ribs involved."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.2",
+          "name": "bilateral",
+          "description": "Bifid ribs present on both sides."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.3",
+          "name": "upper ribs (1-3)",
+          "description": "Involves upper rib levels (1–3)."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.4",
+          "name": "mid ribs (4-8)",
+          "description": "Involves mid rib levels (4–8)."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.5",
+          "name": "lower ribs (9-12)",
+          "description": "Involves lower rib levels (9–12)."
+        },
+        {
+          "value_code": "OIFMA_MGB_119929.6",
+          "name": "specific ribs (list numbers)",
+          "description": "Report specific rib numbers involved (e.g., right 3rd, left 7th)."
+        }
+      ],
+      "required": false,
+      "max_selected": 3
+    },
+    {
+      "oifma_id": "OIFMA_MGB_909151",
+      "name": "number affected",
+      "description": "Count of bifid ribs identified on the study.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 24,
+      "unit": "count",
+      "required": false
+    }
+  ]
+}

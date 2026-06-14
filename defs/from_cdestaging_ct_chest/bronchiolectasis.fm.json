@@ -1,0 +1,452 @@
+{
+  "oifm_id": "OIFM_MGB_344860",
+  "name": "Bronchiolectasis",
+  "description": "Bronchiolectasis is characterized by the dilation and thickening of the bronchioles.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_729761",
+      "name": "Presence of Bronchiolectasis",
+      "description": "Indicates whether bronchiolectasis is present or not.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_729761.0",
+          "name": "Yes",
+          "description": "Bronchiolectasis is present."
+        },
+        {
+          "value_code": "OIFMA_MGB_729761.1",
+          "name": "No",
+          "description": "Bronchiolectasis is absent."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_739113",
+      "name": "Distribution",
+      "description": "The distribution pattern of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_739113.0",
+          "name": "Focal"
+        },
+        {
+          "value_code": "OIFMA_MGB_739113.1",
+          "name": "Multifocal"
+        },
+        {
+          "value_code": "OIFMA_MGB_739113.2",
+          "name": "Diffuse"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_241134",
+      "name": "Severity",
+      "description": "The severity of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_241134.0",
+          "name": "Mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_241134.1",
+          "name": "Moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_241134.2",
+          "name": "Severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_201900",
+      "name": "Location",
+      "description": "The location of bronchiolectasis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_201900.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_201900.1",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_201900.2",
+          "name": "Bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_576055",
+      "name": "Lung Zone",
+      "description": "The lung zone where bronchiolectasis is located.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_576055.0",
+          "name": "Upper"
+        },
+        {
+          "value_code": "OIFMA_MGB_576055.1",
+          "name": "Middle"
+        },
+        {
+          "value_code": "OIFMA_MGB_576055.2",
+          "name": "Lower"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_857533",
+      "name": "Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_857533.0",
+          "name": "Right Upper Lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_857533.1",
+          "name": "Right Middle Lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_857533.2",
+          "name": "Right Lower Lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_857533.3",
+          "name": "Left Upper Lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_857533.4",
+          "name": "Left Lower Lobe"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_433638",
+      "name": "Right Upper Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_433638.0",
+          "name": "Apical"
+        },
+        {
+          "value_code": "OIFMA_MGB_433638.1",
+          "name": "Posterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_433638.2",
+          "name": "Anterior"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_648480",
+      "name": "Right Middle Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_648480.0",
+          "name": "Lateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_648480.1",
+          "name": "Medial"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_590526",
+      "name": "Right Lower Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_590526.0",
+          "name": "Superior"
+        },
+        {
+          "value_code": "OIFMA_MGB_590526.1",
+          "name": "Medial Basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_590526.2",
+          "name": "Anterior Basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_590526.3",
+          "name": "Lateral Basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_590526.4",
+          "name": "Posterior Basal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_790127",
+      "name": "Left Upper Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_790127.0",
+          "name": "Apical"
+        },
+        {
+          "value_code": "OIFMA_MGB_790127.1",
+          "name": "Posterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_790127.2",
+          "name": "Anterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_790127.3",
+          "name": "Superior Lingular"
+        },
+        {
+          "value_code": "OIFMA_MGB_790127.4",
+          "name": "Inferior Lingular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_613946",
+      "name": "Left Lower Lobe Segments",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_613946.0",
+          "name": "Superior"
+        },
+        {
+          "value_code": "OIFMA_MGB_613946.1",
+          "name": "Anteromedial Basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_613946.2",
+          "name": "Lateral Basal"
+        },
+        {
+          "value_code": "OIFMA_MGB_613946.3",
+          "name": "Posterior Basal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_653198",
+      "name": "Mucous Plugging",
+      "description": "Indicates the presence of mucous plugging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_653198.0",
+          "name": "Present",
+          "description": "Mucous plugging is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_653198.1",
+          "name": "Absent",
+          "description": "Mucous plugging is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_601243",
+      "name": "Air Trapping",
+      "description": "Indicates the presence of air trapping.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_601243.0",
+          "name": "Present",
+          "description": "Air trapping is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_601243.1",
+          "name": "Absent",
+          "description": "Air trapping is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_158751",
+      "name": "Signs of Infection",
+      "description": "Indicates the presence of signs of infection.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_158751.0",
+          "name": "Present",
+          "description": "Signs of infection are present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_158751.1",
+          "name": "Absent",
+          "description": "Signs of infection are absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

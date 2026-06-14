@@ -1,0 +1,414 @@
+{
+  "oifm_id": "OIFM_MGB_682613",
+  "name": "pericardial mass",
+  "description": "Focal mass within the pericardial space characterized by location, size, morphology, attenuation, and associated findings such as effusion, calcification, mass effect, and invasion.",
+  "synonyms": [
+    "pericardial tumor",
+    "pericardial lesion",
+    "pericardial neoplasm"
+  ],
+  "tags": [
+    "cardiac",
+    "pericardial",
+    "mass"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_061451",
+      "name": "mass presence",
+      "description": "Whether a pericardial mass is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_061451.0",
+          "name": "present",
+          "description": "Mass identified within the pericardial space",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_061451.1",
+          "name": "absent",
+          "description": "No mass identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_423693",
+      "name": "mass status",
+      "description": "Temporal or clinical status of the mass relative to prior studies or procedures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_423693.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_423693.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_423693.2",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_423693.3",
+          "name": "removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_051047",
+      "name": "location",
+      "description": "Anatomic location within the pericardial space",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_051047.0",
+          "name": "anterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_051047.1",
+          "name": "posterior"
+        },
+        {
+          "value_code": "OIFMA_MGB_051047.2",
+          "name": "lateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_783419",
+      "name": "size",
+      "description": "Maximum diameter of the mass",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 30,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246115007",
+          "display": "Size (attribute)"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5772",
+          "display": "size descriptor"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_247048",
+      "name": "shape",
+      "description": "Overall contour of the mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_247048.0",
+          "name": "round"
+        },
+        {
+          "value_code": "OIFMA_MGB_247048.1",
+          "name": "oval"
+        },
+        {
+          "value_code": "OIFMA_MGB_247048.2",
+          "name": "irregular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_578055",
+      "name": "margin",
+      "description": "Definition of the mass margin",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_578055.0",
+          "name": "well-defined"
+        },
+        {
+          "value_code": "OIFMA_MGB_578055.1",
+          "name": "ill-defined"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_334294",
+      "name": "attenuation",
+      "description": "Internal composition of the mass on imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_334294.0",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_334294.1",
+          "name": "cystic"
+        },
+        {
+          "value_code": "OIFMA_MGB_334294.2",
+          "name": "mixed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_704330",
+      "name": "pericardial effusion",
+      "description": "Coexisting pericardial fluid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_704330.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_704330.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_066018",
+      "name": "mass effect",
+      "description": "Compression or displacement of cardiac or adjacent structures by the mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_066018.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_066018.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_190665",
+      "name": "calcification",
+      "description": "Presence of internal or peripheral calcification within the mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_190665.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_190665.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_537270",
+      "name": "invasion",
+      "description": "Evidence of invasion into adjacent structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_537270.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_537270.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_537270.2",
+          "name": "suspected"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

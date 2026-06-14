@@ -1,0 +1,503 @@
+{
+  "oifm_id": "OIFM_MGB_054374",
+  "name": "tricuspid valve replacement",
+  "description": "Replacement of the tricuspid valve (prosthetic tricuspid valve) with characterization of type, position, function, and common complications such as perivalvular leak, thrombosis, and dehiscence.",
+  "synonyms": [
+    "tricuspid prosthesis",
+    "tricuspid valve prosthesis",
+    "prosthetic tricuspid valve"
+  ],
+  "tags": [
+    "cardiac",
+    "valve",
+    "prosthesis",
+    "surgery"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_307540",
+      "name": "replacement present",
+      "description": "whether a tricuspid valve prosthesis is present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_307540.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_307540.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_189804",
+      "name": "replacement status",
+      "description": "temporal or complication status of the prosthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_189804.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_189804.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_189804.2",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_189804.3",
+          "name": "removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_248695",
+      "name": "replacement type",
+      "description": "type of prosthetic valve",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_248695.0",
+          "name": "mechanical"
+        },
+        {
+          "value_code": "OIFMA_MGB_248695.1",
+          "name": "biological"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_344066",
+      "name": "prosthesis model",
+      "description": "prosthesis model or manufacturer if known",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_344066.0",
+          "name": "st jude"
+        },
+        {
+          "value_code": "OIFMA_MGB_344066.1",
+          "name": "medtronic mosaic"
+        },
+        {
+          "value_code": "OIFMA_MGB_344066.2",
+          "name": "carpentier edwards"
+        },
+        {
+          "value_code": "OIFMA_MGB_344066.3",
+          "name": "edwards sapien"
+        },
+        {
+          "value_code": "OIFMA_MGB_344066.4",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_344066.5",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_032458",
+      "name": "position",
+      "description": "positioning of the prosthesis relative to expected annular position",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_032458.0",
+          "name": "proper"
+        },
+        {
+          "value_code": "OIFMA_MGB_032458.1",
+          "name": "malpositioned"
+        },
+        {
+          "value_code": "OIFMA_MGB_032458.2",
+          "name": "tilted"
+        },
+        {
+          "value_code": "OIFMA_MGB_032458.3",
+          "name": "embolized"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_600268",
+      "name": "valve function",
+      "description": "overall functional assessment of the prosthetic valve",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_600268.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.1",
+          "name": "mild dysfunction"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.2",
+          "name": "moderate dysfunction"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.3",
+          "name": "severe dysfunction"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.4",
+          "name": "stenosis predominant"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.5",
+          "name": "regurgitation predominant"
+        },
+        {
+          "value_code": "OIFMA_MGB_600268.6",
+          "name": "mixed dysfunction"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_423937",
+      "name": "perivalvular leak",
+      "description": "perivalvular regurgitation around the prosthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_423937.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_423937.1",
+          "name": "trivial"
+        },
+        {
+          "value_code": "OIFMA_MGB_423937.2",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_423937.3",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_423937.4",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_492758",
+      "name": "thrombosis",
+      "description": "presence of thrombus on or around the prosthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_492758.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_492758.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_492758.2",
+          "name": "suspected"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_153049",
+      "name": "dehiscence",
+      "description": "separation of the prosthesis from the annulus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_153049.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_153049.1",
+          "name": "partial"
+        },
+        {
+          "value_code": "OIFMA_MGB_153049.2",
+          "name": "complete"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_935885",
+      "name": "right atrial enlargement",
+      "description": "right atrial size assessment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_935885.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_935885.1",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_935885.2",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_935885.3",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_417192",
+      "name": "mean gradient",
+      "description": "mean transvalvular gradient across the prosthesis",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm hg",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_352455",
+      "name": "effective orifice area",
+      "description": "effective orifice area of the prosthetic valve",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 5,
+      "unit": "cm2",
+      "required": false
+    }
+  ]
+}

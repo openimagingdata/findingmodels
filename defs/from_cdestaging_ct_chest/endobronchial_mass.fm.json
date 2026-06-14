@@ -1,0 +1,309 @@
+{
+  "oifm_id": "OIFM_MGB_418859",
+  "name": "Endobronchial Mass",
+  "description": "A mass located within the bronchial airway.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_158469",
+      "name": "Presence",
+      "description": "Indicates whether the endobronchial mass is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_158469.0",
+          "name": "Present",
+          "description": "The endobronchial mass is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_158469.1",
+          "name": "Absent",
+          "description": "The endobronchial mass is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_960446",
+      "name": "Status",
+      "description": "The status of the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_960446.0",
+          "name": "New",
+          "description": "The endobronchial mass is new.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_960446.1",
+          "name": "Stable",
+          "description": "The endobronchial mass is stable.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_960446.2",
+          "name": "Increasing",
+          "description": "The endobronchial mass is increasing in size."
+        },
+        {
+          "value_code": "OIFMA_MGB_960446.3",
+          "name": "Decreasing",
+          "description": "The endobronchial mass is decreasing in size."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_889651",
+      "name": "Location",
+      "description": "The location of the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_889651.0",
+          "name": "Specify location",
+          "description": "Specify the location of the endobronchial mass."
+        },
+        {
+          "value_code": "OIFMA_MGB_889651.1",
+          "name": "None",
+          "description": "No location specified for the endobronchial mass."
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_832849",
+      "name": "Size Finding",
+      "description": "The size of the endobronchial mass.",
+      "type": "numeric",
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_420714",
+      "name": "Shape",
+      "description": "The shape of the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_420714.0",
+          "name": "Round",
+          "description": "The endobronchial mass is round."
+        },
+        {
+          "value_code": "OIFMA_MGB_420714.1",
+          "name": "Irregular",
+          "description": "The endobronchial mass is irregular."
+        },
+        {
+          "value_code": "OIFMA_MGB_420714.2",
+          "name": "Lobulated",
+          "description": "The endobronchial mass is lobulated."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_856208",
+      "name": "Airway Obstruction",
+      "description": "Indicates whether there is airway obstruction associated with the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_856208.0",
+          "name": "Present",
+          "description": "There is airway obstruction associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_856208.1",
+          "name": "Absent",
+          "description": "There is no airway obstruction associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_971948",
+      "name": "Distal Atelectasis or Consolidation",
+      "description": "Indicates whether there is distal atelectasis or consolidation associated with the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_971948.0",
+          "name": "Present",
+          "description": "There is distal atelectasis or consolidation associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_971948.1",
+          "name": "Absent",
+          "description": "There is no distal atelectasis or consolidation associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_401952",
+      "name": "Lymphadenopathy",
+      "description": "Indicates whether there is lymphadenopathy associated with the endobronchial mass.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_401952.0",
+          "name": "Present",
+          "description": "There is lymphadenopathy associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_401952.1",
+          "name": "Absent",
+          "description": "There is no lymphadenopathy associated with the endobronchial mass.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

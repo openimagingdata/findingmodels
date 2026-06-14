@@ -1,0 +1,268 @@
+{
+  "oifm_id": "OIFM_MGB_401878",
+  "name": "gastric tube",
+  "description": "Radiopaque enteric tube passing into the stomach or proximal alimentary tract; used to document presence, position, and related complications on imaging.",
+  "synonyms": [
+    "nasogastric tube",
+    "ng tube",
+    "og tube",
+    "enteric tube"
+  ],
+  "tags": [
+    "device",
+    "enteric tube",
+    "support devices",
+    "tube placement"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_834436",
+      "name": "tube presence",
+      "description": "Whether a gastric (nasogastric or orogastric) tube is visualized on the exam.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_834436.0",
+          "name": "present",
+          "description": "Gastric tube visualized on imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_834436.1",
+          "name": "absent",
+          "description": "No gastric tube identified on imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_182309",
+      "name": "tube status",
+      "description": "Temporal or clinical status of the tube compared with prior exams or clinical note.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_182309.0",
+          "name": "new",
+          "description": "Tube newly placed since prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_182309.1",
+          "name": "unchanged",
+          "description": "No change in tube status or position compared with prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_182309.2",
+          "name": "complication",
+          "description": "Complication related to the tube (e.g., malposition, tube-related injury)."
+        },
+        {
+          "value_code": "OIFMA_MGB_182309.3",
+          "name": "removed",
+          "description": "Tube recently removed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_372872",
+      "name": "tip location",
+      "description": "Anatomic location of the tube tip as seen on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_372872.0",
+          "name": "stomach",
+          "description": "Tip projects within the stomach (appropriate position)."
+        },
+        {
+          "value_code": "OIFMA_MGB_372872.1",
+          "name": "esophagus",
+          "description": "Tip projects within the esophagus (high/insufficient advancement)."
+        },
+        {
+          "value_code": "OIFMA_MGB_372872.2",
+          "name": "airway",
+          "description": "Tip projects within the trachea or bronchial tree (malposition into airway)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_740719",
+      "name": "location change",
+      "description": "Change in tube position relative to prior imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_740719.0",
+          "name": "none",
+          "description": "No appreciable change in tube position."
+        },
+        {
+          "value_code": "OIFMA_MGB_740719.1",
+          "name": "retracted",
+          "description": "Tube tip has moved proximally (retracted) compared with prior."
+        },
+        {
+          "value_code": "OIFMA_MGB_740719.2",
+          "name": "advanced",
+          "description": "Tube tip has moved distally (advanced) compared with prior."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_546326",
+      "name": "gastric distension",
+      "description": "Imaging evidence of gastric distension.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_546326.0",
+          "name": "present",
+          "description": "Stomach appears distended on imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_546326.1",
+          "name": "absent",
+          "description": "No gastric distension identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_236596",
+      "name": "small bowel obstruction",
+      "description": "Imaging signs suggestive of small bowel obstruction.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_236596.0",
+          "name": "present",
+          "description": "Findings consistent with small bowel obstruction.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_236596.1",
+          "name": "absent",
+          "description": "No imaging evidence of small bowel obstruction.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

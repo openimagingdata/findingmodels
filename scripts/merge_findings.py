@@ -17,7 +17,7 @@ from findingmodel import FindingModelFull, Index
 from findingmodel.common import model_file_name
 
 from agents.single_agent import create_single_agent, AgentContext
-from findingmodels.hood.normalize_output import normalize_for_validation
+from findingmodels.cdestaging_ct_chest.normalize_output import normalize_for_validation
 
 logger = logging.getLogger(__name__)
 

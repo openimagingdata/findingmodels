@@ -1,0 +1,469 @@
+{
+  "oifm_id": "OIFM_MGB_169742",
+  "name": "Wedge Resection",
+  "description": "A surgical procedure in which a small, wedge-shaped portion of lung tissue is removed.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_586139",
+      "name": "Presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_586139.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_586139.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_486206",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_486206.0",
+          "name": "Post-operative changes observed"
+        },
+        {
+          "value_code": "OIFMA_MGB_486206.1",
+          "name": "No post-operative changes"
+        },
+        {
+          "value_code": "OIFMA_MGB_486206.2",
+          "name": "Healing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_198530",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_198530.0",
+          "name": "Right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.1",
+          "name": "Right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.2",
+          "name": "Right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.3",
+          "name": "Left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.4",
+          "name": "Left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.5",
+          "name": "Bilateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_198530.6",
+          "name": "Segmental"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_913682",
+      "name": "Resection Margin",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_913682.0",
+          "name": "Clear"
+        },
+        {
+          "value_code": "OIFMA_MGB_913682.1",
+          "name": "Involved"
+        },
+        {
+          "value_code": "OIFMA_MGB_913682.2",
+          "name": "Not specified"
+        },
+        {
+          "value_code": "OIFMA_MGB_913682.3",
+          "name": "Close"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_567252",
+      "name": "Size of Resection",
+      "type": "numeric",
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_439135",
+      "name": "Number of lesions resected",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_439135.0",
+          "name": "Single",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_439135.1",
+          "name": "Multiple",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5765",
+              "display": "multiple"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255204007",
+              "display": "Multiple (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_439135.2",
+          "name": "Extensive resection"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_476731",
+      "name": "Completeness",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_476731.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_476731.1",
+          "name": "Incomplete"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_603945",
+      "name": "Pleural effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_603945.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_603945.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_219443",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_219443.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_219443.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_564341",
+      "name": "Atelectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_564341.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_564341.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_720157",
+      "name": "Surgical clips",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_720157.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_720157.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_931814",
+      "name": "Residual tumor",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_931814.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_931814.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_931814.2",
+          "name": "Suspected"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_028113",
+      "name": "Scar tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_028113.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_028113.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

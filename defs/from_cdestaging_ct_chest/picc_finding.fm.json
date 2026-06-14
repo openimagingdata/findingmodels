@@ -1,0 +1,143 @@
+{
+  "oifm_id": "OIFM_MGB_430543",
+  "name": "Picc Finding",
+  "description": "Peripherally inserted central catheter (PICC)",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_935200",
+      "name": "Side Finding",
+      "description": "The side of the body where the PICC is inserted",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_935200.0",
+          "name": "Left upper extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_935200.1",
+          "name": "Right upper extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_935200.2",
+          "name": "Left lower extremity"
+        },
+        {
+          "value_code": "OIFMA_MGB_935200.3",
+          "name": "Right lower extremity"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_463824",
+      "name": "Distal tip location",
+      "description": "The location of the distal tip of the PICC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_463824.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.2",
+          "name": "SVC"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_463824.6",
+          "name": "Internal jugular vein"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_049767",
+      "name": "Appropriate location",
+      "description": "Whether the location of the PICC is appropriate",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_049767.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_049767.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_742990",
+      "name": "Change from prior",
+      "description": "Any change in the PICC placement from the prior study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_742990.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_742990.1",
+          "name": "Unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_742990.2",
+          "name": "Retracted"
+        },
+        {
+          "value_code": "OIFMA_MGB_742990.3",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_MGB_742990.4",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "oifm_id": "OIFM_MGB_096970",
+  "name": "pulmonary thrombus",
+  "description": "Intraluminal thrombus within the pulmonary arterial tree consistent with pulmonary embolism. Describes presence, temporal status, anatomic location, morphologic features, size, and related parenchymal or procedural changes.",
+  "synonyms": [
+    "pulmonary embolus",
+    "pulmonary embolism",
+    "pe",
+    "pulmonary thromboembolus"
+  ],
+  "tags": [
+    "pulmonary",
+    "vascular",
+    "embolus",
+    "ct angiography"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_839103",
+      "name": "presence",
+      "description": "Whether a thrombus is identified on the exam.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_839103.0",
+          "name": "present",
+          "description": "Thrombus is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_839103.1",
+          "name": "absent",
+          "description": "No thrombus identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_839103.2",
+          "name": "indeterminate",
+          "description": "Study insufficient or findings equivocal for thrombus.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_571345",
+      "name": "thrombus status",
+      "description": "Temporal or comparative status relative to prior imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_571345.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_571345.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_571345.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_571345.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_571345.4",
+          "name": "complication",
+          "description": "Associated complication such as migration, infarction, or hemorrhage."
+        },
+        {
+          "value_code": "OIFMA_MGB_571345.5",
+          "name": "resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_776065",
+      "name": "location",
+      "description": "Anatomic location(s) of thrombus; specify segmental detail when applicable.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_776065.0",
+          "name": "main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.1",
+          "name": "right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.2",
+          "name": "left pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.3",
+          "name": "bilateral pulmonary arteries"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.4",
+          "name": "lobar branch"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.5",
+          "name": "segmental branch"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.6",
+          "name": "subsegmental branch"
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.7",
+          "name": "central",
+          "description": "Main or lobar (proximal) vessels."
+        },
+        {
+          "value_code": "OIFMA_MGB_776065.8",
+          "name": "peripheral",
+          "description": "Segmental or subsegmental (distal) vessels."
+        }
+      ],
+      "required": false,
+      "max_selected": 9,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_030152",
+      "name": "size",
+      "description": "Maximum linear dimension of the thrombus measured on imaging.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 100,
+      "unit": "mm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246115007",
+          "display": "Size (attribute)"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5772",
+          "display": "size descriptor"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_623712",
+      "name": "shape",
+      "description": "Morphologic appearance of the thrombus within the vessel lumen.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_623712.0",
+          "name": "linear"
+        },
+        {
+          "value_code": "OIFMA_MGB_623712.1",
+          "name": "curved"
+        },
+        {
+          "value_code": "OIFMA_MGB_623712.2",
+          "name": "tubular"
+        },
+        {
+          "value_code": "OIFMA_MGB_623712.3",
+          "name": "irregular"
+        },
+        {
+          "value_code": "OIFMA_MGB_623712.4",
+          "name": "occlusive",
+          "description": "Filling defect completely occluding the lumen."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_324948",
+      "name": "pulmonary infarction",
+      "description": "Presence of associated pulmonary infarct in the lung parenchyma.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_324948.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_324948.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_324948.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_664718",
+      "name": "surgical change status",
+      "description": "Whether there are post-surgical changes relevant to interpretation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_664718.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_664718.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_664718.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_359346",
+      "name": "radiation change status",
+      "description": "Whether there are post-radiation changes relevant to interpretation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_359346.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_359346.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_359346.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

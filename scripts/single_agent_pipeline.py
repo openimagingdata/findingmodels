@@ -1,9 +1,9 @@
 """
-Single-agent Hood pipeline: CDEStaging definitions → final finding models.
+Single-agent CDEStaging CT chest pipeline: CDEStaging definitions → final finding models.
 
-CLI entry: ``scripts/single_agent_pipeline.py`` (formerly ``hood_to_final_finding.py``).
+CLI entry: ``scripts/single_agent_pipeline.py``.
 
-Processes Markdown and JSON definitions from the hood_CT_chest directory,
+Processes Markdown and JSON definitions from the CDEStaging hood_CT_chest directory,
 matches them with existing models in the database, and either generates new models
 or merges with existing ones. Uses a single GPT-5.4 agent with tools (Option B).
 """
@@ -24,8 +24,8 @@ from findingmodel.tools import add_ids_to_model, add_standard_codes_to_model
 from findingmodel_ai.authoring import create_info_from_name
 
 from agents.single_agent import create_single_agent, AgentContext
-from findingmodels.hood import should_process_file, load_definition
-from findingmodels.hood.normalize_output import normalize_for_validation, strip_sub_finding_attributes
+from findingmodels.cdestaging_ct_chest import should_process_file, load_definition
+from findingmodels.cdestaging_ct_chest.normalize_output import normalize_for_validation, strip_sub_finding_attributes
 
 # Load environment variables
 load_dotenv()
@@ -112,7 +112,7 @@ async def process_single_file(
     output_dir: Path,
     create_sub_finding_models: bool = True,
 ) -> Tuple[bool, str, Optional[Dict], Optional[Dict], Optional[Dict], Optional[List[str]]]:
-    """Process a single definition file using the Hood agent.
+    """Process a single definition file using the single agent.
 
     Args:
         file_path: Path to the definition file
@@ -276,7 +276,7 @@ def generate_attribute_report(
     
     # Build markdown content
     lines = [
-        "# Hood Definition Processing Report - Attribute Standardization",
+        "# CDEStaging CT Chest Definition Processing Report - Attribute Standardization",
         "",
         f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
         f"**Input Directory:** {input_dir}",
@@ -514,13 +514,13 @@ def generate_sub_finding_report(
     return report_path
 
 
-async def process_hood_directory(
+async def process_cdestaging_ct_chest_directory(
     input_dir: str,
     output_dir: str,
     limit: Optional[int] = None,
     create_sub_finding_models: bool = True,
 ):
-    """Process all definition files in the hood_CT_chest directory.
+    """Process all definition files in the CDEStaging hood_CT_chest directory.
 
     Args:
         input_dir: Input directory path
@@ -656,7 +656,7 @@ async def process_hood_directory(
 async def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(
-        description='Import Hood CT Chest definitions from CDEStaging repository'
+        description='Import CDEStaging CT chest definitions from CDEStaging repository'
     )
     parser.add_argument(
         '--log-level',
@@ -672,7 +672,7 @@ async def main():
     parser.add_argument(
         '--input-dir',
         default='../CDEStaging/definitions/hood_CT_chest',
-        help='Input directory containing Hood definitions (default: ../CDEStaging/definitions/hood_CT_chest)'
+        help='Input directory containing CDEStaging CT chest definitions (default: ../CDEStaging/definitions/hood_CT_chest)'
     )
     parser.add_argument(
         '--output-dir',
@@ -712,12 +712,12 @@ async def main():
     limit = args.limit
     create_sub_finding_models = not args.no_sub_finding_models
     
-    logger.info(f"Importing Hood definitions from {input_dir}")
+    logger.info(f"Importing CDEStaging CT chest definitions from {input_dir}")
     logger.info(f"Output directory: {output_dir}")
     if limit:
         logger.info(f"Processing limited to {limit} files (testing mode)")
     
-    await process_hood_directory(input_dir, output_dir, limit=limit, create_sub_finding_models=create_sub_finding_models)
+    await process_cdestaging_ct_chest_directory(input_dir, output_dir, limit=limit, create_sub_finding_models=create_sub_finding_models)
 
 
 if __name__ == "__main__":

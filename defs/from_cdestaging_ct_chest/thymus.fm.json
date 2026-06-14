@@ -1,0 +1,214 @@
+{
+  "oifm_id": "OIFM_MGB_746590",
+  "name": "Thymus",
+  "description": "The thymus is a lymphoid organ located in the anterior mediastinum that is prominent in pediatric patients and tends to involute with age; radiographic thymic tissue can appear as a soft-tissue density in the anterior mediastinum on chest radiographs and CT. In imaging, findings related to the thymus may include thymic sail sign, thymic rebound, and thymic goiter, though these terms are less common.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_975225",
+      "name": "Presence of Thymic Tissue",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_975225.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_975225.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_254954",
+      "name": "Size Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_254954.0",
+          "name": "Normal"
+        },
+        {
+          "value_code": "OIFMA_MGB_254954.1",
+          "name": "Enlarged"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_448994",
+      "name": "Consistency",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_448994.0",
+          "name": "Homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_448994.1",
+          "name": "Heterogeneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_026399",
+      "name": "Calcifications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_026399.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_026399.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_036687",
+      "name": "Fatty Involution",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_036687.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_036687.1",
+          "name": "Partial"
+        },
+        {
+          "value_code": "OIFMA_MGB_036687.2",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_610983",
+      "name": "Cystic Changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_610983.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_610983.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_497983",
+      "name": "Thymoma / Thymic Mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_497983.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_497983.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

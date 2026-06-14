@@ -1,0 +1,395 @@
+{
+  "oifm_id": "OIFM_MGB_054126",
+  "name": "Tunneled Cvc",
+  "description": "Tunneled Central Venous Catheter",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_834451",
+      "name": "Presence of tunneled CVC",
+      "description": "Indicates whether a tunneled CVC is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_834451.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_834451.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_853927",
+      "name": "Status",
+      "description": "Indicates the status of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_853927.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_853927.1",
+          "name": "Unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_853927.2",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_MGB_853927.3",
+          "name": "Removed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_848547",
+      "name": "Appropriate location",
+      "description": "Indicates whether the tunneled CVC is in an appropriate location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_848547.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_848547.1",
+          "name": "No"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_293359",
+      "name": "Side Finding",
+      "description": "Indicates the side of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_293359.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_293359.1",
+          "name": "Right"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_959988",
+      "name": "Number of Lumens",
+      "description": "Indicates the number of lumens in the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_959988.0",
+          "name": "Single",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_959988.1",
+          "name": "Double"
+        },
+        {
+          "value_code": "OIFMA_MGB_959988.2",
+          "name": "Triple"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_800417",
+      "name": "Vein approach",
+      "description": "Indicates the vein approach for the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_800417.0",
+          "name": "Internal jugular"
+        },
+        {
+          "value_code": "OIFMA_MGB_800417.1",
+          "name": "Subclavian"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_275919",
+      "name": "Course",
+      "description": "Indicates the course of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_275919.0",
+          "name": "Appropriate"
+        },
+        {
+          "value_code": "OIFMA_MGB_275919.1",
+          "name": "Kinking"
+        },
+        {
+          "value_code": "OIFMA_MGB_275919.2",
+          "name": "Coiling"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_682230",
+      "name": "Distal tip location",
+      "description": "Indicates the distal tip location of the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_682230.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.2",
+          "name": "SVC (superior vena cava)"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.6",
+          "name": "Internal jugular vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_682230.7",
+          "name": "IVC (inferior vena cava)"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_060770",
+      "name": "Complications",
+      "description": "Indicates the complications associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_060770.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_MGB_060770.1",
+          "name": "Occlusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_060770.2",
+          "name": "Thrombosis (fibrin sheath)"
+        },
+        {
+          "value_code": "OIFMA_MGB_060770.3",
+          "name": "Catheter fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_060770.4",
+          "name": "Tip Migration"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_051896",
+      "name": "Hematoma",
+      "description": "Indicates the presence or absence of a hematoma associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_051896.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_051896.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_018094",
+      "name": "Pneumothorax",
+      "description": "Indicates the presence or absence of a pneumothorax associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_018094.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_018094.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_090117",
+      "name": "Hemothorax",
+      "description": "Indicates the presence or absence of a hemothorax associated with the tunneled CVC",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_090117.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_090117.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

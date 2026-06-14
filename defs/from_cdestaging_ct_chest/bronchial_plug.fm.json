@@ -1,0 +1,247 @@
+{
+  "oifm_id": "OIFM_MGB_329327",
+  "name": "Bronchial Plug",
+  "description": "Presence of a bronchial plug",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_228394",
+      "name": "Presence of Bronchial Plug",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_228394.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_228394.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_358183",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_358183.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_358183.1",
+          "name": "Unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_358183.2",
+          "name": "Complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_358183.3",
+          "name": "Removed"
+        },
+        {
+          "value_code": "OIFMA_MGB_358183.4",
+          "name": "Resorbed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_724957",
+      "name": "Location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_724957.0",
+          "name": "Main bronchus"
+        },
+        {
+          "value_code": "OIFMA_MGB_724957.1",
+          "name": "Lobar bronchus"
+        },
+        {
+          "value_code": "OIFMA_MGB_724957.2",
+          "name": "Segmental bronchus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_673887",
+      "name": "Side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_673887.0",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_673887.1",
+          "name": "Left"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_256904",
+      "name": "Device Type",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_256904.0",
+          "name": "Bioresorbable"
+        },
+        {
+          "value_code": "OIFMA_MGB_256904.1",
+          "name": "Non-bioresorbable"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_743490",
+      "name": "Deployment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_743490.0",
+          "name": "Complete"
+        },
+        {
+          "value_code": "OIFMA_MGB_743490.1",
+          "name": "Partial"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_514667",
+      "name": "Complication",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_514667.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_MGB_514667.1",
+          "name": "Mucosal erosion"
+        },
+        {
+          "value_code": "OIFMA_MGB_514667.2",
+          "name": "Perforation"
+        },
+        {
+          "value_code": "OIFMA_MGB_514667.3",
+          "name": "Migration"
+        },
+        {
+          "value_code": "OIFMA_MGB_514667.4",
+          "name": "Stenosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_514667.5",
+          "name": "Occlusion"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_200460",
+      "name": "Airspace consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_200460.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_200460.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

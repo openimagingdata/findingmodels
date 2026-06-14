@@ -1,0 +1,372 @@
+{
+  "oifm_id": "OIFM_MGB_309642",
+  "name": "esophagectomy",
+  "description": "Surgical removal of the esophagus with reconstruction; described by procedure type, conduit used, anastomotic location and integrity, and postoperative complications such as leak, stenosis, or fistula.",
+  "synonyms": [
+    "esophageal resection",
+    "esophagectomy reconstruction"
+  ],
+  "tags": [
+    "surgical procedure",
+    "postoperative change",
+    "esophagus"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_489239",
+      "name": "presence",
+      "description": "whether an esophagectomy is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_489239.0",
+          "name": "present",
+          "description": "history or imaging evidence of esophagectomy/reconstruction",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_489239.1",
+          "name": "absent",
+          "description": "no evidence of esophagectomy",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_258656",
+      "name": "type of esophagectomy",
+      "description": "operative approach used for esophagectomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_258656.0",
+          "name": "ivor lewis"
+        },
+        {
+          "value_code": "OIFMA_MGB_258656.1",
+          "name": "mckeown"
+        },
+        {
+          "value_code": "OIFMA_MGB_258656.2",
+          "name": "transhiatal"
+        },
+        {
+          "value_code": "OIFMA_MGB_258656.3",
+          "name": "other"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_551268",
+      "name": "graft type",
+      "description": "conduit used for esophageal replacement or reconstruction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_551268.0",
+          "name": "gastric pull-up"
+        },
+        {
+          "value_code": "OIFMA_MGB_551268.1",
+          "name": "colonic interposition"
+        },
+        {
+          "value_code": "OIFMA_MGB_551268.2",
+          "name": "jejunal interposition"
+        },
+        {
+          "value_code": "OIFMA_MGB_551268.3",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_551268.4",
+          "name": "none"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_190218",
+      "name": "anastomotic site",
+      "description": "anatomic location of the esophagogastric or esophageal anastomosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_190218.0",
+          "name": "cervical"
+        },
+        {
+          "value_code": "OIFMA_MGB_190218.1",
+          "name": "thoracic"
+        },
+        {
+          "value_code": "OIFMA_MGB_190218.2",
+          "name": "unknown/other"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_016154",
+      "name": "graft side",
+      "description": "hemithorax in which the conduit resides when applicable",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_016154.0",
+          "name": "left hemithorax"
+        },
+        {
+          "value_code": "OIFMA_MGB_016154.1",
+          "name": "right hemithorax"
+        },
+        {
+          "value_code": "OIFMA_MGB_016154.2",
+          "name": "midline/retrosternal"
+        },
+        {
+          "value_code": "OIFMA_MGB_016154.3",
+          "name": "unknown/other"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_233974",
+      "name": "anastomotic integrity",
+      "description": "status of the anastomosis with respect to leak or containment",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_233974.0",
+          "name": "intact"
+        },
+        {
+          "value_code": "OIFMA_MGB_233974.1",
+          "name": "leak"
+        },
+        {
+          "value_code": "OIFMA_MGB_233974.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_699972",
+      "name": "graft patency",
+      "description": "luminal patency of the reconstructed conduit",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_699972.0",
+          "name": "patent"
+        },
+        {
+          "value_code": "OIFMA_MGB_699972.1",
+          "name": "stenosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_699972.2",
+          "name": "occlusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_699972.3",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_767629",
+      "name": "recurrent soft tissue",
+      "description": "imaging evidence of recurrent soft tissue mass near the anastomosis or conduit",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_767629.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_767629.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_767629.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_214231",
+      "name": "fistula",
+      "description": "presence of an abnormal communication between the conduit and adjacent structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_214231.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_214231.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_214231.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

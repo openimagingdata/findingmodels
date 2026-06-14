@@ -1,0 +1,478 @@
+{
+  "oifm_id": "OIFM_MGB_186106",
+  "name": "azygos fissure",
+  "description": "A congenital pleural variant where an invagination of the parietal pleura forms a fissure containing the azygos vein, often seen as an arch-like line in the right upper lung. Typically an incidental anatomical variant with potential associated imaging findings documented if present.",
+  "synonyms": [
+    "azygos lobe",
+    "azygos fissure variant"
+  ],
+  "tags": [
+    "anatomic variant",
+    "pleural variant",
+    "incidental finding"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_230196",
+      "name": "azygos fissure presence",
+      "description": "Whether the azygos fissure is seen on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_230196.0",
+          "name": "present",
+          "description": "Clear visualization of the azygos fissure.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_230196.1",
+          "name": "absent",
+          "description": "No fissure identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_230196.2",
+          "name": "indeterminate",
+          "description": "Visibility limited or unclear due to image quality or overlap.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_430605",
+      "name": "identification status",
+      "description": "Degree of certainty that the finding has been identified.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_430605.0",
+          "name": "identified"
+        },
+        {
+          "value_code": "OIFMA_MGB_430605.1",
+          "name": "not identified"
+        },
+        {
+          "value_code": "OIFMA_MGB_430605.2",
+          "name": "equivocal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_993469",
+      "name": "location",
+      "description": "Anatomic location of the fissure.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_993469.0",
+          "name": "right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_993469.1",
+          "name": "left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_993469.2",
+          "name": "mediastinal apex"
+        },
+        {
+          "value_code": "OIFMA_MGB_993469.3",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_993469.4",
+          "name": "unspecified"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_958317",
+      "name": "configuration",
+      "description": "Morphologic appearance of the fissure.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_958317.0",
+          "name": "arch-like with azygos vein at apex"
+        },
+        {
+          "value_code": "OIFMA_MGB_958317.1",
+          "name": "linear band"
+        },
+        {
+          "value_code": "OIFMA_MGB_958317.2",
+          "name": "partial/incomplete"
+        },
+        {
+          "value_code": "OIFMA_MGB_958317.3",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_958317.4",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_143720",
+      "name": "parenchymal appearance",
+      "description": "Appearance of the lung adjacent to the fissure.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_143720.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.1",
+          "name": "consolidation"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.2",
+          "name": "scarring/fibrosis"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.3",
+          "name": "atelectasis"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.4",
+          "name": "ground glass opacity"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.5",
+          "name": "nodule/mass"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.6",
+          "name": "other"
+        },
+        {
+          "value_code": "OIFMA_MGB_143720.7",
+          "name": "unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_877248",
+      "name": "lung nodules presence",
+      "description": "Presence of pulmonary nodules elsewhere in the lungs.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_877248.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_877248.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_877248.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_726921",
+      "name": "nodule count",
+      "description": "Number of discrete nodules if present.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 100,
+      "unit": "count",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_198607",
+      "name": "pulmonary masses presence",
+      "description": "Presence of larger pulmonary masses.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_198607.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_198607.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_198607.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_246855",
+      "name": "mass size",
+      "description": "Maximum measured dimension of a detected pulmonary mass.",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 30,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_781993",
+      "name": "airway abnormalities presence",
+      "description": "Presence of airway abnormalities such as bronchiectasis or stenosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_781993.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_781993.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_781993.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_202513",
+      "name": "vascular abnormalities presence",
+      "description": "Presence of vascular abnormalities relevant to the azygos vein or nearby vasculature.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_202513.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_202513.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_202513.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

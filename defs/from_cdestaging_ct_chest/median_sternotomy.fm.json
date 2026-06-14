@@ -1,0 +1,437 @@
+{
+  "oifm_id": "OIFM_MGB_173052",
+  "name": "Median Sternotomy",
+  "description": "Surgical incision in the middle of the chest usually used for open-heart surgery.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_707927",
+      "name": "presence",
+      "description": "Presence of median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_707927.0",
+          "name": "Present",
+          "description": "Median sternotomy is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_707927.1",
+          "name": "Absent",
+          "description": "Median sternotomy is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_623671",
+      "name": "status",
+      "description": "Status of the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_623671.0",
+          "name": "Post-operative changes observed",
+          "description": "Changes in the median sternotomy related to the post-operative period"
+        },
+        {
+          "value_code": "OIFMA_MGB_623671.1",
+          "name": "No post-operative changes",
+          "description": "No changes in the median sternotomy related to the post-operative period"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_215420",
+      "name": "healing_status",
+      "description": "Healing status of the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_215420.0",
+          "name": "Well-healed",
+          "description": "Median sternotomy is well-healed"
+        },
+        {
+          "value_code": "OIFMA_MGB_215420.1",
+          "name": "Evidence of dehiscence",
+          "description": "Evidence of dehiscence in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_215420.2",
+          "name": "Signs of infection",
+          "description": "Signs of infection in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_215420.3",
+          "name": "Non-union",
+          "description": "Non-union of the median sternotomy"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_999133",
+      "name": "associated_hardware",
+      "description": "Presence of associated hardware in the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_999133.0",
+          "name": "Present",
+          "description": "Associated hardware is present in the median sternotomy",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_999133.1",
+          "name": "Absent",
+          "description": "No associated hardware in the median sternotomy",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_924065",
+      "name": "hardware_type",
+      "description": "Type of associated hardware in the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_924065.0",
+          "name": "Wires",
+          "description": "Wire fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_924065.1",
+          "name": "Plates",
+          "description": "Plate fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_924065.2",
+          "name": "Screws",
+          "description": "Screw fixation devices in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_924065.3",
+          "name": "Other fixation devices",
+          "description": "Other types of fixation devices in the median sternotomy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_109519",
+      "name": "complications",
+      "description": "Complications associated with the median sternotomy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_109519.0",
+          "name": "None",
+          "description": "No complications associated with the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_109519.1",
+          "name": "Mediastinal widening",
+          "description": "Mediastinal widening related to the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_109519.2",
+          "name": "Hematoma",
+          "description": "Hematoma in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_109519.3",
+          "name": "Abscess",
+          "description": "Abscess in the median sternotomy"
+        },
+        {
+          "value_code": "OIFMA_MGB_109519.4",
+          "name": "Seroma",
+          "description": "Seroma in the median sternotomy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_982447",
+      "name": "pulmonary_effusion",
+      "description": "Presence of pulmonary effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_982447.0",
+          "name": "Present",
+          "description": "Pulmonary effusion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_982447.1",
+          "name": "Absent",
+          "description": "Pulmonary effusion is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_019860",
+      "name": "pulmonary_edema",
+      "description": "Presence of pulmonary edema",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_019860.0",
+          "name": "Present",
+          "description": "Pulmonary edema is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_019860.1",
+          "name": "Absent",
+          "description": "Pulmonary edema is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_602958",
+      "name": "atelectasis",
+      "description": "Presence of atelectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_602958.0",
+          "name": "Present",
+          "description": "Atelectasis is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_602958.1",
+          "name": "Absent",
+          "description": "Atelectasis is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_093898",
+      "name": "pneumothorax",
+      "description": "Presence of pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_093898.0",
+          "name": "Present",
+          "description": "Pneumothorax is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_093898.1",
+          "name": "Absent",
+          "description": "Pneumothorax is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_053886",
+      "name": "lymphadenopathy",
+      "description": "Presence of lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_053886.0",
+          "name": "Present",
+          "description": "Lymphadenopathy is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_053886.1",
+          "name": "Absent",
+          "description": "Lymphadenopathy is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

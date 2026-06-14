@@ -1,0 +1,675 @@
+{
+  "oifm_id": "OIFM_MGB_129020",
+  "name": "Rib Fracture",
+  "description": "Fracture of one or more ribs",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_180172",
+      "name": "Presence",
+      "description": "Whether a rib fracture is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_180172.0",
+          "name": "Present",
+          "description": "A rib fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_180172.1",
+          "name": "Absent",
+          "description": "No rib fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_298508",
+      "name": "Number of ribs involved",
+      "description": "The number of ribs involved in the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_298508.0",
+          "name": "Single",
+          "description": "Only one rib is involved",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_298508.1",
+          "name": "Multiple",
+          "description": "Multiple ribs are involved",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5765",
+              "display": "multiple"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255204007",
+              "display": "Multiple (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_269221",
+      "name": "Location",
+      "description": "The location of the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_269221.0",
+          "name": "Right: Upper",
+          "description": "Fracture is in the upper right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.1",
+          "name": "Right: Middle",
+          "description": "Fracture is in the middle right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.2",
+          "name": "Right: Lower",
+          "description": "Fracture is in the lower right rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.3",
+          "name": "Left: Upper",
+          "description": "Fracture is in the upper left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.4",
+          "name": "Left: Middle",
+          "description": "Fracture is in the middle left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.5",
+          "name": "Left: Lower",
+          "description": "Fracture is in the lower left rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_269221.6",
+          "name": "Bilateral",
+          "description": "Fracture is present in both right and left ribs"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_784913",
+      "name": "Specific ribs affected",
+      "description": "The specific ribs affected by the fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_784913.0",
+          "name": "First",
+          "description": "Fracture involves the first rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.1",
+          "name": "Second",
+          "description": "Fracture involves the second rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.2",
+          "name": "Third",
+          "description": "Fracture involves the third rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.3",
+          "name": "Fourth",
+          "description": "Fracture involves the fourth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.4",
+          "name": "Fifth",
+          "description": "Fracture involves the fifth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.5",
+          "name": "Sixth",
+          "description": "Fracture involves the sixth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.6",
+          "name": "Seventh",
+          "description": "Fracture involves the seventh rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.7",
+          "name": "Eighth",
+          "description": "Fracture involves the eighth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.8",
+          "name": "Ninth",
+          "description": "Fracture involves the ninth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.9",
+          "name": "Tenth",
+          "description": "Fracture involves the tenth rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.10",
+          "name": "Eleventh",
+          "description": "Fracture involves the eleventh rib"
+        },
+        {
+          "value_code": "OIFMA_MGB_784913.11",
+          "name": "Twelfth",
+          "description": "Fracture involves the twelfth rib"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_993805",
+      "name": "Fracture type",
+      "description": "The type of rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_993805.0",
+          "name": "Displaced",
+          "description": "The fragments of the rib are separated from each other"
+        },
+        {
+          "value_code": "OIFMA_MGB_993805.1",
+          "name": "Non-displaced",
+          "description": "The fragments of the rib are still aligned"
+        },
+        {
+          "value_code": "OIFMA_MGB_993805.2",
+          "name": "Comminuted",
+          "description": "The rib is fractured into multiple pieces"
+        },
+        {
+          "value_code": "OIFMA_MGB_993805.3",
+          "name": "Buckle",
+          "description": "The rib is partially fractured and has a visible bend"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_568835",
+      "name": "Pneumothorax",
+      "description": "Presence or absence of pneumothorax associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_568835.0",
+          "name": "Present",
+          "description": "Pneumothorax is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_568835.1",
+          "name": "Absent",
+          "description": "No pneumothorax is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_605659",
+      "name": "Hemothorax",
+      "description": "Presence or absence of hemothorax associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_605659.0",
+          "name": "Present",
+          "description": "Hemothorax is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_605659.1",
+          "name": "Absent",
+          "description": "No hemothorax is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_443187",
+      "name": "Pulmonary contusion",
+      "description": "Presence or absence of pulmonary contusion associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_443187.0",
+          "name": "Present",
+          "description": "Pulmonary contusion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_443187.1",
+          "name": "Absent",
+          "description": "No pulmonary contusion is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_005205",
+      "name": "Subcutaneous emphysema",
+      "description": "Presence or absence of subcutaneous emphysema associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_005205.0",
+          "name": "Present",
+          "description": "Subcutaneous emphysema is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_005205.1",
+          "name": "Absent",
+          "description": "No subcutaneous emphysema is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_519263",
+      "name": "Flail chest",
+      "description": "Presence or absence of flail chest associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_519263.0",
+          "name": "Present",
+          "description": "Flail chest is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_519263.1",
+          "name": "Absent",
+          "description": "No flail chest is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_678163",
+      "name": "Vertebral fracture",
+      "description": "Presence or absence of vertebral fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_678163.0",
+          "name": "Present",
+          "description": "Vertebral fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_678163.1",
+          "name": "Absent",
+          "description": "No vertebral fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_696527",
+      "name": "Sternal fracture",
+      "description": "Presence or absence of sternal fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_696527.0",
+          "name": "Present",
+          "description": "Sternal fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_696527.1",
+          "name": "Absent",
+          "description": "No sternal fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_895171",
+      "name": "Clavicular fracture",
+      "description": "Presence or absence of clavicular fracture associated with the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_895171.0",
+          "name": "Present",
+          "description": "Clavicular fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_895171.1",
+          "name": "Absent",
+          "description": "No clavicular fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_405272",
+      "name": "Evidence of healing",
+      "description": "Presence or absence of evidence of healing in the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_405272.0",
+          "name": "Present",
+          "description": "Evidence of healing is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_405272.1",
+          "name": "Absent",
+          "description": "No evidence of healing is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_368334",
+      "name": "Mechanism of Injury",
+      "description": "The mechanism of injury causing the rib fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_368334.0",
+          "name": "Blunt trauma",
+          "description": "Rib fracture caused by blunt trauma"
+        },
+        {
+          "value_code": "OIFMA_MGB_368334.1",
+          "name": "Penetrating trauma",
+          "description": "Rib fracture caused by penetrating trauma"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

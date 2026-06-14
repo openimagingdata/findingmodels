@@ -1,0 +1,296 @@
+{
+  "oifm_id": "OIFM_MGB_282026",
+  "name": "Airway Mucus Plugging",
+  "description": "Mucus plugging in the airways.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_566010",
+      "name": "Presence",
+      "description": "Presence of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_566010.0",
+          "name": "Present",
+          "description": "Mucus plugging is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_566010.1",
+          "name": "Absent",
+          "description": "Mucus plugging is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_311965",
+      "name": "Location",
+      "description": "Location of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_311965.0",
+          "name": "Central airways",
+          "description": "Mucus plugging in the central airways"
+        },
+        {
+          "value_code": "OIFMA_MGB_311965.1",
+          "name": "Segmental bronchi",
+          "description": "Mucus plugging in the segmental bronchi"
+        },
+        {
+          "value_code": "OIFMA_MGB_311965.2",
+          "name": "Subsegmental bronchi",
+          "description": "Mucus plugging in the subsegmental bronchi"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_128386",
+      "name": "Extent",
+      "description": "Extent of mucus plugging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_128386.0",
+          "name": "Focal",
+          "description": "Mucus plugging is focal"
+        },
+        {
+          "value_code": "OIFMA_MGB_128386.1",
+          "name": "Multifocal",
+          "description": "Mucus plugging is multifocal"
+        },
+        {
+          "value_code": "OIFMA_MGB_128386.2",
+          "name": "Diffuse",
+          "description": "Mucus plugging is diffuse"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_939774",
+      "name": "Airway Wall Thickening",
+      "description": "Presence of airway wall thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_939774.0",
+          "name": "Present",
+          "description": "Airway wall thickening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_939774.1",
+          "name": "Absent",
+          "description": "Airway wall thickening is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_005277",
+      "name": "Bronchiectasis",
+      "description": "Presence of bronchiectasis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_005277.0",
+          "name": "Present",
+          "description": "Bronchiectasis is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_005277.1",
+          "name": "Absent",
+          "description": "Bronchiectasis is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_644879",
+      "name": "Consolidation",
+      "description": "Presence of consolidation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_644879.0",
+          "name": "Present",
+          "description": "Consolidation is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_644879.1",
+          "name": "Absent",
+          "description": "Consolidation is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_285608",
+      "name": "Ground Glass Opacities",
+      "description": "Presence of ground glass opacities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_285608.0",
+          "name": "Present",
+          "description": "Ground glass opacities are present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_285608.1",
+          "name": "Absent",
+          "description": "Ground glass opacities are absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

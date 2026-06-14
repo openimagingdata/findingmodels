@@ -1,0 +1,206 @@
+{
+  "oifm_id": "OIFM_MGB_626680",
+  "name": "Pericardial Effusion",
+  "description": "A collection of fluid in the pericardial space surrounding the heart",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_262282",
+      "name": "size Finding",
+      "description": "The size of the pericardial effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_262282.0",
+          "name": "trace",
+          "description": "≤ 5 mm"
+        },
+        {
+          "value_code": "OIFMA_MGB_262282.1",
+          "name": "small",
+          "description": "<10 mm"
+        },
+        {
+          "value_code": "OIFMA_MGB_262282.2",
+          "name": "moderate",
+          "description": "10-20 mm",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_262282.3",
+          "name": "large",
+          "description": ">20 mm"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_193675",
+      "name": "density",
+      "description": "The density of the pericardial effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_193675.0",
+          "name": "fluid",
+          "description": "Fluid density"
+        },
+        {
+          "value_code": "OIFMA_MGB_193675.1",
+          "name": "intermediate",
+          "description": "> 30 HU"
+        },
+        {
+          "value_code": "OIFMA_MGB_193675.2",
+          "name": "hemopericardium",
+          "description": "Presence of blood in the pericardial effusion"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_501720",
+      "name": "pericardial enhancement",
+      "description": "Presence or absence of pericardial enhancement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_501720.0",
+          "name": "present",
+          "description": "Pericardial enhancement is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_501720.1",
+          "name": "absent",
+          "description": "Pericardial enhancement is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_727199",
+      "name": "pericardial thickening",
+      "description": "Presence or absence of pericardial thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_727199.0",
+          "name": "present",
+          "description": "Pericardial thickening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_727199.1",
+          "name": "absent",
+          "description": "Pericardial thickening is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_162259",
+      "name": "pericardial calcification",
+      "description": "Presence or absence of pericardial calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_162259.0",
+          "name": "present",
+          "description": "Pericardial calcification is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_162259.1",
+          "name": "absent",
+          "description": "Pericardial calcification is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

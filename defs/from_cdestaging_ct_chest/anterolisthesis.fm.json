@@ -1,0 +1,542 @@
+{
+  "oifm_id": "OIFM_MGB_918775",
+  "name": "anterolisthesis",
+  "description": "Anterior displacement of one vertebral body relative to the subjacent vertebra, described by presence, location, severity (grade or percent/mm), affected level(s), and associated degenerative or foraminal changes.",
+  "synonyms": [
+    "anterior spondylolisthesis",
+    "anterior vertebral displacement"
+  ],
+  "tags": [
+    "spine",
+    "spondylolisthesis",
+    "vertebral alignment"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_854101",
+      "name": "presence",
+      "description": "Whether anterolisthesis is present at the imaged levels",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_854101.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_854101.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_034272",
+      "name": "status",
+      "description": "Temporal comparison of the finding when prior studies are available",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_034272.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_034272.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_034272.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_313270",
+      "name": "location",
+      "description": "Spinal region of the anterolisthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_313270.0",
+          "name": "cervical"
+        },
+        {
+          "value_code": "OIFMA_MGB_313270.1",
+          "name": "thoracic"
+        },
+        {
+          "value_code": "OIFMA_MGB_313270.2",
+          "name": "lumbar"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_651382",
+      "name": "grade",
+      "description": "Meyerding grade based on percent anterior displacement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_651382.0",
+          "name": "grade i (1-25%)",
+          "description": "minimal displacement"
+        },
+        {
+          "value_code": "OIFMA_MGB_651382.1",
+          "name": "grade ii (26-50%)",
+          "description": "mild-moderate displacement"
+        },
+        {
+          "value_code": "OIFMA_MGB_651382.2",
+          "name": "grade iii (51-75%)",
+          "description": "moderate-severe displacement"
+        },
+        {
+          "value_code": "OIFMA_MGB_651382.3",
+          "name": "grade iv (76-100%)",
+          "description": "severe displacement"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_258378",
+      "name": "anterior displacement percent",
+      "description": "Anterior translation as a percentage of the inferior vertebral body width",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_201894",
+      "name": "anterior displacement mm",
+      "description": "Anterior translation measured in millimeters",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 50,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_896842",
+      "name": "affected vertebrae",
+      "description": "Specify the vertebral level(s) involved",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_896842.0",
+          "name": "c1"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.1",
+          "name": "c2"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.2",
+          "name": "c3"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.3",
+          "name": "c4"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.4",
+          "name": "c5"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.5",
+          "name": "c6"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.6",
+          "name": "c7"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.7",
+          "name": "t1"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.8",
+          "name": "t2"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.9",
+          "name": "t3"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.10",
+          "name": "t4"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.11",
+          "name": "t5"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.12",
+          "name": "t6"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.13",
+          "name": "t7"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.14",
+          "name": "t8"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.15",
+          "name": "t9"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.16",
+          "name": "t10"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.17",
+          "name": "t11"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.18",
+          "name": "t12"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.19",
+          "name": "l1"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.20",
+          "name": "l2"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.21",
+          "name": "l3"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.22",
+          "name": "l4"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.23",
+          "name": "l5"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.24",
+          "name": "s1"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.25",
+          "name": "multiple levels"
+        },
+        {
+          "value_code": "OIFMA_MGB_896842.26",
+          "name": "unspecified"
+        }
+      ],
+      "required": true,
+      "max_selected": 6
+    },
+    {
+      "oifma_id": "OIFMA_MGB_956728",
+      "name": "neural foraminal narrowing",
+      "description": "Presence of foraminal narrowing at the affected level(s)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_956728.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_956728.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_993065",
+      "name": "neural foraminal narrowing severity",
+      "description": "Severity of foraminal narrowing when present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_993065.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_993065.1",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_993065.2",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_993065.3",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_908423",
+      "name": "disc degeneration",
+      "description": "Presence of disc degenerative change at the affected level(s)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_908423.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_908423.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_249856",
+      "name": "disc degeneration severity",
+      "description": "Degree of disc degeneration when present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_249856.0",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_249856.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_249856.2",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

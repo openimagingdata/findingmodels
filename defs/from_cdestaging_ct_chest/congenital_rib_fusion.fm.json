@@ -1,0 +1,265 @@
+{
+  "oifm_id": "OIFM_MGB_420901",
+  "name": "congenital rib fusion",
+  "description": "Congenital fusion of ribs (rib synostosis) where two or more adjacent or non-adjacent ribs are abnormally joined; characterized by presence, location, extent, and fusion type.",
+  "synonyms": [
+    "rib synostosis",
+    "congenital rib synostosis",
+    "fused ribs"
+  ],
+  "tags": [
+    "chest",
+    "skeletal",
+    "congenital",
+    "ribs"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_596635",
+      "name": "presence",
+      "description": "whether congenital fusion of ribs is present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_596635.0",
+          "name": "present",
+          "description": "fusion is identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_596635.1",
+          "name": "absent",
+          "description": "no fusion identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_474931",
+      "name": "ribs affected",
+      "description": "specific ribs involved (select one or more)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_474931.0",
+          "name": "right rib 1"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.1",
+          "name": "right rib 2"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.2",
+          "name": "right rib 3"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.3",
+          "name": "right rib 4"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.4",
+          "name": "right rib 5"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.5",
+          "name": "right rib 6"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.6",
+          "name": "right rib 7"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.7",
+          "name": "right rib 8"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.8",
+          "name": "right rib 9"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.9",
+          "name": "right rib 10"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.10",
+          "name": "right rib 11"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.11",
+          "name": "right rib 12"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.12",
+          "name": "left rib 1"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.13",
+          "name": "left rib 2"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.14",
+          "name": "left rib 3"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.15",
+          "name": "left rib 4"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.16",
+          "name": "left rib 5"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.17",
+          "name": "left rib 6"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.18",
+          "name": "left rib 7"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.19",
+          "name": "left rib 8"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.20",
+          "name": "left rib 9"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.21",
+          "name": "left rib 10"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.22",
+          "name": "left rib 11"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.23",
+          "name": "left rib 12"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.24",
+          "name": "single rib pair",
+          "description": "fusion confined to one rib pair"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.25",
+          "name": "multiple adjacent pairs",
+          "description": "more than one adjacent rib pair fused"
+        },
+        {
+          "value_code": "OIFMA_MGB_474931.26",
+          "name": "non-adjacent pairs",
+          "description": "fused ribs not contiguous"
+        }
+      ],
+      "required": false,
+      "max_selected": 24
+    },
+    {
+      "oifma_id": "OIFMA_MGB_819787",
+      "name": "number of fused segments",
+      "description": "count of rib segments involved in fusion",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 12,
+      "unit": "count",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_890357",
+      "name": "laterality",
+      "description": "side of involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_890357.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_890357.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_890357.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_708305",
+      "name": "fusion type",
+      "description": "morphologic character of the fusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_708305.0",
+          "name": "bony fusion",
+          "description": "osseous continuity between ribs"
+        },
+        {
+          "value_code": "OIFMA_MGB_708305.1",
+          "name": "cartilaginous fusion",
+          "description": "fusion through cartilage"
+        },
+        {
+          "value_code": "OIFMA_MGB_708305.2",
+          "name": "partial fusion",
+          "description": "incomplete/partial osseous/cartilaginous bridging"
+        },
+        {
+          "value_code": "OIFMA_MGB_708305.3",
+          "name": "complete fusion",
+          "description": "complete osseous/cartilaginous bridging"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

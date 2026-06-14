@@ -1,0 +1,436 @@
+{
+  "oifm_id": "OIFM_MGB_859082",
+  "name": "internal mammary lymph node",
+  "description": "Enlarged or otherwise abnormal internal mammary (parasternal) lymph node(s) identified on imaging, described by presence, size, location, morphology, and associated features.",
+  "synonyms": [
+    "internal mammary node",
+    "internal mammary chain node",
+    "imln",
+    "parasternal lymph node",
+    "internal mammary lymphadenopathy"
+  ],
+  "tags": [
+    "lymph node",
+    "breast",
+    "thorax",
+    "oncology",
+    "mammography",
+    "chest ct",
+    "ultrasound"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_613962",
+      "name": "enlargement",
+      "description": "whether internal mammary lymph node enlargement is present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_613962.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_613962.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_326790",
+      "name": "status",
+      "description": "temporal change compared with prior exam when available",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_326790.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_326790.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_326790.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_326790.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_326790.4",
+          "name": "resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_064568",
+      "name": "location",
+      "description": "laterality of the internal mammary node(s)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_064568.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_064568.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_064568.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_107502",
+      "name": "size cm",
+      "description": "maximum short-axis diameter of the largest node",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 10,
+      "unit": "cm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_323233",
+      "name": "number of nodes",
+      "description": "count of internal mammary nodes that are enlarged or suspicious",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 100,
+      "unit": "count",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_734293",
+      "name": "morphology",
+      "description": "shape and contour of the node",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_734293.0",
+          "name": "round"
+        },
+        {
+          "value_code": "OIFMA_MGB_734293.1",
+          "name": "oval"
+        },
+        {
+          "value_code": "OIFMA_MGB_734293.2",
+          "name": "irregular"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_146887",
+      "name": "associated lesions",
+      "description": "presence of adjacent or regional masses or lesions",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_146887.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_146887.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_146887.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_337824",
+      "name": "local invasion",
+      "description": "imaging evidence of invasion into adjacent structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_337824.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_337824.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_337824.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_704471",
+      "name": "calcification",
+      "description": "presence of calcification within the node",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_704471.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_704471.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_800293",
+      "name": "infection inflammation",
+      "description": "imaging signs suggestive of infection or inflammatory change",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_800293.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_800293.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_800293.2",
+          "name": "suspected"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

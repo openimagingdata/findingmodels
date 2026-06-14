@@ -1,0 +1,421 @@
+{
+  "oifm_id": "OIFM_MGB_152157",
+  "name": "pericardial cyst",
+  "description": "A benign, fluid-filled pericardial sac lesion typically located at the cardiophrenic angles; characterized by its location, size, shape, wall characteristics, and any effect on adjacent structures.",
+  "synonyms": [
+    "pericardial diverticulum",
+    "pericardial mesothelial cyst",
+    "mediastinal cyst"
+  ],
+  "tags": [
+    "chest",
+    "cardiac",
+    "mediastinum",
+    "cystic lesion"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_393115",
+      "name": "cyst presence",
+      "description": "Whether a pericardial cyst is identified on the exam.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_393115.0",
+          "name": "present",
+          "description": "Pericardial cyst is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_393115.1",
+          "name": "absent",
+          "description": "No pericardial cyst identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_891612",
+      "name": "cyst status",
+      "description": "Temporal change compared to prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_891612.0",
+          "name": "new",
+          "description": "Not present on prior study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_891612.1",
+          "name": "unchanged",
+          "description": "No appreciable change from prior study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_891612.2",
+          "name": "increased",
+          "description": "Size or extent has increased compared to prior study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_891612.3",
+          "name": "decreased",
+          "description": "Size or extent has decreased compared to prior study.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_832744",
+      "name": "cyst location",
+      "description": "Anatomic location of the cyst relative to the heart and diaphragm.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_832744.0",
+          "name": "right cardiophrenic angle",
+          "description": "Located at the right cardiophrenic angle."
+        },
+        {
+          "value_code": "OIFMA_MGB_832744.1",
+          "name": "left cardiophrenic angle",
+          "description": "Located at the left cardiophrenic angle."
+        },
+        {
+          "value_code": "OIFMA_MGB_832744.2",
+          "name": "other",
+          "description": "Other location (specify in free text in report)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_033093",
+      "name": "size",
+      "description": "Maximum diameter of the cyst measured on imaging.",
+      "type": "numeric",
+      "minimum": 0.2,
+      "maximum": 30,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246115007",
+          "display": "Size (attribute)"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5772",
+          "display": "size descriptor"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_172719",
+      "name": "shape",
+      "description": "General contour of the cyst.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_172719.0",
+          "name": "round",
+          "description": "Rounded contour."
+        },
+        {
+          "value_code": "OIFMA_MGB_172719.1",
+          "name": "oval",
+          "description": "Ellipsoid or oval contour."
+        },
+        {
+          "value_code": "OIFMA_MGB_172719.2",
+          "name": "lobulated",
+          "description": "Multilobulated or irregular lobular contour."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_723136",
+      "name": "wall thickness",
+      "description": "Relative thickness of the cyst wall.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_723136.0",
+          "name": "thin walled",
+          "description": "Thin, imperceptible wall typical of benign cysts."
+        },
+        {
+          "value_code": "OIFMA_MGB_723136.1",
+          "name": "thick walled",
+          "description": "Thickened wall which may suggest inflammation, hemorrhage, or complication."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_695844",
+      "name": "mass effect",
+      "description": "Evidence of compression, displacement, or mass effect on adjacent cardiac or mediastinal structures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_695844.0",
+          "name": "present",
+          "description": "Mass effect or compression of adjacent structures identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_695844.1",
+          "name": "absent",
+          "description": "No mass effect identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_195067",
+      "name": "calcification",
+      "description": "Presence of calcified components within the cyst wall or contents.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_195067.0",
+          "name": "present",
+          "description": "Calcification identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_195067.1",
+          "name": "absent",
+          "description": "No calcification identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_138554",
+      "name": "rupture",
+      "description": "Imaging signs suggesting cyst rupture or communication with adjacent spaces.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_138554.0",
+          "name": "present",
+          "description": "Findings suggestive of rupture (eg, free fluid, irregular discontinuity).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_138554.1",
+          "name": "absent",
+          "description": "No signs of rupture.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_435632",
+      "name": "associated cardiac anomalies",
+      "description": "Coexisting cardiac structural anomalies or relevant cardiac findings.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_435632.0",
+          "name": "present",
+          "description": "Associated cardiac anomaly or relevant cardiac finding present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_435632.1",
+          "name": "absent",
+          "description": "No associated cardiac anomalies identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

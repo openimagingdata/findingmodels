@@ -1,0 +1,261 @@
+{
+  "oifm_id": "OIFM_MGB_599155",
+  "name": "left atrial appendage closure device",
+  "description": "Representation of a left atrial appendage (LAA) closure/occlusion device as described on cardiac imaging, including presence, device characteristics, position, and associated findings.",
+  "synonyms": [
+    "laa occlusion device",
+    "laa closure device",
+    "left atrial appendage occlusion device"
+  ],
+  "tags": [
+    "cardiac device",
+    "left atrium",
+    "left atrial appendage"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_152717",
+      "name": "device presence",
+      "description": "Whether a left atrial appendage closure device is visualized on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_152717.0",
+          "name": "present",
+          "description": "Device is visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_152717.1",
+          "name": "absent",
+          "description": "No device is visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_015992",
+      "name": "device status",
+      "description": "Temporal or complication status of the device compared to prior studies when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_015992.0",
+          "name": "new",
+          "description": "Device newly placed since prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_015992.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_015992.2",
+          "name": "complication",
+          "description": "Device associated with a complication (for example malposition, thrombus, or embolization)."
+        },
+        {
+          "value_code": "OIFMA_MGB_015992.3",
+          "name": "removed",
+          "description": "Device no longer present (previously documented but removed)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_212231",
+      "name": "device type",
+      "description": "Manufacturer or specific device type if identifiable.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_212231.0",
+          "name": "watchman",
+          "description": "Watchman LAA closure device."
+        },
+        {
+          "value_code": "OIFMA_MGB_212231.1",
+          "name": "amplatzer cardiac plug",
+          "description": "Amplatzer cardiac plug or similar occlusion device."
+        },
+        {
+          "value_code": "OIFMA_MGB_212231.2",
+          "name": "other",
+          "description": "Any other or unspecified device type."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_651867",
+      "name": "device position",
+      "description": "Assessment of device position relative to expected anatomic location within the left atrial appendage.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_651867.0",
+          "name": "adequate",
+          "description": "Device is appropriately positioned within the LAA."
+        },
+        {
+          "value_code": "OIFMA_MGB_651867.1",
+          "name": "malpositioned",
+          "description": "Device is malpositioned or displaced from expected position."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_258025",
+      "name": "device thrombus",
+      "description": "Presence or absence of thrombus adherent to or immediately adjacent to the device.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_258025.0",
+          "name": "present",
+          "description": "Thrombus is identified on or near the device.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_258025.1",
+          "name": "absent",
+          "description": "No thrombus identified on or near the device.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_754872",
+      "name": "left atrial enlargement",
+      "description": "Presence or absence of left atrial enlargement on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_754872.0",
+          "name": "present",
+          "description": "Left atrial enlargement is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_754872.1",
+          "name": "absent",
+          "description": "No left atrial enlargement.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

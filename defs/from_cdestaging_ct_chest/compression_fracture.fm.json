@@ -1,0 +1,561 @@
+{
+  "oifm_id": "OIFM_MGB_022225",
+  "name": "Compression Fracture",
+  "description": "A fracture in one or more vertebrae resulting from compression forces",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_804676",
+      "name": "presence",
+      "description": "Indicates whether a compression fracture is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_804676.0",
+          "name": "present",
+          "description": "A compression fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_804676.1",
+          "name": "absent",
+          "description": "No compression fracture is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_178772",
+      "name": "acuity",
+      "description": "The acuity of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_178772.0",
+          "name": "acute",
+          "description": "Recently occurred compression fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_178772.1",
+          "name": "chronic",
+          "description": "Long-standing compression fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_178772.2",
+          "name": "subacute",
+          "description": "Compression fracture in the healing phase"
+        },
+        {
+          "value_code": "OIFMA_MGB_178772.3",
+          "name": "healing",
+          "description": "Compression fracture in the process of healing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_352928",
+      "name": "location",
+      "description": "The location of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_352928.0",
+          "name": "thoracic",
+          "description": "Compression fracture in the thoracic region"
+        },
+        {
+          "value_code": "OIFMA_MGB_352928.1",
+          "name": "lumbar",
+          "description": "Compression fracture in the lumbar region"
+        },
+        {
+          "value_code": "OIFMA_MGB_352928.2",
+          "name": "cervical",
+          "description": "Compression fracture in the cervical region"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_609488",
+      "name": "number_of_vertebrae_affected",
+      "description": "The number of vertebrae affected by the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_609488.0",
+          "name": "single",
+          "description": "Compression fracture only affecting a single vertebra",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_609488.1",
+          "name": "multiple",
+          "description": "Compression fracture affecting multiple vertebrae",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5765",
+              "display": "multiple"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255204007",
+              "display": "Multiple (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_609488.2",
+          "name": "diffuse_involvement",
+          "description": "Compression fracture with diffuse involvement of vertebrae"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_149249",
+      "name": "severity",
+      "description": "The severity of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_149249.0",
+          "name": "mild",
+          "description": "Mild compression fracture",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_149249.1",
+          "name": "moderate",
+          "description": "Moderate compression fracture",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_149249.2",
+          "name": "severe",
+          "description": "Severe compression fracture",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_149249.3",
+          "name": "collapse",
+          "description": "Compression fracture with collapse of the affected vertebra"
+        },
+        {
+          "value_code": "OIFMA_MGB_149249.4",
+          "name": "complete_destruction",
+          "description": "Compression fracture with complete destruction of the affected vertebra"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_709955",
+      "name": "morphology",
+      "description": "The morphology of the compression fracture",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_709955.0",
+          "name": "wedge-shaped",
+          "description": "Compression fracture with a wedge-shaped appearance"
+        },
+        {
+          "value_code": "OIFMA_MGB_709955.1",
+          "name": "biconcave",
+          "description": "Compression fracture with a biconcave appearance"
+        },
+        {
+          "value_code": "OIFMA_MGB_709955.2",
+          "name": "crush",
+          "description": "Compression fracture with a crush appearance"
+        },
+        {
+          "value_code": "OIFMA_MGB_709955.3",
+          "name": "endplate_involvement",
+          "description": "Compression fracture with endplate involvement"
+        },
+        {
+          "value_code": "OIFMA_MGB_709955.4",
+          "name": "cortical_disruption",
+          "description": "Compression fracture with cortical disruption"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_469040",
+      "name": "bone_marrow_edema",
+      "description": "Indicates whether bone marrow edema is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_469040.0",
+          "name": "present",
+          "description": "Bone marrow edema is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_469040.1",
+          "name": "absent",
+          "description": "No bone marrow edema is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_756974",
+      "name": "adjacent_disc_involvement",
+      "description": "Indicates whether adjacent disc involvement is present, absent, or shows degenerative changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_756974.0",
+          "name": "present",
+          "description": "Adjacent disc involvement is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_756974.1",
+          "name": "absent",
+          "description": "No adjacent disc involvement is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_756974.2",
+          "name": "degenerative_changes",
+          "description": "Adjacent disc involvement shows degenerative changes"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_049466",
+      "name": "soft_tissue_swelling",
+      "description": "Indicates whether soft tissue swelling is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_049466.0",
+          "name": "present",
+          "description": "Soft tissue swelling is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_049466.1",
+          "name": "absent",
+          "description": "No soft tissue swelling is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_940219",
+      "name": "canal_compromise",
+      "description": "Indicates whether canal compromise is present, absent, or shows stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_940219.0",
+          "name": "present",
+          "description": "Canal compromise is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_940219.1",
+          "name": "absent",
+          "description": "No canal compromise is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_940219.2",
+          "name": "stenosis",
+          "description": "Canal compromise shows stenosis"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_948836",
+      "name": "paravertebral_hematoma",
+      "description": "Indicates whether paravertebral hematoma is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_948836.0",
+          "name": "present",
+          "description": "Paravertebral hematoma is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948836.1",
+          "name": "absent",
+          "description": "No paravertebral hematoma is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_747526",
+      "name": "neurological_compromise",
+      "description": "Indicates whether neurological compromise is present or absent",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_747526.0",
+          "name": "present",
+          "description": "Neurological compromise is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_747526.1",
+          "name": "absent",
+          "description": "No neurological compromise is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

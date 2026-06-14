@@ -1,0 +1,345 @@
+{
+  "oifm_id": "OIFM_MGB_690052",
+  "name": "Thyroidectomy",
+  "description": "A surgical procedure to remove all or part of the thyroid gland.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_503744",
+      "name": "presence_of_surgical_changes",
+      "description": "Indicates whether surgical changes are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_503744.0",
+          "name": "present",
+          "description": "Surgical changes are present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_503744.1",
+          "name": "absent",
+          "description": "Surgical changes are absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_373531",
+      "name": "status",
+      "description": "Indicates the status of the finding.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_373531.0",
+          "name": "new",
+          "description": "The finding is new.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_373531.1",
+          "name": "unchanged",
+          "description": "The finding is unchanged.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_468704",
+      "name": "extent_of_surgery",
+      "description": "Indicates the extent of the thyroidectomy surgery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_468704.0",
+          "name": "total thyroidectomy",
+          "description": "The entire thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_468704.1",
+          "name": "partial thyroidectomy",
+          "description": "Only a part of the thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_468704.2",
+          "name": "right hemithyroidectomy",
+          "description": "The right half of the thyroid gland has been removed."
+        },
+        {
+          "value_code": "OIFMA_MGB_468704.3",
+          "name": "left hemithyroidectomy",
+          "description": "The left half of the thyroid gland has been removed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_736577",
+      "name": "postoperative_changes",
+      "description": "Indicates whether postoperative changes are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_736577.0",
+          "name": "present",
+          "description": "Postoperative changes are present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_736577.1",
+          "name": "absent",
+          "description": "Postoperative changes are absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_500927",
+      "name": "residual_soft_tissue",
+      "description": "Indicates whether there is residual soft tissue present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_500927.0",
+          "name": "present",
+          "description": "Residual soft tissue is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_500927.1",
+          "name": "absent",
+          "description": "Residual soft tissue is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_010854",
+      "name": "cervical_lymphadenopathy",
+      "description": "Indicates whether cervical lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_010854.0",
+          "name": "present",
+          "description": "Cervical lymphadenopathy is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_010854.1",
+          "name": "absent",
+          "description": "Cervical lymphadenopathy is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_322007",
+      "name": "supraclavicular_lymphadenopathy",
+      "description": "Indicates whether supraclavicular lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_322007.0",
+          "name": "present",
+          "description": "Supraclavicular lymphadenopathy is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_322007.1",
+          "name": "absent",
+          "description": "Supraclavicular lymphadenopathy is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_379027",
+      "name": "mediastinal_lymphadenopathy",
+      "description": "Indicates whether mediastinal lymphadenopathy is present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_379027.0",
+          "name": "present",
+          "description": "Mediastinal lymphadenopathy is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_379027.1",
+          "name": "absent",
+          "description": "Mediastinal lymphadenopathy is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

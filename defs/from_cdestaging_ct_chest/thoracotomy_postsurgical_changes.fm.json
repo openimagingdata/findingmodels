@@ -1,0 +1,489 @@
+{
+  "oifm_id": "OIFM_MGB_921699",
+  "name": "thoracotomy postsurgical changes",
+  "description": "Radiographic findings representing postsurgical changes following thoracotomy, including resected or widened ribs, surgical procedure type, surgical laterality, retained clips or staples, and associated pleural complications.",
+  "synonyms": [
+    "thoracotomy sequelae",
+    "post thoracotomy changes",
+    "postsurgical thoracotomy changes"
+  ],
+  "tags": [
+    "chest",
+    "thoracic surgery",
+    "postoperative",
+    "thoracotomy"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_168120",
+      "name": "presence",
+      "description": "Whether postsurgical thoracotomy changes are identified on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_168120.0",
+          "name": "present",
+          "description": "Findings consistent with prior thoracotomy are visible.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_168120.1",
+          "name": "absent",
+          "description": "No postsurgical thoracotomy changes identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_222481",
+      "name": "status",
+      "description": "Comparison status of the postsurgical changes relative to prior exams when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_222481.0",
+          "name": "new",
+          "description": "Findings are new compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_222481.1",
+          "name": "unchanged",
+          "description": "Findings are stable compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_222481.2",
+          "name": "interval improvement",
+          "description": "Findings show interval improvement compared with prior imaging."
+        },
+        {
+          "value_code": "OIFMA_MGB_222481.3",
+          "name": "interval worsening",
+          "description": "Findings show interval worsening compared with prior imaging."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_554549",
+      "name": "rib resection",
+      "description": "Resection of ribs related to the thoracotomy. If specific rib numbers are available, note them in the report text alongside this selection.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_554549.0",
+          "name": "none",
+          "description": "No rib resection identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_554549.1",
+          "name": "right (specify numbers)",
+          "description": "Resection involving right-sided ribs; specify rib numbers in report text."
+        },
+        {
+          "value_code": "OIFMA_MGB_554549.2",
+          "name": "left (specify numbers)",
+          "description": "Resection involving left-sided ribs; specify rib numbers in report text."
+        },
+        {
+          "value_code": "OIFMA_MGB_554549.3",
+          "name": "bilateral (specify numbers)",
+          "description": "Resection involving ribs on both sides; specify rib numbers in report text."
+        },
+        {
+          "value_code": "OIFMA_MGB_554549.4",
+          "name": "unspecified",
+          "description": "Resection suggested but laterality or extent not specified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_266822",
+      "name": "ribs resected count",
+      "description": "Number of ribs resected during the thoracotomy.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 12,
+      "unit": "count",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_107675",
+      "name": "rib widening",
+      "description": "Widening or separation of ribs at the thoracotomy site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_107675.0",
+          "name": "none",
+          "description": "No rib widening identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_107675.1",
+          "name": "right",
+          "description": "Rib widening on the right side."
+        },
+        {
+          "value_code": "OIFMA_MGB_107675.2",
+          "name": "left",
+          "description": "Rib widening on the left side."
+        },
+        {
+          "value_code": "OIFMA_MGB_107675.3",
+          "name": "bilateral",
+          "description": "Rib widening on both sides."
+        },
+        {
+          "value_code": "OIFMA_MGB_107675.4",
+          "name": "unspecified",
+          "description": "Widening suggested but laterality not specified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_034952",
+      "name": "type of surgery",
+      "description": "Primary surgical procedure performed via thoracotomy.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_034952.0",
+          "name": "lobectomy",
+          "description": "Lobectomy performed."
+        },
+        {
+          "value_code": "OIFMA_MGB_034952.1",
+          "name": "wedge resection",
+          "description": "Wedge resection performed."
+        },
+        {
+          "value_code": "OIFMA_MGB_034952.2",
+          "name": "pleurodesis",
+          "description": "Pleurodesis performed."
+        },
+        {
+          "value_code": "OIFMA_MGB_034952.3",
+          "name": "decortication",
+          "description": "Decortication performed."
+        },
+        {
+          "value_code": "OIFMA_MGB_034952.4",
+          "name": "other (specify)",
+          "description": "Other thoracic procedure; specify in report text."
+        },
+        {
+          "value_code": "OIFMA_MGB_034952.5",
+          "name": "unspecified",
+          "description": "Procedure type not specified on imaging."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_280887",
+      "name": "surgical site",
+      "description": "Laterality of the thoracotomy/surgical site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_280887.0",
+          "name": "right lung",
+          "description": "Surgical site in the right hemithorax."
+        },
+        {
+          "value_code": "OIFMA_MGB_280887.1",
+          "name": "left lung",
+          "description": "Surgical site in the left hemithorax."
+        },
+        {
+          "value_code": "OIFMA_MGB_280887.2",
+          "name": "bilateral",
+          "description": "Surgical changes present on both sides."
+        },
+        {
+          "value_code": "OIFMA_MGB_280887.3",
+          "name": "unspecified",
+          "description": "Laterality not specified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_414981",
+      "name": "clips staples",
+      "description": "Retained surgical clips or staples at the thoracotomy site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_414981.0",
+          "name": "present",
+          "description": "Surgical clips or staples identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414981.1",
+          "name": "absent",
+          "description": "No clips or staples identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414981.2",
+          "name": "indeterminate",
+          "description": "Metallic densities present but not clearly clips/staples.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_948123",
+      "name": "pleural effusion",
+      "description": "Pleural fluid adjacent to the surgical site.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_948123.0",
+          "name": "present",
+          "description": "Pleural effusion identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948123.1",
+          "name": "absent",
+          "description": "No pleural effusion identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948123.2",
+          "name": "small",
+          "description": "Small volume pleural effusion."
+        },
+        {
+          "value_code": "OIFMA_MGB_948123.3",
+          "name": "moderate",
+          "description": "Moderate volume pleural effusion.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948123.4",
+          "name": "large",
+          "description": "Large volume pleural effusion."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_553330",
+      "name": "pneumothorax",
+      "description": "Air within the pleural space related to the surgical intervention.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_553330.0",
+          "name": "present",
+          "description": "Pneumothorax identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_553330.1",
+          "name": "absent",
+          "description": "No pneumothorax identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_553330.2",
+          "name": "small",
+          "description": "Small pneumothorax."
+        },
+        {
+          "value_code": "OIFMA_MGB_553330.3",
+          "name": "moderate",
+          "description": "Moderate pneumothorax.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_553330.4",
+          "name": "tension",
+          "description": "Tension pneumothorax (mass effect/mediastinal shift)."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

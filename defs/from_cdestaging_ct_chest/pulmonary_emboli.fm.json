@@ -1,0 +1,338 @@
+{
+  "oifm_id": "OIFM_MGB_545960",
+  "name": "Pulmonary Emboli",
+  "description": "Pulmonary emboli refer to blood clots that block the pulmonary arteries, which carry blood from the heart to the lungs.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_242800",
+      "name": "Presence",
+      "description": "Indicates whether pulmonary emboli are present or absent.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_242800.0",
+          "name": "Present",
+          "description": "Pulmonary emboli are present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_242800.1",
+          "name": "Absent",
+          "description": "Pulmonary emboli are absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_643100",
+      "name": "Stage",
+      "description": "Indicates the stage of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_643100.0",
+          "name": "Acute",
+          "description": "Acute stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MGB_643100.1",
+          "name": "Chronic",
+          "description": "Chronic stage of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MGB_643100.2",
+          "name": "Subacute",
+          "description": "Subacute stage of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_270128",
+      "name": "Location",
+      "description": "Indicates the location of the pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_270128.0",
+          "name": "Central",
+          "description": "Main pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_270128.1",
+          "name": "Right pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_270128.2",
+          "name": "Left pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_270128.3",
+          "name": "Lobar",
+          "description": "Lobar branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_270128.4",
+          "name": "Segmental",
+          "description": "Segmental branch of the pulmonary artery"
+        },
+        {
+          "value_code": "OIFMA_MGB_270128.5",
+          "name": "Subsegmental",
+          "description": "Subsegmental branch of the pulmonary artery"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_525766",
+      "name": "Number",
+      "description": "Indicates the number of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_525766.0",
+          "name": "Single",
+          "description": "A single pulmonary embolus",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_525766.1",
+          "name": "Multiple",
+          "description": "Multiple pulmonary emboli",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5765",
+              "display": "multiple"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255204007",
+              "display": "Multiple (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_451160",
+      "name": "Burden",
+      "description": "Indicates the burden of pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_451160.0",
+          "name": "Low",
+          "description": "Low burden of pulmonary emboli"
+        },
+        {
+          "value_code": "OIFMA_MGB_451160.1",
+          "name": "Moderate",
+          "description": "Moderate burden of pulmonary emboli",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_451160.2",
+          "name": "High",
+          "description": "High burden of pulmonary emboli"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_494752",
+      "name": "Right heart strain",
+      "description": "Indicates the presence or absence of right heart strain associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_494752.0",
+          "name": "Yes",
+          "description": "Right heart strain is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_494752.1",
+          "name": "No",
+          "description": "Right heart strain is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_769007",
+      "name": "Pulmonary hypertension",
+      "description": "Indicates the presence or absence of pulmonary hypertension associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_769007.0",
+          "name": "Yes",
+          "description": "Pulmonary hypertension is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_769007.1",
+          "name": "No",
+          "description": "Pulmonary hypertension is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_025429",
+      "name": "Pulmonary infarction",
+      "description": "Indicates the presence or absence of pulmonary infarction associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_025429.0",
+          "name": "Present",
+          "description": "Pulmonary infarction is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_025429.1",
+          "name": "Absent",
+          "description": "Pulmonary infarction is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_457149",
+      "name": "Pulmonary artery aneurysm",
+      "description": "Indicates the presence or absence of pulmonary artery aneurysm associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_457149.0",
+          "name": "Yes",
+          "description": "Pulmonary artery aneurysm is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_457149.1",
+          "name": "No",
+          "description": "Pulmonary artery aneurysm is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_238302",
+      "name": "Pulmonary hemorrhage",
+      "description": "Indicates the presence or absence of pulmonary hemorrhage associated with pulmonary emboli.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_238302.0",
+          "name": "Yes",
+          "description": "Pulmonary hemorrhage is present"
+        },
+        {
+          "value_code": "OIFMA_MGB_238302.1",
+          "name": "No",
+          "description": "Pulmonary hemorrhage is absent"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

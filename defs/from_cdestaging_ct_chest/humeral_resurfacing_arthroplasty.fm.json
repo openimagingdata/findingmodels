@@ -1,0 +1,269 @@
+{
+  "oifm_id": "OIFM_MGB_983943",
+  "name": "humeral resurfacing arthroplasty",
+  "description": "Radiographic description of a humeral resurfacing arthroplasty, characterizing implant presence, status, position, coverage, periprosthetic lucency, and associated complications such as fracture or osteolysis.",
+  "synonyms": [
+    "humeral resurfacing",
+    "humeral cap prosthesis",
+    "hemicap",
+    "resurfacing arthroplasty"
+  ],
+  "tags": [
+    "orthopedic implant",
+    "shoulder",
+    "prosthesis",
+    "postoperative",
+    "arthroplasty"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_832346",
+      "name": "implant presence",
+      "description": "Whether a humeral resurfacing prosthesis is present on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_832346.0",
+          "name": "present",
+          "description": "Resurfacing implant is visualized.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_832346.1",
+          "name": "absent",
+          "description": "No resurfacing implant identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_880478",
+      "name": "status",
+      "description": "Temporal and complication status of the implant compared with prior imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_880478.0",
+          "name": "new",
+          "description": "Implant is newly placed since prior exam.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_880478.1",
+          "name": "unchanged",
+          "description": "No significant interval change.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_880478.2",
+          "name": "complication",
+          "description": "Findings suggesting complication (eg, loosening, fracture, infection)."
+        },
+        {
+          "value_code": "OIFMA_MGB_880478.3",
+          "name": "removed",
+          "description": "Implant has been surgically removed."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_882879",
+      "name": "coverage",
+      "description": "Degree of humeral head surface covered by the resurfacing component.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_882879.0",
+          "name": "complete",
+          "description": "Resurfacing component covers the intended humeral head surface fully."
+        },
+        {
+          "value_code": "OIFMA_MGB_882879.1",
+          "name": "partial",
+          "description": "Resurfacing component covers only part of the humeral head."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_691110",
+      "name": "position",
+      "description": "Placement of the resurfacing component relative to expected anatomic alignment.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_691110.0",
+          "name": "adequate",
+          "description": "Component is in expected anatomic position."
+        },
+        {
+          "value_code": "OIFMA_MGB_691110.1",
+          "name": "malpositioned",
+          "description": "Component is malaligned or malrotated relative to the humeral head."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_672013",
+      "name": "periprosthetic lucency",
+      "description": "Maximum width of any radiolucent line adjacent to the resurfacing component.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 50,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_688402",
+      "name": "periprosthetic fracture",
+      "description": "Presence of fracture adjacent to the implant.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_688402.0",
+          "name": "present",
+          "description": "Fracture involving bone adjacent to the implant.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_688402.1",
+          "name": "absent",
+          "description": "No adjacent fracture identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_343934",
+      "name": "osteolysis",
+      "description": "Focal bone loss around the implant consistent with osteolysis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_343934.0",
+          "name": "present",
+          "description": "Radiographic evidence of osteolysis adjacent to the implant.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_343934.1",
+          "name": "absent",
+          "description": "No osteolysis identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

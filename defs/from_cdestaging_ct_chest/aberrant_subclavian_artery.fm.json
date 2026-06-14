@@ -1,0 +1,344 @@
+{
+  "oifm_id": "OIFM_MGB_795899",
+  "name": "aberrant subclavian artery",
+  "description": "An anomalous origin and/or course of a subclavian artery (commonly arteria lusoria) that deviates from the expected branching of the aortic arch. Describes side, course, associated compression, atherosclerotic changes, and aneurysmal dilation.",
+  "synonyms": [
+    "arteria lusoria",
+    "lusorian artery",
+    "aberrant right subclavian artery",
+    "aberrant left subclavian artery"
+  ],
+  "tags": [
+    "vascular anomaly",
+    "congenital",
+    "thoracic aorta",
+    "branching anomaly"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_643767",
+      "name": "presence",
+      "description": "Whether an aberrant subclavian artery is identified.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_643767.0",
+          "name": "present",
+          "description": "Aberrant subclavian artery is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_643767.1",
+          "name": "absent",
+          "description": "No aberrant subclavian artery identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_221976",
+      "name": "side of origin",
+      "description": "Side from which the aberrant subclavian artery originates.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_221976.0",
+          "name": "right",
+          "description": "Arises from the right side (commonly aberrant right subclavian artery)."
+        },
+        {
+          "value_code": "OIFMA_MGB_221976.1",
+          "name": "left",
+          "description": "Arises from the left side (aberrant left subclavian artery)."
+        },
+        {
+          "value_code": "OIFMA_MGB_221976.2",
+          "name": "bilateral",
+          "description": "Aberrant anatomy involving subclavian arteries on both sides."
+        },
+        {
+          "value_code": "OIFMA_MGB_221976.3",
+          "name": "unspecified",
+          "description": "Side not clearly determined from available imaging."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_571687",
+      "name": "course",
+      "description": "Anatomic course of the aberrant subclavian artery relative to the trachea and esophagus.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_571687.0",
+          "name": "retroesophageal",
+          "description": "Passes posterior to the esophagus (most common)."
+        },
+        {
+          "value_code": "OIFMA_MGB_571687.1",
+          "name": "pretracheal",
+          "description": "Passes anterior to the trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_571687.2",
+          "name": "retrotracheal",
+          "description": "Courses posterior to the trachea (rare)."
+        },
+        {
+          "value_code": "OIFMA_MGB_571687.3",
+          "name": "other",
+          "description": "Unusual course not otherwise specified."
+        },
+        {
+          "value_code": "OIFMA_MGB_571687.4",
+          "name": "unspecified",
+          "description": "Course not clearly visualized."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_440482",
+      "name": "compression",
+      "description": "Compression of adjacent aerodigestive structures by the aberrant artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_440482.0",
+          "name": "none",
+          "description": "No compression of esophagus or trachea identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_440482.1",
+          "name": "esophagus",
+          "description": "Compression predominantly of the esophagus."
+        },
+        {
+          "value_code": "OIFMA_MGB_440482.2",
+          "name": "trachea",
+          "description": "Compression predominantly of the trachea/airway."
+        },
+        {
+          "value_code": "OIFMA_MGB_440482.3",
+          "name": "esophagus and trachea",
+          "description": "Compression affecting both esophagus and trachea."
+        },
+        {
+          "value_code": "OIFMA_MGB_440482.4",
+          "name": "unspecified",
+          "description": "Compression suspected but not clearly localized."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_293041",
+      "name": "atherosclerosis",
+      "description": "Degree of atherosclerotic disease involving the aberrant subclavian artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_293041.0",
+          "name": "none",
+          "description": "No atherosclerotic change identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_293041.1",
+          "name": "mild",
+          "description": "Mild atherosclerotic calcification or plaque.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_293041.2",
+          "name": "moderate",
+          "description": "Moderate atherosclerotic plaque or calcification.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_293041.3",
+          "name": "severe",
+          "description": "Severe atherosclerosis with extensive plaque/calcification.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_293041.4",
+          "name": "unspecified",
+          "description": "Atherosclerotic status mentioned but not graded."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_312925",
+      "name": "aneurysmal dilation",
+      "description": "Morphology of focal dilatation of the aberrant subclavian artery.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_312925.0",
+          "name": "none",
+          "description": "No aneurysmal dilation identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_312925.1",
+          "name": "fusiform",
+          "description": "Circumferential/longitudinal fusiform dilation."
+        },
+        {
+          "value_code": "OIFMA_MGB_312925.2",
+          "name": "saccular",
+          "description": "Focal saccular outpouching."
+        },
+        {
+          "value_code": "OIFMA_MGB_312925.3",
+          "name": "unspecified",
+          "description": "Aneurysmal dilation present but morphology not specified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_777529",
+      "name": "aneurysm size",
+      "description": "Maximum diameter of the aneurysmal dilation when present.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 200,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_925158",
+      "name": "other arterial anomalies",
+      "description": "Concurrent aortic arch or branch vessel anomalies.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_925158.0",
+          "name": "none",
+          "description": "No other arterial anomalies identified."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.1",
+          "name": "bovine arch",
+          "description": "Common origin of brachiocephalic and left common carotid (bovine arch)."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.2",
+          "name": "coarctation",
+          "description": "Aortic coarctation present."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.3",
+          "name": "double aortic arch",
+          "description": "Double aortic arch anatomy present."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.4",
+          "name": "right aortic arch",
+          "description": "Right-sided aortic arch."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.5",
+          "name": "abnormal vertebral artery origin",
+          "description": "Vertebral artery arises anomalously."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.6",
+          "name": "other",
+          "description": "Other arterial anomaly not listed."
+        },
+        {
+          "value_code": "OIFMA_MGB_925158.7",
+          "name": "unspecified",
+          "description": "Other arterial anomaly suspected or mentioned but not specified."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "oifm_id": "OIFM_MGB_212259",
+  "name": "latarjet procedure",
+  "description": "Surgical transfer of the coracoid process to the anteroinferior glenoid for shoulder stabilization. Describes presence and status of the procedure, graft and screw position, and associated findings such as glenoid bone loss and recurrent dislocation.",
+  "synonyms": [
+    "latarjet surgery",
+    "coracoid transfer",
+    "coracoid bone block procedure"
+  ],
+  "tags": [
+    "shoulder",
+    "postoperative",
+    "stabilization surgery",
+    "glenoid"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_690258",
+      "name": "procedure presence",
+      "description": "Whether a latarjet procedure is visualized on imaging.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_690258.0",
+          "name": "present",
+          "description": "Procedure/graft is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_690258.1",
+          "name": "absent",
+          "description": "No evidence of the procedure or graft.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_142330",
+      "name": "procedure status",
+      "description": "Temporal or complication status of the latarjet procedure.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_142330.0",
+          "name": "new",
+          "description": "New postoperative changes since prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_142330.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior imaging.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_142330.2",
+          "name": "complication",
+          "description": "Imaging evidence of a complication related to the procedure (eg, hardware failure, infection, nonunion)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_993161",
+      "name": "graft position",
+      "description": "Placement of the transferred coracoid graft relative to the glenoid rim.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_993161.0",
+          "name": "adequate",
+          "description": "Graft is well positioned at the anteroinferior glenoid as intended."
+        },
+        {
+          "value_code": "OIFMA_MGB_993161.1",
+          "name": "malpositioned",
+          "description": "Graft is malpositioned (eg, too medial, too lateral, too superior, or too inferior)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_420730",
+      "name": "screw position",
+      "description": "Position and fixation quality of screws securing the graft.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_420730.0",
+          "name": "proper",
+          "description": "Screws are appropriately positioned and appear to provide fixation."
+        },
+        {
+          "value_code": "OIFMA_MGB_420730.1",
+          "name": "improper",
+          "description": "Screws are malpositioned, protruding, broken, or otherwise improperly placed."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_323901",
+      "name": "glenoid bone loss",
+      "description": "Presence of glenoid bone loss associated with instability or prior injury.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_323901.0",
+          "name": "present",
+          "description": "Glenoid bone loss is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_323901.1",
+          "name": "absent",
+          "description": "No glenoid bone loss identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_277306",
+      "name": "recurrent dislocation",
+      "description": "Evidence of recurrent glenohumeral dislocation after the procedure.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_277306.0",
+          "name": "present",
+          "description": "Findings consistent with recurrent dislocation or subluxation.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_277306.1",
+          "name": "absent",
+          "description": "No imaging evidence of recurrent dislocation.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

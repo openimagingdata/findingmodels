@@ -1,0 +1,196 @@
+{
+  "oifm_id": "OIFM_MGB_122253",
+  "name": "Adrenal Thickening",
+  "description": "Thickening of the adrenal gland",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_485845",
+      "name": "presence",
+      "description": "Presence of adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_485845.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_485845.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_895206",
+      "name": "laterality",
+      "description": "Laterality of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_895206.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_895206.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_895206.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_832400",
+      "name": "thickness",
+      "description": "Severity of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_832400.0",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_832400.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_832400.2",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_454482",
+      "name": "homogeneity",
+      "description": "Homogeneity of the adrenal thickening",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_454482.0",
+          "name": "homogeneous"
+        },
+        {
+          "value_code": "OIFMA_MGB_454482.1",
+          "name": "heterogeneous"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_079235",
+      "name": "lymphadenopathy",
+      "description": "Presence of lymphadenopathy",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_079235.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_079235.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

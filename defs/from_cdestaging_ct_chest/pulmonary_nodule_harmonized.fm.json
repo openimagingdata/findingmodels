@@ -1,0 +1,819 @@
+{
+  "oifm_id": "OIFM_MGB_646184",
+  "name": "pulmonary nodule harmonized",
+  "description": "Structured representation for a single pulmonary nodule capturing location, morphology (solidness, margin, calcification, fatty, air density features), growth and suspiciousness, lung-rads category, and comprehensive measurements including component-specific metrics.",
+  "synonyms": [
+    "pulmonary nodule",
+    "lung nodule",
+    "solitary pulmonary nodule",
+    "spiculated nodule"
+  ],
+  "tags": [
+    "pulmonary",
+    "chest ct",
+    "nodule",
+    "thorax"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_179326",
+      "name": "nodule presence",
+      "description": "whether a pulmonary nodule is present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_179326.0",
+          "name": "present",
+          "description": "nodule identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_179326.1",
+          "name": "absent",
+          "description": "no nodule identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_179326.2",
+          "name": "indeterminate",
+          "description": "cannot determine presence",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_927614",
+      "name": "location",
+      "description": "anatomic location (lung, lobe or segment)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_927614.0",
+          "name": "right lung"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.1",
+          "name": "left lung"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.2",
+          "name": "right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.3",
+          "name": "right middle lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.4",
+          "name": "right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.5",
+          "name": "left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.6",
+          "name": "left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.7",
+          "name": "apical segment right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.8",
+          "name": "apicoposterior segment left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.9",
+          "name": "posterior segment right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.10",
+          "name": "anterior segment right upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.11",
+          "name": "anterior segment left upper lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.12",
+          "name": "lateral segment middle lobe right"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.13",
+          "name": "medial segment middle lobe right"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.14",
+          "name": "inferior segment lingula"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.15",
+          "name": "superior segment lingula"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.16",
+          "name": "superior segment right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.17",
+          "name": "superior segment left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.18",
+          "name": "medial basal segment right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.19",
+          "name": "anterior basal segment right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.20",
+          "name": "anteromedial basal segment left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.21",
+          "name": "lateral basal segment left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.22",
+          "name": "lateral basal segment right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.23",
+          "name": "posterior basal segment left lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.24",
+          "name": "posterior basal segment right lower lobe"
+        },
+        {
+          "value_code": "OIFMA_MGB_927614.25",
+          "name": "endobronchial"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_063743",
+      "name": "perifissural",
+      "description": "relationship to fissure",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_063743.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_063743.1",
+          "name": "horizontal interlobar fissure right"
+        },
+        {
+          "value_code": "OIFMA_MGB_063743.2",
+          "name": "oblique interlobar fissure right"
+        },
+        {
+          "value_code": "OIFMA_MGB_063743.3",
+          "name": "oblique interlobar fissure left"
+        },
+        {
+          "value_code": "OIFMA_MGB_063743.4",
+          "name": "along fissure"
+        },
+        {
+          "value_code": "OIFMA_MGB_063743.5",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_745289",
+      "name": "solidness",
+      "description": "degree of internal attenuation compared with lung parenchyma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_745289.0",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_745289.1",
+          "name": "partially solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_745289.2",
+          "name": "non-solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_745289.3",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_763229",
+      "name": "fatty",
+      "description": "presence of fat within the nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_763229.0",
+          "name": "fatty"
+        },
+        {
+          "value_code": "OIFMA_MGB_763229.1",
+          "name": "non-fatty"
+        },
+        {
+          "value_code": "OIFMA_MGB_763229.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_155520",
+      "name": "calcification",
+      "description": "calcification pattern if present",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_155520.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.1",
+          "name": "popcorn calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.2",
+          "name": "concentric ring calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.3",
+          "name": "coarse calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.4",
+          "name": "thick calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.5",
+          "name": "thin calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.6",
+          "name": "nodular calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.7",
+          "name": "diffuse calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.8",
+          "name": "laminated calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.9",
+          "name": "calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.10",
+          "name": "noncalcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_155520.11",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_546473",
+      "name": "margin",
+      "description": "margin appearance of the nodule",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_546473.0",
+          "name": "smooth"
+        },
+        {
+          "value_code": "OIFMA_MGB_546473.1",
+          "name": "lobular"
+        },
+        {
+          "value_code": "OIFMA_MGB_546473.2",
+          "name": "irregular"
+        },
+        {
+          "value_code": "OIFMA_MGB_546473.3",
+          "name": "spiculated"
+        },
+        {
+          "value_code": "OIFMA_MGB_546473.4",
+          "name": "ill-defined"
+        },
+        {
+          "value_code": "OIFMA_MGB_546473.5",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_778652",
+      "name": "air density feature",
+      "description": "internal air-containing features",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_778652.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_778652.1",
+          "name": "microcystic component"
+        },
+        {
+          "value_code": "OIFMA_MGB_778652.2",
+          "name": "cavitation"
+        },
+        {
+          "value_code": "OIFMA_MGB_778652.3",
+          "name": "cystic lucencies"
+        },
+        {
+          "value_code": "OIFMA_MGB_778652.4",
+          "name": "air bronchogram"
+        },
+        {
+          "value_code": "OIFMA_MGB_778652.5",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_523908",
+      "name": "growth",
+      "description": "temporal change or growth status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_523908.0",
+          "name": "baseline"
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.1",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.2",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.3",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.4",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.5",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.6",
+          "name": "unchanged less than 6 months"
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.7",
+          "name": "unchanged 6-12 months"
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.8",
+          "name": "unchanged 12-24 months"
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.9",
+          "name": "unchanged more than 24 months"
+        },
+        {
+          "value_code": "OIFMA_MGB_523908.10",
+          "name": "suspicious growth"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_656018",
+      "name": "suspicious appearance",
+      "description": "radiologist assessment of suspicious features",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_656018.0",
+          "name": "yes suspicious"
+        },
+        {
+          "value_code": "OIFMA_MGB_656018.1",
+          "name": "typically benign"
+        },
+        {
+          "value_code": "OIFMA_MGB_656018.2",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_933169",
+      "name": "lung-rads",
+      "description": "lung-rads assessment category",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_933169.0",
+          "name": "lung-rads 0"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.1",
+          "name": "lung-rads 1"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.2",
+          "name": "lung-rads 2"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.3",
+          "name": "lung-rads 3"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.4",
+          "name": "lung-rads 4a"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.5",
+          "name": "lung-rads 4b"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.6",
+          "name": "lung-rads 4x"
+        },
+        {
+          "value_code": "OIFMA_MGB_933169.7",
+          "name": "not applicable"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_264959",
+      "name": "long axis",
+      "description": "maximum long axis dimension of the nodule",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_093931",
+      "name": "short axis",
+      "description": "maximum short axis dimension perpendicular to long axis",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_639613",
+      "name": "vertical axis",
+      "description": "craniocaudad (vertical) dimension",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_762065",
+      "name": "average diameter",
+      "description": "average diameter (mean of orthogonal measures)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_113999",
+      "name": "mean density",
+      "description": "mean attenuation of the nodule",
+      "type": "numeric",
+      "minimum": -1000,
+      "maximum": 3000,
+      "unit": "hu",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_197240",
+      "name": "max density",
+      "description": "maximum attenuation within the nodule",
+      "type": "numeric",
+      "minimum": -1000,
+      "maximum": 3000,
+      "unit": "hu",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_206316",
+      "name": "min density",
+      "description": "minimum attenuation within the nodule",
+      "type": "numeric",
+      "minimum": -1000,
+      "maximum": 3000,
+      "unit": "hu",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_699506",
+      "name": "volume",
+      "description": "nodule volume",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 1000000000,
+      "unit": "mm3",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_118750",
+      "name": "solid component long axis",
+      "description": "long axis of the solid component (if part-solid)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_255088",
+      "name": "solid component short axis",
+      "description": "short axis of the solid component (if part-solid)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_397818",
+      "name": "solid component vertical axis",
+      "description": "vertical axis of the solid component (if part-solid)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_588952",
+      "name": "solid component average diameter",
+      "description": "average diameter of the solid component (if part-solid)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 200.0,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_943719",
+      "name": "solid component volume",
+      "description": "volume of the solid component (if part-solid)",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 1000000000,
+      "unit": "mm3",
+      "required": false
+    }
+  ]
+}

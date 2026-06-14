@@ -1,0 +1,408 @@
+{
+  "oifm_id": "OIFM_MGB_206046",
+  "name": "Nontunneled Cvc",
+  "description": "Non-tunneled Central Venous Catheter (CVC)",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_697645",
+      "name": "Presence of Non-tunneled Central Venous Catheter (CVC)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_697645.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_697645.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_504500",
+      "name": "Status",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_504500.0",
+          "name": "New placement"
+        },
+        {
+          "value_code": "OIFMA_MGB_504500.1",
+          "name": "Unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_504500.2",
+          "name": "Migrated"
+        },
+        {
+          "value_code": "OIFMA_MGB_504500.3",
+          "name": "Removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_221919",
+      "name": "Appropriate location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_221919.0",
+          "name": "Yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_221919.1",
+          "name": "No"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_554869",
+      "name": "Side Finding",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_554869.0",
+          "name": "Left"
+        },
+        {
+          "value_code": "OIFMA_MGB_554869.1",
+          "name": "Right"
+        },
+        {
+          "value_code": "OIFMA_MGB_554869.2",
+          "name": "Unknown",
+          "description": "inferior approach",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_656317",
+      "name": "Number of Lumens",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_656317.0",
+          "name": "Single",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_656317.1",
+          "name": "Double"
+        },
+        {
+          "value_code": "OIFMA_MGB_656317.2",
+          "name": "Triple"
+        },
+        {
+          "value_code": "OIFMA_MGB_656317.3",
+          "name": "Quad"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_166390",
+      "name": "Vein approach",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_166390.0",
+          "name": "Internal jugular"
+        },
+        {
+          "value_code": "OIFMA_MGB_166390.1",
+          "name": "Subclavian"
+        },
+        {
+          "value_code": "OIFMA_MGB_166390.2",
+          "name": "Femoral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_991534",
+      "name": "Course",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_991534.0",
+          "name": "Appropriate"
+        },
+        {
+          "value_code": "OIFMA_MGB_991534.1",
+          "name": "Kinking"
+        },
+        {
+          "value_code": "OIFMA_MGB_991534.2",
+          "name": "Coiling"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_777518",
+      "name": "Distal tip location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_777518.0",
+          "name": "Subclavian vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.1",
+          "name": "Brachiocephalic vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.2",
+          "name": "SVC"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.3",
+          "name": "Superior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.4",
+          "name": "Azygous vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.5",
+          "name": "Inferior cavoatrial junction"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.6",
+          "name": "Internal jugular vein"
+        },
+        {
+          "value_code": "OIFMA_MGB_777518.7",
+          "name": "IVC"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_957486",
+      "name": "Complications",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_957486.0",
+          "name": "None"
+        },
+        {
+          "value_code": "OIFMA_MGB_957486.1",
+          "name": "Occlusion"
+        },
+        {
+          "value_code": "OIFMA_MGB_957486.2",
+          "name": "Thrombosis (fibrin sheath)"
+        },
+        {
+          "value_code": "OIFMA_MGB_957486.3",
+          "name": "Catheter fracture"
+        },
+        {
+          "value_code": "OIFMA_MGB_957486.4",
+          "name": "Tip Migration"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_646439",
+      "name": "Hematoma",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_646439.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_646439.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_714058",
+      "name": "Pneumothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_714058.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_714058.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_649968",
+      "name": "Hemothorax",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_649968.0",
+          "name": "Present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_649968.1",
+          "name": "Absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "oifm_id": "OIFM_MGB_684642",
+  "name": "mitral valve replacement",
+  "description": "Prosthetic replacement of the native mitral valve, including type, positioning, and common complications such as perivalvular leak and thrombosis.",
+  "synonyms": [
+    "mitral valve prosthesis",
+    "prosthetic mitral valve",
+    "mitral valve replacement prosthesis",
+    "mvr"
+  ],
+  "tags": [
+    "cardiac",
+    "valve prosthesis",
+    "mitral"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_379580",
+      "name": "mitral valve replacement",
+      "description": "Presence of a mitral valve replacement prosthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_379580.0",
+          "name": "present",
+          "description": "Prosthetic mitral valve is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_379580.1",
+          "name": "absent",
+          "description": "No prosthetic mitral valve identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_974046",
+      "name": "replacement status",
+      "description": "Clinical or imaging status compared with prior exams",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_974046.0",
+          "name": "new",
+          "description": "Newly placed since prior imaging",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_974046.1",
+          "name": "unchanged",
+          "description": "No interval change compared with prior imaging",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_974046.2",
+          "name": "complication",
+          "description": "Associated complication(s) documented (e.g., leak, thrombosis)"
+        },
+        {
+          "value_code": "OIFMA_MGB_974046.3",
+          "name": "removed",
+          "description": "Previously present prosthesis has been removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_065927",
+      "name": "replacement type",
+      "description": "Type of prosthetic mitral valve",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_065927.0",
+          "name": "mechanical",
+          "description": "Mechanical (metal/pyrolytic) prosthesis"
+        },
+        {
+          "value_code": "OIFMA_MGB_065927.1",
+          "name": "biological",
+          "description": "Bioprosthetic (tissue) valve"
+        },
+        {
+          "value_code": "OIFMA_MGB_065927.2",
+          "name": "transcatheter",
+          "description": "Transcatheter mitral valve replacement (TMVR)"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_065303",
+      "name": "model",
+      "description": "Whether the specific prosthesis model is known. If 'specified', record the model name in free-text outside this structured schema.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_065303.0",
+          "name": "unknown",
+          "description": "Model not known or not recorded",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_065303.1",
+          "name": "specified",
+          "description": "Model known — document model name in the report narrative"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_300260",
+      "name": "position",
+      "description": "Positioning of the prosthesis relative to expected anatomic location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_300260.0",
+          "name": "proper",
+          "description": "Prosthesis appears properly positioned"
+        },
+        {
+          "value_code": "OIFMA_MGB_300260.1",
+          "name": "malpositioned",
+          "description": "Prosthesis is malpositioned or displaced"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_734800",
+      "name": "perivalvular leak",
+      "description": "Paravalvular (perivalvular) regurgitant flow around the prosthesis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_734800.0",
+          "name": "present",
+          "description": "Perivalvular leak detected",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_734800.1",
+          "name": "absent",
+          "description": "No perivalvular leak identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_842557",
+      "name": "perivalvular leak severity",
+      "description": "Estimated severity of any perivalvular leak",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_842557.0",
+          "name": "trace",
+          "description": "Trace or trivial leak"
+        },
+        {
+          "value_code": "OIFMA_MGB_842557.1",
+          "name": "mild",
+          "description": "Mild leak",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_842557.2",
+          "name": "moderate",
+          "description": "Moderate leak",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_842557.3",
+          "name": "severe",
+          "description": "Severe leak",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_420327",
+      "name": "thrombosis",
+      "description": "Presence of thrombus involving the prosthetic valve apparatus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_420327.0",
+          "name": "present",
+          "description": "Thrombus detected on or adjacent to the prosthesis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_420327.1",
+          "name": "absent",
+          "description": "No thrombus identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_451766",
+      "name": "left atrial enlargement",
+      "description": "Enlargement of the left atrium commonly associated with mitral valve disease or chronic prosthesis dysfunction",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_451766.0",
+          "name": "present",
+          "description": "Left atrial enlargement present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_451766.1",
+          "name": "absent",
+          "description": "Left atrial size within expected limits",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_308312",
+      "name": "left atrial enlargement severity",
+      "description": "Estimated severity of left atrial enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_308312.0",
+          "name": "mild",
+          "description": "Mild left atrial enlargement",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_308312.1",
+          "name": "moderate",
+          "description": "Moderate left atrial enlargement",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_308312.2",
+          "name": "severe",
+          "description": "Severe left atrial enlargement",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

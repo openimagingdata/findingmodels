@@ -1,5 +1,5 @@
 """
-Python-orchestrated pipeline for processing Hood finding definitions.
+Python-orchestrated pipeline for processing CDEStaging CT chest finding definitions.
 Uses 3 focused agents (merge, create, review) and library functions for search/enrichment.
 """
 
@@ -23,8 +23,8 @@ from pydantic import BaseModel
 from agents.create_agent import create_agent
 from agents.merge_agent import MergeContext, merge_agent
 from agents.review_agent import review_agent
-from findingmodels.hood import load_definition
-from findingmodels.hood.normalize_output import normalize_for_validation, strip_sub_finding_attributes
+from findingmodels.cdestaging_ct_chest import load_definition
+from findingmodels.cdestaging_ct_chest.normalize_output import normalize_for_validation, strip_sub_finding_attributes
 
 
 @dataclass

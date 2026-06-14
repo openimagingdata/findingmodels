@@ -1,0 +1,394 @@
+{
+  "oifm_id": "OIFM_MGB_043064",
+  "name": "tracheal stenosis",
+  "description": "Narrowing of the tracheal lumen characterized by location, length, diameter, shape, and associated airway findings. Used to document presence, temporal status, morphologic measurements, and related effects on adjacent structures.",
+  "synonyms": [
+    "tracheal narrowing",
+    "airway stenosis",
+    "tracheal luminal narrowing"
+  ],
+  "tags": [
+    "airway",
+    "trachea",
+    "stenosis",
+    "thoracic imaging"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_114503",
+      "name": "stenosis present",
+      "description": "Indicates whether tracheal stenosis is seen.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_114503.0",
+          "name": "present",
+          "description": "Stenosis is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_114503.1",
+          "name": "absent",
+          "description": "No stenosis identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_954968",
+      "name": "stenosis status",
+      "description": "Temporal comparison or evolution of the stenosis relative to prior imaging when available.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_954968.0",
+          "name": "new",
+          "description": "Not present on prior exam(s).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_954968.1",
+          "name": "unchanged",
+          "description": "No significant change compared with prior exam(s).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_954968.2",
+          "name": "increased",
+          "description": "Stenosis is greater in extent or severity than on prior exam(s).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_954968.3",
+          "name": "decreased",
+          "description": "Stenosis is reduced in extent or severity compared with prior exam(s).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_107142",
+      "name": "stenosis location",
+      "description": "Anatomic segment of the trachea where the narrowing is centered.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_107142.0",
+          "name": "proximal",
+          "description": "Upper trachea, near cricoid or thoracic inlet."
+        },
+        {
+          "value_code": "OIFMA_MGB_107142.1",
+          "name": "mid",
+          "description": "Mid tracheal segment."
+        },
+        {
+          "value_code": "OIFMA_MGB_107142.2",
+          "name": "distal",
+          "description": "Lower trachea, near carina."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_449074",
+      "name": "stenosis length",
+      "description": "Craniocaudal extent of the narrowed segment.",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 10,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_506307",
+      "name": "residual diameter",
+      "description": "Minimum luminal diameter within the stenotic segment.",
+      "type": "numeric",
+      "minimum": 1,
+      "maximum": 25,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_230802",
+      "name": "stenosis shape",
+      "description": "Configuration of the narrowing relative to the lumen.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_230802.0",
+          "name": "concentric",
+          "description": "Symmetric circumferential narrowing."
+        },
+        {
+          "value_code": "OIFMA_MGB_230802.1",
+          "name": "eccentric",
+          "description": "Asymmetric or focal partial narrowing."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_000766",
+      "name": "airway compression",
+      "description": "External compression on the trachea from adjacent structures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_000766.0",
+          "name": "present",
+          "description": "Evidence of external compression narrowing the airway.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_000766.1",
+          "name": "absent",
+          "description": "No external airway compression identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_734715",
+      "name": "adjacent mass effect",
+      "description": "Mass or lesion effect contiguous with the trachea that may explain stenosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_734715.0",
+          "name": "present",
+          "description": "Mass effect adjacent to or abutting the trachea.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_734715.1",
+          "name": "absent",
+          "description": "No adjacent mass effect identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_186772",
+      "name": "mucosal irregularities",
+      "description": "Surface abnormality of the tracheal mucosa within or near the stenosis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_186772.0",
+          "name": "present",
+          "description": "Mucosal nodularity, ulceration, or irregularity noted.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_186772.1",
+          "name": "absent",
+          "description": "Mucosal surface appears smooth.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_051944",
+      "name": "post-stenotic dilation",
+      "description": "Dilatation of the trachea distal to the stenotic segment.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_051944.0",
+          "name": "present",
+          "description": "Focal dilation of the trachea distal to the narrowed segment.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_051944.1",
+          "name": "absent",
+          "description": "No post-stenotic dilation identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

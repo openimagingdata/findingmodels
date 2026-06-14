@@ -1,0 +1,397 @@
+{
+  "oifm_id": "OIFM_MGB_636528",
+  "name": "pleural mass",
+  "description": "Localized abnormal soft-tissue mass within the pleural space, characterized by laterality, size, morphology, attenuation, and associated pleural or chest wall findings.",
+  "synonyms": [
+    "pleural lesion",
+    "pleural nodule",
+    "pleural tumor"
+  ],
+  "tags": [
+    "thoracic",
+    "pleura",
+    "mass"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_057166",
+      "name": "presence",
+      "description": "whether a pleural mass is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_057166.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_057166.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_727306",
+      "name": "status",
+      "description": "comparison status relative to prior exams",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_727306.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_727306.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_727306.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_727306.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_876417",
+      "name": "location",
+      "description": "side or laterality of the pleural mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_876417.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_876417.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_876417.2",
+          "name": "bilateral"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_180144",
+      "name": "size",
+      "description": "largest measured dimension of the mass",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 30,
+      "unit": "cm",
+      "required": false,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246115007",
+          "display": "Size (attribute)"
+        },
+        {
+          "system": "RADLEX",
+          "code": "RID5772",
+          "display": "size descriptor"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_547042",
+      "name": "shape",
+      "description": "overall contour of the mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_547042.0",
+          "name": "round"
+        },
+        {
+          "value_code": "OIFMA_MGB_547042.1",
+          "name": "oval"
+        },
+        {
+          "value_code": "OIFMA_MGB_547042.2",
+          "name": "lobulated"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_168725",
+      "name": "margin",
+      "description": "sharpness of the mass border",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_168725.0",
+          "name": "well defined"
+        },
+        {
+          "value_code": "OIFMA_MGB_168725.1",
+          "name": "ill defined"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_694058",
+      "name": "attenuation",
+      "description": "density characteristics on imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_694058.0",
+          "name": "solid"
+        },
+        {
+          "value_code": "OIFMA_MGB_694058.1",
+          "name": "cystic"
+        },
+        {
+          "value_code": "OIFMA_MGB_694058.2",
+          "name": "mixed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_047663",
+      "name": "pleural effusion",
+      "description": "coexisting pleural fluid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_047663.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_047663.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_617667",
+      "name": "chest wall invasion",
+      "description": "extension of mass into adjacent chest wall structures",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_617667.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_617667.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_572057",
+      "name": "calcification",
+      "description": "presence of internal calcified foci within the mass",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_572057.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_572057.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "oifm_id": "OIFM_MGB_821018",
+  "name": "physiologic wedging lower thoracic vertebrae",
+  "description": "Physiologic anterior wedging of the lower thoracic vertebrae, typically involving mild deformity of vertebral bodies (T9–T12) without acute fracture. Describes presence, extent, and related spinal findings.",
+  "synonyms": [
+    "thoracic vertebral wedging",
+    "physiologic vertebral wedging",
+    "lower thoracic wedging"
+  ],
+  "tags": [
+    "spine",
+    "thoracic",
+    "vertebra",
+    "wedging"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_502971",
+      "name": "presence",
+      "description": "Whether physiologic wedging is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_502971.0",
+          "name": "present",
+          "description": "Wedging is seen",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_502971.1",
+          "name": "absent",
+          "description": "No wedging identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_039839",
+      "name": "status",
+      "description": "Temporal or clinical status compared with prior imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_039839.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_039839.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_039839.2",
+          "name": "complication"
+        },
+        {
+          "value_code": "OIFMA_MGB_039839.3",
+          "name": "resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_039839.4",
+          "name": "removed"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_065374",
+      "name": "affected vertebrae",
+      "description": "Lower thoracic vertebrae involved (select one or more)",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_065374.0",
+          "name": "t9"
+        },
+        {
+          "value_code": "OIFMA_MGB_065374.1",
+          "name": "t10"
+        },
+        {
+          "value_code": "OIFMA_MGB_065374.2",
+          "name": "t11"
+        },
+        {
+          "value_code": "OIFMA_MGB_065374.3",
+          "name": "t12"
+        }
+      ],
+      "required": true,
+      "max_selected": 4
+    },
+    {
+      "oifma_id": "OIFMA_MGB_706071",
+      "name": "wedging degree",
+      "description": "Estimated magnitude of anterior wedging",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 50,
+      "unit": "degrees",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_796341",
+      "name": "spinal alignment",
+      "description": "Overall alignment of the thoracic spine",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_796341.0",
+          "name": "normal"
+        },
+        {
+          "value_code": "OIFMA_MGB_796341.1",
+          "name": "abnormal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_073972",
+      "name": "disc space changes",
+      "description": "Degenerative or other changes in the adjacent intervertebral disc spaces",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_073972.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_073972.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

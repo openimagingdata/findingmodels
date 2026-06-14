@@ -1,0 +1,459 @@
+{
+  "oifm_id": "OIFM_MGB_732701",
+  "name": "Pulmonary Nodule",
+  "description": "A solid or partially solid lesion in the lung parenchyma.",
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_751735",
+      "name": "presence",
+      "description": "Presence of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_751735.0",
+          "name": "present",
+          "description": "The pulmonary nodule is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_751735.1",
+          "name": "absent",
+          "description": "The pulmonary nodule is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_352414",
+      "name": "number",
+      "description": "Number of pulmonary nodules.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_352414.0",
+          "name": "single",
+          "description": "There is a single pulmonary nodule.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5762",
+              "display": "single"
+            },
+            {
+              "system": "SNOMED",
+              "code": "50607009",
+              "display": "Singular (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_352414.1",
+          "name": "multiple",
+          "description": "There are multiple pulmonary nodules.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5765",
+              "display": "multiple"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255204007",
+              "display": "Multiple (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_415105",
+      "name": "status",
+      "description": "Status of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_415105.0",
+          "name": "new",
+          "description": "The pulmonary nodule is new.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_415105.1",
+          "name": "stable",
+          "description": "The pulmonary nodule is stable.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_415105.2",
+          "name": "enlarging",
+          "description": "The pulmonary nodule is enlarging."
+        },
+        {
+          "value_code": "OIFMA_MGB_415105.3",
+          "name": "decreasing",
+          "description": "The pulmonary nodule is decreasing in size."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_946254",
+      "name": "size Finding",
+      "description": "Size of the pulmonary nodule.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "mm",
+      "required": true
+    },
+    {
+      "oifma_id": "OIFMA_MGB_524610",
+      "name": "morphology",
+      "description": "Morphology of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_524610.0",
+          "name": "solid",
+          "description": "The pulmonary nodule is solid."
+        },
+        {
+          "value_code": "OIFMA_MGB_524610.1",
+          "name": "subsolid",
+          "description": "The pulmonary nodule is subsolid."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_404805",
+      "name": "edges",
+      "description": "Edges of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_404805.0",
+          "name": "smooth",
+          "description": "The edges of the pulmonary nodule are smooth."
+        },
+        {
+          "value_code": "OIFMA_MGB_404805.1",
+          "name": "lobulated",
+          "description": "The edges of the pulmonary nodule are lobulated."
+        },
+        {
+          "value_code": "OIFMA_MGB_404805.2",
+          "name": "spiculated",
+          "description": "The edges of the pulmonary nodule are spiculated."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_040433",
+      "name": "location",
+      "description": "Location of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_040433.0",
+          "name": "right upper lobe",
+          "description": "The pulmonary nodule is in the right upper lobe."
+        },
+        {
+          "value_code": "OIFMA_MGB_040433.1",
+          "name": "right middle lobe",
+          "description": "The pulmonary nodule is in the right middle lobe."
+        },
+        {
+          "value_code": "OIFMA_MGB_040433.2",
+          "name": "right lower lobe",
+          "description": "The pulmonary nodule is in the right lower lobe."
+        },
+        {
+          "value_code": "OIFMA_MGB_040433.3",
+          "name": "left upper lobe",
+          "description": "The pulmonary nodule is in the left upper lobe."
+        },
+        {
+          "value_code": "OIFMA_MGB_040433.4",
+          "name": "left lower lobe",
+          "description": "The pulmonary nodule is in the left lower lobe."
+        },
+        {
+          "value_code": "OIFMA_MGB_040433.5",
+          "name": "bilateral",
+          "description": "The pulmonary nodule is bilateral."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_255442",
+      "name": "calcification",
+      "description": "Calcification of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_255442.0",
+          "name": "present",
+          "description": "Calcification is present in the pulmonary nodule.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_255442.1",
+          "name": "absent",
+          "description": "Calcification is absent in the pulmonary nodule.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_255442.2",
+          "name": "central",
+          "description": "Central calcification in the pulmonary nodule."
+        },
+        {
+          "value_code": "OIFMA_MGB_255442.3",
+          "name": "diffuse",
+          "description": "Diffuse calcification in the pulmonary nodule."
+        },
+        {
+          "value_code": "OIFMA_MGB_255442.4",
+          "name": "laminated",
+          "description": "Laminated calcification in the pulmonary nodule."
+        },
+        {
+          "value_code": "OIFMA_MGB_255442.5",
+          "name": "popcorn",
+          "description": "Popcorn calcification in the pulmonary nodule."
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_057555",
+      "name": "cavitation",
+      "description": "Cavitation of the pulmonary nodule.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_057555.0",
+          "name": "present",
+          "description": "Cavitation is present in the pulmonary nodule.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_057555.1",
+          "name": "absent",
+          "description": "Cavitation is absent in the pulmonary nodule.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_419148",
+      "name": "satellite_nodules",
+      "description": "Presence of satellite nodules.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_419148.0",
+          "name": "present",
+          "description": "Satellite nodules are present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_419148.1",
+          "name": "absent",
+          "description": "Satellite nodules are absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_679251",
+      "name": "lymphadenopathy",
+      "description": "Presence of lymphadenopathy.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_679251.0",
+          "name": "present",
+          "description": "Lymphadenopathy is present.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_679251.1",
+          "name": "absent",
+          "description": "Lymphadenopathy is absent.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

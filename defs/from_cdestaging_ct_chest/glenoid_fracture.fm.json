@@ -1,0 +1,329 @@
+{
+  "oifm_id": "OIFM_MGB_516325",
+  "name": "glenoid fracture",
+  "description": "Fracture involving the glenoid portion of the scapula; described by presence, temporal status, anatomic location, displacement and associated shoulder injuries.",
+  "synonyms": [
+    "glenoid rim fracture",
+    "glenoid cavity fracture",
+    "glenoid fossa fracture"
+  ],
+  "tags": [
+    "shoulder",
+    "fracture",
+    "glenoid",
+    "orthopedics",
+    "trauma"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_295761",
+      "name": "presence",
+      "description": "whether a glenoid fracture is identified on imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_295761.0",
+          "name": "present",
+          "description": "fracture identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_295761.1",
+          "name": "absent",
+          "description": "no fracture identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_680650",
+      "name": "status",
+      "description": "temporal characterization relative to prior imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_680650.0",
+          "name": "new",
+          "description": "appears since prior study",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_680650.1",
+          "name": "unchanged",
+          "description": "no interval change compared with prior study",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_680650.2",
+          "name": "healing",
+          "description": "features of ongoing healing"
+        },
+        {
+          "value_code": "OIFMA_MGB_680650.3",
+          "name": "healed",
+          "description": "radiographic appearance consistent with healed fracture"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_119086",
+      "name": "location",
+      "description": "anatomic location of the fracture on the glenoid",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_119086.0",
+          "name": "anterior rim"
+        },
+        {
+          "value_code": "OIFMA_MGB_119086.1",
+          "name": "posterior rim"
+        },
+        {
+          "value_code": "OIFMA_MGB_119086.2",
+          "name": "superior"
+        },
+        {
+          "value_code": "OIFMA_MGB_119086.3",
+          "name": "inferior"
+        }
+      ],
+      "required": false,
+      "max_selected": 4,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_338146",
+      "name": "type",
+      "description": "fracture displacement category",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_338146.0",
+          "name": "non-displaced"
+        },
+        {
+          "value_code": "OIFMA_MGB_338146.1",
+          "name": "displaced"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_289024",
+      "name": "displacement",
+      "description": "maximum measured displacement of fracture fragments",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 50,
+      "unit": "mm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_082309",
+      "name": "hill-sachs",
+      "description": "presence of an associated hill-sachs impaction fracture of the posterolateral humeral head",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_082309.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_082309.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_192627",
+      "name": "rotator cuff tear",
+      "description": "presence of an associated rotator cuff tear",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_192627.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_192627.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_674359",
+      "name": "labral tear",
+      "description": "presence of an associated labral tear",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_674359.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_674359.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

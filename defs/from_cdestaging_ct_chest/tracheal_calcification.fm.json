@@ -1,0 +1,520 @@
+{
+  "oifm_id": "OIFM_MGB_224997",
+  "name": "tracheal calcification",
+  "description": "Calcification involving the trachea, typically affecting tracheal cartilaginous rings or walls, seen on chest radiography or CT. Characterized by presence and temporal status, anatomic location and extent, tissue involvement and radiographic pattern, and related airway or soft-tissue findings.",
+  "synonyms": [
+    "tracheal ring calcification",
+    "tracheal cartilage calcification",
+    "tracheal wall calcification"
+  ],
+  "tags": [
+    "airway",
+    "chest",
+    "calcification",
+    "thorax",
+    "ct",
+    "radiography"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_703527",
+      "name": "presence",
+      "description": "whether calcification is identified",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_703527.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_703527.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_660843",
+      "name": "status",
+      "description": "temporal change compared with prior exam",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_660843.0",
+          "name": "new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_660843.1",
+          "name": "unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_660843.2",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_660843.3",
+          "name": "decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_300198",
+      "name": "location",
+      "description": "segment of the trachea involved",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_300198.0",
+          "name": "proximal"
+        },
+        {
+          "value_code": "OIFMA_MGB_300198.1",
+          "name": "mid"
+        },
+        {
+          "value_code": "OIFMA_MGB_300198.2",
+          "name": "distal"
+        },
+        {
+          "value_code": "OIFMA_MGB_300198.3",
+          "name": "entire trachea"
+        },
+        {
+          "value_code": "OIFMA_MGB_300198.4",
+          "name": "multifocal"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_992536",
+      "name": "extent",
+      "description": "degree of involvement along the trachea",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_992536.0",
+          "name": "localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_992536.1",
+          "name": "diffuse"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_130219",
+      "name": "tissue involved",
+      "description": "anatomic tracheal structures showing calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_130219.0",
+          "name": "cartilaginous rings"
+        },
+        {
+          "value_code": "OIFMA_MGB_130219.1",
+          "name": "tracheal walls"
+        },
+        {
+          "value_code": "OIFMA_MGB_130219.2",
+          "name": "both"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_364871",
+      "name": "pattern",
+      "description": "radiographic morphology of calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_364871.0",
+          "name": "ring-like"
+        },
+        {
+          "value_code": "OIFMA_MGB_364871.1",
+          "name": "nodular"
+        },
+        {
+          "value_code": "OIFMA_MGB_364871.2",
+          "name": "linear"
+        },
+        {
+          "value_code": "OIFMA_MGB_364871.3",
+          "name": "patchy"
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_191261",
+      "name": "associated history",
+      "description": "relevant clinical or etiologic history",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_191261.0",
+          "name": "tracheobronchopathia osteochondroplastica"
+        },
+        {
+          "value_code": "OIFMA_MGB_191261.1",
+          "name": "post-intubation"
+        },
+        {
+          "value_code": "OIFMA_MGB_191261.2",
+          "name": "chronic inflammation"
+        },
+        {
+          "value_code": "OIFMA_MGB_191261.3",
+          "name": "prior surgery or trauma"
+        },
+        {
+          "value_code": "OIFMA_MGB_191261.4",
+          "name": "other or unknown"
+        }
+      ],
+      "required": false,
+      "max_selected": 3
+    },
+    {
+      "oifma_id": "OIFMA_MGB_592710",
+      "name": "airway narrowing",
+      "description": "presence of luminal narrowing related to calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_592710.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_592710.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_108009",
+      "name": "narrowing severity",
+      "description": "estimated severity of tracheal narrowing",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_108009.0",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_108009.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_108009.2",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_077711",
+      "name": "airway obstruction",
+      "description": "evidence of obstruction attributable to tracheal process",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_077711.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_077711.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_466540",
+      "name": "adjacent soft tissue changes",
+      "description": "soft tissue abnormality adjacent to the trachea",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_466540.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_466540.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_126010",
+      "name": "inflammatory changes",
+      "description": "radiographic evidence of inflammation adjacent to or involving the trachea",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_126010.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_126010.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
