@@ -1,0 +1,465 @@
+{
+  "oifm_id": "OIFM_MGB_903690",
+  "name": "ascending aortic repair",
+  "description": "Repair of the ascending aorta",
+  "synonyms": [
+    "ascending aorta repair",
+    "ascending aortic graft",
+    "aortic root repair?"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "finding"
+  ],
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID580",
+      "display": "ascending aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID879",
+      "display": "thoracic aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID581",
+      "display": "aortic arch"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_414895",
+      "name": "presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_414895.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414895.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414895.2",
+          "name": "indeterminate",
+          "description": "Presence of ascending aortic repair cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_414895.3",
+          "name": "unknown",
+          "description": "Presence of ascending aortic repair is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_731311",
+      "name": "change from prior",
+      "description": "Whether and how a ascending aortic repair has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_731311.0",
+          "name": "unchanged",
+          "description": "Ascending aortic repair is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.1",
+          "name": "stable",
+          "description": "Ascending aortic repair is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.2",
+          "name": "new",
+          "description": "Ascending aortic repair is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.3",
+          "name": "resolved",
+          "description": "Ascending aortic repair seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.4",
+          "name": "increased",
+          "description": "Ascending aortic repair has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.5",
+          "name": "decreased",
+          "description": "Ascending aortic repair has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.6",
+          "name": "larger",
+          "description": "Ascending aortic repair is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_731311.7",
+          "name": "smaller",
+          "description": "Ascending aortic repair is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_276824",
+      "name": "type of repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_276824.0",
+          "name": "graft"
+        },
+        {
+          "value_code": "OIFMA_MGB_276824.1",
+          "name": "stent"
+        },
+        {
+          "value_code": "OIFMA_MGB_276824.2",
+          "name": "valve replacement"
+        },
+        {
+          "value_code": "OIFMA_MGB_276824.3",
+          "name": "valve-sparing"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_885985",
+      "name": "condition treated",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_885985.0",
+          "name": "aneurysm"
+        },
+        {
+          "value_code": "OIFMA_MGB_885985.1",
+          "name": "dissection"
+        },
+        {
+          "value_code": "OIFMA_MGB_885985.2",
+          "name": "both"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_091743",
+      "name": "location of repair",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_091743.0",
+          "name": "ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_091743.1",
+          "name": "aortic root"
+        },
+        {
+          "value_code": "OIFMA_MGB_091743.2",
+          "name": "aortic arch"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_028988",
+      "name": "aortic dilation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_028988.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_028988.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_421466",
+      "name": "residual dissection",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_421466.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_421466.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_377752",
+      "name": "pericardial effusion",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_377752.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_377752.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}

@@ -1,0 +1,837 @@
+{
+  "oifm_id": "OIFM_MGB_573923",
+  "name": "aortic atherosclerosis",
+  "description": "Aortic atherosclerosis is characterized by the presence of plaque buildup in the aortic walls.",
+  "synonyms": [
+    "atherosclerosis of the aorta",
+    "calcified aorta",
+    "degenerative aortic atherosclerosis"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "finding"
+  ],
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID480",
+      "display": "aorta"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1243",
+      "display": "thorax"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID56",
+      "display": "abdomen"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_649946",
+      "name": "presence",
+      "description": "Presence of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_649946.0",
+          "name": "absent",
+          "description": "Aortic atherosclerosis is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_649946.1",
+          "name": "present",
+          "description": "Aortic atherosclerosis is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_649946.2",
+          "name": "indeterminate",
+          "description": "Presence of aortic atherosclerosis cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_649946.3",
+          "name": "unknown",
+          "description": "Presence of aortic atherosclerosis is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_582106",
+      "name": "change from prior",
+      "description": "Whether and how a aortic atherosclerosis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_582106.0",
+          "name": "unchanged",
+          "description": "Aortic atherosclerosis is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.1",
+          "name": "stable",
+          "description": "Aortic atherosclerosis is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.2",
+          "name": "new",
+          "description": "Aortic atherosclerosis is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.3",
+          "name": "resolved",
+          "description": "Aortic atherosclerosis seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.4",
+          "name": "increased",
+          "description": "Aortic atherosclerosis has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.5",
+          "name": "decreased",
+          "description": "Aortic atherosclerosis has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.6",
+          "name": "larger",
+          "description": "Aortic atherosclerosis is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_582106.7",
+          "name": "smaller",
+          "description": "Aortic atherosclerosis is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_421039",
+      "name": "severity",
+      "description": "Severity of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_421039.0",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_421039.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_421039.2",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_421039.3",
+          "name": "extensive"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_463596",
+      "name": "extent",
+      "description": "Extent of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_463596.0",
+          "name": "focal"
+        },
+        {
+          "value_code": "OIFMA_MGB_463596.1",
+          "name": "diffuse"
+        },
+        {
+          "value_code": "OIFMA_MGB_463596.2",
+          "name": "localized"
+        },
+        {
+          "value_code": "OIFMA_MGB_463596.3",
+          "name": "throughout the aorta"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_936536",
+      "name": "location",
+      "description": "Location of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_936536.0",
+          "name": "ascending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_936536.1",
+          "name": "aortic arch"
+        },
+        {
+          "value_code": "OIFMA_MGB_936536.2",
+          "name": "descending aorta"
+        },
+        {
+          "value_code": "OIFMA_MGB_936536.3",
+          "name": "abdominal aorta"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_754977",
+      "name": "plaque characteristics",
+      "description": "Plaque characteristics in aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_754977.0",
+          "name": "calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_754977.1",
+          "name": "non-calcified"
+        },
+        {
+          "value_code": "OIFMA_MGB_754977.2",
+          "name": "mixed"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_755923",
+      "name": "luminal irregularities",
+      "description": "Presence of luminal irregularities",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_755923.0",
+          "name": "present",
+          "description": "Luminal irregularities are present in the aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_755923.1",
+          "name": "absent",
+          "description": "No luminal irregularities are present in the aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_862746",
+      "name": "specific features",
+      "description": "Specific features of aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_862746.0",
+          "name": "calcification"
+        },
+        {
+          "value_code": "OIFMA_MGB_862746.1",
+          "name": "ulceration"
+        },
+        {
+          "value_code": "OIFMA_MGB_862746.2",
+          "name": "plaque"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_688257",
+      "name": "wall thickness",
+      "description": "Wall thickness in aortic atherosclerosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_688257.0",
+          "name": "increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_688257.1",
+          "name": "normal"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_439401",
+      "name": "aneurysmal dilation",
+      "description": "Presence of aneurysmal dilation",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_439401.0",
+          "name": "present",
+          "description": "Aneurysmal dilation is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_439401.1",
+          "name": "absent",
+          "description": "No aneurysmal dilation is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_216168",
+      "name": "intraluminal thrombus",
+      "description": "Presence of intraluminal thrombus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_216168.0",
+          "name": "present",
+          "description": "Intraluminal thrombus is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_216168.1",
+          "name": "absent",
+          "description": "No intraluminal thrombus is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_489655",
+      "name": "periaortic soft tissue involvement",
+      "description": "Presence of periaortic soft tissue involvement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_489655.0",
+          "name": "present",
+          "description": "Periaortic soft tissue involvement is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_489655.1",
+          "name": "absent",
+          "description": "No periaortic soft tissue involvement is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_685365",
+      "name": "vascular stenosis",
+      "description": "Presence of vascular stenosis",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_685365.0",
+          "name": "present",
+          "description": "Vascular stenosis is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_685365.1",
+          "name": "absent",
+          "description": "No vascular stenosis is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_270730",
+      "name": "aortic valve calcification",
+      "description": "Presence of aortic valve calcification",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_270730.0",
+          "name": "present",
+          "description": "Aortic valve calcification is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_270730.1",
+          "name": "absent",
+          "description": "No aortic valve calcification is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_694635",
+      "name": "coronary artery disease",
+      "description": "Presence of coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_694635.0",
+          "name": "present",
+          "description": "Coronary artery disease is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_694635.1",
+          "name": "absent",
+          "description": "No coronary artery disease is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_674184",
+      "name": "peripheral vascular disease",
+      "description": "Presence of peripheral vascular disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_674184.0",
+          "name": "present",
+          "description": "Peripheral vascular disease is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_674184.1",
+          "name": "absent",
+          "description": "No peripheral vascular disease is present in aortic atherosclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    }
+  ]
+}
