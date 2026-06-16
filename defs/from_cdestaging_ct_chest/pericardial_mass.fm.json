@@ -1,16 +1,34 @@
 {
-  "oifm_id": "OIFM_MGB_682613",
+  "oifm_id": "OIFM_MGB_524218",
   "name": "pericardial mass",
-  "description": "Focal mass within the pericardial space characterized by location, size, morphology, attenuation, and associated findings such as effusion, calcification, mass effect, and invasion.",
+  "description": "Radiologic description of a mass arising in the pericardial space including location, size, morphologic features, and associated findings.",
   "synonyms": [
     "pericardial tumor",
-    "pericardial lesion",
+    "cardiac mass",
     "pericardial neoplasm"
   ],
   "tags": [
     "cardiac",
     "pericardial",
-    "mass"
+    "thorax",
+    "oncology"
+  ],
+  "anatomic_locations": [
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1407",
+      "display": "pericardium"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1521",
+      "display": "pericardial lymph node"
+    },
+    {
+      "system": "ANATOMICLOCATIONS",
+      "code": "RID1363",
+      "display": "pleural space"
+    }
   ],
   "contributors": [
     {
@@ -27,15 +45,32 @@
   ],
   "attributes": [
     {
-      "oifma_id": "OIFMA_MGB_061451",
-      "name": "mass presence",
-      "description": "Whether a pericardial mass is identified",
+      "oifma_id": "OIFMA_MGB_463744",
+      "name": "presence",
+      "description": "Whether a pericardial mass is identified on the exam.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_061451.0",
+          "value_code": "OIFMA_MGB_463744.0",
+          "name": "absent",
+          "description": "No mass identified within the pericardial space.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_463744.1",
           "name": "present",
-          "description": "Mass identified within the pericardial space",
+          "description": "Mass identified within the pericardial space.",
           "index_codes": [
             {
               "system": "RADLEX",
@@ -50,34 +85,204 @@
           ]
         },
         {
-          "value_code": "OIFMA_MGB_061451.1",
-          "name": "absent",
-          "description": "No mass identified",
+          "value_code": "OIFMA_MGB_463744.2",
+          "name": "indeterminate",
+          "description": "Presence of pericardial mass cannot be determined",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID28473",
-              "display": "absent"
+              "code": "RID39110",
+              "display": "indeterminate"
             },
             {
               "system": "SNOMED",
-              "code": "2667000",
-              "display": "Absent (qualifier value)"
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_463744.3",
+          "name": "unknown",
+          "description": "Presence of pericardial mass is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
             }
           ]
         }
       ],
       "required": true,
-      "max_selected": 1
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
     },
     {
-      "oifma_id": "OIFMA_MGB_423693",
-      "name": "mass status",
-      "description": "Temporal or clinical status of the mass relative to prior studies or procedures",
+      "oifma_id": "OIFMA_MGB_637778",
+      "name": "change from prior",
+      "description": "Whether and how pericardial mass has changed over time",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_423693.0",
+          "value_code": "OIFMA_MGB_637778.0",
+          "name": "unchanged",
+          "description": "Pericardial mass is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.1",
+          "name": "stable",
+          "description": "Pericardial mass is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.2",
+          "name": "new",
+          "description": "Pericardial mass is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.3",
+          "name": "resolved",
+          "description": "Pericardial mass seen on a prior exam has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.4",
+          "name": "increased",
+          "description": "Pericardial mass has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.5",
+          "name": "decreased",
+          "description": "Pericardial mass has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.6",
+          "name": "larger",
+          "description": "Pericardial mass is larger",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5791",
+              "display": "enlarged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263768009",
+              "display": "Greater (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_637778.7",
+          "name": "smaller",
+          "description": "Pericardial mass is smaller",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID38669",
+              "display": "diminished"
+            },
+            {
+              "system": "SNOMED",
+              "code": "263796003",
+              "display": "Lesser (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_526974",
+      "name": "pericardial mass status",
+      "description": "Temporal or management status compared with prior imaging or procedures.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_526974.0",
           "name": "new",
           "index_codes": [
             {
@@ -93,7 +298,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MGB_423693.1",
+          "value_code": "OIFMA_MGB_526974.1",
           "name": "unchanged",
           "index_codes": [
             {
@@ -109,34 +314,74 @@
           ]
         },
         {
-          "value_code": "OIFMA_MGB_423693.2",
+          "value_code": "OIFMA_MGB_526974.2",
           "name": "complication"
         },
         {
-          "value_code": "OIFMA_MGB_423693.3",
+          "value_code": "OIFMA_MGB_526974.3",
           "name": "removed"
+        },
+        {
+          "value_code": "OIFMA_MGB_526974.4",
+          "name": "indeterminate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
         }
       ],
       "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_051047",
+      "oifma_id": "OIFMA_MGB_098521",
       "name": "location",
-      "description": "Anatomic location within the pericardial space",
+      "description": "Anatomic location of the mass within the pericardial space.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_051047.0",
+          "value_code": "OIFMA_MGB_098521.0",
           "name": "anterior"
         },
         {
-          "value_code": "OIFMA_MGB_051047.1",
+          "value_code": "OIFMA_MGB_098521.1",
           "name": "posterior"
         },
         {
-          "value_code": "OIFMA_MGB_051047.2",
-          "name": "lateral"
+          "value_code": "OIFMA_MGB_098521.2",
+          "name": "left lateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_098521.3",
+          "name": "right lateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_098521.4",
+          "name": "circumferential"
+        },
+        {
+          "value_code": "OIFMA_MGB_098521.5",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
         }
       ],
       "required": false,
@@ -155,9 +400,9 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_783419",
+      "oifma_id": "OIFMA_MGB_912097",
       "name": "size",
-      "description": "Maximum diameter of the mass",
+      "description": "Largest measured diameter of the mass.",
       "type": "numeric",
       "minimum": 0.1,
       "maximum": 30,
@@ -177,61 +422,69 @@
       ]
     },
     {
-      "oifma_id": "OIFMA_MGB_247048",
+      "oifma_id": "OIFMA_MGB_033932",
       "name": "shape",
-      "description": "Overall contour of the mass",
+      "description": "General gross morphology of the mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_247048.0",
+          "value_code": "OIFMA_MGB_033932.0",
           "name": "round"
         },
         {
-          "value_code": "OIFMA_MGB_247048.1",
+          "value_code": "OIFMA_MGB_033932.1",
           "name": "oval"
         },
         {
-          "value_code": "OIFMA_MGB_247048.2",
+          "value_code": "OIFMA_MGB_033932.2",
           "name": "irregular"
+        },
+        {
+          "value_code": "OIFMA_MGB_033932.3",
+          "name": "lobulated"
         }
       ],
       "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_578055",
+      "oifma_id": "OIFMA_MGB_255697",
       "name": "margin",
-      "description": "Definition of the mass margin",
+      "description": "Definition of the lesion margins.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_578055.0",
+          "value_code": "OIFMA_MGB_255697.0",
           "name": "well-defined"
         },
         {
-          "value_code": "OIFMA_MGB_578055.1",
+          "value_code": "OIFMA_MGB_255697.1",
           "name": "ill-defined"
+        },
+        {
+          "value_code": "OIFMA_MGB_255697.2",
+          "name": "lobulated"
         }
       ],
       "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_334294",
+      "oifma_id": "OIFMA_MGB_227417",
       "name": "attenuation",
-      "description": "Internal composition of the mass on imaging",
+      "description": "CT or MRI characterization of internal composition.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_334294.0",
+          "value_code": "OIFMA_MGB_227417.0",
           "name": "solid"
         },
         {
-          "value_code": "OIFMA_MGB_334294.1",
+          "value_code": "OIFMA_MGB_227417.1",
           "name": "cystic"
         },
         {
-          "value_code": "OIFMA_MGB_334294.2",
+          "value_code": "OIFMA_MGB_227417.2",
           "name": "mixed"
         }
       ],
@@ -239,29 +492,13 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_704330",
+      "oifma_id": "OIFMA_MGB_682084",
       "name": "pericardial effusion",
-      "description": "Coexisting pericardial fluid",
+      "description": "Presence and extent of pericardial fluid adjacent to the mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_704330.0",
-          "name": "present",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28472",
-              "display": "present"
-            },
-            {
-              "system": "SNOMED",
-              "code": "52101004",
-              "display": "Present (qualifier value)"
-            }
-          ]
-        },
-        {
-          "value_code": "OIFMA_MGB_704330.1",
+          "value_code": "OIFMA_MGB_682084.0",
           "name": "absent",
           "index_codes": [
             {
@@ -275,46 +512,94 @@
               "display": "Absent (qualifier value)"
             }
           ]
+        },
+        {
+          "value_code": "OIFMA_MGB_682084.1",
+          "name": "minimal"
+        },
+        {
+          "value_code": "OIFMA_MGB_682084.2",
+          "name": "small"
+        },
+        {
+          "value_code": "OIFMA_MGB_682084.3",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_682084.4",
+          "name": "large"
         }
       ],
       "required": false,
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_066018",
+      "oifma_id": "OIFMA_MGB_524682",
       "name": "mass effect",
-      "description": "Compression or displacement of cardiac or adjacent structures by the mass",
+      "description": "Mass effect or compression of cardiac chambers or great vessels.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_066018.0",
-          "name": "present",
+          "value_code": "OIFMA_MGB_524682.0",
+          "name": "none"
+        },
+        {
+          "value_code": "OIFMA_MGB_524682.1",
+          "name": "mild",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID28472",
-              "display": "present"
+              "code": "RID5671",
+              "display": "mild"
             },
             {
               "system": "SNOMED",
-              "code": "52101004",
-              "display": "Present (qualifier value)"
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
             }
           ]
         },
         {
-          "value_code": "OIFMA_MGB_066018.1",
-          "name": "absent",
+          "value_code": "OIFMA_MGB_524682.2",
+          "name": "moderate",
           "index_codes": [
             {
               "system": "RADLEX",
-              "code": "RID28473",
-              "display": "absent"
+              "code": "RID5672",
+              "display": "moderate"
             },
             {
               "system": "SNOMED",
-              "code": "2667000",
-              "display": "Absent (qualifier value)"
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_524682.3",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
             }
           ]
         }
@@ -323,13 +608,13 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_190665",
+      "oifma_id": "OIFMA_MGB_479267",
       "name": "calcification",
-      "description": "Presence of internal or peripheral calcification within the mass",
+      "description": "Presence of internal calcification within the mass.",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_190665.0",
+          "value_code": "OIFMA_MGB_479267.0",
           "name": "present",
           "index_codes": [
             {
@@ -345,7 +630,7 @@
           ]
         },
         {
-          "value_code": "OIFMA_MGB_190665.1",
+          "value_code": "OIFMA_MGB_479267.1",
           "name": "absent",
           "index_codes": [
             {
@@ -365,46 +650,26 @@
       "max_selected": 1
     },
     {
-      "oifma_id": "OIFMA_MGB_537270",
-      "name": "invasion",
-      "description": "Evidence of invasion into adjacent structures",
+      "oifma_id": "OIFMA_MGB_881717",
+      "name": "adjacent invasion",
+      "description": "Evidence of direct invasion into adjacent structures (myocardium, mediastinum, lungs).",
       "type": "choice",
       "values": [
         {
-          "value_code": "OIFMA_MGB_537270.0",
-          "name": "present",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28472",
-              "display": "present"
-            },
-            {
-              "system": "SNOMED",
-              "code": "52101004",
-              "display": "Present (qualifier value)"
-            }
-          ]
+          "value_code": "OIFMA_MGB_881717.0",
+          "name": "none"
         },
         {
-          "value_code": "OIFMA_MGB_537270.1",
-          "name": "absent",
-          "index_codes": [
-            {
-              "system": "RADLEX",
-              "code": "RID28473",
-              "display": "absent"
-            },
-            {
-              "system": "SNOMED",
-              "code": "2667000",
-              "display": "Absent (qualifier value)"
-            }
-          ]
+          "value_code": "OIFMA_MGB_881717.1",
+          "name": "possible"
         },
         {
-          "value_code": "OIFMA_MGB_537270.2",
-          "name": "suspected"
+          "value_code": "OIFMA_MGB_881717.2",
+          "name": "definite"
+        },
+        {
+          "value_code": "OIFMA_MGB_881717.3",
+          "name": "not evaluable"
         }
       ],
       "required": false,

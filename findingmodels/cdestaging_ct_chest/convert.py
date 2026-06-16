@@ -13,6 +13,7 @@ from findingmodels.cdestaging_ct_chest.json_adapter import CDEStagingCtChestJson
 from findingmodels.cdestaging_ct_chest.loaders import load_definition
 from findingmodels.cdestaging_ct_chest.markdown_adapter import CDEStagingCtChestMarkdownAdapter
 from findingmodels.cdestaging_ct_chest.normalize_output import normalize_for_validation
+from findingmodels.cdestaging_ct_chest.postprocess import enrich_model
 
 logger = logging.getLogger(__name__)
 
@@ -28,15 +29,29 @@ class ConversionResult:
     error: str | None
 
 
+def _raw_name_from_source(
+    file_path: Path,
+    file_type: str,
+    data: dict | None,
+) -> str:
+    if file_type == "json" and data:
+        return data.get("finding_name") or data.get("name") or file_path.stem
+    return file_path.stem.replace("-", " ").replace("_", " ")
+
+
 async def convert_definition(
     file_path: Path,
     *,
     output_dir: Path,
     write: bool = True,
+    output_claims: dict[str, Path] | None = None,
+    enrich_metadata: bool = True,
+    enrich_locations: bool = True,
 ) -> ConversionResult:
     """Convert one CDEStaging CT chest definition file to a validated finding model."""
     try:
         data, markdown_content, file_type = await load_definition(file_path)
+        raw_name = _raw_name_from_source(file_path, file_type, data)
 
         if file_type == "json":
             model = await CDEStagingCtChestJsonAdapter.adapt_cdestaging_ct_chest_json(
@@ -47,13 +62,30 @@ async def convert_definition(
                 markdown_content, file_path.stem
             )
 
+        model = await enrich_model(
+            model,
+            source_type=file_type,
+            raw_name=raw_name,
+            enrich_metadata=enrich_metadata and file_type == "json",
+            enrich_locations=enrich_locations,
+        )
         add_standard_codes_to_model(model)
         model_dict = normalize_for_validation(model.model_dump())
         validated = FindingModelFull.model_validate(model_dict)
 
+        output_filename = model_file_name(validated.name)
+        if output_claims is not None:
+            prior = output_claims.get(output_filename)
+            if prior is not None and prior != file_path:
+                raise ValueError(
+                    f"Output filename collision: {prior.name} and {file_path.name} "
+                    f"both map to {output_filename}"
+                )
+            output_claims[output_filename] = file_path
+
         output_path = None
         if write:
-            output_path = output_dir / model_file_name(validated.name)
+            output_path = output_dir / output_filename
             output_path.parent.mkdir(parents=True, exist_ok=True)
             output_path.write_text(
                 validated.model_dump_json(indent=2, exclude_none=True),

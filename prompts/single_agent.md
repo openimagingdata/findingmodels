@@ -22,7 +22,7 @@ Your task: Given an incoming definition (Markdown or CDEStaging CT chest JSON), 
    - If the existing term is too general (e.g. "detectable hardware" when incoming is "tunneled catheter"): reject the match, create new.
    - If no suitable match: use the model from step 1 as the base.
 
-4. **Ensure presence and change_from_prior** exist and are first in the attribute list. Standard presence values: [absent, present, indeterminate, unknown]. Standard change values: [unchanged, stable, increased, decreased, new, resolved, no prior]. If incoming has [yes, no] and existing has standard values, keep existing.
+4. **Ensure presence and change_from_prior** exist and are first in the attribute list. Standard presence values: [absent, present, indeterminate, unknown]. Standard change values: [unchanged, stable, new, resolved, increased, decreased, larger, smaller]. If incoming has [yes, no] and existing has standard values, keep existing.
 
 5. **Apply add_ids_to_finding_model** and **add_standard_codes** to the final model.
 

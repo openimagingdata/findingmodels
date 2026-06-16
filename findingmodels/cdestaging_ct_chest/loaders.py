@@ -1,10 +1,58 @@
 """File I/O for CDEStaging CT chest definition loading."""
 
 import json
+import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+logger = logging.getLogger(__name__)
+
 SUPPORTED_ENCODINGS = ["utf-8", "latin-1", "cp1252"]
+
+
+def normalized_stem(file_path: Path) -> str:
+    """Normalize a source filename stem for output collision checks."""
+    return file_path.stem.replace("-", "_").lower()
+
+
+def prefer_source(existing: Path, candidate: Path) -> Path:
+    """Pick one source when two files map to the same normalized stem."""
+    if existing.suffix == ".md" and candidate.suffix == ".json":
+        return candidate
+    if existing.suffix == ".json" and candidate.suffix == ".md":
+        return existing
+    if candidate.stem.count("-") < existing.stem.count("-"):
+        return candidate
+    if existing.stem.count("-") < candidate.stem.count("-"):
+        return existing
+    return existing
+
+
+def dedupe_input_files(files: List[Path]) -> List[Path]:
+    """Drop sources that would write the same output .fm.json (prefer JSON, underscore stems)."""
+    chosen: dict[str, Path] = {}
+    skipped: list[tuple[Path, Path]] = []
+
+    for file_path in sorted(files):
+        stem = normalized_stem(file_path)
+        prior = chosen.get(stem)
+        if prior is None:
+            chosen[stem] = file_path
+            continue
+        kept = prefer_source(prior, file_path)
+        dropped = file_path if kept == prior else prior
+        chosen[stem] = kept
+        skipped.append((dropped, kept))
+
+    for dropped, kept in skipped:
+        logger.warning(
+            "Skipping duplicate source %s (same output stem as %s; kept %s)",
+            dropped.name,
+            normalized_stem(kept),
+            kept.name,
+        )
+
+    return sorted(chosen.values())
 
 
 def should_process_file(file_path: Path, all_files: List[Path]) -> bool:
