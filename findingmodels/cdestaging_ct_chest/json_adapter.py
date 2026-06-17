@@ -5,18 +5,8 @@ from typing import Dict
 
 
 import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
-
-from dotenv import load_dotenv
-
 from findingmodel import FindingModelBase, FindingModelFull
-
 from findingmodel.tools import add_ids_to_model
-
-
-
-load_dotenv()
-
-
 
 logger = logging.getLogger(__name__)
 

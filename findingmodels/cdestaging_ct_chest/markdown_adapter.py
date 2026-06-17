@@ -1,12 +1,9 @@
 import logging
 
 import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
-from dotenv import load_dotenv
 from findingmodel import FindingInfo, FindingModelFull
 from findingmodel.tools import add_ids_to_model
 from findingmodel_ai.authoring import create_model_from_markdown
-
-load_dotenv()
 
 logger = logging.getLogger(__name__)
 

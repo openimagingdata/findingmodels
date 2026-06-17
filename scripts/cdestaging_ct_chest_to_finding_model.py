@@ -1,12 +1,16 @@
-"""Convert CDEStaging CT chest definitions to validated finding model JSON files."""
+"""Convert CDEStaging CT chest definitions to validated finding model JSON files.
+
+Run from the repo root with a .env file present. API keys are loaded by
+findingmodel-ai Pydantic Settings (env_file=".env"). Alternatively:
+
+    uv run --env-file .env python scripts/cdestaging_ct_chest_to_finding_model.py
+"""
 
 import argparse
 import asyncio
 import logging
 import sys
 from pathlib import Path
-
-from dotenv import load_dotenv
 
 import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
 from findingmodels.cdestaging_ct_chest.batch_report import write_batch_report
@@ -103,8 +107,6 @@ def main() -> None:
         help="Skip anatomic location search",
     )
     args = parser.parse_args()
-
-    load_dotenv()
 
     log_level = logging.DEBUG if args.verbose else getattr(logging, args.log_level)
     logging.basicConfig(

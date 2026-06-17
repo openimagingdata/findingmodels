@@ -60,7 +60,7 @@ async def _search_anatomic_locations(finding_name: str, description: str | None)
     import findingmodels.compat  # noqa: F401 - patch findingmodel.index for findingmodel-ai
     from findingmodel_ai.search import find_anatomic_locations
 
-    return await find_anatomic_locations(finding_name, description)
+    return await find_anatomic_locations(finding_name, description, model_tier="full")
 
 
 async def enrich_metadata_from_info(
