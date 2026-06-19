@@ -56,7 +56,7 @@ Return this block in addition to checklist results:
 - **name_change:** "proposed canonical name" (omit if current name is fine)
 ```
 
-Omit keys with nothing to propose. Proposals are applied after TUI sign-off unless the user asks to apply immediately.
+Omit keys with nothing to propose. The main skill applies proposals to disk in Step 6 (before the review file and TUI), same as head CT `finding-batch` Step 7.
 
 ## What not to do
 

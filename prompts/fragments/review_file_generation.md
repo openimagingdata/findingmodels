@@ -31,7 +31,7 @@ For each converted file, produce one `###` entry with:
 - Source file, OIFM ID, description, synonyms, `change from prior` values.
 - **CDEStaging fields:** source filename, source type (`json` or `md`), attribute count, anatomic location note.
 - Questions/issues only when needed; otherwise `**Assessment:** Looks reasonable as written; confirm acceptable.`
-- When synonyms are `(none)`, description is a placeholder (`Description for …`), or quality review produced **metadata_proposals**, the Assessment must summarize proposed synonyms, description, tag changes, and CFP recommendations for TUI sign-off.
+- When Step 6 applied metadata changes, note what was changed (synonyms, description, tags, CFP winnow) so the reviewer can confirm. Flag only items that still need judgment.
 - Blank `**Response:**` slot.
 
 ## Existing-match entry
@@ -59,7 +59,7 @@ Keep each entry short (8-15 lines). The TUI is for quick scanning.
 
 - Naming or scope choices needing confirmation
 - Synonym breadth/ambiguity — especially `(none)` or placeholder descriptions on JSON-derived models
-- Agent **metadata_proposals** from quality review (synonyms, description, CFP winnow) — summarize in Assessment when not yet applied to disk
+- Metadata changes applied in Step 6 that may still need confirmation (unusual synonym, scope choice, aggressive CFP winnow)
 - Incomplete or odd `change from prior` values
 - Split/extraction/associated-finding decisions
 - CDEStaging issues: attribute count vs source, MD outline mismatches, json-vs-md source

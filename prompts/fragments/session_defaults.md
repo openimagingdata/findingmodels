@@ -29,8 +29,8 @@ Source definitions live at:
 
 Resolve the source file for a converted model by matching the output stem to `*.json` or `*.md` (prefer JSON when both exist). See `scripts/generate_cdestaging_review.py` `source_type_for_stem` for the stem-resolution pattern.
 
-## Posture: show, then act
+## Posture: apply, then sign off
 
-Before applying metadata proposals to `.fm.json` files, include them in the review file Assessment so the user can sign off in the TUI. Apply edits after TUI responses (Step 7), not before.
+Apply metadata proposals to `.fm.json` files after quality review (Step 6), then write the review file from the updated models on disk. The TUI confirms what was applied; Step 9 handles any additional feedback.
 
 Never commit without explicit user permission.

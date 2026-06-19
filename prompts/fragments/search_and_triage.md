@@ -67,4 +67,3 @@ The function returns the snake-cased stem; the file is at `defs/<stem>.fm.json`.
 - On **exact match**: skip convert; record matched OIFM in triage JSON; include an **existing-match** entry in the review file.
 - On **no match**: convert as usual.
 - On **ambiguous**: get user decision, update triage JSON (`convert` or `user_skip` or confirm `exact_match`), then convert only approved rows.
-- Do **not** use `find_similar_models` for this flow — use `findingmodel search` and semantic judgment only.
