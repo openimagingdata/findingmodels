@@ -1,19 +1,10 @@
 ---
-
 name: finding-cdestaging-batch
-
 description: >
-
   Use when converting CDEStaging CT chest definitions to finding models in bulk
-
-  with chunk-by-chunk review. Includes DuckDB triage, alphabetical chunk conversion,
-
-  mechanical lint, quality review, human TUI sign-off, and progress tracking. User must
-
-  trigger each chunk — never auto-run the full batch.
-
+  with chunk-by-chunk review. Includes DuckDB triage, convert, lint, quality review,
+  and TUI sign-off. User must trigger each chunk — never auto-run the full batch.
 allowed-tools: Bash, Read, Grep, Glob, Write, Edit, Agent
-
 ---
 
 
