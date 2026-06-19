@@ -7,7 +7,7 @@ Total sources: **205**. Chunk size: **10**. Chunks: **21**.
 
 | Chunk | Offset | Limit | Sources | Triage | Convert | Lint | Review file | TUI |
 |-------|--------|-------|---------|--------|---------|------|-------------|-----|
-| 1 | 0 | 10 | aberrant-subclavian-artery.md … aortic-measurements.json | pending | pending | pending | pending | pending |
+| 1 | 0 | 10 | aberrant-subclavian-artery.md … aortic-measurements.json | done (4 matched / 6 convert / 0 ambiguous / 0 skipped) | done (6 new / 4 matched) | passed | ready | pending_tui |
 | 2 | 10 | 10 | aortic-valve-replacement.json … breast-implant.json | pending | pending | pending | pending | pending |
 | 3 | 20 | 10 | breast-mass.json … bronchiectasis.json | pending | pending | pending | pending | pending |
 | 4 | 30 | 10 | bronchiolectasis.json … chest_tube.json | pending | pending | pending | pending | pending |

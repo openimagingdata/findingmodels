@@ -1,0 +1,405 @@
+{
+  "oifm_id": "OIFM_MGB_753305",
+  "name": "cardiac annular calcifications",
+  "description": "Calcification involving a cardiac valve annulus, such as the mitral, aortic, tricuspid, or pulmonary valve annulus, as seen on chest CT. Severity and involved annulus may be specified.",
+  "tags": [
+    "chest",
+    "CT",
+    "finding",
+    "cardiac",
+    "cardiovascular",
+    "valvular",
+    "calcification"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_527542",
+      "name": "presence",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_527542.0",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_527542.1",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_527542.2",
+          "name": "indeterminate",
+          "description": "Presence of annular calcifications cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_527542.3",
+          "name": "unknown",
+          "description": "Presence of annular calcifications is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ],
+      "description": "Whether cardiac annular calcifications are present on the current imaging study"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_201101",
+      "name": "change from prior",
+      "description": "Whether and how cardiac annular calcifications have changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_201101.0",
+          "name": "unchanged",
+          "description": "Cardiac annular calcifications are unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_201101.1",
+          "name": "stable",
+          "description": "Cardiac annular calcifications are stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_201101.2",
+          "name": "new",
+          "description": "Cardiac annular calcifications are new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_201101.3",
+          "name": "resolved",
+          "description": "Cardiac annular calcifications seen on prior imaging have resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_201101.4",
+          "name": "increased",
+          "description": "Cardiac annular calcifications have increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_201101.5",
+          "name": "decreased",
+          "description": "Cardiac annular calcifications have decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_857970",
+      "name": "location",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_857970.0",
+          "name": "mitral valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_857970.1",
+          "name": "aortic valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_857970.2",
+          "name": "tricuspid valve annulus"
+        },
+        {
+          "value_code": "OIFMA_MGB_857970.3",
+          "name": "pulmonary valve annulus"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ],
+      "description": "Cardiac valve annulus involved by calcification"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_948821",
+      "name": "severity",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_948821.0",
+          "name": "mild",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948821.1",
+          "name": "moderate",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_948821.2",
+          "name": "severe",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ],
+      "description": "Qualitative severity of annular calcification"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_807665",
+      "name": "cardiomegaly",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_807665.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_807665.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "description": "Whether cardiomegaly is present as an associated finding"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_257036",
+      "name": "coronary artery disease",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_257036.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_257036.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "description": "Whether coronary artery disease is present as an associated finding"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_420877",
+      "name": "left atrial enlargement",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_420877.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_420877.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "description": "Whether left atrial enlargement is present as an associated finding"
+    },
+    {
+      "oifma_id": "OIFMA_MGB_965890",
+      "name": "pulmonary hypertension",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_965890.0",
+          "name": "yes"
+        },
+        {
+          "value_code": "OIFMA_MGB_965890.1",
+          "name": "no"
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "description": "Whether pulmonary hypertension is present as an associated finding"
+    }
+  ],
+  "synonyms": [
+    "annular calcification",
+    "cardiac annular calcification",
+    "valvular annular calcification",
+    "valvular annular calcifications"
+  ]
+}

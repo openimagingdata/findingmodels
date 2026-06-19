@@ -1,0 +1,481 @@
+{
+  "oifm_id": "OIFM_MGB_387198",
+  "name": "aberrant subclavian artery",
+  "description": "An anomalous origin and course of the subclavian artery (arteria lusoria) characterized by side of origin, course relative to the trachea and esophagus, and associated complications such as compression, atherosclerosis, or aneurysmal dilation.",
+  "synonyms": [
+    "arteria lusoria",
+    "aberrant subclavian"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "finding",
+    "vascular anomaly",
+    "congenital",
+    "arterial anomaly",
+    "thoracic vasculature",
+    "vascular"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_211540",
+      "name": "presence",
+      "description": "Presence or absence of aberrant subclavian artery",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_211540.0",
+          "name": "absent",
+          "description": "Aberrant subclavian artery is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_211540.1",
+          "name": "present",
+          "description": "Aberrant subclavian artery is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_211540.2",
+          "name": "indeterminate",
+          "description": "Presence of aberrant subclavian artery cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_211540.3",
+          "name": "unknown",
+          "description": "Presence of aberrant subclavian artery is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_009876",
+      "name": "change from prior",
+      "description": "Whether aberrant subclavian artery is new, resolved, stable, or unchanged compared with prior imaging",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_009876.0",
+          "name": "unchanged",
+          "description": "Aberrant subclavian artery is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_009876.1",
+          "name": "stable",
+          "description": "Aberrant subclavian artery is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_009876.2",
+          "name": "new",
+          "description": "Aberrant subclavian artery is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_009876.3",
+          "name": "resolved",
+          "description": "Aberrant subclavian artery seen on prior imaging has resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_578892",
+      "name": "side of origin",
+      "description": "Side from which the aberrant subclavian artery arises",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_578892.0",
+          "name": "right"
+        },
+        {
+          "value_code": "OIFMA_MGB_578892.1",
+          "name": "left"
+        },
+        {
+          "value_code": "OIFMA_MGB_578892.2",
+          "name": "bilateral"
+        },
+        {
+          "value_code": "OIFMA_MGB_578892.3",
+          "name": "unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_914274",
+      "name": "course",
+      "description": "Anatomic course of the aberrant subclavian artery relative to the trachea and esophagus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_914274.0",
+          "name": "retroesophageal"
+        },
+        {
+          "value_code": "OIFMA_MGB_914274.1",
+          "name": "pretracheal"
+        },
+        {
+          "value_code": "OIFMA_MGB_914274.2",
+          "name": "between trachea and esophagus"
+        },
+        {
+          "value_code": "OIFMA_MGB_914274.3",
+          "name": "other"
+        }
+      ],
+      "required": true,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_829677",
+      "name": "esophageal compression",
+      "description": "Compression effect on the esophagus",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_829677.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_829677.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_645424",
+      "name": "tracheal compression",
+      "description": "Compression effect on the trachea",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_645424.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_645424.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_876853",
+      "name": "atherosclerotic changes",
+      "description": "Imaging evidence of atherosclerosis involving the aberrant subclavian artery",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_876853.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_876853.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_454745",
+      "name": "aneurysmal dilation",
+      "description": "Presence of aneurysmal dilation of the aberrant subclavian artery",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_454745.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_454745.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_752868",
+      "name": "aneurysm diameter",
+      "description": "Maximum diameter of aneurysmal dilation when present",
+      "type": "numeric",
+      "minimum": 0.1,
+      "maximum": 10,
+      "unit": "cm",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_598903",
+      "name": "other arterial anomalies",
+      "description": "Additional arterial anomalies identified in the chest or neck",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_598903.0",
+          "name": "present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_598903.1",
+          "name": "absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

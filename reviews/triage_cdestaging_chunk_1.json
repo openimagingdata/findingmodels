@@ -1,0 +1,541 @@
+{
+  "generated_at": "2026-06-19T18:48:50+00:00",
+  "input_dir": "../CDEStaging/definitions/hood_CT_chest",
+  "offset": 0,
+  "limit": 10,
+  "chunk_duplicate_stems": [],
+  "records": [
+    {
+      "stem": "aberrant_subclavian_artery",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/aberrant-subclavian-artery.md",
+      "incoming_name": "aberrant subclavian artery",
+      "search_targets": [
+        "aberrant subclavian artery",
+        "artery"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_007755",
+          "name": "subclavian steal syndrome",
+          "description": "Reversal of blood flow in the vertebral artery due to proximal subclavian artery stenosis",
+          "tags": [
+            "CT",
+            "MR",
+            "US",
+            "diagnosis",
+            "neurological",
+            "ultrasound",
+            "vascular"
+          ],
+          "query": "aberrant subclavian artery"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022518",
+          "name": "arterial tortuosity",
+          "description": "Marked twisting or winding of an artery.",
+          "tags": [
+            "CT",
+            "MR",
+            "US",
+            "congenital anomaly",
+            "finding",
+            "ultrasound",
+            "vascular"
+          ],
+          "query": "aberrant subclavian artery"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022514",
+          "name": "arterial dissection",
+          "description": "A tear in the inner wall of an artery causing blood to flow between layers of the wall.",
+          "tags": [
+            "CT",
+            "MR",
+            "diagnosis",
+            "emergency",
+            "ultrasound",
+            "vascular"
+          ],
+          "query": "artery"
+        }
+      ],
+      "reason": "No exact match. Candidates are different vascular entities, broader categories, or different pathology."
+    },
+    {
+      "stem": "acromioclavicular_joint_degenerative_changes",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/acromioclavicular-joint-degenerative-changes.md",
+      "incoming_name": "acromioclavicular joint degenerative changes",
+      "search_targets": [
+        "acromioclavicular joint degenerative changes",
+        "changes"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_025663",
+          "name": "degenerative joint changes",
+          "description": "Alterations in joint structure due to chronic wear or arthritis; common with aging.",
+          "tags": [
+            "CT",
+            "MR",
+            "XR",
+            "degenerative",
+            "finding",
+            "joints",
+            "musculoskeletal"
+          ],
+          "query": "acromioclavicular joint degenerative changes"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_012767",
+          "name": "premature osteoarthritis",
+          "description": "Early-onset degenerative joint disease",
+          "tags": [
+            "MR",
+            "XR",
+            "degenerative",
+            "diagnosis",
+            "joint",
+            "musculoskeletal"
+          ],
+          "query": "acromioclavicular joint degenerative changes"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_025572",
+          "name": "tongue abnormality",
+          "description": "Deviations from normal anatomy or function of the tongue.",
+          "tags": [
+            "CT",
+            "MR",
+            "US",
+            "congenital anomaly",
+            "finding",
+            "head_neck",
+            "miscellaneous",
+            "tongue"
+          ],
+          "query": "changes"
+        },
+        {
+          "oifm_id": "OIFM_CDE_000115",
+          "name": "Glioma",
+          "description": "Glioma",
+          "tags": [],
+          "query": "changes"
+        }
+      ],
+      "reason": "No exact match. 'Degenerative joint changes' is broader than acromioclavicular joint degenerative changes; other candidates are unrelated."
+    },
+    {
+      "stem": "adrenal_nodule",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/adrenal-nodule.json",
+      "incoming_name": "adrenal nodule",
+      "search_targets": [
+        "adrenal nodule",
+        "nodule"
+      ],
+      "decision": "exact_match",
+      "matched_oifm_id": "OIFM_CDE_000003",
+      "matched_name": "Adrenal Nodule",
+      "candidates": [
+        {
+          "oifm_id": "OIFM_CDE_000003",
+          "name": "Adrenal Nodule",
+          "description": "Detection and characterization of an adrenal nodule.",
+          "tags": [],
+          "query": "adrenal nodule"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_004439",
+          "name": "regenerating liver nodule",
+          "description": "Nodule formed as part of liver regeneration, usually in cirrhosis.",
+          "tags": [
+            "CT",
+            "MR",
+            "diagnosis",
+            "liver",
+            "neoplastic",
+            "ultrasound"
+          ],
+          "query": "nodule"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_014690",
+          "name": "shaggy lung nodule",
+          "description": "An irregular or spiculated lung nodule, often concerning for malignancy.",
+          "tags": [
+            "CT",
+            "XR",
+            "chest",
+            "finding",
+            "lung",
+            "neoplastic process"
+          ],
+          "query": "nodule"
+        }
+      ],
+      "reason": "Exact name match on 'Adrenal Nodule' (OIFM_CDE_000003)."
+    },
+    {
+      "stem": "adrenal_thickening",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/adrenal-thickening.json",
+      "incoming_name": "adrenal thickening",
+      "search_targets": [
+        "adrenal thickening",
+        "thickening"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_022561",
+          "name": "adrenal enlargement",
+          "description": "Increase in size of the adrenal glands, may indicate hyperplasia or tumor.",
+          "tags": [
+            "CT",
+            "MR",
+            "abdomen",
+            "adrenal",
+            "enlargement",
+            "finding"
+          ],
+          "query": "adrenal thickening"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_018855",
+          "name": "t1-hyperintense adrenal mass",
+          "description": "Adrenal mass with high signal on T1-weighted MRI.",
+          "tags": [
+            "MR",
+            "abdomen",
+            "adrenal",
+            "finding",
+            "mass"
+          ],
+          "query": "adrenal thickening"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022535",
+          "name": "cardiac valve thickening",
+          "description": "Thickening of the cardiac valves, often associated with stenosis or valvular disease.",
+          "tags": [
+            "CT",
+            "MR",
+            "US",
+            "finding",
+            "heart",
+            "ultrasound",
+            "valve"
+          ],
+          "query": "thickening"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_003899",
+          "name": "focal gallbladder wall thickening",
+          "description": "Localized thickening of the gallbladder wall.",
+          "tags": [
+            "CT",
+            "US",
+            "finding",
+            "gallbladder",
+            "ultrasound",
+            "wall thickening"
+          ],
+          "query": "thickening"
+        }
+      ],
+      "reason": "No exact match. Adrenal enlargement is related but not the same finding as adrenal thickening; other candidates are different anatomy or mass findings."
+    },
+    {
+      "stem": "airway_mucus_plugging",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/airway-mucus-plugging.json",
+      "incoming_name": "airway mucus plugging",
+      "search_targets": [
+        "airway mucus plugging",
+        "plugging"
+      ],
+      "decision": "exact_match",
+      "matched_oifm_id": "OIFM_GMTS_015330",
+      "matched_name": "mucoid impaction",
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_015330",
+          "name": "mucoid impaction",
+          "description": "Plugging of bronchi with thick mucus, resulting in branching opacities.",
+          "tags": [
+            "CT",
+            "XR",
+            "airways",
+            "chest",
+            "finding",
+            "lung"
+          ],
+          "query": "airway mucus plugging"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_005278",
+          "name": "meconium plug in newborn",
+          "description": "Intestinal blockage in newborn due to a meconium plug",
+          "tags": [
+            "US",
+            "XR",
+            "finding",
+            "gastrointestinal",
+            "neonatal",
+            "ultrasound"
+          ],
+          "query": "airway mucus plugging"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022488",
+          "name": "meconium plug",
+          "description": "Obstruction of the intestine by meconium in newborns",
+          "tags": [
+            "US",
+            "XR",
+            "finding",
+            "gastrointestinal",
+            "neonatal",
+            "ultrasound"
+          ],
+          "query": "plugging"
+        }
+      ],
+      "reason": "Exact semantic match: mucoid impaction is bronchial/airway mucus plugging at the same level of specificity."
+    },
+    {
+      "stem": "annular_calcifications",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/annular-calcifications.json",
+      "incoming_name": "Annular Calcifications",
+      "search_targets": [
+        "Annular Calcifications",
+        "Calcifications"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_005557",
+          "name": "annular abdominal calcification",
+          "description": "Ring-shaped calcium deposits in the abdomen",
+          "tags": [
+            "CT",
+            "XR",
+            "abdomen",
+            "anatomical",
+            "calcification",
+            "finding"
+          ],
+          "query": "Annular Calcifications"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_004939",
+          "name": "annular lesion of colon",
+          "description": "A circular lesion found in the colon",
+          "tags": [
+            "CT",
+            "MR",
+            "XR",
+            "abdomen",
+            "anatomical",
+            "finding",
+            "gastrointestinal"
+          ],
+          "query": "Annular Calcifications"
+        },
+        {
+          "oifm_id": "OIFM_MSFT_914493",
+          "name": "breast calcification cluster",
+          "description": "Breast calcification clusters are typically a sign of benign changes in breast tissue but can sometimes indicate malignancy.",
+          "tags": [
+            "breast",
+            "calcification"
+          ],
+          "query": "Calcifications"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022581",
+          "name": "scrotal calcification",
+          "description": "Calcium deposits within the scrotal contents, often benign.",
+          "tags": [
+            "CT",
+            "US",
+            "XR",
+            "calcification",
+            "finding",
+            "genitourinary",
+            "ultrasound"
+          ],
+          "query": "Calcifications"
+        }
+      ],
+      "reason": "No exact match. CDEStaging source is cardiac valve annular calcification by location attributes; candidates are abdominal/colon or unrelated calcifications."
+    },
+    {
+      "stem": "anterolisthesis",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/anterolisthesis.md",
+      "incoming_name": "anterolisthesis",
+      "search_targets": [
+        "anterolisthesis"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_019217",
+          "name": "acro-osteolysis",
+          "description": "Resorption of the distal phalanges in the hands and/or feet.",
+          "tags": [
+            "CT",
+            "XR",
+            "bone resorption",
+            "finding",
+            "foot",
+            "hand",
+            "musculoskeletal"
+          ],
+          "query": "anterolisthesis"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_011246",
+          "name": "osteolysis",
+          "description": "Bone loss or resorption",
+          "tags": [
+            "CT",
+            "XR",
+            "bone",
+            "finding",
+            "musculoskeletal"
+          ],
+          "query": "anterolisthesis"
+        }
+      ],
+      "reason": "No exact match. Candidates are osteolysis findings, not anterolisthesis."
+    },
+    {
+      "stem": "aortic_atherosclerosis",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/aortic-atherosclerosis.json",
+      "incoming_name": "aortic atherosclerosis",
+      "search_targets": [
+        "aortic atherosclerosis",
+        "atherosclerosis"
+      ],
+      "decision": "convert",
+      "matched_oifm_id": null,
+      "matched_name": null,
+      "candidates": [
+        {
+          "oifm_id": "OIFM_GMTS_022519",
+          "name": "atherosclerosis",
+          "description": "Thickening or hardening of the arteries due to plaque buildup.",
+          "tags": [
+            "CT",
+            "MR",
+            "US",
+            "XR",
+            "degenerative",
+            "diagnosis",
+            "ultrasound",
+            "vascular"
+          ],
+          "query": "aortic atherosclerosis"
+        },
+        {
+          "oifm_id": "OIFM_CDE_000126",
+          "name": "Acute Aortic Syndrome",
+          "description": "This module describes the Common Data elements and Macros for Acute Aortic Syndrome",
+          "tags": [],
+          "query": "aortic atherosclerosis"
+        }
+      ],
+      "reason": "No exact match. 'Atherosclerosis' is broader than aortic atherosclerosis; acute aortic syndrome is a different entity."
+    },
+    {
+      "stem": "aortic_dissection",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/aortic-dissection.md",
+      "incoming_name": "aortic dissection",
+      "search_targets": [
+        "aortic dissection",
+        "dissection"
+      ],
+      "decision": "exact_match",
+      "matched_oifm_id": "OIFM_MSFT_573630",
+      "matched_name": "aortic dissection",
+      "candidates": [
+        {
+          "oifm_id": "OIFM_MSFT_573630",
+          "name": "aortic dissection",
+          "description": "Aortic dissection is a critical condition characterized by the separation of the aortic wall layers due to an intimal tear, resulting in an intramural hematoma and potential rupture; it often presents with severe, acute chest or back pain and may lead to life-threatening complications.",
+          "tags": [],
+          "query": "aortic dissection"
+        },
+        {
+          "oifm_id": "OIFM_GMTS_022514",
+          "name": "arterial dissection",
+          "description": "A tear in the inner wall of an artery causing blood to flow between layers of the wall.",
+          "tags": [
+            "CT",
+            "MR",
+            "diagnosis",
+            "emergency",
+            "ultrasound",
+            "vascular"
+          ],
+          "query": "dissection"
+        },
+        {
+          "oifm_id": "OIFM_CDE_000252",
+          "name": "Thoracic Aortic Dissection",
+          "description": "Aortic Dissection",
+          "tags": [],
+          "query": "dissection"
+        }
+      ],
+      "reason": "Exact name match on 'aortic dissection' (OIFM_MSFT_573630)."
+    },
+    {
+      "stem": "aortic_measurements",
+      "source_path": "../CDEStaging/definitions/hood_CT_chest/aortic-measurements.json",
+      "incoming_name": "aortic measurements",
+      "search_targets": [
+        "aortic measurements",
+        "measurements"
+      ],
+      "decision": "exact_match",
+      "matched_oifm_id": "OIFM_CDE_000264",
+      "matched_name": "Aortic Measurements",
+      "candidates": [
+        {
+          "oifm_id": "OIFM_CDE_000264",
+          "name": "Aortic Measurements",
+          "description": "Aortic Measurements",
+          "tags": [],
+          "query": "aortic measurements"
+        },
+        {
+          "oifm_id": "OIFM_CDE_000119",
+          "name": "Alpha Angle Measurement",
+          "description": " Alpha angle measurement on CT and/or MRI",
+          "tags": [],
+          "query": "measurements"
+        }
+      ],
+      "reason": "Exact name match on 'Aortic Measurements' (OIFM_CDE_000264)."
+    }
+  ],
+  "summary": {
+    "exact_match": 4,
+    "no_match": 0,
+    "ambiguous": 0,
+    "convert": 6,
+    "user_skip": 0
+  }
+}

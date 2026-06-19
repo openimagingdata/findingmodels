@@ -1,0 +1,581 @@
+{
+  "oifm_id": "OIFM_MGB_065473",
+  "name": "acromioclavicular joint degenerative changes",
+  "description": "Degenerative (osteoarthritic) changes affecting the acromioclavicular (AC) joint, characterized by joint space narrowing, osteophyte formation, subchondral sclerosis or cysts, capsular thickening, and distal clavicle osteolysis.",
+  "synonyms": [
+    "ac joint degenerative changes",
+    "ac joint osteoarthritis",
+    "acromioclavicular osteoarthritis",
+    "acromioclavicular joint osteoarthritis",
+    "osteoarthritis of the acromioclavicular joint",
+    "acromioclavicular joint arthrosis",
+    "acromioclavicular arthrosis",
+    "acromioclavicular joint degeneration",
+    "degenerative changes of the acromioclavicular joint"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "finding",
+    "musculoskeletal",
+    "shoulder",
+    "degenerative",
+    "acromioclavicular joint",
+    "osteoarthritis",
+    "ac joint"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_023198",
+      "name": "presence",
+      "description": "whether degenerative changes of the acromioclavicular joint are present on the current imaging study",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_023198.0",
+          "name": "absent",
+          "description": "no radiographic evidence of acromioclavicular joint degenerative changes",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_023198.1",
+          "name": "present",
+          "description": "radiographic evidence of acromioclavicular joint degenerative changes",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_023198.2",
+          "name": "indeterminate",
+          "description": "Presence of acromioclavicular joint degenerative changes cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_023198.3",
+          "name": "unknown",
+          "description": "Presence of acromioclavicular joint degenerative changes is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_604720",
+      "name": "change from prior",
+      "description": "Whether and how acromioclavicular joint degenerative changes have changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_604720.0",
+          "name": "unchanged",
+          "description": "Acromioclavicular joint degenerative changes are unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.1",
+          "name": "stable",
+          "description": "Acromioclavicular joint degenerative changes are stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.2",
+          "name": "new",
+          "description": "Acromioclavicular joint degenerative changes are new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.3",
+          "name": "resolved",
+          "description": "Acromioclavicular joint degenerative changes seen on prior imaging have resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.4",
+          "name": "increased",
+          "description": "Acromioclavicular joint degenerative changes have increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.5",
+          "name": "decreased",
+          "description": "Acromioclavicular joint degenerative changes have decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.6",
+          "name": "worsened",
+          "description": "Acromioclavicular joint degenerative changes have worsened"
+        },
+        {
+          "value_code": "OIFMA_MGB_604720.7",
+          "name": "improved",
+          "description": "Acromioclavicular joint degenerative changes have improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_709812",
+      "name": "severity",
+      "description": "overall severity of acromioclavicular joint degenerative changes",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_709812.0",
+          "name": "mild",
+          "description": "minimal joint space narrowing and small osteophytes or mild sclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5671",
+              "display": "mild"
+            },
+            {
+              "system": "SNOMED",
+              "code": "255604002",
+              "display": "Mild (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_709812.1",
+          "name": "moderate",
+          "description": "moderate joint space narrowing with more prominent osteophytes and sclerosis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5672",
+              "display": "moderate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1255665007",
+              "display": "Moderate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_709812.2",
+          "name": "severe",
+          "description": "marked joint space loss, large osteophytes, and extensive subchondral changes",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5673",
+              "display": "severe"
+            },
+            {
+              "system": "SNOMED",
+              "code": "24484000",
+              "display": "Severe (severity modifier) (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "246112005",
+          "display": "Severity (attribute)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_273365",
+      "name": "joint space narrowing",
+      "description": "radiographic narrowing of the acromioclavicular joint space",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_273365.0",
+          "name": "present",
+          "description": "visible narrowing of the AC joint space",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_273365.1",
+          "name": "absent",
+          "description": "no obvious narrowing of the AC joint space",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_873908",
+      "name": "osteophyte formation",
+      "description": "presence of osteophytes at the acromioclavicular joint margins",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_873908.0",
+          "name": "present",
+          "description": "osteophytes identified at the AC joint",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_873908.1",
+          "name": "absent",
+          "description": "no osteophyte formation identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_722318",
+      "name": "subchondral sclerosis",
+      "description": "increased subchondral bone density adjacent to the acromioclavicular joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_722318.0",
+          "name": "present",
+          "description": "subchondral sclerosis evident adjacent to the AC joint",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_722318.1",
+          "name": "absent",
+          "description": "no subchondral sclerosis evident",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_591176",
+      "name": "subchondral cysts",
+      "description": "presence of subchondral cystic changes adjacent to the acromioclavicular joint",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_591176.0",
+          "name": "present",
+          "description": "subchondral cysts identified adjacent to the AC joint",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_591176.1",
+          "name": "absent",
+          "description": "no subchondral cysts identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_376726",
+      "name": "capsular thickening",
+      "description": "thickening of the AC joint capsule or surrounding soft tissues",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_376726.0",
+          "name": "present",
+          "description": "capsular or periarticular soft tissue thickening is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_376726.1",
+          "name": "absent",
+          "description": "no capsular thickening identified",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_861019",
+      "name": "distal clavicle osteolysis",
+      "description": "osteolytic resorption of the distal clavicle",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_861019.0",
+          "name": "present",
+          "description": "evidence of distal clavicle osteolysis",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_861019.1",
+          "name": "absent",
+          "description": "no distal clavicle osteolysis observed",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}

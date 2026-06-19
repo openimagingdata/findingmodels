@@ -1,0 +1,518 @@
+{
+  "oifm_id": "OIFM_MGB_651959",
+  "name": "anterolisthesis",
+  "description": "Anterior displacement of one vertebral body relative to the one below (anterolisthesis). Describes presence, severity/grade, location within the spine, levels involved, and common associated findings such as foraminal narrowing or disc degeneration.",
+  "synonyms": [
+    "anterior spondylolisthesis",
+    "anterolisthesis of spine",
+    "anterior vertebral translation",
+    "anterior vertebral listhesis",
+    "forward vertebral slippage"
+  ],
+  "tags": [
+    "chest",
+    "CT",
+    "finding",
+    "spine",
+    "alignment",
+    "spondylolisthesis",
+    "degenerative changes"
+  ],
+  "contributors": [
+    {
+      "name": "Open Imaging Data Model",
+      "code": "OIDM",
+      "url": "https://openimagingdata.org/"
+    },
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_508260",
+      "name": "presence",
+      "description": "Whether anterolisthesis is identified on the study.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_508260.0",
+          "name": "absent",
+          "description": "No anterolisthesis identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_508260.1",
+          "name": "present",
+          "description": "Anterolisthesis is identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_508260.2",
+          "name": "indeterminate",
+          "description": "Presence of anterolisthesis cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_508260.3",
+          "name": "unknown",
+          "description": "Presence of anterolisthesis is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_441750",
+      "name": "change from prior",
+      "description": "Whether and how anterolisthesis has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_441750.0",
+          "name": "unchanged",
+          "description": "Anterolisthesis is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.1",
+          "name": "stable",
+          "description": "Anterolisthesis is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.2",
+          "name": "new",
+          "description": "Anterolisthesis is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.3",
+          "name": "resolved",
+          "description": "Anterolisthesis seen on prior imaging has resolved"
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.4",
+          "name": "increased",
+          "description": "Anterolisthesis has increased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36043",
+              "display": "increased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "35105006",
+              "display": "Increased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.5",
+          "name": "decreased",
+          "description": "Anterolisthesis has decreased",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID36044",
+              "display": "decreased"
+            },
+            {
+              "system": "SNOMED",
+              "code": "1250004",
+              "display": "Decreased (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.6",
+          "name": "worsened",
+          "description": "Anterolisthesis has worsened"
+        },
+        {
+          "value_code": "OIFMA_MGB_441750.7",
+          "name": "improved",
+          "description": "Anterolisthesis has improved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_569279",
+      "name": "location",
+      "description": "Spinal region where anterolisthesis is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_569279.0",
+          "name": "cervical",
+          "description": "Cervical spine (c1-c7)."
+        },
+        {
+          "value_code": "OIFMA_MGB_569279.1",
+          "name": "thoracic",
+          "description": "Thoracic spine (t1-t12)."
+        },
+        {
+          "value_code": "OIFMA_MGB_569279.2",
+          "name": "lumbar",
+          "description": "Lumbar spine (l1-l5)."
+        }
+      ],
+      "required": true,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID39038",
+          "display": "location"
+        },
+        {
+          "system": "SNOMED",
+          "code": "758637006",
+          "display": "Anatomic location (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_405325",
+      "name": "grade",
+      "description": "Categorical grade of anterolisthesis based on percentage of vertebral body translation.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_405325.0",
+          "name": "grade i (1-25%)",
+          "description": "Mild translation, approximately 1\u201325% of vertebral body width."
+        },
+        {
+          "value_code": "OIFMA_MGB_405325.1",
+          "name": "grade ii (26-50%)",
+          "description": "Moderate translation, approximately 26\u201350%."
+        },
+        {
+          "value_code": "OIFMA_MGB_405325.2",
+          "name": "grade iii (51-75%)",
+          "description": "Marked translation, approximately 51\u201375%."
+        },
+        {
+          "value_code": "OIFMA_MGB_405325.3",
+          "name": "grade iv (76-100%)",
+          "description": "Severe translation, approximately 76\u2013100%."
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_883465",
+      "name": "percent translation",
+      "description": "Measured anterior displacement expressed as percentage of vertebral body width.",
+      "type": "numeric",
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "required": false
+    },
+    {
+      "oifma_id": "OIFMA_MGB_889270",
+      "name": "affected vertebrae",
+      "description": "Specific vertebral level(s) involved. Multiple levels may be selected when multi-level anterolisthesis is present.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_889270.0",
+          "name": "c1"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.1",
+          "name": "c2"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.2",
+          "name": "c3"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.3",
+          "name": "c4"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.4",
+          "name": "c5"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.5",
+          "name": "c6"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.6",
+          "name": "c7"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.7",
+          "name": "t1"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.8",
+          "name": "t2"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.9",
+          "name": "t3"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.10",
+          "name": "t4"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.11",
+          "name": "t5"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.12",
+          "name": "t6"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.13",
+          "name": "t7"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.14",
+          "name": "t8"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.15",
+          "name": "t9"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.16",
+          "name": "t10"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.17",
+          "name": "t11"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.18",
+          "name": "t12"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.19",
+          "name": "l1"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.20",
+          "name": "l2"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.21",
+          "name": "l3"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.22",
+          "name": "l4"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.23",
+          "name": "l5"
+        },
+        {
+          "value_code": "OIFMA_MGB_889270.24",
+          "name": "other/unspecified"
+        }
+      ],
+      "required": false,
+      "max_selected": 8
+    },
+    {
+      "oifma_id": "OIFMA_MGB_728943",
+      "name": "neural foraminal narrowing",
+      "description": "Presence of neural foraminal narrowing at the level(s) of anterolisthesis.",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_728943.0",
+          "name": "present",
+          "description": "Foraminal narrowing identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_728943.1",
+          "name": "absent",
+          "description": "No foraminal narrowing identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    },
+    {
+      "oifma_id": "OIFMA_MGB_344682",
+      "name": "disc degeneration",
+      "description": "Presence of disc degeneration at the involved level(s).",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_344682.0",
+          "name": "present",
+          "description": "Disc degeneration identified (desiccation, loss of height, endplate changes).",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_344682.1",
+          "name": "absent",
+          "description": "No disc degeneration identified.",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1
+    }
+  ]
+}
