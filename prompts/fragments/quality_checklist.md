@@ -33,6 +33,7 @@ Apply this checklist to a finding model. Each item is a one-line summary of a ru
 - [ ] `change from prior` includes every direction-of-change pair a radiologist would naturally use for this finding (`larger`/`smaller`, `increased`/`decreased`, `worsened`/`improved`). _(`presence_and_change.md`)_
 - [ ] `change from prior` **excludes** pairs that make no clinical sense for this finding (devices don't `worsen`; congenital variants don't change; fractures don't get `larger`). _(`presence_and_change.md`)_
 - [ ] No duplicate `presence` or `change from prior` attributes.
+- [ ] No source-carried attribute duplicates the standard attributes under another name. Remove/replace source attributes such as `status`, `temporal change`, `change`, `<finding name> status`, or finding-specific present/absent attributes when they only restate standard `presence` or `change from prior`; keep the standard defaults as the single source of truth.
 - [ ] Description grammar is natural English — articles agree, plural verbs with plural subjects, no awkward "a emphysema" constructions. _(`presence_and_change.md`)_
 
 ## Attributes

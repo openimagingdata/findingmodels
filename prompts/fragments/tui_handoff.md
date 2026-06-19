@@ -20,6 +20,8 @@ Tell the user how to launch the TUI. Use the `!` prefix for direct run from chat
 > - `Ctrl+S` — save all responses
 > - `Ctrl+Q` — save and quit
 >
+> While reviewing new models, confirm any note about source-carried `presence`, `status`, or `temporal change` attributes being removed in favor of the standard `presence` and `change from prior` attributes.
+>
 > When you're done, come back and tell me — I'll read your responses and apply any changes.
 
 ### Multiple review files

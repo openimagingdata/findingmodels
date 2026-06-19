@@ -26,6 +26,7 @@ Apply each check. Fix issues directly in the model. Log what you changed in `cha
 - [ ] Change from prior includes ALL direction-of-change pairs a radiologist would naturally use for this finding (many findings warrant multiple pairs). Only REMOVE pairs that make no clinical sense (e.g., devices don't get "larger"; congenital variants don't "worsen"). See `prompts/conventions.md`.
 - [ ] No duplicate presence or change from prior attributes
 - [ ] No [yes/no] values masquerading as presence — replace with standard values
+- [ ] No source-carried attribute duplicates the standard attributes under another name. Remove source attributes like `status`, `temporal change`, `change`, `<finding name> status`, or finding-specific present/absent fields when they only restate `presence` or `change from prior`; keep the standard attributes as the single source of truth.
 
 ### 2. Naming
 

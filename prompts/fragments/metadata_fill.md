@@ -37,6 +37,7 @@ Convert uses `create_model_from_markdown`. The agent **must**:
 | **tags** | Default or missing clinical tags | Same as JSON path |
 | **name** | Naming issues | `naming.md` |
 | **change from prior** | Winnow | `presence_and_change.md` |
+| **standard duplicates** | Source outline had `Presence`, `Status`, `Temporal change`, or equivalent fields | Remove source-carried duplicate attributes and keep only standard `presence` and `change from prior` unless the field captures distinct domain information |
 
 ## metadata_proposals output block
 
@@ -54,6 +55,7 @@ Return this block in addition to checklist results:
 - **cfp_remove:** larger, smaller (values to winnow via modify_change_from_prior.py)
 - **cfp_add:** worsened, improved (values to add if missing)
 - **name_change:** "proposed canonical name" (omit if current name is fine)
+- **standard_duplicate_attrs_remove:** ["status", "temporal change"] (source-carried attributes replaced by standard `presence` / `change from prior`)
 ```
 
 Omit keys with nothing to propose. The main skill applies proposals to disk in Step 6 (before the review file and TUI), same as head CT `finding-batch` Step 7.

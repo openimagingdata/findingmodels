@@ -33,7 +33,10 @@ def dedupe_input_files(files: List[Path]) -> List[Path]:
     chosen: dict[str, Path] = {}
     skipped: list[tuple[Path, Path]] = []
 
-    for file_path in sorted(files):
+    def sort_key(file_path: Path) -> tuple[str, str]:
+        return (normalized_stem(file_path), file_path.name.casefold())
+
+    for file_path in sorted(files, key=sort_key):
         stem = normalized_stem(file_path)
         prior = chosen.get(stem)
         if prior is None:
@@ -52,7 +55,7 @@ def dedupe_input_files(files: List[Path]) -> List[Path]:
             kept.name,
         )
 
-    return sorted(chosen.values())
+    return sorted(chosen.values(), key=sort_key)
 
 
 def should_process_file(file_path: Path, all_files: List[Path]) -> bool:

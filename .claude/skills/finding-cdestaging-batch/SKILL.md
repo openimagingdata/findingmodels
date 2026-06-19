@@ -153,7 +153,7 @@ Spawn one sub-agent via the Agent tool with:
 
 
 
-- **Instructions:** "Quality-review the finding model at `<model_path>`. Read the CDEStaging source at `<source_path>`. Read `prompts/fragments/core_concept.md`, `prompts/fragments/metadata_fill.md`, `prompts/fragments/quality_checklist.md`, `prompts/fragments/naming.md`, `prompts/fragments/synonym_rules.md`, and `prompts/fragments/presence_and_change.md`. Return metadata_proposals, issues, suggested fixes (concrete edits), extraction candidates (use exact attribute names), and warnings."
+- **Instructions:** "Quality-review the finding model at `<model_path>`. Read the CDEStaging source at `<source_path>`. Read `prompts/fragments/core_concept.md`, `prompts/fragments/metadata_fill.md`, `prompts/fragments/quality_checklist.md`, `prompts/fragments/naming.md`, `prompts/fragments/synonym_rules.md`, and `prompts/fragments/presence_and_change.md`. Check for source-carried attributes that duplicate standard `presence` or `change from prior` under names like `status`, `temporal change`, or finding-specific present/absent attributes; propose removing them and keeping the standard attributes. Return metadata_proposals, issues, suggested fixes (concrete edits), extraction candidates (use exact attribute names), and warnings."
 
 - **Context:** model path + source path only. No neighbors, no batch context.
 
@@ -248,4 +248,3 @@ Chunk TUI = `done` only when all entries signed off.
 
 
 `cabg.json` may fail validation (name `cabg` < 5 chars) — fix or skip when that chunk runs.
-

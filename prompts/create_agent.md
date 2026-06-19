@@ -69,9 +69,10 @@ You may also receive structured JSON. Interpret the clinical content within it; 
 3. Change from prior must have at least these values: unchanged, stable, new, resolved. Include ALL direction-of-change pairs a radiologist would naturally use for this finding — many findings warrant multiple pairs. Only REMOVE pairs that make no clinical sense (e.g., devices don't get "larger"; congenital variants don't "worsen"). See `prompts/conventions.md` for guidance.
 4. If the source has [yes/no] or [present/absent] only for presence, upgrade to the full standard set
 5. If the source has [new/stable/enlarged] for status, create change from prior with the full standard set instead
-6. Attribute types are `"choice"` (categorical) or `"numeric"` (with min/max/unit)
-7. Choice attributes must have at least 2 values
-8. Each value needs a `name` (lowercase); `description` is optional but helpful for clinical terms
+6. Do not keep source-carried duplicate standard attributes. If the source has `Presence`, `Status`, `Temporal change`, `Change`, `<finding name> status`, or a finding-specific present/absent field that only restates standard `presence` or `change from prior`, replace it with the standard attribute and omit the source-specific duplicate.
+7. Attribute types are `"choice"` (categorical) or `"numeric"` (with min/max/unit)
+8. Choice attributes must have at least 2 values
+9. Each value needs a `name` (lowercase); `description` is optional but helpful for clinical terms
 
 ## Associated Findings and Components
 

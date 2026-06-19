@@ -32,6 +32,7 @@ For each converted file, produce one `###` entry with:
 - **CDEStaging fields:** source filename, source type (`json` or `md`), attribute count, anatomic location note.
 - Questions/issues only when needed; otherwise `**Assessment:** Looks reasonable as written; confirm acceptable.`
 - When Step 6 applied metadata changes, note what was changed (synonyms, description, tags, CFP winnow) so the reviewer can confirm. Flag only items that still need judgment.
+- Note whether source-carried `presence` / `status` / `temporal change` attributes were removed in favor of the standard `presence` and `change from prior` attributes, or explicitly flag any remaining duplicate-standard concern for TUI review.
 - Blank `**Response:**` slot.
 
 ## Existing-match entry
@@ -61,6 +62,7 @@ Keep each entry short (8-15 lines). The TUI is for quick scanning.
 - Synonym breadth/ambiguity — especially `(none)` or placeholder descriptions on JSON-derived models
 - Metadata changes applied in Step 6 that may still need confirmation (unusual synonym, scope choice, aggressive CFP winnow)
 - Incomplete or odd `change from prior` values
+- Source-carried duplicate standard attributes (`status`, `temporal change`, finding-specific present/absent fields) that were removed or may still need removal
 - Split/extraction/associated-finding decisions
 - CDEStaging issues: attribute count vs source, MD outline mismatches, json-vs-md source
 - **Triage mapping** — wrong existing model linked, or skip that should have converted
