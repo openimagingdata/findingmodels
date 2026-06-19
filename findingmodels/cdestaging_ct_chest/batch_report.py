@@ -20,6 +20,7 @@ def write_batch_report(
 
     succeeded = [r for r in results if r.status == "success"]
     failed = [r for r in results if r.status == "error"]
+    skipped_triage = [r for r in results if r.status == "skipped_triage_match"]
     json_count = sum(1 for r in results if r.source_type == "json")
     md_count = sum(1 for r in results if r.source_type == "md")
 
@@ -30,6 +31,7 @@ def write_batch_report(
         "total": len(results),
         "succeeded": len(succeeded),
         "failed": len(failed),
+        "skipped_triage_match": len(skipped_triage),
         "json_count": json_count,
         "md_count": md_count,
         "entries": [
@@ -60,6 +62,7 @@ def write_batch_report(
         f"- **Total processed:** {len(results)}",
         f"- **Succeeded:** {len(succeeded)}",
         f"- **Failed:** {len(failed)}",
+        f"- **Skipped (triage match):** {len(skipped_triage)}",
         f"- **JSON sources:** {json_count}",
         f"- **Markdown sources:** {md_count}",
         "",

@@ -25,6 +25,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+uv.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -88,8 +89,11 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Documentation directory
-docs/
+# Per-batch review artifacts (TUI review files); local-only
+reviews/
+
+# Personal learning / pipeline notes (local-only)
+notes/
 
 # Local test files (not committed)
 local/

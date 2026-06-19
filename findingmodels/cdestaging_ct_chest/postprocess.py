@@ -14,7 +14,11 @@ from findingmodels.conventions import (
     lowercase_model_dict,
     reorder_attributes,
 )
-from findingmodels.metadata_enrichment import enrich_anatomic_locations, enrich_metadata_from_info
+from findingmodels.metadata_enrichment import (
+    DEFAULT_CHEST_TAGS,
+    enrich_anatomic_locations,
+    enrich_metadata_from_info,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -107,14 +111,17 @@ async def enrich_model(
     source_type: str,
     raw_name: str,
     source: str = "MGB",
-    enrich_metadata: bool = True,
-    enrich_locations: bool = True,
+    enrich_metadata: bool = False,
+    enrich_locations: bool = False,
 ) -> FindingModelFull:
     """Apply metadata enrichment then project conventions."""
     data = model.model_dump(exclude_none=False)
 
     if enrich_metadata and source_type == "json":
         data = await enrich_metadata_from_info(data, raw_name)
+    elif not data.get("tags"):
+        data = dict(data)
+        data["tags"] = list(DEFAULT_CHEST_TAGS)
 
     if enrich_locations:
         data = await enrich_anatomic_locations(data)

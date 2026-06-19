@@ -204,6 +204,12 @@ class CDEStagingCtChestJsonAdapter:
 
         }
 
+        if json_data.get("synonyms"):
+            finding_model_dict["synonyms"] = list(json_data["synonyms"])
+
+        if json_data.get("tags"):
+            finding_model_dict["tags"] = list(json_data["tags"])
+
 
 
         for attribute in json_data.get("attributes", []):

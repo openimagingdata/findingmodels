@@ -45,8 +45,8 @@ async def convert_definition(
     output_dir: Path,
     write: bool = True,
     output_claims: dict[str, Path] | None = None,
-    enrich_metadata: bool = True,
-    enrich_locations: bool = True,
+    enrich_metadata: bool = False,
+    enrich_locations: bool = False,
 ) -> ConversionResult:
     """Convert one CDEStaging CT chest definition file to a validated finding model."""
     try:

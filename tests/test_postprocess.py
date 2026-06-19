@@ -70,6 +70,49 @@ class AsyncEnrichModelTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(len(result.anatomic_locations or []), 1)
         self.assertEqual(result.attributes[0].name, "presence")
 
+
+class DefaultTagsEnrichModelTests(unittest.IsolatedAsyncioTestCase):
+    @patch(
+        "findingmodels.cdestaging_ct_chest.postprocess.enrich_anatomic_locations",
+        new_callable=AsyncMock,
+    )
+    @patch(
+        "findingmodels.cdestaging_ct_chest.postprocess.enrich_metadata_from_info",
+        new_callable=AsyncMock,
+    )
+    async def test_json_path_skips_metadata_applies_default_tags(
+        self, mock_metadata, mock_locations
+    ):
+        sample_path = Path("defs/from_cdestaging_ct_chest/adrenal_nodule.fm.json")
+        if not sample_path.is_file():
+            raise unittest.SkipTest("sample adrenal_nodule.fm.json not available")
+        model = FindingModelFull.model_validate(json.loads(sample_path.read_text()))
+        model_dict = model.model_dump()
+        model_dict.pop("synonyms", None)
+        model_dict.pop("tags", None)
+        model = FindingModelFull.model_validate(model_dict)
+        mock_locations.side_effect = lambda data: data
+
+        result = await enrich_model(
+            model,
+            source_type="json",
+            raw_name="adrenal_nodule",
+            enrich_metadata=False,
+            enrich_locations=False,
+        )
+
+        mock_metadata.assert_not_called()
+        mock_locations.assert_not_called()
+        self.assertEqual(result.tags, ["chest", "CT", "finding"])
+
+
+class AsyncEnrichModelMdTests(unittest.IsolatedAsyncioTestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.sample_path = Path("defs/from_cdestaging_ct_chest/pleural_effusion.fm.json")
+        if not cls.sample_path.is_file():
+            raise unittest.SkipTest("sample pleural_effusion.fm.json not available")
+
     @patch(
         "findingmodels.cdestaging_ct_chest.postprocess.enrich_anatomic_locations",
         new_callable=AsyncMock,
