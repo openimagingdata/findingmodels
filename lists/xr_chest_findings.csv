@@ -1,0 +1,404 @@
+name,category,parent,synonyms,finding_type,finding_cluster,oifm_id
+air_bronchogram,lung,lung_abnormality,,observation,,
+airspace_opacity,lung,lung_abnormality,"Air space opacity,Infiltrate,Airspace disease",observation,,OIFM_CDE_000225
+airway_abnormality,airway,,,,,OIFM_OIDM_449436
+pulmonary_scarring,lung,lung_abnormality,Scarring,observation,,OIFM_OIDM_745898
+architectural_distortion,lung,lung_abnormality,,observation,,OIFM_OIDM_218019
+aspiration,lung,lung_abnormality,,diagnosis,,OIFM_OIDM_556992
+atelectasis,lung,airspace_opacity,"Collapse,Lung collapse",observation,,OIFM_OIDM_041735
+azygos_fissure,lung,lung_anatomic_variant,,observation,,OIFM_OIDM_149725
+azygos_lobe,lung,lung_anatomic_variant,,observation,,OIFM_OIDM_934275
+accessory_fissure,lung,lung_anatomic_variant,,observation,,OIFM_OIDM_114833
+reticular_opacity,lung,lung_abnormality,Reticular opacities,observation,,OIFM_OIDM_525484
+thickening_of_bronchial_wall,airway,bronchial_abnormality,"Peribronchial cuffing,Bronchial wall thickening",observation,,OIFM_OIDM_961282
+bronchiectasis,airway,bronchial_abnormality,,observation,,OIFM_GMTS_013943
+calcified_pulmonary_nodule,lung,pulmonary_nodule,"Calcified granuloma,Calcified nodule",observation,,OIFM_OIDM_543357
+cavitary_lesion,lung,pulmonary_lesion,"Cavitation,Cavitary lucency",observation,,OIFM_CDE_000263
+consolidation,lung,airspace_opacity,Airspace consolidation,observation,,OIFM_OIDM_628702
+ground_glass_opacity,lung,airspace_opacity,"Hazy opacity,Ground-glass opacification,Ground glass opacification",observation,,OIFM_OIDM_923053
+diffuse_increased_lung_lucency,lung,lung_lucency,,observation,,OIFM_OIDM_914730
+miliary_pattern,lung,lung_abnormality,"Miliary nodules,Miliary nodularity",observation,,OIFM_OIDM_204573
+elevation_of_hemidiaphragm,diaphragm,diaphragmatic_abnormality,Elevated hemidiaphragm,observation,,OIFM_OIDM_770950
+depression_of_hemidiaphragm,diaphragm,diaphragmatic_abnormality,Depressed hemidiaphragm,observation,,OIFM_OIDM_432021
+emphysema,lung,lung_abnormality,Emphysematous changes,diagnosis,,OIFM_OIDM_002082
+bulla,lung,lung_lucency,Bullous changes,observation,,OIFM_OIDM_072940
+engorgement_of_pulmonary_vasculature,lung,pulmonary_vascular_abnormality,"Pulmonary vascular congestion,Pulmonary venous congestion,Vascular congestion",observation,,OIFM_OIDM_545430
+blood_flow_redistribution,lung,pulmonary_vascular_abnormality,"Cephalization of pulmonary vasculature,Cephalization,Vascular redistribution,Pulmonary vascular redistribution,Pulmonary venous redistribution",observation,,OIFM_OIDM_125002
+indistinct_pulmonary_vasculature,lung,pulmonary_vascular_abnormality,"Vessel indistinctness,Vascular blurring",observation,,OIFM_OIDM_565475
+pulmonary_vascular_abnormality,lung,lung_abnormality,"Abnormal pulmonary vasculature,Pulmonary vascularity abnormality,Pulmonary vasculature abnormality",,,OIFM_OIDM_113221
+eventration_of_hemidiaphragm,diaphragm,diaphragmatic_abnormality,,observation,,OIFM_OIDM_483201
+diaphragmatic_abnormality,diaphragm,,Diaphragm abnormality,,,OIFM_OIDM_705569
+thickening_of_fissure,pleura,pleural_abnormality,,observation,,OIFM_OIDM_166982
+flattening_of_hemidiaphragm,diaphragm,diaphragmatic_abnormality,,observation,,OIFM_OIDM_716965
+pulmonary_calcification,lung,lung_abnormality,,observation,,OIFM_OIDM_013283
+pulmonary_hyperinflation,lung,lung_abnormality,"Hyperinflation of lungs,Hyperexpanded lungs,Hyperinflated lungs",observation,,OIFM_OIDM_133070
+interstitial_pulmonary_edema,lung,pulmonary_edema,"Pulmonary interstitial edema,Interstitial edema",diagnosis,,OIFM_OIDM_651696
+thickening_of_interstitium,lung,lung_abnormality,"Interstitial thickening,Interstitial prominence",observation,,OIFM_OIDM_342073
+linear_opacity,lung,lung_abnormality,"Bandlike opacity,Linear opacities",observation,,OIFM_OIDM_062845
+lobectomy,lung,lung_postsurgical_change,,observation,,OIFM_MGB_340276
+low_lung_volumes,image_quality,patient_positioning_issue,"Poor inspiratory volume,Decreased lung volumes,Suboptimal inspiration,Poor inspiratory effort",observation,,OIFM_OIDM_378230
+lung_abnormality,lung,,,,,OIFM_MSFT_737122
+osseous_lucency,osseous,osseous_abnormality,,observation,,OIFM_OIDM_289551
+lung_lucency,lung,lung_abnormality,,observation,,OIFM_OIDM_413818
+pulmonary_mass,lung,pulmonary_lesion,Lung mass,observation,,OIFM_OIDM_135648
+mucoid_impaction,airway,bronchial_abnormality,,diagnosis,,OIFM_GMTS_015330
+bronchial_occlusion,airway,bronchial_abnormality,"Endobronchial obstruction,Bronchial cutoff sign",observation,,OIFM_OIDM_131660
+pulmonary_nodule,lung,pulmonary_lesion,Lung nodule,observation,,OIFM_CDE_000195
+lung_transplant,lung,lung_postsurgical_change,,observation,,OIFM_OIDM_192483
+nipple_shadow,soft_tissue,soft_tissue_anatomic_variant,,observation,,OIFM_OIDM_424230
+pneumonectomy,lung,lung_postsurgical_change,,observation,,OIFM_OIDM_206173
+pneumonia,lung,pulmonary_infection,,diagnosis,,OIFM_CDE_000076
+post_resection_volume_loss,lung,lung_postsurgical_change,,observation,,OIFM_OIDM_392629
+pulmonary_contusion,lung,lung_abnormality,,diagnosis,,OIFM_OIDM_582211
+pulmonary_laceration,lung,lung_abnormality,,observation,,OIFM_OIDM_580164
+pulmonary_edema,lung,lung_abnormality,Edema,diagnosis,,OIFM_GMTS_014286
+alveolar_pulmonary_edema,lung,pulmonary_edema,,diagnosis,,OIFM_OIDM_350759
+pulmonary_fibrosis,lung,lung_abnormality,,diagnosis,,OIFM_GMTS_014491
+pulmonary_oligemia,lung,pulmonary_vascular_abnormality,,diagnosis,,OIFM_OIDM_229145
+reduction_of_lung_markings,lung,pulmonary_vascular_abnormality,,observation,,OIFM_OIDM_791224
+reticulonodular_opacity,lung,lung_abnormality,,observation,,OIFM_OIDM_855377
+surgical_staple_line,lung,lung_postsurgical_change,,observation,,OIFM_OIDM_446102
+calcification_of_trachea,airway,tracheal_abnormality,,observation,,OIFM_OIDM_861352
+deviation_of_trachea,airway,tracheal_abnormality,Tracheal deviation,observation,,OIFM_GMTS_015404
+diverticulum_of_trachea,airway,tracheal_abnormality,,observation,,OIFM_OIDM_554402
+obstruction_of_trachea,airway,tracheal_abnormality,,observation,,OIFM_OIDM_271088
+stenosis_of_trachea,airway,tracheal_abnormality,Tracheal narrowing,observation,,OIFM_OIDM_620490
+tracheomegaly,airway,tracheal_abnormality,,observation,,OIFM_GMTS_015383
+volume_loss,lung,lung_abnormality,,observation,,OIFM_OIDM_071216
+wedge_resection,lung,lung_postsurgical_change,,observation,,OIFM_MGB_893730
+cystic_fibrosis,lung,lung_abnormality,,diagnosis,,OIFM_OIDM_296060
+air_fluid_level,lung,lung_abnormality,,observation,,
+blunting_of_costophrenic_angle,pleura,pleural_abnormality,Blunted costophrenic angle,observation,,OIFM_OIDM_600445
+calcified_pleural_plaque,pleura,pleural_abnormality,"Calcified pleural plaques,Pleural plaque,Pleural plaques",observation,,OIFM_OIDM_062542
+pleural_abnormality,pleura,,,,,OIFM_MSFT_213340
+pleural_effusion,pleura,pleural_abnormality,"Hydrothorax,Pleural fluid,Effusions",observation,,OIFM_CDE_000254
+thickening_of_pleura,pleura,pleural_abnormality,"Pleural scarring,Pleural thickening",observation,,OIFM_GMTS_015999
+apical_pleuroparenchymal_scarring,pleura,pleural_abnormality,Apical scarring,observation,,OIFM_OIDM_412273
+pneumothorax,pleura,pleural_abnormality,,observation,,OIFM_GMTS_023339
+tension_pneumothorax,pleura,pneumothorax,,observation,,OIFM_OIDM_440635
+pleural_nodule,pleura,pleural_abnormality,,observation,,OIFM_OIDM_621745
+abnormal_aortic_contour,mediastinal,aortic_abnormality,,observation,,OIFM_OIDM_402414
+abnormal_aortopulmonary_window_contour,mediastinal,abnormal_mediastinal_contour,Loss of aortopulmonary window concavity,observation,,OIFM_OIDM_929337
+abnormal_hilar_contour,mediastinal,abnormal_mediastinal_contour,Hilar abnormality,observation,,OIFM_OIDM_604376
+abnormal_mediastinal_contour,mediastinal,mediastinal_abnormality,,observation,,OIFM_OIDM_103158
+abnormal_pulmonary_artery_contour,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_792655
+calcification_of_aorta,mediastinal,aortic_abnormality,,observation,,OIFM_OIDM_847217
+dilation_of_aorta,mediastinal,aortic_abnormality,Aortic dilation,observation,,OIFM_OIDM_787784
+aneurysm_of_aorta,mediastinal,dilation_of_aorta,,observation,,OIFM_GMTS_014057
+bulging_of_aortic_arch,mediastinal,aortic_abnormality,,observation,,OIFM_OIDM_176546
+cardiac_abnormality,cardiac,,,,,OIFM_MSFT_247688
+heart_transplant,cardiac,cardiac_postsurgical_change,,observation,,OIFM_OIDM_314679
+cardiomegaly,cardiac,cardiac_abnormality,Cardiac enlargement,observation,,OIFM_GMTS_022537
+dextrocardia,cardiac,cardiac_anatomic_variant,,observation,,OIFM_GMTS_013596
+double_density_sign,cardiac,cardiac_abnormality,,observation,,
+enlargement_of_aortic_knob,mediastinal,aortic_abnormality,,observation,,OIFM_OIDM_176546
+enlargement_of_left_atrium,cardiac,cardiac_abnormality,,observation,,OIFM_GMTS_003695
+enlargement_of_left_ventricle,cardiac,cardiac_abnormality,,observation,,OIFM_GMTS_013685
+enlargement_of_right_atrium,cardiac,cardiac_abnormality,,observation,,OIFM_GMTS_013602
+enlargement_of_right_ventricle,cardiac,cardiac_abnormality,,observation,,OIFM_OIDM_197053
+enlargement_of_left_heart_border,cardiac,cardiac_abnormality,,observation,,
+enlargement_of_right_heart_border,cardiac,cardiac_abnormality,,observation,,
+globular_cardiac_silhouette,cardiac,cardiac_abnormality,,observation,,OIFM_OIDM_840763
+hiatal_hernia,mediastinal,mediastinal_abnormality,Hiatus hernia,observation,,OIFM_OIDM_907498
+enlargement_of_hilum,mediastinal,mediastinal_abnormality,"Hilar fullness,Perihilar fullness",observation,,OIFM_OIDM_958698
+lymphadenopathy,mediastinal,mediastinal_abnormality,"Lymph node enlargement,Adenopathy",diagnosis,,OIFM_GMTS_015734
+mediastinal_abnormality,mediastinal,,,,,OIFM_OIDM_645628
+mediastinal_fat_pad,mediastinal,mediastinal_abnormality,,observation,,OIFM_OIDM_803542
+mediastinal_shift,mediastinal,mediastinal_abnormality,,observation,,OIFM_GMTS_015800
+calcification_of_mitral_annulus,cardiac,cardiac_abnormality,,observation,,OIFM_OIDM_159498
+calcification_of_pericardium,cardiac,pericardial_abnormality,,observation,,OIFM_GMTS_013823
+pericardial_effusion,cardiac,pericardial_abnormality,,observation,,OIFM_GMTS_003706
+pericardial_cyst,cardiac,pericardial_abnormality,,observation,,OIFM_OIDM_660228
+pericardial_fat_pad,mediastinal,mediastinal_anatomic_variant,,observation,,OIFM_OIDM_803542
+pneumomediastinum,mediastinal,mediastinal_abnormality,,observation,,OIFM_GMTS_023340
+pneumopericardium,cardiac,pericardial_abnormality,,observation,,OIFM_GMTS_013851
+enlargement_of_pulmonary_artery,mediastinal,mediastinal_abnormality,Prominent pulmonary artery segment,observation,,OIFM_GMTS_013910
+splaying_of_carina,mediastinal,mediastinal_abnormality,,observation,,OIFM_OIDM_443674
+fullness_of_superior_mediastinum,mediastinal,mediastinal_abnormality,,observation,,OIFM_OIDM_606606
+tortuosity_of_aorta,mediastinal,aortic_abnormality,"Aortic tortuosity,Tortuous aorta",observation,,OIFM_OIDM_517028
+unfolding_of_aorta,mediastinal,aortic_abnormality,Unfolded aorta,observation,,OIFM_OIDM_517028
+widening_of_mediastinum,mediastinal,abnormal_mediastinal_contour,"Widened mediastinum,Mediastinal enlargement,Widened cardiomediastinal silhouette",observation,,OIFM_OIDM_698793
+amelia,osseous,osseous_anatomic_variant,,diagnosis,,OIFM_OIDM_190386
+bifid_rib,osseous,osseous_anatomic_variant,,observation,,OIFM_OIDM_824797
+bone_island,osseous,osseous_abnormality,,observation,,OIFM_OIDM_029466
+osseous_lesion,osseous,osseous_abnormality,Bone lesion,,,OIFM_OIDM_335347
+bridging_rib,osseous,osseous_anatomic_variant,Fused rib,observation,,OIFM_OIDM_447509
+cervical_rib,osseous,osseous_anatomic_variant,,observation,,OIFM_CDE_000101
+costochondral_calcification,osseous,osseous_abnormality,,observation,,OIFM_OIDM_246433
+fracture,osseous,osseous_abnormality,,observation,,OIFM_OIDM_739317
+compression_fracture,osseous,fracture,Vertebral compression deformity,observation,,OIFM_CDE_000230
+costal_fusion,osseous,osseous_anatomic_variant,,observation,,OIFM_OIDM_168287
+degenerative_changes,osseous,osseous_abnormality,,diagnosis,,OIFM_OIDM_675673
+diffuse_idiopathic_skeletal_hyperostosis,osseous,osseous_abnormality,DISH,diagnosis,,OIFM_OIDM_990401
+disc_space_narrowing,osseous,osseous_abnormality,,observation,,OIFM_GMTS_010108
+kyphosis,osseous,osseous_abnormality,Kyphotic curvature,observation,,OIFM_OIDM_894376
+fibro_osseous_lesion,osseous,osseous_lesion,,observation,,OIFM_OIDM_755431
+osseous_metastasis,osseous,osseous_lesion,,diagnosis,,OIFM_OIDM_897300
+generalized_osteosclerosis,osseous,osteosclerosis,,observation,,OIFM_GMTS_011018
+hemivertebra,osseous,osseous_anatomic_variant,,observation,,OIFM_OIDM_246218
+intrathoracic_rib,osseous,osseous_anatomic_variant,,observation,,OIFM_OIDM_034511
+malunion,osseous,fracture,,observation,,OIFM_OIDM_995145
+nonunion,osseous,fracture,,observation,,OIFM_GMTS_011722
+osseous_abnormality,osseous,,"Skeletal abnormality,Bony abnormality",,,OIFM_OIDM_164927
+osteosclerosis,osseous,osseous_abnormality,Sclerosis,observation,,OIFM_OIDM_974883
+sclerotic_osseous_lesion,osseous,osseous_lesion,"Osteoblastic lesion,Sclerotic lesion",observation,,OIFM_OIDM_056609
+lytic_osseous_lesion,osseous,osseous_lesion,Osteolytic lesion,observation,,OIFM_OIDM_432373
+osteopenia,osseous,osseous_abnormality,Osseous demineralization,observation,,OIFM_OIDM_356771
+osteophyte_formation,osseous,osseous_abnormality,,observation,,OIFM_OIDM_827630
+pectus_carinatum,osseous,osseous_deformity,,observation,,OIFM_GMTS_012667
+pectus_excavatum,osseous,osseous_deformity,,observation,,OIFM_GMTS_012672
+rib_notching,osseous,osseous_abnormality,,observation,,OIFM_GMTS_025726
+rib_resection,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_157681
+rosary_ribs,osseous,osseous_abnormality,,observation,,OIFM_OIDM_922259
+scoliosis,osseous,osseous_deformity,Levoconvex curvature,observation,,OIFM_CDE_000051
+shoulder_dislocation,osseous,osseous_abnormality,Humeral head dislocation,observation,,OIFM_CDE_000229
+sprengel_deformity,osseous,osseous_deformity,Elevated scapula,diagnosis,,OIFM_OIDM_910349
+thoracic_vertebra_plana,osseous,osseous_deformity,,observation,,OIFM_OIDM_028997
+height_loss_of_vertebral_body,osseous,osseous_deformity,Vertebral body height loss,observation,,OIFM_OIDM_098341
+wedging_of_vertebral_body,osseous,osseous_deformity,,observation,,OIFM_OIDM_767171
+vertebral_endplate_irregularity,osseous,osseous_abnormality,,observation,,OIFM_OIDM_731302
+upper_limb_amputation,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_740952
+rib_osteolysis,osseous,osseous_abnormality,"Vanishing ribs,Vanishing bone,Rib resorption,Progressive rib lysis",observation,,OIFM_OIDM_507348
+osseous_deformity,osseous,osseous_abnormality,,,,OIFM_OIDM_069610
+osseous_erosion,osseous,osseous_abnormality,,observation,,OIFM_OIDM_868754
+osseous_destruction,osseous,osseous_abnormality,,observation,,OIFM_OIDM_124621
+breast_implant,devices,chest_wall_hardware,,observation,device,OIFM_MGB_654936
+calcification_of_axillary_lymph_node,soft_tissue,soft_tissue_abnormality,"Calcified axillary lymph node,Calcified axillary node",observation,,OIFM_OIDM_444636
+calcified_breast_implant,devices,breast_implant,,observation,device,OIFM_OIDM_713410
+mastectomy,soft_tissue,soft_tissue_postsurgical_change,,observation,,OIFM_MGB_089921
+metallic_foreign_body,devices,foreign_body,,observation,device,OIFM_OIDM_618992
+soft_tissue_abnormality,soft_tissue,,,,,OIFM_OIDM_221920
+soft_tissue_calcification,soft_tissue,soft_tissue_abnormality,,observation,,OIFM_GMTS_025786
+soft_tissue_lesion,soft_tissue,soft_tissue_abnormality,Soft tissue mass,observation,,
+soft_tissue_swelling,soft_tissue,soft_tissue_abnormality,,observation,,OIFM_OIDM_696759
+subcutaneous_emphysema,soft_tissue,soft_tissue_abnormality,Subcutaneous gas,observation,,OIFM_OIDM_755361
+surgical_clip,devices,hardware,,,device,OIFM_OIDM_271146
+calcific_tendinosis,soft_tissue,soft_tissue_calcification,Calcific tendinitis,observation,,OIFM_GMTS_031526
+thyroid_enlargement,mediastinal,thyroid_abnormality,Goiter,observation,,OIFM_GMTS_022573
+thyroid_nodule,mediastinal,thyroid_abnormality,,observation,,OIFM_GMTS_009272
+abnormal_anterior_junction_line,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_778636
+abnormal_azygoesophageal_line,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_GMTS_015654
+abnormal_left_paraspinal_line,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_568158
+abnormal_left_paratracheal_stripe,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_820347
+abnormal_posterior_junction_line,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_544987
+abnormal_right_paraspinal_line,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_980101
+abnormal_right_paratracheal_stripe,mediastinal,abnormal_mediastinal_contour,,observation,,OIFM_OIDM_392989
+distension_of_bowel,abdomen,abdominal_abnormality,Gas distended bowel,observation,,OIFM_OIDM_814608
+dilation_of_bowel,abdomen,abdominal_abnormality,Dilated bowel,observation,,OIFM_OIDM_814608
+distension_of_stomach,abdomen,abdominal_abnormality,Gaseous distention of the stomach,observation,,OIFM_OIDM_044908
+gallstone,abdomen,abdominal_abnormality,,observation,,OIFM_GMTS_022482
+hepatomegaly,abdomen,abdominal_abnormality,Enlarged liver,observation,,OIFM_GMTS_001845
+kidney_stone,abdomen,abdominal_abnormality,,observation,,OIFM_OIDM_319506
+calcification_of_liver,abdomen,abdominal_abnormality,,observation,,OIFM_GMTS_022452
+pneumatosis,abdomen,abdominal_abnormality,,observation,,OIFM_GMTS_002850
+pneumobilia,abdomen,abdominal_abnormality,,observation,,OIFM_OIDM_541862
+pneumoperitoneum,abdomen,abdominal_abnormality,"Free abdominal gas,Free air,Free intraperitoneal gas",observation,,OIFM_CDE_000228
+calcification_of_spleen,abdomen,abdominal_abnormality,,observation,,OIFM_GMTS_022455
+splenomegaly,abdomen,abdominal_abnormality,Enlarged spleen,observation,,OIFM_GMTS_003565
+abdominal_clip,devices,surgical_clip,Abdominal clips,observation,device,OIFM_OIDM_371000
+airway_stent,devices,luminal_stent,,observation,device,OIFM_MGB_235469
+anterior_cervical_fusion_device,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_202275
+aortic_stent,devices,endovascular_hardware,Endovascular aortic repair,observation,device,OIFM_OIDM_705624
+axillary_clip,devices,surgical_clip,Axillary clips,observation,device,OIFM_OIDM_863516
+biceps_tenodesis_anchor,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_694181
+biliary_stent,devices,luminal_stent,,observation,device,OIFM_OIDM_576191
+breast_clip,devices,surgical_clip,Breast clips,observation,device,OIFM_OIDM_703734
+cardiac_patch_monitor,devices,cardiac_hardware,,observation,device,OIFM_MGB_334694
+cardiac_valve_replacement,devices,cardiac_hardware,"Prosthetic heart valve,Prosthetic valve",,device,OIFM_MGB_064245
+central_venous_catheter,devices,vascular_access,,observation,device,OIFM_MGB_820557
+chest_tube,devices,drain,"Intercostal drain,Thoracostomy tube,Pigtail chest tube,Pigtail catheter,Pleural drain,Pleural tube,Thoracostomy catheter",observation,device,OIFM_OIDM_302188
+cholecystectomy_clip,devices,surgical_clip,Cholecystectomy clips,observation,device,OIFM_OIDM_893328
+clamshell_sternotomy,osseous,osseous_postsurgical_change,Clamshell sternotomy wires,observation,,OIFM_OIDM_143698
+clavicle_fixation,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_395313
+coronary_stent,devices,endovascular_hardware,,observation,device,OIFM_MGB_177589
+double_balloon_esophageal_catheter,devices,enteric_apparatus,,observation,device,OIFM_OIDM_840109
+ecmo_catheter,devices,vascular_access,,observation,device,OIFM_OIDM_049031
+endotracheal_tube,devices,airway_apparatus,,observation,device,OIFM_CDE_000179
+enteric_tube,devices,enteric_apparatus,"Nasogastric tube,Gastric tube,NG tube",observation,device,OIFM_OIDM_590312
+epicardial_pacing_wires,devices,cardiac_hardware,"Epicardial pacer wires,Temporary epicardial wires",observation,device,OIFM_OIDM_810572
+epidural_catheter,devices,spinal_apparatus,,observation,device,OIFM_OIDM_418732
+esophageal_tamponade_tube,devices,enteric_apparatus,"Sengstaken-Blakemore tube,Minnesota tube",observation,device,OIFM_OIDM_074497
+esophagectomy,mediastinal,mediastinal_postsurgical_change,"Esophagectomy with gastric pull up,Gastric pull-through",observation,,OIFM_OIDM_768022
+gastric_band,devices,hardware,,observation,device,OIFM_OIDM_537627
+gastrostomy_tube,devices,enteric_apparatus,,observation,device,OIFM_OIDM_766756
+icd,devices,cardiac_hardware,Implantable cardioverter defibrillator,observation,device,OIFM_OIDM_758142
+icd_leads,devices,cardiac_hardware,,observation,device,OIFM_OIDM_068732
+impella_device,devices,cardiac_hardware,,observation,device,OIFM_OIDM_478241
+inferior_vena_cava_filter,devices,endovascular_hardware,IVC filter,observation,device,OIFM_CDE_000104
+intra_aortic_balloon_pump,devices,cardiac_hardware,"IABP, IABP device",observation,device,OIFM_OIDM_507795
+intravascular_line,devices,vascular_access,,observation,device,OIFM_OIDM_255569
+leadless_pacemaker,devices,cardiac_hardware,"Leadless cardiac pacemaker,Micra",observation,device,OIFM_OIDM_732956
+left_ventricular_assist_device,devices,cardiac_hardware,LVAD,observation,device,OIFM_MGB_040444
+loop_recorder,devices,cardiac_hardware,,observation,device,OIFM_MGB_093164
+mediastinal_drain,devices,drain,"Jackson-Pratt drain,JP drain,Blake tube",observation,device,OIFM_OIDM_176434
+mediastinal_clip,devices,surgical_clip,"Mediastinal clips,Hilar clips,CABG clips",observation,device,OIFM_OIDM_337490
+metallic_marker,devices,hardware,,observation,device,OIFM_OIDM_775370
+mitral_annuloplasty_ring,devices,cardiac_hardware,,observation,device,OIFM_OIDM_996503
+monitoring_leads,devices,support_apparatus,"EKG leads,ECG leads,Telemetry leads",observation,device,OIFM_OIDM_681215
+neck_clip,devices,surgical_clip,Neck clips,observation,device,OIFM_OIDM_204713
+nuss_bar,devices,chest_wall_hardware,,observation,device,OIFM_OIDM_001683
+pacemaker,devices,cardiac_hardware,"Dual chamber pacemaker,Single chamber pacemaker,Cardiac pacemaker",observation,device,OIFM_OIDM_976496
+pacer_leads,devices,cardiac_hardware,,observation,device,OIFM_OIDM_069974
+pericardial_drain,devices,drain,,observation,device,OIFM_OIDM_921697
+peripherally_inserted_central_catheter,devices,vascular_access,PICC,observation,device,OIFM_MGB_820557
+pfo_closure_device,devices,cardiac_hardware,,observation,device,OIFM_MGB_626908
+port_catheter,devices,vascular_access,"Chest port,Portacath,Port-a-cath,Implanted port",observation,device,OIFM_OIDM_617602
+pulmonary_arterial_catheter,devices,vascular_access,Swan-Ganz catheter,observation,device,OIFM_OIDM_957925
+retained_surgical_foreign_body,devices,foreign_body,,observation,device,OIFM_OIDM_779090
+reverse_total_shoulder_arthroplasty,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_732793
+cerclage_wire,devices,orthopedic_hardware,"Rib cerclage wires,Cerclage wires",observation,device,OIFM_OIDM_178622
+rib_fixation,devices,orthopedic_hardware,Chest wall fixation,observation,device,OIFM_OIDM_751224
+rotator_cuff_anchor,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_864239
+shoulder_fixation,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_000115
+shoulder_replacement,devices,orthopedic_hardware,Total shoulder arthroplasty,observation,device,OIFM_OIDM_466205
+spinal_catheter,devices,spinal_apparatus,,observation,device,OIFM_OIDM_103101
+spinal_fixation,devices,orthopedic_hardware,Stabilization rods,observation,device,OIFM_OIDM_055031
+spinal_fusion,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_016925
+sternal_sutures,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_951264
+subclavian_stent,devices,endovascular_hardware,,observation,device,OIFM_OIDM_916361
+superior_vena_cava_stent,devices,endovascular_hardware,SVC stent,observation,device,OIFM_OIDM_914310
+suture_anchors_in_humeral_head,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_864239
+tavr,devices,aortic_valve_replacement,"Transcatheter aortic valve replacement,TAVI",observation,device,OIFM_OIDM_852879
+temporary_pacer_wire,devices,cardiac_hardware,,observation,device,OIFM_OIDM_609239
+thyroid_bed_clip,devices,surgical_clip,Thyroid bed clips,observation,device,OIFM_OIDM_078506
+tracheostomy_tube,devices,airway_apparatus,,observation,device,OIFM_MGB_132320
+ventricular_shunt,devices,drain,,observation,device,OIFM_OIDM_193529
+esophageal_stent,devices,luminal_stent,,observation,device,OIFM_MGB_674048
+aortic_valve_replacement,devices,cardiac_valve_replacement,"Prosthetic aortic valve,Mechanical aortic valve,Bioprosthetic aortic valve,Aortic valve prosthesis",observation,device,OIFM_MGB_611597
+mitral_valve_replacement,devices,cardiac_valve_replacement,"Prosthetic mitral valve,Mechanical mitral valve,Bioprosthetic mitral valve",observation,device,OIFM_OIDM_188608
+feeding_tube,devices,enteric_tube,"Dobhoff tube,Nasoenteric tube,NJ tube,Nasojejunal tube,GJ tube,Gastrojejunostomy tube",observation,device,OIFM_OIDM_185348
+median_sternotomy,osseous,osseous_postsurgical_change,"Sternotomy,Sternal wires,Median sternotomy wires",observation,,OIFM_MGB_802796
+thoracotomy,osseous,osseous_postsurgical_change,"Lateral thoracotomy,Posterolateral thoracotomy",observation,,OIFM_OIDM_783133
+vertebroplasty,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_929353
+mitral_valve_clip,devices,cardiac_hardware,MitraClip,observation,device,OIFM_OIDM_417935
+left_atrial_appendage_ligation,devices,cardiac_hardware,AtriClip,observation,device,OIFM_MGB_665120
+hemodialysis_catheter,devices,vascular_access,"Dialysis catheter,HD catheter",observation,device,OIFM_OIDM_988832
+esophageal_probe,devices,enteric_apparatus,"Esophageal monitoring device,Esophageal temperature probe",observation,device,OIFM_OIDM_054124
+coronary_artery_bypass_graft,cardiac,cardiac_postsurgical_change,CABG,observation,,OIFM_MGB_053057
+support_device,devices,support_apparatus,"Support lines and tubes,Support device,Support devices",observation,device,
+tunneled_catheter,devices,vascular_access,"Tunneled central catheter,Tunneled line",observation,device,OIFM_OIDM_628961
+introducer_sheath,devices,endovascular_hardware,Vascular sheath,observation,device,OIFM_OIDM_105430
+vascular_stent,devices,endovascular_hardware,,observation,device,OIFM_OIDM_053884
+clipped_costophrenic_angle,image_quality,field_of_view_issue,,observation,,OIFM_OIDM_646786
+clipped_lateral_soft_tissue,image_quality,field_of_view_issue,,observation,,OIFM_OIDM_193174
+clipped_lung_apex,image_quality,field_of_view_issue,,observation,,OIFM_OIDM_515194
+grid_artifact,image_quality,artifact,,observation,,OIFM_OIDM_629839
+image_marker_absent,image_quality,image_marker_issue,,observation,,OIFM_OIDM_240202
+image_marker_incorrect,image_quality,image_marker_issue,,observation,,OIFM_OIDM_295036
+improper_centering,image_quality,field_of_view_issue,,observation,,OIFM_OIDM_906530
+lungs_incompletely_imaged,image_quality,field_of_view_issue,,observation,,OIFM_OIDM_318181
+motion_artifact,image_quality,artifact,,observation,,OIFM_OIDM_659997
+obscured_by_external_object,image_quality,obscured_anatomy,,observation,,OIFM_OIDM_126712
+obscured_by_laterality_marker,image_quality,obscured_anatomy,,observation,,OIFM_OIDM_224143
+obscured_by_medical_device,image_quality,obscured_anatomy,,observation,,OIFM_OIDM_709467
+obscured_by_chin,image_quality,obscured_anatomy,,observation,,OIFM_OIDM_793808
+overpenetration,image_quality,exposure_issue,"Overpenetrated,Overexposed",observation,,OIFM_OIDM_308623
+rotation,image_quality,patient_positioning_issue,"Rotated,Rotated image",observation,,OIFM_OIDM_367264
+lordotic_positioning,image_quality,patient_positioning_issue,"Lordotic projection,Lordotic view",observation,,
+underpenetration,image_quality,exposure_issue,"Underpenetrated,Underexposed",observation,,OIFM_OIDM_119826
+obscuration_of_hemidiaphragm,diaphragm,diaphragmatic_abnormality,,observation,,OIFM_OIDM_769251
+calcification_of_hilar_lymph_node,mediastinal,mediastinal_abnormality,,observation,,OIFM_GMTS_013012
+resection_of_clavicle,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_739684
+pectus_excavatum_repair,osseous,osseous_postsurgical_change,,observation,,OIFM_OIDM_654237
+sternal_fixation,devices,orthopedic_hardware,,observation,device,OIFM_OIDM_058048
+tricuspid_annuloplasty_ring,devices,cardiac_hardware,,observation,device,OIFM_OIDM_122239
+widening_of_rib_interspaces,osseous,osseous_abnormality,,observation,,OIFM_OIDM_594364
+pericardial_abnormality,cardiac,cardiac_abnormality,,,,
+aortic_abnormality,mediastinal,mediastinal_abnormality,,,,
+lung_anatomic_variant,lung,,,,,
+lung_postsurgical_change,lung,,,,,
+linear_atelectasis,lung,atelectasis,"Plate-like atelectasis,Discoid atelectasis,Band atelectasis",observation,,
+pulmonary_lesion,lung,lung_abnormality,Lung lesion,,,
+tracheal_abnormality,airway,airway_abnormality,,,,
+bronchial_abnormality,airway,airway_abnormality,,,,
+thyroid_abnormality,mediastinal,mediastinal_abnormality,,,,
+bronchocele,airway,bronchial_abnormality,,observation,,
+saber_sheath_trachea,airway,tracheal_abnormality,,observation,,OIFM_MGB_078804
+cardiac_postsurgical_change,cardiac,,,,,
+cardiac_anatomic_variant,cardiac,,,,,
+calcification_of_aortic_valve,cardiac,cardiac_abnormality,,observation,,
+calcification_of_coronary_artery,cardiac,cardiac_abnormality,,observation,,
+mediastinal_anatomic_variant,mediastinal,,,,,
+osseous_postsurgical_change,osseous,,,,,OIFM_OIDM_671573
+osseous_anatomic_variant,osseous,,,,,OIFM_OIDM_216407
+periosteal_reaction,osseous,osseous_abnormality,,observation,,
+pathologic_fracture,osseous,fracture,,observation,,OIFM_GMTS_025744
+paget_disease,osseous,osseous_abnormality,,diagnosis,,
+osteonecrosis,osseous,osseous_abnormality,"Avascular necrosis,AVN",observation,,
+bone_infarct,osseous,osseous_abnormality,,observation,,OIFM_GMTS_010943
+h_shaped_vertebra,osseous,osseous_abnormality,"Fish mouth vertebra,H-shaped vertebrae",observation,,
+osteomyelitis,osseous,osseous_abnormality,,diagnosis,,
+soft_tissue_anatomic_variant,soft_tissue,,,,,
+soft_tissue_postsurgical_change,soft_tissue,,,,,
+absence_of_pectoral_muscle,soft_tissue,soft_tissue_abnormality,,observation,,
+skin_fold,soft_tissue,soft_tissue_anatomic_variant,,observation,,
+abdominal_abnormality,abdomen,,,,,
+hardware,devices,,,,device,
+support_apparatus,devices,,,,device,OIFM_OIDM_591054
+foreign_body,devices,,,,device,OIFM_OIDM_031030
+cardiac_hardware,devices,hardware,,,device,
+endovascular_hardware,devices,hardware,,,device,
+luminal_stent,devices,hardware,,,device,
+orthopedic_hardware,devices,hardware,,,device,
+chest_wall_hardware,devices,hardware,,,device,
+airway_apparatus,devices,support_apparatus,,,device,
+vascular_access,devices,support_apparatus,,,device,
+drain,devices,support_apparatus,,,device,
+enteric_apparatus,devices,support_apparatus,,,device,
+spinal_apparatus,devices,support_apparatus,,,device,
+mediastinal_postsurgical_change,mediastinal,,,,,
+image_quality_issue,image_quality,,,,,
+exposure_issue,image_quality,image_quality_issue,,,,
+field_of_view_issue,image_quality,image_quality_issue,,,,
+patient_positioning_issue,image_quality,image_quality_issue,,,,
+artifact,image_quality,image_quality_issue,,,,OIFM_OIDM_334144
+obscured_anatomy,image_quality,image_quality_issue,,,,
+image_marker_issue,image_quality,image_quality_issue,,,,
+honeycombing,lung,lung_abnormality,"Stacked cysts,Microcystic lung",observation,,
+septal_line,lung,lung_abnormality,Septal thickening line,observation,,
+kerley_a_line,lung,septal_line,"Kerley A line,Kerley A lines",observation,,
+kerley_b_line,lung,septal_line,"Kerley B line,Kerley B lines",observation,,
+apical_cap,pleura,pleural_abnormality,Apical pleural cap,observation,,
+juxtaphrenic_peak,lung,lung_abnormality,Juxtaphrenic peak sign,observation,,
+mycetoma,lung,pulmonary_lesion,Fungus ball,diagnosis,,
+broncholith,airway,bronchial_abnormality,,observation,,
+pulmonary_infarct,lung,lung_abnormality,Pulmonary infarction,diagnosis,,
+pneumatocele,lung,lung_lucency,,observation,,
+silhouette_sign,lung,lung_abnormality,Silhouetting,observation,,
+air_crescent_sign,lung,cavitary_lesion,Air crescent,observation,,
+hampton_hump,lung,airspace_opacity,Hampton's hump,observation,,
+westermark_sign,lung,reduction_of_lung_markings,Westermark's sign,observation,,
+golden_s_sign,lung,atelectasis,S sign of Golden,observation,,
+luftsichel_sign,lung,atelectasis,Luftsichel,observation,,
+deep_sulcus_sign,pleura,pneumothorax,Deep sulcus,observation,,
+hilum_overlay_sign,mediastinal,mediastinal_abnormality,Hilar overlay sign,observation,,
+spine_sign,lung,lung_abnormality,,observation,,
+scimitar_sign,lung,pulmonary_vascular_abnormality,Scimitar,observation,,
+scimitar_syndrome,lung,pulmonary_vascular_abnormality,"Partial anomalous pulmonary venous return,PAPVR",diagnosis,,
+parenchymal_band,lung,linear_opacity,,observation,,
+pneumonitis,lung,lung_abnormality,,diagnosis,,
+enlargement_of_cardiac_silhouette,cardiac,cardiac_abnormality,"Enlarged cardiac silhouette,Cardiac silhouette enlargement,Enlarged cardiopericardial silhouette",observation,,
+prominence_of_bronchovascular_markings,lung,lung_abnormality,"Increased bronchovascular markings,Prominent bronchovascular markings,Increased central bronchovascular markings,Bronchovascular prominence",observation,,
+bronchovascular_crowding,lung,lung_abnormality,"Crowding of bronchovascular structures,Crowding of bronchovascular markings",observation,,
+tuberculosis,lung,pulmonary_infection,TB,diagnosis,,
+nontuberculous_mycobacterial_infection,lung,pulmonary_infection,Atypical mycobacterial infection,diagnosis,,
+organizing_pneumonia,lung,lung_abnormality,,diagnosis,,
+chronic_obstructive_pulmonary_disease,lung,lung_abnormality,COPD,diagnosis,,
+hydropneumothorax,pleura,pleural_abnormality,,observation,,
+multiple_myeloma,osseous,osseous_lesion,Myeloma,diagnosis,,OIFM_OIDM_048062
+enchondroma,osseous,osseous_lesion,,diagnosis,,
+bochdalek_hernia,diaphragm,diaphragmatic_abnormality,Bochdalek's hernia,observation,,
+embolization_coil,devices,endovascular_hardware,Embolization coils,observation,device,
+aortic_stent_graft,devices,endovascular_hardware,TEVAR,observation,device,
+nerve_stimulator,devices,hardware,"Hypoglossal nerve stimulator,Neurostimulator device",observation,device,
+ureteral_stent,devices,luminal_stent,,observation,device,
+nephrostomy_tube,devices,drain,,observation,device,
+endobronchial_valve,devices,airway_apparatus,Endobronchial valves,observation,device,
+pleurodesis,lung,lung_postsurgical_change,Talc pleurodesis,observation,,
+ileus,abdomen,abdominal_abnormality,,diagnosis,,
+stool_burden,abdomen,abdominal_abnormality,Colonic stool burden,observation,,
+enlargement_of_cardiomediastinal_silhouette,cardiac,cardiac_abnormality,"Enlarged cardiomediastinal silhouette,Cardiomediastinal silhouette enlargement",observation,,
+pulmonary_infection,lung,lung_abnormality,,,,
+rounded_opacity,lung,lung_abnormality,"Round opacity,Ovoid opacity,Oval opacity",observation,,
+surgical_packing_material,devices,foreign_body,"Surgical sponge,Packing material,Laparotomy pad",observation,device,
+paraesophageal_hernia,mediastinal,hiatal_hernia,,observation,,

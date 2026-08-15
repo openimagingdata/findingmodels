@@ -1,0 +1,521 @@
+name,category,parent,synonyms,finding_type,finding_cluster,oifm_id
+brain_parenchymal_abnormality,brain_parenchyma,,,,,OIFM_OIDM_063972
+hypoattenuation,brain_parenchyma,brain_parenchymal_abnormality,"hypodensity, low attenuation, decreased attenuation",observation,,OIFM_OIDM_381117
+hyperattenuation,brain_parenchyma,brain_parenchymal_abnormality,"hyperdensity, high attenuation, increased attenuation",observation,,OIFM_OIDM_485183
+early_infarct_sign,brain_parenchyma,brain_parenchymal_abnormality,,observation,,OIFM_OIDM_813192
+insular_ribbon_sign,brain_parenchyma,early_infarct_sign,loss of insular ribbon,observation,,OIFM_OIDM_802330
+gray_white_matter_indistinction,brain_parenchyma,brain_parenchymal_abnormality,"loss of gray-white differentiation, loss of gray-white junction",observation,,
+mass_effect,brain_parenchyma,brain_parenchymal_abnormality,,observation,,OIFM_OIDM_113253
+midline_shift,brain_parenchyma,mass_effect,midline deviation,observation,,OIFM_OIDM_618974
+sulcal_effacement,brain_parenchyma,mass_effect,"effaced sulci, sulcal crowding",observation,,OIFM_OIDM_392893
+basal_cistern_effacement,brain_parenchyma,mass_effect,compressed cisterns,observation,,OIFM_OIDM_267712
+ventricular_effacement,brain_parenchyma,mass_effect,"compressed ventricles, third ventricle narrowing, cerebral aqueduct narrowing, narrowing of the third ventricle and cerebral aqueduct, narrowing of the cerebral aqueduct",observation,,OIFM_OIDM_764784
+herniation,brain_parenchyma,mass_effect,"brain herniation, cerebral herniation",observation,,OIFM_OIDM_943505
+subfalcine_herniation,brain_parenchyma,herniation,subfalcine shift,observation,,OIFM_OIDM_259932
+descending_transtentorial_herniation,brain_parenchyma,herniation,"descending transtentorial hernia, DTH",observation,,OIFM_OIDM_441726
+uncal_herniation,brain_parenchyma,descending_transtentorial_herniation,,observation,,OIFM_OIDM_211678
+medialization_of_uncus,brain_parenchyma,uncal_herniation,"uncal medialization, uncal displacement",observation,,OIFM_OIDM_213314
+central_transtentorial_herniation,brain_parenchyma,descending_transtentorial_herniation,central herniation,observation,,OIFM_OIDM_069851
+ascending_transtentorial_herniation,brain_parenchyma,herniation,"upward transtentorial herniation, upward herniation, ascending transtentorial hernia",observation,,OIFM_OIDM_856008
+cerebellar_tonsillar_herniation,brain_parenchyma,herniation,"tonsillar herniation, foramen magnum herniation",observation,,OIFM_OIDM_439355
+transalar_herniation,brain_parenchyma,herniation,"transalar hernia, sphenoid wing herniation",observation,,OIFM_OIDM_016167
+extracranial_herniation,brain_parenchyma,herniation,"transcalvarial herniation, external herniation, transdural herniation, transcranial herniation",observation,,OIFM_OIDM_617772
+intra_axial_lesion,brain_parenchyma,brain_parenchymal_abnormality,"brain lesion, intraparenchymal lesion, brain mass, intraparenchymal mass",observation,,OIFM_OIDM_582415
+intra_axial_cyst,brain_parenchyma,intra_axial_lesion,"brain cyst, parenchymal cyst",observation,,OIFM_OIDM_093105
+cerebral_atrophy,brain_parenchyma,brain_parenchymal_abnormality,"brain atrophy, brain volume loss, cerebral volume loss",observation,,OIFM_OIDM_786384
+generalized_atrophy,brain_parenchyma,cerebral_atrophy,"diffuse cerebral atrophy, global atrophy, diffuse brain atrophy, generalized cerebral atrophy, prominent ventricles and sulci, the ventricles and sulci are prominent, enlarged ventricles and sulci, prominent ventricles and cortical sulci",observation,,
+focal_atrophy,brain_parenchyma,cerebral_atrophy,"regional atrophy, focal volume loss",observation,,OIFM_OIDM_291655
+enlarged_perivascular_space,brain_parenchyma,brain_parenchymal_abnormality,"dilated Virchow-Robin space, prominent perivascular space, dilated perivascular space, enlarged perivascular spaces",observation,,OIFM_OIDM_582546
+parenchymal_calcification,brain_parenchyma,brain_parenchymal_abnormality,"brain parenchymal calcification, focal brain calcification",observation,,OIFM_OIDM_930805
+thalamic_fusion,brain_parenchyma,brain_parenchymal_abnormality,"fused thalami, thalamic non-separation",observation,,OIFM_OIDM_219268
+cerebral_hemispheric_fusion,brain_parenchyma,brain_parenchymal_abnormality,"hemispheric fusion, hemispheric non-separation, midline hemispheric fusion, frontal lobe fusion",observation,,OIFM_OIDM_937688
+abnormal_enhancement,brain_parenchyma,brain_parenchymal_abnormality,"abnormal contrast uptake, pathologic enhancement",observation,,OIFM_OIDM_103376
+ring_enhancement,brain_parenchyma,abnormal_enhancement,rim enhancement,observation,,OIFM_OIDM_273483
+cerebral_edema,brain_parenchyma,brain_parenchymal_abnormality,brain edema,diagnosis,,OIFM_OIDM_888858
+vasogenic_edema,brain_parenchyma,cerebral_edema,,diagnosis,,OIFM_OIDM_680433
+cytotoxic_edema,brain_parenchyma,cerebral_edema,cellular edema,diagnosis,,OIFM_OIDM_366851
+transependymal_edema,brain_parenchyma,cerebral_edema,"interstitial edema, periventricular edema",diagnosis,,OIFM_OIDM_867424
+encephalomalacia,brain_parenchyma,brain_parenchymal_abnormality,,diagnosis,,OIFM_OIDM_821529
+cystic_encephalomalacia,brain_parenchyma,encephalomalacia,,diagnosis,,OIFM_OIDM_732387
+gliosis,brain_parenchyma,brain_parenchymal_abnormality,reactive gliosis,diagnosis,,OIFM_OIDM_240658
+ischemic_disease,brain_parenchyma,brain_parenchymal_abnormality,,diagnosis,,OIFM_OIDM_582223
+infarct,brain_parenchyma,ischemic_disease,"cerebral infarct, cerebral infarction",diagnosis,,
+hemorrhagic_transformation,brain_parenchyma,infarct,hemorrhagic conversion,diagnosis,,OIFM_OIDM_366454
+hemorrhagic_infarct,brain_parenchyma,hemorrhagic_transformation,,diagnosis,,OIFM_OIDM_669559
+lacunar_infarct,brain_parenchyma,infarct,lacune,diagnosis,,OIFM_OIDM_251340
+territorial_infarct,brain_parenchyma,infarct,"territorial infarction, large vascular territory infarct, large vessel territory infarct, major vascular territory infarct",diagnosis,,OIFM_OIDM_266756
+middle_cerebral_artery_territory_infarct,brain_parenchyma,territorial_infarct,"MCA territory infarct, MCA infarct, middle cerebral artery infarct",diagnosis,,OIFM_OIDM_655715
+posterior_cerebral_artery_territory_infarct,brain_parenchyma,territorial_infarct,"PCA territory infarct, PCA infarct, posterior cerebral artery infarct",diagnosis,,OIFM_OIDM_166472
+anterior_cerebral_artery_territory_infarct,brain_parenchyma,territorial_infarct,"ACA territory infarct, ACA infarct, anterior cerebral artery infarct",diagnosis,,OIFM_OIDM_775774
+posterior_inferior_cerebellar_artery_territory_infarct,brain_parenchyma,territorial_infarct,"PICA territory infarct, PICA infarct, posterior inferior cerebellar artery infarct",diagnosis,,OIFM_OIDM_644531
+anterior_inferior_cerebellar_artery_territory_infarct,brain_parenchyma,territorial_infarct,"AICA territory infarct, AICA infarct, anterior inferior cerebellar artery infarct",diagnosis,,OIFM_OIDM_909883
+superior_cerebellar_artery_territory_infarct,brain_parenchyma,territorial_infarct,"SCA territory infarct, SCA infarct, superior cerebellar artery infarct",diagnosis,,OIFM_OIDM_786311
+striatocapsular_infarct,brain_parenchyma,infarct,"striatocapsular infarction, basal ganglionic capsular infarct",diagnosis,,OIFM_OIDM_277527
+brainstem_infarct,brain_parenchyma,infarct,"brainstem infarction, brain stem infarct",diagnosis,,OIFM_OIDM_970275
+pontine_infarct,brain_parenchyma,brainstem_infarct,"pontine infarction, pons infarct",diagnosis,,OIFM_OIDM_838821
+medullary_infarct,brain_parenchyma,brainstem_infarct,medullary infarction,diagnosis,,OIFM_OIDM_569598
+lateral_medullary_infarct,brain_parenchyma,medullary_infarct,,diagnosis,,OIFM_OIDM_702371
+medial_medullary_infarct,brain_parenchyma,medullary_infarct,,diagnosis,,OIFM_OIDM_387527
+midbrain_infarct,brain_parenchyma,brainstem_infarct,"midbrain infarction, mesencephalic infarct",diagnosis,,OIFM_OIDM_872204
+watershed_infarct,brain_parenchyma,infarct,"border zone infarct, hemodynamic infarct",diagnosis,,
+venous_infarct,brain_parenchyma,infarct,venous infarction,diagnosis,,OIFM_OIDM_680485
+small_vessel_ischemic_disease,brain_parenchyma,ischemic_disease,"SVID, small vessel disease, chronic microvascular ischemic changes",diagnosis,,
+hypoxic_ischemic_encephalopathy,brain_parenchyma,ischemic_disease,"HIE, anoxic brain injury, hypoxic brain injury",diagnosis,,OIFM_OIDM_044611
+intracranial_hemorrhage,brain_parenchyma,brain_parenchymal_abnormality,"ICH, intracranial bleeding",diagnosis,,OIFM_OIDM_797056
+parenchymal_hematoma,brain_parenchyma,intracranial_hemorrhage,"intraparenchymal hemorrhage, IPH, intracerebral hemorrhage, brain hemorrhage",diagnosis,,
+catheter_tract_hemorrhage,brain_parenchyma,parenchymal_hematoma,"catheter tract hematoma, tract hemorrhage, tract hematoma, EVD tract hemorrhage, ventriculostomy tract hemorrhage",diagnosis,,OIFM_OIDM_448433
+cerebral_contusion,brain_parenchyma,brain_parenchymal_abnormality,"brain contusion, hemorrhagic contusion",diagnosis,,OIFM_OIDM_322629
+cerebral_infection,brain_parenchyma,brain_parenchymal_abnormality,,diagnosis,,OIFM_OIDM_845319
+cerebritis,brain_parenchyma,cerebral_infection,,diagnosis,,OIFM_OIDM_726585
+cerebral_abscess,brain_parenchyma,cerebral_infection,brain abscess,diagnosis,,OIFM_OIDM_910183
+encephalitis,brain_parenchyma,cerebral_infection,,diagnosis,,OIFM_OIDM_445828
+viral_encephalitis,brain_parenchyma,encephalitis,,diagnosis,,OIFM_OIDM_258182
+herpes_simplex_encephalitis,brain_parenchyma,viral_encephalitis,"herpes encephalitis, HSV encephalitis",diagnosis,,OIFM_OIDM_633793
+neurocysticercosis,brain_parenchyma,cerebral_infection,NCC,diagnosis,,OIFM_OIDM_581255
+brain_neoplasm,brain_parenchyma,brain_parenchymal_abnormality,brain tumor,diagnosis,,OIFM_OIDM_901763
+brain_metastasis,brain_parenchyma,brain_neoplasm,"cerebral metastasis, brain met",diagnosis,,OIFM_GMTS_006955
+glioma,brain_parenchyma,brain_neoplasm,glial neoplasm,diagnosis,,OIFM_CDE_000115
+astrocytoma,brain_parenchyma,glioma,,diagnosis,,OIFM_OIDM_606726
+oligodendroglioma,brain_parenchyma,glioma,,diagnosis,,OIFM_OIDM_899132
+glioblastoma,brain_parenchyma,glioma,"GBM, glioblastoma multiforme",diagnosis,,OIFM_OIDM_356038
+pineal_parenchymal_tumor,brain_parenchyma,brain_neoplasm,,diagnosis,,OIFM_OIDM_064149
+pineoblastoma,brain_parenchyma,pineal_parenchymal_tumor,,diagnosis,,OIFM_OIDM_037130
+pineocytoma,brain_parenchyma,pineal_parenchymal_tumor,,diagnosis,,OIFM_OIDM_283209
+pineal_parenchymal_tumor_of_intermediate_differentiation,brain_parenchyma,pineal_parenchymal_tumor,PPTID,diagnosis,,OIFM_OIDM_851009
+diffuse_axonal_injury,brain_parenchyma,brain_parenchymal_abnormality,"DAI, shear injury, diffuse traumatic axonal injury",diagnosis,,OIFM_OIDM_296147
+congenital_brain_malformation,brain_parenchyma,brain_parenchymal_abnormality,congenital brain anomaly,diagnosis,,OIFM_GMTS_007508
+posterior_fossa_malformation,brain_parenchyma,congenital_brain_malformation,,diagnosis,,OIFM_OIDM_332001
+chiari_malformation,brain_parenchyma,posterior_fossa_malformation,,diagnosis,,OIFM_OIDM_456265
+chiari_i_malformation,brain_parenchyma,chiari_malformation,"Chiari I, Chiari 1, Chiari malformation type I, Chiari malformation type 1",diagnosis,,
+chiari_ii_malformation,brain_parenchyma,chiari_malformation,"Chiari II, Chiari 2, Chiari malformation type II, Chiari malformation type 2, Arnold-Chiari malformation",diagnosis,,
+chiari_iii_malformation,brain_parenchyma,chiari_malformation,"Chiari III, Chiari 3, Chiari malformation type III, Chiari malformation type 3",diagnosis,,OIFM_OIDM_509940
+dandy_walker_malformation,brain_parenchyma,posterior_fossa_malformation,"Dandy-Walker, DWM, Dandy-Walker syndrome, classic Dandy-Walker",diagnosis,,OIFM_OIDM_517353
+corpus_callosum_dysgenesis,brain_parenchyma,congenital_brain_malformation,callosal dysgenesis,diagnosis,,OIFM_OIDM_460379
+agenesis_of_corpus_callosum,brain_parenchyma,corpus_callosum_dysgenesis,callosal agenesis,diagnosis,,
+partial_agenesis_of_corpus_callosum,brain_parenchyma,corpus_callosum_dysgenesis,"callosal hypogenesis, corpus callosum hypogenesis",diagnosis,,OIFM_OIDM_002199
+holoprosencephaly,brain_parenchyma,congenital_brain_malformation,"HPE, prosencephalic malformation, holoprosencephaly spectrum",diagnosis,,OIFM_OIDM_547518
+alobar_holoprosencephaly,brain_parenchyma,holoprosencephaly,alobar HPE,diagnosis,,OIFM_OIDM_705742
+semilobar_holoprosencephaly,brain_parenchyma,holoprosencephaly,semilobar HPE,diagnosis,,OIFM_OIDM_345389
+lobar_holoprosencephaly,brain_parenchyma,holoprosencephaly,lobar HPE,diagnosis,,OIFM_OIDM_833733
+malformation_of_cortical_development,brain_parenchyma,congenital_brain_malformation,"MCD, cortical malformation",diagnosis,,OIFM_OIDM_509929
+heterotopia,brain_parenchyma,malformation_of_cortical_development,gray matter heterotopia,diagnosis,,OIFM_OIDM_811305
+nodular_heterotopia,brain_parenchyma,heterotopia,,diagnosis,,OIFM_OIDM_755669
+subependymal_heterotopia,brain_parenchyma,heterotopia,periventricular heterotopia,diagnosis,,OIFM_OIDM_617430
+lissencephaly,brain_parenchyma,malformation_of_cortical_development,"smooth brain, lissencephaly spectrum",diagnosis,,OIFM_OIDM_112587
+agyria,brain_parenchyma,lissencephaly,,diagnosis,,OIFM_OIDM_433910
+pachygyria,brain_parenchyma,lissencephaly,,diagnosis,,OIFM_OIDM_440985
+band_heterotopia,brain_parenchyma,lissencephaly,"subcortical band heterotopia, double cortex",diagnosis,,OIFM_OIDM_077874
+polymicrogyria,brain_parenchyma,malformation_of_cortical_development,PMG,diagnosis,,OIFM_OIDM_606220
+focal_cortical_dysplasia,brain_parenchyma,malformation_of_cortical_development,FCD,diagnosis,,OIFM_CDE_000100
+schizencephaly,brain_parenchyma,malformation_of_cortical_development,,diagnosis,,OIFM_OIDM_391613
+cephalocele,brain_parenchyma,congenital_brain_malformation,"encephalocele, meningocele, meningoencephalocele, cranial meningocele, cranium bifidum",diagnosis,,OIFM_OIDM_110362
+posterior_reversible_encephalopathy_syndrome,brain_parenchyma,brain_parenchymal_abnormality,"PRES, reversible posterior leukoencephalopathy syndrome, RPLS",diagnosis,,OIFM_OIDM_755246
+pineal_cyst,brain_parenchyma,brain_parenchymal_abnormality,pineal region cyst,observation,,OIFM_OIDM_273883
+pineal_lesion,brain_parenchyma,brain_parenchymal_abnormality,"pineal mass, pineal region mass, pineal region lesion",observation,,
+ependymoma,brain_parenchyma,brain_neoplasm,ependymal tumor,diagnosis,,OIFM_OIDM_762016
+medulloblastoma,brain_parenchyma,brain_neoplasm,,diagnosis,,OIFM_OIDM_599986
+primary_cns_lymphoma,brain_parenchyma,brain_neoplasm,"PCNSL, CNS lymphoma, primary brain lymphoma, cerebral lymphoma",diagnosis,,
+pilocytic_astrocytoma,brain_parenchyma,astrocytoma,"JPA, juvenile pilocytic astrocytoma, cystic cerebellar astrocytoma",diagnosis,,OIFM_OIDM_768937
+subependymal_giant_cell_astrocytoma,brain_parenchyma,astrocytoma,SEGA,diagnosis,,OIFM_OIDM_778095
+hemangioblastoma,brain_parenchyma,brain_neoplasm,cerebellar hemangioblastoma,diagnosis,,OIFM_OIDM_284132
+intracranial_germ_cell_tumor,brain_parenchyma,brain_neoplasm,"germinoma, intracranial germinoma, CNS germ cell tumor",diagnosis,,OIFM_OIDM_108949
+neurosarcoidosis,brain_parenchyma,brain_parenchymal_abnormality,"CNS sarcoidosis, cerebral sarcoidosis, sarcoidosis brain",diagnosis,,OIFM_OIDM_063274
+osmotic_demyelination_syndrome,brain_parenchyma,brain_parenchymal_abnormality,"ODS, central pontine myelinolysis, CPM, extrapontine myelinolysis",diagnosis,,OIFM_OIDM_144904
+brain_parenchymal_anatomic_variant,brain_parenchyma,,,,,OIFM_OIDM_414018
+cerebellar_tonsillar_ectopia,brain_parenchyma,brain_parenchymal_anatomic_variant,"tonsillar ectopia, low-lying cerebellar tonsils, cerebellar tonsil descent, cerebellar ectopia, tonsillar descent",observation,,OIFM_OIDM_201931
+brain_parenchymal_postsurgical_change,brain_parenchyma,,,,,OIFM_OIDM_403348
+resection_cavity,brain_parenchyma,brain_parenchymal_postsurgical_change,"surgical cavity, post-resection cavity, postoperative cavity",observation,,OIFM_OIDM_782257
+sellar_abnormality,sella_turcica,,,,,OIFM_OIDM_551013
+sellar_mass,sella_turcica,sellar_abnormality,"suprasellar mass, intrasellar mass, sellar and suprasellar mass",,,
+pituitary_adenoma,sella_turcica,sellar_mass,pituitary tumor,diagnosis,,OIFM_OIDM_685143
+pituitary_macroadenoma,sella_turcica,pituitary_adenoma,macroadenoma,diagnosis,,OIFM_OIDM_913617
+expanded_sella,sella_turcica,sellar_abnormality,"enlarged sella, expanded sella turcica, sella enlargement, enlarged pituitary fossa, expanded pituitary fossa, ballooned sella",observation,,
+sellar_calcification,sella_turcica,sellar_abnormality,"calcification in sella, sellar region calcification",observation,,OIFM_OIDM_282360
+empty_sella,sella_turcica,sellar_abnormality,"empty pituitary fossa, CSF-filled sella",diagnosis,,OIFM_OIDM_132795
+partially_empty_sella,sella_turcica,empty_sella,partial empty sella,diagnosis,,OIFM_OIDM_158013
+pituitary_hemorrhage,sella_turcica,sellar_abnormality,sellar hemorrhage,diagnosis,,OIFM_OIDM_653005
+pituitary_apoplexy,sella_turcica,sellar_abnormality,,diagnosis,,OIFM_OIDM_123605
+craniopharyngioma,sella_turcica,sellar_abnormality,,diagnosis,,OIFM_OIDM_735880
+rathke_cleft_cyst,sella_turcica,sellar_abnormality,Rathke pouch cyst,diagnosis,,OIFM_OIDM_579714
+sellar_postsurgical_change,sella_turcica,,,,,OIFM_OIDM_179792
+transsphenoidal_surgery,sella_turcica,sellar_postsurgical_change,"post transsphenoidal resection, transsphenoidal approach changes, endoscopic endonasal surgery, endoscopic transsphenoidal surgery",observation,,OIFM_OIDM_634599
+extra_axial_abnormality,extra_axial,,,,,OIFM_OIDM_033418
+extra_axial_collection,extra_axial,extra_axial_abnormality,"extra-axial fluid, extra-axial fluid collection",observation,,OIFM_OIDM_004178
+subdural_collection,extra_axial,extra_axial_collection,"subdural fluid collection, subdural fluid, subdural fluid accumulation",observation,,OIFM_OIDM_441121
+subdural_hygroma,extra_axial,subdural_collection,"subdural CSF collection, low-attenuation subdural fluid, low-density subdural fluid, low-attenuation subdural collection, CSF-density subdural collection",observation,,OIFM_OIDM_547091
+extra_axial_csf_collection,extra_axial,extra_axial_collection,,observation,,
+prominent_extra_axial_spaces,extra_axial,extra_axial_collection,enlarged subarachnoid spaces,observation,,OIFM_OIDM_053904
+extra_axial_cyst,extra_axial,extra_axial_abnormality,,,,OIFM_OIDM_607585
+arachnoid_cyst,extra_axial,extra_axial_cyst,,diagnosis,,OIFM_OIDM_706918
+epidermoid_cyst,extra_axial,extra_axial_cyst,"epidermoid, epidermoid tumor",diagnosis,,
+dermoid_cyst,extra_axial,extra_axial_cyst,"intracranial dermoid, dermoid tumor",diagnosis,,OIFM_CDE_000216
+intracranial_lipoma,extra_axial,extra_axial_abnormality,"meningeal lipoma, lipomatous hamartoma",diagnosis,,OIFM_OIDM_078516
+intracranial_fat,extra_axial,extra_axial_abnormality,"macroscopic intracranial fat, macroscopic midline fat, extra-axial fat, fat density intracranial",observation,,OIFM_GMTS_007500
+extra_axial_lesion,extra_axial,extra_axial_abnormality,"extra-axial mass, extra-axial lesion",observation,,OIFM_GMTS_007296
+dural_based_lesion,extra_axial,extra_axial_lesion,"dural-based mass, dural mass",observation,,OIFM_OIDM_390171
+cerebellopontine_angle_lesion,extra_axial,extra_axial_lesion,"CPA lesion, CPA mass",observation,,OIFM_GMTS_007408
+dural_thickening,extra_axial,extra_axial_abnormality,pachymeningeal thickening,observation,,OIFM_OIDM_690677
+dural_enhancement,extra_axial,extra_axial_abnormality,"pachymeningeal enhancement, dural contrast uptake",observation,,
+leptomeningeal_enhancement,extra_axial,extra_axial_abnormality,"pial enhancement, pia-arachnoid enhancement",observation,,OIFM_OIDM_121473
+pneumocephalus,extra_axial,extra_axial_abnormality,"intracranial air, pneumocranium",observation,,OIFM_GMTS_007502
+tension_pneumocephalus,extra_axial,pneumocephalus,tension pneumocranium,observation,,OIFM_OIDM_553278
+extra_axial_calcification,extra_axial,extra_axial_abnormality,,observation,,OIFM_OIDM_555547
+dural_calcification,extra_axial,extra_axial_calcification,,observation,,OIFM_OIDM_623745
+falcine_calcification,extra_axial,dural_calcification,"falx calcification, calcified falx",observation,,OIFM_OIDM_950038
+tentorial_calcification,extra_axial,dural_calcification,calcified tentorium,observation,,OIFM_OIDM_898224
+falcine_dysgenesis,extra_axial,extra_axial_abnormality,"absent falx, partial falx, absent falx cerebri, falcine hypoplasia, absent interhemispheric fissure, partial interhemispheric fissure",observation,,OIFM_OIDM_211197
+extra_axial_hemorrhage,extra_axial,extra_axial_abnormality,"extra-axial blood, extra-axial hematoma",diagnosis,,OIFM_OIDM_355535
+subdural_hemorrhage,extra_axial,extra_axial_hemorrhage,"subdural hematoma, SDH",diagnosis,,
+acute_subdural_hemorrhage,extra_axial,subdural_hemorrhage,"acute SDH, acute subdural hematoma",diagnosis,,OIFM_OIDM_368223
+subacute_subdural_hemorrhage,extra_axial,subdural_hemorrhage,"subacute SDH, subacute subdural hematoma",diagnosis,,OIFM_OIDM_362894
+chronic_subdural_hemorrhage,extra_axial,subdural_hemorrhage,"chronic SDH, chronic subdural hematoma",diagnosis,,OIFM_OIDM_795923
+subarachnoid_hemorrhage,extra_axial,extra_axial_hemorrhage,"SAH, subarachnoid blood",diagnosis,,OIFM_OIDM_975386
+perimesencephalic_subarachnoid_hemorrhage,extra_axial,subarachnoid_hemorrhage,"perimesencephalic SAH, pnSAH",diagnosis,,OIFM_OIDM_091292
+epidural_hemorrhage,extra_axial,extra_axial_hemorrhage,"epidural hematoma, EDH",diagnosis,,OIFM_OIDM_713125
+extra_axial_neoplasm,extra_axial,extra_axial_abnormality,,diagnosis,,OIFM_OIDM_693866
+meningioma,extra_axial,extra_axial_neoplasm,,diagnosis,,OIFM_OIDM_738859
+vestibular_schwannoma,extra_axial,extra_axial_neoplasm,"acoustic neuroma, acoustic schwannoma, CN VIII schwannoma",diagnosis,,OIFM_OIDM_093050
+leptomeningeal_metastasis,extra_axial,extra_axial_neoplasm,"leptomeningeal carcinomatosis, carcinomatous meningitis, meningeal carcinomatosis",diagnosis,,
+extra_axial_infection,extra_axial,extra_axial_abnormality,,diagnosis,,OIFM_OIDM_481515
+meningitis,extra_axial,extra_axial_infection,,diagnosis,,OIFM_OIDM_676813
+subdural_empyema,extra_axial,extra_axial_infection,infected subdural collection,diagnosis,,OIFM_GMTS_007457
+extra_axial_anatomic_variant,extra_axial,,,,,OIFM_OIDM_283674
+arachnoid_granulation,extra_axial,extra_axial_anatomic_variant,Pacchionian granulation,observation,,OIFM_OIDM_836917
+mega_cisterna_magna,extra_axial,extra_axial_anatomic_variant,"enlarged cisterna magna, prominent cisterna magna, megacisterna magna",observation,,OIFM_OIDM_634782
+extra_axial_postsurgical_change,extra_axial,,,,,OIFM_OIDM_381585
+duraplasty,extra_axial,extra_axial_postsurgical_change,"dural graft, dural repair, dural patch",observation,,OIFM_OIDM_007428
+middle_meningeal_artery_embolization,extra_axial,extra_axial_postsurgical_change,"MMA embolization, MMAE, post MMA embolization",observation,,OIFM_OIDM_723535
+ventricular_abnormality,ventricular,,,,,OIFM_OIDM_246130
+ventriculomegaly,ventricular,ventricular_abnormality,"enlarged ventricles, dilated ventricles",observation,,OIFM_OIDM_425021
+ex_vacuo_ventricular_dilation,ventricular,ventriculomegaly,"ex vacuo dilatation, compensatory ventriculomegaly, passive ventricular enlargement",observation,,OIFM_OIDM_138708
+small_ventricular_caliber,ventricular,ventricular_abnormality,"small ventricles, slit ventricles, slit-like ventricles",observation,,OIFM_OIDM_458263
+monoventricle,ventricular,ventricular_abnormality,"single midline ventricle, single ventricular cavity, holoventricle",observation,,OIFM_OIDM_047255
+ventricular_horn_hypoplasia,ventricular,ventricular_abnormality,"rudimentary ventricular horn, rudimentary temporal horn, rudimentary occipital horn, underdeveloped ventricular horn",observation,,OIFM_OIDM_391545
+ventricular_entrapment,ventricular,ventricular_abnormality,"trapped ventricle, isolated ventricle",observation,,OIFM_OIDM_636011
+temporal_horn_entrapment,ventricular,ventricular_entrapment,trapped temporal horn,observation,,OIFM_OIDM_065919
+intraventricular_debris,ventricular,ventricular_abnormality,"ventricular debris, intraventricular sediment",observation,,OIFM_OIDM_888865
+intraventricular_mass,ventricular,ventricular_abnormality,,observation,,OIFM_OIDM_032421
+colloid_cyst,ventricular,intraventricular_mass,,observation,,OIFM_OIDM_879281
+subependymal_nodule,ventricular,ventricular_abnormality,,observation,,OIFM_OIDM_816696
+choroid_plexus_cyst,ventricular,ventricular_abnormality,,observation,,OIFM_OIDM_568953
+hydrocephalus,ventricular,ventricular_abnormality,,diagnosis,,OIFM_GMTS_007816
+obstructive_hydrocephalus,ventricular,hydrocephalus,"non-communicating hydrocephalus, intraventricular obstructive hydrocephalus",diagnosis,,OIFM_GMTS_018270
+communicating_hydrocephalus,ventricular,hydrocephalus,extraventricular obstructive hydrocephalus,diagnosis,,OIFM_GMTS_018266
+normal_pressure_hydrocephalus,ventricular,hydrocephalus,NPH,diagnosis,,OIFM_OIDM_559938
+intraventricular_hemorrhage,ventricular,ventricular_abnormality,"IVH, ventricular hemorrhage, intraventricular blood products",diagnosis,,OIFM_OIDM_050265
+ventriculitis,ventricular,ventricular_abnormality,"pyocephalus, ventricular infection, ependymitis",diagnosis,,OIFM_OIDM_279735
+intraventricular_neoplasm,ventricular,ventricular_abnormality,,diagnosis,,OIFM_OIDM_002069
+choroid_plexus_papilloma,ventricular,intraventricular_neoplasm,CPP,diagnosis,,OIFM_OIDM_595450
+choroid_plexus_carcinoma,ventricular,intraventricular_neoplasm,CPCa,diagnosis,,OIFM_OIDM_021680
+ventricular_anatomic_variant,ventricular,,,,,OIFM_OIDM_521516
+cavum_septum_pellucidum,ventricular,ventricular_anatomic_variant,"CSP, cavum septi pellucidi, fifth ventricle",observation,,OIFM_OIDM_207400
+cavum_vergae,ventricular,ventricular_anatomic_variant,"sixth ventricle, cavum psalterii",observation,,OIFM_OIDM_182213
+cavum_velum_interpositum,ventricular,ventricular_anatomic_variant,"CVI, cavum veli interpositi",observation,,OIFM_OIDM_089879
+ventricular_postsurgical_change,ventricular,,,,,OIFM_OIDM_994657
+ventriculostomy,ventricular,ventricular_postsurgical_change,"EVD, external ventricular drain, shunted ventricles",observation,,OIFM_OIDM_361419
+vascular_abnormality,vasculature,,,,,OIFM_OIDM_066373
+hyperdense_artery_sign,vasculature,vascular_abnormality,"dense vessel sign, dot sign",observation,,OIFM_OIDM_048244
+dense_sinus_sign,vasculature,vascular_abnormality,hyperdense sinus,observation,,OIFM_OIDM_058991
+empty_delta_sign,vasculature,vascular_abnormality,empty triangle sign,observation,,OIFM_OIDM_135018
+cord_sign,vasculature,vascular_abnormality,hyperdense cortical vein,observation,,OIFM_OIDM_127628
+intracranial_vascular_calcification,vasculature,vascular_abnormality,arterial wall calcification,observation,,OIFM_OIDM_958649
+active_contrast_extravasation,vasculature,vascular_abnormality,"spot sign, contrast blush, active extravasation",observation,,OIFM_OIDM_105363
+intracranial_arterial_stenosis,vasculature,vascular_abnormality,intracranial arterial narrowing,observation,,OIFM_OIDM_687450
+large_vessel_occlusion,vasculature,vascular_abnormality,LVO,observation,,OIFM_MSFT_761982
+middle_cerebral_artery_occlusion,vasculature,large_vessel_occlusion,MCA occlusion,observation,,OIFM_OIDM_910617
+internal_carotid_artery_occlusion,vasculature,large_vessel_occlusion,"ICA occlusion, carotid occlusion",observation,,OIFM_OIDM_529761
+basilar_artery_occlusion,vasculature,large_vessel_occlusion,"BAO, basilar occlusion",observation,,OIFM_OIDM_047634
+intracranial_dolichoectasia,vasculature,vascular_abnormality,dolichoectasia,observation,,OIFM_OIDM_577168
+intracranial_aneurysm,vasculature,vascular_abnormality,cerebral aneurysm,diagnosis,,
+saccular_aneurysm,vasculature,intracranial_aneurysm,berry aneurysm,diagnosis,,OIFM_OIDM_231457
+fusiform_aneurysm,vasculature,intracranial_aneurysm,,diagnosis,,OIFM_OIDM_324720
+cerebral_venous_thrombosis,vasculature,vascular_abnormality,CVT,diagnosis,,OIFM_OIDM_945136
+dural_venous_sinus_thrombosis,vasculature,cerebral_venous_thrombosis,CVST,diagnosis,,
+cortical_vein_thrombosis,vasculature,cerebral_venous_thrombosis,,diagnosis,,OIFM_OIDM_641040
+intracranial_vascular_malformation,vasculature,vascular_abnormality,vascular malformation,diagnosis,,
+arteriovenous_malformation,vasculature,intracranial_vascular_malformation,"AVM, cerebral AVM, pial AVM",diagnosis,,OIFM_OIDM_853448
+cavernous_malformation,vasculature,intracranial_vascular_malformation,"cavernoma, cavernous hemangioma, cavernous angioma",diagnosis,,
+dural_arteriovenous_fistula,vasculature,vascular_abnormality,"DAVF, dural AVF, dural fistula",diagnosis,,OIFM_OIDM_951059
+intracranial_arterial_dissection,vasculature,vascular_abnormality,intracranial dissection,diagnosis,,OIFM_OIDM_620740
+vasospasm,vasculature,vascular_abnormality,"cerebral vasospasm, arterial vasospasm",diagnosis,,OIFM_OIDM_594350
+moyamoya,vasculature,vascular_abnormality,"moyamoya disease, moyamoya syndrome",diagnosis,,OIFM_OIDM_027440
+carotid_cavernous_fistula,vasculature,vascular_abnormality,"CCF, carotid cavernous fistula, CC fistula",diagnosis,,OIFM_OIDM_651223
+vein_of_galen_malformation,vasculature,intracranial_vascular_malformation,"VGAM, vein of Galen aneurysmal malformation, vein of Galen aneurysmal dilatation",diagnosis,,OIFM_OIDM_415157
+cerebral_amyloid_angiopathy,vasculature,vascular_abnormality,"CAA, amyloid angiopathy",diagnosis,,OIFM_OIDM_315310
+vascular_anatomic_variant,vasculature,,,,,OIFM_OIDM_390904
+developmental_venous_anomaly,vasculature,vascular_anatomic_variant,"DVA, venous angioma, medullary venous malformation",diagnosis,,OIFM_OIDM_800415
+fetal_origin_posterior_cerebral_artery,vasculature,vascular_anatomic_variant,"fetal PCA, fetal type PCA",observation,,OIFM_OIDM_993979
+hypoplastic_artery_segment,vasculature,vascular_anatomic_variant,,observation,,OIFM_OIDM_164840
+absent_artery_segment,vasculature,vascular_anatomic_variant,aplastic artery segment,observation,,OIFM_OIDM_476344
+persistent_trigeminal_artery,vasculature,vascular_anatomic_variant,"PTA, persistent primitive trigeminal artery",observation,,OIFM_OIDM_438342
+arterial_fenestration,vasculature,vascular_anatomic_variant,,observation,,OIFM_OIDM_352326
+arterial_infundibulum,vasculature,vascular_anatomic_variant,"infundibular dilation, vascular infundibulum",observation,,OIFM_OIDM_282606
+venous_prominence,vasculature,vascular_anatomic_variant,"prominent vein, prominent cerebral vein, prominent cortical vein",observation,,OIFM_OIDM_864913
+osseous_abnormality,osseous,,,,,OIFM_OIDM_164927
+fracture,osseous,osseous_abnormality,cranial fracture,observation,,OIFM_OIDM_739317
+calvarial_fracture,osseous,fracture,calvarial discontinuity,observation,,OIFM_OIDM_922215
+depressed_fracture,osseous,calvarial_fracture,"depressed skull fracture, depressed calvarial fracture",observation,,OIFM_OIDM_311358
+frontal_sinus_fracture,osseous,calvarial_fracture,frontal sinus wall fracture,observation,,
+skull_base_fracture,osseous,fracture,basilar skull fracture,observation,,OIFM_OIDM_085957
+cribriform_plate_fracture,osseous,skull_base_fracture,cribriform fracture,observation,,OIFM_OIDM_587234
+clivus_fracture,osseous,skull_base_fracture,clival fracture,observation,,OIFM_OIDM_746790
+orbital_roof_fracture,osseous,skull_base_fracture,,observation,,OIFM_OIDM_431537
+optic_canal_fracture,osseous,skull_base_fracture,,observation,,OIFM_OIDM_150705
+sphenoid_sinus_fracture,osseous,skull_base_fracture,,observation,,
+pterygoid_plate_fracture,osseous,skull_base_fracture,pterygoid fracture,observation,,
+facial_bone_fracture,osseous,fracture,midface fracture,observation,,OIFM_OIDM_124733
+orbital_fracture,osseous,facial_bone_fracture,orbital wall fracture,observation,,OIFM_OIDM_525994
+orbital_blowout_fracture,osseous,orbital_fracture,"blowout fracture, orbital floor fracture, orbital floor blowout",observation,,OIFM_OIDM_070294
+medial_orbital_wall_fracture,osseous,orbital_fracture,lamina papyracea fracture,observation,,OIFM_OIDM_444719
+nasal_fracture,osseous,facial_bone_fracture,nasal bone fracture,observation,,OIFM_OIDM_231181
+zygomatic_fracture,osseous,facial_bone_fracture,"zygomatic arch fracture, malar fracture",observation,,OIFM_OIDM_268881
+zygomaticomaxillary_complex_fracture,osseous,facial_bone_fracture,"ZMC fracture, tripod fracture, trimalar fracture",observation,,OIFM_OIDM_159654
+maxillary_fracture,osseous,facial_bone_fracture,maxillary wall fracture,observation,,OIFM_OIDM_528245
+le_fort_fracture,osseous,facial_bone_fracture,Le Fort fracture,observation,,OIFM_OIDM_705267
+naso_orbito_ethmoid_fracture,osseous,facial_bone_fracture,NOE fracture,observation,,OIFM_OIDM_919194
+temporal_bone_fracture,osseous,fracture,"petrous bone fracture, petrous temporal fracture",observation,,OIFM_OIDM_497032
+otic_capsule_fracture,osseous,temporal_bone_fracture,"labyrinthine fracture, cochlear fracture, otic capsule-violating fracture",observation,,OIFM_OIDM_096408
+carotid_canal_fracture,osseous,temporal_bone_fracture,fracture involving carotid canal,observation,,OIFM_OIDM_186788
+cervical_spine_fracture,osseous,fracture,C-spine fracture,observation,,OIFM_OIDM_193390
+sutural_diastasis,osseous,osseous_abnormality,"diastatic suture, widened suture, suture widening, diastatic fracture, diastatic skull fracture",observation,,OIFM_OIDM_213066
+skull_lesion,osseous,osseous_abnormality,calvarial lesion,observation,,OIFM_OIDM_238973
+benign_calvarial_lesion,osseous,skull_lesion,benign skull lesion,observation,,OIFM_OIDM_666884
+calvarial_bone_island,osseous,benign_calvarial_lesion,"enostosis, bone island",observation,,
+calvarial_thickening,osseous,osseous_abnormality,"skull thickening, calvarial hyperostosis, diploic space thickening",observation,,OIFM_OIDM_989677
+calvarial_osteopenia,osseous,osseous_abnormality,"skull osteopenia, calvarial demineralization, thinned calvarium",observation,,OIFM_OIDM_472343
+osseous_remodeling,osseous,osseous_abnormality,"bony remodeling, bone contour remodeling, osseous contour remodeling",observation,,OIFM_OIDM_258480
+osseous_neoplasm,osseous,osseous_abnormality,,diagnosis,,OIFM_OIDM_926656
+calvarial_osteoma,osseous,osseous_neoplasm,skull osteoma,diagnosis,,OIFM_OIDM_935903
+calvarial_metastasis,osseous,osseous_neoplasm,skull metastasis,diagnosis,,
+intraosseous_hemangioma,osseous,osseous_neoplasm,calvarial hemangioma,diagnosis,,OIFM_OIDM_822124
+intradiploic_lipoma,osseous,osseous_neoplasm,diploic lipoma,diagnosis,,OIFM_OIDM_188030
+multiple_myeloma,osseous,osseous_neoplasm,myeloma,diagnosis,,OIFM_OIDM_048062
+plasmacytoma,osseous,osseous_neoplasm,solitary bone plasmacytoma,diagnosis,,OIFM_OIDM_477248
+langerhans_cell_histiocytosis,osseous,osseous_neoplasm,"LCH, eosinophilic granuloma, histiocytosis X",diagnosis,,OIFM_OIDM_664068
+skull_osteomyelitis,osseous,osseous_abnormality,"calvarial osteomyelitis, cranial osteomyelitis",diagnosis,,OIFM_OIDM_154564
+fibrous_dysplasia,osseous,osseous_abnormality,fibrous dysplasia skull,diagnosis,,OIFM_OIDM_341267
+paget_disease_of_skull,osseous,osseous_abnormality,"Paget skull, Paget disease calvarium",diagnosis,,OIFM_OIDM_338652
+hyperostosis_frontalis_interna,osseous,osseous_abnormality,"HFI, frontal hyperostosis",diagnosis,,OIFM_OIDM_850757
+craniosynostosis,osseous,osseous_abnormality,"premature suture fusion, craniostenosis, fused suture",diagnosis,,OIFM_GMTS_006368
+degenerative_changes,osseous,osseous_abnormality,degenerative disease,diagnosis,,OIFM_OIDM_463032
+cervical_spine_degenerative_changes,osseous,degenerative_changes,"cervical spondylosis, C-spine DJD",diagnosis,,OIFM_OIDM_200329
+osseous_postsurgical_change,osseous,,,,,OIFM_OIDM_671573
+calvarial_surgery,osseous,osseous_postsurgical_change,"prior cranial surgery, calvarial surgical change",observation,,OIFM_OIDM_335200
+craniotomy,osseous,calvarial_surgery,"craniotomy defect, craniotomy flap, post craniotomy",observation,,OIFM_OIDM_269188
+craniectomy,osseous,calvarial_surgery,"decompressive craniectomy, bone flap absent",observation,,OIFM_OIDM_210642
+hemicraniectomy,osseous,craniectomy,hemicranectomy,observation,,OIFM_OIDM_251139
+cranioplasty,osseous,calvarial_surgery,"cranioplasty mesh, cranioplasty plate, skull reconstruction",observation,,OIFM_OIDM_430773
+burr_hole,osseous,calvarial_surgery,"burr hole defect, twist drill hole",observation,,OIFM_OIDM_247440
+cervical_spine_fusion,osseous,osseous_postsurgical_change,"cervical fixation, cervical spine instrumentation",observation,,OIFM_GMTS_009764
+open_reduction_internal_fixation,osseous,osseous_postsurgical_change,"ORIF, open reduction and internal fixation, internal fixation, rigid fixation, plate and screw fixation, facial bone ORIF, maxillary ORIF, mandibular ORIF",observation,,OIFM_OIDM_938170
+occipitocervical_fusion,osseous,osseous_postsurgical_change,"OCF, occiput-to-cervical fusion, occipital-cervical fusion, occipital plate fixation",observation,,OIFM_OIDM_087569
+osseous_anatomic_variant,osseous,,,,,OIFM_OIDM_216407
+wormian_bone,osseous,osseous_anatomic_variant,"sutural bone, wormian bones",observation,,
+persistent_metopic_suture,osseous,osseous_anatomic_variant,unfused frontal suture,observation,,OIFM_OIDM_058112
+enlarged_parietal_foramen,osseous,osseous_anatomic_variant,biparietal foramina,observation,,OIFM_OIDM_956084
+posterior_arch_c1_defect,osseous,osseous_anatomic_variant,"posterior arch C1 cleft, atlas posterior arch defect",observation,,
+dental_abnormality,dental,,,,,OIFM_OIDM_322883
+periapical_lucency,dental,dental_abnormality,periapical radiolucency,observation,,
+dental_caries,dental,dental_abnormality,"tooth decay, carious tooth, cavitated tooth",observation,,OIFM_OIDM_547581
+impacted_tooth,dental,dental_abnormality,"unerupted tooth, embedded tooth, impacted molar",observation,,OIFM_OIDM_103644
+retained_root,dental,dental_abnormality,"retained root fragment, residual root, root remnant",observation,,OIFM_OIDM_213400
+missing_tooth,dental,dental_abnormality,"absent tooth, missing teeth, edentulous, partially edentulous",observation,,OIFM_OIDM_562532
+periodontal_bone_loss,dental,dental_abnormality,"alveolar bone loss, alveolar bone resorption",observation,,OIFM_OIDM_372815
+apical_periodontitis,dental,dental_abnormality,"periapical infection, dental infection, dentoalveolar infection, dental abscess, dentoalveolar abscess",diagnosis,,OIFM_OIDM_248519
+dentigerous_cyst,dental,dental_abnormality,follicular cyst,diagnosis,,OIFM_OIDM_217343
+periodontitis,dental,dental_abnormality,"periodontal disease, chronic periodontitis",diagnosis,,OIFM_OIDM_263308
+oroantral_fistula,dental,dental_abnormality,"OAF, oro-antral fistula, odontogenic sinus fistula, dental-sinus fistula",diagnosis,,OIFM_OIDM_089707
+oroantral_communication,dental,dental_abnormality,"OAC, oro-antral communication, post-extraction oroantral defect",diagnosis,,OIFM_OIDM_193631
+dental_anatomic_variant,dental,,,,,OIFM_OIDM_831097
+supernumerary_tooth,dental,dental_anatomic_variant,"mesiodens, extra tooth, accessory tooth",observation,,OIFM_OIDM_876710
+dental_postsurgical_change,dental,,,,,OIFM_OIDM_203881
+dental_extraction,dental,dental_postsurgical_change,"tooth extraction, prior dental extraction",observation,,OIFM_OIDM_822672
+dental_restoration,dental,dental_postsurgical_change,"dental filling, dental hardware, dental prosthesis",observation,,OIFM_OIDM_166768
+dental_implant,dental,dental_postsurgical_change,"osseointegrated dental implant, dental post",observation,,OIFM_OIDM_676246
+orbital_abnormality,orbit,,,,,OIFM_OIDM_103555
+orbital_fat_stranding,orbit,orbital_abnormality,"retrobulbar fat stranding, intraorbital fat stranding",observation,,OIFM_OIDM_162332
+proptosis,orbit,orbital_abnormality,"exophthalmos, globe protrusion, globe displacement anterior",observation,,
+enophthalmos,orbit,orbital_abnormality,"posterior globe displacement, sunken globe",observation,,OIFM_OIDM_049092
+extraocular_muscle_enlargement,orbit,orbital_abnormality,"extraocular muscle thickening, enlarged extraocular muscles, enlarged extraocular muscle",observation,,OIFM_GMTS_018581
+extraocular_muscle_entrapment,orbit,orbital_abnormality,"muscle incarceration, entrapped muscle",observation,,OIFM_OIDM_941408
+optic_nerve_sheath_enlargement,orbit,orbital_abnormality,"optic nerve sheath dilation, optic nerve sheath distension, optic nerve sheath prominence",observation,,OIFM_OIDM_181428
+optic_nerve_enlargement,orbit,orbital_abnormality,"optic nerve thickening, enlarged optic nerve",observation,,OIFM_GMTS_008113
+superior_ophthalmic_vein_dilation,orbit,orbital_abnormality,"dilated SOV, enlarged superior ophthalmic vein",observation,,
+orbital_lesion,orbit,orbital_abnormality,"orbital mass, retrobulbar mass, retrobulbar lesion, intraorbital mass, intraorbital lesion",observation,,
+lacrimal_gland_lesion,orbit,orbital_lesion,"lacrimal gland mass, lacrimal fossa mass, lacrimal fossa lesion",observation,,OIFM_OIDM_969269
+intraocular_lesion,orbit,orbital_abnormality,"intraocular mass, globe mass, globe lesion",observation,,
+orbital_emphysema,orbit,orbital_abnormality,"intraorbital air, orbital air",observation,,OIFM_OIDM_176713
+orbital_fat_herniation,orbit,orbital_abnormality,orbital fat prolapse,observation,,OIFM_OIDM_764992
+globe_rupture,orbit,orbital_abnormality,"open globe, ruptured globe, open globe injury, globe disruption",observation,,OIFM_OIDM_324483
+globe_calcification,orbit,orbital_abnormality,"calcified globe, calcified lens, lens calcification",observation,,OIFM_GMTS_008203
+lens_dislocation,orbit,orbital_abnormality,"lens subluxation, dislocated lens, ectopia lentis, displaced lens",observation,,OIFM_GMTS_025548
+traumatic_cataract,orbit,orbital_abnormality,"hypodense lens, lens swelling, lens edema",observation,,OIFM_OIDM_225997
+retinal_detachment,orbit,orbital_abnormality,detached retina,observation,,OIFM_OIDM_119674
+choroidal_detachment,orbit,orbital_abnormality,"choroidal effusion, suprachoroidal fluid",observation,,OIFM_OIDM_640459
+orbital_hemorrhage,orbit,orbital_abnormality,,diagnosis,,OIFM_OIDM_321389
+retrobulbar_hemorrhage,orbit,orbital_hemorrhage,"retro-ocular hemorrhage, retrobulbar hematoma",diagnosis,,OIFM_OIDM_832683
+intraconal_hemorrhage,orbit,retrobulbar_hemorrhage,intraconal hematoma,diagnosis,,OIFM_OIDM_006455
+extraconal_hemorrhage,orbit,retrobulbar_hemorrhage,extraconal hematoma,diagnosis,,OIFM_OIDM_885429
+subperiosteal_hemorrhage,orbit,orbital_hemorrhage,subperiosteal orbital hematoma,diagnosis,,OIFM_OIDM_803675
+intraocular_hemorrhage,orbit,orbital_hemorrhage,intraocular blood products,diagnosis,,OIFM_OIDM_535373
+hyphema,orbit,intraocular_hemorrhage,anterior chamber hemorrhage,diagnosis,,OIFM_OIDM_600743
+vitreous_hemorrhage,orbit,intraocular_hemorrhage,"vitreous blood, intravitreal hemorrhage",diagnosis,,OIFM_OIDM_581647
+subretinal_hemorrhage,orbit,intraocular_hemorrhage,subretinal blood,diagnosis,,OIFM_OIDM_773498
+choroidal_hemorrhage,orbit,intraocular_hemorrhage,"suprachoroidal hemorrhage, hemorrhagic choroidal detachment",diagnosis,,OIFM_OIDM_144017
+orbital_inflammation,orbit,orbital_abnormality,orbital inflammatory disease,diagnosis,,OIFM_OIDM_279918
+preseptal_cellulitis,orbit,orbital_inflammation,periorbital cellulitis,diagnosis,,OIFM_OIDM_034386
+orbital_cellulitis,orbit,orbital_inflammation,"postseptal cellulitis, orbital phlegmon",diagnosis,,OIFM_OIDM_009187
+orbital_abscess,orbit,orbital_inflammation,orbital abscess collection,diagnosis,,OIFM_OIDM_007451
+subperiosteal_abscess,orbit,orbital_abscess,orbital subperiosteal abscess,diagnosis,,OIFM_OIDM_791032
+idiopathic_orbital_inflammation,orbit,orbital_inflammation,"orbital pseudotumor, non-specific orbital inflammation",diagnosis,,OIFM_OIDM_587394
+dacryoadenitis,orbit,orbital_inflammation,lacrimal gland inflammation,diagnosis,,OIFM_OIDM_247238
+thyroid_eye_disease,orbit,orbital_inflammation,"Graves orbitopathy, thyroid orbitopathy, thyroid-associated orbitopathy",diagnosis,,OIFM_OIDM_758172
+orbital_myositis,orbit,orbital_inflammation,"extraocular muscle myositis, orbital muscle inflammation",diagnosis,,OIFM_OIDM_783822
+posterior_scleritis,orbit,orbital_inflammation,posterior scleral inflammation,diagnosis,,OIFM_OIDM_317518
+orbital_cavernous_venous_malformation,orbit,orbital_abnormality,"orbital cavernous hemangioma, cavernous hemangioma orbit, orbital hemangioma, orbital venous malformation, cavernous venous malformation orbit",diagnosis,,OIFM_OIDM_934293
+orbital_dermoid,orbit,orbital_abnormality,"orbital dermoid cyst, dermoid cyst orbit",diagnosis,,OIFM_OIDM_095735
+orbital_neoplasm,orbit,orbital_abnormality,,diagnosis,,OIFM_OIDM_695882
+orbital_lymphoma,orbit,orbital_neoplasm,ocular adnexal lymphoma,diagnosis,,OIFM_OIDM_934817
+orbital_metastasis,orbit,orbital_neoplasm,orbital metastatic disease,diagnosis,,OIFM_OIDM_290396
+retinoblastoma,orbit,orbital_neoplasm,,diagnosis,,OIFM_OIDM_871579
+phthisis_bulbi,orbit,orbital_abnormality,"phthisical globe, end-stage globe",diagnosis,,OIFM_OIDM_329367
+superior_ophthalmic_vein_thrombosis,orbit,orbital_abnormality,SOV thrombosis,diagnosis,,OIFM_GMTS_018598
+orbital_postsurgical_change,orbit,,,,,OIFM_OIDM_062745
+pseudophakia,orbit,orbital_postsurgical_change,"intraocular lens,IOL,lens implant",observation,,
+prosthetic_globe,orbit,orbital_postsurgical_change,"ocular prosthesis, artificial eye, prosthetic eye",observation,,OIFM_OIDM_006128
+intraocular_silicone,orbit,orbital_postsurgical_change,"silicone oil in globe, intraocular silicone oil, vitreous silicone",observation,,OIFM_OIDM_687061
+soft_tissue_abnormality,soft_tissue,,,,,OIFM_OIDM_221920
+soft_tissue_swelling,soft_tissue,soft_tissue_abnormality,,observation,,OIFM_OIDM_696759
+soft_tissue_edema,soft_tissue,soft_tissue_abnormality,,diagnosis,,OIFM_OIDM_696759
+soft_tissue_laceration,soft_tissue,soft_tissue_abnormality,"scalp laceration, facial laceration",observation,,
+soft_tissue_contusion,soft_tissue,soft_tissue_abnormality,"scalp contusion, facial contusion",diagnosis,,
+soft_tissue_hematoma,soft_tissue,soft_tissue_abnormality,,diagnosis,,OIFM_OIDM_251841
+subgaleal_hematoma,soft_tissue,soft_tissue_hematoma,subgaleal hemorrhage,diagnosis,,OIFM_OIDM_185082
+cephalohematoma,soft_tissue,soft_tissue_hematoma,"cephalhematoma, subperiosteal hematoma",diagnosis,,OIFM_OIDM_401242
+soft_tissue_lesion,soft_tissue,soft_tissue_abnormality,,,,OIFM_OIDM_299401
+soft_tissue_epidermal_inclusion_cyst,soft_tissue,soft_tissue_lesion,"sebaceous cyst, epidermal inclusion cyst, epidermoid inclusion cyst, infundibular cyst, scalp cyst",diagnosis,,OIFM_MGB_603715
+soft_tissue_lipoma,soft_tissue,soft_tissue_lesion,,diagnosis,,OIFM_MGB_269106
+soft_tissue_dermoid_cyst,soft_tissue,soft_tissue_lesion,,diagnosis,,OIFM_CDE_000216
+soft_tissue_nodule,soft_tissue,soft_tissue_lesion,"scalp nodule, scalp soft tissue nodule, cutaneous nodule",observation,,
+soft_tissue_calcification,soft_tissue,soft_tissue_abnormality,,observation,,OIFM_GMTS_025786
+tonsillolith,soft_tissue,soft_tissue_calcification,"tonsillar calcification, tonsil stone, tonsillar concretion, palatine tonsil calcification",observation,,OIFM_OIDM_661237
+subcutaneous_emphysema,soft_tissue,soft_tissue_abnormality,"subcutaneous air, soft tissue gas, soft tissue emphysema",observation,,OIFM_OIDM_755361
+sinonasal_abnormality,sinonasal,,,,,OIFM_OIDM_435405
+sinus_mucosal_thickening,sinonasal,sinonasal_abnormality,mucosal thickening,observation,,OIFM_OIDM_225879
+sinus_opacification,sinonasal,sinonasal_abnormality,opacified sinus,observation,,
+sinus_air_fluid_level,sinonasal,sinonasal_abnormality,"air-fluid level in sinus, layering sinus fluid",observation,,
+hyperattenuating_sinus_contents,sinonasal,sinonasal_abnormality,"hyperdense sinus contents, inspissated secretions, desiccated secretions",observation,,OIFM_OIDM_497952
+sinus_wall_thickening,sinonasal,sinonasal_abnormality,"sinus wall sclerosis, sclerotic sinus walls",observation,,OIFM_OIDM_242385
+sinus_wall_erosion,sinonasal,sinonasal_abnormality,"sinus wall destruction, bony erosion sinus",observation,,OIFM_OIDM_935461
+sinus_expansion,sinonasal,sinonasal_abnormality,expanded sinus,observation,,OIFM_OIDM_398753
+perisinus_fat_stranding,sinonasal,sinonasal_abnormality,"periantral fat infiltration, periantral fat stranding, extrasinus fat infiltration",observation,,OIFM_OIDM_859298
+sinus_retention_cyst,sinonasal,sinonasal_abnormality,"mucous retention cyst, mucus retention cyst, sinus mucosal cyst",observation,,OIFM_OIDM_769618
+sinus_polyp,sinonasal,sinonasal_abnormality,"solitary sinus polyp, paranasal sinus polyp, solitary sinonasal polyp, sinonasal polyp, mucosal polyp sinus",observation,,OIFM_OIDM_200848
+antrochoanal_polyp,sinonasal,sinus_polyp,"maxillary antrochoanal polyp, ACP, Killian polyp, maxillary choanal polyp",observation,,OIFM_OIDM_386367
+sinonasal_polyposis,sinonasal,sinonasal_abnormality,"nasal polyposis, polypoid mucosal disease",observation,,
+sinonasal_lesion,sinonasal,sinonasal_abnormality,"sinonasal mass, nasal mass, nasal cavity mass, nasal lesion",observation,,OIFM_GMTS_030854
+nasal_septal_perforation,sinonasal,sinonasal_abnormality,septal perforation,observation,,
+hemosinus,sinonasal,sinonasal_abnormality,"sinus hemorrhage, blood in sinus",diagnosis,,OIFM_OIDM_269257
+paranasal_sinusitis,sinonasal,sinonasal_abnormality,"sinusitis, inflammatory sinus disease",diagnosis,,OIFM_OIDM_035625
+maxillary_sinusitis,sinonasal,paranasal_sinusitis,,diagnosis,,OIFM_OIDM_464803
+ethmoid_sinusitis,sinonasal,paranasal_sinusitis,,diagnosis,,OIFM_OIDM_038877
+frontal_sinusitis,sinonasal,paranasal_sinusitis,,diagnosis,,OIFM_OIDM_130881
+sphenoid_sinusitis,sinonasal,paranasal_sinusitis,,diagnosis,,OIFM_OIDM_724414
+fungal_sinusitis,sinonasal,sinonasal_abnormality,fungal sinus disease,diagnosis,,OIFM_OIDM_319404
+allergic_fungal_sinusitis,sinonasal,fungal_sinusitis,AFS,diagnosis,,OIFM_OIDM_913616
+sinus_fungal_ball,sinonasal,fungal_sinusitis,sinus mycetoma,diagnosis,,OIFM_OIDM_037900
+invasive_fungal_sinusitis,sinonasal,fungal_sinusitis,aggressive fungal sinusitis,diagnosis,,OIFM_OIDM_125435
+sinus_mucocele,sinonasal,sinonasal_abnormality,,diagnosis,,OIFM_OIDM_375608
+mucopyocele,sinonasal,sinus_mucocele,infected mucocele,diagnosis,,OIFM_OIDM_417355
+sinonasal_neoplasm,sinonasal,sinonasal_abnormality,,diagnosis,,OIFM_OIDM_145279
+inverted_papilloma,sinonasal,sinonasal_neoplasm,inverting papilloma,diagnosis,,OIFM_OIDM_232410
+esthesioneuroblastoma,sinonasal,sinonasal_neoplasm,olfactory neuroblastoma,diagnosis,,OIFM_OIDM_404011
+sinonasal_carcinoma,sinonasal,sinonasal_neoplasm,nasal cavity carcinoma,diagnosis,,OIFM_OIDM_644756
+sinonasal_anatomic_variant,sinonasal,,,,,OIFM_OIDM_605598
+nasal_septal_deviation,sinonasal,sinonasal_anatomic_variant,"deviated nasal septum, DNS, septal deviation",observation,,OIFM_OIDM_884986
+nasal_septal_spur,sinonasal,sinonasal_anatomic_variant,"septal spur, bony nasal spur",observation,,OIFM_OIDM_376962
+concha_bullosa,sinonasal,sinonasal_anatomic_variant,"pneumatized middle turbinate, aerated concha",observation,,OIFM_OIDM_230209
+non_pneumatized_sinus,sinonasal,sinonasal_anatomic_variant,"sinus aplasia, sinus hypoplasia",observation,,OIFM_OIDM_547137
+sinus_wall_dehiscence,sinonasal,sinonasal_anatomic_variant,sinus wall defect,observation,,OIFM_OIDM_686820
+haller_cell,sinonasal,sinonasal_anatomic_variant,"infraorbital ethmoid cell, infraorbital cell",observation,,OIFM_OIDM_296922
+onodi_cell,sinonasal,sinonasal_anatomic_variant,sphenoethmoid cell,observation,,OIFM_OIDM_519518
+sinonasal_postsurgical_change,sinonasal,,,,,OIFM_OIDM_452489
+sinonasal_surgery,sinonasal,sinonasal_postsurgical_change,"post FESS, functional endoscopic sinus surgery, sinus surgery",observation,,OIFM_OIDM_770620
+ethmoidectomy,sinonasal,sinonasal_surgery,,observation,,OIFM_OIDM_325604
+temporal_bone_abnormality,temporal_bone,,,,,OIFM_OIDM_490443
+mastoid_opacification,temporal_bone,temporal_bone_abnormality,"mastoid air cell opacification, opacified mastoid",observation,,OIFM_OIDM_475675
+mastoid_fluid,temporal_bone,mastoid_opacification,"mastoid effusion, fluid in mastoid air cells, mastoid air cell fluid",observation,,
+hypopneumatized_mastoid,temporal_bone,temporal_bone_abnormality,"sclerotic mastoid, underpneumatized mastoid, poorly pneumatized mastoid, mastoid sclerosis",observation,,
+middle_ear_opacification,temporal_bone,temporal_bone_abnormality,opacified middle ear,observation,,
+middle_ear_fluid,temporal_bone,middle_ear_opacification,"middle ear effusion, tympanic cavity fluid, middle ear fluid collection",observation,,
+external_auditory_canal_opacification,temporal_bone,temporal_bone_abnormality,"EAC soft tissue, ear canal opacification",observation,,OIFM_OIDM_691643
+ossicular_disruption,temporal_bone,temporal_bone_abnormality,"ossicular dislocation, ossicular chain disruption",observation,,OIFM_OIDM_848829
+petrous_apex_lesion,temporal_bone,temporal_bone_abnormality,petrous apex mass,observation,,OIFM_OIDM_172477
+temporal_bone_erosion,temporal_bone,temporal_bone_abnormality,temporal bone destruction,observation,,
+mastoiditis,temporal_bone,temporal_bone_abnormality,,diagnosis,,OIFM_GMTS_008323
+coalescent_mastoiditis,temporal_bone,mastoiditis,coalescent mastoid disease,diagnosis,,OIFM_OIDM_349548
+otitis_media,temporal_bone,temporal_bone_abnormality,middle ear infection,diagnosis,,OIFM_OIDM_678391
+cholesteatoma,temporal_bone,temporal_bone_abnormality,,diagnosis,,OIFM_GMTS_008301
+cholesterol_granuloma,temporal_bone,temporal_bone_abnormality,cholesterol cyst petrous,diagnosis,,OIFM_OIDM_205071
+temporal_bone_postsurgical_change,temporal_bone,,,,,OIFM_OIDM_360934
+mastoidectomy,temporal_bone,temporal_bone_postsurgical_change,"post mastoidectomy, mastoidectomy defect",observation,,OIFM_OIDM_635248
+canal_wall_down_mastoidectomy,temporal_bone,mastoidectomy,"open cavity mastoidectomy, radical mastoidectomy, modified radical mastoidectomy",observation,,OIFM_OIDM_038053
+canal_wall_up_mastoidectomy,temporal_bone,mastoidectomy,"intact canal wall mastoidectomy, closed mastoidectomy",observation,,OIFM_OIDM_471826
+hardware,extrinsic,,implanted device,,,
+vascular_clip,extrinsic,hardware,"aneurysm clip, surgical clips intracranial, cerebrovascular clips",observation,,OIFM_OIDM_510602
+aneurysm_coil,extrinsic,hardware,"endovascular coil, embolization coil",observation,,OIFM_OIDM_974314
+intrasaccular_flow_disruptor,extrinsic,hardware,"WEB device, WEB embolization device, Woven EndoBridge, Contour Neurovascular System, intrasaccular flow disruptor",observation,,OIFM_OIDM_240838
+brachytherapy_seed,extrinsic,hardware,"brachytherapy seeds, radioactive seed, radioactive seeds, I-125 seed, Cs-131 seed, GammaTile, permanent brachytherapy implant",observation,,OIFM_OIDM_090347
+plate,extrinsic,hardware,"bone plate, surgical plate, miniplate, osteosynthesis plate, plate and screw construct",observation,,
+screw,extrinsic,hardware,"bone screw, cortical screw, surgical screw, fixation screw",observation,,
+mesh,extrinsic,hardware,"surgical mesh, titanium mesh, cranial mesh, cranioplasty mesh, mesh plate",observation,,
+spinal_fusion_hardware,extrinsic,hardware,"pedicle screws, pedicle screws and rods, spinal instrumentation, spinal construct, cervical fixation rods, occipital plate",observation,,
+intracranial_stent,extrinsic,hardware,intracranial vascular stent,observation,,OIFM_OIDM_614672
+flow_diverter,extrinsic,intracranial_stent,"Pipeline device, PED, FRED device, flow diversion device",observation,,OIFM_OIDM_916762
+bypass_graft,extrinsic,hardware,"STA-MCA bypass, EC-IC bypass, extracranial-intracranial bypass, cerebral bypass graft",observation,,OIFM_OIDM_916912
+deep_brain_stimulation_electrode,extrinsic,hardware,"DBS electrode, DBS lead, deep brain stimulator",observation,,OIFM_OIDM_879159
+intracranial_pressure_monitor,extrinsic,hardware,"ICP monitor, ICP bolt, Camino bolt, ICP probe",observation,,OIFM_OIDM_767823
+ventricular_catheter,extrinsic,hardware,"ventriculostomy catheter, EVD catheter, external ventricular drain catheter, VP shunt catheter, shunt catheter, CSF shunt catheter",observation,,OIFM_OIDM_222669
+scalp_staples,extrinsic,hardware,"surgical staples, skin staples",observation,,
+ventricular_access_reservoir,extrinsic,hardware,"Ommaya reservoir, Rickham reservoir, subcutaneous CSF reservoir",observation,,OIFM_OIDM_778592
+hardware_abnormality,extrinsic,,"hardware complication, hardware-related complication",,,OIFM_OIDM_027028
+hardware_failure,extrinsic,hardware_abnormality,"broken hardware, fractured hardware, hardware fracture, hardware breakage",observation,,OIFM_OIDM_189489
+hardware_loosening,extrinsic,hardware_abnormality,"component loosening, implant loosening, prosthetic loosening",diagnosis,,OIFM_OIDM_140821
+hardware_migration,extrinsic,hardware_abnormality,"component migration, implant migration, hardware displacement, hardware backout, screw backout",observation,,OIFM_OIDM_374335
+perihardware_lucency,extrinsic,hardware_abnormality,"lucency around hardware, peri-implant lucency, periprosthetic lucency, peri-hardware lucency",observation,,OIFM_OIDM_328976
+support_apparatus,extrinsic,,lines and tubes,,,OIFM_OIDM_591054
+endotracheal_tube,extrinsic,support_apparatus,"ETT, ET tube, orotracheal tube, nasotracheal tube",observation,,OIFM_OIDM_885204
+nasogastric_tube,extrinsic,support_apparatus,"NG tube, nasoenteric tube, Dobhoff tube, orogastric tube, OG tube",observation,,OIFM_OIDM_008669
+subdural_drain,extrinsic,support_apparatus,"subdural catheter, subdural evacuating port system, SEPS drain",observation,,OIFM_OIDM_992500
+nasal_cannula,extrinsic,support_apparatus,"NC, oxygen cannula",observation,,
+foreign_body,extrinsic,,"foreign material, foreign object",,,OIFM_OIDM_031030
+intracranial_foreign_body,extrinsic,foreign_body,intracranial FB,observation,,OIFM_OIDM_676602
+orbital_foreign_body,extrinsic,foreign_body,"intraorbital foreign body, orbital FB",observation,,OIFM_OIDM_192351
+intraocular_foreign_body,extrinsic,orbital_foreign_body,IOFB,observation,,OIFM_OIDM_133479
+facial_foreign_body,extrinsic,foreign_body,facial soft tissue foreign body,observation,,OIFM_OIDM_789941
+artifact,artifact,,image artifact,,,OIFM_OIDM_334144
+metallic_artifact,artifact,artifact,"metal artifact, hardware artifact, beam hardening from metal",observation,,OIFM_OIDM_165814
+motion_artifact,artifact,artifact,"movement artifact, patient motion, motion degradation",observation,,OIFM_OIDM_659997
+beam_hardening_artifact,artifact,artifact,"posterior fossa artifact, Hounsfield bar artifact, petrous bone artifact",observation,,OIFM_OIDM_727869
+volume_averaging_artifact,artifact,artifact,"partial volume effect, partial volume artifact, partial volume averaging",observation,,OIFM_OIDM_671641
+suboptimal_contrast_timing,artifact,artifact,"poor bolus timing, suboptimal bolus, mistimed contrast bolus",observation,,OIFM_OIDM_658293
+retained_contrast,artifact,artifact,"residual contrast from prior study, contrast staining, retained iodinated contrast",observation,,OIFM_OIDM_945616
+nasopharyngeal_abnormality,nasopharynx,,,,,
+nasopharyngeal_fluid,nasopharynx,nasopharyngeal_abnormality,"nasopharyngeal secretions,secretions in nasopharynx,fluid in nasopharynx",observation,,
+adenoid_hypertrophy,nasopharynx,nasopharyngeal_abnormality,"adenoidal hypertrophy,adenoidal prominence,prominent adenoids,adenoidal hyperplasia",observation,,
+nasopharyngeal_lesion,nasopharynx,nasopharyngeal_abnormality,"nasopharyngeal mass,nasopharyngeal soft tissue mass,asymmetric nasopharyngeal soft tissue",observation,,OIFM_GMTS_030852
+nasopharyngeal_mucosal_thickening,nasopharynx,nasopharyngeal_abnormality,"nasopharyngeal soft tissue thickening,nasopharyngeal wall thickening",observation,,
+tornwaldt_cyst,nasopharynx,nasopharyngeal_abnormality,"Thornwaldt cyst,pharyngeal bursa cyst,nasopharyngeal midline cyst",diagnosis,,
+salivary_gland_abnormality,salivary,,,,,OIFM_GMTS_009103
+parotid_lesion,salivary,salivary_gland_abnormality,"parotid mass,parotid nodule,parotid incidentaloma",observation,,
+parotid_cystic_lesion,salivary,parotid_lesion,"parotid cyst,cystic parotid lesion",observation,,
+parotid_fatty_replacement,salivary,salivary_gland_abnormality,"parotid lipomatosis,fatty parotid,sialosis",observation,,
+sialolithiasis,salivary,salivary_gland_abnormality,"sialolith,salivary calculus,salivary stone,parotid duct calculus",observation,,
+callosal_height_increase,ventricular,ventricular_abnormality,"callosal elevation,elevated corpus callosum,elevation of the corpus callosum,callosal stretching,upward displacement of the corpus callosum,callosal height",observation,,
+gaze_deviation,orbit,orbital_abnormality,"eye deviation,ocular gaze deviation,OGD,ocular laterodeviation",observation,,
+conjugate_eye_deviation,orbit,gaze_deviation,"CED,conjugate ocular deviation,conjugate gaze,Prevost sign",observation,,
+lone_eye_deviation,orbit,gaze_deviation,"LED,lone abducting eye,abducting eye,disconjugate gaze",observation,,
+skew_deviation,orbit,gaze_deviation,"SD,vertical eye deviation,vertical ocular misalignment",observation,,
+aphakia,orbit,orbital_postsurgical_change,"lens extraction,post-lens-extraction,s/p lens extraction,post-cataract surgery without IOL,absent lens",observation,,
+preseptal_hematoma,soft_tissue,soft_tissue_hematoma,,diagnosis,,
+pseudosubarachnoid_hemorrhage,extra_axial,extra_axial_abnormality,"pseudo-SAH,pseudo-subarachnoid hemorrhage",diagnosis,,
